@@ -75,6 +75,7 @@ def git_commit(provider: str, exam: str) -> None:
                 ["git", "commit", "-m", f"data: {provider}/{exam}"],
                 check=True,
             )
+            subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
             subprocess.run(["git", "push"], check=True)
             print(f"  Committed and pushed {provider}/{exam}")
     except Exception as e:
