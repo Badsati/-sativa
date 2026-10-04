@@ -119,7 +119,11 @@ def main():
         print(f"\n[{provider}/{exam}]")
         questions = scrape_exam(provider, exam, fetcher, cache)
         if questions:
-            write_questions_to_json(str(out_file), questions)
+            slim = [
+                {"question": q["question"], "options": q["options"], "most_voted": q.get("most_voted", "")}
+                for q in questions
+            ]
+            write_questions_to_json(str(out_file), slim)
             if args.commit:
                 git_commit(provider, exam)
         else:
