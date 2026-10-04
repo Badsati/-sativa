@@ -90,14 +90,15 @@ def scrape_exam(provider: str, exam: str, fetcher: HttpFetcher, cache: HtmlCache
     links = sorted(links, key=extract_topic_question)
     print(f"  Found {len(links)} questions, fetching...")
 
+    from tqdm import tqdm
     questions = []
-    for url in links:
+    for url in tqdm(links, desc="Fetching Questions", unit="q"):
         try:
             html = fetcher.fetch_html(url)
             q = parse_question_page(html, url=url)
             questions.append(q)
         except Exception as e:
-            print(f"  [WARN] Failed {url}: {e}")
+            tqdm.write(f"  [WARN] Failed {url}: {e}")
         time.sleep(random.uniform(1.5, 3.0))
 
     return questions
