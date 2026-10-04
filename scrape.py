@@ -1,6 +1,8 @@
 import argparse
+import random
 import re
 import sys
+import time
 from pathlib import Path
 
 from examtopics.cache import HtmlCache
@@ -58,6 +60,7 @@ def scrape_exam(provider: str, exam: str, fetcher: HttpFetcher, cache: HtmlCache
             questions.append(q)
         except Exception as e:
             print(f"  [WARN] Failed {url}: {e}")
+        time.sleep(random.uniform(1.5, 3.0))
 
     return questions
 

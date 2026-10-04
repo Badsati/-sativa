@@ -68,6 +68,12 @@ class HttpFetcher:
         for attempt in range(1, self.retries + 1):
             try:
                 response = self.session_factory.get().get(url, timeout=self.timeout)
+                if response.status_code == 429:
+                    wait = 30 * attempt
+                    print(f"  [429] rate limited — waiting {wait}s before retry {attempt}/{self.retries}")
+                    time.sleep(wait)
+                    last_error = RuntimeError(f"429 Too Many Requests")
+                    continue
                 response.raise_for_status()
                 raise_if_blocked(response.text)
                 if self.cache is not None:
