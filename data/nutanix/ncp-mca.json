@@ -1,0 +1,282 @@
+[
+  {
+    "question": "In order to give Consumers the ability to modify attributes, what should the Blueprint creator implement in the design? A. Custom actions B. eScript task with custom macros C. Runtime variables D. HTTP task with built-in macros",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. The Playbook is designed to execute a script, in order to fix a known problem in the application. However, it keeps failing. Why is this Playbook continuing to fail? A. Slack configuration should be reviewed. B. The script is incorrect. C. The Playbook actions are in the wrong order. D. Not enough storage space in order to take a snapshot.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which action should an administrator use to request a static IP address from an IPAM solution? A. Profile B. Pre-create C. Guest Customization D. Create",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. What needs to be done in order to enable the developer to complete this requested task? (Choose two.) A. Create AWS and Azure Providers B. Add the Providers to the Project C. Enable Environment for AWS and Azure D. Upgrade Calm to version 3.2.x",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company is new to automation and has infrastructure they would like to automate with Calm to provide standardized automation. The company also wants to create a Hybrid Cloud environment with their existing infrastructure which includes AHV, Azure, AWS, and a small legacy vSphere environment. In which two locations can Calm be deployed? (Choose two.) A. vSphere Essential Edition B. VMware ESXi C. Nutanix AHV D. Any Public Cloud",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator wants to be alerted when production VMs become idle. The VMs will be determined to be idle when CPU usage is lower than 5% for more than 5 minutes. All affected VMs are categorized as Environment:Production, since they have Flow microsegmentation rules. What should the administrator do to satisfy this requirement? A. Create an alert for all VMs, create a Playbook with this alert as the trigger and send an email as the action. B. Create an alert for VMs in the correct category, create a Playbook with this alert as the trigger > take a snapshot > send an email as the action. C. Create an alert for all VMs, create a Playbook with this alert as the trigger > reduce 1 CPU > send an email as the action. D. Create an alert for VMs in the correct category, create a Playbook with this alert as the trigger and send an email as the action.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer has a Development Blueprint that performs the following high level items: Creates a Windows and Ubuntu Server. Installs IIS on Windows Installs MySQL on Ubuntu As part of Development, there is a need for an Operator to restart IIS Services for troubleshooting purposes. How should the developer add this functionality to the Blueprint? A. Add an Execute Task in the Restart Action of the Application Profile. B. Add an Execute Task in the Restart Action of the Windows/IIS Service. C. Add a Delay Task in the Restart Action of the Windows/IIS Service. D. Create an Endpoint for the IIS server and a Runbook that restarts the service.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator receives the following error while running a script through Calm on VM: Which two conditions could cause this issue? (Choose two.) A. The VM port is not allowed by the firewall. B. The credentials have insufficient permissions. C. The VM is still in the boot process. D. There is an error in the script.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When creating a blueprint, which Pre-create and Post-delete tasks are valid? A. Create, Start, Stop, Delete B. Execute, Set variable, HTTP, Delay C. Create, Start, Stop, Soft Delete D. Execute, Set variable, API, Delay",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two groups of operations can a Prism Admin or Super Admin role perform? (Choose two.) A. Create, read, automate, or delete an action template in the action gallery B. Create, read, update, or delete an action template in the action gallery C. Create, read, automate, delete, enable, and run playbooks D. Create, read, update, delete, enable, and run playbooks",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A blueprint was developed for deploying a standard 3-tier hosting environment for a company's applications. The blueprint includes a load balancer, multiple web servers, a database server, and a small test application. During testing of the blueprint, the application fails to connect to the database. The cause is found to be the database software is still installing when the application starts. Which method most efficiently prevents the application from starting before the database? A. Use a local install instead of downloading B. Create a loop to retry connection C. Create a service dependency D. Use a sleep statement in a start script",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Prism Central setting must first be configured in order to add users to a Project? A. HTTP Proxy B. Authentication Directory C. Pulse D. Local User Role Mapping",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer is trying to deploy an application with Calm and receives this error for a Linux VM: What is the cause of this error within the blueprint? A. Connection section has a network adapter selected for the Address box in Connection section. B. Connection section has no network adapters selected for the Address box in Connection section. C. Connection Type has a protocol selected. D. Connection Type has no protocol selected.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which method will result in unique names per VM when scaling out a Service in a Calm Blueprint? A. Guest OS customization using sysprep contains <ComputerName>@@{name}@@</ComputerName>. B. Service VM Name field contains the macro variable @@{calm_array_index}@@. C. Call an external Python eScript that uses an IPAM API to register the VM name in DNS. D. Set the VM Name field to allow user edits at launch so the user can enter a custom value at launch.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two providers are supported in Calm? (Choose two.) A. Oracle Cloud B. Kubernetes C. GCP D. IBM Cloud",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has created a task for a blueprint that could be applied to another blueprint. The administrator wants to reuse the task with the least amount of effort. How can the administrator accomplish this? A. Publish the task to Github select the task from the Github Repository from the other blueprint. B. Publish the task to the Marketplace, select the task from the Marketplace from the other blueprint. C. Publish the task to the Task Repository, select the task from the Task Repository from the other blueprint. D. Publish the task to the Task Library select the task from the Task Library from the other blueprint.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During the deployment of a multi-step Blueprint, a failure is encountered. The administrator corrected the failed step and saved the Blueprint. What should the administrator do next? A. Delete the failed application and Launch a new application. B. Soft Delete the failed application and Launch a new application. C. Use Continue in the failed application to retry. D. Upon clicking Save the Blueprint task will be retried automatically.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has a vendor-provided script that must be run at 9 am every Saturday on a Linux application VM. The administrator currently has a playbook that has a Time trigger and a VM SSH action to execute the script. However, the administrator has received a request to have the output of the script emailed to the application team when it is executed. What is the easiest way to satisfy this request? A. Modify the script to include a function to format the output of the script and email the output to the desired address. B. Add an Email action to the end of the existing playbook and use the {{action [index].response_body}} parameter in the Message field. C. Direct the output of the script to a file and use the Send Email with Payload action at the end of your existing playbook. D. Add an Email action to the end of the existing playbook and use the {{action[index] .stdout}} parameter in the Message field.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator has been tasked with creating a multicloud, three-tier application using Calm. The application needs to consist of: A MongoDB backend database A NodeJS Javascript runtime environment An NGINX webserver The administrator has access to an AWS account, as well as a locally hosted Nutanix cluster. The three parts of the application should be fully redundant, and be able to tolerate either a cloud provider outage, or a local Nutanix cluster outage. What is the most appropriate solution the administrator should choose in order to meet the requirements? A. Create a Calm blueprint with MongoDB, Node/S, and NGINX VMs running on Nutanix, as well as an NGINX server running in AWS on US-WEST-1 and US-EAST-1. B. Create a Calm blueprint with MongoDB, Node/S and NGINX VMs running on Nutanix, and a separate blueprint for MongoDB, NodeJS, and NGINX running in AWS on US-WEST-1 and US-EAST-1. C. Create a Calm blueprint with MongoDB, NodelS, and NGINX VMs running on Nutanix, as well as MongoDB, NodeJS, and NGINX servers running in AWS on US-WEST-1 and US-EAST-1. D. Create a Calm blueprint with MongoDB, NodelS, and NGINX VMs running on Nutanix, then manually create three EC2 instances for MongoDB, NodeJS and NGINX in AWS running on US-WEST-1 and US-EAST-1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two valid trigger types available for executing Playbooks? (Choose two.) A. Manual B. Alert C. Report D. Audit",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator needs to create a Playbook to be notified when VMs are deleted. Which X-Play Trigger would satisfy this task? A. Alert B. Audit C. Event D. Time",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Calm feature enables the ability to enforce project quotas for the ESXi hypervisor? A. Project Environments B. Project Quotas C. Runbooks D. Policy Engine",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator needs to enable Showback in Calm to allow departments to see costs associated with their Projects. Where in Calm would the administrator enable Showback? A. Marketplace B. Projects C. Setting D. LCM",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator creates a blueprint to deploy VMs to multiple clouds, so that business will remain functional in the event of a disaster. What component describes this feature? A. Service B. Profile Actions C. Package D. Substrates",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What two pieces of information can an administrator obtain from Plays? (Choose two.) A. Host where the action runs B. Start time and end time of each action C. Execution result status D. CVM IP where the alert was triggered",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is configuring Playbooks and is concerned about adding or reducing CPU and memory resources to VMs. Which two prerequisites should an administrator take into consideration when configuring the Playbooks? (Choose two.) A. CPU can be added to a powered on VM if the guest OS supports it B. VM must be powered off to add CPU C. VM must be powered off to reduce memory D. Memory can be removed from a powered on VM if the guest OS supports it",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An end user for an application that has been assigned the Consumer role within the project has noticed multiple issues with a blueprint that need to be addressed. The decision has been made to bring the end user onto the team to be able to modify the blueprints for this project. Using the concept of least privilege, what role should the end user be assigned? A. Developer B. Project Admin C. Consumer D. Operator",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Saving the Calm Blueprint gives the validation error for VMware Blueprints shown in the exhibit. What could be the cause of the error? A. Number of Template vCPU components should be equal to the number of pCPU configured. B. Number of Template NICs components should be equal to the number of Network Settings configured. C. Number of Template devices components should be equal to the number of Devices configured. D. Number of Template VMXNET3 components should be equal to the number of Virtual e1000 adapters configured.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company has a business-critical VM. The VM Utilization of CPU and memory differs from time to time, but can never be allowed to run out of resources. The administrator also wants to make sure that the VM is not over provisioned when not needed. The administrator determines these requirements that have been validated and automated in a test environment should also apply for the production environment: VCPU needs to be added when CPU Utilization been over 80% for 15 minutes. Memory needs to be increased by 4 GB when utilization reaches 80%. Return of over-allocated resources must not affect other business applications. What can the administrator do with the least amount of effort to make sure the VM is always performant and returns resources when not required? A. Clone and adjust the system-created playbooks B. Import the playbook and adjust the values C. Create a blueprint based on requirements D. Create a task based on requirements",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where should an administrator check why a Playbook failed to grow the memory of a VM? A. VM Details in Prism Element B. Plays dashboard in Prism Central C. VM Details in Prism Central D. Plays dashboard in Prism Element",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is trying to delete a category, but the option is greyed out. Which two conditions could be causing this issue? (Choose two.) A. The category is system defined. B. The category is assigned to powered-on VMs. C. The category is part of a flow policy. D. The category is user defined.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An application team wants faster releases and starts an initiative to automate the entire database and application deployments. The current manual process involves: Creating virtual machines to host the databases and applications Allocate right amount of storage for the database and applications Deploy database software and create database Schedule backup and recovery process for the database Deploy applications How can application releases be repeatedly deployed in the least amount of time? A. Create a Calm blueprint calling Calm APIs for both database and applications deployments B. Deploy databases manually and create a Calm blueprint to automate application deployment C. Deploy databases through Era and create a Calm blueprint to automate application deployment D. Create a Calm blueprint deploying applications and calling Era APis to automate database deployments",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. A customer has decided to enable Calm Showback feature but started to receive an alert in Prism Central stating that Calm showback is not able to reach beam service. Which two configuration items should the administrator check to ensure Calm can communicate with Beam? (Choose two.) A. DNS configuration in Prism Central B. Ensure Pulse is enabled C. Prism Element is configured with Proxy settings D. Flow is enabled in the same Prism Central",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A director would like to have an up to date Cluster Efficiency Summary report emailed on the first of every month to keep management up to date on how the cluster is being utilized. How could a playbook be configured to satisfy this request with the least human interaction? A. Manual Trigger > Wait Until Day of Month > Generate Report > Email B. Manual Trigger > Generate Report > Email C. Report Trigger > Wait Until Day of Month > Email D. Time Trigger > Generate Report > Email",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An Application team has provided an administrator the following high level requirements for infrastructure they require: 5 Application VMs 2 Database VMs 2 Web VMs Which two pieces of information are needed, at a minimum, to effectively automate the scaling of the environment? (Choose two.) A. SLA uptime of the application B. Steady state resource utilization C. Expected resource utilization under load D. If the application needs to be highly available",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Calm feature provides the ability for administrators to approve Single or Multi-VM Blueprints for assignment to Projects? A. Application Manager B. Marketplace C. Projects D. Marketplace Manager",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator manages two Nutanix clusters: Cluster01 and Cluster02 and has needs to automate similar workload types using these images that are located on Cluster01: ImageA ImageB ImageC The administrator needs to deploy ImageA and ImageC within the Cluster02 environment. How this can be achieved? A. Configure a Protection Domain to replicate images. B. Clone the images from the Cluster01 to Cluster02. C. All images are available to all clusters managed by a single Prism Central. D. Utilize Prism Central image placement policies.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer has been asked to update the existing blueprint with an additional option of scaling it both out and in. Where in the Blueprint Editor should the developer make the relevant changes? A. Environment, Actions B. Configuration, Settings C. Blueprint, Configuration D. Application Profile, Actions",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Where would a Calm administrator find the archived application logs within Prism Central? A. Services > Calm > Projects B. Services > Calm > Settings C. Services > Calm > Applications D. Services > Calm > Blueprints",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator has been asked to review and clean up all existing categories within the Nutanix environment. What information should the administrator filter on to organize the findings and eliminate unused categories? A. Policies, Triggers, Categories, and Entities B. Blueprint, Triggers, Categories, and Polices C. Blueprint, Policies, Value, and Entities D. Name, Value, Entities, and Policies",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Prism Central reporting indicates that there are multiple memory-constrained VMs in multiple clusters. The target VMs have Memory Hot Add enabled. Using X-Play, in what order should the Playbook actions be added to ensure the VMs are properly remediated? A. VM add Memory, Take a VM Snapshot, Resolve Alert B. Take a VM Snapshot, Power Off VM, VM Add Memory, Resolve Alert, Power on VM C. Take a VM Snapshot, VM add Memory, Resolve Alert D. Power off VM, Take a VM Snapshot, VM add Memory, Resolve Alert",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator created the Playbook shown in the exhibit to allow for manual reduction of vCPU count on any selected VM within their environment. During a test run of the play on one of the VMs running in development, the administrator ran into an error that the Playbook cannot be completed against the selected VM. Here are the details of the affected VM: VM Name: VM2 vCPU: 4 RAM: 8 GB OS: Windows 2016 Hypervisor: AHV What caused this Playbook to fail? A. This play cannot be executed against a VM on AHV. B. The VM needs to be powered off before vCPU can be reduced. C. Reduction of vCPU cannot be done on a VM with a running snapshot. D. The play will cause the VM to go below the minimum vCPU.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer updated a blueprint to ensure that the IP address of the VM is reserved in IPAM as part of the deployment process. The developer noticed that when new VMs are created, they still get a DHCP IP address and not a reserved IP address. What is the most likely reason for this behavior? A. Developer created a pre-create task for reserving the IP address B. Developer created a post-create task for reserving the IP address C. Developer forgot to save the updated blueprint D. Developer forgot to publish the updated blueprint",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What role must a user have in order to create or update a Playbook? A. Calm Developer B. Prism Admin C. Calm Admin D. Project Admin",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which feature of Calm allows for the creation of task-based automation against dynamic lists of Windows or Linux VMs? A. Projects B. Blueprints C. Playbooks D. Runbooks",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Within a Calm blueprint, which two actions can an administrator apply to a Service under the Guest Customization section? (Choose two.) A. Apply a Cloudinit Script B. Apply a Sysprep file C. Modify the base OS image D. Choose UEFI or Legacy BIOS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which are valid entity types to be associated with a playbook using a manual trigger? A. VM, Host, Prism Central B. VM, Host, Cluster C. VM, Category, Prism Element D. VM, Category, Cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where would a Calm Developer find logging related to blueprint package failures? A. In Calm select Application icon > select application name > Audit Tab B. In Calm select Application icon > select application name > Services Tab C. SSH to Prism Central > /home/calm/log/styx.log D. In Prism Central go to Activities > Audits and get the audits filter by date",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two features does the Calm Marketplace provide? (Choose two.) A. Published and versioned Blueprints B. Library of executable tasks C. Store of all Blueprints created in Calm D. Set of pre-seeded application Blueprints",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has an existing set of VMs that were deployed before the company started using Calm. The administrator would like to now use Calm to manage those existing VMs. What should the administrator do to manage the existing VMs? A. Create a Greenfield Application, select the snapshots of the VMs to manage and redeploy the VMs from the latest snapshot. B. Create a Brownfield Application, select the VMs that are needed for each deployment from the drop down list. C. Create a Greenfield Application, select the VMs that are needed for each deployment from the drop down list. D. Create a Brownfield Application, select the snapshots of the VMs to manage and redeploy the VMs from the latest snapshot.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator at a busy software development company is looking to roll out Calm for automation and estimates they will be creating 200 Projects, 500 Runbooks, 1500 Blueprints and automating the deployment of 7500 VMs for their development teams. What size of Prism Central VM(s) is recommended to host the Calm environment? A. 3 nodes Large - 10vCPU and 52GB Memory per node. B. 1 node Small - 6vCPU and 30GB Memory per node. C. 3 nodes Small - 6vCPU and 30GB Memory per node. D. 1 node Large - 10vCPU and 52GB Memory per node.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has built a Playbook to run a Powershell script in a VM when a specific alert is generated. Several days later, the alert is generated, but the script does not execute and there are no Plays recorded for the Playbook. What is causing this issue? A. The Playbook was never enabled. B. The version of Playbooks is not correct for the version of Prism Central. C. The script executed, but closed with an error code. D. The path to the script was not correct.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A blueprint service needs to use scaling. The requirements are: Windows 2019 VM (12 vCPU, 24 GB memory, 500 GB volume) Minimum VMs needed at any time and at time of deployment is 2 VMs VMs should not exceed the project quota of 100 vCPUs or 300 GB of memory There are no other services in use within the project Which scaling VM replica settings meet all requirements? A. MIN: 2, MAX: 11, Default: 2 B. MIN: 2, MAX: 7, Default: 2 C. MIN: 2, MAX: 10, Default: 1 D. MIN: 2, MAX: 8, Default: 1",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Calm encountered the error shown in the exhibit when importing a script that maps a network drive. Upon further investigation, the Calm administrator was unable to run the script manually on a VM and discovered that elevated permissions were needed. Which command should the administrator add to the script? A. Enable-WSManCredSSP -Role Server -Force B. Enable-WSManCredSSP -Role Client C. Enable-WSManCredSSP -Role Server D. Disable-WSManCredSSP -Role Server -Force",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. The VM appSAP01dev is a SAP development environment application and it is common to have memory constrained alerts on this VM, but the administrator wants to avoid adding memory to development VMs like this one, since this is normally done for only production VMs. Which two actions should the administrator take to avoid adding memory to the development VMs? (Choose two.) A. Assign the category Environment:Production to the production VMs B. Modify the Alert by adding the correct category C. Disable the Alert in Prism Central D. Assign the category Environment:Development to development VMs",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to exhibits. The variable VM_NAME is giving a warning that indicates that the variable is not found. When checking the Service tab, the variable is found to match the VM_NAME field entry as shown in the exhibit below: What is causing this warning message? A. VM_NAME variable must be defined under Application Profile B. Service Name matches the variable name C. @@{calm_time}@@ output is longer than allowed for a Service Name D. User modifiable variable for VM_NAME is not allowed",
+    "options": {},
+    "most_voted": "D"
+  }
+]
