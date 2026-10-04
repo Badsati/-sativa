@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What is the best practice for connecting to a MongoDB cluster with the Java Driver? A. A single, cached MongoClient instance B. A new MongoClient instance for each logical transaction C. A new MongoClient instance for each request D. A pool of MongoClient instances to allow multiple concurrent database requests",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A collection coll has the following documents: {_id: 4, type: “A”, value: 60} {_id: 5, type: “B”, value: 80} {_id: 6, type: “A”, value: 30} A collection results has the following documents: {_id: 1, type: “A”, value: 10} {_id: 2, type: “B”, value: 20} {_id: 3, type: “C”, value: 30} After executing the following aggregation pipeline: db.coll.aggregate([ { $match: { type: “A” }}, { $out: ‘results’} ]) What is the result? A. Collection results has the following documents: {_id: 4, type: “A”, value: 60} {_id: 6, type: “A”, value: 30} B. Collection results has the following documents: {_id: 1, type: “A”, value: 10} {_id: 4, type: “A”, value: 60} {_id: 6, type: “A”, value: 30} C. Collection results has the following documents: {_id: 1, type: “A”, value: 10} {_id: 2, type: “B”, value: 20} {_id: 3, type: “C”, value: 30} {_id: 4, type: “A”, value: 60} {_id: 6, type: “A”, value: 30} D. Collection results has the following documents: {_id: 1, type: “A”, value: 10} {_id: 2, type: “B”, value: 20} {_id: 3, type: “C”, value: 30} {_id: 4, type: “A”, value: 60} {_id: 5, type: “B”, value: 80} {_id: 6, type: “A”, value: 30}",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In an employee collection, each document represents an employee of the company. What data model is the most effective for tracking the relationship between an employee and their manager? A. Reference array to employee documents in each manager document B. Embed manager document into each employee document C. Embed employee documents as an array into each manager document D. Reference to manager document in each employee document",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Given the following query: db.coll.find({}).sort({“timestamp”: -1, “status”: 1}) Which two indexes will most improve the performance of this query? (Choose two.) A. {“timestamp”: -1, “status”: -1} B. {“timestamp”: 1, “status”: -1} C. {“timestamp”: -1, “status”: 1} D. {“timestamp”: 1, “status”: 1}",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two are valid MongoDB BSON types? (Choose two.) A. Boolean B. Float C. Number D. Double E. Map",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Given the following query: db.restaurants.find({“borough” : “Brooklyn” , “grades.score” : {$gt:5}}) No index exists for the restaurant collection. What index definition most improves the performance? A. db.restaurants.createIndex({“borough” : 1, “grades.score” : 1} ) B. db.restaurants.createIndex({“grades.score” : 1, “borough” : 1} ) C. db.restaurants.createIndex({“borough” : 1} ) D. db.restaurants.createIndex({“grades.score” : 1} )",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "There is a collection of patients for a medical practice. Which two attributes associated with the patient should be embedded into the patient document rather than stored in its own collection and referenced? (Choose two.) A. Visits to the practice B. Current prescriptions C. Diagnosed conditions D. Their primary doctor E. Their insurance provider",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Given the following explain plan: What statement is true for this explain plan? A. This is using an index. B. This has a sort stage with index support. C. This is not using an index. D. This uses an index in reverse direction.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Given the following query: db.tests.find( { points: { $elemMatch: { $gte: 75, $lt: 80 } } } ) Which two documents from collections tests will be returned by this query? (Choose two.) A. { _id: 1, points: [ 80, 87, 88 ] } B. { _id: 2, points: [ 70, 87, 88 ] } C. { _id: 4, points: [ 76, 77, 79 ] } D. { _id: 3, points: [ 75, 88 ] } E. { _id: 5, points: 77 }",
+    "options": {},
+    "most_voted": "C"
+  }
+]
