@@ -1,0 +1,42 @@
+[
+  {
+    "question": "A system engineer needs to set the vGPU scheduling behavior for all GPUs to share the scheduling equally with the default time slice length. What command should be used? A. esxcli system module parameters set -m nvidia -p “NVreg_RegistryDwords=RmPVMRL=0x00” B. esxcli system module parameters set -m nvidia -p “NVreg_RegistryDwords=RmPVMRL=0x@1\" C. esxcli graphics module parameters set -m nvidia -p “NVreg_RegistryDwords=RmPVMRL=0x01” D. esxcli system module parameters set -m nvidia -p “NVreg_RegistryDwords=FRL=@x01”",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During a multi-day NeMo burn-in, intermittent “GPU fell off bus” errors occur. Which diagnostic approach isolates hardware faults? A. Run DCGM diagnostics alongside burn-in to monitor GPU health metrics B. Switch from BERT to GPT models for simpler computations C. Enable HPL_USE_NVSHMEM for alternative memory sharing D. Reduce blocksize to 500MB to lower memory pressure",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An engineer needs to verify the current firmware versions of all components (ATF, BSP, NIC, UEFI) on a BlueField-3 DPU’s BMC. Which Redfish API command provides this information? A. mstflint –d <PCI_ID> query full B. curl –k –u root:<password> –X GET https://<DPU-BMC-IP>/redfish/v1/UpdateService/FirmwareList C. curl –k –u root:<password> –X GET https://<DPU-BMC-IP>/redfish/v1/UpdateService/FirmwareInventory D. mlxconfig –d <dev> q",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer needs to verify NVLink isolation on a single node with 8 GPUs. Which NCCL test configuration stresses switch bisection bandwidth? A. Use NCCL_TESTS_SPLIT= “DIV 8” with point-to-point tests B. Use all_reduce_perf –b 8 –e 16G –f2 –g 8 with NCCL_TESTS_SPLIT= “AND 0x1” C. Use all_reduce_perf –b 8 –e 16G –f2 –g 8 without splits D. Use reduce_scatter_pref –b 8 –e 16G –f2 –g 4",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are validating the environment of an NVIDIA GPU-accelerated data center during post-deployment checks. Which one action is essential to confirm that power and cooling are sufficient for the stable operation of NVIDIA DGX H100 systems? A. Use NVSM to disable unused PCle devices to reduce overall system heat output. B. Review the system BIOS to ensure GPU overclocking is enabled for maximum performance. C. Verify that each DGX system is connected to redundant, properly rated PDUs and that all power supplies are reporting nominal input. D. Confirm the system fans are running at 100% under all workloads to prevent overheating.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer needs to validate 400G DAC cable signal integrity in a DGX cluster. Which CVT metric best identifies marginal cables needing replacement? A. Effective BER > 1.5E-254 during a ≤6-hour monitoring window. B. Transceiver model matching QSFP-DD specifications. C. Temperature fluctuations > 5°C during validation. D. Lane power variance < 3dB across all transceivers.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A user encounters “permission denied” errors when running GPU-accelerated containers on a Secure Boot-enabled system. What resolves this? A. Disable SELinux to relax unnecessary security policies. B. Reinstall Docker without the NVIDIA runtime. C. Enroll the MOK and sign NVIDIA kernel modules. D. Run Docker with sudo for elevated privileges.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An InfiniBand administrator needs to run performance benchmarks on new devices added to the fabric. What tool should be used to check the latency? A. tcpdump B. ib_write_lat C. perfmon D. ibdiagnet",
+    "options": {},
+    "most_voted": "B"
+  }
+]
