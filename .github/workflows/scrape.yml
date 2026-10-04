@@ -1,0 +1,45 @@
+name: scrape
+
+on:
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: "Provider slug (e.g. ibm, sap, nutanix, checkpoint)"
+        required: true
+      exam:
+        description: "Single exam slug — leave blank to scrape all exams for the provider"
+        required: false
+        default: ""
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape
+        run: |
+          if [ -n "${{ github.event.inputs.exam }}" ]; then
+            python scrape.py --provider "${{ github.event.inputs.provider }}" --exam "${{ github.event.inputs.exam }}"
+          else
+            python scrape.py --provider "${{ github.event.inputs.provider }}"
+          fi
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "data: ${{ github.event.inputs.provider }}${EXAM:+ $EXAM}"
+          git push
+        env:
+          EXAM: ${{ github.event.inputs.exam }}
