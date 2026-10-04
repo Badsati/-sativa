@@ -4,10 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       provider:
-        description: "Provider slug (e.g. ibm, sap, nutanix, checkpoint)"
+        description: "Provider slug — use 'all' to scrape every provider"
         required: true
+        default: "all"
       exam:
-        description: "Single exam slug — leave blank to scrape all exams for the provider"
+        description: "Single exam slug (ignored when provider is 'all')"
         required: false
         default: ""
 
@@ -26,12 +27,45 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install Camoufox browser (fallback for blocked pages)
+        run: python -m camoufox fetch
+
+      - name: Install Playwright Firefox
+        run: python -m playwright install firefox --with-deps
+
       - name: Scrape
         run: |
-          if [ -n "${{ github.event.inputs.exam }}" ]; then
-            python scrape.py --provider "${{ github.event.inputs.provider }}" --exam "${{ github.event.inputs.exam }}"
+          PROVIDER="${{ github.event.inputs.provider }}"
+          EXAM="${{ github.event.inputs.exam }}"
+
+          if [ "$PROVIDER" = "all" ]; then
+            python scrape.py --provider ibm
+            python scrape.py --provider sap
+            python scrape.py --provider nutanix
+            python scrape.py --provider nvidia
+            python scrape.py --provider mongodb
+            python scrape.py --provider checkpoint
+            python scrape.py --provider confluent
+            python scrape.py --provider datadog
+            python scrape.py --provider zscaler
+            python scrape.py --provider cyberark
+            python scrape.py --provider sailpoint
+            python scrape.py --provider workday
+            python scrape.py --provider veeam
+            python scrape.py --provider netapp
+            python scrape.py --provider f5
+            python scrape.py --provider atlassian
+            python scrape.py --provider aruba
+            python scrape.py --provider mulesoft
+            python scrape.py --provider cncf
+            python scrape.py --provider giac
+            python scrape.py --provider iapp
+            python scrape.py --provider istqb
+            python scrape.py --provider redhat
+          elif [ -n "$EXAM" ]; then
+            python scrape.py --provider "$PROVIDER" --exam "$EXAM"
           else
-            python scrape.py --provider "${{ github.event.inputs.provider }}"
+            python scrape.py --provider "$PROVIDER"
           fi
 
       - name: Commit results
@@ -39,7 +73,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "data: ${{ github.event.inputs.provider }}${EXAM:+ $EXAM}"
+          git diff --staged --quiet || git commit -m "data: ${{ github.event.inputs.provider }}"
           git push
-        env:
-          EXAM: ${{ github.event.inputs.exam }}
