@@ -35,6 +35,11 @@ jobs:
       - name: Install Playwright Firefox
         run: python -m playwright install firefox --with-deps
 
+      - name: Configure git for incremental commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Pick next provider and scrape
         run: |
           PROVIDER="${{ github.event.inputs.provider }}"
@@ -43,7 +48,6 @@ jobs:
           if [ -z "$PROVIDER" ]; then
             # Auto-pick: first provider in providers.txt with no data yet
             while IFS= read -r line; do
-              # Skip comments and blank lines
               [[ "$line" =~ ^#.*$ || -z "$line" ]] && continue
               provider="$line"
               if [ ! -d "data/$provider" ] || [ -z "$(ls -A data/$provider 2>/dev/null)" ]; then
@@ -61,15 +65,7 @@ jobs:
           echo "Scraping provider: $PROVIDER"
 
           if [ -n "$EXAM" ]; then
-            python scrape.py --provider "$PROVIDER" --exam "$EXAM"
+            python scrape.py --provider "$PROVIDER" --exam "$EXAM" --commit
           else
-            python scrape.py --provider "$PROVIDER"
+            python scrape.py --provider "$PROVIDER" --commit
           fi
-
-      - name: Commit results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --staged --quiet || git commit -m "data: scraped ${{ github.event.inputs.provider || 'auto' }}"
-          git push

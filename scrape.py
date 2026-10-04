@@ -62,11 +62,28 @@ def scrape_exam(provider: str, exam: str, fetcher: HttpFetcher, cache: HtmlCache
     return questions
 
 
+def git_commit(provider: str, exam: str) -> None:
+    import subprocess
+    try:
+        subprocess.run(["git", "add", "data/"], check=True)
+        result = subprocess.run(["git", "diff", "--staged", "--quiet"])
+        if result.returncode != 0:
+            subprocess.run(
+                ["git", "commit", "-m", f"data: {provider}/{exam}"],
+                check=True,
+            )
+            subprocess.run(["git", "push"], check=True)
+            print(f"  Committed and pushed {provider}/{exam}")
+    except Exception as e:
+        print(f"  [WARN] Git commit failed: {e}")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--provider", required=True)
     parser.add_argument("--exam", default=None)
     parser.add_argument("--output", default="data")
+    parser.add_argument("--commit", action="store_true", help="Commit and push after each exam")
     args = parser.parse_args()
 
     provider = normalize_provider(args.provider)
@@ -100,6 +117,8 @@ def main():
         questions = scrape_exam(provider, exam, fetcher, cache)
         if questions:
             write_questions_to_json(str(out_file), questions)
+            if args.commit:
+                git_commit(provider, exam)
         else:
             print(f"  No data for {exam}")
 
