@@ -33,12 +33,50 @@ def get_exam_slugs(provider: str, fetcher: HttpFetcher) -> list:
         return []
 
 
+def _sample_discussion_slugs(provider: str, fetcher: HttpFetcher) -> list:
+    """Return a sample of exam codes seen on page 1 of the discussions listing."""
+    from examtopics.matching import provider_discussion_url
+    from examtopics.parsers import extract_discussion_entries
+    try:
+        html = fetcher.fetch_html(provider_discussion_url(provider, 1))
+        entries = extract_discussion_entries(html)
+        codes = set()
+        for text, href in entries:
+            # pull out tokens that look like exam codes (letters/digits and hyphens)
+            for token in re.findall(r"[A-Z0-9]+-[A-Z0-9][\w-]*", f"{text} {href}", re.I):
+                codes.add(token.lower())
+        return sorted(codes)
+    except Exception:
+        return []
+
+
+def _sanity_check_slug(provider: str, exam: str, fetcher: HttpFetcher) -> bool:
+    """
+    Warn and return False when the exam slug doesn't appear in the first page of
+    the provider's discussion listing — a strong signal the scan will find nothing.
+    """
+    from examtopics.matching import normalize_slug
+    needle = normalize_slug(exam)
+    samples = _sample_discussion_slugs(provider, fetcher)
+    if not samples:
+        return True  # couldn't sample — let the scan proceed
+    if any(needle in normalize_slug(s) for s in samples):
+        return True
+    print(f"  [WARN] Slug '{exam}' (normalized: '{needle}') not found on discussions page 1.")
+    print(f"         Sample codes seen: {', '.join(samples[:20])}")
+    print(f"         The exam may be named differently on ExamTopics — skipping full scan.")
+    return False
+
+
 def scrape_exam(provider: str, exam: str, fetcher: HttpFetcher, cache: HtmlCache) -> list:
     scanner = FastDiscussionScanner(provider, fetcher, delay_range=DEFAULT_DELAY_RANGE)
     try:
         total_pages = scanner.get_num_pages()
     except Exception as e:
         print(f"  [WARN] Could not get page count: {e}")
+        return []
+
+    if not _sanity_check_slug(provider, exam, fetcher):
         return []
 
     page_numbers = build_page_numbers(total_pages, 1, None, None)
