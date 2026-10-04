@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Given the following sample documents in the products collection: { “name” : “XPhone”, “ram” : 4, “cpu” : 2, “storage” : [ 64, 128, 256 ] }, { “name” : “XPad”, “ram” : 16, “cpu” : 2, “storage” : [ 128, 256, 512 ] }, { “name” : “GTablet”, “ram” : 12, “cpu” : 4, “storage” : [ 16, 64, 128 ] }, { “name” : “GPad”, “ram” : 8, “cpu” : 4, “storage” : [ 128, 256, 1024 ] }, { “name” : “GPhone”, “ram” : 4, “cpu” : 2, “storage” : [ 128, 256, 512 ] } Given the following query: What is the correct output of the query? A. { “name” : “XPad”, “ram” : 16, “cpu” : 2, “storage” : [ 128, 256, 512 ] } { “name” : “GTablet”, “ram” : 12, “cpu” : 4, “storage” : [ 16, 64, 128 ] } B. { “name” : “XPad”, “ram” : 16, “cpu” : 2, “storage” : [ 128, 256, 512 ] } { “name” : “GTablet”, “ram” : 12, “cpu” : 4, “storage” : [ 16, 64, 128 ] } { “name” : “GPad”, “ram” : 8, “cpu” : 4, “storage” : [ 128, 256, 1024 ] } C. { “name” : “GTablet”, “ram” : 12, “cpu” : 4, “storage” : [ 16, 64, 128 ] } { “name” : “GPad”, “ram” : 8, “cpu” : 4, “storage” : [ 128, 256, 1024 ] } D. { “name” : “XPad”, “ram” : 16, “cpu” : 2, “storage” : [ 128, 256, 512 ] } { “name” : “GPhone”, “ram” : 4, “cpu” : 2, “storage” : [ 128, 256, 512 ] }",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Consider a orders collection that contains these documents: { _id: 1, product: “X-pad”, quantity: 950 } { _id: 2, product: “X-pad-pro”, quantity: 1000 } { _id: 3, product: “X-phone”, quantity: 850 } { _id: 4, product: “X-phone-pro”, quantity: 1350 } Commands A and B are run at the same time. Assume that no other operations are running. A.) db.orders.findAndModify({ query: { “product”: “X-phone” }, update: { $set: { “quantity”: 1250 }} }) B.) db.orders.updateMany({}, {$set: { “quantity”: 0 } }) What is the possible findAndModify output and database state after these operations complete? (Choose two.) A. B. C. D.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two currentOp commands return information on all operations, including operations on idle connections and system operations? (Choose two.) A. db.currentOp({“$all”: true}) B. db.currentOp(true) C. db.currentOp({“$includeIdle”: true}) D. db.currentOp.showAllOps()",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two commands project the “product” and “_id” fields? (Choose two.) A. db.coll.find({}, {“product”: 1}) B. db.coll.find({}, {“product”: 1, “_id”: 1}) C. db.coll.find({}).project({“product”: 1, “_id”: 1}) D. db.coll.find({}).project({“product”: 1})",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Given that the following query is currently running with a collection scan: What index should be used to improve the performance of the query? A. {“score”: 1, “game_id”: -1, “last_login”: -1} B. {“game_id”: -1, “score.highest_score”: 1, “last_login.date”: -1} C. {“last_login”: 1, “score”: 1, “game_id”: -1} D. {“score.highest_score”: -1, “last_login.date”: 1, “game_id”: 1}",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What attribute of the oplog ensures consistency in a replicated dataset? A. Natural Ordering B. Idempotent C. Concurrency Control D. Flow Control",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Consider an inventory collection that contains these documents: What result set does the following query return? db.inventory.find({ $or: [ {“product” : “x-small box”}, { $and : [ {“gty” : { $ne : 50 } }, { “colors”: { $nin: [“brown”] } } A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Consider a contacts collection that contains these documents: {“_id”: 1, “name”: “Poppy”, “birthday”: “03-09-1984”} {“_id”: 2, “name”: “Ashley”, “birthday”: “08-12-1990”} {“_id”: 3, “name”: “Cleo”, “birthday”: “11-02-1976”} What query returns the document where the field name is “Poppy”? A. db.contacts.find( { “name”: “poppy” } ) B. db.contacts.find( { “name”: “Poppy” } ) C. db.contacts.find( { “Poppy” : 1 } ) D. db.contacts.find( { “name.Poppy” : 1 } )",
+    "options": {},
+    "most_voted": "B"
+  }
+]
