@@ -42,32 +42,37 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Pick next provider and scrape
+      - name: Pick next providers and scrape
         run: |
           PROVIDER="${{ github.event.inputs.provider }}"
           EXAM="${{ github.event.inputs.exam }}"
 
-          if [ -z "$PROVIDER" ]; then
-            # Auto-pick: first provider in providers.txt with no data yet
-            while IFS= read -r line; do
-              [[ "$line" =~ ^#.*$ || -z "$line" ]] && continue
-              provider="$line"
-              if [ ! -d "data/$provider" ] || [ -z "$(ls -A data/$provider 2>/dev/null)" ]; then
-                PROVIDER="$provider"
-                break
-              fi
-            done < providers.txt
-          fi
-
-          if [ -z "$PROVIDER" ]; then
-            echo "All providers already scraped. Nothing to do."
+          # Manual single-provider override
+          if [ -n "$PROVIDER" ]; then
+            echo "Scraping provider: $PROVIDER"
+            if [ -n "$EXAM" ]; then
+              python scrape.py --provider "$PROVIDER" --exam "$EXAM" --commit
+            else
+              python scrape.py --provider "$PROVIDER" --commit
+            fi
             exit 0
           fi
 
-          echo "Scraping provider: $PROVIDER"
+          # Auto-pick up to 3 unscraped providers from providers.txt
+          COUNT=0
+          while IFS= read -r line; do
+            [[ "$line" =~ ^#.*$ || -z "$line" ]] && continue
+            provider="$line"
+            if [ ! -d "data/$provider" ] || [ -z "$(ls -A data/$provider 2>/dev/null)" ]; then
+              echo "Scraping provider: $provider"
+              python scrape.py --provider "$provider" --commit
+              COUNT=$((COUNT + 1))
+              if [ "$COUNT" -ge 3 ]; then
+                break
+              fi
+            fi
+          done < providers.txt
 
-          if [ -n "$EXAM" ]; then
-            python scrape.py --provider "$PROVIDER" --exam "$EXAM" --commit
-          else
-            python scrape.py --provider "$PROVIDER" --commit
+          if [ "$COUNT" -eq 0 ]; then
+            echo "All providers already scraped. Nothing to do."
           fi
