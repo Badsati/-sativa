@@ -1,7 +1,7 @@
 # Scraper Handoff
 
 **Repo:** https://github.com/Badsati/-sativa  
-**Purpose:** Scrape ExamTopics exam questions and store as JSON. Runs via GitHub Actions (rotating IPs — server IP never exposed to ExamTopics).
+**Purpose:** Scrape ExamTopics exam questions and store as JSON. Runs via GitHub Actions (rotating Azure IPs — server IP never exposed to ExamTopics).
 
 ---
 
@@ -10,21 +10,22 @@
 ```
 scrape.py                        Non-interactive CLI scraper (used by CI)
 main.py                          Interactive scraper (for local use)
+providers.txt                    Ordered list of 95 providers to scrape (low priority excluded)
 requirements.txt                 Python dependencies
 examtopics/                      Scraper module
   fast_scanner.py                Primary: parallel HTTP scanner (64 workers)
   browser_scraper.py             Fallback: Camoufox stealth browser (Playwright)
   question_parser.py             Extracts question, options, votes, discussion
-  http_client.py                 HTTP with retry and connection pooling
+  http_client.py                 HTTP with retry, 429 backoff, connection pooling
   cache.py                       HTML cache (6h TTL)
   parsers.py                     HTML parsing, block detection
   matching.py                    Provider/slug/question number matching
   output.py                      Writes .json and .txt output files
   cleaner.py                     Strips popups and noise from HTML
   settings.py                    All config in one place
-.github/workflows/scrape.yml     GitHub Actions workflow
+.github/workflows/scrape.yml     GitHub Actions workflow (cron every 6h + manual)
 docs/handoff.md                  This file
-data/                            Scraped output (committed here, pulled by server)
+data/                            Scraped output committed here, pulled by server
   {provider}/
     {exam}.json
 ```
@@ -34,33 +35,41 @@ data/                            Scraped output (committed here, pulled by serve
 ## How It Works
 
 1. **GitHub Actions** runs `scrape.py` on Ubuntu runners (Microsoft Azure IPs — not the server IP)
-2. The scraper auto-discovers all exams for a provider from `examtopics.com/exams/{provider}/`
-3. For each exam it scans all discussion listing pages, finds question links, fetches each question page
-4. Questions saved to `data/{provider}/{exam}.json` and committed back to this repo
-5. The server pulls this repo and seeds the JSON into the PostgreSQL DB
+2. Workflow reads `providers.txt` top-to-bottom and picks the first provider with no `data/{provider}/` folder yet
+3. Scraper auto-discovers all exams for the provider from `examtopics.com/exams/{provider}/`
+4. For each exam: scans all discussion listing pages, finds question links, fetches each page
+5. **Each exam commits and pushes immediately** after saving (incremental — no data lost on timeout)
+6. Server cron pulls this repo every 6h and seeds new JSON into PostgreSQL
 
 ### Two scraping modes
-- **Fast HTTP scanner** — plain HTTP requests with browser User-Agent, 64 parallel workers. Works unless IP is flagged.
-- **Camoufox fallback** — headless Firefox with humanized behavior, bypasses JS popups and Cloudflare. Kicks in automatically if HTTP gets blocked.
+- **Fast HTTP scanner** — plain HTTP, 64 parallel workers. Primary mode.
+- **Camoufox fallback** — headless Firefox with humanized behavior. Kicks in automatically if HTTP is blocked by Cloudflare.
+
+### Rate limiting protection
+- 1.5–3s random delay between each question page fetch
+- 429 responses trigger a 30s/60s/90s backoff retry (3 attempts) before giving up
+- If a question still fails after retries, it's skipped and logged as `[WARN]`
 
 ---
 
-## Triggering a Scrape
+## Workflow Behaviour
 
-Go to **Actions → scrape → Run workflow**
+**Scheduled (every 6 hours):** Auto-picks next unscraped provider from `providers.txt`. Runs until that provider is fully done, then stops. Next cron tick picks the next provider.
+
+**Manual trigger:** Go to **Actions → scrape → Run workflow**
 
 | Input | Description |
 |-------|-------------|
-| `provider` | Provider slug as it appears on ExamTopics (e.g. `ibm`, `sap`, `nutanix`) |
-| `exam` | *(optional)* Single exam slug (e.g. `C1000-162`). Leave blank to scrape all exams for the provider. |
+| `provider` | Force a specific provider (e.g. `sap`, `nutanix`). Leave blank to auto-pick. |
+| `exam` | Single exam slug (e.g. `C1000-162`). Leave blank to scrape all exams. |
 
-Results are automatically committed to `data/{provider}/`.
+**Provider order in `providers.txt`:** Phase 2 high-priority first (IBM, SAP, CheckPoint...), then medium, then Phase 1 providers last (already in DB).
 
 ---
 
 ## Output Format
 
-Each exam produces a `{exam}.json` file — a JSON array of question objects:
+Each exam: `data/{provider}/{exam}.json` — array of question objects:
 
 ```json
 [
@@ -79,54 +88,55 @@ Each exam produces a `{exam}.json` file — a JSON array of question objects:
 
 ---
 
-## Seeding into the DB
+## Server Setup (already done)
 
-The examience app's seed script currently reads `.md` files. To seed from these `.json` files, the seed script needs to be adapted to accept the JSON format above.
+| What | Where |
+|------|-------|
+| Repo clone | `/opt/examience-data/` |
+| Pull + seed script | `/opt/pull-and-seed.sh` |
+| Cron schedule | Every 6h (`0 */6 * * *`) |
+| Seed log | `/var/log/examience-seed.log` |
 
-**Server pull location:** `/opt/examience-data/` (to be set up — server pulls this repo here)
+**How the server seeds:**
+1. `git fetch` — checks for new commits on `origin/main`
+2. If new commits: `git pull`, then count `.json` files in `data/`
+3. Runs `DATA_DIR=/opt/examience-data/data npx tsx scripts/seed.ts`
+4. Seed script deduplicates: skips questions already in DB by `(examId, questionNumber)`
 
-**Seed command (once adapted):**
+**Check seed log:**
 ```bash
-DATA_DIR=/opt/examience-data npx tsx scripts/seed.ts
+tail -f /var/log/examience-seed.log
+```
+
+**Manual seed trigger:**
+```bash
+/opt/pull-and-seed.sh
 ```
 
 ---
 
-## Providers to Scrape (Phase 2)
+## Dedup Protection
 
-These are not in the existing GitHub cache and need live scraping:
+Nothing will overwrite or duplicate DB data:
 
-| Provider | ExamTopics Slug | Exam Count | Priority |
-|----------|----------------|------------|----------|
-| IBM | ibm | 112 | 🔥 |
-| SAP | sap | 62 | 🔥 |
-| NetApp | netapp | 34 | ⭐ |
-| CheckPoint | checkpoint | 22 | 🔥 |
-| GIAC | giac | 20 | ⭐ |
-| Nutanix | nutanix | 16 | ⭐ |
-| CyberArk | cyberark | 11 | ⭐ |
-| Workday | workday | 11 | ⭐ |
-| NVIDIA | nvidia | 8 | ⭐ |
-| F5 | f5 | 8 | ⭐ |
-| IAPP | iapp | 7 | ⭐ |
-| MuleSoft | mulesoft | 5 | ⭐ |
-| Veeam | veeam | 4 | ⭐ |
-| Atlassian | atlassian | 4 | ⭐ |
-| RedHat | redhat | 3 | 🔥 |
-| MongoDB | mongodb | 2 | ⭐ |
-| Confluent | confluent | 2 | ⭐ |
-| Zscaler | zscaler | 2 | ⭐ |
-| Aruba | aruba | 2 | ⭐ |
-| CNCF | cncf | 2 | ⭐ |
-| ISTQB | istqb | 21 | ⭐ |
-| SailPoint | sailpoint | 1 | 💤 |
-| DataDog | datadog | 1 | ⭐ |
+- **Layer 1** — within file: duplicate `questionNumber`s dropped before insert
+- **Layer 2** — against DB: fetches existing `questionNumber`s for each `examId`, only inserts new ones
+- **Layer 3** — pull script: exits early if no new git commits, seed never runs
 
 ---
 
-## Notes
+## Re-scraping a Failed Exam
 
-- Only free public questions are scraped. Questions behind contributor access come back empty — that is ExamTopics paywall, not a bug.
-- Cache is stored in `.examtopics_cache/` (gitignored) with a 6h TTL.
-- Re-running a workflow skips already-scraped exams (file existence check).
-- Phase 2 Docker container on the server (`exams-download-phase2-1`) is still running in parallel — whichever finishes first can be seeded.
+If an exam has missing questions (429 failures), to re-scrape:
+1. Delete `data/{provider}/{exam}.json` from the repo
+2. Commit and push
+3. Trigger the workflow for that provider — it will re-scrape the deleted exam
+
+---
+
+## Current Status (2026-10-04)
+
+- **IBM** — first run in progress (old workflow, commits at end of full run)
+- All subsequent runs use incremental per-exam commits
+- `scripts/seed.ts` in examience repo updated to read both `.md` and `.json`
+- Server cron and pull script are live and waiting for data
