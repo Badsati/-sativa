@@ -1,0 +1,547 @@
+[
+  {
+    "question": "How can a Citrix Administrator configure a rewrite policy to change the version of HTTP from 1.1 to 1.0 in every request? A. >add rewrite action RW_ACT replace http.res.version \"\\\"HTTPS/1.0\"\\\" > add rewrite policy RW_POL true RW_ACT B. >add rewrite action RW_ACT replace http.req.version \"\\\"HTTPS/1.1\"\\\" > add rewrite policy RW_POL true RW_ACT C. >add rewrite action RW_ACT replace http.res.version \"\\\"HTTPS/1.1\"\\\" > add rewrite policy RW_POL true RW_ACT D. >add rewrite action RW_ACT replace http.req.version \"\\\"HTTPS/1.0\"\\\" > add rewrite policy RW_POL true RW_ACT",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator needs to configure a Responder policy, so that the string `/mytraining` is added to every URL path received. The administrator should use these commands to accomplish this: >add responder action Redirect_Act redirect `HTTP.REQ.URL.PATH_AND_QUERY+\\`mytraining\\`` -responseStatusCode 302 >add responder policy Redirect_Pol___________Redirect_Act >bind lb vServer lb_vsrv_www -policyName Redirect_Pol -priority 100 -gotoPriorityExpression END -type_______ (Choose the correct option to complete the set of commands.) A. \"(HTTP.REQ.URL.STARTSWITH(\\\"mytraining\\\"))\" REQUEST B. \"(HTTP.REQ.URL.STARTSWITH(\\\"mytraining\\\"))\" RESPONSE C. \"!(HTTP.REQ.URL.ENDSWITH(\\\"mytraining\\\"))\" REQUEST D. \"!(HTTP.REQ.URL.ENDSWITH(\\\"mytraining\\\"))\" RESPONSE",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured an authentication, authorization, and auditing (AAA) policy to allow users access through the Citrix ADC. The administrator bound the policy to a specific vServer. Which policy expression will allow all users access through the vServer? A. true B. false C. ns_true D. ns_false",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two steps are necessary to configure global server load balancing (GSLB) service selection using content switching (CS)? (Choose two.) A. Bind the domain to the CS vServer instead of the GSLB vServer. B. Configure CS policies that designate a load-balancing vServer as the target vServer. C. Configure a CS vServer of target type GSLB. D. Bind the GSLB domain to the GSLB vServer.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two policies can a Citrix Administrator configure using only the advanced policy expression? (Choose two.) A. DNS B. Integrated caching C. SSL D. System",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Citrix Administrator needs to configure a Citrix ADC high availability (HA) pair with each Citrix ADC in a different subnet. What does the administrator need to do for HA to work in different subnets? A. Configure SyncVLAN B. Turn on fail-safe mode. C. Turn on HA monitoring on all Interfaces D. Turn on Independent Network Configuration (INC) mode.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator needs to configure persistence on a global server load balancing (GSLB) vServer to which a service is bound. Service must continue to handle requests from the client even after it is disabled manually `\" accepting new requests or connections only to honor persistence. After a configured period of time, no new requests or connections are directed to the service and all existing connections are closed. To achieve these requirements, which parameter can the administrator configure while disabling the service? A. Persistence threshold B. Persistence time-Out C. Wait time D. Request threshold",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured Citrix ADC load balancing to send requests to one of three identical backend servers. Each server handles multiple protocols, and load balancing is set up in round-robin mode. The current load-balancing setup on the Citrix ADC is: ✑ One load-balancing vServer with one externally accessible VIP ✑ One service created for each protocol type ✑ One server entity for each backend resource During business hours, the administrator wants to make changes to one backend server without affecting the other servers. What is the most efficient way for the administrator to ensure that all traffic is routed away from the server without impeding responses from other resources? A. Disable the backend service entity targeted for change. B. Disable the backend server entity targeted for change. C. Disable the load-balancing vServer. D. Unbind the correct server entity from the load-balancing vServer.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Citrix Administrator configured an external syslog server but is NOT seeing detailed TCP information. What could be causing this? A. Log facility is NOT configured. B. TCP logging is NOT enabled. C. User-defined audit log is NOT configured. D. Log level is NOT enabled.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Citrix Administrator is creating a new SSL vServer and notices the ns_default_ssl_profile frontend SSL profile is automatically bound to the SSL vServer. Which two actions can the administrator perform to change or remove the ns_default_ssl_profile_frontend SSL profile once it is enabled? (Choose two.) A. Globally unbind the ns_default_ssl_profile_frontend SSL. B. Unbind the default SSL profile and bind the newly created SSL profile. C. Create a separate SSL profile. D. Unbind the ns_default_ssl_profile_frontend SSL profile from the SSL vServer without binding a replacement SSL profile. E. Globally disable the ns_default_ssl_profile_frontend SSL profile.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured a global server load balancing (GSLB) setup for internal and external users using the same host name. For internal users, cvad.citrite.net should go to the Citrix StoreFront site; for external users, it should connect to the Citrix ADC Gateway VPN site. Which feature should the administrator configure to accomplish this? A. DNS Preferred Location B. DNS Record C. DNS View D. DNS Proxy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: The Citrix Administrator of a Linux environment needs to load balance the web servers. Due to budget constraints, the administrator is NOT able to implement a full-scale solution. What can the administrator purchase and install to load balance the webservers? A. Citrix ADC MPX B. Citrix ADC VPX C. Citrix ADC SDX D. Citrix ADC CPX",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the effect of the `set cs vServer vServer-CS-1 -redirectURL http://www.newdomain.com/mysite/` command? A. If the vServer-CS-1 encounters a high connection rate, then users will be redirected to http://www.newdomain.com/mysite/. B. If the status of vServer-CS-1 is DOWN, then users will be redirected to http://www.newdomain .com/mysite/. C. All the requests to vServer-CS-1 will be redirected to http://www.newdomain.com/mysite/. D. All the requests without URL path/mysite/ will be redirected to http://www.newdomain.com/mysite/.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is managing a Citrix Gateway with a standard Platform license and remote employees in the environment. The administrator wants to increase access by 3,000 users through the Citrix Gateway using VPN access. Which license should the administrator recommend purchasing? A. Citrix ADC Burst Pack B. Citrix Gateway Express C. Citrix Gateway Universal D. Citrix ADC Upgrade",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator downloaded and deployed Citrix Application Delivery Management (ADM) in an environment consisting of six Citrix ADCs and 100 virtual servers. When viewing the Citrix ADM console, the administrator sees only 30 virtual servers. Why is the administrator unable to see all 100 virtual servers? A. The nsroot passwords are NOT the same across all the Citrix ADCs. B. Citrix ADM is using a free license. C. Additional Citrix ADM systems need to be deployed to see all virtual servers. D. The Citrix ADC and Citrix ADM firmware versions are NOT the same.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Junior Citrix Administrator needs to create a content switching vServer on a Citrix ADC high availability (HA) pair. The NSIP addresses are 192.168.20.10 and 192.168.20.11. The junior administrator connects to NSIP address 192.168.20.10 and saves the changes. The following day, a Senior Citrix Administrator tests the new content switching vServer, but it is NOT working. The senior administrator connects to the HA pair and discovers that everything the junior administrator configured is NOT visible. Why has the Citrix ADC lost the newly added configurations? A. The junior administrator made the changes and did NOT force a failover to save the configuration. B. The junior administrator connected to the NSIP of the secondary Citrix ADC in the HA pair. C. Both Citrix ADCs in the HA pair restarted overnight. D. The Citrix ADC appliances have different firmware versions.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured a load-balancing vServer. The URL for this vServer is vpn.citrix.com. The backend server has the host name configured as server1.citrix.com. The administrator needs to implement the policy to change the host name from vpn.citrix.com to server1.citrix.com, and vice versa. Which does the administrator need to configure to meet this requirement? A. set transform action \"host change\" -priority 10 -reqUrlFrom \"https://vpn.citrix.com/*\" -reqUrlInto \"https://server1.citrix.com/*\" -resUrlFrom \"https:// server1.citrix.com/*\" -resUrlInto \"https://vpn.citrix.com/*\" B. set transform action \"host change\" -priority 10 -reqUrlFrom \"https://server1.citrix.com/*\" -reqUrlInto \"https://vpn.citrix.com/*\" -resUrlFrom \"https:// server1.citrix.com/*\" -resUrlInto \"https://vpn.citrix.com/*\" C. set transform action \"host change\" -priority 10 -reqUrlFrom \"https://server1.citrix.com/*\" -reqUrlInto \"https://vpn.citrix.com/*\" -resUrlFrom \"https://vpn.citrix.com/ *\" -resUrlInto \"https://server1.citrix.com/*\" D. set transform action \"host change\" -priority 10 -reqUrlFrom \"https://vpn.citrix.com/*\" -reqUrlInto \"https://server1.citrix.com/*\" -resUrlFrom \"https://vpn.citrix.com/ *\" -resUrlInto \"https://server1.citrix.com/*\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which step can a Citrix Administrator take to use default compression policies? A. Select the compression algorithm (gzip/deflate/identity). B. Disable the Citrix ADC compression feature at a global level. C. Enable compression on the associated bound services. D. Bind the default compression policies to the vServer.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: POLICY 1: add rewrite action ACT_1 corrupt_http_header Accept-Encoding add rewrite policy POL_1 HTTP.REQ.IS_VALID ACT_1 POLICY 2: add rewrite action ACT_2 insert_http_header Accept-Encoding `\\`identity\\`` add rewrite policy POL_2 `HTTP.REQ.IS_VALID ` ACT_2 How can a Citrix Administrator successfully bind the above rewrite policies to the load-balancing vServer lb_vsrv so that POL_2 is evaluated after POL_1 is evaluated? A. bind lb vServer lb_vsrv -policyName POL_1 -priority 110 -gotoPriorityExpression NEXT -type REQUEST bind lb vServer lb_vsrv -policyName POL_2 -priority 100 -gotoPriorityExpression END -type REQUEST B. bind lb vServer lb_vsrv -policyName POL_1 -priority 90 -gotoPriorityExpression NEXT -type REQUEST bind lb vServer lb_vsrv -policyName POL_2 -priority 100 -gotoPriorityExpression END -type REQUEST C. bind lb vServer lb_vsrv -policyName POL_1 -priority 90 -gotoPriorityExpression END -type REQUEST bind lb vServer lb_vsrv -policyName POL_2 -priority 80 -gotoPriorityExpression NEXT -type REQUEST D. bind lb vServer lb_vsrv -policyName POL_1 -priority 90 -type REQUEST bind lb vServer lb_vsrv -policyName POL_2 -priority 100 -type REQUEST",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator made changes to a Citrix ADC, deleting parts of the configuration and saving some new ones. The changes caused an outage that needs to be resolved as quickly as possible. There is no Citrix ADC backup. What does the administrator need to do to recover the configuration quickly? A. Restart the Citrix ADC. B. Restore from the revision history. C. Run saved versus running configuration. D. Run highly availability (HA) file synchronization.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator executed the following commands on the Citrix ADC: > add policy dataset Admin_group ipv4 > bind policy dataset Admin_group 192.168.149.10 -index 11 > bind policy dataset Admin_group 192.168.149.39 -index 12 > bind policy dataset Admin_group 192.168.149.49 -index 13 > add responder policy POL_1 `!(CLIENT.IP.SRC.TYPECAST_TEXT_T.CONTAINS_ANY(\\`Admin_group\\`))` RESET > bind lb vServer lb_vsrv_www -policyName POL_1 -priority 100 -gotoPriorityExpression END -type REQUEST What will be the effect of these commands? A. Only users with a source IP address of 192.168.149.10, 192.168.149.39, or 192.168.149.49 will be allowed to connect to vServer lb_vsrv_www. B. Only users with a source IP address of 192.168.149.10, 192.168.149.39, or 192.168.149.49 will be blocked when attempting to connect to vServer lb_vsrv_www. C. Only users with a source IP address of 192.168.149.10 or 192.168.149.39 will be allowed to connect to vServer lb_vsrv_www. D. All traffic from users with a source IP address of 192.168.149.10, 192.168.149.39, or 192.168.149.49 will be blocked through the Citrix ADC.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: Client connections to certain vServers are abnormally high. A Citrix Administrator needs to be alerted whenever the connections pass a certain threshold. How can the administrator use Citrix Application Delivery Management (ADM) to accomplish this? A. Configure network reporting on the Citrix ADM by setting the threshold and email address. B. Configure SMTP reporting on the Citrix ADM by adding the threshold and email address. C. Configure TCP Insight on the Citrix ADM. D. Configure specific alerts for vServers using Citrix ADM.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: While attempting to access web server that is load balanced by a Citrix ADC using HTTPS, a user receives the message below: SSL/TLS error: You have not chosen to trust `Certificate Authority` the issuer of the server's security certificate. What can a Citrix Administrator do to prevent users from viewing this message? A. Ensure that users have the certificate's private key. B. Ensure that users have the certificate's public key. C. Ensure that the server certificate is linked to its respective intermediate and root certificates. D. Ensure that users have the server certificate installed.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix ADC MPX is using one of four available 10G ports. A Citrix Administrator discovers a traffic bottleneck at the Citrix ADC. What can the administrator do to increase bandwidth on the Citrix ADC? A. Purchase another Citrix ADC MPX appliance. B. Plug another 10G Citrix ADC port into the router. C. Add two more 10G Citrix ADC ports to the network and configure VLAN. D. Add another 10G Citrix ADC port to the switch, and configure Link Aggregation Control Protocol (LACP).",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the first thing a Citrix Administrator should develop when creating a server certificate for Citrix ADC to secure traffic? A. A private key B. A certificate revocation list (CRL) C. A certificate signing request (CSR) D. A certificate key-pair",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Citrix Administrator needs to match the host name 'www.example.com' in all HTTP requests. Which expression, when used, meets this requirement? A. HTTP.REQ.HOSTNAME.EQ(\"www.example.com\") B. HTTP.RES.HOSTNAME.EQ(\"www.example.com\") C. HTTP.REQ.HOSTNAME(\"example.com\") D. HTTP.RES.HOSTNAME.CONTAINS(\"www.example.com\")",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Citrix ADC Access Control List (ACL) command can a Citrix Administrator use to bridge traffic originating from the IP address 192.168.10.200? A. add ns simpleacl6 B. add ns simpleacl C. add ns acl D. add ns acl6",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator gives permissions to team members to access their own admin partition. This will allow them to add resources for different departments and manage them without making changes to the default Citrix ADC partition and configuration. One team member trying to use the command line interface (CLI) to troubleshoot an authentication issue could NOT use aaad.debug. However, the team member has full permissions on the admin partition. What can be the cause of this issue? A. The team member is NOT using the CLI correctly. B. The team member needs to troubleshoot the issue from the GUI. C. The team member does NOT have permission to use the CLI. D. The team member does NOT have shell access by design.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Citrix Administrator receives user complaints about latency while accessing an application that is load balanced on the Citrix ADC. Which tool can the administrator use to gather information regarding response time, client network latency, and server-side processing time? A. Citrix Application Delivery Management (ADM) B. HDX Insight C. WAN Insight D. Security Insight",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: While using the GUI, a Citrix ADC MPX appliance becomes unresponsive. A Citrix Administrator needs to restart the appliance and force a core dump for analysis. What can the administrator do to accomplish this? A. Turn off the appliance using the power button. B. Use the reset button on the front of the appliance. C. Use the NMI button on the back of the appliance. D. Connect to a USB port to issue a restart command.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Administrator configured global server load balancing (GSLB) for www.citrix.com, with two ADNS services named Citrix ADC 1 and Citrix ADC 2 in the setup. Which record does the administrator need to add on the parent DNS server to delegate requests from www.citrix.com to Citrix ADC 1 and Citrix ADC 2? A. Canonical Name (CNAME) B. Address (A) record C. Name Server (NS) record D. Pointer Record (PTR)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator executed the following command in a global server load balancing (GSLB) environment: set gslb site SiteB -triggerMonitor MEPDOWN What will be the effect of this command on the default service monitoring behavior on a remote site? A. The service monitor is invoked only when Metric Exchange Protocol (MEP) has marked the service as DOWN. B. The service monitor is invoked only when Metric Exchange Protocol (MEP) connectivity has been lost between Site A and Site B. C. The service monitor will take precedence over Metric Exchange Protocol (MEP). D. The state of the GSLB service will always be controlled by Metric Exchange Protocol (MEP).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Citrix ADC monitor can a Citrix Administrator use to check the authentication service of the Active Directory (AD) domain controller? A. An LDAP monitor with the LDAP Script Name, Configured Base DN, Bind DN, Filter, Attribute, and Password parameters in the basic parameters. B. A ping monitor with the IP address of the AD domain controller in the special parameters C. A MYSQL-ECV monitor with the Base DN, Bind DN, Filter, Attribute, and Password parameters configured in the basic parameters D. A TCP monitor with the LDAP Base DN configured in the basic parameters.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Citrix Administrator needs to configure a rate-limiting policy setting DNS requests to a threshold of 1,000 per second. Which command does the administrator need to run to correctly configure this policy? A. HTTP.REQ.LIMIT( ) B. SYS.CHECK.LIMIT( ) C. SYS.CHECK.LIMIT( ) || CONNECTION.IP.LIMIT( ) D. SYS.CHECK.LIMIT( ) || HTTP.REQ.LIMIT( )",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which feature can a Citrix Administrator use to create a consistent set of front-end SSL parameters across multiple SSL vServers? A. SSL profile B. SSL multiplexing C. SSL bridge D. SSL policy",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: After deploying a Citrix ADC in production, a Citrix Administrator notices that client requests are NOT being evenly distributed among backend resources. The administrator wants to change from the default load-balancing method to one that will help distribute the load more evenly. Which load-balancing method would ensure that the server with the least amount of network utilization is receiving new connections? A. Least connection B. Least bandwidth C. Least response time D. Least packets",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator executed the command below: > set httpcallout httpcallout1 -cacheForSecs 120 This command changes the cache duration of the HTTP ____________ to be set to 120 seconds. (Choose the correct option to complete the sentence.) A. callout response B. request C. callout request D. response",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: The policies below are bound to a content switching vServer. bind cs vServer vserver1 -policyName CSPOL_7 -priority 100 -gotoPriorityExpression NEXT bind cs vServer vserver1 -policyName CSPOL_5 -priority 90 bind cs vServer vserver1 -policyName CSPOL_9 -priority 110 bind cs vServer vserver1 -policyName CSPOL_4 -priority 120 bind cs vServer vserver1 -policyName CSPOL_8 -priority 210 Policy CSPOL_7 has been invoked. Which policy will be invoked next? A. CSPOL_4 B. CSPOL_5 C. CSPOL_9 D. CSPOL_8",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A company has three departments with proprietary applications that need to be load balanced on a Citrix ADC. The three department managers would like to use the same IP address to access their individual applications. This would mean configuring three load-balanced vServers, all using the same IP address. What can the Citrix Administrator configure for this scenario? A. Three SNIPs with the same IP address on a Citrix ADC B. Three different Citrix ADCs that use the same IP address C. Three different admin partitions that allow use of the same IP address for each load-balanced vServer on a Citrix ADC D. Three different load-balanced vServers with three different IP addresses on a Citrix ADC",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is running an e-commerce web service that uses backend SQL and RADIUS servers. The e-commerce platform runs on a web server using port 80, and a website status page on port 99 reports the status of all servers. Which monitor should the administrator choose to confirm the availability of the e-commerce solution? A. HTTP on port 99 B. HTTP-ECV on port 80 C. HTTP on port 80 D. HTTP-ECV on port 99",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured a responder policy as follows: > add responder action Redirect_Act respondwith `DIAMETER.NEW_REDIRECT(\\`aaa://host.example.com\\`)` > add responder policy Redirect_Pol `diameter.req.avp(264).value.eq(\\`host1.example.net\\`)` Redirect_Act > bind lb vServer vs1 -policyName Redirect_Pol -priority 10 -type REQUEST What will be the effect of this configuration? A. Request originated from \"host1.example.net\" will be redirected to \"host.example.com\". B. Response originated from \"host1.example.net\" will be redirected to \"host.example.com\". C. Response originated from \"host.example.net\" will be redirected to \"host1.example.com\". D. Request originated from \"host.example.net\" will be redirected to \"host1.example.com\".",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Citrix Administrator needs to protect the HTTP backend server type without actually removing the header. Which rewrite action type can the administrator apply to the Citrix ADC configuration to accomplish this? A. REPLACE B. CORRUPT_HTTP_HEADER C. REPLACE_HTTP_REQ D. REPLACE_ALL",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Citrix ADC SDX architecture allows instances to share ___________ and __________. (Choose the two correct options to complete the sentence.) A. memory B. a CPU C. a physical interface D. the kernel",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which mode does a Citrix Administrator need to configure to allow a Citrix ADC to control the packet-forwarding function based on the route table lookups? A. MBF B. USIP C. Layer 2 D. Layer 3",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator executed the command below in an active-active, global server load balancing (GSLB) setup. set gslb parameter -ldnsprobeOrder DNS PING TCP The order to calculate the _____ for dynamic proximity will be the DNS UDP query followed by the ping and then TCP. (Choose the correct option to complete the sentence.) A. Time to live (TTL) B. Empty Domain Service (EDS) C. Multiple IP responses (MIR) D. Round-trip time (RTT)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A load-balancing vServer is configured to utilize the least bandwidth load-balancing method. A service attached to this vServer is brought into the effective state during production hours. During the startup of a vServer, which load-balancing method is used by default? A. Least connections B. Least bandwidth C. Custom load D. Round-robin",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator manages an environment that has a Citrix ADC high availability (HA) pair running on two MPX appliances. The administrator notices that the state of the secondary Citrix ADC is 'Unknown'. What is causing the secondary state to be 'Unknown'? A. The synchronization on the secondary appliance is disabled. B. TCP port 22 is disabled between the primary and secondary ADCs. C. The administrator made both Citrix ADCs primary. D. The remote procedure call (RPC) nodes are incorrectly configured.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix ADC receives packets destined for a MAC address owned by the Citrix ADC. The destination IP address of the packets does NOT belong to the Citrix ADC. Layer 3 mode is enabled by default on the Citrix ADC. The Citrix ADC will __________ the packets in this scenario. (Choose the correct option to complete the sentence.) A. route B. process C. bridge D. drop",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two protocols would provide end-to-end data encryption, while allowing a Citrix ADC to optimize the responses? (Choose two.) A. HTTP protocol for the services B. SSL bridge protocol for the vServer C. SSL bridge protocol for the services D. SSL protocol for the services E. HTTP protocol for the vServer F. SSL protocol for the vServer",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "set gslb vServer vServer-GSLB-1-MIR ENABLED What will the Citrix ADC appliance send when the above command is executed? A. The Remote GSLB service as the first record in the response and adds the remaining active services as additional records B. The Local GSLB service as the first record in the response and adds the remaining active services as additional records C. Only the best GSLB service in the response D. The best global server load balancing (GSLB) service as the first record in the response, and the remaining active services as additional records",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix ADC is configured with Interface 1/1 and bound to VLAN 40. A Citrix Administrator executes the below command: > bind vlan 20 -ifnum 1/1 What is the result of executing this command on the Citrix ADC? A. Interface 1/1 is bound to VLAN 20, and native VLAN is 20. B. Interface 1/1 is bound to VLAN 20, and native VLAN is NOT changed. C. Interface 1/1 is bound to VLAN 20, and native VLAN is 40. D. Interface 1/1 is bound to VLAN 20, and native VLAN is 1.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator needs to improve website loading speed. End users are reporting slow GIF image rendering speeds as they scroll down a website, which affects overall page load time. Which Citrix ADC feature can the administrator enable to improve website performance? A. Domain sharding B. Image lazy loading C. Image optimization D. Image shrink-to attributes",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Citrix Administrator needs to confirm that all client certificates presented to the authentication vServer are valid until the year 2023. Which expression can the administrator use to meet this requirement? A. CLIENT.SSL.CLIENT_CERT.VALID_NOT_AFTER.EQ(GMT2023) B. CLIENT.SSL.CLIENT_CERT.VALID_NOT_BEFORE.EQ(GMT2023) C. CLIENT.SSL.ORIGIN_SERVER_CERT.VALID_NOT_AFTER.EQ(GMT2023) D. CLIENT.SSL.CLIENT_CERT.DAYS_TO_EXPIRE.EQ(2023)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator would like to grant access to a Junior Citrix Administrator on the Citrix ADC. The administrator would like to grant full access to everything except the following: ✑ Shell ✑ User configuration ✑ Partition configuration Which preexisting command policy would meet the needs of this scenario? A. Sysadmin B. Operator C. Network D. Superuser",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured SNMP to send traps to an external SNMP system. When reviewing the messages, the administrator notices several entity UP and entity DOWN messages. To what are these messages related? A. Load-balancing vServers B. Network interface C. High availability nodes D. SSL profile",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "To protect an environment against Hash DoS attacks, which two configurations can a Citrix Administrator use to block all post requests that are larger than 10,000 bytes? (Choose two.) A. > add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\")&& http.REQ.CONTENT_LENGTH.GT(10000)\" > add rewrite policy drop_rewrite expr_hashdos_prevention DROP > bind rewrite global drop_rewrite 100 END -type REQ_OVERRIDE B. > add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\")&& http.REQ.CONTENT_LENGTH.GT(10000)\" > add responder policy pol_resp_hashdos_prevention expr_hashdos_prevention DROP NOOP > bind responder global pol_resp_hashdos_prevention 70 END -type REQ_OVERRIDE C. > add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\") || http.REQ.CONTENT_LENGTH.GT(10000)\" > add responder policy pol_resp_hashdos_prevention expr_hashdos_prevention DROP NOOP > bind responder global pol_resp_hashdos_prevention 70 END -type REQ_OVERRIDE D. > add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\") || http.REQ.CONTENT_LENGTH.GT(10000)\" > add rewrite policy drop_rewrite expr_hashdos_prevention DROP > bind rewrite global drop_rewrite 70 END -type REQ_OVERRIDE E. > add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\") || http.REQ.CONTENT_LENGTH.GT(10000)\" > add responder policy pol_resp_hashdos_prevention expr_hashdos_prevention DROP NOOP > bind responder global pol_resp_hashdos_prevention 100 END -type REQ_OVERRIDE F. > add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\") || http.REQ.CONTENT_LENGTH.GT(10000)\" > add rewrite policy drop_rewrite expr_hashdos_prevention DROP > bind rewrite global drop_rewrite 100 END -type REQ_OVERRIDE",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator suspects an attack on a load-balancing vServer (IP address 192.168.100.25). The administrator needs to restrict access to this vServer for 10 minutes. Which Access Control List (ACL) will accomplish this? A. add simpleacl rule1 DENY -srcIP 192.168.100.25 -TTL 600000 B. add simpleacl rule1 DENY -srcIP 192.168.100.25 -TTL 600 C. add ns acl rule1 DENY -destIP 192.168.100.25 -TTL 600000 D. add ns acl rule1 DENY -destIP 192.168.100.25 -TTL 600",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator manages an environment that has three SSL websites, all serving the same content. www.company.com www.company.net www.company.org The administrator would like to consolidate the websites into a single, load-balanced SSL vServer. What can the administrator bind to use a single SSL vServer? A. A wildcard certificate to a single SSL vServer B. A wildcard certificate to a content-switching vServer C. The certificate of each website to a single SSL vServer D. A multiple SAN certificate to a single SSL vServer",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: The primary content switching vServer has gone down. To troubleshoot, a Citrix Administrator has issued the following command: > show csvserver CSV CSV (10.1.100.100:443) -HTTPS Type: CONTENT State: UP Last state change was at Mon Jun 29 15:20:43 2020 Time since last state change: 1 day, 06:47:58 610 Client Idle Timeout: 180 sec Down state flush: ENABLED Disable Primary vServer On Down: DISABLED Appflow logging: ENABLED Port Rewrite: DISABLED State Update: DISABLED Default: Content Precedence: URL vServer IP and Port insertion: OFF Persistence: NONE redirect: http://www.site1.com/mysite1/maintenance Backup: vServer-LB-2 Listen Policy: NONE IcmpResponse: PASSIVE RHIstate: PASSIVE Traffic Domain: 0 Based on this output, where will the subsequent request be redirected? A. http://www.site1.com/mysite1/maintenance B. vServer-LB-2 C. Backup content switching vServer D. 10.1.100.100:443",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Citrix Administrator needs to use a client's IP address as the source IP address for Citrix ADC-to-server connections. Which Citrix ADC mode can the administrator use to meet this requirement? A. USNIP B. Layer 2 C. Layer 3 D. USIP",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: Users are trying to access https://cs.mycompany.com, but are receiving the error below: HTTP 503 Service Unavailable What can a Citrix Administrator change in the Citrix ADC configuration to fix this? A. Enable the content switching feature. B. Disable the spillover redirect URL. C. Bind a certificate. D. Bind the default load-balancing vServer.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator needs to integrate LDAP for Citrix ADC system administration using current active directory (AD) groups. The administrator created the group on the Citrix ADC, exactly matching the group name in LDAP. What can the administrator bind to specify the permission level and complete the LDAP configuration? A. A command policy to the group B. A nested group to the new group C. Users to the group on the Citrix ADC D. An authentication, authorization, and auditing (AAA) action to the group",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator entered the configuration below: > add rewrite policy pol_external_to_internal 'http.req.hostname.server.eq(\"host_name_of_external_Web_server\")' act_external_to_internal Which two possible rewrite actions can the administrator choose when a rewrite policy evaluates to TRUE? (Choose two.) A. Deny B. Bypass C. Reset D. Drop",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is configuring a Citrix ADC high availability (HA) pair. The administrator needs to ensure that one Citrix ADC is UP and primary at all times to guarantee that business websites are always available. In the event that both nodes become unavailable or fail a health check, what does the administrator need to do to ensure that the Citrix ADCs still handle web traffic? A. Configure HA fail-safe mode on the primary Citrix ADC only. B. Disable HA fail-safe mode on each Citrix ADC independently. C. Configure HA fail-safe mode on each Citrix ADC independently. D. Disable HA fail-safe mode on the primary Citrix ADC only.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which four authentication types can a Citrix Administrator use for Citrix ADC authentication, authorization, and auditing (AAA) multifactor authentication? (Choose four.) A. RADIUS B. OAuth C. FIDO2 D. NTLM E. ADFS F. LDAP G. TACACS+",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Citrix ADC feature can a Citrix Administrator employ to reuse existing TCP connections? A. TCP buffering B. Connection multiplexing C. Keep-alive D. Content switching",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: For security reasons, a Citrix Administrator needs to block access to multiple URLs. The administrator executes the below commands: > add policy patset BAD_URL > bind policy patset BAD_URL badurl1.mylab.lab -index 11 -charset ASCII > bind policy patset BAD_URL badurl2.mylab.lab -index 10 -charset ASCII Which final two commands should the administrator execute to accomplish this? A. > add responder policy BAD_URL_DNS \"DNS.REQ.QUESTION.DOMAIN.CONTAINS(\\\"BAD_URL\\\")\" DROP > bind responder global BAD_URL_DNS 100 END -type DNS_REQ_OVERRIDE B. > add responder policy BAD_URL_DNS \"DNS.REQ.QUESTION.DOMAIN.CONTAINS_ANY(\\\"BAD_URL\\\")\" RESET > bind responder global BAD_URL_DNS 100 END -type DNS_REQ_OVERRIDE C. > add responder policy BAD_URL_DNS \"DNS.REQ.QUESTION.DOMAIN.CONTAINS(\\\"BAD_URL\\\" RESET > bind responder global BAD_URL_DNS 100 END -type DNS_REQ D. > add responder policy BAD_URL_DNS \"DNS.REQ.QUESTION.DOMAIN.CONTAINS(\\\"BAD_URL\\\" RESET > bind responder global BAD_URL_DNS 100 END -type DNS_REQ_OVERRIDE",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator created and bound multiple content switching policies. During testing, attempts to access https://cs.mycompany.com resulted in the error message below: HTTP 503 Service Unavailable In a Citrix ADC configuration, what can the administrator do to fix the error? A. Disable the spillover redirect URL. B. Bind a certificate C. Enable the content switching feature D. Check the priorities of the existing policies",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In an SSL offload deployment, which policy will allow a Citrix Administrator to modify all URLs in the response body from \"http://\" to \"https://\"? A. > add rewrite action Act1 replace_all \"HTTP.RES.BODY(200000)\" \"\\\"http://\\\"\" -pattern \"https://\" > add rewrite policy Pol1 true Act1 NOREWRITE B. > add rewrite action Act1 replace_all \"HTTP.RES.BODY(200000)\" \"\\\"http:\\\"\" -pattern \"\\https://\\\" > add rewrite policy Pol1 true Act1 NOREWRITE C. > add rewrite action Act1 replace_all \"HTTP.RES.BODY(200000)\" \"\\\"https //\\\"\" -pattern \"http://\" > add rewrite policy Pol1 true Act1 NOREWRITE D. > add rewrite action Act1 replace_all \"HTTP.RES.BODY(200000)\" \"\\\"https:\\\"\" -pattern \"http://\" > add rewrite policy Pol1 true Act1 NOREWRITE",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In a global server load balancing (GSLB) active-active environment, the connection proxy is used as the site persistence method. What is used to source the traffic when the connection is proxied? A. Subnet IP (SNIP) B. LDNS IP Address C. Client source IP D. Virtual IP (VIP)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which profile can a Citrix Administrator create to configure a default profile that disables TLSv1? A. DTLS B. TCP C. SSL D. HTTP",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator installed the compression feature on the web servers. To offload the compression on the Citrix ADC, the administrator configured the Citrix ADC appliance to remove the ‘Accept Encoding’ header from all HTTP client requests. However, the administrator observes that data is NOT being compressed by the Citrix ADC, even though the ‘Accept Encoding’ header is being removed from all requests. What could be the cause of this issue? A. The rewrite policy is bound at an incorrect bind point B. The servers are automatically compressing all responses C. The compression policy needs to be reconfigured D. Servercmp is disabled on the Citrix ADC",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Citrix Administrator needs to bind a URL transformation policy. Which three bind points could the administrator use? (Choose three.) A. Authentication, authorization, and auditing (AAA) group B. Content switching vServer C. Default global D. Policy label E. AAA user",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which setting is responsible for reducing the server load, improving response time, and increasing the number of SSL transactions per second on an SSL vServer? A. SSLv3 B. Session timeout C. SSLv2 redirect D. Session reuse",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured a rewrite action as follows: > add rewrite action sync_date replace http.res.date.sys.time What is the correct way to interpret this rewrite action? A. It replaces the date header in the HTTP response with the Citrix ADC system time in a conventional date format. B. It replaces the date header in the HTTP response with the Greenwich Mean Time (GMT) time stamp. C. It replaces the Citrix ADC system time with the date header in a conventional date format. D. It is invalid, as system time CANNOT be referenced in the system policy.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator needs to create local, limited-privilege user accounts for other administrators. The other administrators will require only: • Read-only access • The ability to enable and disable services and servers Which built-in command policy permission level can the administrator use? A. Operator B. Network C. Sysadmin D. Read-only",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two options are only allowed when creating advanced policies? (Choose two.) A. TCP B. IP C. CLIENT D. DNS E. SQL",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured a Citrix ADC active-passive, high availability (HA) pair. The HA pair failed over and customers were unable to access hosted websites. The administrator troubleshoots and discovers that the upstream router is NOT updating its ARP table. What can the administrator configure to resolve this issue? A. Independent Network Configuration (INC) mode B. Route monitor C. HA monitor D. Virtual MAC",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is managing a Citrix ADC SDX running eight Citrix ADC instances. The administrator needs to upgrade the firmware on the instances. However, the administrator is concerned that it needs to be done simultaneously. What upgrading flexibility does SDX provide in this scenario? A. The Citrix ADC instances must be upgraded simultaneously. B. The Citrix ADC instances can be upgraded from the lights out management (LOM) port and Citrix Cloud services to different firmware versions. C. The Citrix ADC instances can be upgraded on an individual basis, allowing all instances to run independent firmware versions. D. The Citrix ADC instances can be upgraded at the SDX management level, allowing all instances to be upgraded simultaneously.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "To improve page-rendering time a Citrix Administrator needs to overcome the connection limitation by enabling client browsers to simultaneously download more resources. What should the administrator enable while configuring the front end optimization (FEO) feature? A. HTML comments removal B. Image lazy loading C. CSS import to link D. Domain sharding",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator currently manages a Citrix ADC environment for a growing retail company that may soon double its business volume. A Citrix ADC MPX 5901 is currently handling web and SSL transactions, but is close to full capacity. Due to the forecasted growth, the administrator needs to find a cost-effective solution. What cost-effective recommendation can the administrator provide to management to handle the growth? A. The addition of another MPX 5901 appliance B. A hardware upgrade to a Citrix ADC MPX 8905 C. A license upgrade to a Citrix ADC MPX 5905 D. A hardware upgrade to a Citrix ADC SDX 15020",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: While performing a disaster recovery test, a Citrix Administrator decides to failover the Citrix ADC high availability (HA) pair appliances. The administrator notices that the failover is NOT working as expected, and the secondary Citrix ADC is NOT taking over as primary. The administrator suspects that networking issues may be causing the failure. What could be the cause of this issue? A. HA monitoring is enabled on an interface of the secondary node that shows as ENABLED, DOWN. B. The Independent Network Configuration (INC) mode is enabled on the primary node. C. HA monitoring is enabled on a disabled interface of the primary node. D. HA heartbeats are only seen on some enabled interfaces of the secondary node.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is configuring load balancing on a Citrix ADC appliance for company web servers. The administrator needs to create a custom monitor that will look for a specific keyword response from the website, which will be used to keep services in an UP state. Which monitor can the administrator create to meet this requirement? A. An HTTP-ECV monitor with the keyword in the Special Parameters - Receive String field B. An HTTP-ECV monitor with the keyword in the Basic Parameters - Receive String field C. An HTTP-ECV monitor with the keyword in the Special Parameters - Receive String field, and the Reverse option enabled D. An HTTP-ECV monitor with the keyword in the Basic Parameters - Send String field",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which mode on a Citrix ADC can a Citrix Administrator utilize to avoid asymmetrical packet flows and multiple route/ARP lookups? A. MAC-based forwarding (MBF) B. Use Subnet IP (USNIP) C. Layer 3 D. Layer 2",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A company acquires three smaller companies, which adds more than 1.500 employees to the organization. The current Citrix ADC appliance does NOT support adding that many users. A Citrix Administrator needs to use a multi-tenant solution, giving each newly acquired company its own Citrix ADC for VPN access, load balancing, and a minimum of 20 Gbps of throughput. How can the administrator meet the needs of these newly acquired companies? A. Purchase a Citrix ADC CPX for each B. Install XenServer and configure a Citrix ADC VPX 3000 for each C. Purchase a Citrix ADC MPX appliance for each D. Purchase a Citrix ADC SDX appliance, and configure a Citrix ADC instance for each",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two statements are true regarding a typical global server load balancing (GSLB) setup? (Choose two.) A. Restrict the selection of a GSLB service from a subset of GSLB services bound to a GSLB vServer for the given domain. B. An administrator CANNOT define a backup for a backup vServer in an active standby GSLB setup for a given GSLB domain. C. Apply spillover policies on a subset of GSLB services, and ensure that the user CANNOT have a backup for a subset of GSLB services. D. Any given GSLB vServer can load balance only one fully qualified domain name (FQDN).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Citrix Administrator notices that the Citrix ADC is sending the IP addresses of all the active services in the DNS response. The administrator can use the set gslb vServer __________________ parameter to change this behavior. A. EDR ENABLED B. MIR DISABLED C. MIR ENABLED D. EDR DISABLED",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured a responder policy as follows: > add responder action Picture10Action redirect \"\\\"http://\\\" + http.req.hostname + http.req.url + \\\"/picture10.html\\\"\" -bypassSafetyCheck YES > add responder policy Picture10Policy \"http.req.url.eq(\\\"/mywebsite\\\")\" Picture10Action > bind responder global Picture10Policy 1 END -type OVERRIDE What will be the effect of this configuration? A. The URL http://www.mywebsite.com will be overwritten with /picture10.html. B. Clients accessing http://www.mywebsite.com/ will have /picture10 html appended to the URL. C. Clients accessing http://www.mywebsite.com/picture10.html will be overwritten with http://www.mywebsite com/. D. The file Picture10 will be downloaded to a local drive when directly accessing http://www.mywebsite.com/picture10.html.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Users are experiencing resets from the intranet server website, which is load balanced through the Citrix ADC. Which Citrix ADC tool can a Citrix Administrator use to troubleshoot the reset issue? A. View the newnslog from the command line interface (CLI) to look for packet resets from the Citrix ADC. B. Use the nslog to look for packet resets on the Citrix ADC. C. Take a packet trace with nstrace and analyze with Wireshark. D. Look in the event viewer for packet resets from the Citrix ADC",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is concerned about the number of health checks the Citrix ADC is sending to backend resources. The administrator wants to find a way to remove health checks from specific bound services. How can the administrator accomplish this? A. Unbind the current monitor. B. Use the no-monitor option. C. Use service groups to minimize health checks. D. Use reverse-condition monitoring.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator manages an environment that has an externally accessible website. The administrator would like to provide end-to-end encryption, and use features such as caching and compression on the Citrix ADC. Which setting should the administrator configure to meet this requirement? A. SSL front-end, HTTP backend B. SSL_TCP front-end, SSL_TCP backend C. SSL front-end, SSL backend D. SSL_TCP front-end, TCP backend",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Citrix Administrator needs to configure a rate-limiting policy setting DNS requests to a threshold of 1,000 per second. Which set of commands does the administrator need to run to correctly configure and enable this policy? A. > add stream selector DNSSelector1 client.udp.dns.domain > add ns limitIdentifier DNSLimitIdentifier1 -threshold 5 -timeSlice 1000 -selectorName DNSSelector1 > add dns policy DNSLimitPolicy1 \" sys.check_limit(\\\"DNSLimitIdentifier1\\\")\" -preferredLocation \"North America.US.TX.Dallas.. \" > bind dns global DNSLimitPolicy1 5 B. > add stream selector DNSSelector1 client.udp.dns.domain > add ns limitIdentifier DNSLimitIdentifier1 -threshold 1000 -timeSlice 1000 -selectorName DNSSelector1 > add dns policy DNSLimitPolicy1 \" sys check_limit(\\\"DNSLimitIdentifier1\\\")\" -preferredLocation \"North America.US.TX.Dallas.. \" > bind dns global DNSLimitPolicy1 5 C. > add stream selector DNSSelector1 client.udp.dns.domain > add ns limitIdentifier DNSLimitIdentifier1 -threshold 5 -timeSlice 1000 -selectorName DNSSelector1 > add dns policy DNSLimitPolicy1 \" sys.check_limit(\\\"DNSLimitIdentifier1\\\")\" -preferredLocation \"North America.US.TX.Dallas.. \" D. > add stream selector DNSSelector1 client.udp.dns.domain > add ns limitIdentifier DNSLimitIdentifier1 -threshold 1000 -timeSlice 1000 -selectorName DNSSelector1 > add dns policy DNSLimitPolicy1 \" sys check_limit(\\\"DNSLimitIdentifier1\\\")\" -preferredLocation \"North America.US.TX.Dallas.. \"",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator manages a Citrix SDX appliance with several instances configured. The administrator needs to enable Layer 2 mode on two instances. When using a shared network interface, what must the administrator do to ensure that traffic flows correctly? A. Ensure Layer 3 and Layer 2 modes are enabled. B. Enable tagging on all interfaces. C. Enable MAC-based forwarding (MBF) mode. D. Disable Layer 2 mode on a Citrix ADC instance.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "If a policy evaluates as_________________, a Citrix ADC performs the action assigned to the ____________ condition and stops further policy evaluation. A. TRUE; FALSE B. UNDEFINED; TRUE C. UNDEFINED; FALSE D. UNDEFINED; UNDEFINED",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two items must be true for a client to connect to an SSL offload vServer without any SSL errors? (Choose two.) A. The server certificate is from a private certificate authority (CA). B. The server certificate is bound to the load-balancing vServer. C. The root certificate is installed on the Citrix ADC. D. The root certificate is installed on the client’s device.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which log records detailed information such as statistics, metrics, and debug information in a proprietary binary format on the Citrix ADC? A. Nslog B. Nsconfig C. Nstrace D. Syslog",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Citrix ADC platform offers an out-of-the-box multi-tenant solution? A. VPX B. SDX C. MPX D. CPX",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "set gslb parameter - GSLBSvcStateDelayTime 10 When metrics exchange protocol (MEP) is enabled, what is the effect of the above command on the global server load balancing (GSLB) environment? A. The GSLB services will be marked as DOWN if the MEP connection has been DOWN for 10 seconds. B. The MEP will be marked as DOWN if the GSLB service has been DOWN for 10 seconds. C. The MEP will be marked as DOWN if the GSLB vServer has been DOWN for 10 seconds. D. The GSLB services will be marked as DOWN if the LB server has been DOWN for 10 seconds.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where do the monitor probes originate by default, after creating and correctly configuring a custom user monitor? A. MIP B. VIP C. SNIP D. NSIP",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configures an Access Control List (ACL) to block traffic from the IP address 10.102.29.5: add simpleacl rule1 DENY -srcIP 10.102 29.5 A week later the administrator discovers that the ACL is no longer present on the Citrix ADC. What could be the reason for this? A. The administrator did NOT run the apply ACL command. B. The simple ACLs remain active for only 600 seconds. C. The simple ACLs remain active for only 60 seconds. D. The Citrix ADC has been restarted without saving the configurations.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured the rewrite policies below: bind lb vServer VIP1_http -policyName POL_14 -priority 120 -gotoPriorityExpression END -type REQUEST bind lb vServer VIP1_http -policyName POL_12 -priority 90 -gotoPriorityExpression NEXT -type REQUEST bind lb vServer VIP1_http -policyName POL_15 -priority 100 -gotoPriorityExpression END -type REQUEST bind lb vServer VIP1_http -policyName POL_13 -priority 101 -gotoPriorityExpression NEXT -type REQUEST Which policy will be evaluated last, considering POL_12 is hit first? A. POL_12 B. POL_13 C. POL_14 D. POL_15",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What can a Citrix Administrator use to restrict access to the Citrix ADC management IP (NSIP) address? A. Command policy B. Access Control List (ACL) C. Authentication policy D. Authorization policy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: To receive data alerts for failures, a Citrix Administrator is configuring SNMP on the Citrix ADC. The administrator is confident that the manager, alarms and SNMP traps are configured correctly. The following week, there is a Citrix ADC-related outage and the administrator does NOT receive any alerts. What could be the reason for this alert failure? A. The Citrix Web App Firewall is blocking the alerts from going out. B. The community name was NOT configured in the Citrix ADC SNMP trap destination settings. C. The Citrix ADC only has standard licensing. D. The Citrix ADC is configured for SNMP version 1.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is configuring a Citrix ADC high availability (HA) pair with an existing primary Citrix ADC with all resources configured. The administrator adds the secondary Citrix ADC in HA and discovers that the configuration on the existing primary was removed and is now the secondary Citrix ADC in the HA pair. Which two configurations could the administrator have used to prevent this from happening? (Choose two.) A. Set the primary Citrix ADC to stay primary in the Configure HA Node settings. B. Set the secondary Citrix ADC to stay secondary in the Configure HA Node settings. C. Enable HA monitoring on all secondary device interfaces. D. Enable HA monitoring on all primary device interfaces.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: In general, it is recommended to do the following: • Use _________ if you want the Citrix ADC to reset or drop a connection based on a client or request-based parameter. • Use _________ to redirect traffic or respond with custom messages. • Use _________ for manipulating data on HTTP requests and responses. A. rewrite, rewrite, responder B. responder, responder, rewrite C. rewrite, responder, rewrite D. responder, redirect, rewrite",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator needs to grant read-only access to a select set of NetScaler features. Corporate password security schema must be supported. Which three steps must the administrator take to complete this task? (Choose three.) A. Bind the built-in read-only command policy to required users/groups. B. Create a Custom Command Policy. C. Create an Authentication Policy for LDAP authentication. D. Create local system accounts that correspond to User Objects in Active Directory. E. Create an Authentication LDAP server.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator entered the command line interface (CLI) commands below to prevent IP address 10.10.10.100 from accessing the NetScaler on port 80. > add simpleacl rule1 DENY -srcIP 10.10.10.100 -TTL 600 > add simpleacl rule2 DENY -srcIP 10.10.10.100 -destPort 80 > add ns acl rule1 DENY -srcIP 10.10.10.100 -priority 10 > add ns acl rule2 DENY -srcIP 10.10.10.100 -priority 100 apply ns acls Which access control list (ACL) will the NetScaler use to satisfy the scenario? A. add ns acl rule1 DENY -srcIP 10.10.10.100 -priority 10 B. add simpleacl rule2 DENY -srcIP 10.10.10.100 -destPort 80 C. add simpleacl rule1 DENY -srcIP 10.10.10.100 -TTL 600 D. add ns acl rule2 DENY -srcIP 10.10.10.100 -priority 100",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator needs to implement a NetScaler solution. The appliance must be able to grow with increasing bandwidth demand and SSL offload performance. Which two NetScaler platforms should the administrator choose to accommodate these requirements? (Choose two.) A. SDX B. BLX C. MPX D. CPX E. VPX",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What must a Citrix Administrator configure when adding a secondary device in a high availability (HA) pair? A. The HA status of the primary node as Stay Primary B. The same nsroot password on both nodes C. Different SNIP addresses on both nodes D. Independent Network Configuration (INC)",
+    "options": {},
+    "most_voted": "A"
+  }
+]
