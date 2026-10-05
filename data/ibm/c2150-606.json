@@ -1,0 +1,102 @@
+[
+  {
+    "question": "A Guardium administrator needs to monitor an Oracle database on a production database server. Which component does the administrator need to install on this database server that will monitor the traffic? A. S-TAP B. Guardium Collector C. Guardium Installation Manager (GIM) D. Configuration Auditing System (CAS)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium administrator is setting up a Collector schedule to export data to an Aggregator and Archive its data to an Archive storage unit for additional data safety. Given this scenario, which is true regarding the purge schedule? A. The Archive and the Export have independent purge schedules but should not be run at the same time. B. The Guardium unit would run the Export and Archive before any purge, so you would only see the last purge run each day. C. It would not be possible to configure both on a Collector, the Aggregator should do the archiving and only export from the Collector. D. Any time that Data Export and Data Archive are both configured, the purge age must be greater than both the age at which to export and the age at which to",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium administrator needs to monitor changes to the Oracle configuration file on a production Oracle database server. Assuming all valid licenses are applied, which Guardium component does the administrator need to install and where? A. Guardium Installation Manager (GIM) on the Database Server. B. Configuration Auditing System (CAS) on the Database Server. C. Configuration Auditing System (CAS) on the Guardium Collector. D. Configuration Auditing System (CAS) on the Database Server and on the Guardium Collector.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Guardium reports are showing multiple records with client ip as 0.0.0.0. Users are unable to identify which client the connections came from. The Guardium administrator has identified that the databases are using encryption. Which column can the administrator add that would help users to better identify the client? A. Client OS B. Client MAC C. Access ID D. Analyzed Client IP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which use cases are covered with the File Activity Monitoring feature? (Select two.) A. Classify sensitive files on mainframe systems. B. Encrypts database data files on file systems based on policies. C. Selectively redacts sensitive data patterns in files based on policies. D. Provides audit trail of access to files, alert and/or block when unauthorized users or processes attempt access. E. Identifies files containing Personally Identifiable Information (PII) or proprietary confidential information on Linux Unix Windows (LUW) systems.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "During the initial phase of the Guardium deployment, the Guardium administrator wants to figure out an ideal time period to purge data from the appliance based on the data load. Which predefined Guardium report(s) allows the administrator to determine the current database disk usage of the Guardium Appliance? A. Disk Util report B. Aggregation/Archive log C. DB Server throughput report D. Buff Usage Monitor and System Monitor reports",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium administrator noticed that while the data activity monitoring is working fine, the Guardium appliance is slower than usual. The administrator wants to check the current CPU load of the Guardium appliance. Which predefined Guardium report(s) allows the administrator to determine the current system CPU load of the Guardium Appliance? A. CPU Util report B. CPU Tracker report C. Unit summary and CPU Util report D. Buff Usage Monitor and System monitor report",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium administrator must configure a policy to ignore all traffic from an application with a known client IP. Due to the high amount of traffic from this application, performance of the S-TAP and sniffer is a concern. What action should the administrator use in the rule? A. Ignore Session B. Ignore S-TAP Session C. Ignore SQL per Session D. Ignore Responses per Session",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The quard_tap.ini of a UNIX S-TAP is configured with the following parameters: firewall_installed=1 firewall_fail_close=0 firewall_default_state=0 firewall_timeout=10 A Guardium administrator applies a policy to the Collector with two rules as below. The actions of the rules have been hidden. [sampleXML/xmlfile-15_1.jpg] [sampleXML/xmlfile-15_2.jpg] The administrator must create a policy that will terminate the session on the delete statement in the below scenario: A session is started to the monitored database from client IP 9.9.8.7. In the session the user plans to perform a select statement and then a delete statement. What actions should the administrator configure? A. Rule 1 - S-GATE Attach Rule 2 - S-GATE Detach B. Rule 1 - S-GATE Detach Rule 2 - S-GATE Terminate C. Rule 1 - S-GATE Attach Rule 2 - S-GATE Terminate D. Rule 1 - S-TAP Terminate",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium policy has been configured with the following two rules: [sampleXML/xmlfile-16_1.jpg] [sampleXML/xmlfile-17_1.jpg] A Guardium administrator is required to check for SQL statements from client IP 9.4.5.6 executed on object \"TABLE1\". What domain(s) can the administrator create a report in to see the SQL? A. Access B. Policy Violations C. Access and Access Policy D. Access and Policy Violations",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium administrator needs to use CLI commands to maintain the internal database, clean static orphans, produce static system reports and to monitor live network traffic filtered by IP addresses and port numbers. Which combination of commands should the administrator use for these tasks? A. diag and iptraf B. diag and trace_route C. iptraf and support must_gather D. support must_gather and show network verify",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "During a Guardium deployment planning meeting, a database administrator indicated that the mission critical databases were clustered. How should the Guardium administrator handle S-TAP installation and configuration with respect to clustered databases? A. Install S-TAP agents on all active nodes. Set ALL_CAN_CONTROL=1 to failover the S-TAP process to the passive nodes when a database failover occurs. B. Install S-TAP agents on all active nodes. Set WAIT_FOR_DB_EXEC=-1 to set the agent process to failover to the passive node when a database failover occurs. C. Install S-TAP agents on all active and passive nodes. Set ALL_CAN_CONTROL=0 to disable all passive nodes until a database failover occurs. D. Install S-TAP agents on all active and passive nodes: Set WAIT_FOR_DB_EXEC>0 on all nodes to start S-TAP processes without waiting for a correct DB",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium administrator is preparing a command to install Configuration Auditing System (CAS) on a Linux server using the command line method. Which parameter is required? A. dir B. tapip C. java-home D. sqlguardip",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium administrator installed an S-TAP but is not seeing any data in reports on the collector. The administrator discovered that an Inspection Engine is not configured for that S-TAP. What is an Inspection Engine? A. A piece of software residing on the Collectors. B. Another software to be installed on the Database server. C. The same thing as the policy and it runs on the S-TAP to inspect the traffic in real-time. D. A set of parameters needed for the S-TAP to define how to monitor traffic for a particular database instance on a server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The guard_tap.ini of a UNIX S-TAP is configured with the following parameters: firewall_installed=1 firewall_fail_close=1 firewall_default_state=1 firewall_timeout=10 The collector that this S-TAP is sending data to has become unavailable and there is no failover option configured. A Guardium administrator must communicate the impact of this outage to users of the monitored database. What should the administrator advise is the expected behavior for a database session? A. The session will not experience any latency or termination. B. No SQL can be executed and after 10 seconds the session will be terminated. C. In the first 10 seconds of the session SQL can be executed, then the session is terminated. D. In the first 10 seconds of the session no SQL can be executed, then the session will work as normal.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator manages a Guardium environment including 4 Collectors exporting data to an Aggregator. The Collectors export their data daily at 2, 3, 4 and 5 am Eastern Standard Time (EST) respectively. The Collectors receive traffic every day. The logs on all the Collectors confirm data is exported daily without errors, and all the exported files always have data. A Session report is run on the Aggregator at noon EST for data from the last day. Which of the following will ensure there is data in the report? A. Schedule Data Purge on the Aggregator to run every day after 5 am EST. B. Schedule Data Import on the Aggregator to run at any time of the day. C. Schedule Data Import in the Aggregator to run every day before 2 am EST. D. Schedule Data Import on the Aggregator to run every day at 6 am EST or later.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has recently acquired Guardium software entitlement to help meet their upcoming PCI-DSS audit requirements. The company is entitled to Standard Guardium DAM offering. Which of the following features can the Guardium administrator use with the current entitlement? (Select two.) A. Run Vulnerability Assessment reports B. Generate audit reports using PCI-DSS Accelerator C. Block and quarantine an unauthorized database connection D. Mask sensitive PCI-DSS information from web application interface E. Log and alert all database activities that access PCI-DSS Sensitive Objects.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium administrator must configure real time policy alerts to be sent to a remote SIEM for every SQL statement run on a sensitive object. There is no requirement for the data to be viewed or reported on in the Guardium appliance. Which policy action would achieve that task and store the least amount of data in the Guardium internal database? A. Log Only B. Alert Only C. Alert Daily D. Alert Per Match",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Guardium administrator needs to use both CLI and GrdAPI functions to manage the system. Which are the two commands that the administrator can use to search for the required commands and their syntax from within either CLI or GrdAPI? A. CLI: commands <search option> GrdApi: grdapi <search option> --help B. CLI: help <search option> GrdApi: grdapi --help <search option> C. CLI: commands <search option> GrdAPI: grdapi command <search option> D. CLI: <search option> --help",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator just installed the Guardium product using the Guardium ISO image. Which step must the administrator perform as part of the initial set-up of the new appliance? A. Generate the GUI certificate request. B. Configure network settings on the appliance. C. Restart the sniffer process from the CLI command prompt. D. Obtain the passwords for the databases to be monitored by the appliance.",
+    "options": {},
+    "most_voted": ""
+  }
+]
