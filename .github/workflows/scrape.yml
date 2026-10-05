@@ -14,6 +14,10 @@ on:
         required: false
         default: ""
 
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -60,9 +64,16 @@ jobs:
 
           # Auto-pick up to 3 unscraped providers from providers.txt
           COUNT=0
+          START=$(date +%s)
+          MAX_SECONDS=$((5 * 60 * 60))  # stop at 5h, leaving 1h buffer before the 6h timeout
           while IFS= read -r line; do
             [[ "$line" =~ ^#.*$ || -z "$line" ]] && continue
             provider="$line"
+            ELAPSED=$(( $(date +%s) - START ))
+            if [ "$ELAPSED" -ge "$MAX_SECONDS" ]; then
+              echo "Approaching time limit (${ELAPSED}s elapsed), stopping after $COUNT providers."
+              break
+            fi
             if [ ! -d "data/$provider" ] || [ -z "$(ls -A data/$provider 2>/dev/null)" ]; then
               echo "Scraping provider: $provider"
               python scrape.py --provider "$provider" --commit
