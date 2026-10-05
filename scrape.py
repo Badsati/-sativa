@@ -156,8 +156,8 @@ def main():
         print(f"Auto-discovering exams for '{provider}'...")
         exams = get_exam_slugs(provider, fetcher)
         if not exams:
-            print("No exams found. Exiting.")
-            sys.exit(1)
+            print("No exams found. Skipping.")
+            return
         print(f"Found {len(exams)} exams: {exams}\n")
 
     for exam in exams:
