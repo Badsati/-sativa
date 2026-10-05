@@ -1,0 +1,387 @@
+[
+  {
+    "question": "Which two statements are true about MPLS VPNs? (Choose two.) A. With Layer 3 VPNs, the provider’s routers participate in the customer’s Layer 3 routing. B. MPLS VPNs are designed to run over private networks rather than the public Internet. C. With Layer 2 VPNs, the provider does not participate in the routing of the customer’s private IP traffic. D. MPLS VPN tunnels are always encrypted.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which label operation is performed by an MPLS transit router? A. inject B. pop C. push D. swap",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Junos platform supports provider bridging? A. T Series devices B. SRX Series devices C. MX Series devices D. MAG Series devices",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are Martian addresses on a Junos device? A. IP addresses that are reserved for use only with MPLS VPNs. B. IP addresses that are never installed in the routing table. C. IP addresses that are reserved for use only with GRE tunnels. D. IP addresses specifically used for out-of-band management.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two routing-instance types are used for non-VPN-related applications? (Choose two.) A. virtual-router B. vrf C. forwarding D. vpls",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two characteristics of load-balancing implementation on a Junos device? (Choose two.) A. It balances packets on a per-packet basis. B. It balances packets on a per-flow basis. C. It is enabled through a policy. D. It is enabled by default.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement correctly describes unified in-service software upgrades (ISSU)? A. Unified ISSU is built upon graceful-restart extensions to allow upgrades with no impact to the data plane. B. Unified ISSU is supported on systems with single or dual Routing Engines. C. Unified ISSU permits both upgrades and downgrades with no control plane disruption and is based on the graceful Routing Engine switchover (GRES) feature. D. Unified ISSU is based on nonstop-routing (NSR) and graceful Routing Engine switchover (GRES), and permits software upgrades only.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are three ways that graceful Routing Engine switchover provides redundancy? (Choose three.) A. by preserving interface and kernel information B. by reducing time of RE failover C. by preserving the data plane information D. by preserving the control plane information E. by not restarting the PFE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements are true about unified ISSU? (Choose two.) A. It allows gradual implementation of new features. B. It reduces operating costs while delivering higher service levels. C. It involves network down time during software image upgrades. D. It requires graceful Routing Engine switchover (GRES) and nonstop active routing (NSR).",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are troubleshooting an OSPF adjacency that is stuck in the ExStart state. What would be the correct step to resolve the problem? A. Look for a mismatched IP subnet or mask. B. Determine whether the neighbor is a DR-Other. C. Determine whether the hello and dead intervals are the same on both sides. D. Review the MTU settings to ensure that they match.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are configuring OSPF on a Junos device; however, you have not configured a router ID. What is the default behavior in this situation? A. If the loopback is configured with a 127/8 address, it will be used. B. If the loopback is not configured, it will use the interface with the highest IP address. C. If the loopback is configured and does not have a usable address, the IP address associated with the first hardware interface is used. D. If you configure a dedicated management address and include that interface in OSPF, it will be used as the router ID.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements correctly describe IS-IS adjacencies? (Choose two.) A. Level 1 adjacencies can form in the same (intra) area only. B. Level 2 adjacencies are formed between (inter) areas only. C. Level 2 adjacencies can be established either interarea or intra-area. D. Level 2 adjacencies can form within the same (intra) area only.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A route to the same destination is received from two different BGP sources. Which criterion is considered first to determine the active BGP route? A. cluster length B. AS-path length C. lowest RID D. local preference",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements regarding the MPLS label information base are correct? (Choose two.) A. The MPLS label information base is stored in the inet.3 table. B. The MPLS label information base is stored in the mpls.0 table. C. The label information base is used by all LSRs to forward LSP traffic. D. The label information base is used by transit LSRs to forward LSP traffic.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have been asked to deploy a Layer 2 VPN for a new customer. What information will be present in the PE's associated VPN forwarding table? (Choose three.) A. the customer site ID B. the route distinguisher C. the interface encapsulation D. the label base E. the community name",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements are correct about neighbor discovery in IPv6? (Choose two.) A. Neighbor discovery relies on ARP to find neighbors on a local link. B. A neighbor is considered reachable when the neighboring device responds to a neighbor solicitation message. C. A neighbor is considered reachable when the neighboring device responds to a router solicitation message. D. Neighbor discovery does not use ARP to find neighbors on a local link.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two support tunneling for non-IP protocols on Junos devices? (Choose two.) A. ATM AAL2 B. GRE C. IP-IP D. ATM AAL1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit -- {master}[edit] user@router-RE0# run show task replication Stateful Replication: Enabled RE modE. Master Protocol Synchronization Status OSPF Complete RIP Complete BGP Complete MPLS Complete LDP Complete {master}[edit] user@router-RE0# run show bgp summary | find 192.168.1.1 192.168.1.1 65056 0 0 11:14 Establ inet.0: 0/0/0/0 inet.2: 0/0/0/0 bgp.l3vpn.0: 0/0/0/0 ... {backup}[edit] user@router-RE1# run show system switchover Graceful switchover: On Configuration databasE. Ready Kernel databasE. Synchronizing Peer statE. Steady State {backup}[edit] user@router-RE1# run show bgp summary | find 192.168.1.1 192.168.1.1 65056 306 581 0 7 7 Idle -- Exhibit -- Click the Exhibit button. You have been asked to determine if an NSR switchover will be hitless for a given BGP peer. Referring to the exhibit, which statement is true? A. The BGP session is idle on the backup RE indicating that the session will flap at switchover. B. The task replication process has completed on the master indicating a hitless switchover can be expected. C. The GRES synchronization process is underway and must complete before the protocol state can be checked. D. The BGP session is idle on the backup RE which is normal; it toggles to established at mastership change.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit -- user@R1> show configuration interfaces ge-1/1/0 unit 0 { family inet { address 10.100.1.1/24 { vrrp-group 1 { virtual-address 10.200.12.254; priority 150; accept-data; track { interface ge-1/0/0 { priority-cost 40; } } } } } } user@R2> show configuration interfaces ge-1/1/0 unit 0 { family inet { address 10.100.1.2/24 { vrrp-group 1 { virtual-address 10.200.12.254; accept-data; } } } } -- Exhibit -- Click the Exhibit button. R1 and R2 are using VRRP for high availability. Referring to the exhibit, which two statements are correct about the configuration? (Choose two.) A. R2 is the backup router and will become the master router if ge-1/0/0 on R1 goes down. B. R2 is the backup router and will remain the backup router if ge-1/0/0 on R1 goes down. C. If R1 goes down, R2 will become the master and will relinquish mastership once R1 comes back online. D. If R1 goes down, R2 will become the master and will remain the master once R1 comes back online.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "-- Exhibit -- protocols { isis { level 1 disable; interface ge-1/0/0.0 { level 2 disable; } interface ge-1/1/0.0; interface lo0.0; } } -- Exhibit -- Click the Exhibit button. Referring to the exhibit, what is the resulting behavior on interface ge-1/0/0? A. Level 1 is enabled. B. Level 1 is disabled. C. Level 2 is enabled. D. Level 1 and Level 2 are disabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit -- user@R1> show interfaces { ge-1/1/0 { unit 0 { family inet { address 10.100.1.1/30; } family iso; } } lo0 { unit 0 { family inet { address 10.100.10.1/32; } family iso { address 49.1001.0010.0100.00; } } } } protocols { isis { interface ge-1/1/0.0 { level 2 disable; } interface lo0.0; } } user@R2> show interfaces { ge-1/1/0 { unit 0 { family inet { address 10.100.1.2/30; } } } lo0 { unit 0 { family inet { address 10.100.10.2/32; } family iso { address 49.1001.0010.0200.00; } } } } protocols { isis { interface ge-1/1/0.0; interface lo0.0; } } -- Exhibit -- Click the Exhibit button. Referring to the exhibit, R1 and R2 are directly connected using interface ge-1/1/0. What happens as a result of the configurations? A. No adjacency forms B. Level 2 adjacency forms C. Level 1 adjacency forms D. Level 1 and Level 2 adjacencies form",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit -- user@R1> show interfaces { ge-1/1/0 { unit 0 { family inet { address 10.100.1.1/30; } family iso; } } lo0 { unit 0 { family inet { address 10.100.10.1/32; } family iso { address 49.1001.0010.0100.00; } } } } protocols { isis { level 1 disable; interface ge-1/1/0.0 { level 2 disable; } interface lo0.0; } } user@R2> show interfaces { ge-1/1/0 { unit 0 { family inet { address 10.100.1.2/30; } family iso { mtu 1496; } } } lo0 { unit 0 { family inet { address 10.100.10.2/32; } family iso { address 49.1002.0010.0200.00; } } } } protocols { isis { interface ge-1/1/0.0 { level 2 disable; } interface lo0.0; } } -- Exhibit -- Click the Exhibit button. Referring to the exhibit, R1 and R2 are directly connected using interface ge-1/1/0. What is the reason the IS-IS adjacency fails? A. R2 has an MTU value of 1496 configured on ge-1/1/0. B. R2 and R1 have different area IDs. C. R1 is configured for Level 2, and R2 is configured for Level 1. D. R1 is configured for both Level 1 and Level 2 to be disabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-62_1.png] -- Exhibit -- Click the Exhibit button. In the exhibit, A1 sends a broadcast frame with destination MAC address FFFF.FFFF.FFFF, and all other stations have sent a response . What would be the correct MAC address table on the MX240? ge-0/0/0 0140.5501.1111 A. ge-0/0/0 FFFF.FFFF.FFFF B. ge-0/0/0 FFFF.FFFF.FFFF C. ge-0/0/0 0140.5501.2222 ge-0/0/1 0140.5501.3333 ge-0/0/1 0140.5501.4444 ge-0/0/0 0140.5501.1111 D. ge-0/0/0 0140.5501.2222 ge-0/0/1 0140.5501.3333",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-65_1.png] -- Exhibit -- Click the Exhibit button. Referring to the exhibit, you have an established RSVP LSP between R1 and R5 when you experience a link failure between R2 and R4. Which two statements are correct? (Choose two.) A. R2 sends a ResvTear message upstream to R1 signaling the link failure. B. R2 sends a PathTear message upstream to R1 signaling the link failure. C. R4 sends a ResvTear message downstream to R5 signaling the link failure. D. R4 sends a PathTear message downstream to R5 signaling the link failure.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which role does the router ID (RID) have in the BGP route selection process? A. The router ID is evaluated immediately after MED to determine route preference B. The router ID is evaluated last in the route selection process C. The router ID is evaluated after the cluster length and a lower router ID is chosen D. The router ID is evaluated after analyzing the IGP metric cost",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button [sampleXML/xmlfile-78_1.jpg] You work for the regional Internet service provider shown in the exhibit You have a partial BGP table and are receiving a 10 100/16 route from your upstream ISP You have been asked to configure a default route that can be sent to your downstream customer This route should forward customer traffic toward your upstream Tier 11SP as long as the 10.100/16 route is present. What would accomplish this goal? A. Create and announce an aggregate default route B. Create and announce a static default route with a next-hop of discard C. Create and announce a static default route with a next-hop of reject D. Create and announce a generated default route E. Create an advertise-map with exist-map",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button [sampleXML/xmlfile-79_1.jpg] In the exhibit, OSPF routers R1, R2, R3, and R4 come up, in order, at 1-minute intervals Which router will be the designated router?. A. R1 B. R2 C. R3 D. R4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Using industry best practices, what is true regarding an external BGP session? A. BGP neighbors belong to the same AS B. BGP neighbors belong to a different AS C. BGP sessions rely on a static route for reach ability D. BGP sessions will be established between loopback interface addresses.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button [sampleXML/xmlfile-86_1.jpg] In an RSTP network, the root and designated ports have been elected as shown in the exhibit What will be the port type of port 1? A. backup port B. discarding port C. alternate port D. listening port",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two elements contribute to the bridge ID when configuring RSTP? (Choose two) A. designated MAC address B. bridge priority C. extended system ID D. root ID E. bridge address",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have recently installed a second Routing Engine (RE) in your router Which two statements correctly describe the expected behavior if the primary RE fails? (Choose two.) A. The backup RE will assume the master role once the packet forwarding engine restarts B. The backup RE will immediately assume the master role C. The new master RE restarts the routing protocol process (rpd) and establishes any required adjacencies based on the configuration. D. The new master RE maintains the existing protocol adjacencies initially established by the previous master RE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true of a Layer 2 circuit? A. Layer 2 circuits use BGP for signaling B. Layer 2 circuits use OSPF for signaling C. Layer 2 circuits use LDP for signaling D. Layer 2 circuits rely on RSVP for signaling",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has purchased two new Juniper Networks MX480 routers. Your manager has asked you to add these two devices to the existing ISIS network. Which two rules about ISIS adjacencies must you consider when carrying out the configuration? (Choose two) A. For Level 1 adjacencies, area IDs must be the same B. For Level 2 adjacencies area IDs must be the same C. The IS-IS levels configured on the interfaces must be the same D. The IS-IS levels on the interfaces can be different",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button [sampleXML/xmlfile-98_1.png] Referring to the exhibit, which policy(s) will be applied to neighbor 172.18.4.5? A. Import policy-a and policy-d. export policy-b and policy-c B. Import policy-d, export policy-b and policy-c C. Import policy-d. export policy-c. D. Import policy-d only",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How many equal-cost paths can be assigned to a single route in the Junos OS? A. 4 B. 16 C. 32 D. 64",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three functions are performed by an OSPF area border router (ABR)? (Choose three) A. flooding Summary LSAs to connected areas B. flooding ASBR Summary LSAs to connected areas C. generating all Router LSAs for connected neighbors D. performing summarization on routes headed to Area 0 E. flooding NSSA External LSAs to Area 0",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button [sampleXML/xmlfile-108_1.jpg] Based on the illustration shown in the exhibit, what would PE-B do with a VPLS packet received from PE-A if the matching entry in its VPLS routing table showed the destination was connected to PE-D? A. PE-B would flood the packet to all attached PEs B. PE-B would forward the packet to the root PE device C. PE-B would forward the packet to all attached CE devices D. PE-B would discard the packet",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An Ethernet bridge is configured such that all interfaces are in a single broadcast domain, by default. Which two tasks does the bridge perform in response to receiving a multicast frame? (Choose two) A. It learns the source MAC address B. It drops the frame C. It floods the frame out of all interfaces except the one on which it was received D. It floods the frame out of particular interfaces based on its multicast MAC table",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which configuration can be applied to ensure that no more than 600 MAC addresses are learned by a virtual switch? [sampleXML/xmlfile-112_1.png] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You observe that VPN routes are hidden on your PE router Which situation accounts for these hidden routes? A. The protocol next-hop is not found in inet.3 B. The protocol next-hop is not found in mpls 0 C. The protocol next-hop is not found in bgp I3vpn 0 D. The protocol next-hop is not found in inet 2",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "By default, which three criteria are used by the Junos load-balancing algorithm to determine a traffic flow? (Choose three.) A. protocol B. source port C. destination port D. source address E. destination address",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-119_1.png] Based on the configuration shown in the exhibit, what will be the state of the IS-IS levels on interface ge-0/0/0.100? A. Level 1 is enabled and Level 2 is disabled. B. Level 1 is disabled and Level 2 is enabled. C. Level 1 is enabled and Level 2 is enabled. D. Level 1 is disabled and Level 2 is disabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-129_1.png] What does IS-IS/18 mean in the output displayed in the exhibit? A. These routes are internal Level 1 routes. B. These routes are internal Level 2 routes. C. These routes are external Level 1 routes. D. These routes are external Level 2 routes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are logged into a PE router participating in a Layer 3 VPN as defined in RFC 4364. You would like to ping the locally connected CE router's interface. The address of the interface is 192.168.1.1; the VPN routing-instance is named VPN-A. Which command will accomplish this task? A. ping routing-instance VPN-A 192.168.1.1 B. ping instance VPN-A 192.168.1.1 C. ping vpn-instance VPN-A 192.168.1.1 D. ping VPN-A 192.168.1.1 E. ping mpls l3vpn VPN-A 192.168.1.1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-131_1.png] From the output shown in the exhibit, what would happen to a packet destined for address 172.29.3.5? A. The address is not in the aggregate range; the packet is sent to the Routing Engine. B. The address is in the aggregate range; the packet will be silently dropped. C. The address is not in the aggregate range; the packet will be forwarded. D. The address is in the aggregate range; the packet will be dropped.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two events could cause the BGP Active state to appear? (Choose two.) A. The local router does not have a route to the peer device. B. The local router failed to establish a TCP connection with the peer device. C. A firewall is stopping all UDP packets. D. The BGP configuration is incomplete.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are configuring a trunk interface on an MX Series device and want to ensure that any outgoing frames associated with VLAN 100 are transmitted as untagged frames. Which configuration will achieve this objective? A. routing-interface irb.0 B. vlan-id-list [100] C. native-vlan-id 100 D. vlan-id 100",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An RSVP enabled router receives an RSVP reservation message for a new RSVP path. The router is unable to accommodate the reservation request. Which action does the router take? A. The router sends a ResvErr message to the upstream router. B. The router sends a ResvErr message to the downstream router. C. The router sends a ResvTear message to the upstream router. D. The router sends a ResvTear message to the downstream router.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-159_1.jpg] Referring to the exhibit, which two statements are correct about R2? (Choose two.) A. If R2 remains in the ExStart state, then you should verify the MTU setting on R2 and R3. B. R2 LSDB is synchronized with R1. C. If R2 remains in the ExStart state, then you should verify Physical Layer and Data Link Layer connectivity on R2 and R3. D. R2 LSDB is not synchronized with R1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your network consists of multiple remote locations using both IPv4 and IPv6. You have an IPv4-based Internet connection at each site provided by different, local service providers. You are asked to ensure that the remote IPv6 networks are able to communicate. What should you do? A. Create GRE tunnels between the remote locations to connect the IPv6 networks. B. Create IPsec tunnels between the remote locations to connect the IPv6 networks. C. Create IP-IP tunnels between the remote locations to connect the IPv6 networks. D. Create MPLS tunnels between the remote locations to connect the IPv6 networks.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are asked to deploy OSPF between two routers over a point-to point link. Which three fields in the OSPF hello packet must match? (Choose three.) A. network mask B. hello interval C. options D. dead interval E. backup designated router",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button [sampleXML/xmlfile-166_1.png] Referring to the exhibit, which policy would be applied to the 75.217.12.10 neighbor? A. The my-statics policy would be applied. B. The my-aggregates policy would be applied. C. The my-specifics policy would be applied. D. The my-statics, my-aggregates, and my-specifics policies would be applied.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-167_1.jpg] Referring to the exhibit, all interswitch links are configured as trunks supporting all VLANs. Host A sends a frame with an unknown destination MAC address to S2. Which switches will receive this frame? A. S1, S3 and S4 B. S1 only C. S1 and S3 only D. S1 and S4 only",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which table will a Junos-based MPLS ingress router first consult to determine the next hop for BGP routes reachable through an LSP? A. inet.1 B. mpls.0 C. inet.3 D. inet.0",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-170_1.png] Switch 1 and Switch 2 are configured to run MSTP. However, MSTP is not working. Referring to the exhibit, which two actions will correct the problem? (Choose two.) A. Configure interface ge-0/0/2 on Switch 2 B. Correct the bridge-priority parameter to be identical on both switches. C. Configure revision-level 2 on Switch 1. D. Correct the configuration-name parameter to be identical on both switches.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-172_1.jpg] In the exhibit, R1, R2, and R3 are all IBGP peers within AS 65505. R1 receives a BGP advertisement from an external BGP peer in AS 65555, and a BGP advertisement from R3. The default BGP advertisement behavior is in effect in this environment. In this scenario, which two statements are true? (Choose two.) A. R1 will advertise the route received from R3 to R2 and its external BGP peer. B. R1 will advertise the route received from R3 only to its external BGP peer. C. R1 will advertise the route received from its external peer to R2 and R3. D. R1 will not advertise the route received from its external peer to R2 or R3.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are asked to configure a GRE tunnel between two remote sites to support the exchange of IPv6 traffic. The two sites are separated by an IPv4 network. Which two configuration elements are required? (Choose two.) A. You must enable the GRE interface for IPv6 operations. B. You must increase the MTU to no less than 2500. C. You must add a static route for the remote IPv6 destination subnet with the remote tunnel endpoint as the next hop at each site. D. You must enable the GRE interface for IPv4 operations.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An established RSVP-signaled LSP suffers a link failure. What is one action taken by the local RSVP-enabled router? A. A ResvTear message is sent downstream. B. A ResvErr message is sent upstream. C. A ResvErr message is sent downstream. D. A ResvTear message is sent upstream.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-185_1.png] Referring to the exhibit, which two statements are correct? (Choose two.) A. The routes in inet.0 are imported into user-a.inet.0 B. The RIB group can be applied to OSPF. C. The RIB group cannot be applied to OSPF. D. The routes in user-a.inet.0 are imported into inet.0",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-186_1.png] Referring to the exhibit, which static route will be exported into OSPF? A. 172.29.0.0/16 B. 172.29.0.0/17 C. 172.28.0.0/24 D. 172.29.0.0/24",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-189_1.png] An ISO NET has been configured on R2s lo0.0 interface and ge-0/0/2.0 has been configured to run IS-IS. However, IS-IS adjacency on ge-0/0/2.0 is not coming up. Referring to the exhibit, what is required to enable IS-IS? A. Configure the family iso parameter under the ge-0/0/2.0 interface. B. Disable Level 2 for interface ge-0/0/2.0 C. Add the lo0.0 interface under the [edit protocols isis] hierarchy. D. Configure the interface priority for ge-0/0/2.0.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "For two switches to participate in the same Multiple Spanning Tree Protocol (MSTP) region, which three values must match? (Choose three.) A. extended system ID B. region name C. member VLAN ID list D. root bridge ID E. revision number",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are three IS-IS PDU types? (Choose three.) A. type length value B. link-state C. partial sequence number D. database description E. complete sequence number",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-205_1.png] Which two statements are true regarding the output shown in the exhibit? (Choose two.) A. The ge-1/0/0 interface will transmit any outgoing frames associated with VLAN 55 as untagged frames. B. The ge-1/0/0 interface will associate any untagged frames that are received with VLAN 56. C. The ge-1/0/0 interface will associate any untagged frames that are received with VLAN 55. D. The ge-1/0/0 interface will transmit any outgoing frames associated with VLAN 56 as untagged frames.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are asked to configure and apply a new routing policy to influence routing advertisements sent to a specific EBGP peer. You must ensure that the new policy does not impact routing advertisements sent to any other peer. In this scenario, which statement is true? A. The new policy should be applied as an export policy for the EBGP group in which the peer is defined. B. The new policy should be applied as an import policy for the EBGP group in which the peer is defined. C. The new policy should be applied as an export policy for the specific EBGP peer. D. The new policy should be applied as an import policy for the specific EBGP peer.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two BGP attributes influence traffic coming into an AS? (Choose two.) A. local preference B. next hop C. MED D. origin",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which role does the router ID (RID) have in the BGP route selection process? A. The router ID is evaluated immediately after MED to determine route preference B. The router ID is evaluated last in the route selection process C. The router ID is evaluated after the cluster length and a lower router ID is chosen D. The router ID is evaluated after analyzing the IGP metric cost",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Using industry best practices, which two BGP attributes would you modify to influence how traffic enters your network? (Choose two) A. AS Path B. Local Preference C. Next Hop D. MED",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are logged into a Junos device and issue the command show route protocol bgp. You see that the device has received the route 10 0.4/24 from two different IBGP peers. Local preference, MED, origin, and AS-path values are equal. Which criterion is used to determine which path will be preferred? A. cluster length B. router ID (RID) C. peer ID D. IGP cost",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are logged in to an MX80 and issue the command \"show route protocol bgp\" You see that you have received the route 10.0.4/24 from two different peers. One peer is an external peer and the other is an internal peer. The route received from the internal peer is active. By the rules of BGP preference, what would cause the internal path for this prefix to be preferred over the external one? A. Internally learned prefix is preferred over an externally learned prefix B. The local-preference value of the internally learned prefix is higher than the externally learned peer C. The peer ID of the internally learned prefix is lower than that of the externally learned peer D. The internally learned prefix has a shorted cluster length",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements are true about the BGP MED attribute? (Choose two.) A. It has a default value of 100 B. It has an assumed value of 0 C. It is designed for use when multiple connections exist between the same two autonomous systems D. It is designed for use when a BGP router is peering with at least two different autonomous systems",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are three BGP attributes used in the route-selection process? (Choose three.) A. local preference B. communities C. MED D. origin E. atomic aggregate",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Using industry best practices, which BGP attribute would you modify to influence how traffic leaves your network? A. MED B. local preference C. AS-path D. communities",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An Ethernet bridge is configured such that all interfaces are in a single broadcast domain. Which two tasks does an Ethernet bridge perform in response to receiving a frame with an unknown unicast destination MAC address? (Choose two.) A. It drops the frame. B. It floods the frame out of all interfaces except the one on which is was received. C. It learns the destination MAC address when it sees return traffic from the device. D. It learns the source MAC address when it sees return traffic from that device.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "By default, which two tasks does an Ethernet bridge perform in response to receiving a multicast frame? (Choose two.) A. It learns the MAC address of any responding nodes and updates its bridge table with the source MAC address and ingress port B. It drops the frame C. It floods the frame out of all interfaces except the one on which it was received D. It floods the frame out of particular interfaces based on its multicast MAC table.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The gr-0/0/0.0 interface on your Junos device has a link state of up/up and you have correctly added static routes to reach the remote subnets. However, you are not seeing traffic pass over the tunnel. What might be causing the issue? A. The tunnel interfaces are disabled B. You have not configured keepalives on the endpoints C. The endpoints do not have valid routes to the remote tunnel endpoints D. The intermediary devices do not have valid routes to the route tunnel endpoints",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "On a Junos device with dual Routing Engine (RE), which two statements correctly describe the expected behavior if the primary RE fails? (Choose two.) A. The backup RE will assume the master role once the packet forwarding engine (PFE) restarts B. The backup RE will immediately assume the master role C. The new master RE restarts the routing protocol process (rpd) and establishes any required adjacencies based on the configuration. D. The new master RE maintains the existing protocol adjacencies initially established by the previous master RE",
+    "options": {},
+    "most_voted": ""
+  }
+]
