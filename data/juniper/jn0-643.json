@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Which CoS feature avoids congestion in a device by limiting traffic on ingress interfaces? A. rewrite rule B. scheduler C. drop profile D. policer",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "R1 and R2 are ASBRs in the same area, each with an equal cost external path to the same external network prefix. R1 advertises an external route into OSPF with a Type 1 metric. R2 advertises an external route into OSPF with a Type 2 metric. Which route would be preferred? A. R1's route is preferred because Type 1 metrics take into account the external cost only. B. R1's route is preferred because Type 1 metrics take into account the internal and external cost. C. R2's route is preferred because Type 2 metrics take into account the internal and external cost. D. R2's route is preferred because Type 2 metrics take into account the external cost only.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true about using an OSPF import policy? A. Import policies are not allowed in OSPF, applying the policy will do nothing. B. Applying an import policy to OSPF may block normal LSA flooding. C. Import policies are allowed only for external route types. D. Applying this policy will cause a commit failure.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit -- user@router> show configuration routing-options autonomous-system 65550; user@router> show configuration protocols bgp group ibgp { type internal; neighbor 10.0.3.5; } group ibgpv6 { type internal; local-address 2001:ffff::3:4; neighbor 2001:ffff::3:5; } group as65010 { family inet { unicast; } family inet6 { unicast; } export as65010-out; peer-as 65010; neighbor 172.16.0.6; } user@router> show configuration policy-options policy-statement as65010-out { term locally-originated { from as-path local-only; then { metric 7000; } } term from-as65222 { from as-path as65222-orig; then as-path-prepend \"65550 65550 65550 65550\"; } term transit-as701 { from as-path transit-as701; then { metric 6; } } then accept; } as-path local-only \"(.*)\"; as-path as65222-orig \".* 65222\"; as-path transit-as701 \".* 701 .*\"; user@router> show route advertising-protocol bgp 172.16.0.6 inet.0: 43 destinations, 47 routes (43 active, 0 holddown, 0 hidden) Prefix Nexthop MED Lclpref AS path * 10.0.2.0/30 Self 7000 I * 10.0.2.4/30 Self 7000 I * 10.0.2.8/30 Self 7000 I * 10.0.2.16/30 Self 7000 I * 10.0.3.3/32 Self 7000 I * 10.0.3.4/32 Self 7000 I * 10.0.3.5/32 Self 7000 I * 10.0.4.8/30 Self 7000 I * 10.0.8.8/30 Self 7000 I * 10.0.9.9/32 Self 7000 I * 10.255.255.1/32 Self 7000 I * 64.142.88.0/24 Self 7000 I * 130.130.0.0/16 Self 6 65222 46375 701 14203 I * 131.131.131.0/24 Self 6 65222 46375 701 14203 I * 132.132.0.0/25 Self 6 65222 46375 701 32934 I * 133.133.0.0/25 Self 6 65222 46375 701 32934 I * 134.134.0.0/25 Self 65222 46375 14203 I * 135.135.0.0/25 Self 65222 46375 14203 14203 I * 172.16.0.4/30 Self 7000 I * 172.16.0.12/30 Self 7000 I * 172.16.200.0/30 172.16.0.6 7000 I * 192.0.2.0/24 172.16.0.6 7000 I * 192.168.50.0/24 Self 7000 I * 192.168.253.0/24 Self 7000 I * 200.200.0.0/16 172.16.0.6 7000 I * 200.200.0.1/32 172.16.0.6 7000 I * 200.200.1.1/32 172.16.0.6 7000 I * 200.200.200.200/32 172.16.0.6 7000 I inet6.0: 23 destinations, 28 routes (23 active, 0 holddown, 0 hidden) Prefix Nexthop MED Lclpref AS path * ::172.16.0.4/126 Self 7000 I * 2001:1:1::/64 Self 7000 I * 2001:1:2::/64 Self 7000 I * 2001:ffff::3:3/128 Self 7000 I * 2001:ffff::3:4/128 Self 7000 I * 2001:ffff::3:5/128 Self 7000 I * 2001:ffff::9:7/128 Self 7000 I user@router> -- Exhibit -- Click the Exhibit button. You are configuring an EBGP peer in a transit environment. You must advertise routes learned from other EBGP peers in your AS. Any routes originated from within your AS should have a MED of 7000 set. Any routes that originate in AS65222 should be prepended four times. Any routes that transit AS701 should have a MED set to 6. This scenario results in the unintended advertisement of internal 10.0.0.0/8 networks to your peer. What caused the accidental advertisement of internal networks to your EBGP peer? A. Your AS number of 65550 is a private AS number. B. The BGP group as65010 is configured for both family inet unicast and family inet6 unicast protocol families. C. The export policy as65010-out is misconfigured. D. The as-path local-only includes a misconfigured regular expression.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-190_1.jpg] -- Exhibit -- Click the Exhibit button. In the topology shown in the exhibit, which two BGP attributes can AS1 manipulate to influence the path that AS4 takes to reach prefixes originated by AS1? (Choose two.) A. Local Preference B. AS Path C. Origin D. MED",
+    "options": {},
+    "most_voted": ""
+  }
+]
