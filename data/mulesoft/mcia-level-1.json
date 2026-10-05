@@ -1,0 +1,507 @@
+[
+  {
+    "question": "A global organization operates datacenters in many countries. There are private network links between these datacenters because all business data (but NOT metadata) must be exchanged over these private network connections. The organization does not currently use AWS in any way. The strategic decision has just been made to rigorously minimize IT operations effort and investment going forward. What combination of deployment options of the Anypoint Platform control plane and runtime plane(s) best serves this organization at the start of this strategic journey? A. MuleSoft-hosted Anypoint Platform control plane CloudHub Shared Worker Cloud in multiple AWS regions B. MuleSoft-hosted Anypoint Platform control plane Customer-hosted runtime plane in multiple AWS regions C. MuleSoft-hosted Anypoint Platform control plane Customer-hosted runtime plane in each datacenter D. Anypoint Platform - Private Cloud Edition Customer-hosted runtime plane in each datacenter",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Anypoint Exchange is required to maintain the source code of some of the assets committed to it, such as Connectors, Templates, and API specifications. What is the best way to use an organization's source-code management (SCM) system in this context? A. Organizations need to point Anypoint Exchange to their SCM system so Anypoint Exchange can pull source code when requested by developers and provide it to Anypoint Studio B. Organizations need to use Anypoint Exchange as the main SCM system to centralize versioning and avoid code duplication C. Organizations can continue to use an SCM system of their choice for branching and merging, as long as they follow the branching and merging strategy enforced by Anypoint Exchange D. Organizations should continue to use an SCM system of their choice, in addition to keeping source code for these asset types in Anypoint Exchange, thereby enabling parallel development, branching, and merging",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An organization is designing an integration solution to replicate financial transaction data from a legacy system into a data warehouse (DWH). The DWH must contain a daily snapshot of financial transactions, to be delivered as a CSV file. Daily transaction volume exceeds tens of millions of records, with significant spikes in volume during popular shopping periods. What is the most appropriate integration style for an integration solution that meets the organization's current requirements? A. API-led connectivity B. Batch-triggered ETL C. Event-driven architecture D. Microservice architecture",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A set of integration Mule applications, some of which expose APIs, are being created to enable a new business process. Various stakeholders may be impacted by this. These stakeholders are a combination of semi-technical users (who understand basic integration terminology and concepts such as JSON and XML) and technically skilled potential consumers of the Mule applications and APIs. What is an effective way for the project team responsible for the Mule applications and APIs being built to communicate with these stakeholders using Anypoint Platform and its supplied toolset? A. Create Anypoint Exchange entries with pages elaborating the integration design, including API notebooks (where applicable) to help the stakeholders understand and interact with the Mule applications and APIs at various levels of technical depth B. Capture documentation about the Mule applications and APIs inline within the Mule integration flows and use Anypoint Studio's Export Documentation feature to provide an HTML version of this documentation to the stakeholders C. Use Anypoint Design Center to implement the Mule applications and APIs and give the various stakeholders access to these Design Center projects, so they can collaborate and provide feedback D. Use Anypoint Exchange to register the various Mule applications and APIs and share the RAML definitions with the stakeholders, so they can be discovered",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Mule application is being designed to do the following: Step 1: Read a SalesOrder message from a JMS queue, where each SalesOrder consists of a header and a list of SalesOrderLineltems. Step 2: Insert the SalesOrder header and each SalesOrderLineItem into different tables in an RDBMS. Step 3: Insert the SalesOrder header and the sum of the prices of all its SalesOrderLineltems into a table in a different RDBMS. No SalesOrder message can be lost and the consistency of all SalesOrder-related information in both RDBMSs must be ensured at all times. What design choice (including choice of transactions) and order of steps addresses these requirements? A. 1. Read the JMS message (NOT in an XA transaction) 2. Perform EACH DB insert in a SEPARATE DB transaction 3. Acknowledge the JMS message B. 1. Read and acknowledge the JMS message (NOT in an XA transaction) 2. In a NEW XA transaction, perform BOTH DB inserts C. 1. Read the JMS message in an XA transaction 2. In the SAME XA transaction, perform BOTH DB inserts but do NOT acknowledge the JMS message D. 1. Read the JMS message (NOT in an XA transaction) 2. Perform BOTH DB inserts in ONE DB transaction 3. Acknowledge the JMS message",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. A Mule application is being designed to be deployed to several CloudHub workers. The Mule application's integration logic is to replicate changed Accounts from Salesforce to a backend system every 5 minutes. A watermark will be used to only retrieve those Salesforce Accounts that have been modified since the last time the integration logic ran. What is the most appropriate way to implement persistence for the watermark in order to support the required data replication integration logic? [sampleXML/xmlfile-5_1.png] A. Persistent Object Store B. Persistent Cache Scope C. Persistent Anypoint MQ Queue D. Persistent VM Queue",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. A shopping cart checkout process consists of a web store backend sending a sequence of API invocations to an Experience API, which in turn invokes a Process API. All API invocations are over HTTPS POST. The Java web store backend executes in a Java EE application server, while all API implementations are Mule applications executing in a customer-hosted Mule runtime. End-to-end correlation of all HTTP requests and responses belonging to each individual checkout instance is required. This is to be done through a common correlation ID, so that all log entries written by the web store backend, Experience API implementation, and Process API implementation include the same correlation ID for all requests and responses belonging to the same checkout instance. What is the most efficient way (using the least amount of custom coding or configuration) for the web store backend and the implementations of the Experience API and Process API to participate in end-to-end correlation of the API invocations for each checkout instance? [sampleXML/xmlfile-6_1.png] A. The Experience API implementation generates a correlation ID for each incoming HTTP request and passes it to the web store backend in the HTTP response, which includes it in all subsequent API invocations to the Experience API The Experience API implementation must be coded to also propagate the correlation ID to the Process API in a suitable HTTP request header [sampleXML/xmlfile-7_1.jpg] B. The web store backend generates a new correlation ID value at the start of checkout and sets it on the X-CORRELATION-ID HTTP request header in each API invocation belonging to that checkout No special code or configuration is included in the Experience API and Process API implementations to generate and manage the correlation ID [sampleXML/xmlfile-7_2.jpg] C. The web store backend, being a Java EE application, automatically makes use of the thread-local correlation ID generated by the Java EE application server and automatically transmits that to the Experience API using HTTP-standard headers No special code or configuration is included in the web store backend, Experience API, and Process API implementations to generate and manage the correlation ID [sampleXML/xmlfile-8_1.jpg] D. The web store backend sends a correlation ID value in the HTTP request body in the way required by the Experience API The Experience API and Process API implementations must be coded to receive the custom correlation ID in the HTTP requests and propagate it in suitable HTTP request headers [sampleXML/xmlfile-8_2.jpg]",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Mule application A receives a request Anypoint MQ message REQU with a payload containing a variable-length list of request objects. Application A uses the For Each scope to split the list into individual objects and sends each object as a message to an Anypoint MQ queue. Service S listens on that queue, processes each message independently of all other messages, and sends a response message to a response queue. Application A listens on that response queue and must in turn create and publish a response Anypoint MQ message RESP with a payload containing the list of responses sent by service S in the same order as the request objects originally sent in REQU. Assume successful response messages are returned by service S for all request messages. What is required so that application A can ensure that the length and order of the list of objects in RESP and REQU match, while at the same time maximizing message throughput? A. Perform all communication involving service S synchronously from within the For Each scope, so objects in RESP are in the exact same order as request objects in REQU B. Use a Scatter-Gather within the For Each scope to ensure response message order Configure the Scatter-Gather with a persistent object store C. Keep track of the list length and all object indices in REQU, both in the For Each scope and in all communication involving service. Use persistent storage when creating RESP D. Use an Async scope within the For Each scope and collect response messages in a second For Each scope in the order in which they arrive, then send RESP using this list of responses",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. A Mule application is deployed to a cluster of two customer-hosted Mule runtimes. The Mule application has a flow that polls a database and another flow with an HTTP Listener. HTTP clients send HTTP requests directly to individual cluster nodes. What happens to database polling and HTTP request handling in the time after the primary (master) node of the cluster has failed, but before that node is restarted? [sampleXML/xmlfile-10_1.jpg] A. Database polling stops All HTTP requests are rejected B. Database polling stops All HTTP requests continue to be accepted C. Database polling continues Only HTTP requests sent to the remaining node continue to be accepted D. Database polling continues All HTTP requests continue to be accepted, but requests to the failed node incur increased latency",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What aspects of a CI/CD pipeline for Mule applications can be automated using MuleSoft-provided Maven plugins? A. Import from API designer, compile, package, unit test, deploy, publish to Anypoint Exchange B. Compile, package, unit test, validate unit test coverage, deploy C. Compile, package, unit test, deploy, integration test D. Compile, package, unit test, deploy, create associated API instances in API Manager",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Anypoint Platform supports role-based access control (RBAC) to features of the platform. An organization has configured an external Identity Provider for identity management with Anypoint Platform. What aspects of RBAC must ALWAYS be controlled from the Anypoint Platform control plane and CANNOT be controlled via the external Identity Provider? [sampleXML/xmlfile-11_1.jpg] A. Assigning Anypoint Platform permissions to a role B. Assigning Anypoint Platform role(s) to a user C. Controlling the business group within Anypoint Platform to which the user belongs D. Removing a userג€™s access to Anypoint Platform when they no longer work for the organization",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An integration Mule application is deployed to a customer-hosted multi-node Mule 4 runtime cluster. The Mule application uses a Listener operation of a JMS connector to receive incoming messages from a JMS queue. How are the messages consumed by the Mule application? A. Regardless of the Listener operation configuration, all messages are consumed by ONLY the primary cluster node B. Depending on the JMS provider's configuration, either all messages are consumed by ONLY the primary cluster node or else ALL messages are consumed by ALL cluster nodes C. Regardless of the Listener operation configuration, all messages are consumed by ALL cluster nodes D. Depending on the Listener operation configuration, either all messages are consumed by ONLY the primary cluster node or else EACH message is consumed by ANY ONE cluster node",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Additional nodes are being added to an existing customer-hosted Mule runtime cluster to improve performance. Mule applications deployed to this cluster are invoked by API clients through a load balancer. What is also required to carry out this change? A. API implementations using an object store must be adjusted to recognize the new nodes and persist to them B. A new load balancer must be provisioned to allow traffic to the new nodes in a round-robin fashion C. External monitoring tools or log aggregators must be configured to recognize the new nodes D. New firewall rules must be configured to accommodate communication between API clients and the new nodes",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. One of the backend systems invoked by an API implementation enforces rate limits on the number of requests a particular client can make. Both the backend system and the API implementation are deployed to several non-production environments in addition to production. Rate limiting of the backend system applies to all non-production environments. The production environment, however, does NOT have any rate limiting. What is the most effective approach to conduct performance tests of the API implementation in a staging (non-production) environment? [sampleXML/xmlfile-13_1.jpg] A. Use MUnit to simulate standard responses from the backend system Then conduct performance tests to identify other bottlenecks in the system B. Create a mocking service that replicates the backend system's production performance characteristics Then configure the API implementation to use the mocking service and conduct the performance tests C. Conduct scaled-down performance tests in the staging environment against the rate limited backend system Then upscale performance results to full production scale D. Include logic within the API implementation that bypasses invocations of the backend system in a performance test situation, instead invoking local stubs that replicate typical backend system responses Then conduct performance tests using this API implementation",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An integration Mule application is being designed to process orders by submitting them to a backend system for offline processing. Each order will be received by the Mule application through an HTTPS POST and must be acknowledged immediately. Once acknowledged, the order will be submitted to a backend system. Orders that cannot be successfully submitted due to rejections from the backend system will need to be processed manually (outside the backend system). The Mule application will be deployed to a customer-hosted runtime and is able to use an existing ActiveMQ broker if needed. The backend system has a track record of unreliability both due to minor network connectivity issues and longer outages. What idiomatic (used for their intended purposes) combination of Mule application components and ActiveMQ queues are required to ensure automatic submission of orders to the backend system, while minimizing manual order processing? A. An On Error scope MuleSoft Object Store ActiveMQ Dead Letter Queue for manual processing B. Until Successful component ActiveMQ long retry Queue ActiveMQ Dead Letter Queue for manual processing C. Until Successful component MuleSoft Object Store ActiveMQ is NOT needed or used D. An On Error scope Non-persistent VM ActiveMQ Dead Letter Queue for manual processing",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What operation can be performed through a JMX agent enabled in a Mule application? A. View object store entries B. Replay an unsuccessful message C. Deploy a Mule application D. Set a particular log4j2 log level to TRACE",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A retailer is designing a data exchange interface to be used by its suppliers. The interface must support secure communication over the public internet. The interface must also work with a wide variety of programming languages and IT systems used by suppliers. What are suitable interface technologies for this data exchange that are secure, cross-platform, and internet friendly, assuming that Anypoint Connectors exist for these interface technologies? A. CSV over FTP YAML over TLS JSON over HTTPS B. SOAP over HTTPS IIOP over TLS gRPC over HTTPS C. EDIFACT XML over SFTP JSON/REST over HTTPS D. XML over ActiveMQ XML over SFTP XML/REST over HTTPS",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. A Mule 4 application has a parent flow that breaks up a JSON array payload into 200 separate items, then sends each item one at a time inside an Async scope to a VM queue. A second flow to process orders has a VM Listener on the same VM queue. The rest of this flow processes each received item by writing the item to a database. This Mule application is deployed to four CloudHub workers with persistent queues enabled. What message processing guarantees are provided by the VM queue and the CloudHub workers, and how are VM messages routed among the CloudHub workers for each invocation of the parent flow under normal operating conditions where all the CloudHub workers remain online? [sampleXML/xmlfile-16_1.jpg] A. EACH item VM message is processed AT LEAST ONCE by ONE ARBITRARY CloudHub worker Each of the four CloudHub workers can be expected to process some item VM messages B. ALL item VM messages are processed AT MOST ONCE by ONE ARBITRARY CloudHub worker This one CloudHub worker processes ALL 200 item VM messages C. ALL item VM messages are processed AT LEAST ONCE by the SAME CloudHub worker where the parent flow was invoked This one CloudHub worker processes ALL 200 item VM messages D. EACH item VM message is processed AT MOST ONCE by ONE CloudHub worker, with workers chosen in a deterministic round-robin fashion Each of the four CloudHub workers can be expected to process 1/4 of the item VM messages (about 50 items)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. An organization deploys multiple Mule applications to the same customer-hosted Mule runtime. Many of these Mule applications must expose an HTTPS endpoint on the same port using a server-side certificate that rotates often. What is the most effective way to package the HTTP Listener and package or store the server-side certificate when deploying these Mule applications, so the disruption caused by certificate rotation is minimized? [sampleXML/xmlfile-17_1.jpg] A. Package the HTTPS Listener configuration in a Mule DOMAIN project, referencing it from all Mule applications that need to expose an HTTPS endpoint Store the server-side certificate in a shared filesystem location in the Mule runtime's classpath, OUTSIDE the Mule DOMAIN or any Mule APPLICATION B. Package the HTTPS Listener configuration in a Mule DOMAIN project, referencing it from all Mule applications that need to expose an HTTPS endpoint Package the server-side certificate in ALL Mule APPLICATIONS that need to expose an HTTPS endpoint C. Package the HTTPS Listener configuration in a Mule DOMAIN project, referencing it from all Mule applications that need to expose an HTTPS endpoint Package the server-side certificate in the SAME Mule DOMAIN project D. Package an HTTPS Listener configuration in all Mule APPLICATIONS that need to expose an HTTPS endpoint Package the server-side certificate in a NEW Mule DOMAIN project",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What metrics about API invocations are available for visualization in custom charts using Anypoint Analytics? A. Request size, request HTTP verbs, response time B. Request size, number of requests, JDBC Select operation result set size C. Request size, number of requests, JDBC Select operation response time D. Request size, number of requests, response size, response time",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. A business process involves the receipt of a file from an external vendor over SFTP. The file needs to be parsed and its content processed, validated, and ultimately persisted to a database. The delivery mechanism is expected to change in the future as more vendors send similar files using other mechanisms such as file transfer or HTTP POST. What is the most effective way to design for these requirements in order to minimize the impact of future change? [sampleXML/xmlfile-19_1.jpg] A. Use a composite data source so files can be retrieved from various sources and delivered to a MuleSoft Batch Job for processing B. Use a MuleSoft Scatter-Gather and a MuleSoft Batch Job to handle the different files coming from different sources C. Create a Process API to receive the file and process it using a MuleSoft Batch Job while delegating the data save process to a System API D. Create an API that receives the file and invokes a Process API with the data contained in the file, then have the Process API process the data using a MuleSoft Batch Job and other System APIs as needed",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An integration Mule application is being designed to synchronize customer data between two systems. One system is an IBM Mainframe and the other system is a Salesforce Marketing Cloud (CRM) instance. Both systems have been deployed in their typical configurations, and are to be invoked using the native protocols provided by Salesforce and IBM. What interface technologies are the most straightforward and appropriate to use in this Mule application to interact with these systems, assuming that Anypoint Connectors exist that implement these interface technologies? A. IBM: DB access CRM: gRPC B. IBM: REST CRM: REST C. IBM: CICS CRM: SOAP D. IBM: ActiveMQ CRM: REST",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An XA transaction is being configured that involves a JMS connector listening for incoming JMS messages. What is the meaning of the timeout attribute of the XA transaction, and what happens after the timeout expires? A. The time that is allowed to pass without the transaction being ended explicitly After the timeout, the transaction is forcefully rolled-back B. The time that is allowed to pass for stale JMS consumer threads to be destroyed After the timeout, a new JMS consumer thread is created C. The time that is allowed to pass between receiving JMS messages on the same JMS connection After the timeout, a new JMS connection is established D. The time that is allowed to pass between committing the transaction and the completion of the Mule flow After the timeout, flow processing triggers an error",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Mule application contains a Batch Job with two Batch Steps (Batch_Step_1 and Batch_Step_2). A payload with 1000 records is received by the Batch Job. How many threads are used by the Batch Job to process records, and how does each Batch Step process records within the Batch Job? A. Each Batch Job uses SEVERAL THREADS for the Batch Steps Each Batch Step instance receives ONE record at a time as the payload, and BATCH STEP INSTANCES execute IN PARALLEL to process records and Batch Steps in ANY order as fast as possible B. Each Batch Job uses SEVERAL THREADS for the Batch Steps Each Batch Step instance receives ONE record at a time as the payload, and RECORDS are processed IN PARALLEL within and between the two Batch Steps C. Each Batch Job uses a SINGLE THREAD for all Batch Steps Each Batch Step instance receives ONE record at a time as the payload, and RECORDS are processed IN ORDER, first through Batch_Step_1 and then through Batch_Step_2 D. Each Batch Job uses a SINGLE THREAD to process a configured block size of record Each Batch Step instance receives A BLOCK OF records as the payload, and BLOCKS of records are processed IN ORDER",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An API has been unit tested and is ready for integration testing. The API is governed by a Client ID Enforcement policy in all environments. What must the testing team do before they can start integration testing the API in the Staging environment? A. They must request access to the Staging environment and obtain the Client ID and Client Secret for that environment to be used for testing the API B. They must request access to the API instance in the Staging environment and obtain a Client ID and Client Secret to be used for testing the API C. They must be assigned as an API version owner of the API in the Staging environment D. They must access the API portal and create an API notebook using the Client ID and Client Secret supplied by the API portal in the Staging environment",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. An organization is designing a Mule application to receive data from one external business partner. The two companies currently have no shared IT infrastructure and do not want to establish one. Instead, all communication should be over the public internet (with no VPN). What Anypoint Connector can be used in the organization's Mule application to securely receive data from this external business partner? [sampleXML/xmlfile-22_1.jpg] A. SFTP connector B. VM connector C. Object Store connector D. File connector",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization's governance process requires project teams to get formal approval from all key stakeholders for all new integration design specifications. An integration Mule application is being designed that interacts with various backend systems. The Mule application will be created using Anypoint Design Center or Anypoint Studio and will then be deployed to a customer-hosted runtime. What key elements should be included in the integration design specification when requesting approval for this Mule application? A. A list of current and future consumers of the Mule application and their contact details B. Snapshots of the Mule application's flows, including their error handling C. SLAs and non-functional requirements to access the backend systems D. The credentials to access the backend systems and contact details for the administrator of each system",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What aspect of logging is only possible for Mule applications deployed to customer-hosted Mule runtimes, but NOT for Mule applications deployed to CloudHub? A. To change log4j2 log levels in Anypoint Runtime Manager without having to restart the Mule application B. To log certain messages to a custom log category C. To send Mule application log entries to Splunk D. To directly reference one shared and customized log4j2.xml file from multiple Mule applications",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A team would like to create a project skeleton that developers can use as a starting point when creating API implementations with Anypoint Studio. This skeleton should help drive consistent use of best practices within the team. What type of Anypoint Exchange artifact(s) should be added to Anypoint Exchange to publish the project skeleton? A. A RAML archetype and reusable trait definitions to be reused across API implementations B. A custom asset with the default API implementation C. An example of an API implementation following best practices D. A Mule application template with the key components and minimal integration logic",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is required before an API implemented using the components of Anypoint Platform can be managed and governed (by applying API policies) on Anypoint Platform? A. A RAML definition of the API must be created in API designer so it can then be published to Anypoint Exchange B. The API must be published to Anypoint Exchange and a corresponding API instance ID must be obtained from API Manager to be used in the API implementation C. The API must be shared with the potential developers through an API portal so API consumers can interact with the API D. The API implementation source code must be committed to a source control management system (such as GitHub)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Order microservice and a Fulfillment microservice are being designed to communicate with their clients through message-based integration (and NOT through API invocations). The Order microservice publishes an Order message (a kind of command message) containing the details of an order to be fulfilled. The intention is that Order messages are only consumed by one Mule application, the Fulfillment microservice. The Fulfillment microservice consumes Order messages, fulfills the order described therein, and then publishes an OrderFulfilled message (a kind of event message). Each OrderFulfilled message can be consumed by any interested Mule application, and the Order microservice is one such Mule application. What is the most appropriate choice of message broker(s) and message destination(s) in this scenario? A. Order messages are sent to an Anypoint MQ exchange OrderFulfilled messages are sent to an Anypoint MQ queue Both microservices interact with Anypoint MQ as the message broker, which must therefore scale to support the load of both microservices B. Order messages are sent to a JMS queue OrderFulfilled messages are sent to a JMS topic Both microservices interact with the same JMS provider (message broker) instance, which must therefore scale to support the load of both microservices C. Order messages are sent directly to the Fulfillment microservices OrderFulfilled messages are sent directly to the Order microservice The Order microservice interacts with one AMQP-compatible message broker and the Fulfillment microservice interacts with a different AMQP-compatible message broker, so that both message brokers can be chosen and scaled to best support the load of each microservice D. Order messages are sent to a JMS queue OrderFulfilled messages are sent to a JMS topic The Order microservice interacts with one JMS provider (message broker) and the Fulfillment microservice interacts with a different JMS provider, so that both message brokers can be chosen and scaled to best support the load of each microservice",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. A Mule application is deployed to a multi-node Mule runtime cluster. The Mule application uses the competing consumer pattern among its cluster replicas to receive JMS messages from a JMS queue. To process each received JMS message, the following steps are performed in a flow: Step 1: The JMS Correlation ID header is read from the received JMS message. Step 2: The Mule application invokes an idempotent SOAP webservice over HTTPS, passing the JMS Correlation ID as one parameter in the SOAP request. Step 3: The response from the SOAP webservice also returns the same JMS Correlation ID. Step 4: The JMS Correlation ID received from the SOAP webservice is validated to be identical to the JMS Correlation ID received in Step 1. Step 5: The Mule application creates a response JMS message, setting the JMS Correlation ID message header to the validated JMS Correlation ID and publishes that message to a response JMS queue. Where should the Mule application store the JMS Correlation ID values received in Step 1 and Step 3 so that the validation in Step 4 can be performed, while also making the overall Mule application highly available, fault-tolerant, performant, and maintainable? [sampleXML/xmlfile-26_1.png] A. Both Correlation ID values should be stored in a persistent object store B. The Correlation ID value in Step 1 should be stored in a persistent object store The Correlation ID value in Step 3 should be stored as a Mule event variable/attribute C. Both Correlation ID values should be stored as Mule event variables/attributes D. Both Correlation ID values should be stored in a non-persistent object store",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization is creating a set of new services that are critical for their business. The project team prefers using REST for all services but is willing to use SOAP with common WS-* standards if a particular service requires it. What requirement would drive the team to use SOAP/WS-* for a particular service? A. Must secure the service, requiring all consumers to submit a valid SAML token B. Must support message acknowledgement and retry as part of the protocol C. Must publish and share the service specification (including data formats) with the consumers of the service D. Must use XML payloads for the service and ensure that it adheres to a specific schema",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization uses a set of customer-hosted Mule runtimes that are managed using the Mulesoft-hosted control plane. What is a condition that can be alerted on from Anypoint Runtime Manager without any custom components or custom coding? A. When an SSL certificate used by one of the deployed Mule applications is about to expire B. When a Mule runtime on a given customer-hosted server is experiencing high memory consumption during certain periods C. When a Mule runtime's customer-hosted server is about to run out of disk space D. When the Mule runtime license installed on a Mule runtime is about to expire",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Mule application currently writes to two separate SQL Server database instances across the internet using a single XA transaction. It is proposed to split this one transaction into two separate non-XA transactions with no other changes to the Mule application. What non-functional requirement can be expected to be negatively affected when implementing this change? A. Throughput B. Availability C. Response time D. Consistency",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An organization is designing the following two Mule applications that must share data via a common persistent object store instance: - Mule application P will be deployed within their on-premises datacenter. - Mule application C will run on CloudHub in an Anypoint VPC. The object store implementation used by CloudHub is the Anypoint Object Store v2 (OSv2). What type of object store(s) should be used, and what design gives both Mule applications access to the same object store instance? A. Application C and P both use the Object Store connector to access the Anypoint Object Store v2 B. Application C and P both use the Object Store connector to access a persistent object store C. Application C uses the Object Store connector to access a persistent object Application P accesses the persistent object store via the Object Store REST API D. Application P uses the Object Store connector to access a persistent object store Application C accesses this persistent object store via the Object Store REST API through an IPsec tunnel",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization's security policies mandate complete control of the login credentials used to log in to Anypoint Platform. What feature of Anypoint Platform should be used to meet this requirement? A. Federated Client Management B. Federated Identity Management C. Enterprise Security Module D. Client ID Secret",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. An organization uses a 2-node Mule runtime cluster to host one stateless API implementation. The API is accessed over HTTPS through a load balancer that uses round-robin for load distribution. Two additional nodes have been added to the cluster and the load balancer has been configured to recognize the new nodes with no other change to the load balancer. What average performance change is guaranteed to happen, assuming all cluster nodes are fully operational? [sampleXML/xmlfile-29_1.png] A. 50% reduction in the response time of the API B. 100% increase in the throughput of the API C. 50% reduction in the JVM heap memory consumed by each node D. 50% reduction in the number of requests being received by each node",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A popular retailer is designing a public API for its numerous business partners. Each business partner will invoke the API at the URL https://api.acme.com/ partners/v1. The API implementation is estimated to require deployment to 5 CloudHub workers. The retailer has obtained a public X.509 certificate for the name api.acme.com, signed by a reputable CA, to be used as the server certificate. Where and how should the X.509 certificate and Mule applications be used to configure load balancing among the 5 CloudHub workers, and what DNS entries should be configured in order for the retailer to support its numerous business partners? A. Add the X.509 certificate to a CloudHub Dedicated Load Balancer (DLB), not to the Mule application Create a CNAME for api.acme.com pointing to the DLB's A record B. Add the X.509 certificate to the Mule application's deployable archive, then configure a CloudHub Dedicated Load Balancer (DLB) for each of the Mule application's CloudHub workers Create a CNAME for api.acme.com pointing to the DLBג€™s A record C. Add the X.509 certificate to the CloudHub Shared Load Balancer (SLB), not to the Mule application Create a CNAME for api.acme.com pointing to the SLBג€™s A record D. Add the X.509 certificate to the Mule applicationג€™s deployable archive, then configure the CloudHub Shared Load Balancer (SLB) for each of the Mule application's CloudHub workers Create a CNAME for api.acme.com pointing to the SLBג€™s A record",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization uses Mule runtimes which are managed by Anypoint Platform - Private Cloud Edition. What MuleSoft component is responsible for feeding analytics data to non-MuleSoft analytics platforms? A. Anypoint Runtime Manager B. Anypoint Exchange C. Anypoint API Manager D. The Mule runtimes",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. A Mule application is being designed to expose a SOAP web service to its clients. What language is typically used inside the web service's interface definition to define the data structures that the web service is expected to exchange with its clients? [sampleXML/xmlfile-32_1.jpg] A. JSON Schema B. RAML C. WSDL D. XSD",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An organization currently uses a multi-node Mule runtime deployment model within their datacenter, so each Mule runtime hosts several Mule applications. The organization is planning to transition to a deployment model based on Docker containers in a Kubernetes cluster. The organization has already created a standard Docker image containing a Mule runtime and all required dependencies (including a JVM), but excluding the Mule application itself. What is an expected outcome of this transition to container-based Mule application deployments? A. Guaranteed consistency of execution environments across all deployments of a Mule application B. Required change to the URL endpoints used by clients to send requests to the Mule applications C. Required migration to the Docker and Kubernetes-based Anypoint Platform - Private Cloud Edition D. Required redesign of Mule applications to follow microservice architecture principles",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What comparison is true about a CloudHub Dedicated Load Balancer (DLB) vs. the CloudHub Shared Load Balancer (SLB)? A. Both a DLB and the SLB implement load balancing by sending HTTP requests to workers with the lowest workloads B. Both a DLB and the SLB allow the configuration of access control via IP whitelists C. Only a DLB allows the configuration of a custom TLS server certificate D. Only the SLB can forward HTTP traffic to the VPC-internal ports of the CloudHub workers",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Mule application uses the Database connector. What condition can the Mule application automatically adjust to or recover from without needing to restart or redeploy the Mule application? A. One of the stored procedures being called by the Mule application has been renamed B. The database server has been updated and hence the database driver library/JAR needs a minor version upgrade C. The database server was unavailable for four hours due to a major outage but is now fully operational again D. The credentials for accessing the database have been updated and the previous credentials are no longer valid",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is true about the network connections when a Mule application uses a JMS connector to interact with a JMS provider (message broker)? A. The JMS connector supports both sending and receiving of JMS messages over the protocol determined by the JMS provider B. The AMQP protocol can be used by the JMS connector to portably establish connections to various types of JMS providers C. To receive messages into the Mule application, the JMS provider initiates a network connection to the JMS connector and pushes messages along this connection D. To complete sending a JMS message, the JMS connector must establish a network connection with the JMS message recipient",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. A business process involves two APIs that interact with each other asynchronously over HTTP. Each API is implemented as a Mule application. API 1 receives the initial HTTP request and invokes API 2 (in a fire and forget fashion) while API 2, upon completion of the processing, calls back into API 1 to notify about completion of the asynchronous process. Each API is deployed to multiple redundant Mule runtimes and a separate load balancer, and is deployed to a separate network zone. In the network architecture, how must the firewall rules be configured to enable the above interaction between API 1 and API 2? [sampleXML/xmlfile-35_1.jpg] [sampleXML/xmlfile-35_2.jpg] A. To allow communication between the load balancers used by each API B. To authorize the certificates used by both the APIs C. To open direct two-way communication between the Mule runtimes of both APIs D. To enable communication from each API's Mule runtimes and network zone to the load balancer of the other API",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A new Mule application under development must implement extensive data transformation logic. Some of the data transformation functionality is already available as external transformation services that are mature and widely used across the organization; the rest is highly specific to the new Mule application. The organization follows a rigorous testing approach, where every service and application must be extensively acceptance tested before it is allowed to go into production. What is the best way to implement the data transformation logic for this new Mule application while minimizing the overall testing effort? A. Implement transformation logic in the new Mule application using DataWeave, replicating the transformation logic of existing transformation services B. Implement transformation logic in the new Mule application using DataWeave, invoking existing transformation services when possible C. Extend the existing transformation services with new transformation logic and invoke them from the new Mule application D. Implement and expose all transformation logic as microservices using DataWeave, so it can be reused by any application component that needs it, including the new Mule application",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What requires configuration of both a key store and a trust store for an HTTP Listener? A. Support for TLS mutual (two-way) authentication with HTTP clients B. Encryption of both HTTP request and HTTP response bodies for all HTTP clients C. Encryption of requests to both subdomains and API resource endpoints (https://api.customer.com/ and https://customer.com/api) D. Encryption of both HTTP request header and HTTP request body for all HTTP clients",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When using Anypoint Platform across various lines of business with their own Anypoint Platform business groups, what configuration of Anypoint Platform is always performed at the organization level as opposed to at the business group level? A. Identity management setup B. Environment setup C. Role and permission setup D. Dedicated Load Balancer setup",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An API client is implemented as a Mule application that includes an HTTP Request operation using a default configuration. The HTTP Request operation invokes an external API that follows standard HTTP status code conventions, which causes the HTTP Request operation to return a 4xx status code. What is a possible cause of this status code response? A. An error occurred inside the external API implementation when processing the HTTP request that was received from the outbound HTTP Request operation of the Mule application B. The external API reported an error with the HTTP request that was received from the outbound HTTP Request operation of the Mule application C. The HTTP response cannot be interpreted by the HTTP Request operation of the Mule application after it was received from the external API D. The external API reported that the API implementation has moved to a different external endpoint",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization has various integrations implemented as Mule applications. Some of these Mule applications are deployed to customer-hosted Mule runtimes (on- premises) while others execute in the MuleSoft-hosted runtime plane (CloudHub). To perform the integration functionality, these Mule applications connect to various backend systems, with multiple applications typically needing to access the same backend systems. How can the organization most effectively avoid creating duplicates in each Mule application of the credentials required to access the backend systems? A. Create a Mule domain project that maintains the credentials as Mule domain-shared resources Deploy the Mule applications to the Mule domain, so the credentials are available to the Mule applications B. Configure or create a credentials service that returns the credentials for each backend system, and that is accessible from customer-hosted and MuleSoft- hosted Mule runtimes Have the Mule applications load the properties at startup by invoking that credentials service C. Store the credentials in properties files in a shared folder within the organization's data center Have the Mule applications load properties files from this shared location at startup D. Segregate the credentials for each backend system into environment-specific properties files Package these properties files in each Mule application, from where they are loaded at startup",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What limits if a particular Anypoint Platform user can discover an asset in Anypoint Exchange? A. The type of the asset in Anypoint Exchange B. The business groups to which the user belongs C. If Design Center and RAML were both used to create the asset D. The existence of a public Anypoint Exchange portal to which the asset has been published",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is a recommended practice when designing an integration Mule 4 application that reads a large XML payload as a stream? A. The payload must be cached using a Cache scope if it is to be sent to multiple backend systems B. The payload size should NOT exceed the maximum available heap memory of the Mule runtime on which the Mule application executes C. The payload should be dealt with as an XML stream, without converting it to a single Java object (POJO) D. The payload should be dealt with as a repeatable XML stream, which must only be traversed (iterated-over) once and CANNOT be accessed randomly from DataWeave expressions and scripts",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What Anypoint Connectors support transactions? A. Database, JMS, VM B. Database, JMS, HTTP C. Database, JMS, VM, SFTP D. Database, VM, File",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. An organization is sizing an Anypoint VPC for the non-production deployments of those Mule applications that connect to the organization's on-premises systems. This applies to approximately 60 Mule applications. Each application is deployed to two CloudHub workers. The organization currently has three non-production environments (DEV, SIT and UAT) that share this VPC. The AWS region of the VPC has two AZs. The organization has a very mature DevOps approach which automatically progresses each application through all non-production environments before automatically deploying to production. This process results in several Mule application deployments per hour, using CloudHub's normal zero-downtime deployment feature. What is a CIDR block for this VPC that results in the smallest usable private IP address range? [sampleXML/xmlfile-40_1.jpg] A. 10.0.0.0/26 (64 IPs) B. 10.0.0.0/25 (128 IPs) C. 10.0.0.0/24 (256 IPs) D. 10.0.0.0/22 (1024 IPs)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An integration Mule application consumes and processes a list of rows from a CSV file. Each row must be read from the CSV file, validated, and the row data sent to a JMS queue, in the exact order as in the CSV file. If any processing step for a row fails, then a log entry must be written for that row, but processing of other rows must not be affected. What combination of Mule components is most idiomatic (used according to their intended purpose) when implementing the above requirements? A. Scatter-Gather component On Error Continue scope B. VM connector First Successful scope On Error Propagate scope C. Async scope On Error Propagate scope D. For Each scope On Error Continue scope",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Mule applications need to be deployed to CloudHub so they can access on-premises database systems. These systems store sensitive and hence tightly protected data, so are not accessible over the internet. What network architecture supports this requirement? A. An Anypoint VPC connected to the on-premises network using an IPsec tunnel or AWS DirectConnect, plus matching firewall rules in the VPC and on- premises network B. Relocation of the database systems to a DMZ in the on-premises network, with Mule applications deployed to the CloudHub Shared Worker Cloud connecting only to the DMZ C. An Anypoint VPC with one Dedicated Load Balancer fronting each on-premises database system, plus matching IP whitelisting in the load balancer and firewall rules in the VPC and on-premises network D. Static IP addresses for the Mule applications deployed to the CloudHub Shared Worker Cloud, plus matching firewall rules and IP whitelisting in the on- premises network",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. A Mule application has an HTTP Listener that accepts HTTP DELETE requests. This Mule application is deployed to three CloudHub workers under the control of the CloudHub Shared Load Balancer. A web client makes a sequence of requests to the Mule application's public URL. How is this sequence of web client requests distributed among the HTTP Listeners running in the three CloudHub workers? [sampleXML/xmlfile-43_1.jpg] A. Each request is routed to ONE ARBITRARY CloudHub worker in the PRIMARY Availability Zone (AZ) B. Each request is routed to the PRIMARY CloudHub worker in the PRIMARY Availability Zone (AZ) C. Each request is routed to ONE ARBITRARY CloudHub worker out of ALL three CloudHub workers D. Each request is routed (scattered) to ALL three CloudHub workers at the same time",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A REST API is being designed to implement a Mule application. What standard interface definition language can be used to define REST APIs? A. OpenAPI Specification (OAS) B. YAML C. AsyncApi Specification D. Web Services Definition Language (WSDL)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization is designing a Mule application to support an all-or-nothing transaction between several database operations and some other connectors so that they all roll back if there is a problem with any of the connectors. Besides the Database connector, what other connector can be used in the transaction? A. VM B. Anypoint MQ C. Object Store D. SFTP",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Mule application is synchronizing customer data between two different database systems. What is the main benefit of using XA transactions over local transactions to synchronize these two database systems? A. Ensures consistency B. Reduces latency C. Simplifies communication D. Increases throughput",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. This Mule application is deployed to multiple CloudHub workers with persistent queues enabled. The retrieveFile flow's event source reads a CSV file from a remote SFTP server and then publishes each record in the CSV file to a VM queue. The processCustomerRecords flow's VM Listener receives messages from the same VM queue and then processes each message separately. How are messages routed to the CloudHub workers as messages are received by the VM Listener? [sampleXML/xmlfile-46_1.png] A. Each message is routed to the SAME CloudHub worker that retrieved the file, thereby BINDING ALL messages to ONLY that ONE CloudHub worker B. Each message is duplicated to ALL of the CloudHub workers, thereby SHARING EACH message with ALL the CloudHub workers C. Each message is routed to ONE of the available CloudHub workers in a NON-DETERMINISTIC non-round-robin fashion, thereby APPROXIMATELY BALANCING messages among the CloudHub workers D. Each message is routed to ONE of the CloudHub workers in a DETERMINISTIC round-robin fashion, thereby EXACTLY BALANCING messages among the CloudHub workers",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Mule application is being designed to perform product orchestration. The Mule application needs to join together the responses from an Inventory API and a Product Sales History API with the least latency. To minimize the overall latency, what is the most idiomatic (used for its intended purpose) design to call each API request in the Mule application? A. Call each API request in a separate route of a Scatter-Gather B. Call each API request in a separate Async scope C. Call each API request in a separate route of a Parallel For Each scope D. Call each API request in a separate lookup call from a DataWeave reduce operator",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization will deploy Mule applications to CloudHub. Business requirements mandate that all application logs be stored ONLY in an external Splunk consolidated logging service and NOT in CloudHub. In order to most easily store Mule application logs ONLY in Splunk, how must Mule application logging be configured in Runtime Manager, and where should the log4j2 Splunk appender be defined? A. Disable CloudHub logging in Runtime Manager Define the Splunk appender in ONE global log4j2.xml file that is uploaded once to Runtime Manager to support all Mule application deployments B. Keep the default logging configuration in Runtime Manager Define the Splunk appender in ONE global log4j2.xml file that is uploaded once to Runtime Manager to support all Mule application deployments C. Disable CloudHub logging in Runtime Manager Define the Splunk appender in EACH Mule applicationג€™s log4j2.xml file D. Keep the default logging configuration in Runtime Manager Define the Splunk appender in EACH Mule applicationג€™s log4j2.xml file",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization uses a four (4) node customer-hosted Mule runtime cluster to host one (1) stateless API implementation. The API is accessed over HTTPS through a load balancer that uses round-robin for load distribution. Each node in the cluster has been sized to be able to accept four (4) times the current number of requests. Two (2) nodes in the cluster experience a power outage and are no longer available. The load balancer detects the outage and blocks the two unavailable nodes from receiving further HTTP requests. What performance-related consequence is guaranteed to happen, on average, assuming the remaining cluster nodes are fully operational? A. 100% increase in the number of requests received by each remaining node B. 100% increase in the average response time of the API C. 50% reduction in the throughput of the API D. 50% increase in the JVM heap memory consumed by each remaining node",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Mule application is deployed to a single CloudHub worker and the public URL appears in Runtime Manager as the App url. Requests are sent by external web clients over the public Internet to the Mule application's App url. Each of these requests is routed to the HTTPS Listener event source of the running Mule application. Later, the DevOps team edits some properties of this running Mule application in Runtime Manager. Immediately after the new property values are applied in Runtime Manager, how is the current Mule application deployment affected, and how will future web client requests to the Mule application be handled? A. CloudHub will redeploy the Mule application to the OLD CloudHub worker New web client requests are ROUTED to the OLD CloudHub worker BOTH before and after the Mule application is redeployed B. CloudHub will redeploy the Mule application to the OLD CloudHub worker New web client requests will RETURN AN ERROR until the Mule application is redeployed to the OLD CloudHub worker C. CloudHub will redeploy the Mule application to a NEW CloudHub worker New web client requests will RETURN AN ERROR until the NEW CloudHub worker is available D. CloudHub will redeploy the Mule application to a NEW CloudHub worker New web client requests are ROUTED to the OLD CloudHub worker until the NEW CloudHub worker is available",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Mule application named Inventory uses a persistent object store. The Inventory Mule application is deployed to CloudHub and is configured to use Object Store v2. Another Mule application named Roomba is being developed to delete values from the Inventory Mule application's persistent object store. The Roomba Mule application will also be deployed to CloudHub. What is the most direct way for the Roomba Mule application to delete values from the Inventory Mule application's persistent object store with the least latency? A. Use the Object Store v2 REST API configured to access the Inventory Mule applicationג€™s persistent object store B. Use a VM connector configured to directly access the persistent queue of the Inventory Mule applicationג€™s persistent object store C. Use an Object Store connector configured to access the Inventory Mule applicationג€™s persistent object store D. Use an Anypoint MQ connector configured to directly access the Inventory Mule applicationג€™s persistent object store",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization has decided on a cloud migration strategy that aims to minimize the organization's own IT resources. Currently, the organization has all of its Mule applications running on its own premises and uses an on-premises load balancer that exposes all APIs under the base URL https://api.acme.com. As part of the migration strategy, the organization plans to migrate all of its Mule applications and load balancer to CloudHub. What is the most straight-forward and cost-effective approach to Mule application deployment and load balancing that preserves the public URLs? A. Deploy the Mule applications to CloudHub Update the CNAME record for api.acme.com in the organizationג€™s DNS server pointing to the A record of the CloudHub Shared Load Balancer (SLB) Apply mapping rules in the SLB to map URLs to their corresponding Mule applications B. Deploy the Mule applications to CloudHub Create a CNAME record for api.acme.com in the CloudHub Shared Load Balancer (SLB) pointing to the A record of the on-premises load balancer Apply mapping rules in the SLB to map URLs to their corresponding Mule applications C. Deploy the Mule applications to CloudHub Update the CNAME record for api.acme.com in the organizationג€™s DNS server pointing to the A record of a CloudHub dedicated load balancer (DLB) Apply mapping rules in the DLB to map URLs to their corresponding Mule applications D. For each migrated Mule application, deploy an API Proxy Mule application to CloudHub, with all applications under the control of a CloudHub dedicated load balancer (DLB) Update the CNAME record for api.acme.com in the organizationג€™s DNS server pointing to the A record of a CloudHub dedicated load balancer (DLB) Apply mapping rules in the DLB to map each API Proxy application to its corresponding Mule application",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization has previously provisioned its own AWS VPC hosting various servers. The organization now needs to use CloudHub to host a Mule application that will implement a REST API. Once deployed to CloudHub, this Mule application must be able to communicate securely with the customer-provisioned AWS VPC resources within the same region, without being interceptable on the public Internet. What Anypoint Platform features should be used to meet these network communication requirements between CloudHub and the existing customer-provisioned AWS VPC? A. Add a Mulesoft-hosted Anypoint VPC configured with VPC Peering to the AWS VPC B. Add default API Whitelisting policies to API Manager to automatically whitelist the customer-provisioned AWS VPC IP ranges needed by the Mule application C. Use VM queues in the Mule application to allow any non-Mule assets within the customer-provisioned AWS VPC to subscribe to and receive messages D. Configure an external identity provider (IdP) in Anypoint Platform with certificates from the customer-provisioned AWS VPC",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In a Mule application, a flow contains two (2) JMS Consume operations that are used to connect to a JMS broker and consume messages from two (2) JMS destinations. The Mule application then joins the two consumed JMS messages together. The JMS broker does NOT implement high availability (HA) and periodically experiences scheduled outages of up to 10 minutes for routine maintenance. What is the most idiomatic (used for its intended purpose) way to build the Mule flow so it can best recover from the expected outages? A. Enclose the two (2) JMS operations in a Try scope with an On Error Continue error handler B. Enclose the two (2) JMS operations in an Until Successful scope C. Configure a transaction for the JMS connector D. Configure a reconnection strategy for the JMS connector",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An automation engineer needs to write scripts to automate the steps of the API lifecycle, including steps to create, publish, deploy, and manage APIs and their implementations in Anypoint Platform. What Anypoint Platform feature can be used to automate the execution of all these actions in scripts in the easiest way without needing to directly invoke the Anypoint Platform REST APIs? A. The Mule Maven Plugin B. Anypoint CLI C. Runtime Manager agent D. Automated Policies in API Manager",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Mule application is deployed to a cluster of two (2) customer-hosted Mule runtimes. Currently, the node named Alice is the primary node and the node named Bob is the secondary node. The Mule application has a flow that polls a directory on a file system for new files. The primary node Alice fails for an hour and then is restarted. After the Alice node completely restarts, from what node are the files polled, and what node is now the primary node for the cluster? A. Files are polled from the Bob node Bob is now the primary node B. Files are polled from the Bob node Alice is now the primary node C. Files are polled from the Alice node Alice is now the primary node D. Files are polled from the Alice node Bob is now the primary node",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization is evaluating using the CloudHub Shared Load Balancer (SLB) vs. creating a CloudHub dedicated load balancer (DLB). They are evaluating how this choice affects the various types of certificates used by CloudHub-deployed Mule applications, including MuleSoft-provided, customer-provided, or Mule application-provided certificates. What type of restrictions exist on the types of certificates that can be exposed by the CloudHub Shared Load Balancer (SLB) to external web clients over the public Internet? A. Only underlying Mule application certificates are exposed (pass-through) B. Only customer-provided self-signed certificates are exposed C. Only MuleSoft-provided certificates are exposed D. Only customer-provided wildcard certificates are exposed",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization is migrating all its Mule applications to Runtime Fabric (RTF). None of the Mule applications use Mule domain projects. Currently, all the Mule applications have been manually deployed to a server group among several customer-hosted Mule runtimes. Port conflicts between these Mule application deployments are currently managed by the DevOps team who carefully manage Mule application properties files. When the Mule applications are migrated from the current customer-hosted server group to Runtime Fabric (RTF), do the Mule applications need to be rewritten, and what DevOps port configuration responsibilities change or stay the same? A. NO, the Mule applications do NOT need to be rewritten DevOps MUST STILL manage port conflicts B. NO, the Mule applications do NOT need to be rewritten DevOps NO LONGER needs to manage port conflicts between the Mule applications C. YES, the Mule applications MUST be rewritten DevOps NO LONGER needs to manage port conflicts between the Mule applications D. YES, the Mule applications MUST be rewritten DevOps MUST STILL manage port conflicts",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Mule application is being designed to receive nightly a CSV file containing millions of records from an external vendor over SFTP. The records from the file need to be validated, transformed, and then written to a database. Records can be inserted into the database in any order. In this use case, what combination of Mule components provides the most effective and performant way to write these records to the database? A. Use a Batch Job scope to bulk insert records into the database B. Use a Scatter-Gather to bulk insert records into the database C. Use a Parallel For Each scope to insert records one by one into the database D. Use a DataWeave map operation and an Async scope to insert records one by one into the database",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In Anypoint Platform, a company wants to configure multiple identity providers (IdPs) for various lines of business (LOBs). Multiple business groups and environments have been defined for these LOBs. What Anypoint Platform feature can use multiple IdPs across the company's business groups and environments? A. Dedicated load balancers B. Client management C. User management D. Roles and permissions",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An external REST client periodically sends an array of records in a single POST request to a Mule application's API endpoint. The Mule application must validate each record of the request against a JSON schema before sending it to a downstream system in the same order that it was received in the array. Record processing will take place inside a router or scope that calls a child flow. The child flow has its own error handling defined. Any validation or communication failures should not prevent further processing of the remaining records. To best address these requirements, what is the most idiomatic (used for its intended purpose) router or scope to use in the parent flow, and what type of error handler should be used in the child flow? A. Parallel For Each scope in the parent flow On Error Propagate error handler in the child flow B. First Successful router in the parent flow On Error Continue error handler in the child flow C. For Each scope in the parent flow On Error Continue error handler in the child flow D. Until Successful router in the parent flow On Error Propagate error handler in the child flow",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Mule application uses an HTTP Request operation to invoke an external API. The external API follows the HTTP specification for proper status code usage. What is a possible cause when a 3xx status code is returned to the HTTP Request operation from the external API? A. The request was ACCEPTED by the external API B. The request was REDIRECTED to a different URL by the external API C. The request was NOT RECEIVED by the external API D. The request was NOT ACCEPTED by the external API",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization is sizing an Anypoint VPC to extend their internal network to CloudHub. For this sizing calculation, the organization assumes 150 Mule applications will be deployed among three (3) production environments and will use CloudHub's default zero-downtime feature. Each Mule application is expected to be configured with two (2) CloudHub workers. This is expected to result in several Mule application deployments per hour. What is the minimum number of IP addresses that should be configured for this VPC that results in the smallest usable private IP address range to support the deployment and zero downtime of these 150 Mule applications (not accounting for any future Mule applications)? A. 10.0.0.0/21 (2048 IPs) B. 10.0.0.0/22 (1024 IPs) C. 10.0.0.0/23 (512 IPs) D. 10.0.0.0/24 (256 IPs)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Mule application contains a Batch Job scope with several Batch Step scopes. The Batch Job scope is configured with a batch block size of 25. A payload with 4,000 records is received by the Batch Job scope. When there are no errors, how does the Batch Job scope process records within and between the Batch Step scopes? A. The Batch Job scope processes multiple record blocks in parallel, and a block of 25 records can jump ahead to the next Batch Step scope over an earlier block of records Each Batch Step scope is invoked with one record in the payload of the received Mule event For each Batch Step scope, all 25 records within a block are processed in parallel All the records in a block must be completed before the block of 25 records is available to the next Batch Step scope B. The Batch Job scope processes each record block sequentially, one at a time Each Batch Step scope is invoked with one record in the payload of the received Mule event For each Batch Step scope, all 25 records within a block are processed sequentially, one at a time All 4000 records must be completed before the blocks of records are available to the next Batch Step scope C. The Batch Job scope processes multiple record blocks in parallel, and a block of 25 records can jump ahead to the next Batch Step scope over an earlier block of records Each Batch Step scope is invoked with one record in the payload of the received Mule event For each Batch Step scope, all 25 records within a block are processed sequentially, one record at a time All the records in a block must be completed before the block of 25 records is available to the next Batch Step scope D. The Batch Job scope processes multiple record blocks in parallel Each Batch Step scope is invoked with a batch of 25 records in the payload of the received Mule event For each Batch Step scope, all 4000 records are processed in parallel Individual records can jump ahead to the next Batch Step scope before the rest of the records finish processing in the current Batch Step scope",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "To implement predictive maintenance on its machinery equipment, ACME Tractors has installed thousands of IoT sensors that will send data for each machinery asset as sequences of JMS messages, in near real-time, to a JMS queue named SENSOR_DATA on a JMS server. The Mule application contains a JMS Listener operation configured to receive incoming messages from the JMS servers SENSOR_DATA JMS queue. The Mule application persists each received JMS message, then sends a transformed version of the corresponding Mule event to the machinery equipment back-end systems. The Mule application will be deployed to a multi-node, customer-hosted Mule runtime cluster. Under normal conditions, each JMS message should be processed exactly once. How should the JMS Listener be configured to maximize performance and concurrent message processing of the JMS queue? A. Set numberOfConsumers = 1 Set primaryNodeOnly = false B. Set numberOfConsumers = 1 Set primaryNodeOnly = true C. Set numberOfConsumers to a value greater than one Set primaryNodeOnly = true D. Set numberOfConsumers to a value greater than one Set primaryNodeOnly = false",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Mule application is synchronizing customer data between two different database systems. What is the main benefit of using eXtended Architecture (XA) transactions over local transactions to synchronize these two different database systems? A. An XA transaction synchronizes the database systems with the least amount of Mule configuration or coding B. An XA transaction handles the largest number of requests in the shortest time C. An XA transaction automatically rolls back operations against both database systems if any operation falls D. An XA transaction writes to both database systems as fast as possible",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization has implemented a continuous integration (CI) lifecycle that promotes Mule applications through code, build, and test stages. To standardize the organization's CI journey, a new dependency control approach is being designed to store artifacts that include information such as dependencies, versioning, and build promotions. To implement these process improvements, the organization will now require developers to maintain all dependencies related to Mule application code in a shared location. What is the most idiomatic (used for its intended purpose) type of system the organization should use in a shared location to standardize all dependencies related to Mule application code? A. A MuleSoft-managed repository at repository.mulesoft.org B. A binary artifact repository C. API Community Manager D. The Anypoint Object Store service at cloudhub.io",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization has deployed both Mule and non-Mule API implementations to integrate its customer and order management systems. All the APIs are available to REST clients on the public internet. The organization wants to monitor these APIs by running health checks: for example, to determine if an API can properly accept and process requests. The organization does not have subscriptions to any external monitoring tools and also does not want to extend its IT footprint. What Anypoint Platform feature provides the most idiomatic (used for its intended purpose) way to monitor the availability of both the Mule and the non-Mule API implementations? A. API Functional Monitoring B. Runtime Manager C. API Manager D. Anypoint Visualizer",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The ABC company has an Anypoint Runtime Fabric on VMs/Bare Metal (RTF-VM) appliance installed on its own customer-hosted AWS infrastructure. Mule applications are deployed to this RTF-VM appliance. As part of the company standards, the Mule application logs must be forwarded to an external log management tool (LMT). Given the company's current setup and requirements, what is the most idiomatic (used for its intended purpose) way to send Mule application logs to the external LMT? A. In RTF-VM, install and configure the external LTM's log-forwarding agent B. In RTF-VM, edit the pod configuration to automatically install and configure an Anypoint Monitoring agent C. In each Mule application, configure custom Log4j settings D. In RTF-VM, configure the out-of-the-box external log forwarder",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization is designing an integration Mule application to process orders by submitting them to a back-end system for offline processing. Each order will be received by the Mule application through an HTTPS POST and must be acknowledged immediately. Once acknowledged, the order will be submitted to a back-end system. Orders that cannot be successfully submitted due to rejections from the back-end system will need to be processed manually (outside the back-end system). The Mule application will be deployed to a customer-hosted runtime and is able to use an existing ActiveMQ broker if needed. The ActiveMQ broker is located inside the organization’s firewall. The back-end system has a track record of unreliability due to both minor network connectivity issues and longer outages. What idiomatic (used for their intended purposes) combination of Mule application components and ActiveMQ queues are required to ensure automatic submission of orders to the back-end system while supporting but minimizing manual order processing? A. An Until Successful scope to call the back-end system One or more ActiveMQ long-retry queues One or more ActiveMQ dead-letter queues for manual processing B. One or more On Error scopes to assist calling the back-end system An Until Successful scope containing VM components for long retries A persistent dead-letter VM queue configured in CloudHub C. One or more On Error scopes to assist calling the back-end system One or more ActiveMQ long-retry queues A persistent dead-letter object store configured in the CloudHub Object Store service D. A Batch Job scope to call the back-end system An Until Successful scope containing Object Store components for long retries A dead-letter object store configured in the Mule application",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Mule application is running on a customer-hosted Mule runtime in an organization's network. The Mule application acts as a producer of asynchronous Mule events. Each Mule event must be broadcast to all interested external consumers outside the Mule application. The Mule events should be published in a way that is guaranteed in normal situations and also minimizes duplicate delivery in less frequent failure scenarios. The organizational firewall is configured to only allow outbound traffic on ports 80 and 443. Some external event consumers are within the organizational network, while others are located outside the firewall. What Anypoint Platform service is most idiomatic (used for its intended purpose) for publishing these Mule events to all external consumers while addressing the desired reliability goals? A. CloudHub VM queues B. Anypoint MQ C. Anypoint Exchange D. CloudHub Shared Load Balancer",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Mule application uses APIkit for SOAP to implement a SOAP web service. The Mule application has been deployed to a CloudHub worker in a testing environment. The integration testing team wants to use a SOAP client to perform Integration testing. To carry out the integration tests, the integration team must obtain the interface definition for the SOAP web service. What is the most idiomatic (used for its intended purpose) way for the integration testing team to obtain the interface definition for the deployed SOAP web service in order to perform integration testing with the SOAP client? A. Retrieve the OpenAPI Specification file(s) from API Manager B. Retrieve the WSDL file(s) from the deployed Mule application C. Retrieve the RAML file(s) from the deployed Mule application D. Retrieve the XML file(s) from Runtime Manager",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Anypoint Platform, a company wants to configure multiple identity providers (IdPs) for multiple lines of business (LOBs). Multiple business groups, teams, and environments have been defined for these LOBs. What Anypoint Platform feature can use multiple IdPs across the company’s business groups, teams, and environments? A. MuleSoft-hosted (CloudHub) dedicated load balancers B. Client (application) management C. Virtual private clouds D. Permissions",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An external web UI application currently accepts occasional HTTP requests from client web browsers to change (insert, update, or delete) inventory pricing information in an inventory system's database. Each inventory pricing change must be transformed and then synchronized with multiple customer experience systems in near real-time (in under 10 seconds). New customer experience systems are expected to be added in the future. The database is used heavily and limits the number of SELECT queries that can be made to the database to 10 requests per hour per user. What is the most scalable, idiomatic (used for its intended purpose), decoupled. reusable, and maintainable integration mechanism available to synchronize each inventory pricing change with the various customer experience systems in near real-time? A. Write a Mule application with a Database On Table Row event source configured for the inventory pricing database, with the watermark attribute set to an appropriate database column In the same now, use a Scatter-Gather to call each customer experience system's REST API with transformed inventory-pricing records B. Add a trigger to the inventory-pricing database table so that for each change to the inventory pricing database, a stored procedure is called that makes a REST call to a Mule application Write the Mule application to publish each Mule event as a message to an Anypoint MQ exchange Write other Mule applications to subscribe to the Anypoint MQ exchange, transform each received message, and then update the Mule application's corresponding customer experience system(s) C. Replace the external web UI application with a Mule application to accept HTTP requests from client web browsers In the same Mule application, use a Batch Job scope to test if the database request will succeed, aggregate pricing changes within a short time window, and then update both the inventory pricing database and each customer experience system using a Parallel For Each scope D. Write a Mule application with a Database On Table Row event source configured for the inventory pricing database, with the ID attribute set to an appropriate database column In the same flow, use a Batch Job scope to publish transformed Inventory-pricing records to an Anypoint MQ queue Write other Mule applications to subscribe to the Anypoint MQ queue, transform each received message, and then update the Mule application's corresponding customer experience system(s)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An ABC Farms project team is planning to build a new API that is required to work with data from different domains across the organization. The organization has a policy that all project teams should leverage existing investments by reusing existing APIs and related resources and documentation that other project teams have already developed and deployed. To support reuse, where on Anypoint Platform should the project team go to discover and read existing APIs, discover related resources and documentation, and interact with mocked versions of those APIs? A. Design Center B. API Manager C. Runtime Manager D. Anypoint Exchange",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Mule application is being designed for deployment to a single CloudHub worker. The Mule application will have a flow that connects to a SaaS system to perform some operations each time the flow is invoked. The SaaS system connector has operations that can be configured to request a short-lived token (fifteen minutes) that can be reused for subsequent connections within the fifteen minute time window. After the token expires, a new token must be requested and stored. What is the most performant and idiomatic (used for its intended purpose) Anypoint Platform component or service to use to support persisting and reusing tokens in the Mule application to help speed up reconnecting the Mule application to the SaaS application? A. Nonpersistent object store B. Persistent object store C. Variable D. Database",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization has an HTTPS-enabled Mule application named Orders API that receives requests from another Mule application named Process Orders. The communication between these two Mule applications must be secured by TLS mutual authentication (two-way TLS). At a minimum, what must be stored in each truststore and keystore of these two Mule applications to properly support two-way TLS between the two Mule applications while properly protecting each Mule application's keys? A. Orders API truststore: The Orders API public key Process Orders keystore: The Process Orders private key and public key B. Orders API truststore: The Orders API private key and public key Process Orders keystore: The Process Orders private key public key C. Orders API truststore: The Process Orders public key Orders API keystore: The Orders API private key and public key Process Orders truststore: The Orders API public key Process Orders keystore: The Process Orders private key and public key D. Orders API truststore: The Process Orders public key Orders API keystore: The Orders API private key Process Orders truststore: The Orders API public key Process Orders keystore: The Process Orders private key",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Mule application is built to support a local transaction for a series of operations on a single database. The Mule application has a Scatter-Gather that participates in the local transaction. What is the behavior of the Scatter-Gather when running within this local transaction? A. Execution of each route within the Scatter-Gather occurs sequentially Any error that occurs inside the Scatter-Gather will result in a rollback of all the database operations B. Execution of all routes within the Scatter-Gather occurs in parallel Any error that occurs inside the Scatter-Gather will result in a rollback of all the database operations C. Execution of each route within the Scatter-Gather occurs sequentially Any error that occurs inside the Scatter-Gather will NOT result in a rollback of any of the database operations D. Execution of each route within the Scatter-Gather occurs in parallel Any error that occurs inside the Scatter-Gather will NOT result in a rollback of any of the database operations",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization is creating a Mule application that will be deployed to CloudHub. The Mule application has a property named dbPassword that stores a database user’s password. The organization's security standards indicate that the dbPassword property must be hidden from every Anypoint Platform user after the value is set in the Runtime Manager Properties tab. What configuration in the Mule application helps hide the dbPassword property value in Runtime Manager? A. Use secure::dbPassword as the property placeholder name and store the cleartext (unencrypted) value in a secure properties placeholder file B. Use secure::dbPassword as the property placeholder name and store the property encrypted value in a secure properties placeholder file C. Add the dbPassword property to the secureProperties section of the pom.xml file D. Add the dbPassword property to the secureProperties section of the mule-artifact.json file",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An organization is designing a Mule application to periodically poll an SFTP location for new files containing sales order records and then process those sales orders. Each sales order must be processed exactly once. To support this requirement, the Mule application must identify and filter duplicate sales orders on the basis of a unique ID contained in each sales order record and then only send the new sales orders to the downstream system. What is the most idiomatic (used for its intended purpose) Anypoint connector, validator, or scope that can be configured in the Mule application to filter duplicate sales orders on the basis of the unique ID field contained in each sales order record? A. Configure a Cache scope to filter and store each record from the received file by the order ID B. Configure a Database connector to filter and store each record by the order ID C. Configure an Idempotent Message Validator component to filter each record by the order ID D. Configure a watermark In an On New or Updated File event source to filter unique records by the order ID",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization's security requirements mandate centralized control at all times over authentication and authorization of external applications when invoking web APIs managed on Anypoint Platform. What Anypoint Platform feature is most idiomatic (used for its intended purpose), straightforward, and maintainable to use to meet this requirement? A. Client management configured in access management B. Identity management configured in access management C. Enterprise Security module coded in Mule applications D. External access configured in API Manager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization has defined a common object model in Java to mediate the communication between different Mule applications in a consistent way. A Mule application is being built to use this common object model to process responses from a SOAP API and a REST API and then write the processed results to an order management system. The developers want Anypoint Studio to utilize these common objects to assist in creating mappings for various transformation steps in the Mule application. What is the most idiomatic (used for its intended purpose) and performant way to utilize these common objects to map between the inbound and outbound systems in the Mule application? A. Use JAXB (XML) and Jackson (JSON) data bindings B. Use the WSS module C. Use the Java module D. Use the Transform Message component",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A marketing organization is designing a Mule application to process campaign data. The Mule application will periodically check for a file in a SFTP location and process the records in the file. The size of the file can vary from 10MB to 5GB. Due to the limited availabiltty of vCores, the Mule application is deployed to a single CloudHub worker configured with vCore size 0.2. The application must transform and send different formats of this file to three different downstream SFTP locations. What is the most idiomatic (used for its intended purpose) and performant way to configure the SFTP operations or event sources to process the large files to support these deployment requirements? A. Use an in-memory repeatable stream B. Use a file-stored non-repeatable stream C. Use an in-memory non-repeatable stream D. Use a file-stored repeatable stream",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A manufacturing company is planning to deploy Mule applications to its own Azure Kubernetes Service infrastructure. The organization wants to make the Mule applications more available and robust by deploying each Mule application to an isolated Mule runtime in a Docker container while managing all the Mule applications from the MuleSoft-hosted control plane. What is the most idiomatic (used for its intended purpose) choice of runtime plane to meet these organizational requirements? A. Anypoint Platform Private Cloud Edition B. Anypoint Runtime Fabric C. CloudHub D. Anypoint Service Mesh",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The AnyAirline organization's passenger reservations center is designing an integration solution that combines invocations of three different System APIs (bookFlight, bookHotel, and bookCar) in a business transaction. Each System API makes calls to a single database. The entire business transaction must be rolled back when at least one of the APIs fails. What is the most idiomatic (used for its intended purpose) way to integrate these APIs in near real-time that provides the best balance of consistency, performance, and reliability? A. Implement eXtended Architecture (XA) transactions between the API implementations Coordinate between the API implementations using a Saga pattern Implement caching in each API implementation to improve performance B. Implement local transactions within each API implementation Configure each API implementation to also participate in the same eXtended Architecture (XA) transaction Implement caching in each API implementation to improve performance C. Implement local transactions in each API implementation Coordinate between the API implementations using a Saga pattern Apply various compensating actions depending on where a failure occurs D. Implement an eXtended Architecture (XA) transaction manager in a Mule application using a Saga pattern Connect each API implementation with the Mule application using XA transactions Apply various compensating actions depending on where a failure occurs",
+    "options": {},
+    "most_voted": "C"
+  }
+]
