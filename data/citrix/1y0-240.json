@@ -1,0 +1,342 @@
+[
+  {
+    "question": "Scenario: User authentication is failing through the NetScaler. A Citrix Administrator checked the Authentication, Authorization and Auditing (AAA) policy, action and virtual server and verified that the correct configuration was in place. The administrator bypassed the NetScaler and the authentication worked. Which NetScaler utility can the administrator use to troubleshoot the access issue? A. aaad.debug B. Dashboard C. nscon message D. nslog file",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator manages an environment that has three SSL websites, all serving the same content. www.company.com www.company.net www.company.org The administrator would like to consolidate the website into a single, load-balanced SSL virtual server. Which action can the administrator take to use a single SSL virtual server? A. Bind the certificate of each website to a single SSL virtual server. B. Bind a multiple Subject Alternative Name (SAN) certificate to a single SSL virtual server. C. Bind a Wildcard certificate to a single SSL virtual server. D. Bind a Wildcard certificate to a Content Switching virtual server.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In the Global Server Load Balancing (GSLB) configuration when dynamic proximity is implemented, the round trip time (RTT) between the _____________ and _____________ is measured to make the load decision. (Choose the correct option to complete the sentence.) A. IP address of the client; each of the GSLB sites. B. Local DNS of the client; each of the GSLB sites. C. Local DNS of the client; each of the GSLB services. D. IP address of the client; each of the GSLB services.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Load Balancing virtual server (lb_vsrv_www) is configured to load balance service_1 and service_2. A Citrix Administrator needs to bind a content filter policy to the virtual server, such that if the user tries to access http://xenapp.citrix.com, then the request should go to service_1. Which policy can the administrator use in this scenario? A. add filter action Redirect_Service_1_Act redirect Service_1 add filter policy Redirect_Service_1_Pol -rule \"REQ.HTTP.HEADER HOSTANME CONTAINS xenapp.citrix.com\" reqAction Redirect_Service_1_Act B. add filter action Redirect_Service_1_Act forward Service_1 add filter policy Redirect_Service_1_Pol -rule \"REQ.HTTP.HEADER HOSTANME CONTAINS xenapp.citrix.com\" reqAction Redirect_Service_1_Act C. add filter action Redirect_Service_1_Act forward Service_1 add filter policy Redirect_Service_1_Pol -rule \"REQ.HTTP.HEADER HOSTANME CONTAINS xenapp.citrix.com\" D. add filter action Redirect_Service_1_Act respond Service_1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is concerned about the amount of health checks the NetScaler is sending to the backend resources. The administrator would like to find a way to remove health checks from specific bound services. How can the administrator accomplish this? A. Use the No-Monitor option. B. Use Service Groups to minimize health checks. C. Unbind the current monitor. D. Use reverse condition monitoring.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which scenario will cause automatic high availability (HA) synchronization to fail? A. Different build versions B. Manually forced synchronization C. A force failover D. A configuration change to the primary NetScaler",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Administrator has configured the rewrite action as follows: add rewrite action sync_date replace http.res.date sys.time What is the correct way to interpret this rewrite action? A. The rewrite action replaces the Date header in the http response with the GMT time stamp. B. The rewrite action replaces the Date header in the http response with the NetScaler system time in a conventional date format. C. The rewrite action is invalid, as system time CANNOT be referenced in the system policy. D. The rewrite action replaces the NetScaler system time with the Date header in a conventional date format.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Users are experiencing resets from the Intranet server website, which is load-balanced through the NetScaler. Which NetScaler tool can a Citrix Administrator use to troubleshoot the reset issue? A. Take a packet trace with nstrace and analyze with WireShark. B. View the new nslog from the command-line interface (CLI) to look for packet resets from the NetScaler. C. Look in the Event Viewer for packet resets from the NetScaler. D. Use the nslog to look for packet resets on the NetScaler.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which policy will allow a Citrix Administrator to modify all the URLs in the response body from \"http://\" to \"https://\" in an SSL offload deployment? A. add rewrite action Act1 replace_all \"HTTP.RES.BODY(200000)\" \"\\\"http://\\\"\" –pattern \"https://\" add rewrite policy Pol1 true Act1 NOREWRITE B. add rewrite action Act1 replace_all \"HTTP.RES.BODY(200000)\" \"\\\"http:\\\"\" –pattern \"https://\\\" add rewrite policy Pol1 true Act1 NOREWRITE C. add rewrite action Act1 replace_all \"HTTP.RES.BODY(200000)\" \"\\\"https://\\\"\" –pattern \"http://\" add rewrite policy Pol1 true Act1 NOREWRITE D. add rewrite action Act1 replace_all \"HTTP.RES.BODY(200000)\" \"\\\"https:\\\"\" –pattern \"http://\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator notices user sessions are disconnecting and reconnecting more often this week than last week, signaling a problem. The administrator troubleshoots this issue and prepares to resolve it using persistence. However, the following consideration apply in the environment: ✑ It is a multi-proxy environment behind the NetScaler. ✑ Use Source IP (USIP) mode is enabled and applied to the services. ✑ The session timeout is very short. ✑ All users connect from the same location. The administrator can use persistence based on the ______________ setting to resolve this issue. (Choose the correct option to complete the sentence.) A. Subnet IP B. HTTP Cookies C. Proximity D. SSL Session IDs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A user is attempting to access a web server which is load balanced by the NetScaler using HTTPS. The user received the following message: SSL/TLS error: You have not chosen to trust \"Certificate Authority\" the issuer of the server’s security certificate. What can a Citrix Administrator do to prevent users from viewing this message? A. Ensure that the intermediate Certificate is linked to the Root Certificate. B. Ensure that the user has the Server Certificate installed. C. Ensure that the user has the Certificate’s Public key. D. Ensure that the intermediate Certificate is linked to the Server Certificate.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "View the Exhibit. [sampleXML/xmlfile-8_1.jpg] A Citrix Administrator has configured the commands using the command-line interface. Click on the Exhibit button to view the screenshots of the command-line interface. What will be the effect of the rewrite policy, based on the exhibit? A. HTTP Header \"SSL_parameter: [email protected] \" will be inserted in every RESPONSE. B. HTTP Header \"SSL_parameter: [email protected] \" will be inserted in every REQUEST. C. HTTP Header \"SSL_parameter: C=IN, ST=KA, O=Mylab, [email protected] \" will be inserted in every RESPONSE. D. HTTP Header \"SSL_parameter: C=IN, ST=KA, O=Mylab, [email protected] \" will be inserted in every REQUEST.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command should a Citrix Administrator use to configure a Content Switching virtual server for implementing the Secure Web Gateway in the transparent proxy mode? A. add cs vserver swgVS PROXY 192.168.10.1 80 –Authn401 on –authnVsName explicit-auth-vs B. add cs vserver swgVS PROXY ** –Authn401 on –authnVsName explicit-auth-vs C. add cs vserver swgVS PROXY 192.168.10.1 –Authn401 on –authnVsName transparent-auth-vs D. add cs vserver swgVS PROXY * 21 –Authn401 on –authnVsName transparent-auth-vs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator has configured a Responder policy as follows: add responder action Redirect_Act respond with \"DIAMETER.NEW_REDIRECT(\\\"aaa://host.example.com\\\")\" add responder policy Redirect_Pol \"diameter.req.avp(264).value.eq(\\\"host1.example.net\\\")\" Redirect_Act bind lb vserver vs1 policyName Redirect_Pol priority 10 type REQUEST What will be the effect of this configuration? A. Response originated from \"host.example.net\" will be redirected to \"host1.example.com\". B. Request originated from \"host.example.net\" will be redirected to \"host1.example.com\". C. Response originated from \"host1.example.net\" will be redirected to \"host.example.com\". D. Request originated from \"host1.example.net\" will be redirected to \"host.example.com\".",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator of a Linux environment needs to load-balance the web servers in an environment. However, due to budget constraints, the administrator is NOT able to implement a full-scale solution. What can the administrator do to load-balance the web servers in this scenario? A. Purchase a NetScaler SDX. B. Install a NetScaler CPX. C. Purchase a NetScaler MPX. D. Install NetScaler VPX.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which mode does a Citrix Administrator need to configure in order to allow the NetScaler to forward any packets that are NOT destined for an IP address that is NOT configured on NetScaler? A. USIP B. Layer 3 Mode C. Layer 2 Mode D. MBF",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A NetScaler appliance is having intermittent issues. A Citrix Administrator is unable to identify the root cause and fix them. The administrator opened a Support ticket and the Engineer assigned to the case requested all the logs and configuration information from the NetScaler. Which technical support tool can the administrator use to gather all the information on the NetScaler to send to the Support Engineer? A. Batch Configuration B. Start New Trace C. Get Back Trace D. Generate Support File",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is configuring SNMP management on the NetScaler to receive alerts when something fails. The administrator was confident that the Manager, Alarms and SNMP Traps were configured correctly. The following week, there was a NetScaler-related outage and the administrator did NOT get any alerts. What could be the reason for the SNMP alert failure? A. The Community Name was NOT configured on the NetScaler SNMP Trap Destination settings. B. The NetScaler only has Standard licensing. C. The NetScaler is configured for SNMP version 1. D. The NetScaler Application Firewall is blocking the alerts from going out.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is a recommended practice for managing a NetScaler high availability (HA) pair to ensure that management changes are always made on the Primary NetScaler? A. Connect to both NetScalers to see which one is the Primary. B. Enable Management Access to a SNIP. C. Enable Management Access on the Cluster IP (CLIP) address. D. Connect to the shared HA NSIP.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "View the Exhibit. [sampleXML/xmlfile-13_1.jpg] A Citrix Administrator has noticed that the users trying to access https://mycitrix.training.lab/exchange2016/owa are redirected to CAS_vserver_www instead of CAS_vserver_owa. Click on the Exhibit button to view the screenshot of the command-line interface. What should the administrator change to resolve this issue? A. Unbind cs vserver CAS_vserver_cs –lbvserver CAS_vserver_www B. Bind cs vserver CAS_vserver_cs –policyName CAS_policy_cs_owa –priority 120 C. Bind cs vserver CAS_vserver_cs –policyName CAS_policy_cs_owa –priority 80 D. Add cs policy CAS_policy_cs_owa –rule \"HTTP.REQ.URL.SET_TEXT_MODE(IGNORECASE).CONTAINS(\\\"/owa\\\")\" –action CAS_action_cs_owa",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two configurations can a Citrix Administrator use to block all the post requests that are larger than 10,000 bytes in order to protect the environment against HashDoS attacks? (Choose two.) A. add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\") && http.REQ.CONTENT_LENGTH.GT(10000)\" add responder policy pol_resp_hashdos_prevention expr_hashdos_prevention DROP NOOP bind responder global pol_resp_hashdos_prevention 70 END type REQ_OVERRIDE B. add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\") && http.REQ.CONTENT_LENGTH.GT(10000)\" add rewrite policy drop_rewrite expr_hashdos_prevention DROP bind rewrite global drop_rewrite 100 END type REQ_OVERRIDE C. add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\") || http.REQ.CONTENT_LENGTH.GT(10000)\" add responder policy pol_resp_hashdos_prevention expr_hashdos_prevention DROP NOOP bind responder global pol_resp_hashdos_prevention 70 END type REQ_OVERRIDE D. add policy expression expr_hashdos_prevention \"http.REQ.METHOD.EQ(\\\"POST\\\") || http.REQ.CONTENT_LENGTH.GT(10000)\" add rewrite policy drop_rewrite expr_hashdos_prevention DROP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After being audited, a Citrix Administrator was notified that additional enhancements should be made of the virtual servers. Which two options can the administrator take to make the additional enhancements? (Choose two.) A. Enable RC4 cipher suite B. Create SHA1 key C. Enable TLSv1.2 D. Disable SSLv3",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is running applications on thousands of load-balanced backend servers in a large infrastructure. It is difficult to track and troubleshoot problems due to the large volume of traffic received. Which feature of NetScaler Management and Analytics System (NetScaler MAS) can the administrator configure to monitor and troubleshoot in detail for an environment of this size? A. AppFlow Analytics B. Advanced Analytics with Telemetry Node installed C. Application Performance Analytics D. Application Security Analytics",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A user needs to resolve the domain training.citrix.com, and the information is NOT available in resolver cache and Local Domain Name Server (DNS). Where will the request be forwarded next? A. Root server B. Authoritative Name server C. Top-level Domain server D. Second-level Domain server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "View the Exhibit. [sampleXML/xmlfile-17_1.jpg] A Citrix Administrator has implemented the HTTP Callout. Click on the Exhibit button to view the screenshot of the command-line interface. Which part of the configuration is responsible for triggering the call to HTTP Callout server? A. –parameters cip(CLIENT.IP.SRC) B. sys.http_callout(myCallout1) C. –urlStemExpr \"\\\"/cgi-bin/check_clnt_from_database.pl\\\" D. –headers Request(\"Callout Request\")",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Administrator needs to configure the Lights Out Management (LOM) port. Which statement is applicable to LOM? A. LOM is accessed using Command-Line Interface (CLI). B. LOM IP address should be in the same subnet as NSIP. C. LOM firmware is included in the NetScaler upgrade package. D. LOM port can be used to remotely monitor and manage the appliance.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which VLAN(S) will be bound to an interface, if VLAN 20 is bound to the interface as tagged in an environment where NetScaler is configured with the default settings? A. VLAN 20 untagged only B. VLAN 1 tagged, VLAN 20 tagged C. VLAN 1 untagged, VLAN 20 tagged D. VLAN 20 tagged only",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two options should a Citrix Administrator consider when adding a secondary device in a high availability (HA) pair? (Choose two.) A. Configure the HA status of the Primary Node as STAYPRIMARY. B. HA Monitoring should be disabled on all the unused interfaces. C. Both the devices should have different SNIP addresses. D. The nsroot password should be the same on both nodes. E. The Independent Network Configuration (INC) mode should be enabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: External users are currently experiencing delays while accessing XenApp and XenDesktop through the NetScaler. A Citrix Administrator needs to monitor the ICA connections to gather the performance information from the NetScaler Management and Analytics System (MAS). Which two tools can the administrator use to gather information about WAN Latency, DC Latency and Host Delay? (Choose two.) A. HDX Insight B. Gateway Insight C. Web Insight D. TCP Insight",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator has configured the following Access Control List (ACL) to block traffic from the IP address 10.102.29.5. add simpleacl rule1 DENY srcIP 10.102.29.5 A week later, the administrator found that the ACL is no longer present on the NetScaler. What could be the reason for this? A. The administrator did NOT run the apply ACL command. B. The NetScaler has been restarted without saving the configurations. C. The Simple ACLs remain active for only 600 seconds. D. The Simple ACLs remain active for only 60 seconds.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator has configured an Authentication, Authorization, and Auditing (AAA) action policy to allow users access through the NetScaler. The administrator bound the policy to a specific virtual server. Which policy expression will allow all users access through the virtual server? A. ns_disallow B. ns_false C. ns_allow D. ns_true",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "View the Exhibit. [sampleXML/xmlfile-21_1.png] A Citrix Administrator has executed the commands in the screenshot on the NetScaler using the command-line interface. Click on the Exhibit button to view the screenshot of the command-line interface. Which two replacements will be the outcome of executing these commands? (Choose two.) A. http:// will be replaced by https:// in the HTTP RESPONSE B. https:// will be replaced by http:// in the HTTP RESPONSE C. http:// will be replaced by https:// in the HTTP REQUEST D. https:// will be replaced by http:// in the HTTP REQUEST",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator needs to add 10 new web servers to an existing server farm. The new servers are configured to serve the same applications and connections and are twice the capacity of the existing servers. The administrator wants to ensure that they are being fully utilized. Currently in the environment, the default load-balancing method is being used. To ensure that only the 10 new servers are receiving twice the connections of the old servers without changing the load balancing to the rest of the environment, the administrator needs to add a weight of ______________ to the services attached to the ______________ servers. (Choose the correct option to complete the sentence.) A. 50; new B. 50; old C. 2; new D. 2; old",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is executing the following commands on the NetScaler: add policy dataset Admin_group ipv4 bind policy dataset Admin_group 192.168.149.10 index 11 bind policy dataset Admin_group 192.168.149.39 index 12 bind policy dataset Admin_group 192.168.149.49 index 13 add responder policy POL_1 \"!(CLIENT.IP.SRC.TYPECAST_TEXT_T.CONTAINS_ANY(\\\"Admin_group\\\"))\" RESET bind lb vserver ln_vsrv_www policyName POL_1 priority 100 gotoPriorityExpression END type REQUEST What will be the effect of these commands? A. All the traffic from users with a source IP address of 192.168.149.10, 192.168.149.39, or 192.168.149.49 will be blocked through the NetScaler. B. Only the users with a source IP address of 192.168.149.10, 192.168.149.39, or 192.168.149.49 will be allowed to connect to vserver lb_vsrv_www. C. Only the users with a source IP address of 192.168.149.10, 192.168.149.39, or 192.168.149.49 will be blocked when attempting to connect to vserver lb_vsrv_www. D. Only the users with a source IP address of 192.168.149.10 or 192.168.149.39 will be allowed to connect to the virtual server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three statements are true when comparing a Simple Access Control List (ACL) to an Extended ACL? (Choose three.) A. Simple ACLs can be modified. B. Extended ACLs have priorities. C. Simple ACLs apply first. D. Extended ACLs apply first. E. Simple ACLs are based on the Source IP address only. F. Simple ACLs can bridge traffic. G. Simple ACLs can be based on the Source and Destination IP address.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator manages an environment that has a NetScaler high availability (HA) pair running on two MPX appliances. The administrator notices that the state of the Secondary NetScaler is Unknown and moves the Secondary NetScaler to a new switch as a result. Also, the administrator captured a packet trace on both NetScalers. Both sent traffic on secure port 3009 and were routing back and forth to each other. What is causing the Secondary state to be Unknown? A. The firewall is blocking communication between the switches. B. The administrator made both NetScalers Primary. C. The Secondary NetScaler CANNOT communicate in HA when moved to a new switch. D. The remote procedure call (RPC) nodes are NOT configured correctly.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator has configured an HTTP load-balancing virtual server with Least Response Time as the load-balancing algorithm. The administrator notice that requests to the virtual server appear to be using the Round Robin load-balancing algorithm. What could be causing the virtual server to use Round Robin load-balancing algorithm? A. The services that are bound to the HTTP virtual server are using the PING monitor. B. The virtual server is in startup round robin mode. C. Least Response Time CANNOT be used as a load-balancing algorithm on an HTTP virtual server. D. The NetScaler configuration has NOT been saved yet.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A NetScaler receives packets that are destined for a MAC address owned by the NetScaler. The destination IP address of the packets does NOT belong to the NetScaler. Layer 3 Mode is enabled by default on the NetScaler. What will the NetScaler do with the packets in this scenario? A. Route the packets. B. Bridge the packets. C. Drop the packets. D. Process the packets.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured the \"-denySSLReneg\" Parameter using the below command on NetScaler to enhance security. set ssl parameter denySSLReneg <option> Which two options can the administrator use to complete the command? (Choose two.) A. HIGHSECURE B. FRONTEND_CLIENT C. NONSECURE D. ON E. ALL",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator currently manages a NetScaler environment in a retail company that is growing quickly and may soon double its volume of business. Currently, a NetScaler MPX 5550, which handles web and SSL transactions, is in place, but is close to full capacity. Due to the forecasted growth increase, the administrator needs to find a cost-effective solution. What can the administrator recommend to management in order to cost effectively handle the growth? A. Perform license upgrade to NetScaler MPX 5650 B. Perform hardware upgrade to NetScaler SDX 14100 C. Perform hardware upgrade to NetScaler MPX 8005 D. Another MPX 5550 appliance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a Global Server Load Balancing (GSLB) Active/Active environment, the connection proxy is used as the site persistence method. What is used to source the traffic when connection is proxied? A. LDNS IP Address B. Client source IP C. Virtual IP D. Subnet IP (SNIP)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is performing a disaster recovery test and decided to fail over the NetScaler high availability (HA) pair appliances. The administrator noticed that the failover is NOT working as expected in item text, and the Secondary NetScaler is NOT taking over as Primary. The administrator suspects that networking issues may be causing the failure. What could be the cause of this issue with the NetScalers? A. HA monitoring is enabled on a disabled interface of the Primary Node. B. The Independent network configuration (INC) mode is enabled on the Primary Node. C. HA heartbeats are only seen on some enabled interfaces of the Secondary Node. D. HA monitoring is enabled on an interface of the Secondary Node that shows as ENABLED, DOWN.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator has received user complaints about issues connecting to the domain through the NetScaler using AAA. The administrator investigated the issue and found that the domain session cookie that was used during authentication is failing due to resolution issues. What can the administrator do to fix the issue? A. Configure DNS to assign authentication and traffic management virtual servers to FQDNs in the domain. B. Configure FQDNs for the Session Cookies in the domain. C. Change the Session Cookie timeout in DNS. D. Configure DNS to assign an FQDN for the NetScaler in the domain.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Administrator executed the following command in the Global Server Load Balancing (GSLB) environment: set gslb site SiteB triggerMonitor MEPDOWN What will be the effect of this command to the default service monitoring behavior on the remote site? A. The state of the GSLB service will always be controlled by Metric Exchange Protocol (MEP). B. The service monitor is invoked only when Metric Exchange Protocol (MEP) has marked the service as DOWN for any reason. C. The service monitor will take precedence over Metric Exchange Protocol (MEP). D. The service monitor is invoked only when Metric Exchange Protocol (MEP) connectivity has been lost between SiteA and SiteB.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured the rewrite policies below. bind Ib vserver VPN_http policyName POL_1 priority 120 gotoPriorityExpression END type REQUEST bind Ib vserver VPN_http policyName POL_2 priority 90 gotoPriorityExpression NEXT type REQUEST bind Ib vserver VPN_http policyName POL_3 priority 100 gotoPriorityExpression NEXT type REQUEST bind Ib vserver VPN_http policyName POL_4 priority 110 gotoPriorityExpression NEXT type REQUEST In which order will the policies be evaluated? A. POL_2, POL_3 B. POL_2 C. POL_2, POL_3, POL_4, POL_1 D. POL_2, POL_3, POL_4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is configuring a NetScaler high availability (HA) pair with an existing Primary NetScaler with all resources configured. The administrator added the Secondary NetScaler in high availability and found that the configuration on the existing primary was removed. It is now the Secondary NetScaler in the HA pair. Which two configurations could the administrator have made to prevent this from happening? (Choose two.) A. Set the Primary NetScaler to STAY PRIMARY in the Configure HA Node settings. B. Set the Secondary Netscaler to STAY SECONDARY in the Configure HA Node settings. C. Enable HA monitoring on all the interfaces of the PRIMARY device. D. Enable HA monitoring on all the interfaces of the SECONDARY device.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button to view the screenshots. [sampleXML/xmlfile-31_1.jpg] Which Front-End Optimization (FEO) action can a Citrix Administrator use to achieve the results shown in the screenshots? A. Move CSS to head B. Inline CSS C. Rearrange CSS D. Truncate CSS",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator needs to ensure that a user request is redirected to the next available data center in order to ensure the best user experience based upon location. Below are the Global Server Load Balancing (GSLB) virtual server settings. sh gslb vserver gslb.outscale.cloud gslb.outscale.cloud SSlState: UP DNS Record Type: A Last state change was at Tue May 16 23:47:54 2017 Time since last state change: 16 days, 16:13:23:390 Configured Method: RTT BackupMethod: LEASTCONNECTION No. of Bound Services : 2 (Total)1 (Active) Persistence: NONE Disable Primary Vserver on Down: DISABLED Site Persistence: ConnectionProxy To which setting should the administrator change the configured method? A. StaticProximity B. LeastBandwidth C. LeastConnection D. RoundRobin",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three options are allowed when using Classic policies? (Choose three.) A. CLIENT B. SERVER C. IP D. HTTP E. DNS F. TCP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two options should a Citrix Administrator configure to stop the First-Time wizard form automatically popping up? (Choose two.) A. Host Name is NOT configured on the appliance. B. The appliance is configured with the default IP address (192.168.100.1). C. Licenses are NOT present on the appliance. D. The Default Admin Password has NOT been changed.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which NetScaler-owned IP address will send traffic from the NetScaler to NTP servers by default? A. NSIP B. CLIP C. SNIP D. VIP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Administrator needs to block access to multiple URLs for security reasons. Which configuration should the administrator use to accomplish this requirement? A. add policy patset BAD_URL bind policy patset BAD_URL badurl1.mylab.lab index 11 charset ASCll bind policy patset BAD_URL badurl2.mylab.lab index 10 charset ASCll add responder policy BAD_URL_DNS \"DNS.REQ.QUESTION.DOMAIN.CONTAINS(\\ \"BAD_URL\\\")\" DROP bind responder global BAD_URL_DNS 100 END type DNS_REQ_OVERRIDE B. add policy patset BAD_URL bind policy patset BAD_URL badurl1.mylab.lab index 11 charset ASCll bind policy patset BAD_URL badurl2.mylab.lab index 10 charset ASCll add responder policy BAD_URL_DNS \"DNS.REQ.QUESTION.DOMAIN.CONTAINS_ANY(\\ \"BAD_URL\\\")\" RESET bind responder global BAD_URL_DNS 100 END type DNS_REQ_OVERRIDE C. bind policy patset BAD_URL badurl1.mylab index 11 charset ASCll bind policy patset BAD_URL badurl2.mylab,lab index 10 charset ASCll add responder policy BAD_URL_DNS \"DNS.REQ.QUESTION.DOMAIN.CONTAINS(\\ \"BAD_URL\\\")\" RESET bind responder global BAD_URL_DNS 100 END type DNS_REQ D. add policy patset BAD_URL bind policy patset BAD_URL badurl1.mylab.lab index 11 charset ASCll bind policy patset BAD_URL badurl2.mylab.lab index 10 charset ASCll add responder policy BAD_URL_DNS \"DNS.REQ.QUESTION.DOMAIN.CONTAINS(\\ \"BAD_URL\\\")\" RESET",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Administrator is configuring a NetScaler high availability (HA) pair and needs to ensure that one Net Scaler is UP and primary at all times to ensure the business websites are always available. What does the administrator need to do to ensure that the NetScalers still handle web traffic in the event that both nodes become unavailable or fail a health check? A. Configure HA Fail-safe mode on the Primary NetScaler only. B. Disable HA Fail-safe mode on the Primary NetScaler only. C. Disable HA Fail-safe mode on the Secondary NetScaler. D. Configure HA Fail-safe mode on each NetScaler independently.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured the HTTP_Callout feature on the NetScaler using the command-line interface. After configuring the commands, the device is facing the HTTP callout recursion issue. Click on the Exhibit button to view the screenshot of the command-line interface. [sampleXML/xmlfile-37_1.png] How will the administrator rectify the issue? A. Change the expression of the Responder policy to \"HTTP.REQ.HEADER(\\ \"Request\\\").EQ(\\ \"Callout Request\\\"). NOT && SYS.HTTP_CALLOUT (myCAllout).CONTAINS(\\ \"IP Matched\\\")\" B. In the HTTP Callout policy, change the –parameters to \"cip(CLIENT.IP.DST) &&HTTP.REQ.HEADER(\\ \"Request\\\").EQ(\\ \"Callout Request\\\")\" C. In the HTTP Callout policy, change the –parameters to \"cip(CLIENT.IP.SRC) &&HTTP.REQ.HEADER(\\ \"Request\\\").EQ(\\ \"Callout Request\\\")\" D. Change the expression of the Responder policy to \"HTTP.REQ.HEADER(\\ \"Request\\\").EQ(\\ \"Callout Request\\\"). NOT && SYS.HTTP_CALLOUT",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which qualifier is used to configure the Content filter action to modify the HTTP header of an HTTP Request? A. Error Code B. Add C. Forward D. Corrupt",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A NetScaler is configured with Interface 1/1 and bound to VLAN 40. A Citrix Administrator has executed the following command: bind vlan 20 ifnum 1/1 What is the result of executing the command on the NetScaler? A. Interface 1/1 is bound to VLAN 20, and native VLAN is 1. B. Interface 1/1 is bound to VLAN 20, and native VLAN is 20. C. Interface 1/1 is bound to VLAN 20, and native VLAN is NOT changed. D. Interface 1/1 is bound to VLAN 20, and native VLAN is 40.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator has a NetScaler SDX with four VPX instances configured. The SDX has a 10GB bandwidth license that has been configured with dedicated bandwidth of 2GB for each instance. However, the administrator found that three instances do NOT ever reach the bandwidth limit, while one instance reaches the limit and needs 1 GB more bandwidth to accommodate increased traffic requests. What can the administrator change on the instance that requires more bandwidth, to meet traffic requirements? A. Purchase an SDX license to increase the bandwidth on the instances. B. Configure burst capacity on the instance adding 1 GB of bandwidth with burst priority 0. C. Configure LA channel to increase the bandwidth. D. Configure burst capacity of 1 GB with priority 10.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Administrator complains that between the two rewrite policies bound to the vserver, only one policy, whichever has lower priority, works. The other policy is never used. Click the \"Exhibit\" button to view the screenshot of the relevant policy binding. [sampleXML/xmlfile-39_1.jpg] What is the cause of the issue? A. GotoExpression value for Policy RP_remove_srv_header is configured as ‘END’. B. The Invoke label is NOT configured. C. The Policy expression of the no_chunk_pol is ‘true’ and ‘NOT HTTP.REQ.IS_VALID’. D. The Priority of the no_chunk_pol is a higher numeric value than 100.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator is configuring load balancing on a NetScaler appliance for the company web servers. The administrator needs to create a custom monitor that will look for a specific keyword response from the website and will be used to keep the services in an UP state. Which type of monitor can the administrator create to accomplish this scenario? A. A HTTP-ECV monitor with the keyword in the Special Parameters – Receive String field. B. An UDP-ECV monitor with the keyword in the Special Parameters – Receive String field. C. A TCP monitor with the keyword in the Special Parameters – Response Codes field. D. A HTTP monitor with the keyword in the Special Parameters – Response Codes field.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which NetScaler hardware or software platform offers a Multi-Tenant solution? A. CPX B. VPX C. SDX D. MPX",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator manages a NetScaler Gateway with a Standard Platform License, with remote employees in the environment. The administrator wants to increase employee access by 300 users through the NetScaler Gateway, using VPN access. Which license should the administrator recommend purchasing for this environment? A. NetScaler Upgrade License B. NetScaler Burst Packs License C. NetScaler Gateway Universal License D. NetScaler Gateway Express License",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command should a Citrix Administrator use to configure a Content Switching virtual server for implementing the Secure Web Gateway in the transparent proxy mode? A. add csv server swgVS PROXY 192.168.10.1 80 –Authn401 on –authnVsName explicit-auth-vs B. add csv server swgVS PROXY * * -Authn401 on –authnVsName explicit-auth-vs C. add cs vserver swgVS PROXY * 21 –Authn401 on –authnVsName transparent-auth-vs D. add csv server swgVS PROXY 192.168.10.1 –Authn401 on –authnVsName transparent-auth-vs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which utility can a Citrix Administrator use to resolve the Domain Name System (DNS) request being looked up frequently? A. nslookup B. curl –K –d C. ping D. dig +trace",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which step can a Citrix Administrator take in order to use the default compression policies? A. Bind the default compression policies to the virtual server. B. Disable the NetScaler Compression feature at a global level. C. Select the compression algorithm (gzip/deflate/identity). D. Enable compression on the associated bound services.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Administrator configured the Responder policy to redirect the request for root page to the home page. However, after executing the command, the webpage access entered a loop, as shown in the second screenshot. Click on the Exhibit button to view the screenshots. [sampleXML/xmlfile-43_1.png] How will the administrator rectify this issue? A. Change Responder Policy expression to http.REQ.URL.Contains(\"/\") B. Change Responder Policy expression to http.REQ.URL.EQ(\"/\" C. Change Responder action expression to \"/\" D. Change Responder Action expression to http.REQ.URL",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What two options are limitations of a typical Global Server Load Balancing (GSLB) setup? (Choose two.) A. Apply spillover policies on a subset of GSLB services, and the user CANNOT have a backup for a subset of GSLB services. B. An administrator CANNOT define a backup for a backup Vserver in an active standby GSLB setup for a given GSLB domain. C. Restrict the selection of a GSLB service from a subset of GSLB service bound to a GSLB virtual server for the given domain. D. Any given GSLB Vserver can load-balance only one FQDN.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: Client connections to certain virtual servers are abnormally high. A Citrix Administrator needs to be alerted whenever the connections pass a certain threshold. How can the administrator use NetScaler Management and Analytics System (MAS) to accomplish this requirement? A. Configure SMTP Reporting on the NetScaler MAS by adding the threshold and email address. B. Configure TCP Insight on the NetScaler MAS. C. Configure Network Reporting on the NetScaler MAS by setting the threshold and email address. D. Configure specific alerts for virtual servers using NetScaler MAS.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How can a Citrix Administrator configure a rewrite policy to change the version of HTTP from HTTP 1.1 to HTTP 1.0 in every request? A. add rewrite action RW_ACT replace http.res.version \"\\\"HTTP/1.1\\\"\" add rewrite policy RW_POL true RW_ACT B. add rewrite action RW_ACT replace http.req.version \"\\\"HTTP/1.1\\\"\" add rewrite policy RW_POL true RW_ACT C. add rewrite action RW_ACT replace http.res.version \"\\\"HTTP/1.0\\\"\" add rewrite policy RW_POL true RW_ACT D. add rewrite action RW_ACT replace http.req.version \"\\\"HTTP/1.0\\\"\"",
+    "options": {},
+    "most_voted": ""
+  }
+]
