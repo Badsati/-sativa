@@ -1,0 +1,277 @@
+[
+  {
+    "question": "Assuming no database connections exist, which of the following will dynamically change the LOCKLIST database configuration parameter for a database named SAMPLE to AUTOMATIC? A. UPDATE DB CFG FOR sample USING LOOCKLIST AUTOMATIC IMMEDIATE B. UPDATE DB CFG FOR sample USING LOOCKLIST 8192 AUTOMATIC IMMEDIATE C. CONNECT TO sample; UPDATE DB CFG FOR sample USING LOCKLIST AUTOMATIC IMMEDIATE; CONNECT RESET; D. ATTACH TO db2inst1; UPDATE DB CFG FOR sample USING LOCKLIST AUTOMATIC;",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two tasks must be done to read data directly from IBM Softlayer Object Storage and insert it into a DB2 database? (Choose two.) A. Catalog a storage access alias in the DB2 database B. Create an FTP account on IBM Softlayer Object Storage C. Use the DB2REMOTE parameter of the LOAD command D. Establish a remote connection to IBM Softlayer Object Storage using DB2 Connect E. Create a local disk alias at the database server operating system level that points to IBM Softlayer Object Storage",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about compression for BLU MPP tables is TRUE? A. Compression must be explicitly enabled for BLU MPP tables B. Compression requires decompression to evaluate partition joins C. Unique compression dictionaries are generated for each partition D. Each table has a single compression dictionary that gets replicated across all partitions",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A production database has the following daily midnight backup schedule which includes all table spaces. The database incurs the same volume of daily activity (inserts, updates, and deletes). Sunday Delta Monday Incremental Tuesday Delta Wednesday Delta Thursday Incremental Friday Delta Saturday Full Which day would you expect a RECOVER DATABASE following that days backup to take the longest time to complete? A. Friday B. Monday C. Saturday D. Wednesday",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement about NOT ENFORCED unique constraints is TRUE? A. NOT ENFORCED unique constraints can not be defined on primary key columns B. The query optimizer will consider a NOT ENFORCED unique constraint when selecting an optimal data access plan C. When attempting to insert data that does not conform to a NOT ENFORCED unique constraint, a warning will be returned D. Storage requirements for a NOT ENFORCED unique constraint are no different than the storage requirements for a similar unique index",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is an advantage of using range partitioned tables? A. Ability to run utilities against the partitions in parallel B. Increased query performance through data partition elimination C. Block indexes are much smaller than RID indexes, providing better performance D. Table data is automatically and continuously clustered, requiring minimal reorganization",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A table named MYTABLE contains an XML column and an XML storage object dictionary already exists. What is the effect of enabling compression and then running the command REORG TABLE mytable KEEPDICTIONARY? A. All data, both new and existing, will be compressed. B. Only new or updated data for XML columns will be compressed. C. New and existing XML columns will be compressed but other columns remain unchanged. D. Existing data will remain uncompressed because the RESETDICTIONARY option of the REORG command was not used.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The DBA has observed that queries executed against SALES table have poor performance. SALES is a compressed table and recently there have been a lot of rows inserted and modified in that table. The DBA has detected that lower performance may be the result of sub-optimal compression dictionary for that table. Which of the following commands should be used to resolve the problem without preventing users from changing data in the SALES table A. REORG TABLE sales INPLACE RESETDICTIONARY B. REORG TABLE sales INPLACE REBUILDDICTIONARY C. REORG TABLE sales ALLOW WRITE ACCESS RESETDICTIONARY D. REORG TABLE sales ALLOW WRITE ACCESS REBUILDDICTIONARY",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If the following SQL statements are executed: CREATE DATABASE testdb AUTOMATIC STORAGE NO; CONNECT TO testdb; CREATE STOGROUP sg1 ON /data1; CREATE STOGROUP ibmstogroup ON /data2; CREATE STOGROUP sg2 ON /data3; Which storage group is the default storage group for the TESTDB database? A. SG1 B. SG2 C. IBMSTOGROUP D. IBMDEFAULTTSG",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If Secure Sockets Layer is a requirement, which of the following parameters must be set to encrypt data in transit? A. Set the DB2COMM registry variable to DB2COMM=SSL B. Set the DB2COMM registry variable to DB2COMM=SSL, TCPIP C. Set the AUTHENTICATION configuration parameter to DATA_ENCRYPT D. Set the AUTHENTICATION configuration parameter to SERVER_ENCRYPT",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Automatic space reclamation for column-organized tables can be accomplished in which of the following scenarios? A. When the registry variable DB2_AUTORECLAIMSPACE=YES B. After termination all the back-end processes using TERMINATE command C. After setting the database configuration parameter AUTO_DEL_REC_OBJ to ON D. When the registry variable DB2_WORKLOAD=ANALYTICS prior to database creation",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement about label-based access control (LBAC) is TRUE? A. LBAC protection can be applied to a nickname B. LBAC cannot be used to restrict access to a staging table C. LBAC cannot be used to restrict access to data of columns and rows in the same table D. LBAC protection for columns requires a table to contain a column that has a DB2SECURITYLABEL data type",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following commands will list all of the disk configurations of the file system DATAFS in a DB2 pureScale cluster? A. db2cluster –cfs –list –filesystem datafs B. db2cluster –cfs –display –filesystem datafs C. db2cluster –cfs –listconfig –filesystem datafs D. db2cluster –cfs –displayconfig –filesystem datafs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command can be used to view the configured global registry settings for all installed DB2 copies found on a Linux server? A. db2val B. db2set C. db2look D. db2greg",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement regarding event monitors is TRUE? A. Event monitor data can be reviewed while the event monitor is active B. Event monitors must always be started manually after activating a database C. Event monitors must write data to .EVT files before the data can be loaded into database tables D. Event monitors are used to obtain information about how a database system looks at a specific point in time",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which options are valid for an online reorganization operation? A. FULL and RECLAIM EXTENTS B. CLASSIC and RECLAIM EXTENTS C. FULL and CLEANUP OVERFLOWS D. CLEAN OVERFLOWS and RECLAIM EXTENTS",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A DBA has observed that queries executed against SALES table have poor performance. DB2 tools have indicated that the level of data fragmentation in the SALES table is very high. Similar results were detected for indexes defined on the SALES table. Which of the following commands should be used by the DBA to improve the performance of the queries run against the SALES table? A. REORG TABLE sales AND INDEXES ALL; RUNSTATS ON TABLE sales AND INDEXES ALL; B. REORG TABLE sales INPLACE; REORG INDEXES ALL FOR TABLE sales; RUNSTATS ON TABLE sales AND INDEXES ALL; C. RUNSTATS ON TABLE sales AND INDEXES ALL; REORGCHK ON TABLE sales; D. RUNSTATS ON TABLE sales INPLACE AND INDEXES ALL;",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following are valid Explain operators? (Choose two.) A. CTQ B. XSCAN C. IXSCAN D. SELECT E. COLSCAN",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which is the correct way to back up only metadata about database backups, table space backups, and table load operations for database MYDB? A. CONNECT TO mydb PRUNE HISTORY TO /outdir B. db2trc on –db mydb –m \"backup,load\" run the desired operations db2tc dump db2trc.dmp db2tc format db2tc.dmp db2tc.fmt db2tc off C. BACKUP DATABASE mydb NO TABLESPACE TO /outdir D. db2set DB2_BCKP_PAGE_VERIFICATION=TRUE must be issued first (no instance restart is needed). Run the desired operations.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following SQL statements will list table spaces whose utilization is greater than 95% and may potentially fill, returning an error? A. SELECT tbsp_name, tbsp_utilization_percent FROM TABLE(sysproc.mon_tbsp_utilization()) AS t WHERE tbsp_utilization_percent > 95 AND tbsp_auto_resize_enabled = 1; B. SELECT tbsp_name, tbsp_utilization_percent FROM syscat.mon_tbsp_utilization WHERE tbsp_utilization_percent > 95 AND tbsp_auto_resize_enabled = 0; C. SELECT tbsp_name, tbsp_utilization_percent FROM syscat.mon_tbsp_utilization WHERE tbsp_utilization_percent > 95 AND tbsp_auto_resize_enabled = 1; D. SELECT tbsp_name, tbsp_utilization_percent FROM sysibmadm.mon_tbsp_utilization WHERE tbsp_utilization_percent > 95",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When operating in NPS compatibility mode, which of the following are limitations for using a routine written in NZPLSQL? (Choose two.) A. The routine cannot contain comments. B. The routine must return either an integer or a null. C. The routine must be cross-compatible with Oracle PL/SQL syntax rules. D. The routine cannot contain argument lists or variable arguments (varargs). E. The routine must be generated with IBM Database Conversion Workbench (DCW).",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When the DB2_WORKLOAD registry variable is assigned the value ANALYTICS and then a new database is created, what happens? (Choose two.) A. The PAGESIZE database configuration parameter is set to 32K. B. The AUTO_REORG database configuration parameter is set to NO. C. The DFT_EXTENT_SZ database configuration parameter is set to 8. D. The DFT_TABLE_ORG database configuration parameter is set to COLUMN. E. The INTRA_PARALLEL database manager configuration parameter is set to NO.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two of the following functions of DB2 Workload Manager are restricted by license? (Choose two.) A. Creating, using, or altering thresholds B. Granting, altering, or revoking workload privileges C. Using or altering the default service classes and workloads D. Creating service classes, service subclasses, and workloads E. Creating, activating, stopping or dropping workload management event monitors",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The HADR_TARGET_LIST parameter enables HADR to run in multiple standby mode. Which of the following statements are TRUE if HADR is active? (Choose two.) A. You can change the principal standby of the primary without first stopping HADR on the primary. B. The target list can contain IP addresses that are either IPv4, or IPv6, or a combination of the two. C. You can remove the primary database from the target list of a standby although the standby is connected to the primary. D. You cannot dynamically update the HADR_TARGET_LIST configuration parameter for a standby unless you have enabled the HADR read standby feature. E. You cannot remove a standby from the list if it is connected to the primary. To disconnect a standby, simply deactivate it. The you can remove it from the",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "For any given column-organized user table, the associated synopsis table may contain information for which of the following data types? (Choose two.) A. XML B. BLOB C. CLOB D. VARCHAR E. DATETIME",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which phase of the LOAD utility is unique to loading column organized tables? A. LOAD B. BUILD C. DELETE D. ANALYZE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When choosing the dimensions for an MDC table, poor space utilization can occur due to low cell density. What can cause an MDC table to use much more space? A. The page size is too small. B. The extent size is too small. C. Low cardinality of the dimension(s) chosen. D. High cardinality of the dimension(s) chosen.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following actions do you need to acquire the current encryption settings for a database protected by native encryption? A. Select from the ADMIN_GET_ENCRYPTION_INFO table function B. Run the db2ckbkp command and verify the compression settings C. Check the encrypted database parameter in database configuration D. Check ENCROPTS database configuration parameter for encryption options",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When querying the MON_GET_TABLESPACE table function, the values for many of the performance metrics like POOL_DATA_P_READS and POOL_DATA_L_READS are showing 0, even though there is activity occurring in the database. Which command must be executed to enable the table function to return actual data? A. UPDATE DB CFG USING MON_OBJ_METRICS BASE B. UPDATE DB CFG USING MON_ACT_METRICS BASE C. UPDATE DBM CFG USING DFT_MON_BUFPOOL ON D. UPDATE MONITOR SWITCHES USING BUFFERPOOL ON",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement about Data Server Manager (DSM) is TRUE? A. DSM can be used for reviewing audit trails B. DSM cannot be used for database administration C. DSM can be used for configuration management of DB2 Data Server drivers D. DSM can be used to efficiently monitor, analyze, identify, and solve a performance issue",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the result of the following scenario? [sampleXML/xmlfile-17_1.png] A. The row is updated to (2, NULL) B. The row is updated to (2, 110.00) C. SQL0407N Assignment of a NULL value to a NOT NULL column is not allowed D. The CREATE TRIGGER statement will fail because amt is defined as NOT NULL",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "On Linux and Unix systems, which of the following will set the DB2_FMP_COMM_HEAPSZ registry variable to 1 GB (or 256000 pages), only for the instance db2inst1? A. As the db2 instance owner (db2inst1) execute the command: export DB2_FMP_COMM_HEAPSZ=256000 B. Add to the following line to the userprofile (db2inst1): DB2_FMP_COMM_HEAPSZ=256000 C. As the db2 instance owner (db2inst1) execute the command: db2set i DB2_FMP_COMM_HEAPSZ=256000 D. As the db2 instance owner (db2inst1) execute the command:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about audit policies is TRUE? A. Audit policy changes are applied instantly and affect all inflight transactions. B. Multiple audit policies can be associated with the same table at the same time. C. The audit policy applied to a table is automatically applied to any view based on that table. D. If a user is switched within a trusted connection, the applicable audit policies are re-evaluated for the new user without regard to audit policies for the original",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How would you enable self-tuning of memory areas that are controlled by memory configuration parameters? A. Set the DB2_WORKLOAD aggregate registry variable to ANALYTICS for self-tuning of the sort parameter on workloads that access column-organized tables. B. Set the SELF_TUNING_MEM database configuration parameter to ON using the UPDATE DATABASE CONFIGURATION command or the db2CfgSet API. C. Set the sortheap or the sheapthres_shr configuration parameters to AUTOMATIC using the UPDATE DATABASE CONFIGURATION command or the db2CfgSet API with sheapthres set to at least 4K. D. Use AUTOMATIC keyword for the buffer pool size on the CREATE BUFFERPOOL statement or the ALTER BUFFERPOOL statement after making sure that",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the schema name of the DB2 built-in global variable TRUSTED_CONTEXT? A. SYSIBM B. SYSFUN C. SYSCAT D. SYSIBMADM",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What does dsmtop use to gather metrics? A. db2pd B. db2dart C. the system catalog D. monitoring table functions",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You suspect there is a communications issue between a member and a cluster caching facility (CF) in a DB2 pureScale instance. Which command will provide diagnostic information that can be used to confirm your suspicions? A. db2cluster -verify B. db2cluster -cm -list -alert C. db2cluster -verify -configuration D. db2cluster -cm -verify -resource",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What levels of authority are needed to create a storage group? (Choose two.) A. DBADM B. SYSADM C. SQLADM D. SYSCTRL E. SYSMAINT",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the default value of the DB2 registry variable DB2LDAP_SEARCH_SCOPE? A. NONE B. LOCAL C. DOMAIN D. GLOBAL",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which DB2 Explain Facility tool uses the Explain tables to display access plain information? A. db2look B. db2advis C. db2expln D. db2exfmt",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which ALTER TABLE statements will put a table named TAB1 in \"reorg-pending\" state? (Choose two.) A. ALTER TABLE tab1 APPEND ON B. ALTER TABLE tab1 DROP COLUMN col1 C. ALTER TABLE tab1 ALTER COLUMN col1 SET NOT NULL D. ALTER TABLE tab1 DETACH PARTITION part1 INTO tab_part1 E. ALTER TABLE tab1 ADD CONSTRAINT pk_tab1 PRIMARY KEY (col1)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If the following SQL statements are executed: [sampleXML/xmlfile-22_1.png] How many rows will be added to the DEPARTMENT table? A. 1 B. 2 C. 3 D. 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the main benefit of performing an ADMIN_MOVE_TABLE operation in multiple steps? A. It does not acquire locks on the table B. It does not require additional temporary disk space C. It enables the user to control when the table will be offline D. It allows the ADMIN_MOVE_TABLE procedure to be used in HADR environments",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following: [sampleXML/xmlfile-23_1.png] What will be the result of the following SQL statement? INSERT INTO v3 (col1) values (30); A. The insert will succeed as it passes validation. B. The insert will succeed as there is no WITH CHECK OPTION on view V3. C. The insert will result in an error as it violates the WITH CHECK OPTION on view V2. D. The insert will succeed as the default WITH CHECK OPTION is LOCAL on view V2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement regarding setting up a local keystore for DB2 native encryption is TRUE? A. A local keystore is not needed if a Hardware Security Module (HSM) is used to manage master keys. B. If a local keystore is used to store data encryption keys, a stash file must be used to store master keys temporarily. C. A master key must be generated and placed in an existing local keystore before a new encrypted database will be created. D. After a local keystore is created, you will be prompted for a password whenever the database manager accesses the keystore.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which operation best describes the purpose of the SET INTEGRITY PRUNE operation? A. To prune the contents of a staging table. B. To prune the contents of a synopsis table. C. To prune the contents of a materialized query table (MQT). D. To prune the contents of a declared global temporary table.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which data types are only valid when DB2_COMPATIBILITY_VECTOR=ORA? (Choose two.) A. XML B. REAL C. NUMBER D. VRCHAR2 E. VARBINARY",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You receive a large data file that contains large object data values that need to be copied into a table in the shortest amount of time possible. Which utility should be used? A. LOAD B. INGEST C. IMPORT D. TRANSPORT",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command will enable Explicit Hierarchical Locking (EHL) in a DB2 pureScale environment? A. UPDATE DB CFG USING CF_LOCK_SZ AUTOMATIC B. UPDATE DB CFG USING OPT_DIRECT_WRKLD YES C. UPDATE DB CFG USING LOCKLIST 4096 MAXLOCKS 90 D. UPDATE DB CFG USING LOCKLIST AUTOMATIC MAXLOCKS AUTOMATIC",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements is TRUE? A. REORGCHK automatically runs tables reorganization. B. REORGCHK uses only current table and index statistics. C. REORGCHK can only be used for user tables, not for system tables. D. REORGCHK can be used to verify the level of data fragmentation and indicate whether reorganization might be required.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement about the db2move command is TRUE? A. The LOAD actions can be run from a client machine. B. Object ownership cannot be changed after a successful schema copy operation. C. Tables containing GENERATED ALWAYS identity columns can be imported or loaded. D. Loading data into tables containing XML columns is only supported for the LOAD actions.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An HADR environment has two standby databases one principal and one auxiliary. What is the only mode that can be used to transfer data to the auxiliary standby? A. SYNC B. ASYNC C. NEARSYNC D. SUPERASYNC",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement about the DB2_BCKP_COMPRESSION registry variable is TRUE? A. It does not apply to table space backups. B. It specifies the compression mode to use for DB2 backups. C. It only has effect when applied to a database in which all tables have been compressed. D. If set, backup images created with the BACKUP command are automatically compressed.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Where does the DB2 Problem Determination tool (db2pd) get information from? A. DB2 memory sets B. the db2diag.log file C. Monitoring table functions D. A set of pre-defined event monitors",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which tool can be used to get database design recommendations based on SQL statements stored in the database package cache? A. db2pd B. db2dart C. db2expln D. db2advis",
+    "options": {},
+    "most_voted": ""
+  }
+]
