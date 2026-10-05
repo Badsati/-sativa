@@ -1,0 +1,497 @@
+[
+  {
+    "question": "Scenario: Currently, the user interface for a Citrix Apps and Desktops environment is presented in English, but a planned on-premises expansion in Poland will support 100 new users with a requirement to use all Polish interfaces. Two constraints were identified by a Citrix Architect: ✑ Network bandwidth is low and unstable. ✑ Network latency is higher than 300 ms to the existing Site. How should the architect deploy Citrix Virtual Apps and Desktops for these users? A. Install a StoreFront server in Poland. B. Implement Citrix Cloud Gateway in Europe. C. Add a Satellite Zone to the existing Site. D. Create a new Site in Poland.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A planning document for deploying a new Citrix Virtual Apps and Desktops Site specifies that it will be created with 1 Site and different zones ini each of 3 regions. The IT team expects that each zone will host 825 concurrent user sessions, with no more than 28 concurrent session launches. What is the minimum acceptable Site-to-Site bandwidth required between the Primary Zone and a Satellite Zone? A. 1 Kbps B. 200 Mbps C. 2 Mbps D. 8 Gbps",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment for a company that maintains branch offices in New York, Chicago, and Miami. Management has described the following requirements for the environment: ✑ The Citrix Virtual Apps and Desktops Site must be located in the company headquarters in Miami. ✑ All users will only need to access their default local print queue from within their HDX sessions. ✑ Users in Chicago need access to printers hosted on a Citrix Universal Print Server located in New York. ✑ Printing performance and bandwidth usage must be optimized where possible. ✑ The environment must be highly available. ✑ The auto-created client printer models must function with no additional configuration needed. Click the Exhibit button to review the printing requirements. [sampleXML/xmlfile-4_1.png] What does the architect need to do to meet the printing requirements for the users in Chicago? A. Enable the Auto-create client printers policy with ‘Auto-create all client printers’ setting enabled. Enable the Universal print driver usage policy to ‘Use universal printing only’. Apply the policy to all users. Then, install and configure the Citrix Universal Print Server components and configure the Universal Print Server policy to ‘Enabled with no fallback to Windows native remote printing’. Last, create a session printer policy, add the network printers that will use the Universal Print Server, and apply the policy to the users in Chicago. B. Enable the Auto-create client printers policy with ‘Auto-create all client printers’ setting enabled. Enable the Universal print driver usage policy to ‘Use universal printing only’. Apply the policy to Chicago users. Then, install and configure the Citrix Universal Print Server components and configure the Universal Print Server policy to ‘Enabled with fallback to Windows native remote printing’. Last, create a session printer policy, add the network printers that will use the Universal Print Server, and apply the policy to all users. C. Enable the Auto-create client printers policy with ‘Auto-create all client’s default printer only’ setting enabled. Enable the Universal print driver usage policy to ‘Use universal printing only if requested driver is unavailable’. Apply the policy to all users. Then, install and configure the Citrix Universal Print Server components and configure the Universal Print Server policy to ‘Enabled with fallback to Windows native remote printing’. Last, create a session printer policy, add the network printers that will use the Universal Print Server, and apply the policy to all users. D. Enable the Auto-create client printers policy with ‘Auto-create all client’s default printer only’ setting enabled. Enable the Universal print driver usage policy to ‘Use universal printing only’. Apply the policy to all users. Then, install and configure the Citrix Universal Print Server components and configure the Universal Print Server policy to ‘Enabled with fallback to Windows native remote printing’. Last, create a session printer policy, add the network printers that will use the Universal Print Server, and apply the policy to the users in Chicago.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to assess a Citrix Virtual Apps and Desktops environment. The Citrix Virtual Apps and Desktops diagram in the exhibit gives details about the current Site and zone design. Click the Exhibit button to view the diagram. [sampleXML/xmlfile-6_1.png] Which statement is correct if all Delivery Controllers in the Primary Zone fail? A. Satellite Zone 2 will be promoted and the Primary Zone Virtual Delivery Agent (VDA) machines will register within Satellite Zone 2. B. Virtual Delivery Agent (VDA) machines in the Primary Zone will NOT register within Satellite Zone 1 or Satellite Zone 2. C. Virtual Delivery Agent (VDA) machines in the Primary Zone will register within Satellite Zone 2. D. Virtual Delivery Agent (VDA) machines in the Primary Zone will register within Satellite Zone 1.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. While assessing the existing infrastructure, the architect determined that a number of users utilize legacy USB print devices that they will continue to need locally and within HDX sessions. The current HDX-optimized print virtual channel will NOT support these devices, so the architect decides that the Generic USB redirection channel should be used. Which two factors must the architect consider when using Generic USB redirection? (Choose two.) A. It requires more network bandwidth compared to standard HDX virtual channels. B. Local access to printers will be lost until the HDX sessions is disconnected or ended. C. Manufacturer printer drivers will need to be installed on user workstations. D. The Citrix Virtual Channel Software Development Kit (VCSDK) will be required. E. It is supported for only USB 3.0 devices and features.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect designed an active-passive Citrix Virtual Apps and Desktops environment, where the passive data center serves as the disaster recovery (DR) data center for all users. Twelve items have been configured: ✑ Citrix ADC Global Server Load Balancing (GSLB) to provide single URL direction to the active data center. ✑ GSLB has health monitors configured for the load balanced servers. ✑ Citrix Gateways are on both data centers. ✑ Citrix ADC load balancing occurs for StoreFront and Delivery Controller XML services. ✑ A single Citrix Virtual Apps and Desktops Site exists. ✑ Four Delivery Controllers are members of the Site. ✑ Two Delivery Controllers are members of the Primary Zone in the active data center. ✑ Two Delivery Controllers are members of the Satellite Zone in the passive data center. ✑ SQL is deployed in the active data center. ✑ Local Host Cache is enabled. ✑ Two StoreFront servers are deployed in each data center aggregating resources from the Delivery Controllers in the respective data center. ✑ Virtual Delivery Agent (VDA) machines are deployed in both data centers and configured to register with Delivery Controllers in their zone. What would happen if the Delivery Controllers in the primary data center were turned off? A. VDA machines from the primary data center would register with the Delivery Controllers in the passive data center. B. StoreFront in the primary data center would still be able to launch sessions. C. GSLB will start redirecting connections to the secondary data center. D. GSLB will NOT identify that the Delivery Controllers are down and sessions CANNOT launch.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect completed an assessment of an existing environment. The architect learned that one of the business requirements dictate that automatic update functionality is disabled, and that deployment is exclusively done by electronic software distribution (ESD). Which parameter is required to configure the Citrix Workspace Updates settings from the command line interface, when installing Citrix Workspace app for Windows? A. /AutoUpdateStream=current B. /AutoUpdateCheck=auto C. /AutoUpdateStream=disabled D. /AutoUpdateCheck=disabled",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect has developed the hardware requirements for a small production Citrix Virtual Apps and Desktops environment as follows: - Access to the environment hosted in a single data center - Ability to perform maintenance on the environment without requiring an outage - Keep management efforts to a minimum Which hardware requirement does the architect need to include for Citrix Hypervisor hosts to meet the customer's needs? A. N+1 Citrix Hypervisor hosts in a single cluster/pool B. Separate Citrix Hypervisor cluster/pool in an alternate data center C. Multiple individual Citrix Hypervisor hosts in the same data center D. Separate Citrix Hypervisor clusters/pools in the same data center",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is implementing a new Citrix Virtual Apps and Desktops environment. The IT team has purchased 1,000 Citrix Virtual Apps and Desktops Advanced licenses. Moving forward, the company requires the IT team to produce a report of all unsuccessful connections of Citrix Virtual Apps during the previous 12 months. Which two actions does the architect need to take to support these requirements? (Choose two.) A. Configure 'GroomSessionsRetentionDays' to 365 days. B. Upgrade to Citrix Virtual Desktops Premium licenses. C. Configure 'GroomFailuresRetentionDays' to 365 days. D. Upgrade to Citrix Gateway Universal licenses. E. Implement Citrix Application Delivery Management.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a Citrix Virtual Desktops environment. The Engineer Group requires NVIDIA hardware with shared virtualized GPUs due to its use of graphical applications. Management wants to use 4 components within the Citrix Virtual Desktops environment to meet these requirements: ✑ NVIDIA GRID Tesla P40 GPUs ✑ Microsoft Hyper-V Server 2012 R2 ✑ Windows 10 virtual machines (VMs) ✑ Citrix Virtual Desktops 7 Which component must the architect change to implement this use case? A. Windows 10 virtual machines B. Citrix Virtual Desktops 7 C. NVIDIA GRID Tesla P40 GPUs D. Microsoft Hyper-V Server 2012 R2",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: The IT team of a company configured its Citrix environment on Microsoft Azure. Load on the servers is nominal during the off season, but during peak season, load increases on the infrastructure servers. This load varies from year to year. A Citrix Architect is asked to design a solution that dynamically increases and decreases the number of infrastructure servers. What should the architect recommend the IT team create in Microsoft Azure to meet this demand? A. Availability sets B. Resource group C. Scale sets D. Availability domains",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "After reviewing a Proof of Concept (PoC) environment for Citrix Virtual Apps and Desktops, the corporate security team advises that user access to Regedit, command line, and PowerShell must be disabled. Which technology can a Citrix Architect use to address this requirement with the least amount of effort? A. Citrix ADC Endpoint Analysis (EPA) B. Citrix policies C. Citrix Workspace ADMX templates D. Citrix ADC SmartControl E. Citrix Workspace Environment Management (WEM)",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The table in the exhibit lists details about the requirements of the current user groups and their Virtual Delivery Agent (VDA) machine workloads. Click the Exhibit button to view the table. [sampleXML/xmlfile-11_1.png] At a minimum, the architect should scale the hardware used to host the virtual machine (VMs) for User Group 1 to ________ GB of RAM. (Choose the correct option to complete the sentence.) A. 256 B. 512 C. 64 D. 128 E. 384",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Citrix Architect needs to enable the security of the Virtual Delivery Agent (VDA) by evaluating the `˜Enable-VdaSSL.ps1 -Enable' script. Which supported SSL protocol version is least secure when using the default settings of the script? A. TLS 1.0 B. SSL 3.0 C. TLS 1.2 D. TLS 1.1 E. SSL 1.0 F. SSL 2.0",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A large retail environment includes a StoreFront server group with 2 servers, each with 2 vCPUs and 4 GB of RAM. The server group handles about 25,000 user connections per hour, with the majority of users accessing the environment using the Citrix Workspace app. Workspace Control has been disabled for the environment. A Citrix Architect learns that the company will soon merge with another retail chain. The Citrix Virtual Apps and Desktops environment must double its capacity, and the StoreFront server group is expected to handle about 40,000 user connections per hour. What should the architect do to meet the expected load while maintaining high availability with optimal resource allocation for the StoreFront component? A. Allocate an additional 2 vCPUs to each existing StoreFront server. B. Enable Workspace Control for all StoreFront stores. C. Allocate an additional 2 GB of RAM to each existing StoreFront server. D. Train users to begin accessing the environment using Citrix Workspace app for Web site. E. Use the least connection method for load-balancing on Citrix ADC.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: Engineers at a new company developed their product and infrastructure in Microsoft Azure. The engineers have reached out to a Citrix Architect to help design an Azure infrastructure to support publishing applications using the Citrix Virtual Apps and Desktops service. Costs need to be kept to a minimum. Which Azure virtual machine (VM) series provides the lowest cost per user while also providing good performance? A. A-series B. B-series C. H-series D. D-series",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: An infrastructure team has stated that the new Citrix Virtual Apps and Desktops virtualization host will have the specifications shown in the exhibit. Click the Exhibit button to view the specifications. [sampleXML/xmlfile-14_1.png] The design document calls for the VMs to have 2 CPUs and 4 GB RAM. Approximately how many virtual desktops can be hosted an each physical server? A. 190 B. 240 C. 120 D. 60",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The architect has identified the requirements, based on the assessment and early stages of the design. Click the Exhibit button to view the requirements. [sampleXML/xmlfile-15_1.png] Additionally, the IT team identified 2 provisioning strategy requirements: ✑ Should be compatible with planned design decisions ✑ Should minimize required time to perform image and application updates Which provisioning method should the architect use for the environment, based on the design decisions and requirements shown in the exhibit? A. Machine Creation Services (MCS) with App Layering B. Manual Provisioning with App Layering C. Manual Provisioning D. Citrix Provisioning with App Layering E. Citrix Provisioning F. Machine Creation Services (MCS)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing and implementing a new Citrix Virtual Apps and Desktops environment. During the kickoff meeting, management advised that their main business driver is to increase user flexibility for internal and mobile employees. Which two design decisions should the architect make based on the listed business drivers? (Choose two.) A. Implement a company-wide bring-your-own device (BYOD) initiative. B. Implement Citrix Files for internal and external collaboration and filesharing. C. Enhance security settings on internal network hardware and firewalls. D. Locate user workstations close to the application servers and corporate data. E. Segment the company network and related functionalities.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The design has a Primary Zone and 3 Satellite Zones. Each Satellite Zone has a number of Virtual Delivery Agent (VDA) machines that belong to a single Delivery Group spanning all 3 Satellite Zones. Click the Exhibit button to view more details about the configuration. [sampleXML/xmlfile-17_1.png] How should the architect ensure that the SharePoint application has optimal performance for all user groups? A. Use PowerShell to change the process priority to high for SharePoint within Zone-SFO. B. Publish SharePoint in an individual Delivery Group within each zone. C. Edit the application properties to set Zone-SFO as the Home Zone for SharePoint. D. Edit the zone properties to only allow SharePoint to launch in Zone-SFO.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a Citrix Virtual Desktops environment. The Graphic Editors Group uses a graphic-intensive and media-rich application. Graphic editors will be provided with a Windows Server 2016 Desktop with NVIDIA graphics hardware acceleration. HDX 3D Pro and Server VDI options were selected during the command-line installation of the Virtual Delivery Agent (VDA). Which limitation will affect the Graphic Editors Group? A. Each virtual desktop requires a dedicated NVIDIA graphics card. B. Support is available only for a single user session per VDA. C. The Browser Content Redirection feature is NOT available. D. Support is limited to the Thinwire graphics protocol.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is creating a conceptual architecture for a Citrix Virtual Apps and Desktops environment. Based on some initial the company's business goals and objectives, the architect has collected the information shown in the exhibit. Click the Exhibit button to view the information. [sampleXML/xmlfile-19_1.png] Which delivery model should the architect recommend? A. Single-Site in Citrix Cloud, public cloud, and on-premises resource locations B. Multi-Site, multi-zone, and multiple on-premises data centers C. Multi-Site in Citrix Cloud, and multiple public cloud resource locations D. Single-Site, single-zone, and single on-premises data center",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is redesigning a Citrix Virtual Apps and Desktops environment to include Machine Creation Services (MCS). During design discussions, the locations for the MCS-provisioned thin clone machine disks are proposed as shown in the exhibit. Click the Exhibit button to view the details. [sampleXML/xmlfile-20_1.jpg] Which two potential issues should the architect address with the customer before proceeding with this configuration? (Choose two.) A. It is limited to certain hypervisors. B. It will require substantial write IOPS to the shared storage location as temporary data is written. C. It is limited to NFS shared storage. D. It will require substantial read IOPS from the shared storage location during machine creation and updates. E. It will require more storage to be allocated on the virtual machine (VM) hosts compared with other options.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. During the assessment, the architect determined the applications and characteristics. Click the Exhibit button to view the list of applications and characteristics. [sampleXML/xmlfile-21_1.jpg] To which application category does Application 1 belong, based on the information in the exhibit? A. Departmental B. User C. Common D. Management",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The customer previously installed all applications locally on managed laptops and desktops, but is willing to evaluate other application delivery methods as part of the new deployment. The environment will be standardized on Windows 10 for the Virtual Delivery Agent (VDA) machines. As part of an application analysis performed earlier in the project, the information in the exhibit was collected regarding 1 of the required applications. Click the Exhibit button to view the information. [sampleXML/xmlfile-22_1.png] The customer's security policies mandate that all development software must run within the corporate data center, but should appear to the user as if it is running locally on the virtual machine (VM). How should the architect recommend deploying the application? A. Use Desktop OS machines to deliver VM hosted applications. B. Install it directly on the endpoint devices, and include it in a virtual desktop session using the Local App Access feature. C. Install it in an Application Layer using Citrix App Layering, then present it to users as an Elastic Layer during a virtual a virtual desktop session. D. Stream it to a VDA machine using Microsoft App-V, and access it through a virtual desktop session. E. Push it to users with a Workspace Environment Management (WEM) action option.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a single-Site Citrix Virtual Apps and Desktops production environment. Through earlier design discussions, the architect has determined the environment details listed in the exhibit Click the Exhibit button to view the details. [sampleXML/xmlfile-23_1.png] What should the architect change in the current environment to align with Citrix leading practices? A. The existing Delivery Controller and StoreFront servers should be allocated an additional 2 GB of RAM each. B. A Delivery Controlier should be removed from the Site. C. A Delivery Controller should be added to the Site. D. The Delivery Controller and StoreFront roles should NOT be co-located on the same server. E. The existing Delivery Controller and StoreFront servers should be allocated two additional CPUs each.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to design a new Citrix Virtual Apps and Desktops environment. Click the Exhibit button to view information collected by the architect during the Resource Layer discussions. [sampleXML/xmlfile-24_1.png] Based on the requirements, the Citrix Administrative team should use _____________ to manage Citrix policies and _____________ to manage Microsoft settings. (Choose the correct option to complete the sentence.) A. Citrix Studio; Active Directory Group Policy Objects B. Active Directory Group Policy Objects; Workspace Environment Manager C. Citrix Studio; Workspace Environment Manager D. Citrix Studio; Local policies E. Active Directory Group Policy Objects; Active Directory Group Policy Objects",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new infrastructure that will use Citrix Virtual Apps and Desktops to deploy applications in New York, Chicago and Seattle data centers. All 3 data centers will be active simultaneously. Which feature should the architect recommend to connect the remote users to the closest or best-performing data center? A. Global Server Load Balancing B. StoreFront Resource Aggregation C. Zone Preference and Failover D. Optimal Gateway Routing",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. Two Control Layer security requirements have been identified: ✑ Secure XML traffic between StoreFront and the Delivery Controller using SSL. ✑ Secure Ticket Authority (STA) traffic must be protected with SSL. Which three tools can the architect use to ensure that all security requirements are met? (Choose three.) A. Citrix Studio console B. Internet Information Services (IIS) C. Citrix Director console D. Citrix StoreFront console E. 'NETSH' command line",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The table in the exhibit lists details about the requirements of the current user groups and their Virtual Delivery Agent (VDA) machine workloads. Click the Exhibit button to view the table. [sampleXML/xmlfile-26_1.png] The architect should scale the hardware used to host the virtual machines (VMs) for User Group 1 to __________ cores. (Choose the correct option to complete the sentence.) A. 32 B. 64 C. 96 D. 24 E. 16",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Scenario: Eight hundred users from a newly acquired company based in another continent will immediately require access to several Citrix applications being added to a zone within the Citrix Virtual Apps Site. Approximately 40 Citrix servers are being deployed in that zone. Management informs a Citrix Architect that the new company has an unused Citrix ADC MPX 24xxx series applies that should be used to address Citrix Gateway requirements. The design must support updating the Citrix ADC firmware without user interruption. What should the architect do to ensure that the Citrix ADC MPX 24000-series appliance addresses these requirements? A. Install a Premium license on the appliance and deploy 2 extended access control lists (ACLs) B. Deploy Citrix Gateway into 2 admin partitions. C. Convert to Citrix SDX, install an add-on pack license on the appliance, and deploy Citrix Gateway VPX instances in a cluster. D. Install a Premium license on the appliance and deploy Citrix Gateway instances in a cluster.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A customer who installed all applications locally on managed laptops and desktops is willing to evaluate other application delivery methods as part of a new design created by a Citrix Architect. The environment will be standardized on Windows 10 and Windows Server 2016 for the Virtual Delivery Agent (VDA) machines. As part of an application analysis performed earlier in the project, the information shown in the exhibit was collected regarding 1 of the required applications. Click the Exhibit button to view the information. [sampleXML/xmlfile-28_1.png] Additionally, the customer has 3 objectives: ✑ Minimize the amount of additional infrastructure components. ✑ Utilize thin clients as endpoints in order to reduce costs. ✑ Prohibit direct user access to the thin client operating system. How should the architect install the application? A. Install it directly on a VDA machine image and access it through 2 virtual desktop session. B. Install it directly on endpoint devices, and include it in a virtual desktop session using the Local App Access feature. C. Stream it to a VDA machine using Microsoft App-V and access it through a virtual desktop session. D. Install it on an Application Layer using Citrix App Layering, then present it to assigned users as an Elastic Layer during a virtual desktop. E. Install it on an Application Layer using Citrix App Layering and include it in a layered image, and access it through a virtual desktop session.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. Currently, the environment is configured with 2 locations with identical Citrix Virtual Desktops Sites. Each Site has 2 Delivery Controllers, 2 StoreFront servers, and 1 Citrix ADC high-availability pair. The same applications have been published from both Sites for all users. Two zones (Zone A and Zone B) are configured in each Site with 1 Delivery Controller in each zone. The Microsoft Exchange server is only accessible from Virtual Delivery Agent (VDA) machines in Zone A in each Site. Six access requirements have been identified: ✑ Users should have a single URL when accessing resources from different Sites. ✑ Users should always connect to the data center closest to their location. ✑ Applications added to Favorites within the Citrix Workspace app should be retained when accessed from different Sites. ✑ Launched applications and desktops should always connect through a local Citrix ADC. ✑ No duplication of applications published from different Sites. ✑ Microsoft Outlook should always launch in Zone A. What should the architect recommend to ensure that Microsoft Outlook always launches from Zone A for every user? A. Configure zone preference based on user location. B. Configure Zone A as the application Home Zone for Microsoft Outlook. C. Move a Delivery Controller from Zone B to Zone A. D. Designate Zone A as the Home Zone for all users.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The architect has identified the Resource Layer requirements shown in the exhibit. Click the Exhibit button to view the requirements. [sampleXML/xmlfile-30_1.png] Which feature of Citrix Profile Management could help the architect address the Graphic Designers Group requirements? A. Active write back B. NTUser.dat backup C. Profile streaming D. Profile caching",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is developing a Citrix Provisioning (PVS) design for a healthcare organization. The initial design places all PVS farm components in the primary data center of the organization. The customer asks if the vDisk can be streamed from PVS servers in the primary data center to target devices located in a secondary data center in another region, while still maintaining good performance. The data centers are connected with a 10 GB link with approximately 20 ms of latency. The architect recommends against the organization pursuing this approach. Which statement is a relevant reason for this recommendation? A. This configuration would introduce excessive latency in streaming traffic. B. This configuration does NOT provide sufficient connectivity between PVS servers and the farm database. C. This configuration prevents the Subnet Affinity feature from being implemented. D. This configuration does NOT provide sufficient bandwidth for streaming traffic.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. As part of graphics-mode design considerations, the architect discovered that one User Group requires a graphics mode that provides both good performance and high image quality. Which graphics mode should the architect recommend be configured for this specific group? A. Visual quality = Build to Lossless B. Visual quality = Always Lossless C. Optimize for 3D graphics workload = Disabled D. Optimize for 3D graphics workload = Enabled",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to manage the disaster recovery (DR) process for a Citrix Virtual Apps and Desktops environment. The environment currently consists of an active data center typically accessed by users, and a DR data center used in the event that a disaster impacts the primary data center. Each data center hosts a separate Citrix Virtual Apps and Desktops Site. The overall environment has been designed to actively replicate user data and application data from the primary data center to the DR data center using Microsoft Distributed File System Replication (DFSR). Management has made it a priority to minimize the loss of data when failing over between data centers. The primary data center suffers an outage that affects multiple components. As a result, management decides to fail over to the DR data center. The architect has blocked access to the primary data center to prevent new attempts to connect to its Citrix Virtual Apps and Desktops Site. Which two actions must the architect perform to meet company priorities before enabling access to the DR data center? (Choose two.) A. Drain existing sessions from the primary data center. B. Complete data replication from the primary data center to the DR data center. C. Replicate the Site's SQL database backups to the DR data center. D. Evaluate the condition of the Citrix Virtual Apps and Desktops environment in the primary data center. E. Transport backup data repositories to the DR data center.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to implement Citrix Virtual Apps and Desktops. Based on the assessment and early stages of the design, the requirements in the exhibit have been identified. Click the Exhibit button to view the requirements. [sampleXML/xmlfile-33_1.png] Which tier of storage should the architect consider implementing, based on the requirement? A. DAS B. Local C. NAS D. SAN",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. While performing a capabilities assessment of the existing infrastructure, it was discovered that there are issues with load balancing users, and that the existing load-balancing hardware is outdated. Which capability risk will the architect need to investigate to address these issues? A. Windows Server and Active Directory (AD) environments. B. Citrix Virtual Apps and Desktops environments C. Network architecture D. Access infrastructure",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The design will require 2 different StoreFront stores share a subscription datastore, and 2 corresponding Citrix Workspace app for Web sites. The solution should remain supported by Citrix. The architect has already installed StoreFront on a server. How can the architect achieve the desired design while keeping cost and maintenance requirements to a minimum? A. Point 1 store to the subscription service endpoint of the other store. B. Deploy a separate virtual server, install StoreFront on the new virtual server, and update the web.config file. C. Make the web.config files of both stores identical. D. Point 1 store to the Citrix Credential Wallet Service endpoint of the other store.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. Management has advised that they have a limited budget for the new solution. However, they still expect the design to account for future growth without the need to redesign or repurchase central hardware components. Additionally, the current 1 Gb network infrastructure CANNOT be replaced within the scope of this project. The architect has determined that the company can support both current and future load with 2 to 3 separate Virtual Delivery Agent (VDA) machine images. Which two features should the architect consider while designing the Citrix Hypervisors for the proposed Citrix environment? (Choose two.) A. Thin provisioning B. PXE boot with PVS C. Boot from SAN D. vApps E. iSCSI storage F. Intellicache",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is using LDAP as single-factor authentication (SFA). The architect is migrating the environment to Citrix Cloud and wants to retain the same authentication, procedure for Citrix Virtual Apps and Desktops service in Citrix Cloud. Which deployment strategy should the architect use for the Access Layer to ensure that the solution reduces management and does NOT incur additional costs? A. Use Citrix Cloud Gateway service and Citrix Cloud Workspace. B. Set up Citrix ADC with bring-your-own license (BYOL) and StoreFront in a public cloud. C. Set up Citrix ADC VPX and StoreFront on premises. D. Use Citrix Cloud Gateway service and on-premises StoreFront.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. Currently, the environment is configured as 2 locations with identical Citrix Virtual Desktops Sites. Each Site has 2 Delivery Controllers, 2 StoreFront servers, and 1 Citrix ADC high-availability pair. The same applications have been published from both Sites for all users. Two zones (Zone A and Zone B) are configured in each Site with 1 Delivery Controller in each zone. The Microsoft Exchange server is only accessible from Virtual Delivery Agent (VDA) machines in Zone A in each Site. Six access requirements have been identified: - Users should have a single URL when accessing resources from different Sites. - Users should always connect to the data center closest to their location. - Applications added to Favorites within the Citrix Workspace app should be retained when accessed from different Sites. - Launched applications and desktops should always connect through a local Citrix ADC. - No duplication of applications published from different Sites. - Microsoft Outlook should always launch in Zone A. What should the architect recommend configuring subscription synchronization to retain applications added to Favorites? A. Within server groups of each Site B. Between stores across the Sites C. Between server groups across the Sites D. Within stores of each Site",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Citrix Architect is designing the Access Layer for a company that supports active-active mode for Citrix Gateway, as well as an on-premises, two-factor authentication solution. Which feature supports this requirement? A. Citrix ADC Standard edition or higher B. Citrix ADC Cluster C. High-availability pair D. Citrix Gateway Service",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. Citrix Provisioning (PVS) has been selected for image management. The PVS vDisk store requires high fault tolerance and the ability to support dual drive failure. Which RAID level could the architect use for the PVS vDisk store? A. RAID 5 B. RAID 6 C. RAID 0 D. RAID 1",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. As part of graphics-mode design considerations the architect, determined that one User Group requires hardware acceleration with CPU-enabled Virtual Delivery Agent (VDA) machines for 3D graphics-design-type applications. Which graphics mode needs be configured for this specific group? A. Visual quality = Build to Lossless B. Visual quality = Always Lossless C. Optimize for 3D graphics workload = Disabled D. Optimize for 3D graphics workload = Enabled",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a pod-based architecture in a Citrix Virtual Apps and Desktops environment. The plan is to create three pods for different Resource Layer types: - Windows 10 VDI (non-persistent) - Windows Server 2016 hosted shared desktops (non-persistent) - Windows 10 VDI (persistent) Which three components can be shared between the three pods? (Choose three.) A. Citrix Delivery Controller B. Citrix StoreFront C. Citrix License Server D. Citrix Director E. Citrix Site Database",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. Based on some initial discussions about the business goals and objectives of the company, the architect collected the information shown in the exhibit. Click the Exhibit button to view the information. [sampleXML/xmlfile-38_1.png] What should the architect recommend to meet customer requirements? A. Have users connect to an unauthenticated store through the Citrix Workspace app for Web sites. B. Have users connect to an authenticated store through Citrix Workspace app for Web sites. C. Have users connect using a Desktop Appliance site created in the StoreFront console. D. Have users connect to an authenticated store through the Citrix Virtual Apps Services URL.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are three things a Citrix Architect should when using thin clones with Machine Creation Services (MCS)? (Choose three.) A. Storage and virtual machine (VM) migration may be more complex when compared to full clones. B. Provisioning speed is slower when compared to full clones. C. Storage fragmentation may occur over time. D. Storage space should be closely monitored. E. Higher storage space is required when compared to full clones.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect designing a new Citrix Virtual Apps and Desktops environment needs to determine which endpoints to include. Based on discussions with various departments, the user requirements listed in the exhibit were collected. Click the Exhibit button to view the requirements. [sampleXML/xmlfile-40_1.png] In addition to the user requirements, the architect must address the organizational requirement of minimizing endpoint management effort. Which endpoint type should the architect use for the Sales Group, based on the requirements? A. Corporate-owned thin client B. Bring-your-own device (BYOD) laptop/notebook C. Corporate-owned smartphone D. Corporate-owned laptop/notebook E. Bring-your-own device (BYOD) smartphone",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The table in the exhibit lists details about the requirements of the current user groups and their Virtual Delivery Agent (VDA) machine workloads. Click the Exhibit button to view the table. [sampleXML/xmlfile-41_1.png] The architect should scale the hardware used to host the virtual machines (VMs) for User Group 1 to ________ cores. (Choose the correct option to complete the sentence.) A. 32 B. 24 C. 96 D. 64 E. 16",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is configuring a multi-location profile strategy as part of a large Citrix Virtual Apps and Desktops solution. The architect needs to implement a single policy that sets the profile path for all users and distributes the user profiles between 3 shares and 9 file servers. - New York users: Server: NYC-FS.company.lan – Share: NYC-Profiles$ - Miami users: Server: MIA-FS.company.lan – Share: MIA-Profiles$ - San Francisco users: Server: SFO-FS.company.lan – Share: SFO-Profiles$ Which value constitutes a valid path for use with a Citrix Profile Management policy? A. \\\\%DataCenter%-FS.company.lan\\%UserHome%-Profiles$\\#sAMAccountName#\\%ProfileVer%\\ B. \\\\%DFS-ROOT%.company.lan\\%HomeShare%$\\#sAMAccountName#\\%ProfileVer%\\ C. \\\\#DataCenter#-FS.company.lan\\#DataCenter#-Profiles$\\#sAMAccountName#\\%ProfileVer%\\ D. \\\\#DFS-ROOT#.company.lan\\%HomeLocation%$\\#sAMAccountName#\\%ProfileVer%\\",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: An automobile manufacturer in Germany has deployed a Citrix Virtual Apps and Desktops solution for its employees using Citrix Cloud and uses a resource location in Germany. Recently, they acquired an automobile manufacturer in Japan. Since then, users from Japan have reported issues regarding slowness and degraded performance of the application hosted in the German resource location. How can a Citrix Architect improve the performance of the application for users in Japan? A. Implement Optimal Gateway Routing within the existing resource location. B. Create a new Site for Japan within Germany's resource location C. Provision new resources in Japan's resource location D. Implement Global Server Load Balancing (GSLB)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The environment will run on 2 Citrix Hypervisor platforms, each consisting of 3 NICs. The company maintains strict security standards for all business data traffic, so the architect is designing and configuring hypervisor network traffic to limit infrastructure vulnerabilities. How should the architect configure the hypervisor network traffic to provide the best security for the environment? A. Use 1 physical NIC on the host for management, and a second NIC shared for storage and virtual machines (VMs). Create 2 subnets – 1 for management and the other for storage and VMs. Confirm that the storage and VMs use a NIC on the same network as the host NIC, and sort traffic between the host and storage/VM with a switch port. B. Use each physical NIC on the hosts – 1 for management, 1 for storage, and 1 for the virtual machines (VMs). Create 2 subnets – 1 for management and the other for storage. Confirm that the VMs use a NIC for guest traffic on a separate network, and connect all networks to separate network switches. C. Use each physical NIC on the hosts – 1 for management, 1 for storage, and 1 for the virtual machines (VMs). Keep all traffic on a single subnet. Confirm that the VMs use a NIC for guest traffic on the same network as the host NIC, and sort the traffic between the host and VMs with switch port. D. Use 1 physical NIC on the host for management, and a second NIC shared for storage and virtual machines (VMs). Keep all traffic on a single subnet. Confirm that the storage and VMs use a NIC on the same network as the host NIC, and sort the traffic between the host and storage/VM with a switch port.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The architect's objective is to create a configuration to automatically reroute network traffic to the second NIC within the bond. The goal is to avoid a loss of productivity should the primary Citrix Hypervisor host NIC fail. Each hypervisor currently consists of a single, active 10 GB NIC and a second, dormant 1 GB NIC. Which two network interface configurations should the architect implement? (Choose two.) A. Active-passive (LACP) B. Active-active (SLB) C. NIC teaming-bonding D. Active-active (LACP)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a Citrix Virtual Desktops environment. The Graphic Designers Group uses graphic-intensive applications. Graphic designers will be provided with a Windows 10-hosted assigned desktop, with NVIDIA graphics hardware acceleration. HDX 3D Pro mode was selected during the installation of the Virtual Delivery Agent (VDA). What is the maximum number of monitors supported for the Graphic Designers Group? A. 4 B. 1 C. 2 D. 8",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The architect has identified the Resource Layer requirements shown in the exhibit. Click the Exhibit button to view the requirements. [sampleXML/xmlfile-44_1.png] Which feature of Citrix Profile Management could help the architect address the Graphic Designers Group requirements while minimizing login time? A. Profile streaming B. Active write back C. Folder redirection D. File exclusions",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Consultant is designing a new Citrix Virtual Desktops environment. During the user segmentation process, a Citrix Architect collected a small amount of data about user requirements, but was NOT able to create well-defined user groups. Which user-segmentation actions should the consultant pursue? A. Collect user data, define user groups, and identify user requirements. B. Collect user data, confirm user groups, and identify user requirements. C. Analyze existing data, define user groups, and confirm user requirements. D. Analyze existing data, confirm user groups, and identify user requirements",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The IT team maintains 12 Citrix Hypervisor hosts that are available to build the new Citrix environment. During the project kickoff meeting, management states: `We need a robust infrastructure that can handle large user loads, improve IT efficiency, guarantee minimal downtime, and protect the network and its resources from corruption.` Click the Exhibit button to view the existing infrastructure details. [sampleXML/xmlfile-46_1.png] Which configuration should the architect use to meet the requirements for the new Citrix environment? A. Create multiple resource pools with at least 3 hosts in each pool for the infrastructure and Citrix workloads, and enable high availability with clustered pools using local storage repositories. B. Create a single resource pool containing all hosts for the infrastructure and Citrix workloads, and enable default high availability using GFS2 as the heartbeat storage repository. C. Create a single resource pool containing all hosts for the infrastructure and Citrix workloads, and enable default high availability using NFS as the heartbeat storage repository. D. Create multiple resource pools with at least 3 hosts in each pool for the infrastructure and Citrix workloads, and enable high availability with clustered pools using GFS2 as the heartbeat storage repositories.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment for a company with 2 branch offices connected over a WAN link. Each location will maintain its own Citrix Site and be configured for disaster recovery (DR) to allow users to failover if 1 Site has an outage. Management wants to implement a strong profile solution to manage user profiles. Each user maintains a profile that consists of user documents, application settings, and other personalization settings that must be available to them at all times. Which step should the architect perform to ensure that profile requirements are met? A. Implement Citrix Profile Management for all users with Windows Folder Redirection configured, and Microsoft Distributed File System Replication (DFSR) active-active profile replication configured over the WAN connection. B. Implement Citrix Profile Management for all users with Microsoft Distributed File System Replication (DFSR) active-passive profile replication configured over the WAN connection. C. Implement Ciitrix Profile Management for all users with Microsoft Distnbuted File System Replication (DFSR) active-active profile replication configured over the WAN connection. D. Implement Citrix Profile Management for all users with Active write back enabled and Microsoft Distributed File System Replication (DFSR) active-active profile replication configured over the WAN connection.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a multi-data center Citrix Virtual Apps and Desktops environment that will use Citrix Provisioning (PVS) to manage Virtual Delivery Agent (VDA) machine images. Each data center will have a separate PVS farm. During design discussions, the architect created a diagram to depict the way in which vDisk files will be replicated among PVS farms, based on the available storage for the vDisk stores. Click the Exhibit button to view the diagram. [sampleXML/xmlfile-47_1.png] Overall, the customer has identified 3 objectives for the image-replication process: ✑ Administrative time required to replicate images among farms must be minimized. ✑ The process must be usable by storage administrators without PVS farm administrative permissions. ✑ Pre-existing infrastructure and processes should be used where possible. Which method should the architect use to replicate vDisk files among data centers? A. Manual copy B. Scheduled RoboCopy commands C. SAN replication D. vDisk Replicator Utility E. Microsoft Distributed File System Replication (DFSR) Namespaces",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The customer is interested in using Machine Creation Services (MCS) with Citrix App Layering. Which consideration would result in the architect recommending that the customer use a different image and application-management approach? A. PXE is required for non-Citrix machines in networks that will support the Virtual Delivery Agent (VDA) machines. B. The environment must use the Citrix Virtual Apps Enterprise concurrent licensing. C. The images must be deployed to physical machines. D. The machines must use an existing SAN deployment. E. Microsoft Hyper-V hosts must be used to host the Virtual Delivery Agent (VDA) machines.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment for a marketing company. Several departments within the company utilize 3D applications based on OpenGL and Direct X. These applications run as hosted applications within 5 different virtual machines running on a single Citrix Hypervisor host. The host is configured with 1 single physical GPU running Intel Iris Pro technology. Which HDX 3D Pro method should the architect utilize for these 3D applications? A. Software-virtualized GPU B. Pass-through GPU C. Hardware-virtualized GPU D. CUDA-virtualized GPU",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is implementing a new Citrix Virtual Apps and Desktops environment. The customer has 3 requirements: ✑ All users must be able to aggregate resources from all Sites. ✑ Both Sites should be treated as 1 equivalent farm set. ✑ User connections should be directed to the New York Site with failover to San Francisco. Click the Exhibit button to view the StoreFront configurations. Exhibit 1. [sampleXML/xmlfile-50_1.jpg] Exhibit 2. [sampleXML/xmlfile-51_1.jpg] Based on the configurations, requirement 1 is ______________, requirement 2 is ______________, and requirement 3 is ______________. (Choose the correct option to complete the sentence.) A. met; met; NOT met B. met; NOT met; NOT met C. NOT met; met; met D. met; met; met E. NOT met; met; NOT met F. met; NOT met; met G. NOT met; NOT met; NOT met",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment for a company that will utilize Citrix Provisioning as a solution to deploy Virtual Delivery Agent (VDA) machines. After reviewing the existing infrastructure, the architect determined that VDA machines are all on the same network subnet, and are a mixture of Unified Extensible Firmware Interface (UEFI)-based technology and legacy BIOS-based virtual machines (VMs). Management has specified that the proposed solution should be configurable from a central location without the need to create new catalogs or device collections. Which three target device boot methods can the architect recommend for this deployment? (Choose three.) A. BIOS-embedded B. BDM disk partition C. DHCP options D. BDM ISO E. PXE",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Scenario: An IT department moved its entire infrastructure to Microsoft Azure. It is utilizing multiple Azure regions for redundancy. It also uses all Azure regions as resource locations within Citrix Virtual Apps and Desktops Service in Citrix Cloud. Which storage replication option will allow data to be read from both the primary and secondary locations? A. Locally redundant storage (LRS) B. Read-access geo-redundant storage (RA-GRS) C. Zone-redundant storage (ZRS) D. Geo-redundant storage (GRS)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. Management has requested dynamic distribution of users between the primary and backup data centers to ensure that all available hardware is utilized during normal operations. What is the biggest risk the architect should highlight to the customer when designing the profile strategy? A. Scale-Out File Servers are required to support active-active profile deployments B. Using Microsoft Distributed File System Replication (DFSR) to replicate user profiles requires significant bandwidth C. Replicating profiles between the 2 data centers will double storage costs D. Roaming profiles are NOT supported in active-active Microsoft Distributed File System Replication (DFSR) deployments",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. As part of the graphics-mode design considerations, the architect determined that one User Group requires pixel-perfect images at all times. Which graphics mode should the architect recommend be configured for this specific group? A. Visual quality = Always Lossless B. Optimize for 3D graphics workload = Enabled C. Optimize for 3D graphics workload = Disabled D. Visual quality = Build to Lossless",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The environment consists of 4 Citrix Hypervisor hosts, each running 10 virtual machines (VMs). To meet company security standards for the environment, the IT team will need to perform routine VM snapshots, data backups, and threat scans. Which two matters should the architect consider when securing a backup plan for the company? (Choose two.) A. Administrative access to the storage location that maintains backups and archived data should be monitored B. There are various delegated administrator roles that will have permissions to perform VM snapshots C. RAID technology is supported for secure VM backups and snapshots when using local host storage D. VM snapshots and data backups are NOT required for backup purposes if an enterprise-grade, geo-replicated, high-security storage solution is deployed E. Running simultaneous security scans on different VMs can reduce host resource utilization",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to support a Citrix Virtual Apps and Desktops environment with 2 data centers. App Layering is being used to create layered images that are used by the Virtual Delivery Agent (VDA) machines in both data center locations. To comply with disaster recovery (DR) requirements, administrators must be able to modify and deploy layered images from either data center if needed. Which statement correctly describes the process that the architect must follow to meet the requirements? A. All required layers should be exported from the first Enterprise Layer Manager using the hypervisor hosting the machine, then imported to the hypervisor resource pool in the secondary data center. B. All required layers should be copied from the first Enterprise Layer Manager to the second Enterprise Layer Manager using Microsoft Distributed File System Replication (DFSR) C. All required layers should be exported from the first Enterprise Layer Manager to an SMB file share, and then imported into the second Enterprise Layer Manager. D. All required layers should be copied from the first Enterprise Layer Manager to the second Enterprise Layer Manager using RoboCopy commands",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. Two Control Layer security requirements have been identified: ✑ For security reasons, it is unacceptable to use default ports for FlexCast Management Architecture (FMA) services. ✑ Management access to PowerShell and Citrix Studio should be restricted to management workstations by granular firewall rules. Which combination of ports can the architect assign to the listed Citrix services to meet the Control Layer security requirements? A. VDA Registration Port: 80 XML SSL Port: 80 SDK Port: 8083 B. VDA Registration Port: 8081 XML SSL Port: 443 SDK Port: 80 C. VDA Registration Port: 8081 XML SSL Port: 8082 SDK Port: 8083 D. VDA Registration Port: 8081 XML SSL Port: 8083 SDK Port: 8083",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The customer requires that local users on the internal network have access to the Citrix environment from available, non-domain-joined desktops. How should the architect configure StoreFront for the Citrix Virtual Apps and Desktops deployment to ensure this requirement is met? A. Use the Citrix StoreFront console to create the new store and then use the XenApp Services URL for the store B. Use the Citrix StoreFront option within Citrix Studio to create the new store and then use the XenApp Services URL for the store C. Use the Citrix StoreFront console to create a Desktop Appliance site D. Use the PowerShell console to create a Desktop Appliance site",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to manage the disaster recovery (DR) process for a Citrix Virtual Apps and Desktops environment. The environment currently consists of an active data center typically accessed by users, and a DR data center used in the event that a disaster impacts the primary data center. Management has made it a priority to minimize the loss of data when failing over between data centers. The environment has failed over from the primary data center to the DR data center and the primary data center has subsequently been recovered to its normal state. What is the appropriate sequence of steps that the architect should follow to return to normal operations after the primary data center's stability is confirmed? A. Complete replication to the primary data center, block access to the DR data center, terminate/drain existing sessions in the DR data center, configure replication back to the DR data center, and enable access in the primary data center. B. Terminate/drain existing sessions in the DR data center, complete replication to the primary data center, block access to the DR data center, enable access in the primary data center, and configure replication back to the DR data center. C. Block access to the DR data center, terminate/drain existing sessions in the DR data center, complete replication to the primary data center, configure replication back to the DR data center, and enable access in the primary data center. D. Block access to the DR data center, complete replication to the primary data center, terminate/drain existing sessions in the DR data center, enable access in the primary data center, and configure replication back to the DR data center. E. Terminate/drain existing sessions in the DR data center, block access to the DR data center, complete replication to the primary data center, configure replication back to the DR center, and enable access in the primary data center. F. Complete replication to the primary data center, terminate/drain existing sessions in the DR data center, block access to the DR data center, enable access in the primary data center, and configure replication back to the DR data center.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to assess a Citrix Virtual Apps and Desktops environment. The Citrix Virtual Apps and Desktops diagram in the exhibit gives details about the current Site and zone design. Click the Exhibit button to view the diagram. [sampleXML/xmlfile-57_1.png] Which statement is correct if the Delivery Controller in Satellite Zone 2 fails? A. Virtual Delivery Agent (VDA) machines in Zone 2 will register within the Primary Zone B. Virtual Delivery Agent (VDA) machines in Zone 2 will register within Satellite Zone 1 C. Virtual Delivery Agent (VDA) machines in Satellite Zone 2 will NOT register D. Virtual Delivery Agent (VDA) machines will register using the Local Host Cache (LHC)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect has implemented a multi-location profile strategy as part of a large Citrix Virtual Apps and Desktops solution. The architect needs to implement a single policy that sets the profile path for all users. ✑ New York users: Server: NYC-FS.company.lan `\" Share: NYC-Profiles$ ✑ Miami users: Server: MIA-FS.company.lan `\" Share: MIA-Profiles$ ✑ San Francisco users: Server: SFO-FS.company.lan `\" Share: SFO-Profiles$ The architect has proposed the usage of this path for all users: \\\\#Loc#-FS.company.lan\\#Loc#-Profiles$\\#sAMAccountName#\\%ProfileVer%\\ What does the architect need to define to use the above path for all users as the profile location? A. A Loc variable using the Current-Location attribute B. A DFS-ROOT variable per data center that incorporates the user environment variable %homeshare% C. A new attribute called Loc using Active Directory (AD) Explorer D. A user environment variable Loc using a login script",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect designing a new Citrix Virtual Apps and Desktops environment needs to determine which endpoints to include. Based on discussions with various departments, the user requirements listed in the exhibit were collected. Click the Exhibit button to view the requirements. [sampleXML/xmlfile-59_1.png] Which endpoint type should the architect use for the Customer Service Group, based on the requirements? A. Desktops B. Multi-monitor workstations C. Phones D. Thin clients E. Tablets",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment for a marketing and design company. One department uses several 3D applications based on OpenGL. These applications run as hosted applications within a single virtual machine (VM) running on a single Citrix Hypervisor host. The host is configured with 2 physical GPUs running NVIDIA GRID technology. Which HDX 3D Pro method should the architect use for these 3D applications? A. Software-virtualized GPU B. Pass-through GPU C. Hardware-virtualized GPU D. CUDA-virtualized GPU",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops Service environment in Citrix Cloud. The customer previously installed all applications locally on managed laptops and desktops, but is willing to evaluate other application delivery methods as part of the new deployment. The environment will be standardized on Windows 10 and Windows Server 2016 for the Virtual Delivery Agent (VDA) machines. As part of an application analysis performed earlier in the project, the information in the exhibit was collected regarding 1 of the required applications. Click the Exhibit button to view the information. [sampleXML/xmlfile-60_1.png] The customer has the additional objective of minimizing authentication cycles for users with no configuration efforts on user machines. How should the architect publish the application? A. Through the Citrix Gateway Service as a Web/SaaS application B. Through Citrix Gateway as a Web/SaaS application C. As a streamed application using Microsoft App-V D. From Citrix Virtual Apps and Desktops Service",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect deployed a new Citrix Virtual Desktops environment in Citrix Cloud. The environment is accessed exclusively by users in a location where Citrix Cloud does NOT have a local point of presence (POP). The Corporate Security team advises that a new industry regulation requires that all user HDX-session communications remain within the country. In addition, users have requested file-type-association functionality to launch published applications from within their virtual desktops. What should the architect configure for this deployment? A. On-premises Citrix Gateway with on-premises StoreFront B. Citrix Cloud-hosted Gateway Service with Citrix Cloud-hosted Workspace C. On-premises Citrix Gateway with Citrix Cloud-hosted Workspace D. Citrix Cloud-hosted Gateway Service with on-premises StoreFront",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The architect has identified the Resource Layer requirements shown in the exhibit. Click the Exhibit button to view the requirements. [sampleXML/xmlfile-62_1.png] Which Citrix Profile Management configuration could help the architect address the issue referenced in the exhibit? A. Enable Cross-platform B. Add the application folder to the Inclusion policy C. Add the application folder to the Exclusion policy D. Enable Active write back",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a Citrix Virtual Apps and Desktops environment. The company has a small IT team with limited experience deploying and maintaining this type of environment. To perform adequately, the line of business application used by the company must be hosted <10ms RTT from a backend database located within a customer- managed data center. Which Citrix Virtual Apps and Desktops environment best meets the needs of this organization? A. Citrix Virtual Apps and Desktops and Microsoft Azure workload B. Citrix Virtual Apps and Desktops Service and on-premises workload C. Citrix Virtual Apps and Desktops Service and Microsoft Azure workload D. Citrix Virtual Apps and Desktops and on-premises workload",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The customer previously installed all applications locally on managed laptops and desktops but is willing to evaluate other application delivery methods as part of the new deployment. The environment will be standardized on Windows 10 and Windows Server 2016 for the Virtual Delivery Agent (VDA) machines. As part of an application analysis performed earlier in the project, the information in the exhibit was collected regarding 1 of the required applications. Click the Exhibit button to view the information. [sampleXML/xmlfile-63_1.png] The customer has the additional objective of minimizing the amount of network traffic in the environment, particularly on WAN or metered links. How should the architect deploy the application? A. Stream it to a VDA machine using Microsoft App-V, and access it through a virtual desktop session B. Install it directly on a VDA machine image, and access it through a virtual desktop session C. Install it directly on a Server OS VDA machine, and access it from the endpoint as a published application D. Install it directly on endpoint devices, and include it in a virtual desktop session using the Local App Access feature E. Install it in the Application Layer using Citrix App Layering",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The Site will contain two Delivery Controllers. All machines are running on a single hypervisor platform. As part of the deployment, management has advised they want a database high-availability (HA) solution to protect the environment against the loss of a physical server. Additional considerations for the SQL HA: ✑ Downtime for Citrix administrative functions should be minimized. ✑ Additional hardware or resources should be minimized. ✑ Limited knowledge available to configure and maintain SQL infrastructure. Which HA configuration should the architect use for this deployment? A. Local Host Cache B. VM-Level HA C. SQL Always On D. SQL Mirroring E. SQL Clustering",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is implementing a new Citrix Virtual Apps and Desktops environment. The customer has 3 requirements: ✑ All users must be able to aggregate resources from all Sites. ✑ Both Sites should be treated as 1 equivalent farm set. ✑ User connections should be directed to the New York Site with failover to San Francisco. Click the Exhibit button to view the StoreFront configurations. Exhibit 1. [sampleXML/xmlfile-66_1.jpg] Based on the configurations, requirement 1 is ______________, requirement 2 is ______________, and requirement 3 is ______________. (Choose the correct option to complete the sentence.) A. met; met; met B. NOT met; NOT met; NOT met C. NOT met; met; met D. NOT met; met; NOT met E. met; met; NOT met F. met; NOT met; met G. met; NOT met; NOT met",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: IT management has decided which server hardware model to use for its new Citrix Virtual Apps and Desktops Sites, but needs guidance on sizing the Hardware Layer. Click the Exhibit button to view the host details. [sampleXML/xmlfile-67_1.png] A Citrix Architect is planning to install Citrix Hypervisor 7.x on this host. How many vCPUs will be available to the Citrix Hypervisor host? A. 48 B. 32 C. 16 D. 24",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The environment will utilize Citrix Provisioning (PVS) for image management of physical and virtual machines (VMs). Upon review of the current network infrastructure, the architect determined a number of considerations that will impact the overall imaging process. Click the Exhibit button to view the existing internal network and PVS infrastructure details. [sampleXML/xmlfile-68_1.png] What should the architect do to optimize the Citrix Provisioning server to target device communication and the streaming process? A. Enable Replication and set to Fixed B. Enable Subnet Affinity and set to Fixed C. Enable Subnet Affinity and set to None D. Enable Replication and set to Best Effort",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: An additional zone was recently added to a Citrix Virtual Apps and Desktops environment. The main zone is located in New York City, and a small, second zone is located in Tokyo. Within the next year, the number of users in Tokyo is expected to equal that in New York City. A Citrix Architect recommended the addition of 2 StoreFront servers in Tokyo to support the users. What should the architect recommend for this environment to ensure user-experience consistency and reduce WAN bandwidth consumption? A. Add 2 StoreFront servers to separate server groups and configure subscription synchronization B. Add 2 StoreFront servers and configure the Optimal Gateway routing feature C. Add 2 standalone StoreFront servers D. Add 2 StoreFront servers to the same server group",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. During the project kickoff meeting, the organization stated the following business priorities: `Overall, we want a robust solution that ensures users' ability to access resources at any time, even if the primary data center experiences an outage. Since employees will need to access resources from both inside and outside the corporate network, we need to ensure that this is enabled in a secure manner to protect sensitive data.\" Which four design decisions align with the organization's stated business priorities? (Choose four.) A. Redundancy should be implemented for all infrastructure components B. Optimal Gateway Routing must be configured on StoreFront C. A multi-Site architecture and disaster recovery (DR) plan is required D. Server OS Virtual Delivery Agent (VDA) machines should be used to increase user density per machine E. Single-image management should be included in the design F. SmartAccess or SmartControl features should be considered for this environment G. Citrix ADC is required for this environment",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: The IT team of a company needs to mitigate the Hardware Layer to Microsoft Azure. The Virtual Delivery Agent (VDA) machines are manually provisioned within Microsoft Azure. The IT team asks a Citrix Architect for a solution for high availability of existing VDA machines in a single Azure data center. The objective is to be proactive about any hardware failure at Microsoft Azure, so that all virtual machines (VMs) will NOT be affected. What should the architect recommend the IT team create in Microsoft Azure? A. Resource group B. Availability sets with fault domain C. Availability sets with update domain D. Availability zones",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The design will require three different StoreFront stores and three corresponding Citrix Workspace app for Web sites. Each different store and Citrix Workspace app for Web site will serve different business units. Each of these will also require its own branding and SSL certificate. The solution should remain supported by Citrix. The architect has already installed StoreFront on a server. How can the architect achieve the desired design while keeping cost and maintenance requirements to a minimum? A. Create two extra Internet Information Services (IIS) sites, bind the certificates in IIS Manager, copy the StoreFront configurations to the two new IIS sites, and use a text editor to configure all three StoreFront stores. B. Deploy two extra virtual servers, bind the certificates in Internet Information Services (IIS) Manager, and install StoreFront on each new virtual server. C. Create two extra Internet Information Services (IIS) sites, bind the certificates in IIS Manager, use PowerShell to deploy additional stores to the two new IIS sites, and use a text editor to configure all three StoreFront stores. D. Create two extra Internet Information Services (IIS) sites, bind the certificates in IIS Manager, copy the StoreFront configuration to the two new IIS sites, and use the StoreFront console to configure all three StoreFront stores.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which access component will support anonymous access within a new environment? A. Citrix StoreFront B. Citrix Gateway Service C. Citrix ADC D. Citrix Workspace",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new 2,000-user Citrix Virtual Apps and Desktops environment. The environment will use Windows Server 2016 for all Site infrastructure components (Delivery Controllers, StoreFront servers, and Citrix Director). Machine Creation Services (MCS) will be used to provision Virtual Delivery Agent (VDA) machines. The environment will include 2 primary use cases: ✑ Windows Server 2016 VDA machines providing hosted applications ✑ Windows 10 VDA machines providing random, non-persistent VDI The IT team has NOT yet purchased the hardware that will be used for the environment, and will build the Hardware Layer components based on the architect's recommendations. How should the architect design the Citrix Hypervisor resource pools based on Citrix leading practices? A. Windows Server 2016 VDA machines should be placed in 1 resource pool, Windows 10 machines should be placed in a second resource pool, and the infrastructure servers should be placed in a third resource pool. B. Windows Server 2016 machines should be placed in 1 resource pool, and all Windows 10 machines should be placed in a second resource pool. C. The infrastructure servers and all VDA machines should be located in 1 resource pool. D. The infrastructure servers should be placed in 1 resource pool, and the VDA machines should be placed in a second resource pool.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is assessing an existing infrastructure for a company that has storage challenges as a result of hyper-growth. They currently have a large IT infrastructure that consists of 15 hypervisor hosts and more than 200 virtual machines (VMs) worldwide. Management has advised the architect that they need to improve their storage infrastructure to include high performance and scalability. Which storage solution should the architect implement within this infrastructure? A. DAS B. SAN C. NAS D. Local",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. Currently, the environment is configured as 2 locations with identical Citrix Virtual Desktops Sites. Each Site has 2 Delivery Controllers, 2 StoreFront servers, and 1 Citrix ADC high-availability pair. The same applications have been published from both Sites for all users. Two zones (Zone A and Zone B) are configured in each Site with 1 Delivery Controller in each zone. The Microsoft Exchange server is only accessible from Virtual Delivery Agent (VDA) machines in Zone A in each Site. Six access requirements have been identified: ✑ Users should have a single URL when accessing resources from different Sites. ✑ Users should always connect to the data center closest to their location. ✑ Applications added to Favorites within the Citrix Workspace app should be retained when accessed from different Sites. ✑ Launched applications and desktops should always connect through a local Citrix ADC. ✑ No duplication of applications published from different Sites. ✑ Microsoft Outlook should always launch in Zone A. What should the architect recommend configuring to avoid duplication of the same applications being delivered from different Sites? A. 'Keywords: Featured' in the properties of the published applications B. An Application Group C. Zone preferences for VDA machines hosting the applications D. Aggregate resources",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. While performing the capabilities assessment for the existing infrastructure, the architect discovered substantial issues with packet loss and latency, and no current Quality-of-Service (QoS) technology is in place to manage these issues. Which capability risk will the architect need to investigate to address these issues? A. Access infrastructure B. Disaster recovery (DR) plan and implementation C. Network architecture D. Windows Server and Active Directory (AD) environments",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is implementing a new Citrix Virtual Apps and Desktops environment. The IT team has purchased 1,000 Citrix Virtual Apps and Desktops Advanced licenses. The company requires the IT team to produce a report of successful and failed connections of Citrix Virtual Apps sessions during the last 30 days. Which two actions does the architect need to take to produce the report? (Choose two.) A. Implement Citrix Application Delivery Management B. Configure 'GroomFailuresRetentionDays' C. Configure 'GroomSessionsRetentionDays' D. Purchase Citrix Gateway Universal licenses E. Purchase Citrix Virtual Desktops Premium licenses",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops environment. The architect has identified the Resource Layer requirements shown in the exhibit. Click the Exhibit button to view the requirements. [sampleXML/xmlfile-75_1.png] Additionally, management identified 2 general Resource Layer requirements: ✑ The time required to configure the solution should be minimized. ✑ Different user groups can use different profile solutions. Which profile type should the architect consider for the Finance Group? A. Hybrid B. Mandatory C. Roaming D. Local",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is designing a new Citrix Virtual Apps and Desktops Service environment in Citrix Cloud. During the kickoff meeting, management advised that they need a robust, scalable image-provisioning strategy that allows for easy image and application maintenance to deploy a large number of applications to users. This should include company-wide applications and departmental applications to be used only by specific sets of users. Some applications will require run-once scripts at system startup for product licensing. Which image provisioning strategy should the architect use for this deployment? A. Application Layering B. Machine Creation Services (MCS) C. Manual Provisioning D. Citrix Provisioning (PVS)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scenario: A Citrix Architect is creating a conceptual architecture for a Citrix Virtual Apps and Desktops environment. Based on some initial discussions around the company's business goals and objectives, the architect collected the information shown in the exhibit. Click the Exhibit button to view the information. [sampleXML/xmlfile-77_1.png] Which delivery model should the architect recommend? A. Single-Site in Citrix Cloud, with resources hosted in public cloud B. Single-Site, single-zone, and single on-premises data center C. Multi-Site, and single on-premises data center D. Multi-Site in Citrix Cloud, with resources hosted in public cloud",
+    "options": {},
+    "most_voted": "A"
+  }
+]
