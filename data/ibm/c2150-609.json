@@ -1,0 +1,337 @@
+[
+  {
+    "question": "A customer has a developed an OAuth 2.0 Client application to access resources on behalf of a user. The customer states that the OAuth client has the following two constraints: 1. The OAuth client is not capable of maintaining its credentials confidential for authentication with the authorization server. 2. The resources owner does not have a trust relationship with the client. What is the suitable OAuth 2.0 grant type for the API Protection Policy if the user resource accessed by the OAuth 2.0 client is to be protected by IBM Security Access Manager V9.0? A. Implicit Grant B. Client Credential Grant C. Authorization Code Grant D. Resource Owner Password Credentials Grant",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a customer environment, a REST API client is being developed to carry out Reverse Proxy configuration and maintenance. As part of one of the activities the customer needs to update the junction information with an additional Backend Server. The customer has written a REST API client but is not able to modify the junction. Which HTTP headers should the customer pass? A. Host, Authorization B. Host, Accept: Application/json C. Authorization, Accept: Application/json D. content-type: application/json, Authorization",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "During installation WebSEAL provides a default certificate key database that is used to authenticate both clients and junctioned servers. Which stanza entry of the WebSEAL configuration file points to the default certificate key database (i.e. kdb file)? A. ssl-keyfile B. jct-cert-keyfile C. webseal-cert-keyfile D. webseal-cert-keyfile-label",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has a large number of users who use mobile applications. The company wants to implement context-aware access controls for these resources. Which module of IBM Security Access Manager V9.0 should the company enable to support this requirement? A. Federation module B. Protocol Analysis module C. Mobile Access Control module D. Advanced Access Control module",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A request for a virtual host junction shows an unexpected source IP address. Which troubleshooting tool can be used to investigate this issue? A. Host File B. Snapshots C. Support Files D. Packet Tracing",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Access Manager V9.0 deployment professional is charged with monitoring request response times from WebSEAL to the backend. The deployment professional wants the flexibility to see response times per request, per junction, per HTTP return code, or other criteria that may come up in the future. What action will generate the required data for this analysis? A. Customize the request.log to include response times B. Run pdadmin â€œstats get pdweb.jctâ€ on all junctions on a regular basis C. Run pdadmin stats get pdweb.httpsâ€ and â€œstats get pdweb.httpâ€ on a regular basis D. Write a REST API script to pull â€œapplication interface statisticsâ€ on a regular basis",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A deployment professional attempts to log into an appliance which is part of a cluster to run pdadmin commands and receives the following message: pdadmin> login-a sec_master \"\"p password 2016-03-03-02:04:38:.683-06:001 ---0x1354A420 pdadmin ERROR ivc socket mtsclient.cpp 2376 0x7fc2b7b0c720 HPDCO1056E Could not connect to the server 192.168.254.11, on port 7135. Error: Could not connect to the server. (status 0x1354a426) What should the deployment professional check concerning the login target? A. Login was attempted on a special node B. Login was attempted on a restricted node C. Login was attempted on a secondary master that has not been promoted to the primary D. Login was attempted on a non-primary master of a cluster and the primary policy server is down.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer is migrating from TAM v6.1 running on AIX to IBM Security Access Manager (ISAM) V9.0 hardware appliance. Which information form the TAM v6.1 environment will be useful in sizing the new ISAM V9.0 hardware configuration? A. WebSEAL request logs B. WebSEAL CDAS specifics C. Number of LDAP replicas D. Number of objects in the protected object space",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "There is an SSL connectivity issue between the IBM Security Access Manager V9.0 Reverse Proxy and the backend business application. Which Two troubleshooting commands under Tools in the application SSH interface can be used to validate the Reverse Proxy can successfully connect to the backend host: secure-port? (Choose two.) A. Ping B. Session C. Connect D. Traceout E. Connections",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Access Manager V9.0 Reverse Proxy has a stateful junction to a Portal application called \"/wps\" There is no web server in front of Portal. This junction has three Portal servers defined behind it. The Portal team needs to do maintenance on each of the three servers. The team wants to accomplish with least impact to end users. Which pdadmin \"server task\" based steps will accomplish this? A. Stop a server, have Portal team apply maintenance, bring server online-repeat for the other two servers. B. Delete a server, have Portal team apply maintenance then add server back-repeat for the other two servers. C. Take a server offline, have Portal team apply maintenance, bring server online- repeat for the other two servers. D. Throttle a server, ensure activity has ceased for that server, have Portal team apply maintenance, bring server online-repeat for the other two servers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer received a replacement hardware appliance, but on boot up it has a different firmware than that for IBM Security Access Manager (ISAM) V9.0. The appliance needs to be flashed to ISAM V9.0. The appliance needs to be rebooted with a bootable USB drive formatted as FAT32. Which file format is needed to create the bootable drive? A. .iso B. .ova C. .pkg D. .img",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A risk officer of an organization discovered that a site protected by the IBM Security Access Manager V9.0 solution might be vulnerable to common attacks like cross-site scripting (XSS) and SQL injection. Which optional component should be configured to protect against these attacks? A. Federation B. Secure Web Settings C. Advanced Access Control D. Web Application Firewall",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A stateful junction /WebApp is added to a Web reverse proxy instance with two backend HTTP servers. When one of the backend server stops responding to the requests, the users are getting the \"Third Party Not Responding\" error message even though one of the backend server continues to respond. Which parameter needs to be added to the configuration file so that \"Third Party Not Responding\" error page is not rendered and the user is connected to the backend server that is responding? A. Use-same-session = yes B. Use-new-stateful-on-error=yes C. Failover-include-session-id= yes D. Enable-failover-cookie-for-domain = yes",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Manager V9.0 deployment professional executes the following steps: 1. Navigate to Edit SSL Certificate Database-embedded_ldap_keys 2. Select the embedded LDAP server certificate 3. Click Manage->Export 4. Save the resulting .cer file onto local desktop Which task was the deployment professional performing? A. Renewing the embedded LDAP server certificate B. Replacing the embedded LDAP server certificate C. Creating a backup of the embedded LDAP server certificate D. Preparing to configure SSL for a local LDAP client to the embedded LDAP server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Access Manager V9.0 systems deployment professional needs to protect a back-end web applications from SQL injection attacks that match signatures from the IBM X-Force signature database. Which action needs to be performed? A. Simulation Mode must be enabled and a Risk Profile must be specified. B. Web Content Protection must be enabled and a Risk Profile must be specified. C. Simulation Mode must be enabled and a Registered Resource must be specified. D. Web Content Protection must be enabled and a Registered Resource must be specified.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The IBM Security Access Manager (ISAM) V9.0 LMI SSL certificate is auto-generated by default. When the LMI certificate is due to expire, how is it renewed? A. The ISAM Appliance will renew LMI certificate automatically. B. The ISAM deployment professional must issue reset_lmi_cert using command line interface. C. The ISAM deployment professional must re-generate it using LMI Manage System Settings-> SSL panels. D. The ISAM deployment professional must create a new self sign certificate using LMI Manage System Settings-> SSL panels.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The customer currently maintains all its users in Active Directory. As part of its new IBM Security Access Manager (ISAM) V9.0 deployment, the customer understands it will have to implement the ISAM \"Global Sign-on (GSO)\" to archive SSO with certain backend applications which do their own authentication and cannot be modified. Which federated repositories configuration will address the customer requirements? A. Use an external ISDS LDAP as the ISAM primary LDAP, federate with the AD and import all AD users into the ISAM TDS. B. Configure the AD as the ISAM Primary LDAP, which will create the necessary secauthority= default suffix. Import all users into the ISAM AD. C. Use the ISAM embedded LDAP as the Primary LDAP, federate with the AD and configure â€œbasic userâ€, and specify â€œbasic-user-principal-attribute= samAccountNameâ€ D. Use an external ISDS LDAP as the Primary LDAP, federate with the AD, configure â€œbasic userâ€, specify â€œbasic-user-principal-attribute= samAccountNameâ€ and â€œbasic-user-suffix= secauthority=defaultâ€.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has three LDAP servers: A master (ds1.example.com), another master (ds2.example com) and a read-only replica (ds3.example.com) used for the IBM Security Access Manager (ISAM) V9.0. The deployment professional has configured the ISAM runtime using ds1.example.com as the registration server. Which configuration will provide load balancing for LDAP read across all three servers and failover to ds2.example.com for LDAP write? A. replica= ds2.example.com, 389, readonly,5 replica= ds3.example.com, 389, readonly,5 replica= ds2.example.com, 389, readwrite,6 B. replica= ds1.example.com, 389, readonly,6 replica= ds2.example.com, 389, readonly,6 replica= ds3.example.com, 389, readonly,6 replica= ds2.example.com, 389, readwrite,4 C. replica= ds1.example.com, 389, readonly,4 replica= ds2.example.com, 389, readonly,4 replica= ds3.example.com, 389, readonly,4 replica= ds2.example.com, 389, readwrite,6 D. replica= ds1.example.com, 389, readonly,1 replica= ds2.example.com, 389, readonly,2 replica= ds3.example.com, 389, readonly,3 replica= ds2.example.com, 389, readwrite,4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which web resource should be used to keep up to date on support flashes, fixpack announcements, and other product related issues? A. The IBM Support Portal B. The IBM Security twitter account C. The LinkedIn IBM Security Access Manager V9.0 Group D. The IBM devWorks IBM Security Access Manager V9.0 Forum",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has deployed an IBM Security Access Manager V9.0 solution to protect web applications. After the initial authentication between the client and WebSEAL, WebSEAL can build a new Basic Authentication header and use the \"\"b option to provide the authenticated Security Access Manager user name (client's original identity) together with a predefined static password across the junction to the back-end server. Which configuration option will accomplish this? A. - gso B. â€\"b filter C. â€\"b ignore D. -supply",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A deployment professional has configured Federated Single Sign-On using IBM Security Access Manager V9.0 with WebSEAL as point of contact. Which two things need to be configured to achieve Single Log Out (SLO) in the SAML 2.0 Federation? (Choose two.) A. The page displayed after pkmslogout is called (logout.html) B. The creation of user session IDâ€™s ([session]) user-session-ids= yes) C. The passing of session cookies to junctioned servers (-k option in the junction creation) D. The URIs that receive a single signoff request ([acnt-mgt]) single-signoff-uri =/applications/signoff) E. The appropriate extended attribute to the Federation junction (HTTP-Tag-Value user_session_id=user_session_id)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A deployment professional in charge of a large deployment with replicated reverse proxy instances needs to keep junctions, template files, and configuration settings in sync between the instances. How can this be done? A. Setup appliance clustering and issue server sync all B. Setup appliance clustering and issue server cluster sync C. Setup a master reverse proxy instance and issue server task source-instance sync target-instance D. Setup a master reverse proxy instance and issue server task target-instance sync source-instance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The IBM Security Access Manager (ISAM) V9.0 deployment professional tries to login to the LMI and discovers user \"admin\" no longer works, even though the correct password is also provided. The iSAM deployment professional must use \"admin@local\". What ISAM application configuration change has occured to cause this behavior? A. The LMI certificate has expired. B. The LMI Dashboard was incorrectly configured. C. Management Authorization has been configured. D. Management Authentication has been configured.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The 10.51.140.x/24 IP Address space has been allocated for a new IBM Security Access Manager V9.0 deployment with the option of creating subnets. What are two correct network configurations for Management and Application interface (Choose two.) A. Interface 1.1 = => 10.51.140.51/255.255.255.0 [Management Interface 1.1.==> 10.51.141.52/255.255.255.0 [Application] B. Interface 1.1 = => 10.51.140.51/255.255.255.0 [Management Interface 1.1.==> 10.51.140.52/255.255.255.0 [Application] C. Interface 1.1 = => 10.51.140.51/255.255.255.0 [Management Interface 1.2.==> 10.51.140.52/255.255.255.0 [Application] D. Interface 1.1 = => 10.51.140.51/255.255.255.0 [Management Interface 1.2==> 10.51.141.52/255.255.255.0 [Application] E. Interface 1.1 = => 10.51.140.51/255.255.255.192 [Management Interface 1.3==> 10.51.140.52/255.255.255.192 [Application]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After a test cycle the deployment professional wants to search the WebSEAL WGA1 instance request log for HTTP 404 responses. Where can this log be found in the Local Management Interface? A. Monitor> Manage Reverse Proxy Log Files, select the WGA1 instance, select the request.log file and click View B. Monitor> Application Log Files, expand the var/logs/pdweb/WGA 1 folder, select the request.log file and click View C. From the Home page, click on the WGA1 instance in Reverse Proxy Health widget, select the request.log file and click View. D. Secure Web Settings> Reverse Proxy, select the WGA1 instance, access the Manage> Troubleshooting> Tracing menu item, select the request.log file and click View",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The appliance dashboard Reverse Proxy Health widget indicates a problem with the /snoop junction on the Test instance. Which log file can be examined to find product errors? A. agent.log B. referer.log C. request.log D. msg_webseald-test.log",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has configured the IBM Security Access Manager V9.0 appliance authentication to an external LDAP server. The customer wants to allow support staff with LDAP accounts that are members of the HelpDesk group to view appliance and audit logs. Where should the deployment professional configure a new role and map it to the HelpDesk LDAP group for the support staff? A. Manage System Settings-> Management Delegation B. Manage System Settings-> Administrator Settings C. Manage System Settings-> Management Authorization D. Manage System Settings-> Management Authentication",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An attacker has compromised the private key associated with a certificate. Which two methods can be used to ensure that certificates have not been revoked by the Certification authority that issued it? (Choose two.) A. Public Key Information B. Online Status Certificate Protocol C. Online Certificate Status Protocol D. Certificate Rejection List located in LDAP E. Certificate Revocation List located in LDAP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A large bank has multiple applications protected by two identically configured WebSEAL servers. One junction supports a reporting application that frequently expenses performance issues which slows response time. The worst case results in the entire site becoming unresponsive when all WebSEAL worker threads on all WebSEAL instances are consumed on the junctions to this one reporting application. Which configuration change will prevent this situation from occurring without impacting the behavior of any other application (junction), and keeping the entire site up? A. Change worker-thread-hard-limit to 75 in WebSEAL configuration file on both WebSEAL servers. B. Use the â€œthrottleâ€ option on the â€œpdadmin server taskâ€ command for the reporting application junction on both WebSEAL instances. C. Use the â€\"L 75 and â€\"f options on the â€œpdadmin server taskâ€ command for the reporting application junction on both WebSEAL instances. D. Create a third WebSEAL instance supporting only this one reporting application and load balance requests across all three WebSEAL instances.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The Distributed Session Cache has been enabled to replace the Session Management Server in a recently migrated IBM Security Access Manager V9.0 environment. Several Reverse Proxies have not yet been migrated from ISAM V7.0. The help desk is now receiving user complaints due to multiple logins required for applications protected by the ISAM V7.0 Reverse Proxies. Which Distributed Session Cache option should be checked? A. enable_sms-functionality B. provide_700_attribute_ids C. Replicate certificate databases D. Support internal and external clients",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer's IBM Security Access Manager V9.0 deployment consists of a cluster with Primary and Secondary masters. The Primary master fails and becomes unavailable and prevents any policy updates. Which action is required to ensure policy updates can be applied? A. Promote the Secondary to Primary B. Enable the Policy server in Secondary master C. Set the policy DB in the secondary to read-write state D. Restore a backed up master policy database to the secondary master",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which action must be completed for an external high volume runtime database after upgrading a Security Access Manager appliance? A. Drop the runtime database B. Restart the external database C. Recreate the configuration table D. Run the Access Control update.sql files",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A deployment professional has a requirement to configure an OpenID Connect federation which does not allow the Relying Party to access the token endpoint. Which grant type must be enabled when creating the federation? A. Implicit B. Refresh Token C. Client Credentials D. Authorization code",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A deployment professional creates a support file on an IBM Security Access Manager V9.0 appliance. What is the purpose? A. For backup and recovery B. To re-image the appliance C. To help troubleshoot problems with the appliance D. To capture a snapshot of the appliance configuration",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Access Manager (ISAM) V9.0 environments is configured with Primary and Secondary Masters servers. The Primary master node becomes unavailable and ISAM deployment professional promotes the Secondary Master node to a Primary Master. What happens to the original Primary Master when it becomes available and rejoins the network? A. It is automatically removed from the cluster. B. It is automatically demoted to the role of a non-master node. C. It is automatically promoted to the role of a primary Master node. D. It is automatically demoted to the role of a Secondary Master node.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A part of installing a fixpack a deployment professional wants to back up the appliance configuration. How is this done? A. Click on the Create Backup link of the active partition B. Select the active partition, select the Backup option form the Edit menu C. Create a new snapshot, download the snapshot to the deployment professionalâ€™s workstation, install the fixpack. D. Install the fixpack. The installation will copy the configuration and install the fixpack to the inactive partition, set it active and restart.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A deployment professional has created a new SAML 2.0 Service Provider federation and added an Identity Provider partner. What will be the next step to allow users to single sign-on to the service? A. Configure trigger URL B. Upload a mapping rule C. Import Identity Provider metadata D. Create a certificate to sign SAML messages",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Manager V9.0 deployment professional responsible for a large cluster notices the clocks among the nodes are not in sync and needs to update settings to ensure the clocks are synchronized. Which setting should be used to help keep times synchronized? A. Set NTP settings in /etc/ntp.conf B. Set NTP settings in the components conf file C. Set NTP settings using the LMI at the Date/Time panel D. Set NTP settings using the LMI at he Advanced Tunings panel",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Access Manager V9.0 deployment professional wants to be alerted by the appliance for events like certificate expiry. In which two ways can these alert notifications be configured? (Choose two.) A. SNMP B. SMS text C. RSS Feed D. Desktop Alert E. Remote Syslog",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a Web Commerce environment, a \"/shoppingcart\" junction with four back-end application servers is created on the IBM Security Access Manager V9.0 Web Reverse Proxy. The back-end servers are not using session replication. Which action is appropriate for maintaining session state when creating the junction? A. Create a WebSEAL-to WebSEAL_junction B. Configure the junction so that the â€œleast-busyâ€ algorithm C. Configure the junction so that it is configured to be a stateful junction D. Configure the junction to insert user session data â€œuser_session_idâ€ into the HTTP headers",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The IBM Security Access Manager (ISAM) V9.0 deployment professional has recently discovered an entire deployment of over 100 junctions was performed incorrectly. How can a repair operation be scripted for this, and future deployment personnel? A. Use the CLI SSH interface, navigating to isam-> admin and authenticating as sec_master. B. Use a text editor and create the correct junction XML files, then import them using the LMI. C. Use the LMI Secure Web Settings-> Reverse Proxy-> Manage-> Junction Management interface. D. Use the REST API interface https://{appliance_hostname}/isam/pdadmin, JSON files and the CURL utility.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A deployment professional wants to ensure traffic from a Reverse Proxy to a junction backend application server goes out over a specific interface. How can this be accomplished? A. Create a new management interface. B. Create a new application interface C. Create a static route to the backend server D. Create a new interface in the reverse proxy configuration file",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two key benefits of deploying IBM Security Access Manager V9.0? (Choose two.) A. Session Management Server module B. Enhances user life-cycle management C. Enhanced Session Recording features D. Federated Single Sign On capabilities E. Secure user access to web and mobile applications",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "There is a connectivity issue between the IBM Security Access Manager V9.0 Reverse Proxy and the backend business application. What troubleshooting command under Tools in the application SSH interface can be used to validate the Reverse Proxy can successfully connect to the backend host:port? A. ping B. connect C. traceroute D. connections",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Access Manager V9.0 deployment at a customer has enabled audit.authz, audit.authn, audit.http for meeting auditing requirements and results in large volume of audit records and poses significant data management challenges to the client. The customer wants to exclude the audit events to certain static resources such as images. What action should be taken to implement this? A. Disable audit.http events only B. Disable audit.http.unsuccessful events only C. Define a POP with the audithttp set to â€œnoâ€; attach this to the static resources D. Define an ACL with the audithttp operation set to â€œnoâ€; attach this to the static resources",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The SSL connection from browser to the IBM Security Access Manager V9.0 Reverse Proxy is broken and the deployment professional suspects an expired certificate. In which location will the \"Certificate expired\" warning message that contains additional information to isolate the issue be seen? A. LMI Home Dashboard B. Systems message log C. pdweb.debug trace file D. Reverse proxy request log",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A development professional needs to set up automatic monitoring for the Appliance Event log. Which method should be used to accomplish this? A. Use the Event Log Start Live Streaming B. Implement a monitoring solution using a REST API C. Log into the Admin Console and tail the event log D. Access the appliance via sftp and retrieve the log file",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a testing environment of an organization where IBM Security Access Manager V9.0 is deployed, there is a requirement that the reverse proxy instance should listen on port 10443 on all the configured network interfaces. The appliance is configured with only two management interfaces. How can the deployment professional achieve this? A. During configuration of runtime environment, assign IP 0.0.0.0 to primary interface. B. During configuration of a new reverse proxy instance, assign IP 0.0.0.0 to primary interface. C. During configuration of a reverse proxy instance, add a secondary interface with IP 255.255.255.255 D. During configuration of a reverse proxy instance, assign one of the management IPs to the primary interface",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A deployment specialist wants to use IBM Security Access Manager V9.0 to protect the back-end web applications from Cross Site Scripting attacks. Which module will provide this protection? A. Federation Module B. Policy Server Module C. Protocol Analysis Module D. Advanced Access Control Module",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer wants to replace an IBM Security Access Manager V7.0 Session Management Server with the ISAM 9.0 Distributed Session Cache. Which DSC configuration must be completed to allow SSL communication? A. Create new replica set B. Configure DSC to listen on port 443 C. Select \"Support internal clients only\" in the Session Cache tab of the LMI. D. Select \"Enable SSL\" and choose a certificate in the Session Cache tab of the LMI.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer's IBM Security Access Manager V9.0 deployment consists of reverse proxy appliances situated in the DMZ and primary master and secondary master appliances situated in the internal corporate network. Which port and direction of the network traffic flow is required to support cluster services between the appliances situated in the DMZ and the internal corporate network segment? A. Port 22; Bidirectional B. Port 22; Unidirectional C. Port 2020; Bidirectional D. Port 2020; Unidirectional",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has expressed the requirement that users accessing online-banking application must first authenticate using a userid/password and successfully enter a one-time PIN which is texted to a cell phone. Which two IBM Security Access Manager (ISAM) V9.0 modules are required to fully implement the solution? (Choose two.) A. ISAM PAM Module B. ISAM Cloud Module C. ISAM Federation Module D. ISAM Advanced Control Module E. ISAM Access Manager Platform",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two capabilities of Security Access Manager Platform of IBM Security Access Manager V9.0? (Choose two.) A. Single Sign On B. Identity mediation C. Credential Lease Management D. Session Recording and Playback E. User Access Management of web, mobile and cloud applications",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company wants to use a different authentication option than username and password to access the company's web portal. The security deployment professional is in the process of deploying an IBM Security Access Manager 9.0.0 solution for the company to protect its web portal. Which authentication method should the deployment professional consider? A. NTLM Authentication B. Basic Authentication C. Form based Authentication D. Client-side certificate authentication",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The IBM Security Access Manager (ISAM) V9.0 deployment professional is setting up a new junction. The back-end junctioned server listens on port 443 (SSL), but does not require mutual certificate authentication. Which keystore does the deployment professional need to update? A. The WebSEAL signer certificate needs to be imported into the keystore used by the back-end server. B. The WebSEAL Test-Only certificate needs to be imported into the keystore used by the back-end server. C. The back-end signer certificate needs to be imported into the WebSEAL keystore on the ISAM appliance. D. The back-end signer certificate needs to be imported into the \"Imi_trust_store\" keystore on the ISAM appliance.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Access Manager V9.0 deployment professional needs to create the HTTP-Tag-Value attribute to pass values to a backend server as headers. How can this be done? A. By creating an HTTP rule which is attached to the ACL B. By creating an AuthzRule which pulls the header from the ADI C. By creating an extended attribute on a POP protecting the junction D. By creating an extended attribute on the junction protected object",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The IBM Security Access Manager (ISAM) V9.0 deployment professional is attempting to strike the correct balance between ease of administration/configuration and security, and wants to limit where in the environment security policy can be changed. On which ISAM component is the Secure Web Settings -> Policy Administration tool automatically disabled? A. Runtime cluster restricted node B. Master External Reference Entity C. Distributed Session Cache primary node D. Runtime cluster Standby Policy Server node",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IBM Security Access Manager V9.0 deployment specialist is getting reports of failing requests. Analysis of a support file shows many connections to the backend server in TIME_WAIT state? Where is the setting \"sysctl.net.ipv4.tcp_tw_reuse = 1\" added? A. In the [tcp] stanza of the reverse proxy instance conf file B. In the [server] stanza of the reverse proxy instance conf file C. In the LMI \"Manage System Settings -> Network Settings -> Tuning\" panel D. In the LMI \"Manage System Settings -> System Settings -> Advanced Tuning Parameters\" panel",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which task should an IBM Security Access Manager V9.0 deployment professional perform prior to sharing the support files with other stakeholders? A. Generate A MD5 hash of the support fileâ€™s filename B. Use an archiving utility to compress the support file C. Inspect the contents of the support file and censor any confidential information D. Delete all the log files from the support file because they are not useful to the stakeholders",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What out-of-the-box feature of IBM Security Access Manager (ISAM) V9.0 enables invalidating a defined collection of back-end server generated HTTP cookies when the user logs off WebSEAL? A. cookie jar B. /pkmslogout C. logout-remove-cookie attribute in webseal.conf D. â€\"k option on junction create command (server task create)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The IBM Security Access Manager system V9.0 deployment professional is planning to use a WebSEAL cluster in order to simplify the ongoing management of the system. Which statement is correct about using a WebSEAL cluster? A. All members of a WebSEAL cluster must be members of the same appliance cluster. B. Members of a WebSEAL cluster are not required to be members of the same appliance cluster. C. Junction definition updates to any reverse proxy will be replicated to all other members of the WebSEAL cluster. D. Junction definition updates to the WebSEAL cluster master must be manually copied to all other members of the WebSEAL cluster.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which Hypervisor is supported for a Virtual Appliance? A. Hyper-V B. ESXi 5.0 C. VirtualBox D. VMware Workstation",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The deployment professional (testuser1) is currently logged into the appliance, but cannot read the IBM Security Access Manager (ISAM) V9.0 event logs. Management authorization is configured as shown in the following screenshot. [sampleXML/xmlfile-66_1.jpg] What is the most likely cause of this issue? A. Write permission is required for the Event Log Feature. B. The Global Administrator role lacks the necessary privileges. C. Userid â€œtestuser1â€ has not been added to the ISAMAdmins LDAP group. D. There is a connectivity issue and the LDAP containing userid â€œtestuser1â€ cannot be contacted.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A deployment professional has a requirement to configure an OpenID provider which does not expose tokens to the end user. Which grant type should be enabled when creating the federation? A. SAML B. Explicit C. Refresh Token D. Authorization Code",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "IBM Security Access Manager V9.0 will be configured as Service Provider (SP) in a SAML Federation. The same user that logs in at the Identity Provider (IdP) will be logged in on the SP side after the Single Sign-On, for example UserA on IdP will be UserA on the SP side. Which name identifier format meets this requirement? A. transient B. persistent C. principalName D. emailAddress",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Prior to installing a firmware update the deployment professional creates a snapshot of the appliance configuration. During acceptance testing of the new firmware it is discovered that the update introduced a bug. How should the deployment professional restore the previous configuration? A. Manage System Settings > System Settings > Snapshots, select the snapshot and click Apply B. Manage System Settings > System Settings > Snapshots, select the snapshot and click Restore C. Manage System Settings > Updates and Licensing > Available Updates, select the update and click Uninstall D. Manage System Settings > Updates and Licensing > Firmware Settings, click the Set Active link on the inactive partition",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which method provides the ability to delete all support files from an IBM Security Access Manager V9.0 appliance? A. Use the delete command found under the logs menu in Command Line Interface (LCI) B. Use the purge command found under the support menu in Command Line Interface (LCI) C. Use the delete command found under the support menu in Command Line Interface (LCI) D. Use the deleteall command found under the support menu in Command Line Interface (LCI)",
+    "options": {},
+    "most_voted": ""
+  }
+]
