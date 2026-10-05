@@ -1,9 +1,12 @@
 import argparse
+import json
 import random
 import re
 import sys
 import time
 from pathlib import Path
+
+SEVEN_DAYS = 7 * 24 * 60 * 60
 
 from examtopics.cache import HtmlCache
 from examtopics.fast_scanner import FastDiscussionScanner
@@ -160,11 +163,35 @@ def main():
             return
         print(f"Found {len(exams)} exams: {exams}\n")
 
+    did_work = False
+
     for exam in exams:
         out_file = output_dir / f"{exam}.json"
         if out_file.exists():
-            print(f"Skipping {exam} (already exists)")
+            age = time.time() - out_file.stat().st_mtime
+            if age < SEVEN_DAYS:
+                print(f"Skipping {exam} (data is {age / 86400:.0f}d old, fresh)")
+                continue
+            print(f"\n[{provider}/{exam}] Re-scraping (data is {age / 86400:.0f}d old)")
+            questions = scrape_exam(provider, exam, fetcher, cache)
+            if questions:
+                slim = [
+                    {"question": q["question"], "options": q["options"], "most_voted": q.get("most_voted", "")}
+                    for q in questions
+                ]
+                existing = json.loads(out_file.read_text())
+                existing_texts = {q["question"] for q in existing}
+                new_qs = [q for q in slim if q["question"] not in existing_texts]
+                if new_qs:
+                    print(f"  {len(new_qs)} new questions found, merging")
+                    write_questions_to_json(str(out_file), existing + new_qs)
+                    if args.commit:
+                        git_commit(provider, exam)
+                    did_work = True
+                else:
+                    print(f"  No new questions")
             continue
+
         print(f"\n[{provider}/{exam}]")
         questions = scrape_exam(provider, exam, fetcher, cache)
         if questions:
@@ -175,8 +202,12 @@ def main():
             write_questions_to_json(str(out_file), slim)
             if args.commit:
                 git_commit(provider, exam)
+            did_work = True
         else:
             print(f"  No data for {exam}")
+
+    if not did_work:
+        sys.exit(2)  # signal to caller: nothing new scraped
 
 
 if __name__ == "__main__":

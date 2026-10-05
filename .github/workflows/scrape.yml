@@ -74,13 +74,16 @@ jobs:
               echo "Approaching time limit (${ELAPSED}s elapsed), stopping after $COUNT providers."
               break
             fi
-            if [ ! -d "data/$provider" ] || [ -z "$(ls -A data/$provider 2>/dev/null)" ]; then
-              echo "Scraping provider: $provider"
-              python scrape.py --provider "$provider" --commit
+            echo "Checking provider: $provider"
+            python scrape.py --provider "$provider" --commit
+            EXIT_CODE=$?
+            if [ "$EXIT_CODE" -eq 0 ]; then
               COUNT=$((COUNT + 1))
               if [ "$COUNT" -ge 3 ]; then
                 break
               fi
+            elif [ "$EXIT_CODE" -ne 2 ]; then
+              echo "Scrape failed for $provider (exit $EXIT_CODE)"
             fi
           done < providers.txt
 
