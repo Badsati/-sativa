@@ -1,0 +1,247 @@
+[
+  {
+    "question": "You are asked to provide a recommendation for the appropriate DB2 edition for a new application. The application is characterized by long, complex queries that select a subset of columns and often perform grouping and aggregation. The initial database size is estimated at 5 TB, with growth of about 100 GB per year. Keep data size on disk to a minimum is a priority? Which of the following editions would be best meet the described needs? A. DB2 Express-C B. DB2 Enterprise Server Edition C. DB2 Workgroup Server Edition D. DB2 Advanced Enterprise Server Edition D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following editions of DB2 include support for Federation with Oracle database? A. DB2 Express-C B. DB2 Developer Edition C. DB2 Enterprise Server Edition D. DB2 Workgroup Server Edition",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three facilities are used to control authorization in DB2? A. privileges, db2ssh, LBAC credentials B. privileges, authority levels, certificates C. db2ssh, trusted contexts, authority levels D. privileges, authority levels, LBAC credentials",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which database object can be locked explicitly? A. Row B. View C. Index D. Table",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What happens when you run the following statement if MYUSER holds no privileges on table MYTABLE? REVOKE SELECT ON TABLE mytable FROM USER myuser A. An error is returned B. An entry is mane in SYSCAT.TABAUTH C. The REVOKE statement succeeds with no effect D. All privileges are granted to user MYUSER on MYTABLE C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which constraint can be used to ensure that identical values are never stored in a set of columns in a table? A. NOT NULL B. Foreign key C. Primary key D. Informational constraint",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is TRUE about a COMMIT statement executed at the end of the T1 unit of work? A. A ROLLBACK command executed just after the COMMIT command cancels that COMMIT B. Save points defined during transaction T1 are released only if there is a RELEASE SAVEPOINT command executed after the COMMIT command C. It finishes the current T1 unit of work and a new one is initiated, however it is possible to ROLLBACK to the latest SAVEPOINT before COMMIT D. It finishes the current T1 unit of work and a new one is initiated. All changes made by UPDATE and DELETE commands during unit of work T1 are committed",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about stored procedures is TRUE? A. Stored procedures can be written in SQL PL, but not in the PL/SQL dialect B. The CREATE SOURCED PROCEDURE statement defines a procedure that is based on another procedure in a federated database C. There are three types of stored procedures which can be deployed: SQL procedures, external procedures, and sourced procedures D. Two identically-named procedures within a schema are permitted to have exactly the same number of parameters, but the parameters must have different data types assigned",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which edition of DB2 LUW has been discontinued in v11.1? A. DB2 Developer Edition B. DB2 Express Server Edition C. DB2 Enterprise Server Edition D. DB2 Connect Enterprise Server Edition",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about triggers are TRUE? (Choose two.) A. There is a limit of 8 for the maximum number of cascading trigger activations B. Triggers can be activated as a result of changes due to referential constraint enforcement C. Multiple INSTEAD OF triggers are allowed for each kind of operation on a given subject view D. Constraints associated with a subject table are applied between execution of BEFORE and AFTER triggers E. The activation of the triggers for a particular table, event and activation time are conducted in descending order of trigger creation time",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is TRUE about indexes on column organized tables? A. No indexes are allowed B. Indexes are only allowed on numeric columns C. Indexes are automatically created to enforce unique constraints D. An index is only allowed on the synopsis table supporting a column organized table",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How can you tell what privileges on a table or view have been granted to a user? (Choose two.) A. db2look with the â€\"x option B. db2pd with the â€\"auth option C. Query the SYSCAT.DBAUTH view D. Query the SYSCAT.TABLES view E. Query the SYSCAT.TABAUTH view CE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following statements are executed: GRANT CREATETAB, DATAACCESS, ON DATABASE TO ROLE role A; GRANT CREATETAB, BINDADD ON DATABASE TO ROLE role B; GRANT ROLE role A to USER db2inst3; GRANT ROLE role B to USER db2inst3; Which of the following is TRUE if this statement is executed later? REVOKE ROLE roleB FROM USER db2inst3; A. This statement will succeed and DB2 INST3 will still be able to create in the database B. This statement will succeed and DB2 INST3 only retains DATAACCESS privileges on the database C. This statement will fail as CREATETAB is granted to two different roles and must be revoked at the same time D. This statement will succeed with a warning since CREATETAB cannot be totally revoked. DB2INST3 will retain both roles",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following sequence of events: Eddie grants SELECT WITH GRANT OPTION privilege to Mike. Mike grants SELECT privilege to Jeff. Eddie revokes SELECT privilege from Mike. What will happen to Jeff's SELECT privilege? A. Jeffâ€™s SELECT privilege will be revoked B. Jeffâ€™s SELECT privilege will be retained C. Jeffâ€™s SELECT privilege will be retained only if he has ACCESSCTRL authority D. Jeffâ€™s SELECT privilege will be retained only if Eddie has ACCESSCTRL authority",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "BLU Acceleration is included in which of the following edition of DB2 LUW? (Choose two.) A. Direct Standard Edition B. Enterprise Server Edition C. Workgroup Server Edition D. DB2 Direct Advanced Edition E. Advanced Enterprise Server Edition",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following authorities are sufficient for creating a database? (Choose two.) A. DBADM B. SYSADM C. SECADM D. SYSCTRL E. SYSMAINT",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which operation typically requires a Share (S) lock? A. INSERT B. SELECT C. DELETE D. UPDATE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What type of function is created using the following command? CREATE FUNCTION TAN (X DOUBLE) RETURNS DOUBLE LANGUAGE SQL CONTAINS SQL NO EXTERNAL ACTION DETERMINISTIC RETURN SIN(X)/COS(X) A. Row B. Table C. Scalar D. External C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What of the following is TRUE about triggers? A. Triggers are activated by INSERT, UPDATE, DELETE and SELECT statements B. Triggers can be used to perform data manipulation operations against complex views C. Triggers can only be used to execute logic before or after appropriate SQL statements D. Only one trigger for a particular event and activation time can be created for a particular table",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the purpose of a role? A. To define exactly what a specific user can and cannot do within a particular database once they have been authenticated B. To group a collection of users together so that they can be simultaneously granted and revoked specific authorities and privileges C. To group a collection of privileges together so that they can be simultaneously granted to and revoked from multiple users, groups, or other roles D. To assign one or more users that need to run local DB2 applications and tools on a particular server to the DB2ADMNS or the DB2USERS group",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following authorities is sufficient for connecting to a database? A. SQLADM B. CONNECT C. DATAACESS D. ACCESSCTRL",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following SQL statements will remove all rows from the table T1? (Choose two.) A. DELETE FROM t1 B. DELETE* FROM t1 C. DELETE* TABLE t1 D. TRUNCATE TABLE t1 IMMEDIATE E. TRUNCATE TABLE t1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which DB2 object is associated with PREVIOUS VALUE and NEXT VALUE expressions? A. Sequence B. Row Identifier C. Identity Column D. Insert time clustering table",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements describe super exclusive (Z) locks for a table? (Choose two.) A. No other applications can access the table B. Only uncommitted read (UR) applications can access the table C. The lock owner and other applications can read, but not update, the locked table D. The lock owner can both read and update data. Other applications can read the table E. This lock is acquired under certain conditions, such as when the table is altered or dropped or an index on the table is dropped",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements regarding locking is TRUE? A. The same lock modes apply to tables, rows, or blocks B. Lock conversion can take place implicitly as a query executes C. Changing the mode of a lock that is already held is called lock escalation D. Lock conversion is not necessary if an X lock is required and an S or U lock is currently held",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is designed for continuous availability, increased throughput of many concurrent short queries, and easy scalability? A. DB2 HADR B. DB2 pureScale C. DB2 Express-C D. DS2 Database Partitioning Feature",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements will successfully create a table that scores index data in a different table space than the table data? A. CREATE TABLE t1 (c1 INT, c2 INT); B. CREATE TABLE t1 (c1 INT, c2 INT) IN TS1 INDEX IN TS2; C. CREATE TABLE t1 (c1 INT, c2 INT) IN TS1 INDEX IN TS1; D. CREATE TABLE t1 (c1 INT, c2 INT) DATA IN TS1 INDEX IN TS2;",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following statement: DECLARE GLOBAL TEMPORARY TABLE TEMP1 ( ID INTEGER NOT NULL, ITEM CHAR(30), AMOUNT DECIMAL (10,2) ON COMMIT DELETE ROWS NOT LOGGED; Which of the following statements are TRUE? (Choose two.) A. Temp1 table is accessed under schema SESSION B. Temp1 definition is available for use by other sessions C. At the end of a transaction, data is deleted automatically D. Definition of the table Temp1 is stored in database catalog E. Rows inserted by one session are visible in other sessions",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following compatibility features is always active, regardless of the settings for the DB2_COMPATIBILITY_VECTOR registry variable or the SQL_COMPAT global variable? A. Implicit casting B. Double-dot notation C. Use of bitmap indexes D. Selecting from the DUAL table",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DB2 offers compatibility features through the DB2_COMPATIBILITY_VECTOR registry variable or the SQL_COMPAT global variable that improve application compatibility with which of the following? (Choose two.) A. Oracle B. Sybase C. Netezza D. MongoDB E. Microsoft SQL Server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the primary use case for creating an index with the RANDOM option on a table? A. Maximize performance with OLTP random key queries B. Maximize performance when inserting into an expression based index containing the RAND() function C. Minimize contention due to ascending key or descending key inserts, especially in a pureScale environment D. Minimize hashing skew on a table in a multiple database partition environment, especially with column organized tables C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which optional NPS compatibility features will be activated by executing the following? (Choose two.) SET SQL_COMPAT=\"˜NPS' A. YEARSBETWEEN B. BINARY and VARBINARY data types C. Double-dot notation to specify a database object D. OFFSET x ROWS FETCH FIRST y ROWS ONLY E. TRANSLATE (char-string-exp, from-string-exp, to-string-exp)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following set operators can be used to find all rows that are common in 2 queries? A. UNION B. UNION ALL C. EXCEPT ALL D. INTERSECT ALL",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following SQL statements will update columns C1 to DB2 and C2 to 11 if C3 is 2016? A. UPDATE t1 c1 = â€˜DB2, c2â€™ = 11 B. UPDATE t1 SET c1 = â€˜DB2, c2â€™ = 11 C. UPDATE t1 c1 = â€˜DB2â€™, c2 = 11 WHERE c3 = 2016 D. UPDATE t1 SET (c1, c2) = (â€˜DB2â€™, 11) = WHERE c3 = 2016",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If the LOCKSIZE for a table is changed from TABLE to ROW, which of the following is TRUE? A. Concurrency may be improved B. Lock escalation will be prevented C. Query performance will be reduced D. The number of locks for the same workload will be reduced A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following query and the resulting set of data: SELECT empno, lastname FROM emp WHERE empno BETWEEN \"˜000020' and \"˜000070' Result: [sampleXML/xmlfile-20_1.png] If the query below is executed, how many rows will be returned? SELECT empno FROM emp WHERE empno > \"˜000020' AND empno \"˜000070' A. 0 B. 1 C. 3 D. 5",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The application owners say they need to be able to query a table and previous versions of that table. Which type of table is appropriate to satisfy this requirement? A. Shadow Table B. Temporal Table C. Range-Partitioned Table D. Multidimensional Clustered Table",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is TRUE about DB2 OLAP functions? A. They return scalar values and not array values B. There are no DB2 monitor elements specific to OLAP functions C. OLAP functions are not supported in a common table expression (CTE) D. OLAP aggregation functions are not supported with column organized tables C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The current user wants to produce a list of all user privileges she has been granted. Which table or view can be queried to produce the desired result? A. SYSCAT.DBAUTH B. SYSIBMADM.GRANTS C. SYSIBMADM.PRIVILEGES D. SYSCAT.USER_TAB_PRIVS",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is TRUE regarding user switching in a trusted context? A. You cannot switch user id in a trusted context B. You can issue a switch-user request within a transaction C. The new user must have the connect-privilege on the database for it to succeed D. No password is ever required for the new user as an authentication is established in the trusted connection",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following isolation levels most reduces concurrency and is most likely to cause lock escalations? A. Read Stability B. Cursor Stability C. Repeatable Read D. Uncommitted Read",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following features can provide significant benefits in storage savings, performance of analytic workloads, and time to value? A. pureScale B. auto reorg C. BLU acceleration D. Self tuning memory manager",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the maximum length allowed for a VARCHAR2 data type when the VARCHAR2_COMPAT database configuration parameter is set to ON? A. 32672 bytes B. 65344 bytes C. 98016 bytes D. 130688 bytes A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Below are the SQL statements a DBA is planning to execute on a database: CREATE TABLE t1 (name VARCHAR (1)); INSERT INTO t1 VALUES (\"˜A'), (\"˜B'), (\"˜C'), (\"˜D'); ALTER TABLE t1 ALTER COLUMN name SET DATA TYPE INT; What will be the outcome of the last statement? A. The statement will fail due to variable length character error B. The statement will fail due to an incompatible data type error C. The statement will execute successfully and it deletes the character data D. The statement will execute successfully and it internally converts the character data into ASCII numbers",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The DDL statement is used to create table T1: CREATE TABLEt1 ( c1 INTEGER, c2 INTEGER NOT NULL, c1 DECIMAL(11,2), c4 TIMESTAMP WITH DEFAULT CURRENT TIMESTAMP ) Which of the following INSERT statements will execute successfully? A. INSERT INTO t1 VALUES (100) B. INSERT INTO t1 (c1, c2) VALUES (100) C. INSERT INTO t1 (c1, c3) VALUES (â€˜100â€™, â€˜100.00â€™) D. INSERT INTO t1 (c2, c3) VALUES (100, 100.00), (101, 101)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If you are already connected to a database, what does running the following statement do? Db2 CONNECT A. Prompts you for the database name or alias B. Returns information about the current server C. Prompts you for the authentication information D. Returns an error, because you provided no database or alias",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Shadow tables are a special kind of Materialized Query Table, but what makes them different? (Choose two.) A. Shadow tables cannot be queried directly B. Shadow tables do not store their data on disk C. Shadow tables must be organized by column D. Shadow tables must be maintained by replication E. You cannot join shadow tables to other kinds of tables CD",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which isolation level will allow application A to immediately read the committed value of a row that is exclusively locked by application B? A. Read Stability B. Cursor Stability C. Repeatable Read D. Cursor Stability with WAIT FOR OUTCOME clause A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the maximum precision for the DECIMAL data type? A. 7 B. 15 C. 23 D. 31",
+    "options": {},
+    "most_voted": ""
+  }
+]
