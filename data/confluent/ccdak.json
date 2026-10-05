@@ -1,0 +1,22 @@
+[
+  {
+    "question": "You need to consume messages from Kafka using the command-line interface (CLI). Which command should you use? A. kafka-console-consumer B. kafka-consumer C. kafka-get-message D. kafka- consume",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are designing a stream pipeline to monitor the real-time location of GPS trackers, where historical location data is not required. Each event in the stream has the following structure: - Key: tracker_id - Value: latitude, longitude You need to ensure that the latest location for each tracker is always retained in the Kafka topic. Which topic configuration parameter should you set? A. retention.ms = 0 B. min.cleanable.dirty.ratio = -1 C. cleanup.policy = compact D. retention.ms = infinite",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your application is consuming from a topic with one consumer group. The number of running consumers is equal to the number of partitions. Application logs show that some consumers are leaving the consumer group during peak time, triggering a rebalance. You also notice that your application is processing many duplicates. You need to stop consumers from leaving the consumer group. What should you do? A. Reduce max.poll.records property. B. Increase session.timeout.ms property. C. Add more consumers instances. D. Split consumers in different consumer groups.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have a Connect cluster with multiple connectors deployed. One connector is not working as expected. You need to find logs related to that specific connector to investigate the origin of the issue. How can you find the connector's logs? A. Modify the 'log4j.properties' file to enable connector context. B. Modify the 'log4j.properties' file to add a dedicated log appender for the connector. C. Change the log level to DEBUG to have connector context information in logs. D. Make no change, there is no way to find the logs other than by stopping all the other connectors.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
