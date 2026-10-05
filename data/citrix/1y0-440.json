@@ -1,0 +1,112 @@
+[
+  {
+    "question": "A Citrix Architect has deployed NetScaler Management and Analytics System (NMAS) to monitor a high availability pair of NetScaler VPX devices. The architect needs to deploy automated configuration backup to meet the following requirements: The configuration backup file must be protected using a password. The configuration backup must be performed each day at 8:00 AM GMT. The configuration backup must also be performed if any changes are made in the ns.conf file. Once the transfer is successful, auto-delete the configuration file from the NMAS. Which SNMP trap will trigger the configuration file backup? A. netScalerConfigSave B. sysTotSaveConfigs C. netScalerConfigChange D. sysconfigSave",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Citrix Architect can execute a configuration job using a DeployMasterConfiguration template on a NetScaler_________deployed_________. (Choose the correct option to complete sentence.) A. CPX; as part of a high availability pair B. CPX; as a stand alone device C. SDX; with less than 6 partitions and dedicated management interface D. MPX; as part of the cluster but Cluster IP is NOT configured E. SDX; with no partitions as a stand alone device",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Scenario: Based on a discussion between a Citrix Architect and a team of Workspacelab members, the MPX Logical layout for Workspacelab has been created across three (3) sites. The requirements captured during the design discussion held for a NetScaler design project are as follows: Two (2) pairs of NetScaler MPX appliances deployed in the DMZ and internal network. High Availability will be accessible for each NetScaler MPX The external NetScaler MPX appliance will be deployed in multi-arm mode. The internal NetScaler MPX will be deployed in single-arm mode wherein it will be connected to Cisco ACI Fabric. All three (3) Workspacelab sites: Dc, NDR and DR, will have similar NetScaler configurations and design. How many NetScaler MPX appliances should the architect deploy at each site to meet the design requirements above? A. 4 B. 12 C. 6 D. 2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Architect and a team of Workspacelab members met to discuss a NetScaler design project. They captured the following requirements from this design discussion: A pair of NetScaler MPX appliances will be deployed in the DMZ network. High Availability will be accessible in the NetScaler MPX in the DMZ Network. Load balancing should be performed for the internal network services like Microsoft Exchange Client Access Services and Microsoft App-V. The load balancing should be performed for StoreFront. The NetScaler Gateway virtual server will be utilizing the StoreFront load-balancing virtual server. The NetScaler Gateway virtual server and StoreFront. The NetScaler Gateway virtual service and StoreFront and load-balancing services are publicly accessible. The traffic for internal and external services must be isolated. Click the Exhibit button to review the logical network diagram. Which two design decisions are incorrect based on these requirements? (Choose two.) A. LB StoreFront bound to traffic Domain 0 B. NetScaler Gateway VIP bound to Traffic Domain 1 C. LB APP-V bound to Traffic Domain 1 D. SNIP 192.168.20.2 bound to Traffic Domain 1",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to plan for a customer environment in which more than 10,000 users will need access. The networking infrastructure needs to be able to handle the expected usage. Which business driver should be prioritized based on the customer’s requirement? A. Increase flexibility B. Enable mobile work styles C. Simplify management D. Increase Scalability E. Reduce Costs F. Increase Security",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to deploy SAML integration between NetScaler (Identity Provider) and ShareFile (Service Provider). The design requirements for SAML setup are as follows: NetScaler must be deployed as the Identity Provider (IDP). ShareFile server must be deployed as the SAML Service Provider (SP). The users in domain workspacelab.com must be able to perform Single Sign-on to ShareFile after authenticating at the NetScaler. The User ID must be UserPrincipalName. The User ID and Password must be evaluated by NetScaler against the Active Directory servers SFO-ADS-001 and SFO-ADS-002. After successful authentication, NetScaler creates a SAML Assertion and passes it back to ShareFile. Single Sign-on must be performed. SHA 1 algorithm must be utilized. The verification environment details are as follows: Domain Name: workspacelab.com NetScaler AAA virtual server URL https://auth.workspacelab.com ShareFile URL https://sharefile.workspacelab.com Which SAML IDP action will meet the design requirements? A. add authentication samIIdPProfile SAMI-IDP –samISPCertName Cert_1 –samIIdPCertName Cert_2 –assertionConsimerServiceURL “https://auth.workspacelab.com/samIIssueName auth.workspacelab.com -signatureAlg RSA-SHA256-digestMethod SHA256-encryptAssertion ON -serviceProviderUD sharefile.workspacelad.com B. add authentication samIIdPProfile SAMI-IDP –samISPCertName Cert_1 –samIIdPCertName Cert_2 –assertionConsimerServiceURL https://sharefile.workspacelab.com/saml/acs” –samIIssuerName sharefile.workspacelab.com –signatureAlg RSA-SHA256 –digestMethod SHA256 –serviceProviderID sharefile.workspacelab.com C. add authentication samIIdPProfile SAMI-IDP –samISPCertName Cert_1 –samIIdPCertName Cert_2 –assertionConsimerServiceURL https://sharefile.workspacelab.com/saml/acs” –samIIssuerName auth.workspacelab.com –signatureAlg RSA-SHA1-digestMethod SHA1 –encryptAssertion ON –serviceProviderID sharefile.workspacelab.com D. add authentication samIIdPProfile SAMI-IDP –samISPCertName Cert_1 –samIIdPCertName Cert_2 –assertionConsimerServiceURL https://sharefile.workspacelab.com/saml/acs” –samIIssuerName sharefile.workspacelab.com –signatureAlg RSA-SHA1 –digestMethod SHA1 –encryptAssertion ON –serviceProviderID sharefile.workspacelab.com",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which markup language can a Citrix use along with NITRO API to create a StyleBook? A. GML B. XML C. HTML D. YAML",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: The Workspacelab team has configured their NetScaler Management and Analytics (NMAS) environment. A Citrix Architect needs to log on to the NMAS to check the settings. Which two authentication methods are supported to meet this requirement? (Choose two.) A. Certificate B. RADIUS C. TACACS D. Director E. SAML F. AAA",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Architect has configured NetScaler Gateway integration with a XenApp environment to provide access to users from two domains: vendorlab.com and workslab.com. The Authentication method used is LDAP. Which two steps are required to achieve Single Sign-on StoreFront using a single store? (Choose two.) A. Configure Single sign-on domain in Session profile ‘userPrincipalName’. B. Do NOT configure SSO Name attribute in LDAP Profile. C. Do NOT configure sign-on domain in Session Profile. D. Configure SSO Name attribute to ‘userPrincipalName’ in LDAP Profile.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Architect has implemented two high availability pairs of MPX 5500 and MPX 11500 devices respectively with 12.0.53.13 nc version. The NetScaler devices are set up to handle NetScaler Gateway, Load Balancing, Application Firewall, and Content Switching. The Workspacelab infrastructure is set up to be monitored with NMAS version 12.0.53.13 nc by the Workspacelab administrators. The Workspacelab team wants to implement one more pair of NetScaler MPX 7500 devices with version 12.0.53.13 nc. The Citrix consulting team has assigned the task to implement these NetScaler devices in the infrastructure and set them up to be monitored and managed by NMAS. The following are the requirements that were discussed during the project initiation call: NMAS should be configured to get the infrastructure information under sections such as HDX Insight, WEB Insight, and Security Insight. Configuration on the new MPX devices should be identical to MPX 11500 devices. Configuration changes after the deployment and initial setup should be optimized using NMAS. NMAS should be utilized to configure templates that can be utilized by the Workspacelab team in future deployment. As per the requirement from the Workspacelab team, NMAS should be store the audited data for only 15 days. Which process should the architect utilize to ensure that the deployment of MPX 11500 devices are optimized and that it is correct, before deploying the devices in production? A. Under Stylebooks; Inbuilt and composite stylebook templates should be utilized prior to deployment. B. Under Stylebooks; Public and composite stylebook templates should be utilized prior to deployment. C. Under Configuration Management; Configuration Audit and Advice should be used prior to deployment. D. Under Configuration jobs; Configuration Audit and Advice should be used prior to deployment.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to assess a NetScaler Gateway deployment that was recently completed by a customer and is currently in pre-production testing. The NetScaler Gateway needs to use ICA proxy to provide access to a XenApp and XenDesktop environment. During the assessment, the customer informs the architect that users are NOT able to launch published resources using the Gateway virtual server. Click the Exhibit button to view the troubleshooting details collected by the customer. What is the cause of this issue? A. The required ports have NOT been opened on the firewall between the NetScaler gateway and the Virtual Delivery Agent (VDA) machines. B. The StoreFront URL configured in the NetScaler gateway session profile is incorrect. C. The Citrix License Server is NOT reachable. D. The Secure Ticket Authority (STA) servers are load balanced on the NetScaler.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to design a hybrid XenApp and XenDesktop environment which will include Citrix Cloud as well as resource locations in an on-premises datacenter and Microsoft Azure. Organizational details and requirements are as follows: Active XenApp and XenDesktop Service subscription No existing NetScaler deployment Global Server Load Balancing is used to direct connection requests to Location B, if the StoreFront server in Location B fails, connections should be directed to Location A. Click the Exhibit button to view the conceptual environment architecture. The architect should use _____ in Location A, and should use ________ in Location B. (Choose the correct option to complete the sentence.) A. NetScaler ADC (BYO); NetScaler gateway appliance B. NetScaler ADC (BYO); No NetScaler products C. NetScaler ADC (BYO); NetScaler ADC (BYO) D. NetScaler Gateway appliance; NetScaler Gateway appliance E. NetScaler Gateway appliance; NetScaler ADC (BYO)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to design a hybrid XenApp and XenApp and XenDesktop environment which will include Citrix Cloud as well as resource locations in on-premises datacenter and Microsoft Azure. Organizational details and requirements are as follows: Active XenApp and XenDesktop Service subscription No existing NetScaler deployment About 3,000 remote users are expected to regularly access the environment Multi-factor authentication should be used for all external connections Solution must provide load balancing for backend application servers Load-balancing services must be in Location B Click the Exhibit button to view the conceptual environment architecture. The architect should use ________ in Location A, and should use _________ in Location B. (Choose the correct option to complete the sentence.) A. NetScaler Gateway as a Service, no NetScaler products B. No NetScaler products, NetScaler ADC (BYO) C. NetScaler Gateway as a Service, NetScaler ADC (BYO) D. No NetScaler products, NetScaler ICA Proxy (cloud-licensed) E. NetScaler Gateway as a Service, NetScaler ICA Proxy (cloud-licensed) F. No NetScaler products; NetScaler Gateway appliance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Architect has set up NetScaler MPX devices in high availability mode with version 12.0. 53.13 nc. These are placed behind a Cisco ASA 5505 Firewall is configured to block traffic using access control lists. The network address translation (NAT) is also performed on the firewall. The following requirements were captured by the architect during the discussion held as part of the NetScaler security implementation project with the customer’s security team: The NetScaler device: Should monitor the rate of traffic either on a specific virtual entity or on the device. It should be able to mitigate the attacks from a hostile client sending a flood of requests. The NetScaler device should be able to stop the HTTP, TCP, and DNS based requests. Needs to protect backend servers from overloading. Needs to queue all the incoming requests on the virtual server level instead of the service level. Should provide access to resources on the basis of priority. Should provide protection against well-known Windows exploits, virus-infected personal computers, centrally managed automated botnets, compromised webservers, known spammers/hackers, and phishing proxies. Should provide flexibility to enforce the desired level of security check inspections for the requests originating from a specific geolocation database. Should block the traffic based on a pre-determined header length, URL length, and cookie length. The device should ensure that characters such as a single straight quote (*); backslash(\\), and semicolon (;) are either blocked, transformed, or dropped while being sent to the backend server. Which two security features should the architect configure to meet these requirements? (Choose two.) A. Pattern sets B. Rate limiting C. HTTP DDOS D. Data sets E. APPQOE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Architect needs to make sure that maximum concurrent AAA user sessions are limited to 4000 as a security restriction. Which authentication setting can the architect utilize to view the current configuration? A. Global Session Settings B. AAA Parameters C. Active User Session D. AAA Virtual Server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which encoding type can a Citrix Architect use to encode the StyleBook content, when importing the StyleBook configuration under source attribute? A. Hex B. base64 C. URL D. Unicode",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to assess an existing on-premises NetScaler deployment which includes Advanced Endpoint Analysis scans. During a previous security audit, the team discovered that certain endpoint devices were able to perform unauthorized actions despite NOT meeting pre-established criteria. The issue was isolated to several endpoint analysis (EPA) scan settings. Click the Exhibit button to view the endpoint security requirements and configured EPA policy settings. Which setting is preventing the security requirements of the organization from being met? A. Item 6 B. Item 7 C. Item 1 D. Item 3 E. Item 5 F. Item 2 G. Item 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Architect needs to assess an existing on-premises NetScaler deployment which includes Advanced Endpoint Analysis scans. During a previous security audit, the team discovered that certain endpoint devices were able to perform unauthorized actions despite NOT meeting pre-established criteria. The issue was isolated to several endpoint analysis (EPA) scan settings. Click the Exhibit button to view the endpoint security requirements and configured EPA policy settings. Which setting is preventing the security requirements of the organization from being met? A. Item 1 B. Item 4 C. Item 2 D. Item 3",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "_________ content type supports sending NITRO commands to NetScaler. (Choose the correct option to complete sentence.) A. Application/sgml B. Text/html C. Application/json D. Text/enriched",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which parameter must a Citrix Architect configure to ensure that HDX Proxy Connection terminates upon AAA Session TimeOut? A. ICA session timeout in VPN parameters B. Session timeout(mins) in NetScaler gateway Session Profile. C. Session timeout(mins) in VPN Parameters D. ICA session timeout in netScaler Gateway Session Profile.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: The following NetScaler environment requirements were discussed during a design meeting between a Citrix Architect and the Workspacelab team: All traffic should be secured, and any traffic coming into HTTP should be redirected to HTTPS. Single Sign-on should be created for Microsoft Outlook web access (OWA). NetScaler should recognize Uniform Resource Identifier (URI) and close the session to NetScaler when users hit the Logoff button in Microsoft Outlook web access. Users should be able to authenticate using user principal name (UPN). The Layer 7 monitor should be configured to monitor the Microsoft Outlook web access servers and the monitor probes must be sent on SSL. Which method can the architect use to redirect the user accessing https://mail.citrix.com to https://mail.citrix.com? A. add responder action act redirect “https://mail.citrix.com” –responseStatusCode 302 add responder policy pol HTTP.REQ.IS_VALID act B. add lb server test SSL 10.107.149.243.80 –persistenceType NONE –cltTimeout 180 –redirectFromPort 80 –httpsRedirectUrl https://mail.citrix.com C. add lb server test SSL 10.107.149.243.443 –persistenceType NONE –cltTimeout 180 –redirectFromPort 80 –httpsRedirectUrl https://mail.citrix.com D. add responder action act redirect “\\https://\\ + HTTP REQ.HOSTNAME.HTTP_URL_SAFE + HTTP.REQ.URL_PATH_AND_QUERY.HTTP_URL_SAFE\\n\\n” –responseStatusCode 302 add responder policy pol HTTP.REQ.IS_VALID act",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Architect needs to configure advanced features of NetScaler by using StyleBooks as a resource in the Heat service. What is the correct sequence of tasks to be completed for configuring NetScaler using the Heat stack? A. 1. Install NetScaler Bundle for OpenStack 2. Deploy the Heat stack 3. Register OpenStack with NMAS 4. Add NetScaler instances (Optional) 5. Prepare the HOT by using the NetScaler heat resources and NetScaler Network Resource 6. Create service packages (Add OpenStack tenants) B. 1. Install NetScaler Bundle for OpenStack 2. Register OpenStack with NMAS 3. Add NetScaler instances (Optional) 4. Create service packages (Add OpenStack tenants) 5. Prepare the HOT by using the NetScaler heat resources and NetScaler Network Resource 6. Deploy the Heat stack C. 1. Install NetScaler Bundle for OpenStack 2. Add NetScaler instances (Optional) 3. Create service packages (Add OpenStack tenants) 4. Prepare the HOT by using the NetScaler heat resources and NetScaler Network Resource 5. Register OpenStack with NMAS 6. Deploy the Heat stack D. 1. Install NetScaler Bundle for OpenStack 2. Prepare the HOT by using the NetScaler heat resources and NetScaler Network Resource 3. Register OpenStack with NMAS 4. Deploy the Heat stack 5. Add NetScaler instances (Optional) 6. Create service packages (Add OpenStack tenants)",
+    "options": {},
+    "most_voted": "B"
+  }
+]
