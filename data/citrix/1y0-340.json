@@ -1,0 +1,67 @@
+[
+  {
+    "question": "A Citrix Engineer has received the following message after setting up Application Firewall in Learning mode. August 28 6 03:14:27 <local0.info>XXX.0.0.2.08/28/2017:03:14:27 GMT VPXExtProd01 0-PPE-0: default GUI CMD_EXECUTED 1670370 0: User CitrixAdmin- Remote_ip XXX.19.XXX.XXX-Command \"show appfw learningdata WebPub_vs_af_1 startURL\"- Status \"ERROR: Communication error with aslearn\" What can the engineer perform to resolve the issue? A. Reinstall the Application Firewall license. B. Reboot the NetScaler appliance. C. Disable the Application Firewall feature. D. Delete the Profile database and restart the aslearn process.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Engineer has deployed Front-end Optimization on NetScaler. The following are the snippets of the content before and after optimization. Before Optimization: [sampleXML/xmlfile-9_1.png] Which optimization technique has been applied to the content? A. Convert linked JavaScript to inline JavaScript B. Minify JavaScript C. Move JavaScript to End of Body Tag D. Inline JavaScript",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Engineer needs to ensure that all traffic to the virtual server is blocked if NONE of the bound Application Firewall policies are matched. Which setting can the engineer configure to meet this requirement? A. set appfw settings –undefAction APPFW_BLOCK B. set ns httpProfile nshttp_default_profile-dropInvalReqs DISABLED C. set ns httpProfie nshttp_default_profile –dropInvalReqs ENABLED D. set appfw settings –defaultProfile APPFW_BLOCK",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: A Citrix Engineer must enable a cookie consistency security check and ensure that all the session cookies get encrypted during the transaction. The engineer needs to ensure that none of the persistent coolies are encrypted and decrypted and decrypt any encrypted cookies during the transaction. Which cookie consistency security feature will the engineer configure in the following configuration to achieve the desired results? add appfw profile Test123 startURLAction none- denyURLAction none- cookieConsistencyAction log cookieTransforms ON cookieEncryption ecryptSessionOnly addCookieFlags httpOnly crossSiteScriptingAction none- SQLInjectionAction log stats SQLInjectionTransfrormSpecialChars ON- SQLInjectionCheckSQLWildChars ON –fieldFormatAction none –bufferOverflowAction none –responseContentType \"application/octet-stream\"- XMLSQLInjectionAction none XMLXSSAction none-XMLWSIAction none- XMLValidationAction none A. Configure Encrypt Server cookies to \"Encrypt All\" B. Configure Encrypt Server cookies to \"None\" C. Configure Encrypt Server cookies to \"Encrypt Session Only\" D. Configure Encrypt Server cookies to \"Encrypt only\"",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Citrix Engineer needs to write a regular expression to treat the URL www.citrix.com as a literal string. Which regular expression can the engineer use? A. www$.citrix$.com B. [www\\]. [citrix\\]. [com\\] C. www+.citrix+.com D. www\\.citrix\\.com",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two threats can be prevented by using IP Reputation? (Choose two.) A. Trojan horses B. Phishing Proxies C. Worm D. Compromised IPv6 web-server E. Compromised IPv4 web-server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Engineer is configuring an Application Firewall Policy to protect a website. Which expression will the engineer use in the policy? A. HTTP.RES.IS_VALID B. HTTP.REQ.HOSTNAME.EQ (\"true\") C. HTTP.RES.HEADER (\"hostname\").EQ (\"true\") D. HTTP.REQ.IS_VALID",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Citrix Engineer needs to configure an application firewall profile to ensure that the images uploaded on the website are NOT malicious. The engineer needs to create a policy to filter the upload requests and ensure that they are in JPEG format. Which expression can the engineer use to fulfill this requirement? A. http.req.url.endswith (\".jpeg) & & http.req.method.eq (POST) B. http.req.url.contains (\".jpeg) & & http.req.method.eq (GET) C. http.req.url.endswith (\".jpeg) || http.req.method.eq (GET) D. http.req.header (\"Content-Type\").contains (\"image/jpeg\") || http.req.method.eq(POST)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Engineer needs to configure an Application Firewall policy for an online shopping website called \"mycompany.com\". As a security measure, the shopping cart application is hosted on a separate directory \"/mycart\" on the backend server. The engineer configured a profile to secure the connections to this shopping cart and now needs to ensure that this profile is allied to all incoming connections to the shopping cart. Which policy expression will accomplish this requirement? A. http.req.url. contains(\"/mycart\") & http:req.url.hostname.eq(\"mycompany.com\") B. http.req.url. contains(\"/mycart\") || http:req.url.hostname.eq(\"mycompany.com\") C. http.req.header (\"url\").contains (\"/mycart\") || http.req.url.contains (\"mycompany.com\") D. http.req.header (\"url\").contains (\"/mycart\") && http:req.url.contains (\"mycompy.com\")",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Engineer has migrated an application to NetScaler to secure it from application layer attacks. The engineer receives a complaint that the application is timing out while users are actively accessing the page. Those users are forced to reestablish the connection. What can be the cause of this issue? A. The maximum session lifetime is NOT configured. B. The session time out is configured to a low value. C. The application is configured with a low session timeout. D. The maximum session lifetime is less than the session timeout.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Scenario: A Citrix Engineer discovers a security vulnerability in one of its websites. The engineer takes a header trace and checks the Application Firewall logs. The following was found in part of the logs: method=GET request = http://my.companysite.net/FFC/sc11.html msg=URL length (39) is greater than maximum allowed (20).cn1=707 cn2=402 cs1=owa_profile cs2=PPE0 cs3=kW49GcKbnwKByByi3+jeNzfgWa80000 cs4=ALERT cs5=2015 Which type of Application Firewall security check can the engineer configure to block this type of attack? A. Buffer Overflow B. Start URL C. Cross-site Scripting D. Cookie Consistency",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In PCRE, the only characters assumed to be literals are ___________ (Choose the correct option to complete the sentence.) A. A-Z B. a-z, A-Z C. a-z, A-Z, 0-9 D. 0-9",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Citrix Engineer executed the below commands on the NetScaler command-line interface (CLI): add stream selector cacheStreamSelector http.req.url add ns limitidentifier cacheRateLimitIdentifier threshold 5 timeSlice 2000 selectorName cacheStreamSelector add cache policy cacheRateLimitPolicy –rule \"http.req.method.eq(get) && sys.check_limit (\\ \"cacheRateLimitIdentifier\\\")\" –action cache bind cache global cacheRateLimitPolicy- priority 10 What will be the effect of executing these commands? A. NetScaler will cache a response if the request URL rate exceeds 5 per 2000 milliseconds. B. NetScaler will cache a request if the request URL rate exceeds 5 per 2000 seconds. C. NetScaler will NOT cache a request if the request URL rate exceeds 5 per 2000 milliseconds. D. NetScaler will cache a response if the request URL rate exceeds 5 per 2000 seconds.",
+    "options": {},
+    "most_voted": ""
+  }
+]
