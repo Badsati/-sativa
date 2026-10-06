@@ -80,6 +80,86 @@ def _sanity_check_slug(provider: str, exam: str, fetcher: HttpFetcher, total_pag
     return False
 
 
+def _fetch_questions(links: list, fetcher: HttpFetcher) -> list:
+    from tqdm import tqdm
+    questions = []
+    for url in tqdm(links, desc="Fetching Questions", unit="q"):
+        try:
+            html = fetcher.fetch_html(url)
+            q = parse_question_page(html, url=url)
+            questions.append(q)
+        except Exception as e:
+            tqdm.write(f"  [WARN] Failed {url}: {e}")
+        time.sleep(random.uniform(1.5, 3.0))
+    return questions
+
+
+def _scrape_provider_single_pass(
+    provider: str, fetcher: HttpFetcher, output_dir: Path, commit: bool
+) -> bool:
+    scanner = FastDiscussionScanner(provider, fetcher, delay_range=DEFAULT_DELAY_RANGE)
+    try:
+        total_pages = scanner.get_num_pages()
+    except Exception as e:
+        print(f"  [WARN] Could not get page count: {e}")
+        return False
+
+    page_numbers = build_page_numbers(total_pages, 1, None, None)
+    print(f"  Single-pass: scanning {len(page_numbers)} discussion pages...")
+    exam_links = scanner.scan_all_exams(page_numbers, workers=4)
+
+    if not exam_links:
+        print(f"  No exam discussions found for {provider}")
+        return False
+
+    print(f"  Found {len(exam_links)} exams with discussions")
+    did_work = False
+
+    for exam, links in sorted(exam_links.items()):
+        out_file = output_dir / f"{exam}.json"
+
+        if out_file.exists():
+            age = time.time() - out_file.stat().st_mtime
+            if age < SEVEN_DAYS:
+                print(f"  Skipping {exam} (data is {age / 86400:.0f}d old, fresh)")
+                continue
+            print(f"\n[{provider}/{exam}] Re-scraping ({len(links)} questions in discussions)...")
+            questions = _fetch_questions(links, fetcher)
+            if questions:
+                slim = [
+                    {"question": q["question"], "options": q["options"], "most_voted": q.get("most_voted", "")}
+                    for q in questions
+                ]
+                existing = json.loads(out_file.read_text())
+                existing_texts = {q["question"] for q in existing}
+                new_qs = [q for q in slim if q["question"] not in existing_texts]
+                if new_qs:
+                    print(f"  {len(new_qs)} new questions found, merging")
+                    write_questions_to_json(str(out_file), existing + new_qs)
+                    if commit:
+                        git_commit(provider, exam)
+                    did_work = True
+                else:
+                    print(f"  No new questions for {exam}")
+            continue
+
+        print(f"\n[{provider}/{exam}] {len(links)} questions found, fetching...")
+        questions = _fetch_questions(links, fetcher)
+        if questions:
+            slim = [
+                {"question": q["question"], "options": q["options"], "most_voted": q.get("most_voted", "")}
+                for q in questions
+            ]
+            write_questions_to_json(str(out_file), slim)
+            if commit:
+                git_commit(provider, exam)
+            did_work = True
+        else:
+            print(f"  No questions parsed for {exam}")
+
+    return did_work
+
+
 def scrape_exam(provider: str, exam: str, fetcher: HttpFetcher, cache: HtmlCache) -> list:
     scanner = FastDiscussionScanner(provider, fetcher, delay_range=DEFAULT_DELAY_RANGE)
     try:
@@ -139,6 +219,7 @@ def main():
     parser.add_argument("--exam", default=None)
     parser.add_argument("--output", default="data")
     parser.add_argument("--commit", action="store_true", help="Commit and push after each exam")
+    parser.add_argument("--legacy", action="store_true", help="Use old per-exam scan (fallback)")
     args = parser.parse_args()
 
     provider = normalize_provider(args.provider)
@@ -153,6 +234,16 @@ def main():
         refresh_cache=False,
     )
 
+    did_work = False
+
+    if not args.exam and not args.legacy:
+        # New single-pass: scan all discussion pages once, collect by exam slug
+        did_work = _scrape_provider_single_pass(provider, fetcher, output_dir, args.commit)
+        if not did_work:
+            sys.exit(2)
+        return
+
+    # Legacy path: per-exam scan (used when --exam or --legacy is passed)
     if args.exam:
         exams = [args.exam]
     else:
@@ -160,10 +251,8 @@ def main():
         exams = get_exam_slugs(provider, fetcher)
         if not exams:
             print("No exams found. Skipping.")
-            return
+            sys.exit(2)
         print(f"Found {len(exams)} exams: {exams}\n")
-
-    did_work = False
 
     for exam in exams:
         out_file = output_dir / f"{exam}.json"
