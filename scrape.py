@@ -8,6 +8,7 @@ from pathlib import Path
 
 SEVEN_DAYS = 7 * 24 * 60 * 60
 
+from examtopics.browser_scraper import CamoufoxScraper
 from examtopics.cache import HtmlCache
 from examtopics.fast_scanner import FastDiscussionScanner
 from examtopics.http_client import HttpFetcher
@@ -107,6 +108,20 @@ def _scrape_provider_single_pass(
     page_numbers = build_page_numbers(total_pages, 1, None, None)
     print(f"  Single-pass: scanning {len(page_numbers)} discussion pages...")
     exam_links = scanner.scan_all_exams(page_numbers, workers=2)
+
+    if not exam_links:
+        print(f"  HTTP scan returned nothing — falling back to Camoufox browser...")
+        try:
+            with CamoufoxScraper(
+                provider,
+                headless=True,
+                timeout_ms=DEFAULT_TIMEOUT_MS,
+                retries=DEFAULT_RETRIES,
+                delay_range=DEFAULT_DELAY_RANGE,
+            ) as browser:
+                exam_links = browser.scan_all_exams(page_numbers)
+        except Exception as e:
+            print(f"  [WARN] Camoufox fallback failed: {e}")
 
     if not exam_links:
         print(f"  No exam discussions found for {provider}")

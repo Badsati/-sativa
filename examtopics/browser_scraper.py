@@ -1,9 +1,11 @@
 import os
 import random
+import re
 import sys
 import time
+from collections import defaultdict
 from pathlib import Path
-from typing import List, Optional, Sequence, Tuple
+from typing import Dict, List, Optional, Sequence, Tuple
 
 from tqdm import tqdm
 
@@ -11,6 +13,7 @@ from .cleaner import clean_examtopics_html
 from .matching import (
     dedupe,
     discussion_entry_url,
+    extract_topic_question,
     matches_discussion_entry,
     normalize_provider,
     provider_discussion_url,
@@ -136,6 +139,28 @@ class CamoufoxScraper:
 
         self._sleep_between_pages()
         return dedupe(links)
+
+    def scan_all_exams(self, page_numbers: Sequence[int]) -> Dict[str, List[str]]:
+        """Single-pass scan via browser: collect all discussion links grouped by exam slug."""
+        all_links: Dict[str, List[str]] = defaultdict(list)
+        for page_number in tqdm(list(page_numbers), desc="Scanning discussions", unit="page"):
+            try:
+                html = self.fetch_html(
+                    provider_discussion_url(self.provider, page_number),
+                    wait_selector="a.discussion-link",
+                )
+                for text, href in extract_discussion_entries(html):
+                    m = re.search(r"/exam-([^/]+?)-topic-", href, re.I)
+                    if m:
+                        slug = m.group(1).lower()
+                        all_links[slug].append(discussion_entry_url(text, href))
+                self._sleep_between_pages()
+            except Exception as exc:
+                print(f"\nError on page {page_number}: {exc}")
+        return {
+            slug: dedupe(sorted(links, key=extract_topic_question))
+            for slug, links in all_links.items()
+        }
 
     def get_discussion_links(self, page_numbers: Sequence[int], search_string: str) -> List[str]:
         links = []
