@@ -106,7 +106,7 @@ def _scrape_provider_single_pass(
 
     page_numbers = build_page_numbers(total_pages, 1, None, None)
     print(f"  Single-pass: scanning {len(page_numbers)} discussion pages...")
-    exam_links = scanner.scan_all_exams(page_numbers, workers=4)
+    exam_links = scanner.scan_all_exams(page_numbers, workers=2)
 
     if not exam_links:
         print(f"  No exam discussions found for {provider}")

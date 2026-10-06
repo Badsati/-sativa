@@ -72,6 +72,7 @@ class FastDiscussionScanner:
         all_links: Dict[str, List[str]] = defaultdict(list)
         pages = list(page_numbers)
 
+        errors = 0
         with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
             futures = {
                 executor.submit(self._fetch_all_entries, page): page
@@ -84,8 +85,13 @@ class FastDiscussionScanner:
                         for slug, url in future.result():
                             all_links[slug].append(url)
                     except Exception as exc:
-                        print(f"\nError on page {page}: {exc}")
+                        errors += 1
+                        tqdm.write(f"  [WARN] Page {page} failed: {exc}")
                     pbar.update(1)
+
+        if errors:
+            pct = errors * 100 // len(pages)
+            print(f"  [WARN] {errors}/{len(pages)} pages failed ({pct}%) — results may be incomplete")
 
         return {
             slug: dedupe(sorted(links, key=extract_topic_question))
