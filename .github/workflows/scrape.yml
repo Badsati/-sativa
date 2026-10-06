@@ -54,10 +54,16 @@ jobs:
           # Manual single-provider override
           if [ -n "$PROVIDER" ]; then
             echo "Scraping provider: $PROVIDER"
+            EXIT_CODE=0
             if [ -n "$EXAM" ]; then
-              python scrape.py --provider "$PROVIDER" --exam "$EXAM" --commit
+              python scrape.py --provider "$PROVIDER" --exam "$EXAM" --commit || EXIT_CODE=$?
             else
-              python scrape.py --provider "$PROVIDER" --commit
+              python scrape.py --provider "$PROVIDER" --commit || EXIT_CODE=$?
+            fi
+            if [ "$EXIT_CODE" -eq 2 ]; then
+              echo "No new data found for $PROVIDER${EXAM:+/$EXAM}"
+            elif [ "$EXIT_CODE" -ne 0 ]; then
+              exit "$EXIT_CODE"
             fi
             exit 0
           fi
@@ -75,8 +81,8 @@ jobs:
               break
             fi
             echo "Checking provider: $provider"
-            python scrape.py --provider "$provider" --commit
-            EXIT_CODE=$?
+            EXIT_CODE=0
+            python scrape.py --provider "$provider" --commit || EXIT_CODE=$?
             if [ "$EXIT_CODE" -eq 0 ]; then
               COUNT=$((COUNT + 1))
               if [ "$COUNT" -ge 3 ]; then
