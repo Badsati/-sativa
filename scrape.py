@@ -235,6 +235,7 @@ def main():
     parser.add_argument("--output", default="data")
     parser.add_argument("--commit", action="store_true", help="Commit and push after each exam")
     parser.add_argument("--legacy", action="store_true", help="Use old per-exam scan (fallback)")
+    parser.add_argument("--debug-html", action="store_true", help="Save first discussion page HTML for inspection")
     args = parser.parse_args()
 
     provider = normalize_provider(args.provider)
@@ -250,6 +251,14 @@ def main():
     )
 
     did_work = False
+
+    if args.debug_html:
+        from examtopics.matching import provider_discussion_url
+        html = fetcher.fetch_html(provider_discussion_url(provider))
+        debug_file = Path(f"debug_{provider}_page1.html")
+        debug_file.write_text(html, encoding="utf-8")
+        print(f"Saved first discussion page to {debug_file} ({len(html)} bytes)")
+        return
 
     if not args.exam and not args.legacy:
         # New single-pass: scan all discussion pages once, collect by exam slug
