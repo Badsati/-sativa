@@ -88,6 +88,8 @@ jobs:
               if [ "$COUNT" -ge 3 ]; then
                 break
               fi
+              echo "Cooling down 60s before next provider..."
+              sleep 60
             elif [ "$EXIT_CODE" -ne 2 ]; then
               echo "Scrape failed for $provider (exit $EXIT_CODE)"
             fi
