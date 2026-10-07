@@ -1,0 +1,62 @@
+[
+  {
+    "question": "SIMULATION RHCE Test Configuration Instructions Information for the two systems you will use in test is the following: system1.group3.example.com: is one of the main sever. system2.group3.example.com: mainly used as a client. Password for both of the two systems is atenorth System's IP is provided by DHCP, you can regard it as normal, or you can reset to Static IP in accordance with the following requirements: system1.group3.example.com: 172.24.3.5 system2.group3.example.com: 172.24.3.10 The subnet mask is 255.255.255.0 Your system is a member of DNS domain group3.example.com. All systems in DNS domain group3.example.com are all in subnet 172.24.3.0/255.255.255.0, the same all systems in this subnet are also in group3.example.com, unless specialized, all network services required to be configured can be accessed by systems of domain group3. host.group3.example.com provides a centralized authentication service domain GROUP3.EXAMPLE.COM, both system1 and system2 have already been pre-configured to be the client for this domain, this domain provides the following user account: [sampleXML/xmlfile-6_1.png] Firewall is enabled by default, you can turn it off when deemed appropriate, other settings about firewall may be in separate requirements. Your system will be restarted before scoring, so please ensure that all modifications and service configurations you made still can be operated after the restart without manual intervention, virtual machine instances of all examinations must be able to enter the correct multi-user level after restart without manual assistance, it will be scored zero if the test using virtual machine system cannot be restarted or be properly restarted. Corresponding distribution packages for the testing using operating system Red Hat Enterprise Linux version can be found in the following link: http://server1.group3.example.com/rhel Part of the requirements include host security, ensure your host security limit does not prevent the request to allow the host and network, although you correctly configured the network service but would have to allow the host or network is blocked, this also does not score. You will notice that some requirements which clearly do not allow services be accessed by service domain my133t.org, systems of this domain are in subnet 172.25.1.0/252.255.255.0, and systems of these subnets also belong to my 133t.org domain. PS: Notice that some test questions may depend on other exam questions, for example, you might be asked to perform a series of restrictions on a user, but this user creation may be required in other questions. For convenient identification, each exam question has some radio buttons to help you identify which questions you have already completed or not completed. Certainly, you do not need to care these buttons if you don't need them. Customize the User Environment Create a custom command on system1 and system2 named as qstat, and this custom command will execute the following command: /bin/ps - Ao pid,tt,user,fname,rsz This command is valid for all users in the system.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION RHCE Test Configuration Instructions Information for the two systems you will use in test is the following: system1.group3.example.com: is one of the main sever. system2.group3.example.com: mainly used as a client. Password for both of the two systems is atenorth System's IP is provided by DHCP, you can regard it as normal, or you can reset to Static IP in accordance with the following requirements: system1.group3.example.com: 172.24.3.5 system2.group3.example.com: 172.24.3.10 The subnet mask is 255.255.255.0 Your system is a member of DNS domain group3.example.com. All systems in DNS domain group3.example.com are all in subnet 172.24.3.0/255.255.255.0, the same all systems in this subnet are also in group3.example.com, unless specialized, all network services required to be configured can be accessed by systems of domain group3. host.group3.example.com provides a centralized authentication service domain GROUP3.EXAMPLE.COM, both system1 and system2 have already been pre-configured to be the client for this domain, this domain provides the following user account: [sampleXML/xmlfile-14_1.png] Firewall is enabled by default, you can turn it off when deemed appropriate, other settings about firewall may be in separate requirements. Your system will be restarted before scoring, so please ensure that all modifications and service configurations you made still can be operated after the restart without manual intervention, virtual machine instances of all examinations must be able to enter the correct multi-user level after restart without manual assistance, it will be scored zero if the test using virtual machine system cannot be restarted or be properly restarted. Corresponding distribution packages for the testing using operating system Red Hat Enterprise Linux version can be found in the following link: http://server1.group3.example.com/rhel Part of the requirements include host security, ensure your host security limit does not prevent the request to allow the host and network, although you correctly configured the network service but would have to allow the host or network is blocked, this also does not score. You will notice that some requirements which clearly do not allow services be accessed by service domain my133t.org, systems of this domain are in subnet 172.25.1.0/252.255.255.0, and systems of these subnets also belong to my 133t.org domain. PS: Notice that some test questions may depend on other exam questions, for example, you might be asked to perform a series of restrictions on a user, but this user creation may be required in other questions. For convenient identification, each exam question has some radio buttons to help you identify which questions you have already completed or not completed. Certainly, you do not need to care these buttons if you don't need them. Configure the Local Mail Service Configure the mail service on system1 and system2, as required: 1. These systems do not accept external sending mails 2. Any mails sent locally are automatically routed to rhgls.domain11.example.com 3. Mails sent from these systems will be displayed from rhgls.domain11.example.com 4. You can send mail to local user \"˜arthur' to test your configuration system rhgls.domain11.example.com 5. You have already configured this user's mail to the following URL rhgls.domain11.example.com/received_mail/11",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Cofigure SELINUX Modify the state of selinux to Enforcing mode Use VIM /etc/selinux",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Custom User Environment Create a custom command on system1 and system2 named as qstat, this custome command will execute the following commands: /bin/ps - Ao pid,tt,user,fname,rsz This command is valid for all users in the system",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Share directories via SMB Configure the SMB service on the system1 Your SMB server must be a member of the work group STAFF Share /common and share name must be common Only clients of domain11.example.com can access the common share Common must be able to browse User andy must be able to read the content of the share, if necessary, verfication code is redhat",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Configure Multi-User Mount Share the directory /devops through SMB on the systeml, as required: 1. Share name is devops 2. The shared directory devops just can be used by clients in domain11.example.com 3. The shared directory devop must be able to be browsed 4. User silene must can be able to access this share through read, access code is redhat 5. User akira must can be able to access this share through read and write, access code is redhat 6. This share permanently mount to system2. domain11.example.com the user /mnt/dev, make user silene as authentication any users can get temporary write permissions from akira",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Mount a NFS Share Mount a NFS share to system1.domain11.example.com on the system2, as required: 1. Mount the /public to the directory /mnt/nfsmount 2. Mount the /protected to the directory /mnt/nfssecure, in a security way, key download URL: http://host.domain11.example.com/materials/nfs_client.keytab 3. User deepak can creat files on /mnt/nfssecure/project 4. These file systemes automatically hang up when the system is started",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Configure NFS service Configure the NFS service on the system1, as required: 1. Share the directory /public in read only way, just can be accessed by systems in domain11.example.com at the same time 2. Share the directory /protected in rad and write way, Kerberos security encryption required, you can use the key provided by the following URL: http://host.domain11.example.com/materials/nfs_server.keytab 3. Directory /protected should contain the sub directory named project and deepak; 4. User deepak can access /protected/project in read and write ways",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Configure the Virtual Host Expand your web server on the system1, create a virtual host for site http://www.domain11.example.com Then Executes the following steps: 1. Setting the DocumentRoot to /var/www/virtual 2. From http://rhgls.domain11.example.com/materials/www.html 3. Download a file, rename as index.html, dont modify file index.html content 4. Put the file index.html under the directory DocumentRoot of Virtual Host 5. Ensure that user andy can create files under directory /var/www/virtual Note: original site http://systeml.domian11.example.com/ must still be able to be accessed, Name server domain11.example.com provide the domain name resolution for host name",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Create a script to add users Create a script named /root/mkusers on the system1, this script can achieve to add local users for the system1, and user names of these users are all from a file which contains the usernames list, and meet the following requirements at the same time: 1. This script is required to provide a parameter; this parameter is the file which contains the usernames list 2. This script need provide the following message: Usage /root/mkusers if it does not provide a parameter, then exit and return the corresponding value 3. This script need provide the following message: Input file not found if it provides a name that does not exist, then exit and return the corresponding value 4. Create a user shell log into /bin/false 5. This script does not need to set password for users 6. You can get the usernames list from the following URL as a test: http://rhgls. domain11.example.com/materials/ userlist",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In accordance with the following requirements to deploy ssh login service: 1. harry belongs to example.com which can remote login your systems. 2. However, users of remote.test can not use ssh login to your machine.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "According to the following requirements, deploying your ftp login rule: 1. Users in example.com domain must be able to login to your ftp server as an anonymous user. 2. But users outside the example.com domain are unable to login to your server",
+    "options": {},
+    "most_voted": ""
+  }
+]
