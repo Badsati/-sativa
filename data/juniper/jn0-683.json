@@ -1,0 +1,242 @@
+[
+  {
+    "question": "You are asked to automatically provision new Juniper Networks devices in your network with minimal manual intervention. Before you begin, which two statements are correct? (Choose two.) A. You must have a system log (syslog) server to manage system log messages and alerts. B. You must have a DHCP server that provides the location of the software image and configuration files. C. You must have a file server that stores software image and configuration files. D. You must have an NTP server to perform time synchronization.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are asked for TX and RX traffic statistics for each interface to which an application server is attached. The statistics need to be reported every five seconds. Using the Junos default settings, which telemetry method would accomplish this request? A. Native Sensors B. OpenConfig C. SNMP D. gNMI",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are asked to deploy 100 QFX Series devices using ZTP. Each QFX5120 requires a different configuration. In this scenario, what are two components that you would configure on the DHCP server? (Choose two.) A. the IP address of the FTP server B. the MAC address for each QFX5120 C. the management IP address for each QFX5120 D. the MAC address of the FTP server.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to deploy a new data center. As part of the switch onboarding process, you want to use Juniper Networks’ zero-touch provisioning (ZTP) process. Which statement is correct about this scenario? A. Scripts that require execution must end with .sh or .py. B. The minimum requirement is a DHCP IP address for the ZTP process to terminate. C. The switch’s default hostname is the switch’s MAC address. D. Junos images on the devices can be upgraded, but not downgraded.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements are true about IP fabrics using unnumbered BGP? (Choose two.) A. Unnumbered BGP peering automatically provisions IPv4 peering. B. Unnumbered BGP requires that family inet6 is configured on each interface. C. Unnumbered BGP peering automatically provisions IPv6 peering. D. Unnumbered BGP requires that family inet is configured on each interface.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. You are troubleshooting an IP fabric for your data center. You notice that your traffic is not being load balancing to your spine devices from leaf devices. Referring to the configuration shown in the exhibit, what must be configured to solve this issue? A. The load-balance policy must have a from statement that matches on protocol bgp. B. The multipath multiple-as configuration must be configured for each peer in the BGP spine group. C. The load-balance policy must be applied as an export policy to your BGP spine group. D. The load-balance policy must be applied to the forwarding table under the routing-options hierarchy.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are deploying a Clos IP fabric with an oversubscription ratio of 3:1. In this scenario, which two statements are correct? (Choose two.) A. The oversubscription ratio decreases when you add spine devices. B. The oversubscription ratio increases when you remove spine devices. C. The oversubscription ratio remains the same when you add spine devices. D. The oversubscription ratio remains the same when you remove spine devices.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are asked to set up an IP fabric that supports AI or ML workloads. You have chosen to use lossless Ethernet. In this scenario, which statement is correct about congestion management? A. The switch experiencing the congestion notifies the source device. B. Only the source and destination devices need ECN enabled. C. ECN marks packets based on WRED settings. D. ECN is negotiated only among the switches that make up the IP fabric for each queue.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are designing an IP fabric for a large data center, and you are concerned about growth scalability. Which two actions would you take to address these concerns? (Choose two.) A. Use EX4300 Series devices as the spine devices. B. Design a three-stage Clos IP fabric. C. USE QFX5700 Series devices as the super spines. D. Design a five-stage Clos IP fabric.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two statements are correct about an IP fabric? (Choose two.) A. EBGP is only required to route host routing information to external devices outside the fabric. B. All leaf devices can use the same AS number in an IP fabric without making any adjustments to the EBGP configuration. C. The multipath multiple-as statement is required to enable ECMP if every device has a different AS number. D. Only a single point to point EBGP session is required between peers in an IP fabric.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are deploying an IP fabric using EBGP and notice that your leaf devices are advertising and receiving all the routes. However, the routes are not installed in the routing table and are marked as hidden. Which two statements describe how to solve the issue? (Choose two.) A. You need to configure a next-hop self policy. B. You need to configure multipath multiple-as. C. You need to configure loops 2. D. You need to configure as-override.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are adding a server to a tenant’s network within your data center and must limit access to a specific traffic type within the tenant network without pushing all tenant traffic through a firewall. What will satisfy this requirement? A. Use filter-based forwarding. B. Put the new server on a unique subnet within the tenant’s network. C. Use route leaking with EVPN and a routing policy. D. Use a static route in the tenant VRF with a firewall as the next hop for traffic to the new server.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are deploying a new network to support your AI workloads on devices that support at least 400 Gbps Ethernet. There is no requirement for any Layer 2 VLANs in this network. Which network architecture would satisfy this requirement? A. an IP fabric using the EVPN-MPLS architecture B. an IP fabric with an EVPN-VXLAN architecture C. an IP fabric using the PIM-SM to signal VXLAN overlay D. an IP fabric using EBGP",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are deploying an IP fabric with an oversubscription ratio of 3:1. In this scenario, which two statements are correct? (Choose two.) A. The oversubscription ratio remains the same when you remove leaf devices. B. The oversubscription ratio increases when you remove leaf devices. C. The oversubscription ratio decreases when you add leaf devices. D. The oversubscription ratio remains the same when you add leaf devices.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are deploying multiple Juniper switches at the same location. Your switches are currently using the factory-default configuration. In this scenario, which two statements are correct? (Choose two.) A. the DHCP server configuration cannot provide Junos version requirements to DHCP clients. B. The switch will try to request an IP address from a DHCP server using all interfaces that are connected and are operational. C. The switch will try to request an IP address from a DHCP server using only the management interface. D. The DHCP server configuration can provide Junos version requirements to DHCP clients.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. Referring to the exhibit, the spine1 device has an underlay BGP group that in configured to peer with its neighbors’ directly connected interfaces. Which two statements are true in this scenario? (Choose two.) A. The multihop statement is not required to establish the underlay BGP sessions. B. Load balancing for the underlay is not configured correctly. C. Load balancing for the underlay is configured correctly. D. The multihop statement is required to establish the underlay BGP sessions.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. The 192.168.0.0/24 route is being advertised into your IP fabric by the leaf device in AS 65512. In this scenario, which two statements are correct? (Choose two.) A. By default, both spine devices will accept and install the route learned from the leaf device. B. By default, each spine device will not advertise this route to all other peer leaf devices. C. By default, both spine devices will reject the route learned from the leaf device. D. By default, each spine device will advertise this route to all other peer leaf devices.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. The 192.168.0.0/24 route is being advertised into your IP fabric by the leaf devices in AS 65511 and AS 65512. Both spine devices receive the routes from each of the leaf devices. In this scenario, which two statements are correct? (Choose two.) A. By default, each spine device will advertise both route entries for this route to other leaf devices. B. By default, each spine device will only accept the first received next hop for this route from the leaf devices, while the other next hop will be rejected. C. By default, each spine device will advertise only the active route entry to the other leaf devices. D. By default, each spine device will accept both next hops for the route received from the leaf devices, but only one next hop will become the active route.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You must integrate several leaf nodes that do not support the EVPN-VXLAN architecture into your existing EVPN-VXLAN-based IP fabric. In this scenario, which two design considerations would accomplish this task? (Choose two.) A. Ethernet segment identifier B. edge-routed bridging C. generic routing encapsulation D. collapsed fabric",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are using a single tenant data center with a bridged overlay architecture. In this scenario, how do hosts of the different virtual networks communicate with each other? A. using anycast gateway addresses configured on the leaf devices B. using EVPN Type 5 routes C. off-fabric using an external device D. using virtual gateway addresses configured on the spine",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are two ways in which an EVPN-signaled VXLAN is different from a multicast-signaled VXLAN? (Choose two.) A. An EVPN-signaled VXLAN is less resource intensive. B. An EVPN-signaled VXLAN can perform autodiscovery of VTEPs using IS-IS. C. An EVPN-signaled VXLAN can perform autodiscovery of VTEPs using BGP. D. An EVPN-signaled VXLAN features slower and more complete convergence.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. You are deploying a VXLAN overlay with EVPN as the control plane in an ERB architecture. Referring to the exhibit, which three statements are correct about where then VXLAN gateways will be placed? (Choose three.) A. Spine devices will have no VXLAN gateways. B. All leaf devices will have L3 VXLAN gateways. C. Only the spine devices will have L2 VXLAN gateways. D. Only the border and leaf devices will have L3 VXLAN gateways. E. All leaf devices will have L2 VXLAN gateways.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. You have implemented an EVPN-VXLAN data center. Device server1 must be able to communicate with device server2. Referring to the exhibit, which two statements are correct? (Choose two.) A. Traffic from server1 to server2 will transit a VXLAN tunnel to spine1 or spine2, then a VXLAN tunnel from spine1 or spine2 to leaf2. B. Traffic from server1 to server2 will transit the VXLAN tunnel between leaf1 and leaf2. C. An IRB interface must be configured on leaf1 and leaf2. D. An IRB interface must be configured on spine1 and spine2.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A local VTEP has two ECMP paths to a remote VTEP. Which two statements are correct when load balancing is enabled in this scenario? (Choose two.) A. The inner packet fields are not used in the hash load balancing. B. The destination port in the UDP header is used to load balance VXLAN traffic. C. The source port in the UDP header is used to load balance VXLAN traffic. D. The inner packet fields are used in the hash for load balancing.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three statements are correct about VXLAN control planes? (Choose three.) A. EVPN is inefficient and does not scale well. B. EVPN enables fast convergence and updates. C. Multicast is not agile and requires manual VNI mapping. D. Multicast does not require as many resources. E. Both multicast and EVPN can facilitate MAC learning.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You want to ensure that VXLAN traffic from the xe-0/0/12 interface is being encapsulated by logical vtep.32770 and sent to a remote leaf device. In this scenario, which command would you use to verify that traffic is flowing? A. monitor traffic interface xe-0/0/12 B. show interfaces vtep.32770 detail C. show interface terse vtep.32770 D. show interfaces terse vtep.32770 statistics",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are asked to build out the VXLAN control plane. In this scenario, which two protocols provide this capability? (Choose two.) A. MBGP B. PIM-SM C. OSPF D. IS-IS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. Connections between hosts connected to Leaf-1 and Leaf-2 are not working correctly. Referring to the exhibit, which two configuration changes are required to solve the problem? (Choose two.) A. Configure the set switch-options vrf-target target:65000:1 parameter on Leaf-2. B. Configure the set switch-options service-id 1 parameter on Leaf-2. C. Configure the set switch-options vtep-source-interface irb.0 parameter on Leaf-1. D. Configure the set switch-options route-distinguisher 192.168.100.50:1 parameter on Leaf-1.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. A VXLAN tunnel has been created between leaf1 and leaf2 in your data center. Referring to the exhibit, which statement is correct? A. Traffic sent from server1 to server2 will be dropped on leaf2. B. Traffic sent from server1 to server2 will be dropped on leaf1. C. Traffic sent from server1 to server2 will be tagged with VLAN ID 200 on leaf2 and forwarded to server2. D. Traffic sent from server1 to server2 will be tagged with VLAN ID 100 on leaf2 and forwarded to server2.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. Referring to the exhibit, which statement is correct? A. The MAC address is unknown and not in the forwarding table of the remote VTEP. B. The remote VTEP is not responding. C. VNI 100 is not configured on the remote VTEP. D. The MAC address is known but not reachable by the remote vtep.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two supported methods for exporting data when using the Junos telemetry interface? (Choose two.) A. using SNMP B. using gRPC C. using UDP D. using REST",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement is correct about a collapsed fabric EVPN-VXLAN architecture? A. Fully meshed back-to-back links are needed between the spine devices. B. Border gateway functions occur on border leaf devices. C. It supports multiple vendors in the fabric as long as all the spine devices are Juniper devices deployed with L2 VTEPs. D. Using Virtual Chassis at the leaf layer increases resiliency.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. The exhibit shows the truncated output of the show evpn database command. Given this output, which two statements are correct about the host with MAC address 40:00:dc:01:00:04? (Choose two.) A. The host is originating from an ESI LAG. B. The host is located on VNI 10002. C. The host is assigned IP address 10.4.4.5. D. The host is originating from irb.300.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are asked to build redundant gateways in your EVPN-VXLAN environment, but you must conserve address space because these gateways must span across seven PEs. What should you implement on the PEs to satisfy these requirements? A. Use IRB interfaces with the same IP and MAC address. B. Use IRB interfaces with the same IP address and different MAC addresses. C. Use IRB interfaces with different IP addresses and the same VGA. D. Use IRB interfaces with the same IP and VGA.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You manage an IP fabric with an EVPN-VXLAN overlay. You have multiple tenants separated using multiple unique VRF instances. You want to determine the routing information that belongs in each routing instance’s routing table. In this scenario, which property is used for this purpose? A. the VRF target community. B. the route distinguisher value C. the routing instance type D. the VRF table label",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. Referring to the exhibit, why is the active source field blank for the entry that uses the 00:0c:29:e8:b7:39 MAC address? A. The host for this entry is locally connected to leaf1. B. The ARP lookup for this host has failed. C. The EVPN route for this host does not have a valid next hop. D. This entry is associated with a multicast EVPN route.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. Referring to the exhibit, data center DC1 has two pods in the same broadcast domain. You want to forward multicast traffic to only one host that is interested in receiving the multicast traffic. In this scenario, which EVPN route type would be required to accomplish this task? A. Type 6 B. Type 8 C. Type 7 D. Type 5",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You implement a MAC-VRF routing instance with a VLAN-aware service type configured with multiple VLAN IDs. Which statement is correct about this implementation? A. All VLANs will use the same VNI. B. All VLANs will use the same EVI. C. All VLANs will use the same bridge table. D. All VLANs will use the same broadcast domain.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. You want to enable the border leaf device to send Type 5 routes of local networks to the border leaf device in another data center. What must be changed to the configuration shown in the exhibit to satisfy this requirement? A. Add a VLAN configuration with an l3-interface to the tenant1 routing instance. B. Move vrf-target target: 65000:1 to the evpn hierarchy. C. Change :5001 in the route-distinguisher to :10010. D. Add encapsulation vxlan to the evpn hierarchy.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two requirements are needed to facilitate over-the-top DCI? (Choose two.) A. All leaf VTEPs in each network must be reachable. B. All spine loopbacks in each network must be reachable. C. EVPN route-types must be advertised to all spine devices. D. EVPN route-types must be advertised to all leaf devices.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You want to provide a DCI that keeps each data center routing domain isolated, while also supporting translation of VNIs. Which DCI scheme allows these features? A. MPLS DCI label exchange B. over the top (OTT) with VNI translation enabled C. VXLAN stitching D. over the top (OTT) with proxy gateways",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Click the Exhibit button. You are troubleshooting a DCI connection to another data center. The BGP session to the provider is established, but the session to Border-Leaf-2 is not established. Referring to the exhibit, which configuration change should be made to solve this problem? A. delete protocols bgp group UNDERLAY advertise-external B. set protocols bgp group PROVIDER export LOOPBACKS C. set protocols bgp group OVERLAY export LOOPBACKS D. delete protocols bgp group OVERLAY accept-remote-nexthop",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are implementing seamless stitching between two data centers and have a proposed configuration for a border leaf device. In this scenario, which two statements are correct? (Choose two.) A. The ESI must match in both data centers. B. The translation-vni must match in both data centers. C. The translation-vni must be different in each data center. D. The ESI must be different in each data center.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. Both DC and DC2 are using EVPN-VXLAN technology deployed using an ERB architecture. A server on the Red VLAN must communicate with a server on the Green VLAN. The Blue VLAN in DC and DC2 needs to be the same VLAN. Which statement is correct? A. An interconnect is required between four leaf devices in the services blocks; the Red VLAN and the Green VLAN must be stitched and the Blue VLAN must be stretched. B. An interconnect is required between the four SRX Series devices; the Blue VLAN must be stretched and a transit VNI must be added for the Red and Green VLANs. C. A lean super spine device must be added to DC and DC2; all VLANs must be stretched to the lean super spine device and the lean super spine devices must stitch all the VLANs together. D. The eight spine devices must be configured as border spine devices; a full mush interconnect must exist between all eight spine devices and the Blue VLAN must be stitched together.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three statements are correct about symmetric IRB routing with EVPN Type 2 routes? (Choose three.) A. An L3 interface (IRB) is required for each local VLAN. B. Symmetric routing requires MAC-VRF. C. Symmetric routing is less efficient than asymmetric routing. D. Symmetric routing supports the EVPN service VLAN bundle. E. Symmetric routing requires an extra transit VNI for each VRF.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. Connections between hosts connected to Leaf-1 and Leaf-2 are not working correctly. Referring to the exhibit, which two configuration changes are required to solve the problem? (Choose two.) A. Configure the set switch-options service-id 1 parameter on Leaf-2. B. Configure the set switch-options vrf-target target:65000:55 parameter on Leaf-2. C. Configure the set switch-options route-distinguisher 192.168.100.51:2 parameter on Leaf-1. D. Configure the set switch-options vtep-source-interface lo0.0 parameter on Leaf-1.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. Referring to the configuration shown in the exhibit, assume that there is no external router present and that the configuration is fabric-only. Which two statements are true about the example configuration? (Choose two.) A. Devices in irb.400 (vlan 400) and irb.800 (vlan 800) are able to communicate over the fabric. B. Devices in irb.400 (vlan 400) are not able to communicate directly with devices in routing instance Customer A. C. Devices in routing instance Customer A are able to communicate with devices in routing instance Customer B. D. VNI 10006 is assigned to vlan 800 (irb.800).",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are three actions available for MAC move limiting? (Choose three.) A. enable B. filter C. shutdown D. log E. drop",
+    "options": {},
+    "most_voted": "C"
+  }
+]
