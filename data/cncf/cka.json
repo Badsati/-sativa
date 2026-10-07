@@ -1,0 +1,117 @@
+[
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-2_1.jpg] Context You have been asked to create a new ClusterRole for a deployment pipeline and bind it to a specific ServiceAccount scoped to a specific namespace. Task Create a new ClusterRole named deployment-clusterrole, which only allows to create the following resource types: ✑ Deployment ✑ Stateful Set ✑ DaemonSet Create a new ServiceAccount named cicd-token in the existing namespace app-team1. Bind the new ClusterRole deployment-clusterrole to the new ServiceAccount cicd-token, limited to the namespace app-team1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-3_2.jpg] Task Set the node named ek8s-node-0 as unavailable and reschedule all the pods running on it.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-4_2.jpg] Task Given an existing Kubernetes cluster running version 1.22.1, upgrade all of the Kubernetes control plane and node components on the master node only to version 1.22.2. Be sure to drain the master node before upgrading it and uncordon it after the upgrade. [sampleXML/xmlfile-5_1.jpg] You are also expected to upgrade kubelet and kubectl on the master node. [sampleXML/xmlfile-6_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-9_1.jpg] Task First, create a snapshot of the existing etcd instance running at https://127.0.0.1:2379, saving the snapshot to /var/lib/backup/etcd-snapshot.db. [sampleXML/xmlfile-10_1.jpg] [sampleXML/xmlfile-10_2.jpg] Next, restore an existing, previous snapshot located at /var/lib/backup/etcd-snapshot-previous.db.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-12_1.jpg] Task Create a new NetworkPolicy named allow-port-from-namespace in the existing namespace fubar. Ensure that the new NetworkPolicy allows Pods in namespace internal to connect to port 9000 of Pods in namespace fubar. Further ensure that the new NetworkPolicy: ✑ does not allow access to Pods, which don't listen on port 9000 ✑ does not allow access from Pods, which are not in namespace internal",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-15_1.jpg] Task Reconfigure the existing deployment front-end and add a port specification named http exposing port 80/tcp of the existing container nginx. Create a new service named front-end-svc exposing the container port http. Configure the new service to also expose the individual Pods via a NodePort on the nodes on which they are scheduled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-17_2.jpg] Task Scale the deployment presentation to 3 pods.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-19_1.jpg] Task Schedule a pod as follows: ✑ Name: nginx-kusc00401 ✑ Image: nginx ✑ Node selector: disk=ssd",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-21_1.jpg] Task Check to see how many nodes are ready (not including nodes tainted NoSchedule) and write the number to /opt/KUSC00402/kusc00402.txt.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-22_1.jpg] Task Schedule a Pod as follows: ✑ Name: kucc8 ✑ App Containers: 2 ✑ Container Name/Images: - nginx - consul",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-25_1.jpg] Task Create a persistent volume with name app-data, of capacity 2Gi and access mode ReadOnlyMany. The type of volume is hostPath and its location is /srv/app- data.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-27_1.jpg] Task Monitor the logs of pod foo and: ✑ Extract log lines corresponding to error file-not-found ✑ Write them to /opt/KUTR00101/foo",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-29_1.jpg] Context An existing Pod needs to be integrated into the Kubernetes built-in logging architecture (e.g. kubectl logs). Adding a streaming sidecar container is a good and common way to accomplish this requirement. Task Add a sidecar container named sidecar, using the busybox image, to the existing Pod big-corp-app. The new sidecar container has to run the following command: [sampleXML/xmlfile-29_2.jpg] Use a Volume, mounted at /var/log, to make the log file big-corp-app.log available to the sidecar container. [sampleXML/xmlfile-30_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-33_1.jpg] Task From the pod label name=overloaded-cpu, find pods running high CPU workloads and write the name of the pod consuming most CPU to the file /opt/ KUTR00401/KUTR00401.txt (which already exists).",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-34_2.jpg] Task A Kubernetes worker node, named wk8s-node-0 is in state NotReady. Investigate why this is the case, and perform any appropriate steps to bring the node to a Ready state, ensuring that any changes are made permanent. [sampleXML/xmlfile-35_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-40_1.jpg] Task Create a new PersistentVolumeClaim: ✑ Name: pv-volume ✑ Class: csi-hostpath-sc ✑ Capacity: 10Mi Create a new Pod which mounts the PersistentVolumeClaim as a volume: ✑ Name: web-server ✑ Image: nginx ✑ Mount path: /usr/share/nginx/html Configure the new Pod to have ReadWriteOnce access on the volume. Finally, using kubectl edit or kubectl patch expand the PersistentVolumeClaim to a capacity of 70Mi and record that change.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION [sampleXML/xmlfile-45_1.jpg] Task Create a new nginx Ingress resource as follows: ✑ Name: pong ✑ Namespace: ing-internal ✑ Exposing service hello on path /hello using service port 5678 [sampleXML/xmlfile-45_5.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION Task Create a new nginx Ingress resource as follows: • Name: ping • Namespace: ing-internal • Exposing service hi on path /hi using service port 5678",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION Task Create a new NetworkPolicy named allow-port-from-namespace in the existing namespace echo. Ensure that the new NetworkPolicy allows Pods in namespace internal to connect to port 9200/tcp of Pods in namespace echo. Further ensure that the new NetworkPolicy: • does not allow access to Pods, which don't listen on port 9200/tcp • does not allow access from Pods, which are not in namespace internal",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION Task Schedule a Pod as follows: • Name: kucc1 • App Containers: 2 • Container Name/images: o redis o consul",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION Task Schedule a pod as follows: • Name: nginx-kusc00401 • Image: nginx • Node selector: disk=spinning",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION Task Scale the deployment guestbook to 5 pods.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION Task Create a persistent volume with name app-data, of capacity 2Gi and access mode ReadWriteOnce. The type of volume is hostPath and its location is /srv/app-data.",
+    "options": {},
+    "most_voted": ""
+  }
+]
