@@ -1,0 +1,567 @@
+[
+  {
+    "question": "What do you need on the Vault to support LDAP over SSL? A. CA Certificate(s) used to sign the External Directory certificate B. RECPRV.key C. a private key for the external directory D. self-signed Certificate(s) for the Vault",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are troubleshooting a PVWA slow response. Which log files should you analyze first? (Choose two.) A. ITALog.log B. web.config C. CyberArk.WebApplication.log D. CyberArk.WebConsole.log",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the easiest way to duplicate an existing platform? A. From PrivateArk, copy/paste the appropriate Policy.ini file; then rename it. B. From the PVWA, navigate to the platforms page, select an existing platform that is similar to the new target account platform and then click Duplicate; name the new platform. C. From PrivateArk, copy/paste the appropriate settings in PVConfiguration.xml; then update the policyName variable. D. From the PVWA, navigate to the platforms page, select an existing platform that is similar to the new target account platform, manually update the platform settings and click \"Save as\" INSTEAD of save to duplicate and rename the platform.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Match each key to its recommended storage location.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Due to corporate storage constraints, you have been asked to disable session monitoring and recording for 500 testing accounts used for your lab environment. How do you accomplish this? A. Master Policy>select Session Management>add Exceptions to the platform(s)>disable Session Monitoring and Recording policies B. Administration>Platform Management>select the platform(s)>disable Session Monitoring and Recording C. Polices>Access Control (Safes)>select the safe(s)>disable Session Monitoring and Recording policies D. Administration>Configuration Options>Options>select Privilege Session Management>disable Session Monitoring and Recording policies",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A user requested access to view a password secured by dual-control and is unsure who to contact to expedite the approval process. The Vault Admin has been asked to look at the account and identify who can approve their request. What is the correct location to identify users or groups who can approve? A. PVWA > Administration > Platform Configuration > Edit Platform > UI & Workflow > Dual Control > Approvers B. PVWA > Policies > Access Control (Safes) > Select the safe > Safe Members > Workflow > Authorize Password Requests C. PVWA > Account List > Edit > Show Advanced Settings > Dual Control > Direct Managers D. PrivateArk > Admin Tools > Users and Groups > Auditors (Group Membership)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What must you specify when configuring a discovery scan for UNIX? (Choose two.) A. Vault Administrator B. CPM Scanner C. root password for each machine D. list of machines to scan E. safe for discovered accounts",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "To change the safe where recordings are kept for a specific platform, which setting must you update in the platform configuration? A. SessionRecorderSafe B. SessionSafe C. RecordingsPath D. RecordingLocation",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which processes reduce the risk of credential theft? (Choose two.) A. require dual control password access approval B. require password change every X days C. enforce check-in/check-out exclusive access D. enforce one-time password access",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are onboarding 5,000 UNIX root accounts for rotation by the CPM. You discover that the CPM is unable to log in directly with the root account and will need to use a secondary account. How can this be configured to allow for password management using least privilege? A. Configure each CPM to use the correct logon account. B. Configure each CPM to use the correct reconcile account. C. Configure the UNIX platform to use the correct logon account. D. Configure the UNIX platform to use the correct reconcile account.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "DRAG DROP ADR Vault became active due to a failure of the primary Vault. Service on the primary Vault has now been restored. Arrange the steps to return the DR vault to its normal standby mode in the correct sequence.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which methods can you use to add a user directly to the Vault Admin Group? (Choose three.) A. REST API B. PrivateArk Client C. PACLI D. PVWA E. Active Directory F. Sailpoint",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Automatic Remediation is configurable for a PTA detection of a \"Suspected Credential Theft\"? A. Add to Pending B. Rotate Credentials C. Reconcile Credentials D. Disable Account",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which item is an option for PSM recording customization? A. Windows events text recorder with automatic play-back B. Windows events text recorder and universal keystrokes recording simultaneously C. Universal keystrokes text recorder with windows events text recorder disabled D. Custom audio recording for windows events",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "DRAG DROP Match the built-in Vault user with the correct definition.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You want to create a new onboarding rule. Where do you accomplish this? A. In PVWA, click Reports > Unmanaged Accounts > Rules B. In PVWA, click Options > Platform Management > Onboarding Rules C. In PrivateArk, click Tools > Onboarding Rules D. In PVWA, click Accounts > Onboarding Rules",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What does the Export Vault Data (EVD) utility do? A. exports data from the Vault to TXT or CSV files, or to MSSQL databases B. generates a backup file that can be used as a cold backup C. exports all passwords and imports them into another instance of CyberArk D. keeps two active vaults in sync",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When are external vault users and groups synchronized by default? A. They are synchronized once every 24 hours between 1 AM and 5 AM. B. They are synchronized once every 24 hours between 7 PM and 12 AM. C. They are synchronized every 2 hours. D. They are not synchronized according to a specific schedule.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You created a new safe and need to ensure the user group cannot see the password, but can connect through the PSM. Which safe permissions must you grant to the group? (Choose two.) A. List Accounts B. Use Accounts C. Access Safe without Confirmation D. Retrieve Files E. Confirm Request",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During a High Availability node switch you notice an error and the Cluster Vault Manager Utility fails back to the original node. Which log files should you check to investigate the cause of the issue? (Choose three.) A. CyberArk Webconsole.log B. VaultDB.log C. PM_Error.log D. ITALog.log E. ClusterVault.console.log F. logiccontainer.log",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which parameters can be used to harden the Credential Files (CredFiles) while using CreateCredFile Utility? (Choose three.) A. OS Username B. Current machine IP C. Current machine hostname D. Operating System Type (Linux/Windows/HP-UX) E. Vault IP Address F. Time Frame",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where can a user with the appropriate permissions generate a report? (Choose two.) A. PVWA > Reports B. PrivateArk Client C. Cluster Vault Manager D. PrivateArk Server Monitor E. PARClient",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Users are unable to launch Web Type Connection components from the PSM server. Your manager asked you to open the case with CyberArk Support. Which logs will be most useful for the CyberArk Support Team to debug the issue? (Choose three.) A. PSMConsole.log B. PSMDebug.log C. PSMTrace.log D. <Session_ID>.Component.log E. PMconsole.log F. ITALog.log",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have been asked to identify the up or down status of Vault Services. Which CyberArk utility can you use to accomplish this task? A. PrivateArk Central Administration Console B. PAS Reporter C. PrivateArk Remote Control Agent D. Syslog",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A new colleague created a directory mapping between the Active Directory groups and the Vault. Where can the newly Configured directory mapping be tested? A. Connect to the Active Directory and ensure the organizational unit exists. B. Connect to Sailpoint (or similar tool) to ensure the organizational unit is correctly named; log in to the PVWA with \"Administrator\" and confirm authentication succeeds. C. Search for members that exist only in the mapping group to grant them safe permissions through the PVWA. D. Connect to the PrivateArk Client with the Administrator Account to see if there is a user in the Vault Admin Group.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user needs to view recorded sessions through the PVWA. Without giving auditor access, which safes does a user need access to view PSM recordings? (Choose two.) A. Recordings safe B. Safe the account is in C. System safe D. PVWAConfiguration safe E. VaultInternal safe",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which file must be edited on the Vault to configure it to send data to PTA? A. dbparm.ini B. PARAgent.ini C. my.ini D. padr.ini",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You want to build a connector that connects to a website through the Web applications for PSM framework. Which default connector do you duplicate and modify? A. PSM-ChromeSample B. PSM-WebForm C. PSM-WebApp D. PSM-WebAppSample",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "DRAG DROP A new HTML5 Gateway has been deployed in your organization. From the PVWA, arrange the steps to configure a PSM host to use the HTML5 Gateway in the correct sequence.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When an account is unable to change its own password, how can you ensure that password reset with the reconcile account is performed each time instead of a change? A. Set the parameter RCAllowManualReconciliation to Yes. B. Set the parameter ChangePasswordinResetMade to Yes. C. Set the parameter IgnoreReconcileOnMissingAccount to No. D. Set the UnlockUserOnReconcile to Yes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a default CyberArk installation, which group must a user be a member of to view the \"reports\" page in PVWA? A. PVWAMonitor B. ReportUsers C. PVWAReports D. Operators",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your organization requires all passwords be rotated every 90 days. Where can you set this requirement? A. Master Policy B. Safe Templates C. PVWAConfig.xml D. Platform Configuration",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "According to CyberArk, which issues most commonly cause installed components to display as disconnected in the System Health Dashboard? (Choose two.) A. network instabilities/outages B. vault license expiry C. credential de-sync D. browser compatibility issues E. installed location file corruption",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where can reconcile and/or logon accounts be linked to an account? (Choose two.) A. account settings B. platform settings C. master policy D. safe settings E. service account settings",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are running a \"Privileged Accounts Inventory\" Report through the Reports page in PVWA on a specific safe. To show complete account inventory information, which permission/s are needed on that safe? A. List Accounts, View Safe Members B. Manage Safe Owners C. List Accounts, Access Safe without confirmation D. Manage Safe, View Audit",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which dependent accounts does the CPM support out-of-the-box? (Choose three.) A. Solaris Configuration file B. Windows Services C. Windows Scheduled Tasks D. Windows DCOM Applications E. Windows Registry F. Key Tab file",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A password compliance audit found: 1) One-time password access of 20 domain accounts that are members of Domain Admins group in Active Directory are not being enforced. 2) All the sessions of connecting to domain controllers are not being recorded by CyberArk PSM. What should you do to address these findings? A. Edit the Master Policy and add two policy exceptions: enable \"Enforce one-time password access\", enable \"Record and save session activity\". B. Edit safe properties and add two policy exceptions: enable \"Enforce one-time password access\", enable \"Record and save session activity\". C. Edit CPM Settings and add two policy exceptions: enable \"Enforce one-time password access\", enable \"Record and save session activity\". D. Contact the Windows Administrators and request them to add two policy exceptions at Active Directory Level: enable \"Enforce one-time password access\", enable \"Record and save session activity\".",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "If PTA is integrated with a supported SIEM solution, which detection becomes available? A. unmanaged privileged account B. privileged access to the Vault during irregular days C. riskySPN D. exposed credentials",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which change could CyberArk make to the REST API that could cause existing scripts to fail? A. adding optional parameters in the request B. adding additional REST methods C. removing parameters D. returning additional values in the response",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You created a new platform by duplicating the out-of-box Linux through the SSH platform. Without any change, which Text Recorder Type(s) will the new platform support? (Choose two.) A. SSH Text Recorder B. Universal Keystrokes Text Recorder C. Events Text Recorder D. SQL Text Recorder E. Telnet Commands Text Recorder",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are creating a Dual Control workflow for a team's safe. Which safe permissions must you grant to the Approvers group? A. List accounts, Authorize account request B. Retrieve accounts, Access Safe without confirmation C. Retrieve accounts, Authorize account request D. List accounts, Unlock accounts",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In addition to add accounts and update account contents, which additional permission on the safe is required to add a single account? A. Upload Accounts Properties B. Rename Accounts C. Update Account Properties D. Manage Safe",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You want to give a newly-created group rights to review security events under the Security pane. You also want to be able to update the status of these events. Where must you update the group to allow this? A. in the PTAAuthorizationGroups parameter, found in Administration > Options > PTA B. in the PTAAuthorizationGroups parameter, found in Administration > Options > General C. in the SecurityEventsAuthorizationGroups parameter, found in Administration > Security > Options D. in the SecurityEventsFeedAuthorizationGroups parameter, found in Administration > Options > General",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is required to manage loosely connected devices? A. PSM for SSH B. EPM C. PSM D. PTA",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your organization has a requirement to allow only one user to \"check out passwords\" and connect through the PSM securely. What needs to be configured in the Master policy to ensure this will happen? A. Enforce check-in/check-out exclusive access = active; Require privileged session monitoring and isolation = active B. Enforce check-in/check-out exclusive access = inactive; Require privileged session monitoring and isolation = inactive C. Enforce check-in/check-out exclusive access = inactive; Record and save session activity = active D. Enforce check-in/check-out exclusive access = active; Record and save session activity = inactive",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When should vault keys be rotated? A. when it is copied to file systems outside the vault B. annually C. whenever a CyberArk user leaves the organization D. when migrating to a new data center",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where can PTA be configured to send alerts? (Choose two.) A. SIEM B. Email C. Google Analytics D. EVD E. PAReplicate",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In your organization the \"click to connect\" button is not active by default. How can this feature be activated? A. Policies > Master Policy > Allow EPV transparent connections > Inactive B. Policies > Master Policy > Session Management > Require privileged session monitoring and isolation > Add Exception C. Policies > Master Policy > Allow EPV transparent connections > Active D. Policies > Master Policy > Password Management",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are the mandatory fields when onboarding from Pending Accounts? (Choose two.) A. Address B. Safe C. Account Description D. Platform E. CPM",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Match each permission to where it can be found.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which accounts can be selected for use in the Windows discovery process? (Choose two.) A. an account stored in the Vault B. an account specified by the user C. the Vault Administrator D. any user with Auditor membership E. the PasswordManager user",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are concerned about the Windows Domain password changes occurring during business hours. Which settings must be updated to ensure passwords are only rotated outside of business hours? A. In the platform policy Automatic Password Management > Password Change > ToHour & FromHour B. in the Master Policy Account Change Window > ToHour & From Hour C. Administration Settings CPM Settings > ToHour & FromHour D. On each individual account Edit > Advanced > ToHour & FromHour",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Privileged Access Management solution provides an out-of-the-box target platform to manage SSH keys, called UNIX Via SSH Keys. How are these keys managed? A. CyberArk stores Private keys in the Vault and updates Public keys on target systems. B. CyberArk stores Public keys in the Vault and updates Private keys on target systems. C. CyberArk does not store Public or Private keys and instead uses a reconcile account to create keys on demand. D. CyberArk stores both Private and Public keys and can update target systems with either key.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Active Directory User configured for Windows Discovery needs which permission(s) or membership? A. Member of Domain Admin Group B. Member of LDAP Admin Group C. Read and Write Permissions D. Read Only Permissions",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which command generates a full backup of the Vault? A. PAReplicate.exe Vault.ini /LogonFromFile user.ini /FullBackup B. PAPreBackup.exe C:\\PrivateArk\\Server\\Conf\\Vault.ini Backup/Asdf1234 /full C. PARestore.exe PADR ini /LogonFromFile vault.ini /FullBackup D. CAVaultManager.exe RecoverBackupFiles /BackupPoolName BkpSvr1",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have been asked to create an account group and assign three accounts which belong to a cluster. When you try to create a new group, you receive an unauthorized error; however, you are able to edit other aspects of the account properties. Which safe permission do you need to manage account groups? A. create folders B. specify next account content C. rename accounts D. manage safe",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You receive this error: \"Error in changepass to user domain\\user on domain server(\\domain.(winRc=5) Access is denied.\" Which could be the cause? A. The account does not have sufficient permissions to change its own password. B. The domain controller is unreachable. C. The password has been changed recently and minimum password age is preventing the change. D. The CPM service is disabled and will need to be restarted.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How do you create a cold storage backup? A. On the DR Vault, install PAReplicate according to the Installation guide, configure the logon ini file, and define the Schedule tasks for full and incremental backups. B. Install the Vault Backup utility on a different machine from the Enterprise Password Vault server and trigger the full backup. C. Configure the backup options in the PVWA. D. On the DR Vault, configure the cold storage backup path in TSParm.ini file.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where can you assign a Reconcile account? (Choose two.) A. in PVWA at the account level B. in PVWA in the platform configuration C. in the Master policy of the PVWA D. at the Safe level E. in the CPM settings",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You notice an authentication failure entry for the DR user in the ITALog. What is the correct process to fix this error? (Choose two.) A. PrivateArk Client > Tools > Administrative Tools > Users and Groups > DR User > Update > Authentication > Update Password. B. Create a new credential file, on the DR Vault, using the CreateCredFile utility and the newly set password. С. Create a new credential file, on the Primary Vault, using the CreateCredFile utility and the newly set password. D. PVWA > User Provisioning > Users and Groups > DR User > Update Password. E. PrivateArk Client > Tools > Administrative Tools > Users and Groups > PAReplicate User > Update > Authentication > Update Password.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Why is user \"EMEALevel2Support\" unable to change the password for user \"Operator\"? A. EMEALevel2Support’s hierarchy level is not the same or higher than Operator. B. EMEALevel2Support does not have the \"Manage Directory Mapping\" role. C. Operator can only be reset by the Master user. D. EMEALevel2Support does not have rights to reset passwords for other users.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "DRAG DROP Match each component to its respective Log File location.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is required to enable access over SSH to a Unix account through both PSM and PSMP? A. The platform must contain connection components for PSM-SSH and PSMP-SSH. B. PSM and PSMP must already have stored the SSH Fingerprint for the Unix host. C. The 'Enable PSMP' setting in the Unix platform must be set to Yes. D. A duplicate platform (Called ) with the PSMP settings must be created.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In the Private Ark client, how do you add an LDAP group to a CyberArk group? A. Select Update on the CyberArk group, and then click Add > LDAP Group. B. Select Update on the LDAP Group, and then click Add > LDAP Group. С. Select Member Of on the CyberArk group, and then click Add > LDAP Group. D. Select Member Of on the LDAP group, and then click Add > LDAP Group.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the minimum permissions to add multiple accounts from a file when using PVWA bulk-upload? (Choose three.) A. add accounts B. rename accounts C. update account content D. update account properties E. view safe members F. add safes",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct process to install a custom platform from the CyberArk Marketplace? A. Locate the custom platform in the Marketplace and click Import. B. Download the platform from the Marketplace and import it using the PVWA. C. Contact CyberArk Support for guidance on how to import the platform. D. Duplicate an existing platform and align the setting to match the platform from the Marketplace.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a rule using \"Privileged Session Analysis and Response\" in PTA, which session options are available to configure as responses to activities? A. Suspend, Terminate, None B. Suspend, Terminate, Lock Account C. Pause, Terminate, None D. Suspend, Terminate",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are configuring a Vault HA cluster. Which file should you check to confirm the correct drives have been assigned for the location of the Quorum and Safes data disks? A. ClusterVault.ini B. my.ini C. vault.ini D. DBParm.ini",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In the Private Ark client under the Tools menu > Administrative Tools > Users and Groups, which option do you use to update users’ Vault group memberships? A. Update > General tab B. Update > Authorizations tab C. Update > Member Of tab D. Update > Group tab",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where can you check that the LDAP binding is using TCP/636? A. in Active Directory under \"Users OU\" => \"User Properties\" => \"External Bindings\" => \"Port\" B. in PVWA, under \"LDAP Integration\" => \"LDAP\" => \"Directories\" => \" \" => \"Hosts\" => \"Host\" C. in PrivateArk Client, under \"Tools\" => \"Administrative Tools\" => \"Directory Mapping\" => \" \" D. From the PVWA, connect to the domain controller using Test-NetConnection on Port 636.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How much disk space do you need on a server to run a full replication with PAReplicate? A. 500 GB B. 1 TB C. same as disk size on Satellite Vault D. at least the same disk size as the Primary Vault",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement is correct concerning accounts that are discovered, but cannot be added to the Vault by an automated onboarding rule? A. They are added to the Pending Accounts list. B. They cannot be onboarded to the Password Vault. C. They must be uploaded using third party tools. D. They are not part of the Discovery Process.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have been asked to secure a set of shared accounts in CyberArk whose passwords will need to be used by end users. The account owner wants to be able to track who was using an account at any given moment. Which security configuration should you recommend? A. Configure one-time passwords for the appropriate platform in Master Policy. B. Configure shared account mode on the appropriate safe. C. Configure both one-time passwords and exclusive access for the appropriate platform in Master Policy. D. Configure object level access control on the appropriate safe.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which usage can be added as a service account platform? A. Kerberos Tokens B. IIS Application Pools C. PowerShell Libraries D. Loosely Connected Devices",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Match the Status of Services on a DR Vault to what is displayed when it is operating normally in Replication mode.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What does the minvalidity parameter on a platform policy determine? A. time between a password retrieval and the account becoming eligible for a password change B. timeout for users signed into the PVWA as configured in the global settings C. minimum amount of time that Just In Time access is valid D. time in minutes before an empty safe will be automatically deleted",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are logging into CyberArk as the Master user to recover an orphaned safe. Which items are required to log in as Master? A. Master CD, Master Password, console access to the Vault server, Private Ark Client B. Operator CD, Master Password, console access to the PVWA server, PVWA access C. Operator CD, Master Password, console access to the Vault server, Recover.exe D. Master CD, Master Password, console access to the PVWA server, Recover.exe",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You want to generate a license capacity report. Which tool accomplishes this? A. Password Vault Web Access B. PrivateArk Client C. DiagnoseDB Report D. RestAPI",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Match each automatic remediation to the correct PTA security event.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A newly created platform allows users to access a Linux endpoint. The option to connect through the PSM is unavailable. Which piece of the platform is missing? A. PSM-SSH Connection Component B. UnixPrompts.ini C. UnixProcess.ini D. PSM-RDP Connection Component",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have been asked to turn off the time access restrictions for a safe. Where is this setting found? A. PrivateArk Client B. RestAPI C. PVWA D. Vault",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are creating a shared safe for the help desk. What must be considered regarding the naming convention? A. Ensure the naming convention does not exceed 28 characters. B. Combine environments, owners and platforms to minimize the total number of safes created. C. Safe owners should determine the safe name to enable them to easily remember it. D. The word \"Safe\" cannot be used.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "To manage automated onboarding rules, a CyberArk user must be a member of which group? A. Vault Admins B. PasswordManagers C. Auditors D. Administrators",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In PVWA, you are attempting to play a recording made of a session by user jsmith, but there is no option to \"Fast Forward\" within the video. It plays and only allows you to skip between commands instead. You are also unable to download the video. What could be the cause? A. Recording is of a PSM for SSH session. B. The browser you are using is out of date and needs an update to be supported. C. You do not have the \"View Audit\" permission on the safe where the account is stored. D. You need to update the recorder settings in the platform to enable screen capture every 10000 ms or less.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You need to enable the PSM for all platforms. Where do you perform this task? A. Platform Management > (Platform) > UI & Workflows B. Master Policy > Session Management C. Master Policy > Privileged Access Workflows D. Administration > Options > Connection Components",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP You have been asked to delegate the rights to unlock users to Tier 1 support. The Tier 1 support team already has an LDAP group for its members. Arrange the steps to do this in the correct sequence.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which master policy settings ensure non-repudiation? A. Require password verification every X days and enforce one-time password access. B. Enforce check-in/check-out exclusive access and enforce one-time password access. C. Allow EPV transparent connections ('Click to connect') and enforce check-in/check-out exclusive access. D. Allow EPV transparent connections ('Click to connect') and enforce one-time password access.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which built-in report from the reports page in PVWA displays the number of days until a password is due to expire? A. Privileged Accounts Inventory B. Privileged Accounts Compliance Status C. Activity Log D. Privileged Accounts CPM Status",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What can you do to ensure each component server is operational? A. Logon to PVWA with v10 UI, navigate to Healthcheck, and validate each component server is connected to the Vault. B. Ping each component server to ensure connectivity. C. Use the PrivateArk client to connect to the Vault server and validate all the services are running. D. Install the Vault Server interface on a remote machine to avoid interactive logon to the Vault OS and review the ITALog.log through the Vault Server interface.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "To use PSM connections while in the PVWA, what are the minimum safe permissions a user or group will need? A. List Accounts, Use Accounts B. List Accounts, Use Accounts, Retrieve Accounts C. Use Accounts D. List Accounts, Use Accounts, Retrieve Accounts, Access Safe without confirmation",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are onboarding an account that is not supported out of the box. What should you do first to obtain a platform to import? A. Create a service ticket in the customer portal explaining the requirements of the custom platform. B. Search common community portals like stackoverflow, reddit, github for an existing platform. C. From the platforms page, uncheck the \"Hide non-supported platforms\" checkbox and see if a platform meeting your needs appears. D. Visit the CyberArk marketplace and search for a platform that meets your needs.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Before failing back to the production infrastructure after a DR exercise, what must you do to maintain audit history during the DR event? A. Ensure that the Production Instance replicates changes that occurred from the Disaster Recovery Instance. B. Briefly stop and start the Disaster Recovery Instance before attempting to fail components back to the Production Instance. C. Stop the CPM services before starting the production server. D. Perform an IIS Reset on all PVWA servers.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which configuration file is used by the CPM scanner when scanning UNIX/Linux devices? A. UnixPrompts.ini B. plink.exe C. dbparm.ini D. UnixScanner.ini",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which setting in the Master Policy controls whether PSM is enabled and sessions will be recorded? A. Require privileged session monitoring and isolation = inactive; Record and save session activity = active B. Require privileged session monitoring and isolation = inactive; Record and save session activity = inactive C. Require privileged session monitoring and isolation = active; Record and save session activity = active D. Require privileged session monitoring and isolation = active; Record and save session activity = inactive",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You have been given the requirement that certain accounts cannot have their passwords updated during business hours. How can you set up a configuration to meet this requirement? A. Change settings on the CPM configuration safe so that access is permitted after business hours only. B. Update the password change parameters of the platform to match the permitted time frame. C. Disable automatic CPM management for all accounts that are assigned to this platform. D. Add an exception to the Master Policy to allow the action for this platform during the permitted time.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which PTA sensors are required to detect suspected credential theft? (Choose two.) A. Logs B. Vault Logs C. PSM Logs D. CPM Logs E. EPM",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Vault authorization does a user need to have assigned to able to generate the \"Entitlement Report\" from the reports page in PVWA? (Choose two.) A. Manage Users B. Audit Users C. Read Activity D. View Entitlements E. List Accounts",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When the CPM connects to a database, which interface is most commonly used? A. Kerberos B. ODBC C. VBScript D. Sybase",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Which authorizations are required in a recording safe to allow a group to view recordings?",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true about setting the reconcile account at the platform level? A. This is the only way to enable automatic reconciliation of account passwords. B. CPM performance will be improved when the reconcile account is set at the platform level. C. A rule can be used to specify the reconcile account dynamically or a specific reconcile account can be selected. D. This configuration prevents the association from becoming broken if the reconcile account is moved to a different safe.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are configuring CyberArk to use HTML5 gateways exclusively for PSM connections. In the PVWA, where do you set DefaultConnectionMethod to HTML5? A. Options > Privileged Session Management UI B. Options > Privileged Session Management C. Options > Privileged Session Management Defaults D. Options > Privileged Session Management Interface",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A recently-hired colleague onboarded five new Local Accounts that are used for five standalone Windows Servers. After attempting to connect to the servers from PVWA, the colleague noticed that the \"Connect\" button was greyed out for all five new accounts. What can you do to help your colleague resolve this issue? (Choose two.) A. Verify that the address field is populated with an IP or FQDN of each server. B. Verify that the correct PSM connection component appears within account platform settings. C. Verify that the address field is blank and that the correct PSM connection component appears within account platform settings. D. Notify the Windows Team that created the new accounts that the CyberArk PAM solution is not designed to manage local accounts on Windows Servers. E. Verify that the \"Disable automatic management for this account\" setting for each account is not enabled.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement about the Master Policy best describes the differences between one-time password and exclusive access functionality? A. Exclusive access means that only a specific group of users may use the account. After an account on a one-time password platform is used, the account is deleted from the safe automatically. B. Exclusive access locks the account indefinitely. One-time password can be used replace invalid account passwords. C. Exclusive access is enabled by default in the Master Policy. One-time password should only be enabled for emergencies. D. Exclusive access allows only one person to check-out an account at a time. One-time password schedules an account for a password change after the MinValidityPeriod period expires.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When onboarding multiple accounts from the Pending Accounts list, which associated setting must be the same across the selected accounts? A. Platform B. Connection Component C. CPM D. Vault",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which CyberArk utility allows you to create lists of Master Policy Settings, owners and safes for output to text files or MSSQL databases? A. Export Vault Data B. Export Vault Information C. PrivateArk Client D. Privileged Threat Analytics",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which tools can you use to identify the machines and accounts that create the highest risk and are exposed to lateral movement? (Choose two.) A. Accounts Discovery Feed B. CyberArk DNA Report C. REST API Scripts D. CyberArk DNA Map E. Get-LocalUser Powershell cmdlet",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are adding a new application in the Remote Access portal. Which authentication methods can you use to authenticate users to the PVWA? (Choose two.) A. Password B. OpenID C. Certificate D. SAML E. OTP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to identity the most powerful accounts in your organization to prepare for the initial PAM onboarding process. Which tools or features can be used to locate and onboard these accounts? (Choose two.) A. Discovery and Audit (DNA) B. CyberArk’s Command Line Interface (PACLI) C. Onboarding and Secure Account Feed D. Accounts Discovery E. Privilege Account Matrix (PAM) XLS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where can you find resources to learn more about the CyberArk Blueprint? (Choose two.) A. CyberArk Blueprint Webpage B. References within the Identity Security Platform C. Product Webinars D. CyberArk University Course",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are valid ways to invite vendors using the Remote Access portal? (Choose two.) A. Use the vendor invitation form. B. Call the vendor users and have them scan a QR code. C. Use the self-service invitation URL. D. Add the vendors in PVWA and send them their password. E. Contact CyberArk support to help invite the vendors.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company has multiple business units that have their own set of vendors. Each business unit has a distinct role to manage vendor access. The business units want to have full control over the invitation process for their set of vendors. After inviting the user to the Remote Access portal, which permissions should be delegated? A. Administrator B. User C. Vendor Manager D. Viewer",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are common ways that organizations leverage the CyberArk Blueprint for Identity Security Success? (Choose three.) A. to understand the identity attack chain B. to discover all digital identities C. to describe the explicit order of operations for Identity Security D. to assess an organization’s security posture E. to build an Identity Security roadmap F. to secure their human identities",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "DRAG DROP Match the connection component to the corresponding OS/Function.",
+    "options": {},
+    "most_voted": ""
+  }
+]
