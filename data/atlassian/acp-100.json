@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Which three factors should you consider when deciding between Jira Cloud and Jira Server? (Choose three.) A. the ability to integrate Jira with a cloud-based source repository (e.g. Bitbucket) B. the amount of time required for system administration C. the availability of a REST API D. the commercial apps you would like to use E. the ability to integrate with an external user directory (e.g. company LDAP directory) F. the number of workflows you will require",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You want to introduce Jira to your small non-profit organization. Since you are unsure of the optimal deployment option you have gathered some requirements: ✑ You need to manage a team of up to 15 employees. ✑ You need to be able to track a backlog of staff action items. ✑ You want to easily visualize the progress of ongoing work. The solution must require minimal administration since your organization only has a part-time IT volunteer. What solution is most appropriate for your organization? A. Jira Service Desk Cloud B. Jira Software Data Center C. Jira Service Desk Data Center D. Jira Core Server",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The marketing team has asked you to embed the trigger tab of an issue collector on several internal web pages and change its size, color, and text. They also want the ability to track which webpage finally generated the underlying feedback issue. You are not familiar with advanced issue collector configuration. Which type of developer should you contact for assistance? A. Groovy B. JavaScript C. Velocity D. Python E. SQL",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your Jira has 25,000 active users across the globe using 100 projects with over a million issues. Another administrator has made a change to a field configuration scheme and you now need to re-index Jira. What would be the impact of rebuilding the index in the foreground? A. Issues will take longer to display during the re-index. B. Database backups cannot be run until the re-indexing is complete. C. The configuration change will not be applied until re-indexing is complete. D. Searches using the field may show erroneous results. E. All users will be locked out of Jira until re-indexing completes.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The configuration details of an SMTP Mail Server of a Jira instance are shown below. The configuration hasn't been changed in the last 24 months. [sampleXML/xmlfile-5_1.png] Currently emails are no longer being sent and the failed notifications can be seen in the Mail Error Queue. What is the likely cause of the failure? A. Email volume has increased and the Timeout is too low. B. The SMTP password has expired. C. The user jira has no valid Jira license. D. The database and/or server disk is full. E. The Jira license has expired.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Jan asked you to create a new Select List custom field called Department for his project MCAS. You created the field in the morning. In the afternoon, Jan notes that his Jira dashboard is not showing the field correctly. He asks to help him troubleshoot. View the Exhibit to see Jan's entire dashboard. ✑ The first gadget shows 26 issues in the project by Status. ✑ The second gadget shows that there are three issues that have the new Department field set. The last gadget shows \"No Data Available\". The filter query for that gadget is \"project=MCAS and Department is empty.\" [sampleXML/xmlfile-6_3.png] [sampleXML/xmlfile-7_1.jpg] Why does Jan's gadget say \"No Data Available\"? A. The field is marked Optional in the Field Configuration. B. Jan does not have the proper Browse permissions. C. The field context on the Department field was not set to allow empty values. D. You created the field Department but did not re-index the MCAS project. E. The JQL query for the filter is not valid. F. There is issue security on the issues.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are moving a workflow from your staging Jira instance to production. On importing the workflow, Jira notifies you that the post-functions will not be imported. Staging Jira is on version 6.4 and production Jira is on version 6.3. Why did this happen? A. The apps installed on staging are not the same as on production. B. The production and staging instances are using different versions of Jira. C. You exported the workflow as XML instead of JWB. D. Custom post-functions are not included in workflow export.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have planned, tested, and performed a Jira upgrade. The upgrade appeared to be a success; however, after several hours of use, your users are reporting significant problems and you decide to roll back. Which two effects do you expect to see after the rollback? (Choose two.) A. Emails will automatically be sent out to tell people about the rollback. B. New issues entered between upgrade and rollback will be lost. C. The color scheme will be set back to default to indicate there was a rollback. D. Jira will go back to the same schemes as before the upgrade. E. Jira will need to be reconnected to other systems it was integrated with.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your user directories are configured as shown: [sampleXML/xmlfile-9_1.jpg] The Active Directory administrators have just started the process of copying all the users from the old Company B directory to Company A directory. During this process, the group membership is being changed to allow for more fine-grained security control. A large number of migrated users complain that they do not have the correct new group memberships. Which configuration change should you perform? A. Reorder the directories so Company A is before Company B. B. Enable the Crowd user directory. C. Reorder the directories so the Jira Internal Directory is listed first. D. Synchronize the Company A directory. E. Disable the Company A directory. F. Disable the Company B directory.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "After a recent upgrade to your Jira system, one of the apps your organization depends on is not working reliably. Which two methods can you use to debug and resolve this issue? (Choose two.) A. Ask the System Administrator for catalina.out logs and inspect for stack traces. B. Ask the System Administrator to enable the SQL log. C. Ask the System Administrator to set package com.atlassian to Trace logging level. D. Ask the System Administrator to add the app to the logger. E. Ask the System Administrator to set the logging level to FATAL on all package names, Under Logging & Profiling.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A team is complaining that their Jira project is slow to use. You are able to replicate the slow behavior by viewing and trying to edit one of their issues. Which logging option will help you or a system administrator to diagnose the problem? A. Use the Log Analyzer to get more information about the issue view process. B. Configure Jira to record and log the JavaScript execution from the browser console. C. Set the logging to DEBUG level on all packages causing activity for that issue. D. Enable profiling globally, so the logs can be inspected for anomalies when viewing the issue.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Max wants you to change the way the system fields Created or Updated are being displayed when viewing an issue. How can this be achieved? A. Adjust the Day Format in the Jira look and Feel configuration. B. Adjust the jira.date.time.picker.java.format in the advanced settings configuration. C. Adjust the jira.date.picker.java.format in the advanced settings configuration. D. Adjust the Complete Date/Time Format in the Jira Look and Feel configuration. E. Adjust the language and time zone preferences in Maxâ€™s user profile.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Three team members have left the company and their issues need to be re-assigned to various -users. All of their issues are in the Marketing project which uses the Default Notification Scheme. The scheme has never been updated. How do you inform the new assignees about their re-assigned issues? A. Add an announcement banner to the marketing project to inform team members. B. Perform a single bulk operation to mention all new assignees in a comment. C. Add an announcement banner to each new assigneeâ€™s dashboard. D. Perform bulk operations to re-assign the issues and notify the new assignees. E. Use the Send email feature to inform the individual new assignees.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which time tracking configuration can be controlled on a global basis for all projects in Jira? A. which users or groups have the ability to log work on issues B. whether time tracking fields are available on standard versus sub-task issue types C. the default time unit on estimates when users donâ€™t explicitly specify one D. which users have the ability to edit or delete their own or other usersâ€™ worklogs E. whether Original Estimate is required when creating issues",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A project manager wants to stay aware of the support requests that are being raised in his project. He wants to know if: ✑ the team is able to handle the number of issues that are being raised in the project ✑ there are team members who work on more than 2 issues at any given time ✑ there are sets of issues that need significantly more time to resolve when compared to others over time Which three gadgets will show him the information he needs? (Choose three.) A. Activity Stream B. Created vs. Resolved Chart C. Two Dimensional Filter Statistics D. Resolution Time E. Labels",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Managers want to ensure that every issue in Jira always has an assignee. Which change will definitely meet this requirement? A. Update post functions to set the assignee appropriately at each workflow transition. B. Set Default Assignee to Project Lead in every project. C. Use components for automatic assignment in every project. D. Make the assignee required on workflow transition screens. E. Make the assignee required through field configurations. F. Set the global option â€œAllow unassigned issuesâ€ to OFF.",
+    "options": {},
+    "most_voted": "F"
+  },
+  {
+    "question": "Your company will migrate to Jira. You plan to import with a CSV file. Which fields are required as CSV columns for your import? A. Project B. Project, Summary C. Summary D. Project, Issue Type E. Summary, Issue Type",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Sundar's development projects are falling behind. He wants to write a JQL query to find issues that meet all three of these criteria: 1. He is the project lead of the project or the project is DEV. 2. fixVersion had been set to 4.3 at some point but was later removed. 3. Issues were created in the first 15 days of this month. The Exhibit shows the JQL query he created. [sampleXML/xmlfile-14_1.jpg] Which statement about Sundar's query is true? A. The query will not return the right set of issues because the parentheses are wrong. B. The query will not return the right set of issues because lines 2 and 3 are wrong. C. The query will return the right set of issues, but it is inefficient. D. The query is well written and will return the right set of issues. E. The query is valid, but it will not run without a Jira Marketplace app. F. The query will not return the right set of issues because line 2 only is wrong.",
+    "options": {},
+    "most_voted": "F"
+  },
+  {
+    "question": "A team complains that many of their issues are in the Closed status, but do not have a resolution set, which causes problems with reporting. The project uses a single workflow. You want to set the resolution to Done on all existing issues in the Closed status. Which combination of workflow elements and a bulk operation will achieve this? A. ✑ A temporary transition and a trigger ✑ An Edit Issues bulk operation B. ✑ A temporary transition and a post function ✑ A Transition Issues bulk operation C. A screen and the Resolution field [sampleXML/xmlfile-14_6.png] ✑ A Move Issues bulk operation D. ✑ A screen and a custom field ✑ An Edit Issues bulk operation E. ✑ A temporary transition and a screen ✑ An Edit Issues bulk operation",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Tom has asked you why the numbers returned by his searches are not right. He shows you three JQL queries: [sampleXML/xmlfile-15_6.jpg] How can you fix this? A. Change the query to project = â€œCake Bakingâ€ and fixVersion ~ 1.1.0. B. Change the query to project = â€œCake Bakingâ€ and ( fixVersion is empty or fixVersion != 1.1.0 ). C. Rename the versions so they do not contain periods. D. Identify the missing issues and change the permissions so that everyone can see them. E. Change the query to project = â€œCake Bakingâ€ and fixVersion not in (1.1.0).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "One of the HR managers created a filter and shared the subscription with members of the hr-managers group. The filter contains the following valid JQL query: Manager = currentUser() AND Manager in membersOf(\"hr-managers\") Which issues will be included in the subscription? A. Only issues where the user who created the filter is listed in the Manager field. B. Only issues where the group hr-managers is listed in the Manager field. C. Only issues where the recipient of the email is listed in the Manager field. D. All issues where the user listed in the Manager field is a member of the hr-managers group. E. All issues that are assigned to any member of the hr-managers group.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Your marketing company wants to evaluate Jira and purchased a 10-user license. A frequently changing group of key stakeholders \"\" both internal employees and external customers \"\" will participate in the evaluation. If the evaluation is successful the company wants all 50 employees to start working with the tool. You have to manage the frequently changing group of stakeholders and need to make sure only the intended users participate in the evaluation. How should you meet these requirements? A. Create and manage the users for stakeholders manually in the internal directory. B. Connect Jira to your internal LDAP directory and whitelist the IPs of stakeholders. C. Enable public signup and CAPTCHA but limit account creation to stakeholders. D. Disable public signup and grant all project permissions to Group Anyone.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Some of your project owners would like to make their projects publicly accessible over the Internet. These projects will not require login. You could support this by allowing read-only anonymous access to the projects. Which two additional factors should you take into consideration when setting this up? (Choose two.) A. Anonymous users could see other usersâ€™ names. B. Anonymous users could export all issues from Jira. C. Licensed users might accidentally comment anonymously rather than logging in first. D. Internet search engines could index data. E. Anonymous users could find a full list of all your projects. F. Spam bots could add comments.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have been asked to take on the administration of a second Jira installation in your company. You were given the following information about user accounts: ✑ The company standard is to use Active Directory (AD) to provide user accounts. ✑ There are several Active Directory systems in use by different business units. ✑ The second Jira is not to be merged with your main Jira. ✑ The main Jira system is connected to Active Directory for user accounts. ✑ The second Jira is using internal user accounts, not Active Directory. ✑ People using the second Jira are using the same login ID as they would use in Active Directory. ✑ Your company would like to use Single Sign-on (SSO) but has not yet implemented it for either Jira system. Which authentication method should you recommend? A. Change the new Jira to use your main Jiraâ€™s directory services, as that is already reading your Active Directory services. B. Set up a Crowd server to get the user lists from all internal directories and AD, and use AD directly for the password checking. C. Set up a Crowd server to pull in all the AD services, and plan to migrate internal users. D. Change the new Jira to link directly to the required AD servers.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Beehive Bank wants to implement Jira with the following requirements: ✑ Enforce the strictest possible security measures for user logins. ✑ Allow external users to create their own user logins. ✑ Use the Jira Internal Directory. Which two login security options can you offer them? (Choose two.) A. Set Login Mode to Secure. B. Require character variety for the user name. C. Require that a password is not too similar to another userâ€™s password. D. Require a certain length for passwords. E. Require that a password is not too similar to the user name or email address.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have two issue types in your HR project: Hire and Fire. Which two requirements can be met through changes only to field configurations? (Choose two.) A. For the Fire issue type, the Description field should have a default value of â€œTerminationâ€. B. For both issue types, the Employee Name custom field must be required upon creation and must never be blank. C. For the Hire issue type, the field description for the Due Date field should read â€œFirst day of workâ€. D. For both issue types, the Resolution should be set once the issues are being resolved. E. For both issue types, the Assignee field should be hidden when creating but not when viewing an issue. F. For the Fire issue type, the default value for the Priority field should be Blocker.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your HR project has two issue types: ✑ Join ✑ Leave Both issue types share a field configuration, screens and the workflow. You currently use the Due Date system field to indicate when someone actually joins or leaves. New HR staff members complain that using the Due Date field is not very intuitive. How can you help your HR team? A. ✑ Create individual Join Date and Leave Date custom fields to replace the Due Date field. ✑ Create separate screens for each issue operation and issue type. ✑ Delete the Due Date field. B. ✑ Rename the Due Date field to Join Date and create a separate Leave Date custom field. ✑ Create new screens for the Leave issue type and replace the Due Date field with the newly created field. ✑ Migrate existing field values to the new Leave Date field. C. ✑ Create individual field contexts for each issue type. ✑ Label the Due Date field as Join Date and Leave Date in their respective contexts. ✑ Associate each context with its matching issue type. D. Create individual Join Date and Leave Date custom fields to replace the Due Date field. [sampleXML/xmlfile-19_12.png] ✑ Appropriately migrate existing data from the Due Date field to the new custom fields. ✑ Remove the Due Date field from all project screens.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You install a new Jira instance using only the default configurations. A team approaches you to set up a project with the following specifications: ✑ There are four standard issue types and three sub-task issue types. ✑ The first sub-task will need a new screen for the Edit operation. ✑ The second sub-task will need new screens for both the Create and Edit operations. ✑ Everything else should use the default configurations. How many new Screen Schemes do you need to create? A. 7 B. 4 C. 1 D. 3 E. 2",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "You set up a new project for a team. Soon afterward, users report that a field is missing from one of their screens. You check the screen configuration in the administration panel and you see that the field should be present. Why can't the users see the field? A. The changes to the screen were not published. B. The issue operation wasnâ€™t mapped to a screen. C. The field context does not include the project and/or issue type. D. The users donâ€™t have permission to view that field.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A dashboard displays an Issue Statistics gadget as shown. [sampleXML/xmlfile-21_1.jpg] The dashboard owner wants to change the order of the statuses shown in the gadget to appear as follows. 1. To Do 2. In Progress 3. Ready For QA 4. Blocked 5. Rejected 6. Done Which action will permanently arrange the statuses into the required order? A. Reorder the statues on the Status administration page. B. Change the Sort Direction option in the gadget to Ascending. C. Change the category of the statuses. D. Add numbers to the status names to allow them to be sorted in numerical order. E. Change the gadget Sort By field to Total.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A team of technical writers works in the WRITE project. The project uses a single, shared workflow. To better match the team's way of working they request a workflow change: ✑ The initial status of their project's workflow should be changed from Open to Awaiting Inspiration. You navigate to the Workflows section of the administration, update the Name of the status in the workflow designer and publish your change. What are two implications of this change? (Choose two.) A. The workflow scheme for the WRITE project will need to be published before the change takes effect. B. Awaiting Inspiration will be created as a new Status in Jira. C. Transitions to the Awaiting Inspiration status will fail until the post functions for those transitions are updated. D. Filters and Gadgets that referred to the Open status by name will be broken. E. The Open Status will be changed to Awaiting Inspiration in all workflows using that status.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are tidying up a Jira project and find that the following two issue types are being used. ✑ Task ✑ Assignment They seem very similar. If both are not needed, you could convert all existing Assignment issues in the project into Task issues and remove the Assignment issue type from the project. Which project configurations would you check to see if it is necessary to keep the two as separate issue types instead? (Choose three.) A. Issue Security Levels B. Field Configurations C. Components D. Permissions E. Workflows F. Field Contexts",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A team requests updates to the behavior of some fields in the project. The project uses three issue types: Problem, Incident, and Change. The desired configuration is shown below: [sampleXML/xmlfile-23_3.jpg] Which configuration update will meet the requirements? A. Configure individual screens for each issue type and update the priority scheme. B. Configure individual field configuration for each custom field and update the priority scheme. C. Create unique field contexts for each issue type for the desired fields. D. Configure individual field configurations for each issue type. E. Configure individual field contexts for each custom field and update the priority scheme. F. Configure individual screens for any combination of issue operation and issue type.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An issue is showing the Time Tracking section as follows: [sampleXML/xmlfile-24_1.jpg] There is clearly an hour's difference between the Original and Remaining estimates. Identify two possible reasons Logged Time is showing as Not Specified. (Choose two.) A. Time tracking was not enabled when the work was logged. B. The remaining estimate was adjusted without logging any effort. C. The hourâ€™s work was logged via a REST call by the user. D. The work log would have exceeded the projectâ€™s time allowance, so it cannot be counted. E. The original estimate was increased. F. You do not have view permission to see the logged work.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In your organization, a cobbler leads a Jira project with two issue types: ✑ Shoe Order ✑ Repair The cobbler has given you the following requirements: 1. All screens should use the Summary, Description, Due Date, and Components fields. 2. Both issue types need to use a new custom field called Shoe Type on all screens. 3. The Priority field should appear on all screens for Repair issues. 4. Users should not be able to set the Priority for Shoe Orders during creation, but the Priority field still needs to be editable and viewable after creation. Identify the minimum number of screens and screen schemes that will meet the requirements. A. two screens and one screen scheme B. one screen and one screen scheme C. six screens and one screen scheme D. six screens and two screen schemes E. three screens and one screen scheme F. two screens and two screen schemes",
+    "options": {},
+    "most_voted": "F"
+  },
+  {
+    "question": "One of your teams has noticed a spelling mistake in the name of an issue type. What should you do before correcting the name of the issue type? A. Warn users that dashboard gadgets that refer to the issue type in their configuration will need to be updated with the corrected name. B. Warn users that saved filters using the issue type will not be able to find the issue type after the change. C. Update the issue type schemes to refer to the new name. D. Update the workflow schemes for the issue type to use the new name.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A project lead wants to conduct historical trend analysis, but she is worried that older issues are being updated in a way that inhibits their comparison. She wants to take a snapshot of the data in her project at regular intervals so she can compare different periods. Which tool will help meet this need? A. Backup Jira data B. Project Export C. JQL Results Snapshot D. Issue Filter Export to CSV",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A project has hundreds of old completed issues which are cluttering up the reports, searches, and dashboards. The project administrator has the following requirements: 1. He wants to hide the old issues. 2. He wants to unhide issues, if needed. 3. He wants to control whether he himself sees the hidden issues, so they do not clutter his own daily work. Which three configurations, when combined, will meet these requirements? (Choose three.) A. security level B. project permission C. workflow condition D. project role E. global permission F. group",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are setting up a new Jira instance and three new projects with shared configuration. There are many managers at the company and you need to structure their permissions accordingly. Which requirement can only be met with a Managers project role? A. Different managers need to delete issues in different projects. B. Only some managers must be selectable from a custom field, depending on the project. C. Managers need to be able to create shared dashboards. D. Only managers who are project leads can see the restricted security level in their own projects. E. Any manager should be able to view the development tools in any project.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Contractors will begin using your Jira instance. You receive the following requirements for them: [sampleXML/xmlfile-28_1.png] How should you manage global permissions for the contractors user group? A. Grant them the Browse Users permission. B. Grant them the Bulk Change permission. C. Grant them the Jira System Administrators permission. D. Grant them the Manage Group Filter Subscriptions permission. E. Grant them the Create Shared Objects permission.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A medical clinic has decided to use Jira. Their project will allow patients to file medical complaints. The requirements for the project are as follows: ✑ Members of the group (jira-patients) must be able to see only their own complaints. ✑ Members of the group (medical-board) must be able to see all complaints. Based only on these two requirements, which two configurations used together will satisfy them? (Choose two.) A. Implement an issue security scheme with three levels: (#1) Group (jira-patients), (#2) Reporter, and (#3) Group (medical-board). B. Implement an issue security scheme with two levels: (#1) Reporter and (#2) Group (medical-board). C. In the permission scheme, add Reporter and Group (anonymous) to Browse Projects and Create Issues. D. In the permission scheme, add Group (jira-patients) and Group (medical-board) to Browse Projects and Create Issues permissions. E. Implement an issue security scheme with one level: Reporter and Group (medical-board).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Many projects share the same permission scheme and workflow scheme. The requirements in those projects are: ✑ Only Translators should be able to use the Translation workflow transition. ✑ The same team of Translators work across all the projects. How should Translators be configured to meet these requirements? A. As a group B. As single users C. As a Group custom field D. As a User custom field E. As a project role",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Martin has Create Attachments permission in a software project, but he cannot attach anything to issues in Approved status. What is the problem? A. There is a workflow step property configured. B. He is not a member of a security level. C. There is a workflow condition configured. D. The Attachment field is missing from the screen for that issue type. E. He does not have the correct project permission.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The OPS team will start using Jira to track and approve Change Requests in the OPS project. They have these workflow requirements: ✑ Requests can be approved by two individuals only. ✑ The approvers will change weekly. Jira is connected to your corporate LDAP with Read-Only permissions. What is the best way to structure permissions for the OPS project to support these workflow requirements? A. Create the group it-approvers in the Jira Internal Directory and have the approvers maintain it. B. Create a new project role for approvers and have the Project Role (Administrators) maintain it. C. Request the group it-approvers to be created in the corporate LDAP directory and add it to the Approve Issues permission for the project. D. Request the group it-approvers to be created in the corporate LDAP directory and have the Project Role (Administrators) maintain it in Jira. E. Add individual names to Project Role (Administrators) and add this role to the Approve Issues permission for the project.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your business owners have told you to use roles as much as possible in Jira because it allows them to do things that groups cannot do. When considering this, you need to be aware of those actions in Jira that require the use of groups rather than roles. Identify two actions in Jira that require the use of groups. (Choose two.) A. allowing users to use transitions in all the workflows B. granting Project Administration rights C. granting permissions to teams coming from Active Directory D. defining Issue Security levels E. granting system administrative rights F. controlling who can perform Bulk Change in a project",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Jon is a new Jira user. He reports that adding comments to Jira isn't working as expected. When he attempts to @mention a user, no list of available users is provided. Because he does not know everyone's username, he is unable to target comments to specific users. What is the cause of this problem? A. Jon does not have the Browse Users global permission. B. Jon does not have the View Users project permission. C. Jon does not have the correct field security permission for the Comment field. D. The field configuration for the Comment field is not set to Autocomplete Renderer.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You needed to replace the legacy Jira group all-staff-europe with a newly created all-staff-global group. You created the new group and you migrated all users to the new group. Then you deleted the legacy group. Which four problems might users report after the change? (Choose four.) A. Filter subscriptions send out errors instead of issues statistics. B. Workflow transitions are hidden from certain users. C. Users are not able to perform bulk change operations. D. Users are not able to log in to Jira anymore. E. Comments that were restricted to the legacy group are lost. F. Filter results return an incorrect number of issues.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Critical production bugs in a Jira Software project are hidden with an issue security scheme that has a single security level. Only project administrators are listed in the security level and granted the Set Issue Security permission. A new requirement states that a few other Jira Core users, who have Browse Projects permission, should be able to see the hidden issues. These users will vary per issue and be selected from across various groups. What needs to be added to the security level? A. Application access B. User custom field value C. Group custom field value D. Project role E. Single Users F. Group",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your business users want to know more about what is happening with the issues raised by their business unit. They gave you a list of situations in which they want to get emails, so you know which parts of the shared notification scheme they want to be added to. You consult with the project owner. He doesn't want any changes to the emails that go to developers and testers. The project owner approves of the business users getting the emails, but he would like to retain control of who gets emails for his project. How can you satisfy these requests? A. Place the business users in a group and add that group to the events in the notification scheme. B. Modify the events in the workflow so they send the emails to the business users. C. Create a role for business users and add that role to the events in the notification scheme. D. Add the business users as Watchers on the issues.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The HR team approaches you with new requirements they want you to implement: ✑ Allow users to send requests into Jira by emailing \" [email protected] .\" ✑ Have those emails automatically turned into \"Holiday Requests\" in the HR project. You have already set up an Incoming Mail Server and a mail handler to \"Create a new issue or add a comment to an existing issue.\" Which three additional options can you set with this mail configuration? (Choose three.) A. Create new Jira users based on the From address. B. Set Assignee and Watchers. C. Set default Reporter. D. Set a custom field. E. Set Environment.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are designing a complex new workflow. Two of the requirements are listed below: 1. Any user should be able to trigger the Put On Hold transition from any status in the workflow. 2. Only users with the Close Issues permission should be able to Close the issue at any point in the flow. Based only on these requirements, which two workflow elements should you use? (Choose two.) A. Global Transitions B. Conditions C. Triggers D. Validators E. Common Transitions",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A project is using the Approval workflow shown. [sampleXML/xmlfile-37_1.jpg] The project lead has communicated the following change requests: ✑ It should be possible to transition issues into the Awaiting Approval status from any other status apart from the Approved status. ✑ Different transition screens will be needed for each transition into the Awaiting Approval status. How do you configure the workflow to satisfy these requirements? A. ✑ Create a global transition to the Awaiting Approval status. ✑ Create multiple appropriate transition screens and associate it with the global transition. B. ✑ Reuse the Request approval transition between the Open and Awaiting Approval status. ✑ Create an appropriate transition screen and associate it with the transition. C. ✑ Create a transition from the Open to the Awaiting Approval status. ✑ Create appropriate transition screens and associate them with the individual transitions into the Awaiting Approval status. D. ✑ Create a global transition to the Awaiting Approval status. ✑ Create an appropriate transition screen and associate it with the global transition. E. ✑ Create a transition from the Open to the Awaiting Approval status. ✑ Reuse the existing transition screen from the Request approval transition.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You receive workflow configuration requirements for issues in the Closed status. They are as follows: ✑ Users must NOT be able to edit issues in this status. ✑ Jira administrators must be able to edit issues in this status. ✑ Only users in the release-managers group should see the transition to the Re-opened status Which combination of two workflow configuration items should you use to meet these requirements? (Choose two.) A. Properties B. Post functions C. Conditions D. Validators E. Triggers",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You need to make the following changes to an existing workflow: 1. A transition should only be available if code has been committed against the issue. 2. Only users in a specific project role can see a transition 3. Issues must not be commented on in a specific status. 4. The resolution should be set automatically. 5. A transition should send out a specific notification email. Which workflow elements will you use to implement the desired changes? A. 1 condition, 1 validator, 2 post functions, 1 property B. 2 conditions, 2 validators, 1 property C. 1 condition, 1 validator, 1 post function, 2 properties D. 2 validators, 2 post functions, 1 property E. 2 conditions, 2 post functions, 1 property",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A user says she can see the Ready for Testing transition but cannot successfully execute it. Why can't the user execute this transition? [sampleXML/xmlfile-39_1.jpg] A. The status property of Code Review prevents the Developer role from executing the transition. B. A Condition on the transition requires the user to be in the Developer role. C. A Validator on the workflow transition requires the user to be in the Developer role. D. The status property of In Progress prevents the Developer role from executing the transition.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your Jira support project has allowed anonymous customers to create issues through an incoming mail handler for some time. In order to enhance efficiency, your project manager has inquired about the possibility of allowing anonymous users to also create issues using Jira instead of the mail handler, but without allowing further access or need of a license. Which two actions will let you meet the requirement? (Choose two.) A. Create an issue security scheme with a default level allowing only licensed Jira users to access issues. B. Ensure that the Jira mode in the general configuration has been set to Public. C. Add Group Anyone to the Browse Projects permission in the projectâ€™s permission scheme. D. Add Group Anyone to the Create Issues permission in the projectâ€™s permission scheme. E. Ensure that the Reporter is not required in the projectâ€™s field configuration scheme.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Release Manager is having problems caused by inconsistent naming of versions across projects. He would like to use a more consistent naming convention. The developers do not know the naming convention, and are happy to let the Release Manager rename versions when they get the names wrong. The projects all use the Default Permission Scheme. Which action would allow the Release Manager to update the versions in the projects? A. Change the Manage Versions permission in the permission scheme. B. Change the workflow to allow the Release Manager to update versions. C. Add the Release Manager to the Administrators project role. D. Add the Release Manager to the developer role.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "One of your project owners is struggling with reporting and sorting issues in her project. Currently, the classification of the issues is no more useful than a list of things that need to be done. The project owners would like to establish the following: ✑ more classification of issues, so issues can belong to several classes ✑ the ability to edit classes ✑ a way to link a class to an owner How would you help this project owner improve issue reporting and sorting? A. Add a custom field of type Select List (multiple choices) for class, linked to a class-owner field. B. Ensure the component field is available in the project and demonstrate how to use it. C. Add a new labels field for the project, with labels containing the owner names. D. Add a custom field of type Select List (cascading) with classes in the first tier and owners in the second tier. E. Add a custom field of type Select List (multiple choices) for class, naming an owner in the options.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A public relations firm is using Jira to track projects by client engagement. Each new engagement with a client is tracked in a new project. Users are complaining that it is hard to navigate and search hundreds of projects. View the Exhibit, which shows a sample of their projects on the View All Projects page. [sampleXML/xmlfile-46_1.png] Identify three project settings that will immediately improve the viewing of projects on this page and the search results in Issue Navigator. (Choose three.) A. Add URLs for search engine optimization. B. Add project tags. C. Add client logos as project avatars. D. Create project categories by client. E. Add project descriptions. F. Set the project lead to the appropriate Project Administrator.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your marketing group is using Jira to track media print advertisements. They would like to track TV and radio commercials as well. The same team handles all three formats, but each format requires a unique workflow. The team would like to keep everything on the same dashboard, and they will also be using the same permissions, notifications and screens. Without using third-party apps, how should you configure Jira to meet these requirements? A. Clone the existing project and key for TV and Radio. B. Copy the existing permissions and notification schemes, and associate them with new projects for TV and Radio. C. Create a sub-component hierarchy. D. Create two new projects for TV and Radio. E. Add TV and Radio into the existing project as components. F. Use issue types of Print, Radio and TV in the existing project.",
+    "options": {},
+    "most_voted": ""
+  }
+]
