@@ -1,0 +1,357 @@
+[
+  {
+    "question": "In the Security Management Architecture, what port and process SmartConsole uses to communicate with the management server? A. CPM and 18190 B. FWM and 19009 C. CPM and 19009 D. CPM 19009 and 18191",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Check Point Watch Daemon (CPWD) monitors critical Check Point processes, terminating them or restarting them as needed to maintain consistent, stable operating conditions. When checking the status/output of CPWD you are able to see some columns like APP, PID, STAT, START, etc. What is the column “STAT” used for? A. Shows the status of the monitored process B. Shows how many times the WatchDog started the monitored process C. Shows the WatchDog name of the monitored process D. Shows what monitoring method WatchDog is using to track the process",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following commands can be used to see the list of processes monitored by the Watch Dog process? A. cpstat fw -f watchdog B. fw ctl get str watchdog C. cpwd_admin list D. ps -ef | grep watchd",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You run cpwd_admin list on a Security Gateway and notice that the CPM process is not listed. Select best answer? A. The output is different between gateway and Management server. B. CPM is not running and can’t be monitored by watch dog. C. If you want to monitor CPM you have to manually add it to watch dog. D. CPM is not there because it has own monitoring system. Only lower processes are monitored by watch dog.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What process monitors, terminates, and restarts critical Check Point processes as necessary? A. CPM B. FWD C. CPWD D. FWM",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You found out that $FWDIR/log/fw.log is constantly growing in size at a Security Gateway, what is the reason? A. TCP state logging is enabled B. It’s not a problem the gateway is logging connections and also sessions C. fw.log can grow when GW does not have space in logging directory D. The GW is logging locally",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What tool would you run to diagnose logging and indexing? A. run cpm_doctor.sh B. cpstat mg -f log_server C. run diagnostic view D. run doctor-log.sh",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You receive reports from multiple users that they cannot browse. Upon further discovery you identify that Identity Awareness cannot identify the users properly and apply the configured Access Roles. What commands you can use to troubleshoot all identity collectors and identity providers from the command line? A. on the gateway: pdp debug set IDC all IDP all B. on the gateway: pdp debug set AD all and IDC all C. on the management: pdp debug on IDC all D. on the management: pdp debug set all",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the best way to resolve an issue caused by a frozen process? A. Power off the machine B. Restart the process C. Reboot the machine D. Kill the process",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is NOT monitored as a PNOTE by ClusterXL? A. ted B. Policy C. RouteD D. vpnd",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is NOT a benefit of the ‘fw ctl zdebug’ command? A. Automatically allocate a 1MB buffer B. Collect debug messages from the kernel C. Cannot be used to debug additional modules D. Clean the buffer",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which command is used to write a kernel debug to a file? A. fw ctl kdebug -T -I > debug.txt B. fw ctl debug -S -t > debug.txt C. fw ctl kdebug -T -f > debug.txt D. fw ctl debut -T -f > debug.txt",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the buffer size set by the fw ctl zdebug command? A. 8GB B. 1 MB C. 1 GB D. 8 MB",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are seeing output from the previous kernel debug. What command should you use to avoid that? A. fw ctl clean buffer = 0 B. fw ctl debug 0 C. fw ctl zdebug disable D. fw ctl debug = 0",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During firewall kernel debug with fw ctl zdebug you received less information that expected. You noticed that a lot of messages were lost since the time the debug was started. What should you do to resolve this issue? A. Increase debug buffer; Use fw ctl debug -buf 32768 B. Redirect debug output to file; Use fw ctl debug-o ./debug.elg C. Redirect debug output to file; Use fw ctl zdebug -o ./debug.elg D. Increase debug buffer; Use fw ctl zdebug -buf 32768",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the benefit of fw ctl debug over fw ctl zdebug? A. There is no difference. Both are used for debugging kernel B. You don’t need timestamps C. It allows you to debug multiple modules at the same time D. You only need 1MB buffer",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Check Point Firewall Kernel is the core component of the Gaia operating system and an integral part of the traffic inspection process. There are two procedures available for debugging the firewall kernel. Which procedure/command is used for troubleshooting packet drops and other kernel activities while using minimal resources (1 MB buffer)? A. fw ctl zdebug B. fwk ctl debug C. fw debug ctl D. fw ctl debug/kdebug",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You need to monitor traffic pre-inbound and before the VPN-module in a security gateway. How would you achieve this using fw monitor? A. fw monitor -p all B. fw monitor -pi -vpn C. fw monitor -pi +vpn D. fw monitor-pl +vpn",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to run a kernel debug over a longer period of time as the problem occurs only once or twice a week. Therefore, you need to add a timestamp to the kernel debug and write the output to a file. What is the correct syntax for this? A. fw ctl debug -T -f > filename.debug B. fw ctl kdebug -T -f -o filename.debug C. fw ctl kdebug -T > filename.debug D. fw ctl kdebug -T -f > filename.debug",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the correct syntax to set all debug flags for Unified Policy related issues? A. fw ctl kdebug -m UP all B. fw ctl debug -m UP all C. fw ctl debug -m up all D. fw ctl debug -m fw all",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the shorthand reference for a classification object? A. classobj B. CLOB C. COBJ D. class.obj",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The FileApp parser in the Content Awareness engine does not extract text from which of the following file types? A. Microsoft Office Excel files B. Microsoft Office PowerPoint files C. Microsoft Office .docx files D. PDF’s",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In Check Point’s Packet Processing Infrastructure, what is the role of Observers? A. Observers attach object IDs to traffic B. They store Rule Base matching state related information C. Observers monitor the state of Check Point gateways and report it to the security manager D. Observers decide whether or not to publish a CLOB to the Security Policy",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the kernel process for Content Awareness that collects the data from the contexts received from the CMI and decides if the file is matched by a data type? A. cntawmod B. cntmgr C. dlpda D. dlpu",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The packet processing infrastructure consists of 4 components. Which component contains the CLOB, the object that contains information about the packet that is needed to make security decisions? A. Manager B. Classifiers C. Handlers D. Observers",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is a component of the Context Management Infrastructure used to collect signatures in user space from multiple sources, such as Application Control and IPS, and compiles them together into unified Pattern Matchers? A. Context Loader B. PSL - Passive Signature Loader C. cpas D. CMI Loader",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of these packet processing components stores Rule Base matching state-related information? A. Classifiers B. Manager C. Handlers D. Observers",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Check Point Access Control Daemons contains several daemons for Software Blades and features. Which Daemon is used for Application & Control URL Filtering? A. pdpd B. rad C. cprad D. pepd",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is correct about the Resource Advisor (RAD) service on the Security Gateways? A. RAD is not a separate module, it is an integrated function of the ‘fw’ kernel module and does all operations in the kernel space B. RAD functions completely in user space. The Pattern Matter (PM) module of the CMI looks up for URLs in the cache and if not found, contact the RAD process in user space to do online categorization C. RAD is completely loaded as a kernel module that looks up URL in cache and if not found connects online for categorization. There is no user space involvement in this process D. RAD has a kernel module that looks up the kernel cache, notifies client about hits and misses and forwards a-sync requests to RAD user space module which is responsible for online categorization",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When URL category is not found in the kernel cache, what action will GW do? A. RAD in user space will forward request to the cloud B. GW will update kernel cache during next policy install C. RAD in kernel space will forward request to the cloud D. RAD forwards this request to CMI which is the brain of inspection",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How does Identity Collector connect to Windows Server? A. ADQuery is needed for connection B. LDAP connection C. It uses a PDP demon to connect D. via Windows API",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Captive Portal, PDP and PEP run in what space? A. User B. CPM C. FWD D. Kernel",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the three main component of Identity Awareness? A. Client, SMS and Secure Gateway B. Identity Source, Identity Server (PDP) and Identity Enforcement (PEP) C. Identity Awareness Blade on Security Gateway, User Database on Security Management Server and Active Directory D. User, Active Directory and Access Role",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What cli command is run on the GW to verify communication to the Identity Collector? A. pdp connections idc B. pep connections idc C. show idc connections D. fwd connected",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What function receives the AD log event information? A. FWD B. CPD C. PEP D. ADLOG",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You receive complains that Guest Users cannot login and use the Guest Network which is configured with Access Role of Guest Users. You need to verity the Captive Portal configuration. Where can you find the config file? A. on the gateway at $NACPORTAL_ HOME/conf/httpd_ nac.conf B. on the management at $CPNAC_ HOME/conf/httpd_ nac.conf C. on the management at $NACPORTAL_ HOME/conf/httpd_ nac.conf D. on the gateway at $CPNAC_ HOME/conf/httpd_ nac.conf",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are using the Identity Collector with Identity Awareness in large environment. Users report that they cannot access resources on Internet. You identify that the traffic is matching the cleanup rule instead of the proper rule with Access Roles using the IDC. How can you check if IDC is working? A. pdp connections idc B. ad query | debug on C. pep debug idc on D. pdp debug set IDP all",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct syntax to turn a VPN debug on and create new empty debug files? A. vpndebug trunc on B. vpn debug truncon C. vpn debug trunkon D. vpn kdebug on",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How many packets are needed to establish IKEv1? A. Only three packets for main mode B. 8 C. 5 D. 6",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You want to fully investigate the VPN establishment, what will you do? A. vpn debug and use IKEview B. debug FWD because VPND is child process C. use vpn tu command and use option 8 to start debug D. use kernel debug with fw ctl debug -m VPN all",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your users have some issues connecting with Mobile Access VPN to your gateway. How can you debug the tunnel establishment? A. run vpn debug truncon B. in the file $VPNDIR/conf/httpd.conf change the line Loglevel.. To LogLevel debug and run vpn restart C. in the file $CVPNDIR/conf/httpd.conf change the line Loglevel.. To LogLevel debug and run cvpnrestart D. run fw ctl zdebug -m sslvpn all",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "VPN’s allow traffic to pass through the Internet securely by encrypting the traffic as it enters the VPN tunnel and then decrypting the traffic as it exists. Which process is responsible for Mobile VPN connections? A. cvpnd B. fwk C. vpnd D. vpnk",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Troubleshooting issues with Mobile Access requires the following: A. ‘ma_vpnd’ process on Security Gateway B. Debug logs of FWD captured with the command - ‘fw debug fwd on TDERROR_MOBILE_ACCESS=5’ C. Standard VPN debugs, packet captures, and debugs of ‘cvpnd’ process on Security Gateway D. Standard VPN debugs and packet captures on Security Gateway, debugs of ‘cvpnd’ process on Security Management",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You were asked by security team to debug Mobile Access VPN. What processes will you debug? A. HTTPD and CPVND B. IKED C. VPND and IKED D. SNX daemon",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Like a Site-to-Site VPN between two Security Gateways, a Remote Access VPN relies on the Internet Key Exchange (IKE), what types of keys are generated by IKE during negotiation? A. Produce a symmetric key on both sides B. Produce an asymmetric key on both sides C. Symmetric keys based on pre-shared secret D. Produce a pair of public and private keys",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "User defined URLS and HTTPS Inspection User defined URLs on the Security Gateway are stored in which database file? A. https_urlf.bin B. urlf_db.bin C. urlf_https.bin D. https_db.bin",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "After kernel debug with “fw ctl debug” you received a huge amount of information. It was saved in a very large file that is difficult to open and analyze with standard text editors. Suggest a solution to solve this issue. A. Reduce debug buffer to 1024KB and run debug for several times B. Use Check Point InfoView utility to analyze debug output C. Use “fw ctl zdebug” because of 1024KB buffer size D. Divide debug information into smaller files. Use “fw ctl kdebug -f -o “filename” -m 25 - s “1024”",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What command is used to find out which port Multi-Portal has assigned to the Mobile Access Portal? A. mpclient getdata sslvpn B. netstat -nap | grep mobile C. netstat getdata sslvpn D. mpclient getdata mobi",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following daemons is used for Threat Extraction? A. extractd B. tedex C. tex D. scrubd",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You modified kernel parameters and after rebooting the gateway, a lot of production traffic gets dropped and the gateway acts strangely. What should you do? A. Run command fw ctl set int fw1_kernel_all_disable=1 B. Restore fwkern.conf from backup and reboot the gateway C. run fw unloadlocal to remove parameters from kernel D. Remove all kernel parameters from fwkern.conf and reboot",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You run a free-command on a gateway and notice that the Swap column is not zero. Choose the best answer. A. Utilization of ram is high and swap file had to be used. B. Swap file is used regularly because RAM memory is reserved for management traffic. C. Swap memory is used for heavy connections when RAM memory is full. D. Its ok. Swap is used to increase performance.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When dealing with monolithic operating systems such as Gaia, where are system calls initiated from to achieve a required system level function? A. Kernel Mode B. Slow Path C. Medium Path D. User Mode",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When debugging is enabled on firewall kernel module using the ‘fw ctl debug’ command with required options, many debug messages are provided by the kernel that help the administrator to identify issues. Which of the following is true about these debug messages generated by the kernel module? A. Messages are written to /etc/dmesg file B. Messages are written to a buffer and collected using ‘fw ctl kdebug’ C. Messages are written to $FWDIR/log/fw.elg D. Messages are written to console and also /var/log/messages file",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "RAD is initiated when Application Control and URL Filtering blades are active on the Security Gateway. What is the purpose of the following RAD configuration file $FWDIR/conf/rad_settings.C? A. This file contains the location information for Application Control and/or URL Filtering entitlements B. This file contains the information on how the Security Gateway reaches the Security Managers RAD service for Application Control and URL Filtering C. This file contains RAD proxy settings D. This file contains all the host name settings for the online application detection engine",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two files contain the Application Database on the Security Gateway? A. api_db.C and api_custom_db.C B. apcl_db.C and apcl_custom_db.C C. application_db.C and application_custom_db.C D. appi_db.C and appi_custom_db.C",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How can you start debug of the Unified Policy with all possible flags turned on? A. fw ctl debug -m fw + UP B. fw ctl debug -m UP all C. fw ctl debug -m UP * D. fw ctl debug -m UnifiedPolicy all",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "URL Filtering is an essential part of Web Security in the Gateway. For the Security Gateway to perform a URL lookup when a client makes a URL request, where is the sync-request forwarded from if a sync-request is required? A. URLF Kernel Client B. RAD User Space C. RAD Kernel Space D. URLF Online Service",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What file contains the RAD proxy settings? A. rad_control.C B. rad_scheme.C C. rad_services.C D. rad_settings.C",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the Security Gateway directory where an administrator can find vpn debug log files generated during Site-to-Site VPN troubleshooting? A. $FWDIR/conf/ B. $CPDIR/conf/ C. $FWDIR/log/ D. /opt/CPsuiteR80/vpn/log/",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In Mobile Access VPN, clientless access is done using a web browser. The primary communication path for these browser based connections is a process that allows numerous processes to utilize port 443 and redirects traffic to a designated port of the respective process. Which daemon handles this? A. Multi-portal Daemon (MPD) B. Mobile Access Daemon (MAD) C. HTTPS Inspection Daemon (HID) D. Connectra VPN Daemon (cvpnd)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the name of the VPN kernel process? A. VPND B. CVPND C. FWK D. VPNK",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What component is NOT part of Unified policy manager? A. Classifier B. CMI C. Handle D. Observer",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When a User Mode process suddenly crashes, it may create a core dump file. Which of the following information is available in the core dump and may be used to identify the root cause of the crash? i. Program Counter ii. Stack Pointer iii. Memory management information iv. Other Processor and OS flags / information A. iii and iv only B. i and ii only C. i, ii, iii and iv D. Only iii",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You need to run a kernel debug over a longer period of time as the problem occurs only once or twice a week. Therefore, you need to add a timestamp to the kernel debug and write the output to a file but you can’t afford to fill up all the remaining disk space and you only have 10 GB free for saving the debugs. What is the correct syntax for this? A. fw ctl kdebug -T -f -m 10 -s 1000000 -o debugfilename B. fw ctl debug -T -f -m 10 -s 1000000 -o debugfilename C. fw ctl kdebug -T -f -m 10 -s 1000000 > debugfilename D. fw ctl kdebug -T -m 10 -s 1000000 -o debugfilename",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the simplest and most efficient way to check all dropped packets in real time? A. fw ctl zdebug + drop in expert mode B. Smartlog C. cat/dev/fw1/log in expert mode D. tail -f $FWDIR/log/fw.log |grep drop in expert mode",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following would NOT be a flag when debugging a unified policy? A. tls B. rulebase C. clob D. connection",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What components make up the Context Management Infrastructure? A. CPMI and FW Loader B. CPX and FWM C. CPM and SOLR D. CMI Loader and Pattern Matcher",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following inputs is suitable for debugging HTTPS inspection issues? A. vpn debug cptls on B. fw debug tls on TDERROR_ALL_ALL=5 C. fw ctl debug -m fw + conn drop cptls D. fw diag debug tls enable",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Daemon should be debugged for HTTPS Inspection related issues? A. VPND B. WSTLSD C. FWD D. HTTPD",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What does CMI stand for in relation to the Access Control Policy? A. Context Manipulation Interface B. Context Management Infrastructure C. Content Management Interface D. Content Matching Infrastructure",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "VPN issues may result from misconfiguration, communication failure, or incompatible default configurations between peers. Which basic command syntax needs to be used for troubleshooting Site-to-Site VPN Issues? A. vpn truncon debug B. cp debug truncon C. fw debug truncon D. vpn debug truncon",
+    "options": {},
+    "most_voted": "D"
+  }
+]
