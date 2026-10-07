@@ -54,7 +54,7 @@ class FastDiscussionScanner:
         html = self.fetcher.fetch_html(provider_discussion_url(self.provider, page_number))
         results = []
         for text, href in extract_discussion_entries(html):
-            m = re.search(r"/exam-([^/]+?)-topic-", href, re.I)
+            m = re.search(r"-exam-([^/]+?)-topic-", href, re.I)
             if m:
                 slug = m.group(1).lower()
                 url = discussion_entry_url(text, href)

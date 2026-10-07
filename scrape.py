@@ -51,7 +51,7 @@ def _sample_exam_codes(provider: str, fetcher: HttpFetcher, pages: int = 3) -> s
             html = fetcher.fetch_html(provider_discussion_url(provider, page))
             for _, href in extract_discussion_entries(html):
                 # extract the exam code between "exam-" and "-topic"
-                m = re.search(r"/exam-([^/]+?)-topic-", href, re.I)
+                m = re.search(r"-exam-([^/]+?)-topic-", href, re.I)
                 if m:
                     codes.add(m.group(1).lower())
         except Exception:
