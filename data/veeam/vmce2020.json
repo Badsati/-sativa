@@ -1,0 +1,252 @@
+[
+  {
+    "question": "A customer currently has one backup job that runs every four hours to backup their VMs in a transaction consistent state. Which job configuration will keep all restore points safe in case the primary site and backups go down while still being able to do a point-in-time recovery of a SQL database from the backups on the second site? A. Configure a second VM backup job and schedule it to copy every four hours, starting at midnight, to a repository on the second site B. Configure a backup copy job in mirror mode, to a repository on the second site C. Configure a backup copy job in pruning mode and schedule it to copy every four hours, starting at midnight, to a repository on the second site D. Configure a backup copy job in pruning mode and have it copy data every day, starting at midnight, to a repository on the second site",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A NAS backup job has been configured within Veeam Backup & Replication, and is completing successfully, but restore operations have been failing for the last few days. What is causing the failure? A. The backup repository is sealed B. The server was added by using an IQN alias which is unable to be resolved C. The credentials added to the share are not allowed read-write access to the share, directories or files D. The cache repository assigned for this file share is unavailable for restore operations",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company needs to recover a domain controller from a backup file they have on premises which was created by the Veeam Agent for Microsoft Windows. Which of the following would provide the fastest access to the domain controller? A. Use the Veeam Explorer for Active Directory to recover the domain controller B. Perform an Instant VM Recovery to recover the domain controller to a VM on their VMware host C. Perform a bare metal recovery of their domain controller back to the original system D. Recover the domain controller to an AWS EC2 instance using the restore to Amazon EC2",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the main purpose of the planned failover feature? A. Test the VM in a sandbox without impacting the production environment B. Proactively switch from running the regular VM to the replica VM C. Initiate a disaster recovery procedure when the main site is down D. Test a disaster recovery scenario without any downtime on the VM",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When you back up regular or standalone VMs in vCloud Director, which of the following is captured and stored in Veeam's Backup & Replication backup file? (Choose three.) A. vApp metadata B. VM disk content C. Raw device mapping D. In-guest iSCSI disk E. VM metadata F. Linked clone VMג€™s prior to vCenter 6.5",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer has a physical proxy configured for Direct Storage Access without failover to network mode. The backup fails. What could be the issue? A. The disks being processed are IDE and/or SATA B. The datastores are properly zoned and exposed to the proxy server but in read-only mode C. The storage is not added into the storage infrastructure, inside the backup and replication console D. Write access has not been enabled on the SAN E. One or more of the VM disk(s) are on Wols",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A company has replicated their critical application VMs to a second data center in another region. Their key application includes two database VMs and three application VMs. For proper operation, the database VMs need to start before the application VMs. What needs to be configured in Veeam to prepare for a disaster recovery situation? A. Use a failover plan B. Use a planned failover C. Use Instant VM Recovery D. Use on-click failover",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A backup job has been configured to keep three incremental restore points and a synthetic full backup each Sunday. More restore points are present on disk than what was configured in the job. Why? A. The old restore points will be deleted after the new restore chain meets the retention policy B. Per VM backup files are enabled in the repository C. The other restore points are weekly full backups, this is expected D. You should configure the synthetic full backup to be performed on Mondays instead",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In the event a VMware VM configuration file (VMX) is missing and a restore is needed, what Veeam restore process is the best choice for this situation? A. VM file restore B. Instant disk recovery C. Instant VM recovery D. Virtual disk restore",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has been running off replicated, business-critical VMs at their disaster recovery location since an earthquake near the primary data center occurred. Since the threat has passed, they want to stop the replicas and switch to the VMs at the primary data center without losing data. Which of the following actions is the first step they should take? A. Failover B. Permanent failover C. Commit failback D. Failback to production E. Planned failover F. Undo failover",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A backup administrator is creating a SureBackup environment up using Hyper-V as the hypervisor. Which virtual labs are available for Hyper-V? (Choose two.) A. Advanced multi-host (automatic configuration) B. Advanced single-host (automatic configuration) C. Basic single-host (automatic configuration) D. Advanced multi-host (manual configuration) E. Advanced single-host (manual configuration)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company has the following requirements: Mission-critical VMs: hourly replication to disaster recovery site, daily backups of these VMs should be available at the disaster recovery site when required, the mission critical applications need to be available within 20 minutes. Business-important VMs: daily backups should be stored at the disaster recovery site. When required, the business-important applications need to be available within four hours. Define the RPO and RTO for the company's disaster recovery site. A. Mission-critical VMs: RPO = 60 minutes, RTO = one hour; business-important VMs: RPO = 60 minutes, RTO = four hours B. Mission-critical VMs: RPO = 24 hours, RTO = 20 minutes; business-important VMs: RPO = 24 hours, RTO = four hours C. Mission-critical VMs: RPO = 60 minutes, RTO = 20 minutes; business-important VMs: RPO = 24 hours, RTO = four hours D. Mission-critical VMs: RPO = 24 hours, RTO = four hours; business-important VMs: RPO = 24 hours, RTO = four hours",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When configuring a SureBackup job, what are some of the criteria for adding servers to an application group? (Choose two.) A. VMs cannot be encrypted B. VM backups must reside on the same repository C. VMs cannot be added to an application group twice D. VMs must be running the same OS version E. VMs must have at least one valid restore point",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Veeam backup administrator, protecting all VMs in a VMware environment with backups and replicas, has been requested to run a multi-server application in an On-Demand Sandbox. The sandbox needs to stay powered on, uninterrupted, for 30 days while daily backups and replicas continue to run. How can this be done? A. Create an application group and leverage regular replica restore points as the source for the application group B. Create a (secondary) replication job for the required VMs that are not scheduled to run; create a SureBackup job and use these replicas as the source C. Create a (secondary) replication job for the required VMs that are not scheduled to run; make an application group and use these replicas as the source D. Create an application group and leverage regular backup restore points as the source for the application group",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When planning to back up files and folders from shared sources, that is the correct method to connect to the file share from the Veeam backup server? A. Add the file share into the store infrastructure B. Add the file share into the physical infrastructure C. Add the file share into the inventory D. Add the file share into the managed servers",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are the three Veeam Backup & Replication technologies required to verify recoverability of the backup? (Choose three.) A. Virtual lab B. Application group C. Backup proxy D. SureBackup job E. Gateway Server F. Replication job",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A backup administrator has replicated a virtual machine between two Hyper-V hosts and now would like to automatically verify the recoverability of the replica. What would they need to do? A. It is not supported to perform SureBackup replica testing for Hyper-V B. Create a virtual switch with no uplinks and start the virtual machine connected to the new switch C. Create a virtual lab and an application group; create a SureBackup for the replica job and run it once a day D. Start the virtual machine manually using the universal application item recovery wizard",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A backup administrator is planning to install Veeam ONE. Which data collection mode collects the most data per VM? A. For vCenter data only B. Optimized for advanced scalability deployment C. For backup data only D. Optimized for typical deployment",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What transport mode does the Linux backup proxy support? A. Automatic B. Network C. Direct storage access D. Virtual appliance",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You fail back a VM replica to the original location. Which of the following requirements needs to be met to be able perform quick rollback during a failback of a replica? A. Perform failback to VM within the same subnet B. The VM replica must be created with the ג€Use Changed Block Tracking dataג€ option enabled C. Indexing must be enabled for the original VM D. The VM replica must have access to the repository where the full backup of the VM resides",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Veeam ONE has been installed in the typical data collection mode and historical data is the installation default. A customer is looking at performance charts in Veeam ONE Monitor. When troubleshooting a performance event from two days ago, what will they see? A. Aggregated data every two hours B. Data does not exist C. Raw data every 20 seconds D. Aggregated data every five minutes",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following predefined tests can be performed during a SureBackup verification test on a backup file? (Choose three.) A. Application test B. Heartbeat test C. Ping test D. SAN check E. Boot time F. OS test",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements are true regarding backup copy jobs in Veeam Backup & Replication? (Choose two.) A. The backup copy job creates a forever forward incremental backup chain B. The backup copy job creates a single file with multiple restore points included within for archival purposes C. During the backup copy job process, a VM snapshot is created for consistency D. Retention settings maintain the desired number of restore points as well as offer optional GFS for archival purposes E. Backup copy jobs copy entire VBK, VIB, or VRB files from the source backup repository to the target backup repository",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A virtual machine in your environment has been hit by a virus. You need to restore the virtual machine as fast as possible. At the same time, you need to make sure that any dormant virus on the backed up virtual machine is detected. What restore method should you use when recovering to a new location? A. Instant VM Recovery with ג€staged restoreג€ B. Instant VM Recovery with ג€secure restoreג€ C. SureBackup D. Virtual disk restore",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A backup administrator needs to restore two data drives to a VM where the operating system remains intact. The target machine must remain powered on. What recovery option is most appropriate to perform this operation? A. Instant VM Recovery B. Instant disk recovery C. Restore entire VM D. Restore VM files",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "To suppress Veeam ONE alarms under specific conditions or when a specific event occurs, which of these options can be selected? (Choose three.) A. High CPU usage B. Veeam backup activity C. Snapshot creation D. Storage snapshot deletion E. Storage snapshot creation F. Snapshot deletion",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An SMB customer installed Veeam Backup & Replication in a simple deployment. How can the customer comply with the 3-2-1 rule? A. Create a Scale-out Backup Repository with object storage in the public cloud used as the capacity tier leveraging copy mode B. Create a backup to tape job to a local virtual tape library C. Create a Scale-out Backup Repository with object storage in the public cloud used as the capacity tier leveraging move mode D. Copy the backups to a separate local NAS device",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has outgrown their current data center and plans to use the second data center as the new primary and needs to migrate their workloads. They are running VMware in both data centers. Which steps would allow this migration to occur without any data loss? A. 1. Replication job 2. Failover plan 3. Permanent failover B. 1. Backup job 2. Instant VM Recovery 3. Finalize the Instant VM Recovery C. 1. Replication job 2. Failback 3. Commit failback D. 1. Replication job 2. Planned failover 3. Permanent failover",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company has separate networks for management traffic and data traffic. All Veeam components are communicating over the management network. How would they define the data network for backup data transfers? A. Re-add all Veeam components involved in data transfer through the required interfaces B. Update routing tables on the components involved in data transfer C. Create a global network traffic rule, set appropriate source and target IP range D. Use the preferred network settings to switch to data network for the backup traffic",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The backup administrator configured replication for a VM from Data Center 1 to Data Center 2, which runs every day at 1 a.m. A power surge takes out Data Center 1 at 7 a.m. and the administrator fails over the replica at 8 a.m. When the power comes back on, the administrator performs the `failback` action at 2 p.m. and checks the state of the original VM. They recognize that not all data is available. What is missing? A. Data from 1 a.m. to 7 a.m. B. Data from 1 a.m. to 2 p.m. C. Data from 8 a.m. to 2 p.m. D. Data from 7 a.m. to 8 a.m.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A backup administrator is deploying a Veeam ONE environment. They have chosen to use separate servers from their Veeam Backup & Replication environment. What benefit will they receive if they install the Veeam ONE Agent onto their backup server? A. Track whether VMs and agents are properly protected and following the 3-2-1 rule B. Collect Veeam Backup & Replication logs and execute remediation actions C. Collect virtual environment configuration from Veeam Backup & Replication D. Analyze Veeam Backup & Replication log data and retrieve signature updates",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When a replication job is configured to use the replica mapping feature (no seeding), what will happen during the first run of the job? A. The replication job creates a clone of the mapped replica to preserve the original state before synchronizing the changes from the source infrastructure B. The replication job calculates the differences between the original and mapped VM; only the incremental changes will be synchronized C. The replication job will first restore the VM from the most recent restore point and then start to synchronize the incremental changes from the source infrastructure D. If a VM within the replication job is not mapped, the job will fail",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When deploying an advanced single-host virtual lab in a VMware environment, what will Veeam create? A. A distributed virtual switch with uplink(s) B. A standard virtual switch with uplink(s) C. A distributed virtual switch without uplink(s) D. A standard virtual switch without uplink(s)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Figure A shows the backup files on a Scale-out Backup Repository (SOBR) created by a single Veeam backup job. The SOBR is configured to offload to capacity tier in move mode. If the offload was completed successfully, what will remain on the performance extents for the files uploaded to the capacity tier? [sampleXML/xmlfile-17_1.jpg] A. VIB files (metadata and data) B. VBM files (metadata only) C. VIB and VBK files (metadata only) D. VBK files (metadata and data) E. VIB and VBK files (data blocks only)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Veeam is used for replicating VMware VMs. The production environment is comprised of two networks: 192.168.1.0/24 and 172.16.0.0/16. A web application requires a database server (whose IP address is 172.21.0.12) to receive queries from a web client (whose IP address is 192.168.1.32). The replicas are spread over multiple hosts. A backup administrator needs to configure a virtual lab to test a web client to database server query. Which of the following virtual lab types must be configured? A. Advanced multi-host B. Advanced single-host C. All virtual lab configurations would support that D. Basic single-host",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which storage optimization option uses a block size of 512 KB? A. LAN target B. WAN target C. Local target (large blocks) D. Local target",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is a backup mode that can be configured within a Veeam Agent for Windows backup job? A. Reverse incremental with periodic active full backups B. Forward incremental and reverse incremental, both with optional periodic synthetic and/or active full backups C. Forward incremental with optional periodic synthetic and/or active full backups D. Reverse incremental with optional periodic synthetic full backups",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company is required to have a daily backup with a retention of at least six weeks. The backups are running every eight hours during the day. From the options provided, what backup job would you advise based on their SLA and best practices? A. Forever forward incremental backup, with default job settings enabled B. Forever forward incremental backup, with a retention of 42 restore points, savings six weekly full backups C. Forever forward incremental backup, with a retention of 42 restore points D. Forward incremental backup with weekly synthetic full backups and a retention of 42 days",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An end user has deleted a business-critical document and they need it back right away. The IT team has been doing hypervisor-level backups of the VM that the document was on. What is the fastest option for this backup administrator to get the user's document back? A. Entire VM restore B. Guest files restore C. Instant VM Recovery D. Virtual disks restore",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company wants to leverage Veeam DataLabs to automate the creation of a test environment. As testing one large, multi-VM application could require more than a single host, a dedicated VMware ESXi cluster has been identified. The sandbox is to be refreshed weekly or on demand. Select the benefits of using replication jobs in this environment. (Choose two.) A. There are additional tests available in DataLabs when replicas are the source B. Replication jobs do not stop the sandbox, unlike backup jobs C. The VMs are running directly on a high performance datastore, uncompressed D. There is a bigger number of VMs supported for multi-VM application tests when replicas are used E. Replicas can take advantage of advanced multi-host virtual labs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "[sampleXML/xmlfile-20_1.jpg] Look at the diagram. This daily backup job has been running for over 30 days and no active full backups have been taken since the first run. Which of the following best describes the backup job? A. This is a reverse incremental backup, keeping seven restore points B. This is a forward incremental backup with Sunday and Wednesday synthetic full, keeping seven restore points C. This is a forward incremental backup with transform enabled, keeping four restore points D. This is forever forward incremental backup, keeping seven restore points",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following scenarios properly applies the 3-2-1 rule to backup jobs? A. Use a backup job to back up to a Scale-out Backup Repository configured with capacity tier using AWS S3 and enable move mode B. Use a backup job to back up to a local repository; perform a backup copy job to a repository in another location C. Use backup jobs to back up directly to tape; ship the tapes off site D. Use a backup job to back up to a local repository; perform a backup copy job to the same repository",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Select the correct description of a synthetic full backup. A. A synthetic full backup will generate a new VBK file by getting data from the hypervisor B. A synthetic full backup combines a VIB file with one or more VBK files from a repository to generate a new VBK file C. A synthetic full backup combines a VBK file with one or more VIB files from a repository to generate a new VBK file D. A synthetic full backup will update the existing VBK with data from the hypervisor and generate a new VRB file",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use datastores as the source for your backup jobs. Some VM backups are consuming too much repository disk space. They have backup files created by multiple backup jobs. What could be the reason? (Choose two.) A. VMware Storage DRS (Distributed Resource Scheduler) moved VMs to different datastores B. Jobs are configured as per VM and these particular VMג€™s need more fulls C. VM retention is set to do full backups more often than others in the job D. The VM is in a backup chain and trapped inside a single retention file E. The VMs were moved to different datastores manually",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A financial company is looking for a new backup application. One of their main requirements is the ability to have quick access to their backup data. What features in Veeam Backup & Replication support the rapid availability of data, applications and VMs? (Choose three.) A. Full VM recovery without quick rollback B. Microsoft SQL database, and Oracle database publishing C. Instant VM Recovery D. Instant VM disk recovery E. Bare metal recovery F. Restore to Amazon EC2",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "If you need to run a script to stop a service in order to get an application-consistent backup on a Windows server, where can the script be run? A. In the guest processing setting of the job, enable application-aware processing and add a pre-freeze script to the VM B. Configure the script to run on the Veeam Backup & Replication server using the Windows Task Scheduler C. Copy the script to the VM and schedule the script to run prior to the start of the backup job using the Windows Task Scheduler in the VM D. In the virtual machines setting of the job, add a script in the scripts tab under ג€Run the following script before the job:ג€",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company needs to maintain and verify backups at a secondary site to meet the following requirements: RTO of two hours, RPO of 12 hours, four weeks retention. Which of the following backup copy job configurations meets these requirements? A. Periodic backup copy job, scheduled for a two-hour interval, with 56 restore points to retain B. Periodic backup copy job, scheduled for a 12-hour interval, with 56 restore points to retain C. Periodic backup copy job, scheduled for a two-hour interval, with 112 restore points to retain D. Periodic backup copy job, scheduled for a 12-hour interval, with 112 restore points to retain",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your company is using Veeam ONE to monitor VM performance in real time. An end user has called to complain about the performance of a VM and has asked you to investigate the cause of the issue. Where in Veeam ONE do you go to view real time VM metrics? A. In the monitor client under the infrastructure view B. In the reporter portal in the workspace tab, VM performance C. In the monitor client under the data protection view D. In the reporter portal in the dashboards tab, VM performance dashboard",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Veeam Backup & Replication job type offers the shortest recovery time objective (RTO)? A. Backup copy B. Backup to tape C. Replication D. File to tape",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which backup method produces a backup chain that consists of the first full backup file (VBK) and a set of incremental backup files (VIB) following it? Additionally, the backup chain contains synthetic full and/or active full backup files that divide the backup chain into shorter series. A. Forward incremental backup B. Differential incremental backup C. Reverse incremental backup D. Forever forward incremental backup",
+    "options": {},
+    "most_voted": ""
+  }
+]
