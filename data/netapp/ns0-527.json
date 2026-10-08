@@ -1,0 +1,167 @@
+[
+  {
+    "question": "You have an AFF A800 system serving SAN LUNs to an SAP HANA database. You are configuring NetApp SnapCenter backups and are asked to replicate all data to the public cloud using NetApp SnapMirror technology. In this scenario, which replication destination satisfies this requirement? A. Cloud Volumes Service with Cloud Sync service B. Azure NetApp Files with Cloud Sync service C. Cloud Volumes ONTAP with cloud tiering D. on-premises FAS8700 with ONTAP S3",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are asked to replicate data from site A to two separate disaster recovery sites at remote locations B and C. You want the data at the destinations to be as up-to-date as possible with the source site, in case of an outage. In this scenario, which two configurations satisfy the objective? (Choose two.) A. a cascade deployment consisting of a SnapMirror Synchronous relationship from site A to site B to site C B. a fan-out deployment consisting of a SnapMirror Synchronous relationship from site A to site B, and an asynchronous relationship to site C C. a fan-out deployment consisting of a SnapMirror Synchronous relationship from site A to sites B and C D. a cascade deployment of a SnapMirror Synchronous relationship from site A to site B, and an asynchronous relationship from site B to site C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer wants to implement a transparent application failover for a mission-critical SAN application between a primary data center and a secondary data center. The application consists of two LUNs: one LUN for data files and one LUN for log files. Each of the LUNs are located in different flexible volumes. The customer owns a data center with NetApp AFF A250 hardware running the application and another data center with an available AFF A250 storage system. The customer wants to implement a SnapMirror Business Continuity (SM-BC) solution. In this scenario, which two statements are true? (Choose two.) A. The administrator must implement a dedicated network path between the data centers. B. The administrator must implement a SAN that has accessibility to both data centers. C. The administrator must add the flexible volumes of the LUNs to the same consistency group. D. The administrator must move the LUNs to the same flexible volume.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are asked to install software that provides application-consistent backups that can then be archived to tape for your VMware vSphere and NetApp ONTAP environment. In this scenario, which two solutions satisfy the requirements? (Choose two.) A. NetApp Active IQ Unified Manager B. Commvault Complete Backup & Recovery C. NetApp SnapCenter software D. Veeam Backup & Replication",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You have enabled a Snapshot policy on your Azure NetApp Files volume. In this scenario, which statement is true? A. Space consumed by Azure NetApp Files snapshots reduce the available space in the volume. B. Azure NetApp Files snapshots are extremely efficient and do not consume any additional space. C. Space consumed by Azure NetApp Files snapshots reduce the unallocated space in the capacity pool. D. Space consumed by Azure NetApp Files snapshots reduce the available space in the object store.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are asked to deploy a solution for business continuity in which applications are able to automatically fail over and resume immediately in the event of a disaster at one site. You decide to use SnapMirror Business Continuity (SM-BC) as your solution. In this scenario, which three elements are required to satisfy the requirements? (Choose three.) A. a SnapMirror Synchronous relationship between consistency groups at each site B. NetApp storage VM configured to only support file protocols at each site C. an HA pair of AFF or All SAN Array (ASA) storage systems at each site D. an SnapMirror Synchronous relationship between failover groups at each site E. NetApp storage VM configured to only support block protocols at each site",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are administering an ONTAP 9.8 cluster. You have configured an hourly snapshot schedule for the volumes of a storage VM. One of the databases on a host that stores multiple databases in the same LUN is accidentally deleted. Users want to restore only this particular database. In this scenario, how would satisfy this requirement? A. Perform a SnapMirror resync from the most recent Snapshot copy. B. Perform a volume restore from a Snapshot copy. C. Perform a single file restore from a Snapshot copy. D. Perform a partial file restore from a Snapshot copy.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which NetApp ONTAP feature allows for the mirroring of data at the aggregate level? A. RAID 1 B. SyncMirror C. SnapMirror Synchronous D. SnapMirror Business Continuity",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer wants to replicate storage between two data centers that have hosts FC-attached LUNs. The primary and secondary data centers are approximately 50 km apart. Each site has two Cisco Nexus 3232C switches that are cabled to the Ethernet ISLs that connect to the other site. The customer requires the entire NetApp ONTAP 9.7 cluster at the primary site to be mirrored to ensure continuous availability with zero data loss for business-critical applications. The customer does not want to purchase new equipment, if possible. In this scenario, which solution satisfies the requirements? A. SnapMirror Synchronous B. SnapMirror Business Continuity C. MetroCluster IP D. MetroCluster FC",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are asked to encrypt data to satisfy a requirement for FIPS 140-2 Level 2. What would satisfy the requirement? A. Configure NetApp Volume Encryption and NetApp Aggregate Encryption with an onboard key manager. B. Configure NetApp Aggregate Encryption and SED drives with an onboard key manager. C. Configure NetApp Aggregate Encryption and NSE drives with an external key manager. D. Configure NetApp Volume Encryption and SED drives with an external key manager.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have a 2-node AFF A400 cluster running ONTAP 9.8 software. You have a storage VM (SVM) that serves both SMB and NFSv3 data sets to users. You are asked to protect the SVM root volume in the event of a node outage or failover. Client access must remain accessible without administrator intervention. In this scenario, which SnapMirror type satisfies this requirement? A. DP B. TDP C. XDP D. LS",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two statements about cross-region replication of Azure NetApp Files volumes are true? (Choose two.) A. Replication is supported between designated regional non-pairs. B. Replication is supported between two volumes in the same region. C. Replication is supported between designated regional pairs. D. Replication is supported between any two Azure regions.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You want to take Snapshot copies of your Azure NetApp Files volumes at regular intervals. Which two statements are correct in this scenario? (Choose two.) A. Configure a Snapshot policy within ONTAP System Manager. B. Use cron and an Azure CLI command to schedule the Snapshot copies. C. The Azure NetApp Files service automatically schedules Snapshot copies. D. Use the Snapshot policies feature within the Azure portal.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have detected a potential ransomware attack. Which two observations led you to this conclusion? (Choose two.) A. You noticed a large change in the size of the Snapshot copy. B. You noticed a decrease in storage efficiencies such as deduplication and compression. C. You noticed an increase in deduplication savings but a decrease in compression savings. D. You noticed an increase in storage efficiencies such as deduplication and compression.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are a storage administrator managing an environment that is configured for SnapMirror Business Continuity (SM-BC) between two remote data centers. After a network outage at one site, you notice that the applications that are configured for failover have not automatically resumed as expected. In this scenario, what is the reason for the failure? A. By default, a network outage will not trigger automated failover for applications. B. The defined failover groups did not include the correct volumes for failover. C. The ONTAP mediator node is currently unavailable to trigger automated failover for applications. D. The defined failover groups did not include the correct LUNs for failover.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two statements about SnapMirror throttling are true when setting a new throttle? (Choose two.) A. Transfers in progress use the new throttle. B. Transfers in progress must be restarted to use the new throttle. C. Throttles are set in kilobytes per second. D. Throttles are set in megabytes per second.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are asked to implement an archive solution for a subset of your data which currently resides on an AFF ASA A250 with a single storage VM. A new ONTAP cluster consisting of a FAS500f system has been deployed as a target for this data in the same data center. Using the ONTAP System Manager UI, which two configurations must be completed in this scenario? (Choose two.) A. SnapMirror Local B. Backup to Cloud C. Snapshot copies D. SnapMirror Remote",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are configuring NetApp Cloud Backup in a multicloud environment. The destination object storage that you configure must allow for both volume and file-based restores to your on-premises NetApp ONTAP system. In this scenario, which two object storage solutions would satisfy this requirement? (Choose two.) A. NetApp StorageGRID B. IBM Cloud C. Azure Blob D. Amazon S3",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Windows user is unable to restore data in the Windows client. The user wants to perform self-service file restorations using the previous versions in Explorer. In this scenario, which action accomplishes this task? A. Use the volume modify command to set the -snap-dir option to true. B. Unlock the vsadmin account on the storage VM. C. Use the volume modify command to set the -security-style option to NTFS. D. Add the user's Active Directory account to the backup-operators group on the storage VM.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You must protect all data within a storage VM (SVM) serving NAS data, with the requirements shown below. -- All volumes within the SVM must be protected. -- The source and destination SVMs are on the same subnet. -- The source SVM contains volumes for multiple applications. -- DR testing of an individual application is required without disrupting other applications. Which data protection solution satisfies these requirements? A. Use SyncMirror. B. Use SVM DR with identity-preserve set to true. C. Use SM-BC with the ONTAP Mediator. D. Use SVM DR with identity-preserve set to false.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer has been running ONTAP Select to implement vNAS capabilities at two remote office sites. They now have a requirement for high availability around their software-defined storage (SDS) deployment. The customer wants to use MetroCluster SDS to provide high availability between the remote sites. In this scenario, which two conditions must be satisfied before the MetroCluster SDS is deployed? (Choose two.) A. The distance between sites must be no more than 10 km. B. The distance between sites must be no more than 20 km. C. Layer 3 connectivity is required between each of the participating sites. D. Layer 2 connectivity is required between each of the participating sites.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are the administrator of your company's NetApp ONTAP clusters. You are asked to protect the data during replication over the wire from one ONTAP cluster to another, to prevent malicious man-in-the middle attacks. In this scenario, which feature satisfies this requirement? A. NetApp Volume Encryption B. cluster peer encryption C. NetApp Storage Encryption D. SMB encryption",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three replication topologies are supported in NetApp Cloud Manager? (Choose three.) A. ONTAP to ONTAP B. Azure to Element C. AWS to ONTAP D. AWS to GCP E. ONTAP to SANtricity",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In your organization, you are asked to protect your users' home directory volume by keeping one monthly Snapshot copy for twelve months, one weekly Snapshot copy for 26 weeks, and one daily Snapshot copy for 30 days. Which two statements describe how you would accomplish this task? (Choose two.) A. Create separate job schedules for monthly, weekly, and daily. B. Create a snapshot policy to include the new job schedules. C. Create one job schedule that includes monthly, weekly, and daily. D. Create a snapshot policy for each: weekly, monthly, and daily.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You need to configure a data protection relationship using the SnapMirror Cloud license for your NetApp ONTAP 9.8 system. In this scenario, which two solutions would be a destination for this relationship? (Choose two.) A. a NetApp StorageGRID system B. NetApp Cloud Volumes Service in Google Cloud C. a NetApp ONTAP-based system with the S3 protocol enabled D. a NetApp Cloud Volumes ONTAP instance in Amazon AWS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have three LUNs in a single volume serving three separate databases. You have SnapVault configured to protect this volume. Your users are reporting corruption on one of the databases. In this scenario, how would you restore the corrupted database without impacting the other two databases? A. Use the volume snapshot restore command to restore the volume to a previous Snapshot copy and copy the contents back to the original LUN. B. Use the volume snapshot restore command to restore only the corrupted database to a previous version. C. Create a volume clone from the SnapVault destination, map the LUN to the host, and copy the contents back to the original LUN. D. From the database host copy a previous version of the database from the .snapshot folder.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "NetApp MetroCluster software uses which technology to achieve zero RPO at the cluster level? A. ONTAP Mediator B. Cloud Sync service C. SyncMirror D. SnapMirror Synchronous",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your primary site is protected using SVM DR with the identity-preserve option set to true. A network disruption is preventing a large number of SMB shares from being accessed at the primary site. You must fail over to the DR site to restore file services to end users. Which two actions must be performed to accomplish this task? (Choose two.) A. Update the SnapMirror relationship. B. Create new file shares at the DR site. C. Break the SnapMirror relationship. D. Stop the storage VM at the primary site.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer has deployed ONTAP 9.8 and is planning to use NetApp SnapMirror technology. They have a policy to enforce near-zero RPO for data recovery in an unplanned disaster. They also require that backups exist in multiple remote locations. In this scenario, what would satisfy the customer's requirements? A. an asynchronous SnapMirror cascade B. a fan-out design with multiple synchronous SnapMirror relationships C. a synchronous SnapMirror cascade D. a fan-out design with a single synchronous and additional asynchronous relationships",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Ransomware has infected the files in your users' home directories that reside on Azure NetApp Files. In this scenario, what are two ways to recover from this event? (Choose two.) A. Revert the volume to a previous snapshot. B. Restore the data using Windows Backup. C. Restore the data from Azure Backup. D. Restore from a snapshot to a new volume.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "As part of a hybrid cloud strategy, you are planning on deploying some of your workloads in Google Cloud. Your current infrastructure consists of an ONTAP 9.8 cluster serving LUNs to database servers using the FC protocol. In this scenario, which method would enable you to transfer your data to the cloud, and begin working with it? A. Create a SnapMirror relationship to a Cloud Volumes ONTAP system, and serve the data using FCoE. B. Use the NetApp Cloud Sync service to replicate the data to Cloud Volumes Service in Google Cloud. C. Create a SnapMirror relationship to a Cloud Volumes ONTAP system, and serve the data using iSCSI. D. Create a SnapMirror Cloud relationship from ONTAP to Google Cloud Standard storage.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are currently replicating several volumes using SnapMirror. You want to convert these relationships to a storage VM replication relationship. Which action must be performed to accomplish this task? A. Verify that the source volumes are offline. B. Verify that the source and destination volume names are unique. C. Verify that the source and destination volume names are the same. D. Verify that the destination volumes are offline.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are concerned that the transfers of one of your SnapMirror relationships are consuming too much network bandwidth. The network administrator asks that you decrease the amount of bandwidth being used. The SnapMirror transfers for that relationship average about 500 MB in size. There is only a one-hour window in which the SnapMirror transfer can be performed. In this scenario, what is the minimum level to which SnapMirror transfer throttling should be set to accomplish this task? A. 125 KBps B. 175 KBps C. 150 KBps D. 200 KBps",
+    "options": {},
+    "most_voted": ""
+  }
+]
