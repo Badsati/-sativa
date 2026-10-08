@@ -1,0 +1,147 @@
+[
+  {
+    "question": "The synthesis agent receives summarized findings from the web search and document analysis agents, then passes a consolidated summary to the report generator. During testing, you discover the generated reports make factual claims without proper citations – the report generator cannot attribute statements to their original sources because that metadata was lost during the summarization steps. What’s the most effective approach to ensure proper source attribution in the final reports? A. Have the report generator query the web search agent to re-locate sources for claims in the final report. B. Have each agent output structured data separating content summaries from source metadata (URLs, document names, page numbers). C. Skip summarization and pass full raw outputs from web search and document analysis directly to the report generator. D. Instruct the synthesis agent to embed source references inline within its summary text using a consistent citation format.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "After the web search agent finds 25 sources (120K tokens of raw content), the document analysis agent extracts key insights (15K tokens), and the synthesis agent produces a coherent narrative draft (3K tokens), the coordinator must pass context to the report generation agent for the final output with proper source citations. What context-passing strategy provides the best balance of completeness and efficiency? A. Pass the full accumulated context from all prior agents. B. Pass the synthesis draft along with a structured source index that maps key claims to their source URLs and relevant excerpts. C. Pass only the synthesis draft and have a separate post-processing pipeline match claims to sources and insert citations after the report is generated. D. Pass a condensed summary of all prior stages that preserves the main findings and attributes them to sources by name only.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your multi-agent research pipeline crashed after processing12 of 28 documents. The web search agent had identified relevant sources, the document analyzer had partially completed extraction, and the synthesizer had begun pattern identification. You need to resume processing without repeating work or losing fidelity of prior findings. What state management approach best balances information fidelity with context efficiency when restoring agent state? A. Have each agent persist a structured export to a known location. On resume, the coordinator loads the manifest and injects relevant state into agent prompts. B. Index all agent outputs in a shared vector store. When resuming, each agent queries the store using semantic search to retrieve relevant prior findings. C. Have each agent maintain its own persistent state file and reload it independently at the start of each session. D. Persist the coordinator’s conversation log containing all task delegations and responses, providing this to agents when resuming.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You’ve configured the system so that all four subagents have access to the complete set of 18 tools. During testing, agents frequently call tools outside their specialization – the synthesis agent attempts web searches, and the report generator tries to analyze documents. What is the primary cause of this poor tool selection behavior? A. Choosing from 18 tools instead of 4-5 relevant ones increases decision complexity beyond reliable selection thresholds. B. The tool definitions consume too much context window space, leaving insufficient room for task content. C. The agents’ role descriptions in their system prompts conflict with having access to tools outside that role. D. The coordinator cannot track which capabilities each subagent has, leading to misrouted tasks.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The synthesis agent completes its initial pass but flags that three key research questions remain unanswered because the web search and document analysis agents didn’t find relevant information on those specific subtopics. The coordinator currently proceeds directly to report generation, producing reports with incomplete coverage. What change would most effectively improve research completeness? A. Have the report generation agent note which research questions couldn’t be answered, so users understand the limitations of the final output. B. Increase the initial breadth of queries sent to web search and document analysis to reduce the probability of missing relevant information. C. Have the coordinator evaluate synthesis output for gaps, then re-delegate to web search and document analysis with targeted queries before invoking synthesis again. D. Give the synthesis agent direct access to web search tools so it can autonomously fill knowledge gaps without returning control to the coordinator.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The web search agent has gathered several relevant sources for a research topic. The document analysis agent now needs to examine these sources. How does information typically flow between these two specialized subagents? A. The agents communicate through an event-driven message queue, with the document analysis agent subscribing to web search completion events. B. The web search agent directly invokes the document analysis agent, passing the discovered sources as parameters. C. The coordinator agent receives the web search agent’s output and includes relevant findings in the prompt when invoking the document analysis agent. D. Both agents access a shared memory store where the web search agent writes findings and the document analysis agent reads them.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Production reviews reveal inconsistent handling of uncertainty in final reports. Sometimes conflicting subagent findings are synthesized into a single confident statement (losing nuance), while other times reports over-hedge with excessive qualifications (becoming unhelpful). When the web search agent returns “industry analysts estimate $50B market size (methodology varies)” and the document analysis agent returns “peer-reviewed study estimates $35B (±$7B, 95% CI),” the coordinator either picks one arbitrarily or produces vague statements like “the market may be $35B-$50B depending on factors.” What systematic approach best addresses this? A. Configure subagents to only report findings meeting a high-confidence threshold, filtering uncertain information before it reaches the coordinator. B. Add a verification subagent that cross-references findings across sources, only passing claims to synthesis that are corroborated by at least two independent sources. C. Instruct the synthesis agent to structure reports with explicit sections distinguishing well-established findings from contested ones, preserving original source characterizations and methodological context. D. Implement a confidence calibration layer that normalizes subagent uncertainty expressions to standardized probability scores (0.0-1.0), then weight-average findings by their calibrated confidence.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In production, final reports frequently contain claims without proper source attribution. Investigation shows that while the web search and document analysis agents correctly attach citations to their outputs, the synthesis agent loses track of which sources support which conclusions when combining findings. What’s the most effective architectural change? A. Require all subagents to output structured claim-source mappings that the synthesis agent must preserve and merge when combining findings from multiple sources. B. Maintain complete transcripts of all subagent interactions and add a citation-resolution agent to analyze logs and determine attributions before report generation. C. Add a verification step where the report generator uses semantic similarity matching against original sources to reconstruct which claims came from which documents. D. Have the coordinator inject source identifier prefixes into text before each handoff, then parse these prefixes at report generation to reconstruct citations.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "After the web search agent and document analysis agent complete their tasks, the coordinator invokes the synthesis agent. However, the synthesis agent responds that it cannot complete the task because no research findings were provided. What is the most likely cause of this issue? A. The subagents need to share a single API connection to enable automatic context sharing between invocations. B. The synthesis agent needs tools that can fetch results directly from the other agents’ conversation histories. C. The coordinator did not include the outputs from the previous agents in the synthesis agent’s prompt. D. The synthesis agent’s context window is not large enough to hold the combined outputs from both previous agents.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Users report that final reports sometimes lack depth on specific subtopics. Investigation shows that the document analysis agent frequently identifies gaps – for instance, noting “the retrieved sources discuss API authentication but lack details on token refresh patterns” – but under the current strict pipeline, this insight isn’t actionable since search has already completed. What’s the most effective architectural change? A. Add a research planning agent before the search phase that decomposes topics into specific sub-questions. B. Have the analysis agent report specific gaps to the coordinator, which triggers targeted searches and re-invokes analysis until sufficient. C. Have the coordinator review analysis output for gap indicators and re-invoke search with gap-informed queries when gaps are detected. D. Have the synthesis agent attach confidence scores to each section and flag areas with insufficient coverage for manual review.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "After the web search and document analysis subagents complete their tasks, the coordinator needs to spawn the synthesis subagent to synthesize the findings. What is the correct approach for providing the synthesis subagent with the information it needs? A. Spawn the subagent with only a brief task description, relying on automatic context inheritance from the coordinator B. Provide the subagent with tool definitions that allow it to request outputs from other subagents via callbacks C. Pass reference identifiers and configure the subagent with read access to a shared memory store where other subagents deposited their results D. Include the complete findings from both subagents directly in the synthesis subagent’s prompt",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When the agent calls lookup_order and receives order details showing the item was purchased 45 days ago, how does the agentic loop determine whether to call process_refund or escalate_to_human next? A. The orchestration layer automatically routes to the next tool based on the order’s status field. B. The order details are added to the conversation and the model reasons about which action to take. C. The agent executes the remaining steps in a tool sequence planned at the start of the request. D. The agent follows a pre-configured decision tree mapping order attributes to specific tool calls.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "After investigating a billing dispute over 25+ turns, you’ve identified that duplicate charges occurred due to a payment gateway timeout triggering retry logic. The required refund ($847) exceeds your $500 authorization limit You need to call escalate_to_human, and the human agent won’t have access to your conversation transcript. What context should you pass to enable effective resolution? A. A structured summary: customer ID, root cause, refund amount, and recommended action. B. Your diagnosis and the refund amount only. C. The customer’s original complaint verbatim plus the tool result excerpts showing duplicate transactions. D. The complete conversation transcript with all tool results.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your agent is handling a billing dispute. After calling get_customer and lookup_order, it identifies that the dispute involves a promotional pricing error requiring manager approval – beyond the agent’s authorization level. How should the workflow handle this mid-process escalation? A. Compile a structured handoff with customer details, order info, and the identified issue before calling escalate_to_human. B. Persist the complete conversation and tool response history to a database, then call escalate_to_human with a reference ID. C. Call escalate_to_human passing only the customer’s original message. D. Attempt the refund with process_refund anyway, escalating only if the system rejects the transaction.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You’re implementing the escalation logic for when the agent should call escalate_to_human. Your team proposes four different approaches for triggering escalation. Which approach will most reliably identify cases that genuinely require human intervention? A. Implement sentiment analysis that monitors for frustration indicators (negative language, repeated questions, exclamation marks) and trigger escalation when the frustration score exceeds a configured threshold. B. Configure the agent to escalate after three consecutive tool calls that fail to resolve the customer’s stated issue, ensuring a reasonable attempt before involving a human. C. Instruct the agent to escalate when the customer requests a human, when the issue requires policy exceptions, or when the agent cannot make meaningful progress. D. Build a rules engine that maps specific issue types, customer segments, and product categories to escalation decisions, removing the need for model judgment calls.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your order management system requires tools for three distinct operations: issuing refunds (requires amount and reason), canceling orders (requires reason), and requesting reshipments (requires shipping address). Each operation shares an order_id parameter but has different additional requirements. You notice during testing that with your current unified tool design, the agent frequently omits required parameters or includes irrelevant ones. What design change will most effectively improve parameter accuracy? A. Keep one unified tool with a nested operation_details object parameter whose internal structure varies by operation type, documented in the tool description. B. Keep one unified tool but add JSON Schema if-then-else conditionals to enforce that parameters like amount are required only when the operation type is “refund”. C. Split into three separate tools (issue_refund, cancel_order, request_reshipment), each defining only the parameters required for that specific operation. D. Keep one unified tool with all parameters marked optional, but add detailed few-shot examples in the system prompt showing correct parameter combinations for each operation type.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your post_content tool requires user confirmation before publishing. The current workflow displays “Ready to post to social media. Confirm?” and analytics show users approve 98% of requests within 2 seconds. Post-mortems reveal incidents where posts went to wrong accounts, were scheduled for wrong times, or contained errors – all confirmed by users without catching the mistakes. How should you redesign the confirmation workflow? A. Auto-approve routine posts and only require explicit confirmation for unusual patterns like posting to new accounts or large audiences B. Require users to type a confirmation phrase instead of clicking a button C. Add a mandatory waiting period before the confirm option becomes available D. Include the complete post text, target account, scheduled time, and platform in the confirmation request",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Your update_user_profile tool accepts a user_id (required) and an optional fields_to_update object. In testing, Claude frequently omits user_id or passes incorrectly structured data. What is most critical for helping Claude understand what parameter values to provide? A. Strict JSON Schema type constraints marking user_id as required and defining fields_to_update as an object type B. Verbose parameter names encoding format hints, such as user_id_string_uuid_format C. Detailed error responses explaining why invalid parameter values were rejected D. Clear parameter descriptions explaining expected format, such as “user_id: UUID of the user to update (required)”",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your MCP server includes archive_file(file_id) and delete_file(file_id) tools. Production logs show the agent calls delete_file when users ask to “remove old backups,” but company policy requires archiving backup files. Both tools currently have minimal descriptions: “Archives a file” and “Deletes a file.” Which change most directly improves tool selection for this scenario? A. Expand tool descriptions to clarify use cases, adding guidance like “Do not use for backup files” to delete_file. B. Add a confirmation step that requires users to type “CONFIRM DELETE” before delete_file executes. C. Implement server-side validation that rejects delete_file calls for files tagged as backups, returning an error message suggesting archive_file. D. Add few-shot examples to the system prompt demonstrating that requests involving “backup” or “old” should use archive_file.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your send_notification tool calls third-party messaging APIs. When these services time out during delivery, you cannot determine whether the message was actually sent. Currently, the tool returns is_error: true with a generic “Notification failed” message for all timeouts. Production monitoring reveals agents automatically retry these failures, frequently causing users to receive duplicate notifications. How should you modify the error response? A. Return is_error: true with a structured field retry_safe: true for timeouts, distinguishing them from permanent failures that should not be retried. B. Return is_error: true with a message communicating uncertainty: “Timeout – status unknown. Message may have been sent. Avoid retry.” C. Return is_error: true with a message encouraging retry: “Delivery service temporarily unavailable. Please retry the notification.” D. Return is_error: true with the original message content echoed back.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your control_device tool manages smart home devices through external APIs. When a device doesn’t respond within the timeout period, the tool returns an error. Production logs show that the agent simply tells users “the device is not responding” without offering helpful next steps. Which error response structure would best enable the agent to provide useful follow-up? A. Set is_error: true with a structured technical error containing the device ID, timeout duration, and raw API response code for debugging purposes. B. Set is_error: true with a brief “Device offline” message and provide a separate tool the agent can call to retrieve context-specific troubleshooting suggestions. C. Set is_error: false with an optimistic message indicating the command was dispatched successfully but device acknowledgment is still pending. D. Set is_error: true with a message explaining the likely cause and suggesting troubleshooting steps the agent can offer the user.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After 30+ turns, your conversational assistant shows noticeably slower responses and occasionally produces less coherent outputs. Investigation reveals: (1) average conversations reach 50,000 tokens by turn 35, (2) production logs show 94% of user messages only reference the previous 3-5 exchanges, (3) the 6% of queries referencing earlier context typically ask about information the user could easily re-state. Your goal is to improve response speed and quality while maintaining good user experience. What’s the most effective approach? A. Enable prompt caching and continue sending the complete conversation history, using cached prefixes to reduce per-request costs while preserving all context. B. Build a retrieval system that stores all conversation turns and uses semantic search to pull in relevant historical context only when the current query appears to reference past information. C. Implement a summarization layer that progressively compresses older conversation turns into a running summary while keeping the most recent 5-6 turns verbatim, maintaining full historical context in condensed form. D. Implement a sliding window keeping only the system prompt and last 8-10 turns. When users reference earlier context, acknowledge the limitation and ask them to re-state the relevant information.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer writes: “I’ve been going back and forth on this return for days. I just want to speak to someone who can actually help me.” The agent has confirmed via lookup_order that the return is straightforward – within policy and eligible for immediate processing. What should the agent do? A. Process the refund via process_refund to resolve the underlying issue, then inform them it’s complete B. Acknowledge frustration, inform them this is resolvable now, and offer to complete it or escalate C. Call escalate_to_human immediately to honor the customer’s request D. Ask what specifically hasn’t worked in previous attempts before deciding whether to escalate or resolve automatically",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer sends: “This is frustrating. I’ve explained my issue twice and nothing is being resolved. I want to talk to a real person NOW.” The agent has not yet called any tools to investigate their account. What should the agent do? A. Immediately call escalate_to_human with the conversation history. B. Briefly explain what the agent can help with and offer to resolve the issue quickly, escalating only if the customer repeats their request. C. First call get_customer and lookup_order to gather account context, then escalate to a human agent. D. Acknowledge the frustration and ask one targeted question to understand the specific issue before escalating.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your infrastructure-as-code repository includes Terraform modules (/terraform/), Kubernetes manifests (/kubernetes/), and CI/CD pipeline scripts (/pipelines/). Each requires different conventions, but your single root CLAUDE.md has grown to 500+ lines. When developers work on Kubernetes files, Terraform-specific rules load into context unnecessarily, consuming tokens. What is the best approach to reorganize so only relevant guidance loads when editing specific file types? A. Split content into subdirectory CLAUDE.md files (/terraform/CLAUDE.md, /kubernetes/CLAUDE.md), so Claude loads directory-specific guidance. B. Keep the root CLAUDE.md and use @path/to/import syntax to modularly include tool-specific guidance files from separate documents. C. Restructure the root CLAUDE.md into clearly labeled sections with headers (e.g, “## Terraform Conventions”), improving organization and readability. D. Create files in .claude/rules/ with YAML frontmatter path-scoping (e.g., paths: [“terraform/**/*”]), loading rules only when editing matching files.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are using Claude Code to accelerate software development. Your team uses it for code generation, refactoring, debugging, and documentation. You need to integrate it into your development workflow with custom slash commands, CLAUDE.md configurations, and understand when to use plan mode vs direct execution. A critical bug is affecting production users. Error logs show exceptions in the OrderProcessing module with a clear stack trace pointing to a specific function. You haven’t worked with this module before. What’s the most effective approach? A. Start with direct execution to gather initial information, then switch to plan mode to design a comprehensive solution before implementing any changes. B. Enter plan mode to explore the module’s architecture and dependencies before attempting any fixes. C. Use plan mode to analyze the error in context of the module’s design, enumerate potential root causes, and prioritize fixes systematically. D. Use direct execution to examine the stack trace, read the relevant code, and implement a fix once you identify the root cause.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are using Claude Code to accelerate software development. Your team uses it for code generation, refactoring, debugging, and documentation. You need to integrate it into your development workflow with custom slash commands, CLAUDE.md configurations, and understand when to use plan mode vs direct execution. You've asked Claude Code to build a PDF report generation feature. The initial implementation queries the database correctly, but the output has formatting issues: table columns are too narrow causing content truncation, dates display without proper formatting, and page break handling is incorrect. You've noticed these issues interact – changing column widths affects how dates render, and page breaks depend on content height. What's the most effective approach for iterating toward a working solution? A. Show Claude an example of a correctly formatted report and ask it to match that output, rather than listing the specific technical issues. B. Address the column width issue first with specific measurements, verify it works, then fix date formatting within the corrected columns, then adjust page breaks – testing after each change. C. Provide all three issues in a single detailed message with exact specifications for each, allowing Claude to address them together in one update. D. Start fresh with a detailed prompt specifying all formatting requirements upfront.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are building developer productivity tools using the Claude Agent SDK. The agent helps engineers explore unfamiliar codebases, understand legacy systems, generate boilerplate code, and automate repetitive tasks. It uses the built-in tools (Read, Write, Bash, Grep, Glob) and integrates with Model Context Protocol (MCP) servers. An engineer's exploration subagent spent 30 minutes analyzing a legacy payment system, reading 47 files and documenting data flows. The session was interrupted when the engineer's connection dropped. While away, a teammate merged a PR that renamed two utility functions. The engineer wants to continue the same exploration. What's the most effective approach? A. Resume the subagent from its previous transcript without mentioning the changes – the architecture understanding remains valid. B. Launch a fresh subagent and include the prior transcript in the initial prompt for context. C. Launch a fresh subagent with a summary of prior findings. D. Resume the subagent from its previous transcript and inform it about the renamed functions.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are building developer productivity tools using the Claude Agent SDK. The agent helps engineers explore unfamiliar codebases, understand legacy systems, generate boilerplate code, and automate repetitive tasks. It uses the built-in tools (Read, Write, Bash, Grep, Glob) and integrates with Model Context Protocol (MCP) servers. An engineer asks the agent to find all callers of a function before removing it. The function is defined in a core library but is also exposed through wrapper modules that rename the function for domain-specific use (e.g., `calculateTax` in the library becomes `computeOrderTax` in the orders module). What exploration strategy will most reliably identify all callers? A. Search for the function name in project documentation to understand intended usage patterns and navigate to documented integration points. B. Use Grep to find all files that import from the library or wrapper modules, then read each file to check whether it uses the function. C. Use Grep to search for the function's original name across the codebase. D. Read the library and wrapper modules to identify all exposed names for the function, then Grep for each name across the codebase.",
+    "options": {},
+    "most_voted": "D"
+  }
+]
