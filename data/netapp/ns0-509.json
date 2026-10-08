@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-2_1.png] You are asked to serve iSCSI LUNs in an existing SVM on your AFF A220 using ONTAP 9.5. You verified that the iSCSI license is configured on your cluster and that the iSCSI protocol is enabled. Referring to the exhibit, what is needed to allow hosts to log into the iSCSI target? A. Create new LIFs with the iSCSI data protocol. B. Create new igroups with the host IQNs. C. Add iSCSI to the data protocol of the existing LIFs. D. Map LUNs to the igroups.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-3_1.png] Referring to the exhibit, which two pairs of ports are currently configurable as FC SAN LIFs? (Choose two.) A. 01b, 0h B. 01a, 0g C. 01a, 0h D. 01b, 0g",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company has 20 ESX hosts. Ten of the hosts are connected using FC, and the rest are connected over iSCSI. The FC host HBA queue depth is set to 32, and the iSCSI LUN queue depth is set to 64. The FC hosts are now experiencing random connectivity issues. In this scenario, what would be the reason for the disconnects? A. The FC host has a lower queue depth. B. According to the IMT, unsupported HBA firmware is in use. C. All of the hosts are part of the same cluster. D. The queue depth is not consistent across the cluster.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You want to ensure maximum performance of iSCSI LUNs on an AFF A220. In this scenario, which two actions will accomplish this task? (Choose two.) A. Disable flow control. B. Configure virtual LAN (VLAN). C. Enable flow control. D. Enable jumbo frames.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are provisioning storage to an ESX host that uses iSCSI. According to NetApp best practice, which three actions accomplish this task? (Choose three.) A. Enable the iSCSI service. B. Bind the iSCSI ports to the software iSCSI adapter. C. Install Virtual Storage Console (VSC) for VMware. D. Enable BGP on the switch. E. Configure MTU 1500 on the switch.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-7_1.png] A customer has an AFF A700 connected to a Cisco switch and has verified connectivity but cannot see any LUNs. The customer issued the run -node scaling-01 -command fcp topology show command to verify the connection. Referring to the exhibit, what needs to be enabled on the Cisco switch? A. Trunking needs to be enabled. B. VSAN needs to be enabled. C. NPIV needs to be enabled. D. VFC needs to be enabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-8_1.jpg] A customer is using both FC and NVMe in a cluster. The customer needs to do some work on AFF_1. Referring to the exhibit, what will happen? A. The NVMe namespaces on AFF_2 will be available after takeover of AFF_1. B. The FC LUNs that use cluster interconnect to access the LUNs on AFF_1 will be unavailable after failover. C. The FC LUNs on node AFF_2 will be unavailable after failover of AFF_1. D. The NVMe namespaces on AFF_1 will be unavailable after takeover by AFF_2.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-9_1.png] You have an existing 2-node AFF A300 cluster with premium bundle licensing applied. You need to have consistently low front end latency, and have determined that NVMe satisfies this requirement. Referring to the exhibit, which two actions would accomplish this task? (Choose two.) A. Add a UTA2 adapter to each of the two AFF A300 nodes. B. Add a 32 GB FC HBA to each of the two AFF A300 nodes. C. Apply the license for FCP. D. Apply the license for NVMe.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-11_1.jpg] Referring to the exhibit, what happens when you change the type for port 1a from target to initiator? A. The port type for 1a changes to initiator, and you must reboot the controller for the changes to take effect. B. You receive an error message that you must take ports 1a and 1b offline before you can change the type. C. B. You receive an error message that you must take the port 1a offline before you can change the type. D. The port type for 1a and 1b changes to initiator, and you must reboot the controller for the changes to take effect.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer that is using an AFF A220 has a problem with a host for a new FC LUN. Other LUNs on the same SVM are working properly. This LUN is not visible on the host. Which configuration does the customer need to verify in their solution? A. LUN mapping with igroup B. host HBA speed settings C. FC target port setting on NetApp node D. FC switch zoning",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer has an existing 8-node cluster that consists of six FAS2650 nodes and two FAS2554 nodes. The customer wants to expand the cluster by adding two AFF A220 nodes. Which resource would be used to determine whether this configuration is supported? A. Interoperability Matrix Tool (IMT) B. Config Advisor C. OneCollect D. Hardware Universe (HWU)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You deployed a new SVM for FC access, and you used the vserver fcr, create -vserver svm1 - status-admin up command to enable FC service on the SVM. You then created the LIFs for the FC protocol. When you review the status of the LIFs, they show that the admin status is up, but the operational status is down. You have already verified that the ports are physically connected. In this scenario, what is the next step to bring the LIFs up? A. Use the network interface modify command to change the operational status of the LIFs. B. Create at least one zone that contains your SVM LIF WWPNs and an initiator. C. Verify that an FC license is applied on your system. D. Disable the SAN switch port where your NetApp storage is connected.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-14_1.jpg] A customer wants to add a 2-port, 32 Gb FC card to support NVMe in an AFF A700 2-node cluster. Currently, there are cards in slots 1, 2, 4, 6, 8, and 9. Referring to the exhibit, what is the number of the slot that should be used? A. 10 B. 3 C. 5 D. 7",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-15_1.png] Referring to the exhibit, which two elements are required for NVMe host access with ONTAP 9.5 and using supported AFF nodes? (Choose two.) A. You need 16 Gb FC HBAs installed in the AFF nodes. B. You must have the license installed for NVMe support in the cluster. C. You must have the license installed for FC support in the cluster. D. You need 32 Gb FC HBAs installed in the AFF nodes.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is required to encrypt iSCSI traffic across their public network. In this scenario, which method will accomplish this task? A. dot1q B. IPsec C. NVMe D. CHAP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You use iSCSI to present a LUN to a newly installed Windows 2016 Server. You have created the volume and LUN on the NetApp cluster. When you perform a hardware rescan on the Windows host, you cannot see the newly presented storage. What are three reasons for this problem? (Choose three.) A. The protocol has not been enabled on the NetApp cluster. B. You need to add the IQN of the Windows host to the newly created LUN. C. The IQN of the Windows host is not included in the igroup for the new LUN. D. The wrong igroup has been associated with the new LUN. E. The volume has not been enabled for iSCSI access.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "As a system administrator, you perform a routine check of available storage space on your FAS2750. You notice that the vol_1 volume is approaching 100% capacity. The volume is configured with the space guarantee set to volume and the LUN reservation is disabled. You want to free up space in the volume without increasing its size. Which action would accomplish this task? A. Increase the size of the LUN. B. Increase the Snapshot Reserve. C. Increase the aggregate size. D. Use deduplication.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator is configuring their Ethernet switches to support an AFF A300 cluster that will be providing iSCSI LUNs to servers. The switches are also used for other traffic from various hosts. In this scenario, which statement about the switch configuration is correct? A. Use a larger MTU size at the SAN connection rather than the host connections to allow for greater SAN bandwidth. B. Use network ports as access ports only. C. Use multiple VLANs to segregate iSCSI traffic from other traffic types D. Use a single VLAN to consolidate all data traffic on the switches.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You have three Windows servers and one Linux server, each with dual-ported HBAs that are connected into a dual fabric. In this scenario, what is the minimum number of zones that you need to create within each fabric switch? A. 8 B. 1 C. 4 D. 2",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You have a 4-node cluster with an AFF A300 HA pair and a FAS8200 HA pair. You plan on using the default storage efficiency settings. With inline data compaction, you estimate that you can save 6% of storage space. AFF A300 LUNs that use under 5000 IOPS are moved to a FAS8200 using the lun move command. In this scenario, what happens to the data after the LUN is moved? (Choose two.) A. The new written data is not compacted. B. The new written data is compacted. C. The existing data is compacted. D. The existing data is not compacted.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "While expanding a 200 GB LUN in an ONTAP 9.4 system, the following error is observed: [sampleXML/xmlfile-27_1.png] What is the cause of this error? A. The volume auto-grow is disabled. B. The LUN reached maximum capacity. C. The LUN can be expanded up to 10 times its original size. D. Space reservation is enabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-28_1.jpg] You have a LUN owned by Node 01 and mapped using the default Selective LUN Map (SLM) configuration. You want to enable your host to access this LUN and facilitate future maintenance. Which best-practice zone configuration accomplishes this task? A. Zone 1: HBA 0, LIF_1, LIF_3, LIF_5 and LIF_7 Zone 2: HBA 1, LIF_2, LIF_4, LIF_6 and LIF_8 B. Zone 1: HBA 0, HBA 1, LIF_1, LIF_2, LIF_3, LIF_4, LIF_5, LIF_6, LIF_7, LIF_8 C. Zone 1: HBA 0, LIF_1, LIF_3 Zone 2: HBA 1, LIF_2, LIF_4 D. Zone 1: HBA 0, HBA 1, LIF_1, LIF_2, L1F_3, LIF_4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three components are required for NetApp iSCSI LUN access on Linux servers? (Choose three.) A. device-mapper-multipath B. NetApp SnapDrive C. scsi-target-utils D. iscsi-initiator-utils E. NetApp Host Utilities",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are configuring both NVMe and FC on the same AFF A800 2-node ONTAP 9.5 cluster. You are configuring both protocols on the same Cisco FC network switches. In this scenario, which configuration on the cluster is supported? A. a volume with both LUNs and namespaces B. an SVM with both nvme and fcp allowed protocols C. an AFF A800 node HBA with both NVMe/FC and FC on the same port D. a LIF with both fc-nvme and fcp data protocols",
+    "options": {},
+    "most_voted": ""
+  }
+]
