@@ -1,0 +1,87 @@
+[
+  {
+    "question": "Which two NetApp data security solutions can be licensed to help protect against ransomware attacks? (Choose two.) A. Spot Security B. Cloud Insights C. BlueXP tiering D. ONTAP One",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A VMware Administrator needs to restore a VM after a recent server patch update has corrupted the VM operating system. What is the quickest way to restore the VM? A. From vCenter vSphere client, use SnapCenter Plug-In for VMware vSphere to restore the VM B. From the SnapCenter Server, use SnapCenter Plug-In for VMware vSphere to restore the VM C. From ONTAP System Manager, create a FlexClone of a Snapshot before the patch update, andmount to vSphere D. From ONTAP System Manager, rollback the datastore volume containing multiple VMs to a previousSnapshot",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your customer wants to set up a local retention time of at least four months. They also want to protect a week of retention from being deleted by ransomware or rogue administrators. Which two settings create the correct Snapshot policy to achieve this? (Choose two.) A. Enable Autonomous Ransomware Protection (ARP) on the volume. B. Create a Snapshot policy with the weekly Snapshot copy retention time set to 122 days. C. Create a Snapshot policy with the maximum daily snapshots set to 122. D. Set the SnapLock retention period for the daily Snapshot copies to 7 days.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You have created a SnapMirror relationship from your production volume serving SMB/CIFS data to your DR cluster. After two days of updates, you do not see any of the expected snapshots on the secondary volume. Why is SnapMirror failing to replicate snapshots? A. The SnapMirror label is missing from the SnapMirror policy on the secondary volume. B. SnapMirror is not properly licensed. C. SVM peering is not properly configured. D. The SnapMirror label is missing from the snapshot policy on the secondary volume.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your IT company is using NetApp FlexClone on a two node AFF cluster with 20TB of data to rapidly provision environments for each developer. Each environment is replicated to an eight node AFF C-Series cluster at a DR site using SnapMirror. You notice that the environments are consuming significantly more disk space on the destination cluster than on the source cluster. In this scenario, which action will minimize the disk usage on the destination cluster? A. Consolidate the SnapMirror destination volumes onto a single aggregate. B. Distribute the SnapMirror destination volumes evenly across the available aggregates. C. Enable SnapMirror network compression. D. Enable Flexclone copies on the DR side.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is using SnapLock Compliance to protect a specific subset of data. The customer wants to have granular control of which documents are locked, when they are locked, and when the retention period is applied. Which two actions should be done? (Choose two.) A. Change the minimum retention period. B. Set the default retention period to unspecified. C. Confirm that autocommit is disabled. D. Commit the files manually.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer wants to replicate between their two NetApp ONTAP clusters but is concerned that replication traffic might slow down normal data traffic. They still have two unused network ports on every node. You recommend using dedicated ports for the Intercluster LIFs, and you are tasked with creating the Intercluster LIFs so that they are on dedicated ports at all times. Which command must you use before creating InterCluster LIFs? A. system services firewall policy create B. network interface failover-groups create C. network ipspace create -ipspace D. network interface service-policy create",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have a requirement to keep multiple yearly Snapshot copies on your SnapMirror destination volume. However, you do not want to have the Snapshot copies locked on your source volume because you do not have the required capacity. Where do you set the schedule option to create the required Snapshot copies? A. primary SnapMirror policy B. secondary Snapshot policy C. primary Snapshot policy D. secondary SnapMirror policy",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A ransomware attack has compromised all files on a CIFS share. The volume had a retention policy of five daily Snapshot copies, but unfortunately, no Snapshot copies were available. It was confirmed that the cybercriminal accessed only the share and did not gain access to the NetApp ONTAP cluster. What command should be executed to prevent the quick restore strategy from being compromised? A. volume autosize -autogrow disable B. security multi-admin-verify modify -enabled true C. volume modify -snapdir-access false D. volume snapshot -autodelete disabled",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator has an on-premises NetApp AFF cluster with 300TB of used volume space. 200TB of the volume data is tiered using NetApp BlueXP tiering to Amazon Simple Storage Service (Amazon S3). The administrator is tasked to configure NetApp BlueXP backup and recovery from the AFF cluster to Amazon S3. When the first backup completes, how much data is copied from on premises to the cloud? A. 500TB B. 300TB C. 100TB D. 200TB",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your customer wants to create application-aware backups of their SAP HANA databases, which are running on VMware vSphere. What two steps must be completed to create these backups? (Choose two.) A. Create a policy when given the retention requirements by the customer. B. Install the plug-in for SAP HANA in SnapCenter software. C. Install the plug-in for Unix file systems. D. Install the plug-in for VMware vSphere in SnapCenter software.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "After deploying a new on-premises AFF cluster, you have been tasked with backing it up to StorageGRID. You have requested the NetApp ONTAP One licenses. To successfully deploy this solution, what else needs to be deployed through NetApp ONTAP System Manager? A. NetApp Cloud Backup service B. NetApp SnapMirror Cloud API license C. NetApp BlueXP tiering D. NetApp BlueXP observability",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is deploying NetApp BlueXP backup and recovery for VMs to protect both Windows and Linux systems. The site has two instances of VMware Cloud on AWS that need to be backed up. How will this goal be accomplished? (Choose two.) A. Pair each instance of VMware Cloud on AWS with a unique instance of BlueXP backup and recovery. B. Deploy one instance of BlueXP backup and recovery on a single Linux VM. C. Pair both instances of VMware Cloud on AWS to a single instance of BlueXP backup and recovery. D. Deploy two instances of BlueXP backup and recovery on separate Linux VMs.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Before you use SnapMirror active sync, which NetApp tool must be used to add the NetApp ONTAP Mediator service? A. Active IQ Config Advisor B. Active IQ Unified Manager C. ONTAP Mediator server D. ONTAP System Manager",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have an 8-node MetroCluster IP configuration running NetApp ONTAP 9.14.1 software and using the NetApp ONTAP Mediator service. There is an HA failure in one DR group. What will happen in this scenario? A. Mediator-assisted Automatic Unplanned Switchover (MAUSO) will be triggered. B. Mediator-assisted Automatic Unplanned Switchover (MAUSO) will not be triggered. C. Switchover will happen only for the failed HA pair. D. Switchover will happen only if the failure domain is set to auso-on-cluster-disaster.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your customer wants their existing iSCSI datastore running on NetApp ONTAP AFF cluster Cluster01 to continue operating even through a complete site failure. They already have another ONTAP AFF cluster Cluster02 in a different data center on their company site. You successfully implemented a SnapMirror active sync relationship between the two clusters. The LUN is replicated and the relationship is healthy. Which two steps must you take next? (Choose two.) A. Map the LUNs on the secondary site. B. Rescan the disk on the application host. C. Change the service policy on the SAN LIFs. D. Map the LUNs on the primary site.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have set up SnapMirror relationships between two clusters. SnapMirror shows as unhealthy and fails with the following error: Reason: 'Transfer failed'. Last Transfer Error Was 'The number of Snapshot copies on destination volume \"volume_name\" has reached the maximum supported count of <count_set_by_policy>. When you check the EMS logs, you notice the following: [NetAppProdVault-01: worker_thread_342: sm.xfer.fail.maxlim.snap:alert]: The number of Snapshot copies on destination volume 'SVM_filer02:vflsystems_sm_4' of the relationship with relationship UUID 'ala620fc-a870-lle9-94ef-00a09893ee91' and policy 'filer02_vault_daily_policy' has reached the maximum supported. [NetAppProdVault-01: sm_logger_main: smc.snapmir.update.fail:error]: Snapmirror update from source volume 'vol1' to destination volume 'vol2' failed with error 'The number of Snapshot copies on destination volume \"vol2\" has reached the maximum supported count of <count_set_by_policy>.'. Relationship UUID 'ala620fc-a870-lle9-94ef-00a09893ee91'. What is the cause of this situation, and how can you avoid this in the future? (Choose two.) A. Modify the SnapMirror policy's -keep parameter. B. The SnapMirror relationship has reached its maximum number of snapshots, which is 1019. C. Modify the SnapMirror policy's -snapmirror-label parameter. D. The SnapMirror relationship has reached its maximum number of snapshots, which is 255.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
