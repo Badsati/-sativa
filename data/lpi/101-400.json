@@ -1,0 +1,467 @@
+[
+  {
+    "question": "During a system boot cycle, what program is executed after the BIOS completes its tasks? A. The bootloader B. The inetd program C. The init program D. The kernel",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which run levels should never be declared as the default run level when using SysV init? (Choose TWO correct answers.) A. 0 B. 1 C. 3 D. 5 E. 6",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements is correct when talking about /proc/? A. All changes to files in /proc/ are stored in /etc/proc.d/ and restored on reboot. B. All files within /proc/ are read-only and their contents cannot be changed. C. All changes to files in /proc/ are immediately recognized by the kernel. D. All files within /proc/ are only readable by the root user.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What of the following statements are true regarding /dev/ when using udev? (Choose TWO correct answers.) A. Entries for all possible devices get created on boot even if those devices are not connected. B. Additional rules for udev can be created by adding them to /etc/udev/rules.d/. C. When using udev, it is not possible to create block or character devices in /dev/ using mknod. D. The /dev/ directory is a filesystem of type tmpfs and is mounted by udev during system startup. E. The content of /dev/ is stored in /etc/udev/dev and is restored during system startup.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following information is stored within the BIOS? (Choose TWO correct answers.) A. Boot device order B. Linux kernel version C. Timezone D. Hardware configuration E. The system's hostname",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following commands reboots the system when using SysV init? (Choose TWO correct answers.) A. shutdown -r now B. shutdown -r \"rebooting\" C. telinit 6 D. telinit 0 E. shutdown -k now \"rebooting\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are init systems used within Linux systems? (Choose THREE correct answers.) A. startd B. systemd C. Upstart D. SysInit E. SysV init",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "SIMULATION Which file in the /proc filesystem lists parameters passed from the bootloader to the kernel? (Specify the file name only without any path.)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What information can the lspci command display about the system hardware? (Choose THREE correct answers.) A. Device IRQ settings B. PCI bus speed C. System battery type D. Device vendor identification E. Ethernet MAC address",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following commands brings a system running SysV init into a state in which it is safe to perform maintenance tasks? (Choose TWO correct answers.) A. shutdown -R 1 now B. shutdown -single now C. init 1 D. telinit 1 E. runlevel 1",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the first program that is usually started, at boot time, by the Linux kernel when using SysV init? A. /lib/init.so B. /sbin/init C. /etc/rc.d/rcinit D. /proc/sys/kernel/init E. /boot/init",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "SIMULATION Which command will display messages from the kernel that were output during the normal boot sequence?",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following commands will write a message to the terminals of all logged in users? A. bcast B. mesg C. print D. wall E. yell",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following kernel parameters instructs the kernel to suppress most boot messages? A. silent B. verbose=0 C. nomesg D. quiet",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following options for the kernel's command line changes the systemd boot target to rescue.target instead of the default target? A. systemd.target=rescue.target B. systemd.runlevel=rescue.target C. systemd.service=rescue.target D. systemd.default=rescue.target E. systemd.unit=rescue.target",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "After modifying GNU GRUB's configuration file, which command must be run for the changes to take effect? A. kill -HUP $(pidof grub) B. grub-install C. grub D. No action is required",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following commands is used to update the list of available packages when using dpkg based package management? A. apt-get update B. apt-get upgrade C. apt-cache update D. apt-get refresh E. apt-cache upgrade",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following commands lists the dependencies of a given dpkg package? A. apt-cache depends-on package B. apt-cache dependencies package C. apt-cache depends package D. apt-cache requires package",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following options is used in a GRUB Legacy configuration file to define the amount of time that the GRUB menu will be shown to the user? A. hidemenu B. splash C. timeout D. showmenu",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What can the Logical Volume Manager (LVM) be used for? (Choose THREE correct answers.) A. To create RAID 9 arrays. B. To dynamically change the size of logical volumes. C. To encrypt logical volumes. D. To create snapshots. E. To dynamically create or delete logical volumes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following commands updates the linker cache of shared libraries? A. mkcache B. soconfig C. mkldconfig D. lddconfig E. ldconfig",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following commands lists all currently installed packages when using RPM package management? A. yum --query --all B. yum --list --installed C. rpm --query --all D. rpm --list installed",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following commands can be used to download the RPM package kernel without installing it? A. yum download --no-install kernel B. yumdownloader kernel C. rpm --download --package kernel D. rpmdownload kernel",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When using rpm --verify to check files created during the installation of RPM packages, which of the following information is taken into consideration? (Choose THREE correct answers.) A. Timestamps B. MD5 checksums C. Inodes D. File sizes E. GnuPG signatures",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is correct when talking about mount points? A. Every existing directory can be used as a mount point. B. Only empty directories can be used as a mount point. C. Directories need to have the SetUID flag set to be used as a mount point. D. Files within a directory are deleted when the directory is used as a mount point.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following environment variables overrides or extends the list of directories holding shared libraries? A. LD_LOAD_PATH B. LD_LIB_PATH C. LD_LIBRARY_PATH D. LD_SHARE_PATH E. LD_RUN_PATH",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "SIMULATION Which world-writable directory should be placed on a separate partition in order to prevent users from being able to fill up the / filesystem? (Specify the full path to the directory.)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which RPM command will output the name of the package which supplied the file /etc/exports? A. rpm -F /etc/exports B. rpm -qf /etc/exports C. rpm -Kl /etc/exports D. rpm -qp /etc/exports E. rpm -qi /etc/exports",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "SIMULATION In which directory must definition files be placed to add additional repositories to yum?",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION What is the name of the main configuration file for GNU GRUB? (Specify the file name only without any path.)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When removing a package, which of the following dpkg options will completely remove the files including configuration files? A. --clean B. --delete C. --purge D. remove",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following commands overwrites the bootloader located on /dev/sda without overwriting the partition table or any data following it? A. dd if=/dev/zero of=/dev/sda bs=512 B. dd if=/dev/zero of=/dev/sda bs=512 count=1 C. dd if=/dev/zero of=/dev/sda bs=440 count=1 D. dd if=/dev/zero of=/dev/sda bs=440",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following commands can be used to create a USB storage media from a disk image? A. gdisk B. dd C. cc D. fdisk E. mount",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Bash, inserting 1>&2 after a command redirects A. standard error to standard input. B. standard input to standard error. C. standard output to standard error. D. standard error to standard output. E. standard output to standard input.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What command will generate a list of user names from /etc/passwd along with their login shell? A. column -s : 1,7 /etc/passwd B. chop -c 1,7 /etc/passwd C. colrm 1,7 /etc/passwd D. cut -d: -f1,7 /etc/passwd",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In a nested directory structure, which find command line option would be used to restrict the command to searching down a particular number of subdirectories? A. -dirmax B. -maxdepth C. -maxlevels D. -n E. -s",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements is correct regarding the command foo 1> bar? A. The stdout from the command foo is appended to the file bar. B. The stdout from the command foo overwrites the file bar. C. The command foo receives its stdin from the file bar. D. The command foo receives its stdin from the stdout of the command bar. E. The stderr from the command foo is saved to the file bar.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following commands kills the process with the PID 123 but allows the process to \"clean up\" before exiting? A. kill -PIPE 123 B. kill -KILL 123 C. kill -STOP 123 D. kill -TERM 123",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "SIMULATION Which signal is missing from the following command that is commonly used to instruct a daemon to reinitialize itself, including reading configuration files? killall -s _______ daemon",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the maximum niceness value that a regular user can assign to a process with the nice command when executing a new process? A. 9 B. 19 C. 49 D. 99",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Immediately after deleting 3 lines of text in vi and moving the cursor to a different line, which single character command will insert the deleted content below the current line? A. i (lowercase) B. P (uppercase) C. p (lowercase) D. U (uppercase) E. u (lowercase)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user accidentally created the subdirectory \\dir in his home directory. Which of the following commands will remove that directory? A. rmdir '~/\\dir' B. rmdir \"~/\\dir\" C. rmdir ~/'dir' D. rmdir ~/\\dir E. rmdir ~/\\\\dir",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "In compliance with the FHS, in which of the directories are man pages found? A. /usr/share/man B. /opt/man C. /usr/doc/ D. /var/pkg/man E. /var/man",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following commands will send output from the program myapp to both standard output (stdout) and the file file1.log? A. cat < myapp | cat > file1.log B. myapp 0>&1 | cat > file1.log C. myapp | cat > file1.log D. myapp | tee file1.log E. tee myapp file1.log",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the purpose of the Bash built-in export command? A. It allows disks to be mounted remotely. B. It runs a command as a process in a subshell. C. It makes the command history available to subshells. D. It sets up environment variables for applications. E. It shares NFS partitions for use by other systems on the network.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the output of the following command? echo \"Hello World\" | tr -d aieou A. Hello World B. eoo C. Hll Wrld D. eoo Hll Wrld",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following characters can be combined with a separator string in order to read from the current input source until the separator string, which is on a separate line and without any trailing spaces, is reached? A. << B. <| C. !< D. &<",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following commands will NOT update the modify timestamp on the file /tmp/myfile.txt? A. file /tmp/myfile.txt B. echo \"Hello\" >/tmp/myfile.txt C. sed -ie \"s/1/2/\" /tmp/myfile.txt D. echo -n \"Hello\" >>/tmp/myfile.txt E. touch /tmp/myfile.txt",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the default nice level when a process is started using the nice command? A. -10 B. 10 C. 20 D. 0",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the default action of the split command on an input file? A. It will break the file into new files of 1,024 byte pieces each. B. It will break the file into new files of 1,000 line pieces each. C. It will break the file into new files of 1,024 kilobyte pieces each. D. It will break the file into new files that are no more than 5% of the size of the original file.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "SIMULATION Which command displays a list of all background tasks running in the current shell? (Specify ONLY the command without any path or parameters.)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following commands moves and resumes in the background the last stopped shell job? A. run B. bg C. fg D. back",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the effect of the egrep command when the -v option is used? A. It enables color to highlight matching parts. B. It only outputs non-matching lines. C. It shows the command's version information. D. It changes the output order showing the last matching line first.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What does the ? symbol within regular expressions represent? A. Match the preceding qualifier one or more times. B. Match the preceding qualifier zero or more times. C. Match the preceding qualifier zero or one times. D. Match a literal ? character.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In the vi editor, how can commands such as moving the cursor or copying lines into the buffer be issued multiple times or applied to multiple rows? A. By using the command :repeat followed by the number and the command. B. By specifying the number right in front of a command such as 4l or 2yj. C. By selecting all affected lines using the shift and cursor keys before applying the command. D. By issuing a command such as :set repetition=4 which repeats every subsequent command 4 times.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following files, located in the user home directory, is used to store the Bash history? A. .bash_history B. .bash_histfile C. .history D. .bashrc_history E. .history_bash",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "SIMULATION Which Bash environment variable defines in which file the user history is stored when exiting a Bash process? (Specify ONLY the variable name.)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following commands displays the contents of a gzip compressed tar archive? A. gzip archive.tgz | tar xvf - B. tar ztf archive.tgz C. gzip -d archive.tgz | tar tvf - D. tar cf archive.tgz",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which grep command will print only the lines that do not end with a / in the file foo? A. grep '/$' foo B. grep '/#' foo C. grep -v '/$' foo D. grep -v '/#' foo",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following commands is used to change options and positional parameters for a running Bash? A. history B. set C. bashconf D. setsh E. envsetup",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following commands replaces each occurrence of 'bob' in the file letter with 'Bob' and writes the result to the file newletter? A. sed '/bob/Bob' letter > newletter B. sed s/bob/Bob/ letter < newletter C. sed 's/bob/Bob' letter > newletter D. sed 's/bob/Bob/g' letter > newletter E. sed 's/bob, Bob/' letter > newletter",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "From a Bash shell, which of the following commands directly executes the instruction from the file /usr/local/bin/runme.sh without starting a subshell? (Please select TWO answers.) A. source /usr/local/bin/runme.sh B. . /usr/local/bin/runme.sh C. /bin/bash /usr/local/bin/runme.sh D. /usr/local/bin/runme.sh E. run /usr/local/bin/runme.sh",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Regarding the command: nice -5 /usr/bin/prog Which of the following statements is correct? A. /usr/bin/prog is executed with a nice level of -5. B. /usr/bin/prog is executed with a nice level of 5. C. /usr/bin/prog is executed with a priority of -5. D. /usr/bin/prog is executed with a priority of 5.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which shell command is used to continue background execution of a suspended command? A. & B. bg C. cont D. exec E. :&",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following shell redirections will write standard output and standard error output to a file named filename? A. 2>&1 >filename B. >filename 2>&1 C. 1>&2>filename D. >>filename E. 1&2>filename",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In the vi editor, which of the following commands will copy the current line into the vi buffer? A. c B. cc C. 1c D. yy E. 1y",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following sequences in the vi editor saves the opened document and exits the editor? (Choose TWO correct answers.) A. esc ZZ B. ctrl :w! C. esc zz D. esc :wq! E. ctrl XX",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When starting a program with the nice command without any additional parameters, which nice level is set for the resulting process? A. -10 B. 0 C. 10 D. 20",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following commands will reduce all consecutive spaces down to a single space? A. tr '\\s' ' ' < a.txt > b.txt B. tr -c ' ' < a.txt > b.txt C. tr -d ' ' < a.txt > b.txt D. tr -r ' ' '\\n' < a.txt > b.txt E. tr -s ' ' < a.txt > b.txt",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which character, added to the end of a command, runs that command in the background as a child process of the current shell? A. ! B. + C. & D. % E. #",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following commands will print the last 10 lines of a text file to the standard output? A. cat -n 10 filename B. dump -n 10 filename C. head -n 10 filename D. tail -n 10 filename",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following commands prints a list of usernames (first column) and their primary group (fourth column) from the /etc/passwd file? A. fmt -f 1,4 /etc/passwd B. split -c 1,4 /etc/passwd C. cut -d : -f 1,4 /etc/passwd D. paste -f 1,4 /etc/passwd",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following signals is sent to a process when the key combination CTRL+C is pressed on the keyboard? A. SIGTERM B. SIGINT C. SIGSTOP D. SIGKILL",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What happens after issuing the command vi without any additional parameters? A. vi starts and loads the last file used and moves the cursor to the position where vi was when it last exited. B. vi starts and requires the user to explicitly either create a new or load an existing file. C. vi exits with an error message as it cannot be invoked without a file name to operate on. D. vi starts in command mode and opens a new empty file. E. vi starts and opens a new file which is filled with the content of the vi buffer if the buffer contains text.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following command sets the Bash variable named TEST with the content FOO? A. set TEST=\"FOO\" B. TEST = \"FOO\" C. var TEST=\"FOO\" D. TEST=\"FOO\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which variable defines the directories in which a Bash shell searches for executable commands? A. BASHEXEC B. BASHRC C. PATH D. EXECPATH E. PATHRC",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following commands determines the type of a file by using a definition database file which contains information about all common file types? A. magic B. type C. file D. pmagic E. hash",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following commands prints all files and directories within the /tmp directory or its subdirectories which are also owned by the user root? (Choose TWO correct answers.) A. find /tmp -uid root -print B. find -path /tmp -uid root C. find /tmp -user root -print D. find /tmp -user root E. find -path /tmp -user root print",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When running the command sed -e \"s/a/b/\" /tmp/file >/tmp/file While /tmp/file contains data, why is /tmp/file empty afterwards? A. The file order is incorrect. The destination file must be mentioned before the command to ensure redirection. B. The command sed did not match anything in that file therefore the output is empty. C. When the shell establishes the redirection it overwrites the target file before the redirected command starts and opens it for reading. D. Redirection for shell commands do not work using the > character. It only works using the | character instead.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When given the following command line. echo \"foo bar\" | tee bar | cat Which of the following output is created? A. cat B. foo bar C. tee bar D. bar E. foo",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following commands can be used to determine how long the system has been running? (Choose TWO correct answers.) A. uptime B. up C. top D. uname -u E. time up",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What does the command mount -a do? A. It mounts all available filesystems onto the current directory. B. It shows all mounted filesystems. C. It mounts all user mountable filesystems for the current user. D. It mounts all filesystems listed in /etc/fstab which have the option auto set. E. It mounts all filesystems listed in /etc/fstab which have the option noauto set.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following commands shows the definition of a given shell command? A. where B. stat C. type D. case",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What do the permissions -rwSr-xr-x mean for a binary file when it is executed as a command? A. The command is SetUID and it will be executed with the effective rights of the owner. B. The command will be executed with the effective rights of the group instead of the owner. C. The execute flag is not set for the owner. Therefore the SetUID flag is ignored. D. The command will be executed with the effective rights of the owner and group.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following commands are common Linux commands for file management? (Choose three correct answers.) A. copy B. mv C. move D. cp E. mkdir",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following examples for Bash file globbing matches a file named root-can-do-this.txt when used in the directory holding that file? (Choose three correct answers.) A. root*can?do-this.{txt,odt} B. r[oOoO]t-can-do*.txt C. {root,user,admin}-can-??-this.txt D. root*can*do??this.txt E. root***{can,may}-do-this.[tT][xX][tT]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following commands changes all occurrences of the word \"bob\" in file data to \"Bob\" and prints the result to standard output? A. sed‘/bob/Bob’ data B. sed‘s/bob/Bob/g’ data C. sed‘s/bob/Bob/’ data D. sed‘/bob/Bob/’ data E. sed‘s/bob,Bob/’ data",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following partition types is used for Linux swap spaces when partitioning hard disk drives? A. 82 B. 83 C. 8e D. fd E. 7",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following apt-get commands will install the newest versions of all currently installed packages? A. auto-update B. full-upgrade C. dist-upgrade D. install E. update",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "SIMULATION Which file from the /proc file system contains a list of all currently mounted devices? (Specify ONLY the command without any path or parameters.)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following are filesystems which can be used on Linux root partitions? (Choose two.) A. NTFS B. ext3 C. XFS D. VFAT E. swap",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following commands will mount an already inserted CD-ROM in /dev/sr0 onto an existing directory /mnt/cdrom when issued with root privileges? A. mount /dev/cdrom /mnt/cdrom B. mount /dev/sr0 /mnt/cdrom C. mount –t cdrom /dev/sr0 /mnt/cdrom D. mount –l cdrom /dev/sr0 /mnt/cdrom E. mount –f /dev/sr0 /mnt/cdrom",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which chown command will change the ownership to dave and the group to staff on a file named data.txt? A. chown dave/staff data.txt B. chown –u dave –g staff data.txt C. chown --user dave --group staff data.txt D. chown dave:staff data.txt",
+    "options": {},
+    "most_voted": ""
+  }
+]
