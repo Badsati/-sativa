@@ -1,0 +1,52 @@
+[
+  {
+    "question": "In order to generate an individual log file for each of the machines connecting to a Samba server, which of the following statements must be used in the Samba configuration file? A. log file = /var/log/samba/log.%c B. log file = /var/log/samba/log.%M C. log file = /var/log/samba/log.%m D. log file = /var/log/samba/log.%I",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "By default, Samba tries to automatically detect the correct character set to use with a connecting client. Which parameter in smb.conf forces Samba to use only ASCII? A. global charset = ASCII B. unicode = no C. ASCII = yes D. force charset = ASCII E. reduce charset = yes",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following Samba variables must be used to pass the machine name to the script specified in add machine script within a Samba configuration file? A. %m B. %w C. %p D. %q E. %u",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Fill in the blank. Which option must be specified in smb.conf in order to make Samba create machine accounts automatically when a client joins the domain?",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following options must be set in smb.conf in order to actively configure Samba as Directory domain controller? A. active directory logons = yes B. security = adds C. server role = active directory domain controller D. ad server mode = domain controller",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the true of the following share's access properties? (Choose two.) [sampleXML/xmlfile-12_1.png] A. @managers copies the permissions of the share [managers]. B. The alice and bob users can manipulate files regardless of the file system permissions. C. @managers will be resolved as a Unix group. D. @managers is a builtin default Samba group. E. the parameter admin users can be applied only to print shares.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Fill in the blank. Which option is smb.conf limits the maximum number of jobs allowed in a samba printer queue at any given moment? (Specify ONLY the option name without any values or parameters.)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Microsoft file system are not case sensitive to file names. Linux file systems are case sensitive to file names. Which of the following configuration directives defines how Samba handles file name mapping in this situation? A. name map B. case map C. case sensitive D. case on",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After successfully connecting to a remote CIFS share using smbclient, the command mget MyFiles is issued to retrieve the folder MyFiles, including all of its contents. Instead of transferring the folder, smbclient returns the error: NT_STATUS_NO_SUCH_FILE listing \\MyFiles What should be done in order to download the contents of the folder? A. The command recurse should be used to toggle recursion for mget and mput. B. To provide a target for the file transfer, the local folder MyFiles has to be created in advance. C. The command rget should be used instead of mget to perform recursive operations. D. The server has to support recursion for the given share which, on Samba, is enabled by setting recursion = true. E. smbclient should be used invoked with the â€\"recurse or â€\"r parameter.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After adding a remote CIFS share to /etc/fstab, the share is mounted to the correct location in the file system. There, all files belong to the user and group root and are not readable or writable by any other users on the system. What should be done in order to permit distinct local user access to the mounted files? A. The option root squash = yes should be added to the share in the Samba serverâ€™s smb.conf to allow full access by the client. B. The mount.cifs options uid, gid, file_mode and dir_mode should be used to specify the ownership and permissions of the mount. C. The user should be added to the local user group smbusers, as mount.cifs by default restricts access to all CIFS mounts to member of this group in addition to the root account. D. The mount.cifs command should always be executed by user who will use the mount afterwards. The user should be granted the required permission in / etc/sudoers.",
+    "options": {},
+    "most_voted": ""
+  }
+]
