@@ -1,0 +1,357 @@
+[
+  {
+    "question": "You are the administrator of an ONTAP 9.8 cluster. You have configured an hourly snapshot schedule for all NAS volumes. One of your users accidentally deleted an important spreadsheet file on an SMB share. The file needs to be restored as quickly as possible by the Windows user. Which statement is correct in this scenario? A. In Windows Explorer, right-click on the SMB share where the file was deleted, go to previous versions select the file and copy it to the original location. B. On the cluster CLI, execute the volume snapshot restore-file command with the options to select the SnapShot, path, and restore-path. C. On the cluster CLI, execute the volume clone create command with the ג€\"parent-snapshot option set to the latest Snapshot copy and share the cloned volume as an SMB share, then copy the file back. D. In ONTAP System Manager, navigate to the volume where the share resides, click on SnapShot copies and restore the latest SnapShot copy.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "After creating several volumes, you notice that the hosting aggregates immediately show a decrease in available space. Which volume setting would prevent this outcome? A. space guarantee set to ג€volumeג€ B. space SLO set to ג€semi-thickג€ C. space guarantee set to ג€noneג€ D. space SLO set to ג€thickג€",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You want to prepare your ONTAP cluster and your ESXi cluster to connect NFS datastores over a 10-GbE network using jumbo frames. In this scenario, which three configurations would accomplish this task? (Choose three.) A. Enable jumbo frames with an MTU of 1500 for your ESXi hosts B. Enable jumbo frames with an MTU of 9000 for your ONTAP cluster C. Enable jumbo frames with an MTU of 1500 for your ONTAP cluster D. Enable jumbo frames with an MTU of 9000 for your ESXi hosts E. Enable jumbo frames with an MTU of 9216 for your switches",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two storage efficiency features are enabled by default on AFF systems? (Choose two.) A. volume-level inline deduplication B. aggregate-level compression C. LUN-level compression D. aggregate-level inline deduplication",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When you perform an upgrade using ONTAP System Manager 9.8, which two statements are true? (Choose two.) A. The images must be manually uploaded to the cluster by using the ONTAP System Manager interface B. The latest available images will appear in the ONTAP System Manager interface C. The images will be automatically uploaded to the cluster by using the ONTAP System Manager interface from the NetApp Support site D. The update history is available within the ONTAP System Manager interface",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-4_1.jpg] You have an SVM-DR relationship as shown in the exhibit. You are given a new requirement to use SnapMirror Synchronous (SM-S) for the data volumes in NFS- SVM-01. In this scenario, which solution is supported to enable SM-S in ONTAP 9.8 software? A. Set up new SM-S relationships from the FAS2720 to a new destination B. Set up NetApp Cloud Sync with a cloud broker in AWS to replicate to a new destination C. Modify the existing SVM-DR policy to use sync mode D. Set up new SM-S relationships from the AFF A220 to a new destination",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two types of capacity tiers are supported with FabricPool aggregates in ONTAP 9.8? (Choose two.) A. StorageGRID Object Storage B. S3 Object Store C. SWIFT Object Store D. NFS Export",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-5_1.png] A Linux host with the 10.0.1.24 IP address is unable to mount the VOL_A volume using NFSv3. Referring to the exhibit, what is the problem? A. The volume is in read-only B. The logical interface does not allow the NFSv3 protocol C. The host IP address does not match the export policy rule D. The volume is not mounted in the namespace",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A user wants existing data in a FlexVol created in ONTAP 9.1 to be placed into a FlexGroup volume with ONTAP 9.8. In this scenario, which two statements are true? (Choose two.) A. Use SnapMirror to replicate data from FlexVol to FlexGroup B. Use XCP to copy data from a FlexVol to a FlexGroup C. You can convert the FlexVol volume to a FlexGroup volume D. A FlexVol to FlexGroup conversion is not supported",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-7_1.jpg] After an ONTAP upgrade, you notice that several cluster LIFs are not on their home ports as shown in the exhibit. Which LIF option would change this outcome? A. the failover-policy option B. the data-protocol option C. the subnet-name option D. the auto-revert option",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer wants to migrate a series of LUNs from a third-party array to a FAS. In this scenario, which two tools would the customer use? (Choose two.) A. XCP B. NKS C. ADP D. FLI",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-8_1.jpg] A user cannot save a file on an ONTAP SMB share. Referring to the exhibit, which action allows the user to save the file? A. Synchronize the ONTAP Cluster time to the Active Directory time B. Let the user save the file to a writeable location C. Set the user permission for the share to write D. Allow the file type *.rtf in the CIFS Server fpolicy",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your company requires WORM archiving of data on their ONTAP cluster. The data must not be able to be deleted even by an administrator. Which ONTAP feature fulfills this requirement? A. SnapVault software B. SnapMirror software C. SnapLock Enterprise D. SnapLock Compliance",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-10_1.jpg] You are caching on-premises ONTAP volumes into the cloud with Cloud Volumes ONTAP as shown in the exhibit. In this scenario, which two protocols are supported? (Choose two.) A. NVMe B. SMB C. NFS D. iSCSI",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have commissioned a new AFF A250 MetroCluster over IP configuration. Your company requires an automatic switchover to the surviving site in case of a site disaster. What do you need to configure to fulfill this requirement? A. ONTAP Mediator service B. cluster failover C. automated unplanned switchover D. storage failover",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-11_1.png] You have a 2-node NetApp FAS2750 ONTAP cluster. You create a new 20-GB LUN in a new 100-GB volume and write 10 GB of data to the LUN. No storage efficiencies are enabled for the volume or aggregate. Referring to the exhibit, which two statements are true? (Choose two.) A. ONTAP reports that the volume is using 10 GB of its containing aggregate B. ONTAP reports the volume as 20% full C. ONTAP reports that the volume is using 100 GB of its containing aggregate D. ONTAP reports the volume as 10% full",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements are true about NVMe? (Choose two.) A. NQNs are added to namespaces B. LUNs are mapped to initiator groups C. Namespaces are mapped to subsystems D. NQNs are added to subsystems",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company runs a NetApp AFF A220 cluster as a file server for NFS and SMB. You want to use one of the unused ports to connect a single Windows host directly, using FC. You have converted the UTA2 ports e0e and e0f to FC and equipped them with a 16-Gbps FC transceiver. Your Windows host fails to connect to the storage. In this scenario, which action solves the problem? A. Use the arbitrated loop topology on storage and host B. Use an Ethernet switch between storage and host C. Use the point-to-point topology on all ports D. Use an FC switch between storage and host",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What establishes a quorum in a 4-node cluster? A. TieBreaker B. epsilon C. cluster peer D. ONTAP Mediator",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-13_1.png] The availability of the remote cluster in the peering relationship shows `Partial`. Referring to the exhibit, what is the reason for this status message? A. The intercluster LIFs on the local cluster are unavailable and not able to communicate to the remote cluster B. The remote cluster does not have its cluster license applied properly C. Some nodes in the local cluster are not able to contact some or all nodes in the remote cluster D. The local cluster is unable to authenticate successfully to the remote cluster",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You attempt to create an SVM for CIFS access only. In this scenario, which three actions must be performed to join the existing Active Directory? (Choose three.) A. Create DNS entries B. Create a cluster LIF C. Create a data LIF D. Create NTP entries E. Create export policies",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "All SMB users are reporting that their network share performance is slow on a new NetApp FAS500f HA pair. You determine that the users have converged network adapters (CNAs) with flow control enabled and no option to disable. In this scenario, which two flow control settings are recommended on the NetApp ONTAP physical ports? (Choose two.) A. Disable flow control end-to-end on data network ports B. Disable flow control end-to-end on cluster network ports C. Enable flow control end-to-end on data network ports D. Enable flow control end-to-end on cluster network ports",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your company requests that the monthly performance data of your ONTAP 9.8 cluster be exported to a CSV file for further processing. In this scenario, which three NetApp products satisfy this requirement? (Choose three.) A. Active IQ OneCollect B. Cloud Insights C. ONTAP System Manager D. Active IQ Config Advisor E. Active IQ Unified Manager",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have a remote FlexCache storage device that is running on ONTAP Select 9.8 software. The cache origin volume is on an FAS8700 that is running ONTAP 9.8 software. The WAN connection dropped, and the FlexCache volume is in disconnected mode. In this scenario, which LIFs would you ping to troubleshoot the disconnect? A. management B. cluster C. data D. intercluster",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have created a new FlexCache cache volume and want to warm the cache before clients access the cache volume for the first time. In this scenario, how would you accomplish this task? A. Synchronize the origin and cache first with the volume flexcache sync-properties command B. Copy the data from the origin volume to the cache volume with the NetApp XCP Migration Tool C. Prepopulate the cache volume with data from the origin volume using the flexcache prepopulate start command D. Enable block-level invalidation using the volume flexcache origin config modify command",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-17_1.jpg] You recently added a new ESXi host to your VMware vSphere cluster. However, you cannot mount any of the existing NFS datastores to the host. Referring to the exhibit, which action solves the problem? A. Enable Kerberos in the export policy B. Add NFSv4 to the access protocols C. Add HOST 3ג€™s IP address to the NFS export policy D. Add SMB/CIFS to the access protocols",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "After attempting to perform an ONTAP upgrade, it fails during the pre-check. In this scenario, what would cause this problem? A. idle SnapMirrors B. encrypted volumes C. offline data LIF D. offline volume",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have an Internet of Things (IoT) application that will use SMB shares on a remote ONTAP Select instance. There are no name services and only a local network is available at the remote IoT site. In this scenario, which two features are supported by ONTAP software for the IoT application? (Choose two.) A. SMB3 Witness protocol B. SMB Server in workgroup mode C. Active Directory users D. CIFS local users",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your company wants their newly installed ONTAP system to automatically send telemetry data to NetApp to provide early notification of any security risks, bug fixes, and ONTAP updates. Furthermore, in case of hardware failures, a support case should be opened automatically at NetApp. Which two NetApp components satisfy the requirements? (Choose two.) A. ONTAP AutoSupport B. Cloud Insights C. Active IQ D. Active IQ Unified Manager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You want to scale out storage performance for read-intensive data across multiple locations. In this scenario, which NetApp feature accomplishes this task? A. FlexClone B. Flash Pool C. FlexVol D. FlexCache",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Your company has purchased two NetApp AFF A400 HA pairs. During deployment, how many root aggregates are created? A. 8 B. 6 C. 2 D. 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-20_1.png] You have an ONTAP 9.8 cluster. After network maintenance, the LIF that is shown in the exhibit is not always on a correct port and is unreachable by users until the LIFs are moved to port e0c or e0d on either storage node. In this scenario, which action should you take to ensure that the LIF only fails over to the correct ports? A. Change the LIFג€™s failover policy to sfo-partner-only B. Split the broadcast domain C. Create a DNS load balancing zone D. Create an IPspace",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When you set up an ONTAP cluster, which two SVM types are automatically created? (Choose two.) A. data B. node C. cluster D. admin",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An application owner at your organization requests a solution for zero RTO in the event of a failure in your primary data center, where you are using NetApp ONTAP 9.8 software with iSCSI LUNs. The owner wants to avoid reconfiguring the application. Which NetApp solution would you propose to fulfill these requirements? A. SnapMirror Synchronous (SM-S) B. SVM Disaster Recovery (SVM DR) C. SnapMirror Business Continuity (SM-BC) D. SyncMirror",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are asked to deploy a 2-node ONTAP Select cluster. The physical hardware is located in two different locations and you want the aggregates mirrored synchronously between the two data centers. You must ensure high availability and automated switchover. In this scenario, which two steps would you take to fulfill this requirement? (Choose two.) A. Use ONTAP Mediator service to make sure that you have a quorum for the two nodes B. Use ONTAP Select Deploy to install the nodes on the physical hardware C. Ensure that the ONTAP Select Deploy VM resides at a third location other than the two data centers D. Install the SnapMirror Sync license on the cluster",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You need to increase the number of files that can be created in a volume. Which two methods enable you to achieve this goal? (Choose two.) A. Increase the size of the volume B. Set the space guarantee to ג€volumeג€ C. Set the fractional reserve to ג€0ג€ D. Increase the number of files permitted on the volume",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are asked by your network engineering team to make sure that your NetApp cluster is configured to run LACP on its network ports. Which network component satisfies this request? A. interface group B. failover group C. VLAN D. broadcast domain",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-24_1.jpg] You are adding a NetApp AFF A400 system to an existing 4-node cluster and want to know which ports you would use to expand your cluster. Referring to the exhibit, which tool would you use to accomplish this task? A. NetApp Interoperability Matrix (IMT) B. NetApp Hardware Universe (HWU) C. Active IQ Unified Manager D. Active IQ Config Advisor",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three protocols are supported by NetApp ONTAP Select? (Choose three.) A. CIFS B. iSCSI C. NVMe D. NFS E. FCP",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are currently using SnapMirror Synchronous (SM-S) to protect a critical workload at your organization and you want to convert the SnapMirror policy from Sync to StrictSync. In this scenario, which procedure allows you to achieve this task? A. Modify the existing SnapMirror relationship specifying the StrictSync policy, then re-synchronize it B. Recreate the SnapMirror relationship, specifying the StrictSync policy, then promote it C. Recreate the SnapMirror relationship, specifying the StrictSync policy, then re-synchronize it D. Modify the existing SnapMirror relationship specifying the StrictSync policy, then promote it",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which security method would be used to authenticate targets and initiators in an ISCSI environment? A. CHAP B. LDAP C. NIS D. /etc/hosts",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You want to enable the internal ONTAP engine that quickly identifies the file and directory differences between two Snapshot copies. In this scenario, which feature would accomplish this task? A. SnapCenter B. SnapDiff C. SnapVault D. SnapLock",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to configure data-at-rest encryption for your NetApp ONTAP 9.8 cluster. Your company does not have Key Management Interoperability Protocol (KMIP) services available but must require a passphrase to be entered when a node is rebooted. In this scenario, which two actions should be performed to satisfy these requirements? (Choose two.) A. Enable onboard key management B. Enable common criteria mode C. Configure an external key management server D. Enable cluster-wide FIPS-compliant mode",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "After creating an SVM in an ONTAP cluster, you are asked to delegate administration of the newly created SVM to an SVM administrator. In this scenario, which two tasks must you complete? (Choose two.) A. Set a password for the vsadmin user account B. Configure role-based access control (RBAC) for the vsadmin user account C. Create a LIF for SVM management D. Create the vsadmin user account in the new SVM",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "After deploying an ONTAP 9.8 cluster, you want to disable the unused Ethernet ports. In this scenario, which two methods would accomplish this task? (Choose two.) A. Use Active IQ Config Advisor B. Use ONTAP System Manager C. Use Active IQ Unified Manager D. Use the command line interface",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which configuration is supported using NetApp's All SAN Array (ASA)? A. 2-node cluster B. 12-node cluster C. 24-node cluster D. single-node cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement is correct about Temperature Sensitive Storage Efficiency (TSSE)? A. TSSE operations on an AFF array are automatically throttled depending on whether data is hot or cold B. TSSE is enabled automatically on newly created thick provisioned volumes C. TSSE operations on Cloud Volumes ONTAP are automatically throttled depending on whether data is hot or cold D. TSSE operations on ONTAP Select are automatically throttled depending on whether data is hot or cold",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A volume is set to use Adaptive QoS with the default policy. In this scenario, which change would affect the QoS throughput ceiling? A. The volume is resized B. Disks are added to the volumeג€™s aggregate C. Data is added to the volume D. More clients access the volume",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You have an ESXi cluster with VMware VMFS LUNs on an AFF A400 system. After troubleshooting performance issues, you determine that timeout best practices are not set on the hosts. In this scenario, which NetApp tool would apply the best practice settings? A. SnapManager B. SAN Host Utilities C. SnapCenter Plug-in for VMware vSphere D. Virtual Storage Console (VSC)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Your company wants to increase access security in both their NFS and iSCSI environments. Currently iSCSI is not authenticated and NFS relies only on export policies for security. Which two enhancements do you use to satisfy this new criteria? (Choose two.) A. Enable Kerberos for NFS exports B. Enable Challenge-Handshake Authentication Protocol (CHAP) for iSCSI LUN access C. Enable Challenge-Handshake Authentication Protocol (CHAP) NFS exports D. Enable Kerberos for iSCSI LUN access",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-30_1.png] You have a NetApp AFF A400 HA pair with Fabric Pool enabled on all data using the snapshot-only policy. Users are reporting slow restores when they recover files with the Windows Previous Versions tab. Referring to the exhibit, what is the highest latency seen on restore? A. 10500 B. 10021 C. 7889 D. 9591",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You want to add SSDs to existing HDD aggregates. Which NetApp tool helps you to validate how many SSDs would improve performance? A. OnCommand Workflow Automation B. Active IQ Unified Manager C. ONTAP System Manager D. Automated Workload Analyzer",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Windows 2019 reports 500 GB of free space on a disk; however, on the storage side, the LUN has 0 bytes free. When the host deletes files on the disk, auto re- claim on the thin-provisioned LUN does not occur. In this scenario, which action should you take to enable space reclamation? A. Set the space allocation option to enable B. Set the space allocation option to disable C. Enable space guarantees on the volume D. Enable space guarantees on the LUN",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You want to configure Active Directory domain controller access for NetApp ONTAP cluster administration. In this scenario, which two actions would accomplish this task? (Choose two.) A. Configure an authentication tunnel through an admin SVM B. Use the vserver active-directory create command to create a computer account on the domain for a CIFS SVM C. Configure an authentication tunnel through an existing CIFS SVM D. Use the vserver active-directory create command to create a computer account on the domain for a non-CIFS SVM",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are the administrator of an ONTAP 9.8 cluster. Your company wants to know how many files are in the NAS volumes of the cluster and how old these files are. Which two tools fulfill this requirement? (Choose two.) A. ONTAP System Manager B. Active IQ Unified Manager C. Active IQ Config Advisor D. ONTAP CLI",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "SnapMirror Business Continuity (SM-BC) relies on a component to trigger an automatic unplanned failover (AUFO). In this scenario, what is this component? A. Tiebreaker software B. ONTAP Deploy C. Cloud Manager D. ONTAP Mediator",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are attempting to establish a SnapMirror relationship between your ONTAP cluster (AcmeClus01) and a partner company's ONTAP cluster (WidgetsClus01). The clusters are unable to establish a peering relationship. You perform a packet capture on WidgetsClus01 and do not see any packets from AcmeClus01. You also discover that the IP subnet that is used for WidgetsClus01's intercluster LIFs overlaps with a local subnet at your company. In this scenario, which feature would enable AcmeClus01 and WidgetsClus01 to peer with each other? A. VLANs B. broadcast domains C. IPspaces D. ONTAP subnets",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which command parameter will result in a thin-provisioned LUN? A. –space-guarantee volume B. –space-allocation enabled C. –space-guarantee none D. –space-reservation disabled",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have deployed an ONTAP cluster and want to add protocol licenses. In this scenario, which management tool accomplishes this task? A. Active IQ Config Advisor B. Active IQ Unified Manager C. NetApp Cloud Manager D. ONTAP System Manager",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Click the Exhibit button. You have installed a new ONTAP 9.8 cluster and want to move the e0e and e0c ports into a new broadcast domain. Referring to the exhibit, which action satisfies this requirement? A. Use ONTAP System Manager to create a new broadcast domain. B. Use the broadcast-domain split command. C. Use the broadcast-domain create command. D. Use the broadcast-domain merge command.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have a 2-node NetApp FAS500f system serving NAS and SAN protocols. The cluster is running NetApp ONTAP 9.8. You have a requirement to use SnapMirror to mirror your data to public cloud object storage. In this scenario, which ONTAP native solution is supported? A. Cloud Backup Service B. Flash Pool C. Cloud Sync D. Cloud Compliance service",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "After deploying an AFF A400, you want to deploy a storage virtual machine (SVM) to serve SMB data. Which three conditions must exist in this scenario? (Choose three.) A. You must synchronize the cluster time. B. You must have a non-root aggregate in the online state. C. You must have sufficient space for the root volume. D. You must have configured the export policies. E. You must have encryption enabled on the root volume.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have finished deploying a NetApp AFF A400 cluster. Before you place the array into production, which two tools should be used to validate the deployment? (Choose two.) A. OnCommand Workflow Automation B. Active IQ Config Advisor C. Active IQ Web site D. Active IQ Unified Manager",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have two ONTAP clusters and are setting up a new SnapMirror SVM replication (SVM DR) relationship. Which two statements are true in this scenario? (Choose two.) A. The target SVM subtype must be sync-destination. B. The target SVM subtype must be dp-destination. C. The target SVM subtype must be default. D. The target SVM subtype must be sync-source.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. A company has three servers that are using the iSCSI protocol to connect to a 2-node NetApp ONATP cluster. The server administrator notices that half of the paths are down. When you check the ONTAP cluster, you notice that the servers are logging into only the first controller. Referring to the exhibit, which two steps do you take to troubleshoot the issue? (Choose two.) A. Verify that the controller has not been taken over. B. Verify that the iSCSI data protocol has been enabled on the ports. C. Verify that each server has been rebooted. D. Verify that the LIFs are up.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. You have an AFF A400 HA pair serving SMB locally and a FAS8300 HA pair serving SMB over FlexCache. Both clusters are running ONTAP 9.8 software. In this scenario, which two protocol features are supported at the remote cache? (Choose two.) A. file locking B. SMB3 continuously available (CA) shares C. multiprotocol NFSv4.1 D. multiprotocol NFSv3",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have a 4-node cluster with a NetApp AFF A400 HA pair and a NetApp FAS8700 HA pair running NetApp ONTAP 9.8 software. You are required to set up 2-factor authentication for the ONTAP CLI. Which two authentication methods are required in this scenario? (Choose two.) A. IP security B. public key C. password D. Security Assertion Markup Language (SAML)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. Referring to the exhibit, what is the maximum possible IOPS for the VOL_A volume? A. 500 IOPS B. 1000 IOPS C. 100 IOPS D. 2000 IOPS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. You need to provision a new NFS datastore for a vSphere cluster. You configure a new SVM and a new volume on your ONTAP cluster. You successfully mount the datastore to your vSphere cluster. You are able to upload and download a test 1 KB file to and from the datastore. You can also successfully ping the NFS LIF (192.168.106.11) from the vSphere hosts without any packet loss. However, you are unable to upload ISO images or migrate VMs to the new datastore. Referring to the exhibit, which action would correct the problem? A. Enable jumbo frames on the network switches. B. Add a default gateway to the SVM. C. Change the MTU of the VM kernel ports on the vSphere hosts to 9,000 bytes. D. Migrate the LIF to its home port.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have deployed an ONTAP C190 cluster enabled with the iSCSI protocol. Your manager asks for available options to protect the data on your cluster using the native SnapMirror technology. In this scenario, which two products would satisfy this request? (Choose two.) A. Cloud Volumes ONTAP B. Cloud Volumes Service for AWS C. ONTAP Select D. Azure NetApp Files",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The source NAS volume of a SnapMirror relationship is unavailable due to networking issues at your organization’s primary data center. You want to make the destination NAS volume writable so that clients are able to access their data. Which two steps do you need to take to solve the issue? (Choose two.) A. Delete the SnapMirror relationship from the destination cluster. B. Use the volume mount command to mount the NAS volume in the NFS namespace. C. Break the SnapMirror relationship using the snapmirror break command from the source cluster. D. Break the SnapMirror relationship using the snapmirror break command from the destination cluster.",
+    "options": {},
+    "most_voted": "B"
+  }
+]
