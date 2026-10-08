@@ -1,0 +1,457 @@
+[
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-2_1.jpg] A storage administrator has an existing FAS2554 HA pair. They want to add a new FAS2620 HA pair to the cluster. The SAN protocols are licensed. Referring to the exhibit, after adding the second HA pair, how many more nodes are available to add for future use? A. 4 B. 12 C. 8 D. 2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When a write from a SAN host is received, the information is stored within the controller before it is written to the underlying RAID. In this scenario, which component stores the data? A. HBA B. FlashCache C. Flash Pool D. NVRAM",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator notices that the applications are running slowly. The administrator wants to determine which component on the ONTAP subsystem is experiencing the most latency. In this scenario, which command would you use to accomplish this task? A. run -node * stats show system::sys_avg_latency B. statistics system show C. run -node * -command sysstat -x 1 D. qos statistics latency show",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has four or more nodes in a cluster. More than four target ports are being used by the SVMs in any node. The customer wants to limit the number of paths that can be used to access LUNs on the nodes, so that the paths do not exceed the recommended maximum of eight. In this scenario, which three actions will accomplish this task? (Choose three.) A. Use ALUA protocol. B. Use multipathing software. C. Use port sets for iSCSI. D. Use Selective LUN Mapping E. Use FC switch zoning.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer configured CIFS in an ONTAP 9.5 SVM. The customer wants to verify if the \"CIFS Server\" is accessible from each node of the cluster. In this scenario, which command will accomplish this task? A. vserver cifs session B. vserver cifs connection show C. vserver cifs check D. vserver cifs domain discovered-servers",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-5_1.png] An export policy rule for a volume is set by using the command shown in the exhibit. If clients with IP addresses 10.64.19.0 and 10.64.18.20 accessed the export, what is the outcome? A. Neither client is given access. B. Client 10.64.19.0 is given access but 10.64.18.20 is not given access. C. Client 10.64.19.0 is not given access but 10.64.18.20 is given access. D. Both clients are given access.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-6_1.png] Referring to the exhibit, to where will LIF4 move if you unplug the cable from node02 port e0d? A. node01 port e0c B. node02 port e0c C. node02 port e0d D. node01 port e0d",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "To which three objects on an ONTAP 9.3 cluster would you assign a QoS throughput floor? (Choose three.) A. a volume on FAS B. a LUN on AFF C. a volume on AFF D. an SVM on AFF E. a file on AFF",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-7_1.png] You execute the cluster1::> network ipspace show command, and notice that two IPspaces are not able to be renamed or deleted. Referring to the exhibit, what are these two IPspaces? (Choose two.) A. IPspace1 B. Default C. IPspace2 D. Cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A storage administrator has a single-node FAS cluster. The administrator wants to add a second node to convert the FAS storage array into a switchless cluster. In this scenario, what would the administrator do to accomplish the task? A. Add a new AFF HA pair and replace the existing FAS. B. Add a cluster interconnect switch and a second FAS of the same model. C. Add a new single node AFF controller to the existing FAS storage array. D. Add a new single node FAS controller of the same model.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer ordered a FAS8200 running ONTAP 9.4 with 4 TB SATA drives. You want to use the ADP features to avoid consuming the high capacity drives for the root aggregates. Before starting the initial setup of the cluster, you run the aggr status command and notice that ADP is not being used. In this scenario, which boot menu option do you use to solve the problem? A. Option 7 B. Option 5 C. Option 9 D. Option 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer installed an ONTAP cluster. The customer wants to provide data access to host computers and end users. Which three tasks are required? (Choose three.) A. Create a Quality of Service (QoS) policy. B. Create an SVM. C. Create a LIF. D. Create an IPspace. E. Create a volume.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three tasks are SVM administrators allowed to perform? (Choose three.) A. Configure name services. B. Configure an aggregate. C. Monitor jobs. D. Configure data protocols. E. Create a LIF.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A 2-node switches cluster experiences a node failure. In this situation, which LIF automatically migrates to a different port? A. SAN data LIF B. intercluster LIF C. NAS data LIF D. node management LIF",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-11_1.png] Referring to the output shown in the exhibit, which aggregate capacity is available for a volume? A. 4TB B. 8TB C. 3.4 TB D. 3.6 TB",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which storage efficiency policy is automatically defined when you run volume move from a non-AFF system to an AFF system? A. inline-only B. promote C. default D. auto",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which NetApp product enables you to leverage legacy storage investments? A. FlexClone B. FlexGroup C. Cloud Volumes ONTAP D. FlexArray",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-13_1.jpg] Using ONTAP 9.5, you are operating with data protection across three sites. The cluster_A and cluster_B systems require synchronous replication. The SVMs on cluster_A also require asynchronous SVM-DR replication to a third site. All replication between all sites must also replicate the SVM configuration. Referring to the exhibit, which replication technology is supported between cluster_A and cluster_B? A. NetApp Data Availability Services B. Snap Mirror Synchronous C. MetroCluster IP D. Foreign LUN Import",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which management tool would you use to deploy a new instance of Cloud Volumes ONTAP? A. OnCommand System Manager B. OnCommand Unified Manager C. Cloud Volumes Service D. OnCommand Cloud Manager",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are configuring an FC to allow LUN access to a host system. In this scenario, a switch needs a zone configuration file that includes which two elements? (Choose two.) A. host initiator WWPN B. SVM target WWNN C. host initiator WWNN D. SVM target WWPN",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are three tiering policies that are associated with a FabricPool-enables aggregate? (Choose three.) A. backup B. mirror-vault C. local-only D. auto E. snapshot-only",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your manager asks you to upgrade the ONTAP software that is running on the organization's FAS8200. The FAS8200 is running ONTAP 9.2 and needs to be upgraded to ONTAP 9.5. In this situation, what is the minimum number of ONTAP upgrades required to accomplish the task? A. 3 upgrades; ONTAP 9.2 > ONTAP 9.3 > ONTAP 9.4 > ONTAP 9.5 B. 1 upgrade; ONTAP 9.2 > ONTAP 9.5 C. 2 upgrades; ONTAP 9.2 > ONTAP 9.3 > ONTAP 9.5 D. 4 upgrades; ONTAP 9.2 > ONTAP 9.2P4 > ONTAP 9.3 > ONTAP 9.4P5 > ONTAP 9.5",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. cluster1::> volume create -vserver vsl \"\"volume voll \"\"aggregate aggr1 \"\"encrypt true Which statement regarding the command shown in the exhibit is true? A. The volume will be created and protected on an aggregate using NetApp Storage Encryption (NSE) disks. B. The volume will be created and protected using an external Key Management Server. C. The volume will be created and protected for Snaplock Enterprise compliance. D. The volume will be created and protected using NetApp Volume Encryption (NVE).",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which commands shows the data compaction savings for an aggregate? A. storage aggregate show-space B. storage aggregate show-efficiency C. volume efficiency show D. storage efficiency show",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are three reasons to implement FabricPool? (Choose three.) A. to shrink secondary storage B. to implement storage efficiency features C. to move volumes to external capacity tiers D. to use the volume backup feature E. to reclaim space on primary storage",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which FabricPool policy would you apply only on a SnapMirror destination volume? A. backup B. destination C. auto D. manual",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You must expand an existing FAS8200 switchless cluster to a switched cluster and add a new FAS8200 HA pair in the cluster. In this scenario, which three actions would you perform to expand the cluster? (Choose three.) A. Ensure that the switchless-cluster network option is false. B. Connect the existing nodes to the cluster switches. C. Change the cluster ports for the existing HA pair. D. Ensure that the switchless-cluster network option is true. E. Join the new HA pair to the cluster.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement about a node-root volume is true? A. A node-root volume is used as the root volume for all of the SVMs for that node. B. The volume move command can be used to move a node-root volume. C. There is only one primary root volume per node in the cluster. D. A node-root volume may be used for customer data.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In which version of ONTAP did the NVMe protocol become available for SAN environments? A. 9.4 B. 9.5 C. 9.3 D. 9.2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is configuring an aggregate to use FabricPool to take advantage of auto tiering. In this scenario, what are three requirements to accomplish this task? (Choose three.) A. volume with space-guarantee none B. FabricPool license C. intercluster LIFs D. volume with space-guarantee volume E. AFF array",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-19_1.png] An administrator needs to configure ports for peering. Referring to the exhibit, which ports should be used? A. CDOT93-01:e0a and CDOT93-02:e0a B. CDOT93-01:e0e and CDOT93-02:e0e C. CDOT93-01:e0d and CDOT93-02:e0d D. CDOT93-01:e0f and CDOT93-02:e0f",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You want to use FabricPool technology to tier SnapVault destination volumes to the capacity tier. In this scenario, which action would you perform to accomplish this task? A. Create the destination volume on the FabricPool-enabled aggregate and assign the backup tiering policy to the destination volume. B. Create both the source and destination volumes on a standard aggregate and assign the backup tiering policy to the destination volume. C. Create both the source and destination volumes on the FabricPool-enabled aggregate and assign the backup tiering policy to the source volume. D. Create the source volume on the FabricPool-enabled aggregate and assign the backup tiering policy to the source volume.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When performing a manual MetroCluster switchover, which two statements are true? (Choose two.) A. Only the user specified DR groups are switched over. B. All SVMs in the disaster site are switched over. C. All DR groups in the disaster site are switched over. D. Only the user specified SVMs are switched over.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You want to delete a WORM file from a SnapLock Enterprise volume. Based on this scenario, which two steps must you perform to accomplish this task? (Choose two.) A. Unmount the SnapLock volume from the NAS namespace. B. Move the file to a non-SnapLock volume. C. If a SnapLock audit does not exist, create one. D. Enable the privileged delete feature.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements are true when you restore a volume from a Snapshot copy? (Choose two.) A. All Snapshot copies that were created after the Snapshot copy was created are lost. B. All data that was written to the volume after the Snapshot copy was created is lost. C. The volumeâ€™s SnapMirror relationships need to be re-created. D. After the volume is restored, it becomes read-only.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-22_1.png] You have a FAS8200 HA pair with disks that are evenly split between nodes A and B. When a disk fails, the replacement disk must automatically assign back to the originally assigned controller, A or B. Referring to the exhibit, which disk auto assign policy satisfies this requirement? A. shelf B. stack C. default D. bay",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-23_1.png] An administrator realizes that daily snapshots are not being replicated to their destination. The administrator can see the daily snapshots created at the source. The exhibit shows the policy in use. Weekly snapshots are being replicated without a problem, and the SnapMirror relationship is showing as \"healthy\". In this scenario, what is causing the problem with the daily snapshot? A. The SnapMirror label has not been applied to the daily snapshots. B. The SVM peer is not working. C. The daily snapshots at the source are busy due to the NDMP backup. D. The vault policy applied to the source volume does not match the SnapMirror policy at the destination.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which ONTAP feature uses the Service Processor to speed up takeover times between HA pairs? A. hardware-assisted takeover B. automatic takeover and giveback C. epsilon D. cluster HA",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You execute the volume unmount -vserver vsl -volume vol1 command. In this scenario, which statement is true? A. The Snapshot policy in the volume needs to be recreated once the volume is remounted. B. All data within the junction point is inaccessible to NAS clients. C. Data within the vol1 volume is lost. D. The existing volume export policies and SMB shares created on the volume or on directories and junction points within the unmounted volume are not retained.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which LIF types are owned by the admin SVMs? (Choose two.) A. Node-Management B. Cluster C. Data D. Intercluster",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Regarding root partitioned disks in an ONTAP system, which three types of objects are associated with ADP? (Choose three.) A. array LUN B. root partition C. container disk D. data partition E. shared disk",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator has configured an upstream switch for LACP. In this scenario, which action should be performed when the NetApp interface group is created? A. Set the type to â€œstatic multimodeâ€. B. Set the distribution function to â€œportâ€. C. Set the type to â€œdynamic multimodeâ€. D. Set the distribution function to â€œIPâ€.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "As an administrator, you are asked to enable deduplication on volumes that are separated by workloads on a FAS8200 system. On which volume would you see the highest savings from enabling deduplication? A. home directory shares B. virtual desktop environment C. file share D. SQL database",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You want to establish a SnapMirror relationship between two clusters. In this scenario, which two actions must you perform to accomplish this task? (Choose two.) A. Peer the nodes. B. Peer the volumes. C. Peer the clusters. D. Peer the SVMs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command would you use to enable the ONTAP HA feature? A. storage failover modify -enabled true -node * B. cluster ha modify -configured true C. cluster ha modify â€\"configured false D. network options switchless-cluster modify true",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When you use the default SnapMirror policy during transfer of a data protection SnapMirror relationship, what is transferred? A. the Snapshot copy that is created by the transfer process and any existing Snapshot copies B. the Snapshot copy that is manually created and any existing Snapshot copies C. the SnapMirror license D. only the existing Snapshot copies",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the default fractional reserve for a thin-provisioned SAN volume? A. 5% B. 20% C. 100% D. 0%",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You create SAN volumes with System Manager on a FAS solution. In this scenario, what are three default settings for these volumes? (Choose three.) A. Volumes have inline deduplication enabled. B. Volume space guarantee is set to Volume. C. Volumes have Snapshot copies disabled. D. Volume snapshot reserve is set to 0. E. Volume space guarantee is set to None.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator created, a NAS storage virtual machine for a vSphere environment. The administrator verified that all interfaces can communicate successfully. However, when the administrator attempts to mount the export, a connection refuse message is received. Based on this scenario, what would you troubleshoot? A. the igroup B. the CIFS eport policy C. the NFS export policy D. the FC zoning policy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which mediator type is required for an ONTAP Select 2-node HA solution? A. mediator code B. mediator storage virtual machine C. mediator cluster D. mediator virtual machine",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator forgot to update the cabling sheet for a core Cisco switch and cannot recall which ports were used by the NetApp FAS system. Which command should the administrator run to obtain this information? A. network port show B. network device-discovery show C. network interface show D. network port broadcast-domain show",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator enabled the iSCSI protocol on an SVM and created a LUN for a Windows 2016 system. After a rescan, the LUN is not visible on the host. In this scenario, which two statements describe what the administrator must do to solve this problem? (Choose two.) A. Create an initiator group (igroup), add the iSCSI IQN, and map the igroup to the LUN. B. Create an initiator group (igroup), add the WWPN of the host initiator, and then map the igroup to the LUN. C. Disable the ALUA support from the host for the LUN. D. Configure the iSCSI service on the Windows 2016 system.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command enables ONTAP storage failover? A. storage failover modify -enabled false -node nodename B. storage failover modify â€\"enabled true â€\"node nodename C. cluster ha modify -configured false D. storage failover modify â€\"mode ha -node nodename",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-30_1.png] You are asked to identify cache hit rates on your FAS8200 HA pair NAS volumes. You need to increase performance of your HDD cluster1_01_aggr1 aggregate. Referring to the exhibit, which NetApp technology achieves the requirement? A. FlexCache B. Flash Pool C. FabricPool D. MAX Data",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three privileges are available to the vsadmin role? (Choose three.) A. configuring protocols B. managing volumes, except volume moves C. setting physical port speeds D. managing LUNs E. managing aggregates, except aggregate relocate",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-31_1.png] You use DNS zone delegation to access an SVM that is set up for on-box DNS to nfs1.netapp.com. You can ping both lif1 and lif2 by IP address, but you can only ping lif1 by the delegated DNS name nfs1.netapp.com. Referring to the exhibit, what must you do to allow on-box DNS access to lif2? A. Modify the DNS zone on lif2 to nfs1.netapp.com. B. Modify the firewall policy on lif2 to management. C. Configure the name service to allow DNS. D. Configure lif2 in the external DNS.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How would you protect a NAS SVM root volume? A. Create a SnapMirror copy of the root volume to a peer cluster. B. Create load-sharing mirrors. C. Create a backup the SVM configuration. D. Create a backup of the SVM root volume.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are working with a service provider that is running ONTAP 9.5. You must ensure that the end customer sees the logical space used. In this scenario, which argument for volume show command will accomplish this task? A. is-space-enforcement-logical B. is-space-reporting-logical C. logical-used-percentage D. is-quesced-in-memory",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are creating a CIFS-based SVM, but the SVM cannot join the domain. In this scenario, which two actions would be helpful in troubleshooting the problem? (Choose two.) A. Verify that the clocks are synchronized between the SVM and the domain controller. B. Verify that each node has a data LIF. C. Verify that the data LIF can access the Active Directory domain controller. D. Verify that the cluster admin account is used to join the Active Directory.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which scenario would you specifically assign aggregates to SVMs? A. to configure an ONTAP system for CIFS and iSCSI B. to create SnapMirror peering relationships between SVMs C. to prevent a storage administrator from overcommitting an aggregate D. to configure an ONTAP system for multi-tenancy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three actions would be used to upload an image or firmware for ONTAP 9.3? (Choose three.) A. Use TFTP. B. Use USB. C. Use HTTP. D. Use FTP. E. Use SFTP.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "According to NetApp best practices, when you configure FC, how many data LIFs should you create per node? A. 4 B. 8 C. 6 D. 2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a 4-node cluster with 2x AFF A700 controllers and 2x FAS8200 controllers. A volume set to default settings is moved from a FAS8200 to an AFF A700 using the volume move command. In this scenario, which volume parameter change will allow for data compaction? A. space-allocation B. security-style C. space-guarantee D. fractional-reserve",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When you create a new SSD storage pool for use with Flash Pools, how many allocation units are assigned to each node in the HA pair by default? A. 8 B. 2 C. 1 D. 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. [sampleXML/xmlfile-36_1.png] You are troubleshooting a Linux host named host1 that sees a connection refused message when you execute the ssh [email protected] command. Referring to the exhibit, what is the reason for this message? A. There is no route to the host. B. The firewall policy is blocking the host. C. NTP is set up incorrectly. D. DNS is not resolving the host name.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "On your customer's AFF A700, there are multiple volumes within the aggregate aggr1. Within aggr1, volumes vol1, vol2, and vol3 store similar data, and volumes vol4 and vol5 store unique data. In this scenario, which feature would improve storage efficiency with the data stored in volumes vol1, vol2, and vol3? A. data compaction B. postprocess compression C. inline aggregate-level deduplication D. inline compression",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator created an SVM for a VMware vSphere 6.5 cluster. For the SVM, the NFS protocol was enabled. Data LIFs were configured with jumbo frames. The nfs01 volume was created and mounted as junction path / nfs01. A VMware export policy that allowed all the hosts of the cluster was applied to the SVM. However, the hosts are unable to mount the volume. In this scenario, what caused the problem? A. NFS v3 is not compatible with ESXi hosts. B. The volume is not thin provisioned. C. The maximum transmission unit (MTU) was not set properly on the ESXi hosts. D. The default export policy needs to allow reads from the ESXi hosts.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is configuring a third-party software for NDMP. The application is targeting the IP of the data LIF of the SVM called \"SVM1. \"NDMP is configured as the SVM scope. The NDMP service is not enabled for the admin SVM. SVM1 has a user called \"Tom\" with the backup role. Tom can connect by using SSH to the controller with the credentials that he used to configure the third-party software. The authentication of the third-party software is falling. In this scenario, what is the reason for the authentication failure? A. The NDMP password has not been generated for Tom. B. The application is not targeting the IP of the cluster or node management LIF. C. The NDMP service is not enabled for the admin SVM. D. The user Tom does not belong to the admin SVM.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A storage administrator wants to convert a switchless cluster to a switched cluster. You need to determine which switches are supported in ONTAP 9.3. In this scenario, which tool would satisfy the requirement? A. Config Advisor B. Hardware Universe C. OnCommand System Manager D. OnCommand Unified Manager",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a volume storing a large number of 1KB to 2KB compressed zip files. In this scenario, which storage efficiency feature should you use? A. data compaction B. secondary compression C. adaptive compression D. deduplication",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two client specifications for an export rule? (Choose two.) A. 192.168.100.0/16 B. 192.168.100.0/0 C. 0.0.0.0/16 D. 0.0.0.0/0",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You must create separate SVMs that are based on teams. You also need to create separate SVMs that are based on the block-level and file-level protocols. Your DevOps team requests NFS and CIFS protocols, your AI team requests NFS and NVMe protocols, and your marketing team requests SBM and iSCSI protocols. In this scenario, what is the minimum number of SVMs that you must create to satisfy these requirements? A. 3 B. 5 C. 6 D. 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the purpose of Epsilon? A. to monitor cluster health B. to be used as a load-balancer for a 2-node cluster C. to evaluate the differences in node configurations D. to be used as a tie-breaker for a cluster quorum",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If an SVM is renamed and it is participating in an intercluster SVM peer relationship, what is the result? A. SVM peers are removed and they need to be re-created. B. Snapshot copies are renamed with the new SVM unique identifier. C. SnapMirror relationships appear as broken and a resync is required. D. Remote clusters are updated with the new peer SVM name.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are three types of load balancing for multimode groups? (Choose three.) A. IP B. MAC address C. sequential D. fixed path E. most recently used",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to move a FlexVol volume from one SVM to another. In this situation, which command would accomplish this task? A. volume create B. volume rehost C. volume modify D. volume move",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which failover policy is set by default on an iSCSI LIF? A. local-only B. broadcast-domain-wide C. disabled D. sfo-partner-only",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are running a FAS8200 system with ONTAP 9.5 with a Flash Pool aggregate. You have an SVM root volume and two volumes (Vol1 and Vol2). In this scenario, which two catching technologies would be applied to which volumes? (Choose two.) A. Flash Pool can be applied to all volumes including the SVM root volume. B. FlashCache can be applied to all volumes including the SVM root volume. C. Flash Pool can be applied to all volumes except the SVM root volume. D. FlashCache can be applied to all volumes except the SVM root volume.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two performance threshold policies in OnCommand Unified manager are configurable? (Choose two.) A. user-defined B. volume C. system-defined D. dynamic",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Two 100 GB space-reserved LUNs and one 100 GB non-space-reserved LUN were created in System Manager in a 1 TB volume. In this scenario, how much space has been allocated for writes to the three LUNs? A. 1 TB B. 300 GB C. 100 GB D. 200 GB",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In which two scenarios would you use a storage pool? (Choose two.) A. when providing an SSD caching layer evenly across multiple aggregates B. when you need to share an SSD caching layer within an HA pair C. when you have an SVM that is running a block protocol D. when migrating the aggregate over to the partner node",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have configured SVM Disaster Recovery on your cluster, and you set the identity-preserve option to false. In this scenario, which objects are replicated? A. SAN LIFs B. NFS Export policies C. DNS and DNS hosts D. Snapshot copies",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three name services does ONTAP support? (Choose three.) A. HTTP B. local files C. LDAP D. NIS E. SNMP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When you create a FlexVol volume, which security style is applied by default? A. the security style of the root volume of the cluster B. UNIX C. NTFS D. the security style of the SVM root volume",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two interface group types enable the load balancing algorithm to be used? (Choose two.) A. load balance mode B. QoS mode C. dynamic multimode D. static multimode",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two configuration limits should you verify when you add additional storage to an AFF A300 switchless configuration? (Choose two.) A. the supported number of SSD disks for the A300 system B. the supported number of shelves C. the supported number of HDDs for the A300 system D. the supported number of FC initiator ports for the A300 system",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements are true for mailbox disks per node in an HA pair? (Choose two.) A. Six disks are required if the root volume is on a mirrored aggregate. B. Two disks are required if the root volume is on a disk shelf. C. Four disks are required if the root volume is on a mirrored aggregate. D. Eight disks are required if the root volume is on partitioned disks. E. One array LUN is required if the root volume is on a storage array.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two advantages of creating small RAID groups inside an aggregate? (Choose two.) A. maximized storage space B. decreased risk of multiple disk failure C. shorter reconstruction time D. additional available spare drives",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true about creating volumes that contain LUNs? A. You can create LUNs on an aggregate. B. You cannot create qtrees on a volume that contains LUNs. C. You cannot create LUNs on an SVM root volume. D. You cannot create add files on a volume that contains LUNs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A storage administrator currently has an 8-node FAS8200 cluster with CIFS, NFS, and iSCSI licenses installed. In this scenario, how many additional nodes are supported? A. 3 B. 6 C. 4 D. 1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are three types of shells that are used in ONTAP? (Choose three.) A. clustershell B. systemshell C. powershell D. nodeshell E. bashshell",
+    "options": {},
+    "most_voted": ""
+  }
+]
