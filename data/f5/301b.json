@@ -1,0 +1,987 @@
+[
+  {
+    "question": "A OneConnect profile is applied to a virtual server. The LTM Specialist would like the client source IP addresses within the 10.10.10.0/25 range to reuse an existing server side connection. Which OneConnect profile source mask should the LTM Specialist use? A. 0.0.0.0 B. 255.255.255.0 C. 255.255.255.128 D. 255.255.255.224 E. 255.255.255.255",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device is load balancing telnet and ssh applications in a client/server environment experiencing significant packet delay. Which setting in the TCP profile should reduce the amount of packet delay? A. disable Bandwidth Delay B. disable Nagle's Algorithm C. enable Proxy Maximum Segment D. increase Maximum Segment Retransmissions",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device is load balancing SIP traffic. An LTM Specialist notices that sometimes the SIP request is being load balanced to the same server as the initial connection. Which setting in the UDP profile will make the LTM device more evenly distribute the SIP traffic? A. Enable Datagram LB B. Disable Datagram LB C. Set Timeout to Indefinite D. Set Timeout to Immediate",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Internet clients connecting to a virtual server to download a file are experiencing about 150 ms of latency and no packet loss. Which built-in client-side TCP profile provides the highest throughput? A. tcp B. tcp-legacy C. tcp-lan-optimized D. tcp-wan-optimized",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Windows PC clients are connecting to a virtual server over a high-speed, low-latency network with no packet loss. Which built-in client-side TCP profile provides the highest throughput for HTTP downloads? A. tcp B. tcp-legacy C. tcp-lan-optimized D. tcp-wan-optimized",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Users are experiencing low throughput when downloading large files over a high-speed WAN connection. Extensive packet loss was found to be an issue but CANNOT be eliminated. Which two TCP profile settings should be modified to compensate for the packet loss in the network? (Choose two.) A. slow start B. proxy options C. proxy buffer low D. proxy buffer high E. Nagle's algorithm",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is working with an LTM device configured with 10 virtual servers on the same domain with a different key/cert pair per virtual. For examplE. www.example.com; ftp.example.com; ssh.example.com; ftps.example.com. What should the LTM Specialist do to reduce the number of objects on the LTM device? A. create a 0 port virtual server and have it answer for all protocols B. create a 0.0.0.0:0 virtual server thus eliminating all virtual servers C. create a transparent virtual server thus eliminating all virtual servers D. create a wildcard certificate and use it on all *.example.com virtual servers",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The pool members are serving up simple static web content. The current virtual server configuration is given as follows: tmsh list ltm virtual simple ltm virtual simple { destination 10.10.10.10:80 ip-protocol tcp mask 255.255.255.255 profiles { http { } httpcompression { } oneconnect { } tcp { } } snat automap vlans-disabled } tmsh list ltm pool simple_pool ltm pool simple_pool { members { 10.10.10.11:80 { address 10.10.10.11 } 10.10.10.12:80 { address 10.10.10.12 } 10.10.10.12:80 { address 10.10.10.13 } } } Which three objects in the virtual server configuration can be removed without disrupting functionality of the virtual server? (Choose three.) A. tcp B. http C. oneconnect D. snat automap E. httpcompression",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device is running BIG-IP v10.2.0 software. The LTM Specialist is tasked with upgrading the LTM device to BIG-IP v11.2.0 HF1. The LTM Specialist starts the upgrade process by selecting the uploaded Hotfix and installing to an unused volume. After 10 minutes, the LTM Specialist checks the status of the upgrade process and notices that the process is stalled at 0%. What should the LTM Specialist verify? A. the selected volume has sufficient space available B. the base software version exists on the LTM device C. the LTM device has been restarted into maintenance mode D. the LTM device has an available Internet connection via the management interface",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A stand-alone LTM device is to be paired with a second LTM device to create an active/standby pair. The current stand-alone LTM device is in production and has several VLANs with floating IP addresses configured. The appropriate device service clustering (DSC) configurations are in place on both LTM devices. Which two non-specific DSC settings should the LTM Specialist configure on the second LTM device to ensure no errors are reported when attempting to synchronize for the first time? (Choose two.) A. pools B. VLANs C. default route D. self IP addresses",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the correct command to reset an LTM device to its default settings? A. tmsh reset-all default B. tmsh set /sys config defaults C. tmsh load /sys config default D. tmsh /util bigpipe reset-factory-defaults",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In which file would the LTM Specialist find virtual server configurations? A. bigip.conf B. bigip_sys.conf C. bigip_base.conf D. profile_base.conf",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When re-licensing an LTM device from the command line interface, which tmsh command should the LTM Specialist use to generate the required information to provide on the F5 licensing portal? A. tmsh run /util get-dossier B. tmsh generate /sys dossier C. tmsh list /sys registration-key D. tmsh install /sys license registration-key",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A device on the network is configured with the same IP address as the management address of the active LTM device, causing the management GUI to be inaccessible. Which two methods should the LTM Specialist use to access the LTM device in order to change the management IP address? (Choose two.) A. Connect via ssh to the AOM IP address. B. Connect via ssh to the management address. C. Connect to the LTM device via serial connection. D. Connect a monitor and keyboard to the LTM device. E. Connect via ssh to the standby unit and connect via ssh across the serial link between the devices.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The LTM Specialist is in the process of creating a USB boot drive for the purpose of restoring the BIG-IP software to an LTM device. A separate LTM device has been selected for the purpose of creating the USB boot drive. The BIG-IP software ISO has already been uploaded and mounted on the separate LTM device. Which command should the LTM Specialist use to trigger the LTM device to install the BIG-IP software to the USB boot drive? A. tmsh B. install C. mkdisk D. bigip_software_create",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist has installed a hotfix that updated the SCCP firmware package. Which command will ensure that the host subsystem and SCCP reboot? A. reboot B. full_box_reboot C. shutdown -r now D. The reboot should be initiated via the HTTPS administration GUI.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which procedure should an LTM Specialist follow to move a configuration from a 1500 to a 1600 hardware platform during an upgrade? A. tmsh save sys config file filename.scf copy the file from the /var/local/scf directory from one device to the other tmsh load sys config file filename.scf B. tmsh save sys backup file filename.scf copy the file from the /var/local/scf directory from one device to the other tmsh load sys backup file filename.scf C. tmsh save sys backup file filename.scf copy the file from the /var/local/ucs directory from one device to the other tmsh load sys backup file filename.scf D. tmsh save sys config file filename.scf copy the file from the /var/local/ucs directory from one device to the other",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the recommended procedure for upgrading a major TMOS release on a BIG-IP platform? A. 1. Renew the device license. 2.Take a configuration backup. 3.Reboot the device to the non-active volume. 4.Upload the device code. 5.Install device code to the current volume. B. 1. Take a configuration backup. 2.Upload the device code. 3.Install device code to the non-active volume. 4.Reboot the device to the non-active volume. 5.Renew the device license. C. 1. Renew the device license. 2.Take a configuration backup. 3.Upload the device code. 4.Install device code to the non-active volume. 5.Reboot the device to the non-active volume. D. 1. Take a configuration backup. 2.Reboot the device to the non-active volume. 3.Renew the device license. 4.Upload the device code.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist uploaded new releases .iso and .md5 files titled \"BIGIP-FILENAME\" via the GUI. Which commands are run via the command line from the root directory to verify the integrity of the new .iso file? A. cd /var/shared/images md5sum --check BIGIP-FILENAME.iso B. cd /shared/images md5sum --check BIGIP-FILENAME.iso C. cd /var/shared/images md5sum --check BIGIP-FILENAME.iso.md5 D. cd /shared/images",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist must perform a hot fix installation from the command line. What is the correct procedure to ensure that the installation is successful? A. import the hot fix to the /var/shared/images directory check the integrity of the file with an md5 checksum tmsh apply sys software hotfix volume <volume_name> <hotfix_name>.iso B. import the hot fix to the /var/shared/images directory check the integrity of the file with an md5 checksum tmsh install sys software hotfix <hotfix_name>.iso volume <volume_name> C. import the hot fix to the /shared/images directory check the integrity of the file with an md5 checksum tmsh apply sys software hotfix volume <volume_name> <hotfix_name>.iso D. import the hot fix to the /shared/images directory check the integrity of the file with an md5 checksum",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two alerting capabilities can be enabled from within an application visibility reporting (AVR) analytics profile? (Choose two.) A. sFlow B. SNMP C. e-mail D. LCD panel alert E. high speed logging (HSL)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is a benefit provided by F5 Enterprise Manager? A. Enterprise Manager allows administrators to analyze traffic flow and create custom application IPS signatures. B. Enterprise Manager allows administrators to establish baseline application usage and generate an alert if an administratively set threshold for the application is exceeded. C. Enterprise Manager allows administrators to identify application vulnerabilities. Virtual patches are then automatically generated and applied to remediate the detected application vulnerability. D. Enterprise Manager allows administrators to monitor all application traffic. Configuration optimization suggestions based on the observed traffic patterns are",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two items can be logged by the Application Visibility Reporting analytics profile? (Choose two.) A. User Agent B. HTTP version C. HTTP Response Codes D. Per Virtual Server CPU Utilization",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which file should be modified to create custom SNMP alerts? A. /config/alert.conf B. /etc/alertd/alert.conf C. /config/user_alert.conf D. /etc/alertd/user_alert.conf",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist has set up a custom SNMP alert. Which command line tool should the LTM Specialist use to test the alert? A. logger B. logtest C. testlog D. snmptest",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is customizing local traffic logging. Which traffic management OS alert level provides the most detail? A. Alert B. Notice C. Critical D. Emergency E. Informational",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A new web application is hosted at www.example.net, but some clients are still pointing to the legacy web application at www.example.com. Which iRule will allow clients referencing www.example.com to access the new application? A. when HTTP_REQUEST { if {[HTTP::host] equals \"www.example.*\" }{ HTTP::redirect \"http://www.example.net\" } } B. when HTTP_REQUEST { if {[HTTP::host] equals \"www.example.com\" }{ HTTP::redirect \"http://www.example.net\" } } C. when HTTP_DATA { if {[HTTP::host] equals \"www.example.*\" }{ HTTP::redirect \"http://www.example.net\" } } D. when HTTP_RESPONSE { if {[HTTP::host] equals \"www.example.com\" }{ HTTP::redirect \"http://www.example.net\" }",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which iRule will instruct the client's browser to avoid caching HTML server responses? A. when HTTP_REQUEST { if {[HTTP::header Content-Type] equals \"html\"} { HTTP::header insert Pragma \"no-cache\" HTTP::header insert Expires \"Fri, 01 Jan 1990 00:00:00 GMT\" HTTP::header replace Cache-Control \"no-cache,no-store,must-revalidate\" } } B. when HTTP_REQUEST { if {[HTTP::header Content-Type] contains \"html\"} { HTTP::header insert Pragma \"no-cache\" HTTP::header insert Expires \"Fri, 01 Jan 1990 00:00:00 GMT\" HTTP::header replace Cache-Control \"no-cache,no-store,must-revalidate\" } } C. when HTTP_RESPONSE { if {[HTTP::header Content-Type] contains \"html\"} { HTTP::header insert Pragma \"no-cache\" HTTP::header insert Expires \"Fri, 01 Jan 1990 00:00:00 GMT\" HTTP::header replace Cache-Control \"no-cache,no-store,must-revalidate\" } } D. when HTTP_RESPONSE { if {[HTTP::header Content-Type] equals \"html\"} { HTTP::header insert Pragma \"no-cache\" HTTP::header insert Expires \"Fri, 01 Jan 1990 00:00:00 GMT\" HTTP::header replace Cache-Control \"no-cache,no-store,must-revalidate\" }",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IT administrator wants to log which server is being load balanced to by a user with IP address 10.10.10.25. Which iRule should the LTM Specialist use to fulfill the request? A. when SERVER_CONNECTED { if { [IP::addr [IP::remote_addr]] equals 10.10.10.25]} { log local0. \"client 10.10.10.25 connected to pool member [IP::addr [LB::server addr]]\" } } B. when CLIENT_ACCEPTED { if { [IP::addr [clientside [IP::remote_addr]] equals 10.10.10.25]} { log local0. \"client 10.10.10.25 connected to pool member [IP::addr [LB::server addr]]\" } } C. when SERVER_CONNECTED { if { [IP::addr [clientside [IP::remote_addr]] equals 10.10.10.25]} { log local0. \"client 10.10.10.25 connected to pool member [IP::addr [LB::server addr]]\" } } D. when CLIENT_ACCEPTED { if { [IP::addr [IP::remote_addr] equals 10.10.10.25]} { log local0. \"client 10.10.10.25 connected to pool member [IP::addr [LB::server addr]]\" }",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer needs to intercept all of the redirects its application is sending to clients. When a redirect is matched, the customer needs to log a message including the client IP address. Which iRule should be used? A. when HTTP_RESPONSE { if { [HTTP::is_3xx] } { log local0. \"redirecting client ip address [IP::addr [IP::remote_addr]]\" } } B. when HTTP_REQUEST { if { [HTTP::is_301] } { log local0. \"redirecting client ip address [IP::addr [IP::remote_addr]]\" } } C. when HTTP_REQUEST { if { [HTTP::is_redirect] } { log local0. \"redirecting client ip address [IP::addr [IP::remote_addr]]\" } } D. when HTTP_RESPONSE { if { [HTTP::is_redirect] } { log local0. \"redirecting client ip address [IP::addr [IP::remote_addr]]\" }",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A web application requires knowledge of the client's true IP address for logging and analysis purposes. Instances of the application that can decode X- Forwarded-For HTTP headers reside in pool_a, while pool_b instances assume the source IP is the true address of the client. Which iRule provides the proper functionality? A. when HTTP_DATA { if {[HTTP::header exists X-Forwarded-For]}{ pool pool_a } else { pool pool_b } } B. when HTTP_RESPONSE { if {[HTTP::header exists X-Forwarded-For]}{ pool pool_a } else { pool pool_b } } C. when HTTP_REQUEST { if {[HTTP::header exists X-Forwarded-For]}{ pool pool_a } else { pool pool_b } } D. when HTTP_OPEN { if {[HTTP::header exists X-Forwarded-For]}{ pool pool_a } else { pool pool_b }",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "There is a fault with an LTM device load balanced trading application that resides on directly connected VLAN vlan-301. The application virtual server is 10.0.0.1:80 with trading application backend servers on subnet 192.168.0.0/25. The LTM Specialist wants to save a packet capture with complete payload for external analysis. Which command should the LTM Specialist execute on the LTM device command line interface? A. tcpdump -vvv -w /var/tmp/trace.cap 'net 192.168.0.0/25' B. tcpdump -vvv -s 0 -w /var/tmp/trace.cap 'net 192.168.0.0/25' C. tcpdump -vvv -nni vlan-301 -w /var/tmp/trace.cap 'net 192.168.0.0/25' D. tcpdump -vvv -s 0 -nni vlan-301 -w /var/tmp/trace.cap 'net 192.168.0.0/25'",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist has just captured trace /var/tmp/trace.cap for site www.example.com while listening on virtual address 10.0.0.1:443 configured on partition ApplicationA. The data payload being captured is SSL encrypted. Which command should the LTM Specialist execute to decrypt the data payload? A. ssldump -Aed -nr /var/tmp/trace.cap -k /config/filestore/files_d/Common_d/certificate_d/:Common:www.example.com.crt_1 B. ssldump -Aed -nr /var/tmp/trace.cap -k /config/filestore/files_d/Common_d/certificate_key_d/:Common:www.example.com.key_1 C. ssldump -Aed -nr /var/tmp/trace.cap -k /config/filestore/files_d/ApplicationA_d/certificate_d/:ApplicationA:www.example.com.crt_1 D. ssldump -Aed -nr /var/tmp/trace.cap -k /config/filestore/files_d/ApplicationA_d/certificate_key_d/:ApplicationA:www.example.com.key_1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist must perform a packet capture on a virtual server with an applied standard FastL4 profile. The virtual server 10.0.0.1:443 resides on vlan301. Which steps should the LTM Specialist take to capture the data payload successfully while ensuring no other virtual servers are affected? A. The standard FastL4 profile should have PVA acceleration disabled. Then the packet capture tcpdump -ni vlan301 should be executed on the command line interface. B. The packet capture tcpdump -ni vlan301 should be executed on the command line interface. There is no need to change profiles or PVA acceleration. C. A new FastL4 profile should be created and applied to the virtual server with PVA acceleration disabled. Then the packet capture tcpdump -ni vlan301 should be executed on the command line interface. D. The LTM device is under light load. The traffic should be mirrored to a dedicated sniffing device. On the sniffing device, the packet capture tcpdump -ni",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A new VLAN vlan301 has been configured on a highly available LTM device in partition ApplicationA. A new directly connected backend server has been placed on vlan301. However, there are connectivity issues pinging the default gateway. The VLAN self IPs configured on the LTM devices are 192.168.0.251 and 192.168.0.252 with floating IP 192.168.0.253. The LTM Specialist needs to perform a packet capture to assist with troubleshooting the connectivity. Which command should the LTM Specialist execute on the LTM device command line interface to capture the attempted pings to the LTM device default gateway on VLAN vlan301? A. tcpdump -ni /ApplicationA/vlan301 'host 192.168.0.253' B. tcpdump -ni vlan301 'host 192.168.0.253' C. tcpdump -ni /ApplicationA/vlan301 'host 192.168.0.251 or host 192.168.0.252' D. tcpdump -ni vlan301 'host 192.168.0.251 or host 192.168.0.252'",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device pool has suddenly been marked down by a monitor. The pool consists of members 10.0.1.1:443 and 10.0.1.2:443 and are verified to be listening. The affected virtual server is 10.0.0.1:80. Which two tools should the LTM Specialist use to troubleshoot the associated HTTPS pool monitor via the command line interface? (Choose two.) A. curl B. telnet C. ssldump D. tcpdump",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist needs to modify the logging level for tcpdump execution events. Checking the BigDB Key, the following is currently configured: sys db log.tcpdump.level { value \"Notice\" } Which command should the LTM Specialist execute on the LTM device to change the logging level to informational? A. tmsh set /sys db log.tcpdump.level value informational B. tmsh set /sys db log.tcpdump.level status informational C. tmsh modify /sys db log.tcpdump.level value informational D. tmsh modify /sys db log.tcpdump.level status informational",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An application is configured on an LTM device: Virtual server: 10.0.0.1:80 (VLAN vlan301) SNAT IP: 10.0.0.1 Pool members: 10.0.1.1:8080, 10.0.1.2:8080, 10.0.1.3:8080 (VLAN vlan302) Which packet capture should the LTM Specialist perform on the LTM device command line interface to capture only client traffic specifically for this virtual server? A. tcpdump -ni 0.0:nnn -s 0 'host 10.0.0.1' -w /var/tmp/trace.cap B. tcpdump -ni vlan301 -s 0 'port 80 and host 10.0.0.1' -w /var/tmp/trace.cap C. tcpdump -ni vlan301 -s 0 'port 8080 and host 10.0.1.1 or host 10.0.1.2 or host 10.0.1.3' -w /var/tmp/trace.cap D. tcpdump -ni vlan302 -s 0 'port 8080 and host 10.0.1.1 or host 10.0.1.2 or host 10.0.1.3' -w /var/tmp/trace.cap E. tcpdump -ni 0.0:nnn -s 0 '(port 80 and host 10.0.0.1) or (port 8080 and host 10.0.1.1 or host 10.0.1.2 or host 10.0.1.3)' -w /var/tmp/trace.cap",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is running the following packet capture on an LTM device: ssldump -Aed -ni vlan301 'port 443' Which two SSL record message details will the ssldump utility display by default? (Choose two.) A. HTTP Version B. User-Agent C. ClientHello D. ServerHello E. Issuer",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given this as the first packet displayed of an ssldump: 2 2 1296947622.6313 (0.0001) S>CV3.1(74) Handshake ServerHello Version 3.1 random[32]= 19 21 d7 55 c1 14 65 63 54 23 62 b7 c4 30 a2 f0 b8 c4 20 06 86 ed 9c 1f 9e 46 0f 42 79 45 8a 29 session_id[32]= c4 44 ea 86 e2 ba f5 40 4b 44 b4 c2 3a d8 b4 ad 4c dc 13 0d 6c 48 f2 70 19 c3 05 f4 06 e5 ab a9 cipherSuite TLS_RSA_WITH_RC4_128_SHA compressionMethod NULL In reviewing the rest of the ssldump, the application data is NOT being decrypted. Why is ssldump failing to decrypt the application data? A. The application data is encrypted with SSLv3. B. The application data is encrypted with TLSv1. C. The data is contained within a resumed TLS session. D. The BigDB Key Log.Tcpdump.Level needs to be adjusted.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is troubleshooting virtual server 10.0.0.1:443 residing on VLAN vlan301. The web application is accessed via www.example.com. The LTM Specialist wants to save a packet capture with complete decrypted payload for external analysis. Which command should the LTM Specialist execute on the LTM device command line interface? A. tcpdump -vvv -s 0 'host 10.0.0.1 and port 443' -w /var/tmp/trace.cap B. tcpdump -vvv -s 0 -ni vlan301 'host 10.0.0.1 and port 443' -w /var/tmp/trace.cap C. ssldump -Aed -k /config/filestore/files_d/Common_d/certificate_key_d/:Common:www.example.com.key_1 > /var/tmp/trace.cap D. ssldump -Aed -ni vlan301 -k /config/filestore/files_d/Common_d/certificate_key_d/:Common:www.example.com.key_1 > /var/tmp/trace.cap",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An application is configured on an LTM device: Virtual server: 10.0.0.1:80 (VLAN vlan301) SNAT IP: 10.0.0.1 Pool members: 10.0.1.1:8080, 10.0.1.2:8080, 10.0.1.3:8080 (VLAN vlan302) Which packet capture should the LTM Specialist perform on the LTM device command line interface to capture only server traffic specifically for this application? A. tcpdump -ni 0.0:nnn -s 0 'host 10.0.0.1' -w /var/tmp/trace.cap B. tcpdump -ni vlan301 -s 0 'port 80 and host 10.0.0.1' -w /var/tmp/trace.cap C. tcpdump -ni vlan302 -s 0 'port 8080 and (host 10.0.1.1 or host 10.0.1.2 or host 10.0.1.3)' -w /var/tmp/trace.cap D. tcpdump -ni 0.0:nnn -s 0 '(port 80 and host 10.0.0.1) or (port 8080 and host 10.0.1.1 or host 10.0.1.2 or host 10.0.1.3)' -w /var/tmp/trace.cap",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist sees these entries in /var/log/ltm: Oct 25 03:34:31 tmm warning tmm[7150]: 01260017:4: Connection attempt to insecure SSL server (see RFC5746) aborteD. 172.16.20.1:443 Oct 25 03:34:32 tmm warning tmm[7150]: 01260017:4: Connection attempt to insecure SSL server (see RFC5746) aborteD. 172.16.20.1:443 Oct 25 03:34:32 tmm warning tmm[7150]: 01260017:4: Connection attempt to insecure SSL server (see RFC5746) aborteD. 172.16.20.1:443 Oct 25 03:34:32 tmm warning tmm[7150]: 01260017:4: Connection attempt to insecure SSL server (see RFC5746) aborteD. 172.16.20.1:443 Oct 25 03:34:32 tmm warning tmm[7150]: 01260017:4: Connection attempt to insecure SSL server (see RFC5746) aborteD. 172.16.20.1:443 Oct 25 03:34:33 tmm warning tmm[7150]: 01260017:4: Connection attempt to insecure SSL server (see RFC5746) aborteD. 172.16.20.1:443 Assume 172.16.20.0/24 is attached to the VLAN \"internal.\" What should the LTM Specialist use to troubleshoot this issue? A. curl -d - -k https://172.16.20.1 B. ssldump -i internal host 172.16.20.1 C. tcpdump -i internal host 172.16.20.1 > /shared/ssl.pcap ssldump < /shared/ssl.pcap D. tcpdump -s 64 -i internal -w /shared/ssl.pcap host 172.16.20.1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A virtual server for a set of web services is constructed on an LTM device. The LTM Specialist has created an iRule and applied this iRule to the virtual server: when HTTP_REQUEST { switch [HTTP::uri] { \"/WS1/ws.jsp\" { log local0. \"[HTTP::uri]-Redirected to JSP Pool\" pool JSP } default { log local0. \"[HTTP::uri]-Redirected to Non-JSP Pool\" pool NonJSP } } } However, the iRule is NOT behaving as expected. Below is a snapshot of the log: /WS1/ws.jsp-Redirected to JSP Pool /WS1/ws.jsp-Redirected to JSP Pool /WS1/ws.jsp-Redirected to JSP Pool /WS1/WS.jsp-Redirected to Non-JSP Pool /ws1/WS.jsp-Redirected to Non-JSP Pool /WS1/ws.jsp-Redirected to JSP Pool /ws1/ws.jsp-Redirected to Non-JSP Pool What is the problem? A. The condition in the iRule is case sensitive. B. The 'switch' command in the iRule has been used incorrectly. C. The pool members of both pools need to be set up as case-insensitive members. D. The \"Process Case-Insensitivity\" option for the virtual server needs to be selected.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is tasked with ensuring that the syslogs for the LTM device are sent to a remote syslog server. The following is an extract from the config file detailing the node and monitor that the LTM device is using for the remote syslog server: monitor Syslog_15002 { defaults from udp dest *:15002 } node 91.223.45.231 { monitor Syslog_15002 screen RemoteSYSLOG } There seem to be problems communicating with the remote syslog server. However, the pool monitor shows that the remote server is up. The network department has confirmed that there are no firewall rules or networking issues preventing the LTM device from communicating with the syslog server. The department responsible for the remote syslog server indicates that there may be problems with the syslog server. The LTM Specialist checks the BIG-IP LTM logs for errors relating to the remote syslog server. None are found. The LTM Specialist does a tcpdump: tcpdump -nn port 15002, with the following results: 21:28:36.395543 IP 192.168.100.100.44772 > 91.223.45.231.15002: UDP, length 19 21:28:36.429073 IP 192.168.100.100.39499 > 91.223.45.231.15002: UDP, length 169 21:28:36.430714 IP 192.168.100.100.39499 > 91.223.45.231.15002: UDP, length 181 21:28:36.840524 IP 192.168.100.100.39499 > 91.223.45.231.15002: UDP, length 169 21:28:36.846547 IP 192.168.100.100.39499 > 91.223.45.231.15002: UDP, length 181 21:28:39.886343 IP 192.168.100.100.39499 > 91.223.45.231.15002: UDP, length 144 NotE. 192.168.100.100 is the self IP of the LTM device. Why are there no errors for the remote syslog server in the log files? A. The -log option for tcpdump needs to be used. B. The monitor type used is inappropriate. C. The \"verbose\" logging option needs to be enabled for the pool. D. When the remote syslog sever fails, it returns to service before the timeout for the monitor has expired.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given a tcpdump on an LTM device from both sides of a connection on the External and Internal VLANs, how should an LTM Specialist determine if SNAT is enabled for a particular pool? A. by checking to see if the Source IP is carried through from the External Vlan to the Internal Vlan B. by checking to see if the Destination port is carried through from the External Vlan to the Internal Vlan C. by checking to see if the Source port is carried through from the External Vlan to the Internal Vlan D. by checking to see if the Destination IP is carried through from the External Vlan to the Internal Vlan",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist has a OneConnect profile and HTTP profile configured on a virtual server to load balance an HTTP application. The following HTTP headers are seen in a network trace when a client connects to the virtual server: Clientside: GET / HTTP/1.1 Host: 192.168.136.100 User-Agent: Mozilla/5.0 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 Accept-EncodinG. gzip, deflate Connection: keep-alive Serverside: HTTP/1.1 200 OK DatE. 5 Jun 1989 17:06:55 GMT Server: Apache/2.2.14 (Ubuntu) Vary: Accept-Encoding Content-EncodinG. gzip Content-LengtH. 3729 X-Cnection: close Content-TypE. text/html The LTM Specialist notices the OneConnect feature is working incorrectly. Why is OneConnect functioning incorrectly? A. Client must support HTTP/1.0. B. Client must support HTTP keep-alive. C. Server must support HTTP/0.9. D. Server must support HTTP keep-alive.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A virtual server for a set of web services is constructed on an LTM device. The LTM Specialist has created an iRule and applied this iRule to the virtual server: when HTTP_REQUEST { switch [HTTP::uri] { \"/ws1/ws.jsp\" { log local0. \"[HTTP::uri]-Redirected to JSP Pool\" pool JSP } default { log local0. \"[HTTP::uri]-Redirected to Non-JSP Pool\" pool NonJSP } } } However, the iRule is NOT behaving as expected. Below is a snapshot of the log: /WS1/ws.jsp-Redirected to JSP Pool /WS1/ws.jsp-Redirected to JSP Pool /WS1/ws.jsp-Redirected to JSP Pool /WS1/WS.jsp-Redirected to Non-JSP Pool /ws1/WS.jsp-Redirected to Non-JSP Pool /WS1/ws.jsp-Redirected to JSP Pool /ws1/ws.jsp-Redirected to Non-JSP Pool What should the LTM Specialist do to resolve this? A. Use the followinG. switch -lc [HTTP::uri] B. Use the followinG. switch [string tolower [HTTP::uri]] C. Set the \"Case Sensitivity\" option of each member to \"None\". D. Select the \"Process Case-Insensitivity\" option for the virtual server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device has a virtual server configured as a Performance Layer 4 virtual listening on 0.0.0.0:0 to perform routing of packets to an upstream router. The client machine at IP address 192.168.0.4 is attempting to contact a host upstream of the LTM device on IP address 10.0.0.99. The network flow is asymmetrical, and the following TCP capture displays: # tcpdump -nnni 0.0 'host 192.168.0.4 and host 10.0.0.99' tcpdump: verbose output suppressed, use -v or -vv for full protocol decode listening on 0.0, link-type EN10MB (Ethernet), capture size 96 bytes 05:07:55.499954 IP 192.168.0.4.35345 > 10.0.0.99.443: S 3205656213:3205656213(0) ack 3267995082 win 1480 05:07:55.499983 IP 10.0.0.99.443 > 192.168.0.4.35345: R 1:1(0) ack 1 win 0 05:07:56.499960 IP 192.168.0.4.35345 > 10.0.0.99.443: S 3205656213:3205656213(0) ack 3267995082 win 1480 05:07:56.499990 IP 10.0.0.99.443 > 192.168.0.4.35345: R 1:1(0) ack 1 win 0 4 packets captured Which option within the fastL4 profile needs to be enabled by the LTM Specialist to prevent the LTM device from rejecting the flow? A. Loose Close B. Loose Initiation C. Reset on Timeout D. Generate Initial Sequence Number",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist has configured a virtual server for www.example.com, load balancing connections to a pool of application servers that provide a shopping cart application. Cookie persistence is enabled on the virtual server. Users are able to connect to the application, but the user's shopping cart fails to update. A traffic capture shows the following: Request: GET /cart/updatecart.php HTTP/1.1 Host: www.example.com Connection: keep-alive Cache-Control: max-age=0 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 Accept-EncodinG. gzip,deflate,sdch Accept-LanguagE. en-US,en;q=0.8 Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3 CookiE. BIGipServerwebstore_pool=353636524.20480.0000 Response: HTTP/1.1 200 OK DatE. Wed, 24 Oct 2012 18:00:13 GMT Server: Apache/2.2.22 (Ubuntu) X-Powered-By: PHP/5.3.10-1ubuntu3.1 Set-CookiE. cartID=647A5EA6657828C69DB8188981CB5; path=/; domain=wb01.example.com Keep-AlivE. timeout=5, max=100 Connection: Keep-Alive Content-TypE. text/html No changes can be made to the application. What should the LTM Specialist do to resolve the problem? A. Use an iRule to rewrite the cartID cookie domain. B. Create a universal persistence profile on the cartID cookie. C. Enable source address persistence as a fallback persistence method. D. Create a cookie persistence profile with \"match across services\" enabled.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An LTM Specialist has been asked to configure a virtual server to distribute connections between a pool of two application servers with addresses 172.16.20.1 and 172.16.20.2. The application servers are listening on TCP ports 80 and 443. The application administrators have asked that clients be directed to the same node for both HTTP and HTTPS requests within the same session. Virtual servers vs_http and vs_https have been created, listening on 1.2.3.100:80 and 1.2.3.100:443, respectively. Which configuration option will result in the desired behavior? A. Create pool app_pool with members 172.16.20.1:any and 172.16.20.2:any Assign app_pool as the default pool for both vs_http and vs_https Disable port translation for vs_http and vs_https B. Create pool http_pool with members 172.16.20.1:80 and 172.16.20.2:80 Assign pool http_pool as the default pool for both vs_https and vs_https Disable port translation for vs_https Create an SSL persistence profile with \"match across virtual servers\" enabled Assign the persistence profile to vs_http. C. Create pool http_pool with members 172.16.20.1:80 and 172.16.20.2:80 Create pool https_pool with members 172.16.20.1:443 and 172.16.20.2:443 Assign http_pool as the default pool for vs_http Assign https_pool as the default pool for vs_https Create a source address persistence profile with \"match across services\" enabled Assign the persistence profile to vs_http and vs_https D. Create pool http_pool with members 172.16.20.1:80 and 172.16.20.2:80 Create pool https_pool with members 172.16.20.1:443 and 172.16.20.2:443 Assign http_pool as the default pool for vs_http Assign https_pool as the default pool for vs_https Create an SSL persistence profile with \"match across virtual servers\" enabled",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is investigating reports from users that SSH connections are being terminated unexpectedly. SSH connections are load balanced through a virtual server. The users experiencing this problem are running SQL queries that take upwards of 15 minutes to return with no screen output. The virtual server is standard with a pool associated and no other customizations. What is causing the SSH connections to terminate? A. UDP IP ToS B. TCP idle timeout C. The virtual server has no persistence. D. The pool has Reselect Retries set to 0.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Users in a branch office are reporting a website is always slow. No other users are experiencing the problem. The LTM Specialist tests the website from the external VLAN along with testing the servers directly. All tests indicate normal behavior. The environment is a single HTTP virtual server on the external VLAN with a single pool containing three HTTP pool members on the internal VLAN. Which two locations are most appropriate to collect additional protocol analyzer data? (Choose two.) A. a user's machine B. the switch local to the user C. the LTM device's internal VLAN D. the LTM device's external VLAN E. a user's Active Directory authentication",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist has a single HTTPS virtual server doing SSL termination. No server SSL profile is defined. The pool members are on the internal VLAN answering on HTTP port 80. Users with certain browsers are experiencing issues. Which two locations are most appropriate to gather packets needed to determine the SSL issue? (Choose two.) A. server interface B. user's computer C. LTM device's external VLAN D. LTM device's internal VLAN E. LTM device's management interface",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A user is having issues with connectivity to an HTTPS virtual server. The virtual server is on the LTM device's external vlan, and the pools associated with the virtual server are on the internal vlan. An LTM Specialist does a tcpdump on the external interface and notices that the host header is incomplete. In which location should the LTM Specialist put a traffic analyzer to gather the most pertinent data? A. server B. external VLAN C. internal VLAN D. client machine",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An application owner claims an LTM device is delaying delivery of an HTTP application. The LTM device has two VLANs, an internal and an external. The application servers reside on the internal VLAN. The virtual server and clients reside on the external VLAN. With appropriate filters applied, which solution is most efficient for obtaining packet captures in order to investigate the claim of delayed delivery? A. one capture on interface 0.0 B. one capture on the internal interface C. one capture on the external interface D. one capture on the management interface",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client (10.10.1.30) connecting to an HTTPS virtual server (10.10.1.100) with a clientssl profile is getting an SSL error. Which options will trace this issue? A. tcpdump -i external -X -e -nn -vvv -w /shared/ssl_problem.cap port 443 and host 10.10.1.30 ssldump -r /shared/ssl_problem.cap -n -x B. tcpdump -i external -s 0 -w /shared/ssl_problem.cap port 443 and host 10.10.10.30 and host 10.10.1.100 ssldump -r /shared/ssl_problem.cap -n -x C. tcpdump -i external -X -s 0 -vvv src host 10.10.10.30 and dst host 10.10.1.100 and port 443 > /shared/ssl_problem.cap ssldump -r /shared/ssl_problem.cap -n -x D. tcpdump -i external -X -e -nn -vv port 443 and host 10.10.1.100 and host 10.10.1.30 > /shared/ssl_problem.cap",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device is deployed in a one-armed topology. The virtual server, clients, and web servers are connected on the LTM device internal VLAN. A client tries to connect to the virtual server and is unable to establish a connection. A packet capture from the LTM device internal VLAN shows that the HTTP request is being forwarded to the web server. From which two additional locations should protocol analyzer data be collected? (Choose two.) A. network interface of web server B. network interface of client machine C. internal VLAN interface of LTM device D. external VLAN interface of LTM device E. any network interface of the Internet firewall",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist configures a new HTTP virtual server on an LTM device external VLAN. The web servers are connected to the LTM device internal VLAN. Clients trying to connect to the virtual server are unable to establish a connection. A packet capture shows an HTTP response from a web server to the client and then a reset from the client to the web server. From which two locations could the packet capture have been collected? (Choose two.) A. network interface of web server B. network interface of client machine C. internal VLAN interface of the LTM device D. external VLAN interface of the LTM device E. management VLAN interface of the LTM device",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An LTM Specialist configures an HTTP monitor as follows: ltm monitor http stats_http_monitor { defaults-from http destination *:* interval 5 recv \"Health check: OK\" send \"GET /stats/stats.html HTTP/1.1\\\\r\\\\nHost: www.example.com\\\\r\\\\nAccept-EncodinG. gzip, deflate\\\\r\\\\nConnection: close\\\\r\\\\n\\\\r\\\\n\" time-until-up 0 timeout 16 } The monitor is marking all nodes as down. A trace of the HTTP conversation shows the following: GET /stats/stats.html HTTP/1.1 Host: www.example.com Accept-EncodinG. gzip, deflate Connection: close HTTP/1.1 401 Authorization Required DatE. Tue, 23 Oct 2012 19:38:56 GMT Server: Apache/2.2.15 (Unix) WWW-AuthenticatE. Basic realm=\"Please enter your credentials\" Content-LengtH. 480 Connection: close Content-TypE. text/html; charset=iso-8859-1 Which action will resolve the problem? A. Add an NTLM profile to the virtual server. B. Add a valid username and password to the monitor. C. Use an HTTPS monitor with a valid certificate instead. D. Add a backslash before the colon in the receive string.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following decoded TCPDump capture shows the trace of a failing health monitor. 00:00:13.245104 IP 10.29.29.60.51947 > 10.0.0.12.http: P 1:59(58) ack 1 win 46 <nop,nop,timestamp 2494782300 238063789> out slot1/tmm3 lis= 0x0000: 4500 006e 3b19 4000 4006 ce0c 0a1d 1d3c E..n;.@.@......< 0x0010: 0a00 000c caeb 0050 8be5 aca3 dd65 e3e1 .......P.....e.. 0x0020: 8018 002e 1b41 0000 0101 080a 94b3 5b5c .....A........[\\ 0x0030: 0e30 90ad 4745 5420 2f74 6573 745f 7061 .0..GET./test_pa 0x0040: 6765 2e68 746d 6c20 4854 5450 312e 310d ge.html.HTTP1.1. 0x0050: 0a48 6f73 743a 200d 0a43 6f6e 6e65 6374 .Host:...Connect 0x0060: 696f 6e3a 2043 6c6f 7365 0d0a 0d0a 0105 ion:.Close...... 0x0070: 0100 0003 00 ..... 00:00:13.245284 IP 10.0.0.12.http > 10.29.29.60.51947: . ack 59 win 362 <nop,nop,timestamp 238063789 2494782300> in slot1/tmm3 lis= 0x0000 0ffd 0800 4500 00c9 6f68 4000 8006 755d [email protected] ] 0x0010 0a29 0015 0a29 0103 0050 e0d6 4929 90eb .)...)...P..I).. 0x0020 6f12 d83c 8019 fab3 9b31 0000 0101 080a o..<.....1...... 0x0030 0068 4e10 5240 6150 4854 5450 2f31 2e31 .hN.R@aPHTTP/1.1 0x0040 2034 3030 2042 6164 2052 6571 7565 7374 .400.Bad.Request 0x0050 0d0a 436f 6e74 656e 742d 5479 7065 3a20 ..Content-Type:. 0x0060 7465 7874 2f68 746d 6c0d 0a44 6174 653a text/html..Date: 0x0070 2054 6875 2c20 3231 204a 616e 2032 3031 .Mon,.01.Jan.201 0x0080 3020 3138 3a35 383a 3537 2047 4d54 0d0a 2.00:00:01.GMT.. 0x0090 436f 6e6e 6563 7469 6f6e 3a20 636c 6f73 Connection:.clos 0x00a0 650d 0a43 6f6e 7465 6e74 2d4c 656e 6774 e..Content-Lengt 0x00b0 683a 2032 300d 0a0d 0a3c 6831 3e42 6164 h:.20....<h1>Bad 0x00c0 2052 6571 7565 7374 3c2f 6831 3e .Request</h1> The health monitor is sending the string shown in the capture; however, the server response is NOT as expected. The correct response should be an HTML page including the string 'SERVER IS UP'. What is the issue? A. The /test_page.html does NOT exist on the web server. B. Incorrect syntax in send string. 'HTTP1.1' should be 'HTTP/1.1'. C. Incorrect syntax in send string. 'Connection: Close' should be 'Connection: Open'. D. The wrong HTTP version is specified in the send string. Version 1.2 should be used instead of version 1.1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device is monitoring pool members on port 80. The LTM device is using an HTTP monitor with a send string of GET / and a blank receive string. What would cause the pool members to be marked down? A. A pool member responds with an HTTP 200 series response code. B. A pool member responds with an HTTP 300 series response code. C. A pool member responds with an HTTP 400 series response code. D. A pool member responds with an HTTP 500 series response code. E. A pool member does NOT acknowledge the connection SYN on port 80.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device is monitoring three pool members. One pool member is being marked down. What should the LTM Specialist enable to prevent the server from being flooded with connections once its monitor determines it is up? A. manual resume B. packet shaping C. hold down timer D. slow ramp timer E. fastest load balance algorithm",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device is serving an FTP virtual server that has three pool members. The FTP pool members are monitored via TCP port 21. Customers are reporting that they are able to log in, but are sometimes unable to upload files to the server. Which monitor should the LTM Specialist configure to verify that the servers can handle file uploads? A. FTP B. Inband C. External D. Scripted E. Real Server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM HTTP pool has an associated monitor that sends a string equal to 'GET /test.html'. Which two configurations could an LTM Specialist implement to allow server administrators to disable their pool member servers without logging into the LTM device? (Choose two.) A. Set monitor to transparent and ask the server team to set string ‘TRANSPARENT’ in test.html. B. Set ‘receive string’ equal to 'SERVER UP and ask the server team to set string ‘SERVER DOWN’ in test.html. C. Set ‘alias’ equal to 'SERVER DOWN’ and ask the server team to set string ‘SERVER DOWN’ in test.html. D. Set ‘receive disable string’ equal to 'SERVER DOWN’ and ask the server team to set string ‘SERVER DOWN’ in test.html. E. Set ‘disable pool member’ equal to 'SERVER UP’ and ask the server team to set string ‘SERVER DOWN’ in test.html.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is receiving reports from customers about multiple applications failing to work properly. The LTM Specialist looks at the services running and notices that the bigd process has NOT started. How are monitored LTM device objects marked when the bigd process is stopped? A. red or offline B. blue or unchecked C. green or available D. unchanged until bigd is restarted",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist defines a receive string in the HTTP monitor and then assigns it to the HTTP pool. The monitor has an interval of 5 seconds and a timeout of 16 seconds. If the receive string is NOT seen in the the HTTP payload after 20 seconds, how does the LTM device mark the monitor status? A. offline B. unknown C. available D. unavailable E. forced offline",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An LTM Specialist receives a request to monitor the network path through a member, but NOT the member itself. Which monitor option should the LTM Specialist enable or configure? A. Reverse B. Up interval C. Transparent D. Alias address E. Time until up",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is creating a custom EAV monitor. In which directory should the LTM Specialist upload the script? A. /usr/monitor B. /usr/monitors C. /config/monitors D. /usr/bin/monitors E. /config/templates",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An FTP monitor is NOT working correctly. Which three pieces of information does the LTM Specialist need to provide to ensure a properly working FTP monitor? (Choose three.) A. alias B. File path C. username D. password E. FTP server port F. FTP server IP address",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which iRule statement demotes a virtual server from CMP? A. set ::foo 123 B. set static::foo 123 C. persist source_addr 1800 D. [ class match $HTTP_CONTENT contains my_data_class ]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the effect of an iRule error such as referencing an undefined variable? A. The iRule execution will continue with the next statement. B. The execution of the current event within the iRule will be terminated. C. The iRule execution will be terminated, and both the client and server side connections will be reset. D. The connection will continue, but the iRule will NOT be executed again for the lifetime of the connection.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What does the following iRule do? when CLIENT_ACCEPTED { if { [matchclass [IP::client_addr] equals WebClient1-Whitelist1] }{ #log local0. \"Valid client IP: [IP::client_addr] - forwarding traffic\" #Pool WebClient1 } else { log local0. \"Invalid client IP: [IP::client_addr] - discarding\" discard } } A. The iRule compares a client IP to a list. If the client IP is on the list, discard and log the discard. B. The iRule compares a client IP to a list. If the client IP is NOT on the list, discard and log the discard. C. The iRule compares a client IP to a list. If the client IP is on the list, the client is sent to Pool WebClient1. Otherwise, discard and log the discard. D. The iRule compares a client IP to a list. If the client IP is NOT on the list, the client is sent to Pool WebClient1. Otherwise, discard and log the discard.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What do the following iRule commands do when they are used in the same iRule? set hsl [HSL::open -proto UDP -pool syslog_server_pool] HSL::send $hsl \"<190> [HTTP::host] from [whereis [IP::client_addr] country continent state city zip] , IP: [IP::client_addr]\" A. The commands set up a high-speed logging connection and then send the geographical database to the server. B. The commands set up a high-speed logging connection and then send the host header and client geographical detail to the connection. C. The commands set up a high-speed logging connection and then send the host header, HTTP payload, and client geographical detail to the connection. D. The commands set up a high-speed logging connection to the LTM device and then send the host header and client geographical detail to the connection.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist configures the following iRule on an LTM device: when HTTP_REQUEST { if {[string tolower [HTTP::uri]] contains \"/URI1/\" } { pool Pool1 } elseif {[string tolower [HTTP::uri]] contains \"/URI2/\" } { pool Pool2 } elseif {[string tolower [HTTP::uri]] contains \"/URI3/\" } { pool Pool3 } else { pool Pool4} } Given the following request: http://www.example.comURI1/index.html?fu=bar&pass=1234 Which pool will be selected by the iRule? A. Pool1 B. Pool2 C. Pool3 D. Pool4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the iRule: when HTTP_REQUEST { if {([HTTP::username] ne \"\") and ([HTTP::password] ne \"\") } { log local0. \"client ip [IP::remote_addr] credentials provided [HTTP::username] [HTTP::password]\"} else { pool old_application_pool } } The associated virtual server has a default pool named new_application_pool. Which functionality does the iRule provide? A. Allows clients with credentials to access the old_application_pool and logs the access of clients without credentials to the new_application_pool. B. Allows clients without credentials to access the old_application_pool and logs the access of clients with credentials to the new_application_pool. C. Allows clients with credentials to access the old_application_pool and logs the attempted access of clients with credentials to the new_application_pool. D. Allows clients without credentials to access the old_application_pool and logs the attempted access of clients without credentials to the new_application_pool.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A web application requires the client to provide the destination server and service identification. Which HTTP header will supply this information? A. Host B. From C. Expect D. Connection",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A web application is meant to log the URI of the resource that responded to the client's initial Request-URI. Which HTTP header will supply this information? A. Via B. Server C. Trailer D. Referer",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The end users of a web application need to verify that their browsers received the complete message-body from the web server. Which HTTP header will accomplish this? A. Range B. Expect C. Accept-Ranges D. Content-Length",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An HTTP 1.1 application utilizes chunking. Which header should be used to notify the client's browser that there are additional HTTP headers at the end of the message? A. ETag B. From C. Trailer D. Expect",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A web application sends information about message integrity and content life time to the client. Which two HTTP headers should be used in sending the client information? (Choose two.) A. ETag B. Expect C. Expires D. Content-MD5 E. Content-Range F. Content-Length",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A web developer has created a custom HTTP call to a backend application. The HTTP headers being sent by the HTTP call are: GET / HTTP/1.1 User-Agent: MyCustomApp (v1.0) Accept: text/html Cache-Control: no-cache Connection: keep-alive CookiE. somecookie=1 The backend server is responding with the following: HTTP/1.1 400 Bad Request DatE. Wed, 20 Jul 2012 17:22:41 GMT Connection: close Why is the HTTP web server responding with a HTTP 400 Bad Request? A. The client request does NOT include a Host header. B. The User-Agent header contains an invalid character. C. The web server is NOT expecting a keep-alive connection. D. The web server is configured to accept HTTP 1.0 requests only.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client is attempting to log in to a web application that requires authentication. The following HTTP headers are sent by the client: GET /owa/ HTTP/1.1 Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ= User-Agent: curl/7.26.0 Host: 10.0.0.14 Accept: */* Accept-EncodinG. gzip,deflate The web server is responding with the following HTTP headers: HTTP/1.1 401 Unauthorized Content-TypE. text/html Server: Microsoft-IIS/7.5 WWW-AuthenticatE. NTLM DatE. Wed, 16 Aug 1977 19:12:31 GMT Content-LengtH. 1293 The client has checked the login credentials and believes the correct details are being entered. What is the reason the destination web server is sending an HTTP 401 response? A. The username and password are incorrect. B. The server has an incorrect date configured. C. The client is using the wrong type of browser. D. The wrong authentication mechanism is being used.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The LTM device is configured to provide load balancing to a set of web servers that implement access control lists (ACL) based on the source IP address of the client. The ACL is at the network level and the web server is configured to send a TCP reset back to the client if it is NOT permitted to connect. The virtual server is configured with the default OneConnect profile. The ACL is defined on the web server as: Permit: 192.168.136.0/24 Deny: 192.168.116.0/24 The packet capture is taken of two individual client flows to a virtual server with IP address 192.168.136.100. Client A - Src IP 192.168.136.1 - Virtual Server 192.168.136.100: Clientside: 09:35:11.073623 IP 192.168.136.1.55684 > 192.168.136.100.80: S 869998901:869998901(0) win 8192 <mss 1460,nop,wscale 2,nop,nop,sackOK> 09:35:11.073931 IP 192.168.136.100.80 > 192.168.136.1.55684: S 2273668949:2273668949(0) ack 869998902 win 4380 <mss 1460,nop,wscale 0,sackOK,eol> 09:35:11.074928 IP 192.168.136.1.55684 > 192.168.136.100.80: . ack 1 win 16425 09:35:11.080936 IP 192.168.136.1.55684 > 192.168.136.100.80: P 1:299(298) ack 1 win 16425 09:35:11.081029 IP 192.168.136.100.80 > 192.168.136.1.55684: . ack 299 win 4678 Serverside: 09:35:11.081022 IP 192.168.136.1.55684 > 192.168.116.128.80: S 685865802:685865802(0) win 4380 <mss 1460,nop,wscale 0,sackOK,eol> 09:35:11.081928 IP 192.168.116.128.80 > 192.168.136.1.55684: S 4193259095:4193259095(0) ack 685865803 win 5840 <mss 1460,nop,nop,sackOK,nop,wscale 6> 09:35:11.081943 IP 192.168.136.1.55684 > 192.168.116.128.80: . ack 1 win 4380 09:35:11.081955 IP 192.168.136.1.55684 > 192.168.116.128.80: P 1:299(298) ack 1 win 4380 09:35:11.083765 IP 192.168.116.128.80 > 192.168.136.1.55684: . ack 299 win 108 Client B - Src IP 192.168.116.1 - Virtual Server 192.168.136.100: Clientside: 09:36:11.244040 IP 192.168.116.1.55769 > 192.168.136.100.80: S 3320618938:3320618938(0) win 8192 <mss 1460,nop,wscale 2,nop,nop,sackOK> 09:36:11.244152 IP 192.168.136.100.80 > 192.168.116.1.55769: S 3878120666:3878120666(0) ack 3320618939 win 4380 <mss 1460,nop,wscale 0,sackOK,eol> 09:36:11.244839 IP 192.168.116.1.55769 > 192.168.136.100.80: . ack 1 win 16425 09:36:11.245830 IP 192.168.116.1.55769 > 192.168.136.100.80: P 1:299(298) ack 1 win 16425 09:36:11.245922 IP 192.168.136.100.80 > 192.168.116.1.55769: . ack 299 win 4678 Serverside: 09:36:11.245940 IP 192.168.136.1.55684 > 192.168.116.128.80: P 599:897(298) ack 4525 win 8904 09:36:11.247847 IP 192.168.116.128.80 > 192.168.136.1.55684: P 4525:5001(476) ack 897 win 142 Why was the second client flow permitted by the web server? A. A global SNAT is defined. B. SNAT automap was enabled on the virtual server. C. The idle TCP session from the first client was re-used. D. A source address persistence profile is assigned to the virtual server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is troubleshooting an HTTP monitor. The pool member is accessible directly through a browser, but the HTTP monitor is marking the pool member as down. GET / HTTP/1.1 HTTP/1.1 400 Bad Request DatE. Tue, 23 Oct 2012 21:39:07 GTM Server: Apache/2.2.22 (FreeBSD) PHP/5.4.4 mod_ssl/2.2.22 OpenSSL/0.9.8q DAV/2 Content-LengtH. 226 Connection: close Content-TypE. text/html; charset=iso-8859-1 Which issue is the pool member having? A. The pool member has too many concurrent connections. B. The pool member is rejecting the request because it is invalid. C. The pool member lacks the object requested by the monitor. D. The pool member is NOT accepting requests from the LTM device IP address.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is troubleshooting an issue with a new virtual server. When connecting through the virtual server, clients receive the message \"Unable to connect\" in the browser, although connections directly to the pool member show the application is functioning correctly. The LTM device configuration is: ltm virtual /Common/vs_https { destination /Common/10.10.1.110:443 ip-protocol udp mask 255.255.255.255 pool /Common/pool_https profiles { /Common/udp { } } translate-address enabled translate-port enabled vlans-disabled } ltm pool /Common/pool_https { members { /Common/172.16.20.1:443 { address 172.16.20.1 } } } What issue is the LTM Specialist experiencing? A. The virtual server is disabled on all VLANs. B. The pool member is marked down by a monitor. C. The pool member is marked down administratively. D. The virtual server is configured for the incorrect protocol.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist needs to rewrite text within an HTML response from a web server. A client is sending the following HTTP request: GET / HTTP/1.1 Host: www.example.com User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/20100101 Firefox/16.0 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 Accept-LanguagE. en-US,en;q=0.5 Accept-EncodinG. gzip, deflate Cache-Control: no-cache Connection: keep-alive CookiE. somecookie=1 HTTP/1.1 200 OK Server: Apache/2.2.15 (Unix) Last-ModifieD. Wed, 12 Aug 2009 00:00:30 GMT Accept-Ranges: bytes Content-LengtH. 1063 X-Cnection: close Content-TypE. text/html; charset=UTF-8 Vary: Accept-Encoding Content-EncodinG. gzip Connection: Keep-Alive Although a stream profile has been added to the virtual server, the content within the HTTP response is NOT being matched and therefore NOT modified. Which header field is contributing to the issue? A. HTTP Method B. Cookie content C. User-Agent Value D. Accept-Encoding header",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist needs to rewrite text within an HTML response from a web server. A client is sending the HTTP request below: GET / HTTP/1.1 Host: www.f5.com User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/20100101 Firefox/16.0 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 Accept-LanguagE. en-US,en;q=0.5 Accept-EncodinG. gzip, deflate Cache-Control: no-cache Connection: keep-alive CookiE. somecookie=1 Although a stream profile has been added to the virtual server, the content within the HTTP response is NOT being matched, and therefore NOT modified. Which HTTP header should the LTM Specialist remove from the request to ensure the content can be matched and modified? A. Connection B. Accept C. Cache-Control D. Accept-Encoding",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist configured a virtual server to load balance a custom application. The application works when it is tested from within the firewall but it fails when tested externally. The pool member address is 192.168.200.10:80. A capture from an external client shows: GET /index.jsp HTTP/1.1 Host: 207.206.201.100 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/20100101 Firefox/15.0.1 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 Connection: keep-alive HTTP/1.1 302 Found DatE. Wed, 17 Oct 2012 23:09:55 GMT Server: Apache/2.2.15 (CentOS) Location: http://192.168.200.10/user/home.jsp Content-LengtH. 304 Connection: close What is the solution to this issue? A. Assign a SNAT pool to the virtual server. B. Add a Web Acceleration Profile to the virtual server. C. Configure redirect rewrite option in the HTTP profile. D. Configure a content filter on the backend web server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "There are three servers in the pool: 172.16.20.1, 172.16.20.2, and 172.16.20.3, with the virtual IP address 10.0.20.88. A user CANNOT connect to an HTTP application. To understand the problem and find a solution, the LTM Specialist runs two concurrent traces on the LTM device, with the following results: Trace on client side: tcpdump: verbose output suppressed, use -v or -vv for full protocol decode listening on 0.0, link-type EN10MB (Ethernet), capture size 96 bytes 22:22:07.423759 IP 172.16.20.100.53875 > 10.0.20.88.80: S 998346084:998346084(0) win 5840 <mss 1460,sackOK,timestamp 67942058 0,nop,wscale 4> 22:22:07.424056 IP 10.0.20.88.80 > 172.16.20.100.53875: S 4671780:4671780(0) ack 998346085 win 4380 <mss 1460,nop,wscale 0,nop,nop,timestamp 2392362490 67942058,sackOK,eol> 22:22:07.424776 IP 172.16.20.100.53875 > 10.0.20.88.80: . ack 1 win 365 <nop,nop,timestamp 67942058 2392362490> 22:22:07.424790 IP 172.16.20.100.53875 > 10.0.20.88.80: P 1:149(148) ack 1 win 365 <nop,nop,timestamp 67942058 2392362490> 22:22:07.424891 IP 10.0.20.88.80 > 172.16.20.100.53875: . ack 149 win 4528 <nop,nop,timestamp 2392362491 67942058> 22:22:12.024850 IP 10.0.20.88.80 > 172.16.20.100.53875: R 1:1(0) ack 149 win 4528 6 packets captured 6 packets received by filter 0 packets dropped by kernel Trace on server side: tcpdump: verbose output suppressed, use -v or -vv for full protocol decode listening on internal, link-type EN10MB (Ethernet), capture size 96 bytes 22:22:07.424881 IP 172.16.20.100.53875 > 172.16.20.2.80: S 51116678:51116678(0) win 4380 <mss 1460,nop,wscale 0,nop,nop,timestamp 2392362491 0,sackOK,eol> 22:22:08.424893 IP 172.16.20.100.53875 > 172.16.20.2.80: S 51116678:51116678(0) win 4380 <mss 1460,nop,wscale 0,nop,nop,timestamp 2392363491 0,sackOK,eol> 22:22:09.625082 IP 172.16.20.100.53875 > 172.16.20.2.80: S 51116678:51116678(0) win 4380 <mss 1460,nop,wscale 0,nop,nop,timestamp 2392364691 0,sackOK,eol> 22:22:10.825194 IP 172.16.20.100.53875 > 172.16.20.2.80: S 51116678:51116678(0) win 4380 <mss 1460,sackOK,eol> 4 packets captured 4 packets received by filter 0 packets dropped by kernel What should the LTM Specialist do to solve the problem? A. Edit the packet filter rules. B. Modify the monitor of the pool. C. Enable the virtual server. D. Configure the virtual server to use SNAT.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is troubleshooting an HTTP monitor. The pool member is accessible directly through a browser, but the HTTP monitor is marking the pool member as down. GET / HTTP/1.1 HTTP/1.1 400 Bad Request DatE. Tue, 23 Oct 2012 21:39:07 GTM Server: Apache/2.2.22 (FreeBSD) PHP/5.4.4 mod_ssl/2.2.22 OpenSSL/0.9.8q DAV/2 Content-LengtH. 226 Connection: close Content-TypE. text/html; charset=iso-8859-1 How should the LTM Specialist resolve this issue? A. Add '200 OK' to the monitor's receive string. B. Add 'Connection: close\\r\\n' to the monitor's send string. C. Change the interval on the monitor from 5 seconds to 30 seconds. D. Change the HTTP version in the send string from HTTP/1.1 to HTTP/1.0.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is troubleshooting an issue with a new virtual server. When connecting through the virtual server, clients receive the message \"The connection was reset\" in the browser, although connections directly to the pool member show the application is functioning correctly. ltm pool srv1_https_pool { members { 192.168.2.1:https{ address 192.168.2.1 } } } ltm virtual https_example_vs { destination 192.168.1.155:https ip-protocol tcp mask 255.255.255.255 pool srv1_https_pool profiles { http { } tcp { } } snat automap vlans-disabled } How should the LTM Specialist resolve this issue? A. Enable HTTP monitoring on the pool. B. Add a ClientSSL profile to the virtual server. C. Disable SNAT Automap on the virtual server. D. Remove the HTTP profile from the virtual server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is troubleshooting an issue with a new virtual server. When connecting through the virtual server, clients receive the message \"Unable to connect\" in the browser, although connections directly to the pool member show the application is functioning correctly. The LTM configuration is: ltm virtual /Common/vs_https { destination /Common/10.10.1.110:443 ip-protocol udp mask 255.255.255.255 pool /Common/pool_https profiles { /Common/udp { } } translate-address enabled translate-port enabled vlans-disabled } ltm pool /Common/pool_https { members { /Common/172.16.20.1:443 { address 172.16.20.1 } } } How should the LTM Specialist resolve this issue? A. Remove an HTTP monitor from the pool. B. Add an HTTP profile to the virtual server. C. Enable the pool member on the correct VLAN. D. Select the correct protocol for the virtual server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is troubleshooting a problem on an eCommerce website. The user browses the online store using port 80, adding items to the shopping cart. The user then clicks the \"Checkout\" button on the site, which redirects the user to port 443 for the checkout process. Suddenly, the user's shopping cart is shown as empty. The shopping cart data is stored in memory on the server, and the default source address persistence profile is used on both virtual servers. What is the issue? A. The port 80 pool member is deleting the user's session cookie. B. The port 443 pool member is deleting the user's session cookie. C. The port 80 and port 443 connections are balanced to the same node. D. The port 80 and port 443 connections are balanced to different nodes.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is troubleshooting a problem on an eCommerce website. The user browses the online store using port 80, adding items to the shopping cart. The user then clicks the \"Checkout\" button on the site, which redirects the user to port 443 for the checkout process. Suddenly, the user's shopping cart is shown as empty. The shopping cart data is stored in memory on the server, and the default source address persistence profile is used on both virtual servers. How should the LTM Specialist resolve this issue? A. Add an HTTP profile to both virtual servers. B. Enable SNAT Automap on both virtual servers. C. Create a custom persistence profile and enable \"Map Proxies.\" D. Create a custom persistence profile and enable \"Match Across Services.\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device has been configured to log the reasons for generating TCP RST packets. The following log entry occurs: \"01230140:3: RST sent from 192.168.1.100:80 to 192.168.1.124:39272, [0x112d82a:1721] {peer} TCP RST from remote system.\" Which condition will trigger this log entry? A. A virtual server connection limit has been reached. B. The host at the other end terminated the TCP connection. C. The LTM device reset the connection because no pool members are available. D. The LTM device has reached the maximum number of allowed attempts to send the data segment to the affected TCP connection.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device supports two power supplies. The value of the BigDB key \"platform.powersupplymonitor\" is equal to enable. Where would the error message be visible if one of the power supplies fails or is NOT plugged in? A. visible only via the console B. in the /var/log/ltm log file C. in the /var/log/kern.log file D. in the /var/log/tmm log file",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist loads a UCS file generated on a different LTM device and receives the following error message: \"mcpd[2395]: 01070608:0: License is not operational (expired or digital signature does not match contents)\" Which command should the LTM Specialist use to prevent the error? A. tmsh show /sys license B. tmsh show /sys hardware C. bigpipe config save /config.ucs D. tmsh load /sys /ucs rma <path/to/UCS> E. tmsh load /sys ucs <path/to/UCS> no-license",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "These log entries can have different root causes: Jun 28 05:01:21 LTM_A notice mcpd[27545]: 0107143a:5: CMI reconnect timer: enabled Jun 28 05:01:21 LTM_A notice mcpd[27545]: 01071431:5: Attempting to connect to CMI peer 1.1.1.2 port 6699 Jun 28 05:01:21 LTM_A notice mcpd[27545]: 01071432:5: CMI peer connection established to 1.1.1.2 port 6699 Jun 28 05:01:26 LTM_A notice mcpd[27545]: 0107143a:5: CMI reconnect timer: disabled, all peers are connected Which two commands should be used to obtain additional information on these entries? (Choose two.) A. tmsh show /sys mcpd B. bigstart status mcpd C. tmsh modify /sys db log.mcpd.level value debug D. tmsh modify /sys db log.cmi.level value debug",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist wants to allow access to the Always On Management (AOM) from the network. Which two methods should the LTM Specialist use to configure the AOM interface? (Choose two.) A. Configure the AOM IP from the front panel buttons and LCD. B. Choose the network configurator in the AOM menu on the serial port. C. Configure the AOM network address in the GUI under System>Platform. D. Log in to the Host via ssh, \"ssh aom\", and modify the network configuration file.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist troubleshooting an issue looks at the following /var/log/ltm entries: Oct 2 04:52:42 slot1/tmm7 crit tmm7[21734]: 01010201:2: Inet port exhaustion on 10.143.109.5 to 10.143.147.150:53 (proto 17) Oct 2 05:37:16 slot1/tmm7 crit tmm7[21734]: 01010201:2: Inet port exhaustion on 10.143.109.5 to 10.143.147.150:53 (proto 17) Oct 2 05:57:32 slot1/tmm2 crit tmm2[21729]: 01010201:2: Inet port exhaustion on 10.143.109.5 to 10.143.147.150:53 (proto 17) Oct 2 06:30:03 slot1/tmm7 crit tmm7[21734]: 01010201:2: Inet port exhaustion on 10.143.109.5 to 10.143.147.150:53 (proto 17) Oct 2 06:37:44 slot1/tmm2 crit tmm2[21729]: 01010201:2: Inet port exhaustion on 10.143.109.5 to 10.143.147.150:53 (proto 17) Oct 2 06:47:05 slot1/tmm5 crit tmm5[21732]: 01010201:2: Inet port exhaustion on 10.143.109.5 to 10.143.147.150:53 (proto 17) Which configuration item should the LTM Specialist review to fix the issue? A. SNAT Pool B. Pool Member C. Port Lockdown D. Virtual Server Port Translation",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist with the Administrator role and terminal access of \"tmsh\" logs in via ssh and is in the Traffic Manager Shell. The LTM Specialist wants to enter the bash shell to review log files. Which command does the LTM Specialist need to run to access the bash shell? A. exit B. quit C. run /cli bash D. run /util bash",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command will identify the active LTM device currently handling client traffic? A. b ha table show B. tmsh list /sys ha-status C. tmsh show /cm traffic-group D. tmsh run /sys failover standby E. tmsh show /sys ha-status all-properties",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command should an LTM Specialist use on the command line interface to show the health of RAID array hard drives? A. tmsh show /sys raid disk B. tmsh show /ltm raid disk C. tmsh show /sys raid status D. tmsh show /ltm disk status",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command line interface command will check if the BIG-IP platform contains a packet velocity ASIC (PVA)? A. bigpipe platform show | grep -i pva B. tmsh show /sys hardware pva status C. tmsh show /sys hardware | grep -i pva D. tmsh show /ltm hardware | grep -i pva",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two subsystems could the LTM Specialist utilize to access an LTM device with lost management interface connectivity? (Choose two.) A. AOM B. ILO C. SCCP D. ALOM",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A BIG-IP Operator has made a grave error and deleted a few virtual servers on the active LTM device fronting the web browsing proxies. The BIG-IP Operator has NOT yet performed a configuration sync. Which command should the LTM Specialist execute on the active LTM device to force a failover to the standby node and restore web browsing? A. tmsh /sys failover standby B. tmsh run /sys failover standby C. tmsh /sys failover status standby D. tmsh run /sys failover status standby",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The output of a tmsh command is: ------------------------------------------------------------ Net::Interface Name Status Bits Bits Errs Errs Drops Drops Colli In Out In Out In Out sions ------------------------------------------------------------ 1.1 down 0 0 0 0 0 0 0 1.2 up 191.4K 0 0 0 374 0 0 1.3 down 0 0 0 0 0 0 0 1.4 up 22.5K 0 0 0 44 0 0 2.1 miss 0 0 0 0 0 0 0 2.2 miss 0 0 0 0 0 0 0 mgmt up 43.2G 160.0G 0 0 0 0 0 Which command was executed on the LTM device to show the output? A. tmsh show /net interface B. tmsh /net show interface status C. tmsh /net show interface D. tmsh show /net interface status",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given: Filesystem Size Used Avail Use% Mounted on /dev/md11 248M 248M 0 100% / /dev/md13 3.0G 76M 2.8G 3% /config /dev/md12 1.7G 1.1G 476M 71% /usr /dev/md14 3.0G 214M 2.6G 8% /var /dev/md0 30G 2.2G 26G 8% /shared /dev/md1 6.9G 288M 6.3G 5% /var/log none 3.9G 452K 3.9G 1% /dev/shm none 3.9G 19M 3.9G 1% /var/tmstat none 3.9G 1.2M 3.9G 1% /var/run prompt 4.0M 12K 4.0M 1% /var/prompt /dev/md15 12G 8.3G 3.1G 74% /var/lib/mysql Which command is used to produce this output? A. df B. du C. lsof D. ps E. vmstat",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist realizes that a datacenter engineer has changed the console baud rate. Which command determines the current baud rate via the command line interface? A. tmsh show /ltm console B. tmsh show /sys console C. tmsh list /sys baud-rate D. tmsh list /net baud-rate",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The LTM device is configured for RADIUS authentication. Remote logins are failing and the LTM Specialist must verify the RADIUS configuration. How should the LTM Specialist check the RADIUS server and shared secret configured on the LTM device? A. tmsh show running-config /auth radius B. tmsh show running-config /sys auth radius C. tmsh show running-config /auth configuration D. tmsh show running-config /sys auth radius-server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An F5 LTM Specialist needs to perform an LTM device configuration backup prior to RMA swap. Which command should be executed on the command line interface to create a backup? A. bigpipe config save /var/tmp/backup.ucs B. tmsh save /sys ucs /var/tmp/backup.ucs C. tmsh save /sys config /var/tmp/backup.ucs D. tmsh save /sys config ucs /var/tmp/backup.ucs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist notices the following error on the stdout console: mcpd[2395]: 01070608:0: License is not operational(expired or digital signature does not match contents) Which command should be executed to verify the LTM device license? A. bigpipe version B. tmsh show /sys license C. tmsh /util bigpipe version D. tmsh show /sys license status",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the log entry: 011f0005:3: HTTP header (32800) exceeded maximum allowed size of 32768 (Client sidE. vip=/Common/VS_web profile=http pool=/Common/POOL_web client_ip=10.0.0.1) Which HTTP profile setting can be modified temporarily to resolve the issue? A. Increase Maximum Requests B. Decrease Maximum Requests C. Increase Maximum Header Count D. Decrease Maximum Header Count E. Increase Maximum Header size F. Decrease Maximum Header size",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command should the LTM Specialist use to determine the current system time? A. date B. time C. uname -a D. ntpq -p",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The active LTM device in a high-availability (HA) pair performs a failover at the same time the network team reports an outage of a switch on the network. Which two items could have caused the failover event? (Choose two.) A. a VLAN fail-safe setting B. a monitor on a pool in an HA group C. the standby LTM that was rebooted D. an Auditor role that has access to the GUI E. the standby LTM that lost connectivity on the failover VLAN",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An active/standby pair of LTM devices deployed with network failover are working as desired. After external personnel perform maintenance on the network, the LTM devices are active/active rather than active/standby. No changes were made on the LTM devices during the network maintenance. Which two actions would help determine the cause of the malfunction? (Choose two.) A. checking that the configurations are synchronized B. checking the configuration of the VLAN used for failover C. checking the configuration of the VLAN used for mirroring D. checking the open ports in firewalls between the LTM devices E. checking synchronization of system clocks among the network devices",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Given LTM device ltm log: Sep 26 20:51:08 local/lb-d-1 notice promptstatusd[3695]: 01460006:5: semaphore mcpd.running(1) held Sep 26 20:51:08 local/lb-d-1 notice promptstatusd[3695]: 01460006:5: Sep 26 20:51:08 local/lb-d-1 warning promptstatusd[3695]: 01460005:4: mcpd.running(1) held, wait for mcpd Sep 26 20:51:08 local/lb-d-1 info sod[3925]: 010c0009:6: Lost connection to mcpd - reestablishing. Sep 26 20:51:08 local/lb-d-1 err bcm56xxd[3847]: 012c0004:3: Lost connection with MCP: 16908291 ... Exiting bsx_connect.cpp(174) Sep 26 20:51:08 local/lb-d-1 info bcm56xxd[3847]: 012c0012:6: MCP Exit Status Sep 26 20:51:08 local/lb-d-1 info bcm56xxd[3847]: 012c0012:6: Info: LACP stats (time now:1348717868) : no traffic Sep 26 20:51:08 local/lb-d-1 info bcm56xxd[3847]: 012c0014:6: Exiting... Sep 26 20:51:08 local/lb-d-1 err lind[3842]: 013c0004:3: IO error on recv from mcpd - connection lost Sep 26 20:51:08 local/lb-d-1 notice bigd[3837]: 01060110:5: Lost connection to mcpd with error 16908291, will reinit connection. Sep 26 20:51:08 local/lb-d-1 err statsd[3857]: 011b0004:3: Initial subscription for system configuration failed with error '' Sep 26 20:51:08 local/lb-d-1 err statsd[3857]: 011b0001:3: Connection to mcpd failed with error '011b0004:3: Initial subscription for system configuration failed with error ''' Sep 26 20:51:08 local/lb-d-1 err csyncd[3851]: 013b0004:3: IO error on recv from mcpd - connection lost .............skipping more logs..... Sep 26 20:51:30 local/lb-d-1 notice sod[3925]: 01140030:5: HA proc_running bcm56xxd is now responding. Sep 26 20:51:34 local/lb-d-1 notice sod[3925]: 01140030:5: HA proc_running mcpd is now responding. Sep 26 20:51:34 local/lb-d-1 notice sod[3925]: 010c0018:5: Standby Which daemon failed? A. promptstatusd B. mcpd C. sod D. bcm56xxd E. lind",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In preparation for a maintenance task, an LTM Specialist performs a \"Force to Standby\" on LTM device Unit 1. LTM device Unit 2 becomes active as expected. The maintenance task requires the reboot of Unit 1. Shortly after the reboot is complete, the LTM Specialist discovers that Unit 1 has become active and Unit 2 has returned to standby. What would cause this behavior? A. Unit 1 is set with the redundancy state preference of active in devices groups. B. Unit 1 is set with the redundancy state preference of active in high availability. C. A traffic group is configured with Auto Failback, and Unit 1 is the default device. D. A device group is configured with Auto Failback, and Unit 1 is the default device.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A high-availability (HA) pair configuration uses only the hardwire serial cable connection to determine device state. A power outage occurs to the PDU powering the active unit. The standby unit takes over the active role as expected. How is the peer unit able to determine the active unit is unavailable? A. voltage loss on serial cable B. no data stream received on serial port C. no response on management interface D. no heartbeat packets received on self IPs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "While investigating the cause of a device failover, an LTM Specialist discovers the following events in /var/log/ltm: 01010029:5: Clock advanced by 518 ticks 01010029:5: Clock advanced by 505 ticks 01010029:5: Clock advanced by 590 ticks 01010029:5: Clock advanced by 568 ticks 01010029:5: Clock advanced by 1681 ticks 01010029:5: Clock advanced by 6584 ticks 01140029:5: HA daemon_heartbeat tmm fails action is failover and restart. 010c0026:5: Failover condition, active attempting to go standby. Which issue caused the failover? A. NTP being out of sync B. TMM being descheduled C. VLAN Fail-safe heartbeats D. HA missing heartbeat packets",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A failover event is recorded in the log messages: Jan 01 00:00:50 BIG-IP notice sod[5855]: 01140029:5: HA proc_running tmm fails action is go offline and down links. Jan 01 00:00:50 BIG-IP notice sod[5855]: 010c0050:5: Sod requests links down. Jan 01 00:00:50 BIG-IP notice sod[5855]: 010c0054:5: Offline for traffic group /Common/traffic-group-1. Jan 01 00:00:50 BIG-IP notice sod[5855]: 010c003e:5: Offline Jan 01 00:00:50 BIG-IP notice logger: /usr/bin/tmipsecd --tmmcount 4 ==> /usr/bin/bigstart stop racoon Jan 01 00:00:50 BIG-IP info lacpd[5502]: 01160016:6: Failover event detected. (Switchboard failsafe disabled while offline) Jan 01 00:00:51 BIG-IP err bcm56xxd[5296]: 012c0010:3: Failover event detected. Marking external interfaces down. bsx.c(3633) Jan 01 00:00:51 BIG-IP info bcm56xxd[5296]: 012c0015:6: Link: 1.1 is DOWN Jan 01 00:00:56 BIG-IP notice mcpd[5318]: 0107143c:5: Connection to CMI peer 10.0.0.3 has been removed Jan 01 00:00:56 BIG-IP notice mcpd[5318]: 0107143a:5: CMI reconnect timer: enabled Jan 01 00:00:56 BIG-IP notice mcpd[5318]: 01071431:5: Attempting to connect to CMI peer 10.0.0.3 port 6699 What is the cause of the failover? A. TMM failed, and VLAN fail-safe initiated the failover. B. TMM failed, and system fail-safe initiated the failover. C. Loss of connection to CMI peer 10.0.0.3 initiated the failover. D. A switchboard failure caused system fail-safe to initiate the failover.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist has just manually failed the active LTM device over to the standby LTM device. The LTM Specialist notices the newly active LTM device is NOT currently receiving traffic. The LTM Specialist verifies the newly active device is responding to ARP but still no traffic is hitting the virtual servers. The LTM Specialist also notices that the virtual servers eventually start responding. What should be added to the configuration to resolve the problem? A. vlan failsafe B. floating self IP C. network failover D. MAC masquerading E. connection mirroring",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist is troubleshooting an issue where one LTM device in a three LTM device group is failing to synchronize after a synchronize to group command is issued. The LTM Specialist verifies there are no packet filters, port lock down, or network issues preventing the connection. What are two reasons the synchronization group is having issues? (Choose two.) A. Certificates expired on all of the peer LTM devices. B. Certificates stored for the device trusts on all of the peer LTM devices are corrupted. C. Admin passwords changed on one of the peer LTM devices that are able to synchronize. D. Admin password changed on the LTM device NOT receiving the synchronized configurations. E. Certificates stored for the device trusts on the LTM device NOT receiving the configuration are corrupted.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM Specialist configures two LTM devices in a high-availability pair with trusts established and device groups configured properly using network failover. After several months, the LTM Specialist notices that changes made to one LTM device do NOT cause the synchronization status to update to \"changes pending,\" and this device does NOT synchronize with the device group. Which two steps should the LTM Specialist take to identify the issue? (Choose two.) A. Verify that NTP is synchronized. B. Verify the network connectivity between the devices. C. Verify that the devices are not using self-signed certificates. D. Verify that ConfigSync is using the management IP address. E. Verify that port lockdown on the ConfigSync interface is set to allow port 1026.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An HA pair of LTM devices configured in Active-Standby mode stops responding to traffic and causes an outage. The Active device becomes Standby, but the partner device stays in Standby mode instead of taking over as Active. A reboot and restart of the services brings the LTM device to Active mode for a short time, but then it goes into Standby mode again. Which two configuration components caused this condition? (Choose two.) A. VLAN Fail-safe B. System Fail-safe C. Gateway Fail-safe D. Switch Board Failure E. Link down on Failover",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A device group is made up of four members: LTM-A, LTM-B, LTM-C, and LTM-D. An LTM Specialist makes a configuration change on LTM-B. Later, a different LTM Specialist notices a \"changes pending\" message on all devices. When logged into LTM-D, the LTM Specialist attempts to config-sync to the device group. The sync operation fails. Why is the LTM Specialist on LTM-D unable to synchronize the configuration to the group? A. The changes made on LTM-B are invalid. B. LTM-D has the lowest commit-id of the group. C. NTP is NOT configured on the devices in the group. D. LTM-B is the device eligible to initiate a config-sync.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A failover event is recorded in the following log messages: Jan 01 00:56:56 BIG-IP notice mcpd[5318]: 01070727:5: Pool /Common/my-pool member /Common/10.0.0.10:80 monitor status down. Jan 01 00:56:56 BIG-IP notice sod[5855]: 010c0045:5: Leaving active, group score 10 peer group score 20. Jan 01 00:56:56 BIG-IP notice sod[5855]: 010c0052:5: Standby for traffic group /Common/traffic-group-1. Jan 01 00:56:56 BIG-IP notice sod[5855]: 010c0018:5: Standby Jan 01 00:57:06 BIG-IP notice logger: /usr/bin/tmipsecd --tmmcount 4 ==> /usr/bin/bigstart stop racoon What is the cause of the failover? A. The HA group score changed. B. No traffic is seen on traffic-group-1. C. The peer device left the traffic group. D. The racoon service stopped responding.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An LTM device pair is configured for failover and connection mirroring. The LTM devices are configured with virtual servers for HTTP, HTTPS with SSL offload, and SSH. An event occurs that causes a failover. HTTP and SSH sessions active at the time of failover remain active, but HTTPS sessions are dropped. What is the root cause of this problem? A. The SSL certificates on the LTM devices do NOT match. B. Connection mirroring is incompatible with clientssl profiles. C. SNAT automap was NOT enabled for the HTTPS virtual servers. D. Connection mirroring was NOT enabled for the HTTPS virtual servers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-82_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is reviewing the virtual server configuration on an LTM device. Which two actions should the LTM Specialist perform to minimize the virtual server configuration? (Choose two.) A. Remove 'snat automap' from the virtual server. B. Remove the 'http' profile from the virtual server. C. Remove the 'default_class' from the virtual server. D. Combine 'acct_class' and 'marketing_class' into one class and update associations on the virtual server. E. Combine 'marketing_class' and 'default_class' into one class and update associations on the virtual server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-84_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is reviewing the 'test' partition. Which objects, in order, can be removed from the partition? A. delete pool test1_pool, delete node 10.1.1.2 B. delete node 10.1.1.2, delete pool test2_pool C. delete pool test1_pool, delete node 10.1.1.2, delete node 10.1.1.1 D. delete virtual test1_vs, delete pool test2_pool, delete node 10.1.1.1 E. delete pool test1_pool, delete pool test2_pool, delete node 10.1.1.3",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-86_1.png] -- Exhibit -- Refer to the exhibit. Which two items can be consolidated to simplify the LTM configuration? (Choose two.) A. /Common/vs1-https-redirect B. /Common/vs2-https-redirect C. /Common/vs3-https-redirect D. /Common/vs4-https-redirect E. /Common/vs5-https-redirect",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-88_1.jpg] -- Exhibit -- Refer to the exhibit. Which pool can be removed without affecting client traffic? A. ftp_pool B. http_pool C. server1_80 D. server_pool",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-89_1.jpg] -- Exhibit -- Refer to the exhibit. Which profile could be removed or changed on this virtual server to reduce CPU load on the LTM device without increasing server side bandwidth usage? A. tcp B. http C. httpcompression D. optimized-caching",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-90_1.jpg] -- Exhibit -- Refer to the exhibit. An LTM Specialist is upgrading the LTM devices. Which device should be upgraded first? A. Device A B. Device B C. Device C D. Device D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-91_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is working on an LTM 11.0.0 installation and has identified a security vulnerability as shown in the exhibit. The LTM Specialist is tasked with applying the latest available hotfix to resolve the problem. Which procedure resolves the problem? A. Browse to System > Software Management > Hotfix List. Import TMOS 11.2.0 to the available hotfix images. Select the imported hotfix image and installation location and click Install. B. Browse to System > Software Management > Hotfix List. Import 11.1.0.HF3 to the available hotfix images. Select the imported hotfix image and installation location and click Install. C. Browse to System > Software Management > Image List. Import TMOS 11.2.0 to the available hotfix images. Select the imported hotfix image and installation location and click Install. D. Browse to System > Software Management > Image List. Import 11.1.0.HF3 to the available hotfix images.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-92_1.jpg] -- Exhibit -- Refer to the exhibit. An LTM Specialist has uploaded a qkview to F5 iHealth. Within the GUI, what is the correct procedure to comply with the recommendation shown in the exhibit? A. Obtain product version image from release.f5.com. Overwrite existing image with new product version image. Select product version image and click Install. Select the available disk and volume set name. B. Obtain product version image from images.f5.com. Overwrite existing image with new product version image. Select product version image and click Install. Select the available disk and volume set name. C. Obtain product version image from downloads.f5.com. Import product version image. Install image onto BIG-IP platform. Select product version image and click Install. Select the available disk and volume set name. D. Log a call requesting the product version image via websupport.f5.com Import product version image. Install image onto BIG-IP platform. Select product version image and click Install.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-93_1.png] -- Exhibit -- Refer to the exhibit. Which step should an LTM Specialist take next to finish upgrading to HD1.3? A. Install image to HD1.3 B. Install hotfix to HD1.3 C. Activate HD1.3 D. Relicense HD1.3",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-95_1.png] -- Exhibit -- Refer to the exhibit. Users receive an error when attempting to connect to the website https://website.com. The website has a DNS record of 195.56.67.90. The upstream ISP has confirmed that there is nothing wrong with the routing between the user and the LTM device. The following tcpdump outputs have been captured: External Vlan, filtered on IP 168.210.232.5 00:25:07.598519 IP 168.210.232.5.33159 > 195.56.67.90.https: S 1920647964:1920647964(0) win 8192 <mss 1450,nop,nop,sackOK> 00:25:07.598537 IP 195.56.67.90.https > 168.210.232.5.33159: S 2690691360:2690691360(0) ack 1920647965 win 4350 <mss 1460,sackOK,eol> 00:25:07.598851 IP 168.210.232.5.33160 > 195.56.67.90.https: S 2763858764:2763858764(0) win 8192 <mss 1450,nop,nop,sackOK> 00:25:07.598858 IP 195.56.67.90.https > 168.210.232.5.33160: S 1905576176:1905576176(0) ack 2763858765 win 4350 <mss 1460,sackOK,eol> Internal Vlan, filtered on IP 168.210.232.5 00:31:46.171124 IP 168.210.232.5.33202 > 192.168.100.20.http: S 2389057240:2389057240(0) win 4380 <mss 1460,nop,wscale 0,sackOK,eol> What is the problem? A. The filters on the tcpdumps are incorrect. B. The DNS entry for website.com is incorrect. C. The virtual server 'WEBSERVICES1' is listening on the incorrect port. D. The firewall is dropping the connection coming from the pool members returned to the client. E. The subnet masks of the pool members of pool WebServices1 and the f5 'Internal' Vlan are incorrect.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-97_1.png] -- Exhibit -- Refer to the exhibit. A client attempts to connect from a Google Chrome browser to a virtual server on a BIG-IP LTM. The virtual server is SSL Offloaded. When the client connects, the client receives an SSL error. After trying Mozilla Firefox and Internet Explorer browsers, the client still receives the same errors. The LTM Specialist does an ssldump on the virtual server and receives the results as per the exhibit. What is the problem? A. The SSL key length is incorrect. B. The BIG-IP LTM is NOT serving a certificate. C. The BIG-IP LTM is NOT listening on port 443. D. The client needs to be upgraded to the appropriate cipher-suite.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-99_1.jpg] -- Exhibit -- Refer to the exhibit. An LTM Specialist has a virtual server set up on the LTM device as per the exhibit. The LTM Specialist receives reports of intermittent issues. Some clients are connecting fine while others are failing to connect. The LTM Specialist does a tcpdump on the relevant interfaces, with the following results extracted: What is causing the intermittent issues? A. The firewall is dropping the packets from WS1. B. The default gateway is inaccessible from WS1. C. The load balancing (LB) method is inappropriate. D. The pool members have been set up as an active/standby pair, with WS1 as the standby.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-100_1.jpg] -- Exhibit -- Refer to the exhibit. A company uses a complex piece of client software that connects to one or more virtual servers (VS) hosted on an LTM device. The client software is experiencing issues. An LTM Specialist is tasked with finding the cause of the problem. The LTM Specialist has the tcpdump extract and knows the client software has at least one connection to a VS on port 1990. However, when a tcpdump runs on the internal VLAN, there is no record of port 1990 in the tcpdump. Why is there no record of port 1990 in the tcpdump? A. The LTM device drops the connection. B. Port 1990 is a well-known port, so its use is restricted. C. The LTM device performs a Port Address Translation (PAT). D. The LTM device performs a Network Address Translation (NAT).",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "- Exhibit -- [sampleXML/xmlfile-101_1.jpg] -- Exhibit -- Refer to the exhibit. A company uses a complex piece of client software that connects to one or more virtual servers hosted on an LTM device. The client software is experiencing issues. An LTM Specialist must determine the cause of the problem. The LTM Specialist has the tcpdump extract and knows the client source IP is 168.210.232.5. Assuming no wildcard virtual servers, how many distinct virtual servers does the client connect to on the LTM device? A. 2 B. 3 C. 4 D. 6",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit -- [sampleXML/xmlfile-103_1.png] -- Exhibit -- Refer to the exhibit. A company uses a complex piece of client software that connects to one or more virtual servers (VS) hosted on an LTM device. The client software is experiencing issues. An LTM Specialist must determine the cause of the problem. The LTM Specialist is seeing a client source IP of 168.210.232.5 in the tcpdump. However, the client source IP is actually 10.123.17.12. Why does the IP address of 10.123.17.12 fail to appear in the tcpdump? A. The LTM device performed NAT on the individual's IP address. B. The Secure Network Address Translation (SNAT) pool on the virtual server is activated. C. Network Address Translation (NAT) has occurred in the path between the client and the LTM device. D. The individual's data stream is being routed to the LTM device by a means other than the default route.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-107_1.png] -- Exhibit -- Refer to the exhibit. An LTM device is used to load balance web content over a secure channel. The developers of the web content have done a trace using an HTTP profiler application. They believe that allowing the LTM device to compress traffic to the client will improve performance. The client can utilize GZIP or deflate compression algorithms. An LTM Specialist must implement the compression. The LTM Specialist has completed the following actions: 1. Create the relevant profile. 2. Apply the relevant profile to the virtual server (VS). After applying the relevant profile, the LTM device is failing to compress the traffic. Instead, the traffic is being served with an error. What is the problem? A. The incorrect compression algorithm is applied to the compression profile. B. The LTM device CANNOT SSL offload the traffic in order to read and compress it. C. The Protocol Profile (Client) option of \"Allow Compression\" needs to be enabled. D. The Protocol Profile (Server) option of \"Allow Compression\" needs to be enabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-109_1.png] -- Exhibit -- Refer to the exhibit. A virtual server is set up on an LTM device as follows: Virtual server address 78.24.213.79 Default Persistence ProfilE. source_addr, 600s. Pool NamE. Pool1 Pool Members: 10.72.250.52:80 and 10.72.250.60:80 (both on Internal Vlan) There are several current connections to the virtual server, and pool member 10.72.250.52:80 has been set to a \"Disabled\" state. A tcpdump on the Internal Vlan shows traffic going to 10.72.250.52:80. How soon after the persistence table query was run can existing connections be refreshed/renewed to ensure that no requests are sent to 10.72.250.52? A. 196 seconds B. 460 seconds C. 539 seconds D. 590 seconds E. 591 seconds",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-111_1.png] -- Exhibit -- Refer to the exhibit. A client attempts to connect from a Google Chrome browser to a virtual server on a BIG-IP LTM. The virtual server is SSL Offloaded. When the client connects, the client receives an SSL error. The client receives the same errors when trying Mozilla Firefox and Internet Explorer browsers. The LTM Specialist does an ssldump on the virtual server and receives the results as per the exhibit. How should this be resolved? A. Set the virtual server to listen on port 443 (HTTPS). B. Upgrade the client to support the appropriate SSL cipher suite. C. Select the appropriate \"SSL Profile (Client)\" in the virtual server settings. D. Adjust the SSL key length in the SSL profile to match the minimum required by the client.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-112_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist configures a virtual server to load balance to a pool of FTP servers. File transfers are failing. The virtual server is configured as follows: ltm virtual ftp_vs { destination 10.10.1.103:ftp ip-protocol tcp mask 255.255.255.255 pool ftp_pool profiles { tcp { } } vlans-disabled } Which change will resolve the problem? A. Add an FTP monitor to the pool. B. Add an FTP profile to the virtual server. C. Enable loose initiation in the TCP profile. D. Increase the TCP timeout value in the TCP profile.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-114_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is investigating reports that users are unable to perform some commands through an FTP virtual server. The LTM Specialist performs a capture on the server side of the LTM device. What is the issue with the application? A. data connection failing B. LIST command disallowed C. PORT command disallowed D. command connection failing",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-115_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is investigating reports that users are unable to perform some commands through an FTP virtual server. The users are receiving the FTP error \"500 Illegal PORT command.\" The virtual server is configured to SNAT using automap. The LTM Specialist performs a capture on the server side of the LTM device. Why is the server returning this error? A. LIST command disallowed B. PORT command disallowed C. Active IP address in PORT command D. Active IP address in LOGIN command",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-117_1.jpg] -- Exhibit -- Refer to the exhibit. A server administrator notices that one server is intermittently NOT being sent any HTTP requests. The server logs display no issues. The LTM Specialist notices log entries stating the node (172.16.20.1) status cycling between down and up. The pool associated with the virtual server (10.10.1.100) has a custom HTTP monitor applied. Which tcpdump filter will help trace the monitor? A. tcpdump -i internal port 80 and host 172.16.1.31 B. tcpdump -i external port 80 and host 10.10.1.100 C. tcpdump -i internal port 80 and host 172.16.1.33 D. tcpdump -i external port 80 and host 172.16.20.1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-119_1.jpg] -- Exhibit -- Refer to the exhibit. A layer 2 nPath routing configuration has been deployed. A packet capture contains a client connection packet with the following properties: Source IP: <Virtual Server> Destination IP: <Client A> At which two locations could the packet capture have been taken? (Choose two.) A. the network interface of web server B. the DMZ interface of the Internet firewall C. the internal interface of the Internet firewall D. the external VLAN interface of the LTM device",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-121_1.png] -- Exhibit -- Refer to the exhibit. An HTTP monitor always marks the nodes in the pool as down. The monitor's definition and the HTTP headers from the monitor request and response are provided. What is the issue? A. The response is compressed. B. The send string is incorrect. C. The monitor timeout is too short. D. The monitor is NOT configured to follow the redirect.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-122_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is troubleshooting a new HTTP monitor on a pool. The pool member is functioning correctly when accessed directly through a browser. However, the monitor is marking the member as down. The LTM Specialist captures the monitor traffic via tcpdump. What is the issue? A. The server is marking the connection as closed. B. The pool member is rejecting the monitor request. C. The monitor request is NOT returning the page body. D. The 'time-until-up' setting on the monitor is incorrect.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-124_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is troubleshooting a new HTTP monitor on a pool. The pool member is functioning correctly when accessed directly through a browser, although the monitor is marking the member as down. As part of the troubleshooting, the LTM Specialist has captured the monitor traffic via tcpdump. How should the LTM Specialist resolve this issue? A. Add the 'http' monitor to the pool. B. Add the 'icmp' monitor to the node. C. Modify the receive string to valid content. D. Correct the firewall rules on the pool member.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-126_1.png] -- Exhibit -- Refer to the exhibit. The decoded TCPDump capture is a trace of a failing health monitor. The health monitor is sending the string shown in the capture; however, the server response is NOT as expected. The receive string is set to 'SERVER IS UP'. What is the solution? A. The GET request Host header field requires a host name. B. Incorrect syntax in send string. 'HTTP/1.1' should be 'HTTP1.1'. C. The /test_page.html does NOT exist on the web server and should be added. D. Incorrect syntax in send string. 'Connection: Close' should be 'Connection: Open'.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-127_1.jpg] -- Exhibit -- Refer to the exhibit. Which step should an LTM Specialist take to utilize AVR? A. provision AVR B. reboot the device C. install the AVR add-on D. license the device for AVR",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-129_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist sets up AVR alerts and notifications for a specific virtual server if the server latency exceeds 50ms. The LTM Specialist simulates a fault so that the server latency is consistently exceeding the 50ms threshold; however, no alerts are being received. Which configuration should the LTM Specialist modify to achieve the expected results? A. The rule should be adjusted to trigger when server latency is above 50ms. B. SNMP alerting should be enabled to allow e-mail to be sent to the support team. C. User Agents needs to be enabled to ensure the correct information is collected to trigger the alert. D. The metric \"Page Load Time\" needs to be enabled to ensure that the correct information is collected.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-131_1.png] [sampleXML/xmlfile-132_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is troubleshooting an HTTP monitor that is marking a pool member as down. Connecting to the pool member directly through a browser shows the application is up and functioning correctly. ltm monitor http http_mon { defaults-from http destination *:* interval 5 recv \"200 OK\" send \"GET /\\\\r\\\\n\" time-until-up 0 timeout 16 } What is the issue? A. The HTTP headers are compressed. B. The pool member is responding with a 404. C. The pool member is responding without HTTP headers. D. The request is NOT being received by the pool member.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-134_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is troubleshooting an issue with SSL and is receiving the error shown when connecting to the virtual server. When connecting directly to the pool member, clients do NOT receive this message, and the application functions correctly. The LTM Specialist exports the appropriate certificate and key from the pool member and imports them into the LTM device. The LTM Specialist then creates the Client SSL profile and associates it with the virtual server. What is the issue? A. The SSL certificate and key have expired. B. The SSL certificate and key do NOT match. C. The client CANNOT verify the certification path. D. The common name on the SSL certificate does NOT match the hostname of the site.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-136_1.jpg] -- Exhibit -- Refer to the exhibit. A user is unable to access a secure application via a virtual server. What is the cause of the issue? A. The client authentication failed. B. The virtual server does NOT have a pool configured. C. The client and server CANNOT agree on a common cipher. D. The virtual server does NOT have a client SSL profile configured.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-138_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is troubleshooting an issue with a new virtual server. When connecting through the virtual server, clients receive the message \"The connection was reset\" in the browser. Connections directly to the pool member show the application is functioning correctly. What is the issue? A. The pool member is failing the monitor check. B. The pool member default gateway is set incorrectly. C. The virtual server is configured with the incorrect SNAT address. D. The virtual server is processing encrypted traffic as plain-text HTTP.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-140_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is troubleshooting a virtual server. Both the virtual server and the pool are showing blue squares for their statuses, and new clients report receiving \"The connection was reset\" through their browsers. Connections directly to the pool member are successful. What is the issue? A. The pool member is disabled. B. The node is marked as disabled. C. The HTTP profile has incorrect settings. D. The virtual server is disabled on all VLANs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-142_1.png] -- Exhibit -- Refer to the exhibit. A user is unable to access an application. What is the root cause of the problem? A. The User-Agent is incorrect. B. The 'Content-Length' is zero. C. The user failed authentication. D. The GET request uses the wrong syntax.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-143_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is troubleshooting an HTTP monitor that is marking a pool member as down. Connecting to the pool member directly through a browser shows the application is up and functioning correctly. How should the send string be modified to correct this issue? A. GET /\\r\\n\\r\\n B. GET / HTTP/1.0\\r\\n\\r\\n C. GET /\\r\\nHost: \\r\\n\\r\\n D. GET /\\r\\nHTTP/1.0\\r\\n\\r\\n",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-145_1.png] -- Exhibit -- Refer to the exhibit. A user is unable to access an HTTP application via a virtual server. What is the cause of the failure? A. The host header requires a host name. B. The virtual server is in the disabled state. C. The Connection: Keep-Alive header is set. D. There is no pool member available to service the request.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-146_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist is performing an HTTP trace on the client side of the LTM device and notices there are many undesired headers being sent by the server in the response. The LTM Specialist wants to remove all response headers except \"Set-Cookie\" and \"Location.\" How should the LTM Specialist modify the HTTP profile to remove undesired headers from the HTTP response? A. Enter the desired header names in the 'Request Header Insert' field. B. Enter the undesired header names in the 'Request Header Erase' field. C. Enter the undesired header names in the 'Response Header Erase' field. D. Enter the desired header names in the 'Response Headers Allowed' field.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-148_1.png] -- Exhibit -- Refer to the exhibit. Users report that a web application works incorrectly. Sometimes contextual data displayed on the web pages is accurate; other times it is inaccurate. The LTM administrator looks at the connection table with a filter on one of the client IP addresses currently connected using the command \"tmsh show sys connection cs-client-addr 10.0.20.1\" with the following results: 10.0.20.1:60048 10.0.20.88:80 10.0.20.1:60048 172.16.20.1:80 tcp 3 (tmm: 0) 10.0.20.1:60050 10.0.20.88:80 10.0.20.1:60050 172.16.20.3:80 tcp 3 (tmm: 0) 10.0.20.1:60047 10.0.20.88:80 10.0.20.1:60047 172.16.20.2:80 tcp 3 (tmm: 0) 10.0.20.1:60049 10.0.20.88:80 10.0.20.1:60049 172.16.20.1:80 tcp 3 (tmm: 0) What is the solution to the problem? A. Synchronize the clock of the LTM device with NTP. B. Modify the load balancing method attached to the pool. C. Set up an HTTP cookie insert profile in the virtual server. D. Modify the setup of the monitor bound to the pool used by the application.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-149_1.jpg] -- Exhibit -- Refer to the exhibit. The virtual server is listening on port 443. What is the solution to the problem? A. Add an SSL Client profile to the existing virtual server. B. Modify the virtual server HTTP Profile to 'Redirect RewritE. All'. C. Modify the virtual server TCP profile to disable Nagle's Algorithm. D. Modify the virtual server HTTP Profile to 'Redirect RewritE. Matching'.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-151_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist has created a virtual server to balance connections to a pool of application servers and offload SSL decryption. Clients connect to the application at https://www.example.com/. The virtual server is configured with a clientssl profile but no serverssl profile. The application servers are listening on ports 80 and 443. Users are unable to connect to the application through the virtual server but are able to connect directly to the application server. What is the root cause of the error? A. The LTM device is chunking responses. B. The LTM device is redirecting users to HTTPS. C. The pool members are configured with the wrong port. D. The application servers are redirecting users to HTTPS.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-153_1.jpg] -- Exhibit -- Refer to the exhibit. An LTM Specialist has created a virtual server to load balance traffic to a pool of HTTPS servers. The servers use client certificates for user authentication. The virtual server has clientssl, serverssl, and http profiles enabled. Clients are unable to connect to the application through the virtual server. Clients are able to connect to the application servers directly. What is the root cause of the problem? A. The application server does NOT support 2048-bit keys. B. The clientssl profile is NOT set to require a client certificate. C. The LTM device does NOT trust the issuing CA of the client certificate. D. The application server does NOT see the client certificate due to SSL offload.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-155_1.png] -- Exhibit -- Refer to the exhibit. A web application is configured to allow sessions to continue even after a user computer is shut down for the night. A new LTM device is configured to load balance the web application to several servers. The application owner reports that application users are logged out of the web application whenever their browser is restarted or computer is rebooted. What is the problem? A. The virtual server does NOT have persistence configured. B. The virtual server does NOT have persistence mirroring configured. C. The cookie set by the LTM device does NOT have an \"Expires\" value. D. The cookie set by the server is NOT being passed to client by the LTM device.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-157_1.jpg] -- Exhibit -- Refer to the exhibit. An LTM Specialist creates a virtual server to load balance traffic to a pool of HTTPS servers. The servers use client certificates for user authentication. The virtual server has clientssl, serverssl, and http profiles enabled. Clients are unable to connect to the application through the virtual server, but they are able to connect to the application servers directly. Which change to the LTM device configuration will resolve the problem? A. Install the server certificate/key and enable Proxy SSL. B. Use the serverssl-insecure-compatible serverssl profile. C. Configure the clientssl profile to require a client certificate. D. Install the client's issuing Certificate Authority certificate on the LTM device.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-159_1.png] -- Exhibit -- Refer to the exhibit. A pair of LTM devices are configured for HA. The LTM Specialist observes from a capture that there is a successful connection from a client directly to a web server and an unsuccessful connection from a client via the LTM device to the same web server. Which two solutions will solve the configuration problem? (Choose two.) A. Configure SNAT on the pool. B. Configure SNAT on the virtual server. C. Change server default gateway to point at LTM internal self IP. D. Change server default gateway to point at LTM internal floating IP.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-160_1.jpg] -- Exhibit -- Refer to the exhibit. An LTM Specialist is troubleshooting a sync-failover group of three BIG-IP LTM devices. The command used is \"tmsh run cm watch-devicegroup-device.\" What does the output mean? A. Configuration is synchronized between all the devices. B. Configuration is not synchronized. Some modifications have been done on bigipA. C. Configuration is not synchronized. Some modifications have been done on bigipB. D. Configuration is not synchronized. Some modifications have been done on bigipC.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-160_2.jpg] -- Exhibit -- Refer to the exhibit. Based on the output of the tmsh interface show command, what is the issue? A. There is a duplex mismatch on the management interface. B. Interfaces 2.1 and 2.2 are defective and need replacement. C. Flow Control is NOT configured on the management interface. D. There are too many drops on inbound traffic on interface 1.1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-162_1.jpg] -- Exhibit -- Refer to the exhibit. A failover has just occured on BIG-IP1. BIG-IP2 is now active and manages traffic as expected. Both Bigip's are set with a gateway failsafe to check the reachability of the main border router. Switches have performed as expected. Where should the LTM Specialist check for potential issues? A. Network Interface 2.1 of BIG-IP 2 B. Network Interface 2.1 of BIG-IP 1 C. Network Interface 2.2 of BIG-IP 2 D. Network Interface 2.2 of BIG-IP 1 E. Network Interface 1.1 of BIG-IP 1 F. Network Interface 1.1 of BIG-IP 2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-164_1.png] -- Exhibit -- Refer to the exhibit. A pair of LTM devices are deployed in a high-availability (HA) pair as the diagram shows. After inserting a new rule on the firewalls, the LTM devices become Standby. The rule drops all outbound sessions to the Internet. Only inbound connections are allowed from the Internet. There are no other changes to the environment. What triggered the LTM device failover? A. HA Group B. Auto Failback C. VLAN Failsafe D. Gateway Failsafe",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-166_1.png] -- Exhibit -- Refer to the exhibit. A pair of LTM devices is configured for HA. What happens if the pool member server with IP address 10.0.0.4 becomes totally unresponsive to the active LTM device, but is still responsive to the standby LTM device? A. The HA-group will disable the trunk my_trunk. B. The HTTP application will be unavailable via the LTM device. C. The HA-group will initiate a fail-over because the threshold is set to 2. D. The HA-group will initiate a fail-over because the HA-Group score will be zero.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-167_1.jpg] [sampleXML/xmlfile-168_1.jpg] -- Exhibit -- Refer to the exhibits. Every monitor has the same Send String, Recv String, and an Alias of *:*. The LTM Specialist simplifies the configuration to minimize the number of monitors. How many unique monitors remain? A. 1 B. 2 C. 3 D. 4 E. 5",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-169_1.png] [sampleXML/xmlfile-170_1.png] -- Exhibit -- Refer to the exhibits. How should the LTM Specialist minimize the configuration? A. Remove the pool member level monitors. B. The configuration is as minimized as possible. C. Create a single monitor and apply it to each pool member. D. Create a single monitor, apply it to the pool, and remove the pool member level monitors.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-172_1.png] [sampleXML/xmlfile-173_1.jpg] -- Exhibit -- Refer to the exhibits. An LTM device has been configured for load balancing a number of different application servers. Configuration changes need to be made to the LTM device to allow administrative management of the servers in 172.16.10/24, 172.16.20/24, and 172.16.30/24 networks. The servers require outbound access to numerous destinations for operations. Which solution has the simplest configuration changes while maintaining functionality and basic security? A. Remove 172.16.10.0:0/24, 172.16.20.0:0/24, and 172.16.30.0:0/24, and keep 0.0.0.0:0/0.0.0.0 enabled on all VLANs. B. Replace 172.16.10.0:0/24, 172.16.20.0:0/24, and 172.16.30.0:0/24, with 172.16.0.0:0/16, and keep 0.0.0.0:0/0.0.0.0. C. Enable 172.16.10.0:0/24, 172.16.20.0:0/24, and 172.16.30.0:0/24 on ingress VLAN(s), and enable 0.0.0.0:0/0.0.0.0 on egress VLAN(s). D. Enable 172.16.10.0:0/24, 172.16.20.0:0/24, and 172.16.30.0:0/24 on egress VLAN(s), and enable 0.0.0.0:0/0.0.0.0 on ingress VLAN(s).",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-174_1.jpg] [sampleXML/xmlfile-175_1.jpg] -- Exhibit -- Refer to the exhibits. A virtual server has been configured for SSL offload on a single-arm network. On average, the virtual server will be handling 100,000 connections, with a peak of 130,000 connections. Between the virtual server and the web servers there is a single reverse proxy to provide site caching. The proxy is configured to perform source IP persistence before contacting the web servers. The site is logging users out immediately after logging them in. What should the LTM Specialist do to resolve this issue? A. Add a source address persistence profile to the virtual server. B. Create an iRule to add client IP persistence to a SNAT pool member. C. Change the virtual server server-side TCP profile to tcp-lan-optimized. D. Configure the virtual server HTTP profile to insert an X-Forwarded-For header.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-177_1.png] [sampleXML/xmlfile-178_1.png] -- Exhibit -- Refer to the exhibits. Which URL on which server is causing the highest latency for users? A. /slow1.php on 172.16.20.3 B. /slow2.php on 172.16.20.1 C. /reflector.php on 172.16.20.2 D. /Compress.HTML on 172.16.20.1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-181_1.png] [sampleXML/xmlfile-182_1.jpg] -- Exhibit -- Refer to the exhibits. When observing the AVR statistics for the HTTPS_VS, an LTM Specialist realizes that HTTP status codes are NOT being recorded. How should the LTM Specialist modify the configuration to record the HTTP status codes? A. assign a streaming profile to the virtual server B. assign client SSL and server SSL profiles to the virtual server C. enable Statistics Logging Type, External on the analytics profile D. enable Collected Entities, Response Codes on the analytics profile",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-184_1.jpg] [sampleXML/xmlfile-185_1.png] -- Exhibit -- Refer to the exhibits. A customer requests to offload SSL for an internal website. The front page of the website loads correctly; however, selecting links on the page fails. How should the LTM Specialist fix the issue? A. Create a new SNAT pool. Add internal network IPs to the SNAT pool. Add the SNAT pool to the VS. B. Create a new HTTP profile. Enable Insert X-Forwarded-For. Add the new HTTP profile to the VS. C. Create a new HTTP profile. Enable redirect rewrite. Add the new HTTP profile to the VS. D. Create a new Server SSL profile. Enable Proxy SSL.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-186_1.jpg] [sampleXML/xmlfile-187_1.jpg] [sampleXML/xmlfile-187_2.png] [sampleXML/xmlfile-188_2.png] [sampleXML/xmlfile-188_1.png] [sampleXML/xmlfile-189_1.png] -- Exhibit -- Refer to the exhibits. An LTM Specialist is troubleshooting an application configured on an LTM device on a one-armed configuration. The application is NOT working through the LTM device but does work when accessed directly via the application servers. The virtual server 192.168.1.211:443 is configured to SNAT using the address 192.168.1.144 and references a pool with the member 192.168.10.80:443. No Client or Server SSL profiles are associated. The LTM Specialist has collected two traffic captures to help determine the issue. What is the problem with the configuration on the LTM device? A. Pool member is configured to use wrong port. B. Pool member is configured for SSL off-loading. C. Virtual server is configured to use wrong port. D. Virtual server is configured without SSL Profiles.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-191_1.png] -- Exhibit -- Refer to the exhibit. An LTM Specialist configures a virtual server to perform client-side encryption while allowing the server-side traffic to be unencrypted. Application owners report that images are failing to load through the virtual server; however, images load when going directly to the server. What is the problem with the images loading through the virtual server? A. Image references are for HTTP objects, not HTTPS. B. Image references are for HTTPS objects, not HTTP. C. The virtual server does not have \"SSL Offloading\" enabled. D. The virtual server does not have an HTTP profile associated.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-192_1.png] [sampleXML/xmlfile-193_1.png] -- Exhibit -- Refer to the exhibits. Users are able to access the application when connecting directly to the web server but are unsuccessful when connecting to the virtual server. What is the cause of the application access problem? A. The virtual server has SNAT disabled. B. The client has no route to the web server. C. The virtual server has address translation disabled. D. The web server is NOT responding on the correct port. E. The virtual server is NOT configured to listen on port 80.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-194_1.png] [sampleXML/xmlfile-195_1.png] -- Exhibit -- Refer to the exhibits. An LTM Specialist is reconfiguring a virtual server to redirect all clients to HTTPS. Testing reveals that the redirect is functioning incorrectly. As part of the troubleshooting process, the LTM Specialist performs a packet capture. What is the issue? A. The redirect is causing an infinite loop. B. The virtual server is missing a clientssl profile. C. The redirect is sending the client to the incorrect location. D. The virtual server is incorrectly processing the HTTP request.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-200_1.jpg] -- Exhibit -- Refer to the exhibit. An LTM Specialist is troubleshooting an issue with an application configured on an LTM device. The application works properly when accessed directly via the servers; however, it does not work when accessed via the LTM device. The virtual server, 192.168.1.211:443, is configured to SNAT using the address 192.168.1.144 and references a pool with the member 192.168.10.80:443. The virtual server has no Client or Server SSL profiles associated. Which configuration change will allow the application to function through the virtual server? A. Change pool member port to 8443. B. Change virtual server port to 8443. C. Add SSL off-loading to the pool member. D. Add Client and Server SSL profiles to the virtual server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-202_1.jpg] -- Exhibit -- Refer to the exhibit. An administrator created a monitor to a pool member web server, which resulted in a pool member that is marked red. The administrator knows the web server is working when it is accessed from another computer. What should the administrator do to correct the problem? A. Change the default gateway on the server. B. Create a SNAT in the LTM device configuration. C. Change the route to the client in the LTM configuration. D. Change the username and/or password on the monitor.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-204_1.png] -- Exhibit -- Refer to the exhibits. An LTM Specialist configures a virtual server for an internal application to perform client-side encryption while allowing the server-side traffic to be unencrypted. Application users report that images are NOT loading through the virtual server; however, images load when going directly to the server. What should the LTM Specialist configure to allow the images to load through the virtual server? A. HTTP profile with \"SSL Offload\" enabled B. HTTP profile with \"SSL Offload\" disabled C. Stream profile with source \"http:\" and target \"https:\" D. Stream profile with target \"http:\" and source \"https:\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-205_1.jpg] [sampleXML/xmlfile-206_1.jpg] -- Exhibit -- Refer to the exhibits. An LTM Specialist is troubleshooting an issue with one of the virtual servers on an LTM device, and all requests are receiving errors. Testing directly against the server generates no errors. The LTM Specialist has captured the request and response on both client and server sides of the LTM device. What should the LTM Specialist do to fix this issue? A. Remove \"header-erase Host\" in http profile. B. Configure SNAT Automap on the virtual server. C. Assign OneConnect profile to the virtual server. D. Set \"redirect-rewrite\" to \"selective\" in http profile.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-210_1.png] [sampleXML/xmlfile-211_1.png] -- Exhibit -- Refer to the exhibits. After upgrading LTM from v10 to v11, users are unable to connect to an application. The virtual server is using a client SSL profile for re-terminating SSL for payload inspection, but a server SSL profile is being used to re-encrypt the request. A client side ssldump did NOT show any differences between the traffic going directly to the server and the traffic being processed by the LTM device. However, packet capture was done on the server, and differences were noted. Which modification will allow the LTM device to process the traffic correctly? A. Enable Strict Resume. B. Change Secure Renegotiation to \"Request.\" C. Enable ProxySSL option in the server SSL profile. D. Change to different ciphers on the server SSL profile.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-212_1.png] [sampleXML/xmlfile-213_1.png] -- Exhibit -- Refer to the exhibits. An LTM Specialist uses the information in the logs to determine the cause of a failover event in a high-availability (HA) pair. What caused the failover? A. The overdog process crashed. B. The system was administratively rebooted. C. The process bcm56xxd received SIGTERM from the watchdog process. D. The configuration reload request caused the config to reload and the device to failover.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "-- Exhibit [sampleXML/xmlfile-217_1.png] [sampleXML/xmlfile-217_2.png] [sampleXML/xmlfile-218_1.png] -- Exhibit -- Refer to the exhibits. Users are able to access the application when connecting to the virtual server but are unsuccessful when connecting directly to the application servers. The LTM Specialist wants to allow direct access to the application servers. Why are users unable to connect directly to the application servers? A. The router does NOT have a route to the server subnet. B. The web server does NOT have a correct default gateway. C. The LTM device does NOT have a SNAT on the External VLAN. D. The LTM device does NOT have an IP Forwarding virtual server on the Internal VLAN. E. The LTM device does NOT have an IP Forwarding virtual server on the External VLAN.",
+    "options": {},
+    "most_voted": ""
+  }
+]
