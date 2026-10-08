@@ -1,0 +1,187 @@
+[
+  {
+    "question": "A customer has demanding database servers, which require larger I/O queue counts and queue depths. What should be done to increase these parameters for certain hosts? A. Add the hosts to the subsystem with high priority. B. Decrease the QoS policy for the volumes that are in use by the namespaces. C. Increase the QoS policy for the given namespace. D. Increase the queue depth for the given namespace.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An engineer is troubleshooting FC connectivity issues on a customer’s system and sees the following output from the network fcp adapter show command: According to the output, what is the domain ID of the switch that is connected to port 2a of node n2? A. ID 20 B. ID 1 C. ID 2 D. ID 10",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer is setting up a two-node cluster to serve iSCSI LUNs. How many interfaces should be created? A. Two iSCSI LIFs per node B. One iSCSI LIF per node C. Two iSCSI LIFs per SVM D. One iSCSI LIF per SVM",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is troubleshooting a SAN network issue where the NVMe/TCP LIF keeps disconnecting. Which command helps the administrator to investigate this issue? A. ipspace show B. vserver nvme subsystem show C. cluster ping-cluster D. network port reachability show",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer is using a new two-node NetApp All SAN Array (ASA) configuration with SnapMirror active sync. To verify if everything is set up correctly, the customer is looking at the number of paths in their ESXi hosts. How many paths should the customer see? A. 4 Active/Optimized, 4 Active/Unoptimized B. 6 Active/Optimized, 2 Active/Unoptimized C. 2 Active/Optimized, 6 Active/Unoptimized D. 8 Active/Optimized, 0 Active/Unoptimized",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator provisions several LUNs on a four-node NetApp AFF cluster using default settings. Each AFF node has four FC LIFs. The configuration is modified to limit the target paths to two LIFs per node. Which NetApp ONTAP command will verify initiator group visibility for each LIF? A. lun show B. lun igroup show C. lun portset show D. lun mapping show",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which NetApp ONTAP option enables automatic host-side space management for a LUN? A. space-allocation B. space-reserve C. resize D. alua",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A storage engineer is required to provide NetApp site design documentation to show that the NetApp ONTAP SAN solution was delivered as intended. Which NetApp tool can the storage engineer use to automate the creation of a difference report? A. Active IQ Config Advisor B. NetAppDocs C. Harvest D. Active IQ OneCollect",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer has recently installed a new NetApp AFF system and Cisco Nexus 9000 Series switches for their SAN workload. The administrator is tasked with configuring interface groups for port-based load balancing. Which two commands are required? (Choose two.) A. network port ifgrp create -distr-func port in NetApp ONTAP software B. port-channel load-balance src-dst 14port on the switch C. channel-group mode passive on the switch D. network port modify -flowcontrol-admin false in NetApp ONTAP software",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An engineer has just installed a new MetroCluster IP system for their SAN environment and wants to verify if all backend network connections are set up and working correctly. Which two commands must the engineer run to verify the configuration? (Choose two.) A. metrocluster check run B. metrocluster check connection show C. metrocluster check cluster show D. metrocluster check lif show",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer deploys an SVM for FCP with four LIFs across two fabrics. Equal client traffic is seen across all four LIFs. In this scenario, how is the traffic across the active, unoptimized paths forwarded to the node hosting the LUN? A. HA interconnect B. FC network C. Cluster network D. Peering network",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A NetApp FC SVM and six clients have been attached to a redundant pair of Cisco Fabric Switches. Each NetApp controller and client has one connection to each switch. What are two ways to verify that all client paths are connecting to the NetApp FC SVM? (Choose two.) A. On the switch: show flogi database B. On the switch: show zoneset active C. On the NetApp Cluster: vserver fcp portname show D. On the NetApp Cluster: vserver fcp initiator show",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer uses several node types in their SAN environment. They want to migrate iSCSI LIFs without disruption. Which command can achieve this? A. Run ucadmin modify on a NetApp All SAN Array (ASA) system. B. Run network interface migrate on a NetApp FAS system. C. Run network interface migrate on a NetApp AFF system. D. Run network interface migrate on a NetApp All SAN Array (ASA) system.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An engineer has a 100GB volume with the space guarantee set to volume and fractional reserve set to 100. The snapshot reserve is disabled. The volume contains two 20GB LUNs, and each LUN has the space guarantee enabled and is 50% full. The engineer creates a snapshot of the volume, and no data is written or modified after the snapshot is taken. What is the available space in the volume? A. 60GB B. 40 GB C. 20GB D. 80GB",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two NetApp features provide synchronous data replication between two sites for SAN workloads with automatic failover in case of a site disaster? (Choose two.) A. SnapMirror Synchronous B. SnapMirror active sync C. SnapMirror SVM D. MetroCluster IP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two possible options for iSCSI authentication methods? (Choose two.) A. CHAP B. certificates C. deny D. SAML",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer wants to use NVMe/FC to connect three Linux hosts to their NetApp ONTAP cluster. What is the minimum speed for an HBA in an ONTAP controller in this scenario? A. 32Gbps B. 8Gbps C. 4Gbps D. 16Gbps",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is deploying a new 8-node NetApp ONTAP cluster for their SAN workloads using FCP, NVMe/FC, and NVMe/TCP. In this scenario, which statement is true? A. NVMe/TCP supports a maximum of two LIFs per node. B. NVMe/FC and FCP require different FC ports. C. NVMe/FC and NVMe/TCP must be configured in separate SVMs. D. NVMe/TCP can only run at 32Gbps or faster.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator in configuring a NetApp SAN with iSCSI LIFs that fail over between HA partner nodes. The customer has several NetApp clusters of different models and types. Which cluster meets this requirement? A. ONTAP Select B. ASA C. AFF D. FAS",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer wants to connect a NetApp ONTAP based storage system to Cisco Nexus switches using 100GB optical cables. Which NetApp tool should be consulted to determine if this is a supported configuration? A. Hardware Universe B. Interoperability Matrix Tool C. Active IQ Config Advisor D. Active IQ Digital Advisor",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is deploying a new SAN workload that has a NetApp All SAN Array (ASA) cluster. The customer wants to reclaim space by tiering to Azure Blob storage. According to NetApp best practices, which volume tiering policy should be applied? A. Snapshot-Only B. All C. None D. Auto",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "During an iSCSI deployment, the customer requests a change of front-end network connections on the NetApp ONTAP cluster from twinax cables to fiber-optic cables. Which two NetApp tools would an administrator use to verify the supported port speeds and transceivers? (Choose two.) A. Hardware Universe to determine supported transceivers B. Interoperability Matrix Tool to determine supported transceivers C. Interoperability Matrix Tool to determine supported port speeds D. Hardware Universe to determine supported port speeds",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A four-node NetApp ONTAP SAN cluster has been deployed. After installation, the engineer wants to verify cabling. Which NetApp tool should the engineer use? A. Hardware Universe B. Active IQ Config Advisor C. NetApp Host Utilities package D. Interoperability Matrix Tool",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer has data in a LUN on an existing third-party SAN storage system that will be migrated to a new NetApp AFF A400 all-flash MetroCluster system. The host connected to the LUN is a Windows Server 2019 system. In this scenario, which two methods are supported? (Choose two.) A. Client-side copy of the data B. SnapMirror Business Continuity C. Foreign LUN Import in online mode D. Foreign LUN Import in offline mode",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the maximum size for a LUN in NetApp ONTAP 9.14.1 software? A. 128TiB B. 64TiB C. 16TiB D. 300TiB",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During expansion planning for a 10-node cluster running NetApp ONTAP 9.14.1 software, which uses SAN and NAS, how many additional nodes can be added to this cluster? A. 2 B. 6 C. 4 D. 8",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer needs to verify if jumbo frames have been configured correctly for an iSCSI workload. Which command should be used? A. ping -lif -vserver -destination -disallow-fragmentation false -packet-size 1500 B. ping -lif -vserver -destination -disallow-fragmentation true -packet-size 1500 C. ping -lif -vserver -destination -disallow-fragmentation true -packet-size 8900 D. ping -lif -vserver -destination -disallow-fragmentation true -packet-size 9000",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer is implementing a data migration scenario for a customer who has multiple FC LUNs across multiple third-party SAN arrays. The engineer wants to use Foreign LUN Import (FLI) for the migration. What is a requirement on the destination NetApp ONTAP cluster for FLI? A. At least one FC port in initiator mode B. At least one FC port in target mode C. A valid SnapMirror license D. A valid NetApp XCP license",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When using tagged VLANs on Cisco Nexus switches for NVMe over TCP, which two changes must be made to enable jumbo frames? (Choose two.) A. Modify the appropriate broadcast domain in NetApp ONTAP software to use an MTU of 9000. B. Modify the Cisco Nexus switches to use an MTU of 9216. C. Modify the appropriate broadcast domain in NetApp ONTAP software to use an MTU of 9216. D. Modify the Cisco Nexus switches to use an MTU of 9000.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the minimum number of rack units that are required on each site for a NetApp AFF All San Array (ASA) A800 MetroCluster IP configuration with 72 disks per site and Cisco N9K-C9336C-FX2 backend switches? A. 16 RU B. 12 RU C. 4 RU D. 8 RU",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator finishes an installation of a new NetApp ASA system at the customer site and creates a new LUN. The customer wants to restrict the access of the LUN to specific LIFs. Where would the administrator configure this? A. Portset B. igroup C. Selective LUN Map D. Zoning",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which NetApp feature presents LUNs only within the HA pair? A. Consistency group B. igroup C. Subsystem D. Selective LUN Mapping",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer asks for help cloning one database LUN from a SnapMirror destination volume for testing the data with a new application. What command should the administrator use to clone the LUN? A. volume clone create B. volume file clone create C. lun move start D. volume move start",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A storage administrator wants to increase security and optimize performance in a recently implemented SAN deployment. What should the storage administrator configure to ensure initiator restriction to certain LIFs? A. Network route B. Subnets C. Broadcast domain D. Access list",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer is setting up a four-node NetApp cluster for use with NVMe/TCP and wants to use automatic host discovery. Which protocol is used for the discovery of controllers? A. PXE B. LLDP C. TFTP D. mDNS",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After deleting a LUN, an administrator notices that the space does not show as available. What needs to be done to reclaim the space? A. Delete the volume snapshots. B. Purge the recovery queue. C. Unmap the LUN. D. Perform space reclamation.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer wants to enable CHAP authentication on their iSCSI sessions. Which command should be used to set up the appropriate security policies and passwords? A. security certificate create B. security login create C. vserver iscsi security create D. igroup initiator modify",
+    "options": {},
+    "most_voted": "C"
+  }
+]
