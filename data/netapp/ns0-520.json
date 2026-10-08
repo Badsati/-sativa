@@ -1,0 +1,267 @@
+[
+  {
+    "question": "A customer wants to deploy NVMe/FC along with an existing FC SAN fabric using ONTAP 9.8. In this scenario, which two actions are correct? (Choose two.) A. Enable NVMe/FC on the existing FC SVM. B. Create new zoning on fabric switches. C. Upgrade your FC switches from 16 GB to 32 GB. D. Use existing zoning on fabric switches.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. You are configuring a new NetApp ONTAP cluster and are connecting the nodes to Cisco MDS SAN switches. You connect one of the nodes to switch port fc1/11 and run the commands that are shown in the exhibit. The SAN LIFs are enabled but are not operationally online, and none of the SAN hosts can access their LUNs on the ONTAP cluster. In this scenario, which configuration would cause this problem? A. NPIV is not enabled on the switches. B. Interoperability mode is not enabled on the switches. C. NPV is not enabled on the switches. D. The in-order guarantee is not enabled on the switch.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are installing an AFF A250 system with ONTAP 9.8 software. Your customer asks you about the recommended LIF configuration for the iSCSI protocol. In this scenario, which two statements are correct? (Choose two.) A. Each node in an iSCSI configuration must be connected to a minimum of two Ethernet switches. B. Each SVM in an iSCSI configuration must have a minimum of two LIFs per node. C. All LIFs from the SVM are connected to a single Ethernet switch. D. Each SVM in an iSCSI configuration must have a minimum of one LIF per node.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has a 4-node cluster consisting of a FAS8020 system and an AFF A220 system that is running iSCSI workloads across two separate SVMs. The FAS8020 system is reaching end of support, so they add a new AFF A400 system to migrate workloads off the FAS8020 system. The customer wants to migrate data off the FAS8020 aggregate n1_aggr1 on SVM2 to the AFF A400 aggregate n5_aggr1 on SVM1. In this scenario, which NetApp command would accomplish this task? A. volume move B. aggregate reallocation C. volume reallocation D. volume rehost",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which NetApp tool provides a detailed inventory of SAN components? A. Hardware Universe B. Active IQ Config Advisor C. Interoperability Matrix Tool D. Active IQ OneCollect",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You want to move a SAN LIF and preserve its configuration information and avoid rezoning the switch fabric. In this scenario, which two steps must be performed to fulfill this goal? (Choose two.) A. Keep the SAN LIF online before it is moved. B. Take the SAN LIF offline before it is moved. C. Move the SAN LIFs to another node in a cluster on different storage virtual machines (SVMs). D. Move the SAN LIFs to another node in a cluster on existing storage virtual machines (SVMs).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your customer asks you how to connect a host for SAN access to the newly installed AFF A400 system. In this scenario, which two statements are correct? (Choose two.) A. Direct connection to the nodes from the hosts with FC is not supported. B. Direct connection to the nodes from the hosts with iSCSI is not supported. C. Direct connection to the nodes from the hosts with iSCSI is supported. D. Direct connection to the nodes from the hosts with FC is supported.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Click the Exhibit button. In an NVMe/FC environment, the host cannot discover the namespace on the AFF system. Referring to the exhibit, what is the problem? A. The NQN is not correct. B. The host MPIO drivers are not installed. C. NVMe is not supported on the FC adapter. D. The NVMe service is not running on the SVM.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are designing a new 4-node AFF A400 SAN cluster with 20 iSCSI hosts. Each AFF A400 node will have four data LIFs. Each iSCSI host needs to access every LUN over two LIFs per node on every SAN node. In this scenario, which NetApp SAN feature enables this connectivity? A. selective LUN mapping B. port sets C. HBA queue depth D. asymmetric namespace",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are planning on implementing a new SAN on AFF A400 controllers. The data set consists of unique 1 KB files that will be encrypted before being written to the SAN. In this scenario, which ONTAP inline storage efficiency will provide 4:1 savings for this workload? A. autogrow B. deduplication C. compression D. compaction",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "While changing the network connections on your ONTAP cluster from twinax to fiber, the ports experience network connectivity issues. You want to verify which speeds the ports support and ensure that you have supported transceivers. In this scenario, which two action would accomplish this task? (Choose two.) A. Use Hardware Universe to determine the supported port speeds. B. Use the Interoperability Matrix Tool to determine the supported port speeds. C. Use Hardware Universe to determine the supported transceivers. D. Use the Interoperability Matrix Toll to determine the supported transceivers.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is configuring their existing Ethernet network switches to provide iSCSI LUNs to several servers. The network switches are also used for other traffic from various hosts. In this scenario, which statement is true? A. Use multiple VLANs to isolate iSCSI traffic from other network traffic. B. Configure the MTU size to be larger on the switch and storage than on the host. C. Increase the ratio of access ports to trunk ports to 2:1. D. NetApp recommends using the same LIFs for NFS and iSCSI traffic.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are configuring FC ports on front-end SAN switches for a 4-node MetroCluster configuration across two data centers. You need to ensure that each data center serves FC LUNs when a FC port goes offline in one data center. In this scenario, which front-end switch setting must be modified to avoid overlap when a new port comes online? A. NPIV enabled B. ANA mapped C. WWPN reject D. WWNN reject",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are testing FPC path failures on a 2-node NetApp AFF All SAN Array and verify that persistent ports are correctly enabled. Before testing, a host sees four optimized paths to a LUN. You perform a node takeover and re-check the host. Which statement is true after the node takeover? A. The host sees two optimized paths and two non-optimized paths to the LUN. B. The host sees two optimized paths and two dead paths to the LUN. C. The host sees two non-optimized paths and two dead paths to the LUN. D. The host sees four optimized paths to the LUN.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have implemented FabricPool on your AFF ASA ONTAP 9.8 cluster. An archived database has become very active, and it requires FabricPool adjustments. Which two steps are required to address this issue? (Choose two.) A. Set the space guarantee on the volume. B. Set the tiering-policy to none. C. Use the promote cloud-retrieval-policy. D. Remove all Snapshot copies.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are asked to configure a small environment for a branch office. The customer has two new VMware ESXi hosts and a NetApp FAS2750 for the site. They want to allocate 10 GB for their iSCSI network to be used for datastores. However, they do not want to purchase any new switches for the environment. In this scenario, which statement is correct? A. The SMB protocol will need to be used. B. Configure direct attached connections between the two hosts and storage. C. The environment will have to be configured with 1 Gb networking. D. 10 Gb switches are required for this configuration.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. Referring to the exhibit, which two actions would you perform to ensure that each host has valid multipathing? (Choose two.) A. Verity that the VLANs are properly configured on the switches. B. Verify that the iSCSI service is started on the ONTAP cluster. C. Verify that ALUA is enabled on the switches. D. Verify that the VLANs are properly configured on the ONTAP cluster.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have an existing 8-node NetApp cluster serving NFS data, and you want to expand your cluster by an additional four nodes to serve iSCSI. In this scenario, where would you validate this configuration? A. SAN Administration Guide B. Interoperability Matrix Tool C. Active IQ Upgrade Advisor D. Hardware Universe",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Click the Exhibit button. Your customer asks you to configure a newly installed FAS8300 for an FC host connection. Referring to the exhibit, which step accomplishes this task? A. Configuring the ports 0e and 0f as a type of target. B. Configuring the ports 0e and 0f as status admin up. C. Configuring the ports 0e and 0f as a mode of CNA. D. Configuring the ports 0e and 0f as status admin down.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have deployed an AFF A400 system for iSCSI workloads and want to ensure maximum performance to the hosts. In this scenario, which two steps should be configured? (Choose two.) A. Enable jumbo frames on the broadcast domain. B. Enable jumbo frames on the IPspace. C. Enable jumbo frames on the network switch. D. Enable jumbo frames on the LIF.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Click the Exhibit button. File deletions from a SAN-attached host that is using Windows Server 2016 are not freeing up space in LUN lun3. Referring to the exhibit, which setting is preventing the SCSI UNMAP operation? A. Space Reservation is set to disabled. B. Clone Autodelete Enabled is set to false. C. Space Reservation Honored is set to false. D. Space Allocation is set to disabled.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are configuring a FAS8300 HA pair running ONTAP 9.8 with two hosts that require SAN LUNs. The cluster is in a secure data center without switches. In this scenario, which block protocol is supported on the hosts? A. FCoE B. NVMe C. FCP D. iSCSI",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You want to configure namespaces to support NVMe over Fibre Channel (NVMe/FC) using ONTAP 9.8. Which action will accomplish this task? A. Add FC to the list of SVM protocols. B. Configure a LIF for the NVMe protocol. C. Enable ALUA on the namespaces that should use the NVMe protocol. D. Remove any protocols from the SVM before adding the NVMe protocol.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are configuring a Windows Server 2019 system to attach to an iSCSI presented LUN. There are multiple physical paths from the Windows Server to the NetApp cluster. Which two changes are required to the Windows Server to enable multipath? (Choose two.) A. Add a Converged Network Adapter (CNA). B. Add the Ethernet network adapter. C. Select the “Enable multi-path” checkbox on the iSCSI software initiator. D. Enable MPIO by selecting the option in the MPIO properties administrative application.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Click the Exhibit button. Referring to the exhibit, which security feature would guarantee that the Host A system that is mapped to LUN XYZ on the NetApp storage system is the only host that accesses the LUN? A. igroup setup with the IQN of the iSCSI software initiator on Host A B. CHAP configured on Host A and the NetApp Storage System C. IPsec configured on both Host A and the NetApp storage system D. igroup setup with no IQNs",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two considerations when creating a physical Reference: drawing for adding an ASA AFF A700 system to your existing FC SAN environment? (Choose two.) A. switch connectivity B. available cooling C. available rack space D. hardware compatibility",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer has an existing legacy iSCSI storage environment that is connected to upstream network switches with various Windows hosts. The customer wants to purchase a new NetApp array to migrate their data. In this scenario, which two tools would help to validate the prerequisites for this NetApp configuration? (Choose two.) A. Active IQ Config Advisor B. Hardware Universe (HWU) C. Interoperability Matrix Tool (IMT) D. Active IQ OneCollect",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are asked to separate production FC traffic from test development FC traffic. In this scenario, at a minimum, which two configurations would accomplish this task? (Choose two.) A. Cisco VSANs B. shared igroup C. VLANs D. SVMs",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A storage administrator needs to ensure that an ONTAP FC LUN is accessible from a remote data center. The ISL ports are reporting errors. The trunkshow command output from a Brocade switch is show below. switch01:admin> trunkshow 1: 10-> 10 10:00:50:eb:1a:20:83:96 5 deskew 15 MASTER 2:11-> 11 10:00:50:eb:1a:20:83:96 5 deskew 16 MASTER In this scenario, which action would you perform to configure the ISLs correctly? A. Set the ISL ports as FL_Ports. B. Set the ISL ports as E_Ports. C. Set the ISL ports as F_Ports. D. Set the ISL ports as N_Ports.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have a 100 GB volume with the space guarantee set to volume. This volume contains two space reserved 20 GB LUNs. Both LUNs are at 50% use. You then create a Snapshot copy of the volume. No modifications were performed since the Snapshot copy was completed, and all actions were performed using the CLI. In this scenario, how much free space does the volume have? A. 80 GB B. 40 GB C. 20 GB D. 60 GB",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Click the Exhibit button. Referring to the exhibit, which WWPN would safely be removed from the zone? A. 20:09:00:a0:98:32:99:07 B. 50:0a:09:84:8d:7c:51:d5 C. 20:07:00:a0:98:32:99:07 D. 21:00:00:c0:dd:19:4b:f3",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. During testing, an administrator notices that the wrong subsystem was returned using the nvme discover command. The administrator was expecting test0_subsystem as the subsystem. Referring to the exhibit, what would cause this discrepancy? A. The wrong NQN was mapped to the subsystem. B. The wrong WWPN was used in the discover command. C. The NVMe was not configured on the test0 SVM. D. Asymmetric Namespace Access (ANA) was not properly configured.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have an 8-node AFF A400 ONTAP 9.8 cluster that is serving FC and iSCSI LUNs. You have three SVMs for FC and one SVM for iSCSI, each for separate VMware vSphere clusters. The VMware clusters are on separate, non-routable, networks. You are asked to set up SnapCenter software for backups of the virtual machine datastores. What is the minimum management LIF count that is needed to satisfy this requirement? A. eight B. two C. four D. one",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You want to perform online data migration using Foreign LUN Import. In this scenario, which two conditions are required to support this task? (Choose two.) A. FCP protocol LIFs must be added to the data SVM. B. FCP initiator ports must be available. C. iSCSI targets must be added to the ONTAP iSCSI initiator. D. iSCSI protocol LIFs must be added to the data SVM.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During maintenance of an AFF A250 none, you want to move the SAN LIFs that are members of a port set. In this scenario, which two statements are true? (Choose two.) A. You need to disable the zoning of the LIF WWPN. B. You must disable SLM for the node that hosts the LIF. C. You must take the SAN LIF offline. D. The LIF must be removed from the port set.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are a system administrator and responsible for a NetApp AFF A800 2-node ONTAP 9.8 cluster that is used only for SAN. Your SAN uses FC and FCoE on the same Cisco switches. You want to add NVMe from the ONTAP controller to the same Cisco fabric. Which two statements are correct in this scenario? (Choose two.) A. FC and NVMe can share the same 32 Gb physical port. B. The same SVM can serve both the FC and the FCoE protocols. C. The same SVM cannot serve both the FC and the NVMe protocols. D. FCoE and NVMe can share the same physical port.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You upgraded your Linux hosts to SUSE Enterprise Linux 15. In this scenario, which two actions should you perform before you test asymmetric namespace access (ANA)? (Choose two.) A. Verify if the LUNs and namespaces are in the same volume. B. Verify if the version of NetApp ONTAP software is 9.5 or later. C. Verify if the NVMe service has started. D. Verify if there is only one LIF in the SVM.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are reconfiguring a VMware vSphere host for FC access to a NetApp ONTAP cluster. In this scenario, which two tasks does NetApp recommend performing on the vSphere host? (Choose two.) A. Use the NetApp Virtual Storage Console to configure the host settings. B. Set the queue depth on the host to 8. C. Update the HBA driver. D. Zone the host by using the host WWNNs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are configuring a 4-node AFF A400 ONTAP 9.8 cluster. The data center switches have limited ports, and you are given one 10-Gigabit Ethernet port per node for external access. In this scenario, which three protocols share the same physical port? (Choose three.) A. NVMe/FC B. FCoE C. iSCSI D. SnapMirror E. FC",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to migrate boot LUNs from a third-party array onto a NetApp FAS8700. Which three actions are required to complete this task? (Choose three.) A. Convert every FC target port on each controller to an FC initiator port. B. Create zoning between the third-party array to the FAS8700. C. Convert a single FC port on each controller to an FC initiator port. D. Verify third-party array support by using the Interoperability Matrix Tool (IMT). E. Reboot the third-party SAN to prepare for the LUN import.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You want to use ANA on SUSE Enterprise Linux. Which two components need to be verified in this scenario? (Choose two.) A. Verify the version of ONTAP. B. Verify that ALUA must be enabled. C. Verify the version of SUSE Enterprise Linux. D. Verify that the ANA driver is installed.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have a NetApp ONTAP cluster and are configuring iSCSI for some new hosts. You want to ensure that iSCSI connectivity can survive physical network failures. In this scenario, which two features would help fulfill this requirement? (Choose two.) A. broadcast domains B. MPIO C. failover groups D. interface groups",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You created a LUN in a new volume on your NetApp ONTAP cluster. You enabled the default Snapshot schedule and enabled Snapshot autodelete on the volume. In this scenario, in which three situations does the Snapshot autodelete feature automatically delete Snapshot copies in the volume? (Choose three.) A. The aggregate is nearly full. B. The Snapshot reserve space is nearly full. C. The LUN is nearly full. D. The volume is nearly full. E. The overwrite reserve space is full.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator enabled the FCP protocol on an SVM and created a boot LUN for a Windows Server 2019 server host. The host is attached using multiple paths to the storage SVM. After correctly adding the LUN to the igroup and setting its LUN ID to 1, the host is unable to boot using the installed FC HBA. In this scenario, which statement is correct? A. During the boot process, using FCP is not supported by NetApp. B. During the boot process, using FCP is not supported by Microsoft. C. The LUN ID must be set to 0. D. The LUN ID must be set to 255.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You have deployed a FAS8300 system and want to enable SAN protocols. In this scenario, which two protocols are available to serve SAN data? (Choose two.) A. FCP B. iSCSI C. Infiniband D. NVMe",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is deploying a SAN cluster of A700 nodes and wants to ensure that the SAN cluster will maintain a quorum in the event of a rack level power failure. Which two statements are true in this scenario? (Choose two.) A. Three racks are required. B. Two racks are required. C. Six nodes are required. D. Four nodes are required.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have a two-node NetApp ONTAP cluster that is hosting FC LUNs for 90 SAN hosts. The hosts are experiencing occasional performance problems and receiving QFULL responses from the cluster nodes. Which action would solve this issue? A. Increase the queue depth on the target ports. B. Increase the queue depth on the initiator ports. C. Configure additional FC target ports. D. Configure additional FC ports on the hosts.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Click the Exhibit button. After performing failover testing on a newly deployed MetroCluster configuration, some aggregates remain in a degraded state. Referring to the exhibit, which statement is true? A. A disk shelf is powered off. B. The ONTAP Mediator service is misconfigured. C. A cluster switch is powered off. D. The MetroCluster Tiebreaker software is misconfigured.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is asked to provision a SAN environment in which host applications can monitor LUN space and perform space reclamation. Which LUN type would satisfy these requirements? A. NetApp thick provisioned volume B. SCSI thin provisioned LUN C. NetApp thin provisioned volume D. SCSI thick provisioned LUN",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a Linux environment, issues are reported concerning multipathing. You want to view the direct and indirect paths. In this scenario, which command would you use to accomplish this task? A. Use the lspci command. B. Use the sanlun command. C. Use the systemctl command. D. Use the ifconfig command.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two benefits of implementing VLANs for iSCSI configurations? (Choose two.) A. increased performance B. increased resiliency C. reduced number of broadcast domains D. increased security",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit button. You install an ASA AFF A400 system with 32 GB FC SFP+ modules in port 0e and 0f. After creating the SVM and configuring the FCP protocol, the physical port stays offline. Referring to the exhibit, which statement is correct? A. The admin status is manually set to down. B. The current type of the ports must be configured as an initiator. C. The current mode for the ports must be set as an NVMe/FC port. D. The current mode for the ports must be configured as an FC port.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have finished deploying a NetApp AFF All SAN Array cluster and want to test the persistent ports feature. In this scenario, how would you accomplish this task? A. Disconnect an FCP initiator port. B. Disable a SAN LIF. C. Disconnect an FCP target port. D. Perform a takeover of a node.",
+    "options": {},
+    "most_voted": "D"
+  }
+]
