@@ -1,0 +1,157 @@
+[
+  {
+    "question": "Click the Exhibit tab. [sampleXML/xmlfile-2_1.jpg] The customer configured an SVM called \"NewSVM\" for NFS, configured the volume, \"vol_nfs\", mounted at \"/vol_nfs\", and set up NFSv3 as shown in the exhibit. However, if they try to mount from the client with IP address 192.168.10.10, they receive a \"permission denied\" error. In this scenario, which action will solve the error condition? A. Add a rule to the default export policy to include the -clientmatch 192.168.10.0/24 parameter. B. Stop and start NewSVM. C. Associate a correct export policy to the root volume (/) of NewSVM. D. Configure the default route for NewSVM correctly.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Microsoft SQL Server is being hosted from a Microsoft Hyper-V cluster and is mounting a LUN from NetApp storage that contains its working databases. In this scenario, which product would be used to ensure that consistent Snapshot copies of the database are obtained? A. SnapManager for MS Exchange B. SnarManager for Virtual Infrastructure C. SnapManager for SQL Server D. SnapManager for Hyper-V",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are preparing to implement a storage virtual machine (SVM) in a SAN configuration. You need to eliminate single points of failure and enable the system to survive component failures. According to NetApp, what is the recommended minimum number of paths per LUN connecting to each node being used by an SVM in a cluster? A. 4 B. 2 C. 1 D. 3",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer is using DP SnapMirror replication between two clusters. The source cluster is using Clustered Data ONTAP 8.2.3. Which two versions are acceptable for the destination cluster to be operating? (Choose two.) A. 8.1.4 B. 8.0.2 C. 8.3.1 D. 8.2.3",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your customer has a 2-node cluster with two FAS2554 controllers running clustered Data ONTAP 8.3. You want to upgrade non-disruptively to clustered Data ONTAP 8.3.1 using the rolling-upgrade method. Which two operations would you perform before issuing the ~storage failover takeover -ofnode NodeA~ command? (Choose two.) A. Upgrade the service processor of all nodes. B. Migrate all LIFs used for iSCSI and FC away from NodeA. C. Change the default boot image to the new image. D. Install the new software image an all nodes.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator notices that the clustered Data ONTAP 8.2.3 controllers are less responsive than normal. You use OnCommand Performance Manager but do not see obvious problems, yet, this particular issue is constant. Users are starting to complain. Which tool would you use to collect data to help diagnose this issue? A. Perfstat B. Perfmon C. AutoSupport D. Performance Archive",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are creating a disk-partitioned root aggregate. Which two rules are enforced automatically when accomplishing this task? (Choose two.) A. A RAID group cannot have more than one partition from the same disk. B. A RAID group can have more than one partition from the same disk. C. The only supported RAID type for aggregates containing root-data partitioned disks is RAID-DP. D. The only supported RAID type for aggregates containing root-data partitioned disks is RAID 4",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You receive the AutoSupport message, \"CONTROLLER TAKEOVER COMPLETE PANIC\" from a FAS3250 controller. You suspect a hardware issue. A core file was written to disk. In this scenario, which two actions would you perform to obtain more information? (Choose two.) A. You turn on \"hardware debugging mode\" using System Manager. B. You collect the core file and upload it to NetApp Global Services (NGS) for analysis. C. You boor the failed controller, carry out a giveback, and wait until the issue reoccurs. D. You boot the failed controller to maintenance mode and execute the sldiag command.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer cannot create a new volume from OnCommand System Manager. Which two clustered Data ONTAP daemons would be at fault in this scenario? (Choose two.) A. secd B. bcomd C. mgwd D. v1db",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a 6-node cluster with six identical controllers. You are upgrading from clustered Data ONTAP 8.3.1 to clustered Data ONTAP 8.3.2. From the Upgrade Advisor, you downloaded the upgrade plan. In this scenario, which two steps are part of that plan? (Choose two.) A. Set a new image as the default image. B. Verify system health. C. Migrate all aggregates to the HA pair that was most recently upgraded. D. Perform LIF migration of all SAN LIFs before takeover.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer explains that their V3170 NetApp controller has failed over and they do not know what to do next. In this scenario, what information should the customer collect from the Remote LAN Module (RLM) and send to you? (Choose two.) A. output from the system log command B. output from the events info command C. output from the sp status command D. output from the events all command",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are trying to determine why AutoSupport notifications are not being sent. Which two types of output would be used first to solve this problem? (Choose two.) A. the MGWD.log B. the notifyd.log C. output of the autosupport history show command D. output of the network interface show command",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A 2-node cluster (Node-1 and Node-2) has suffered a takeover event. The down node (Node-1) is currently waiting for giveback. However, it is ensure if the node will boot successfully. The client cannot suffer any data outage. Which command would you use to perform the giveback? A. CLUSTER::> storage failover giveback -ofnode Node-1 -only-cfo-aggregates B. CLUSTER::> storage failover giveback -fromnode Node-2 C. CLUSTER::> storage failover giveback -ofnode Node-1 -require-partner-waiting false D. CLUSTER::> storage failover giveback -ofnode Node-1 -override-vetoes true",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You just set up a new clustered Data ONTAP 8.3 environment and want to monitor volume performance. Which two commands or products would help you accomplish this task? (Choose two.) A. OnCommand Performance Manager B. Quality of Service (QoS) commands C. OnCommand System Manager D. Syslog Server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Linux client is experiencing low throughput when reading a very large file using NFS. Network counters suggest there is packet drop in the network. To confirm whether dropped packets affect the Linux client, you are collecting network traces from the affected systems. In this scenario, which two actions would be used? (Choose two.) A. Use the tcpdump command on the Linux system. B. Use the pktt command on the NetApp controller. C. Use the traceroute command on the network switch. D. Use the tcptrace command on a Windows client in a separate subnet.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true about a switchless cluster? A. A switchless cluster can only be used for a system with two controllers in one chassis configuration. B. A switchless cluster can support up to one node per cluster port. C. In a switchless cluster, the network options switchless-cluster -enabled parameter must be set to true. D. Converting a switchless cluster to a switched cluster is disruptive.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit tab. [sampleXML/xmlfile-16_1.png] A customer is attempting to protect the source volume listed in the exhibit. They try to initialize a DP mirror relationship to the destination volume but it will not initialize as expected. Which two settings on the destination volume are causing this problem? (Choose two.) A. language B. type C. volume size D. max-autosize",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit. [sampleXML/xmlfile-19_1.jpg] Your customer has recently migrated from their FAS3140 system running Data ONTAP 7.3.7 to a FAS2552 system running Data ONTAP 8.2.3 7-Mode through the head upgrade process. They are no longer receiving the weekly AutoSupport notifications and want to know why. The exhibit shows the AutoSupport options from the nodes that have the same settings. In this scenario, which solution is correct? A. There is no reason on the FAS2552 side why the customer should not receive the AutoSupport notifications. They should investigate their mail server to troubleshoot this issue. B. In Data ONTAP 8.2, weekly AutoSupport notifications are no longer sent to the autosupport.to recipient, but only to autosupport.partner.to and to . The customer needs to add their e-mail address to one of these options. autosupport.support.to C. In Data ONTAP 8.2, the protocol for AutoSupport is changed to HTTPS by default, so the customer must have an HTTPS destination for the AutoSupport data. D. In Data ONTAP 8.2, weekly AutoSupport notifications are no longer sent to all recipients to reduce the mail load. The customer should add their e-mail address",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer mentions that after replacing a failed power supply, their FAS2220 system is now unavailable. Which statement is correct in this scenario? A. The FAS2220 system requires that the power supply is replaced within two minutes after removal. B. The power supply is not hot-swappable on a FAS2220. C. The FAS2220 system requires both power supplies properly functioning to serve data. D. The FAS2220 system shut down after 15 minutes due to having only one power supply installed.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit tab. [sampleXML/xmlfile-22_1.jpg] A customer receives \"CLUSTER NETWORK DEGRADED\" AutoSupport messages from this clustered Data ONTAP system. The customer suspects that something occurred physically to the nodes after they had a data center maintenance move. The customer proceeds to follow the instructions in the Knowledge Base article regarding the \"Error: CLUSTER NETWORK DEGRADED\" message that results in the output shown in the exhibit. After analysis, the customer decides to replace the small form-factor pluggable (SFP) transceivers and the cables on the system. Which statistic supports the customer's analysis? A. BCast pkts B. CRC errors C. Jumbo frames D. Multi/broadcast",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit tab. [sampleXML/xmlfile-25_1.jpg] [sampleXML/xmlfile-26_1.jpg] [sampleXML/xmlfile-27_1.jpg] [sampleXML/xmlfile-28_1.jpg] [sampleXML/xmlfile-29_1.jpg] Which two steps would you perform to correct the problem shown in the exhibit? (Choose two.) A. Reseat the power supplies. B. Perform a takeover and giveback. C. Replace the shelf chassis. D. Reseat the shelf modules.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A new storage efficiency job is executed on a volume hosting only a thick-provisioned LUN. Although 45% of the space was saved, no extra space was seen by the client. In this scenario, which statement is correct? A. The client sees only the logical space for the LUN. B. There are volume Snapshot copies that were taken before the efficiency job. C. The client needs to re-scan the volume to detect the changes. D. The volume is thin provisioned.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three conditions would prevent a normal giveback operation? (Choose three.) A. presence of failed disks B. ongoing SnapMirror updates C. established NFSv3 sessions D. LUNs mapped with ALUA enabled E. established CIFS sessions",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An existing aggregate with a maximum RAID size of 6 has four existing RAID groups with three disks in each RAID group. There are nine spare disks available. All disks on the node are the same type and size. What will be the result of adding all nine spare disks to the aggregate? A. You receive the \"maximum number of raidgroups exceeded\" error. B. The aggregate will have seven RAID groups. C. The aggregate will have three RAID groups. D. The aggregate will have five RAID groups.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer recently had a controller module failure on a FAS62xx system running clustered Data ONTAP 8.3.1. The controller module had been replaced last night and everything is working well but the customer noticed warnings concerning licensing on the console. The warnings say there is a grace period of 89 days remaining. In this scenario, what should be done to solve this problem? A. Execute a system restore to recover the previous license keys, and then apply to the new controller module. B. Apply the previously used license keys using the appropriate commands. C. Collect the new license keys from the new controller module packaging and install them using the appropriate commands. D. Obtain new 8.2x format license keys and install them using the appropriate commands.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A user on an NFSv4 client is listing a directory and sees the file in an ls -1 listing shown below. \"-rw-r----- 1 nobody nobody 10767 Mar 24 2016 party.txt\" The customer would like to know why the user and group shows as \"nobody\". Which statement would explain why this is happening? A. The permissions does not allow for listing the owner. B. There is an NFSv4 ID domain mismatch. C. There is no owner or group set on the file. D. The file resides on an NTFS style volume.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "As part of your backup policy, you configured a local snapshot schedule on your production volume. You review the list of Snapshot copies and you do not see a snapshot from last night. What are two causes for this problem? (Choose two.) A. The volume had 255 Snapshot copies. B. A storage takeover happened. C. Snapshot autodelete is enabled. D. The volume snapshot reserve was decreased.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has one storage virtual machine (SVM) that is using Fibre Channel as a protocol (FCP). Some clients are successfully accessing LUNs on this SVM. The zoning is done by using worldwide port names (WWPNs). The customer creates a second SVM for Fibre Channel and wants to access new LUNs in this SVM from the same clients. Which three statements are true in this scenario? (Choose three.) A. The initiator groups (igroups) from the first SVM are also working for the second SVM. B. Fibre Channel zoning must be reconfigured for the new SVM. C. FCP must be enabled on the second SVM. D. Fibre Channel zoning does not need to be changed if the second SVM uses the same ports as the first SVM. E. You must map the new LUNs in the second SVM to the correct initiator group (igroup).",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "For the cluster network of a two-node cluster running Data ONTAP 8.3.1, which statement is true? A. Client traffic will never be sent across the cluster network, since ALUA automatically chooses the best path. B. Only the traffic that is required for a volume move operation is sent across the cluster network. C. Only configuration data is sent across the cluster network. D. Client traffic will be sent across the cluster network, if the LIF and the volume are not on the same node.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the Exhibit tab. [sampleXML/xmlfile-45_1.jpg] [sampleXML/xmlfile-46_1.jpg] A customer receives the AutoSupport messages shown below. \"[?] Sat Aug 23 13:00:27 PDT [hostname: env_mgr: callhome.c.fan.fru.fault:error]: Call home for CHASSIS FAN FRU FAILED: SysFan3 F2 [?] Sat Aug 23 13:00:32 PDT [hostname: env_mgr: monitor.chassisFan.ok:notice]: Chassis fan Sysfan3 F2 is ok\" The output of the sysconfig -a command is shown in the exhibit. In this scenario, what would you do to solve this problem? A. Update Data ONTAP to 8.1.4 at the latest patch level. B. Update the Service Processor firmware. C. Replace the fan. D. Disconnect the controller from the mains, wait two minutes, and re-connect it in the next maintenance window.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer observes write latencies above 40 ms on a clustered Data ONTAP system with two FAS3220s for a period of several minutes each night. During performance analysis, you discover that several back-to-back Cps occur. In this scenario, which two configuration changes will reduce the write latencies? (Choose two.) A. Move the volume with the highest write load to an aggregate with faster disks. B. Migrate the LIF with the highest network receive rate to a faster port. C. Add more disks to the aggregate. D. Add flash cache cards to the nodes.",
+    "options": {},
+    "most_voted": ""
+  }
+]
