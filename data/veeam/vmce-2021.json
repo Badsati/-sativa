@@ -1,0 +1,737 @@
+[
+  {
+    "question": "In Veeam Enterprise Manager, what granular restoration permission can be set for the Restore Operator role? A. SharePoint items B. File items C. Active Directory items D. OneDrive items",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following are valid export options for Microsoft SQL Server items when using the Veeam Explorer for Microsoft SQL? (Choose two.) A. .mdb file B. .bak file C. .mdf file D. .sql file E. .xls file",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Veeam Backup & Replication is currently configured to back up different workloads: Windows VMs on vSphere and Linux VMs on vSphere. A secondary copy of all the backups including transaction logs must be created. Which of the following backup copy job configurations is the simplest? A. A single \"periodic copy\" backup copy job B. A single \"immediate copy\" backup copy job C. Two \"immediate copy\" backup copy jobs D. Two \"periodic copy\" backup copy jobs",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Veeam administrator is creating a protection group that needs to back up all servers for the accounting department using Veeam Agent for Microsoft Windows. New accounting servers must be automatically added to the protection group. How is this accomplished? A. Create a protection group that reads a .csv file listing the accounting servers. B. Create a protection group and set it to automatically scan every three hours for new servers. C. Install a configuration file on each of the accounting servers that adds it to the protection group. D. Create an Active Directory based protection group targeted at an Active Directory security group.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A backup administrator decided to move the Veeam Backup & Replication server and configuration database to new servers. Which configuration restore mode should be used? A. Migrate B. Planned failover C. Restore D. Failover plan",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A daily backup job for seven Hyper-V VMs has been configured at the main site, keeping 14 days’ worth of backup files. They want to get a copy of the VM backups to a repository at the disaster recovery site. They want to keep six months’ worth of backup files at the disaster recovery site. They also need to be able to restore the VMs to any given day within two months and any given week within six months. How should a backup copy job be configured to meet these requirements? A. Use periodic copy (pruning) mode, keeping 180 days of retention. B. Use immediate copy (mirroring) mode, keeping 62 days of retention and 26 weekly GFS restore points. C. Use periodic copy (pruning) mode, keeping 62 days of retention and six monthly GFS restore points. D. Use immediate copy (mirroring) mode, keeping 180 days of retention.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company needs several VMware thick provisioned VMs restored. The physical proxies used for restoration have access to the Fibre Channel datastores used by VMware. Which transport mode will be used by default to restore these VMs? A. Network mode B. Virtual appliance C. Quick Migration D. Direct Storage Access",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A director in a business needs a folder of traffic photos restored from a Linux server. This machine sits on a VM backed up by Veeam Backup & Replication. The director wants the files restored to their original location and does not want to lose the original files. What functionality will be used to restore the folder using the Veeam Guest OS restoration wizard? A. Restore the files using the \"Versioning\" function. Files will be prefixed with numbers (1-, 2-, 3-, etc.). B. Restore the files using the \"Overwrite\" function. Original files will be renamed. C. Restore the files using the \"Hold\" function. The director can then determine the status of the original and restored files. D. Restore the files using the \"Keep\" function. Original files will be untouched.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "15 VMs are running on a Hyper-V platform and five physical servers at a remote office (ROBO). The administrator has been tasked with setting up centralized off-site backups at the headquarters (HQ). The available bandwidth is 50 Mbps. RPO is set to six hours and the data generated for the interval is 500 GB. WAN accelerators can be added if necessary. Which of the following will achieve the RPO? A. Use backup copy jobs in with High-Performance Mode enabled. Set the schedule to run every six hours. B. Use backup copy jobs with copy mode set to \"immediate copy\". Use WAN acceleration. C. Use backup copy jobs with copy mode set to \"periodic copy\" and copy every six hours. D. Configure the backup copy jobs with traffic throttling to 30 Mbps to limit the impact. Enable WAN acceleration.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A file on a Windows VM hosted on vSphere is corrupted and must be restored. VMware tools are installed and up to date on the VM. For some reason, the Veeam mount server cannot connect to the VM through the network. Which of the following restore methods provides the fastest restore (RTO)? A. Run Veeam file restore wizard and let it restore through VIX. B. Start an Instant VM Recovery session and log on into the restored image to copy/paste the file to restore. C. It is impossible to restore the file on the VM if the mount server cannot reach it through the network. D. Run Veeam file restore wizard and use the \"copy to\" to download the file locally in a shared folder.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A planned failover of three VMs has just completed successfully, starting the VMs at the disaster recovery location. What next actions are available for the failover plan? A. Undo, Start, Copy, Delete B. Cancel, Start, Edit, Delete C. Cancel, Start, Copy, Delete D. Undo, Start, Edit, Delete",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator accidentally deleted a database. Veeam Explorer for Oracle will be used to restore it back. What is the fastest option to get the database online again? A. Use the \"Compare with Production\" option to restore only the missing objects back to the Oracle database. B. Use the \"Point in Time\" option to specify the point in time you want to restore the Oracle database to. C. Use the \"Quick Rollback\" option to perform a restore of the changed blocks of the Oracle database file. D. Use the \"Instant Recovery\" option and restore it in the background.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Veeam ONE has been installed and configured. The infrastructure contains five Veeam Backup & Replication servers. The administrator needs to check the remaining capacity on each of the backup repository servers. Where can they see this information? A. Under Infrastructure View, look up the Veeam Backup & Replication servers to see the guest disk space. B. Under Data Protection View, look up the backup repository servers to see the remaining capacity. C. Under Business View, look up the backup repository servers to see the remaining capacity. D. Under Infrastructure View, look up the backup repository servers to see the guest disk space.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Due to an unexpected power outage, Site A is completely down. The disaster recovery strategy was implemented (see diagram). What is the correct way to start replicated VMs on Site B, while ensuring you can failback after Site A comes back online? A. Execute \"Permanent failover\" from vCenter. B. Execute \"Planned failover\". C. Power on VMs manually through vCenter. D. Perform \"Failover\".",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator has decided to set up a VM backup job covering their Microsoft SOL servers. What feature must be enabled to ensure quiescence of the SQL databases during the backup? A. Enable Microsoft SQL server plug-in. B. Enable application-aware processing. C. Enable Microsoft Windows OS processing. D. Enable Microsoft SQL server agent on the VMs.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which feature can be used in Veeam Explorer for Oracle database? A. Recover from litigation and in-place hold items B. Restore original password for account objects C. Restore databases from backups created with Veeam RMAN plug-in D. Export to .BAK file",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A backup job is configured as follows. How many full and incremental restore points will be in a repository on day 16 at 23:00? A. 3 full and 14 incremental B. 2 full and 12 incremental C. 3 full and 15 incremental D. 1 full and 13 incremental",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is asked to change a backup copy job from periodic mode to immediate mode. How can this be accomplished? A. Edit the original job and select immediate copy mode from the job settings. B. Enable immediate mode on the repository. C. Create a new copy job and delete the original job. D. Modify the job settings on the proxy performing the copy job.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Veeam Agent for Linux has been installed in standalone mode on a Linux physical server. The backup job is configured to write to a Veeam repository. Which of the following media types is available as a recovery media? A. ISO image B. Veeam Backup & Replication repository C. Object storage D. Tape",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Scale-out Backup Repository with one local extent has been configured as follows. A daily VMware backup job retention is 31 days, keeping weekly GFS full backups for 14 weeks. It is Jan. 20. A file from a backup that occurred on Jan. 1 must be recovered. Where is the data? A. The archive tier B. The performance tier and the capacity tier C. The performance tier D. The capacity tier",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "For general data protection regulation (GDPR) compliance, Veeam can add a location tag to which component? A. Guest interaction proxies B. vCenter servers C. Cloud gateways D. WAN accelerators",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following backup types are valid for both Veeam Agent for Microsoft Windows and Veeam Agent for Linux? (Choose two.) A. Snapshot-level backup B. File-level backup C. Personal files backup D. Volume-level backup E. OS-level backup",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A physical Linux server protected by a centrally managed Veeam agent is physically damaged. A VMware vSphere infrastructure is available, and the physical server is eligible for virtualization. Which recovery step provides the lowest possible RTO? A. Use Instant VM Recovery to VMware vSphere. B. Use Instant Disk Recovery to VMware vSphere. C. Use Export Disk Content as Virtual Disk to create a new VM. D. Use Bare Metal Restore to VMware vSphere VM.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What does Veeam's Secure Restore functionality ensure during restores? A. 256-bit AES encryption of in-flight data B. Anti-virus scanning C. Custom ports for in-flight data D. Proper rights/permissions on files and folders",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Veeam administrator is concerned about keeping backups on site and has traditionally used tapes to store backups older than 30 days in order to free up space on their backup repository for longer-term storage. The company is currently using Scale-out Backup Repositories. What option would satisfy the requirement? A. Copy to capacity tier B. Move to capacity tier C. Backup to object storage D. File copy job",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What data sources can be connected to Veeam ONE? (Choose two.) A. Veeam Backup & Replication servers B. Microsoft Hyper-V servers C. Veeam Backup & Replication agents D. Microsoft Azure VMs E. Amazon Web Services EC2 instances",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator needs to configure a backup job that dynamically adds new VMware hosted SQL servers. How can this be accomplished? A. Create a dynamic backup job in Enterprise Manager. B. Create a job based on vSphere tags. C. Create a CSV file that is scanned before the backup job starts. D. Enable application aware processing.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Veeam ONE ______________________ can detect when a potential ransomware attack is happening and be configured to take mitigating actions. A. Reporting B. Alert Management C. Alarm Management D. Data Protection View",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the default suffix added to a replica's VM name? A. _secondary B. _replica C. _map D. _seed",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In the war against ransomware, a company decided to implement tape backup for the first time. The tape library has already been added. Of the following, what must be done first? A. Create vaults. B. Create media pools. C. Create libraries. D. Create media sets.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Windows VM running on Microsoft Hyper-V is protected using the file indexing option. The guest interaction proxy is offline. Which of the following Veeam servers will be used to deploy the runtime during the backup process? A. Backup & Replication server B. Indexing database server C. File proxy server D. Virtual lab server",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Scale-out Backup Repository with one local extent has been configured as follows. 12 VMware VMs are being backed up daily by a forward incremental backup job, which has a 31-day retention, creating synthetic fulls on Saturdays. After running for more than 31 days, which of the following would be accurate? A. Both the performance tier and capacity tier will contain all restore points. B. The performance tier will contain all restore points. The capacity tier will contain zero restore points. C. The performance tier will contain the most recent 15 to 22 days of restore points. The capacity tier will contain the oldest 14 days of restore points. D. The performance tier will contain the most recent 14 to 20 days of restore points. The capacity tier will contain all restore points.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company needs to recover a VM from VMware very quickly. The company decides to use Instant VM Recovery from their last backup. What platforms can this backup be instantly restored to? (Choose three.) A. Azure B. Hyper-V C. AWS D. GCP E. AHV F. VMware",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A critical server in a Hyper-V environment has crashed and will not reboot. What is the fastest way to bring this server back online so employees can continue to work? A. Instant VM Disk Recovery B. Entire VM restore C. Instant VM Recovery D. Staged restore",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Backup jobs are configured to local repositories. Backups must be sent from Site B to the repository on Site A. The connection allows direct backups to complete within the backup window. Impact on the source VMs at Site B should be minimized. Which type of job and Veeam components should be used to provide the necessary protection? A. A backup copy job and components 6 → 5 → 4 → 3 → 2 B. A backup job and components 5 → 2 C. A backup copy job and components 6 → 2 D. A backup copy job and components 6 → 4 → 2",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is necessary prior to configuring replica mapping? A. A Veeam backup in the production site B. A Veeam replica in the disaster recovery site C. A Veeam backup in the disaster recovery site D. A Veeam replica in the production site",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A physical Linux file server needs to be migrated to VMware ESXi. The server has several volumes: /dev/sda (60GB), /dev/sdb (1TB) and /dev/sdc (4TB). What is the quickest option to migrate the server? A. Export all disks, create an empty VM and attach the disks. B. Create an empty VM and perform bare metal recovery inside the VM. C. Perform Instant VM Recovery. D. Perform Instant Disk Recovery for each volume.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "At 18:00, after a Windows update installation, a VM is stuck in an infinite boot loop. The VM is configured as follows. The last backup was created at 01:00. Choose the recovery approach that provides the lowest RTO with the least data loss. A. Instant VM Recovery with quick rollback B. Instant VM Recovery C. VM disk recovery with quick rollback of Disk 1 D. Virtual disk restore of Disk 1",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Veeam proxy server is configured as follows. No modifications are allowed to the transport mode. When performing a restore of a thin-provisioned VMware virtual disk on an NFS data store using this proxy server, what transport mode will be used by default? A. Direct SAN access B. Virtual appliance C. Network D. Direct NFS access",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A director has asked for a quarterly report for capacity planning purposes. Which Veeam component should be used? A. Veeam Backup & Replication Console B. Enterprise Manager C. Business View D. Veeam ONE Web Client",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After performing a failover to a disaster recovery site, it is decided that the VMs need to be failed back to the original production site and that any changes made during the failover should be discarded. Which option should be used? A. Undo failover B. Undo failback C. Failback D. Commit failback",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An infrastructure with 50 VMs has a power outage. After the VMware cluster has booted up again, 10 medium-sized VMs have corrupted VM disk files. Which action can be used to restore the VMs back to the production state? A. Use the \"Restore guest files\" option and restore all VM Files. B. Perform Restore VM Files and only restore the VM configuration files. C. Perform Restore VM Files and restore the VM configuration and disk files. D. Perform Instant VM Recovery with quick rollback.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A backup administrator must enable guest file system indexing for a backup job of a Linux file server VM. All required credentials are added to the Veeam Backup & Replication server. VMware tools (VIX) cannot be used due to security regulations. What should be done to make it possible in the following environment? A. Connect the ESXi host to the VM network. B. Connect the Veeam Backup & Replication server to the VM network. C. Use the Linux proxy server as a guest interaction proxy. D. Use the Veeam Backup & Replication server as a guest interaction proxy.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company wants to ensure that, during a replication failover, database servers boot before the application servers. How can this be accomplished? A. Create a planned failover B. Create a failover plan C. Create a disaster recovery template D. Create a replica mapping",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A backup administrator is asked to perform a file-level restore on a Solaris VM for the first time since Veeam Backup & Replication has been installed and left unconfigured. Which of the following items must be selected during this process? A. A host on which a helper appliance will be booted B. A host on which the restored file system will be mounted C. A host on which a mount server will be booted D. A host on which the backup image will be booted",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A physical Windows server protected by a centrally managed Veeam agent is physically damaged. A Hyper-V infrastructure is available, and the physical server is eligible for virtualization. Which recovery step provides the lowest possible RTO? A. Use Bare Metal Restore to Hyper-V VMs. B. Use Export Disk Content as Virtual Disk to create a new VM. C. Use Instant Disk Recovery to Hyper-V. D. Use Instant VM Recovery to Hyper-V.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Veeam proxy server is configured as follows. No modifications are allowed to the transport mode. When performing a restore of a thin-provisioned VMware virtual disk on an NFS data store using this proxy server, what transport mode will be used? A. Direct SAN access B. Direct NFS access C. Virtual appliance D. Network",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Backup jobs are configured to local repositories. Backups must be sent from Site A to the repository on Site B. The connection between the two sites does not allow a direct backup to complete within the backup window. Which type of job and Veeam components should be used to provide the necessary protection? A. A backup job and components 1 –> 3 –> 4 –> 6 B. A backup copy job and components 2 –> 3 –> 4 –> 6 C. A backup copy job and components 2 –> 3 –> 6 D. A backup copy job and components 2 –> 1 –> 3 –> 4 –> 5 –> 6",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In the war against ransomware, a company decided to implement tape backup. The infrastructure contains Hyper-V VMs. What is the correct approach to getting all servers onto tape? A. Create media pools, then create file to tape jobs. B. Create media sets, then create backup to tape jobs. C. Create media sets, then create file to tape jobs. D. Create media pools, then create backup to tape jobs.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "To view current information on VMware infrastructure, Hyper-V datastores and Veeam infrastructure in the same pane of glass in Veeam ONE, create a ________. A. Dashboard B. Business View C. Report D. Data Protection View",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A file on a Linux VM hosted on Hyper-V is corrupted and must be restored. Which of the following restore methods provides the best possible RTO? A. Start a virtual lab and boot the Linux VM image in an application group, then copy the file directly from the image to the Linux VM. B. File-level restore for Linux is not supported on Hyper-V. C. Run Veeam file restore wizard and let it restore through the network. D. Run Veeam Extract Utility and use “copy to” to download the file locally in a shared folder.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A backup administrator needs to move the backup server and configuration database to another location. He has configured a backup server and deployed a Microsoft SQL Server in the target location. Which configuration restore mode should be used? A. Failover plan B. Restore C. Migrate D. Planned failover",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "25 VMs are running on a Hyper-V platform at a remote office (ROBO). The administrator has been tasked with setting up replication to the main office (HQ) so it can act as the disaster recovery site. The available bandwidth is 20 Mbps. RPO is set to four hours and the data generated for the interval is 100 GB. Which of the following will achieve the RPO? A. Configure the replication jobs with traffic throttling to 10 Mbps to limit the impact. Schedule to run every four hours. B. Use replication jobs with copy mode set to “periodic copy” and copy every four hours. C. Configure the replication jobs to use WAN acceleration. Set the schedule to run every four hours. D. Use replication jobs with copy mode set to “interval copy”. Schedule to run every four hours.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which feature can be used in Veeam Explorer for Microsoft Exchange? A. Restore original password for account objects B. Export to .BAK file C. Restore databases from backups created with Veeam RMAN plug-in D. Recover from litigation and in-place hold items",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "At 18:00, after installation of OS update, a VM is stuck in an infinite boot loop. The VM is configured as follows. The last backup was created at 01:00. Choose the recovery approach that provides the lowest RTO with the least amount of data loss. A. VM disk recovery with quick rollback of Disk 1 B. Instant VM Recovery C. Instant VM Recovery with quick rollback D. Virtual disk restore of Disk 1",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A backup of a Windows VM running on a Hyper-V Cluster has been created. In which scenario can the Quick Rollback option be used during a Full VM Restore of the VM? A. Migration of VM to VMware host in the same data center B. Migration of VM to Hyper-V host in a different data center C. Issues caused by a Windows update D. Issues caused by storage data corruption",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What should be implemented when backing up NAS file shares to ensure there is more than one copy of the data? A. Cache repository B. Archive repository C. Backup repository D. Secondary copy",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company has an application on a VMware VM that stores customer photos. Customers may request their photos be removed at any time. The server needs to be restored from last week's backup. What Veeam restore process allows for custom scripting to be run to automatically remove any required photos before the server is returned to production? A. Instant VM Recovery B. Staged Restore C. Secure Restore D. Instant Disk Recovery",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A backup job is configured as follows. How many full and incremental restore points will be in a repository on day 18 at 23:00? A. 2 full and 12 incremental B. 3 full and 15 incremental C. 1 full and 13 incremental D. 3 full and 14 incremental",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company needs several VMware VMs restored. The physical proxies used for restoration have access to the NFS datastores used by VMware. Which transport mode will be used by default to restore these VMs? A. Network mode B. Quick Migration C. Direct Storage Access D. Virtual appliance",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has been asked to create a dynamic backup job for all VMware VMs in the legal department that have a one-hour RPO. How can this be accomplished? A. Modify a custom CSV file to be scanned before the start of each job. B. Create a job with all the required machines, and manually edit the job as new VMs are deployed. C. Create a backup job based on vSphere tags. D. In Enterprise Manager, create a script using the REST API to run periodically to scan for new VMs that fit the criteria.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "For a VMware environment, what is the maximum number of restore points in a Veeam replication job? A. 14 B. 28 C. 7 D. 32",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Veeam ONE has been installed and configured. The administrator needs to monitor the VMware datastore capacity. Where can this information be found? A. Under Business View, select VMs to see the total amount of used disk space. B. Under Infrastructure View, select the Datastores group and view the disk space. C. Under Business View, select Hosts to see each datastore and its disk space. D. Under Infrastructure View, select all VMs to calculate the remaining datastore disk space.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An infrastructure with 50 VMs has a power outage. After the VMware cluster has booted up again, 10 large VMs are orphaned. However, all VM disk files are still on the datastores. What is the quickest way to bring back those VMs with the least possible data loss? A. Remove the existing VM disk files from the datastore and perform Instant VM Recovery. B. Use the “Restore guest files” option to restore the VM configuration files. C. Perform Restore VM Files and only restore the VM configuration files. D. Perform Instant VM Recovery with quick rollback with automatic Power On VM at the end.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An environment is using Veeam Agent for Microsoft Windows and has Microsoft Exchange 2016 with regular Database Availability Groups (DAGs) configured. What option is required to properly back up the databases? A. Failover Cluster B. Standalone server C. Exchange Processing D. Advanced Exchange Backup",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A physical Windows file server protected by Veeam Agent for Windows needs to be migrated to a local VMware ESXi. The server has several volumes: C: (60GB), D: (1TB) and E: (4TB). What is the quickest option to migrate the server to a local VMware ESXi host? A. Perform Instant Disk Recovery for each volume. B. Perform Instant VM Recovery. C. Create an empty VM and perform bare metal recovery inside the VM. D. Export all disks, create an empty VM and attach the disks.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Veeam Enterprise Manager, what granular restoration permission can be set for the Restore Operator role? A. Microsoft OneDrive files B. Microsoft Teams channels C. Microsoft SharePoint documents D. Microsoft Exchange items",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator is reviewing backup jobs and notices that backups of VMware VMs that are located on a SAN are taking longer than normal to back up. What could be a cause of this? A. The backup proxy in use is failing over to Virtual Appliance mode. B. The guest interaction proxy is failing over to data access mode. C. The backup proxy in use is failing over to Network mode. D. The backup repository needs to be changed to a Scale-out Backup Repository.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the primary benefit of configuring replica seeding? A. Compressed WAN traffic B. Deduplicated WAN traffic C. Encrypted WAN traffic D. Reduced WAN traffic",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The director of a business needs a folder of MS Office files restored from the corporate shared drive. This drive sits on a Windows VM backed up by Veeam Backup & Replication. The director wants the files restored to their original location and to replace the original files. What functionality will be used to restore the folder using the Veeam Guest OS restoration wizard? A. Restore the files using the “Hold” function. The director can then determine the status of the original and restored files. B. Restore the files using the “Keep” function. Original files will be untouched. C. Restore the files using the “Replace” function. Original files will be removed. D. Restore the files using the “Overwrite” function. Original files will be removed.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Veeam feature allows for an administrator to help ensure general data protection regulation (GDPR) compliance? A. Secure restore B. Veeam Business View C. Immutability D. Location tagging",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Veeam Agent for Microsoft Windows has been installed in standalone mode on a Windows physical server. The backup job is configured to write to a Veeam repository. Which of the following media types is available for recovery media creation? A. Tape B. Object storage C. USB drive D. Veeam Backup & Replication repository",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Scale-out Backup Repository with one local extent has been configured as follows. 12 VMware VMs are being backed up daily by a forward incremental backup job, which has a 31-day retention, creating synthetic fulls on Saturdays. After running for more than 31 days, which of the following would be accurate? A. The performance tier will contain all restore points. The capacity tier will contain zero restore points. B. Both the performance tier and capacity tier will contain all restore points. C. The performance tier will contain the most recent 15 to 22 days of restore points. The capacity tier will contain all restore points. D. The performance tier will contain the most recent 14 to 20 days of restore points. The capacity tier will contain the older 17 to 23 days of restore points.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A number of VMs are running as interdependent applications. They need to fail over, one by one, as a group. What method should be used to do this? A. Failover plan B. Replication plan C. Planned failover D. Replica failover",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Veeam administrator is restoring a user object from Active Directory using the Veeam Explorer for Microsoft Active Directory. They want to restore the user object including the password. What options exist for restoring the object with a password? (Choose two.) A. Show password B. Restore the user object to the source domain C. Send password to user account via email D. Allow user to set password E. Use “Restore objects to” and choose the “Restore password” option",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When restoring Linux or Unix guest OS files, which components can be used to mount the volume containing files to be restored? (Choose two.) A. Helper appliance B. Gateway server C. Mount server D. Guest interaction proxy E. Helper host",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Due to an unexpected power outage, Site A is completely down. The disaster recovery strategy was implemented (see diagram). What is the correct way to start replicated VMs on Site B, while ensuring you can failback after Site A comes back online? A. Execute “Planned failover”. B. Power on VMs manually on vCenter B. C. Perform “Failover”. D. Perform Instant VM Recovery of affected VMs.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Scale-out Backup Repository with one local extent has been configured as follows. A daily VMware backup job retention is 31 days, keeping weekly GFS full backups for 14 weeks. It is Mar. 20. A file from a backup that occurred the week of Jan. 1 must be recovered. Where is the data? A. The archive tier B. The capacity tier C. The performance tier D. The data is no longer in the Scale-out Backup Repository",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A physical Windows server has failed Windows updates and is now showing an error message. The server has several volumes: C (60GB), D (2TB) and E (600GB). You urgently need this server up and running again. Which of the following would bring the server back up and running the fastest on the same hardware? A. Insert the Veeam Recovery Media and restore using \"System volumes only\". B. Insert the Veeam Recovery Media and restore the entire computer. C. Perform Instant Disk recovery of the C drive. D. Use Restore Guest OS Files to restore the bootable image of the system drive.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A daily backup job fora Linux server has been configured at a primary site, keeping 14 days’ worth of backup files. They want to get a copy of the backups to a repository at the disaster recovery site. They want to keep three months’ worth of backup files at the disaster recovery site. They also need to be able to restore the VMs to any given day within the past month and any given week within the three months. How should a backup copy job be configured to meet these requirements? A. Use immediate copy (mirroring) mode, keeping 90 days of retention. B. Use periodic copy (pruning) mode, keeping 14 days of retention and 15 weekly GFS restore points. C. Use periodic copy (pruning) mode, keeping 31 days of retention and three monthly GFS restore points. D. Use immediate copy (mirroring) mode, keeping 31 days of retention and 15 weekly GFS restore points.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A file on a Linux VM hosted on vSphere is corrupted and must be restored. VMware tools are installed and up to date on the VM. For some reason, the helper host cannot connect to the VM through the network. Which of the following restore methods provides the best possible RTO? A. Run Veeam Extract Utility and use \"copy to\" to download the file locally in a shared folder. B. It is impossible to restore the file on the VM if the mount server cannot reach it through the network. C. Run Veeam file restore wizard and let it restore through VIX. D. Start an Instant VM Recovery session and log on into the restored image to restore through FTP.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The configuration database is corrupted, and the backup administrator wants to recover the data. Which configuration restore mode should be used? A. Restore B. Migrate C. Failover D. Instant Recovery",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A backup administrator is asked to perform a file-level restore on a Windows VM for the first time since Veeam Backup & Replication has been installed and left unconfigured. Which of the following items would be used during this process? A. The guest interaction proxy configured for the backup job B. The gateway server configured for the repository C. The FLR helper appliance configured for the Restore wizard D. The mount server configured for the repository",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The director of a business needs a folder of MS Office files restored from the corporate shared drive. This drive sits on a Windows VM backed up by Veeam Backup & Replication. The director does not want the folder restored to its original location. Where can this folder be restored to using the Veeam Guest OS restoration wizard? A. A valid UNC path B. An AWS S3 bucket C. An e-mail as an attachment D. An Azure blob",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Windows VM running on Microsoft Hyper-V is protected using the file indexing option. Which of the following Veeam components can be used to deploy the runtime during the backup process? A. Indexing database server B. File proxy C. Guest interaction proxy D. Virtual lab",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following are valid backup locations for a licensed version of the Veeam Agent for MacOS? (Choose two.) A. Firewire drive B. Google drive C. Microsoft OneDrive D. Amazon S3 E. Veeam backup repository",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A domain administrator is working on a PowerShell script. Due to an error, the script drops 40 users out of 100 from the Business Management Organization Unit in Active Directory. Veeam Explorer for Active Directory will be used to restore it back. Choose the option that will restore functionality with the minimum impact on user experience. A. Use the \"Compare with Production\" option to restore only the missing objects back to the Organizational Unit. B. Use the \"Point in Time” option to specify the point in time you want to restore the Active Directory database to. C. Use the \"Quick Rollback\" option to perform a restore of the changed blocks of the Active Directory database file. D. Use the \"Fine-tune\" restore option to roll back the Organizational Unit to the correct state.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company’s Network Operations Center has been tasked with the responsibility to provide basic same folder file restorations for their users. Veeam Enterprise Manager is installed and configured for this customer. What role will be least permissive yet allow for this responsibility? A. Restore Operator B. Portal User C. Portal Administrator D. Job Manager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A power outage on Site A is expected during the night. The disaster recovery strategy has been implemented (see diagram). What is the correct way to start replicated VMs on Site B to minimize data loss? A. Execute \"Permanent failover\" from vCenter. B. Execute \"Planned failover\". C. Power on VMs manually through vCenter. D. Execute \"Failover plan\".",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A backup administrator must enable guest file system indexing for a backup job of a Microsoft Windows file server VM. All required credentials are added to the Veeam Backup & Replication server. VMware tools (VIX) cannot be used due to security regulations. What should be done to make it possible in the following environment? A. Install a file system indexing plugin on the Microsoft Windows file server. B. Connect the ESXi host to the VM network. C. Use the Veeam Backup & Replication server as a guest interaction proxy. D. Use the proxy server as a guest interaction proxy.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Scale-out Backup Repository with one local extent has been configured as follows. 12 VMware VMs are being backed up daily by a forward incremental backup job, which has a 14-day retention, creating synthetic fulls on Saturdays. After running for more than 31 days, which of the following would be accurate? A. The performance tier will contain all restore points. The capacity tier will contain zero restore points. B. Both the performance tier and capacity tier will contain 14 to 20 days of restore points. C. The performance tier will contain the most recent 14 to 20 days of restore points. The capacity tier will contain the older 17 to 23 days of restore points. D. The performance tier will contain the most recent 14 to 20 days of restore points. The capacity tier will contain 31 to 37 restore points.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Why is it recommended to have at least one backup proxy server in each site when defining a replica job? A. The proxies allow replication automatic restart after failure. B. The proxies allow for no VM snapshots during transit. C. The proxies allow automatic WAN acceleration. D. The proxies allow data compression during data transit across the WAN.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Veeam administrator needs to back up all servers for the accounting department using Veeam Agent for Linux and Veeam Agent for Microsoft Windows. How is this accomplished? A. Create two Active Directory based protection groups, one for Windows and one for Linux servers, using Active Directory security groups. Then create a backup job for each protection group. B. Create two protection groups, one for Windows and one for Linux agents. Add in all the servers in the accounting department to a corresponding group. Then create a backup job for each protection group. C. Create two protection groups and set it to automatically scan every three hours for new servers. Then create a backup job for each protection group. D. Install a custom shell script on each of the accounting servers that adds it to the protection group.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company's infrastructure includes a fibre channel SAN where the VMware VMs are located. The administrator wants to create a backup that minimizes the impact on the production environment. What proxy transport mode should be used? A. Virtual appliance B. Guest interaction C. Direct Storage Access D. Network",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A SharePoint administrator is working on a PowerShell script. Due to an error, the script drops some documents from a Microsoft SharePoint site. Veeam Explorer for Microsoft SharePoint will be used to restore it back. Choose the option that will restore functionality with the minimum impact on user experience and RPO. A. Restore the Microsoft SharePoint site back to its original location. B. Restore the Microsoft SharePoint documents to a specific point in time. C. Restore the Microsoft SharePoint documents to its original location. D. Restore the Microsoft SharePoint database changed blocks with the \"Quick Rollback\" option.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Veeam ONE has been installed and configured. It is necessary to monitor the three Veeam Backup & Replication servers in order to see how much backup storage is being used on the performance and capacity tiers of the backup repository server. How can this be achieved? A. Install the Veeam ONE Connector on each Veeam Backup & Replication server and the backup repository server. Approve the connection via the Data Protection View. B. Add the virtual infrastructure and look up the backup repository server to see the guest disk space. C. Add the three Veeam Backup & Replication servers and the backup repository server under Infrastructure View. D. Add each Veeam Backup & Replication server and monitor storage usage through the Data Protection View.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Veeam administrator has been tasked to create a backup that will automatically make a copy of data on a different media type, while also being off site, without creating additional backup or backup copy jobs. The administrator has determined that a Scale-out Backup Repository can be used as part of the solution. How can this be accomplished? A. Add a capacity tier to the Scale-out Backup Repository and enable the \"Move\" option. B. Add an archive tier to the Scale-out Backup Repository and enable \"GFS Tiering\". C. Add an archive tier to the Scale-out Backup Repository and enable the \"Copy\" option. D. Add a capacity tier to the Scale-out Backup Repository and enable the \"Copy\" option.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An auditor for a company requires reports per quarter on the status of the backups. Veeam Backup is used for the backups. What Veeam component will provide the best reporting? A. Veeam Backup e-mail notifications B. Veeam Enterprise Manager reporting C. Veeam ONE Web Client D. Veeam Explorer for Microsoft SQL Server reporting",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following components is required when backing up a NAS? A. Offline proxy B. Guest interaction proxy C. Mount proxy D. Backup proxy",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A failback of three VMs has just completed, after having failed over earlier from production to the disaster recovery site. What next actions are available? A. Undo failback, Commit failback B. Cancel failback, Commit failback C. Undo failback, Permanent failback D. Cancel failback, Permanent failback",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator needs to dynamically add VMware VMs that have a custom application installed to a backup job, and also require an RPO of eight hours. How can this job be created? A. Create a backup job based on vSphere tags. B. In Enterprise Manager, create a dynamic group of VMs that contain both tags. C. Use the REST API to scan the VM inventory for machines that match the criteria. D. Modify a custom CSV file to be scanned before the start of each job.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Backup jobs are configured to local repositories. Backups must be sent from Site B to the repository on Site A. The connection between the two sites does not allow a direct backup to complete within the backup window. Which type of job and Veeam components should be used to provide the necessary protection? A. A backup copy job and components 6 –> 4 –> 3 –> 2 B. A backup copy job and components 6 –> 4 –> 2 C. A backup copy job and components 6 –> 5 –> 4 –> 3 –> 1 –> 2 D. A backup job and components 5 –> 4 –> 3 –> 2",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "It is required that some replicated VMs start on a time delay during a failover. How can this be accomplished? A. Adjust boot delay in application group. B. Use a pre-freeze/post-thaw script. C. Create a failover plan. D. Modify the failover template file.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "To view current information about the entire Veeam backup infrastructure, including alarms and the status of jobs, use Veeam ONE's______________________. A. Enterprise View B. Business View C. Data Protection View D. Report View",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following Veeam Backup Agents can perform bare metal restores? (Choose two.) A. Veeam Agent for Oracle Solaris B. Veeam Agent for Mac C. Veeam Agent for IBM AIX D. Veeam Agent for Linux E. Veeam Agent for Microsoft Windows",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following are valid backup locations for a licensed version of the Veeam Agent for Microsoft Windows? (Choose three.) A. Tape drive B. Azure BLOB storage C. Google drive D. USB drive E. Veeam backup repository F. Microsoft OneDrive",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following are valid restore locations for Active Directory objects using the Veeam Explorer for Microsoft Active Directory? (Choose two.) A. A different container in the original domain B. A different domain in the same forest C. A different domain in a different forest D. A domain with the same name as the original domain E. The original container",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When restoring Linux or Unix guest OS files, which components can be used to mount the volume containing files to be restored? (Choose two.) A. NFS mount B. Guest interaction proxy C. Enterprise Manager server D. Helper host E. Helper appliance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In Veeam Enterprise Manager, what granular restoration permission can be set for the Restore Operator role? A. Windows registry items B. OneDrive folders C. Databases D. SharePoint sites",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "On Monday, a backup administrator found out that some backup jobs were missing from a configuration. They want to roll back the configuration database to Friday's state. Which configuration restore mode should be used? A. Restore B. Instant SQL Recovery C. Migrate D. Veeam Explorer for Microsoft SQL",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A backup of a Linux VM running on a VMware cluster has been created. In which scenario can the Quick Rollback option be used during a Full VM Restore of the VM? A. Migration of VM to VMware host in a different data center B. Migration of VM to Hyper-V host in same data center C. Issues caused by host power outage D. Issues caused by VM software update",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "For general data protection regulation (GDPR) compliance, Veeam can add a location tag to which component? A. Backup repository B. Backup job C. Proxy server D. Guest interaction proxy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Veeam proxy server is configured as follows. No modifications are allowed to the transport mode. When performing a restore of a VMware virtual disk using this proxy server, the restore fails. What is a possible cause? A. The virtual disk is thick-provisioned. B. CBT is disabled on the virtual disk. C. CBT is enabled on the virtual disk. D. The virtual disk is thin-provisioned.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "If the selected proxy transport mode does not work or is not available, which mode can a backup job default to? A. Guest interaction B. Network C. Virtual appliance D. Direct Storage Access",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "For Veeam agent backup jobs, what feature is only available with Veeam Agent for Microsoft Windows? A. Backup from storage snapshots B. Application-aware processing of PostgreSQL C. Volume backup D. File-level backup",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Veeam Agent for Microsoft Windows is installed on a server. A backup job is created on the server. The backup data will be sent to a Veeam Backup & Replication repository. A Veeam administrator wants to add the server to a different backup job. Which protection group would they find the server in? A. Offline B. Untrusted C. Unmanaged D. Unattended",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following are valid restore options for Microsoft Exchange server email items when using the Veeam Explorer for Microsoft Exchange? (Choose two.) A. Save as a .pst file B. Save as a .zip file C. Save message as text file D. Save as an .msg file E. Save attachment as file",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In the war against ransomware, a company decided to implement tape backup. The infrastructure contains Hyper-V VMs. What is the correct approach to getting all servers onto tape? A. Create file to tape jobs and write directly to tape. B. Create backup jobs, then create backup to tape jobs. C. Create backup copy jobs, then create backup to tape jobs. D. Create backup to tape jobs and write directly to tape.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What data sources can be connected to Veeam ONE? (Choose two.) A. VMware vSphere servers B. Microsoft Hyper-V servers C. Nutanix Acropopis servers D. Microsoft Azure VMs E. Amazon Web Services EC2 instances",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "35 VMs are running on a Hyper-V platform at a remote office (ROBO). The administrator has been tasked with setting up replication to the main office (HQ) so it can act as the disaster recovery site. The available bandwidth is 40 Mbps. RPO is set to eight hours and the data generated for the interval is 300 GB. Which of the following will achieve the RPO? A. Configure the replication jobs set to Direct Mode. Schedule every eight hours. B. Use replication jobs with copy mode set to “periodic copy” and set interval to every eight hours. C. Configure the replication jobs to use WAN acceleration. Set the schedule to run every eight hours. D. Use replication jobs with copy mode set to “interval copy”. Schedule to run after the backup job.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "For best performance when backing up NAS file shares, which component should be connected to the network as closely as possible to the source? A. Veeam Backup & Replication server B. Backup proxy C. Guest interaction proxy D. Mount server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A file on a Linux VM hosted on Hyper-V is corrupted and must be restored. For some reason, the Veeam mount cannot connect to the VM through the network. Which of the following restore methods provides the best possible RTO? A. Run Veeam file restore wizard and let it restore through PowerShell Direct. B. It is impossible to restore the file on the VM if the mount server cannot reach it through the network. C. Start a virtual lab and boot the Linux VM image in an application group, then copy the file directly from the image to the Linux VM. D. Run Veeam file store wizard and use “copy” to download the file locally in a shared folder.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "At 18:00, after a power outage, a VM is stuck in an infinite boot loop. The VM is configured as follows. The last backup was created at 01:00. Choose the recovery approach that results in the least amount of data loss and lowest chance of data corruption. A. Instant VM Recovery with quick rollback B. Instant VM Recovery C. VM disk recovery with quick rollback D. VM disk recovery",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Veeam ONE’s ____________________ provides a single pane of glass view for all Veeam backup servers, proxies, and repositories in a backup infrastructure. A. Business View B. Data Protection View C. Infrastructure View D. System View",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Veeam backup administrator is working with a VMware environment. Their company has an application that uses a contact database. Customers can be added to a “Do not contact” list. This server needs to be restored from yesterday’s backup. What restore process allows for custom scripting to be run automatically to ensure the “Do not contact” list is updated before the server is returned to production? A. Secure Restore B. Instant VM Recovery C. Instant Disk Recovery D. Staged Restore",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "All VMs in a data center need to be failed over to a disaster recovery site due to an approaching hurricane. Which failover method would ensure that changes made to the original VMs, after the scheduled replication jobs, are copied to the disaster recovery site? A. Failover plan B. Planned failover C. Replica failover D. Failover",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The administrator of a VMware environment backed up by Veeam Backup & Replication has a critical server that has crashed and will not reboot. They were able to bring it back online quickly using Instant VM Recovery so people could continue to work. What else is required to complete the recovery? A. Migrate to production B. Merge delta file C. Commit fallback D. Commit failover",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is asked to change a backup copy job from periodic mode to immediate mode. How can this be accomplished? A. Copy the original backup copy job to a different folder and remap the job. B. Enable immediate in the backup copy job settings drop down. C. Create a new backup copy job and delete the original job. D. Right click on the job name and choose immediate.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "For general data protection regulation (GDPR) compliance, Veeam can add a location tag to which component? A. Scale-out Backup Repositories B. File copy job C. Proxy server D. WAN accelerator",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An hourly backup job for a physical Linux system has been configured at the main site, keeping 14 days’ worth of backup files. They want to get a copy of the backups to a repository at the disaster recovery site. They want to keep two months’ worth of backup files at the disaster recovery site. They also need to be able to restore the Linux system to any hour within two months. How would you configure a backup copy job to meet these requirements? A. Use periodic copy (pruning) mode, keeping 14 days of retention and two monthly GFS restore points. B. Use immediate copy (mirroring) mode, keeping 62 days of retention C. Use periodic copy (pruning) mode, keeping 14 days of retention and 10 weekly GFS restore points. D. Use immediate copy (mirroring) mode, keeping 14 days of retention and 10 weekly GFS restore points.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A daily backup job for seven VMware VMs has been configured at the main site, keeping 14 days’ worth of backup files. They want to get a copy of the VM backups to a repository at the disaster recovery site. They want to keep six months’ worth of backup files at the disaster recovery site. They need to be able to restore the VMs to any given day within two months at the disaster recovery and any given week within six months, minimizing the storage used at the disaster recovery. How should a backup copy job be configured to meet these requirements? A. Use periodic copy (pruning) mode, keeping 180 days of retention. B. Use immediate copy (mirroring) mode, keeping 62 days of retention and 26 weekly GFS restore points. C. Use periodic copy (pruning) mode, keeping 62 days of retention and 26 weekly GFS restore points. D. Use immediate copy (mirroring) mode, keeping 180 days of retention.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Scale-out Backup Repository with one local extent has been configured as follows. 12 VMware VMs are being backed up daily by a forward incremental backup job, which has a 31-day retention, creating synthetic fulls on Saturdays. After running for more than 31 days, which of the following would be accurate? A. Both the performance tier and capacity tier will contain all restore points. B. The performance tier will contain all restore points. The capacity tier will contain zero restore points. C. The performance tier will contain the most recent 14 to 20 days of restore points. The capacity tier will contain the older 17 to 23 days of restore points. D. The performance tier will contain the most recent 14 to 20 days of restore points. The capacity tier will contain all restore points.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Due to an unexpected power outage, Site A is completely down. The disaster recovery strategy was implemented (see diagram). What is the correct way to start replicated VMs on Site B? A. Execute \"Permanent failover\" from ESXi host. B. Execute \"Planned failover\". C. Power on VMs manually from ESXi host. D. Perform \"Failover\".",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Scale-out Backup Repository with one local extent has been configured as follows. A daily VMware backup job retention is 31 days, keeping weekly GFS full backups for 14 weeks. It is Jan. 10. A file from a backup that occurred the week of Jan. 1 must be recovered. Where is the data? A. The archive tier B. The capacity tier C. The performance tier and capacity tier D. The performance tier",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An undo failover of a VM has just completed, after having failed over earlier from production to the disaster recovery site. What next actions are available? A. Failover, Failback to production, Add to a failover plan B. Failback, Permanent Failover C. Failover, Planned failover, Run a failover plan D. Failover now, Planned failover, Add to a failover plan",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company needs several VMware VMs restored. The proxies are virtualized and reside on the ESXi host to which the VMs must be restored. Which transport mode will be used by default to restore these VMs? A. Direct Storage Access B. Network mode C. Quick Migration D. Virtual appliance",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator has decided to set up a VM backup job covering their Windows SharePoint servers. What feature must be enabled to ensure quiescence of the SharePoint databases during the backup? A. Enable Microsoft SharePoint server plug-in. B. Enable application-aware processing. C. Enable Microsoft Windows OS processing. D. Enable Microsoft SharePoint server agent on the VM.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A VMware vSphere Windows VM is protected using the file indexing option. Which of the following Veeam components can be used to deploy the runtime during the backup process? A. Indexing database server B. File proxy C. Guest interaction proxy D. Virtual lab",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Veeam Backup & Replication is currently configured to back up different workloads: Linux physical computers and Windows physical computers. A secondary copy of all the backups including transaction logs must be created. Which of the following backup copy job configurations is correct? A. A single \"periodic copy\" backup copy job B. A single \"immediate copy\" backup copy job C. Two \"immediate copy\" backup copy jobs D. Two \"periodic copy\" backup copy jobs",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which feature can be used in Veeam Explorer for Microsoft SQL? A. Restore original password for account objects B. Export to .BAK file C. Restore databases from backups created with Veeam RMAN plug-in D. Recover from litigation and in-place hold items",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Veeam administrator is concerned about keeping backups on site and has traditionally used tapes to create weekly offsite backups. Concerns about ransomware have created the need to have backups sent off site immediately. The company is currently using Scale-out Backup Repositories. What option would satisfy the requirement? A. Copy to capacity tier B. Move to capacity tier C. Backup to object storage D. File copy job",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company needs to recover a physical virtual machine running Linux very quickly. The company decides to use Instant VM Recovery from their last backup. What platforms can this backup be instantly restored to? (Choose three.) A. Azure B. Hyper-V C. AWS D. GCP E. AHV F. VMware",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company needs several VMware VMs restored. The Veeam proxies used for restoration have access to the iSCSI datastores used by VMware. Which transport mode will be used by default to restore these VMs? A. Quick Migration B. Direct Storage Access C. Virtual appliance D. Network mode",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Veeam component deploys the runtime during the backup process when a Linux VM running on Microsoft Hyper-V is protected using the file indexing option. A. Virtual lab B. Guest interaction proxy C. Backup & Replication server D. File proxy",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When restoring Linux or Unix guest OS files, which components can be used to mount the volume containing files to be restored? (Choose two.) A. Helper appliance B. Veeam explorer for Unix C. Helper host D. Gateway server E. ESI Mount server",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "At 18:00, after an issue, a VM is stuck in: Error code 0xc000000f The application or operating system couldn't be loaded because a required file is missing or contains errors. The VM is configured as follows. The database administrator has highlighted that there was a Windows update applied the day before. The last backup was created at 01:00. Choose the recovery approach that provides the lowest RTO with the least amount of data loss. A. VM disk recovery with quick rollback of Disk 1 B. Instant VM Recovery C. Instant VM Recovery with quick rollback D. Restore virtual Disk 1",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An infrastructure with 50 VMs has issues with the underlying storage. 10 large VMs show the error \"NVRAM write failure\". Which restore method will bring back those VMs to the production state? A. Perform Instant VM Recovery with quick rollback with automatic Power On VM at the end. B. Perform Instant VM Recovery with the option \"NVRAM-only\" enabled. C. Use Restore VM Files and restore the NVRAM file. D. Use the \"Restore guest files\" option to restore the NVRAM and VM disk files.",
+    "options": {},
+    "most_voted": "C"
+  }
+]
