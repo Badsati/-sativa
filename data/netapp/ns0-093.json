@@ -1,0 +1,127 @@
+[
+  {
+    "question": "In which two sections of AutoSupport can you find information to analyze the following panic? (Choose two.) Panic_Message: PCI Error NMI from device(s):ErrSrcID(CorrSrc(0xf00),UCorrSrc(0x18)), RPT(0,3,0):Qlogic FC 16G adapter in slot 1 on Controller A. HA-RASTRACE.TGZ B. ALL-COREDUMP.XML C. SSRAM-LOG D. PCI-HIERARCHY.XML",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two commands confirm whether an aggregate is WAFL inconsistent? (Choose two.) A. wafiron show <aggregate> B. node run –node <node> sysconfig –r C. storage aggregate show D. node run –node <node> sysconfig –a",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the default amount of time that a volume is available for recovery from the volume recovery queue following a volume deletion? A. 12 hours B. 48 hours C. 72 hours D. 24 hours",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In the latest MANAGEMENT LOG AutoSupport message, you try to inspect the ENVIRONMENT section but find it empty. In which section of AutoSupport can you find the reason? A. AUTOSUPPORT-BUDGET.XML B. HEADERS C. AUTOSUPPORT-HISTORY.XML D. MANIFEST.XML",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have created a case with NetApp Support for an issue with a DS4246 shelf on an ONTAP 9.12.1 system. They have requested that you provide shelf logs. What action do you need to take to collect the shelf logs? A. Provide the output of the nodeshell command rdfile/etc/log/shelflog. B. Invoke an autosupport of type all using Active IQ Unified Manager. C. Invoke a diagnostic AutoSupport with the subsystem storage. D. Invoke a diagnostic autosupport with the subsystem log_files.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are replacing a boot device on a FAS8300 system that is running ONTAP 9.10P6 software. You attach a USB memory stick to the external USB port on the storage controller but cannot access the memory stick. What step needs to be performed to access the boot device? A. Set the port to “enabled” with setenv. B. You need to use ONTAP 9.11 or later software. C. Add the boot device before the BIOS is loaded. D. The external USB port is not activated on NetApp systems.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two tools can you use to invoke AutoSupport? (Choose two.) A. NetApp Cloud Insights B. CLI C. the NetApp Active IQ website D. the SmartSolve tool",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A node has panicked with a PCI/NMI error. Giveback has not been performed. Which two commands should you run to collect the logs to determine the cause? (Choose two.) A. pelog –a –g=2 B. show pci –v C. rdfile /mroot/etc/log/SSRAM D. event log show",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "On an AFF A700 system, a SAS stack is connected to SAS ports 2a and 2b. The system has an additional 4-port SAS card in slot 9. How should the cabling the corrected for best practices? A. Use port 2a and 9a. B. Use port 2a and 9b. C. Use port 2a and 2c. D. Use port 2b and 9d.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements are true about an IOM 12 module? (Choose two.) A. It has two SAS ports. B. It has four SAS ports. C. It does not have an Ethernet port for alternate control path (ACP). D. It has an Ethernet port for alternate control path (ACP).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the recommended value for disk and CPU use when you plan an upgrade? A. less than 50% B. less than 90% C. less than 85% D. less than 70%",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which LOADER prompt command ensures that POST is done on boot? A. setenv POST=true B. bye C. boot_diag D. boot_ontap",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements are correct when describing L1 and L2 Watch Dog Resets (WDR)? (Choose two.) A. L2 WDR requests creation of a core dump before reset. B. L1 WDR is initiated after 0.5 seconds from the event. C. L1 WDR performs a soft reset. D. L2 WDR is initiated after 2 seconds from the event.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You have upgraded your cluster from ONTAP 9.5 software to ONTAP 9.7 software. After the upgrade, you notice that the upgrade causes issues. You decide to revert to ONTAP 9.5 software. Which revert step is allowed? A. Revert to ONTAP 9.5 software with the netboot procedure. B. Revert from ONTAP 9.7 software to ONTAP 9.5 software by using the boot backup procedure. C. Revert directly from ONTAP 9.7 software to ONTAP 9.5 software. D. Revert from ONTAP 9.7 software to ONTAP 8.6 software and then to ONTAP 9.5 software.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have identified that the file named quarterly_25.docx is inconsistent. Which nodeshell command reports whether there are Snapshot copies available? A. “priv set advanced; file check –f quarterly_25.docx” B. “priv set diag; file check –v <voiname> –i <field>” C. “priv set diag; snap list –f quarterly_25.docx” D. “priv set advanced; aggr wafliron start –f quarterly_25.docx”",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two valid options for uploading a core file from a node that is running ONTAP 9.12.1 software to NetApp for analysis? (Choose two.) A. system node autosupport invoke -diagnostic B. Download via CIFS and upload to upload.netapp.com. C. Download via Service Processor Infrastructure (SPI) and upload to upload.netapp.com. D. system node autosupport invoke-core-upload",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are using wafliron on an aggregate named homedir on a production system. When is the data on homedir available? A. when the administrator manually onlines the aggregate B. when wafliron is started C. after Phase 4 of wafliron is complete D. after the mounting phase of wafliron is complete",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A node has unexpectedly failed and is unresponsive through its node management interface. Which two commands from the Service Processor are helpful to determine the root cause? (Choose two.) A. sp status –d B. event log show C. system log D. system core",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two NetApp tools should be used when troubleshooting the root cause of an unexpected controller reboot? (Choose two.) A. Active IQ Unified Manager B. Active IQ Digital Advisor C. ONTAP CLI D. ONTAP Mediator E. Active IQ Config Advisor",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Following an unexpected takeover, the taken-over node is waiting for giveback. The administrator plans to perform a giveback with the option –cfo–only true. What happens if this option is used? A. Only a simulation of the giveback is performed. B. Only the root aggregate is given back. C. Only SVM root volumes are sent back D. Only the data aggregates are sent back.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During which two operations is the NVRAM replayed by the high-availability (HA) partner? (Choose two.) A. after triggering a sync core B. when a node is halted C. during a negotiated takeover D. when the node loses power",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which command can you use to confirm successful completion of an ONTAP upgrade? A. system controller sp upgrade show B. cluster image show-update-progress C. job show –jobtype upgrade D. system node upgrade-revert upgrade-task –node <nodename> –version <ontap Version>",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have replaced a failed boot device. You perform boot_recovery and receive no errors. However, when the node reboots, it reports that it has no disks. What are two possible causes? (Choose two.) A. The SAS cables were incorrectly reconnected after reinstalling the motherboard. B. The disks that are owned by this node have been marked as failed. C. The node is booting a lower version of ONTAP software than was last used. D. The interconnect is down.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two of the following are field replaceable units (FRUs) on an AFF A220 system? (Choose two.) A. NVMEM battery B. mSATA boot device C. NVME Flash Cache feature D. chassis fan",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "On a NetApp FAS9000 system, which two field replaceable units (FRUs) are supported for replacement without takeover? (Choose two.) A. I/O module B. DCPM module C. caching module D. NVRAM module",
+    "options": {},
+    "most_voted": "B"
+  }
+]
