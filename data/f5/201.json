@@ -1,0 +1,137 @@
+[
+  {
+    "question": "The current status of a given pool is offline (red). Which condition could explain that state? Assume the descriptions below include all monitors assigned for each scenario. A. No monitors are currently assigned to any pool, member or node. B. The pool has a monitor assigned to it, and none of the pool members passed the test. C. The pool has a monitor assigned to it, and only some of the pool's members passed the test. D. A monitor is assigned to all nodes and all nodes have passed the test. The pool's members have no specific monitor assigned to them.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to terminate client SSL traffic at the BIG-IP and also to persist client traffic to the same pool member based on a BIG IP supplied cookie. Which four are profiles that would normally be included in the virtual server's definition? (Choose four.) A. TCP B. HTTP C. HTTPS D. ClientSSL E. ServerSSL F. CookieBased Persistence",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A site needs to terminate client HTTPS traffic at the BIG-IP and forward that traffic unencrypted. Which two are profile types that must be associated with such a virtual server? (Choose two.) A. TCP B. HTTP C. HTTPS D. ClientSSL E. ServerSSL",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which three statements describe a characteristic of profiles? (Choose three.) A. Default profiles cannot be created or deleted. B. Custom profiles are always based on a parent profile. C. A profile can be a child of one profile and a parent of another. D. All changes to parent profiles are propagated to their child profiles. E. While most virtual servers have at least one profile associated with them, it is not required.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A virtual server is defined using a source address based persistence profile. The last five connections were A, B, C, A, C . Given the conditions shown in the graphic, if a client with IP address 205.12.45.52 opens a connection to the virtual server, which member will be used for the connection? A. 10.10.20.1:80 B. 10.10.20.2:80 C. 10.10.20.3:80 D. 10.10.20.4:80 E. 10.10.20.5:80",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When configuring a Virtual Server to use an iRule with an HTTP_REQUEST event, which lists required steps in a proper order to create all necessary objects? A. create profiles, create the iRule, create required pools, create the Virtual Server B. create the Virtual Server, create required pools, create the iRule, edit the Virtual Server C. create a custom HTTP profile, create required pools, create the Virtual Server, create the iRule D. create required pools, create a custom HTTP profile, create the iRule, create the Virtual Server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Assuming there are open connections through an active system's NAT and a fail over occurs, by default, what happens to those connections? A. All open connections will be lost. B. All open connections will be maintained. C. The \"Mirror\" option must be chosen on the NAT and the setting synchronized prior to the connection establishment. D. Longlived connections such as Telnet and FTP will be maintained while shortlived connections such as HTTP will be lost. E. All open connections are lost, but new connections are initiated by the newly active BIG IP, resulting in minimal client downtime.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A virtual server is defined per the charts. The last five client connections were to members C, D, A, B, B. Given the conditions shown in the above graphic, if a client with IP address 205.12.45.52 opens a connection to the virtual server, which member will be used for the connection. A. 172.16.20.1:80 B. 172.16.20.2:80 C. 172.16.20.3:80 D. 172.16.20.4:80 E. 172.16.20.5:80",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement accurately describes the difference between two loadbalancing modes specified as \"member\" and \"node\"? A. There is no difference; the two terms are referenced for backward compatibility purposes. B. When the loadbalancing choice references \"node\", priority group activation is unavailable. C. Loadbalancing options referencing \"nodes\" are available only when the pool members are defined for the \"any\" port. D. When the loadbalancing choice references \"node\", the addresses' parameters are used to make the loadbalancing choice rather than the member's parameters.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The ICMP monitor has been assigned to all nodes. In addition, all pools have been assigned custom monitors. The pool is marked available. If a pool is marked available (green) which situation is sufficient to cause this? A. All of the pool member nodes are responding to the ICMP monitor as expected. B. Less than 50% of the pool member nodes responded to the ICMP echo request. C. All of the members of the pool have had their content updated recently and their responses no longer match the monitor. D. Over 25% of the pool members have had their content updated and it no longer matches the receive rule of the custom monitor. The other respond as expected.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Generally speaking, should the monitor templates be used as production monitors or should they be customized prior to use. A. Most templates, such as http and tcp, are as effective as customized monitors. B. Monitor template customization is only a matter of preference, not an issue of effectiveness or performance. C. Most templates, such as https, should have the receive rule customized to make the monitor more robust. D. While some templates, such as ftp, must be customized, those that can be used without modification are not improved by specific changes.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When can a single virtual server be associated with multiple profiles? A. Never. Each virtual server has a maximum of one profile. B. Often. Profiles work on different layers and combining profiles is common. C. Rarely. One combination, using both the TCP and HTTP profile does occur, but it is the exception. D. Unlimited. Profiles can work together in any combination to ensure that all traffic types are supported in a given virtual server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have created a custom profile named TEST2. The parent profile of TEST2 is named TEST1. If additional changes are made to TEST1, what is the effect on TEST2? A. All changes to TEST1 are propagated to TEST2. B. Some of the changes to TEST1 may propagate to TEST2. C. Changes to TEST1 cannot affect TEST2 once TEST2 is saved. D. When TEST1 is changed, the administrator is prompted and can choose whether to propagate changes to TEST2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the purpose of MAC masquerading? A. to prevent ARP cache errors B. to minimize ARP entries on routers C. to minimize connection loss due to ARP cache refresh delays D. to allow both BIGIP devices to simultaneously use the same MAC address",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Assume a virtual server has a ServerSSL profile. What SSL certificates are required on the BIG-IP? A. No SSL certificates are required on the BIG-IP. B. The BIG-IP's SSL certificates must only exist. C. The BIG-IP's SSL certificates must be issued from a certificate authority. D. The BIG-IP's SSL certificates must be created within the company hosting the BIG-IPs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true concerning SSL termination? A. A virtual server that has both ClientSSL and ServerSSL profiles can still support cookie persistence. B. Decrypting traffic at the BIG-IP allows the use of iRules for traffic management, but increases the load on the pool member. C. When any virtual server uses a ClientSSL profile, all SSL traffic sent to the BIG-IP is decrypted before it is forwarded to servers. D. If a virtual server has both a ClientSSL and ServerSSL profile, the pool members have less SSL processing than if the virtual server had only a ClientSSL profile.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Assume a client's traffic is being processed only by a NAT; no SNAT or virtual server processing takes place. Also assume that the NAT definition specifies a NAT address and an origin address while all other settings are left at their defaults. If a client were to initiate traffic to the NAT address, what changes, if any, would take place when the BIG-IP processes such packets? A. The source address would not change, but the destination address would be translated to the origin address. B. The destination address would not change, but the source address would be translated to the origin address. C. The source address would not change, but the destination address would be translated to the NAT's address. D. The destination address would not change, but the source address would be translated to the NAT's address.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A BIG-IP has a virtual server at 150.150.10.10:80 with SNAT automap configured. This BIG-IP also has a SNAT at 150.150.10.11 set for a source address range of 200.200.1.0 / 255.255.255.0. All other settings are at their default states. If a client with the IP address 200.200.1.1 sends a request to the virtual server, what is the source IP address when the associated packet is sent to the pool member? A. 200.200.1.1 B. 150.150.10.11 C. Floating self IP address on VLAN where the packet leaves the system D. Floating self IP address on VLAN where the packet arrives on the system",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When upgrading a BIG-IP redundant pair, what happens when one system has been updated but the other has not? A. Synching should not be performed. B. The first system to be updated will assume the Active role. C. This is not possible since both systems are updated simultaneously. D. The older system will issue SNMP traps indicating a communication error with the partner.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How is MAC masquerading configured? A. Specify the desired MAC address for each VLAN for which you want this feature enabled. B. Specify the desired MAC address for each selfIP address for which you want this feature enabled. C. Specify the desired MAC address for each VLAN on the active system and synchronize the systems. D. Specify the desired MAC address for each floating selfIP address for which you want this feature enabled.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A site would like to ensure that a given web server's default page is being served correctly prior to sending it client traffic. They assigned the default HTTP monitor to the pool. What would the member status be if it sent an unexpected response to the GET request.? A. The pool member would be marked offline (red). B. The pool member would be marked online (green). C. The pool member would be marked unknown (blue). D. The pool member would alternate between red and green.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which event is always triggered when the client sends data to a virtual server using TCP? A. HTTP_DATA B. CLIENT_DATA C. HTTP_REQUEST D. VS_CONNECTED",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A virtual server is listening at 10.10.1.100:any and has the following iRule associated with it: when CLIENT_ACCEPTED { if {[TCP::local_port] equals 21 } { pool ftppool } elseif {[TCP::local_port] equals 23 } { pool telnetpool } If a user connects to 10.10.1.100 and port 22, which pool will receive the request? A. ftppool B. telnetpool C. None. The request will be dropped. D. Unknown. The pool cannot be determined from the information provided.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true concerning a functional iRule? A. iRules use a proprietary syntax language. B. iRules must contain at least one event declaration. C. iRules must contain at least one conditional statement. D. iRules must contain at least one pool assignment statement.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the purpose of floating self-IP addresses? A. to define an address that grants administrative access to either system at any time B. to define an address that allows either system to initiate communication at any time C. to define an address that allows network devices to route traffic via a single IP address D. to define an address that gives network devices greater flexibility in choosing a path to forward traffic",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which parameters are set to the same value when a pair of BIG-IP devices are synchronized? A. host names B. system clocks C. profile definitions D. VLAN failsafe settings E. MAC masquerade addresses",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "As a part of the Setup Utility, the administrator sets the host name for the BIG IP. What would be the result if the two systems in a redundant pair were set to the same host name? A. Host names do not matter in redundant pair communication. B. In a redundant pair, the two systems will always have the same host name. The parameter is synchronized between the systems. C. The first time the systems are synchronized the receiving system will be assigned the same self-IP addresses as the source system. D. When the administrator attempts to access the configuration utility using the host name, they will always connect to the active system.",
+    "options": {},
+    "most_voted": ""
+  }
+]
