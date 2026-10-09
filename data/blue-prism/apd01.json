@@ -1,0 +1,257 @@
+[
+  {
+    "question": "The following screen displays order details in a client's order system application. An order is entered into the Order number field and the details for that order are displayed. There is a requirement to read the Product code value from the resulting display. The Product code will vary between orders. [sampleXML/xmlfile-2_1.jpg] The Product Code label has been successfully spied and the following attributes have been returned: [sampleXML/xmlfile-3_1.jpg] The Product Code value field has been spied and the following attribute set has been selected: [sampleXML/xmlfile-4_1.jpg] In order to ensure a consistent match for the Screen Text \"\" Product Code element, which of the following statements must be considered: 1. The Dynamic value of the Y attribute for the Screen Text \"\" Product Code element must be derived from the Y attribute of the Label \"\"Product Code element 2. The Y attribute of the Label \"\"Product Code element cannot be derived as it is not checked 3. The Y attribute for the Screen Text \"\" Product Code element must be set to a Match Type of \"˜Equal' 4. The Window Text attribute for the Screen Text \"\" Product Code element must be set to a Match Type of \"˜Wildcard' 5. The Window Text attribute for the Screen Text \"\" Product Code element must be un-checked A. 1 and 4 B. 1, 2 and 5 C. 3 and 4 D. 1 and 5",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following Application Models follow Blue Prism Best Practice: A. [sampleXML/xmlfile-5_1.jpg] B. [sampleXML/xmlfile-6_1.jpg] C. [sampleXML/xmlfile-6_2.jpg] D. [sampleXML/xmlfile-7_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following four configurations depicts the best approach for an Action that has been built to select a button to navigate to an Input Order screen? A. [sampleXML/xmlfile-8_1.jpg] B. [sampleXML/xmlfile-9_1.jpg] C. [sampleXML/xmlfile-10_1.jpg] D. [sampleXML/xmlfile-11_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Process Definition Document, for a new process to open ISA accounts, specifies that the value \"2008 Cash ISA\" is to be entered into the Product Selection field of the following screen: [sampleXML/xmlfile-12_1.jpg] The Product Selection field is a drop down menu with the following options available: [sampleXML/xmlfile-12_2.jpg] According to Best Practice, which of the following design options are correct for populating the Product Selection field with the value 2008 Cash ISA: A. The Product Selection value should be hard coded as 2008 Cash ISA in the stage that will populate the field. B. A text data item, with an initial value of 2008 Cash ISA should be configured. This data item should be used as the input value to the stage that will populate the Product Selection field. C. An input parameter should be configured in the start stage allowing the calling process to determine what value to be populated into the Product Selection number field D. All of the above",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Process is fed cases to work from a spreadsheet held in a shared drive. The location of the shared drive is different between Development and Production environments. How should this be managed? A. During the build and test phase, hold the â€˜Developmentâ€™ path to the spreadsheet in a data item within a Process. When the Process is imported into Production it will be opened and the data item will be amended to hold the â€˜Productionâ€™ path. B. During the build and test phase, hold the â€˜Developmentâ€™ path to the spreadsheet in a data item within a Process. Expose this data item as a Session Variable. When the Process is run in Production, this Session Variable value can be set in Control Room C. Hold the Path to the spreadsheet as an Environment Variable D. Pass the Path as a Startup Parameter when the process starts",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "While automating a process involving a browser based application a popup window from the browser application appears that you need to work with. When you try to spy the popup window and its elements, Blue Prism throws the following error: \"There was an error during the spying operation.\" Which of the following would be the most appropriate workaround? A. Set the HKEY CURRENT USER\\Software\\Microsoft\\Internet Explorer\\Main\\TabProcGrowth Registry key to 2 B. Change the scope of the process so that the popup window does not need to be automated C. Create a new separate object that attaches to the running instance of the popup and attempt to spy elements with this object instead. D. Use Surface Automation techniques to interface with the popup window",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a recommend tip for dealing with problems when launching and attaching to Browser Applications? A. Use the Start Process action of the Utility - Environment Object to launch the application followed by an attach stage to attach to the application B. Hold the target URL in a data item as opposed to it being configured in the Application Modeller Wizard C. Set the HKEY CURRENT USER\\Software\\Microsoft\\Internet Explorer\\Main\\TabProcGrowth Registry key to 2 D. Use Surface Automation to automate the application",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An action within an object has been written that automates a browser based application. All elements can be spied successfully and the object runs without defect in Object Studio. However, when ran in Control Room, exceptions are thrown that indicate elements cannot be found. This is because elements on the web page do not load all at once, they load slowly one after another instead. Which of the following would be the most appropriate to improve the resilience of the automation? A. Use a Wait Stage with the Check Exists condition at the start of the action before continuing. B. Use a Wait Stage with the Parent Document Loaded condition at the start of the action. C. Use a Wait Stage with the Document Loaded condition at the start of the action. D. Do not spy elements with HTML mode",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "While trying to read a table in a browser based application into a collection an error message appears and the table cannot be read directly into the collection. This happens when using either AA or HTML mode. Which of the following would be the most appropriate workaround? A. Spy one cell in the table using HTML mode and make the Path attribute dynamic. Use this dynamic element to read the required cells one be one into a collection. B. Use Surface Automation techniques such as OCR to read the table C. Set the HKEY CURRENT USER\\Software\\Microsoft\\Internet Explorer\\Main\\TabProcGrowth Registry key to 2 D. Use the Read HTML action in conjunction with regular expressions to read the table.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements, about interfacing with browser applications are true? (Choose three.) A. To read or write to an HTML element, the element does not have to actually be visible on the screen. As long as the element exists on the currently loaded page reading or writing to it will work. B. Having the Parent URL attribute checked will result in a faster, more reliable identification of an element C. Elements within a Web Application can be spied using Active Accessibility mode D. Win32 mode can be used to identify the Internet Explorer Window E. HTML spy mode can be used to identify HTML elements in any browser application",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A PDD has been created which includes a requirement to log in to an application called CDS. The CDS application only allows a user account to be logged into the application on one machine at a time. The client wishes to hold the credentials for logging into CDS in the Blue Prism Credential store. It has been calculated that the automated solution will require 3 resource PC's to enable the case volume to be worked within SLA's. Which is the most appropriate design decision to accommodate the above requirements? A. Create user accounts and sets of Credentials per Resource PC in the Blue Prism Credential Manager for the CDS Application. B. Ask IT to enable concurrent logins to the CDS application for Blue Prism User Accounts C. Login in to the CDS application manually and let Blue Prism take over once the login is complete D. Create a single Credential in the Blue Prism Credential Manager for the CDS Application. Use a Blue Prism Environment Lock to ensure that only one Resource PC can be logged in to the CDS application at a time",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements regarding Blue Prism Credentials are true? 1. The Business Object; Internal - Credentials cannot retrieve encrypted credentials from the Blue Prism database 2. It is best practice to hold application credentials within the Process that requires them 3. It is best practice to hold application credentials within the Object that requires them 4. It is possible to hold Blue Prism Credentials in an unencrypted state A. 1 only B. 2 only C. 3 and 4 D. None",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A business requirement exists to be able to distinguish between cases that have failed due to \"˜not being an adult' and cases that have failed due to \"˜invalid ID' based on the exception detail Blue Prism has captured. The following Process configuration has been built as a solution. [sampleXML/xmlfile-18_1.jpg] Which of the following statements are correct? A. The Process configuration will meet the requirements B. The Process will fail because 2 Recover stages lead to a single Resume stage C. The Process configuration will not meet the requirements because the Exception Detail is not captured for the two Business Exceptions D. If the Valid ID stage results in a â€˜Noâ€™ answer, the Process will not throw an exception.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The following sub-page in a process creates an order in an order system. [sampleXML/xmlfile-20_1.jpg] The Actions called perform the following steps: ✑ Navigate to New Order \"\" The application is navigated to a new order screen. There is a wait stage to confirm the navigation is successful \"\" if this wait stage times out, an exception is configured which will bubble up to this page. ✑ Enter Order Details \"\" The Order details are entered triggering a \"˜Confirm Order' window. At this page, the order has not been submitted. There is a wait stage to confirm the \"˜Confirm Order' window has appeared \"\" if this stage times out, an exception is configured which will bubble up to this page. ✑ Submit Order \"\" The order is confirmed and placed in the Client's order system. There is a wait stage, for a reference number, configured that the order has been successfully submitted. If this wait stage times out, an exception is configured which will bubble up to this page. There is a known bug in the application which results in the application occasionally freezing when an order is submitted but before the reference number is displayed, thus leaving the user uncertain if the order has been successfully submitted or not. ✑ Get Reference Number \"\" A resultant reference number is read from the application. In order to build some resilience into the process, some retry logic is to be added. Which of the below options offers the best retry solution? A. [sampleXML/xmlfile-22_1.jpg] B. [sampleXML/xmlfile-23_1.jpg] C. [sampleXML/xmlfile-24_1.jpg] D. [sampleXML/xmlfile-25_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following are examples of a Business Exception? 1. A Business Requirement states that Blue Prism should not work on any accounts with a balance greater than Â£1,000,000. Blue Prism has successfully read the balance field and it has returned a value of Â£1,100,000. 2. Blue Prism has detected an unexpected pop up 3. A Blue Prism wait stage has timed out waiting for a Web page to load 4. The data input to the process has been validated and failed A. All of them B. 2 and 3 C. 1 and 4 D. None of them",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When using Control Room, which of the following statements are correct? (Choose three.) A. A process can be run on multiple resources at the same time B. A resource can run multiple processes at the same time C. Only one instance of each process can run at any one time D. A resource PC can only run one process at time E. A process must be published before it can be run in Control Room",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Insurance company has created 4 Blue Prism processes: ✑ Change of Address ✑ Claims Processing ✑ Renewals Order Letter [sampleXML/xmlfile-26_4.png] The Order Letter process is not a published process but is called as a sub process by each of the 3 other processes. Each day at 6am a scheduler starts: ✑ 2 instances of the Renewals process on the same virtual machine ✑ 9 instances of the Claims Processing process on 3 different virtual machines ✑ 1 instance of the Change of Address process on its own virtual machine How many robot licenses will be consumed by the running processes? A. 5 B. 12 C. 6 D. 3",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An attempt to start a Process on resource BP0100 has resulted in the following error message: BP0100 is too busy to run that process Which of the below is the most likely cause of this error? A. Resource BP0100 is offline B. There is more than one instance of the Blue Prism resourcepc command running on resource BP0100 C. The BPServer service is not running on the Blue Prism Application Server D. A Process is running on resource BP0100 that calls a Business Object with a run mode of â€˜Exclusiveâ€™",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A retail bank has promoted 5 Blue Prism processes to production: ✑ Email Poller ✑ Customer Onboarding ✑ Amend Contact Details ✑ Direct Debit Cancellations ✑ Onboarding Reporting One instance of the email Poller process will run 24/7 feeding work queues for the other two processes. Two concurrent instances of the Customer Onboarding process will run between 6am and 11pm each day on the same VM. Two concurrent instances of the Amend Contact Details process will run between 8am and 8pm each day on two VMs. One instance of the Direct Debit Cancellations process will run between 6am and 4pm each day on the same VM as the Email Poller process. The scheduler that starts the Direct Debit Cancellations process is configured to run the Onboarding Reporting process when the Direct Debit Cancellations process has successfully completed. How many robot licenses are required? A. 3 B. 4 C. 5 D. 6",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Study the process flow below: [sampleXML/xmlfile-29_1.jpg] [sampleXML/xmlfile-30_1.png] [sampleXML/xmlfile-30_2.jpg] [sampleXML/xmlfile-31_1.jpg] [sampleXML/xmlfile-31_2.jpg] The initial values for the Loop Count and Max Loop data items are 0 and 5 respectively. How many times will the Business Objects Action \"˜Screen AO1 \"\" Enter Data' be read into memory during the execution of the Process? A. 4 B. 5 C. 1 D. 0",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Study the process flow below: [sampleXML/xmlfile-32_1.jpg] [sampleXML/xmlfile-33_1.jpg] [sampleXML/xmlfile-33_2.jpg] [sampleXML/xmlfile-34_1.jpg] The initial values for the Loop Count and Max Loop data items are 0 and 5 respectively. How many times will the Process \"˜Open Account Part 1' be read into memory during the execution of the Process? A. 4 B. 5 C. 1 D. 0",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are working on a Java application. After successfully spying an element in Java mode, the target application crashes when attempting to highlight or interact with the element. Which of the following actions should be tried to resolve this? A. Spy the element in a different spy mode B. Restart the application C. Install the Java Access Bridge D. Enable the â€œdescendtreeâ€ target application option in Application Modeller",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is an alternative to the usual method of spying application elements when spying issues are encountered? A. Application Model B. Application Navigator C. Highlight D. System Navigator",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following attributes should be checked in order to improve the performance of interaction with a Java element? A. Java Text B. Ancestor Count C. Role D. Allowed Actions",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following are best practices when automating Java applications? (Choose two.) A. Restart the Resource PC every 24 hours B. Use Wait Stages that check for multiple conditions at once C. Avoid using the Java spy mode D. Restart the Java application at regular intervals",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements is true regarding the automation of Java applications? (Choose two.) A. Java Access Bridge is always required to automate applications using Java spy mode. B. Spy modes cannot be mixed when automating a Java application. All objects called by the process must use the same interface. C. Surface Automation is not compatible with Java applications. D. Active Accessibility spy mode can be used on Java applications",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Using a Wait stage to check if a Java element exists requires the Java Application Model tree to be traversed. Constantly accessing the model can be costly in terms of CPU efficiency. Which of the following tips is a valid method to help manage this CPU efficiency cost? A. Avoid using long timeout periods in Wait Stages that wait for Java elements B. Close and restart the Java application between cases C. Spy all the Java elements using an alternative spy mode D. Ensure all the actions required to interface with the Java application are contained in a single Object",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following does the Blue Prism Login Agent functionality support? (Choose three.) A. Log into Windows on a Resource PC B. Log into Business Applications C. Lock a Resource PC D. Determine if a Resource PC is logged in",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements regarding Blue Prism Login Agent are true? (Select all that apply.) A. Windows passwords can be changed using Login Agent Functionality B. It is not possible to use Login Agent to traverse the â€˜Press CTRL + ALT + DELETE to log onâ€™ screen C. Blue Prism Login Agent can be used to lock a Resource PC D. You cannot configure the Blue Prism scheduler to login via Login Agent and then run a business process once it has logged in",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct mnemonic keyword for the Enter key in an Attachmate mainframe application? A. @e B. {enter} C. [enter] D. {E}",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When spying an element how does Application Manager work out the best selection of element attributes? A. It uses the application details entered in the Application Manager set up. B. It learns from the elements spied previously to determine the best choice of attributes. C. The application informs Application Manager how the element should be identified. D. It cannot, the developer must determine the ideal selection.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An application needs to be interfaced with as part of a business process your team has been asked to automate using Blue Prism. The business process uses 30 different screens in the application. When thinking of your Object Design which of these statements are true? (Select all that apply.) A. Your object design should have multiple Blue Prism Objects for this one application to allow multiple developers to develop the application object layer at the same time. B. Your object design should have one object for your application to make change control and reuse easier. C. An object design is not required if an Agile delivery methodology is being used. Agile methodology does not require design documents. D. Your object design should have multiple Blue Prism Objects for this one application to reduce the risk of future changes that are made. E. To ensure your actions have the correct level of granularity your object design would contain at least 30 actions.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following techniques is most suitable for extracting text from a PDF Document which is a scan of a hand written document? A. Use Global Mouse Clicks and Global Send Keys to extract the PDF text to the Windows clipboard and use Blue Prism utilities or functions to extract the text from the clipboard B. Use the Adobe Acrobat API to export or convert the PDF document into another format such as XML or Microsoft Word C. Use the â€˜Read Text with OCRâ€™ option of a Blue Prism Read Stage on Regions D. None of these options",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following techniques is most suitable for extracting text from a PDF Document which originated as a Microsoft Word Document and was saved as a read only PDF? A. Use Global Mouse Clicks and Global Send Keys to extract the PDF text to the Windows clipboard and use Blue Prism utilities or functions to extract the text from the clipboard B. Use the â€˜Read Text with OCRâ€™ option of a Blue Prism Read Stage on Win32 Elements C. Use the â€˜Get Textâ€™ option of a Blue Prism Read Stage on Regions D. None of these options",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The \"˜Agent' field on the first row of the table below has been spied as a Region: [sampleXML/xmlfile-40_1.jpg] A Read Stage is using the \"˜Recognise Text' Data option to read some text from the Region. The result from the stage is shown in the following data item: [sampleXML/xmlfile-41_1.jpg] Which of the following could be a valid reason for this? A. The application may not have been activated before the Read Stage was executed B. The Font specified in the Read stage does not exist in the Blue Prism database C. Font Smoothing has been switched off on the Robot PC D. The Object is not attached the application",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When using Surface Automation which of the following Navigate Stage Actions should be used to press a button which has been identified as a Region? A. Press B. None of these C. Send Keys D. Mouse Click Centre",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When using Surface Automation which of the following is a valid Action within a Read Stage to read a numeric value from a field which has been identified as a Region? A. Read Text B. Read Text with OCR C. Get Current Value D. Get Window Attribute",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following Element Types is it possible to read an image from? 1. win32 2. Active Accessibility 3. HTML 4. Java A. 1 only B. 2 only C. All of the above D. None of the above",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When using Surface Automation which of the following statements about pressing a button is true? A. It is possible to press a button which is identified as a Region using the \"Global Mouse Click Centreâ€ action of a Navigate Stage B. You must use keystrokes to tab to the button before pressing it. C. You can press the button by using the native \"Pressâ€ action in a Navigate stage D. You can only press a button by sending the buttonâ€™s associated shortcut keystrokes.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Using Surface Automation there is requirement to enter a note in the Note field on the screen below: [sampleXML/xmlfile-44_1.jpg] The Note Box element has been spied as a Region: [sampleXML/xmlfile-45_1.jpg] On Launching the Add Note screen, the cursor is in the Name field and the Notes field will be empty. Which of the following is the most appropriate sequence of stages to enter the note into the Note field? A. Send a Global Mouse Click Centre to the Note Box element, followed by a tiny unconditional wait stage, followed by a Global Send Keys to the application. B. Use a Write stage to write data to the Note Box element C. Send a Global Mouse Click Centre to the Note Box element, followed by a tiny unconditional wait stage, followed by a Write Stage to the Note Box element D. Send a Global Mouse Click Centre to the Note Box element, followed by a tiny unconditional wait stage, followed by a Global Send Keys to the Note Box element",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following are correct? (Choose three.) A. Blue Prism web services are secured using HTTP authentication. B. Recursive definitions within WSDLs are supported by Blue Prism. C. Blue Prism can consume third-party web services presented over HTTPs assuming the runtime resources are configured to trust the certificate that is used to secure the web service D. Blue Prism supports binary data as inputs and outputs for web services.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about Blue Prism Web Service parameters are correct? (Choose two.) A. Flag is a valid output parameter B. Binary is a valid output parameter C. Duration is a valid output parameter D. Blue Prism Web Services cannot have output parameters",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about Blue Prism and Web Services are correct? (Choose three.) A. Blue Prism web services are executed on Blue Prism Runtime Resources B. Only Blue Prism Processes can be exposed as a Web Service C. A Blue Prism Business Object is exposed as a Web Service in the System Manager area of Blue Prism D. Both Blue Prism Processes or Business Objects can be exposed as a Web Service",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about setting and using Work Queue priority are correct? 1. The Blue Prism Work Queue business object can be used to change the priority of an item after it has been added to the queue. 2. Items are worked in order of lowest priority number first. 3. The default priority setting is 1. 4. Setting the priority for a Work Queue item is done when the item is first added to the queue using the Add To Queue action. A. 2 only B. 2 and 4 C. 1, 2 and 4 D. All of them",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following accurately describes best practice when work is sourced from an application's workflow system? A. There is no need to use a Blue Prism queue as workflow is managed within the application B. Even though there is a workflow system managing and allocating work, a Blue Prism Work Queue should still be used C. Blue Prism cannot source work from an application's workflow system D. When sourcing work from an applications workflow system, case data should be stored in an excel document",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following are valid options to circumvent the risk that lower priority work may never be worked if a process is configured to prioritise work in a Blue Prism Work Queue in an order other than the default priority (first in first out)? 1. Ensure that there are always enough robots working the process to clear all work each day 2. Design a solution that uses more than one method of prioritising, adding logic to your design that works lower priority items if they are over a configured age. 3. Ensure all Business Objects used in the solution are configured to have a run mode of Background 4. Include SLA monitoring and alerting to your solution, to ensure Blue Prism Controllers are informed if work items are at a risk of missing their SLAs. A. 2 only B. 1 and 3 C. 1 and 4 D. 1, 2 and 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about the status of a work queue is/are correct? 1. The status can be used as a method of recording what work has been done so far on a Work Queue item 2. The status is set using the Update Status action of the Work Queues business object 3. Every time the Update Status action is executed, the existing status is appended. Each status is separated with a semi colon. 4. The status can be used to aid manual working of exceptions; providing the Item Status can inform staff what work is still outstanding on an item that needs manually completing A. 1, 2, 3 and 4 B. 1, 2 and 4 C. 1, 2 and 3 D. 1 only",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements about Tagging of Work Queues are correct? (Choose three.) A. Tags can only be added to a Work Queue case at the time the case is added to the queue B. Tags can be used to categorise the â€˜Completion Typeâ€™ of a case. C. Tags can be used to filter the items retrieved from a work queue D. Tags can be used to categorise the source of a work queue item",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following comments about Wait Stages are correct? 1. After a Navigate stage which moves an application from one screen to another, it is good practice to configure a Wait Stage to detect the screen change has successfully completed. 2. It is good practice to hold the timeout values to be used in Wait Stages as a set of global data items on a Business Object' initialise page 3. It is good practice to ensure that a Wait Stage times out to another stage - normally an Exception Stage 4. There is no need to configure a Wait Stage, at the start of a Business Object action, to validate the application is on the correct, screen if the previous action called by the Process has validated a successful screen change. A. 1 only B. 1 and 2 C. 1, 2 and 3 D. All of the above",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When using Surface Automation Blue Prism is required to read the text contained within the Notes field below: [sampleXML/xmlfile-50_1.jpg] To do this, the field must be highlighted and the Keystrokes CTRL & C must be sent to the application to copy the text to the clipboard. The Note Box has been identified as a Region within the following Application Model. [sampleXML/xmlfile-51_1.jpg] Assuming all the text in the Notes field has been successfully highlighted, which of the following stages will successfully send CTRL & C to the application to copy the highlighted text to the Clipboard? A. [sampleXML/xmlfile-52_1.jpg] B. [sampleXML/xmlfile-53_1.jpg] C. [sampleXML/xmlfile-54_1.jpg] D. [sampleXML/xmlfile-55_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements regarding Blue Prism Login Agent are true? (Select all that apply.) A. Windows passwords can be changed using Login Agent Functionality B. It is possible to use a SAS (Secure Attention Sequence) service with Login Agent to traverse the â€˜Press CTRL + ALT + DELETE to log onâ€™ screen C. Blue Prism Login Agent can be used to lock a Resource PC D. You cannot configure the Blue Prism scheduler to login via Login Agent and then run a business process once it has logged in",
+    "options": {},
+    "most_voted": ""
+  }
+]
