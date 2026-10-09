@@ -1,0 +1,167 @@
+[
+  {
+    "question": "The following SAS program is submitted: %let a=cat; %macro animal(a=frog); %let a=bird; %mend; %animal(a=pig) %put a is &a What is written to the SAS log? A. a is pig B. a set cat C. a is frog D. a is bird",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data sets ONE and TWO: [sampleXML/xmlfile-15_1.jpg] The following SAS program is submitted: Data combine; Merge one two; By id; Run; Which SQL procedure program procedures the same results? A. proc sql; Create table combine as Select coalesce (one.id, two.id) as id, Name,salary from one, two where one.id=two.id; Quit; B. proc sql; Create table combine as Select one.id, Name, salary from one full join two where one.id=two.id; Quit C. proc sql; Create table combine as Select one.id,name,salary from one inner join two on one.id=two.id Quit D. proc sql; Create table combine as Select coalesce (one id, two id) as id, Name,salary from one full join two on one.id=two.id;",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following SAS data set ONE: ONE REP COST SMITH 200 SMITH 400 JONES 100 SMITH 600 JONES 100 JONES 200 JONES 400 SMITH 800 JONES 100 JONES 300 The following SAS program is submitted: proc sql; select rep, avg(cost) as AVERAGE from one group by rep having avg(cost) > (select avg(cost) from one); quit; Which one of the following reports is generated? A. REP AVERAGE JONES 200 B. REP AVERAGE JONES 320 C. REP AVERAGE SMITH 320 D. REP AVERAGE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following SAS data set ONE: ONE LEVEL AGE 1 10 2 20 3 20 2 10 1 10 2 30 3 10 2 20 3 30 1 10 The following SAS program is submitted: proc sql; select level, max(age) as MAX from one group by level having max(age) > (select avg(age) from one); quit; Which one of the following reports is generated? A. LEVEL AGE 2 20 3 20 B. LEVEL AGE 2 30 3 30 C. LEVEL MAX 2 20 3 30 D. LEVEL MAX 2 30",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "This question will ask you to provide a segment of missing code. The following SAS program submitted: [sampleXML/xmlfile-91_1.jpg] Which segment of code will successfully run an in-line view? [sampleXML/xmlfile-91_2.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data sets: [sampleXML/xmlfile-92_1.jpg] The SAS program is submitted: [sampleXML/xmlfile-92_2.jpg] What output will be produced? A. Name ---------- Lauren Smith Patel Farmer Chang Hiller B. Name ---------- Chang Chang Lauren C. Name ---------- Patel Chang D. Name ---------- Lauren Patel Chang",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data sets: [sampleXML/xmlfile-94_1.jpg] A SAS program is submitted and the following is written to SAS to: [sampleXML/xmlfile-94_2.jpg] What would allow the program to successfully execute without errors? A. Qualify the column names with the table names. B. Replace the 104 with: Where EMPLOYEE.Name = Any (Select names separated with , From WORK.NEWEMPLOYEE Where Salary > 40000); C. Replace the where clause with: Where EMPLOYEE.Name = (Select Names delimited with , From WORK.NEWEMPLOYEE Where Salary > 40000); D. Replace the equal sign with In operator.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the data sets: [sampleXML/xmlfile-95_1.jpg] The following SAS program is submitted: [sampleXML/xmlfile-95_2.jpg] Which result set would be generated? A. 100 B. 200 C. 300 D. 400",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data set WORK TRANSACT: [sampleXML/xmlfile-97_1.jpg] The following output is desired: [sampleXML/xmlfile-97_2.jpg] Which SQL statement was used? [sampleXML/xmlfile-98_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "This question will ask you to provide a segment of missing code. Given the SAS data set WORK EXAM: TotalScore ---------------- 512 657 * 782 The following SAS program is submitted: [sampleXML/xmlfile-101_1.jpg] The following output is desired: TotalScore -------------- 512 657 782 Which WHERE expression completes the program and generates the desired output? A. Where TotalScore is not missing B. Where TotalScore is null C. Where TotalScore is not D. Where AddToStringYN= ‘Y’",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data sets shown on the left, the SAS program on the right is submitted. [sampleXML/xmlfile-103_1.jpg] What will be the result when this program is executed? [sampleXML/xmlfile-104_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the data sets shown on the left, the SAS program shown on the right is submitted. [sampleXML/xmlfile-108_1.jpg] What will be output by the program? A. ERROR: Subquery evaluated to more than one row B. Average of Employment 6 C. Average of Employment 5 D. Average of employment 7",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following partial SAS log: [sampleXML/xmlfile-109_1.jpg] Which SQL procedure statement generated this output? A. DECREASE TABLE SASHELP.CLASS; B. CONTENTS TABLE SASHELP.CLASS; C. DESCRIBE TABLE=SASHELP.CLASS; D. ATTRIBUTE TABLE=SASHELP.CLASS",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "This question will ask you to provide a segment of missing code. Given the following program and data: [sampleXML/xmlfile-110_1.jpg] What is the WHERE statement that successfully completes the PROC PRINT and selects the observation from Barb? A. Where Birthday=&\"Want\"; B. Where Birthday=&‘Want’ d; C. Birthday=&Want D. Birthday=&\"Want\" d;",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: [sampleXML/xmlfile-114_1.jpg] What is written to the SAS log? A. Mv is bicycle B. Mv is shoes C. Mv is tents D. Mv is clothes",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION The question will ask you to provide a segment of missing code. The following SAS program is submitted: [sampleXML/xmlfile-118_1.jpg] The text box above, complete the %PUT statement to produce the following log output: [sampleXML/xmlfile-118_2.jpg] Case is ignored and standard SAS syntax rules apply.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which title statement would always display current date? A. title \" Today is: & today.\"; B. title \"Today is: sysfunc (today (), worddate)\"; C. title \"Today is: & sysdate. \"; D. title \"Today is: &sysdate.\";",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION This question will ask you to provide a segment of missing code. Given the two data sets on the left, the SAS program on the right is submitted. [sampleXML/xmlfile-121_1.jpg] [sampleXML/xmlfile-122_1.jpg] In the text box in the program above, complete the program so that it will properly use the macro variable to select the corresponding cities. Case is ignored and standard SAS syntax rules apply.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: [sampleXML/xmlfile-123_1.jpg] How will the variable be listed? A. Height Weight Name Age B. Weight Height C. Weight Height Name Age D. Name Age Weight Height",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "This question will ask you to provide a segment of missing code. Given the SAS data set SASUSER.ORDERS: [sampleXML/xmlfile-124_1.jpg] The following SAS program is submitted: [sampleXML/xmlfile-125_1.jpg] Which statement completes the program completely so that it will produce a report with the total number of orders for California? A. Call syntax (‘num’ California) B. Num = California C. # = California D. Syntax (‘num’, California)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the data set SASHELP.CLASS: [sampleXML/xmlfile-126_1.jpg] The following SAS program is submitted: [sampleXML/xmlfile-126_2.jpg] The PROC steps execute successfully? A. PROC PRINT only B. PROC MEANS and PROC PRINT C. PROC MEANS only D. No PROC steps execute successfully",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the data set shown in the left, the SAS program on the right is submitted. [sampleXML/xmlfile-127_1.jpg] Which program will result in the identical report? [sampleXML/xmlfile-128_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "This question will ask you to provide missing option. [sampleXML/xmlfile-129_1.jpg] Which option is required to complete the program correctly? A. CAMPLIB B. FMTSEARCH C. LIBREF D. UTILLOC",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The SAS set WORK CHECK has an index on the variable Code and the following SAS program is submitted. proc sort data=WORK.CHECK; by Code; run; What describes the result of submitting SAS program? A. The index on Code is updates B. The sort does not execute C. The index on Code is deleted D. The index on the Code unaffected",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION This item will ask you to provide a segment of missing code. Given the input data set shown on the left and the output data set shown on the right: [sampleXML/xmlfile-132_1.jpg] In the text below, enter the code that will complete the program to produce the output set shown above on the right. [sampleXML/xmlfile-132_2.jpg] Case is ignored and standard SAS syntax rules apply.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A data set stored on a network drive has the following characteristics: ✑ 14 Million observations ✑ 400 numeric variables ✑ 0 character variables of length 20 ✑ Binary compression A DATA Step query requires only 3 character and 15 numeric variables from this data set. What is the best way to reduce computer resource utilization in this DATA Step? A. A KEEP= data set option used on the SET Statement B. A KEEP Statement used within the DATA Step C. A KEEP= data set option used on the DATA Statement D. A DROP= data set option used on the DATA Statement",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The SAS data set WORK.TEMP is indexed on variable Id: [sampleXML/xmlfile-134_1.jpg] The following SAS program is submitted: [sampleXML/xmlfile-134_2.jpg] A. Stops because the data is not descending order B. Generates a report without a problem C. Stops because the data is not in ascending order D. Generates a report, but only if the index = USE option is turned on",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which SAS produce can be used to report Page Size? A. PRINT Procedure B. CATALOG Procedure C. REPORT Procedure D. CONTENTS Procedure",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: [sampleXML/xmlfile-140_1.jpg] The purpose of FILEVAR = option on the INFILE statement is to name the variable next, whose value: A. Points to a new input file B. Points to an aggregate storage location C. Is output to the SAS data set WORK.NEW D. Is an input SAS data set reference",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the data set shown on the left, the SAS program on the right is submitted: [sampleXML/xmlfile-141_1.jpg] Which statement is true regarding the WORK.MISSING data set? A. The descriptor portion of WORK.MISSING is created when the DATA step is submitted B. The data set is created when the DATA step is submitted C. When the view ONE is used in another SAS step, the data set is created D. The data set not created because the DATA statement contains a syntax error",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following SAS program: [sampleXML/xmlfile-144_1.jpg] What will be the output from the PRINT Procedure? [sampleXML/xmlfile-145_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The question will ask you to provide a segment of missing code. Given the following SAS program: [sampleXML/xmlfile-146_1.jpg] Which segment of code completes the program to use finance.new SAS view? A. Data = finance.new B. Data = finance.new / view = finance.new C. Data = finance.new / view D. View = finance.new",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the unsorted data set WORK.ORDERS [sampleXML/xmlfile-147_1.jpg] The following three programs are submitted: [sampleXML/xmlfile-147_2.jpg] Which program will create a list of unique Customer_ID values in the WORK.ORDERS data set? A. Only programs 2 and 3 B. Only programs 1 and 2 C. Programs 1, 2, and 3 D. Only programs 1and 2",
+    "options": {},
+    "most_voted": ""
+  }
+]
