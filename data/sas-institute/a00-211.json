@@ -1,0 +1,332 @@
+[
+  {
+    "question": "The SAS data set SASUSER.HOUSES contains a variable PRICE which has been assigned a permanent label of \"Asking Price\". Which SAS program temporarily replaces the label \"Asking Price\" with the label \"Sale Price\" in the output? A. proc print data = sasuser.houses; label price = \"Sale Price\"; run; B. proc print data = sasuser.houses label; label price \"Sale Price\"; run; C. proc print data = sasuser.houses label; label price = \"Sale Price\"; run; D. proc print data = sasuser.houses; price = \"Sale Price\"; run;",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The following SAS program is submitted: data work.empsalary; set work.people (in = inemp) work.money (in = insal); if insal and inemp; run; The SAS data set WORKPEOPLE has 5 observations, and the data set WORKMONEY has 7 observations. How many observations will the data set WORK.EMPSALARY contain? A. 0 B. 5 C. 7 D. 12",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The following SAS program is submitted: data work.accounting; set work.dept1 work.dept2; jobcode = FA1; length jobcode $ 8; run; A character variable named JOBCODE is contained in both the WORK.DEPT1 and WORK.DEPT2 SAS data sets. The variable JOBCODE has a length of 5 in the WORK.DEPT1 data set and a length of 7 in the WORK.DEPT2 data set. What is the length of the variable JOBCODE in the output data set? A. 3 B. 5 C. 7 D. 8",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data set SASDATA TWO: SASDATA TWO X Y -- -- 5 2 3 1 5 6 The following SAS program is submitted: data sasuser.one two sasdata.three; set sasdata two; if x = 5 then output sasuser.one; else output sasdata two; run; What is the result? A. data set SASUSER.ONE has 5 observations data set SASUSER.TWO has 5 observations data set WORK.OTHER has 3 observations B. data set SASUSER.ONE has 2 observations data set SASUSER.TWO has 2 observations data set WORK.OTHER has 1 observations C. data set SASUSER.ONE has 2 observations data set SASUSER.TWO has 2 observations data set WORK.OTHER has 5 observations D. No data sets are output.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: footnote1 Sales Report for Last Month; footnote2 Selected Products Only; footnote3 All Regions; footnote4 All Figures in Thousands of Dollars; proc print data = sasuser.shoes; footnote2 All Products; run; Which footnote(s) is/are displayed in the report? A. All Products B. Sales Report for Last Month All Products C. All Products All Regions All Figures in Thousands of Dollars D. Sales Report for Last Month All Products All Regions All Figures in Thousands of Dollars",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data one; addressl = 214 London Way; run; data one; set one; address = tranwrd(address1, Way, Drive); run; What are the length and value of the variable ADDRESS? A. Length is 14; value is ‘214 London Dri’. B. Length is 14; value is ‘214 London Way’. C. Length is 16; value is ‘214 London Drive’. D. Length is 200; value is ‘214 London Drive’.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data work.sets; do until (prod gt 6); prod + 1; end; run; What is the value of the variable PROD in the output data set? A. 6 B. 7 C. 8 D. (missing numeric)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The SAS data sets WORK.EMPLOYEE and WORK.SALARY are shown below: WORK.EMPLOYEE WORK.SALARY fname age name salary Bruce 30 Bruce 25000 Dan 40 Bruce 35000 Dan 25000 The following SAS program is submitted: data work.empdata; by fname; totsal + salary; run; Which one of the following statements completes the merge of the two data sets by the FNAME variable? A. merge work.employee work.salary (fname = name); B. merge work.employee work.salary (name = fname); C. merge work.employee work.salary (rename = (fname = name)); D. merge work.employee",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: proc sort data = work.employee; by descending fname; proc sort data = work.salary; by descending fname; data work.empdata; merge work.employee work.salary; by fname; run; Why does the program rail to execute? A. The SORT procedures contain invalid syntax. B. The merged data sets are not permanent SAS data sets. C. The RUN statement was omitted alter each or the SORT procedures. D. The data sets were not merged in the order by which they were sorted.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submittad: data work.sales; do year = 1 to 5; do month=1 to 12; x+1; output end; end; run; How many observations are written the WORK SALES data set? A. 0 B. 1 C. 5 D. 60",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following raw data record: ----I----10---I----20---I----30 son Travis, The following output is desired: Obs relation firstname 1 son Travis Which SAS program correctly reads in the raw data? A. data family ( dIm = ‘,’); infile ‘tile specification’; input relation $ firstname $; run; B. options dIm = ‘,’; data family; infile ‘file specification’; input relation $ firstname $; run; C. data family; infile ‘file specification’ dIm = ‘,’; input relation $ firstname $; run; D. data family; infile ‘file specification’; input relation $ firstname $ / dim = ‘,’; run;",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data set PRICES: Prodid price producttype sales returns K125 5.10 NETWORK 15 2 B132S 2.34 HARDWARE 300 10 R18KY2 1.29 SOFTWARE 25 5 3KL8BY 6.37 HARDWARE 125 15 DY65DW 5.60 HARDWARE 45 5 DGTY23 4.55 HARDWARE 67 2 The following SAS program is submitted: data hware inter cheap; set prices(keep = productype price); if producttype = HARDWARE then output hware; else if producttype = NETWORK then output inter; if price le 5.00; run; if producttype = HARDWARE then output hware; else if producttype = NETWORK then output inter; if price le 5.00; run; How many observations does the HWARE data set contain? A. 0 B. 2 C. 3 D. 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The contents of the raw data file PRODUCT are listed below: --------10-------20-------30 24613 $25.31 The following SAS program is submitted: data inventory; infile 'product'; input idnum 5. @10 price; run; Which one of the following is the value of the PRICE variable? A. 25.31 B. $25.31 C. . (missing numeric value) D. No value is stored as the program fails to execute due to errors.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data test; set chemists; jobcode = Chem2 then description = Senior Chemist; else description = Unknown; run; The value for the variable JOBCODE is: JOBCODE ------------- chem2 What is the value of the variable DESCRIPTION? A. chem2 B. Unknown C. Senior Chemist D. ‘ ‘ (missing character value)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Given the raw data file EMPLOYEE: ----I----1 0---I----20---I----30 Ruth 39 11 Jose 32 22 Sue 30 33 John 40 44 The following SAS program is submitted: data test; infile employee; input employee_name $ 1-4; if employee_name = Ruth then input idnum 10-11; else input age 7-8; run; What value does the variable IDNUM contain when the name of the employee is \"Ruth\"? A. 11 B. 22 C. 33 D. (missing numeric value)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data temp.x; set sasuser.y; run; What must be submitted prior to this SAS program for the program to execute successfully? A. A LIBNAME statement for the libref TEMP only must be submitted. B. A LIBNAME statement for the libref SASUSER only must be submitted. C. LIBNAME statements for the librefs TEMP and SASUSER must be submitted. D. No LIBNAME statement needs to be submitted.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data work.flights; destination = cph; select(destination); when(LHR) city = London; when(CPH) city = Copenhagen; otherwise city = Other; end; run; What is the value of the CITY variable? A. Other B. Copenh C. Copenhagen D. ‘‘(missing character value)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted, creating the SAS data set ONE: data one; infile file specification; input num chars$; run; ONE NUM CHAR ------- --------- 1 23 3 23 1 77 The following SAS program is submitted: proc print data = one; where char = 23; run; What is output? A. NUM CHAR 1 77 B. NUM CHAR 1 23 3 23 C. NUM CHAR 1 23 3 23 1 77 D. No output is generated.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data work.retail; cost = 20000; total= .10* cost run; What is the result? A. The value of the variable TOTAL in the output data set is 2000. No messages are written to the SAS log. B. The value of the variable TOTAL in the output data set is 2000. A note that conversion has taken place is written to the SAS log. C. The value of the variable TOTAL in the output data set is missing. An error message is written to the SAS log. D. The variable TOTAL in the output data set has no value. The program fails to execute due to a syntax error.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data one; date = 04juI2005d; format date weekdate.; run; proc print data = one; run; What output is generated? A. Obs date 1 Monday, July 4, 2005 B. Obs date 1 July4, 2005 C. Obs date 1 04Jul2005 D. Obs date",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the contents of the raw data file EMPLOYEE: ----|----10----|----20----|----30 Alan 19/2/2004 ACCT Rob 22/5/2004 MKTG MaryJane 14/3/2004 EDUC The following SAS program is submitted: data emps; infile employee; input@1 name$ @15 date <insert INFORMAT here> @25 department$; run; Which INFORMAT correctly completes the program? A. date9. B. ddmmyyyy9. C. ddmmyy10. D. ddmmyyyy10.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data set ONE: Given the SAS data set WORK.ONE: [sampleXML/xmlfile-45_1.png] The following SAS program is submitted: [sampleXML/xmlfile-46_1.png] Which report is produced? [sampleXML/xmlfile-47_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data set PEPM.STUDENTS: PERM.STUDENTS NAME AGE --------- ------ Alfred 14 Alice13 Barbara13 Carol14 The following SAS program is submitted: libname perm SAS data library; data students; set perm.students; file file specification; put name $15. @5 age 2.; run; What is written to the output raw data file? A. ----I----10---I----20---I----30 Alfred 14 Alice 13 Barbara 13 Carol 14 B. ----I----10---I----20---I----30 Alfr14 Alic13 Barb13a Carol 4 C. ----I----10---I----20---I----30 Alfr14ed Alic130 Barb13ara Caro141 D. ----I----10---I----20---I----30 Alfred14 Alice13 Barbara13",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data WORK.ONE; Text=Australia, US, Denmark; Pos=find(Text,US,i,5); run; What value will SAS assign to Pos? A. 0 B. 1 C. 2 D. 12",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data WORK.DATE_INFO; X=\"01Jan1960\" D; run; What variable X contains what value? A. the numeric value 0 B. the character value \"01Jan1960\" C. the date value 01011960 D. the code contains a syntax error and does not execute.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data set WORK.EMP_NAME: [sampleXML/xmlfile-66_1.png] Given the SAS data set WORK.EMP_DEPT: [sampleXML/xmlfile-67_1.png] The following program is submitted: [sampleXML/xmlfile-67_2.png] How many observations are in data set WORK.ALL after submitting the program? A. 1 B. 2 C. 3 D. 5",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data ONE TWO SASUSER.TWO set SASUSER.ONE; run; Assuming that SASUSER.ONE exists, how many temporary and permanent SAS data sets are created? A. 2 temporary and 1 permanent SAS data sets are created B. 3 temporary and 2 permanent SAS data sets are created C. 2 temporary and 2 permanent SAS data sets are created D. there is an error and no new data sets are created",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data set WORK.TEMPS: [sampleXML/xmlfile-72_1.png] The following program is submitted: [sampleXML/xmlfile-72_2.png] Which output is correct? [sampleXML/xmlfile-73_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data set WORK.ONE: [sampleXML/xmlfile-80_1.png] And the SAS data set WORK.TWO: [sampleXML/xmlfile-80_2.png] The following program is submitted: [sampleXML/xmlfile-80_3.png] What is the first observation in the SAS data set WORK.BOTH? [sampleXML/xmlfile-81_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Given the following raw data records in TEXTFILE.TXT: [sampleXML/xmlfile-85_2.png] The following output is desired: [sampleXML/xmlfile-86_1.png] Which SAS program correctly produces the desired output? [sampleXML/xmlfile-87_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: [sampleXML/xmlfile-89_1.png] What is the initial value of the variable Total in the following program? A. 0 B. Missing C. The value of the first observations Wagerate D. Cannot be determined from the information given",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following raw data records: [sampleXML/xmlfile-90_2.png] The following output is desired: [sampleXML/xmlfile-91_1.png] Which SAS program correctly reads in the raw data? [sampleXML/xmlfile-91_2.png] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: [sampleXML/xmlfile-95_1.png] The SAS data set WORK.SALARY is currently ordered by Gender within Department. Which inserted code will accumulate subtotals for each Gender within Department? A. Gender B. Department C. Gender Department D. Department Gender",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After a SAS program is submitted, the following is written to the SAS log: 105 data WORK.JANUARY; 106 set WORK.ALLYEAR(keep=Product Month Quantity Cost); 107 if Month='JAN' then output WORK.JANUARY; 108 Sales=Cost * Quantity; 109 drop=Month Quantity Cost; ----- ERROR 22-322: Syntax error, expecting one of the following: !, !!, , *, **, +, -, , <=, <>, =, >, >=, AND, EQ, GE, GT, IN, LE, LT, MAX, MIN, NE, NG, NL, NOTIN, OR, ^=, |, ||, ~=. 110 run; What data set option could be attached to WORK.JANUARY to replace the DROP statement that generated the error in the log? A. (drop Month Quantity Cost) B. (drop Month, Quantity, Cost) C. (drop=Month, Quantity, Cost) D. (drop=Month Quantity Cost)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the SAS data set WORK.ONE: [sampleXML/xmlfile-99_1.png] What value will SAS assign to Total? A. 3 B. 1.6 C. 4.8 D. The program fails to execute due to errors.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The contents of the raw data file SIZE are listed below: --------10-------20-------30 72 95 The following SAS program is submitted: data test; infile 'size'; input @1 height 2. @4 weight 2; run; Which one of the following is the value of the variable WEIGHT in the output data set? A. 2 B. 72 C. 95 D. . (missing numeric value)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A SAS PRINT procedure output of the WORK.LEVELS data set is listed below: Obs name level 1 Frank 1 2 Joan 2 3 Sui 2 4 Jose 3 5 Burt 4 6 Kelly . 7 Juan 1 The following SAS program is submitted: data work.expertise; set work.levels; if level = . then expertise = 'Unknown'; else if level = 1 then expertise = 'Low'; else if level = 2 or 3 then expertise = 'Medium'; else expertise = 'High'; run; Which of the following values does the variable EXPERTISE contain? A. Low, Medium, and High only B. Low, Medium, and Unknown only C. Low, Medium, High, and Unknown only D. Low, Medium, High, Unknown, and ' ' (missing character value)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The contents of the raw data file EMPLOYEE are listed below: --------10-------20-------30 Ruth 39 11 Jose 32 22 Sue 30 33 John 40 44 The following SAS program is submitted: data test; infile 'employee'; input employee_name $ 1-4; if employee_name = 'Sue' then input age 7-8; else input idnum 10-11; run; Which one of the following values does the variable AGE contain when the name of the employee is \"Sue\"? A. 30 B. 33 C. 40 D. . (missing numeric value)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Unless specified, which variables and data values are used to calculate statistics in the MEANS procedure? A. non-missing numeric variable values only B. missing numeric variable values and non-missing numeric variable values only C. non-missing character variables and non-missing numeric variable values only D. missing character variables, non-missing character variables, missing numeric variable values, and non-missing numeric variable values",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The SAS data set BANKS is listed below: BANKS name rate FirstCapital 0.0718 DirectBank 0.0721 VirtualDirect 0.0728 The following SAS program is submitted: data newbank; do year = 1 to 3; set banks; capital + 5000; end; run; Which one of the following represents how many observations and variables will exist in the SAS data set NEWBANK? A. 0 observations and 0 variables B. 1 observations and 4 variables C. 3 observations and 3 variables D. 9 observations and 2 variables",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A raw data record is listed below: --------10-------20-------30 1999/10/25 The following SAS program is submitted: data projectduration; infile 'file-specification'; input date $ 1 - 10; run; Which one of the following statements completes the program above and computes the duration of the project in days as of today's date? A. duration = today( ) - put(date,ddmmyy10.); B. duration = today( ) - put(date,yymmdd10.); C. duration = today( ) - input(date,ddmmyy10.); D. duration = today( ) - input(date,yymmdd10.);",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data work.retail; cost = '20000'; total = .10 * cost; run; Which one of the following is the value of the variable TOTAL in the output data set? A. 2000 B. '2000' C. . (missing numeric value) D. ' ' (missing character value)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data work.test; Author = 'Agatha Christie'; First = substr(scan(author,1,' ,'),1,1); run; Which one of the following is the length of the variable FIRST in the output data set? A. 1 B. 6 C. 15 D. 200",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data work.test; Title = 'A Tale of Two Cities, Charles J. Dickens'; Word = scan(title,3,' ,'); run; Which one of the following is the value of the variable WORD in the output data set? A. T B. of C. Dickens D. ' ' (missing character value)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data work.staff; JobCategory = 'FA'; JobLevel = '1'; JobCategory = JobCategory || JobLevel; run; Which one of the following is the value of the variable JOBCATEGORY in the output data set? A. FA B. FA1 C. FA 1 D. ' ' (missing character value)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The SAS data set WORK.AWARDS is listed below: fname points Amy 2 Amy 1 Gerard 3 Wang 3 Wang 1 Wang 2 The following SAS program is submitted: proc sort data = work.awards; by descending fname points; run; Which one of the following represents how the observations are sorted? A. Wang 3 Gerard 3 Wang 2 Amy 2 Wang 1 Amy 1 B. Wang 3 Wang 2 Wang 1 Gerard 3 Amy 2 Amy 1 C. Wang 3 Wang 1 Wang 2 Gerard 3 Amy 2 Amy 1 D. Wang 1 Wang 2 Wang 3 Gerard 3 Amy 1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A raw data file is listed below: --------10-------20-------30 John McCloskey 35 71 June Rosesette 10 43 Tineke Jones 9 37 The following SAS program is submitted using the raw data file as input: data work.homework; infile 'file-specification'; input name $ age height; if age LE 10; run; How many observations will the WORK.HOMEWORK data set contain? A. 0 B. 2 C. 3 D. No data set is created as the program fails to execute due to errors.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: libname temp 'SAS-data-library'; data work.new; set temp.jobs; format newdate mmddyy10.; qdate = qtr(newdate); ddate = weekday(newdate); run; proc print data = work.new; run; The variable NEWDATE contains the SAS date value for April 15, 2000. What output is produced if April 15, 2000 falls on a Saturday? A. Obs newdate qdate ddate 1 APR152000 2 6 B. Obs newdate qdate ddate 1 04/15/2000 2 6 C. Obs newdate qdate ddate 1 APR152000 2 7 D. Obs newdate qdate ddate",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A raw data file is listed below: RANCH,1250,2,1,Sheppard Avenue,\"$64,000\" SPLIT,1190,1,1,Rand Street,\"$65,850\" CONDO,1400,2,1.5,Market Street,\"80,050\" TWOSTORY,1810,4,3,Garris Street,\"$107,250\" RANCH,1500,3,3,Kemble Avenue,\"$86,650\" SPLIT,1615,4,3,West Drive,\"94,450\" SPLIT,1305,3,1.5,Graham Avenue,\"$73,650\" The following SAS program is submitted using the raw data file as input: data work.condo_ranch; infile 'file-specification' dsd; input style $ @; if style = 'CONDO' or style = 'RANCH' then input sqfeet bedrooms baths street $ price : dollar10.; run; How many observations does the WORK.CONDO_RANCH data set contain? A. 0 B. 3 C. 5 D. 7",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data work.january; set work.allmonths (keep = product month num_sold cost); if month = 'Jan' then output work.january; sales = cost * num_sold; keep = product sales; run; Which variables does the WORK.JANUARY data set contain? A. PRODUCT and SALES only B. PRODUCT, MONTH, NUM_SOLD and COST only C. PRODUCT, SALES, MONTH, NUM_SOLD and COST only D. An incomplete output data set is created due to syntax errors.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: [sampleXML/xmlfile-153_2.png] Which statement is true about the output data set? A. The type of the variable CharEmpid is numeric. B. The type of the variable CharEmpid is unknown. C. The type of the variable CharEmpid is character. D. The program fails to execute due to errors.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: [sampleXML/xmlfile-155_1.png] What is the result? A. The value of the variable Discount in the output data set is 2000. No messages are written to the SAS log. B. The value of the variable Discount in the output data set is 2000. A note that conversion has taken place is written to the SAS log. C. The value of the variable Discount in the output data set is missing. A note in the SAS log refers to invalid numeric data. D. The variable Discount in the output data set is set to zero. No messages are written to the SAS log.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Population is currently at 34,278,400 for country A and is expected to rise at a rate of 2%. Which DO LOOP will correctly calculate growth rate over the next 10 years beginning in 2012 as shown in the graphic below? A. B. C. D.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The SAS data set named WORK.SALARY contains 10 observations for each department, and is currently ordered by Department. The following SAS program is submitted: What is the value of the variable Total before the first iteration of the data step? A. The value of the first observation’s Wagerate. B. 0 C. Missing D. Cannot be determined from the information given",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following SAS data set WORK.SALES: The following SAS program is submitted: Which output is produced? A. B. C. D.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "FILL BLANK The following SAS program is submitted: What value will SAS assign to Pos? Enter your numeric answer in the space below.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: proc sort data=SASUSER.PROJECTS out=PSORT; by Product Code descending Date Cost; run; Which of the following is true concerning the submitted program? A. The descending option applies only to the Date variable. B. The descending option applies to the Date and Cost variables. C. The descending option applies to the Product and Code variables. D. The descending option applies only to the Code variable.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "This question will ask you to provide a missing format: Given the contents of the raw data file 'EMPLOYEE.TXT' Which SAS information correctly completes the program? A. date10 B. mmddyy10 C. ddmmyy10 D. date9",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the data sets below: WORK.EMP with variables: WORK.NEWHIRE with variables: The following SAS program is submitted: The SAS data set WORK.EMP has 50 observations, and the data set WORK.NEWHIRE has 4 observations. How many variables will the data set WORK.ALLEMP contain? A. 3 B. The program fails execution. C. 6 D. 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "FILL BLANK Given the SAS data set WORK.EMP_NAME: Given the SAS data set WORK.EMP_DEPT: The following program is submitted: How many observations are in data set WORK.ALL after submitting the program? Enter your numeric answer in the space below.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement specifies that records 1 through 10 are to be read from the raw data file customer.txt? A. infile 'customer.txt' eof=10; B. infile 'customer.txt' obs=10; C. infile 'customer.txt' obs=10; D. infile 'customer.txt' obs=1-10;",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following raw data records: The following output data set is desired: Which SAS program correctly reads in the raw data? A. B. C. D.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following SAS data set WORK.EMPDATA: Which WHERE statement would display observations with Job_Title containing the word “Manager”? A. where upcase(scan(Job_Title,-1,’ ‘))=’MANAGER’; B. where Job_Title like ‘%Manager%’; C. where substr(Job_Title, (length(Job_Title)-6))=’Manager’; D. where Job_Title=’% Manager ‘;",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: If the value for the Alumcode is: ALUM2, what is the value of the variable Description? A. Grad Level B. Unknown C. GRAD LEVEL D. ‘’ (missing character value)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following SAS program is submitted: data WORK.COMPRESS; ID = \"˜1968 05-10 567'; NewID = compress (ID, \"-\"); run; What will the value of NewID be in the WORK.COMPRESS data set? A. 1968 05-10 567 B. 19680510567 C. 196805-10567 D. 1968 0510 567",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given the following IF/THEN statement: If Age NE 16 and Age NE 15 then Group=1; Which assignment statement for variable Group is functionally equivalent to the original statement used in the above data step? A. if (Age NE 16) or (Age NE 15) then Group=1; B. where Age not between (15 and 16) then Group=1; C. where Age not between 15 and 16 then Group=1; D. if Age not in(15,16) then Group=1;",
+    "options": {},
+    "most_voted": ""
+  }
+]
