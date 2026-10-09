@@ -2,11 +2,23 @@ import argparse
 import json
 import random
 import re
+import subprocess
 import sys
 import time
 from pathlib import Path
 
 SEVEN_DAYS = 7 * 24 * 60 * 60
+
+
+def _file_age_seconds(path: Path) -> float:
+    result = subprocess.run(
+        ["git", "log", "-1", "--format=%ct", "--", str(path)],
+        capture_output=True, text=True,
+    )
+    commit_ts = result.stdout.strip()
+    if commit_ts:
+        return time.time() - int(commit_ts)
+    return time.time() - path.stat().st_mtime
 
 from examtopics.browser_scraper import CamoufoxScraper
 from examtopics.cache import HtmlCache
@@ -134,7 +146,7 @@ def _scrape_provider_single_pass(
         out_file = output_dir / f"{exam}.json"
 
         if out_file.exists():
-            age = time.time() - out_file.stat().st_mtime
+            age = _file_age_seconds(out_file)
             if age < SEVEN_DAYS:
                 print(f"  Skipping {exam} (data is {age / 86400:.0f}d old, fresh)")
                 continue
@@ -212,7 +224,6 @@ def scrape_exam(provider: str, exam: str, fetcher: HttpFetcher, cache: HtmlCache
 
 
 def git_commit(provider: str, exam: str) -> None:
-    import subprocess
     try:
         subprocess.run(["git", "add", "data/"], check=True)
         result = subprocess.run(["git", "diff", "--staged", "--quiet"])
@@ -281,7 +292,7 @@ def main():
     for exam in exams:
         out_file = output_dir / f"{exam}.json"
         if out_file.exists():
-            age = time.time() - out_file.stat().st_mtime
+            age = _file_age_seconds(out_file)
             if age < SEVEN_DAYS:
                 print(f"Skipping {exam} (data is {age / 86400:.0f}d old, fresh)")
                 continue
