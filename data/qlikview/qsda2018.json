@@ -1,0 +1,62 @@
+[
+  {
+    "question": "A car manufacturer has several QlikView apps. The manufacturer decides to migrate some specific apps to Qlik Sense. The manufacturer decides to migrate some specific wants to reuse front-end variables from the previous QlikView app. Which strategy should a data architect use to meet these requirements? A. Use the QlikView converter within the Dev Hub of Qlik Sense B. Drag and drop a QVM file into the Qlik Sense hub and create a new app C. Export the existing LOAD script into a QVS file for later reuse in Qlik Sense D. Copy and paste the LOAD script of the existing QlikView app into the new app.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-3_1.png] A data architect needs to build a sales dashboard. Data is stored in a legacy database. The extracted data contains the date in the format, 'YYYDDMM'. Due to the source date format, the dates are being loaded as numbers. Which function should the data architect use to fix this issue? A. Timestamp B. Date C. Date# D. Timestamp#",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data architect uses the Qlik GeoAnalytics connector to determine the closest airports to cities in an existing app. The built location generates data for the airport locations. The data load editor runs the script and sees a circular reference and a synthetic key. How should the data architect fix these issues? A. When selecting an operation in the Qlik GeoAnalytics connector, select Only load distinct. B. When choosing which data to load, uncheck the non-unique field in the new data tables. C. Concatenate the airport table and the existing tables into one master tables. D. When selecting an operation in the Qlik GeoAnalytics connector, change the CRS to ג€Noneג€.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. [sampleXML/xmlfile-5_1.jpg] [sampleXML/xmlfile-5_2.jpg] [sampleXML/xmlfile-6_1.jpg] [sampleXML/xmlfile-6_2.jpg] Which corrective action should be taken to achieve the expected view? A. Alias one of the fields in the Orders table. B. Use distinct in the LOAD statement. C. Use Upper () to align the SalesPerson fields. D. Add a link table.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-7_1.jpg] The business analyst previews some data and notices different values for the United States in the Country field. The analyst must be able to report the total sales for the United States. The data architect must fix this issue in the LOAD script. Which function should the data architect use to fix data quality issue? A. Switch B. ApplyMap C. Case D. Replace",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-9_1.jpg] A data architect has two tables that contain Sales and target data for employees. The tables are loaded into Qlik Sense and are associated by EmployeeID. The data architect creates a bar chart of total Sales vs. Target. The architect notices some values for target are too high, and employees with NO sales should be excluded. Which function should the data architect use to resolve these issues? A. Left Join B. Inner Join C. Left Keep D. Outer Join",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-13_1.png] A major healthcare organization requests a new app with the following requirements: ✑ Users can filter AdmissionDate and DischargeDate by all fields in the master Calendar table ✑ Use an existing QVD file, which includes dates 20 years into the future ✑ Users should not be able to filter on dates that have no associated encounters Which approach should the data architect take to meet these requirements? A. 1. Load the Encounters table 2. Perform a Left Join Load on the Encounters table to the master calendar and alias the date fields appropriately for the Admission Date 3. Perform a Left Join Load on the Encounters table to the master calendar and alias the date fields appropriately for the Discharge Date B. 1. Load the master calendar 2. Create two mapping tables called AdmissionCalendar and DischargeCalendar from the Resident master calendar that has all fields appropriately named 3. Load the Encounters and use ApplyMap for the AdmissionDate and DischangeDate appropriately. C. 1. Load the Master Calendar and Encounters tables. 2. Perform a Join Load on the Encounters table to the Resident master calendar and alias the date fields appropriately for the Admission Date 3. Perform a Join Load on the Encounters table to the Resident master calendar and alias the date fields appropriately for the Discharge Date D. 1. Load the master calendar as AdmissionCalendar and alias the fields to reflect they are for Admission 2. Load the master calendar as Discharge Calendar and alias the fields to reflect they are for Discharge 3. Load the Encounters table",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-14_1.jpg] A data architect needs to build a dashboard that displays the aggregated sales for each sales representative. All aggregations on the data must be performed in the script. Which script should the data architect use to meet these requirements? A. [sampleXML/xmlfile-15_1.jpg] B. [sampleXML/xmlfile-16_1.jpg] C. [sampleXML/xmlfile-17_1.jpg] D. [sampleXML/xmlfile-18_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-19_1.jpg] A data architect needs to transform the values for SalesYear from 'Sales 2016' to display only the year values '2016' and '2017' in the table. Which two functions can the data architect use to accomplish this in the script? (Choose two.) A. Right(ג€˜$(vSalesSheet)ג€™ as SalesYear B. Left($(vSalesSheet)ג€™ 4) as SalesYear C. SubField($(vSalesSheet)ג€™,ג€™ ג€˜,2) as SalesYear D. LTrim(ג€˜$(vSalesSheet)ג€™) as SalesYear E. SubField($(vSalesSheet)ג€™,ג€™ ג€˜,1 ) as SalesYear",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A data architect is working on a time and expense app for an organization that has Sales, Marketing, and Finance departments/ Department managers should only be able to view the data for their department's team members. Where should the data architect apply this security restriction? A. Data load editor B. Qlik Management Console C. Expression editor D. Data manager",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-26_1.jpg] A QlikView app was converted to a Qlik Sense app using the Dev Hub converter. The new Qlik Sense app was reloaded without editing the script or the server settings, which created a script error. What should a data architect do to resolve the issue? A. Delete the Qualify statement B. Add fields to the Qualify statement C. Use a folder connection D. Check the QVDs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Payroll managers need access to the payroll system to complete a quarterly report. A username and password is required to access the payroll system through an ODBC connection. Only the system administrator should have access to the credentials and make updates as needed. Each payroll manager who access the app should only see their own employees. Which two actions are required to set up the appropriate security? (Choose two.) A. Make sure that the administrator creates appropriate sync rules to access the payroll system B. Apply the correct section access to restrict data visibility C. Make sure that the administrator applies security rules to the correct stream to restrict data visibility D. Apply security rules to the app to restrict data visibility E. Make sure that the administrator applies the correct security rules to the ODBC connection",
+    "options": {},
+    "most_voted": ""
+  }
+]
