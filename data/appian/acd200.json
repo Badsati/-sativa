@@ -1,0 +1,137 @@
+[
+  {
+    "question": "When creating a Web API, which two items are configured in the Administration Console? (Choose two.) A. LDAP Authentication B. API Key C. Connected System D. Service Account",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During the design review, you identified slow-operating expression rules querying a specific data store. Which metric from the data_store_details.csv file will help you understand the “number of operations against data store?” (Choose the best answer.) A. Transform Count B. Query Count C. Total Count D. Execute Count",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have configured a process model to send an email to one or more recipients using the out-of-the-box Send E-Mail node. Executing the process model results in the Send E-Mail node encountered this error: “Error:Email could not be sent” Where do you go first to find more details on why the node encountered an error? (Choose the best answer.) A. Raise a support case within My Appian so a cloud engineer can investigate. B. Review the system.csv log. C. Run and review the Health Check report D. Investigate the application server stdout log",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to show joined data from 5 tables. Each table contains a large number of rows and could generate a large result set after executing the Joins. The business is not expecting live data, and a 2-hour refresh is acceptable. Performance is a top priority. What should you use? (Choose the best answer.) A. Table B. View C. Stored procedure D. Materialized view",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are on a project where the goal is to use Appian Sites to create and edit invoices issued to customers. This process model is being used as a related action, to edit an Invoice. You have already created a record for invoices. Review the following image: Which two suggestions regarding this process are valid? (Choose two.) A. We should consider adding a timer exception which skips the “Edit/Credit Invoice” node after 24 hours. B. We should add this process model as a related action on the Invoices record called “Edit Invoice.” C. We should add two pages to the site, one of which is a Record List of Invoices, and the other which has this process model as a Report. D. To improve performance, we should consider removing activity chaining from all flows.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are code-checking your colleague's process model before marking it as Ready for Deployment. Which three best practices should be applied? (Choose three.) A. All nodes should have exception flows B. All XOR/OR gateways should have a single incoming ow. C. All outgoing flows from a gateway should be labeled C. Node inputs should not make the same query call more than once. D. Activity chaining should be added to the majority of flows.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are using pie charts. What is correct representation of Appian best practices? (Choose the best answer.) A. Use as many slices as possible. B. Pie charts should only be used to represent data that can be placed into identical categories. B. Use pie charts to show proportional data. D. Try to use multiple pie charts when comparing multiple sets of data.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You create an Integration that modifies the data. In which three locations can it be called? (Choose three.) A. Web API (GET) B. Expression or Rule C. Web API (POST, PUT, DELETE) C. Process model D. SAIL saveinto parameter",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your organization is considering options for integrating with external systems from within Appian. Which Appian object is designed to allow you to share base URL and authentication details across multiple integrations? (Choose the best answer.) A. A web API B. An integration C. A connector function D. A connected system",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to update the archival settings for a process model. You modified the automatic process clean-up settings and selected the archive processes option with ‘n’ days. Which instances of that process model will be affected? (Choose the best answer.) A. Future and past instances of the process model including subprocesses. B. Future instances of the process model only. C. Future and past instances of the process model. D. Future instances of the process model only including subprocesses.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your organization is considering automating the running of expression rule test cases to provide unit tests for your Appian applications. Which three methods could be used to launch a test run when required? (Choose three.) A. Via the DevOps section of the Administration Console. B. A process model invoked via an API. C. A process model exposed to users as an action. D. A web hook from a content versioning system (CVS). E. A SAIL interface embedded in a report.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You create an interface, but it fails to load. When you open the design errors log, you see a memory circuit breaker error. What are two possible root causes of this error? (Choose two.) A. A database query is taking too long to evaluate. B. The interface contains some special characters. C. The interface is storing too much data in local variables. D. The interface component is looping over too many items.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Users are reporting that their application is slow to load customer records with many transactions. Using performance monitoring tools, you find that the following interface definition is responsible for the vast majority of page load time: You also notice that both queries (rule!APP_GetTransactionsWithFilters and rule!APP_GetTransactionTypeWithFilters) take about 25 milliseconds each to execute when you test them using expression editor. Which change would decrease the load time of this interface component the most? (Choose the best answer.) A. Don’t fetch total count when getting transactions. B. On line 4, increase the paginginfo batch size to 50 so more data is prefetched. C. Use a synced record for Transactions to improve the query response time for the query performed on line 6. D. Prefetched transaction types and use the displayvalue() function to display the Transaction Type for each transaction.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are designing a case management application. The initiator creates a case, and the reviewer reviews it approximately 7 days later. You have already designed a process model for the initiators to create the case. Which process model design will result in the lowest memory impact? (Choose the best answer.) A. When all case details are entered, the case appears as a case record, and when the reviewer is ready to review the record, they can do so via a related action from the case record. B. When all case details are entered, the process flow will proceed and assign a task to the reviewer to review the record. C. When all case details are entered, the process flow will call a Start Process node to initialize a review process model for the reviewer. D. When all case details are entered, the process flow will call a Sub-Process node to initialize a review process model for the reviewer.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are investigating a slow-performing query entity which is mapped to a view and you decide to look in the data_store_details.csv log to gain more information. You see that the majority of the time is spent in the transform phase. Which two actions can you take to reduce the time spent in the transform phase? (Choose two.) A. Reduce the use of unnecessary columns in the GROUP BY clause in the database view. B. Reduce the number of columns returned from the query. C. Create a database index on the column being filtered against. D. Lower the batch size parameter of the query.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are investigating a slow-performing expression rule and want to analyze this rule’s historical performance. Which performance log should you look at to see the mean evaluation time of this rule every hour? A. expressions_details.csv B. expressions_metrics.csv C. expressions_summary.csv D. expressions_trace.csv",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the lowest permission required on the data store in order to query, write, and delete data? A. Manager B. Administrator C. Viewer D. Editor",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are required to display information for pending tasks for each individual in an application. There will be tasks for a single specific application. Which context type should you choose for the Task Report Type? A. Tasks by process model B. Tasks attributed to user C. Tasks by process D. Tasks assigned to a group",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have been asked to produce a Tempo report, with the following requirements: The report should display in Appian. The data is held in a business database, but performance in Appian is a key requirement. Which three actions can you take to minimize the performance impact of your report? (Choose three.) A. Display the report as a task report on the Tasks tab. B. Limit the number of series values and categories in the report. C. Use local variables in your report interface to avoid redundant database queries. D. Use the query process analytics function to retrieve the data. E. Perform aggregation in the database using a view prior to reading the data into Appian.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are required to test a Related Action that updates record data. You need to make sure that the correct users can access the form and that the data is updating successfully. Which is the most appropriate testing method to achieve this using Appian? A. Unit Testing B. User Interface (UI) Testing C. Load Testing D. Performance Testing",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to create a service account for a consumer to access the Appian Web API. Which user type should be created? A. Initiator B. System Administrator C. Basic User D. Editor",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is a sign that an application’s performance is degrading and should be addressed with changes to the application design? A. Integration calls to an external system are consistently returning an HTTP status code of 500. B. Three of the top five most executed process models have a low completion percentage. C. The number of tasks assigned to users has increased from 1 per day to 5 per day. D. The number of objects in the Application has increased from about 100 to about 500.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are reviewing process model metrics and looking at AMUs to evaluate a process’s memory usage. Which statement is correct regarding this metric? A. Memory usage is considered low when it is below 10,000 AMUs. B. Memory usage is considered low when it is below 1,000 AMUs. C. Memory usage is considered low when it is below 100,000 AMUs. D. AMUs is not a good measurement for process memory usage.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are three things you can do to improve the memory usage of a process model? (Choose three.) A. Configure process variables to be parameters. B. Reduce the number of process variables. C. Avoid storing large blocks of text in process variables. D. Split large nodes into many smaller nodes. E. Pass data directly to activity nodes and smart services.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Users are experiencing slow load times when retrieving customer records with many transactions. After using performance monitoring tools, you discover that the following interface definition is responsible for the majority of page load time: Additionally, both queries (rule!APP_GetTransactionsWithFilters and rule!APP_GetTransactionTypeWithFilters) take approximately 25 milliseconds each to execute when you test them using the expression editor. Which action would result in the greatest reduction in the load time for this interface component? A. Prefetch transaction types and use the displayvalue() function to display the Transaction Type for each transaction. B. Use a synced record for Transactions to improve the query response time for the query performed on line 6. C. Avoid fetching the total count when getting transactions.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are redesigning user interfaces to achieve more efficient space usage. Which layout component is the best choice for displaying an interface with a vertical meaningful order of components? A. a!sideBySideLayout() B. a!columnsLayout() C. a!cardLayout()",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to create a quality control (QC) review process for a factory that allows a QC technician to review each production line regularly. You have the following requirements: • Each technician has 45 minutes to complete their review. • After 45 minutes, the review will expire. • Expired reviews are flagged as \"Review expired.\" • \"Review expired\" flags trigger an email notification to a supervisor, and the review data should not be saved. • The technician can save a Draft copy of their review before submission and can come back to work on it later if necessary. • Once a review is \"Submitted,\" the review data is saved to the database. What should you implement? A. An exception timer that skips the QC review task after 45 minutes, which flows to a Send Email node configured to notify a supervisor. B. A send message event which sends an email after 45 minutes to the supervisor. C. An escalation that sends an email after 45 minutes to the supervisor.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
