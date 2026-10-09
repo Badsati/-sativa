@@ -1,0 +1,87 @@
+[
+  {
+    "question": "When a user is enabled for archiving, an e-mail is sent from the Enterprise Vault system mailbox. Which permissions must be granted to the Vault Service Account for this feature to work properly? A. Log on as a service B. Receive As C. log on remotely D. Send As",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Veritas Enterprise Vault 12.x environment contains two Enterprise Vault servers named EV1 and EV2. VaultStore1 is associated with EV1 and VaultStore2 is associated with EV2. An Enterprise Vault Indexing Service is installed on EV1, but Enterprise Vault Indexing Service is NOT installed on EV2. The administrator notices that items in VaultStore1 are being indexed, but items in VaultStore2 are NOT. Which two complete solutions ensure both VaultStore1 and VaultStore2 are indexed? (Select two.) A. install the Enterprise Vault Indexing Service on EV2 B. create an Index Administration Task on EV2 C. Change the Site’s Indexing Level from Brief to Full D. change the location of the index volumes from EV1 to EV2 E. create an Index Server Group and assign VaultStore2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two options can an administrator use to assign retention? (Select two.) A. Desktop Policies B. Archive Properties C. Classification D. Provisioning Groups E. Mailbox Policies",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator needs to upgrade a Veritas Enterprise Vault 11.0 server installed on a Windows Server 2008 R2 platform to Veritas Enterprise Vault 12.x. Which initial steps are required to upgrade the environment? A. run EVSVR, then run the Veritas Enterprise Vault 12.x installer B. upgrade to Veritas Enterprise Vault 11.0.1 first, then run the Veritas Enterprise Vault 12.x installer C. use the Server Settings Migration Wizard D. upgrade to Veritas Enterprise Vault 11.0.1 first, then use the Server Settings Migration Wizard",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator creates a rule to tag all items which include Social Security Numbers with a \"PII\" tag. The administrator runs the policy in Test Mode and reviews the report to verify the tag will be applied to the expected items. The administrator then disables Test Mode and runs the policy; however, the tag fails to be applied to the expected items and the Test Mode report continues to be generated. Which action should the administrator perform to ensure the tag is applied to the expected items and the report is generated in production mode? A. enable SMTP journaling B. configure the retention plan in the Exchange Mailbox Policy C. install the Enterprise Vault Retention license D. enable Windows File Server Resource Manager",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator needs to create a different Exchange mailbox archiving policy for the VIP group. The administrator has added a new Provisioning Group called \"VIPs\", added the users to this group, applied the new Exchange mailbox archiving policy to this group and synchronized mailboxes; however, the user continues to use the initial Provisioning Group. Which steps should the administrator perform to enable the VIP users to use the new Exchange mailbox archiving policy? A. Vault Administration Console > \"VIPs\" Provisioning Group Properties > Archiving Defaults tab > \"Automatically enable mailboxes\" B. Vault Administration Console > Provisioning Groups Properties > use \"Move Up\" button to move the \"VIPs\" Provisioning Group above the other Provisioning Group. C. disable the VIP users manually > run the archiving task > enable the VIP users manually > run the archiving task D. set the SyncInMigrationMode registry key to 1 > Synchronize the users in the archiving task",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator has enabled SMTP archiving. Some messages contain a custom X-Header called \"Company.ConfidentialPlans\" that is indexed by Enterprise Vault. Using Enterprise Vault Search, the administration notices that searches for the X-Header value return no items, but that the correct value of the X-Header is visible as a column in the results of other searches. What should the administrator do, prior to rebuilding the index, so users are able to find items based on the X-Header value? A. SMTP Policy > X-Headers tab > select the Searchable checkbox B. SMTP Policy > X-Headers tab > change the name of the X-Header to \"Company.ConfidentialPlans.Searchable\" C. SMTP Policy > X-Headers tab > change the Type setting to \"Searchable\" D. SMTP Policy > X-Headers tab > deselect the Retrievable checkbox",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An email system is configured to journal a copy of all messages for all users to a single SMTP email address, ‘ [email protected] \". An SMTP target email address is set for [email protected] and additional SMTP target email addresses are configured for three users. Which two steps must the administrator perform to ensure only messages belonging to the three user SMTP target email addresses are archived? (Select two.) A. Enterprise Vault Site Properties > Advanced > SMTP > Selective Journal Archiving B. Enterprise Vault Server Properties > Advanced > SMTP > Selective Journal Archiving C. enable archiving for SMTP target email address [email protected] and all three user SMTP target email addresses D. disable archiving for SMTP target email address [email protected] and all three user SMTP target email addresses E. disable archiving for SMTP target email address [email protected] and enable it for all three user SMTP target email addresses",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the Exhibit. [sampleXML/xmlfile-22_1.jpg] What does the Site Setting shown in the red box apply to? A. restored and re-archived mailbox items B. mailbox shortcuts C. archives moved using the Move Archive wizard D. Storage Queue items",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is configuring parameters for how archived items will expire from Veritas Enterprise Vault 12.x. Upon which two dates can storage expiry be based? (Select two.) A. Modified date B. Retention date C. Archived date D. Expiry date E. Sent date",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two ways an administrator can determine the number of items pending in the Storage Queue on a Veritas Enterprise Vault 12.x server? (Select two.) A. in the Vault Administration Console, view the Storage Queue tab on the Properties page of the Enterprise Vault server’s Storage Service B. in the EnterpriseVaultDirectory database, query the StorageQueueStatus column from the StorageServiceEntry table C. in the Message Queuing node of Computer Management, view the Number of Messages column for the Enterprise Vault Storage Archive Queue D. in Performance Monitor, view the \\Enterprise Vault Storage\\Storage Queue Pending Length counter E. in Windows Explorer, view the Properties of the EVStorageQueue folder and note the number of files it contains",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which pre-requisite is necessary for installing Enterprise Vault Reporting? A. the Active Directory account used for reporting requires an Exchange Mailbox B. log in as the ReportingUser account, and run the Enterprise Vault Management Shell utility once C. add the Active Directory reporting account to the Exchange Administrators group D. Microsoft SQL Server Reporting Services",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A user is attempting to use Enterprise Vault Search but receives the following error message: [sampleXML/xmlfile-27_1.jpg] Which Enterprise Vault service needs to be started? A. Task Controller Service B. Indexing Service C. Storage Service D. SMTP Service",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How can an administrator make the ‘Search Vaults’ button in Outlook available to users? A. use the Exchange desktop policy, ‘Options’ tab B. use the Search Provisioning Group C. use the Exchange mailbox policy, ‘Options’ tab D. use the IMAP Provisioning Group",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What must be run to initiate a failover in a building blocks environment? A. Global Cluster Option B. Getting Started Wizard C. Convert to Cluster Wizard D. Update Service Locations",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which application provides enterprise-wide searching of all types of archives and a system for publishing results in a suitable form for presentation as evidence? A. Enterprise Vault Search B. Compliance Accelerator C. Custodian Manager D. Discovery Accelerator",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When a user is enabled for archiving, an e-mail is sent from the Enterprise Vault system mailbox. Which permissions must be granted to the Vault Service Account for this feature to work properly? A. Log on as a service B. Receive As C. Log on remotely D. Send As",
+    "options": {},
+    "most_voted": ""
+  }
+]
