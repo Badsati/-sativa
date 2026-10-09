@@ -1,0 +1,82 @@
+[
+  {
+    "question": "A data architect needs to load Table_A from an Excel file and sort the data by Field_2. Which script should the data architect use? A. Temp: LOAD Field_1, Field_2, Field_3 FROM [lib://Data/Table_A.xlsx] (ooxml, embedded labels, table is Sheet1); Table_A: LOAD * resident Temp Order by Field_2 asc; drop Table Temp; B. Table_A: LOAD Field_1, Field_2, Field_3 FROM [lib://Data/Table_A.xlsx] (ooxml, embedded labels, table is Sheet1); Order by Field_2 asc; C. Temp: LOAD Field_1, Field_2, Field_3 FROM [lib://Data/Table_A.xlsx] (ooxml, embedded labels, table is Sheet1); NoConcatenate Table_A: LOAD * resident Temp Order by Field_2 asc; drop Table Temp; D. Table_A: LOAD * Order by Field_2 asc; LOAD Field_1, Field_2, Field_3 FROM [lib://Data/Table_A.xlsx] (ooxml, embedded labels, table is Sheet1);",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data architect needs to retrieve data from a REST API. The data architect needs to loop over a series of items that are being read using the REST connection. What should the data architect do? A. Recreate the SQL Statement with the correct parameters B. Use the REST Connector with pagination mechanism C. Use pagination of the REST Connector to create a template of the desired data D. Use With Connection to pass a parameter to the REST URL",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. What does the expression SUM([OrderNetAmount]) return when all values in LineNo are selected? A. 1590 B. 1490 C. 690 D. 1810",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data architect needs to write the expression for a measure on a KPI to show the sales person with the highest sales. The sort order of the values of the fields is unknown. When two or more sales people have sold the same amount, the expression should return all of those sales people. Which expression should the data architect use? A. Concat(DISTINCT IF(Aggr(Rank(Sum(Sales),4),SalesPerson)=1,SalesPerson),' ') B. FirstSortedValue(DISTINCT SalesPerson,-Aggr(Sum(Sales),SalesPerson)) C. FirstSortedValue(SalesPerson,-Aggr(Sum(Sales),SalesPerson)) D. Concat(DISTINCT IF(Aggr(Rank(Sum(Sales),1),SalesPerson)=1,SalesPerson),' ')",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. A data architect is provided with five tables. One table has Sales Information. The other four tables provide attributes that the end user will group and filter by. There is only one Sales Person in each Region and only one Region per Customer. Which data model is the most optimal for use in this situation? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The Section Access security table for an app is shown. User ABC\\PPP opens a Qlik Sense app with a table using the field called LEVEL on one of the table columns. Which is the result? A. The table is removed from the user interface. B. The user gets an ‘Incomplete visualization’ error. C. The user gets a ‘Field not found’ error. D. The table is displayed without the LEVEL column.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A data architect needs to upload data from ten different sources, but only if there are any changes after the last reload. When data is updated, a new file is placed into a folder mapped to E:\\123456789. The data connection points to this folder. The data architect plans a script which will: 1. Verify that the file exists 2. If the file exists, upload it. Otherwise, skip to the next piece of code. The script will repeat this subroutine for each source. When the script ends, all uploaded files will be removed with a batch procedure. Which option should the data architect use to meet these requirements? A. FilePath, FOR EACH, Peek, Drop B. FileSize, IF, THEN, END IF C. FilePath, IF, THEN, Drop D. FileExists, FOR EACH, IF",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. A system creates log files and csv files daily and places these files in a folder. The log files are named automatically by the source system and change regularly. All csv files must be loaded into Qlik Sense for analysis. Which method should be used to meet the requirements? A. SET vFileList = 'Day1','Day2','Day3'; FOR EACH vFile in $(vFileList) LOAD * FROM [lib://Data (User1) /multi/$(vFile).csv]; NEXT B. LOAD * FROM [lib://Data (User1)/multi/*] (csv); C. LOAD * FROM [lib://Data (User1)/multi/*] (txt) D. SET vLib = chr(39) & 'lib://Data (User1)/multi/*.csv' & chr(39); FOR EACH File in filelist($(vLib)) LOAD * FROM [$(File)]; NEXT",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. A data architect is loading the tables and a synthetic key is generated. How should the data architect resolve the synthetic key? A. Remove the LineNo field from Shipments and use the AutoNumber function on the OrderID field B. Remove the LineNo field from both tables and use the AutoNumber function on the OrderID field C. Create a composite key using OrderID and LineNo D. Create a composite key using OrderID and LineNo, and remove OrderID and LineNo from Shipments",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. A large transport company (Company A) acquires a smaller rival (Company B). Company A has been using Qlik Sense for 6 years to track revenue per ship journey. Ship journeys with no revenue (such as journeys to shipyards for repair) always show revenue of $0. Company A wants to combine its data set with the data set of the acquired Company B. Company B's ship journey data shows $0 revenue in one of the following ways: • A NULL value • A value with one or more blank spaces (ASCII char code 32) The data architect wants to conform the Company B data to the Company A standard, specifically regarding the use of an explicit $0 for journeys without revenue. Which script line should the data architect use? A. money ( replace(Revenue, chr(32), 0) ) AS [Revenue Conformed] B. if (len (trim(Revenue) ) < 1,=\"\" money(0),=\"\" revenue=\"\" )=\"\" as=\"\" [revenue=\"\" conformed]=\"\" 1, =\"\" money(0),=\"\" revenue=\"\" )=\"\" as=\"\" [revenue=\"\" /> C. money ( replace(Revenue, Null(), 0) ) AS [Revenue Conformed] D. replace(Revenue, chr(32), money(0) ) AS [Revenue Conformed]",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company's analytics team is migrating from QlikView to Qlik Sense. During the transition there is an opportunity to improve overall reporting. Which set of criteria must the data architect consider while planning for the migration? A. Application size, application theme, storytelling, data model, IT use case B. User sessions, source data architecture, compatibility, data model, business use case C. QlikView archival, source data architecture, load script, data model, business use case D. Application metadata, application theme, user sessions, load script, IT use case",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. While performing a data load from the source shown, the data architect notices it is NOT appropriate for the required analysis. The data architect runs the following script to resolve this issue: Shapes: GENERIC LOAD Object, \"Attribute\", Value FROM [lib://Data/products.xlsx] (ooxml, embedded labels, table is Shapes); How many tables will this script create? A. 1 B. 3 C. 4 D. 6",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A data architect needs to develop a script to export tables from a model based upon rules from an independent file. The structure of the text file with the export rules is as follows: TableToExport, StoreAsFilename, NumberOfCopies Customers, Clients,3 Orders, SalesOrders,1 Regions, Countries,2 These rules govern which table in the model to export, what the target root filename should be, and the number of copies to export. The TableToExport values are already verified to exist in the model. In addition, the format will always be QVD, and the copies will be incrementally numbered. For example, the Customers table would be exported as: Clients1.qvd Clients2.qvd Clients3.qvd What is the minimum set of scripting strategies the data architect must use? A. One loop and two IF statements B. One loop and one SELECT CASE statement C. Two loops and one IF statement D. Two loops without any conditional statements",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data architect executes the following script: Table_A: LOAD * INLINE [ Field_1, Field_2, Field_3 01, AB, 10 01, AC, 50 02, AD, 75 ]; Join(Table_A) Table_B: LOAD * INLINE [ Field_1, Field_4, Field_5 01, 30%, 500 03, 60%, 1000 ]; What will be the result of Table_A? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company needs to analyze daily sales data from different countries. They also need to measure customer satisfaction of products as reported on a social media website. Thirty (30) reports must be produced with an average of 20,000 rows each. This process is estimated to take about 3 hours. Which option should the data architect use to build this solution? A. Qlik REST Connector B. Microsoft SQL Server C. Qlik GeoAnalytics D. Mailbox IMAP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data architect needs to load data from two different databases. Additional data will be added from a folder that contains QVDs, text files, and Excel files. What is the minimum number of data connections required? A. Four B. Two C. Three D. Five",
+    "options": {},
+    "most_voted": "C"
+  }
+]
