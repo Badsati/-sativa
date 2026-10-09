@@ -1,0 +1,162 @@
+[
+  {
+    "question": "Where in the Backup, Archive, and Restore interface for Microsoft Windows can an administrator define the source and destination client for a restore job? A. File > Select Files and Folders to Restore B. File > NetBackup Client Properties > General C. File > NetBackup Client Properties > Host Properties D. File > Specify NetBackup Machines and Policy Type",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Using the default values in the activity monitor, a failed job is discovered among hundreds of jobs that ran during the evening. The administrator would like to view all related jobs to verify they completed successfully. Where in the activity monitor can the administrator find all related parent and child jobs? A. right-click the failed job and select Sort, and sort by Job PID B. double-click the failed job and select the Detailed Status tab C. right-click the failed job and select View Job Hierarchy D. right-click the failed job and select Troubleshooter",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator needs to decrease the total amount of time required to back up a UNIX file server, but requires a full backup every night recovery purposes. How should the administrator proceed? A. use policy compression B. use NetBackup Accelerator C. use change journal D. use client-side deduplication",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two options are available to an administrator to bring the Media Server Deduplication Pool (MSDP) catalog back online in the case of a hardware problem that cause corruption? (Select two.) A. restore the MSDP catalog from the NetBackup catalog backup B. recover the MSDP catalog from a MSDP catalog backup C. repair the MSDP catalog using the crchk tool D. restore the MSDP catalog from an MSDP catalogshadow copy E. repair the MSDP catalog using the recoverCR tool",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A NetBackup environment with a single tape storage unit is experiencing performance issues when running full backups of a Windows file server with over a million small files. Backups for all other clients on the same network are performing adequately. What should the administrator modify to improve performance for the client? A. enable Windows Change Journal B. modify data buffer settings for the data path C. enable the Use Accelerator policy attribute D. use Flashbackup-Windows policy type",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-10_1.jpg] What is the outcome of the policy shown in the exhibit? A. The client encrypts then compresses the data before sending it to the media server. B. The client compresses and the media server encrypts the data before sending it to the tape drive. C. The client compresses then encrypts the data before sending it to the media server. D. The client sends the data to the media server, which compresses and then encrypts the data",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "VMware type backups of a newly added Windows Server 2008 guest virtual machine are failing with the following status: [sampleXML/xmlfile-15_1.png] The associated bpfis process log indicates that the attempt to quiesce this virtual machine failed. Which two steps should the administrator perform to resolve the issue? (Select two.) A. enable VMware Tools in the virtual machine B. disable Block-Level Incremental Backup in the policy C. install the NetBackup plug-in for vSphere Web Client on the guest virtual machine D. confirm Microsoft Volume Shadow Copy Service within the guest virtual machine is performing properly E. ensure the virtual machine display name contains ASCII characters",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which action is performed by the NetBackup deduplication plug-in? A. writing data segments into the MSDP containers B. processing MSDP transaction logs C. performing file fingerprinting actions D. performing queue processing",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A NetBackup master server has commenced writing four long-running duplication jobs to an AdvancedDisk disk pool. The value of Maximum concurrent jobs for the storage unit and Limit I/O streams for the disk pool are both set to 4. There are 35 jobs queued on the master server that require this disk pool: 5 replication jobs with priority 9999 10 backup jobs with priority 999 20 duplication jobs with priority 99 Two restore jobs that require this disk pool are then submitted with a default priority. Which job type goes active next? A. Backup B. Duplication C. Replication D. Restore",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator has a job that has failed. See the contents of the jobs Detailed Status tab from the NetBackup Administration Console Activity Monitor provided below: [sampleXML/xmlfile-18_1.png] What may be the cause for the failure? A. The version of NetBackup installed on the master server and media server is higher than the version installed on the client. B. The media server is unable to resolve the hostname of the client to any IP address. C. The required NetBackup processes need to be started on the client. D. The media server failed to perform a reverse name lookup of the IP address associated with the client.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator has a scheduled policy that backs up 20 clients, each with multiple mount points and multiple data streams enabled. One of the jobs has failed and is in an Incomplete state in the Activity Monitor. How should the administrator verify the incomplete job runs prior to the next scheduled backup? A. run a manual job for the client B. resume the job C. run a manual job for the mount point D. resume the parent job",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator needs to store secure tape copies of protected data to an offsite location. How can the administrator automatically eject tape media daily and create detailed reports? A. encrypt the tapes using software encryption and use a storage lifecycle policy to perform automatic ejects and create reports B. enable the encryption attribute on the vault policy to perform automated ejects and create reports C. use tape drives that support hardware encryption and use a vault policy to perform automated ejects and create reports D. use tape drives that support hardware encryption and use a storage lifecycle policy to perform automated ejects and create reports",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-22_1.jpg] The following storage lifecycle policy was used to back up data from a client. All duplication jobs have completed, and none of the backups have expired. How should an administrator restore data from the tape using NetBackup? A. from the BAR console, select the tape backup to restore from B. from the NetBackup Administration Console, promote copy 1 to the primary copy C. from the NetBackup Administration Console, promote copy 2 to the primary copy D. from the NetBackup Administration Console, promote copy 3 to the primary copy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two performance scenarios benefit from seeding the MSDP pool? (Select two.) A. new client backups over WAN B. new application backups over SAN C. new VADP VMware backups using media server as the backup host D. new replication to a new DR site E. new clients with large file systems containing small files",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Windows policy protects over 100 servers using the directive ALL_LOCAL_DRIVES. The backup window for this policy is a two-hour window that is unused by any other policy. When the jobs run, each server has no more than ten paths, and the overall performance of the disk storage unit is degraded. Which setting should the administrator modify to ensure only ten jobs write concurrently to the disk storage unit during the backup window? A. set the Allow multiple data streams policy attribute B. enable the Limit Jobs per policy attribute C. set the Maximum jobs per client host property D. enable multiplexing for the storage unit and set the value",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which type of backup schedules are available when using the After each backup session schedule type for an NBU-Catalog policy type? A. Full B. Differential Incremental C. Vault Catalog Backup D. Application Backup",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator has a job that has failed. Upon reviewing the Detailed Status tab for the job, the administrator sees the following information: [sampleXML/xmlfile-26_1.png] Which setting value prevented the job from running during the backup window? A. the Global Attributes > Maximum jobs per client master server host property B. the Timeout > Client read timeout master server host property C. the Maximum concurrent jobs storage unit setting D. the Limit jobs per policy policy setting",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is preparing to perform disaster recovery for many clients whose backups are stored on multiplexed tapes. Which host property should the administrator modify, prior to the restores, to ensure the best recovery time? A. set Enable unrestricted media sharing for all media servers B. increase Restore retires C. increase Delay on multiplexed restores D. add the client IP addresses to Resilient Networks",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two NetBackup features are available to protect the Media Server Deduplication Pool (MSDP) catalog? (Select two.) A. NetBackup catalog backups B. MSDP catalog policy C. Optimized Catalog Duplication D. MSDP shadow copies E. Checkpoint",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Storage lifecycle policy SLP1 is used to perform a backup and duplication. The backup is always a small, 100MB backup. The master server host properties for SLP Parameters are set to the default values. How can the administrator ensure the duplications run as soon as possible after the backup completes? A. reduce the Job submission interval setting to 0 B. reduce the Minimum size per duplication job setting to 50 MB C. right-click SLP1 and select Manual Relocation to Final Destination D. increase the Priority for secondary operations in the SLP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator has downloaded a patch from the NetBackup appliance support website to a Windows client. The administrator plans to move the patch to the appliance through a file share. Accessing the \\\\<appliance-name>\\incoming patches folder from the Windows client fails. Which action should the administrator perform? A. login to Windows as a NetBackupCLI user B. manually map the share using the local Windows credentials C. use the Share Open command in the NetBackup Appliance Shell Menu D. use the cat (Unix) command to join the split tar files",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In which scenario is Use Accelerator unavailable in a backup policy? A. for VMware virtual machines with a Linux guest OS B. for virtual machines hosted on a Hyper-V Host using WMI C. for a NetApp NDMP filer D. for an Exchange database availability group (DAG)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which supported step should an administrator perform to ensure all operating system logs are sent from an appliance to a central logging server running Linux? A. configure access to the appliance logs with the share open command B. configure syslog forwarding in the appliance CLISH C. configure syslog forwarding in OpsCenter D. configure a cron job on the appliance to copy the logs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator took media server mediaA offline for maintenance and set up a new media server mediaB with access to the previously backed up data. When restores are performed for data that was backed up by mediaA, the restores fail. Which setting must the administrator modify to allow successful restores? A. from the master server, run bpimage to change the name of the media server from mediaA to mediaB B. set Enable unrestricted media sharing for all media servers in the master server host properties in the Media section C. in the Bar console, change the Server to use for backup and restores setting to mediaB D. verify both media servers are set up in the master server host properties in the Restore Failover section",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-35_1.jpg] Which diagram is supported for backups spanning BasicDisk storage? A. A B. B C. C D. D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Weekly full backups run for clientA on master1 using a storage unit that belongs to media1. The administrator is required to retain clientAs full backups for a period of four months. When the administrator modifies the full schedule, an option for 4 months is missing from the Retention drop-down list. How can the administrator add a four month retention? A. modify an existing retention level in the master server host properties, under Retention Periods B. ignore the selection list and type in the desired retention period directly C. add a new retention period in the media server host properties, under Retention Periods D. increase the Image cleanup interval in the master server host properties, under Clean-up",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How should an administrator troubleshoot why a NetBackup Appliance is unresponsive through the assigned IP address? A. manually power cycle the appliance B. ssh to the appliance on eth0 C. connect to the appliance with OpsCenter D. access the appliance console via the IPMI web interface",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A NetBackup policy is configured to back up the following paths for a client: [sampleXML/xmlfile-38_1.png] Multi-streaming is enabled for the backups, and multiplexing is set to 4. Backup streams are running slowly. Which step should the administrator consider to improve backup performance? A. increase the multiplexing level B. back up only one stream from each physical device on the client C. disable multi-streaming D. increase the number of data buffers",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A NetBackup appliance administrator observes poor performance on backups to an MSDP pool. The job details indicate bpbkar is waiting for empty buffers. Where should the administrator tune the appliance? A. Main_Menu > Settings > NetBackup DataBuffers > Size > Defaults B. the bp.conf file’s NUMBER_DATA_BUFFERS setting C. the bp.conf file’s NUMBER_DATA_BUFFERS_DISK setting D. Main_Menu > Settings > NetBackup DataBuffers > Size > Disk",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator tries to suspend an active job from the NetBackup Activity Monitor, but discovers that the option is grayed out. What is preventing the administrator from suspending the job? A. Child jobs are still active B. The parent job is still active. C. Multiplexing is enabled. D. Checkpoint restart is disabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator configures a default Standard file system backup policy, which backs up very large file systems from a set of clients. There are multiple scheduled backup attempts configured. How can the administrator reduce the amount of time needed to complete these backup jobs after failures? A. configure the Take checkpoints every policy setting B. increase the Job retry delay host property setting C. use the Resume Job action instead of Restart Job D. increase the Client connect timeout host property setting",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. A backup job configured with a retention level of 2 and Policy volume pool set to the server_tapes is failing due to status code 96: Unable to allocate new . See the output of the available_media command below: media for backup [sampleXML/xmlfile-44_1.png] Which task in the NetBackup Administration Console should the administrator perform to resolve the status code 96 error? A. Change volume C11201 to the scratch_pool volume pool B. Change volume E02002 to the scratch_pool volume pool C. Unfreeze volume E02004 in the server_tapes volume pool D. Change volume E02003 to the scratch_pool volume pool",
+    "options": {},
+    "most_voted": ""
+  }
+]
