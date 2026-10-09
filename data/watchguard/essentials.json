@@ -1,0 +1,322 @@
+[
+  {
+    "question": "When your device is in a default state, to which interface do you connect your management computer so you can use the Quick Setup Wizard or Web Setup Wizard to configure the device? (Select one.) A. Interface 0 B. Console interface C. Any interface D. Interface 1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In the default Firebox configuration file, which policies control management access to the device? (Select two.) A. WatchGuard B. FTP C. Ping D. WatchGuard Web UI E. Outgoing",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "To use the Web Setup Wizard or Quick Setup Wizard to configure your Firebox or XTM device, your computer must have an IP address on which subnet? (Select one.) A. 10.0.10.0/24 B. 10.0.1.0/24 C. 172.16.10.0/24 D. 192.168.1.0/24",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the best method to downgrade the version of Fireware OS on your Firebox without losing all device configuration settings? (Select one.) A. Restore a saved backup image that was created for the device before the last Fireware OS upgrade. B. Use the Upgrade OS feature in Fireware Web UI to install the sysa_dl file for an order version of Fireware OS. C. Change the OS compatibility setting in Policy Manager to downgrade the device. Then use Policy Manager to save the configuration to the device. D. Use the downgrade feature on Policy Manager to select a previous of Fireware OS.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You configured four Device Administrator user accounts for your Firebox. To see a report of witch Device Management users have made changes to the device configuration, what must you do? (Select two.) A. Start Firebox System Manager for the device and review the activity for the Management Users on the Authentication List tab. B. Connect to Report Manager or Dimension and view the Audit Trail report for your device. C. Open WatchGuard Server Center and review the configuration history for managed devices. D. Configure your device to send audit trail log messages to your WatchGuard Log Server or Dimension Log Server.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which items are included in a Firebox backup image? (Select four.) A. Support snapshot B. Fireware OS C. Configuration file D. Log file E. Feature keys F. Certificates",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Only 50 clients on the trusted network of your Firebox can connect to the Internet at the same time. What could cause this? (Select one.) A. TheLiveSecurity feature key is expired. B. The device feature key allows a maximum of 50 client connections. C. The DHCP address pool on the trusted interface has only 50 IP addresses. D. The Outgoing policy allows a maximum of 50 client connections.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The IP address for the trusted interface on your Firebox is 10.0.40.1/24, but you want to change the IP address for this interface. How can you avoid a network outage for clients on the trusted network when you change the interface IP address to 10.0.50.1/24? (Select one.) A. Create a 1-to-1 NAT rule for traffic from the 10.0.40.0/24 subnet to addresses on the 10.0.50.0/24 subnet. B. Add 10.0.40.1/24 as a secondary IP address for the interface. C. Add IP addresses on the 10.0.40.0/24 subnet to the DHCP Server IP address pool for this interface. D. Add a route to 10.0.40.0/24 with the gateway 10.0.50.1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In the network configuration in this image, which aliases is Eth2 a member of? (Select three.) [sampleXML/xmlfile-6_1.jpg] A. Any-optional B. Any-External C. Optional-1 D. Any E. Any-Trusted",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Clients on the trusted network need to connect to a server behind a router on the optional network. Based on this image, what static route must be added to the Firebox for traffic from clients on the trusted network to reach a server at 10.0.20.100? (Select one.) [sampleXML/xmlfile-7_1.jpg] A. Route to 10.0.20.0/24, Gateway 10.0.2.1 B. Route to 10.0.20.0/24, Gateway 10.0.2.254 C. Route to 10.0.20.0, Gateway 10.0.2.254 D. Route to 10.0.10.0/24, Gateway 10.0.10.1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of these options are private IPv4 addresses you can assign to a trusted interface, as described in RFC 1918, Address Allocation for Private Internets? (Select three.) A. 192.168.50.1/24 B. 10.50.1.1/16 C. 198.51.100.1/24 D. 172.16.0.1/16 E. 192.0.2.1/24",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The policies in a default Firebox configuration do not allow outgoing traffic from optional interfaces. A. True B. False",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When you examine the log messages In Traffic Monitor, you see that some network packets are denied with an unhandled packet log message. What does this log massage mean? (Select one.) A. The packet is denied because the site is on the Blocked Sites List. B. The packet is denied because it matched a policy. C. The packet is denied because it matched an IPS signature. D. The packet is denied because it does not match any firewall policies.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of these actions adds a host to the temporary or permanent blocked sites list? (Select three.) A. Enable the AUTO-block sites that attempt to connect option in a deny policy. B. Add the site to the Blocked Sites Exceptions list. C. On the Firebox System Manager >Blocked Sites tab, select Add. D. In Policy Manager, select Setup> Default Threat Protection > Blocked Sites and click Add.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of these threats can the Firebox prevent with the default packet handling settings? (Select four.) A. Access to inappropriate websites B. Denial of service attacks C. Flood attacks D. Malware in downloaded files E. Port scans F. Viruses in email messages G. IP spoofing",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Users on the trusted network cannot browse Internet websites. Based on the configuration shown in this image, what could be the problem with this policy configuration? (Select one.) [sampleXML/xmlfile-11_1.jpg] A. The default Outgoing policy has been removed and there is no policy to allow DNS traffic. B. The HTTP-proxy policy has higher precedence than the HTTPS-proxy policy. C. The HTTP-proxy policy is configured for the wrong port. D. The HTTP-proxy allows Any-Trusted and Any-Optional to Any-External.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If you disable the Outgoing policy, which policies must you add to allow trusted users to connect to commonly used websites? (Select three.) A. HTTP port 80 B. NAT policy C. FTP port 21 D. HTTPS port 443 E. DNS port 53",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How is a proxy policy different from a packet filter policy? (Select two.) A. Only a proxy policy examines information in the IP header. B. Only a proxy policy uses the IP source, destination, and port to control network traffic. C. Only a proxy policy can prevent specific threats without blocking the entire connection. D. Only a proxy works at the application, network, and transport layers to examine all connection data.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which authentication servers can you use with your Firebox? (Select four.) A. Active Directory B. RADIUS C. LDAP D. Linux Authentication E. Kerberos F. TACACS+ G. Firebox databases",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When your users connect to the Authentication Portal page to authenticate, they see a security warning message in their browses, which they must accept before they can authenticate. How can you make sure they do not see this security warning message in their browsers? (Select one.) A. Import a custom self-signed certificate or a third-party certificate to your Firebox and import the same certificate to all client computers or web browsers. B. Replace the Firebox certificate with the trusted certificate from your web server. C. Add the user accounts for your users who use the Authentication Portal to a list of trusted users on your Firebox. D. Instruct them to disable security warning message in their preferred browsers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You can configure your Firebox to automatically redirect users to the Authentication Portal page. A. True B. False",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "For which of these third party authentication methods must you specify a search base? (Select two.) A. RADIUS B. Active Directory C. SecurID D. LDAP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match each type of NAT with the correct description: Conserves IP addresses and hides the internal topology of your network. (Choose one) A. 1-to1 NAT B. Dynamic NAT C. NAT Loopback",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If your Firebox has a single public IP address, and you want to forward inbound traffic to internal hosts based on the destination port, which type of NAT should you use? (Select one.) A. Static NAT B. 1-to-1 NAT C. Dynamic NAT",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You need to create an HTTP-proxy policy to a specific domain for software updates (example.com). The update site has multiple subdomains and dynamic IP addresses on a content delivery network. Which of these options is the best way to define the destination in your HTTP-proxy policy? (Select one.) A. Configure a host name for update.example.com. B. Configure an FQDN for *.example.com. C. Add IP addresses that correspond to each software update server in the domain. D. Create an alias for all subdomains and known IP addresses for example.com.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "From the SMTP proxy action settings in this image, which of these options is configured for outgoing SMTP traffic? (Select one.) [sampleXML/xmlfile-17_1.jpg] A. Rewrite the Mail From header for the example.com domain. B. Deny incoming mail from the example.com domain. C. Prevent mail relay for the example.com domain. D. Deny outgoing mail from the example.com domain.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You can configure the SMTP-proxy policy to restrict email messages and email content based on which of these message characteristics? (Select four.) A. Sender Mail From address B. Check URLs in message with WebBlocker C. Email message size D. Attachment file name and content type E. Maximum email recipients",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After you enable spamBlocker, your users experience no reduction in the amount of spam they receive. What could explain this? (Select three.) A. Connections cannot be resolved to the spamBlocker servers because DNS is not configured on the Firebox. B. The spamBlocker action for Confirmed Spam is set to Allow. C. The Maximum File Size to Scan option is set too high. D. A spamBlocker exception is configured to allow traffic from sender *. E. spamBlocker Virus Outbreak Detection is not enabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An email newsletter about sales from an external company is sometimes blocked by spamBlocker. What option could you choose to make sure the newsletter is delivered to your users? (Select one.) A. Add a spamBlocker exception based on the From field of the newsletter email. B. Set the spamBlocker action to quarantine the email for later retrieval. C. Add a spamBlocker subject tag for bulk email messages. D. Set the spamBlocker virus outbreak detection action to allow emails from the newsletter source.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your company denies downloads of executable files from all websites. What can you do to allow users on the network to download executable files from the companys remote website? (Select one.) A. Add an HTTP proxy exception for the company’s remote website. B. Create a WebBlocker exception to allow access to the company’s remote website. C. Create an IPS exception. D. Create a Blocked Sites exception. E. Configure HTTP Request > URL Paths to allow the company’s remote website.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A user receives a deny message that the installation file (install.exe) is blocked by the HTTP-proxy policy and cannot be downloaded. Which HTTP proxy action rule must you modify to allow download of the installation file? (Select one.) A. HTTP Request > Request Methods B. HTTP Response > Body Content Types C. HTTP Response > Header Fields D. WebBlocker E. HTTP Request > Authorization",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which takes precedence: WebBlocker category match or a WebBlocker exception? A. WebBlocker exception B. WebBlocker category match",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "To prevent certificate error warnings in your browser when you use deep content inspection with the HTTPS proxy, you can export the proxy authority certificate from the Firebox and import that certificate to all client devices. A. True B. False",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of these options must you configure in an HTTPS-proxy policy to detect credit card numbers in HTTP traffic that is encrypted with SSL? (Select two.) A. WebBlocker B. Gateway AntiVirus C. Application Control D. Deep inspection of HTTPS content E. Data Loss Prevention",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match each WatchGuard Subscription Service with its function. Uses full-system emulation analysis to identify characteristics and behavior of zero-day malware. (Choose one). A. Reputation Enable Defense RED B. Gateway / Antivirus C. Data Loss Prevention DLP D. Spam Blocker E. WebBlocker F. Intrusion Prevention Server IPS G. Application Control H. Quarantine Server I.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When you configure the Global Application Control action, it is automatically applied to all policies. A. True B. False",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which WatchGuard Subscription Service must be enabled in a proxy policy before you can use APT Blocker? (Select one.) A. RED B. Application Control C. Gateway Antivirus D. WebBlocker E. IPS",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After you enable Gateway AntiVirus, IPS, or Application control, how can you make sure the services protect your network from the latest known threats? (Select one.) A. Enable default packet handling. B. Configure reputation Enabled Defense. C. Enable automatic signature updates. D. Enable HTTPS deep inspection.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which policies can use the Intrusion Prevention Service to block network attacks? (Select one?) A. Only HTTP and HTTPS Proxy policies B. Only proxy policies C. All policies D. Only packet filter policies E. Only inbound policies",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You can use Firebox System Manager to download a PCAP file that includes packet information about the protocols that manage traffic on your network. A. True B. False",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "From the Firebox System Manager >Authentication List tab, you can view all of the authenticated users connected to your Firebox and disconnect any of them. A. True B. False",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match the monitoring tool to the correct task. Which is not a Fireware monitoring tool? (Select one) A. FireBox System Manager – Blocked Sites list B. Log Server C. FireWatch D. Firebox System Manager – Subscription services E. Firebox System Manager – Authentication list F. Traffic Monitor",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which diagnostic tasks can you run from the Traffic Monitor tab of Firebox System Manager? (Select four.) A. DNS lookup B. MAC address lookup C. Traceroute D. Reputation lookup E. Ping F. TCP dump",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How can you include log messages from more than one Firebox in a single report generated by Dimension? (Select two.) A. You cannot see report data in Dimension for more than one device. B. Create a device group and view the reports for that group. C. Create a report schedule that includes all the devices you want to include in the report. D. Export report data as a single PDF file for all the devices you want to include in the report.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "To enable remote devices to send log messages to Dimension through the gateway Firebox, what must you verify is included in your gateway Firebox configuration? (Select one.) A. You can only send log messages to Dimension from a computer that is on the network behind your gateway Firebox. B. You must change the connection settings in Dimension, not on the gateway Firebox. C. You must add a policy to the remote device configuration file to allow traffic to a Dimension. D. You must make sure that either the WG-Logging packet filter policy, or another policy that allows external connections to Dimension over port 4115, is included",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which WatchGuard tools can you use to review the log messages generated by your Firebox? (Select three). A. Firebox System Manager > Traffic Monitor B. Fireware XTM Web UI > Traffic Monitor C. Firebox System Manager > Status Report D. Dimension > Log manager E. WatchGuard System Manager > Policy Manager",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You can configure your Firebox to send log messages to how many WatchGuard Log Servers at the same time? (Select one.) A. One B. Two C. As many as you have configured on your network.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How can you prevent connections to the Fireware Web UI from computers on optional interface Eth2? (Select one.) A. Remove Eth2 from the Any-Optional alias. B. Remove Any-Optional from the To list of the WatchGuard Web UI policy. C. Remove Any-Optional from the From list of the WatchGuard policy. D. Remove Any-Optional from the To list of the WatchGuard policy E. Remove Any-Optional from the From list of the WatchGuard Web UI policy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "From the Fireware Web UI, you can generate a report that shows your device configuration settings. A. True B. False",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In this diagram, which branch office VPN tunnel route must you add on the Site A Firebox to allow traffic between devices on the trusted network at Site A and the trusted network at site B? (Select one.) [sampleXML/xmlfile-32_1.jpg] A. Local: 192.168.1.0/24 <--> Remote: 10.0.10.0/24 B. Local: 203.0.113.10/24 <--> Remote: 198.151.100.2/24 C. Local: 10.0.10.1/24 <--> Remote: 192.168.1.1/24 D. Local: 10.0.10.0/24 <--> Remote: 192.168.1.0/24",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "With the policies configured as shown in this image, HTTP traffic can be sent and received through branch office VPN tunnel.1 and tunnel.2. [sampleXML/xmlfile-33_1.jpg] A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A local branch office VPN tunnel route is configured as shown in this image. On the remote peer device, what must be configured as the remote network address for this tunnel route? (Select one.) [sampleXML/xmlfile-34_1.jpg] A. 10.0.1.0/24 B. 10.0.10.0/24 C. 10.0.20.0/24",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "While troubleshooting a branch office VPN tunnel, you see this log message: 2014-07-23 12:29:15 iked (203.0.113.10<->203.0.113.20) Peer proposes phase one encryption 3DES, expecting AES What settings could you modify in the local device configuration to resolve this issue? (Select one.) A. BOVPN Gateway settings B. BOVPN-Allow policies C. BOVPN Tunnel settings D. BOVPN Tunnel Route settings",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If you use an external authentication server for mobile VPN, which option must you complete before remote users can authenticate? (Select one.) A. Create aliases for each remote user’s virtual IP address. B. Reboot the authentication server. C. Add the Mobile VPN user group and remote users to your authentication server. D. Add the remote users to a Mobile VPN user group on your Firebox.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a Mobile VPN configuration, why would you choose default route VPN over split tunnel VPN? (Select one.) A. Default route VPN allows your Firebox to examine all remote user traffic B. Default route VPN uses less bandwidth C. Default route VPN uses less processing power D. Default route VPN automatically allows dynamic NAT",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which tool is used to see a treemap visualization of the traffic through your Firebox? (Select one) A. FireBox System Manager – Blocked Sites list B. Log Server C. FireWatch D. Firebox System Manager – Subscription services E. Firebox System Manager – Authentication list F. Traffic Monitor",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which tool can add an IP address for the Firebox to permanently block? (Select one) A. FireBox System Manager – Blocked Sites list B. Log Server C. FireWatch D. Firebox System Manager – Subscription services E. Firebox System Manager – Authentication list F. Traffic Monitor",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match the monitoring tool to the correct task. Which tool can ping the source of a denied packet? (Select one) A. FireBox System Manager – Blocked Sites list B. Log Server C. FireWatch D. Firebox System Manager – Subscription services E. Firebox System Manager – Authentication list F. Traffic Monitor",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match the monitoring tool to the correct task. Which tool can learn the status of your IPS signature database? (Select one) A. FireBox System Manager – Blocked Sites list B. Log Server C. FireWatch D. Firebox System Manager – Subscription services E. Firebox System Manager – Authentication list F. Traffic Monitor",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match the monitoring tool to the correct task. Which tool can view a list of users connected to the Firebox? (Select one) A. FireBox System Manager – Blocked Sites list B. Log Server C. FireWatch D. Firebox System Manager – Subscription services E. Firebox System Manager – Authentication list F. Traffic Monitor",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match each WatchGuard Subscription Service with its function. Manages use of applications on your network. (Choose one). A. Reputation Enable Defense RED B. Data Loss Prevention DLP C. Intrusion Prevention Server IPS D. Application Control E. APT Blocker",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match each WatchGuard Subscription Service with its function. A repository where email messages can be sent based on analysis by spamBlocker, Gateway AntiVirus, or Data Loss Prevention. (Choose one). A. Gateway / Antivirus B. Data Loss Prevention DLP C. Spam Blocker D. Intrusion Prevention Server IPS E. Quarantine Server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match each WatchGuard Subscription Service with its function. Uses signatures to provide real-time protection against network attacks. (Choose one). A. Reputation Enable Defense RED B. Data Loss Prevention DLP C. Intrusion Prevention Server IPS D. Application Control E. APT Blocker",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Match each type of NAT with the correct description: Changes and routes all incoming and outgoing packets sent from one range of addresses to a different range of addresses. (Choose one) A. 1-to1 NAT B. Dynamic NAT C. NAT Loopback",
+    "options": {},
+    "most_voted": ""
+  }
+]
