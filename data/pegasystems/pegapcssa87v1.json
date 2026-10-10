@@ -1,0 +1,442 @@
+[
+  {
+    "question": "On which type of rule can you configure edit validate rules? A. Properties B. Flow actions C. Activities D. Case types",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When designing reports with multiple data sources, in which two ways is an association rule different from a class join? (Choose two.) A. You can join multiple classes with class joins, while you cannot join multiple classes with associations. B. Anyone with the appropriate permissions can use associations when creating reports in the User portal. C. Class joins are unique to each report. Associations are reusable in any report. D. A class join is required to add a filter condition to your report.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An application contains the class group MyCo-HR-SelfService-Work. There are two classes derived from Work- class: MyCo-HR-SelfService-Work-TimeOff MyCo-HR-SelfService-Work-Expense If a report is created in the MyCo-HR-SelfService-Work class group, what instances will the report return? A. Instances of all Work- derived classes B. Instances of MyCo-HR-SelfService-Work-TimeOff and MyCo-HR-SelfService-Work-Expense, unless they are stored in different database tables C. Instances of MyCo-HR-SelfService-Work-TimeOff and MyCo-HR-SelfService-Work-Expense D. Only instances of MyCo-HR-SelfService-Work",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Fulfillment report needs to list the user ID of the employee who packages the items to ship in an Order case. The report provides information from the MyCo-Orders-Work-Ship and Data-Admin-Operator-ID classes. Which two options independently satisfy the report requirements? (Choose two.) A. Configure a class join on the Fulfillment report definition to join operator information to each case. B. Add the user ID to the Fulfillment report definition as a parameter. C. Specify both classes on the Pages & Classes tab on the Fulfillment report definition. D. Use an association rule to join operator information to each case to populate the Fulfillment report.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three items are generated and displayed in the compliance score of an application? (Choose three.) A. Rules with warnings in the application B. Pega Platform core rules used in the application C. Rules with unjustified warnings in the application D. Unweighted compliance score E. Percentage of compliant rules in the application",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A user reports that an application takes five seconds to complete a step and present the next step in a process. Which tool allows you to gather and analyze performance data for the form submission? A. Tracer B. Database Trace C. Performance Analyzer (PAL) D. Performance Profiler",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement describes the appropriate use of the Purge/Archive wizard to address application performance? A. Delete any properties exposed in table columns from the BLOB. B. Remove unused rules caches maintained on the system. C. Delete stored SQL procedures that have been updated. D. Remove old cases from the respective database table.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "DRAG DROP Drag the name of the Pega Platform log file appender from the left to the matching use case on the right.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An application contains a rule with an Apply to: class of TGB-HRApps-Work-Review in a locked ruleset. There is a higher unlocked ruleset. How do you prevent the application from using the rule in TGB-HRApps-Work-Review? A. Save a new version of the rule, applied to TGB, and set the availability of the rule to Final. B. Save a new version of the rule, applied to TGB-HRApps-Work-Review, and set the availability of the rule to Not Available. C. Save a new version of the rule, applied to TGB-HRApps-Work-Review, and set the availability of the rule to Blocked. D. Save a new version of the rule, applied to TGB-HRApps-Work-Review, and set the availability of the rule to Withdrawn.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The AccountManage ruleset contains the following versions of a service level named ReviewAccountChange: The application is being updated with a new patch version of the AccountManage ruleset. As part of the update, the service level is no longer specialized for AccountOpen cases. In the updated ruleset, the circumstancing in the class group applies to all case types. Which option do you use to reset the circumstancing for the AccountOpen case type? A. Make the circumstanced rules in the AccountOpen class unavailable. B. Withdraw the circumstanced rules in the AccountOpen class. C. Block the circumstanced rules in the AccountOpen class. D. Copy the non-circumstanced rule to the AccountOpen class and select the base rule option.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You perform a major skim on the ruleset ABC:02-02 to ABC:03-01. In the Answer area, select the ruleset versions that the skim operation uses.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You want to create a new minor version of an application ruleset to add a new feature to your application. The new feature will be made available to users in a phased rollout. How do you update the application to add the new ruleset version? A. Lock and roll the existing ruleset, and create a new application version. B. Create a new application version and add the new ruleset version as a production ruleset. C. Skim the existing ruleset and update the existing application version. D. Create a branch ruleset and a new application, and add the branch ruleset to the application.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two rule types can you mark as a relevant record? (Choose two.) A. Property B. Section C. Skin D. Report",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer has identified resource-intensive queue processors as the source of performance issues that application users are experiencing. Which two actions do you perform to resolve the performance issues? (Choose two.) A. Associate the queue processors with the appropriate node types. B. Configure the queue processors to run multiple times a day. C. Configure the application nodes with node types. D. Select the Include in background processing option on the application rule.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "MyCo insurance company completes the development phase of its application and decides to start the testing phase of the application in a testing environment. To migrate the application, the development team created an instance of the Rule-Admin-Product class that includes the application instances to migrate. Which two components does the Rule-Admin-Product instance include by default when you generate an archive file? (Choose two.) A. Checked-in rules B. MyCo- class instances C. Data- class instances D. Checked-out rules",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the difference between using the Call and Branch methods in an activity step to invoke other activities? A. Call provides more robust debugging capability than Branch, while Branch provides better run-time performance. B. Branch creates a new thread to allow asynchronous processing, while Call runs in the thread from it was invoked. C. Call returns to the originating activity, while Branch skips the remainder of the originating activity. D. Branch overrides the security restrictions of the called activity allowing you to easily test code; it will not run in production.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A medium-size toymaker wants to fulfill orders received during the peak season in December and process the orders in batches multiple times a day. Flow do you implement this use case? A. Create a queue processor that can process orders received by the company. B. Create one scheduled job and set its run schedule to multiple times a day. C. Create scheduled jobs, one for each run, that can process accumulated orders. D. Create batches of orders and send each batch for processing when it gets full.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are integrating two Pega Web Mashups into a client's mortgage loan financing page. What do you configure to successfully embed both mashups? A. Run the mashups on the same thread. B. Identify unique names for each mashup. C. Load both mashups simultaneously. D. Define identical URLs for each mashup.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The ruleset list for an application consists of the following rulesets, ordered from highest to lowest: • SelfService:01-01 • TGB-HR:01-01 • TGB:01-01 A rule with an Apply to: class of TGB-HR-SelfService-Work-TimeOff references a rule named EnterTimeOffDates. The four instances of EnterTimeOffDates in the rules cache are shown in the following table. Which instance of EnterTimeOffDates is chosen during rule resolution? A. TGB-HR-SelfService-Work-TimeOff .EnterTimeOffDates(SelfService:01-01-01) B. TGB-HR-SelfService-Work .EnterTimeOffDates (SelfService:01-01-01) C. TGB-HR-SelfService-Work-TimeOff .EnterTimeOffDates(SelfService:01-01-02) D. TGB .EnterTimeOffDates(TGB:01-01-02)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are working on an update to an application which only affects some rules for a certain case type. For migration to a production system, the customer wants the updated rules released as a new patch version of the application ruleset. Flow do you create the new ruleset version? A. Skim the relevant rulesets to copy the highest versions of the existing rules to the new version. B. Merge the existing rules in the relevant rulesets to the new version. C. Lock the current ruleset and then roll (increment) the ruleset version. D. Create a branched ruleset and then copy the affected rules into the new branched ruleset.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In which scenario is a Declare OnChange rule appropriate? A. When a manager approves a case, the case is routed back to the appropriate caseworker. B. When a developer changes a view, the change is checked into a development branch. C. When a user updates their address, the active case is suspended until the address can be confirmed. D. During a nightly backup process, only updated fields are backed up.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The MyCoSelfService ruleset contains the following instances of the same rule. The only differences between the instances are the circumstance settings and ruleset version. All ruleset versions are in the ruleset list. Assuming users can access all the ruleset versions, which ruleset version is chosen by rule resolution when .Country = Japan? A. 01-01-04 B. 01-02-01 C. 01-01-02 D. 01-01-03",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Teams X and Y work on different enhancements in the same ruleset. The release date for each enhancement is uncertain. Which two options, when performed together, allow each team to keep its work separate? (Choose two.) A. Create a new ruleset version for one of the teams. B. Create access groups for each of the teams. C. Create a branch ruleset for each team. D. Apply privileges to the rules each team configures.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement about managing encrypted data in Pega Platform is true? A. Each organization uses a custom key to encrypt its data. B. Property-level encryption is a time-efficient method to encrypt data. C. Encryption policies apply to Work- and Data- classes only. D. Filter conditions cannot reference encrypted properties in reports.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A music production company's application contains the following classes: UPlusMusic-Production-Work- UPlusMusic-Production-Work-Studio- UPlusMusic-Production-Work-Brand- UPlusMusic-Production-Work-Studio-Recording UPlusMusic-Production-Work-Studio-Editing UPlusMusic-Production-Work-Brand-Marketing UPlusMusic-Production-Work-Brand-Distribution A requirement states that users assigned the Manager role can edit objects related to only studio work. At which position in the class hierarchy do you configure an Access of Role to Object (ARO) record to satisfy this requirement? A. UPlusMusic-Production-Work-Studio- B. UPlusMusic-Production-Work- C. UPlusMusic-Production-Work-Studio-Editing D. UPlusMusic-Production-Work-Brand-Marketing",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Consider the following requirement: Car dealers cannot modify orders in the Fulfillment stage. Which security solution do you use to satisfy the requirement? A. Access of Role to Object B. Access Deny C. Access When D. Access group",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three types of information can represent an attribute in attribute-based access control (ABAC)? (Choose three.) A. Property B. List of strings C. Numerical value D. Single string E. Boolean",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In an online shopping application, you enable class-level encryption for the entire case type and optimize First Name, Last Name, Social Security number (SSN), Total Cart, and Account Number properties for reporting. To secure sensitive data, how do you enable property-level encryption for SSN and Account Number? A. Update the class-level encryption to enable property-level encryption. B. Create a TextEncrypted property type, and then add the properties. C. Create a PropertyEncrypt access control policy, and then add the properties. D. Create a PropertyEncrypt data transform, and then add the properties.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A requirement states that the Manager role cannot open a purchase request during the Audit stage. How do you configure the case stage to satisfy this requirement? A. Apply a Privilege record. B. Apply a When record. C. Apply an Access Deny record. D. Apply an Access When record.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An application includes three case types. A business requirements states that members of the App:Users access role cannot run reports for one of the case types. Which configuration can you apply to satisfy this requirement? A. Use an Access When record to verify that the user role has access to the Run reports action. B. Use an Access When record to verify that the case type has access to the Run reports action. C. Use an automation to verify that the user does not have the App:Users access role. D. Use an Access Deny record to set the Run reports action to No Access.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which requirement is supported by attribute-based access control (ABAC)? A. Customers have view access to all attachments on a case. B. Personal identifying information in the Work-Baking- class is restricted. C. Bakers with a rating of 4 or better can add recipes to the database. D. Managers can reschedule but not delete appointments.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which configuration controls the access to an attachment category? A. Configure the privilege DeleteOwn, and then assign it to a user so that a user can delete their own attachments. B. Configure a when rule to allow users to delete an attachment if the rule returns as false. C. Configure client-based access control on the class where the attachment exists to restrict access to the attachment. D. Configure a visible when rule, IsDocumentPrivate to allow users to view an attachment if the rule returns as false.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two configurations are required when adding a Split for Each shape to your case life cycle? (Choose two.) A. Enter a rule that stores the audit note that you want to include in the subprocess. B. Enable users to get back to the subprocess after the case moves forward. C. Enter the Page List or Page Group property that is the basis of the split. D. Define when the parent process resumes processing.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An assignment service-level agreement (SLA) is configured with the following details: • Initial urgency: 15 • Assignment ready: Timed delay of 2 hours • Goal: 1 hour and increase urgency by 10 • Deadline: 2 hours and increase urgency by 15 • Passed deadline: 1 hour, increase urgency by 10, and limit events to 10 Assuming no other urgency adjustments, what is the assignment urgency 4.5 hours after the case reaches the assignment? A. 40 B. 60 C. 25 D. 50",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Items selected by a user need to be copied to a page list property when the user submits the form. How do you copy the items? A. Create a declare expression with the page list property as the target. B. Add a data transform to the flow action as a pre-processing action. C. Add a data transform to the flow action as a post-processing action. D. Create a validate rule to copy the selected items.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The company wants you to configure a service level agreement (SLA) that begins at the start of the next business day, to ensure timely processing of the following assignments: • Product inquiry assignment – a customer submits product inquiries • Review assignment – a customer service representative (CSR) reviews the inquiry and replies to the customer Which two configurations, when performed together, meet the requirement to delay SLA processing? (Choose two.) A. Set the Assignment Ready field to Dynamically defined on a property. B. Create the SLA on the Product inquiry assignment. C. Create the SLA on the Review assignment. D. Set the Assignment Ready field to Timed delay.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two options do you consider when creating a pre-processing data transform? (Choose two.) A. The potential reuse of the flow action B. The security setting for the data transform C. The timing of the commit for the flow action D. The effect if the flow action is reloaded",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Operator A is in Unit A and Operator B is in Unit B. You want both operators to be able to perform work that is routed to either Unit A or Unit B. Which configuration supports this requirement? A. On each operator's record, associate the operator with the same work group. B. On each operator's record, associate the operator with both units. C. On each unit record, associate both operators with each unit. D. On the work group record, associate the operators with the work group.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT A hospital uses a Patient visit case type to track Emergency Room (ER) visits. The case type can create Lab analysis and Diagnostic imaging child cases. While the child cases are active, the doctor must be able to update the Patient visit case with notes. In the Answer Area, select the three configurations that allow a doctor to update the parent case while staff perform assignments on their respective child cases.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a requirement to associate users in different units to the same work queue. How do you implement this requirement? A. Associate the users to a common work group. Then associate the work group to the appropriate units. B. Associate the users to a common work group. Then associate a work queue to the work group. C. Associate the users to a common work queue. Then associate the work queue to the appropriate units. D. Associate the users to a common unit. Then associate a work queue to the common unit.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In which of the following situations do you use branches? A. Development team A and development team B are both working on application 02.01.01 at the same time. B. Development team A is working on application 02.01.01 and development team B is working on application 02.02.02. C. Development team A in India and development team B in the UK are working on different applications in different time zones. D. Development team A is working in the development environment and the quality assurance (QA) team is testing in the QA environment.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP In the Answer Area, drag each log name on the left to its intended purpose on the right.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT For each scenario, identify the appropriate approach for building the mobile app.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two best practices for creating a mobile app on Pega Platform guarantee a consistent user experience? (Choose two.) A. Apply both responsive and adaptive user interface designs to optimize the display of the app. B. Decide early in the development process if the mobile app supports offline mode. C. Incorporate Android emulators during the development and production phases. D. Use multiple unlocked rulesets when developing a mobile app.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In MLP2, the business asks you to create a mobile app for an existing Pega Platform application. Which two of the following actions are required to create the mobile app? (Choose two.) A. Configure access to the Pega Mobile Build Server. B. Create a certificate set. C. Configure the mobile application access in Dev Studio. D. Set up push notifications for developers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Application Settings allow you to __________. A. execute connectors in parallel to improve performance B. simulate data in an environment for testing purposes C. automate the application migration process D. store references to an external system connected to an application",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP Drag the application integration methods on the left to the appropriate use cases on the right.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In which of the following situations would you configure Application Settings? A. A SOAP connector returns simulated data in the development environment. B. The thresholds for a SLA are set to hours instead of days on a testing environment. C. Two SOAP connectors execute in parallel to improve performance. D. The credentials for a REST service differ between development and production environments.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When updating a system of record using a SOAP connector, if the system of record is unavailable, users can retry the update after an hour. If the system of record is still unavailable after an hour, a notification should be sent to a system administrator. How do you implement this requirement? A. Edit the out-of-the-box pxErrorHandlingTemplate data transform. B. Use a transition condition in the activity step invoking the connector. C. Implement the logic in the connector's error handler flow. D. Implement the logic in the data page's response data transform.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A data page is used to retrieve data from an external system. If an error occurs, you want to display a message to the user and send an email to the system administrator. How do you implement this requirement? A. Configure an activity's input source as the error message and the output as an email. B. Configure an error handling process that displays the error message and sends an email. C. Reuse the out-of-the-box ConnectionProblem error handling flow on the Service tab for the connector. D. Create an error handler data transform that adds an error message to the data page and sends an email.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Place the steps in the order in which a service processes a request.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A chemical supplier processes thousands of online orders each day. The supplier provides a material safety data sheet (MSDS) for each of the 100+ cleaning products in stock. When buyers select an item to order, the application displays the MSDS. The MSDS rarely changes. Which of the following options ensures the MSDS is up to date when an order is created? A. Create a keyed data page with the MSDS for each cleaning product. B. Create a parameterized data page that loads a new MSDS for each product. C. Create a data page that contains the MSDS for each cleaning product. D. Configure a keyed data page that allows multiple pages for each key.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A fitness organization wants to ensure that data is entered correctly into an online form when users apply for, or update, their membership information. Which scenario requires an edit validate rule? A. Existing members must enter their membership number in the correct format, M-######-0#. B. The first and last name are required on the form, but a middle name or initial is optional. C. New members can get a 20% discount, if they enter the Coupon Code SAVE. D. New members must be at least 18 years of age at the time they sign up for membership.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true about connectors? A. Connectors establish a link to a service on another system. B. Connectors use a listener that runs in the background. C. Connectors can be referenced from data transforms. D. Connectors require a REST service to function.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "As a best practice, in which situation do you configure a keyed data page? A. A long list of images that often changes B. A long list of vehicle parts that rarely changes C. A short list of emojis that often changes D. A short list of delivery options that rarely changes",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A city resident can report potholes to the Department of Transportation by logging in to a mobile Pega Platform application that utilizes the Pega API. Which two Pega API interactions do you use to facilitate this? (Choose two.) A. Submit the report using POST/cases B. Access the related case type to report using GET/casetypes C. Update the report using GET/cases D. Log into the application using PUT/authenticate",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which two scenarios is it a Pega best practice to use Pega Web Mashup over a Pega API integration? (Choose two.) A. Minimal resources are assigned to update Pega Platform for each new release. B. Developers have access to only App Studio when configuring the integration. C. Users are expected to create cases, open assignments, and manage data privacy. D. The application is built on Pega Platform version 8.2 using UI Kit.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two configurations do you implement when using a Pega Web Mashup? (Choose two.) A. Configure the application permissions by specifying a list of trusted domains in the application rule. B. Configure a node-level data page to hold security access information about the external system. C. Leverage the standard authentication service IACAuthentication and update the authentication activities. D. Add an access group for the application rules that need to be accessed from the external system.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements about guardrails are true? (Choose two.) A. A guardrail warning indicates the severity of an error. B. Pega Platform performs guardrail examination when a rule is checked out. C. Each rule may have multiple guardrail warnings. D. A product owner creates all the guardrails for the application design.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The Static Assembler is used to address rules assembly issues due to which cause? A. Access groups contain multiple product on rulesets. B. A new application is migrated to the production system. C. The server is managing a large number of rules caches. D. The application record lists several branch rulesets.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An application includes the following set of circumstanced instances of a decision table. You update the application and increment the AccountManage ruleset version to 01-02-01. As part of this update, the circumstance .Status=\"Silver\" is no longer needed by the application. How do you implement this change? A. Create a new version of the circumstanced decision table in AccountManage:01-02-01 and set the availability of the rule to Withdrawn. B. Do nothing. Rule resolution does not consider rules in a lower minor version of a ruleset. C. Create a new version of the circumstanced decision table in AccountManage:01-02-01 and set the availability of the rule to Blocked. D. Create a new version of the circumstanced decision table in AccountManage:01-02-01 and select the Base rule option.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The MyCoSelfService ruleset contains the following instances of the same rule. The only differences between the instances are the circumstance settings and ruleset version. All ruleset versions are in the ruleset list. Assuming users can access all the ruleset versions, which ruleset version is chosen by rule resolution when .Country = Australia? A. 01-01-02 B. 01-01-01 C. 01-01-03 D. 01-02-01",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A budgeting application uses a job scheduler to automatically email customers once a week with a breakdown of their weekly expenses. Due to the international usage of the application, stakeholders require peak performance at all hours. Which solution addresses this performance concern? A. Ensure customers use a common access group. B. Configure the job scheduler to run at off-hours. C. Limit the number of operators who access the application. D. Dedicate and classify a node for the job scheduler.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT An application contains a flow action with the Apply to: class of TRB-HRApps-Work-Feedback in a locked ruleset, HRApps:0l-01-01. There is a higher unlocked ruleset. In the Answer area, select the appropriate settings on a saved copy of the flow action that prevents the application from using the rule in HRApps:01-01-01.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A global application with infrastructure nodes located throughout the world requires certain operations to start executing at midnight GMT. Select two possible designs for this use case. (Choose two.) A. Use the Queue-For-Processing method in an activity and design a dedicated queue processor. B. Use the Queue-For-Processing method in an activity and design a standard queue processor. C. Use the Run in background step in the case life cycle and design a dedicated queue processor. D. Use the Run in background step in the case life cycle and design a standard queue processor.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What three ways can a developer designate a rule as a relevant record? (Choose three.) A. Create the rule in App Studio B. Create the rule in Dev Studio C. Add the rule to a production ruleset D. Add the rule on the Application Inventory landing page E. Mark the rule as a relevant record",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three approaches are valid for improving activity security? (Choose three.) A. Select the activity type to limit which rule types car call the activity. B. Apply a privilege to the activity to restrict the activity to authorized users. C. Limit the activity to calling activities of the same Apply to class. D. Configure the activity to restrict individual parameters to authorized users. E. Configure the activity to require authentication to prevent unauthorized use.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Multiple teams need to update the same application version during a development cycle. Which two actions do you perform so that the teams do not affect each other's work? (Choose two.) A. Create a new ruleset version for the base application. B. Create a new application for each team built on the base application. C. Create a separate production ruleset for each team. D. Create branches in each team’s application.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are preparing to create a new major version of an application ruleset with multiple minor and patch versions. How do you create the new ruleset version? A. Create a new application ruleset by using the appropriate version number. B. Skim the relevant ruleset versions to copy the highest versions of the existing rules to the new version. C. Lock and roll the existing ruleset versions to the new version. D. Merge the existing rules in the relevant ruleset versions to the new version.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "MyCo insurance company completes the development phase of its application and decides to start the testing phase of the application in a testing environment. To migrate the application, the development team created an instance of the Rule-Admin-Product class that includes the application instances to migrate. Which two components does the Rule-Admin-Product instance include by default when you generate an archive file? (Choose two.) A. Pega Platform rules B. Checked-out rules C. MyCo- class instances D. Checked-in rules",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The ruleset list for an application consists of the following rulesets, ordered from highest to lowest: • SelfService:01-0l • TGB-HR:01-01 • TGB:01-01 A rule with an Apply to: class of TGB-HR-SelfService-Work-TimeOff references a rule named ConfirmationRequest. The four instances of ConfirmationRequest in the rules cache are shown in the following table. Which is chosen during rule resolution? A. TGB .ConfirmationRequest (TGB:01-01-02) B. TGB-HR-SelfService-Work-TimeOff .ConfirmationRequest (SelfService:01-01-02) C. TGB-HR-SelfService-Work-TimeOff .ConfirmationRequest (SelfService:0l-01-01) D. TGB-HR-SelfService-Work .ConfirmationRequest (SelfService:01-01-01)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement is true about services? A. Services return all data in XML format. B. Services may use a listener that runs in the background. C. Services require a REST connector to function. D. Services may process outbound requests.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Pegs Platform™ application has just been integrated with an external data source. Which of the following tests do you perform to ensure that the integration passes data as expected? A. Unit test B. Scenario test C. Performance test D. Automation test",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A fitness organization wants to ensure that data is entered correctly into an online form when users apply for, or update, their membership information. Which scenario requires an edit validate rule? A. The credit card that they enter for payment must be valid at the time of the membership payment date. B. The first and last name are required on the form, but a middle name or initial is optional. C. The account or card number must be entered in the correct format for the payment type. D. New members must be at least 18 years of age at the time they sign up for membership.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two statements about Application Settings are true? (Choose two.) A. Application Settings require updating Integration rules and data instances for each environment. B. You edit Application Settings on the D_pxGetApplicationSettingValue data page. C. Using categories, a developer can group related Application Settings. D. Application Settings can have a Value type of text, boolean, enumerated list, or class.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements about keyed data pages are true? (Choose two.) A. A keyed data page can be any structure except a list. B. A keyed data page can return multiple embedded pages. C. A keyed data page supports editable data pages only. D. A keyed data page can have multiple keys.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement regarding managing encrypted data in Pega Platform is true? A. Property-level encryption is a time-efficient method to encrypt data. B. To decrypt data, apply the same key used during encryption. C. Each organization uses a custom key to encrypt its data. D. Class-level encryption will encrypt individual properties.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following requirement: An auditing policy explicitly requires that employees cannot see the contents of complaints made against themselves. Which security solution do you use to satisfy the requirement? A. Access Deny B. Access When C. Access of Role to Object D. Access Control Policy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which configuration controls the access to an attachment category? A. Configure client-based access control on the class where the attachment exists to restrict access to the attachment. B. Configure a connector that grants permission to a user to delete an attachment if they are the creator. C. Configure the when rule IsCurrentStageTesting to allow users to view an attachment if the rule returns as true. D. Configure a visible when rule, IsDocumentPrivate, to allow users to view an attachment if the rule returns as false.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which requirement is supported by attribute-based access control (ABAC)? A. Agents who are assigned the Top Secret clearance level can delete reports B. Customers have view access to all attachments on a case. C. Managers can reschedule but not delete appointments. D. Personal identifying information in the Work-Baking- class is restricted.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two data elements can be used as an attribute for an access control policy? (Choose two.) A. Number of dependents B. Encrypted bank account number C. Appointment date D. Password string",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A music production company's application contains the following classes: UPlusMusic-Production-Work- UPlusMusic-Production-Work-Studio- UPlusMusic-Production-Work-Brand- UPlusMusic-Production-Work-Studio-Recording UPlusMusic-Production-Work-Studio-Editing UPlusMusic-Production-Work-Brand-Marketing UPlusMusic-Production-Work-Brand-Distribution A requirement states that users assigned the Guest role can edit objects related to recording but not editing work. At which position in the class hierarchy do you configure an Access of Role to Object (ARO) record to satisfy this requirement? A. UPlusMusic-Production-Work-Studio- B. UPlusMusic-Production-Work- C. UPlusMusic-Production-Work-Studio-Editing D. UPlusMusic-Production-Work-Studio-Recording",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A report needs to list the user ID of the manager of the operator who creates a time-off case. The report provides information from the MyCo-HR-SelfService-Work-TimeOff and Data-Admin- Operator-ID classes. Which two options independently satisfy the business outcome? (Choose two.) A. Configure a class join on the report definition to join operator information to each case. B. Specify both classes in the Pages & Classes tab on the report definition. C. Add the operator ID to the report definition as a parameter. D. Use an association rule to join operator information to each case.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If a customer reports an issue with their online order, an Investigation case is created. All assignments for Investigation cases are higher priority than assignments for other case types. Which configuration supports the requirement to have a greater default urgency on Investigation case assignments? A. Configure an optional action to enable manual changes to case urgency. B. Create a service-level agreement (SLA) rule and increase the initial urgency. C. Increase the initial urgency on the case type settings. D. Create a service-level agreement (SLA) rule and ensure that the assignment is ready immediately.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two configurations are required when adding a Split Join shape to your case life cycle? (Choose two.) A. Link an application to the subprocess to specify Information about the subprocess in the application documentation. B. Configure the context of the subprocess by selecting the current page, a specific work Item, or an embedded page. C. Define when the parent process resumes processing based on the status of subprocesses or the evaluation of a when condition. D. Enter a rule that stores the audit note that you want to include in the audit trail of the subprocess.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "There are five instances of a rule in the rules cache. The only differences between these are the circumstance settings and ruleset version. The operator’s access group has access to all ruleset versions. On 1 June 2020, which instance is chosen by rule resolution if .Country = Algeria? A. SelfService:01-01-01 (Circumstance: .Country=Algeria) B. SelfService:01-01-03 (Circumstance: None, Base Rule checked) C. SelfService:01-01-05 (No Circumstance) D. SelfService:01-01-01 (No Circumstance) E. SelfService:01-01-02 (Circumstance: Start Date = 1 January 2020; End Date = 31 December 2020)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In the following example, the HomeIns, HomeInsInt, and Customer rulesets are configured for application validation. MyCo and MyCoInt are configured for ruleset validation. MyCo lists MyCoInt and Customer as its prerequisites, and the prerequisite for MyCoInt is Pega-ProcessCommander. Which of the following statements is correct? A. Rules in Customer can reference rules in HomeIns. B. Rules in MyCo can reference rules in HomeInsInt. C. Rules in MyCo can reference rules in HomeIns. D. Rules in MyCoInt can reference rules in Customer.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which configuration controls access to an attachment category? A. Configure the IsCurrentStageTesting When rule to allow users to view an attachment, if the rule returns as true. B. Configure an Access Deny on the class where the attachment exists, to restrict access to the attachment. C. Configure a visible When rule, IsDocumentPrivate, to allow users to view an attachment if the rule returns as false. D. Configure a connector that grants permission to a user to delete an attachment if they are the creator.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
