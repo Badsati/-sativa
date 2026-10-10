@@ -1,0 +1,32 @@
+[
+  {
+    "question": "While investigating an inherited Magento Commerce Cloud project, you notice the following SCD_MATRIX configuration in .magento.env.yaml: stage: global: SCD_MATRIX: \"magento/backend\": language: - en_US What is the effect of this configuration? A. Static content for frontend themes is generated during the deploy phase B. All frontend theme static content will be reused from the previous deployment C. Only the static content for the adminhtml area will be generated D. Static content for all locales will be generated for all frontend themes",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are setting up a third-party integration only for the Production environment, which connects to an external RabbitMQ server. Where do you put the configuration? A. In the app/etc/env.php file B. In the QUEUE_CONFIGURATION variable added in the Project Web UI or magento-cloud CLI C. In the env:QUEUE_CONFIGURATION variable added in the Project Web UI or magento-cloud CLI D. In the QUEUE_CONFIGURATION variable in the .magento.env.yaml file",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to increase the Admin Session Lifetime up to 86400 seconds for the branch named Integration and children branches, but not for the Staging and Production branches. How do you update this on the Integration branch and its child branches? A. On your local environment, set the Admin Session Lifetime in the Magento admin backend under Stores > Configuration > Advanced > Admin > Security then dump this setting into the app/etc/config.php file and commit this file B. Add the following variable on the Integration branch and set its value to 86400: env:CONFIG_STORES_DEFAULT_ADMIN_SECURITY_SESSION_LIFETIME C. Run the following Magento CLI command: php bin/magento config:set admin/security/session_lifetime 86400 D. On the Integration environment, set the Admin Session Lifetime in the Magento admin backend under Stores > Configuration > Advanced > Admin > Security",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are adding a new website to the Magento store you manage. This website will run on the same instance of Magento to take advantage of shared integration processes When accessing the new website URL, it redirects to the original website. The files in /media/ and /static/ do not redirect. The correct URL is present in the website configuration. What step must you complete for the URL to stop redirecting? A. Deploy an updated app/etc/config.php that includes the website URL. B. In the Project Web UI, add a separate branch for the new website, and set the URL in the appropriate branch variable. C. Deploy an updated magento-vars.php that maps the hostname to the website code. D. In the Project Web UI, add a JSON variable mapping website codes to URLs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A merchant using Magento Commerce Cloud Pro reports an issue with an order missing transaction data. The application uses a payment gateway integration which posts a series of callbacks to Magento. You would like to retrieve a complete list of calls to build a timeline of what happened. How do you achieve this? A. Use the magento-cloud environment:logs command to retrieve the access.log file from Production B. Use SSH to access all nodes and investigate the access.log files C. Use the magento-cloud environment:ssh command to access the environment and investigate the access.log file D. View the access.log file in the Project Web UI",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a Pro plan project, you notice there is a mail delivery problem in the Integration environment. How do you troubleshoot this? A. Change the log level in the log:email section of the .magento.env.yaml file B. Update the SPF record in the DNS C. Look in the var/log directory for the mail.log file D. Move the test to the Staging environment",
+    "options": {},
+    "most_voted": ""
+  }
+]
