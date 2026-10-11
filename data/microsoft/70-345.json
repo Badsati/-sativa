@@ -1,0 +1,837 @@
+[
+  {
+    "question": "You have three Hyper-V hosts that each have 20 processor cores and 64 GB of RAM. Nine virtual machines are deployed to the hosts as shown in the following table. [sampleXML/xmlfile-54_1.png] Host1 is located in New York, Host2 is located in Los Angeles, and Host3 is located in Denver. None of the virtual machines use dynamic memory. You plan to deploy a two-node Exchange Server 2016 database availability group (DAG) by using the virtual machines. Each node will have 12 processor cores and 24 GB of memory. You are evaluating whether you can use the existing servers for the deployment or whether you must purchase additional servers. You need to recommend where to place the Exchange servers. The solution must minimize costs. What is the best recommendation to achieve the goal? More than one answer choice may achieve the goal. Select the BEST answer. A. One Exchange server on Host1 and one Exchange server on a new Hyper-V host. B. One Exchange server on Host1 and one Exchange server on Host3. C. Both Exchange servers on Host1. D. One Exchange server on Host1 and one Exchange server on Host2. E. One Exchange server on Host2 and one Exchange server on Host3.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains five Mailbox servers. The servers are members of a database availability group (DAG). All of the databases in the DAG are replicated to all of the members. You plan to perform scheduled maintenance on a Mailbox server named MBX3 that will place the server offline for up to an hour. You need to ensure that any active databases on MBX3 are activated on other DAG members before performing the maintenance. Which cmdlet should you use? A. Set-MailboxDatabaseCopy B. Stop-DatabaseAvailabilityGroup C. Resume-MailboxDatabaseCopy D. Set-MailboxServer",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains a database availability group (DAG). You need to identify the number of transaction logs that are in replay queue. Which cmdlet should you use? A. Test-ServiceHealth B. Test-ReplicationHealth C. Get-DatabaseAvailabilityGroup D. Get-MailboxDatabaseCopyStatus D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has a data center. The data center contains a server that has Exchange Server 2016 and the Mailbox server role installed. Outlook Anywhere clients connect to the Mailbox server by using the name outlook.contoso.com. The company plans to open a second data center and to provision a database availability group (DAG) that spans both data centers. You need to ensure that Outlook Anywhere clients can connect if one of the data centers becomes unavailable. What should you add to DNS? A. one A record B. two TXT records C. two SRV records D. one MX record",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You deploy a server named ex01.contoso.com that has Exchange Server 2016 installed. You need to ensure that when users connect to the URL of http://ex01.contoso.com, they access Outlook on the web over a secure connection. How should you configure the Default Web Site? To answer, select appropriate options in the selected area. Hot Area: [sampleXML/xmlfile-58_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has two offices. The offices are located in San Francisco and Los Angeles. Each office contains a data center. Each data center has a local connection to the Internet. You deploy an Exchange Server 2016 organization named Contoso and install three servers in each data center. All of the servers are members of a single database availability group (DAG). Each data center hosts 2,000 mailboxes that replicate to the other data center. You create four records in DNS. The records are configured as shown in the following table. [sampleXML/xmlfile-60_1.png] You need to recommend a client access solution for the organization to meet the following requirements: ✑ When connecting from the Internet, all users must connect to the same namespace for Outlook on the Web. ✑ If a connection to the Internet fails at one data center, all users must be able to access their mailbox from the Internet. ✑ When connecting from the Internet, all user connections to Exchange ActiveSync must be balanced equally across both data centers. What is the best recommendation to achieve the goal? More than one answer choice may achieve the goal. Select the BEST answer. A. In the San Francisco office, configure the internal URLs of the servers to use the internal URL of sfmail.contoso.com. In the Los Angeles office, configure the internal URLs of the servers to use the internal URL of lamail.contoso.com. B. In the San Francisco office, configure the external URLs of the servers to use the internal URL of sfmail.contoso.com. In the Los Angeles office, configure the internal URLs of the servers to use the external URL of lamail.contoso.com. C. Deploy a hardware-based load balancer to each office and configure all of the internal URLs to use mail.contoso.com. D. Deploy a hardware-based load balancer to each office and configure all of the external URLs to use mail.contoso.com.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has a data center in Miami and a data center in Orlando. Each data center is configured as an Active Directory site. The network contains an Active Directory forest named fabrikam.com. The company plans to deploy an Exchange Server 2016 organization that will contain the servers configured as shown in the following table. [sampleXML/xmlfile-61_1.png] The servers will be configured in a single database availability group (DAG). Datacenter Activation Coordination (DAC) mode will be enabled for the DAG. All inbound email from the Internet will be routed through EX5. You need to recommend a solution to ensure that users will continue to receive email messages if the Miami data center fails. Which two actions should you include in the recommendation? Each correct answer presents part of the solution. A. Create one mail exchanger (MX) record that has a priority of 10 and configure the record to point to mx.fabricam.com. Create a second MX record that has a priority of 100 and configure the record to point to mx-backup.fabrikam.com. B. Create one mail exchanger (MX) record that has a priority of 10 and a second MX record that has a priority of 100. Configure both MX records to point to mx.fabrikam.com. C. Configure a host (A) record named mx.fabrikam.com and point mx.fabrikam.com to the IP address of EX5. Configure a host (A) record named mx- backup.fabrikam.com and point mx-backup.fabrikam.com to the IP address of EX6. D. Configure a host (A) record named mx.fabrikam.com. Add the IP addresses of EX5 and EX6 to the record. E. Modify the weight of the mx.fabrikam.com mail exchanger (MX) record.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. You need to ensure that users in each department download an Offline Address Book (OAB) that only contains the users in their department. The solution must ensure that all of the users can continue to see all the other users in the organization. Which three actions should you perform? Each correct answer presents part of the solution. A. Create an OAB for each department B. Modify the properties for each user mailbox. C. Create an address book policy (ABP) for each department. D. Create an address list for each department. E. Modify the properties of the default OAB. F. Create an email address policy for each department.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You are designing an Exchange Server 2016 organization. The organization will use a single namespace of mail.contoso.com for all client access protocols. You plan to use load balancers. You identify the following requirements for the load balancing solution: ✑ The Edge Transport server log files must contain the original IP address of the SMTP hosts. ✑ Clients must be able to connect only when they use the approved hostnames and the approved virtual directories. You need to identify which type of load balancer meets each requirement. What should you identify? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-63_3.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have a hybrid Exchange Server 2016 organization. Users use Outlook on the web. All mailboxes currently reside on-premises. You have an internal public key infrastructure (PKI) that uses a certification authority (CA) named CA1. Certificates are issued to users to sign and encrypted email messages. You move a mailbox to Exchange Online and you discover that the mailbox fails to exchange signed or encrypted email messages from the on-premises mailbox users. You need to ensure that all of the mailboxes that were moved to Exchange Online can send encrypted email messages to the on-premises mailboxes. The mailboxes must also be able to receive encrypted email messages from the on-premises mailboxes. You export the required certificates to a file named Export.sst. What command should you run next? To answer, select appropriate options in the answer area. : Each correct selection is worth one point. NOTE Hot Area: [sampleXML/xmlfile-65_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has an Exchange Server 2016 organization named contoso.com. You need to recommend a solution that meets following requirements: ✑ A user named User1 must be able to send email messages by using an alias of [email protected] in the From field. ✑ Recipients of the messages must be prevented from the identifying the actual sender of the message. ✑ User1 and a user named User2 must each receive a copy of replies to [email protected] What should you recommend? A. Create a distribution group named Sales that has an alias of Sales. Add User1 and User2 to the group. Assign the Send As permissions to User1. B. Create a shared mailbox named Sales that has an Alias of Sales. Assign the Receive As permission User1 and User2. Assign the Send As permissions to User1. C. Create a shared mailbox named Sales that has an Alias of Sales. Assign the Receive As permission User1 and User2. Assign the Send on Behalf permission to User1. D. Create a distribution group named Sales that has an alias of Sales. Add User1 and User2 to the group. Assign the send on Behalf permission to User1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains several servers. Users in the marketing department often send Information Rights Management (IRM)-protected email messages. The IRM-protected messages are excluded from eDiscovery searches. You need to configure the Exchange Server Organization to ensure that the contents of the mailboxes of the marketing department users are searched for all messages that contain the word ProjectX. The solution must prevent the email messages from being deleted permanently. Your user account is a member of the required role group. Which three actions should you perform? Each correct answer present part of the solution. A. Run the New-Mailbox cmdlet B. Run the New-MailboxSearch cmdlet C. Run the Set-IRMConfiguration cmdlet D. Run the Search-Mailbox cmdlet E. Export the results from the discovery mailbox to a personal folders (PST) file, and then use Microsoft Outlook to open the PST file. F. Use Outlook on the web to open the discovery mailbox.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT Your company has an Exchange Server 2016 organization. You plan to allow several users to access the mailboxes of the other users. You need to ensure that a user named User1 can read and delete the email messages in the mailbox of a user named User2. User1 must add the mailbox of User2 manually to the Microsoft Outlook profile. What command should you run? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-67_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are planning an Exchange Server 2016 organization. The organization will contain a Mailbox server named EX01. Users will have primary SMTP email addresses in the following domains: ✑ Contoso.com ✑ Fabrikam.com ✑ Cohowinery.com ✑ Wingtiptoys.com You need to add a DNS record to provide Autodiscover for each domain. Which type of record should you create in each zone? A. CERT B. A C. MINFO D. PTR E. LOC F. MX G. TXT",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You need to configure a distribution group named CustomerService that has the following configurations: ✑ A user named CSManager must be the only user allowed to add members to CustomerService. ✑ All email messages sent to CustomerService must be approved by CSManager. ✑ External users must be allowed to send email messages to CustomerService. You configure CSManager as the group owner. What should you configure in the Exchange admin center for each requirement? To answer, drag the appropriate configurations to the correct requirements. Each configuration may be used once, more than once, or not at all. You may need to drag the split bar, between panes or scroll to view content. : Each correct selection is worth one point. NOTE Select and Place: [sampleXML/xmlfile-70_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains accepted domains for contoso.com and litwareinc.com. The antimalware engine is enabled on Mailbox servers and uses the default policy. You do not create any custom malware rules. You need to notify internal senders when a malware attachment is detected. The rule must apply only when the recipient domain is contoso.com. Which two cmdlets should you use? Each correct answer presents part of the solution. A. Set-MalwareFilterPolicy B. New-MalwareFilterRule C. New-MalwareFilterPolicy D. Set-MalwareFilterRule BC",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains three Mailbox servers. The servers are configured as shown in the following table. [sampleXML/xmlfile-71_1.png] You have distribution group named Group1. Group1 contains three members. The members are configured as shown in the following table. [sampleXML/xmlfile-72_1.png] You discover that when User1 sends email messages to Group1, all of the messages are delivered to EX02 first. You need to identify why the email messages sent to Group1 are sent to EX02 instead. What should you identify? A. EX02 is configured as an expansion server. B. The arbitration mailbox is hosted on EX02. C. Site2 has universal group membership caching enabled. D. Site2 is configured as a hub site.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your network contains an Active Directory forest that has the site topology shown in the diagram. [sampleXML/xmlfile-73_1.jpg] You have an Exchange Server 2016 organization. The organization contains three servers. The servers are configured as shown in the following table. [sampleXML/xmlfile-73_2.png] You have the users described as shown in the following table. [sampleXML/xmlfile-73_3.png] You need to ensure that any email messages sent from User1 to User3 are sent to EX02 first, and then delivered to EX03. What should you configure? A. Site 2 as a hub site B. EX02 as an expansion server C. the Exchange cost for the site link from Site 2 to Site 3 D. the Exchange cost for the site link from Site 1 to Site 2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. The Active Directory sites are configured as shown in the following graphic. [sampleXML/xmlfile-75_1.jpg] Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic. Hot Area: [sampleXML/xmlfile-75_2.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has three offices. The offices are located in New York, London and Sydney. The offices connect to each other by using a WAN link. Each office connects directly to the Internet. The company has an Exchange Server 2016 organization. The organization contains six Mailbox servers. The servers are configured as shown in the following table. [sampleXML/xmlfile-77_1.png] Each office is configured to use a different Send connector to send email messages to the Internet. You need to ensure that the servers route email messages that have Internet recipients through their respective site only. What should you modify? A. the permissions of each Send connector B. the settings of the site links C. the cost of each Send connector D. the scope of each Send connector",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. The Active Directory sites are configured as shown in the following graphic. [sampleXML/xmlfile-78_1.jpg] Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic. Hot Area: [sampleXML/xmlfile-79_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. All users use Microsoft Outlook 2016. You need to configure the Exchange Server organization to meet following requirements: ✑ Users must be prevented from receiving a notification when they attempt to send an email message to distribution groups that contain less than 100 members. ✑ Users must be notified before they send email messages to an unmonitored mailbox named Service1. Which cmdlet should you run to meet each requirement? To answer, drag appropriate cmdlets to the correct requirements. Each cmdlet must be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. : Each correct selection is worth one point. NOTE Hot Area: [sampleXML/xmlfile-80_3.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP Your company has an Exchange Server 2016 organization. The organization contains three servers and 2,000 mailboxes. The organization audits all access to user mailboxes. The company's security policy has the following requirements: ✑ Audit the name of each administrator who modifies the Exchange Server organization settings. ✑ Reduce the amount of audit log information generated by a service account named Service1. ✑ Create an audit entry when an administrator modifies the permissions of another administrative mailbox. You need to identify which PowerShell cmdlets must be used to meet the requirements. Which PowerShell cmdlet should you identify for each requirement? To answer, drag the appropriate cmdlets to the correct requirements. Each cmdlet may be used once, more than once or not at all. You may need to drag the split bar between panes or scroll to view content. : Each correct selection is worth one point. Note Select and Place: [sampleXML/xmlfile-82_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You run the Get-DlpPolicy cmdlet and you receive the following output. [sampleXML/xmlfile-83_1.png] Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the output. Hot Area: [sampleXML/xmlfile-84_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server organization. The organization contains four servers. The servers configured as shown in the following table. [sampleXML/xmlfile-85_1.png] You plan to upgrade the organization to Exchange Server 2016. You need to identify which servers have functionalities that can be fully achieved by using Exchange Server 2016. What should you identify? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-86_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization and a Microsoft Office 365 subscription configured in a hybrid deployment. The deployment contains 500 user mailboxes. Users who have mailboxes in Office 365 report that they cannot view the availability information of users who have mailboxes in Exchange Server 2016. You need to ensure that the users hosted in Office 365 can view the availability information of the mailboxes hosted in on-premises Exchange Server. Which command should you run on an Exchange Server? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-88_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. You plan to migrate some of the users to Exchange Online. You run the Microsoft Office 365 Hybrid Configuration Wizard and you discover that the cmdlet fails to retrieve the required information. Get-FederationInformation You need to identify which DNS record must be configured to resolve the failure. What should you identify? A. an MX record for SMTP domain B. an A record for a Mailbox server C. a PTR record for the Mailbox server D. an A record for Autodiscover",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have an Exchange Server 2016 organization. You run the Microsoft Office 365 Hybrid Configuration Wizard and you move all the mailboxes to Exchange Online. You need to ensure that all of the email services remain available after you remove the Exchange Server 2016 servers from the organization. Which DNS records should you modify? To answer, drag the appropriate record types to the correct DNS zones. Each record type may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. : Each correct selection is worth one point. NOTE Select and Place: [sampleXML/xmlfile-90_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server organization. The organization contains servers that have Exchange Server 2010 and Exchange Server 2016 installed. You establish a hybrid deployment between Exchange Server and Microsoft Office 365. Some users have on-premises mailboxes and personal archives in Exchange Online. You discover that you are unable to use In-Place eDiscovery to search user mailboxes and Exchange Online Archiving archives concurrently. You need to recommend a solution to ensure that In-Place eDiscovery can search the mailboxes and the personal archives concurrently. What should you include in the recommendation? A. OAuth authentication B. an organization relationship C. a retention policy D. the Mailbox Replication service (MRS)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have an Exchange Server 2010 organization. The organization has 500 mailboxes and three servers. The servers are configured as shown in the following table. [sampleXML/xmlfile-92_1.png] EX10EDGE is located in the perimeter network. EX10CH has an Edge Subscription. All Internet mail flows through EX10EDGE. You deploy an Exchange Server 2016 Mailbox server named EX16MBX to the organization. You deploy an Exchange Server 2016 Edge Transport server named EX16EDGE to the perimeter network. You need to transition all Internet mail to flow through EX16EDGE. The solution must minimize disruptions to the mail flow. Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-93_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to configure the virtual directories for the Exchange Server organization. Which three commands should you use? Each correct answer presents part of the solution. A. Set-MapiVirtualDirectory -ExternalUrl \"https://office-online.contoso.com/hosting/discovery\" B. Set-ActiveSyncVirtualDirectory -ExternalUrl \"https://mail.contoso.com/Microsoft-Server-ActiveSync\" C. Set-WebServicesVirtualDirectory -ExternalUrl \"https://mail.contoso.com/ews/exchange.asmx\" D. Set-AutodiscoverVirtualDirectory -ExternalUrl \"https://autodiscover.contoso.com/autodiscover/autodiscover.xml\" E. Set-OwaVirtualDirectory -ExternalUrl \"https://mail.contoso.com/owa\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. Users report that they receive an Autodiscover error when they attempt to configure a Microsoft Outlook profile. You need to view the URLs that are returned to the users when they attempt to establish an Autodiscover connection. Which command should you run from an Exchange server? A. Test-OutlookConnectivity B. Test-OutlookWebServices C. Test-WebServicesConnectivity D. Test-MAPIConnectivity",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You deploy an Exchange Server 2016 organization. The organization contains two servers. The servers are configured as shown in the following table. [sampleXML/xmlfile-96_1.png] The default self-signed certificates are installed on both servers. All of the users in the organization work from home and from customer locations. You purchase a Layer 7 hardware-based load balancer. You configure SSL bridging without session affinity for Outlook on the web connections. The load balancer has an internal fully qualified domain name (FQDN) of lb1.contoso.local. DNS servers are configured to resolve mail.contoso.com names to the external IP address of the load balancer. You need to recommend which names must be included in the certificates installed on the load balancers and the Exchange servers. What should you recommend for each certificate? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-98_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You are planning an Exchange Server 2016 organization. The organization will contain two servers. The servers will be configured as shown in the following table. [sampleXML/xmlfile-100_1.png] You plan to purchase an SSL certificate that contains the following names: ✑ Mail.contoso.com ✑ Mail.london.contoso.com ✑ Mail.newyork.contoso.com You plan to configure a solution for the sites in New York and London. DNS will resolve the names as shown in the following table. [sampleXML/xmlfile-100_5.png] You need to configure the client protocols to meet the following requirements: Users who connect to their mailbox by using Outlook on the web must connect directly to a server in the site that hosts their mailbox. All Exchange ActiveSync users must connect to the same namespace. How should you configure the virtual directories? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-101_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has an Exchange Server 2016 organization. All users have a primary mailbox and archive mailboxes. You create a new retention policy for the users. The policy includes the following types of tags: ✑ A default retention policy tag (RPT) applied to the mailbox: The tag is configured to move email messages older than three years to the archive. ✑ An RPT applied to the users' Sent Items folder: The tag is configured to move email messages older than one year to the archive. The corporate retention policy is applied to all of the mailboxes. A user creates a personal tag named Tag1. The personal tag is configured to delete items permanently after 180 days. The user sends an email message that uses Tag1. You need to identify what will occur to the message. What should you identify? A. The message will be deleted in six months. B. The message will he moved to the archive in one year. C. The message will be moved to the archive in one year and deleted six months later. D. The message will be moved to the archive in three years.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains 5,000 mailboxes. All users connect to their mailbox by using Microsoft Outlook and Outlook on the web. You need to ensure that all of the users are notified before they send an email message to a distribution group named Executives. Which cmdlet should you use? A. New-TransportRule B. Set-Mailbox C. New-PolicyTipConfig D. Set-DistributionGroup E. Set-DLPPolicy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have an Exchange Server 2016 organization. The organization contains 2,000 mailboxes. You need to provide administrators with the ability to perform the following tasks: ✑ An administrator named Admin1 must be able to create custom message classifications. ✑ An administrator named Admin2 must be able to create retention tags. Which management role group should you assign to each administrator? To answer, drag the appropriate role groups to the correct administrators. Each role group may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. : Each correct selection is worth one point. NOTE Select and Place: [sampleXML/xmlfile-105_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains 2,000 mailboxes and 100 distribution groups. You create a distribution group named Managers and you add 20 users to the group. You need to ensure that the members of Managers can create new groups and modify the membership of those groups. Which three actions should you perform? Each correct answer presents part of the solution. A. Create a role assignment policy named Managers. B. Create a new role group named Managers. C. Assign an address book policy (ABP). D. Add the MyBaseOptions and MyDistributionGroupMembership management roles the Managers role assignment policy. E. Assign the role assignment policy. F. Assign a sharing policy. G. Add the MyBaseOptions and MyDistributionGroups management roles to the Managers role assignment policy.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has an Exchange Server 2016 organization and a Microsoft Office 365 subscription configured in a hybrid deployment. You configure the synchronization of on-premises Active Directory accounts to Office 365. All users connect to email services by using Outlook 2016. You plan to deploy Office 365 Message Encryption for the mailboxes of two executives named Exec1 and Exec2. The mailboxes are hosted in Office 365. You need to recommend which actions must be performed to ensure that all of the email messages sent from Exec1 and Exec2 to any recipient on the Internet are encrypted. Which two actions should you recommend? Each correct answer presents part of the solution. A. Deploy Microsoft Azure Rights Management (Azure RMS) to the Office 365 subscription. B. Deploy Active Directory Rights Management Services (AD RMS) to the network. C. Run the Set-MsolUserLicense cmdlet. D. From the Office 365 Exchange admin center, create a rule. E. Install a certificate on the computer of Exec1 and the computer of Exec2. F. From the on-premises Exchange admin center, create a transport rule. AF",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. The organization contains 20 resource mailboxes. You need to ensure that an administrator named Admin1 approves all of the meeting requests sent to the mailboxes. What command should you run? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-108_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You deploy an Exchange Server 2016 organization. You create a data loss prevention (DLP) rule package. You need to import the rule package. Which cmdlet should you use? A. New-MessageClassification B. New-DlpPolicy C. New-DataClassification D. New-ClassificationRuleCollection",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You need to configure the Sender Policy Framework (SPF) for a domain named contoso.com to ensure that only the following senders are authorized to send email for contoso.com: ✑ Hosts listed in the contoso.com MX records ✑ IP addresses in the 131.107.1.0/24 subnet How should you configure the DNS record for the SPF? To answer, drag the appropriate values to the correct targets. Each value may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. Select and Place: [sampleXML/xmlfile-110_3.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT Your company has an Exchange Server 2016 organization. The organization contains two Mailbox severs and one Edge Transport server. You need to modify the anti-spam strategy of the organization to resolve the following issues: ✑ Users in the marketing department report that most email messages identified as spam are legitimate. ✑ Users in the human resources department report that they receive hundreds of email messages daily, which contain the phrase \"Free Vacation\". Which cmdlet should you use to resolve each issue? To answer, select the appropriate options in the answer area. : Each correct selection is worth one point. Note Hot Area: [sampleXML/xmlfile-111_3.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. The organization contains 5,000 mailboxes. All of the users in the organization share their Calendar with the users in two domains named contoso.com and fabrikam.com. You need to prevent the organization users from sharing their Calendar with the users in the contoso.com domain. What command should you run? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-113_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server organization. The organization contains four servers. The servers configured as shown in the following table. [sampleXML/xmlfile-114_1.png] You plan to upgrade the organization to Exchange Server 2016. You need to identify which functionalities from the current environment can be implemented in Exchange Server 2016. What should you identify? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-114_2.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. All users work from a main office and use Microsoft Outlook 2016. You recently ran the Microsoft Office 365 Hybrid Configuration Wizard and moved most of the user mailboxes to Exchange Online. A network administrator reports an increase in the amount of outbound SMTP traffic from the network. You need to reduce the amount of bandwidth utilization for the outbound SMTP traffic. What should you do? A. From the Exchange Server organization, create a Receive connector that uses the IP address of Exchange Online as a remote range. B. From the public DNS zone, modify the MX record to point to Exchange Online. C. From the public DNS zone, modify the SRV record to point to Exchange Online. D. From the Exchange Server organization, create a Send connector that uses Exchange Online as an SMTP smart host.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization named Contoso. You create an organization relationship with a partner's Exchange Server organization named Fabrikam. The users in Fabrikam can view the free/busy information of all the users in Contoso. You need to ensure that the users in Fabrikam can view the custom Mail Tips configured in Contoso. What command should you run in Contoso? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-117_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have an Exchange Server 2016 organization. The organization contains six servers. The servers are configured as shown in the following table: [sampleXML/xmlfile-118_1.png] EX0l, EX02, Ð•Ð¥03, and EX04 are members of a database availability group (DAG) named DAG01. The data center in New York fails. You need to activate DAG01 in the London site. Which three commands should you run in sequence? To answer, move the appropriate commands from the list of commands to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-119_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have an Exchange Server 2016 organization. The organization contains two Mailbox servers. You have a database that is replicated to both servers. The database contains 500 mailboxes. You add new volumes to the Mailbox servers. You need to move all of the mailbox data to the new volumes. The solution must meet the following requirements: \"¢ Ensure that multiple copies of the mailbox data are available at all times. \"¢ Minimize downtime for the mailbox users. Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-121_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a hybrid Exchange Server 2016 organization. Some of the mailboxes in the research department are hosted on-premises. Other mailboxes in the research department are stored in Microsoft Office 365. You need to search the mailboxes in the research department for email messages that contain a specific keyword in the message body. What should you do? A. From the Exchange Online Exchange admin center, search the delivery reports. B. Form the on-premises Exchange admin center, search the delivery reports. C. From the Exchange Online Exchange admin center, create a new In-Place eDiscovery & Hold. D. From the Office 365 Compliance Center, create a new Compliance Search. E. From the on-premises Exchange admin center, create a new In-Place eDiscovery & Hold.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2010 organization. You plan to upgrade to Exchange Server 2016. You have two Active Directory sites configured as shown in the following table. [sampleXML/xmlfile-123_1.png] You have five servers configured as shown in the following table. [sampleXML/xmlfile-124_1.png] You have three users who have mailboxes configured as shown in the following table. [sampleXML/xmlfile-124_2.png] You have the following configurations: ✑ The OWA virtual directory ExternalUrl on CAS01 and CAS02 is $null. ✑ The OWA virtual directory ExternalUrl on EX03 is https://mail.contoso.com/owa. For each of the following statements, select Yes if statements is true. Otherwise, select No. Hot Area: [sampleXML/xmlfile-125_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Active Directory forest named contoso.com that contains an Exchange Server 2016 organization named Contoso. has a two-way forest trust with an Active Directory forest named fabrikam.com. The fabrikam.com forest contains an Exchange Server 2016 Contoso.com organization named Fabrikam. You need to ensure that the users in Contoso can access the free/busy information of all the users in Fabrikam. An administrator from Fabrikam runs the following command in the organization. Get-MailboxServer | Add-ADPermission \"\"Accessrights Extendedright \"\"Extendedrights \"ms-Exch-EPI-Token-Serialization\" \"\"User \"CONTOSO\\Exchange Servers\" What command should you run in Contoso? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-128_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. Some users access their mailbox by using an Android or an iOS device. You need to prevent the users from using OWA for Devices to access their mailbox. Which cmdlet should you use? A. Set-CASMailbox B. Set-MobileMailboxPolicy C. Set-OWAVirtualDirectory D. Set-OWAMailboxPolicy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has an Exchange Server 2016 organization. The organization contains 2,000 mailboxes and five Mailbox servers, including one server named EX1. Five hundred users retrieve email from their mailboxes by using an IMAP4 client application from the Internet. The users also connect to EX1 to send email messages. All of the email messages are secured by using TLS. An administrator recently replaced the company's firewall. Users now report that they fail to send email messages from the IMAP4 client application. You verify that the users can retrieve email messages form their mailbox successfully. You need to recommend which TCP port must be allowed so that the users can send email messages from the IMAP4 application successfully. Which TCP port should you recommend? A. 443 B. 587 C. 993 D. 995",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP Your company recently deployed Exchange Server 2016. Users use a variety of mobile devices to access their mailbox, including iPhones and iPads. You need to configure security for the users who connect to the corporate network by using their mobile device. The solution must meet the following requirements: ✑ Users must be required to enter a complex password to unlock their device. ✑ Only devices that run iOS 8 or later must be allowed to connect to the Exchange Server organization. ✑ Users who fail to download the security settings defined by the organization must be prevented from accessing their mailbox. Which cmdlet should you use for each requirement? To answer, drag the appropriate cmdlets to the correct requirements. Each cmdlet may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. Select and Place: [sampleXML/xmlfile-131_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your network contains the servers configured as shown in the following table. [sampleXML/xmlfile-132_1.png] You run the New-DatabaseAvailabilityGroup cmdlet and you receive the following error message. The task was unable to create the default witness directory on server FS01. Please manually specify a witness directory. + CategoryInfo : InvalidArgument : (:) [New-DatabaseAvailabilityGroup], DagFswUnableToB\"¦ectoryException +FullyQualifiedErrorId : [Server=EX01, RequestId-81b106a2-21e7-4ac3-8a23-e2e13e54a9fa, TimeStamp=11/13/2015 3:09:02 PM] [FailureCategory=CmdletDagFswUnableToBindWitnessDirectoryException] 166B6E12, Microsoft. Exchange. Management. SystemConfigurationTasks. NewDatabaseAvailabilityGroup +PSComputerName : EX01.contoso.com You need to ensure that you can create the database availability group (DAG) successfully by using the New-DatabaseAvailabilityGroup cmdlet. What should you do? A. Add the Exchange Trusted Subsystem group to the local Administrators group on FS01. B. Add the Delegated Setup role group to the local Administrators group on FS01. C. Install the Failover Clustering feature on FS01. D. Install the Remote Server Administration Tools feature on FS01.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. The organization contains three Mailbox servers named EX01, EX02, and EX03. The servers are members of a database availability group (DAG). You have a mailbox database named DB01. DB01 is replicated to EX01 and EX02. You need to add a replica of DB01 to EX03. The replica must meet the following requirements: ✑ Transaction log files must not be applied to the replica for seven days after they are generated. ✑ Transaction log files must be preserved for one day after they are applied to the database copy. What command should you run? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-133_3.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains a mailbox database named DB1. DB1 is stored on a volume named Volume1. You plan to use Exchange Native Data protection. You need to recommend a solution to prevent Volume1 from running out of space for transaction logs. What should you recommend? A. an event history retention period B. background database maintenance C. circular logging D. a size limit of the log directory for the managed folders",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have two Mailbox servers named EX1 and EX2 that have Exchange Server 2016 installed. The disks on the servers are configured as shown in the following table. [sampleXML/xmlfile-135_1.png] Drive D on EX1 fails. You plan to restore the mailbox databases on EX2 by using drive F. You copy the contents of drive E on EX1 to drive F on EX2. You need to restore the mailbox databases as soon as possible. In which order should you perform the actions? To answer, move all actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-136_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have an Exchange Server 2016 organization. The organization has two Mailbox servers named EX01 and EX02. Both servers are members of a database availability group (DAG) named DAG01. A mailbox database named DB01 is replicated to EX01 and EX02. You plan to move the database file and the transaction logs of DB01 to a new location. You create a new folder structure on EX01 and EX02 to store the DB01 database file and transaction logs. You need to complete the move. The solution must minimize the amount of network traffic between EX01 and EX02. You dismount DB01. Which five actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. More than one order of answer choices is correct. You will receive credit for any of the correct orders you select. NOTE: Select and Place: [sampleXML/xmlfile-138_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP Your company has an Exchange Server 2016 organization. The organization contains three Mailbox servers. You need to ensure that email messages sent to the company meet the following requirements: ✑ All of the messages sent from the SMTP domain of fabrikam.com must be blocked. ✑ All of the messages that contain the words \"Fabrikam\" or \"Litware\" must be quarantined. Which anti-spam agent should you configure for each requirement? To answer, drag the appropriate agents to the correct requirements. Each agent may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. : Each correct selection is worth one point. Note Select and Place: [sampleXML/xmlfile-140_3.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You deploy a new Exchange Server 2016 organization. The organization contains two Mailbox servers. You need to reject email messages if a redundant copy of the messages cannot be generated. What command should you run? To answer, select the appropriate options in the answer area. : Each correct selection is worth one point. NOTE Hot Area: [sampleXML/xmlfile-142_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an exchange Server 2016 organization that uses an SMTP domain named contoso.com. You need to encrypt all of the SMTP traffic from the organization to a partner organization. The partner organization uses an SMTP domain named litwareinc.com. Which three commands should you run on your server? Each correct answer presents part of the solution. : Each correct selection is worth one point. NOTE A. New-ReceiveConnector -Name \"Connector1\" -Usage Internet -Bindings 0.0.0.0:587 -DomainSecureEnabled: $true B. Set-TransportConfig -TLSSendDomainSecureList litwareinc.com C. New-SendConnector -Usage Partner -Name \"Connector1\" â€\"AddressSpaces \"lintwareinc.com\" -IgnoreSTARTTLS $false -DNSRoutingEnabled $true - DomainSecureEnabled $true D. Set-TransportConfig -TLSReceiveDomainSecureList contoso.com E. Set-TransportConfig -TLSReceiveDomainSecureList litwareinc.com F. New-SendConnector -Usage Partner -Name \"Connector1\" â€\"AddressSpaces \"contoso.com\" -IgnoreSTARTTLS $false -DNSRoutingEnabled $ture â€\" DomainSecureEnabled $true G. Set-TransportConfig -TLSSendDomainSecureList contoso.com CEG",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains an Edge Transport server. Users report that a message with the following anti-spam headers is delivered to their Inbox folder in Microsoft Outlook. X-MS-Exchange-Organization-PCL:7 X-MS-Exchange-Organization-SCL:6 X-MS-Exchange-Organization\"\"Antispam-Report: DV: 3.1.3924.1409; SID: SenderIDStatus Fail; PCL: PhishingLevel SUSPICIOUS; CW: CustomList; PP: Presolved; TIME: TimeBasedFeatures You need to prevent similar messages from being delivered. The solution must generate a non-delivery report (NDR) when the messages are prevented from being delivered to all user mailboxes. What should you do?? A. Set the SCL reject threshold to 7. B. Run the Set-SenderIdConfig cmdlet. C. Set the SCL delete threshold to 7. D. Run the Set-TransportConfig cmdlet. E. Set the SCL delete threshold to 5. F. Run the Set-RecipientFilterConfig cmdlet. G. Run the Set-Mailbox cmdlet.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains one Edge Transport server. A user reports that certain email messages expected from a specific recipient were never received. You need to search for messages that were blocked by the Edge Transport server because they contain attachment types that are blocked by the organization. In which folder should you search? A. QueueViewer B. AgentLog C. Connectivity D. Routing E. ProtocolLog",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. Users store sales information in public folders. You need to create a public folder that can receive email from external users. Which three commands should you use? Each correct answer presents part of the solution. A. Add-MailboxPermission B. Add-PublicFolderClientPermission C. Update-PublicFolderMailbox D. Enable-MailPublicFolder E. Add-RecipientPermission F. New-PublicFolder G. New-Mailbox",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are planning an Exchange Server 2016 organization. The organization will contain a Mailbox server named EX01. Users will have primary SMTP email addresses in the following domains: Contoso.com [sampleXML/xmlfile-145_1.png] ✑ Fabrikam.com ✑ Cohowinery.com ✑ Wingtiptoys.com You need to add a DNS record to provide Autodiscover for each domain. Which type of record should you create in each zone? A. SRV B. CERT C. PTR D. MINFO E. LOC F. TXT G. MX",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization and Microsoft Office 365 subscription configured in a hybrid deployment. You need to ensure that any email messages sent to the contoso.com domain are encrypted by using Office 365 Message Encryption. Which three commands should you use? Each correct answer presents part of the solution. : Each correct selection is worth one point. NOTE A. New-MessageClassification B. New-TransportRule C. Set-IRMConfiguration D. New-OutlookProtectionRule E. Import-RMSTrustedPublishingDomain BCE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have an Exchange Server 2016 organization. Three users named User1, User2, and User3 work in the marketing department. You need to configure security to meet the following requirements: ✑ User3 must be able to send messages as User1. ✑ User3 must be able to send messages on behalf of User2. ✑ User2 must only be allowed to edit the Calendar of User1. Which cmdlets should you use? To answer, drag the appropriate cmdlets to the correct requirements. Each cmdlet may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. Select and Place: [sampleXML/xmlfile-148_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Exchange Server 2016 organization. Some users access the mailbox on their mobile device by using Exchange ActiveSync. You need to prevent the users from synchronizing more than one month of email or calendar data to their device. Solutions: You deploy an Allow/Block/Quarantine policy. Does this meet the goal? A. Yes B. No",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Exchange Server 2016 organization. Some users access the mailbox on their mobile device by using Exchange ActiveSync. You need to prevent the users from synchronizing more than one month of email or calendar data to their device. Solution: You deploy a mobile device mailbox policy. Does this meet the goal? A. Yes B. No",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Exchange Server 2016 organization. Some users access the mailbox on their mobile device by using Exchange ActiveSync. You need to prevent the users from synchronizing more than one month of email or calendar data to their device. Solution: You deploy an Outlook on the web mailbox policy. Does this meet the goal? A. Yes B. No",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. You are planning a Messaging Records Management (MRM) strategy. You need to configure the organization to meet the following requirements: ✑ Implement an organization-wide setting that permanently deletes all email messages in default folders after five years. ✑ Ensure that users can override the organization-wide email deletion setting. ✑ Ensure that users can modify the default email archive schedule. What should you use for each requirement? To answer, select the appropriate options in the answer area. NOTE: Each correct selection is worth one point. Hot Area: [sampleXML/xmlfile-152_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You plan to deploy Exchange Server 2016 to a new server. The server will host 1,000 mailboxes. You need to identify whether the new server has the required disk throughput and speed. Which two tools should you use? Each correct answer presents part of the solution. Each correct selection is worth one point. NOTE: A. LoadGen B. the Exchange Server Best Practices Analyzer Tool C. Jetstress D. Isinteg E. the Exchange Server Role Requirements Calculator",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have two standalone Exchange Server 2016 servers. You perform daily full backups of the Exchange server databases. A user accidentally deletes some critical items. You need to restore the critical items. Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-155_2.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You are upgrading your Exchange Server 2010 organization to Exchange Server 2016. You begin the migration to modern public folders. You create public folder mailboxes. You start the migration batches and ensure that the batches have completed. You need to finalize the migration to the modern public folders. Which command should you run first? To answer, select the appropriate options in the answer area. : Each correct selection is worth one point. NOTE Hot Area: [sampleXML/xmlfile-157_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2010 organization that uses a namespace of mail.contoso.com. You are migrating the email infrastructure to Exchange Server 2016. You need to minimize the number of changes that end users must make to their Microsoft Outlook client as a result of the migration. Which two actions should you perform? Each correct answer presents part of the solution. Each correct selection is worth one point. NOTE: A. Enable Outlook Anywhere on all the Exchange Server 2010 Client Access servers. B. Move the existing mail.contoso.com namespace to point to the Exchange Server 2016 servers. C. Create a new namespace named legacy.contoso.com and point the namespace to the Exchange Server 2010 servers. D. Run the Set-OutlookProvider cmdlet. E. Create a new namespace named migration.contoso.com and point the namespace to the Exchange Server 2016 servers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. You plan to audit all the tasks performed by administrators. You need to configure a weekly automated email notification that reports each time an administrator permanently deletes a mailbox. How should you complete the command? To answer, select the appropriate options in the answer area. : Each correct selection is worth one point. NOTE Hot Area: [sampleXML/xmlfile-160_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You run Get-Service | where displayname -like *transport* | FT -AutoSize and you receive the following output: [sampleXML/xmlfile-161_1.png] Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the output. Each correct selection is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-161_2.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your network contains a single domain named contoso.local. You have an Exchange Server 2016 organization that uses a single external SMTP namespace of contoso.com. You establish mail flow to and from the Internet. You plan to deploy a customer relationship management (CRM) solution. The CRM solution will have its own SMTP server and must be able to receive email sent by using various addresses in contoso.com. The addresses will not be managed by the Exchange Server organization. You need to recommend a solution to ensure that the CRM solution can receive email from the Internet. The solution must ensure that internal users can all receive email. Which two action should you recommend? Each correct answer presents part of the solution. Each correct selection is worth one point. NOTE: A. Create a Send connector that has a namespace of * and uses the CRM server as a smart host. B. Create a Send connector that has a namespace of contoso.com and uses the CRM server as a smart host. C. Change the domain type of the contoso.com accepted domain to External Relay Domain. D. Create a Send connector that has a namespace of contoso.local and uses the CRM server as a smart host. E. Change the domain type of the contoso.com accepted domain to Internal Relay Domain. F. Change the domain type of the contoso.local accepted domain to Internal Relay Domain. G. Change the domain type of the contoso.local accepted domain to External Relay Domain.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Exchange Server 2016 organization. Some users access the mailbox on their mobile device by using Exchange ActiveSync. You need to prevent the users from synchronizing more than one month of email or calendar data to their device. Solution: You create a throttling policy for the mobile device users. Does this meet the goal? A. Yes B. No B",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. You allow mobile devices to connect to the organization from the Internet. You discover that a specific version of the operating system on mobile devices causes performance issues on an Exchange server when the devices connect to the organization by using Exchange ActiveSync. You need to prevent the mobile devices from connecting to the Exchange Server organization. The solution must allow all other mobile devices to connect. Which command should you use? A. New-ActiveSyncDeviceAccessRule B. New-ActiveSyncMailboxPolicy C. Remove-ActiveSyncDevice D. Set-ActiveSyncOrganizationSettings",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. You plan to configure the organization in a hybrid deployment. You need to identify which firewall ports must be open for Microsoft Azure Active Directory Connect (Azure AD Connect) to communicate with Azure Active Directory (Azure AD). Which two TCP ports should you identify? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point. A. 80 B. 389 C. 443 D. 636 E. 3289 AC",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your network contains an Active Directory forest. The forest contains domain controllers that run Windows Server 2012 R2. The forest contains an Exchange Server 2016 organization. You need to create a database availability group (DAG). Which two actions should you perform before you create the DAG? Each correct answer presents part of the solution. Each correct selection is worth one point. NOTE: A. From Failover Cluster Manager, create a failover cluster. B. From the DNS zone, create an alias (CNAME) record for the name of the DAG. C. Install at least one domain controller that runs Windows Server 2016. D. From Active Directory, create a clustered name object (CNO). E. On the witness server, add the Exchange Trusted Subsystem group to the local administrators group.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT A company named Contoso, Ltd. has an Exchange Server 2016 organization that uses an SMTP domain named contoso.com. Contoso merges with a company named Fabrikam, Inc. Fabrikam uses an SMTP domain named fabrikam.com. In the Contoso organization, you create an accepted domain for fabrikam.com. You configure the MX records of fabrikam.com to point to the Exchange servers of the Contoso organization. You configure several users in the Contoso organization to have an email address that uses the fabrikam.com SMTP domain. Users report that when they send email to the fabrikam.com domain, they receive a non-delivery report (NDR) when the recipient is from the Fabrikam organization. You need to ensure that all of the users who have a fabrikam.com email address can receive email. What should you do? To answer, select the appropriate options in the answer area. Each correct selection is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-167_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has an Exchange Server 2016 organization. The organization has a four-node database availability group (DAG) that spans two data centers. Each data center is configured as a separate Active Directory site. The data centers connect to each other by using a high-speed WAN link. Each data center connects directly to the Internet and has a scoped Send connector configured. The company's public DNS zone contains one MX record. You need to ensure that if an Internet link becomes unavailable in one data center, email messages destined to external recipients can be routed through the other data center. What should you do? A. Create a Receive connector in each data center. B. Clear the Proxy through Client Access server check box. C. Clear the Scoped Send Connector check box. D. Create an MX record in the internal DNS zone.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has three offices. The offices are located in New York, London and Sydney. The offices connect to each other by using a WAN link. Each office connects directly to the Internet. The company has an Exchange Server 2016 organization. The organization contains six Mailbox servers. The servers are configured as shown in the following table. [sampleXML/xmlfile-169_1.png] Each office is configured to use a different Send connector to send email messages to the Internet. All connectors have a cost value of 1. You discover that the available bandwidth of the WAN links between the offices is low. You need to reduce the amount of traffic generated by the Mailbox servers on the WAN links. What should you do? A. Modify the cost of each Send connector. B. Modify the shadow redundancy settings. C. Modify the schedule of the site links. D. Reduce the number of Active Directory sites.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. Some users connect to their mailbox by using Microsoft Outlook 2016 for Mac. Several users report that they fail to connect to their mailbox by using Outlook 2016 for Mac. You verify that the Outlook 2016 users can connect successfully to their mailbox. You suspect a configuration error on a virtual directory. You need to identify which virtual directory is the most likely cause of the issue. Which virtual directory should you identify? A. Rpc B. RpcWithCert C. mapi D. EWS",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has a mailbox database named DB1. The database and log files of DB1 are located on the same volume. The volume that contains DB1 runs out of space. You need to free space on the volume. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point. A. Dismount DB1. B. Change the deleted item retention period. C. Disable circular logging. D. Enable circular logging. E. Mount DB1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a server named EX01 that runs Exchange Server 2016. The disks on EX01 are configured as shown in the following table. [sampleXML/xmlfile-171_1.png] All users access their email by using Microsoft Outlook 2013. From Performance Monitor, you discover that the MSExchange Database\\I/O Database Reads Average Latency counter displays values that are higher than normal. You need to identify the impact of the high counter values on user connections in the Exchange Server organization. What are two client connections that will report slower performance when opening email messages? Each correct answer presents a complete solution. Each correct selection is worth one point. NOTE: A. Outlook in Online Mode B. Outlook in Cached Exchange Mode C. Outlook on the web D. IMAP4 clients E. mobile devices using Exchange Active Sync AC",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. You configure the organization for site resilience. You have to Exchange servers named exch1.adatum.com and exch2.adatum.com. Each server is in a different data center. The certificates on both servers have a subject name of mail.adatum.com. Outlook Anywhere is configured to use the fully qualified domain name (FQDN) of the server in the local data center. You need to ensure that Outlook Anywhere remains connected after a database, server, or data center switchover. Which command should you run? A. Set-OutlookProvider EXPR -CertPrincipalName \"msstd: *.adatum.com\" B. Set-OutlookProvider â€\"Identity msExchAutoDiscoverConfig â€\"TTL 2 C. Setâ€\"OutlookProvider -OutlookProviderFlags ExternalClientsRequireSSL D. Setâ€\"OutlookProvider EXPR â€\"CertPrincipalName \"msstd:mail.adatum.com\" A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an exchange server 2016 organization. The organization contains a Mailbox server named EX01. EX01 contains a mailbox database named DB01. The volume that contains DB01 fails. You need to perform a dial-tone recovery of the database. What should you create first? A. a new Recovery Storage Group B. a new mailbox database C. a mailbox move request D. a mailbox restore request E. a lagged database copy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization that contains multiple Hub Transport servers. You need to recommend a message hygiene solution to meet the following requirements: ✑ Block servers that are known to send spam ✑ Minimize administrative effort What should you recommend? A. an IP Block list B. IP Block list providers C. recipient filtering D. sender filtering B",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has a main office and a branch office. An Active Directory site exits for each office. The offices are connected by a WAN link. You plan to deploy Exchange Server 2016 in each site. You need to identify the number of Exchange servers required to meet the following requirements: ✑ Maintain user access to mailboxes if a single server fails ✑ Use the minimum number of Exchange servers in each site How many servers should you deploy in each site? A. 1 B. 2 C. 3 D. 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. You plan to enable Federated Sharing. You need to create a DNS record to store the Application Identifier (AppID) of the domain for the federated trust. Which type of record should you create? A. A B. CNAME C. SRV D. TXT D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. You need to create a resource record in DNS to support Autodiscover from the Internet. What type of resource record should you create? A. Host (A) B. Text (TXT) C. Pointer (PTR) D. Mail exchange (MX)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 on-premises organization and a Microsoft Office 365 tenant. All mailboxes are hosted on-premises. You need to implement an archiving solution for all users. The solution must ensure that all mailbox content older than 18 months is moved to Personal Archives in Office 365. What should you implement? A. A default policy tag (DPT) B. A retention policy C. A personal tag D. A retention policy tag (RPT) E. A retention hold B",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. Users connect to their mailbox by using Microsoft Outlook 2013 and mobile devices. A user named User1 loses a mobile device. You need to wipe the mobile device remotely. Which cmdlet should you use? A. Remove-MobileDevice B. Clear-MobileDevice C. Set-Mailbox D. Remove-ActiveSyncDevice",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains servers that have either Exchange Server 2010 or Exchange Server 2016 installed. You are migrating several thousands of mailboxes from an Exchange Server 2010 server named EX01 to an Exchange Server 2016 server named EX02. EX01 contains a single mailbox database. You discover that only 20 mailboxes move concurrently. You need to increase the number of mailboxes that move concurrently. What should you do? A. Run the Set-MoveRequest cmdlet B. Edit the MsExchangeMailboxReplication.exe.config file C. Edit the MSExchangeMigrationWorkflow.exe.config file. D. Run the Set-MigrationBatch cmdlet",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. You have a user named User1 who must send encrypted email messages to a user named User2 in another organization. User1 and User2 have certificates issued from a trusted third-party certification authority (CA). You need to ensure that User1 can send the encrypted email messages to User2. What should you do first? A. Instruct User2 to send a digitally signed email message to User1. B. Instruct User2 to create a Certificate Signing Request (CSR). Send the CSR to User1. C. Instruct User1 to send a digitally signed email message to User2 D. Instruct User1 to create a Certificate Signing Request (CSR). Send the CSR to User2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A new company has the following: ✑ Two offices that connect to each other by using a low-latency WAN link ✑ In each office, a data center that is configured as a separate subnet ✑ Five hundred users in each office. You plan to deploy Exchange Server 2016 to the network. You need to recommend which Active Directory deployment to use to support the Exchange Server 2016 deployment. What is the best recommendation to achieve the goal? A. Deploy two forests that each contains one site and one site link. Deploy two domain controllers to each forest. In each forest configure one domain controller as a global catalog server B. Deploy one forest that contains one site and one site link. Deploy four domain controllers. Configure all of the domain controllers as global catalog servers. C. Deploy one forest that contains two sites and two site links. Deploy two domain controllers to each site in each site, configure one domain controller as a global catalog server D. Deploy one forest that contains two sites and one site link. Deploy two domain controllers to each site. Configure both domain controllers as global catalog servers",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You work for a company named Litware, Inc. that hosts all email in Exchange Online. A user named User1 sends an email message to an external user. User1 discovers that the email message is delayed for two hours before being delivered. The external user sends you the message header of the delayed message. You need to identify which host in the message path is responsible for the delivery delay. What should you do? A. Review the contents of the protocol logs. B. Search the message tracking logs. C. Search the delivery reports for the message D. Review the contents of the application log E. Input the message header to the Exchange Remote Connectivity Analyzer E",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have two servers named EX1 and EX2. You plan to add both servers to a database availability group (DAG) named DAG1. Each server will host a copy of a mailbox database. You calculate that during the lifespan of the servers, the mailbox databases will grow up to 4 TB. The logs will occupy up to 1TB at any given time. [sampleXML/xmlfile-180_1.png] You need to identify which drivers must be used to store the database and log files on the servers. Hot Area: [sampleXML/xmlfile-181_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You plan to deploy a database availability group (DAG) across two locations. You will use a Microsoft Azure virtual machine as a witness server. You need to configure the network infrastructure to support the planned deployment. Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-182_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You are deploying a new Exchange Server 2016 organization. You deploy two servers named ex01.contoso.com and ex02.contoso.com to the organization. You need to configure DNS to ensure that servers on the internet can send email messages to the organization by using an SMTP domain named contoso.com. The solution must ensure that ex02.contoso.com is used only if ex01.contoso.com becomes unavailable. You create an MX record for contoso.com that points to ex01.contoso.com. The record has a preference value of 10 What command should you run? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-184_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP Your company has an Exchange Server 2016 Organization. The Organization contains three servers and 2000 mailboxes. The company's compliance policy has the following requirements: ✑ A compliance officer named OfficerAdmin must be able to search all of the mailboxes for email messages that contain specific Keywords. ✑ OfficerAdmin must be able to read all of the email messages that contains specific keywords. ✑ OfficerAdmin must be able to prevent specific users from deleting email messages that contain specific keywords. You need to identify which management roles must be assigned to OfficerAdmin to meet the requirements. Which management role group should you identify for each requirement? Select and Place: [sampleXML/xmlfile-185_4.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has one Exchange Server 2016 database availability group (DAG) across two data centers. You need to load balance a single namespace across both data centers. The solution must be able to check service health check. Which two solutions should you use? Each correct answer presents part of the solution. A. A Layer 7 load balancer B. An unbound model C. A bound model D. DNS round-robin",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You manage an Exchange Server 2016 organization that spans two sites. The sites are located in Los Angeles and New York. You have a database availability group (DAG) named DAG1 that contains four members, two in each site. The names and location of each DAG1 member are as follows: ✑ EX01 and EX02 are in the New York site. ✑ EX03 and EX04 are in the Los Angeles site. A user has a mailbox on a database that is currently active on EX03. The Front End Transport service on EX01 receives a message from the Internet. The message is addressed only to the user. Based on this information, how will the Front End Transport service always attempt to route the first delivery attempt of the message? A. The Transport service on EX01 B. The Transport service on EX03 C. The Transport service on one of the servers in the New York site D. The Transport service on one of the servers in the Los Angeles site",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You manage an Exchange Server 2016 organization in an Active Directory forest that contains three sites. The sites are located in Chicago, Los Angeles, and New York. A database availability group (DAG) named DAG1 contains eight mailbox servers in the Los Angeles site and eight mailbox servers in the New York site. The servers run Windows Server 2012 R2. The Los Angeles and New York sites both have independent network access to the Chicago site. You need to configure the environment to provide the organization with the best chance of surviving a service outage if a site or a WAN link fails. Additionally, the New York site must be considered the primary data center and given preference for survival. Which two actions should you perform? Each correct answer presents part of the solution. A. Add an additional Exchange server to DAG1 and place it in the New York site. B. Place the cluster core resource group in the Chicago site. C. Place the file share witness in the Chicago site. D. Add an additional Exchange server to DAG1 and place it in the Chicago site. E. Place the cluster core resource group in the New York site. F. Place the file share witness in the New York site.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. A user named User1 delegates full control access to her mailbox to several users. User1 needs to track the delegates' actions when they access the mailbox. Which activities can be tracked? For each activity, select Yes if the activity can be tracked. Otherwise, select No. Hot Area: [sampleXML/xmlfile-189_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You manage an Exchange Server 2016 organization. You purchase a subscription for Exchange Online Protection (EOP) Advanced Threat Protection (ATP). You need to configure ATP by using PowerShell from a computer running Windows 8 to prevent users in the organization from following malicious links in email messages. Which five cmdlets should you run in sequence? To answer, move the appropriate cmdlets from the list of possible cmdlets to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-192_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You are upgrading your Exchange Server 2010 organization to Exchange Server 2016. You begin the migration to modern public folders. You create public folder mailboxes. You start the migration batches and ensure that the batches have completed. You need to finalize the migration to the modern public folders. Which command should you run first? To answer, select the appropriate options in the answer area. : Each correct selection is worth one point. NOTE Hot Area: [sampleXML/xmlfile-194_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an exchange server 2016 organization. The organization contains two servers named EX01 and EX02. Both servers are members of a database availability group (DAG) named DAG01. DAG01 contains two mailbox databases named DB01 and DB02. DB01 and DB02 are replicated to all of the members of DAG01. You run the Get-MailboxDatabaseCopyStatus cmdlet and you receive the following output. [sampleXML/xmlfile-196_1.jpg] Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the output. Hot Area: [sampleXML/xmlfile-196_2.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. You need to assign the following permissions: ✑ A user named User1 must be able to monitor the Exchange services and components. ✑ A user named User2 must be able to install provisioned Exchange servers. The solution must use the principle of least privilege. Which role should you assign to each user? To answer, select the appropriate options in the answer area. : Each correct selection is worth one point. NOTE Hot Area: [sampleXML/xmlfile-198_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains 10 mailbox databases. You have a mailbox database named DB4 on a disk that has only 10 percent free disk space. You need to prevent automatic mailbox distribution from selecting DB4 as a target. Which cmdlet should you use? A. Set-MailboxDatabase B. Set-MailboxServer C. Set-SiteMailboxProvisioningPolicy D. Set-DatabaseAvailabilityGroup A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your network contains a single Active Directory forest. The forest contains two sites named Site1 and Site2. You have an Exchange Server 2016 organization. The organization contains two servers in each site. You have a database availability group (DAG) that spans both sites. The file share witness is in Site1. If a power failure occurs at Site1, you plan to mount the databases in Site2. When the power is restored in Site1, you need to prevent the databases from mounting in Site1. What should you do? A. Disable AutoReseed for the DAG. B. Implement an alternate file share witness. C. Configure Datacenter Activation Coordination (DAC) mode. D. Force a rediscovery of the network when the power is restored.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company deploys Microsoft SQL Server on an Azure DS3_V2_Standard virtual machine (VM). You need to modify the disk caching policy. Which Azure PowerShell cmdlet should you run? A. Update-AzureDisk B. Update-AzureRmVm C. Set-AzureRMVMDataDisk D. Set-AzureRmVmOperatingSystem",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2010 organization. You plan to upgrade to Exchange Server 2016. You have two Active Directory sites configured as shown in the following table. [sampleXML/xmlfile-201_1.jpg] You have five servers configured as shown in the following table. [sampleXML/xmlfile-202_1.jpg] You have three users who have mailboxes configured as shown in the following table. [sampleXML/xmlfile-202_2.png] You have the following configurations: The OWA virtual directory ExternalUrl on CAS01 is https://mail.brussels.contoso.com/owa. The OWA virtual directory ExternalUrl on CAS02 is $null. The OWA virtual directory ExternalUrl on EX03 is https://mail.contoso.com/owa. All users connect to https://mail.contoso.com/owa to access Outlook on the web. For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct solution is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-203_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has two offices. Each office contains a data center. Each data center is configured as a separate Active Directory site. The data centers contain five servers that have Exchange Server 2016 installed. The servers are configured as shown in the following table. [sampleXML/xmlfile-204_1.png] All of the servers are members of a database availability group (DAG) named DAG1. Each server contains several mailbox database copies. You plan to shut down EX1 to replace several hardware components. You expect that EX1 will be restarted in one week. You need to manually exclude EX1 from cluster voting during the planned maintenance period. What should you run? A. Set-MailboxServer EX1 â€\"DatabaseCopyAutoActivationPolicy Blocked B. Stop-DatabaseAvailabilityGroup DAG1 â€\"Mailbox Server EX1 Restore-DatabaseAvailabilityGroup â€\"ActiveDirectorySite Site1 C. Stop-DatabaseAvailabilityGroup DAG1 â€\"ActiveDirectorySite Site1 Restore-DatabaseAvailabilityGroup â€\"ActiveDirectorySite Site2 D. Remove-DatabaseAvailabilityGroupServer EX1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have an Exchange Server 2016 organization. You have a mailbox database named PF_DB1 that contains a public folder mailbox named PF1. PF1 contains a public folder named Marketing. Three weeks ago, a user deleted the Marketing folder. You restore the database files from the last full back up to a recovery database named R_DB1. You need to recover Marketing folder. What command should you run? To answer, select appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-205_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your work for a company named Contoso, Ltd. The network contains a single Active Directory forest named contoso.com. The forest contains an Exchange Server 2016 organization. Contoso recently acquired a subsidiary named Fabrikam, Inc. The network at Fabrikam contains a single Active Directory forest named fabrikam.com. In the contoso.com forest, you plan to create mailboxes for all of the users at Fabrikam. You need to recommend which actions must be performed to create a mailbox for a newly hired Fabrikam employee. Which three actions should you recommend? Each correct answer presents part of the solution. Each correct selection is worth one point. NOTE: A. In fabrikam.com, create a user account B. In contoso.com, disable a user account C. Create a one-way trust in which the fabrikam.com forest trusts the contoso.com forest D. Create a one-way trust in which the contoso.com forest trusts the fabrikam.com forest E. In contoso.com, create a linked mailbox F. In fabrikam.com, disable a user account G. In contoso.com, disable a user account H. In contoso.com, create a site mailbox",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT Your network contains a single Active Directory domain named Contoso. You have an Exchange Server 2016 organization. The organization contains two Mailbox servers named EX01 and EX02. The servers are members of the Contoso domain. A mailbox database named MDB01 has the following configuration: ✑ Name: MDB01 ✑ LogFolderPath: C:\\DB Files\\MDB01 ✑ CircularLoggingEnabled: False ✑ IsMailboxDatabase: True ✑ IsPublicFolderDatabase: False ✑ AdminDisplayName: MDB01 ✑ Identity: MDB01 ✑ AllowFileRestore: False ✑ BackgroundDatabaseMaintenance: True ✑ EdbFilePath: C:\\DB Files\\MDB01\\MDB01.edb ✑ DeletedItemRetention: 14.00:00:00 ✑ ServerName: EX01 The organization retains daily backups for 30 days. A user has a mailbox named User01. The user deleted a mailbox item from User01 20 days ago. You restore the database files from a backup to the D:\\Restore\\ folder on a disk on EX02. You need to restore the deleted mailbox item. Which command should you run? To answer, select the appropriate options in the answer area. Each correct selection is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-208_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You deploy two Exchange Server 2016 Mailbox servers. The disks on the servers are configured as shown in the following table. [sampleXML/xmlfile-209_1.png] You plan to add both servers to a database availability group (DAG) named DAG1. Each server will host a copy of a mailbox database. You calculate that during the lifespan of the servers, the mailbox databases will grow up to 4 TB. The logs will occupy up to 1 TB at any given time. You need to identify which drives must be used to store the database and log files on the servers. What should you identify for each server? To answer, select the appropriate options in the answer area. Each correct selection is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-210_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains a server named EX01. Users report that they receive the error message shown in the following graphic when they open Microsoft Outlook. [sampleXML/xmlfile-211_1.jpg] You need to prevent the users from receiving the error message when they open Outlook. Which command should you use? A. Set-AutodiscoverVirtualDirectory B. Set-MailboxServer C. Set-ClientAccessServer D. Set-RpcClientAccess",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT Your company has a two data centers and one disaster recovery data center. The data centers are located in Paris and Madrid. The disaster recovery data center is located in London. Each data center contains several servers that have Exchange Server 2016 installed. The data center in Paris uses a subnet of 131.107.100.0/24. The data center in Madrid uses a subnet of 131.107.200.0/24. A disaster recovery site uses a public IP address of 131.107.150.155. The public DNS zone has the records configured as shown in the following table. [sampleXML/xmlfile-212_1.png] For each of the following statements, select Yes if the statement is true. Otherwise, select No. Each correct selection is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-213_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend changes to the existing environment to meet the high-availability requirements for the mailbox databases. What should you recommend? A. Run the Set-MailBoxDatabase cmdlet. B. Run the Set-DatabaseAvailabilityGroup cmdlet. C. Run the Set-MailBoxServer cmdlet. D. Run the Set-MailBoxDatabaseCopy cmdlet. C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You begin to implement the Exchange Server 2016 servers and plan to decommission the Exchange Server 2013 servers during the next six months. You need to recommend which actions must be performed to support the planned changes for document collaboration. You install Microsoft Office Online Server on a new server. Which two cmdlets should you recommend running next? Each correct answer presents part of the solution. A. New-OfficeWebAppsFarm B. Set-PartnerApplication C. Set-MailboxServer D. New-OfficeWebAppsHost E. Set-OrganizationConfig",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a solution for the users involved in the legal disputes. What should you include in the recommendation? A. a journal rule B. an Outlook protection rule C. an In-Place Hold D. a Litigation Hold",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You deploy Layer 7 load balancers to the New York and London offices. You are planning the namespace configuration that will be used once you complete the planned upgrade to Exchange Server 2016. You need to recommend a solution to meet the connectivity requirements for the namespaces. What should you recommend? A. On the New York office servers, change the internal URLs to mail.fabrikam.com. B. On all of the branch office servers, change the external URLs to $null. C. On all of the branch office servers, change the external URLs to mail.fabrikam.com. D. On the New York office servers, change the internal URLs to $null.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend changes to the messaging infrastructure. The changes must meet the connectivity requirements after the planned upgrade. Which two actions should you recommend? Each correct answer presents part of the solution. : Each correct selection is worth one point. NOTE A. From the Mailbox servers, import the Edge Subscription file. B. On the Edge Transport Servers, start Edge Synchronization. C. On the Edge Transport servers, import the Edge Subscription file. D. On the Edge Transport servers, create an Edge Subscription file. E. On the Mailbox servers, restart the Microsoft Exchange Transport service.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend changes to the existing environment to meet the high-availability requirements for the mailbox databases. What should you recommend? A. Run the Suspend-MailboxDatabaseCopy cmdlet. B. Run the Update-MailboxDatabaseCopy cmdlet. C. Deploy a file share witness to a branch office. D. Modify the cluster resource properties. E. Deploy a file share witness in Azure.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You need to configure a data loss prevention (DLP) policy to meet the compliance and security requirements. How should you configure the policy rule? To answer, select the appropriate options in the answer area. : Each correct selection is worth one point. Note Hot Area: [sampleXML/xmlfile-8_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You need to recommend a solution to resolve the security alert issue encountered by the Paris office users after the planned upgraded. Which command should you recommend? To answer, select the appropriate options in the answer area. Each correct selection is worth one point NOTE: Hot Area: [sampleXML/xmlfile-10_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You need to recommend how many database availability groups (DAGs) and how many namespaces must be added to the site resilience solution to meet the availability requirements. How many namespaces and DAGs should you recommend adding? To answer, select the appropriate options in the answer area. Each correct selection is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-11_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You remove the namespaces for the branch offices. The branch office users report that they fail to connect to their mailbox by using Exchange ActiveSync from their mobile device. You need to ensure that all of the users can access their mailbox by using Exchange ActiveSync. What should you do? A. Instruct the users to recreate the Exchange ActiveSync partnership on their device. B. Create a new device access rule. C. Run the Set-MobileDeviceMailboxPolicy cmdlet. D. Run the Set-ActiveSyncOrganizationSettings cmdlet.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend changes to the existing environment to meet the high-availability requirements for the mailbox databases. What should you recommend? A. Modify the cluster resource properties. B. Run the Set-MailboxDatabase cmdlet. C. Run the Set-MailboxServer cmdlet. D. Deploy a file share witness to a branch office.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend changes to the existing environment to meet the high-availability requirements for the mailbox databases. What should you recommend? A. Run the Set-MailBoxDatabase cmdlet. B. Run the Set-DatabaseAvailabilityGroup cmdlet. C. Run the Suspend-MailboxDatabaseCopy cmdlet. D. Deploy a file share witness to a branch office.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend changes to the existing environment to meet the high-availability requirements for the mailbox databases. What should you recommend? A. Run the Set-MailBoxDatabase cmdlet. B. Run the Update-MailboxDatabaseCopy cmdlet. C. Run the Suspend-MailboxDatabaseCopy cmdlet. D. Deploy a file share witness in Azure.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After deploying new servers, you configure the development applications to send email notifications by using a new server that runs Exchange Server 2016. You need to reduce the likelihood that the email messages will be identified incorrectly as spam. What should you do? A. On the new server run, the Set-TransportConfig cmdlet and specify the -InternalSMTPServers parameter. B. Create a new internal relay accepted domain. C. Upgrade EdgeEX to Exchange Server 2016. D. On the new server run, run the Set-TransportServer cmdlet and specify the -AntiSpamAgentsEnabled parameter. A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are planning the deployment of the Exchange servers. You need to recommend which configurations must be performed after the installation of Exchange Server 2016 to ensure that the users can access the mailboxes without receiving error messages. Which two actions should you recommend? Each correct answer presents part of the solution. A. Add the new server to the Exchange Servers group. B. Create a Send Connector. C. Import the certificate from EX3 and assign the certificate. D. Configure the virtual directory URLs. E. Create a Receive Connector.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to meet the connectivity requirement for the Exchange ActiveSync clients after the planned upgrade. What should you do? A. Modify the EdgeTransport.exe.config.file. B. Run the Set-TransportConfig cmdlet. C. Run the Set-ActiveSyncMailboxPolicy cmdlet. D. Modify the Web.config file.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You need to recommend which actions must be performed to upgrade the organization to Exchange Server 2016. The solution must meet the availability requirements. Which five actions should you recommend be performed in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-21_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You need to meet the compliance requirements for the creation of new mailboxes after the planned upgrade. What command should you run? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-23_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to ensure that members of a group named Relecloudadmins can create user accounts and mailboxes for new employees by using Exchange Admin Center (EAC) after the planned upgrade. What should you do first? A. Run the New-ManagementRole cmdlet. B. Run the New-ManagementRoleAssignment cmdlet. C. Run setup.exe and specify the /PrepareDomain parameter. D. Run setup.exe and specify the /PrepareAD parameter.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You need to prevent all of the users from deleting certain email messages after the planned upgrade. The solution must meet the compliance requirements. Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-25_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a solution that meets the security requirements for the mailbox databases. What should you include in the recommendation? A. Resilient File System (ReFS) B. Transparent Data Encryption (TDE) C. BitLocker Drive Encryption (BitLocker) D. Encrypting Files System (EFS)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You need to instruct the Active Directory administrators how to prepare the Active Directory environment to support the planned Exchange Server 2016 deployment. What command should you instruct administrators to run? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-31_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You need to configure the Exchange Server organization to support the security requirements for Calendar sharing. Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-32_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a solution that meets the security requirements for the tablets. Which two objects should you include in the recommendation? Each correct answer presents part of the solution. A. a mobile device mailbox policy B. an Outlook Web App policy C. a data loss prevention (DLP) policy D. a device access rule",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You need to configure DAG01 to meet the availability requirements. What command should you run? To answer, select the appropriate options in the answer area. Hot Area: [sampleXML/xmlfile-34_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You plan to configure the Exchange organization for site failovers. You need to recommend how many certificates must be deployed to meet the availability requirements and the security requirements. What is the minimum number of certificates you should recommend deploying? A. one B. two C. three D. four",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a load balancing solution that meets the availability requirements. Which load balancing solution should you recommend? A. a Layer-7 load balancer with a single namespace and without session affinity B. a Network Load Balancing (NLB) cluster C. DNS round robin D. a Layer-4 load balancer with multiple namespaces and without session affinity",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a solution that meets the security requirements for the human resources users. What should you include in the recommendation? A. an Outlook protection rule B. an Inbox rule C. a transport rule D. a TLS sender-domain filter list",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend an NLB configuration that meets the availability requirements and the security requirements. Which load balancing solution should you recommend? A. Layer 7 load balancing with session affinity B. Layer 4 load balancing without session affinity C. Layer 4 load balancing with session affinity D. Layer 7 load balancing without session affinity",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a solution that meets the security requirements for mobile devices. Which two objects should you include in the recommendation? Each correct answer presents part of the solution. A. a device access rule B. a mobile device mailbox policy C. a data loss prevention (DLP) policy D. an Outlook Web App policy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You run the Get-SendConnector cmdlet and you receive the following output. [sampleXML/xmlfile-39_1.png] You need to recommend which actions are required to secure email connectivity between the contoso.com SMTP domain and the fabrikam.com SMTP domain. Which two actions should you recommend? Each correct answer presents part of the solution. A. Import a server certificate that has a subject name of ex01.contoso.com and a subject alternate name of ex02.contoso.com. B. Create an Outlook protection rule. C. Import a server certificate that has a subject name of smtp.contoso.com. D. Configure the TLSSendDomainSecureList parameter for the organization. E. Modify the ConnectorType parameter for the Send connector.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You plan to configure the Exchange organization for site failovers. You need to recommend how many certificates must be deployed to meet the availability requirements and the security requirements. What is the minimum number of certificates you should recommend deploying? A. one B. two C. three D. four A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You need to build a command to meet the compliance requirements for the regulation auditors. How should you complete the command? To answer, select the appropriate options in the answer area. Each correct selection is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-44_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend how many database availability groups (DAGs) and how many namespaces must be added to the site resilience solution to meet the availability requirements. How many namespaces and DAGs should you recommend adding? To answer, select the appropriate options in the answer area. Each correct selection is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-46_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a load balancing solution that meets the availability requirements. Which load balancing solution should you recommend? A. a Layer-7 load balancer with a single namespace and without session affinity B. a Network Load Balancing (NLB) cluster C. DNS round robin D. a Layer-4 load balancer with multiple namespaces and without session affinity",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "All the research and development department users are members of a distribution group named rdev. Rdev receives an average of 2,000 email messages daily. You need to ensure that email sent to the rdev distribution group meets the security requirements for confidential email. The solution must minimize administrative effort. What should you do? A. Create linked mailboxes for users without security clearance. B. Create a transport rule that filters based on keyword predicates. C. Create mail contacts for users without security clearance. D. Edit the distribution group properties and enable moderation of the group.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You need to assign user roles to two administrative users to meet the following requirements: ✑ A user named AdminUser1 must be able to reset user account passwords. ✑ A user named AdminUser2 must be able to create retention policies and message classifications. The solution must meet the security requirements. To which role should you assign each user? To answer, select the appropriate options in the answer area. Each correct selection is worth one point. NOTE: Hot Area: [sampleXML/xmlfile-50_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You plan to create a new mailbox for the auditing department. You need to recommend which task must be performed immediately after the mailbox is created. The solution must meet the compliance requirements. What should you recommend? A. Enable an archive for the new mailbox. B. Place the new mailbox on Litigation Hold. C. Run the Set-Mailbox cmdlet. D. Run the Start-ManagedFolderAssistant cmdlet.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You implement the load balancing solution. You need to configure the health probes to meet the availability requirements. Which URL should you configure for the probe? A. https://mail.litware.com/owa/probe.htm B. https://mail.litware.com/owa/healthcheck.htm C. http://litware.com/owa/healthcheck.htm D. http://litware/owa/probe.htm",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a solution that meets the security requirements for outbound email delivery. What should you recommend? A. Microsoft Azure Information Protection B. data loss prevention (DLP) policies C. Outlook protection rules D. Active Directory Rights Management Services (AD RMS)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an Exchange Server 2016 organization. The organization contains an Edge Transport server. Users report that a message with the following anti-spam headers is delivered to their Inbox folder in Microsoft Outlook. X-MS-Exchange-Organization-PCL:7 X-MS-Exchange-Organization-SCL:6 X-MS-Exchange-OrganizationAntispam-Report: DV: 3.1.3924.1409; SID: SenderIDStatus Fail; PCL: PhishingLevel SUSPICIOUS; CW: CustomList; PP: Presolved; TIME: TimeBasedFeatures You need to prevent similar messages from being delivered. The solution must generate a non-delivery report (NDR) when the messages are prevented from being delivered to all user mailboxes. What should you do? A. Set the SCL reject threshold to 7. B. Run the Set-SenderIdConfig cmdlet. C. Set the SCL delete threshold to 7. D. Run the Set-TransportConfig cmdlet. E. Run the Set-RecipientFilterConfig cmdlet. F. Set the SCL delete threshold to 5.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You plan to deploy Exchange Server 2016 to a new server. The server will host 1,000 mailboxes. You need to identify whether the new server has the required disk throughput and speed. Which two tools should you use? Each correct answer presents part of the solution. Each correct selection is worth one point. NOTE: A. LoadGen B. the Exchange Server Best Practices Analyzer Tool C. Jetstress D. Isinteg E. the Exchange Server Role Requirements Calculator",
+    "options": {},
+    "most_voted": ""
+  }
+]
