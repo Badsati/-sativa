@@ -1,0 +1,342 @@
+[
+  {
+    "question": "You develop a Microsoft SQL Server database that supports an application. The application contains a table that has the following definition: CREATE TABLE Inventory (ItemID int NOT NULL PRIMARY KEY, ItemsInStore int NOT NULL, ItemsInWarehouse int NOT NULL) You need to create a computed column that returns the sum total of the ItemsInStore and ItemsInWarehouse values for each row. Which Transact-SQL statement should you use? A. ALTER TABLE Inventory ADD TotalItems AS ItemsInStore + ItemsInWarehouse B. ALTER TABLE Inventory ADD ItemsInStore - ItemsInWarehouse = TotalItemss C. ALTER TABLEInventory ADD TotalItems = ItemsInStore + ItemsInWarehouse D. ALTER TABLE Inventory ADD TotalItems AS SUM(ItemsInStore, ItemsInWarehouse);",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You develop a Microsoft SQL Server database. You create a view from the Orders and OrderDetails tables by using the following definition. [sampleXML/xmlfile-3_1.png] You need to improve the performance of the view by persisting data to disk. What should you do? A. Create anINSTEAD OFtrigger on the view. B. Create anAFTERtrigger on the view. C. Modify the view to use theWITH VIEW_METADATAclause. D. Create a clustered index on the view.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You develop a database for a travel application. You need to design tables and other database objects. You create the Airline_Schedules table. You need to store the departure and arrival dates and times of flights along with time zone information. What should you do? A. Use the CAST function. B. Use the DATE data type. C. Use the FORMAT function. D. Use an appropriate collation. E. Use a user-defined table type. F. Use the VARBINARY data type. G. Use the DATETIME data type. H. Use the DATETIME2 data type. I. Use the DATETIMEOFFSET data type. J. Use the TODATETIMEOFFSET function.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a Microsoft SQL Server database that contains tables named Customers and Orders. The tables are related by a column named CustomerID. You need to create a query that meets the following requirements: ✑ Returns the CustomerName for all customers and the OrderDate for any orders that they have placed. ✑ Results must include customers who have not placed any orders. Which Transact-SQL query should you use? A. SELECT CustomerName, OrderDate FROM Customers RIGHT OUTER JOIN Orders ON Customers.CustomerID = Orders.CustomerID B. SELECT CustomerName, OrderDate FROM Customers JOIN Orders ON Customers.CustomerID = Orders.CustomerID C. SELECT CustomerName, OrderDate FROM Customers CROSS JOIN Orders ON Customers.CustomerID = Orders.CustomerID D. SELECT CustomerName, OrderDate FROM Customers LEFT OUTER JOIN Orders ON Customers.CustomerID = Orders.CustomerID",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your database contains two tables named DomesticSalesOrders and InternationalSalesOrders. Both tables contain more than 100 million rows. Each table has a Primary Key column named SalesOrderId. The data in the two tables is distinct from one another. Business users want a report that includes aggregate information about the total number of global sales and total sales amounts. You need to ensure that your query executes in the minimum possible time. Which query should you use? A. SELECT COUNT(*) AS NumberOfSales, SUM(SalesAmount) AS TotalSalesAmount FROM ( SELECT SalesOrderId, SalesAmount FROM DomesticSalesOrders UNION ALL SELECT SalesOrderId, SalesAmount FROM InternationalSalesOrders ) AS p B. SELECT COUNT(*) AS NumberOfSales, SUM(SalesAmount) AS TotalSalesAmount FROM ( SELECT SalesOrderId, SalesAmount FROM DomesticSalesOrders UNION SELECT SalesOrderId, SalesAmount FROM InternationalSalesOrders ) AS p C. SELECT COUNT(*) AS NumberOfSales, SUM(SalesAmount) AS TotalSalesAmount FROM DomesticSalesOrders UNION SELECT COUNT(*) AS NumberOfSales, SUM(SalesAmount) AS TotalSalesAmount FROM InternationalSalesOrders D. SELECT COUNT(*) AS NumberOfSales, SUM(SalesAmount) AS TotalSalesAmount FROM DomesticSalesOrders UNION ALL SELECT COUNT(*) AS NumberOfSales, SUM(SalesAmount) AS TotalSalesAmount FROM InternationalSalesOrders",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database that contains a table named OrderDetail. You discover that the NCI_OrderDetail_CustomerID non-clustered index is fragmented. You need to reduce fragmentation. You need to achieve this goal without taking the index offline. Which Transact-SQL batch should you use? A. CREATE INDEX NCI_OrderDetail_CustomerID ON OrderDetail.CustomerID WITH DROP EXISTING B. ALTER INDEX NCI_OrderDetail_CustomerID ON OrderDetail.CustomerID REORGANIZE C. ALTER INDEX ALL ON OrderDetail REBUILD D. ALTER INDEX NCI_OrderDetail_CustomerID ON OrderDetail.CustomerID REBUILD",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your database contains a table named Purchases. The table includes a DATETIME column named PurchaseTime that stores the date and time each purchase is made. There is a non-clustered index on the PurchaseTime column. The business team wants a report that displays the total number of purchases made on the current day. You need to write a query that will return the correct results in the most efficient manner. Which Transact-SQL query should you use? A. SELECT COUNT(*) FROM Purchases WHERE PurchaseTime = CONVERT(DATE, GETDATE()) B. SELECT COUNT(*) FROM Purchases WHERE PurchaseTime = GETDATE() C. SELECT COUNT(*) FROM Purchases WHERE CONVERT(VARCHAR, PurchaseTime, 112) = CONVERT(VARCHAR, GETDATE(), 112) D. SELECT COUNT(*) FROM Purchases WHERE PurchaseTime >= CONVERT(DATE, GETDATE()) AND PurchaseTime < DATEADD(DAY, 1, CONVERT(DATE, GETDATE()))",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database that supports a shopping application. You need to retrieve a list of customers who live in territories that do not have a sales person. Which Transact- SQL query or queries should you use? (Each correct answer presents a complete solution. Choose all that apply.) A. SELECT CustomerID FROM Customer WHERE TerritoryID <> SOME(SELECT TerritoryID FROM Salesperson) B. SELECT CustomerID FROM Customer WHERE TerritoryID <> ALL(SELECT TerritoryID FROM Salesperson) C. SELECT CustomerID FROM Customer WHERE TerritoryID <> ANY(SELECT TerritoryID FROM Salesperson) D. SELECT CustomerID FROMCustomer WHERE TerritoryID NOT IN(SELECT TerritoryID FROM Salesperson)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION You have a database that contains the tables as shown in the exhibit. (Click the Exhibit button.) [sampleXML/xmlfile-59_1.jpg] You need to create a query that returns a list of products from Sales.ProductCatalog. The solution must meet the following requirements: UnitPrice must be returned in descending order. [sampleXML/xmlfile-59_2.png] ✑ The query must use two-part names to reference the table. ✑ The query must use the RANK function to calculate the results. ✑ The query must return the ranking of rows in a column named PriceRank. ✑ The list must display the columns in the order that they are defined in the table. ✑ PriceRank must appear last. To answer, type the correct code in the answer area. Part of the correct T-SQL statement has been provided in the answer area. Provide the complete code. [sampleXML/xmlfile-60_6.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use Microsoft SQL Server to develop a database application. You create a stored procedure named DeleteJobCandidate. You need to ensure that if DeleteJobCandidate encounters an error, the execution of the stored procedure reports the error number. Which Transact-SQL statement should you use? A. DECLARE @ErrorVar INT; DECLARE @RowCountVar INT; EXEC DeleteJobCandidate SELECT @ErrorVar = @@ERROR, @RowCountVar = @@ROWCOUNT; IF (@ErrorVar <> 0) PRINT N'Error = ' + CAST(@ErrorVar AS NVARCHAR(8)) + N', Rows Deleted = ' + CAST(@RowCountVar AS NVARCHAR(8)); GO B. DECLARE @ErrorVar INT; DECLARE @RowCountVar INT; EXEC DeleteJobCandidate SELECT @ErrorVar = ERROR_STATE(), @RowCountVar = @@ROWCOUNT; IF (@ErrorVar <> 0) PRINT N'Error = ' + CAST(ERROR_STATE() AS NVARCHAR(8)) + N', Rows Deleted = ' + CAST(@RowCountVar AS NVARCHAR(8)); GO C. EXEC DeleteJobCandidate IF (ERROR_STATE() != 0) PRINT N'Error = ' + CAST(@@ERROR AS NVARCHAR(8)) + N', Rows Deleted = ' + CAST(@@ROWCOUNT AS NVARCHAR(8)); GO D. EXEC DeleteJobCandidate PRINT N'Error = ' + CAST(@@ERROR AS NVARCHAR(8)) + N', Rows Deleted = ' + CAST(@@ROWCOUNT AS NVARCHAR(8)); GO",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You develop a Microsoft SQL Server database that has two tables named SavingAccounts and LoanAccounts. Both tables have a column named AccountNumber of the nvarchar data type. You use a third table named Transactions that has columns named TransactionId AccountNumber, Amount, and TransactionDate. You need to ensure that when multiple records are inserted in the Transactions table, only the records that have a valid AccountNumber in the SavingAccounts or LoanAccounts are inserted. Which Transact-SQL statement should you use? A. CREATE TRIGGER TrgValidateAccountNumber ON Transactions INSTEAD OF INSERT AS BEGIN INSERT INTO Transactions SELECT TransactionID,AccountNumber,Amount,TransactionDate FROM inserted WHERE AccountNumber IN (SELECT AccountNumber FROM LoanAccounts UNION SELECT AccountNumber FROM SavingAccounts) END B. CREATE TRIGGER TrgValidateAccountNumber ON Transactions FOR INSERT AS BEGIN INSERT INTO Transactions SELECT TransactionID,AccountNumber,Amount,TransactionDate FROM inserted WHERE AccountNumber IN (SELECT AccountNumber FROM LoanAccounts UNION SELECT AccountNumber FROM SavingAccounts) END C. CREATE TRIGGER TrgValidateAccountNumber ON Transactions INSTEAD OF INSERT AS BEGIN IF EXISTS ( SELECT AccountNumber FROM inserted EXCEPT (SELECT AccountNumber FROM LoanAccounts UNION SELECT AccountNumber FROM SavingAccounts)) BEGIN ROLLBACK TRAN END END D. CREATE TRIGGER TrgValidateAccountNumber ON Transactions FOR INSERT AS BEGIN IF EXISTS ( SELECT AccountNumber FROM inserted EXCEPT (SELECT AccountNumber FROM LoanAccounts UNION SELECT AccountNumber FROM SavingAccounts)) BEGIN ROLLBACK TRAN END END",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use Microsoft SQL Server to write code for a transaction that contains several statements. There is high contention between readers and writers on several tables used by your transaction. You need to minimize the use of the tempdb space. You also need to prevent reading queries from blocking writing queries. Which isolation level should you use? A. SERIALIZABLE B. SNAPSHOT C. READ COMMITTED SNAPSHOT D. REPEATABLE READ",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You create a table that has the StudentCode, SubjectCode, and Marks columns to record mid-year marks for students. The table has marks obtained by 50 students for various subjects. You need to ensure that the following requirements are met: ✑ Students must be ranked based on their average marks. ✑ If one or more students have the same average, the same rank must be given to these students. ✑ Consecutive ranks must be skipped when the same rank is assigned. Which Transact-SQL query should you use? A. SELECT StudentCode as Code, RANK() OVER(ORDER BY AVG (Marks) DESC) AS Value FROM StudentMarks GROUP BY StudentCode B. SELECT Id, Name, Marks, DENSE_RANK() OVER(ORDER BY Marks DESC) AS Rank FROM StudentMarks C. SELECT StudentCode as Code, DENSE_RANK() OVER(ORDER BY AVG (Marks) DESC) AS Value FROM StudentMarks GROUP BY StudentCode D. SELECT StudentCode as Code, NTILE(2) OVER(ORDER BY AVG (Marks) DESC) AS Value FROM StudentMarks GROUP BY StudentCode E. SELECT StudentCode AS Code,Marks AS Value FROM ( SELECT StudentCode, Marks AS Marks, RANK() OVER(PARTITION BY SubjectCode ORDER BY Marks ASC) AS Rank FROM StudentMarks) tmp WHERE Rank = 1 F. SELECT StudentCode AS Code,Marks AS Value FROM ( SELECT StudentCode, Marks AS Marks, RANK() OVER(PARTITION BY SubjectCode ORDER BY Marks DESC) AS Rank FROM StudentMarks) tmp WHERE Rank = 1 G. SELECT StudentCode AS Code,Marks AS Value FROM ( SELECT StudentCode, Marks AS Marks, RANK() OVER(PARTITION BY StudentCode ORDER BY Marks ASC) AS Rank FROM StudentMarks) tmp WHERE Rank = 1 H. SELECT StudentCode AS Code,Marks AS Value FROM ( SELECT StudentCode, Marks AS Marks, RANK () OVER(PARTITION BY StudentCode ORDER BY Marks DESC) AS Rank FROM StudentMarks) tmp WHERE Rank = 1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database that has Trustworthy set to On. You create a stored procedure that returns database-level information from Dynamic Management Views. You grant User1 access to execute the stored procedure. You need to ensure that the stored procedure returns the required information when User1 executes the stored procedure. You need to achieve this goal by granting the minimum permissions required. What should you do? (Each correct answer presents a complete solution. Choose all that apply.) A. Create a SQL Server login that has VIEW SERVER STATE permissions. Create an application role and a secured password for the role. B. Modify the stored procedure to include the EXECUTE AS OWNER statement. Grant VIEW SERVER STATE permissions to the owner of the stored procedure. C. Create a SQL Server login that has VIEW SERVER STATE permissions. Modify the stored procedure to include the EXECUTE AS {newlogin} statement. D. Grant the db_owner role on the database to User1. E. Grant the sysadmin role on the database to User1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database named ContosoDb. The database contains a table named Suppliers and a column named IsActive in the Purchases schema. You create a new user named ContosoUser in ContosoDb. ContosoUser has no permissions to the Suppliers table. You need to ensure that ContosoUser can delete rows that are not active from Suppliers. You also need to grant ContosoUser only the minimum required permissions. Which Transact- SQL statement should you use? A. GRANT DELETE ON Purchases.Suppliers TO ContosoUser B. CREATE PROCEDURE Purchases.PurgeInactiveSuppliers WITH EXECUTE AS USER = 'dbo' AS DELETE FROM Purchases.Suppliers WHERE IsActive = 0 GO GRANT EXECUTE ON Purchases.PurgelnactiveSuppliers TO ContosoUser C. GRANT SELECT ON Purchases.Suppliers TO ContosoUser D. CREATE PROCEDURE Purchases.PurgeInactiveSuppliers AS DELETE FROM Purchases.Suppliers WHERE IsActive = 0 GO GRANT EXECUTE ON Purchases.PurgeInactiveSuppliers TO ContosoUser",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your database contains a table named SalesOrders. The table includes a DATETIME column named OrderTime that stores the date and time each order is placed. There is a non-clustered index on the OrderTime column. The business team wants a report that displays the total number of orders placed on the current day. You need to write a query that will return the correct results in the most efficient manner. Which Transact-SQL query should you use? A. SELECT COUNT(*) FROM SalesOrders WHERE OrderTime = CONVERT(DATE, GETDATE()) B. SELECT COUNT(*) FROM SalesOrders WHERE OrderTime = GETDATE() C. SELECT COUNT(*) FROM SalesOrders WHERE CONVERT(VARCHAR, OrderTime, 112) = CONVERT(VARCHAR, GETDATE(), 112)) D. SELECT COUNT(*) FROM SalesOrders WHERE OrderTime >= CONVERT(DATE, GETDATE()) AND OrderTime < DATEADD(DAY, 1, CONVERT(DATE, GETDATE()))",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use Microsoft SQL Server to develop a database application. You create a stored procedure named dbo.ModifyData that can modify rows. You need to ensure that when the transaction fails, dbo.ModifyData meets the following requirements: ✑ Does not return an error ✑ Closes all opened transactions Which Transact-SQL statement should you use? A. BEGIN TRANSACTION BEGIN TRY EXEC dbo.ModifyData COMMIT TRANSACTION END TRY BEGIN CATCH IF @@ TRANCOUNT = 0 ROLLBACK TRANSACTION; END CATCH B. BEGIN TRANSACTION BEGIN TRY EXEC dbo.ModifyData COMMIT TRANSACTION END TRY BEGIN CATCH IF @@ERROR != 0 ROLLBACK TRANSACTION; THROW; END CATCH C. BEGIN TRANSACTION BEGIN TRY EXEC dbo.ModifyData COMMIT TRANSACTION END TRY BEGIN CATCH IF @@TRANCOUNT = 0 ROLLBACK TRANSACTION; THROW; END CATCH D. BEGIN TRANSACTION BEGIN TRY EXEC dbo.ModifyData COMMIT TRANSACTION END TRY BEGIN CATCH IF @@ERROR != 0 ROLLBACK TRANSACTION; END CATCH",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You use a Microsoft SQL Server database. You need to create an indexed view within the database for a report that displays Customer Name and the total revenue for that customer. Which four Transact-SQL segments should you use to develop the solution? (To answer, move the appropriate Transact-SQL segments from the list of Transact- SQL segments to the answer area and arrange them in the correct order.) Select and Place: [sampleXML/xmlfile-134_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You use Microsoft SQL Server to develop a database that has two tables named Div1Cust and Div2Cust. Each table has columns named DivisionID and CustomerID. You need to write a query that meets the following requirements: ✑ The rows in Div1Cust must be combined with the rows in Div2Cust. ✑ The result set must have columns named Division and Customer. ✑ Duplicates must be not retained. Which three Transact-SQL statements should you use? (To answer, move the appropriate statements from the list of statements to the answer area and arrange them in the correct order.) Select and Place: [sampleXML/xmlfile-148_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You create a table that has three columns named StudentCode, SubjectCode, and Marks. The Marks column records grades for students expressed as a percentage. The table has marks obtained by 50 students for various subjects. You need to retrieve the StudentCode and Marks for students who scored the lowest percentage for each subject. Which Transact-SQL query should you use? A. [sampleXML/xmlfile-149_1.png] B. [sampleXML/xmlfile-149_2.png] C. [sampleXML/xmlfile-149_3.png] D. [sampleXML/xmlfile-150_1.png] E. [sampleXML/xmlfile-150_2.png] F. [sampleXML/xmlfile-150_3.png] G. [sampleXML/xmlfile-150_4.png] H. [sampleXML/xmlfile-150_5.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server database named ContosoDb. ContosoDb contains a table named Suppliers and an indexed view named VwLocalSuppliers, both of which were created by using the following Transact-SQL statement: [sampleXML/xmlfile-155_1.png] You need to change the data type of the Code column in the Suppliers table to nvarchar(50). Which four Transact-SQL segments should you use to develop the solution? To answer, move the appropriate Transact-SQL segments from the list of Transact- SQL segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-156_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You develop a database application. You create four tables. Each table stores different categories of products. You create a Primary Key field on each table. You need to ensure that the following requirements are met: ✑ The fields must use the minimum amount of space. ✑ The fields must be an incrementing series of values. ✑ The values must be unique among the four tables. What should you do? A. Create a ROWVERSION column. B. Create a SEQUENCE object that uses the INTEGER data type. C. Use the INTEGER data type along with IDENTITY D. Use the UNIQUEIDENTIFIER data type along with NEWSEQUENTIALID() E. Create a TIMESTAMP column.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your application contains a stored procedure for each country. Each stored procedure accepts an employee identification number through the @EmpID parameter. You need to build a single process for each employee that will execute the appropriate stored procedure based on the country of residence. Which approach should you use? A. A SELECT statement that includes CASE B. Cursor C. BULK INSERT D. View E. A user-defined function",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are developing a database application by using Microsoft SQL Server 2012. An application that uses a database begins to run slowly. You discover that the root cause is a query against a frequently updated table that has a clustered index. The query returns four columns: three columns in its WHERE clause contained in a non-clustered index and one additional column. You need to optimize the statement. What should you do? A. Add a HASH hint to the query. B. Add a LOOP hint to the query. C. Add a FORCESEEK hint to the query. D. Add an INCLUDE clause to the index. E. Add a FORCESCAN hint to the Attach query. F. Add a columnstore index to cover the query. G. Enable the optimize for ad hoc workloads option. H. Cover the unique clustered index with a columnstore index. I. Include a SET FORCEPLAN ON statement before you run the query. J. Include a SET STATISTICS PROFILE ON statement before you run the query. K. Include a SET STATISTICS SHOWPLAN_XML ON statement before you run the query. L. Include a SET TRANSACTIONISOLATION LEVEL REPEATABLE READ statement before you run the query. M. Include a SET TRANSACTION ISOLATION LEVEL SNAPSHOT statement before you run the query. N. Include a SET TRANSACTION ISOLATION LEVEL SERIALIZABLE statement before you run the query.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You administer a Microsoft SQL Server database. The database contains a table named Employee. Part of the Employee table is shown in the exhibit. (Click the Exhibit tab.) [sampleXML/xmlfile-165_1.jpg] [sampleXML/xmlfile-165_2.png] Unless stated above, no columns in the Employee table reference other tables. Confidential information about the employees is stored in a separate table named EmployeeData. One record exists within EmployeeData for each record in the Employee table. You need to assign the appropriate constraints and table properties to ensure data integrity and visibility. On which column in the Employee table should you create a Foreign Key constraint that references a different table in the database? A. DateHired B. DepartmentID C. EmployeeID D. EmployeeNum E. FirstName F. JobTitle G. LastName H. MiddleName I. ReportsToID",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You are developing an SQL Server database. The database contains two tables and a function that are defined by the following Transact-SQL statements. [sampleXML/xmlfile-185_1.png] You need to create a query to determine the total number of products that are sold each day for the five top-selling products on that particular day. How should you complete the Transact-SQL script? To answer, select the appropriate Transact-SQL statements in the answer area. Hot Area: [sampleXML/xmlfile-186_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION You have a database named Sales that contains the tables as shown in the exhibit. (Click the Exhibit button.) [sampleXML/xmlfile-192_1.jpg] You need to create a query for a report. The query must meet the following requirements: ✑ Return the last name of the customer who placed the order. ✑ Return the most recent order date for each customer. ✑ Group the results by CustomerID. ✑ Order the results by the most recent OrderDate. ✑ Use the database name and table name for any table reference. ✑ Use the first initial of the table as an alias when referencing columns in atable. The solution must support the ANSI SQL-99 standard and must NOT use object identifiers. Part of the correct T-SQL statement has been provided in the answer area. Complete the SQL statement. [sampleXML/xmlfile-193_7.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION You need to create a query that calculates the total sales of each OrderID from a table named Sales.Details. The table contains two columns named OrderID and ExtendedAmount. The solution must meet the following requirements: ✑ Use one-part names to reference columns. ✑ Order the results by OrderID with the smallest value first. ✑ NOT depend on the default schema of a user. ✑ Use an alias of TotalSales for the calculated ExtendedAmount. ✑ Display only the OrderID column and the calculated TotalSales column. Provide the correct code in the answer area. Key Words: [sampleXML/xmlfile-194_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server database that contains a table named Customer defined by the following Transact-SQL statement: [sampleXML/xmlfile-195_1.png] The SalesRep column contains the SQL Login name of the user designated as the customer's sales rep. You need to create at trigger that meets the following requirements: ✑ A customer's CreditLimit can only be changed by the customer's SalesRep. ✑ CreditLimit cannot be increased by more than 50 percent in any single update. If an UPDATE statement causes either of these business rules to be violated, the entire UPDATE statement should be rolled back. In addition, the trigger must handle single-row and multi-row update statements and should execute in the most efficient manner possible. How should you complete the trigger? To answer, drag the appropriate Transact-SQL segments to the correct locations. Each Transact-SQL segment may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. Select and Place: [sampleXML/xmlfile-196_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a database application that uses Microsoft SQL Server 2012. You have a query named Query1 that returns four columns from a frequently updated table that has a clustered index. Three of the columns are referenced in the WHERE clause of the query. The three columns are part of a non-clustered index. The fourth column is not referenced in the WHERE clause. Users report that the application begins to run slowly. You determine that the root cause for the performance issue is Query1. You need to optimize the statement. What should you do? A. Add a HASH hint to the query. B. Add a LOOP hint to the query. C. Add a FORCESEEK hint to the query. D. Add an INCLUDE clause to the index. E. Add a FORCESCAN hint to the Attach query. F. Add a columnstore index to cover the query. G. Enable the optimize for ad hoc workloads option. H. Cover the unique clustered index with a columnstore index. I. Include a SET FORCEPLAN ON statement before you run the query. J. Include a SET STATISTICS PROFILEON statement before you run the query. K. Include a SET STATISTICS SHOWPLAN_XML ON statement before you run the query. L. Include a SET TRANSACTION ISOLATION LEVEL REPEATABLE READ statement before you run the query. M. Include a SET TRANSACTION ISOLATIONLEVEL SNAPSHOT statement before you run the query. N. Include a SET TRANSACTION ISOLATION LEVEL SERIALIZABLE statement before you run the query.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION You create a table by using the following Transact-SQL Statement: [sampleXML/xmlfile-235_1.jpg] You need to return a result set that has a single column named DisplayInformation. The result set must contain the Name value if the Name value is NOT NULL, otherwise the result set must contain the SubName value. Part of the correct Transact-SQL has been provided in the answer area below. Enter the code in the answer area that resolves the problem and meets the stated goals or requirements. You can add code within the code that has been provided as well as below it. [sampleXML/xmlfile-235_2.png] [sampleXML/xmlfile-236_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You use Microsoft SQL Server to develop a database application. You create a stored procedure named usp_calculategrowth. The stored procedure modifies rows and can result in several different exceptions. You need to ensure that when the stored procedure is executed, the following requirements are met: ✑ The calling application can receive a custom error message. ✑ The error is readable from the Windows Event Viewer of the server. ✑ The error isreadable in the SQL Error log. Which six Transact-SQL segments should you use? To answer, move the appropriate Transact-SQL segments from the list of Transact-SQL segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-242_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You need to create a stored procedure that enters values into multiple tables. The solution must ensure that if a single insert fails, none of the values are inserted into the tables. How should you complete the stored procedure? To answer, drag the appropriate values to the correct locations. Each value may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. Select and Place: [sampleXML/xmlfile-245_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The Agent table of a Microsoft SQL Server database contains several million rows. The database uses the SQL_Latin1_General_Cp1_CS_AS collation. You need to ensure that the following requirements are met: ✑ The values of the StateRefID column conform to the pattern of 3 uppercase letters followed by 5 numeric digits, such as \"ABC12345\". ✑ The StateRefID values are unique within the Agent table. ✑ The values of all records that will be inserted or updated in the Agent table are correctly formatted. ✑ Exisitng rows are ignored Which Transact-SQL statement should you run? A. [sampleXML/xmlfile-252_5.png] B. [sampleXML/xmlfile-252_6.png] C. [sampleXML/xmlfile-252_7.png] D. [sampleXML/xmlfile-253_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to build a table structure for a stored procedure to support data entry from a website form. The website form must meet the following requirements: ✑ Users must validate their age as 18 or older to use the website. ✑ Users who leave the date of birth field blank, or who enter an invalid date, must receive an error message. Which two actions should you perform? Each correct answer presents part of the solution. A. Add the CHECK constraint to the table structure. B. Add the DATEPART function to the stored procedure. C. Add the DEFAULT constraint to the table structure. D. Add the SYSDATETIMEOFFSET function to the stored procedure. E. Add the ISDATE function to the stored procedure.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use a Microsoft SQL Server database that contains a table. The table has records of customer orders. Your company has three divisions that have the following names: ✑ East ✑ Central ✑ West You need to create a query that displays the following information: ✑ The number of sales for each product (ProductName) grouped by the division (Division) that sold the product ✑ A column for each division Which Transact-SQL query should you use? A. [sampleXML/xmlfile-261_1.png] B. [sampleXML/xmlfile-262_1.png] C. [sampleXML/xmlfile-262_2.png] D. [sampleXML/xmlfile-263_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION You need to execute an UPDATE statement that modifies a subset of rows in a table. The rows affected by the UPDATE statement must only be committed if the row count criteria is met. Part of the correct Transact-SQL has been provided in the answer are below. Enter the code in the answer area that resolves the problem and meets the stated goals or requirements. You can add code within the code that has been provided as well as below it. [sampleXML/xmlfile-264_1.jpg] [sampleXML/xmlfile-265_1.png] Use the \"˜Check Syntax' button to verify your work. Any syntax or spelling errors will be reported by line and character position. [sampleXML/xmlfile-266_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a Microsoft SQL Server database. You create tables by running the following Transact-SQL statements: [sampleXML/xmlfile-267_1.png] You need to create a stored procedure that meets the following requirements: ✑ Creates orders based on a customer's email address. ✑ Creates the order entry, and then adds the customer relationship. ✑ If any step fails during the process, all changes are reserved. Which Transact-SQL statement should you run? A. [sampleXML/xmlfile-268_4.png] B. [sampleXML/xmlfile-269_1.png] C. [sampleXML/xmlfile-270_1.png] D. [sampleXML/xmlfile-271_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION You have a view named Person.vAdditionalContactInfo that uses data from a table named Customers. The Customers table was created by running the following Transact-SQL statement: [sampleXML/xmlfile-274_1.png] You need to create a query that returns the first and last names of a customer from the view. If the CustomerID column does not have a value defined, the following message must be added to the query result: \"Customer ID Does Not Exist.\" Construct the query using the following quidelines: ✑ Do not use aliases for column or table names. ✑ Display the columns in the same order as they are defined in the Customers table. Part of the correct Transact-SQL has been provided in the answer area below. Enter the code in the answer area that resolves the problem and meets the stated goals or requirements. You can add code within code that has been provided as well as below it. [sampleXML/xmlfile-275_3.png] [sampleXML/xmlfile-276_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION You have a data warehouse that contains the data for all the customers of your company. You need to create a stored procedure that generates a list of customer addresses. The list must meet the following requirements: ✑ The procedure must accept a string value. ✑ The procedure should return all customers who reside in a city whose name begins with the provided value. ✑ If a user provides a blank value, the procedure must execute, and then return a blank result set. Part of the correct Transact-SQL has been provided in the answer area below. Enter the code in the answer area that resolves the problem and meets the stated goals or requirements. You can add code within code that has been provided as well as below it. [sampleXML/xmlfile-278_1.png] [sampleXML/xmlfile-279_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION You have a database named Sales that contains the tables sworn in the exhibit. (Click the Exhibit button.) [sampleXML/xmlfile-281_1.jpg] You need to create a query for a report. The query must meet the following requirements: ✑ Return the last name of the customer who placed the order. ✑ Return the most recent order date for each customer. ✑ Group the results by CustomerID. ✑ Display the most recent OrderDate first. The solution must support the ANSI SQL-99 standard and must not use table or column aliases. Part of the correct Transact-SQL has been provided in the answer area below. Enter the Transact-SQL in the answer area that resolves the problem and meets the stated goals or requirements. You can add Transact-SQL within the Transact-SQL segment that has been provided as well as below it. [sampleXML/xmlfile-282_5.png] [sampleXML/xmlfile-283_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION The following is a series of questions in which you are required to input one or more lines of code. To input your response Type your response into the text entry field in the Answer Area. You may input one or more lines of code. More than one solution may be correct. You will receive credit if your solution matches any of the correct solutions. To validate code syntax After entering your code, click the Check Syntax button. This validates code syntax (such as SQL commands) and values (such as table names and variable names) used in your solution. If there are any errors, they will appear in the window next to the Check Syntax button. You may change your code and re-validate the syntax as many times as you want. Note that Check Syntax does NOT validate whether you have answered the question correctly. It simply validates the accuracy of your syntax. To view available command keywords Click the Keywords button to view a list of command keywords. This is a general list provided for reference and is not limited to commands used in the question. You need to create a query that meets the following requirements: ✑ The query must return a list of salespeople ranked by amount of sales and organized by postal code. ✑ The salesperson who has the highest amount of sales must be ranked first. Part of the correct Transact-SQL has been provided in the answer area below. Enter the code in the answer area that resolves the problem and meets the stated goals or requirements. You can add code within code that has been provided as well as below it. [sampleXML/xmlfile-285_3.png] [sampleXML/xmlfile-286_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a Microsoft SQL Server database. The database contains a table that is defined by the following Transact-SQL statement: [sampleXML/xmlfile-289_2.png] Employee names must always start with a capital letter. You need to define a constraint to enforce the employee name requirement. Which Transact-SQL statement should you use? A. [sampleXML/xmlfile-290_1.png] B. [sampleXML/xmlfile-290_2.png] C. [sampleXML/xmlfile-290_3.png] D. [sampleXML/xmlfile-290_4.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You develop a Microsoft SQL Server database that contains a table named Products. The Products table has columns named ProductId, CategoryId, Name, and Price. Product prices are often updated as follows: ✑ For a single product by a specific value by using the ProductId column ✑ For an entire category by a percentage by using the CategoryId column You need to log the change price to a new table named PriceChange by using the ProductId' ChangedValue, and ChangedDate columns. You also need to ensure that increases in price are recorded as positive values and decreases in price as negative values. Which Transact-SQL query should you use? A. [sampleXML/xmlfile-291_1.png] B. [sampleXML/xmlfile-291_2.png] C. [sampleXML/xmlfile-292_1.png] D. [sampleXML/xmlfile-292_2.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You are designing an order entry system that uses an SQL Server database. The following tables exist in the Purchasing database: [sampleXML/xmlfile-295_1.png] You create the following trigger. Line numbers are included for reference only. [sampleXML/xmlfile-295_2.png] For each of the following statements, select Yes if the statement is true. Otherwise, select No. Hot Area: [sampleXML/xmlfile-296_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You want to add a new GUID column named ProductGUID to a table named dbo.Product that already contains data. ProductGUID will have a constraint to ensure that it always has a value when new rows are inserted into dbo.Product. You need to ensure that the new column is assigned a GUID for existing rows. Which four Transact-SQL statements should you use to develop the solution? (To answer, move the appropriate Transact-SQL segments from the list of SQL- segments to the answer area and arrange them in the correct order.) Select and Place: [sampleXML/xmlfile-311_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You develop a Microsoft SQL Server database for a sales ordering application. You want to create a report that displays the increase of order quantities over the previous year for each product. You need to write a query that displays: ✑ Product name, ✑ Year of sales order, ✑ Sales order quantity, and ✑ Increase of order quantity over the previous year. Which three Transact-SQL segments should you use to develop the solution? To answer, move the appropriate Transact-SQL segments from the list of Transact- SQL segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-323_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You develop a Microsoft SQL Server database that contains a table named Employee, defined as follows: [sampleXML/xmlfile-325_1.png] You need to create a view that contains two computed columns representing the month and the year of the [HireDate] of each Employee. Which function should you use? A. DATENAME( ) B. CONVERT( ) C. TRYDATEDIFF( ) D. MONTH( ) and YEAR( )",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP Your Microsoft SQL Server database contains tables as shown below. You have tables that were created by running the following Transact-SQL statements: [sampleXML/xmlfile-329_1.png] The Product table contains 10,000 records. The maximum ProductID is 11,000. There are 12 rows in the Category table. The maximum CategoryID is 12. The Product table contains at least one product in every category. Data in the tables was accidently modified. To correct this, you need to make some updates directly to the tables. You issue several statements. Which result or results will you obtain for each Transact-SQL statement? To answer, drag the appropriate results to the correct Transact-SQL statements. Each result may be used once. More than once, or not at all. You may need to drag the split bar between panes or scroll to view content. Select and Place: [sampleXML/xmlfile-331_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You develop a database application for Microsoft SQL Server and Microsoft Azure SQL Database. You need to raise an exception and transfer execution to a CATCH block. You need to ensure that the exception returns output in the following format: Msg 51000, Level 16, State 1, Line 1 The record does not exist. Which Transact-SQL statement should you run? A. DECLARE @Message NVARCHAR(2048); SELECT @Message = FORMATMESSAGE('The record does not exist.'); THROW 51000 , 1 , @Message B. THROW 51000 , 'The record does not exist.' , 1 C. THROW ERROR_MESSAGE ('The record does not exist.'), 1 D. THROW 51000 , FORMATMESSAGE('The record does not exist.') , 1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You are the administrator for a heavily-used OLTP Microsoft SQL Server database. You are troubleshooting performance issues seen when using stored procedures in the database. The database stores millions of orders across thousands of customers. Some of the customers have large numbers of orders, while others have only one order. You update the statistics and perform defragmentation of all tables and indexes, but two stored procedures still have issues when accessing data. p_GetCustomer accepts @companyID as a parameter. From the results of profiling, you know that 90 percent of the calls use the @companyid value of 5, while the other 10 percent of calls are evenly distributed across another 10000 values. While viewing the execution plan, you discover that a non-clustered index seek is used. p_GetShipDate accepts @orderID as a parameter and returns the ship date for that order. You discover that the execution plan is performing a scan on a non- clustered index that has orderID as the index key. You need to add appropriate query hints to each stored procedure to improve the performance. What should you do? To answer, drag the appropriate procedures to the correct hints. Each procedure may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. Select and Place: [sampleXML/xmlfile-345_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION The following is a series of questions in which you are required to input one or more lines of code. To input your response Type your response into the text entry field in the Answer Area. You may input one or more lines of code. More than one solution may be correct. You will receive credit if your solution matches any of the correct solutions. To validate code syntax After entering your code, click the Check Syntax button. This validates code syntax (such as SQL commands) and values (such as table names and variable names) used in your solution. If there are any errors, they will appear in the window next to the Check Syntax button. You may change your code and re-validate the syntax as many times as you want. Note that Check Syntax does NOT validate whether you have answered the question correctly. It simply validates the accuracy of your syntax. To view available command keywords Click the Keywords button to view a list of command keywords. This is a general list provided for reference and is not limited to commands used in the question. You plan to deploy a stored procedure for a database named TICKETS. You need to implement error handling for the stored procedure to ensure that the system-defined error messages are returned if an error occurs upon insert. Part of the correct Transact-SQL has been provided in the answer are below. Enter the code in the answer area that resolves the problem and meets the stated goals or requirements. You can add code within the code that has been provided as well as below it. [sampleXML/xmlfile-354_1.png] [sampleXML/xmlfile-355_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You develop a Microsoft SQL Server database. The database contains a table named Status that is defined by the following Transact-SQL statement: [sampleXML/xmlfile-359_1.png] There are thousands of rows in the Status table, with significant duplication of data in the Color column. Ninety percent of the rows in the table have Color=\"Red\", and the remaining 10 percent have Color=\"Green\". You want to normalize the Color information in this table. You create a table named Colors that is defined by the following DDL: [sampleXML/xmlfile-360_1.png] You populate the new Colors table by using the following Transact-SQL statement: INSERT Colors (ColorName) SELECT DISTINCT Color FROM Status You need to ensure that the following requirements are met: ✑ The Status table uses only colors that exist in the Colors table. ✑ Data redundancy in the Status table is reduced. ✑ Data integrity is enforced during the normalization process. Which three Transact-SQL segments should you use to develop the solution? To answer, move the appropriate Transact-SQL segment from the list of Transact- SQL segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-361_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You develop a Microsoft SQL Server database. The database contains a table defined by the following Transact-SQL statement: [sampleXML/xmlfile-380_1.png] All regions have more than one employee. You need to write a query to find the employee with the highest SalesYTD in each region with the following result set: ✑ First Name ✑ Last Name ✑ Region ✑ Sales YTD Which Transact-SQL query should you run? A. [sampleXML/xmlfile-380_6.png] B. [sampleXML/xmlfile-381_1.png] C. [sampleXML/xmlfile-381_2.png] D. [sampleXML/xmlfile-382_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft Azure SQL Database instance. You are troubleshooting a number of stored procedures that use transactions. ✑ p_ModifyCustomer modifies customer records in the database. Processes that uses these records must receive a copy of the record as it exists at the beginning of the transaction, and the procedure must not block these processes. ✑ p_GetOrders is used to retrieve orders for a customer. While the transaction is running, no other process should be able to read the same data, and no other transaction should be able to modify the data until the transaction completes. ✑ p_ShipOrders is run once per day to batch orders into shipping criteria. While this transaction is running, no other transaction should be allowed to insert data into the range of orders being modified. You need to choose the appropriate transaction isolation level for each stored procedure. The transaction must meet the need while providing the highest level of concurrency and performance. Which isolation levels should you use? To answer, drag the appropriate isolation levels to correct stored procedures. Each isolation level may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. Select and Place: [sampleXML/xmlfile-390_2.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database named ContosoDb. Tables are defined as shown in the exhibit. (Click the Exhibit button.) [sampleXML/xmlfile-393_3.jpg] You need to display rows from the Orders table for the Customers row having the CustomerId value set to 1 in the following XML format: <CUSTOMERS Name=\"Customer A\" Country=\"Australia\"> <ORDERS OrderID=\"1\" OrderDate=\"2000-01-01T00:00:00\" Amount=\"3400.00\" /> <ORDERS OrderID=\"2\" OrderDate=\"2001-01-01T00:00:00\" Amount=\"4300.00\" /> </CUSTOMERS> Which Transact-SQL query should you use? A. SELECT OrderId, OrderDate, Amount, Name, Country FROM Orders INNER JOIN Customers ON Orders.CustomerId = Customers.CustomerId WHERE Customers.CustomerId = 1 FOR XML RAW B. SELECT OrderId, OrderDate, Amount, Name, Country FROM Orders INNER JOIN Customers ON Orders.CustomerId = Customers.CustomerId WHERE Customers.CustomerId = 1 FOR XML RAW, ELEMENTS C. SELECT OrderId, OrderDate, Amount, Name, Country FROM Orders INNER JOIN Customers ON Orders.CustomerId = Customers.CustomerId WHERE Customers.CustomerId = 1 FOR XML AUTO D. SELECT OrderId, OrderDate, Amount, Name, Country FROM Orders INNER JOIN Customers ON Orders.CustomerId = Customers.CustomerId WHERE Customers.CustomerId = 1 FOR XML AUTO, ELEMENTS E. SELECT Name, Country, OrderId, OrderDate, Amount FROM Orders INNER JOIN Customers ON Orders.CustomerId = Customers.CustomerId WHERE Customers.CustomerId = 1 FOR XML AUTO F. SELECT Name, Country, OrderId, OrderDate, Amount FROM Orders INNER JOIN Customers ON Orders.CustomerId = Customers.CustomerId WHERE Customers.CustomerId = 1 FOR XML AUTO, ELEMENTS G. SELECT Name AS '@Name', Country AS '@Country', OrderId, OrderDate, Amount FROM Orders INNER JOIN Customers ON Orders.CustomerId= Customers.CustomerId WHERE Customers.CustomerId = 1 FOR XML PATH ('Customers') H. SELECT Name AS 'Customers/Name', Country AS 'Customers/Country', OrderId, OrderDate, Amount FROM Orders INNER JOIN Customers ON Orders.CustomerId = Customers.CustomerId WHERE Customers.CustomerId = 1 FOR XML PATH ('Customers')",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are developing an application that uses data residing in two databases named Inventory and Accounting on a single Microsoft SQL Server 2012 server. You plan to provide a record set from tables in the Inventory database. You write the following query: [sampleXML/xmlfile-397_1.png] You need to create this query as a permanent database object that can be joined to other queries. The other queries will be run from the Accounting database. Neither database allows cross-database ownership. Which Transact-SQL statement should you use? A. [sampleXML/xmlfile-397_2.jpg] B. [sampleXML/xmlfile-397_3.jpg] C. [sampleXML/xmlfile-398_1.jpg] D. [sampleXML/xmlfile-398_2.png] E. [sampleXML/xmlfile-398_3.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have a Microsoft SQL Server database. The database contains a group of tables created by using the following Transact-SQL statements: [sampleXML/xmlfile-404_1.jpg] You need to write a query that returns all the salesperson's phone numbers and an indicator as to whether you can contact the salesperson using that number. The indicator must meet the following requirements: ✑ If the phone number is a work phone number, the indicator should show the value \"˜Allow Calls'. ✑ If the phone number is NULL, the indicator should show the value \"˜Unrecognized Phone Type'. ✑ In all other cases, the indicator should show the value \"˜Do Not Call'. Which three Transact-SQL segments should you use to develop the solution? To answer, move the appropriate Transact-SQL segments from the list of Transact- SQL segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-405_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database named Orders. The database contains a table named Customer that has the following definition: [sampleXML/xmlfile-420_1.png] You add a new data source to the application that inserts records into the Customer table. An example of a query that the application executes is shown below. [sampleXML/xmlfile-420_2.png] Users report that these new records are not displayed correctly. You review data in the table and observe that records from the new data source are displayed as shown below. [sampleXML/xmlfile-420_3.png] You need to change the database schema to support the characters coming in from this new data source. You need to achieve this goal without losing existing customer records. Which Transact-SQL statement should you run? A. [sampleXML/xmlfile-421_1.png] B. [sampleXML/xmlfile-421_2.png] C. [sampleXML/xmlfile-421_3.png] D. [sampleXML/xmlfile-421_4.png] E. [sampleXML/xmlfile-421_5.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server instance that will support several databases. You need to ensure that the organization serial numbers can be stored in every new database created. You also need to ensure that the serial numbers are six alphanumeric characters and have the same structure across every database. What should you do? A. Create a user-defined data type on the master database. B. Create a user-defined type on the master database. C. Create a user-defined data type on the model database. D. Create a user-defined type on the model database.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You use Microsoft SQL Server Management Studio to develop a Microsoft Azure SQL Database instance that will support a purchase order application. You write the following query: [sampleXML/xmlfile-430_1.png] A partial view of the query results can be seen in the following table. [sampleXML/xmlfile-431_1.png] You must generate a summary report that displays the total number of purchase orders received by each vendor for the following regions: North, East, South, West, and Central. You need to write a query that returns the results in the format shown in the following table. [sampleXML/xmlfile-432_1.png] Which three Transact-SQL segments should you use to develop the solution? To answer, move the appropriate Transact-SQL segments from the list of Transact- SQL segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-433_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database that includes a table named Products. The Products table has columns named ProductId, ProductName, and CreatedDateTime. The table contains a unique constraint on the combination of ProductName and CreatedDateTime. You need to modify the Products table to meet the following requirements: ✑ Remove all duplicates of the Products table based on the ProductName column. ✑ Retain only the oldest Products row. Which Transact-SQL query should you run? A. [sampleXML/xmlfile-435_3.png] B. [sampleXML/xmlfile-436_1.png] C. [sampleXML/xmlfile-436_2.png] D. [sampleXML/xmlfile-437_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are designing a Microsoft SQL Server database named Orders. You create a table by running the following Transact-SQL statement: [sampleXML/xmlfile-440_1.jpg] You create a stored procedure to be used by an ASP.NET application that runs the following statement: [sampleXML/xmlfile-441_1.png] You need to ensure that the query runs as efficiently as possible. Which Transact-SQL statement should you run? A. [sampleXML/xmlfile-441_2.png] B. [sampleXML/xmlfile-441_3.png] C. [sampleXML/xmlfile-441_4.png] D. [sampleXML/xmlfile-441_5.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION The following is a series of questions in which you are required to input one or more lines of code. To input your response Type your response into the text entry field in the Answer Area. You may input one or more lines of code. More than one solution may be correct. You will receive credit if your solution matches any of the correct solutions. To validate code syntax After entering your code, click the Check Syntax button. This validates code syntax (such as SQL commands) and values (such as table names and variable names) used in your solution. If there are any errors, they will appear in the window next to the Check Syntax button. You may change your code and re-validate the syntax as many times as you want. Note that Check Syntax does NOT validate whether you have answered the question correctly. It simply validates the accuracy of your syntax. To view available command keywords Click the Keywords button to view a list of command keywords. This is a general list provided for reference and is not limited to commands used in the question. [sampleXML/xmlfile-443_1.png] The Sales schema of a database contains the tables shown in the exhibit. [sampleXML/xmlfile-445_1.jpg] You need to create a stored procedure named RecentOrders that meets the following requirements: ✑ Declares an input variable named @EndDate of type varchar(255). ✑ Compare the value of @EndDate with the OrderDate for records from the Sales.Orders table. ✑ Return only the OrderID column for rows where the OrderDate is more recent than @EndDate. Construct the Transact-SQL for the stored procedure by using the following guidelines: ✑ Do not use aliases. ✑ Do not use object delimiters. ✑ Ensure that any objects called in RecentOrders can be resolved by all users. ✑ Convert @endDate to a datetime data type in the WHERE clause of the SELECT statement before comparing the value to an OrderDate. Part of the correct Transact-SQL has been provided in the answer area below. Enter the Transact-SQL in the answer area that resolves the problem and meets the stated goals or requirements. You can add Transact-SQL within the Transact-SQL segment that has been provided as well as below it. [sampleXML/xmlfile-446_8.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You develop a Microsoft SQL Server database for an educational institution. The database contains tables named ExamEvaluation and ProjectEvaluation, which are used to track student scores. The tables are created by using the following code: [sampleXML/xmlfile-453_1.jpg] Students are evaluated based on the following rules: Each student will complete a maximum of one exam and one project. [sampleXML/xmlfile-453_2.png] ✑ A student must complete at least one exam. ✑ A single exam consists of multiple sections, where the student is evaluated based on the average score of all sections. ✑ A single project consists of Section A and Section B, where the student is evaluated by adding 60 percent of Section A and 40 percent of Section B. ✑ At any given time, a student may have completed only an exam, or both an exam and a project. You want to create a summary report of student evaluations. You need to write a query that will return evaluation results for students who have completed any form of evaluation, grouped by the year of undertaling. A sample result set is shown in the following table. [sampleXML/xmlfile-454_5.jpg] Which five Transact-SQL segments should you use to develop the solution? To answer, move the appropriate Transact-SQL segments from the list of Transact- SQL segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-455_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You are a developer for a Microsoft SQL Server database that contains a complaint table created by running the following Transact-SQL statement: [sampleXML/xmlfile-467_1.png] Which Transact-SQL statement or statements should you run? To answer, drag the appropriate Transact-SQL statements to the correct functions. Each Transact- SQL statement may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. Select and Place: [sampleXML/xmlfile-467_2.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database that includes a table named Products. The Products table has columns named ProductId, ProductName, and CreatedDateTime. The table contains a unique constraint on the combination of ProductName and CreatedDateTime. You need to modify the Products table to meet the following requirements: ✑ Remove all duplicates of the Products table based on the ProductName column. ✑ Retain only the newest Products row. Which Transact-SQL query should you use? A. WITH CTEDupRecords AS ( SELECT MIN(CreatedDateTime) AS CreatedDateTime, ProductName FROM Products GROUP BY ProductName HAVING COUNT(*) > 1 ) DELETE p FROM Products p JOIN CTEDupRecords cte ON cte.ProductName = p.ProductName AND cte.CreatedDateTime > p.CreatedDateTime B. WITH CTEDupRecords AS ( SELECT MIN(CreatedDateTime) AS CreatedDateTime, ProductName FROM Products GROUP BY ProductName HAVING COUNT(*) > 1 ) DELETE p FROM Products p JOIN CTEDupRecords cte ON p.ProductName = cte.ProductName AND p.CreatedDateTime > cte.CreatedDateTime C. WITH CTEDupRecords AS ( SELECT MIN(CreatedDateTime) AS CreatedDateTime, ProductName FROM Products GROUP BY ProductName ) DELETE p FROM Products p JOIN CTEDupRecords cte ON p.ProductName = cte.ProductName D. WITH CTEDupRecords AS ( SELECT MAX(CreatedDateTime) AS CreatedDateTime, ProductName FROM Products GROUP BY ProductName HAVING COUNT(*) > 1 ) DELETE Products FROM Products p",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use Microsoft SQL Server 2012 to develop a database application. Your application sends data to an NVARCHAR(MAX) variable named @var. You need to write a Transact-SQL statement that will find out the success of a cast to a decimal (36,9). Which code segment should you use? A. BEGIN TRY SELECT convert (decimal(36,9), @var) as Value, 'True' As BadCast END TRY BEGIN CATCH SELECT convert (decimal(36,9), @var) as Value, 'False' As BadCast END CATCH B. TRY( SELECT convert (decimal(36,9), @var) SELECT 'True' As BadCast ) CATCH( SELECT 'False' As BadCast ) C. SELECT CASE WHEN convert (decimal(36,9), @var) IS NULL THEN 'True' ELSE 'False' END AS BadCast D. SELECT IIF(TRY_PARSE(@var AS decimal(36,9)) IS NULL, 'True', 'False' )",
+    "options": {},
+    "most_voted": ""
+  }
+]
