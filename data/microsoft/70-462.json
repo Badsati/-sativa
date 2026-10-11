@@ -1,0 +1,387 @@
+[
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You administer all the deployments of Microsoft SQL Server in your company. You need to ensure that an OLTP database that uses a storage area network (SAN) remains available if any of the servers fail. You also need to minimize the amount of storage used by the database. Which configuration should you use? A. Two servers configured in different data centers SQL Server Availability Group configured in Synchronous-Commit Availability Mode One server configured as an Active Secondary B. SQL Server that includes an application database configured to perform transactional replication C. Two servers configured in the same data center SQL Server Availability Group configured in Asynchronous-Commit Availability Mode One server configured as an Active Secondary D. Two servers configured in different data centers SQL Server Availability Group configured in Asynchronous-Commit Availability Mode E. Two servers configured in the same data center A primary server configured to perform log-shipping every 10 minutes A backup server configured as a warm standby F. Two servers configured on the same subnet SQL Server Availability Group configured in Synchronous-Commit Availability Mode G. SQL Server that includes an application database configured to perform snapshot replication H. Two servers configured in a Windows Failover Cluster in the same data center SQL Server configured as a clustered instance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answers choices. An answer choice may be correct for more than one question in the series. You administer a Microsoft SQL Server server that hosts a transactional database and a reporting database. The transactional database is updated through a web application and is operational throughout the day. The reporting database is only updated from the transactional database. The recovery model and backup schedule are configured as shown in the following table: [sampleXML/xmlfile-6_1.png] The differential backup of the reporting database fails. Then, the reporting database fails at 14:00 hours. You need to ensure that the reporting database is restored. You also need to ensure that data loss is minimal. What should you do? A. Restore the latest full backup, and restore the latest differential backup. Then, restore the latest log backup. B. Perform a point-in-time restore. C. Restore the latest full backup. D. Restore the latest full backup, and restore the latest differential backup. Then, restore each log backup taken before the time of failure from the most recent differential backup. E. Restore the latest full backup. Then, restore the latest differential backup. F. Restore the latest full backup. Then, restore each differential backup taken before the time of failure from the most recent full backup. G. Perform a page restore. H. Perform a partial restore.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer three Microsoft SQL Server 2012 servers named ServerA, ServerB, and ServerC. ServerA is the acting principal and ServerB is the mirror. You need to add ServerC as a witness to the existing mirroring session between ServerA and ServerB. You need to achieve this goal without delaying synchronization. Which three actions should you perform in sequence? (To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database. You create an availability group named haContosoDbs. Your primary replica is available at Server01\\Contoso01. You need to configure the availability group to prevent data loss. In the event of a database failure, the designed secondary database must come online automatically. Which Transact-SQL statement should you use? A. ALTER AVAILABILITY GROUP haContosoDbs MODITY REPLICA ON Server01\\Contoso01 WITH (AVAILABILITY _MODE=ASYNCHRONOUS_COMMIT, FAILOVER_MODE=AUTOMATIC) B. ALTER AVAILABILITY GROUP haContosoDbs MODIFY REPLICA ON Server01\\Contoso01 WITH (AVAILABILITY _MODE=ASYNCHRONOUS_COMMIT, FAILOVER_MODE=MANUAL) C. ALTER AVAILABILITY GROUP haContosoDbs MODITY REPLICA ON Server01\\Contoso01 WITH (AVAILABILITY _MODE=SYNCHRONOUS_COMMIT, FAILOVER_MODE=AUTOMATIC) D. ALTER AVAILABILITY GROUP haContosoDbs MODIFY REPLICA ON Server01\\Contoso01 WITH (AVAILABILITY _MODE=SYNCHRONOUS_COMMIT, FAILOVER_MODE=MANUAL)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server 2012 instance that has several SQL Server Agent jobs configured. When SQL Server Agent jobs fail, the error messages returned by the job steps are truncated. The following error message is an example of the truncated error message: \"Executed as user CONTOSO\\ServiceAccount....0.4035.00 for 64-bit Copyright (C) Microsoft Corp 1984-2011. All rights reserveD. Started 63513 PM Error 2012-06-23 183536.87 Code 0XC001000E Source UserImport Description Code 0x00000000 Source Log Import Activity Descript... The package execution fA. .. The step failed. \" You need to ensure that all the details of the job step failures are retained for SQL Server Agent jobs. What should you do? A. Expand agent logging to include information from all events. B. Disable the Limit size of job history log feature. C. Configure event forwarding. D. Configure output files.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server 2012 environment that contains a production SQL Server 2005 instance named SQL2005 and a development SQL Server 2012 instance named SQL2012. The development team develops a new application that uses the SQL Server 2012 functionality. You are planning to migrate a database from SQL2005 to SQL2012 so that the development team can test their new application. You need to migrate the database without affecting the production environment. Which three actions should you perform in sequence? (To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer three Microsoft SQL Server 2008 R2 instances. Database mirroring is configured in High-Safety mode with Automatic Failover between the following three servers: ✑ SQL1 is the Principal server. ✑ SQL2 is the mirror server. ✑ SQL3 is the witness server. You need to upgrade SQL1 and SQL2 to SQL Server 2012. You need to ensure that downtime is minimized during the upgrade. Which six actions should you perform in sequence? (To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.) Select and Place: [sampleXML/xmlfile-24_4.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server database. You use an OrderDetail table that has the following definition: [sampleXML/xmlfile-27_1.png] You need to create a non-clustered index on the SalesOrderID column in the OrderDetail table to include only rows that contain a value in the SpecialOfferID column. Which four Transact-SQL statements should you use? (To answer, move the appropriate statements from the list of statements to the answer area and arrange them in the correct order.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You administer a Microsoft SQL Server database. The database contains a table that has the following definition: [sampleXML/xmlfile-29_1.png] You want to export data from the table to a flat file by using the SQL Server Import and Export Wizard. You need to ensure that the following requirements are met: ✑ The first row of the file contains the first row of data. ✑ Each record is of the same length. ✑ The date follows the U.S. date format. ✑ The file supports international characters. What should you do? (To answer, configure the appropriate option or options in the dialog box in the answer area.) Hot Area: [sampleXML/xmlfile-30_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database. The database has a table named Customers owned by UserA and another table named Orders owned by UserB. You also have a stored procedure named GetCustomerOrderInfo owned by UserB. GetCustomerOrderInfo selects data from both tables. You create a new user named UserC. You need to ensure that UserC can call the GetCustomerOrderInfo stored procedure. You also need to assign only the minimum required permissions to UserC. Which permission or permissions should you assign to UserC? Each correct answer presents part of the solution. A. The Select permission on Customers B. The Execute permission on GetCustomerOrderInfo C. The Take Ownership permission on Customers D. The Control permission on GetCustomerOrderInfo E. The Take Ownership permission on Orders F. The Select permission on Orders",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are migrating a database named Orders to a new server that runs Microsoft SQL Server 2012. You attempt to add the [Corpnet\\User1] login to the database. However, you receive the following error message: \"User already exists in current database.\" You need to configure the [Corpnet\\User1] login to be able to access the Orders database and retain the original permissions. You need to achieve this goal by using the minimum required permissions. Which Transact-SQL statement should you use? A. DROP USER [User1]; CREATE USER [Corpnet\\User1] FOR LOGIN [Corpnet\\User1]; ALTER ROLE [db_owner] ADD MEM3ER [Corpnet\\User1]; B. ALTER SERVER RCLS Isysadmin] ADD MEMBER [Corpnet\\User1]; C. ALTER USER [Corpnet\\User1] WITH LOGIN [Corpnet\\User1]; D. ALTER ROLE [db owner] ADD MEMBBR [Corpnet\\User1]; C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server 2012 server that has multiple databases. You need to ensure that users are unable to create stored procedures that begin with sp_. Which three actions should you perform in sequence? (To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.) Select and Place: [sampleXML/xmlfile-42_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server instance. You use a two-node SQL Server failover cluster. Node B is primary, and Node A is secondary. You need to install a security patch on both nodes. You need to ensure that the following requirements are met: ✑ Both nodes receive the update. ✑ Downtime is minimized. ✑ No data is lost. Which three actions should you perform in sequence? (To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.) Select and Place: [sampleXML/xmlfile-52_4.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server instance that contains a financial database hosted on a storage area network (SAN). The financial database has the following characteristics: ✑ A data file of 2 terabytes is located on a dedicated LUN (drive D). ✑ A transaction log of 10 GB is located on a dedicated LUN (drive E). ✑ Drive D has 1 terabyte of free disk space. ✑ Drive E has 5 GB of free disk space. The database is continually modified by users during business hours from Monday through Friday between 09:00 hours and 17:00 hours. Five percent of the existing data is modified each day. The Finance department loads large CSV files into a number of tables each business day at 11:15 hours and 15:15 hours by using the BCP or BULK INSERT commands. Each data load adds 3 GB of data to the database. These data load operations must occur in the minimum amount of time. A full database backup is performed every Sunday at 10:00 hours. Backup operations will be performed every two hours (11:00, 13:00, 15:00, and 17:00) during business hours. On Wednesday at 10:00 hours, the development team requests you to refresh the database on a development server by using the most recent version. You need to perform a full database backup that will be restored on the development server. Which backup option should you use? A. NORECOVERY B. FULL C. NO_CHECKSUM D. CHECKSUM E. Differential F. 8ULK_LOGGED G. STANDBY H. RESTART I. SKIP J. Transaction log K. DBO ONLY L. COPY_ONLY M. SIMPLE N. CONTINUE AFTER ERROR",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server 2012 instance that contains a financial database hosted on a storage area network (SAN). The financial database has the following characteristics: ✑ A data file of 2 terabytes is located on a dedicated LUN (drive D). ✑ A transaction log of 10 GB is located on a dedicated LUN (drive E). ✑ Drive D has 1 terabyte of free disk space. ✑ Drive E has 5 GB of free disk space. The database is continually modified by users during business hours from Monday through Friday between 09:00 hours and 17:00 hours. Five percent of the existing data is modified each day. The Finance department loads large CSV files into a number of tables each business day at 11:15 hours and 15:15 hours by using the BCP or BULK INSERT commands. Each data load adds 3 GB of data to the database. These data load operations must occur in the minimum amount of time. A full database backup is performed every Sunday at 10:00 hours. Backup operations will be performed every two hours (11:00, 13:00, 15:00, and 17:00) during business hours. You need to ensure that the minimum amount of data is lost. Which recovery model should the database use? A. FULL B. DBO_ONLY C. CONTINUE_AFTER_ERROR D. CHECKSUM E. NO_CHECKSUM F. SIMPLE G. Transaction log H. SKIP I. RESTART J. COPY_ONLY K. NORECOVERY L. BULK_LOGGED M. Differential N. STANDBY",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server 2012 instance. The instance contains a database that supports a retail sales application. The application generates hundreds of transactions per second and is online 24 hours per day and 7 days per week. You plan to define a backup strategy for the database. You need to ensure that the following requirements are met: ✑ No more than 5 minutes worth of transactions are lost. ✑ Data can be recovered by using the minimum amount of administrative effort. What should you do? Choose three. A. Configure the database to use the SIMPLE recovery model. B. Create a DIFFERENTIAL database backup every 4 hours. C. Create a LOG backup every 5 minutes. D. Configure the database to use the FULL recovery model. E. Create a FULL database backup every 24 hours. F. Create a DIFFERENTIAL database backup every 24 hours.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server database. You want to import data from a text file to the database. You need to ensure that the following requirements are met: ✑ Data import is performed by using a stored procedure. ✑ Data is loaded as a unit and is minimally logged. Which data import command and recovery model should you choose? (To answer, drag the appropriate data import command or recovery model to the appropriate location or locations in the answer area. Each data import command or recovery model may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use a contained database named ContosoDb within a domain. You need to create a user who can log on to the ContosoDb database. You also need to ensure that you can port the database to different database servers within the domain without additional user account configurations. Which type of user should you create? A. SQL user without login B. User mapped to an asymmetric key C. Domain user D. login mapped to a virtual account",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You administer a SQL 2012 server that contains a database named SalesDB. SalesDb contains a schema named Customers that has a table named Regions. A user named UserA is a member of a role named Sales. UserA is granted the Select permission on the Regions table. The Sales role is granted the Select permission on the Customers schema. You need to remove the Select permission for UserA on the Regions table. You also need to ensure that UserA can still access all the tables in the Customers schema, including the Regions table, through the Sales role permissions. Which Transact-SQL statement should you use? A. DENY SELECT ON Object::Regions FROM UserA B. DENY SELECT ON Schema::Customers FROM UserA C. EXEC sp_addrolemember 'Sales', 'UserA' D. REVOKE SELECT ON Object::Regions FROM UserA E. REVOKE SELECT ON Object::Regions FROM Sales F. EXEC sp_droprolemember 'Sales', 'UserA' G. REVOKE SELECT ON Schema::Customers FROM UserA H. DENY SELECT ON Object::Regions FROM Sales I. DENY SELECT ON Schema::Customers FROM Sales J. REVOKE SELECT ON Schema::Customers FROM Sales",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a single server that contains a Microsoft SQL Server 2012 default instance on which several production databases have been deployed. You plan to install a new ticketing application that requires the deployment of a database on the server. The SQL login for this application requires sysadmin permissions. You need to ensure that the login for the ticketing application cannot access other production databases. What should you do? A. Use the SQL Server default instance and enable Contained Databases. B. Use the SQL Server default instance and configure a user-defined server role. Add the login for the ticketing application to this role. C. Install a new named SQL Server instance on the server. D. Install a new default SQL Server instance on the server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server 2012 default instance. The instance is hosted by a server that has a local firewall configured. The firewall only allows inbound connections on port 1433. The server only hosts a single instance of SQL Server. You need to ensure that the instance is configured to allow remote connections even if the SQL Server is unresponsive to client connections. Which three actions should you perform? Each correct answer presents part of the solution. A. Enable inbound connections on TCP port 1434 in the Windows Firewall on the server. B. Execute the following Transact-SQL command: sp_configure 'remote admin connections',1 C. Execute the Reconfigure command. D. Execute the following Transact-SQL command: sp_configure 'remote access', 1 E. Restart the SQL Server Agent Service. F. Enable inbound connections on TCP port 135 in the Windows Firewall on the server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server 2012 instance that contains a financial database hosted on a storage area network (SAN). The financial database has the following characteristics: ✑ A data file of 2 terabytes is located on a dedicated LUN (drive D). ✑ A transaction log of 10 GB is located on a dedicated LUN (drive E). ✑ Drive D has 1 terabyte of free disk space. ✑ Drive E has 5 GB of free disk space. The database is continually modified by users during business hours from Monday through Friday between 09:00 hours and 17:00 hours. Five percent of the existing data is modified each day. The Finance department loads large CSV files into a number of tables each business day at 11:15 hours and 15:15 hours by using the BCP or BULK INSERT commands. Each data load adds 3 GB of data to the database. These data load operations must occur in the minimum amount of time. A full database backup is performed every Sunday at 10:00 hours. Backup operations will be performed every two hours (11:00, 13:00, 15:00, and 17:00) during business hours. You implement log shipping of the financial database to another SQL Server 2012 instance. You decide to failover to this secondary database. You need to ensure that all transactions will be replicated to the secondary database. Which backup option should you use? A. Differential B. Transaction Log C. FULL D. SIMPLE E. SKIP F. RESTART G. STANDBY H. CHECKSUM I. DBO_ONLY J. COPY_ONLY K. NORECOVERY L. NO_CHECKSUM M. CONTINUE_AFTER_ERROR N. BULK_LOGGED",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server 2012 server. You need to install the Power View components on a stand-alone server. Which three actions should you perform in sequence? (To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You maintain several databases on a 32-bit Microsoft SQL Server 2005 instance on a Windows Server 2008 R2 64-bit server. You need to migrate the databases to a 64-bit SQL Server 2012 instance on the same server. You also need to ensure that the new Transact-SQL functionality in SQL Server 2012 can be used in the database after the migration. What should you do? (Each correct answer presents part of the solution. Choose all that apply.) A. Perform a side-by-side installation of a 32-bit SQL Server 2012 instance. B. Perform a side-by-side installation of a 64-bit SQL Server 2012 instance. C. Perform an in-place upgrade to 64-bit SQL Server 2012. D. Detach the database from the old instance and attach it to the new instance. E. Change the compatibility level of the database. BDE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server 2012 database that contains a table named AccountTransaction. You discover that query performance on the table is poor due to fragmentation on the IDX_AccountTransaction_AccountCode non-clustered index. You need to defragment the index. You also need to ensure that user queries are able to use the index during the defragmenting process. Which Transact-SQL batch should you use? A. ALTER INDEX IDX_AccountTransaction_AccountCode ON AccountTransaction.AccountCode REORGANIZE B. ALTER INDEX ALL ON AccountTransaction REBUILD C. ALTER INDEX IDX_AccountTransaction_AccountCode ON AccountTransaction.AccountCode REBUILD D. CREATE INDEX IDXAccountTransactionAccountCode ON AccountTransaction.AccountCode WITH DROP EXISTING",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft Azure SQL Database database named Orders. You need to create a copy of Orders named Orders_Reporting. Which Transact-SQL command should you use? A. BACKUP DATABASE Orders TO DISK = 'D:\\Orders.bak' RESTORE DATABASE Orders_Reporting FROM DISK = 'D:\\Orders.bak B. BACKUP DATABASE Orders TO DISK = 'D:\\Orders.bak' CREATE DATABASE Orders_Reporting FROM DISK = 'D:\\Orders.bak C. CREATE DATABASE Orders_Reporting AS COPY OF Orders D. BACKUP DATABASE Orders TO DISK = 'D:\\Orders.bak' MIRROR TO DISK = 'Orders_Reporting",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You administer a Microsoft SQL Server 2012 database instance. Other applications run on the server. Some of the applications are throwing errors because of insufficient memory. You need to ensure that the other applications have sufficient memory. Which setting should you configure? Hot Area: [sampleXML/xmlfile-109_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server 2012 database. The database contains a schema named CUSTOMER. CUSTOMER contains several tables and views with sensitive data, as well as various stored procedures and functions. In order to configure security for CUSTOMER, you need to determine how to meet the security requirements listed in the answer area. Which command or commands should you use? (To answer, drag the appropriate command or commands to their corresponding security requirement or requirements in the answer area. Answer choices may be used once, more than once, or not at all. Answer targets may be used once or not at all. Additionally, you may need to drag the split bar between panes or scroll to view content.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server 2012 database. The database contains two tables named Table A and Table B. You perform an import and export operation by using the following steps in sequence, as shown in the exhibit. (Click the Exhibit button.) [sampleXML/xmlfile-132_1.jpg] Load data from a third-party database to Table A. Insert a subset of records from Table A to Table B. Export the data from Table B to a flat file. You also create a format file for the data export. You need to choose the correct command or tool for each task. You need to ensure that each task is performed efficiently. Which command(s) or tool(s) should you use? (To answer, drag the appropriate command(s) or tool(s) to their corresponding task or tasks in the answer area. Answer choices may be used once, more than once, or not at all. Answer targets may be used once or not at all. Additionally, you may need to drag the split bar between panes or scroll to view content.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database that includes a table named Application.Events. Application.Events contains millions of records about user activity in an application. Records in Application.Events that are more than 90 days old are purged nightly. When records are purged, table locks are causing contention with inserts. You need to be able to modify Application.Events without requiring any changes to the applications that utilize Application.Events. Which type of solution should you use? A. Partitioned tables B. Online index rebuild C. Change data capture D. Change tracking",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You plan to install a Microsoft SQL Server 2012 instance. The instance will support a database that has the following requirements: ✑ Store Excel workbooks on the file system. ✑ Access the workbooks through Transact-SQL. ✑ Include the workbooks in database backups. During installation, you need to ensure that the requirements will be met. Which feature should you use? A. Excel Services B. FILESTREAM C. SQL Server Integration Services (SSIS) D. OpenXML",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database instance. You create a new user named UserA. You need to ensure that UserA is able to create SQL Server Agent jobs and execute SQL Server Agent jobs owned by UserA To which role should you add UserA? A. RSExecRole B. SQLAgentUserRole C. serveradmin D. DatabaseMailUserRole B",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server environment. You purchase a new server and plan to migrate your database from SQL Server 2008 to SQL Server 2012. You want to evaluate to prepare for possible conflicts and issues that may arise during or after the migration. Which SQL Server tool should you use? A. Distributed Replay B. Migration Assistant C. Data Tools D. Upgrade Advisor D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You are migrating an OLTP database from Microsoft Azure SQL Database to on-premise. You are planning the installation of a Microsoft SQL Server server failover cluster. The server has the following partitions: [sampleXML/xmlfile-154_1.png] You install the operating system on the C: drive. The database solution will use row versioning, triggers, and cursors. The tempdb database cannot be placed on the same disk subsystem as the OLTP database. The OLTP database needs to be on the fastest disk subsystem possible. The database is currently 200GB in size. It will not substantially increase in size in the next 3 years. You need to plan the usage of the disk subsystems. To which hard disk should each database belong? (To answer, drag the appropriate database or databases to their corresponding hard disk or disks in the answer area. Answer choices may be used once, more than once, or not at all. Answer targets may be used once or not at all. Additionally, you may need to drag the split bar between panes or scroll to view content.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database named Contoso that contains a single user-defined database role named BillingUsers. All objects in Contoso are in the dbo schema. You need to grant EXECUTE permissions for all stored procedures in Contoso to BillingUsers. Which Transact-SQL statement should you use? A. GRANT EXECUTE ON Schema::dbo TO BillingUsers B. EXEC sp_addrolemember 'db_procexecutor', 'BillingUsers' C. GRANT EXECUTE ON INFORMATION_SCHEMA.ROUTINES TO BillingUsers D. GRANT EXECUTE ON Schema::Contoso TO BillingUsers",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have been hired as a Database Consultant by ABC.com to design a SQL Server 2012 database solution. You are tasked with designing a scale-out and high-availability SQL Server 2012 Online Transaction Processing (OLTP) database solution that will maintain copies of data across two server instances. Your solution must provide scale-out of read operations by distributing the reads from clients across two SQL Server 2012 nodes. The data in both SQL Server nodes needs to be indexed. What should you include in your solution? A. You should include a primary database with scheduled log shipping to the secondary database configured. B. You should include two servers configured in an Active-Passive SQL Server 2012 Cluster. C. You should include a primary SQL Server 2012 database that uses transactional replication to replicate data to the secondary database. D. You should include two servers in an Asynchronous-Commit Availability Mode Availability Group. E. You should include two servers in a Synchronous-Commit Availability Mode Availability Group.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are developing a database application by using Microsoft SQL Server 2012. You have a query that runs slower than expected. You need to capture execution plans that will include detailed information on missing indexes recommended by the query optimizer. What should you do? A. Add a HASH hint to the query. B. Add a LOOP hint to the query. C. Add a FORCESEEK hint to the query. D. Add an INCLUDE clause to the index. E. Add a FORCESCAN hint to the Attach query. F. Add a columnstore index to cover the query. G. Enable the optimize for ad hoc workloads option. H. Cover the unique clustered index with a columnstore index. I. Include a SET FORCEPLAN ON statement before you run the query. J. Include a SET STATISTICS PROFILE ON statement before you run the query. K. Include a SET STATISTICS SHOWPLAN_XML ON statement before you run the query. L. Include a SET TRANSACTION ISOLATION LEVEL REPEATABLE READ statement before you run the query. M. Include a SET TRANSACTION ISOLATION LEVEL SNAPSHOT statement before you run the query. N. Include a SET TRANSACTION ISOLATION LEVEL SERIALIZABLE statement before you run the query. K",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You want to add a new GUID column named BookGUID to a table named dbo.Book that already contains data. BookGUID will have a constraint to ensure that it always has a value when new rows are inserted into dbo.Book. You need to ensure that the new column is assigned a GUID for existing rows. Which four Transact-SQL statements should you use? (To answer, move the appropriate SQL statements from the list of statements to the answer area and arrange them in the correct order.) Select and Place: [sampleXML/xmlfile-203_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You create a view based on the following statement: [sampleXML/xmlfile-205_1.jpg] You grant the Select permission to User1 for this view. You need to change the view so that it displays only the records that were processed in the month prior to the current month. You need to ensure that after the changes, the view functions correctly for User1. Which four Transact-SQL statements should you use? (To answer, move the appropriate SQL statements from the list of statements to the answer area and arrange them in the correct order.) Select and Place: [sampleXML/xmlfile-206_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server database. You want to import data from a text file to the database. You need to ensure that the following requirements are met: ✑ Data import is performed from a Windows batch file. ✑ Data is loaded as a unit and is minimally logged. Which data import command and recovery model should you choose? (To answer, drag the appropriate data import command or recovery model to the appropriate location or locations in the answer area. Answer choices may be used once, more than once, or not at all. Answer targets may be used once or not at all. Additionally, you may need to drag the split bar between panes or scroll to view content.) Select and Place: [sampleXML/xmlfile-209_3.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You want to remove SQL Server Integration Services from a server running the Windows Server 2008 R2 operating system that also has the Database Engine and SQL Server Analysis Services installed. Which of the following tools can you use to accomplish this goal? A. SQL Server Management Studio B. SQL Server Configuration Manager C. Add/Remove Programs in Control Panel D. SQL Server Installation Center",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have configured Resource Governor with three resource pools. You have assigned the first resource pool a minimum CPU and memory value of 20%. You have assigned the second resource pool a minimum CPU and memory value of 30%. You want to assign maximum CPU and memory values to the third resource pool. What is the maximum CPU and memory value you can assign to this resource pool? A. 30% B. 50% C. 70% D. 100%",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following features can you install if you are installing SQL Server 2012 Enterprise edition on a computer running Windows Server 2008 R2 SP1 Enterprise edition in the Server Core configuration? (Choose all that apply.) A. Database Engine Services B. SQL Server Replication C. Analysis Services D. Reporting Services",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following SQL Server 2012 indexes stores data in a column-wise fashion instead of the traditional row-wise method? A. Bitmap Index B. Clustered Index C. Function-based Index D. Columnstore Index",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements will create an index called \"SalesDate\" on the DATEOFSALE column on the SALES table residing in the WAREHOUSE database? A. CREATE INDEX SalesDate ON SALES (DATEOFSALE); B. MAKE INDEX SalesDate ON SALES (DATEOFSALE); C. CREATE INDEX ON SALES (DATEOFSALE); D. CREATE INDEX SalesDate ON SALES +DATEOFSALE; A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following SQL Server 2012 database is NOT created by default in a new installation? A. model B. msdb C. tempdb D. sql E. master",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following permissions must a user have in order to query all of the built-in Dynamic Management views? A. VIEW ALL B. SELECT ALL VEWS C. VIEW SERVER INFO D. VIEW SERVER STATE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a SQL Server database named DB1. You plan to load 10 million rows to DB1 by running bcp.exe. You need to modify DB1 to minimize the amount of space required to store the transaction logs during the load operation. The solution must ensure that you can perform a point-in-time restore. What data base setting should you modify? A. Compatibility level to 120 B. Recovery model to Bulk logged C. Containment type to Partial D. Recovery model to Simple",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server database. Every Sunday afternoon, a process inserts a large volume of data. Users generate reports and modify additional data throughout the week. You need to create a backup strategy that: ✑ minimizes the size of the transaction log, ✑ minimizes the size of the backups, and ✑ ensures a 24-hour recovery point objective (RPO). Which strategy or strategies should you use? (To answer, drag the appropriate strategy or strategies to their corresponding task or tasks in the answer area. Answer choices may be used once, more than once, or not at all. Answer targets may be used once or not at all. Additionally, you may need to drag the split bar between panes or scroll to view content.) Select and Place: [sampleXML/xmlfile-254_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft Azure SQL Database database named Orders. Users report that a query that filters on OrderDate is taking an exceptionally long time. You discover that an index named IX_OrderDate on the CustomerOrder table is disabled. You need to ensure that the query can use the IX_OrderDate index. Which Transact-SQL command should you use? A. ALTER INDEX IX_OrderDate ON CustomerOrder DISABLE B. ALTER INDEX IX_OrderDate ON CustomerOrder ENABLE C. ALTER INDEX IX_OrderDate ON CustomerOrder REORGANIZE D. ALTER INDEX IX_OrderDate ON CustomerOrder REBUILD",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database named Orders. Users report that during peak usage periods, certain operations are taking more time than expected. Your initial analysis suggests that blocking is the cause. You need to gather more data to be able to determine which processes are being blocked and to identify the root cause. What should you do? A. Schedule a SQL Agent job to run every 60 seconds and insert the results of executing the sys.dm_os_wait_stats DMV into a table. B. Use System Monitor to catch the Lock Waits/sec event C. Use sp_configure to set the blocked process threshold. Start a trace using SQL Server Profiler to catch the Blocked Process Report event. D. Start a Trace using SQL Server Profiler to catch the Lock: Deadlock event",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer two Microsoft SQL Server database servers named ProdSrv1 and ProdSrv2. Each server has a database named Orders. You need to configure transactional replication from the OrderSummary table in the Orders database on ProdSrv1 to the OrderSummary table in the Orders database on ProdSrv2. Which four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-270_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You install SQL Server on a new server named SQL1 and create several databases. Users report that they fail to connect to any of the databases on SQL1. You discover that the TCP connections are disabled for the database engine on SQL1. You need to ensure that the users can connect to the databases on SQL1. What should you use? A. the SQL Server Installation Center B. the sp_configure stored procedure C. SQL Server Configuration Manager D. the ODBC Data Source Administrator C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server environment. One of the SQL Server instances contains a database named Contoso. You plan to migrate Contoso to Microsoft Azure SQL Database. To do so, you need to implement a contained database. Which two actions should you perform? Each correct answer presents part of the solution. A. Set database containment to CONTAINED. B. Enable database property contained database authentication. C. Set database containment to PARTIAL. D. Set database containment to CLOUD. E. Enable server property contained database authentication. F. Enable database property encryption enabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have a two-node SQL Server 2014 cluster that has an AlwaysOn availability group configured in synchronous mode. You plan to provide a reporting solution by using a third node in the cluster. You need to add the third node. The solution must prevent any impact on the performance of database writes. You install another server that has SQL Server installed. Which three additional actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-277_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You administer a SQL Server database server that contains a database named SalesDb. SalesDb contains a schema named Customers that has a table named Regions. A user named UserA is a member of a role named Sales. UserA is granted the Select permission on the Regions table. The Sales role is granted the Select permission on the Customers schema. You need to ensure that UserA is disallowed to select from the Regions table. Which Transact-SQL statement should you use? A. DENY SELECT ON Object::Regions FROM Sales B. DENY SELECT ON Schema::Customers FROM Sales C. REVOKE SELECT ON Object::Regions FROM Sales D. REVOKE SELECT ON Schema::Customers FROM Sales E. DENY SELECT ON Object::Regions FROM UserA F. DENY SELECT ON Schema::Customers FROM UserA G. REVOKE SELECT ON Object::Regions FROM UserA H. REVOKE SELECT ON Schema::Customers FROM UserA I. EXEC sp_addrolemember 'Sales', 'UserA' J. EXEC sp_droprolemember 'Sales', 'UserA'",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "HOTSPOT You have a server named SQL1 that hosts a reporting database named REPORTING. REPORTING contains data that is also stored in a production database. You discover many blocking locks in REPORTING. The blocked queries are SELECT statements. The queries that hold the blocking locks are INSERT statements that wait on the WRITELOG wait type. You need to prevent the INSERT statements from creating the blocking locks. The solution must also minimize the amount of time the INSERT statements wait on the WRITELOG wait type. Which two database settings should you modify? To answer, select the appropriate settings in the answer area. Hot Area: [sampleXML/xmlfile-293_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server instance. The instance contains a database that supports a retail sales application. The application generates hundreds of transactions per second and is online 24 hours per day and 7 days per week. The database is configured to use the FULL recovery model. You plan to define a backup strategy for the database. You need to ensure that the following requirements are met: No more than 5 minutes worth of transactions are lost. [sampleXML/xmlfile-300_2.png] ✑ Data can be recovered by using the minimum amount of administrative effort. What should you do? Each correct answer presents part of the solution. A. Create a LOG backup every 5 minutes. B. Configure the database to use the SIMPLE recovery model. C. Create a DIFFERENTIAL database backup every 4 hours. D. Create a DIFFERENTIAL database backup every 24 hours. E. Create a FULL database backup every 24 hours.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database. The database is currently configured to log ship to a secondary server. You are preparing to cut over to the secondary server by stopping log-shipping and bringing the secondary database online. You want to perform a tail-log backup. You need to leave the primary database in a read-only state that can also have further transaction logs applied. Which option of the BACKUP LOG command should you use? A. FORMAT B. NO_TRUNCATE C. STANDBY D. NORECOVERY",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You administer a SQL Server database server that contains a database named SalesDb. SalesDb contains a schema named Customers that has a table named Regions. A user named UserA is a member of a role named Sales. UserA is granted the Select permission on the Regions table. The Sales role is granted the Select permission on the Customers schema. You need to ensure that UserA is disallowed to select from any of the tables in the Customers schema. Which Transact-SQL statement should you use? A. DENY SELECT ON Object::Regions FROM Sales B. DENY SELECT ON Schema::Customers FROM Sales C. REVOKE SELECT ON Object::Regions FROM Sales D. REVOKE SELECT ON Schema::Customers FROM Sales E. DENY SELECT ON Object::Regions FROM UserA F. DENY SELECT ON Schema::Customers FROM UserA G. REVOKE SELECT ON Object::Regions FROM UserA H. REVOKE SELECT ON Schema::Customers FROM UserA I. EXEC sp_addrolemember 'Sales', 'UserA' J. EXEC sp_droprolemember 'Sales', 'UserA'",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a single Microsoft SQL Server instance on a two-node failover cluster that has nodes named Node A and Node B. The instance is currently running on Node A. You want to patch both Node A and Node B by using the most recent SQL Server Service Pack. You need to ensure that the following requirements are met: ✑ Both nodes receive the update. ✑ Downtime is minimized. ✑ No data is lost. Which three actions should you perform in sequence? (To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You install a Microsoft SQL Server 2012 instance. The instance will store data extracted from two databases running on Windows Azure SQL Database. You hire a data steward to perform interactive data cleansing and ad hoc querying and updating of the database. You need to ensure that the data steward is given the correct client tools to perform these tasks. Which set of tools should you install? A. SQL Server Management Studio and Distributed Replay Client B. Master Data Services and Data Quality Client C. Data Quality Client and Distributed Replay Client D. Data Quality Client and SQL Server Management Studio",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are implementing the indexing strategy for a fact table in a data warehouse. The fact table is named Quotes. The table has no indexes and consists of seven columns: ✑ [ID] ✑ [QuoteDate] ✑ [Open] ✑ [Close] ✑ [High] ✑ [Low] ✑ [Volume] Each of the following queries must be able to use a columnstore index: ✑ SELECT AVG ([Close]) AS [AverageClose] FROM Quotes WHERE [QuoteDate] BETWEEN '20100101' AND '20101231'. ✑ SELECT AVG([High] - [Low]) AS [AverageRange] FROM Quotes WHERE [QuoteDate] BETWEEN '20100101' AND '20101231'. ✑ SELECT SUM([Volume]) AS [SumVolume] FROM Quotes WHERE [QuoteDate] BETWEEN '20100101' AND '20101231'. You need to ensure that the indexing strategy meets the requirements. The strategy must also minimize the number and size of the indexes. What should you do? A. Create one columnstore index that contains [ID], [Close], [High], [Low], [Volume], and [QuoteDate]. B. Create three coiumnstore indexes: One containing [QuoteDate] and [Close] One containing [QuoteDate], [High], and [Low] One containing [QuoteDate] and [Volume] C. Create one columnstore index that contains [QuoteDate], [Close], [High], [Low], and [Volume]. D. Create two columnstore indexes: One containing [ID], [QuoteDate], [Volume], and [Close] One containing [ID], [QuoteDate], [High], and [Low] C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are designing a data warehouse with two fact tables. The first table contains sales per month and the second table contains orders per day. Referential integrity must be enforced declaratively. You need to design a solution that can join a single time dimension to both fact tables. What should you do? A. Join the two fact tables. B. Merge the fact tables. C. Create a time dimension that can join to both fact tables at their respective granularity. D. Create a surrogate key for the time dimension.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server 2012 database named Contoso that contains a single user-defined database role namedBillingUsers. All objects in Contoso are in the dbo schema. You need to grant EXECUTE permission for all stored procedures in Contoso to BillingUsers. Which Transact-SQL statement should you use? A. CREATE ROLE proc_caller GRANT EXECUTE ON Schema: : dbo TO proc_caller ALTER ROLE proc_caller ADD MEMBER BillingUsers B. GRANT EXECUTE ON INFORMATION_SCHEMA.ROUTINES TO BillingUsers C. EXEC sp_addrolemember 'executor', 'BillingUsers' D. CREATE ROLE proc_caller GRANT EXECUTE ON ALL PROCEDURES TO proc_caller ALTER MEMBER BillingUsers ADD TO ROLE proc_caller",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are the lead database administrator (DBA) of a Microsoft SQL Server environment. All DBAs are members of the DOMAIN\\JrDBAs Active Directory group. You grant DOMAIN\\JrDBAs access to the SQL Server. You need to create a server role named SpecialDBARole that can perform the following functions: ✑ View all databases. ✑ View the server state. ✑ Assign GRANT, DENY, and REVOKE permissions on logins. You need to add DOMAIN\\JrDBAs to the server role. You also need to provide the least level of privileges necessary. Which three SQL statements should you use? Each correct answer presents part of the solution. A. GRANT VIEW SERVER STATE, VIEW ANY DATABASE TO [SpecialDBARole]; B. CREATE SERVER ROLE [SpecialDBARole] AUTHORIZATION securityadmin; C. ALTER SERVER ROLE [SpecialDBARole] ADD MEMBER [DOMAIN\\JrDBAs]; D. CREATE SERVER ROLE [SpecialDBARole]; AUTHORIZATION serveradmin; E. GRANT VIEW DEFINITION TO [SpecialDBARole]; F. CREATE SERVER ROLE [SpecialDBARole] AUTHORIZATION setupadmin; G. GRANT VIEW ANY DATABASE TO [SpecialDBARole]; H. CREATE SERVER ROLE [SpecialDBARole]; AUTHORIZATION sysadmin ABC",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database. You provide temporary securityadmin access to User1 to the database server. You need to know if User1 adds logins to securityadmin. Which server-level audit action group should you use? A. SERVER_STATE_CHANGE_GROUP B. SERVER_PRINCIPAL_IMPERSONATION_GROUP C. SUCCESSFUL_LOGIN_GROUP D. SERVER_ROLE_MEMBER_CHANGE_GROUP E. DATABASE_ROLE_MEMBER_CHANGE_GROUP F. SERVER_OBJECT_CHANGE_GROUP G. SERVER_PERMISSION_CHANGE_GROUP D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You administer a Microsoft SQL Server database named Contoso on a server named Server01. You need to write messages to the Application Log when users are added to or removed from a fixed server role in Server01. What should you create? A. A Database Audit Specification B. A Policy C. An Alert D. A SQL Profiler Trace E. A Resource Pool F. An Extended Event session G. A Server Audit Specification",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Note: This question is part of a series of questions that use the same set of answer choices. An answer choice may be correct for more than one question in the series. You administer a Microsoft SQL Server 2012 database named Contoso on a server named Server01. You need to prevent users from disabling server audits in Server01. What should you create? A. An Alert B. A Resource Pool C. An Extended Event session D. A Policy E. A Database Audit Specification F. A SQL Profiler Trace G. A Server Audit Specification D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server. A process that normally runs in less than 10 seconds has been running for more than an hour. You examine the application log and discover that the process is using session ID 60. You need to find out whether the process is being blocked. Which Transact-SQL statement should you use? A. SELECT * FROM sys.dm_exec_requests WHERE session_id = 60 B. SELECT * FROM sys.dm_exec_sessions WHERE session_id = 60 C. DBCC INPUTBUFFER (60) D. DBCC OPENTRAN E. SELECT * FROM sys.dm_tran_session_transactions WHERE session_id = 60 F. EXEC sp_helpdb A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server instance. The instance contains a database that supports a retail sales application. The application generates hundreds of transactions per second and is online 24 hours per day and 7 days per week. The database is configured to use the FULL recovery model. You plan to define a backup strategy for the database. You need to ensure that the following requirements are met: ✑ No more than 5 minutes worth of transactions are lost. ✑ Data can be recovered by using the minimum amount of administrative effort. What should you do? Each correct answer presents part of the solution. A. Create a LOG backup every 5 minutes. B. Configure the database to use the SIMPLE recovery model. C. Create a DIFFERENTIAL database backup every 4 hours. D. Create a DIFFERENTIAL database backup every 24 hours. E. Create a FULL database backup every 24 hours.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You manage a server that has SQL Server installed and hosts databases for five applications. Each application has a different login to the SQL Server instance. You need to create a TCP endpoint to be used only by a login named Application3. The solution must ensure that Application3 only uses the new endpoint. Which three statements should you execute? Each correct answer presents part of the solution. A. GRANT CONNECT ON ENDPOINT::[TSQL Default TCP] TO Application3 B. DENY CONNECT ON ENDPOINT::[TSQL Default TCP] TO Application3 C. CREATE ENDPOINT Application3_EndPoint STATE=STARTED AS TCP (LISTENER_PORT=1388) D. GRANT .CONNECT ON ENDPOINT:: Application3_EndPoint TO Public E. GRANT CONNECT ON ENDPOINT::[TSQL Default TCP] TO PUBLIC F. REVOKE CONNECT ON ENDPOINT::[TSQL Default TCP] TO Application3 G. REVOKE CONNECT ON ENDPOINT::[TSQL Default TCP] TO PUBLIC ACG",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to install SQL Server on a server. The server must meet the following requirements: ✑ Include SQL Server Integration Services (SSIS) ✑ Be able to run 32-bit SSIS legacy packages You add the Integration Services shared feature to the installation. Which other shared feature should you add to the installation? A. Client Tools Connectivity B. Master Data Services (MDS) C. Management Tools - Complete D. SQL Server Data Tools",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server environment. The environment contains a SQL Server Reporting Services (SSRS) instance. You need to ensure that users can create subscriptions. What should you configure? A. cache refresh options B. site security for service account C. SSRS Execution Account D. folder level security",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server environment. The environment contains a SQL Server Reporting Services (SSRS) instance. You need to ensure that users can create subscriptions. What should you configure? A. item security for the reports B. SQL Agent Proxy Account C. SSRS Execution Account D. processing options for the reports A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You administer a Microsoft SQL Server database. Service accounts for SQL Agent are configured to use a local user. A Microsoft SQL Server Integration Services (SSIS) job step has been created within a SQL Server Agent job. The SSIS package accesses a network share to import files into a SQL Server database. When you execute the SQL Server Agent job, it fails due to a permissions failure on a share on a remote server. You need to ensure that the SQL Server Agent job can execute the SSIS package. Which four actions should you perform in sequence? (To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.) Select and Place:",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You administer a Microsoft SQL Server database. Users report that a billing application is throwing errors during busy times of the day. You identify that the following error is regularly written to the application's error log every day between 4:00 pm and 5:30 pm: Error 1205: Transaction (Process ID) was deadlocked on resources with another process and has been chosen as the deadlock victim. You need to determine the cause of deadlocks. You start a trace using SQL Server Profiler. Which event should you select? A. Lock: Timeout B. Lock: Escalation C. Lock: Deadlock D. Deadlock graph D",
+    "options": {},
+    "most_voted": ""
+  }
+]
