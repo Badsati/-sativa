@@ -1,0 +1,362 @@
+[
+  {
+    "question": "You have a table named Rooms that contains three columns. You run the following Transact-SQL statement: [sampleXML/xmlfile-119_1.png] You discover the execution plan shown in the exhibit. (Click the Exhibit button.) [sampleXML/xmlfile-119_2.jpg] You need to recommend a solution to reduce the amount of time it takes to execute the query. What should you do? More than one answer choice may achieve the goal. Select the BEST answer. A. Include the RoomName column and the Position column in the Room_IX index. B. Create a nonclustered index for RoomName, Id, and Position. C. Create a clustered index for Id. D. Use the WITH (INDEX(Room_IX),NOLOCK) query hint.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a database named database1. Database developers report that there are many deadlocks. You need to implement a solution to monitor the deadlocks. The solution must meet the following requirements: ✑ Support real-time monitoring. ✑ Be enabled and disabled easily. ✑ Support querying of the monitored data. What should you implement? More than one answer choice may achieve the goal. Select the BEST answer. A. Log errors by using trace flag 1222 B. Log errors by using trace flag 1204 C. A SQL Server Profiler template D. An Extended Events session",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have a table named Table1. Table1 has 1 million rows. Table1 has a columnstore index for a column named Column1. You need to import data to Table1. The solution must minimize the amount of time it takes to import the data. What should you do? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-123_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You are designing two stored procedures named Procedure1 and Procedure2. You identify the following requirements: ✑ Procedure1 must take a parameter that ensures that multiple rows of data can pass into the stored procedure. ✑ Procedure2 must use business logic that resides in a Microsoft .NET Framework assembly. You need to identify the appropriate technology for each stored procedure. Which technologies should you identify? To answer, drag the appropriate technology to the correct stored procedure in the answer area. (Answer choices may be used once, more than once, or not at all.) Select and Place: [sampleXML/xmlfile-126_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an application that uses a view to access data from multiple tables. You need to ensure that you can insert rows into the underlying tables by using the view. What should you do? A. Create an INSTEAD OF trigger on the view. B. Define the view by using the SCHEMABINDING option. C. Define the view by using the CHECK option. D. Materialize the view.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a database that contains a user-defined function named Schema1.Udf1 and two tables named Schema1.Table1 and Schema1.Table2. Schema1.Table1 has 1 million rows. The schema for Schema1.Table1 is configured as shown in the following table. [sampleXML/xmlfile-127_1.png] Schema1.Udf1 was defined by using the following code: [sampleXML/xmlfile-127_2.png] You need to write a query that will contain the following columns: ✑ Country ✑ CountryID ✑ CustomerName The solution must meet the following requirements: ✑ Rows must be returned only if the function returns data. ✑ The amount of time it takes the query to execute must be minimized. Which query should you use? [sampleXML/xmlfile-128_3.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a database hosted on SQL Azure. You are developing a script to create a view that will be used to update the data in a table. The following is the relevant portion of the script. (Line numbers are included for reference only.) [sampleXML/xmlfile-129_1.png] You need to ensure that the view can update the data in the table, except for the data in Column1. Which code segment should you add at line 06? A. WITH CHECK OPTION B. WITH VIEW_METADATA C. WITH ENCRYPTION D. WITH SCHEMABINDING",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You are planning two stored procedures named SProc1 and SProc2. You identify the following requirements: ✑ SProc1 must return a table. ✑ SProc2 must return a status code. You need to identify which options must be implemented to meet each stored procedure requirement. Which options should you identify? To answer, drag the appropriate option to the correct requirement in the answer area. (Answer choices may be used once, more than once, or not at all.) Select and Place: [sampleXML/xmlfile-130_3.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a Microsoft SQL Azure database. You have the following stored procedure: [sampleXML/xmlfile-131_2.png] You discover that the stored procedure periodically fails to update HR.Employees. You need to ensure that HR.Employees is always updated when up_employees executes. The solution must minimize the amount of time required for the stored procedure to execute and the number of locks held. What should you do? A. Add the following line of code to line 05: SET TRANSACTION ISOLATION LEVEL SNAPSHOT B. Add the following line of code to line 13: WITH (UPDLOCK) C. Add the following line of code to line 05: SET TRANSACTION ISOLATION LEVEL SERIALIZABLE D. Add the following line of code to line 08: WITH (UPDLOCK)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a database named Database1. Database1 has two stored procedures named Proc1 and Proc2 and a table named Table1. Table1 has millions of rows. Proc1 updates data in Table1. Proc2 reads data from Table1. You discover that when Proc1 is executed to update more than 4,000 rows, Proc2 is blocked. The block affects all rows, including those that are not being updated by Proc1. You need to ensure that when Proc1 is executing, Proc2 can access the data in Table1 that Proc1 is not updating. What should you change Proc1 to do? More than one answer choice may achieve the goal. Select the BEST answer. A. Update less than 4,000 rows simultaneously. B. Use the PAGLOCK table hint. C. Wait for Proc2 to complete. D. Use the ROWLOCK table hint.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use SQL Server 2014 to maintain the data used by applications at your company. You need to run two separate SQL statements. You must guarantee that the following three things happen: ✑ Either BOTH statements succeed or BOTH statements fail as a batch. ✑ If an error occurs on the first statement, SQL should not attempt to run the second statement. ✑ Error information should be returned to the client. What should you do? [sampleXML/xmlfile-134_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You plan to create a database that has multiple tables. The tables will contain product information. Each product has a stock-keeping unit (SKU). You need to recommend a solution to ensure that each SKU starts with the letters \"ADV\" and is followed by 10 digits. The solution must minimize the amount of development effort required. What should you include in the recommendation? A. A FOREIGN KEY constraint B. A trigger C. A user-defined data type D. A CHECK constraint",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a database that uses the following management views: ✑ Sys.dm_os_volume_stats ✑ Sys.dm_db_partition_stats ✑ Sys.dm_db_file_space_usage ✑ Sys.fulltext_indexes You plan to migrate the database to Microsoft SQL Azure. You need to identify which view can be used in SQL Azure. Which view should you identify? A. sys.fulltext_indexes B. sys.dm_db_file_space_usage C. sys.dm_os_volume_stats D. sys.dm_db_partition_stats",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to identify which long running transactions use an index. Which dynamic management view should you use? A. sys.dm_exec_query_optimizer_info B. sys.dm_exec_plan_attributes C. sys.dm_exec_requests D. sys.dm_exec_procedure_stats",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a SQL Azure database. You execute the following code: [sampleXML/xmlfile-152_1.png] The Sales.Customers table will contain 100,000 rows. You expect the FaxNumber column to contain a null value for 70 percent of the rows. You need to create an index to support Sales.CustomersByFaxNumber. The solution must minimize the disk storage requirements. Which code segment should you execute? A. CREATE INDEX IX_Customers ON Customers (FaxNumber) WHERE FaxNumber IS NOT NULL B. CREATE INDEX IX_Customers ON Customers (FaxNumber) WITH FILLFACTOR=0 C. CREATE INDEX IX_Customers ON Customers (CustomerName) INCLUDE (FaxNumber) D. CREATE INDEX IX_Customers ON Customers (FaxNumber) E. CREATE INDEX IX_Customers ON Customers (FaxNumber) WHERE FaxNumber IS NULL",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You plan to create a new column in a disk-based table. The column must meet the following requirements: ✑ Be able to store images that are larger than 1 MB each. ✑ Be able to access the images from Microsoft .NET Framework applications. ✑ Be able to simulate a file system. You need to recommend which data type must be used in the column. Which data type should you recommend? More than one answer choice may achieve the goal. Select the BEST answer. A. FileTable B. varbinary C. image D. FileStream",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have a SQL Server 2012 database named DB1. DB1 contains four filegroups named FG1, FG2, FG3, and FG4. You execute the following code: [sampleXML/xmlfile-155_1.png] Two million rows are added to dbo.Sales. You need to move the data from the first partition to a new table named SalesHistory and, starting on December 31, 2012, repartition dbo.Sales to support new sales data for three months. Which code segment should you execute? To answer, move the appropriate code segments from the list of code segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-156_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a text file that contains an XML Schema Definition (XSD). You have a table named Schema1.Table1. You have a stored procedure named Schema1.Proc1 that accepts an XML parameter named Param1. You need to store validated XML data in Schema1.Table1. The solution must ensure that only valid XML data is accepted by Param1. What should you do? (Each correct answer presents part of the solution. Choose all that apply.) A. Define an XML column in Table1 by using an XML schema collection. B. Create an XML schema collection in the database from the text file. C. Declare Param1 var1 as type XML and associate the variable to the XML schema collection. D. use the modify method to insert the XML schema into each row of the XML column in Table1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have an index for a table in a SQL Azure database. The database is used for Online Transaction Processing (OLTP). You discover that many page splits occur when records are inserted or updated in the table. You need to minimize the number of page splits. What should you set from the index options? A. FILLFACTOR = 0 B. STATISTICS_NORECOMPUTE = OFF C. STATISTICS_NORECOMPUTE = ON D. FILLFACTOR = 80",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a SQL Server 2012 database named Database1. You execute the following code: [sampleXML/xmlfile-163_1.png] You insert 3 million rows into Sales. You need to reduce the amount of time it takes to execute Proc1. What should you do? [sampleXML/xmlfile-164_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You execute the following code: [sampleXML/xmlfile-165_1.png] You discover that the Customers table was created in the dbo schema. You need to create a code segment to move the table to another schema named Schema2. What should you create? To answer, drag the appropriate code segments to the correct location in the answer area. (Answer choices may be used once, more than once, or not at all.) Select and Place: [sampleXML/xmlfile-166_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You plan to deploy two stored procedures named SP1 and SP2 that read data from the database. Your company identifies the following requirements for each stored procedure: ✑ SP1 must allow dirty reads. ✑ SP2 must place range locks on the data to ensure read consistency. You need to identify which isolation level you must set for each stored procedure. The solution must minimize the number of locks. Which isolation level should you identify? To answer, drag the appropriate isolation level to the correct stored procedure in the answer area. (Answer choices may be used once, more than once, or not at all.) Select and Place: [sampleXML/xmlfile-168_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have database objects that were created by using the following script: [sampleXML/xmlfile-170_1.png] The dbo.Customers table has 1 million rows. You discover that usp_GetCustomersByDate takes a long time to complete. The query plan used by the stored procedure is shown in the exhibit. (Click the Exhibit button.) [sampleXML/xmlfile-170_2.png] You need to ensure that usp_GetCustomersByDate completes as quickly as possible. What should you do? A. Modify the stored procedure to include the OPTIMIZE FOR UNKNOWN query hint. B. Execute the sp_recompile 'dbo.GetCustomersByDate' statement. C. Execute the ALTER INDEXIX_Customers_CreationDate WITH REBUILD statement. D. Modify the stored procedure to include the OPTIMIZE FOR('1/1/2008') query hint.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a database named DB1. You plan to configure change data capture on the existing tables in DB1. The database file settings for the DB1 are shown in the exhibit. (Click the Exhibit button.) [sampleXML/xmlfile-172_1.jpg] You need to minimize disk contention caused by change data capture. What should you do? More than one answer choice may achieve the goal. Select the BEST answer. A. Increase the autogrowth value of the database file. B. Set the database recovery model to simple. C. Increase the autogrowth value of the log file. D. Configure change data capture to use to a secondary filegroup.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a SQL Server 2012 database named DB1 that is accessed by 650 concurrent users. You need to log all of the queries to DB1 that become deadlocked. The solution must meet the following requirements: ✑ Provide a representation of the deadlock in XML format. ✑ Minimize the impact on the server. What should you create? A. A SQL Server Profiler trace B. A SQL Server Agent job that retrieves information from the sys.dm_tran_session_transactions dynamic management views C. A SQL Server Agent job that retrieves information from the sys.dm_tran_active_transactions dynamic management views D. A script that enables trace flags",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a database named Database1. You execute the following code: [sampleXML/xmlfile-174_1.png] You have the following query. (Line numbers are included for reference only.) [sampleXML/xmlfile-174_2.png] Users report that the query takes a long time to complete. You create a full-text index for the Notes column. You need to recommend changes to the query to reduce the amount of time it takes for the query to complete. Which code segment should you use to replace line 03? A. WHERE FREETEXT(notes, '%call%') AND B. INNER JOIN FREETEXTTABLE(dbo.table1, notes, 'call') AS t2 ON dbo.table1.ID = t2.key WHERE C. WHERE CONTAINS(notes, 'call*') AND D. WHERE CONTAINS(notes,*%call%'> AND",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a SQL Server instance. You plan to create an application that uses spatial data. You need to create an object that will support the representation of the surface area of all the oceans. Which code segment should you use? [sampleXML/xmlfile-175_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have a database that contains three tables. The tables are configured as shown in the following table. [sampleXML/xmlfile-177_1.png] You have the following query: [sampleXML/xmlfile-178_1.png] The execution plan for the query is shown in the exhibit. (Click the Exhibit button.) [sampleXML/xmlfile-178_2.jpg] You need to create one index to minimize the amount of time it takes to execute the query. What should you do? To answer, drag the appropriate columns to the correct locations in the answer area. (Answer choices may be used once, more than once, or not at all.) Select and Place: [sampleXML/xmlfile-179_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a SQL Server 2012 database named DB1. You have a backup device named Device1. You discover that the log file for the database is full. You need to ensure that DB1 can complete transactions. The solution must not affect the chain of log sequence numbers (LSNs). Which code segment should you execute? A. BACKUP LOG DB1 TO Device1 WITH COPY_ONLY B. BACKUP LOG DB1 TO Device1 WITH NORECOVERY C. BACKUP LOG DB1 TO Device1 WITH TRUNCATE_ONLY D. BACKUP LOG DB1 TO Device1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You plan to create a new table that will contain a column named Salary. Salary will contain highly sensitive data. Salary must meet the following requirements: ✑ Contain numeric data. ✑ Contain only encrypted data that remains encrypted in memory. You need to identify which encryption type and data type must be used for Salary. Which encryption type and data type should you identity? To answer, drag the appropriate encryption type and data type to the correct identifier in the answer area. Select and Place: [sampleXML/xmlfile-184_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a Microsoft SQL Azure database named DBAzure1. You create a table in DBAzure1 by using the following script: [sampleXML/xmlfile-186_1.png] You need to recommend a solution to ensure that each combination of CustomerContact and CustomerDetails is not duplicated. What should you recommend creating? A. A CHECK constraint B. A filtered index C. A columnstore index D. A UNIQUE constraint",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a SQL Server instance named SQL\\Instance1. Instance1 contains a database named Database1. You need to recommend an index defragmentation solution for an index on a disk-based table named ContentIndex. ContentIndex must meet the following requirements: ✑ Remain online during the defragmentation. ✑ Update distribution statistics. ✑ Perform defragmentation as quickly as possible. Which type of index defragmentation solution should you include in the recommendation? More than one answer choice may achieve the goal. Select the BEST answer. A. DBCC DBREINDEX B. REORGANIZE C. REBUILD D. DBCC INDEXDEFRAG",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to encapsulate a T-SQL script into a reusable user-defined object. The object must meet the following requirements: ✑ Permit insertions into a table variable. ✑ Support structured exception handling. ✑ Prevent changes to the definition of referenced objects. ✑ Support the use of the APPLY operator on the output of the object. Which type of object should you use? A. An inline table-valued function B. A stored procedure C. A scalar user-defined function D. A multi-statement table-valued function",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You plan to migrate an instance of SQL Server 2008 to a new installation of SQL Server 2012. You need to migrate alerts and e-mail notifications. Which system stored procedures should you use? (Each correct answer presents part of the solution. Choose all that apply.) A. sp_syspolicy_create_job B. sp_add_operator C. sp_audit_write D. sp_add_alert",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have a SQL Server 2012 database named Database1. Database1 has a data file named database1_data.mdf and a transaction log file named database1_Log.ldf. Database1_Data.mdf is 1.5 GB. Database1_Log.ldf is 1.5 terabytes. A full backup of Database1 is performed every day. You need to reduce the size of the log file. The solution must ensure that you can perform transaction log backups in the future. Which code segment should you execute? To answer, move the appropriate code segments from the list of code segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-203_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have a SQL Azure database named Database1. You need to design the schema for a table named table1. Table1 will have less than one million rows. Table1 will contain the following information for each row: [sampleXML/xmlfile-209_1.png] The solution must minimize the amount of space used to store each row. Which data types should you recommend for each column? To answer, drag the appropriate data type to the correct column in the answer area. Select and Place: [sampleXML/xmlfile-210_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a table named Table1 that stores customer data. Each customer has a credit limit that can only be discovered by querying multiple tables. You need to ensure that the value of the credit limit is returned by executing a query on Table1. What should you create? A. A trigger that uses a ranking function B. A trigger that uses a table-valued function C. A calculated column that uses a table-valued function D. A calculated column that uses a scalar function",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are creating a stored procedure named usp1. Usp1 will create a table that will be used during the execution of usp1. Only usp1 will be allowed to access the table. You need to write the code required to create the table for usp1. The solution must minimize the need to recompile the stored procedure. Which code segment should you use to create the table? A. CREATE TABLE oneTable B. CREATE TABLE ##oneTable C. CREATE TABLE #oneTable D. DECLARE oneTable TABLE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP Your network contains a server named Server1 that runs SQL Server. Server1 contains an instance named Instance1. Instance1 contains a database named ContentDatabase. ContentDatabase uses transaction log backups. The recovery model of ContentDatabase is set to FULL. You need to shrink the ContentDatabase_Log log file to 7 MB. The solution must ensure that you can continue to back up the transaction log. Which three Transact-SQL segments should you use to develop the solution? To answer, move the appropriate Transact-SQL segments from the list of Transact- SQL segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-215_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have two existing tables, one named COUNTRY and the other named STATES. The tables are defined as follows: [sampleXML/xmlfile-221_1.jpg] You need to set up a rule that every STATES.Country_Abbr must match an existing record in the COUNTRY table. Develop the solution by selecting and arranging the required code blocks in the correct order. You may not need all of the code blocks. Select and Place: [sampleXML/xmlfile-222_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use SQL Server to maintain the data used by applications at your company. You need to run two separate SQL statements. You must guarantee that the following three things happen: Either BOTH statements succeed or BOTH statements fail as a batch. [sampleXML/xmlfile-225_2.png] ✑ If an error occurs on the first statement, SQL should not attempt to run the second statement. ✑ Error information should be returned to the client. What should you do? [sampleXML/xmlfile-226_3.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You are a SQL Server 2014 Developer. A database that you work on contains two tables that are defined as follows: [sampleXML/xmlfile-230_1.jpg] Product is an important table that has sensitive audit requirements. You need to create a trigger that supports the following requirements: ✑ Every row that is inserted or updated in Product will reflect its actual LastUpdatedDate and LastUpdatedBy values in the Product table. ✑ Any row that is updated or deleted must write a new record reflecting the OLD values into the ProductAudit table. Any error that occurs during the course of the trigger's execution must prevent the changes from happening. [sampleXML/xmlfile-230_4.png] Develop the solution by selecting and arranging the required code blocks in the correct order. You may not need all of the code blocks. Select and Place: [sampleXML/xmlfile-232_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a Microsoft Azure SQL Database instance. The database contains a disk-based table named ContentTable that has 1 million rows and a column named Fax. Fax allows null values. You need to update Fax to meet the following requirements: ✑ Prevent null values from being used. ✑ Always use an empty string instead of a null value. Which statement or statements should you execute? (Each correct answer presents part of the solution. Choose all that apply.) [sampleXML/xmlfile-244_1.jpg] A. Option A B. Option B C. Option C D. Option D E. Option E",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a Microsoft SQL Azure database named DBAzurel. DBAzurel contains a table named Orders that stores sales data. Each order has a sales total that can only be discovered by querying multiple tables. You need to ensure that the value of the sales total is returned by executing a query on Orders. What should you create? A. A calculated column that uses a scalar function B. A trigger that uses a table-valued function C. A calculated column that uses a table-valued function D. A trigger that uses a ranking function",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a database named Inventory. Inventory is stored on Microsoft Azure SQL Database and contains a table named ProductDetails. For a given product, you need to retrieve the ProductID, Manufacturer, Weight, and ListPrice columns for all of the items in the ProductDetails table. The solution must ensure that the results can be joined to other tables. Which Transact-SQL statement should you run? A. [sampleXML/xmlfile-262_1.png] B. [sampleXML/xmlfile-262_2.png] C. [sampleXML/xmlfile-262_3.png] D. [sampleXML/xmlfile-262_4.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You have a table named Table1 that contains 1 million rows. Table1 contains a column named Column1 that stores sensitive information. Column1 uses the nvarchar (16) data type. You have a certificate named Cert1. You need to replace Column1 with a new encrypted column named Column2 that uses one-way hashing. Which code segment should you execute before you remove Column1? To answer, move the appropriate code segments from the list of code segments to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-270_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You review a query that runs slowly. The query accesses data in a table named Schema1.Table1. The following is the relevant portion of the execution plan for the query: [sampleXML/xmlfile-273_1.png] You need to create the missing index. Which code segment should you execute? A. CREATE NONCLUSTERED INDEX IX1 on Schema1.Table1 (Column1) B. CREATE NONCLUSTERED INDEX IX1 on Schema1.Table1 (Column1, Column2, Column3) INCLUDE (Column4) C. CREATE NONCLUSTERED INDEX IX1 on schema1.Table1 (Column1) INCLUDE (Column4) D. CREATE NONCLUSTERED INDEX IX1 on Schema1.Table1 (Column1) INCLUDE (Column4) WHERE Column2 <> Column3",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You execute the following code: [sampleXML/xmlfile-275_1.png] You need to select the task that has an IsFinished value of true from the Project that has an Id value of 1. Which code segment should you use? [sampleXML/xmlfile-276_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a SQL Server database. The recovery model is set to full. The transaction log is backed up every night. You discover that the transaction log never decreases in size. You execute the DBCC SHRINKFILE statement for the transaction log and you discover that the transaction log is unaffected. You need to ensure that you can reduce the size of the transaction log. What should you do first? A. Truncate the transaction log B. Kill long-running transactions C. Change the recovery model to bulk-logged D. Perform a full backup",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are building a new index for an application. You need to reduce the storage space used by the index and to minimize logical reads. What should you configure? A. SORT_IN_TEMPDB = ON B. MAXDOP = 4 C. PAD_INDEX = OFF D. DATA_COMPRESSION = PAGE E. DATA_COMPRESSION = ROW",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You plan to create a custom aggregation function named Function1 and deploy the function to a SQL Server named Server1. You create a Microsoft.NET Framework class that contains the definition of Function1. You upload a certificate to Server1. You need to ensure that Function1 can access a web service. The solution must minimize the number of changes made to the database. Which three tasks should you perform next in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order. Select and Place: [sampleXML/xmlfile-284_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your company has a SQL Azure subscription. You implement a database named Database1. Database1 has two tables named Table1 and Table2. You create a stored procedure named sp1. Sp1 reads data from Table1 and inserts data into Table2. A user named User1 informs you that he is unable to run sp1. You verify that User1 has the SELECT permission on Table1 and Table2. You need to ensure that User1 can run sp1. The solution must minimize the number of permissions assigned to User1. What should you do? A. Change sp1 to run as the saUser. B. Grant User1 the EXECUTE permission on sp1. C. Add User1 to the db_datawriter role. D. Grant User1 the INSERT permission on Table2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You use SQL Server to maintain the data used by applications at your company. You need to run two separate SQL statements. You must guarantee that the following three things happen: Either BOTH statements succeed or BOTH statements fail as a batch. If an error occurs on the first statement, SQL should not attempt to run the second statement. Error information should be returned to the client. What should you do? A. SET XACT_ABORT ON BEGIN TRANSACTION â€¦.Statement 1 â€¦.Statement 2 If @@ERROR <> 0 ROLLBACK ELSE COMMIT TRANSACTION B. SET XACT_ABORT ON BEGIN TRY BEGIN TRANSACTION â€¦.Statement 1 â€¦.Statement 2 COMMIT TRANSACTION END TRY BEGIN CATCH ROLLBACK TRANSACTION END CATCH C. SET XACT_ABORT OFF BEGIN TRY â€¦.Statement 1 END TRY BEGIN TRY â€¦.Statement 2 END TRY BEGIN CATCH THROW END CATCH D. SET XACT_ABORT OFF BEGIN TRNSACTION â€¦.Statement 1 â€¦.Statement 2 If @@ERROR <> 0 ROLLBACK ELSE COMMIT TRANSACTION",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are testing disaster recovery procedures. You attempt to restore DB1 to a different server and you receive the following error message: \"Msg 33111. Level 16, State 3, Line 1 Cannot find server certificate with thumbprint ,0xA694FBEA88C9354E5E2567C30A2A69E8FB4C44A9\\ Msg 3013, Level 16, State 1, Line 1 RESTORE DATABASE is terminating abnormally.\" You need to ensure that you can restore DB1 to a different server. Which code segment should you execute? [sampleXML/xmlfile-8_1.jpg] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a solution to ensure that SQL1 supports the auditing requirements of usp_UpdateSpeakerName. What should you include in the recommendation? A. The Distributed Transaction Coordinator (DTC) B. Transactional replication C. Change data capture D. Change tracking",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to add a new column named Confirmed to the Attendees table. The solution must meet the following requirements: ✑ Have a default value of false. ✑ Minimize the amount of disk space used. Which code block should you use? A. ALTER TABLE Attendees ADD Confirmed bit DEFAULT 0; B. ALTER TABLE Attendees ADD Confirmed char(l) DEFAULT '1'; C. ALTER TABLE Attendees ADD Confirmed bit DEFAULT 1; D. ALTER TABLE Attendees ADD Confirmed char(l) DEFAULT `1';",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Developers report that usp_UpdateSessionRoom periodically returns error 3960. You need to prevent the error from occurring. The solution must ensure that the stored procedure returns the original values to all of the updated rows. What should you configure in Procedures.sql? A. Replace line 46 with the following code: SET TRANSACTION ISOLATION LEVEL SERIALIZABLE B. Replace line 46 with the following code: SET TRANSACTION ISOLATION LEVEL REPEATABLE READ C. Move the SELECT statement at line 49 to line 57. D. Move the SET statement at line 46 to line 53.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You discover that usp.SelectSpeakersByName executes slowly if usp_UpdateSpeakerName executes simultaneously. You need to minimize the execution time of usp.SelectSpeakersByName. The solution must not affect the performance of the other stored procedures. What should you update? A. Usp_UpdateSpeakerName to use the NOLOCK query hint B. Usp_UpdateSpeakerName to use snapshot isolation C. Usp_SelectSpeakersByName to use the NOLOCK query hint D. Usp_SelectSpeakersByName to use snapshot isolation",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "B\\Batch 1 While testing usp.GetFutureSessions, you discover that IX_Sessions is accessed by a scan rather than a seek. You need to minimize the amount of time it takes to execute usp_GetFutureSessions. What should you do? (Each correct answer presents part of the solution. Choose all that apply.) [sampleXML/xmlfile-30_1.jpg] A. Option A B. Option B C. Option C D. Option D E. Option E F. Option F",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are evaluating the index design for the database. You have the following requirements: ✑ minimize the amount of time it takes for usp_AttendeesReport to run ✑ minimize the amount of database fragmentation. You need to recommend a change to Indexes.sql Which line of code should you use to replace line 12 of Indexes.sql? A. (LastName); B. (FirstName) INCLUDE (LastName); C. (LastName, FirstName); D. (LastName) INCLUDE (FirstName);",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to recommend a solution to ensure that SQL1 supports the auditing requirements of usp_UpdateEmployeeName. What should you include in the recommendation? A. Change data capture B. Change tracking C. Transactional replication D. The Distributed Transaction Coordinator (DTC)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are evaluating the index design. You need to recommend a change to Indexes.sql that minimizes the amount of time it takes for usp_SelectEmployessByName to execute. Which line of code should you use to replace line 08 of Indexes.sql? A. (EmployeeID) INCLUDE (LastName); B. (LastName) INCLUDE (FirstName); C. (LastName, EmployeeID); D. (FirstName, LastName);",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Developers report that usp_UpdateOffice periodically returns error 3960. You need to prevent the error from occurring. The solution must ensure that the stored procedure return the original values to all of the updated rows. What should you configure in StoredProcedures.sql? A. Move the SET statement at line 38 to line 45 B. Change line 38 to: SET TRANSACTION ISOLATION LEVEL SERIALIZABLE C. Move the SELECT statement at line 41 to line 50 D. Change line 38 to: SET TRANSACTION ISOLATION LEVEL REPEATABLE READ",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to add a new column named Confirmed to the Employees table. The Confirmed column has the following requirements: ✑ It must have a default value of TRUE. ✑ It must minimize the amount of disk space used. Which Transact-SQL statement should you run? A. ALTER TABLE Employees ADD Confirmed but DEFAULT 0; B. ALTER TABLE Employees ADD Confirmed but DEFAULT 1; C. ALTER TABLE Employees ADD Confirmed nchar(1) DEFAULT '1'; D. ALTER TABLE Employees ADD Confirmed nchar(1) DEFAULT '0';",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You execute IndexManagement.sql and you receive the following error message: \"Msg 512, Level 16, State 1, Line 12 Subquery returned more than 1 value. This is not permitted when the subquery follows =, != ,<, <= , >, > = or when the subquery is used as an expression.\" You need to ensure that IndexManagement.sql executes properly. Which WHILE statement should you use at line 18? A. WHILE SUM(@RowNumber) < (SELECT @counter FROM @indextable) B. WHILE @counter < (SELECT SUM(RowNumber) FROM @indextable) C. WHILE COUNT(@RowNumber) < (SELECT @counter FROM @indextable) D. WHILE @counter < (SELECT COUNT(RowNumber) FROM @indextable)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to convert the functionality of Dynamic.sql to use a stored procedure. Which Transact SQL statement should you add to the stored procedure contain? A. CREATE PROC Production.ProductsAfterDate (@ProductID AS varchar(11), @CreationDate AS date) AS ... B. CREATE PROC Production.ProductsAfterDate( @sqlstring AS nvarchar(1000)) AS ... C. CREATE PROC Production.ProductsAfterDate( @sqlstring AS nvarchar(1000), OUTPUT @ProductID AS varchar(11), OUTPUT @CreationDate AS date) AS ... D. CREATE PROC Production.ProductsAfterDate( @sqlstring AS nvarchar(1000), @ProductID AS varchar(11), @CreationDate AS date) AS ...",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to implement a change to usp_ExportOpenings that meets the integration requirements. What should you modify in usp_ExportOpenings? (Each correct answer presents part of the solution. Choose all that apply?) A. To the end of line 04, add [Opening]. B. To the end of line 05, add [Opening! title]. C. To line 10, add FOR XML RAW. D. To line 10, add FOR XMLEXPLICIT. E. To line 10, add FOR XML AUTO. F. To the end of line 04, add [Opening!ELEMENT]. G. To the end of line 06, add [Opening!salary!ELEMENT]. H. To the end of line 05, add [Opening!title!ELEMENT]. I. To the end of line 06, add [Opening! salary].",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to ensure that a new execution plan is used by usp_GetOrdersByProduct each time the stored procedure runs. What should you do? A. Execute sp_help usp_GetOrdersByProduct\\ B. Add WITH (FORCESEEK) to line 69 in usp.GetOrdersByProduct. C. Add WITH RECOMPILE to line 64 in usp.GetOrdersByProduct. D. Execute sp_recompile usp.GetOrdersByProduct'.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to modify usp_GetOrdersAndItems to ensure that an order is NOT retrieved by usp_GetOrdersAndItems while the order is being updated. What should you add to usp_getOrdersAndItems? A. Add SET TRANSACTION ISOLATION LEVEL SERIALIZABLE to line 44 B. Add WITH (UPDLOCK) to the end of line 42 C. Add SET TRANSACTION ISOLATION LEVEL SNAPSHOT to line 44 D. Add WITH (READPAST) to the end of line 42",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You need to modify the Orders table to store the XML data used by the retailers. Which statement should you execute? A. ALTER Orders ADD originalOrder XML (ValidateOrder); B. ALTER Orders ADD originalOrder XML; C. ALTER Orders ADD originalOrder varchar(max); D. ALTER Orders ADD originalOrder varbinary(max);",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You need to implement a new version of usp_AddMobileLocation. Develop the solution by selecting and arranging the required code blocks in the correct order. You may not need all of the code blocks. Select and Place: [sampleXML/xmlfile-108_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You need to redesign the system to meet the scalability requirements of the application. Develop the solution by selecting and arranging the required code blocks in the correct order. You may not need all of the code blocks. Select and Place: [sampleXML/xmlfile-113_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  }
+]
