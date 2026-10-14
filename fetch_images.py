@@ -9,7 +9,7 @@ the result back into the existing JSON file by question text or
 topic/question number.
 
 Images are stored under:
-    data/<provider>/images/<exam>/t<topic>_q<num>/img_<i>.<ext>
+    images/<provider>/<exam>/t<topic>_q<num>/img_<i>.<ext>
 
 The matched JSON entry gains an "images" list of those relative paths,
 and a "url" field if it was missing.
@@ -53,6 +53,7 @@ from examtopics.settings import (
 )
 
 DATA_DIR = Path("data")
+IMAGES_DIR = Path("images")
 
 EXHIBIT_RE = re.compile(
     r"\b(exhibit|figure|fig\.|diagram|screenshot|illustration|"
@@ -205,7 +206,7 @@ def process_exam(
     """
     For each URL in `urls`, fetch the question page, check for exhibit refs,
     download images, and update the exam's JSON file.
-    Returns the count of questions that had images found.
+    Returns (images_found, json_changed).
     """
     json_path = DATA_DIR / provider / f"{exam}.json"
     if not json_path.exists():
@@ -213,7 +214,7 @@ def process_exam(
         return 0
 
     questions = json.loads(json_path.read_text())
-    base_img_dir = DATA_DIR / provider / "images" / exam
+    base_img_dir = IMAGES_DIR / provider / exam
 
     patched = 0
     changed = False
@@ -285,14 +286,14 @@ def process_exam(
         json_path.write_text(json.dumps(questions, indent=2, ensure_ascii=False))
         tqdm.write(f"  Updated {json_path}")
 
-    return patched
+    return patched, changed
 
 
 # ── Git helpers ───────────────────────────────────────────────────────────────
 
 def git_commit(provider: str, exam: str) -> None:
     json_path = DATA_DIR / provider / f"{exam}.json"
-    img_dir = DATA_DIR / provider / "images" / exam
+    img_dir = IMAGES_DIR / provider / exam
     try:
         paths = [str(json_path)]
         if img_dir.exists():
@@ -380,9 +381,9 @@ def main():
     total_patched = 0
     for exam, urls in sorted(exam_links.items()):
         print(f"\n[{provider}/{exam}] {len(urls)} questions")
-        count = process_exam(provider, exam, urls, fetcher, dry_run=args.dry_run)
+        count, changed = process_exam(provider, exam, urls, fetcher, dry_run=args.dry_run)
         total_patched += count
-        if count and args.commit and not args.dry_run:
+        if changed and args.commit and not args.dry_run:
             git_commit(provider, exam)
 
     suffix = " (dry-run)" if args.dry_run else ""
