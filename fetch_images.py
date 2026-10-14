@@ -129,19 +129,26 @@ def _resolve_url(src: str, page_url: str) -> str:
 
 def extract_question_images(html: str, page_url: str) -> List[str]:
     soup = BeautifulSoup(html, "html.parser")
-    body = (
-        soup.select_one(".question-body")
-        or soup.select_one(".card-text")
-        or soup.select_one(".question-text")
-    )
-    if not body:
-        return []
     srcs = []
-    for img in body.find_all("img"):
+    # ExamTopics exhibit images use class "in-exam-image"
+    for img in soup.select("img.in-exam-image"):
         src = img.get("src", "").strip()
         resolved = _resolve_url(src, page_url)
         if resolved:
             srcs.append(resolved)
+    # Fallback: any <img> inside the question body containers
+    if not srcs:
+        body = (
+            soup.select_one(".question-body")
+            or soup.select_one(".card-text")
+            or soup.select_one(".question-text")
+        )
+        if body:
+            for img in body.find_all("img"):
+                src = img.get("src", "").strip()
+                resolved = _resolve_url(src, page_url)
+                if resolved:
+                    srcs.append(resolved)
     return srcs
 
 
