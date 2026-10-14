@@ -1,0 +1,95 @@
+name: fetch-images
+
+on:
+  schedule:
+    - cron: "30 */4 * * *"   # every 4 hours — picks next provider that still needs images
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: "Provider slug to process (leave blank to auto-pick next)"
+        required: false
+        default: ""
+      exam:
+        description: "Single exam slug (optional)"
+        required: false
+        default: ""
+
+concurrency:
+  group: fetch-images
+  cancel-in-progress: false
+
+jobs:
+  fetch-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch images
+        run: |
+          PROVIDER="${{ github.event.inputs.provider }}"
+          EXAM="${{ github.event.inputs.exam }}"
+
+          # Manual single-provider override
+          if [ -n "$PROVIDER" ]; then
+            echo "Fetching images for provider: $PROVIDER"
+            EXIT_CODE=0
+            if [ -n "$EXAM" ]; then
+              python fetch_images.py --provider "$PROVIDER" --exam "$EXAM" --commit || EXIT_CODE=$?
+            else
+              python fetch_images.py --provider "$PROVIDER" --commit || EXIT_CODE=$?
+            fi
+            if [ "$EXIT_CODE" -eq 2 ]; then
+              echo "Nothing to do for $PROVIDER${EXAM:+/$EXAM}"
+            elif [ "$EXIT_CODE" -ne 0 ]; then
+              exit "$EXIT_CODE"
+            fi
+            exit 0
+          fi
+
+          # Auto-pick providers from providers.txt that still have questions without images
+          COUNT=0
+          START=$(date +%s)
+          MAX_SECONDS=$((5 * 60 * 60))
+          while IFS= read -r line; do
+            [[ "$line" =~ ^#.*$ || -z "$line" ]] && continue
+            provider="$line"
+            ELAPSED=$(( $(date +%s) - START ))
+            if [ "$ELAPSED" -ge "$MAX_SECONDS" ]; then
+              echo "Approaching time limit (${ELAPSED}s elapsed), stopping after $COUNT providers."
+              break
+            fi
+            echo "Checking provider: $provider"
+            EXIT_CODE=0
+            python fetch_images.py --provider "$provider" --commit || EXIT_CODE=$?
+            if [ "$EXIT_CODE" -eq 0 ]; then
+              COUNT=$((COUNT + 1))
+              if [ "$COUNT" -ge 2 ]; then
+                break
+              fi
+              echo "Cooling down 60s before next provider..."
+              sleep 60
+            elif [ "$EXIT_CODE" -ne 2 ]; then
+              echo "fetch_images failed for $provider (exit $EXIT_CODE)"
+            fi
+          done < providers.txt
+
+          if [ "$COUNT" -eq 0 ]; then
+            echo "All providers already have images. Nothing to do."
+          fi
