@@ -63,21 +63,48 @@ jobs:
             exit 0
           fi
 
-          # Auto-pick providers from providers.txt that still have questions without images
+          # Auto-pick: round-robin through providers.txt using a cursor file so
+          # each run continues where the previous one left off.
+          CURSOR_FILE=".images-cursor"
+
+          # Build provider list (strip comments and blank lines)
+          mapfile -t ALL_PROVIDERS < <(grep -v '^#' providers.txt | grep -v '^[[:space:]]*$')
+          N=${#ALL_PROVIDERS[@]}
+
+          # Find start index from cursor
+          START_IDX=0
+          if [ -f "$CURSOR_FILE" ]; then
+            CURSOR=$(cat "$CURSOR_FILE")
+            for i in "${!ALL_PROVIDERS[@]}"; do
+              if [ "${ALL_PROVIDERS[$i]}" = "$CURSOR" ]; then
+                START_IDX=$(( (i + 1) % N ))
+                break
+              fi
+            done
+          fi
+
+          echo "Starting from provider index $START_IDX (${ALL_PROVIDERS[$START_IDX]}), $N total"
+
           COUNT=0
           START=$(date +%s)
           MAX_SECONDS=$((5 * 60 * 60))
-          while IFS= read -r line; do
-            [[ "$line" =~ ^#.*$ || -z "$line" ]] && continue
-            provider="$line"
+          LAST_PROVIDER=""
+
+          for (( offset=0; offset<N; offset++ )); do
+            IDX=$(( (START_IDX + offset) % N ))
+            provider="${ALL_PROVIDERS[$IDX]}"
+
             ELAPSED=$(( $(date +%s) - START ))
             if [ "$ELAPSED" -ge "$MAX_SECONDS" ]; then
-              echo "Approaching time limit (${ELAPSED}s elapsed), stopping after $COUNT providers."
+              echo "Time limit reached (${ELAPSED}s elapsed), stopping after $COUNT providers."
               break
             fi
+
             echo "Checking provider: $provider"
             EXIT_CODE=0
             python fetch_images.py --provider "$provider" --commit || EXIT_CODE=$?
+            LAST_PROVIDER="$provider"
+
             if [ "$EXIT_CODE" -eq 0 ]; then
               COUNT=$((COUNT + 1))
               if [ "$COUNT" -ge 2 ]; then
@@ -88,8 +115,16 @@ jobs:
             elif [ "$EXIT_CODE" -ne 2 ]; then
               echo "fetch_images failed for $provider (exit $EXIT_CODE)"
             fi
-          done < providers.txt
+          done
+
+          # Persist cursor so the next run starts after the last provider we touched
+          if [ -n "$LAST_PROVIDER" ]; then
+            echo "$LAST_PROVIDER" > "$CURSOR_FILE"
+            git add "$CURSOR_FILE"
+            git diff --staged --quiet || git commit -m "chore: images cursor → $LAST_PROVIDER"
+            git push || true
+          fi
 
           if [ "$COUNT" -eq 0 ]; then
-            echo "All providers already have images. Nothing to do."
+            echo "All checked providers already have images."
           fi
