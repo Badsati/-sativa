@@ -137,6 +137,18 @@ def _scrape_provider_single_pass(
 
     if not exam_links:
         print(f"  No exam discussions found for {provider}")
+        sentinel = output_dir / ".no-questions"
+        sentinel.write_text(str(int(time.time())))
+        if commit:
+            try:
+                subprocess.run(["git", "add", str(sentinel)], check=True)
+                r = subprocess.run(["git", "diff", "--staged", "--quiet"])
+                if r.returncode != 0:
+                    subprocess.run(["git", "commit", "-m", f"skip: {provider} no questions found (7d cooldown)"], check=True)
+                    subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
+                    subprocess.run(["git", "push"], check=True)
+            except Exception as e:
+                print(f"  [WARN] Could not commit sentinel: {e}")
         return False
 
     print(f"  Found {len(exam_links)} exams with discussions")
@@ -272,6 +284,17 @@ def main():
         return
 
     if not args.exam and not args.legacy:
+        # Skip providers that recently returned no questions at all
+        sentinel = output_dir / ".no-questions"
+        if sentinel.exists():
+            age = time.time() - float(sentinel.read_text().strip())
+            if age < SEVEN_DAYS:
+                remaining = (SEVEN_DAYS - age) / 86400
+                print(f"Skipping '{provider}': no questions found {age / 86400:.1f}d ago. Retrying in {remaining:.1f}d.")
+                sys.exit(2)
+            else:
+                sentinel.unlink()
+
         # New single-pass: scan all discussion pages once, collect by exam slug
         did_work = _scrape_provider_single_pass(provider, fetcher, output_dir, args.commit)
         if not did_work:
