@@ -2,66 +2,92 @@
   {
     "question": "You are starting a new Claude application and have a small set of well-labeled examples that demonstrate the desired output format. You want to use these examples to guide Claude’s behavior. How would you guide the application’s behavior? A. Embed the examples in a database and retrieve them at runtime as reference material for the team. B. Use zero-shot prompting and rely on the model’s general capability to produce the desired output format consistently across all incoming requests. C. Train a custom model on the labeled examples before deployment so that the application does not need to include the examples in any prompt during operation. D. Use multi-shot prompting by including the labeled examples in the prompt so Claude can match the desired output format on each request.",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429058-exam-ccdv-f-topic-1-question-1-discussion/",
+    "images": []
   },
   {
     "question": "Your team’s Claude application has been in production for a year, and the team has decided to formalize its testing strategy. Currently, the team writes ad- hoc tests for individual features but has no overall testing approach. What testing approach would you formalize? A. Adopt a test-driven development practice where unit tests are written before each feature is implemented and must pass before code is merged. B. Define unit tests for individual functions, integration tests for the Claude integration, and end-to-end tests for critical user flows, applied consistently across the codebase. C. Continue writing ad-hoc tests as features ship and introduce a peer review step to ensure each test adequately covers the feature being released. D. Define a single testing approach that uses end-to-end tests and apply it consistently across all new features as they are added to the codebase.",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429037-exam-ccdv-f-topic-1-question-4-discussion/",
+    "images": []
   },
   {
     "question": "A new Claude model release includes performance improvements for several reasoning tasks but has changed the format of its responses to system prompts that use multi-section instructions. Your application uses multi-section system prompts heavily. Initial evaluation on the application’s actual workload shows the new model performs 8 percent better on reasoning tasks but produces malformed output on roughly 3 percent of requests because of the format change. The team is debating whether to upgrade. How would you decide? A. Upgrade and add a downstream validation step that catches the 3 percent malformed output before it reaches users, treating the validation step as the team’s mitigation for the format change. B. Adapt the application’s system prompt to the new model’s format expectations and re-evaluate, then upgrade only if the adapted prompt eliminates the malformed output while preserving the reasoning improvements. C. Stay on the previous model permanently to avoid the malformed output rate and any future format changes that subsequent model releases might introduce in the application. D. Upgrade immediately, because the 8 percent reasoning improvement outweighs the 3 percent malformed output rate across the application’s typical request distribution.",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429056-exam-ccdv-f-topic-1-question-3-discussion/",
+    "images": []
   },
   {
     "question": "The Anthropic API deprecated a request parameter that your Claude application uses in approximately 40 places across the codebase. The deprecation notice gives a six-month window before the parameter is removed and recommends a replacement parameter with slightly different semantics. You would respond to the deprecation by ... A. swapping all 40 call sites in a single change right away to prevent drawn-out migration work that will delay ongoing functioning. B. migrating all 40 call sites in a single change near the removal date to ensure the deprecated parameter continues to work as long as possible. C. adding regression tests to cover the parameter’s behavior, then migrating call sites in batches that you validate against regression tests. D. keeping the deprecated parameter in place while writing a wrapper function around it to insulate the rest of the codebase from the eventual change.",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429025-exam-ccdv-f-topic-1-question-11-discussion/",
+    "images": []
   },
   {
     "question": "Your Claude application’s API keys are stored in a secrets manager. The team is debating whether the same key should be used in development, staging, and production environments. How would you handle the keys across environments? A. Use a single development key everywhere on the grounds that production keys are too risky to deploy across the application's three environments during normal operation. B. Use distinct keys for each environment so a compromise in one environment does not affect the others during normal operation across the application’s lifecycle. C. Rotate the same key across environments at random intervals on the grounds that random rotation provides isolation between environments without requiring distinct keys. D. Use the same key across all environments for simplicity and treat the propagation of any compromise as a known operational tradeoff for the team's key management approach.",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429018-exam-ccdv-f-topic-1-question-12-discussion/",
+    "images": []
   },
   {
     "question": "Your team’s Claude agent has accumulated several customizations that bypass the SDK’s defaults, including custom history management, retry logic, and error handling. A new team member has proposed reverting all the customizations to maintain the codebase more easily. The tech lead disagrees and says each customization was added for a reason. How would you advise the team? A. Revert all customizations to the SDK’s defaults to standardize the codebase. B. Decide on each customization individually based on its original reason and the SDK’s current capabilities. C. Keep all customizations, trusting that the tech lead’s original reasoning is still valid. D. Migrate the agent off the SDK and rebuild it with a custom loop.",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429038-exam-ccdv-f-topic-1-question-13-discussion/",
+    "images": []
   },
   {
     "question": "A Claude application is occasionally refusing to answer questions that should be in scope, including questions the application has answered correctly in the past. You want to investigate. What is the first step of your investigation? A. Identify which questions have been refused and compare them against previously answered questions to determine what changed between the successful and refused interactions. B. Test whether removing or adjusting those instructions resolves the behavior. C. Assess whether the refusals cluster around specific input patterns, question types, or time periods by analyzing the distribution of refused requests in the logs. D. Examine traces of the refused requests to identify what triggers the refusal, whether input patterns, system prompt content, or other context.",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429055-exam-ccdv-f-topic-1-question-14-discussion/",
+    "images": []
   },
   {
     "question": "Your Claude application processes 50-page legal contracts and produces summaries with citation references back to the source. The team is debating whether to send each contract whole or split into smaller pieces. The contracts fit within Claude’s context window. Initial testing shows that whole- document processing produces summaries with stronger cross-section reasoning but occasionally drifts on citation accuracy in later sections. Chunked processing produces stronger citation accuracy per chunk but loses cross-section reasoning. The team has not decided which property matters more. How would you guide the team’s decision? A. Assess the cost and latency implications of both approaches against the application’s performance requirements before recommending which processing strategy to adopt. B. Examine the use cases where cross-section reasoning failures occur and assess whether whole-document processing meets the application’s accuracy requirements across a representative sample of contracts. C. Review the citation accuracy results from chunked processing and determine whether the loss of cross-section reasoning produces summaries that still meet the application’s quality bar. D. Identify which property matters more for the application’s actual use case and let that decision drive the chunking approach, then validate the choice against representative contracts.",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429029-exam-ccdv-f-topic-1-question-15-discussion/",
+    "images": []
   },
   {
     "question": "A teammate is reviewing the team’s threat model for a Claude application and has asked you to identify the categories of AI-specific threats that the model should cover. The teammate has already listed traditional web application threats and wants to know what additional categories apply to a Claude application. Which AI-specific threat categories would you add? A. Supply chain attacks on the Claude SDK because the SDK itself is the only point of vulnerability that a Claude application introduces beyond traditional web application threats. B. Network-level denial of service and physical infrastructure attacks, because these categories cover the threats most likely to affect any Claude application in production. C. Cross-site scripting and SQL injection, because these traditional web application threats apply with equal weight to any application that uses Claude in any way. D. Prompt injection, data leakage from prompts or context, jailbreak attempts, and unsafe model output that bypasses application controls.",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429032-exam-ccdv-f-topic-1-question-16-discussion/",
+    "images": []
   },
   {
     "question": "A team has deployed a multi-agent system in which a primary agent decomposes user requests and delegates subtasks to three specialized subagents: one for data retrieval, one for analysis, and one for report generation. In production, the team observes that subagents are making redundant tool calls, occasionally exceeding token budgets, and sometimes producing outputs that contradict each other – all of which the primary agent passes along without catching. What is the most appropriate way to address these failures? A. Strengthen the primary agent’s management layer to enforce per-subagent tool budgets, validate outputs against a defined schema before passing them forward, and establish explicit handoff contracts between stages. B. Give each subagent read access to the other subagents’ outputs so they can identify and resolve contradictions without routing back through the primary agent. C. Add retry logic to each subagent so that when a tool call fails, the subagent retries automatically before escalating – and configure each subagent to log its tool calls and outputs to a shared trace so the team can audit redundancy and contradictions after the fact. D. Collapse the three subagents into a single large-context model call that handles retrieval, analysis, and generation in one pass.",
     "options": {},
-    "most_voted": "A"
+    "most_voted": "A",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429061-exam-ccdv-f-topic-1-question-17-discussion/",
+    "images": []
   },
   {
     "question": "A teammate has asked you to explain when a Skill would be the right choice over an MCP server. The teammate is unsure how the two differ in practice when both can be reused across teams. How would you explain the distinction? A. A Skill is preferable for cross-team reuse because it loads more efficiently than an MCP server during normal operation in the team’s typical multi-team workloads. B. A Skill bundles prompts, scripts, and data into a package the model loads as a unit while a MCP server exposes resources, tools, and prompts through a standard client interface. C. A Skill and an MCP server are equivalent extension mechanisms that the team can use interchangeably for any reusable capability that needs to be accessible across teams. D. A Skill is the older mechanism and an MCP server is the newer one, so the team should prefer an MCP server for any reusable capability that the team builds going forward.",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429020-exam-ccdv-f-topic-1-question-18-discussion/",
+    "images": []
   },
   {
     "question": "You are designing a Claude application that will process customer support tickets in two stages: a triage stage that classifies tickets and a response stage that drafts replies. The team is debating whether to use a single Claude call that handles both stages or separate Claude calls for each stage. How would you structure the application? A. Use separate Claude calls for triage and response, because each stage has distinct inputs, outputs, and success criteria that benefit from focused prompts. B. Use a single Claude call for triage and then use a non-Claude rule-based system for response generation, on the grounds that rule-based systems are more reliable for drafting replies. C. Use multiple Claude calls in parallel that each draft a complete ticket reply, then have a fourth Claude call select the best one to send to the customer. D. Use a single Claude call for both stages, on the grounds that a single call is cheaper than multiple calls in any production Claude application setup.",
     "options": {},
-    "most_voted": "A"
+    "most_voted": "A",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429050-exam-ccdv-f-topic-1-question-19-discussion/",
+    "images": []
   },
   {
     "question": "Your Claude application uses structured output that is consumed by downstream code. The team wants to handle malformed or unexpected output gracefully so it does not crash downstream systems. The best choice for handling this issue would be to ... A. use the output the model produces and leave schema enforcement to a later phase of production after the application is more complete. B. apply defensive parsing to handle unexpected fields, missing values, and type mismatches that the downstream code might otherwise crash on. C. crash on any unexpected output and require manual recovery on affected requests the application handles during normal operation. D. silently drop any output that does not match expectations so downstream systems do not see the malformed output the application receives from the model.",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "url": "https://www.examtopics.com/discussions/anthropic/view/429026-exam-ccdv-f-topic-1-question-20-discussion/",
+    "images": []
   }
 ]
