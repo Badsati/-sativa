@@ -1,0 +1,127 @@
+name: certlib-scrape
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"   # every 4 hours — round-robins through vendors
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: "Force a specific vendor (leave blank to auto-pick next)"
+        required: false
+        default: ""
+      exam:
+        description: "Single exam code (optional, requires vendor)"
+        required: false
+        default: ""
+
+concurrency:
+  group: certlib-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Scrape CertLibrary
+        env:
+          CERTLIB_SESSION: ${{ secrets.CERTLIB_SESSION }}
+        run: |
+          VENDOR="${{ github.event.inputs.vendor }}"
+          EXAM="${{ github.event.inputs.exam }}"
+          CURSOR_FILE=".certlib-cursor"
+          COOKIE_ARG=""
+          if [ -n "$CERTLIB_SESSION" ]; then
+            COOKIE_ARG="--session-cookie $CERTLIB_SESSION"
+          fi
+
+          # Manual override
+          if [ -n "$VENDOR" ]; then
+            echo "Scraping vendor: $VENDOR"
+            EXIT_CODE=0
+            if [ -n "$EXAM" ]; then
+              python certlib_scrape.py --vendor "$VENDOR" --exam "$EXAM" --commit $COOKIE_ARG || EXIT_CODE=$?
+            else
+              python certlib_scrape.py --vendor "$VENDOR" --commit $COOKIE_ARG || EXIT_CODE=$?
+            fi
+            [ "$EXIT_CODE" -eq 2 ] && echo "Nothing new for $VENDOR" || exit "$EXIT_CODE"
+            exit 0
+          fi
+
+          # Auto round-robin through certlib-vendors.txt
+          mapfile -t ALL_VENDORS < <(grep -v '^#' certlib-vendors.txt | grep -v '^[[:space:]]*$')
+          N=${#ALL_VENDORS[@]}
+
+          START_IDX=0
+          if [ -f "$CURSOR_FILE" ]; then
+            CURSOR=$(cat "$CURSOR_FILE")
+            for i in "${!ALL_VENDORS[@]}"; do
+              if [ "${ALL_VENDORS[$i]}" = "$CURSOR" ]; then
+                START_IDX=$(( (i + 1) % N ))
+                break
+              fi
+            done
+          fi
+
+          echo "Starting from index $START_IDX (${ALL_VENDORS[$START_IDX]}), $N vendors total"
+
+          COUNT=0
+          START=$(date +%s)
+          MAX_SECONDS=$((3 * 60 * 60))
+          LAST_VENDOR=""
+
+          for (( offset=0; offset<N; offset++ )); do
+            IDX=$(( (START_IDX + offset) % N ))
+            vendor="${ALL_VENDORS[$IDX]}"
+
+            ELAPSED=$(( $(date +%s) - START ))
+            if [ "$ELAPSED" -ge "$MAX_SECONDS" ]; then
+              echo "Time limit reached (${ELAPSED}s), stopping after $COUNT vendors."
+              break
+            fi
+
+            echo "Checking vendor: $vendor"
+            EXIT_CODE=0
+            python certlib_scrape.py --vendor "$vendor" --commit $COOKIE_ARG || EXIT_CODE=$?
+            LAST_VENDOR="$vendor"
+
+            if [ "$EXIT_CODE" -eq 0 ]; then
+              COUNT=$((COUNT + 1))
+              if [ "$COUNT" -ge 3 ]; then
+                break
+              fi
+              echo "Cooling down 60s before next vendor..."
+              sleep 60
+            fi
+          done
+
+          # Persist cursor
+          if [ -n "$LAST_VENDOR" ]; then
+            echo "$LAST_VENDOR" > "$CURSOR_FILE"
+            git add "$CURSOR_FILE"
+            if ! git diff --staged --quiet; then
+              git commit -m "chore: certlib cursor → $LAST_VENDOR"
+              git pull --rebase origin main
+              git push
+            fi
+          fi
+
+          [ "$COUNT" -eq 0 ] && echo "All checked vendors already up to date."
