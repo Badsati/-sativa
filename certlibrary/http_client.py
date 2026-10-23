@@ -82,10 +82,16 @@ class HttpFetcher:
             if cached is not None:
                 return cached
 
+        post_headers = {
+            "Referer": url,
+            "Origin": "https://www.certlibrary.com",
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
+
         last_error: Optional[Exception] = None
         for attempt in range(1, self.retries + 1):
             try:
-                resp = self._session.post(url, data=data, timeout=self.timeout)
+                resp = self._session.post(url, data=data, headers=post_headers, timeout=self.timeout)
                 if resp.status_code == 429:
                     wait = 30 * attempt
                     print(f"  [429] rate limited — waiting {wait}s before retry {attempt}/{self.retries}")
