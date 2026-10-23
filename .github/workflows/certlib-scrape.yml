@@ -36,6 +36,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install Camoufox browser
+        run: python -m camoufox fetch
+
+      - name: Install Playwright Firefox
+        run: python -m playwright install firefox --with-deps
+
       - name: Configure git
         run: |
           git config user.name "github-actions[bot]"
@@ -43,14 +49,15 @@ jobs:
 
       - name: Scrape CertLibrary
         env:
-          CERTLIB_SESSION: ${{ secrets.CERTLIB_SESSION }}
+          CERTLIB_USER: ${{ secrets.CERTLIB_USER }}
+          CERTLIB_PASS: ${{ secrets.CERTLIB_PASS }}
         run: |
           VENDOR="${{ github.event.inputs.vendor }}"
           EXAM="${{ github.event.inputs.exam }}"
           CURSOR_FILE=".certlib-cursor"
-          COOKIE_ARG=""
-          if [ -n "$CERTLIB_SESSION" ]; then
-            COOKIE_ARG="--session-cookie $CERTLIB_SESSION"
+          AUTH_ARGS=""
+          if [ -n "$CERTLIB_USER" ] && [ -n "$CERTLIB_PASS" ]; then
+            AUTH_ARGS="--username $CERTLIB_USER --password $CERTLIB_PASS"
           fi
 
           # Manual override
@@ -58,9 +65,9 @@ jobs:
             echo "Scraping vendor: $VENDOR"
             EXIT_CODE=0
             if [ -n "$EXAM" ]; then
-              python certlib_scrape.py --vendor "$VENDOR" --exam "$EXAM" --commit $COOKIE_ARG || EXIT_CODE=$?
+              python certlib_scrape.py --vendor "$VENDOR" --exam "$EXAM" --commit $AUTH_ARGS || EXIT_CODE=$?
             else
-              python certlib_scrape.py --vendor "$VENDOR" --commit $COOKIE_ARG || EXIT_CODE=$?
+              python certlib_scrape.py --vendor "$VENDOR" --commit $AUTH_ARGS || EXIT_CODE=$?
             fi
             [ "$EXIT_CODE" -eq 2 ] && echo "Nothing new for $VENDOR" || exit "$EXIT_CODE"
             exit 0
@@ -100,7 +107,7 @@ jobs:
 
             echo "Checking vendor: $vendor"
             EXIT_CODE=0
-            python certlib_scrape.py --vendor "$vendor" --commit $COOKIE_ARG || EXIT_CODE=$?
+            python certlib_scrape.py --vendor "$vendor" --commit $AUTH_ARGS || EXIT_CODE=$?
             LAST_VENDOR="$vendor"
 
             if [ "$EXIT_CODE" -eq 0 ]; then
