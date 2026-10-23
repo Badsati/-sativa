@@ -37,7 +37,8 @@ def discover_exams(vendor: str, fetcher: HttpFetcher) -> list[str]:
     url = f"{BASE_URL}/vendor/{vendor}"
     try:
         html = fetcher.fetch_html(url)
-        slugs = re.findall(r'href="/info/([^"]+)"', html)
+        # Links may be absolute (https://www.itexams.com/info/SLUG) or relative (/info/SLUG)
+        slugs = re.findall(r'href="(?:https://www\.itexams\.com)?/info/([^"]+)"', html)
         return list(dict.fromkeys(slugs))  # dedupe, preserve order
     except Exception as e:
         print(f"  [WARN] Could not discover exams for {vendor}: {e}")
