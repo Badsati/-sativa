@@ -131,4 +131,4 @@ jobs:
             fi
           fi
 
-          [ "$COUNT" -eq 0 ] && echo "All checked vendors already up to date."
+          if [ "$COUNT" -eq 0 ]; then echo "All checked vendors already up to date."; fi
