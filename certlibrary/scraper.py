@@ -5,7 +5,7 @@ from typing import Dict, List, Optional, Tuple
 from tqdm import tqdm
 
 from .http_client import HttpFetcher
-from .parser import _first_question_no, parse_csrf_token, parse_exam_page, parse_total_pages, parse_total_questions
+from .parser import _first_question_no, parse_exam_page, parse_total_pages, parse_total_questions
 from .settings import BASE_URL, DEFAULT_DELAY_RANGE
 
 
@@ -49,17 +49,7 @@ class CertLibraryScraper:
                     if page == 1:
                         html = first_html
                     else:
-                        # CertLibrary uses POST form navigation, not GET ?page=N
-                        html = self.fetcher.post_html(
-                            base_url,
-                            data={
-                                "csrfmiddlewaretoken": csrf_token or "",
-                                "page": str(page),
-                                "qpp_arrow_buttons": "",
-                                "recaptcha-result": "",
-                            },
-                            cache_key=f"{exam_code}:page:{page}",
-                        )
+                        html = self.fetcher.fetch_html(f"{base_url}?page={page}")
                         # Detect redirect: server returned page 1 again (expired/missing cookie)
                         if _first_question_no(html) == first_q_no:
                             tqdm.write(
@@ -67,10 +57,6 @@ class CertLibraryScraper:
                                 "session cookie may be expired or missing."
                             )
                             break
-                        # Refresh CSRF token from each response for the next POST
-                        new_csrf = parse_csrf_token(html)
-                        if new_csrf:
-                            csrf_token = new_csrf
 
                     qs = parse_exam_page(html, page_url=f"{base_url}?page={page}")
                     first_q = qs[0]["question_no"] if qs else "(none)"
