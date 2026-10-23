@@ -958,5 +958,20 @@
     "question": "A company has created a new video-on-demand (VOD) application. The application runs on a fleet of Amazon EC2 instances behind an Application Load Balancer (ALB). The company configured an Amazon CloudFront distribution and set the ALB as the origin. Because of increasing application demand, the company wants to move all video files to a central Amazon S3 bucket. A CloudOps engineer needs to ensure that video files can be cached at edge locations after the company migrates the files to Amazon S3. Which solution will meet this requirement? A. Configure CloudFront to send the X-Forwarded-For header to the origin and to redirect video requests to Amazon S3 instead of the ALB. B. Configure a new CloudFront cache behavior to route to Amazon S3 as a new origin, based on matching an URL path pattern. C. Configure URL signing in the CloudFront distribution by using a custom policy. Ensure that video files are accessed through signed URLs only. D. Configure a CloudFront origin group. Specify the required HTTP status codes to direct connection attempts to a secondary origin.",
     "options": {},
     "most_voted": "B"
+  },
+  {
+    "question": "A company uses an Amazon CloudFront distribution to serve a static website that the company hosts on an Amazon S3 bucket. The S3 bucket is the origin of the CloudFront distribution. The website has users all over the world. The company updates some content for the website. After the update, users report that they are encountering the previous version of the content. The company must ensure that website users receive only the most current content. Which solution will meet this requirement? A. Use Amazon S3 ACLs to make new content public. B. Reupload the new content. Set up versioning on the origin S3 bucket. C. Upload new content to the same Availability Zone where the CloudFront distribution is located. D. Use CloudFront invalidation when new content is uploaded.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A CloudOps engineer needs to implement a monitoring system to collect instance metrics every minute for an application. The application runs on a highly available pair of Amazon EC2 instances. The monitoring system must send an email alert when the metrics exceed a predefined threshold. Which solution will meet these requirements? A. Use the AWS Health Dashboard to extract the instance metrics. Configure Amazon EventBridge to detect and react to changes in the metrics and to send email alerts. B. Use AWS CloudTrail to monitor the instances. Copy the logs to an Amazon S3 bucket. Configure an AWS Lambda function to send email alerts based on the logs from the S3 bucket. C. Use basic monitoring in Amazon CloudWatch for the instance metrics. Configure CloudWatch alarms that use Amazon SNS to send email alerts. D. Use detailed monitoring in Amazon CloudWatch for the instance metrics. Configure CloudWatch alarms that use Amazon SNS to send email alerts.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company is undergoing an external audit of its systems, which run wholly on AWS. A CloudOps engineer must supply documentation of Payment Card Industry Data Security Standard (PCI DSS) compliance for the infrastructure managed by AWS. Which set of actions should the CloudOps engineer take to meet this requirement? A. Download the applicable reports from the AWS Artifact portal and supply these to the auditors. B. Download complete copies of the AWS CloudTrail log files and supply these to the auditors. C. Download complete copies of the Amazon CloudWatch logs and supply these to the auditors. D. Provide the auditors with administrative access to the production AWS account so that the auditors can determine compliance.",
+    "options": {},
+    "most_voted": "A"
   }
 ]
