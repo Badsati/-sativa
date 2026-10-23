@@ -196,6 +196,20 @@ def _scrape_provider_single_pass(
         else:
             print(f"  No questions parsed for {exam}")
 
+    # Mark provider as fully processed so the next run skips the discussion scan
+    scraped_sentinel = output_dir / ".scraped"
+    scraped_sentinel.write_text(str(int(time.time())))
+    if commit:
+        try:
+            subprocess.run(["git", "add", str(scraped_sentinel)], check=True)
+            r = subprocess.run(["git", "diff", "--staged", "--quiet"])
+            if r.returncode != 0:
+                subprocess.run(["git", "commit", "-m", f"chore: mark {provider} scraped"], check=True)
+                subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
+                subprocess.run(["git", "push"], check=True)
+        except Exception as e:
+            print(f"  [WARN] Could not commit .scraped sentinel: {e}")
+
     return did_work
 
 
@@ -285,15 +299,24 @@ def main():
 
     if not args.exam and not args.legacy:
         # Skip providers that recently returned no questions at all
-        sentinel = output_dir / ".no-questions"
-        if sentinel.exists():
-            age = time.time() - float(sentinel.read_text().strip())
+        no_q_sentinel = output_dir / ".no-questions"
+        if no_q_sentinel.exists():
+            age = time.time() - float(no_q_sentinel.read_text().strip())
             if age < SEVEN_DAYS:
                 remaining = (SEVEN_DAYS - age) / 86400
                 print(f"Skipping '{provider}': no questions found {age / 86400:.1f}d ago. Retrying in {remaining:.1f}d.")
                 sys.exit(2)
             else:
-                sentinel.unlink()
+                no_q_sentinel.unlink()
+
+        # Skip providers fully scraped recently — no HTTP needed
+        scraped_sentinel = output_dir / ".scraped"
+        if scraped_sentinel.exists():
+            age = time.time() - float(scraped_sentinel.read_text().strip())
+            if age < SEVEN_DAYS:
+                remaining = (SEVEN_DAYS - age) / 86400
+                print(f"Skipping '{provider}': fully scraped {age / 86400:.1f}d ago. Rescraping in {remaining:.1f}d.")
+                sys.exit(2)
 
         # New single-pass: scan all discussion pages once, collect by exam slug
         did_work = _scrape_provider_single_pass(provider, fetcher, output_dir, args.commit)

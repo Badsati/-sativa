@@ -108,7 +108,7 @@ jobs:
 
             echo "Checking provider: $provider"
             EXIT_CODE=0
-            python scrape.py --provider "$provider" --commit || EXIT_CODE=$?
+            timeout 5400 python scrape.py --provider "$provider" --commit || EXIT_CODE=$?
             LAST_PROVIDER="$provider"
 
             if [ "$EXIT_CODE" -eq 0 ]; then
@@ -118,6 +118,8 @@ jobs:
               fi
               echo "Cooling down 60s before next provider..."
               sleep 60
+            elif [ "$EXIT_CODE" -eq 124 ]; then
+              echo "Timed out scraping $provider (>90min) — partial progress committed, will resume next cycle"
             elif [ "$EXIT_CODE" -ne 2 ]; then
               echo "Scrape failed for $provider (exit $EXIT_CODE)"
             fi
