@@ -84,7 +84,8 @@ class CertLibraryBrowserScraper:
 
         print("  Logged in successfully")
 
-    def _fetch_page_html(self, url: str) -> str:
+    def _goto(self, url: str) -> str:
+        """Navigate to a URL and return page HTML after questions load."""
         last_error: Optional[Exception] = None
         for attempt in range(1, self.retries + 1):
             try:
@@ -102,13 +103,46 @@ class CertLibraryBrowserScraper:
                 last_error = exc
                 if attempt < self.retries:
                     time.sleep(2.0 * attempt)
-
         raise RuntimeError(f"Failed to load {url}: {last_error}")
+
+    def _click_next_page(self, first_q_no: Optional[str]) -> Optional[str]:
+        """
+        Click the Next Page button, wait for reCAPTCHA to auto-solve and
+        the new page to load. Returns HTML of the new page, or None if
+        the page didn't advance (CAPTCHA blocked or last page).
+        """
+        try:
+            # The Next Page button has class 'open-captcha' and title 'Next Page'
+            next_btn = self.page.query_selector("button[title='Next Page'].open-captcha")
+            if not next_btn:
+                return None
+
+            next_btn.click()
+
+            # Wait up to 30s for reCAPTCHA to auto-solve and page to reload
+            # We detect success by watching for the questions container to update
+            try:
+                self.page.wait_for_load_state("networkidle", timeout=30_000)
+            except PlaywrightTimeoutError:
+                pass
+
+            try:
+                self.page.wait_for_selector("div.card.question_card", timeout=10_000)
+            except PlaywrightTimeoutError:
+                pass
+
+            html = self.page.content()
+            # If still showing page 1, CAPTCHA wasn't auto-solved
+            if _first_question_no(html) == first_q_no:
+                return None
+            return html
+        except (PlaywrightError, Exception):
+            return None
 
     def fetch_all(self, exam_code: str) -> List[Dict]:
         base_url = f"{BASE_URL}/exam/{exam_code}"
 
-        first_html = self._fetch_page_html(base_url)
+        first_html = self._goto(base_url)
         total_pages = parse_total_pages(first_html)
         total_questions = parse_total_questions(first_html)
         first_q_no = _first_question_no(first_html)
@@ -124,14 +158,16 @@ class CertLibraryBrowserScraper:
         with tqdm(total=total_pages, desc="Fetching pages", unit="page") as pbar:
             for page in range(1, total_pages + 1):
                 try:
-                    html = first_html if page == 1 else self._fetch_page_html(f"{base_url}?page={page}")
-
-                    if page > 1 and _first_question_no(html) == first_q_no:
-                        tqdm.write(
-                            f"  [STOP] Page {page} still shows page 1 — "
-                            "account may not have access beyond page 1."
-                        )
-                        break
+                    if page == 1:
+                        html = first_html
+                    else:
+                        html = self._click_next_page(first_q_no)
+                        if html is None:
+                            tqdm.write(
+                                f"  [STOP] Page {page} — Next Page button blocked "
+                                "(reCAPTCHA not auto-solved). Only free pages retrieved."
+                            )
+                            break
 
                     qs = parse_exam_page(html, page_url=f"{base_url}?page={page}")
                     first_q = qs[0]["question_no"] if qs else "(none)"
