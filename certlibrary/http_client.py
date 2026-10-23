@@ -1,5 +1,6 @@
+import hashlib
 import time
-from typing import Optional
+from typing import Dict, Optional
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -33,10 +34,15 @@ class HttpFetcher:
             max_retries=retry,
         )
         session = requests.Session()
-        headers = dict(REQUEST_HEADERS)
+        session.headers.update(REQUEST_HEADERS)
+        # Use cookie jar instead of raw Cookie header so the server's
+        # Set-Cookie responses (csrftoken, etc.) are accepted and forwarded
         if session_cookie:
-            headers["Cookie"] = session_cookie
-        session.headers.update(headers)
+            for pair in session_cookie.split(";"):
+                pair = pair.strip()
+                if "=" in pair:
+                    name, value = pair.split("=", 1)
+                    session.cookies.set(name.strip(), value.strip(), domain="www.certlibrary.com")
         session.mount("https://", adapter)
         session.mount("http://", adapter)
         return session
@@ -67,3 +73,33 @@ class HttpFetcher:
                     time.sleep(1.0 * attempt)
 
         raise RuntimeError(f"Failed to load {url}: {last_error}")
+
+    def post_html(self, url: str, data: Dict, cache_key: Optional[str] = None) -> str:
+        """POST form data and return response HTML. Optionally cache by cache_key."""
+        if cache_key and self.cache is not None and not self.refresh_cache:
+            digest = hashlib.sha1(cache_key.encode()).hexdigest()
+            cached = self.cache.read(f"post:{digest}")
+            if cached is not None:
+                return cached
+
+        last_error: Optional[Exception] = None
+        for attempt in range(1, self.retries + 1):
+            try:
+                resp = self._session.post(url, data=data, timeout=self.timeout)
+                if resp.status_code == 429:
+                    wait = 30 * attempt
+                    print(f"  [429] rate limited — waiting {wait}s before retry {attempt}/{self.retries}")
+                    time.sleep(wait)
+                    last_error = RuntimeError("429 Too Many Requests")
+                    continue
+                resp.raise_for_status()
+                if cache_key and self.cache is not None:
+                    digest = hashlib.sha1(cache_key.encode()).hexdigest()
+                    self.cache.write(f"post:{digest}", resp.text)
+                return resp.text
+            except Exception as exc:
+                last_error = exc
+                if attempt < self.retries:
+                    time.sleep(1.0 * attempt)
+
+        raise RuntimeError(f"Failed to POST {url}: {last_error}")

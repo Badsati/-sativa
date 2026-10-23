@@ -28,6 +28,12 @@ def parse_total_questions(html: str) -> Optional[int]:
     return None
 
 
+def parse_csrf_token(html: str) -> Optional[str]:
+    soup = BeautifulSoup(html, "html.parser")
+    el = soup.select_one("input[name='csrfmiddlewaretoken']")
+    return el["value"] if el else None
+
+
 def _first_question_no(html: str) -> Optional[str]:
     """Return the question_no of the first question on the page, used to detect redirect loops."""
     soup = BeautifulSoup(html, "html.parser")
