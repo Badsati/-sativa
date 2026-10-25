@@ -1,0 +1,77 @@
+[
+  {
+    "question": "A customer is using VMware SD-WAN. The security team has noticed an excessive amount of traffic coming from all Android devices from within the corporate network. Which match option of the Business Policy should the administrator configure to block all of these devices from going to the internet? A. IP Address B. Protocol C. Operating System D. VLAN",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer's network is congested with no degradation of application performance VMWare SD-WAN implements schedulers that control QoS of outbound traffic from the VeloCloud Edge. Which option describes how this mechanism will work? A. The Link Steering Policy will prevent packet loss by shaping transmit rates to match the local link bandwidth. B. The Dynamic Bandwidth Measurement prevents packet loss by shaping transmit rates to match the local link bandwidth as well as the bandwidth of individual remote peers. C. The Network Scheduler implements the QoS hierarchy and is the primary scheduler that influences how bandwidth is shared between edge peers, segments traffic classes, and flows. D. The WAN Link Scheduler implements the QoS hierarchy and is the primary scheduler that influences how bandwidth is shared between edge peers, segments traffic classes, and flows.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer with many branches does not have MPLS connections for most branches. The branches need to access services available only at a MPLS service provider. Which type of VMware SD-WAN Gateway can be used to meet the customer’s requirement? A. Secondary Gateway B. Cloud Gateway C. Primary Gateway D. Partner Gateway",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer is migrating a branch site with a VMware SD-WAN Edge replacing the CE. The Edge will have both MPLS and internet links. MPLS underlay is the preferred path for communication from this site to branch sites that have no VMware SD-WAN Edges. Communication from this site to branch sites that have VMware SD-WAN Edges should go through overlay. Which design should be used to prevent this branch site from becoming a transit site? A. Use BGP as the routing protocol on the Edge, flag its BGP neighbor to PE as Uplink, and advertise overlay prefixes over Uplink. B. Use BGP as the routing protocol on the Edge, and flag its BGP neighbor to PE as Uplink. C. Use OSPF as the routing protocol on the Edge, and put the LAN connected to the Edge in a stub area. D. Use OSPF as the routing protocol on the Edge, and put the LAN connected to the Edge in a totally stub area.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer is using VMware SD-WAN solution. The administrator needs to configure a feature to prevent one remote office from establishing tunnels to other remote offices. Which feature does the administrator need to configure to meet this goal? A. Branch to Branch VPN B. Conditional BackHaul C. Segmentation D. Isolate Profile",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "On the active Edge in a Standard HA deployment, the internet circuit is connected to GE3, and the MPLS circuit is connected to GE4. Which two ports should the circuits connect to on the standby Edge? (Choose two.) A. MPLS in GE6 B. Internet in GE5 C. Internet in GE3 D. MPLS in GE4 E. Internet in GE4",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer is configuring a new Gateway for deployment and needs to continue the activation after the Gateway configuration has been saved in the Orchestrator. What is needed to continue this activation? A. Activation key B. Activation email C. Activation link D. Provisioning key",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer wants to control VMware SD-WAN steering functionalities. A steering option that ties primarily to a physical connection is required. Which link steering option should be selected? A. Transport Group B. WAN Link C. Interface D. Auto",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer is using VMware hosted SD-WAN services. The primary gateway has gone down and come up again. Which statement is correct? A. During the time when the primary VCG was down, Cloud (internet) traffic failed over to the secondary VCG. B. All VPN (site-to-site) traffic uses the primary VCG as primary data path. C. All Cloud (internet) traffic uses the primary VCG as primary data path. D. Once the primary VCG is back up, existing flows continue to go direct, and any new flow would travel via the primary VCG.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A VMware SD-WAN edge is assigned with two VMware SD-WAN Partner Gateways configured with different BGP AS numbers. Which non-default configuration can be selected to keep the redundancy of the gateways and at the same time avoid asymmetric routing? A. Configure BGP inbound filters B. Configure BGP outbound filters C. Disable AS-PATH Carry Over D. Enable community mapping",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "There is voice traffic between the branch and the hub. There are multiple connections between the branch and the hub. What is the combination of ways that VMware SD-WAN can help improve the user experience? A. Link Steering, Sub-second failover, Packet duplication, Jitter Buffer B. Sub-second failover, Packet Duplication, Packet Sequencing, Link Steering C. Packet duplication, Link Aggregation, Sub-second failover, Packet Sequencing D. Jitter Buffer, Packet Duplication, Link Aggregation, UDP Optimization",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An enterprise administrator would like to provide web services (reachable over a public IP address) from a server connected to the LAN of a VMware SD-WAN Edge to external users located in the internet. How can this be achieved? A. Configure a both source and destination IP NAT at the branch VMware Edge device settings, translating the public WAN IP of the Edge to the internal IP of the web server. B. Configure a 1:1 NAT at the VMware SD-WAN Edge firewall rule, translating the public IP of the web server to its internal IP. C. Configure a policy based NAT at branch VMware Edge Business Policy, translating the public IP of the web server to its internal IP. D. Configure a LAN-side NAT at the branch VMware SD-WAN Edge device settings translating the public WAN IP of the Edge to the internal IP of the web server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Both the hub and spoke VMware SD-WAN Edges have a public and a private link. Branch-to-Hub is configured in Cloud VPN, so both sites have two direct tunnels between Edges. There are no paths from the private link to any of the VMware SD-WAN Gateways (VCG). Only the public link has paths to all the VCG. If the public link on the spoke goes down, the site will lose all the connectivity to all VCGs. Which consequence is expected in this situation? A. The path/tunnel between hub and spoke on the public link is down, and tunnel over private link is also disrupted. B. Any new local subnet will not be advertised to any other Edge through overlay. C. Routes stored in the Edge locally will be revoked. D. Even if the internet Backhaul is configured, traffic going to the internet cannot use this private path to go the hub and then to the internet.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer wants to incorporate a VMware SD-WAN Partner Gateway into the SD-WAN design. Which two benefits are derived from this practice? (Choose two.) A. Hand off traffic to any CE router B. NAT traffic to internet C. MPLS capability D. Management plane redundancy E. Hand off traffic to a PE router",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer wants to limit branch tunnel counts by only allowing Dynamic Branch to Branch VPN tunnels to be established between sites within the same region. How can this be accomplished while still allowing inter-region site-to-site connectivity via hubs? A. Create separate profiles for Edges in each region, each including Business Policies for traffic with a destination subnet in the other region with the Network Service set to \"Internet Backhaul\" and with the appropriate hub(s) specified. B. Create separate profiles for Edges in each region, then in Cloud VPN settings, make sure that \"Branch to Hub\" and \"Branch to Branch VPN\" are enabled and that \"To Edges within Profile\" is checked under \"Dynamic Branch to Branch VPN\". C. Create separate profiles for Edges in each region, then in Cloud VPN settings, make sure that \"Branch to Hub\" is disabled and \"Branch to Branch VPN\" is enabled. D. Create separate profiles for Edges in each region, then in Cloud VPN settings, make sure that \"Branch to Hub\" and \"Branch to Branch VPN\" are enabled and that \"Isolate Profile\" is checked.",
+    "options": {},
+    "most_voted": ""
+  }
+]
