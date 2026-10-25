@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "A Visualforce page loads slowly due to the large amount of data it displays. Which strategy can a developer use to improve the performance? A. Use Javascript to move data processing to the browser instead of the controller. B. Use the transient keywords for the List variables used in the custom controller. C. Use lazy loading to load the data on demand, instead of the controllerג€™s constructor. D. Use an <apex:actionPoller> in the page to load all of the data asynchronously.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers wants to use a Customer Community with Customer Community Plus licenses so their customers can track how many containers they are renting and when they are due back. Many of their customers are global companies with complex Account hierarchies, representing various departments within the same organization. One of the requirements is that certain community users within the same Account hierarchy be able to see several departments' containers, based on a junction object that relates the Contact to the various Account records that represent the departments. Which solution solves these requirements? A. A Visualforce page that uses a Custom Controller that specifies without sharing to expose the records B. A Custom List View on the junction object with filters that will show the proper records based on owner C. A Custom Report Type and a report Lightning Component on the Community Home Page D. An Apex Trigger that creates Apex Managed Sharing records based on the junction objectג€™s relationships",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers wants to use an external Web Service provided by a third-party vendor to validate that shipping and billing addresses are correct. The current vendor uses basic password authentication, but Universal Containers might switch to a different vendor who uses OAuth. What would allow Universal Containers to switch vendors without updating the code to handle authentication? A. Custom Metadata B. Custom Setting (List) C. Dynamic Endpoint D. Named Credential",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has a Lightning Page with many Lightning Components, some that cache reference data. It is reported that the page does not always show the most current reference data. What can a developer use to analyze and diagnose the problem in the Lightning Page? A. Salesforce Lightning Inspector Actions Tab B. Salesforce Lightning Inspector Event Log Tab C. Salesforce Lightning Inspector Transactions Tab D. Salesforce Lightning Inspector Storage Tab",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company has code to update a Request and Request Lines and make a callout to their external ERP system's REST endpoint with the updated records. [sampleXML/xmlfile-4_1.jpg] The CalloutUtil.makeRestCallout fails with a 'You have uncommitted work pending. Please commit or rollback before calling out' error. What should be done to address the problem? A. Remove the Database.setSavepoint and Database.rollback. B. Change the CalloutUtil.makeRestCallout to an @InvocableMethod method. C. Change the CalloutUtil.makeRestCallout to an @future method. D. Move the CalloutUtil.makeRestCallout method call below the catch block.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Visualforce page contains an industry select list and displays a table of Accounts that have a matching value in their Industry field. <apex:selectList value=\"{!selectedIndustry}\"> <apex:selectOptions values=\"{!industries}\"/> </apex:selectList> When a user changes the value in the industry select list, the table of Accounts should be automatically updated to show the Accounts associated with the selected industry. What is the optimal way to implement this? A. Add an <apex:actionFunction> within the <apex:selectOptions>. B. Add an <apex:actionFunction> within the <apex:selectList>. C. Add an <apex:actionSupport> within the <apex:selectList>. D. Add an <apex:actionSupport> within the <apex:selectOptions>.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "[sampleXML/xmlfile-5_1.jpg] The test method above calls a web service that updates an external system with Account information and sets the Account's Integration_Updated__c checkbox to True when it completes. The test fails to execute and exits with an error: \"Methods defined as TestMethod do not support Web service callouts. \" What is the optimal way to fix this? A. Add Test.startTest() before and Test.setMock and Test.stopTest() after CalloutUtil.sendAccountUpdate. B. Add Test.startTest() and Test.setMock before and Test.stopTest() after CalloutUtil.sendAccountUpdate. C. Add if (!Test.isRunningTest()) around CalloutUtil.sendAccountUpdate. D. Add Test.startTest() before and Test.stopTest() after CalloutUtil.sendAccountUpdate.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer created and tested a Visualforce page in their developer sandbox, but now receives reports that users are encountering ViewState errors when using it in Production. What should the developer ensure to correct these errors? A. Ensure queries do not exceed governor limits. B. Ensure properties are marked as Transient. C. Ensure properties are marked as private. D. Ensure profiles have access to the Visualforce page.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "<lightning:layout multipleRows=\"true\"> <lightning:layoutItem size=\"12\">{!v.account.Name} </lightning:layoutItem> <lightning:layoutItem size=\"12\">{!v.account.AccountNumber} </lightning:layoutItem> <lightning:layoutItem size=\"12\">{!v.account.Industry} </lightning:layoutItem> </lightning:layout> Refer to the component code above. The information displays as expected (in three rows) on a mobile device. However, the information is not displaying as desired (in a single row) on a desktop or tablet. Which option has the correct component changes to display correctly on desktops and tablets? A. <lightning:layout multipleRows=\"true\"> <lightning:layoutItem size=\"12\" mediumDeviceSize=\"6\" largeDeviceSize=\"4\">{!v.account.Name} </lightning:layoutItem> <lightning:layoutItem size=\"12\" mediumDeviceSize=\"6\" largeDeviceSize=\"4\">{!v.account.AccountNumber} </lightning:layoutItem> <lightning:layoutItem size=\"12\" mediumDeviceSize=\"6\" largeDeviceSize=\"4\">{!v.account.Industry} </lightning:layoutItem> </lightning:layout> B. <lightning:layout multipleRows=\"true\"> <lightning:layoutItem size=\"12\" largeDeviceSize=\"4\">{!v.account.Name} </lightning:layoutItem> <lightning:layoutItem size=\"12\" largeDeviceSize=\"4\">{!v.account.AccountNumber} </lightning:layoutItem> <lightning:layoutItem size=\"12\" largeDeviceSize=\"4\">{!v.account.Industry} </lightning:layoutItem> </lightning:layout> C. <lightning:layout multipleRows=\"true\"> <lightning:layoutItem size=\"12\" mediumDeviceSize=\"4\">{!v.account.Name} </lightning:layoutItem> <lightning:layoutItem size=\"12\" mediumDeviceSize=\"4\">{!v.account.AccountNumber} </lightning:layoutItem> <lightning:layoutItem size=\"12\" mediumDeviceSize=\"4\">{!v.account.Industry} </lightning:layoutItem> </lightning:layout> D. <lightning:layout multipleRows=\"true\"> <lightning:layoutItem size=\"12\" mediumDeviceSize=\"6\">{!v.account.Name} </lightning:layoutItem> <lightning:layoutItem size=\"12\" mediumDeviceSize=\"6\">{!v.account.AccountNumber} </lightning:layoutItem> <lightning:layoutItem size=\"12\" mediumDeviceSize=\"6\">{!v.account.Industry} </lightning:layoutItem> </lightning:layout>",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company's support process dictates that any time a Case is closed with a Status of 'Could not fix', an Engineering Review custom object record should be created and populated with information from the Case, the Contact, and any of the Products associated with the Case. What is the correct way to automate this using an Apex trigger? A. An after update trigger that creates the Engineering Review record and inserts it B. A before update trigger that creates the Engineering Review record and inserts it C. An after upsert trigger that creates the Engineering Review record and inserts it D. A before upsert trigger that creates the Engineering Review record and inserts it",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company processes Orders within their Salesforce instance. When an Order's status changes to 'Paid' it must notify the company's order management system (OMS). The OMS exposes SOAP web service endpoints to listen for when to retrieve the data from Salesforce. What is the optimal method to implement this? A. Generate the Enterprise WSDL and use it to make a callout to the OMS. B. Generate the Partner WSDL and use it to make a callout to the OMS. C. Create an Outbound Message that contains the session ID and send it to the OMS. D. Create an Apex trigger and make a callout to the OMS from the trigger.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "[sampleXML/xmlfile-9_1.jpg] Consider the Apex controller above, that is called from a Lightning Aura Component. What is wrong with it? A. Line 1: class must be global B. Lines 1 and 6: class and method must be global C. Line 6: method must be static D. Line 8: method must first serialize the list to JSON before returning",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is trying to decide between creating a Visualforce component or a Lightning component for a custom screen. Which functionality consideration impacts the final decision? A. Does the screen need to be rendered as a PDF? B. Does the screen need to be accessible from the Lightning Experience UI? C. Will the screen make use of a JavaScript framework? D. Will the screen be accessed via a mobile app?",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer wishes to improve runtime performance of Apex calls by caching results on the client. What is the best way to implement this? A. Decorate the server-side method with @AuraEnabled(cacheable=true). B. Set a cookie in the browser for use upon return to the page. C. Call the setStorable() method on the action in the JavaScript client-side code. D. Decorate the server-side method with @AuraEnabled(storable=true).",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is asked to update data in an org based on new business rules. The new rules state that Accounts with the type set to 'Customer' should have a status of 'Active', and Accounts with the type set to 'Prospect' should have a status of 'Pending'. No other changes to data should be made. Which code block will accurately meet the business requirements? A. Map<String, String> statusMap = new Map<String, String>{'Customer'=>'Active', 'Prospect'=>'Pending'} List<Account> accountUpdates = new List<Account>(); for ( Account a : [SELECT Id, Type FROM Account]){ if ( statusMap.containsKey(a.Type) ) { a.Status = a.Type == 'Customer' ? 'Active' : 'Pending'; } accountUpdates.add(a); } update accountUpdates; B. Map<String, String> statusMap = new Map<String, String>{'Customer'=>'Active', 'Prospect'=>'Pending'} List<Account> accountUpdates = new List<Account>(); for ( Account a : [SELECT Id, Type FROM Account WHERE Status IN :statusMap.keySet()]){ a.Status = statusMap.get(a.Type); accountUpdates.add(a); } update accountUpdates; C. List<Account> accountUpdates = new List<Account>(); for ( Account a : [SELECT Id, Type FROM Account]){ if ( String.isNotBlank(a.Type) && a.Type == 'Customer' ){ a.Status = 'Active'; } if ( String.isNotBlank(a.Type) && a.Type == 'Prospect' ){ a.Status = 'Pending'; } accountUpdates.add(a); } update accountUpdades; D. List<Account> accountUpdates = new List<Account>(); for ( Account a : [SELECT Id, Type FROM Account]){ a.Status = a.Type == 'Customer' ? 'Active' : 'Pending'; accountUpdates.add(a); } update accountUpdates;",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a benefit of JavaScript remoting over Visualforce Remote Objects? A. Allows for specified re-render targets B. Does not require any Apex code C. Does not require any JavaScript code D. Supports complex server-side application logic",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Lightning Component functions in preview mode and needs to be used inside a Lightning App Builder page, but it is not available. What change should be applied to the component? A. Expose it in the markup using the implements and access attributes. B. Delete the component, metadata, and Apex controller and recreate them. C. Refresh the sandbox and upgrade it to the latest API version. D. Look for errors in the logic in the JavaScript controller.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Recently a Salesforce org's integration failed because it exceeded the number of allowed API calls in a 24-hour period. The integration handles a near real-time, complex insertion of data into Salesforce. The flow of data is as follows: ✑ The integration looks up Contact records with a given email address and, if found, the integration adds a Task to the first matching Contact it finds. ✑ If a match is not found, the integration looks up Lead records with a given email address and, if found, the integration adds a Task to the first matching Lead it finds. ✑ If a match is not found, the integration will create a Lead and a Task for that newly created Lead. What is one way in which the integration can stay near real-time, but not exceed the number of allowed API calls in a 24-hour period? A. Use the REST API as well as the SOAP API to effectively double the API calls allowed in a 24-hour period. B. Create an Inbound Message that, using Flow, can do all of the logic the integration code was doing. C. Write a custom Apex web service that, given an email address, does all of the logic the integration code was doing. D. Create several Apex InboundEmailHandlers to accept calls from the third-party system, thus bypassing the API limits.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company wants to build a custom Lightning Component that will display a specified Account Field Set and that can only be added to the Account record page. Which design resource configuration should be used? A. <design:component label=\"Account FS Component\"> <design:attribute name=\"fieldSetName\" Label=\"Field Set Name\" /> <sfdc:objects> <sfdc:object>FieldSet</sfdc:object> </sfdc:objects> </design:component> B. <design:component label=\"Account FS Component\"> <design:attribute name=\"fieldSetName\" label=\"Field Set Name\" /> <sfdc:objects> <sfdc:object>Account</sfdc:object> </sfdc:objects> </design:component> C. <design:component label=\"Account FS Component\"> <aura:attribute name=\"fieldSetName\" label=\"Field Set Name\" /> <sfdc:objects> <sfdc:object>FieldSet</sfdc:object> </sfdc:objects> </design:component> D. <design:component label=\"Account FS Component\"> <aura:attribute name=\"fieldSetName\" label=\"Field Set Name\" /> <sfdc:objects> <sfdc:object>Account</sfdc:object> </sfdc:objects> </design:component>",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer created a new trigger that inserts a Task when a new Lead is created. After deploying to production, an outside integration is periodically reporting errors. Which change should the developer make to ensure the integration is not affected with minimal impact to business logic? A. Remove the Apex Class from the Integration User's Profile. B. Use the Database method with allOrNone set to False. C. Use a Try/Catch block after the insert statement. D. Deactivate the Trigger before the Integration runs.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An environment has two Apex Triggers: an after-update trigger on Account and an after-update trigger on Contact. The Account after-update trigger fires whenever an Account's address is updated, and it updates every associated Contact with that address. The Contact after-update trigger fires on every edit, and it updates every Campaign Member record related to the Contact with the Contact's state. Consider the following: A mass update of 200 Account records' addresses, where each Account has 50 Contacts. Each Contact has 1 Campaign Member. This means there are 10,000 Contact records across the Accounts and 10,000 Campaign Member records across the contacts. What will happen when the mass update occurs? A. The mass update will fail, since the two triggers fire in the same context, thus exceeding the number of records processed by DML statements. B. There will be no error, since each trigger fires within its own context and each trigger does not exceed the limit of the number of records processed by DML statements. C. There will be no error, since the limit on the number of records processed by DML statements is 50,000. D. The mass update of Account address will succeed, but the Contact address updates will fail due to exceeding number of records processed by DML statements.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company has many different unit test methods that create Account records as part of their data setup. A new required field was added to the Account and now all of the unit tests fail. What is the optimal way for a developer to fix the issue? A. Add a before insert trigger on Account to set the value of the required field. B. Create a TestDataFactory class that serves as the single place to create Accounts for unit tests and set the required field there. C. Change the required field to be a validation rule that excludes the System Administrator profile. D. Add the required field to the data setup for all of the unit tests.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A user receives the generic \"An internal server error has occurred\" while interacting with a custom Lightning Component. What should the developer do to ensure a more meaningful message? A. Add an onerror event handler to the tag. B. Add an error-view component to the markup. C. Use an AuraHandledException in a try/catch block. D. Use ProcessBuilder to catch the error.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "global with sharing class MyRemoter { public String accountName { get; set; } public static Account account { get; set; } public AccountRemoter() {} @RemoteAction global static Account getAccount(String accountName) { account = [SELECT Id, Name, NumberOfEmployees FROM Account WHERE Name = :accountName]; return account; } } Consider the Apex class above that defines a RemoteAction used on a Visualforce search page. Which code snippet will assert that the remote action returned the correct Account? A. Account a = controller.getAccount('TestAccount'); System.assertEquals( 'TestAccount', a.Name ); B. MyRemoter remote = new MyRemoter(); Account a = remote.getAccount('TestAccount'); System.assertEquals( 'TestAccount', a.Name ); C. MyRemoter remote = new MyRemoter('TestAccount'); Account a = remote.getAccount (); System.assertEquals( 'TestAccount', a.Name ); D. Account a = MyRemoter.getAccount('TestAccount'); System.assertEquals( 'TestAccount', a.Name );",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A custom Visualforce controller calls the ApexPages.addMessage() method, but no messages are rendering on the page. Which component should be added to the Visualforce page to display the message? A. <apex:message for=\"info\"/> B. <apex:facet name=\"messages\" /> C. <apex:pageMessage severity=\"info\" /> D. <apex:pageMessages />",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer is writing code that requires making callouts to an external web service. Which scenario necessitates that the callout be made in an @future method? A. The callouts will be made in an Apex Trigger. B. The callouts will be made in an Apex Test class. C. The callout could take longer than 60 seconds to complete. D. Over 10 callouts will be made in a single transaction.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer wants to call an Apex Server-side Controller from a Lightning Aura Component. What are two limitations to the data being returned by the Controller? (Choose two.) A. A custom Apex Class can be returned, but only the values of public instance properties and methods annotated with @AuraEnabled are serialized and returned. B. Lists of Custom Apex Classes cannot be returned by Apex Controllers called by Lightning Aura Components. C. Basic data types are supported, but defaults, such as maximum size for a number, are defined by the objects that they map to. D. Only Basic data types and sObjects are supported as return types for Apex Controllers called by Lightning Aura Components.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which interface needs to be implemented by a Lightning Component so that it may be displayed in modal dialog by clicking a button on a Lightning Record page? A. force:lightningQuickAction B. lightning:quickAction C. lightning:editAction D. force:lightningEditAction",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Sometimes events on Salesforce need to be handled by an external system due to the scale or type of process being executed. Consider the use case of a user in Salesforce needing to get pricing for an order they are building in Salesforce while on the phone with a customer. The pricing logic already exists in a third-party system. Instead of recreating this logic in Salesforce, it will be leveraged by making a request of the third-party system. The response, in this case the pricing, will be returned and stored back in Salesforce. What is the optimal solution? A. A Visualforce page that can make a real-time Apex callout to display and save the pricing back in Salesforce B. An Apex trigger that upon saving the Order will make a real-time Apex callout, saving the pricing back in Salesforce C. A Process Builder process and Outbound Message to fetch the pricing upon save and store the pricing in Salesforce D. An ETL tool to process batches of newly saved Orders every few minutes to store the pricing back in Salesforce",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are three benefits of using declarative customizations over code? (Choose three.) A. Declarative customizations cannot generate run time errors. B. Declarative customizations will automatically update with each Salesforce release. C. Declarative customizations do not require user testing. D. Declarative customizations are not subject to governor limits. E. Declarative customizations generally require less maintenance.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "@isTest static void testIncrement() { Account acct = new Account(Name = 'Test'); acct.Number_Of_Times_Viewed__c = 0; insert acct; AuditUtil.incrementViewed(acct.Id); Account acctAfter = [SELECT Number_Of_Times_Viewed__c FROM Account WHERE Id = :acct.Id][0] System.assertEquals(1, acctAfter.Number_Of_Times_Viewed__c); } The test method above calls an @future method that increments the Number_of_Times_Viewed__c value. The assertion is failing because the Number_of_Times_Viewed__c equals 0. What is the optimal way to fix this? A. Change the initialization to acct.Number_Of_Times_Viewed__c = 1. B. Add Test.startTest() before and Test.stopTest() after AuditUtil.incrementViewed. C. Add Test.startTest() before and Test.stopTest() after insert acct. D. Change the assertion to System.assertEquals(0, acctAfter.Number_Of_Times_Viewed__c).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company represents their customers as Accounts that have an External ID field called Customer_Number__c. They have a custom Order (Order__c) object, with a Lookup to Account, to represent Orders that are placed in their external order management system (OMS). When an order is fulfilled in the OMS, a REST call to Salesforce should be made that creates an Order record in Salesforce and relates it to the proper Account. What is the optimal way to implement this? A. Perform a REST GET on the Account and a REST POST to update the Order__c with the Accountג€™s record ID. B. Perform a REST PATCH to upsert the Order__c and specify the Accountג€™s Customer_Number__c in it. C. Perform a REST POST to update the Order__c and specify the Accountג€™s Customer_Number__c in it. D. Perform a REST GET on the Account and a REST PATCH to upsert the Order__c with the Accountג€™s record ID.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company has a native iOS app for placing orders that needs to connect to Salesforce to retrieve consolidated information from many different objects in a JSON format. Which is the optimal method to implement this in Salesforce? A. Apex REST Web Service B. Apex SOAP Web Service C. Apex SOAP Callout D. Apex REST Callout",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has a custom object, Sales Demo Request, that has a lookup to an Opportunity. It is required that a Sales Demo Request record be created when an Opportunity's Probability is greater than 50%. What is the optimal way to automate this? A. Use an Apex Trigger on Opportunity. B. Build a Flow on Opportunity. C. Create a Workflow on Opportunity. D. Build a Process on Opportunity.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company represents their customers as Accounts in Salesforce. All customers have a unique Customer_Number__c that is unique across all of the company's systems. They also have a custom Invoice__c object, with a Lookup to Account, to represent invoices that are sent out from their external system. This company wants to integrate invoice data back into Salesforce so Sales Reps can see when a customer is paying their bills on time. What is the optimal way to implement this? A. Ensure Customer_Number__c is an External ID and that a custom field Invoice_Number__c is an External ID and Upsert invoice data nightly. B. Query the Account Object upon each call to insert invoice data to fetch the Salesforce ID corresponding to the Customer Number on the invoice. C. Create a cross-reference table in the custom invoicing system with the Salesforce Account ID of each Customer and insert invoice data nightly. D. Use Salesforce Connect and external data objects to seamlessly import the invoice data into Salesforce without custom code.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Apex trigger creates an Order__c record every time an Opportunity is won by a Sales Rep. Recently the trigger is creating two orders. What is the optimal method for a developer to troubleshoot this? A. Set up debug logging for every Sales Rep, then monitor the logs for errors and exceptions. B. Turn off all Workflow Rules, then turn them on one at time to see which one causes the error. C. Add system.debug() statements to the code and use the Developer Console logs to trace the code. D. Run the Apex Test Classes for the Apex trigger to ensure the code still has sufficient code coverage.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company wants to incorporate a third-party web service to set the Address fields when an Account is inserted, if they have not already been set. What is the optimal way to achieve this? A. Create a Process, call an Apex @future(callout=true) method from it, and make the callout from that Apex method. B. Create a Process, call an Apex @InvocableMethod from it, and make the callout from that Apex method. C. Create an after insert trigger, call an Apex @InvocableMethod method from it, and make the callout from that Apex method. D. Create an after insert trigger, call an @future(callout=true) method from it, and make the callout from that Apex method.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement should be used to allow some of the records in a list of records to be inserted if others fail to be inserted? A. insert (records, false) B. Database.insert(records, false) C. Database.insert(records, true) D. insert records",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two relationship queries use the proper syntax? (Choose two.) A. SELECT Id, Name, Account__r.Name FROM Contact WHERE Account__r.Industry = 'Media' B. SELECT Name, (SELECT LastName FROM Contacts__r) FROM Account C. SELECT Name, (SELECT LastName FROM Contacts) FROM Account D. SELECT Id, Name, Account.Name FROM Contact WHERE Account.Industry = 'Media'",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer built a Component to be used at the front desk for quests to self-register upon arrival at a kiosk. The developer is now asked to create a Component for the Utility Tray to alert Users whenever a guest has arrived at the front desk. What should be used? A. Application Event B. DML Operation C. Component Event D. ChangeLog",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Given a list of Opportunity records named opportunityList, which code snippet is best for querying all Contacts of the Opportunity's Account? A. List <Contact> contactList = new List <Contact>(); for(Opportunity o : opportunityList){ Account a = [SELECT Id, (SELECT Id FROM Contacts) FROM Account WHERE Id = :o.AccountId] contactList.addAll(a.Contacts); ) B. List <Contact> contactList = new List <Contact>(); Set <Id> accountIds = new Set <Id> (); for (Opportunity o : opportunityList){ contactIds.add(o.ContactId); } for(Contact c : [SELECT Id FROM Contact WHERE Id IN :contactIds]){ contactList.add(c); } C. List <Contact> contactList = new List <Contact>(); Set <Id> accountIds = new Set <Id> (); for(Opportunity o : opportunityList){ accountIds.add(o.AccountId); } for(Account a : [SELECT Id, (SELECT Id FROM Contacts) FROM Account WHERE Id IN :accountIds]){ contactList.addAll(a.Contacts); } D. List <Contact> contactList = new List <Contact>(); for ( Contact c : [SELECT Id FROM Contact WHERE AccountId IN :opportunityList.AccountId] ){ contactList.add(c); }",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Apex Trigger creates a Contract record every time an Opportunity record is marked as Closed and Won. This trigger is working great, except (due to a recent acquisition) historical Opportunity records need to be loaded into the Salesforce instance. When a test batch of records is loaded, the Apex Trigger creates Contract records. A developer is tasked with preventing Contract records from being created when mass loading the Opportunities, but the daily users still need to have the Contract records created. What is the most extendable way to update the Apex Trigger to accomplish this? A. Use a Hierarchy Custom Setting to disable the Trigger for the user who does the data loading. B. Use a List Custom Setting to disable the Trigger for the user who does the data loading. C. Add the Profile Id of the user who does the data loading to the Trigger so the Trigger wonג€™t fire for this user. D. Add a Validation Rule to the Contract to prevent Contract creation by the user who does the data loading.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "trigger AssignOwnerByRegion on Account ( before insert, before update ) { List<Account> accountList = new List<Account>(); for( Account anAccount : trigger.new ) { Region__c theRegion = [ SELECT Id, Name, Region_Manager__c FROM Region__c WHERE Name = :anAccount.Region_Name__c ]; anAccount.OwnerId = theRegion.Region_Manager__c; accountList.add( anAccount ); } update accountList; } Consider the above trigger intended to assign the Account to the manager of the Account's region. Which two changes should a developer make in this trigger to adhere to best practices? (Choose two.) A. Use a Map to cache the results of the Region__c query by Id. B. Move the Region__c query to outside the loop. C. Remove the last line updating accountList as it is not needed. D. Use a Map accountMap instead of List accountList.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Example 1: AggregateResult[] groupedResults = [SELECT CampaignId, AVG(Amount) FROM Opportunity GROUP BY CampaignId]; for (AggregateResult ar : groupedResults) { System.debug('Campaign ID' + ar.get('CampaignId')); System.debug('Average amount' + ar.get('expr0')); } Example 2: AggregateResult[] groupedResults = [SELECT CampaignId, AVG(Amount) theAverage FROM Opportunity GROUP BY CampaignId]; for (AggregateResult ar : groupedResults) { System.debug('Campaign ID' + ar.get('CampaignId')); System.debug('Average amount' + ar.get('theAverage')); } Example 3: AggregateResult[] groupedResults = [SELECT CampaignId, AVG(Amount) FROM Opportunity GROUP BY CampaignId]; for (AggregateResult ar : groupedResults) { System.debug('Campaign ID' + ar.get('CampaignId')); System.debug('Average amount' + ar.get.AVG()); } Example 4: AggregateResult[] groupedResults = [SELECT CampaignId, AVG(Amount) theAverage FROM Opportunity GROUP BY CampaignId]; for (AggregateResult ar : groupedResults) { System.debug('Campaign ID' + ar.get('CampaignId')); System.debug ('Average amount' + ar.theAverage); } Which two of the examples above have correct System.debug statements? (Choose two.) A. Example 1 B. Example 2 C. Example 3 D. Example 4",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which method should be used to convert a Date to a String in the current user's locale? A. Date.format B. String.format C. String.valueOf D. Date.parse",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company has a custom object, Order__c, that has a required, unique, external ID field called Order_Number__c. Which statement should be used to perform the DML necessary to insert new records and update existing records in a List of Order__c records? A. upsert orders; B. upsert orders Order_Number__c; C. merge orders Order_Number__c; D. merge orders;",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company uses an external system to manage its custom account territory assignments. Every quarter, millions of Accounts may be updated in Salesforce with new Owners when the territory assignments are completed in the external system. What is the optimal way to update the Accounts from the external system? A. Bulk API B. SOAP API C. Apex REST Web Service D. Composite REST API",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company wants to implement a new call center process for handling customer service calls. It requires service reps to ask for the caller's account number before proceeding with the rest of their call script. Following best practices, what should a developer use to meet this requirement? A. Apex Trigger B. Process Builder C. Flow Builder D. Approvals",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the optimal technique a developer should use to programmatically retrieve Global Picklist options in a Test Method? A. Use the Schema namespace. B. Use a static resource. C. Perform a callout to the Metadata API. D. Perform a SOQL Query.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company has a web page that needs to get Account record information, given its Salesforce record ID, from JavaScript on the page and then display it. Which method of integration is optimal? A. REST API B. Apex SOAP Web Service C. Soap API D. Apex REST Web Service",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A large company uses Salesforce across several departments. Each department has its own Salesforce Administrator. It was agreed that each Administrator would have their own sandbox in which to test changes. Recently, users notice that fields that were recently added for one department suddenly disappear without warning. Also, Workflows that once sent emails and created tasks no longer do so. Which two statements are true regarding these issues and resolution? (Choose two.) A. The administrators are deploying their own Change Sets, thus deleting each otherג€™s fields from the objects in production. B. A sandbox should be created to use as a unified testing environment instead of deploying Change Sets directly to production. C. Page Layouts should never be deployed via Change Sets, as this causes Workflows and Field-level Security to be reset and fields to disappear. D. The administrators are deploying their own Change Sets over each other, thus replacing entire Page Layouts and Workflows in Production.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is writing a Visualforce page that queries accounts in the system and presents a data table with the results. The users want to be able to filter the results based on up to five fields. However, the users want to pick the five fields to use as filter fields when they run the page. Which feature of Apex code is required to facilitate this solution? A. SOSL queries B. describeSObjects() C. Dynamic Schema binding D. REST API",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers uses Big Objects to store almost a billion customer transactions called Customer_Transaction__b. These are the fields on Customer_Transaction__b: Account__c Program__c Points_Earned__c Location__c Transaction_Date__c The following fields have been identified as Index Fields for the Customer_Transaction__b object: Account__c, Program__c, and Transaction_Date__c. Which SOQL query is valid on the Customer_Transaction__b Big Object? A. SELECT Account__c, Program__c, Transaction_Date__c FROM Customer_Transaction__b WHERE Account__c = '001R000000302D3' AND Program__c ='Shoppers' AND Transaction_Date__c=2019-05-31T00:00Z B. SELECT Account__c, Program__c, Transaction_Date__c FROM Customer_Transaction__b WHERE Account__c = '001R000000302D3' AND Program__c LIKE 'Shop%' AND Transaction_Date__c=2019-05-31T00:00Z C. SELECT Account__c, Program__c, Transaction_Date__c FROM Customer_Transaction__b WHERE Account__c = '001R000000302D3' AND Program__c INCLUDES ('Shoppers', 'Womens') AND Transaction_Date__c=2019-05-31T00:00Z D. SELECT Account__c, Program__c, Transaction_Date__c FROM Customer_Transaction__b WHERE Account__c = '001R000000302D3' AND Program__c EXCLUDES ('Shoppers', 'Womens') AND Transaction_Date__c=2019-05-31T00:00Z",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Part of a custom Lightning Component displays the total number of Opportunities in the org, which is in the millions. The Lightning Component uses an Apex Controller to get the data it needs. What is the optimal way for a developer to get the total number of Opportunities for the Lightning Component? A. Apex Batch job that counts the number of Opportunity records B. SUM() SOQL aggregate query on the Opportunity object C. SOQL for loop that counts the number of Opportunities records D. COUNT() SOQL aggregate query on the Opportunity object",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company notices that their unit tests in a test class with many methods to create many records for prerequisite reference data are slow. What can a developer to do address the issue? A. Move the prerequisite reference data setup to a TestDataFactory and call that from each test method. B. Move the prerequisite reference data setup to a @testSetup method in the test class. C. Move the prerequisite reference data setup to a static method in the test class and call that from each test method. D. Move the prerequisite reference data setup to the constructor for the test class.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer is asked to build a solution that will automatically send an email to the Customer when an Opportunity stage changes. The solution must scale to allow for 10,000 emails per day. The criteria to send the email should be evaluated after all Workflow Rules have fired. What is the optimal way to accomplish this? A. Use a MassEmailMessage() with an Apex Trigger. B. Use a Workflow Email Alert. C. Use an Email Alert with Process Builder. D. Use a SingleEmailMessage() with an Apex Trigger.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "UC Loans is a small company with a part time Salesforce administrator. UC Loans wants to create a Loan__c record whenever an Opportunity is won. What is the optimal solution for UC Loans to accomplish this? A. Process Builder B. Quick Action C. Workflow Rule D. Apex Trigger",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer needs to send Account records to an external system for backup purposes. The process must take a snapshot of Accounts as they are saved and then make a callout to a RESTful web service. The web service can only receive, at most, one record per call. Which feature should be used to implement these requirements? A. @future B. Queueable C. Process Builder D. Workflow",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer gets an error saying 'Maximum Trigger Depth Exceeded'. What is a possible reason to get this error message? A. The SOQL governor limits are being hit. B. A process Builder is running that sends mass emails. C. There are numerous DML operations in the trigger logic. D. A trigger is recursively invoked more than 16 times.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An org has a requirement that an Account must always have one and only one Contact listed as Primary. So selecting one Contact will de-select any others. The client wants a checkbox on the Contact called 'Is Primary' to control this feature. The client also wants to ensure that the last name of every Contact is stored entirely in uppercase characters. What is the optimal way to implement these requirements? A. Write an after update trigger on Contact for the Is Primary logic and a separate before update trigger on Contact for the last name logic. B. Write a Validation Rule on the Contact for the Is Primary logic and a before update trigger on Contact for the last name logic. C. Write an after update trigger on Account for the Is Primary logic and a before update trigger on Contact for the last name logic. D. Write a single trigger on Contact for both after update and before update and callout to helper classes to handle each set of logic.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is trying to access org data from within a test class. Which sObject type requires the test class to have the (seeAllData=true) annotation? A. Report B. User C. Profile D. RecordType",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The progress of an apex job queued is using the System.enqueueJob method and needs to be monitored. Which options are valid? (Choose two.) A. Use the Apex Jobs page in setup B. Query the Queueable Apex record C. Query the AsyncApexJob record D. Use the Scheduled Jobs page in setup",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which are relevant practices while analyzing the timeline of different types of transactions in the execution overview panel? (Choose two.) A. Log lines in the execution log panel can be analyzed for details about specific events B. The performance tree should be use to analyze events further starting from the one that take the least amount of time C. The execution tree can be used with the execution log to filter and get specific information about events D. Multiple short bursts of Apex events should be analyzed since they can add up to a significant amount of time",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer is writing a complex application involving triggers, workflow rules, Apex classes, and processes. The developer needs to carefully consider the order of execution when developing the application. 1. Before Triggers 2. After Triggers 3. Post commit logic such as sending email 4. DML committed to the database 5. Workflow rules 6. Roll-up summary calculations In what order do the following operations execute? A. 1, 2, 5, 6, 4, 3 B. 1, 5, 6, 2, 4, 3 C. 1, 2, 4, 5, 6, 3 D. 1, 6, 5, 2, 4, 3",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer has been asked to create code that will meet the following requirements: Receives input of: Map<Id, Project_c), List<Account> Performs a potentially long-running callout to an outside web service Provides a way to confirm that the process executed successfully Which asynchronous feature should be used? A. @future (callout=true) B. Database.AllowCallouts interface C. Schedulable interface D. Queueable interface",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer wants to retrieve and deploy metadata, perform simple CSV export of query results, and debug Apex REST calls by viewing JSON responses. Which tool should the developer use? A. Developer Console B. Force.com Migration Tool C. Workbench D. Force.com IDE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is a best practice when unit testing a controller? (Choose two.) A. Simulate user interaction by leveraging Test.setMock() B. Verify correct references by using getURL() C. Access test data by using seeAllData=true D. Set query parameters by using getParameters().put",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What Visualforce tag can be used to display custom messages in pages using the Salesforce UI styling for errors, warnings, and other types of messages? A. <apex:customMessage> B. <apex:error> C. <apex:message> D. <apex:pageMessage>",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is working on code that requires a call to an external web service from a batch. How should the developer enable this functionality? A. Implement a custom System.CalloutException class B. Include Database.AllowCallout() in the class definition C. Implement an @future method for the callout, and invoke it from the batch D. Specify \"callout=true\" in the batch implementation",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer must create a custom pagination solution for accessing approximately 2000 records and displaying 50 records on each page. Data from Salesforce will be accessed via an API and not via Apex. How can the developer meet these requirements? (Choose two.) A. Use a StandardSetController B. Use CURSOR 50 in SOQL queries C. Use OFFSET in SOQL queries D. Use LIMIT 50 in SOQL queries",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer must create a way for external partners to submit millions of leads into Salesforce per day. How should the developer meet this requirement? A. Publicly expose a Visualforce page via Force.com Sites B. Create a web service on Heroku that uses Heroku Connect C. Host a Web-to-Lead form on the company website D. Publicly expose an Apex Web Service via Force.com Sites",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which is a valid Apex REST Annotation? (Choose two.) A. @HttpPatch B. @HttpDelete C. @HttpUpsert D. @HttpAction",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer requires that when the billing address field on an Account gets updated, the address field on all its related contact records should reflect the same update. How can this requirement be met with minimal customizations? A. Create an After Trigger on Account to update its related contact records on update B. Create a Workflow Rule on Account to update related child Contact records C. Create a Lightning Process on Account to update related child Contact records D. Create a scheduled batch job that updates all contact address fields based on the related account record",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company requires an external system to be notified whenever an account is updated. trigger AccountTrigger on Account (after update){ for (Account updatedAccount:Trigger.new) { AccountTriggerHelper.notinyxternalSystem(updatedAccount.id); } } public class AccountTriggerHelperfuture(callout=true) { public static void notinyxternalSystem(Id accountId){ Account acc = [Select id, name from Account where accountId = :accountId]; http objectHttp h = new Http(); HttpRequest req = new HttpRequest(); req.setEndpoint('http://example.org/ restService'); req.setMethod('POST'); req.setBody(JSON.serialize(acc)); HttpResponse res = h.send(req); } } What LimitException could the following code trigger? A. System.LimitException: Too many future calls B. System.LimitException: Too many callouts C. System.LimitException: Too many SOQL queries D. System.CalloutException: Callout from triggers are currently not supported",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is using a third-party JavaScript library to create a custom user interface in Visualforce. The developer needs to use JavaScript to get data from a controller method in response to a user action. How can the developer accomplish this? A. Use <apex:actionFunction> to create a JavaScript wrapper for the controller method B. Use the @RemoteAction annotation on the method definition with JavaScript Remoting C. Use the $Controller global variable to access the controller method via JavaScript D. Use <apex:actionSupport> to enable JavaScript support for the controller method",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company exposes a REST web service and wants to establish two-way SSL between Salesforce and the REST web service. A certificate signed by an appropriate certificate authority has been provided to the developer. What modification is necessary on the Salesforce side? (Choose two.) A. Create an entry for the certificate in Certificate and Key Management B. Update the code to use HttpRequest.setClientCertificateName() C. Configure two-factor authentication with the provided certificate D. Update the code to use HttpRequest.setHeader() to set an Authorization header",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a consideration when using bind variables with dynamic SOQL? (Choose two.) A. Dynamic SOQL cannot reference fields on bind variables B. Dynamic SOQL cannot use bind variables C. Bind variables must be public or global D. Bind variables must be in local scope",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer created a custom component to display an HTML table. The developer wants to be able to use the component on different Visualforce Pages and specify different header text for the table. Which tag should the developer use inside the component? A. <apex:variable> B. <apex:define> C. <apex:param> D. <apex:attribute>",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two objects can be inserted in the same transaction? (Choose two.) A. Opportunity and User B. Account and AccountShare C. Case and CaseComment D. Account and Group",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can the DISTANCE and GEOLOCATION functions be used in SOQL queries? (Choose two.) A. To filter results based on distance from a latitude and longitude B. To get the distance results from a latitude and longitude C. To order results by distance from a latitude or longitude D. To group results in distance ranges from a latitude and longitude",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer has created a solution using the SOAP API for authenticating Communities users. What is needed when issuing the login() Call? (Choose two.) A. Organization Id B. Session Id C. Username and Password D. Security Token",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When developing a Visualforce page that will be used by a global organization that does business in many languages and many currencies, which feature should be used? (Choose three.) A. Custom Labels B. convertCurrency() C. Global Labels D. Translation Workbenc E. getLocalCurrency()",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer needs test data for Apex test classes. What can the developer use to provide test data to the test methods? (Choose two.) A. List<sObject> Is = Test.loadData (Lead.sObjectType, 'myTestLeads'); B. myDataFactory.createTestRecords (10) C. Database.createTestRecords (10) D. List<sObject> Is = Test.loadDat (Lead.sObjectType, $Resource + 'myTestLeads');",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "[FIND 'map' IN ALL FIELDS RETURNING Account (Id, Name), Contact, Opportunity, Lead] What is a valid return type for the following SOSL query? A. List<sObject> B. List<List<sObject>> C. List<AggregateResult> D. List<Account>",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What level can a hierarchy custom setting be defined for? (Choose three.) A. Users B. Groups C. Profiles D. Roles E. Organization",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer has created a Visualforce page that uses a third-party JavaScript framework. The developer has decided to supply data to the JavaScript functions using JavaScript Remoting for Apex Controllers. What is the correct syntax to declare a remote method in Apex? (Choose two.) A. @RemoteAction global static String getTable() B. @RemoteAction global String getTable() C. @RemoteAction public static String getTable() D. @RemoteObject global static String getTable()",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which API can be used to execute unit tests? (Choose three.) A. Streaming API B. Test API C. Tooling API D. SOAP API E. Metadata API",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement is true about using ConnectApi namespace (also called Chatter in Apex)? (Choose two.) A. Chatter in Apex methods honor the 'with sharing' and 'without sharing' keywords B. Chatter in Apex operations are synchronous, and they occur immediately C. Chatter in Apex methods do not run in system mode; they run in the context of the current user D. Many test methods related to Chatter in Apex require the IsTest (SeeAllData=true) annotation",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer receives a LimitException: Too many query rows: 50001 error when running code. What debugging approach using the Developer Console provides the fastest and most accurate mechanism to identify a specific component that may be returning an unexpected number of rows? A. Count the number of Row Limit warning messages in the Debug Logs B. Add System.debug(System.getQueryRows()) to the code to track SOQL usage C. Filter the Debug Log on SOQL_EXECUTE_END statements to track the results of each SOQL Query D. Use the Execution Overview to see the number of rows returned by each Executed Unit",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is writing a Visualforce page to display a list of all of the checkbox fields found on a custom object. What is the recommended mechanism the developer should use to accomplish this? A. Schema Class B. Apex API C. Schema Builder D. Metadata API",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer has created a Team Member sObject that has a Master-Detail relationship to a Project sObject and a Lookup relationship to the User sObject. The developer must ensure that a User listed on a Team Member record has Read-Write access to the parent Project record. How can the developer accomplish this if the Project sObject has a Private sharing model and thousands of Project records? A. Create a Controller that uses the Without Sharing keyword B. Create a Criteria-Based Sharing Rule on the Project sObject C. Create a Team Member Trigger that inserts Project_Share records D. Create a Project Sharing Rule that shares to the Team Member Group",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "1 Contact con = new Contact( LastName ='Smith', Department = 'Admin') 2 insert con; 3 Contact insertedContact=[select Name from Contact where id=:con.Id]; 4 Savepoint sp_admin = Database.setSavepoint(); 5 con.Department = 'HR'; 6 update con; 7 Database.rollback(sp_admin); 8 System.debug(Limits.getDmlStatements()); Given the following code, what value will be output in the logs by line #8? A. 5 B. 3 C. 4 D. 2",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a recommended practice with regard to the Apex CPU limit? (Choose two.) A. Optimize SOQL query performance B. Use Map collections to cache sObjects C. Avoid nested Apex iterations D. Reduce view state in Visualforce pages",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer wants to create a Visualforce page that allows a user to search for a given account by Name. If the account is found, the account details should be populated on screen. If no account is found, an error message should be displayed to the user. How can this be accomplished? (Choose two.) A. Use the (apex: information) tag to display the error message B. Use the ApexPages.addMessage() method to add the error message C. Use the <apex:pageMessages> tag to display the error message D. Use the account.addError() method to add the error message",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer has built a multi-page wizard using a single Custom Controller to query and update data. Users are complaining that the pages are loading slowly. What will improve performance? (Choose three.) A. Reducing the view state B. Using actionRegion and rerender C. Turning off the standard stylesheet D. Setting the Apex Page attribute cache=true E. Using selective queries",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer writes the following Apex trigger so that when a Case is closed, a single Survey record is created for that Case. The issue is that multiple Survey_c records are being created per Case. trigger CaseTrigger on Case (after insert, after update){ List<Survey_c> createSurveys = new List<Survey_c>(); for (Case c : trigger.new){ if (c.IsClosed && (trigger.isInsert II trigger.isUpdate && trigger.oldMap.get(c.Id).IsClosed == false)){ createSurveys.add(new Survey_c(Case_c = c.Id)); } } insert createSurveys; } What could be the cause of this issue? A. A user is creating the record as Closed B. A workflow rule is firing with a Create Task action C. A workflow rule is firing with a Field Update action D. A user is editing the record multiple times",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a potential design issue with the following code? trigger accountTrigger on Account (before update){ Boolean processOpportunity = false; List<opportunity> opptysClosedLost = new List<opportunity>() List<opportunity> IstAllOpp = [select StageName from Opportunity where accountId IN :Trigger.newMap.keySet()]; if(!IstAllOpp.isEmpty()) processOpportunity = true; while(processOpportunity) { for(opportunity o : IstAllOpp) if(o.StageName == 'Closed - Lost') opptysClosedLost.add(o); processOpportunity = false; if(!opptysClosedLost.isEmpty()) delete opptysClosedLost; A. SOQL could be avoided by creating a formula field for StageName in Account from the related Opportunity B. The code will result in a System.LimitException : Too many script statements error C. The code will result in a System.DmlException:Entity_is_Deleted error D. The code will result in a System.LimitException: Apex CPU time limit exceeded error",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The Contact object has a custom field called \"Zone.\" Its data type is \"Text\" and field length is 3. What is the outcome after executing the following code snippet in the org? List<Contact> contactsToBeInserted=new List<Contact>(); Contact contactInstance= new Contact(LastName='Smith', Department='Tech', Zone_c='IAD'); contactsToBeInserted.add(contactInstance); contactInstance= new Contact (LastName='Sm1th', Department='Tech', Zone_c='PITT'); contactsToBeInserted.add(contactInstance); Database.insert (contactsToBeInserted,true); A. Both inserts succeed and the contact record that has the Zone value of 'PI'I'I' is set to NULL B. A partial insert succeeds and the contact record that has the Zone value 'IAD' is inserted C. Both inserts succeed and the contact record that has the Zone value of 'PITT' is truncated D. An unhandled DML exception is thrown and no contact records are inserted",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement is true regarding the use of user input as part of a dynamic SOQL query? A. Free text input should not be allowed, to avoid SOQL injection B. The String.format() method should be used to prevent injection C. Quotes should be escaped to protect against SOQL injection D. The string should be URL encoded by the input form to prevent errors",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer has written the following method: static void processList(List<sobject> input){ Which code block can be used to call the method? A. processList (acc) B. processList ([FIND 'Acme\" 'RETURNING Account]) C. processList([SELECT Id, Name FROM sObject WHERE Type = 'Account']) D. for Account acc : [SELECT Id, Name FROM Account])",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to design a custom object that will be integrated into a back-end system. What should the developer do to ensure good data quality and to ensure that data imports, integrations, and searches perform well? (Choose two.) A. Configure a custom field as unique B. Configure a custom field as indexed C. Configure a custom field as external ID D. Configure a custom field as Salesforce ID",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer encounters an error that states that the Apex heap size is exceeded. Which technique may reduce heap size? A. Add the transient keyword to the variable definition B. Move the variable definition inside the scope of the function C. Use static variables instead of instance variables D. Use SOQL for loops instead of standard SOQL queries",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer has a Debug method within a class, which is invoked hundreds of times. What is the optimal functionality in the Developer Console to count the number of calls made to the method? A. The \"Execution Log\" Panel B. The \"Execution Stack\" Panel C. The \"Executed Units\" tab under the Execution Overview Panel D. The \"Execution Tree\" tab under the Stack Tree Panel",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a consideration when testing batch Apex? (Choose two.) A. Test methods must execute the batch with a scope size of less than 200 records B. Test methods must call the batch execute() method once C. Test methods must use the @isTest (SeeAllData=true) annotation D. Test methods must run the batch between Test.startTest() and Test.stopTest()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A custom field Exec_Count_c of type Number is created on an Account object. An account record with value of \"1\" for a: Exec_Count_c is saved. A workflow field update is defined on the Exec_Count_c field, to increment its value every time an account record is created or updated. The following trigger is defined on the account: trigger ExecOrderTrigger on Account (before insert, before update, after insert, after update){ for (Account accountInstance: Trigger.New){ if (Trigger . isBefore){ accountInstance Exec_Count_c += 1; } System. debug (accountInstance.Exec_Count_c); } } A. 1, 2, 3, 3 B. 1, 2, 3, 4 C. 2, 2, 4, 4 D. 2, 2, 3, 3",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is building a Visualforce page that interacts with external services. Which interface should the developer implement to test this functionality? (Choose two.) A. HTTPCalloutMock B. HTTPRequestMock C. HTTPResponseMock D. StaticResourceCalloutMock",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to create a Lightning page for entering Order Information. An error message should be displayed if the zip code entered as part of the Order's shipping address is not numeric. What is a recommended way for the error message be displayed to the end user? A. Use the apex:message tag to display errors B. Use the aura:component tag to display errors C. Use the ui:outputText tag to display errors D. Use the ui:inputDefaultError tag to display errors",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is writing unit tests for the following method: public static Boolean isFreezing(String celsiusTemp){ if(String.isNotBlank(celsiusTemp) && celsiusTemp.isNumeric()) { return Decimal.valueof(celsiusTemp) <= 0; } return null; } Which assertion would be used in a negative test case? A. System.assertEquals(true, isFreezing(null)) B. System.assertEquals (true, isFreezing('0') C. System.assertEquals(null, isFreezing('asdf')) D. System.assertEquals(true, isFreezing('IOO'))",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "During the order of execution of a Visualforce page GET request, what happens after this step? Evaluate constructors on controllers and extensions A. Evaluate constructors and expressions on custom components B. Create view state if <apex: form> exists C. Send the HTML response to the browser D. Evaluate expressions, action attributes, and method calls",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to create a service that will process an email sent to it and create an account and contact using the contents of the email as data for the records. How might a developer accomplish this requirement? A. Use the Apex Inbound Email Handler B. Use the Fuel API with Email Data Extensions C. Use Heroku Data Clips to Process Email D. Use Auto-launched Flow and Process Builder",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can Apex be used with Visual Workflow? A. To set the version of a Flow being run B. To start a Flow automatically C. To add custom styling to a Flow D. To control access to a Flow",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An integration user makes a successful login() call via the SOAP API. What can be used in the SOAP header to provide server authorization for subsequent API requests? A. Named Credentials B. Session ID C. OAuth access token D. Security token",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer has a single Visualforce page that allows each user to input up to 1500 sales forecasts and instantly view pivoted forecast calculations. Users are complaining that the page is loading slowly, and they are seeing error messages regarding heap and view state limits. What are three recommendations to optimize page performance? (Choose three.) A. Segregate calculation functionality from input functionality B. Specify the list of sales forecasts as transient C. Implement pagination and reduce records per page D. Create formula fields to compute pivoted forecast calculations E. Use JavaScript Remoting instead of controller actions",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is creating unit tests for code that makes SOAP web service callouts. The developer needs to insert some test data as a part of the unit tests setup. What are three actions to enable this functionality? (Choose three.) A. Surround the callout with Test.startTest(), Test.stopTest() B. Surround the data insertion with Test.startTest(), Test.stopTest() C. Implement the WebServiceMock interface D. Update code to call Test.setMock() E. Implement the HttpCalloutMock interface",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the follow be used together in DML operations (transaction)? (Choose two.) A. Account - AccountShare B. Case - CaseComment C. Opportunity - User D. Account - Order",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer has generated Apex code from a WSDL for an external web service. The web service requires Basic authentication. What code should the developer use to authenticate? A. Http.setHeader ('Authorization' , 'Basic QthZGprjpchVulHNchFtZQ') B. stub.inputHttpHeaders_x.put('Authorization' , 'Basic QthZGprjpchVulHNchFtZQ') C. Http.setAuthentication('Basic QthZGprjpchVulHNchFtZQ') D. stub.authentication.put ('Authorization','Basic QthZGprjpchVulHNchFtZQ')",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the correct syntax for calling a controller action from a Visualforce page and updating part of the page once the action is completed? (Choose two.) A. <apex:commandFunction action=\"{!Save}\" value=\"Save\" rendered=\"thePageBlock\"/> B. <apex:actionFunction action=\"{!Save}\" name=\"Save\" rerender=\"thePageBlock\"/> C. <apex:commandButton action=\"{!Save}\" value=\"Save\" redraw=\"thePageBlock\"/> D. <apex:actionSupport action=\"{!Save} \" event=\"onchange\" rerender=\"thePageBlock\"/>",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Employee_c is a Child object of Company_c. The Company_c object has an external Id field Company_Id_c. How can a developer insert an Employee_c record linked to Company_c with a Company_Id_c of '999'? A. Employee_c emp = new Employee_c(Name='Developer'); emp.Company_r = '999' insert emp; B. Employee_c emp = new Employee_c(Name='Developer'); emp.Company_c = '999' insert emp; C. Employee_c emp = new Employee_c(Name='Developer'); emp. Company_c = new Company_c(Company_Id_c='999') insert emp; D. Employee_c emp = new Employee_c(Name='Developer'); emp.Company_r = new Company_r(Company_Id_c='999') insert emp;",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer must create a custom pagination solution. While users navigate through pages, if the data is changed from elsewhere, users should still see the cached results first accessed. How can the developer meet these requirements? A. Use @Cache annotation B. Use a StandardSetController C. Use OFFSET in SOQL queries D. Use OFFSET WITH CACHE in SOQL queries",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which use case is an appropriate fit for the @future asynchronous Apex method? (Choose two.) A. A developer has jobs that need larger query results than regular transactions allow B. A developer needs to segregate DML operations and bypass the mixed save DML error C. A developer has long-running jobs with large data volumes that need to be performed in batches D. A developer has long-running methods and needs to prevent delaying an Apex transaction",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer has written an After Update trigger on Account. A workflow rule and field update cause the trigger to repeatedly update the Account records. How should the developer handle the recursive trigger? A. Deactivate the trigger and move the logic into a Process or Flow B. Deactivate the workflow rule to prevent the field update from executing C. Use a static variable to prevent the trigger from executing more than once D. Use a global variable to prevent the trigger from executing more than once",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company wants to create a dynamic survey that navigates users through a different series of questions based on their previous responses. What is the recommended solution to meet this requirement? A. Dynamic Record Choice B. Lightning Process Builder C. Visualforce and Apex D. Custom Lightning Application",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement is true regarding both Flow and Lightning Process? (Choose two.) A. Can use Apex methods with the @InvocableMethod annotation B. Are both server-side considerations in the Order of Execution C. Can use Apex that implements the Process.Plugin interface D. Are able to be embedded directly into Visualforce pages",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer has a page with two extensions overriding the Standard controller for Case. <apex:page standardController=\"Case\" extension=\"CaseExtensionOne,CaseExtension Two\" showHeader=\"false\"> Each extension has a method called Save. The page has a command button as defined: <apex:commandButton value=\"Save\" action=\"{!save}\"/> What will happen when a user clicks the command button? A. All of the three Save methods will be executed B. Save from Case Standard Controller will be executed C. Save from CaseExtensionTwo will be executed D. Save from CaseExtensionOne will be executed",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is a valid request for the following REST method? (Choose two.) @HttpPost global static void myPostMethod(String sl, Integer il, Boolean bl, String 52) A. <request> <sl>my first string</sl> <11>123</il> <32>my second string</32> <b1>false</bl> </request> B. <request> <sl>\"my first string\"</sl> <il>123</il> <sZ>\"my second string\"</32> <bl>false</bl> </request> C. sl\" : \"my first string\", 11\" : \"123\", \"b1\" : \"false\", \"S2\" : \"my second string\" D. il\" : 123, \"S1\" : \"my first string\", \"S2\" : \"my second string\", \"bl\" : false",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer wrote a Visualforce page for Sales Reps to add products to an order. The page takes a URL query parameter, productFamily, which filters the product results. The test method for the filter behavior has an assertion failing due to an incorrect number of results. Why could the test be failing? (Choose two.) A. The test does not call Test.startTest() B. The test does not create product data C. The test is not run by a System Administrator D. The test does not set the current page reference",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer writes the following code: public with sharing class OrderController() public PaqeReference sendOrder() Order_c order = new Order_c insert order; ExternalOrder externalOrder = new ExternalOrder(order); Http h = new Http(); HttpRequest req = new HttpRequest(); req.setEndpoint('https://www.example.org/v1/orders'); req.setMethod('POST'); req.setBody(JSON.serialize(externalOrder)); HttpResponse res = h.send(req); order = (ExternalOrder)JSON.deserialize(res.getBody(),ExternalOrder.class); While testing the code, the developer receives the following error message: System.CalloutException : You have uncommitted work pending What should the developer do? (Choose two.) A. Use the asyncSend() method of the HTTP class to send the request in async context B. Ensure all callouts are completed prior to executing DML statements C. Move the web service callout into an @future method D. Use Database.insert (order, true) to immediately commit any database changes",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the most efficient way in Visualforce to show information based on data filters defined by an end-user for a large volume of data? A. Use the rendered condition in Visualforce to limit data based on data filters B. Use filter conditions in a SOQL query to limit data based on data filters C. Use an Apex controller to refine raw data based on data filters and store the result in a transient variable D. Use an Apex controller to refine raw data based on data filters and store the result in a static variable",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the optimal syntax for adding a link to a case in a Visualforce page? (Choose two.) A. <apex:outputLink value=\"{$URLFOR($Action.Case.Open, case)}\" target=\"blank\"> {Icase.Name} </apex:outputLink> B. <apex:outputLink value=\"/{!case.Id}\" target=\"blank\"> {Icase.Name}</apex:outputLink> C. <apex:outputLink value=\"{!URLFOR($Action.Case.View,case.Id)}\" target=\"blank\">(LIE{!case.Name}</apex:outputLink> D. <apex:outputLink value=\"!viewCase(case.Id)}\" target=\"_blank\">{Icase.Name} </apex:outputLink>",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following standard fields are indexed? (Choose three.) A. Name B. CreatedBy C. SystemModStamp D. LastModifedDdate E. RecordType",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following variables are not transmitted in the view state? (Choose two.) A. Private B. Transient C. Public D. Static",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What tool in the Developer Console contains information on SOQL query Cardinality? A. Checkpoints tab B. Query Editor C. Query Plan Tool D. Log Inspector E. View State Tab",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following elements can be members of a public group? (Choose three.) A. Territories B. Case Teams C. Users D. Roles E. Profiles",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How many Territories can an instance of salesforce have? A. 400 B. 200 C. 1000 D. 100 E. 500",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In which of the following scenarios would it be acceptable to use programmatic sharing instead of declarative sharing? (Choose three.) A. Every record created by sales users needs to be visible to their respective manager B. Poor performance when using native sharing components C. Team functionality is required on custom objects D. There is an existing, external system of truth for user access assignments which will continue to drive access and be integrated with salesforce E. You need to change record access to read/write for all users utilising a lightning component",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following annotations is the right way to invoke a single apex method? A. @InvokableMethod() B. @InvokableAction() C. @InvokableApex()",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Invokable methods accept sObjects as parameters. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The maximum view state size of a visualforce page is __________. A. 1mb B. 256kb C. 165kb D. 65kb E. 135kb",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How long is field history retained? A. 18 Months B. 12 Months C. 24 Months D. 6 Months E. 36 Months",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Choose the correct definition for <apex:pageMessage>. A. Standard Salesforce formatting, throws a specific message on a page B. Standard Salesforce formatting, shows all errors that occur on page. Can add more messages through the \"ApexPages.addMessage\" function C. A single message, without formatting, that can be associated with a specific component on the page D. No formatting; displays all errors on a page",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Choose the correct definition for <apex:messages>. A. Standard Salesforce formatting, throws a specific message on a page B. Standard Salesforce formatting, shows all errors that occur on page. Can add more messages through the \"ApexPages.addMessage\" function C. A single message, without formatting, that can be associated with a specific component on the page D. No formatting; displays all errors on a page",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Choose the correct definition for <apex:message>. A. Standard Salesforce formatting, throws a specific message on a page B. Standard Salesforce formatting, shows all errors that occur on page. Can add more messages through the \"ApexPages.addMessage\" function C. A single message, without formatting, that can be associated with a specific component on the page D. No formatting; displays all errors on a page",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Choose the correct definition for <apex:actionFunction>. A. Allows for controller methods to be called directly from Javascript. Must be encapsulated in <apex:form> tags. Unlike actionSupport, these function<apex:actionPoller>s can be called directly from Javascript code B. Sends an AJAX request according to the time interval you specify. If this ever gets re-rendered, it resets C. Adds AJAX support to another component (e.g. onClick, onMouseUp, onFocus, etc.) D. Can be associated with an AJAX request (actionFunction/actionSupport/actionPoller) and shows content conditionally depending on the status of the request (in progress/complete). Use the \"id\" field to specify name; use \"status\" field on related components to connect them E. Signifies which components should be processed by the server when an AJAX request is generated",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Choose the correct definition for <apex:actionPoller>. A. Allows for controller methods to be called directly from Javascript. Must be encapsulated in <apex:form> tags. Unlike actionSupport, these function<apex:actionPoller>s can be called directly from Javascript code B. Sends an AJAX request according to the time interval you specify. If this ever gets re-rendered, it resets C. Adds AJAX support to another component (e.g. onClick, onMouseUp, onFocus, etc.) D. Can be associated with an AJAX request (actionFunction/actionSupport/actionPoller) and shows content conditionally depending on the status of the request (in progress/complete). Use the \"id\" field to specify name; use \"status\" field on related components to connect them E. Signifies which components should be processed by the server when an AJAX request is generated",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Choose the correct definition for <apex:actionSupport>. A. Allows for controller methods to be called directly from Javascript. Must be encapsulated in <apex:form> tags. Unlike actionSupport, these function<apex:actionPoller>s can be called directly from Javascript code B. Sends an AJAX request according to the time interval you specify. If this ever gets re-rendered, it resets C. Adds AJAX support to another component (e.g. onClick, onMouseUp, onFocus, etc.) D. Can be associated with an AJAX request (actionFunction/actionSupport/actionPoller) and shows content conditionally depending on the status of the request (in progress/complete). Use the \"id\" field to specify name; use \"status\" field on related components to connect them E. Signifies which components should be processed by the server when an AJAX request is generated",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the transaction limit for the number of records for SOQL queries? A. 5,000 B. 20,000 C. 50,000 D. 10,000 E. There is no limit",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the transaction limit for the number of records using QueryLocator? A. 50,000 B. 50,000,000 C. 100,000 D. 5,000,000 E. There is no limit",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the transaction limit for the number of SOSL queries? A. 20 B. 2,000 C. 100 (synchronous), 200 (async) D. 200 (synchronous), 100 (async) E. There is no limit",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the transaction limit for the number of records for SOSL? A. 20 B. 2,000 C. 100 (synchronous), 200 (async) D. 200 (synchronous), 100 (async) E. There is no limit",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the transaction limit for the number of DML statements allowed? A. 20 B. 2,000 C. 100 (synchronous), 200 (async) D. 200 (synchronous), 100 (async) E. 150",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "What is the transaction limit for the number of records per DML statement? A. 5,000 B. 20,000 C. 50,000 D. 10,000 E. There is no limit",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the transaction limit on the number of callouts? A. 100 B. 150 C. 50 D. 200 E. There is no limit",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the transaction limit on the number of @future invocations? A. 100 B. 150 C. 50 D. 200 E. There is no limit",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the transaction limit on the number of Apex jobs added to the queue? A. 100 B. 150 C. 50 D. 200 E. There is no limit",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the transaction limit on the max Salesforce CPU time? A. 100 seconds B. 60 seconds C. 100 seconds (synchronous); 200 seconds (async) D. 10 seconds (synchronous); 60 seconds (async) E. There is no limit",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following object types can be used with a Web Service? A. Maps B. Sets C. Pattern objects D. Matcher objects E. Lists F. Exception objects",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the best way to display field-level error messages in Lightning? A. ui:inputDefaultError B. ui:outputText C. aura:component D. apex:message",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When testing batch classes, what must a developer do? (Choose two.) A. Use seeAllData=true B. Encapsulate code in Test.startTest() and Test.stopTest() C. Call the class' \"execute\" method D. Limit the amount of records you test to < 200",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where in a query can you use Geolocation and Distance? (Choose two.) A. Select clause B. Filter clause C. Order By clause D. Group By clause",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "If you wanted to create a record following the update of another (with data from the source object), what is the most customizable approach? A. Workflow Rule B. Process Builder C. After update Trigger D. Flow",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "If the \"PageReference.setRedirect\" Apex function is set to True, what type of request is made? A. Get request B. Postback request C. If PageReference points to the same controller and subset of extensions, postback request, otherwise get request",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Container needs to integrate with an external system. Every time an Account record is updated to meet certain criteria, a SOAP message must be sent to a third party end-point with the following information: Name, Industry, AccountNumber, and Rating. The lead developer for the org is considering using Workflow rules instead of Apex triggers to fulfill the above requirements. What are three benefits of using Workflow rules as opposed to Apex triggers? (Choose three.) A. A SOAP message can send more than 100 notifications B. Two-way SSL is supported by including a client certificate C. Outbound messages prevent circular changes out-of-the-box D. Retry logic for outbound messages is enabled out-of-the-box E. Tracking outbound message delivery is enabled out-of-the-box",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can a developer efficiently incorporate multiple JavaScript libraries, such as JQuery and MomentJS, in a Lightning component? A. Use JavaScript remoting and script tags B. Use CDNs with script attributes C. Implement the libraries in separate helper files D. Join multiple assets from a static resource",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After a Platform Event is defined in a Salesforce org, events can be published via which two mechanisms? (Choose two.) A. Internal Apps can use Outbound Messages B. External Apps can use the standard Streaming API C. Internal Apps can use Process Builder D. External Apps require a custom Apex web service",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company recently deployed a Visualforce page with a custom controller that has a data grid of information about Opportunities in the org. Users report that they receive a `Maximum view state size limit` error message under certain conditions. According to Visualforce best practice, which three actions should the developer take to reduce the view state? (Choose three.) A. Use the transient keyword in the Apex controller for variables that do not maintain state B. Use the final keyword in the controller for variables that will not change C. Use the private keyword in the controller for variables D. Refine any SOQL queries to return only data relevant to the page E. Use filters and pagination to reduce the amount of data",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement is considered a best practice for writing bulk safe Apex Triggers? A. Add records to collections and perform DML operations against these collections B. Instead of DML statements, use the Database methods with allOrNone set to False C. Add LIMIT 50000 to every SOQL statement D. Perform all DML operations from within a Future Method",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "[sampleXML/xmlfile-98_1.png] Consider the code above. When a user clicks on the Link of a Contact's name, what happens? A. Nothing happens; the commandLink is missing an action attribute B. The current page refreshes, showing the Contactג€™s details C. The outputPanel refreshes, showing the Contactג€™s details D. A new page opens, showing the Contactג€™s details",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which annotation exposes an Apex class as a RESTful web service? A. @AuraEnabled B. @HttpInvocable C. @RestResource D. @RemoteAction",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three Visualforce components can be used to initiate Ajax behavior to perform partial page updates? (Choose three.) A. <apex:actionSupport> B. <apex:commandLink> C. <apex:actionStatus> D. <apex:commandButton> E. <apex:form>",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer is developing a reuseable Aura Component that will reside on an sObject Lightning Page with the following HTML snippet: [sampleXML/xmlfile-99_1.png] How can the component's Controller get the context of the Lightning Page that the sObject is on without requiring additional test coverage? A. Use the getSObjectType() method in an Apex class B. Create a design attribute and configure via App builder C. Set the sObject type as a component attribute D. Add force:hasSobjectName to the implements",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer is tasked by Universal Containers to build out a system to track the container repair process. Containers should be tracked as they move through the repair process, starting when a customer reports an issue and ending when the container is returned to the customer. Which solution meets these business requirements while following best practices? A. Build a mobile application using Platform Events and RFID integration to ensure proper tracking of the containers and keep the customer informed. B. Involve a Salesforce administrator and build out a declarative solution that will be easy to maintain and likely cost less than customized development. C. Build a customized Lightning Application using Application Events to ensure data integrity. D. Develop a new system with automated notification to move the containers through the repair process while notifying the customer that reported the issue.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Salesforce developer is hired by a multi-national company to build a custom Lightning application that shows employees their employment benefits and earned commissions over time. The application must acknowledge and respect the user's locale context for dates, times, numbers, currency, and currency symbols. Which approach should the developer implement to ensure the Lightning application complies with the user's locale? A. Create a Hierarchical custom setting to store user preferences B. Use the $Locale value provider to retrieve the user preferences C. Use the $User global variable to retrieve the user preferences D. Use JavaScript in the componentג€™s controllers to format values",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The Account edit button must be overridden in an org where a subset of users still use Salesforce Classic. The org already has a Lightning Component that will do the work necessary for the override, and the client wants to be able to reuse it. How should a developer implement this? A. Override the edit button for both Lightning and Classic with a Lightning Component B. Override the edit button for both Lightning and Classic with a new Visualforce page C. Override the edit button for Lightning with a Lightning Page, and Classic with a Visualforce page that contains the Lightning Component D. Override the edit button for Lightning with a Lightning Component, and Classic with a Visualforce page that contains the Lightning Component",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A business process requires sending new Account records to an external system. The Account Name, Id, CreatedDate, and Created ById must be passed to the external system in near real-time when an Account is inserted without error. How should a developer achieve this? A. Use a before insert trigger and a Queueable class B. Use a before insert trigger and an @future method C. Use a Process Builder that calls an @InvocableMethod method D. Use a Workflow rule that calls an @InvocableMethod method",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer creates an application event that has triggered an infinite loop. What may have caused this problem? A. The event handler calls a trigger B. The event has multiple handlers registered in the project C. An event is fired ג€˜ontouchendג€™ and is unhandled D. The event is fired from a custom renderer",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A managed package uses a list of country ISO codes and country names as reference data in many different places from within the managed package Apex code. What is the optimal way to store and retrieve the list? A. Store the information in Custom Metadata and query it with SOQL B. Store the information in a List Custom Setting and access it with the getAll() method C. Store the information in a List Custom Setting and query it with SOQL D. Store the information in Custom Metadata and access it with the getAll() method",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "[sampleXML/xmlfile-110_1.png] The test method above tests in Apex trigger that the developer knows will make a lot of queries when a lot of Accounts are simultaneously updated to be customers. The test method fails at the Line 20 because of too many SOQL queries. What is the correct way to fix this? A. Change the DataFactory class to create fewer Accounts so that the number of queries in the trigger is reduced B. Add Test.startTest() before and Test.stopTest() after both Line 7 of the code and Line 20 of the code C. Add Test.startTest() before Line 18 of the code and add Test.stopTest() after line 18 of the code D. Replace most of the Apex Trigger with Process Builder processes to reduce the number of queries in the trigger",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer wants to use an Aura component with a custom action. What should be considered in order to do this? A. A default value must be provided for each component attribute marked as required B. The class ג€slds-modal_ _containerג€ must be added to the top-level element of the component C. The component must implement the flexipage:availableForRecordHome interface D. The componentג€™s JavaScript controller must handle a method on initialization",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers implements a private sharing model for the Convention_Attendee_ _c custom object. As part of a new quality assurance effort, the company created an Event_Reviewer_ _c user lookup field on the object. Management wants the event reviewer to automatically gain Read/Write access to every record they are assigned to. What is the best approach to ensure the assigned reviewer obtains Read/Write access to the record? A. Create a criteria-based sharing rule on the Convention Attendee custom object to share the records to a group of Event Reviewers. B. Create an After Insert trigger on the Convention Attendee custom object, and use Apex Sharing Reasons and Apex Managed Sharing. C. Create criteria-based sharing rules on the Convention Attendee custom object to share the records with the Event Reviewers. D. Create a Before Insert trigger on the Convention Attendee custom object, and use Apex Sharing Reasons and Apex Managed Sharing.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer receives an error when trying to call a global server-side method using the @remoteAction decorator. How can the developer resolve the error? A. Decorate the server-side method with (static=true) B. Change the function signature to be private static C. Decorate the server-side method with (static=false) D. Add static to the server-side method signature",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer must perform a complex SOQL query that joins two objects in a Lightning component. How can the Lightning component execute the query? A. Invoke an Apex class with the method annotated as @AuraEnabled to perform the query B. Use the Salesforce Streaming API to perform the SOQL query C. Create a Process Builder to execute the query and invoke from the Lightning component D. Write the query in a custom Lightning web component wrapper and invoke from the Lightning component",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Consider the following code snippet, depicting an Aura component: [sampleXML/xmlfile-116_1.png] Which two interfaces can the developer implement to make the component available as a quick action? (Choose two.) A. force:hasRecordId B. force:lightningQuickAction C. force:hasSObjectName D. force:lightningQuickActionWithoutHeader",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer is integrating with a legacy on-premise SQL database. What should the developer use to ensure the data being integrated is matched to the right records in Salesforce? A. Formula field B. Lookup field C. External Object D. External Id field",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An org has a requirement that addresses on Contacts and Accounts should be normalized to a company standard by Apex code any time that they are saved. What is the optimal way to implement this? A. Apex trigger on Contact that calls the Account trigger to normalize the address B. Apex triggers on Contact and Account that normalize the address C. Apex trigger on Account that calls the Contact trigger to normalize the address D. Apex triggers on Contact and Account that call a helper class to normalize the address",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company has a custom object, Order__c, that has a custom picklist field, Status__c, with values of `˜New', `˜In Progress', or `˜Fulfilled' and a lookup field, Contact__c, to Contact. Which SOQL query will return a unique list of all the Contact records that have no `˜Fulfilled' Orders? A. SELECT Id FROM Contact WHERE Id NOT IN (SELECT Id FROM Order__c WHERE Status__c = ג€˜Fulfilledג€™) B. SELECT Contact__c FROM Order__c WHERE Status__c <> ג€˜Fulfilledג€™ C. SELECT Id FROM Contact WHERE Id NOT IN (SELECT Contact__c FROM Order__c WHERE Status__c = ג€˜Fulfilledג€™) D. SELECT Contact__c FROM Order__c WHERE Id NOT IN (SELECT Id FROM Order__c Where Status__c = ג€˜Fulfilledג€™)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer wrote an Apex class to make several callouts to an external system. If the URLs used in these callouts will change often, which feature should the developer use to minimize changes needed to the Apex class? A. Remote Site Settings B. Session Id C. Named Credentials D. Connected Apps",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers stores user preferences in a Hierarchy Custom Setting, User_Prefs_c, with a Checkbox field, Show_Help_c. Company-level defaults are stored at the organizational level, but may be overridden at the user level. If a user has not overridden preferences, then the defaults should be used. How should the Show_Help_c preference be retrieved for the current user? A. Boolean show = User_Prefs__c.getValues(UserInfo.getUserId()).Show_Help__c; B. Boolean show = User_Prefs__c.getInstance().Show_Help__c; C. Boolean show = User_Prefs__c.Show_Help__c; D. Boolean show = User_Prefs__c.getValues().Show_Help__c;",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "There are user complaints about slow render times of a custom data table within a Visualforce page that loads thousands of Account records at once. What can a developer do to help alleviate such issues? A. Use the transient keyword in the Apex code when querying the Account records B. Use JavaScript remoting to query the accounts C. Use the standard Account List controller and implement pagination D. Upload a third-party data table library as a static resource",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Customer billing data must be added and updated into Salesforce from a remote system on weekly basis. Additionally, customer activity information must be extracted from Salesforce and put it into an on-premises data warehouse on a weekly basis. Which approach should be used to import data into Salesforce and export data out of Salesforce, taking into consideration that these imports and exports can interfere with end-user operations during business hours and involve large amounts of data? A. Batch Apex, where Salesforce pushes data to and pulls data from the remote systems B. Replication via third-party ETL to push data into Salesforce and pull data out in batches C. Salesforce Connect to push data to and pull data from the remote systems D. Call-in directly from each remote system to Salesforce APIs to push and pull the data",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company needs to automatically delete sensitive information after seven years. This could delete almost a million records every day. How can this be achieved? A. Use aggregate functions to query for records older than seven years, and then delete the AggregateResult objects B. Perform a SOSL statement to find records older than 7 years, and then delete the entire result set C. Schedule a batch Apex process to run every day that queries and deletes records older than seven years D. Schedule an @future process to query records older than seven years, and then recursively invoke itself in 1,000 record batches to delete them",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An org contains two custom objects: Building__c and Office__c. Office__c has a Lookup field to Building__c. A developer is asked to automatically populate the Number_of_Offices__c field on the Building__c object with the count of related Office__c records anytime an Office__c record is created or deleted. The developer cannot modify the field types. Which solutionmeets the requirements? A. Flow B. Workflow C. Apex Trigger D. Process Builder",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which scenario requires a developer to use an Apex callout instead of Outbound Messaging? A. The target system uses a REST API. B. The callout needs to be asynchronous. C. The target system uses a SOAP API. D. The callout needs to be invoked from a Workflow Rule.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer has a requirement to query three fields (Id, Name, Type) from an Account and First and Last names for all Contacts associated with the Account. Which option is the preferred optimized method to achieve this for the Account named ‘Ozone Electronics’? A. Account a = [SELECT ID, Name, Type FROM Account WHERE name=‘Ozone Electronics’]; list lContacts = [SELECT firstname, lastname FROM Contact WHERE accounted=:a.ID]; B. Account a = [SELECT ID, Name, Type, (SELECT FirstName, LastName FROM Contacts) FROM Account WHERE name=‘Ozone Electronics’ LIMIT 1]; C. list lContacts = new list(); for (Contact c :[SELECT firstname, lastname, Account.Name, Account.ID, Account.Type FROM Contact WHERE Account.Name=‘ozone electronics’]) ( lContacts.add(c); ) D. list lAccounts = [SELECT ID, Name, Type FROM Account JOIN (SELECT ID, firstname, lastname FROM Contact WHERE contact.account.name = ‘ozone electronics’)];",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Just prior to a new deployment, the Salesforce Administrator, who configured a new order fulfillment process feature in a developer sandbox, suddenly left the company. As a part of the UAT cycle, the users had fully tested all of the changes in the sandbox and signed off on them; making the Order fulfillment feature ready for its go-live in the production environment. Unfortunately, although a Change Set was started, it was not completed by the former administrator. A developer is brought in to help finish the deployment. What should the developer do to identify the configuration changes that need to be moved into production? A. In Salesforce setup, look at the last modified date for every object to determine which should be added to the Change Set. B. Leverage the Setup Audit Trail to review the changes made by the departed Administrator and identify which changes should be added to the Change Set. C. Set up Continuous Integration and a Git repository to automatically merge all changes from the sandbox metadata with the production metadata. D. Use the Metadata API and a supported development IDE to push all of the configuration from the sandbox into production to ensure no changes are lost.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company has the Lightning Component above that allows users to click a button to save their changes and redirects them to a different page. Currently, when the user hits the Save button the records are getting saved, but they are not redirected. Which three techniques can a developer use to debug the JavaScript? (Choose three.) A. Enable Debug Mode for Lightning components for the user. B. Use console.log() messages in the JavaScript. C. Use Developer Console to view debug log. D. Use the browser’s dev tools to debug the JavaScript. E. Use Developer Console to view checkpoints.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Salesforce instance at Universal Containers currently integrates with a third-party company to validate mailing addresses via REST services. The third-party address verification system recently changed endpoint URLs for all their services from https://th-address-service.3pc.com to https://plc1-mailservice.3pc.com. Everything else remained the same. The developer updated code to reflect this endpoint change, but the mailing address validation service stopped working after the change. What else should be done to complete this web service endpoint change? A. Create a new Remote Site for the new endpoint URL. B. Use a Custom Setting with the new endpoint instead of hard coding the URL. C. Test the callout properly using HttpCalloutMock. D. Add web service IP addresses to Trusted IP Ranges in the Network Access security controls settings.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which tag should a developer use to display different text while an is executing versus not executing? A. B. C. D.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A corporation has many different Salesforce orgs, with some different objects and some common objects, and wants to build a single Java application that can create, retrieve, and update common object records in all of the different orgs. Which method of integration should the application use? A. SOAP API with the Partner WSDL B. SOAP API with the Enterprise WSDL C. Apex REST Web Service D. Metadata API",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A lead developer is creating tests for a Lightning web component. The component re-renders when a property called bypassSelection changes its value. What should the developer use to test that the component re-renders successfully when the property changes? A. Window.setInterval() B. Window.setState() C. dispatchEvent (new CustomEvent(‘bypassSelection’)) D. Promise.resolve()",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer is tasked with creating an application-centric feature on which end-users can access and update information. This feature must be available in Lightning Experience while working seamlessly in multiple device form factors, such as desktops, phones, and tables. Additionally, the feature must support Addressable URL Tabs and interact with the Salesforce Console APIs. What are two approaches a developer can take to build the application and support the business requirements? (Choose two.) A. Create the application using Lightning Web Components wrapped in Aura Components. B. Create the application using Aura Components wrapped in Lightning Web Components. C. Create the application using Lightning Experience Builder. D. Create the application using Aura Components.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Apex trigger and Apex class increment a counter, Edit_Count_c, any time that the Case is changed. A new process on the Case object was just created in production for when a Case is created or updated. Since the process was added, there are reports that the Edit_Count_c is being incremented by more than one on Case edits. Which change in the Apex code will fix the problem? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company wants to run different logic based on an Opportunity’s record type. Which code segment handles this request and follows best practices? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company has a custom object, Request_c, that has a checkbox field, Completed_c, and a Lookup to Opportunity, Opportunity_c. Which SOQL query will get a unique list of all of the Opportunity records that have a Completed Request? A. SELECT Opportunity_c FROM Request_c WHERE Id IN (SELECT Id FROM Request_c Where Completed_c = true) B. SELECT Opportunity_c FROM Request_c WHERE Completed_c = true C. SELECT Id FROM Opportunity WHERE Id IN (SELECT Id FROM Request_c WHERE Completed = true) D. SELECT Id From Opportunity WHERE Id IN (SELECT Opportunity_c FROM Request_c WHERE Completed_c = true)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The Account edit button must be overridden in an org where a subset of users still uses Salesforce Classic. The org already has a Lightning Component that will do the work necessary for the override, and the client wants to be able to reuse it. How should a developer implement this? A. Override the edit button for both Lightning and Classic with a Lightning Component B. Override the edit button for both Lightning and Classic with a new Visualforce page C. Override the edit button for Lightning with a Lightning Page, and for Classic, override the edit button with a Visualforce page that contains the Lightning Component D. Override the edit button for Lightning with a Lightning Component, and for Classic, override the edit button with a Visualforce page that contains the Lightning Component",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer creates a Lightning web component to allow a Contact to be quickly entered. However, error messages are not displayed. Which component should the developer add to the form to display error messages? A. lightning-messages B. aura:messages C. lightning-error D. apex:messages",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the code snippet below: As part of an integration development effort, a developer is tasked to create an Apex method that solely relies on the use of foreign identifiers in order to relate new contact records to existing Accounts in Salesforce. The account object contains a field marked as an external ID, the API Name of this field is Legacy_Id_c. What is the most efficient way to instantiate the parentAccount variable on line 02 to ensure the newly created contact is properly related to the Account? A. Account parentAccount = new Account(Legacy_Id_c = externalIdentifier); B. Account parentAccount = [SELECT Id FROM Account WHERE Legacy_Id_c = :externalIdentifier].Id; C. Account parentAccount = [SELECT Id FROM Account WHERE Legacy_Id_c = :externalIdentifier]; D. Account parentAccount = new Account(); parentAccount.Id = externalIdentifier;",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In an organization that has multi-currency enabled, a developer is tasked with building a Lightning Component that displays the top ten Opportunities most recently accessed by the logged in user. The developer must ensure the Amount and LastModifiedDate field values are displayed according to the user’s locale. What is the most effective approach to ensure values displayed respect the user’s locale settings? A. Use a wrapper class to format the values retrieved via SOQL. B. Use the FORMAT() function in the SOQL query. C. Use the FOR VIEW clause in the SOQL query. D. Use REGEX expressions to format the values retrieved via SOQL.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An org has a requirement that the Shipping Address on the Account must be validated by a third-party web service, before the Account is allowed to be inserted. This validation must happen in real-time before the account is inserted into the system. Additionally, the developer wants to prevent the consumption of unnecessary SME statements. What is the optimal way to meet this requirement? A. Make a callout to the web service from a custom Visualforce controller. B. Make a callout to the web service from a before insert trigger. C. Make a callout to the web service from a standard Visualforce controller. D. Make a callout to the web service from an after insert trigger.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three approaches should a developer implement to obtain the best performance for data retrieval when building a Lightning web component? (Choose three.) A. Use (Cacheable=true) whenever possible. B. Use the Lightning Data Service. C. Use layoutTypes: [‘Full’] to display a set of fields. D. Use lazy load for occasionally accessed data. E. Use getRecordUi to obtain metadata.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two scenarios require an Apex method to be called imperatively from a Lightning web component? (Choose two.) A. Calling a method that makes a web service callout B. Calling a method that is not annotated with cacheable=true C. Calling a method with the click of a button D. Calling a method that is external to the main controller for the Lightning web component",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the code snippet below: A custom object called Credit_Memo_c exists in a Salesforce environment. As part of a new feature development that retrieves and manipulates this type of record, the developer needs to ensure race conditions are prevented when a set of records are modified within an Apex transaction. In the preceding Apex code, how can the developer alter the query statement to use SOQL features to prevent race conditions within a transaction? A. [Select Id, Name, Amount_c FROM Credit_Memo_c WHERE Customer_Id_c = :customerId LIMIT 50 FOR VIEW] B. [Select Id, Name, Amount_c FROM Credit_Memo_c WHERE Customer_Id_c = :customerId LIMIT 50 FOR UPDATE] C. [Select Id, Name, Amount_c FROM Credit_Memo_c WHERE Customer_Id_c = :customerId USING SCOPE LIMIT 50] D. [Select Id, Name, Amount_c FROM Credit_Memo_c WHERE Customer_Id_c = :customerId LIMIT 50 FOR REFERENCE]",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Given the following containment hierarchy: What is the correct way to communicate the new value of a property named “passthrough” to my-parent-component if the properly is defined within my-child-component? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the code snippet below: When a Lightning web component is rendered, a list of opportunities that match certain criteria should be retrieved from the database and displayed to the end-user. Which three considerations must the developer implement to make the fetchOpportunities method available within the Lightning web component? (Choose three.) A. The method must specify the (cacheable=true) attribute. B. The method must specify the (continuation=true) attribute. C. The method must be annotated with the @AuraEnabled annotation. D. The method must be annotated with the @InvocableMethod annotation. E. The method cannot mutate the result set retrieved from the database.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is building a Lightning web component that retrieves data from Salesforce and assigns it to the record property. What must be done in the component to get the data from Salesforce? A. Add the following code above record; @wire(getRecord, { recordId: ‘$recordId’, fields: ‘$fields’ }) B. Add the following code above record; @wire(getRecord, { recordId: ‘$recordId’ }) Get the fields in renderedCallback() and assign them to record. C. Add the following code above record; @api(getRecord, { recordId: ‘$recordId’ }) Get the fields in renderedCallback() and assign them to record. D. Add the following code above record; @api(getRecord, { recordId: ‘$recordId’, fields: ‘$fields’ })",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company manages information about their product offerings in custom objects named Catalog and Catalog Item. Catalog Item has a master-detail field to Catalog, and each Catalog may have as many as 100,000 Catalog Items. Both custom objects have a CurrencyIsoCode Text field that contains the currency code they should use. If a Catalog’s CurrencyIsoCode changes, all of its Catalog Items’ CurrencyIsoCodes should be changed as well. What should a developer use to update the CurrencIsoCodes on the Catalog Items when the Catalog’s CurrencyIsoCode changes? A. An after insert trigger on Catalog that updates the Catalog Items if the Catalog’s CurrencyIsoCode is different. B. A Database.Schedulable and Database.Batchable class that queries the Catalog object and updates the Catalog Items if the Catalog CurrencyISoCode is different. C. An after insert trigger on Catalog Item that updates the Catalog Items if the Catalog’s CurrencyIsoCode is different. D. A Database.Schedulable and Database.Batchable class that queries the Catalog Item object and updates the Catalog Items if the Catalog CurrencyISoCode is different.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company has a custom object Sales_Help_Request_c that has a Lookup relationship to Opportunity. The Sales_Help_Request_c has a number field, Number_of_Hours_c, that represents the amount of time spent on the Sales_Help_Request_c. A developer is tasked with creating a field, Total_Hours_c, on Opportunity that should be the sum of all of the Number_of_Hours_c values for the Sales_Help_Request_c records related to that Opportunity. What should the developer use to implement this? A. A trigger on Sales_Help_Request_c B. A roll-up summary field on the Opportunity object C. A trigger on the Opportunity object D. A workflow rule on the Sales_Help_Request_c object",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to implement a system audit feature that allows users, assigned to a custom profile named “Auditors”, to perform searches against the historical records in the Account object. The developer must ensure the search is able to return history records that are between 12 and 24 months old. Given the code below, which select statement should be inserted below as a valid way to retrieve the Account History records ranging from 12 to 24 month old? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When developing a Lightning web component, which setting displays lightning-layout-items in one column on small devices, such as mobile phones, and in two columns on tables-size and desktop-size screens? A. Set size=“6” mobile-device-size=“12” B. Set size=“6” small-device-size=“12” C. Set size=“12” medium-device-size=“6” D. Set size=“12” tablet-device-size=“6”",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer sees test failures in the sandbox but not in production. No code or metadata changes have been actively made to either environment since the sandbox was created. Which consideration should be checked to resolve the issue? A. Ensure the sandbox is on the same release as production. B. Ensure Workflow Rules are inactive. C. Ensure the Apex Classes are on the same API version. D. Ensure Process Builder processes are inactive.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Users complain that a page is very slow to respond. Upon investigation, the query below is found to perform slowly. Which two actions can a developer take to improve performance? (Choose two.) A. Make the CustomField_c field an External ID. B. Make the field CustomField_c required because Salesforce field indexes do not include nulls. C. Add a LIMIT clause to the query to reduce the number of records returned. D. Contact Salesforce customer support to create a custom index to include null values.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the following code snippet: A developer created a JavaScript function as part of a Lightning web component (LWC) that surfaces information about Leads by wire calling getFetchLeadList when certain criteria are met. Which three changes should the developer implement in the Apex class above to ensure the LWC can display data efficiently while preserving security? (Choose three.) A. Use the WITH SECURITY_ENFORCED clause within the SOQL query. B. Annotate the Apex method with @AuraEnabled(Cacheable=true). C. Implement the with sharing keyword in the class declaration. D. Annotate the Apex method with @AuraEnabled. E. Implement the without sharing keyword in the class declaration.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Ursa Major Solar has a custom object, ServiceJob＿c, with an optional Lookup field to Account called Partner_Service_Provider＿c. The TotalJobs＿c field on Account tracks the total number of ServiceJob＿c records to which a partner service provider Account is related. What should be done to ensure that the TotalJobs＿c field is kept up to date? A. Create an Apex trigger on ServiceJob＿c. B. Change TotalJobs＿c to a roll-up summary field. C. Implement a workflow cross-object field update. D. Build a Process Builder with an invocable action.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the markup below: A Lightning web component displays the Account name and two custom fields out of 275 that exist on the object. The custom fields are correctly declared and populated. However, the developer receives complaints that the component performs slowly. What can the developer do to improve the performance? A. Add density=\"compact\" to the component. B. Replace layout-type=\"Full\" with layout-type=\"Partial\". C. Add cache=\"true\" to the component. D. Replace layouts-type=\"Full\" with fields={fields}.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company wants to run different logic based on an Opportunity’s record type. Which code segment handles this request and follows best practices? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company has reference data stored in multiple custom metadata records that represent default information and delete behavior for certain geographic regions. When a contact is inserted, the default information should be set on the contact from the custom metadata records based on the contact's address information. Additionally, if a user attempts to delete a contact that belongs to a flagged region, the user must get an error message. What is the optimal way to automate this? A. Apex invocable method B. Remote action C. Flow Builder D. Apex trigger",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company uses Opportunities to track sales to their customers and their org has millions of Opportunities. They want to begin to track revenue over time through a related Revenue object. As part of their initial implementation, they want to perform a one-time seeding of their data by automatically creating and populating Revenue records for Opportunities, based on complex logic. They estimate that roughly 100,000 Opportunities will have Revenue records created and populated. What is the optimal way to automate this? A. Use System.enqueueJob() to invoke a Queueable class. B. Use Database.executeBatch() to invoke a Queueable dass. C. Use System.scheduleJob() to schedule a Database.Scheduleable class. D. Use Database.executeBatch() to invoke a Database.Batchable class.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After a Platform Event is defined in a Salesforce org, events can be published via which two mechanisms? (Choose two.) A. External Apps require the standard Streaming API. B. Internal Apps can use Process Builder. C. External Apps use an API to publish event messages. D. Internal Apps can use Outbound Messages.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers uses a custom Lightning page to provide a mechanism to perform a step-by-step wizard search for Accounts. One of the steps in the wizard is to allow the user to input text into a text field, ERP_Number＿c, that is then used in a query to find matching Accounts. A developer receives the exception 'SOQL query not selective enough'. Which step should be taken to resolve the issue? A. Mark the ERP_Number＿c field as an external ID. B. Perform the SOQL query as part of a for loop. C. Move the SOQL query to within an asynchronous process. D. Mark the ERP_Number＿c field as required.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When calling a RESTful web service, the developer must implement two-way SSL authentication to enhance security. The Salesforce admin has generated a self-sign certificate within Salesforce with a unique name of \"ERPSecCertificate\". Consider the following code snippet: Which method must the developer implement in order to sign the HTTP request with the certificate? A. req.setHeader('certificate', 'ERPSecCertificate'); B. req.setSecureCertificate('ERPSecCertificate'); C. req.setSedure('ERPSecCertificate)'; D. req.setClientCertificateName('ERPSecCertificate');",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the code below: A developer is building this Aura component to display information about top Opportunities in the org. Which three code changes must be made for the component to work? (Choose three.) A. Add the static keyword to the Apex method. B. Add the RemoteAction annotation to the Apex method. C. Set the controller in the component markup. D. Get the controller action with cmp.get(\"OppController.getTopOpps\"). E. Add the AuraEnabled annotation to the Apex method.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Consider the following queries. For these queries, assume that there are more than 200,000 Account records. These records include soft-deleted records; that is, deleted records that are still in the Recycle Bin. Note that there are two fields that are marked as External Id on the Account. These fields are Customer_Number＿c and ERP_Key＿c. Which two queries are optimized for large data volumes? (Choose two.) A. SELECT Id FROM Account WHERE Name != '' AND IsDeleted = false B. SELECT Id FROM Account WHERE Id IN :aListVariable C. SELECT Id FROM Account WHERE Name != '' AND Customer_Number＿c = 'ValueA' D. SELECT Id FROM Account WHERE Name != NULL",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The Salesforce admin at Cloud Kicks created a custom object called Region＿c to store all postal zip codes in the United States and the Cloud Kicks sales region the zip code belongs to. Cloud Kicks wants a trigger on the Lead to populate the Region based on the Lead's zip code. Which code segment is the most efficient way to fulfill this request? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer has a requirement to query three fields (Id, Name, Type) from an Account; and first and last names for all Contacts associated with the Account. Which option is the preferred, optimized method to achieve this for the Account named 'Ozone Electronics'? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A business requires that every parent record must have a child record. A developer writes an Apex method with two DML statements to insert a parent record and a child record. A validation rule blocks child records from being created. The method uses a try/catch block to handle the DML exception. What should the developer do to ensure the parent always has a child record? A. Use addError() on the parent record if an error occurs on the child record. B. Set a database savepoint to rollback if there are errors. C. Use Database.insert() and set the allOrNone parameter to true. D. Delete the parent record in the catch statement when an error occurs on the child record DML operation.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A software company uses a custom object, Defect__c, to track defects in their software. Defect__c has organization-wide defaults set to private. Each Defect__c has a related list of Reviewer__c records, each with a lookup field to User that is used to indicate that the User will review the Defect__c. What should be used to give the User on the Reviewer__c record read only access to the Defect__c record on the Reviewer__c record? A. Apex managed sharing B. View All on Defect__c C. Lightning web component D. Criteria-based sharing",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer has created a Lightning web component that uses the getRecord wire adapter. Which three things should the developer do in a Jest test to validate the wire method is working as expected? (Choose three.) A. Use an assert statement to validate results. B. Import wire from lwc. C. Use the emit() API. D. Create a JSON file with mock data. E. Import getRecord from lightning/uiRecordApi.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "AW Computing (AWC) handles orders in Salesforce and stores its product inventory in a field, Inventory__c, on a custom object, Product__c. When an order for a Product__c is placed, the Inventory__c field is reduced by the quantity of the order using an Apex trigger. AWC wants the real-time inventory reduction for a product to be sent to many of its external systems, including some future systems the company is currently planning. What should a developer add to the code at the placeholder to meet these requirements? A. B. C. D.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Consider the following code snippet: The Apex method is executed in an environment with a large data volume count for Accounts, and the query is performing poorly. Which technique should the developer implement to ensure the query performs optimally, while preserving the entire result set? A. Annotate the method with the @Future annotation. B. Create a formula field to combine the CreatedDate and RecordType value, then filter based on the formula. C. Break down the query into two individual queries and join the two result sets. D. Use the Database.queryLocator method to retrieve the accounts.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Consider the following code snippet: Users of this Visualforce page complain that the page does a full refresh every time the Search button is pressed. What should the developer do to ensure that a partial refresh is made so that only the section identified with opportunityList is re-drawn on the screen? A. Enclose the DATA table within the tag. B. Ensure the action method search returns null. C. Implement the tag with immediate = true. F. Implement the reRender attribute on the tag.",
+    "options": {},
+    "most_voted": "F"
+  },
+  {
+    "question": "A Lightning web component exists in the system and displays information about the record in context as a modal. Salesforce administrators need to use this component within the Lightning App Builder. Which two settings should the developer configure within the xml resource file? (Choose two.) A. Set the IsVisible attribute to true. B. Specify the target to be lightning__AppPage. C. Specify the target to be lightning__RecordPage. D. Set the IsExposed attribute to true.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "As part of a new integration, a developer is asked to implement a new custom search functionality that is capable of performing unrestricted queries and can account for all values within a custom picklist field, Type__c, on the Opportunity object. The search feature must also account for NULL values. The organization-wide default for the Opportunity object is set to Public Read-Only, and a new custom index has been created for the Type__c field. There are more than 5 million Opportunity records within the environment, and a considerable amount of the existing records have NULL values for the picklist. Which technique should the developer implement to maximize performance when querying NULL values? A. Use a SOSL query to return ALL opportunities that have a value of NULL in any field. B. Use the OR operator to combine WHERE clauses to strictly search for each value within the picklist, including Type__c = NULL. C. Perform two SOQL queries; one to query Opportunities where Type__c != NULL, and another to query where Type__c = NULL, then join the result set using Apex. D. Create a formula field that substitutes NULL values for a string of text, create an index for the formula field, then use the formula within the WHERE clause.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) currently does all development in its full copy sandbox. Recently, UC has projects that require multiple developers to develop concurrently. UC is running into issues with developers making changes that cause errors in work done by other developers. Additionally, when they are ready to deploy, many unit tests fail which prevents the deployment. Which three types of orgs should be recommended to UC to eliminate these problems? (Choose three.) A. Data Migration org B. Development org C. Systems Integration org D. Continuous Integration (CI) Org E. Staging org",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer wrote the following method to find all the test accounts in the org: However, the test method below fails. What should be used to fix this failing test? A. Test.loadData to set up expected data B. @isTear(SeeAllData=true) to access org data for the test C. Test.fixedSearchResults() method to set up expected data D. @testSetup method to set up expected data",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the following code snippets: A developer is experiencing issues with a Lightning web component. The component must surface information about Opportunities owned by the currently logged-in user. When the component is rendered, the following message is displayed: \"Error retrieving data\". Which modification should be implemented to the Apex class to overcome the issue? A. Edit the code to use the without sharing keyword in the Apex class. B. Use the Cacheable=true attribute in the Apex method. C. Use the Continuation=true attribute in the Apex method. D. Ensure the OWD for the Opportunity object is Public.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Consider the following code snippet: How should the component communicate to the component that an order has been selected by the user? A. Create and fire a standard DOM event. B. Create and fire a component event. C. Create and dispatch a custom event. D. Create and fire an application event.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer is working with existing functionality that tracks how many times a stage has changed for an Opportunity. When the Opportunity's stage is changed, a workflow rule is fired to increase the value of a field by one. The developer wrote an after trigger to create a child record when the field changes from 4 to 5. A user changes the stage of an Opportunity and manually sets the count field to 4. The count field updates to 5, but the child record is not created. What is the reason this is happening? A. After triggers fire before workflow rules. B. Trigger.new does not change after a field update. C. After triggers are not fired after field updates. D. Trigger.old does not contain the updated value of the count field.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Salesforce org has more than 50,000 contacts. A new business process requires a calculation that aggregates data from all of these contact records. This calculation needs to run once a day after business hours. Which two steps should a developer take to accomplish this? (Choose two.) A. Use the @future annotation on the method that performs the aggregate calculation. B. Implement the Schedulable interface in the class that contains the aggregate calculation method. C. Use the @readOnly annotation on the method that performs the aggregate calculation. D. Implement the Queuable interface in the class that contains the aggregate calculation method.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the code below: When the code runs, it results in a System Limit Exception with the error message: Apex heap size too large. What should be done to fix this error? A. Use a SOQL for loop to process the data. B. Convert the List into a Set. C. Use Limits.getLimitHeapSize(). D. Use a try/catch block to catch the error.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is asked to find a way to store secret data with an ability to specify which profiles and users can access which secrets. What should be used to store this data? A. Static resources B. Custom metadata C. Custom settings D. System.Cookie class",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are three reasons that a developer should write Jest tests for Lightning web components? (Choose three.) A. To verify the DOM output of a component B. To verify that events fire when expected C. To test a component's non-public properties D. To test basic user interaction E. To test how multiple components work together",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer created the following test method: The developer org has five accounts where the name starts with \"Test\". The developer executes this test in the Developer Console. After the test code runs, which statement is true? A. The test will fail. B. There will be no accounts where the name starts with \"Test\". C. There will be five accounts where the name starts with \"Test\". D. There will be six accounts where the name starts with \"Test\".",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Instead of waiting to send emails to support personnel directly from the finish method of a batch Apex process, Universal Containers wants to notify an external system in the event that an unhandled exception occurs. What is the appropriate publish/subscribe logic to meet this requirement? A. Publish the error event using the addError() method and write a trigger to subscribe to the event and notify the external system. B. Publish the error event using the addError() method and have the external system subscribe to the event using CometD. C. Publish the error event using the Eventbus.publish() method and have the external system subscribe to the event using CometD. D. No publishing is necessary. Have the external system subscribe to the BatchApexErrorEvent.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Users report that a button on a custom Lightning web component is not working. However, there are no other details provided. What should the developer use to ensure error messages are properly displayed? A. Add the tag to the component. B. Add a try-catch block surrounding the DML statement. C. Use the Database method with allOrNone set to false. D. Add JavaScript and HTML to display an error message.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is creating a Lightning web component that displays a list of records in a lightning-datatable. After saving a new record to the database, the list is not updating. What should the developer change in the code above for this to happen? A. Add the @track decorator to the data variable. B. Create a new variable to store the result and annotate it with @track. C. Create a variable to store the result and call refreshApex(). D. Call refreshApex() on this.data.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer created a Lightning web component that allows users to input a text value that is used to search for Accounts by calling an Apex method. The Apex method returns a list of AccountWrappers and is called imperatively from a JavaScript event handler. Which two changes should the developer make so the Apex method functions correctly? (Choose two.) A. Add @AuraEnabled to line 09. B. Add @AuraEnabled to line 03. C. Add @AuraEnabled to lines 11 and 12. D. Add @AuraEnabled to line 01.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "After a Platform Event is defined in a Salesforce org, events can be published via which two mechanisms? (Choose two.) A. Internal Apps can use outbound messages. B. External Apps require the standard Streaming API. C. Internal Apps can use entitlement processes. D. External Apps use an API to publish event messages.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer wrote a class named AccountHistoryManager that relies on field history tracking. The class has a static method called getAccountHistory that takes in an Account as a parameter and returns a list of associated AccountHistory object records. The following test fails: What should be done to make this test pass? A. The test method should be deleted since this code cannot be tested. B. Create AccountHistory records manually in the test setup and write a query to get them. C. Use Test.isRunningTest() in getAccountHistory() to conditionally return fake AccountHistory records. D. Use @isTest (SeeAllData=true) to see historical data from the org and query for AccountHistory records.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer recently released functionality to production that performs complex commission calculations in Apex code called from an Opportunity trigger. Users report that the calculations seem incorrect because the values they see for commissions are wrong. The developer has representative test data in their developer sandbox. Which three tools or techniques should the developer use to execute the code and pause it at key lines to visually inspect values of various Apex variables? (Choose two.) A. Apex Replay Debugger B. Visual Studio Code C. Workbench D. Developer Console E. Breakpoints",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Consider the following code snippet: When the component is deployed, an error is reported. Which two changes should the developer implement in the code to ensure the component deploys successfully? (Choose two.) A. import getOrders from '@salesforce/apex/OrderController.getAvailableOrders'; B. import getOrders from '@salesforce/apex/c.OrderController.getAvailableOrders'; C. import { LightningElement, api ) from 'lwc'; D. import { LighningElement, wire } from 'lwc';",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is asked to create a Lightning web component that will be invoked via a button on a record page. The component must be displayed in a modal dialog. Which three steps should the developer take to achieve this? (Choose three.) A. In targets, add lightning_RecordAction as a target. B. In targetConfigs, add lightning_AppPage as a target. C. Set actionType to ScreenAction. D. Add a targetConfig and set targets to lightning_RecordAction. E. Set eventType to Action.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When the sales team views an individual customer record, they need to see recent interactions for the customer. These interactions can be sales, orders, phone calls, or Cases. The date range for recent interactions will be different for every customer record type. How can this be accomplished? A. Use a Lightning component to query and display interactions based on record type that is passed in using a design:attribute from the Lightning page. B. Use a dynamic form on the customer record page to display recent interactions. C. Use batch Apex to query for the most recent interactions when the customer view screen is loaded. D. Use Lightning Flow to read the customer's record type, and then do a dynamic query for recent interactions and display on the View page.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company accepts orders for customers in their enterprise resource planning (ERP) system that must be integrated into Salesforce as Order__c records with a lookup field to Account. The Account object has an external ID field, ERP_Customer_ID__c. What should the integration use to create new Order__c records that will automatically be related to the correct Account? A. Insert on the Order__c object followed by an update on the Order__c object. B. Merge on the Order__c object and specify the ERP_Customer_ID__c for the Account relationship. C. Upsert on the Order__c object and specify the ERP_Customer_ID__c for the Account relationship. D. Upsert on the Account and specify the ERP_Customer_ID__c for the relationship.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer writes a Lightning web component that displays a dropdown list of all custom objects in the org from which a user will select. An Apex method prepares and returns data to the component. What should the developer do to determine which objects to include in the response? A. Check the getObiectType() value for ‘Custom’ or ‘Standard’ on the sObject describe result. B. Import the list of all custom objects from @salesforce/schema. C. Use the getCustomObjects() method from the Schema class. D. Check the isCustom() value on the sObject describe result.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is building a Lightning web component that displays quantity, unit price, and the total for an order line item. The total is calculated dynamically as the quantity multiplied by the unit price. What must be added to display the total? A. Add calculateTotal() { return quantity * unitPrice; } to the JavaScript and Total: {calculateTotal()}in the template. B. Add get total() { return quantity * unitPrice; } to the JavaScript and Total: {total} in the template. C. Add Total: {multiply{quantity, unitPrice}} in the template. D. Add Total: {quantity * unitPrice} in the template.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer is writing a Listener for implementing outbound messaging. Which three considerations must the developer keep in mind in this case? (Choose three.) A. Messages are retried independent of their order in the queue. B. The Organization ID is included only in the first outbound message. C. Messages can be delivered out of order. D. The sessionId in an outbound message is scoped for both API requests and UI requests. E. The Listener must be reachable from the public Internet.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer created a Lightning web component that uses a lightning-record-edit-form to collect information about Leads. Users complain that they only see one error message at a time about their input when trying to save a Lead record. What is the recommended approach to perform validations on more than one field, and display multiple error messages simultaneously with minimal JavaScript intervention? A. External JavaScript library B. Apex trigger C. Validation rules D. Try/catch/finally block",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Consider the following code snippet: Which two best practices should the developer implement to optimize this code? (Choose two.) A. Query the Pricing_Structure__c records outside of the loop. B. Use a collection for the DML statement. C. Change the trigger context to after update, after insert. D. Remove the DML statement.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is working on a set of custom Aura components that can be individually added to a home page. One of the components, c:searchAccounts, allows users to search for an Account and then select a specific found Account. Once selected, the other components should get other information related to the selected Account and display it. Which event should the c:searchAccounts component fire to make it known that an Account is selected? A. An application event B. A component event C. A refreshView event D. A publish event",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) calculates commissions on their Opportunities in different ways base on complex rules that vary depending on the line of business of the Opportunity. Whenever a new line of business is added to Salesforce at UC, it is likely that a different calculation will need to be added too. When an Opportunity's stage is changed to Closed/Won, its commission should be calculated in real time. What should a developer use so that different implementations of the commission calculation can be invoked on the stage change? A. An Apex class with a custom enum B. A final class with multiple methods C. An interface and implementing classes D. Apex Describe Schema methods",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is asked to replace the standard Case creation screen with a custom screen that takes users through a wizard before creating the Case. The org only has users running Lightning Experience. What should the developer override the Case New Action with to satisfy the requirements? A. Lightning Component B. Lightning Page C. Lightning Record Page D. Lightning Flow",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers has an Apex trigger on Account that creates an Account Plan record when an Account is marked as a Customer. Recently a record-triggered flow was added so that whenever an Account is marked as a Customer, a ‘Customer Since’ date field is updated with today’s date. Since the addition of the flow, two Account Plan records are created whenever the Account is marked as a Customer. What might cause this to happen? A. The flow is configured to evaluate when a record is created and every time it is edited. B. The Apex trigger is not bulk safe and calls insert inside of a for loop. C. The Apex trigger does not use a static variable to ensure it only fires once. D. The flow is configured to use an ‘Update Records’ element.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers is implementing a new approval process for expense reimbursements. The process requires complex logic to determine the appropriate approver based on factors such as expense amount, employee role, and project type. The solution should allow for flexibility and future changes in the approval rules. Which approach would be the most suitable for implementing this logic? A. Use the Salesforce Approval Process feature and define multiple approval steps with entry criteria and approval assignments. B. Create a custom Apex class with a method to determine the appropriate approver based on the given criteria. C. Develop a custom Lightning component to handle the approval logic and integrate it into the expense reimbursement record page. D. Implement a custom formula field to calculate and determine the appropriate approver based on the given criteria.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Salesforce org has more than 50,000 contacts. A new business process requires a calculation that aggregates data from all of these contact records. This calculation needs to run once a day after business hours. Which two steps should a developer take to accomplish this? (Choose two.) A. Use the @future annotation B. Implement the Schedulable interface C. Implement the Database.Batchable interface D. Implement the Queuable interface",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "As part of a custom interface, a developer team creates various new Lightning web components. Each of the components handles errors using toast messages. When the development is complete, all the components are added to the same Lightning page. During acceptance testing, users complain about the long chain of toast messages that display when errors occur loading the components. Which two techniques should the developer implement to improve the user experience? (Choose two.) A. Use a [template] tag to display in-place error messages B. Use public properties on each component to display the error messages C. Use the window.alert() method to display the error messages. D. Use a Lightning web component to aggregate and display all errors.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is writing a Lightning Web page that queries accounts in the system and presents a lightning-datatable with the results. The users want to be able to filter the results based on up to five fields, that will vary according to their selections when running the page. Which feature of Apex code is required to facilitate this solution? A. SOSL queries B. describeSObjects() C. Dynamic SQL D. REST API",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is asked to modify a Lightning web component so that it displays in one column on phones and in two columns on tablets, desktops, and larger devices. Given to the code below: Which should the developer add to the code to meet the requirements? A. Add a small-device-size=“12” to the [lightning-layout-item] elements B. Add size=“6” a small-device-size=“12” to the [lightning-layout-item] elements C. Add size=“12” a small-device-size=“6” to the [lightning-layout-item] elements D. Add a medium-device-size=“6” to the [lightning-layout-item] elements",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer created an Apex class that updates an Account based on input from a Lightning web component that is used to register an Account. The update to the Account should only be made if it has not already been registered. What should the developer do to ensure that users do not overwrite each other's updates to the same Account if they make updates at the same time? A. Use FOR UPDATE in the SOQL query. B. Include LastModifiedDate in the query to make sure it wasn't recently updated. C. Use upsert instead of update. D. Add a try/catch block around the update.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers analyzes a Lightning web component and its Apex controller class that retrieves a list of contacts associated with an account. The code snippets are as follows: Based on the code snippets, what change should be made to display the contacts' mailing addresses in the Lightning web component? A. Add a new method in the Apex controller class to retrieve the mailing addresses separately and modify the Lightning web component to invoke this method. B. Modify the SOQL query in the getAccountContacts method to include the MailingAddress field. C. Modify the SOQL query in the getAccountContacts method to include the MailingAddress field and update the columns attribute in javascript file to add Mailing address fields. D. Extend the lightning-datatable component in the Lightning web component to include a column for the MailingAddress field.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which code snippet processes records in the most memory efficient manner, avoiding governor limits such as \"Apex heap size too large\"? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is building a complex commission calculation engine in Apex that is called from an Opportunity trigger. During QA it was reported that the calculations are incorrect. The developer has representative test data and passing test methods in their developer sandbox. Which three tools or techniques could the developer use to execute the code and pause it at key lines to visually inspect values of various Apex variables? (Choose three.) A. Developer Console B. Breakpoints C. Workbench D. Apex Interactive Debugger E. Apex Replay Debugger",
+    "options": {},
+    "most_voted": "B"
+  }
+]
