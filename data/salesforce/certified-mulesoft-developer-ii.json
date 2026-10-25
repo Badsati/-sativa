@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Refer to the exhibit. A Mule Object Store is configured with an entry TTL of one second and an expiration interval of 30 seconds. What is the result of the flow if processing between os:store and os:retrieve takes 10 seconds? A. originalPayload B. OS:KEY_NOT_FOUND C. testPayload D. nullPayload",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When implementing a synchronous API where the event source is an HTTP Listener, a developer needs to return the same correlation ID back to the caller in the HTTP response header. How can this be achieved? A. No action is needed as the correlation ID is returned to the caller in the response header by default B. Enable the CorrelationID checkbox in the HTTP Listener configuration C. Configure a custom correlation policy D. Enable the auto-generate CorrelationID option when scaffolding the flow",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An order processing system is composed of multiple Mule applications responsible for warehouse, sales, and shipping. Each application communicates using Anypoint MQ. Each message must be correlated against the original order ID for observability and tracing. How should a developer propagate the order ID as the correlation ID across each message? A. Use the underlying HTTP request of Anypoint MQ to set the \"X-CORRELATION-ID\" header to the order ID B. Wrap all Anypoint MQ Publish operations within a With CorrelationID scope from the Tracing module, setting the correlation ID to the order ID C. Set a custom Anypoint MQ user property to propagate the order ID and set the correlation ID in the receiving applications D. Use the default correlation ID; Anypoint MQ will automatically propagate it",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. A Mule application contains two policies: Policy A and Policy B. Policy A has order 1, and Policy B has order 2. Policy A, Policy B, and a flow are defined by the configurations below. When an HTTP request arrives at the Mule application's endpoint, what will be the execution order? A. B1, A1, F1, A2, B2 B. F1, B1, A1, A2, B2 C. A1, B1, F1, B2, A2 D. F1, A1, B1, B2, A2",
+    "options": {},
+    "most_voted": "C"
+  }
+]
