@@ -1,0 +1,417 @@
+[
+  {
+    "question": "Universal Containers (UC) is replacing a home grown CRM solution with Salesforce. UC has decided to migrate operational (open and active) records to Salesforce, while keeping historical records in legacy system. UC would like historical records to be available in Salesforce on an as needed basis. Which solution should a data architect recommend to meet business requirement? A. Leverage real-time integration to pull records into Salesforce. B. Build a swivel chair solution to go into the legacy system and display records. C. Leverage mashup to display historical records in Salesforce. D. Bring all data in Salesforce, and delete it after a year.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers has 30 million case records. The Case object has 80 fields. Agents are reporting performance Issues and time-outs while running case reports in the Salesforce org. Which solution should a data architect recommend to improve reporting performance? A. Contact Salesforce support to enable skinny table for cases. B. Build reports using custom Lightning components. C. Create a custom object to store aggregate data and run reports. D. Move data off of the platform and run reporting outside Salesforce, and give access to reports.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A custom pricing engine for a Salesforce customer has to be decided by factors with the following hierarchy: 1. State in which the customer is located 2. City in which the customer is located if available 3. Zip code in which the customer is located if available 4. Changes to this information should have minimum code change What should a data architect recommend to maintain this information for the custom pricing engine that is to be built in Salesforce? A. Configure the pricing criteria in price books. B. Maintain required pricing criteria in custom metadata types. C. Assign the pricing criteria within custom pricing engine. D. Create a custom object to maintain the pricing criteria.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer is operating in a highly regulated industry and is planning to implement Salesforce. The customer information maintained in Salesforce. includes the following: 1. Personally Identifiable information (PII) 2. IP restrictions on profiles organized by geographic location 3. Financial records that need to be private and accessible only by the assigned sales associate Enterprise Security has mandated access to be restricted to users within a specific geography with detailed monitoring of user activity. Additionally, users should not be allowed to export information from Salesforce. Which three Salesforce Shield capabilities should a data architect recommend? (Choose three.) A. Event monitoring to monitor all user activity. B. Encrypt sensitive customer information maintained in Salesforce. C. Prevent sales users access to customer PII information. D. Restrict access to Salesforce from users outside specific geography. E. Transaction Security policies to prevent export of Salesforce data.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) is transitioning from Classic to Lightning Experience. What does UC need to do to ensure users have access to its notes and attachments in Lightning Experience? A. Manually upload Notes in Lightning Experience. B. Manually upload Attachments in Lightning Experience. C. Add Notes and Attachments Related Lists to Page Layouts in Lightning Experience. D. Migrate Notes and Attachments to Enhanced Notes and Piles using a migration tool.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers has a Sales Cloud implementation for a sales team and an enterprise resource planning (ERP) as a customer master. Sales teams are complaining about duplicate account records and data quality issues with account data. Which two solutions should a data architect recommend to resolve the complaints? (Choose two.) A. Build a nightly batch job to de-dupe data, and merge account records. B. Integrate Salesforce with ERP, and make ERP as system of truth. C. Build a nightly sync job from ERP to Salesforce. D. Implement a de-dupe solution and establish account ownership in Salesforce.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) has adopted Salesforce as its primary sales automation tool. UC has 100,000 customers with a growth rate of 10% a year. UC uses an on-premise web-based billing and invoice system that generates over 1 million invoices a year supporting a monthly billing cycle. The UC sales team needs to be able to pull up a customer record and view their account status, invoice history, and open opportunities without navigating outside of Salesforce. What should a data architect use to provide the sales team with the required functionality? A. Create a visual force tab with the billing system encapsulated within an iframe. B. Create a custom object and migrate the last 12 months of invoice data into Salesforce so it can be displayed on the Account layout. C. Write an Apex callout and populate a related list to display on the account record. D. Create a mashup page that will present the billing system records within Salesforce.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) is in the process of migrating legacy inventory data from an enterprise resource planning (ERP) system into Sales Cloud with the following requirements: 1. Legacy inventory data will be stored in a custom child object called Inventory__c. 2. Inventory data should be related to the standard Account object. 3. The Inventory__c object should inherit the same sharing rules as the Account object. 4. Anytime an Account record is deleted in Salesforce. the related Inventory__c record(s) should be deleted as well. What type of relationship field should a data architect recommend in this scenario? A. Lookup relationship field on Inventory__c, related to Account B. Indirect lookup relationship field on Account, related to Inventory__c C. Master-detail relationship field on Inventory__c, related to Account D. Master-detail relationship field on Account, related to Inventory__c",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Northern Trail Outfitters has implemented Salesforce for its sales associates nationwide. Senior management is concerned that the executive dashboards are not reliable for their real-time decision-making. On analysis, the team found the following issues with data entered in Salesforce: 1. Information in certain records is incomplete. 2. Incorrect entry in certain fields causes records to be excluded in report filters. 3. Duplicate entries cause incorrect counts. Which three steps should a data architect recommend to address the issues? (Choose three.) A. Explore third-party data providers to enrich and augment information entered in Salesforce. B. Build a sales data warehouse with purpose-built data marts for dashboards and senior management reporting. C. Design and implement data-quality dashboard to monitor and act on records that are incomplete or incorrect. D. Periodically export data to cleanse data and import them back into Salesforce for executive reports. E. Leverage Salesforce features, such as validation rules, to avoid incomplete and incorrect records.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has been using Salesforce for Sales and Service for 10 years. For the past two years, the marketing group has noticed a rise from 0% to 35% in returned mail when sending mail using the contact information stored in Salesforce. Which solution should the data architect use to reduce the amount of returned mail? A. Email all customers and ask them to verify their information and to call NTO if their address is incorrect. B. Delete contacts when the mail is returned to save postal costs for NTO. C. Have the sales team call all existing customers and ask to verify the contact details. D. Use a third-party data source to update the contact information in Salesforce.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) runs its entire business out of an enterprise data warehouse (EDW). NTO’s sales team is starting to use Salesforce after a recent implementation, but currently lacks the data required to advance leads and opportunities to the next stage. NTO’s management has researched Salesforce Connect and would like to use it to virtualize and report on data from the EOW within Salesforce. NTO will be running thousands of reports per day across 10 to 15 external objects. What should a data architect consider before implementing Salesforce Connect for reporting? A. Maximum page size for server-driven paging B. Maximum external objects per org C. OData callout limits per day D. Maximum number of records returned",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The data architect for Universal Containers has written a SOQL query that will return all records from the Task object that do not have a value in the whatID field: SELECT ID, Description, subject FROM Task WHERE WhatID != NULL When the data architect uses the query to select values for a process, a time-out error occurs. What does the data architect need to change to make this query more performant? A. Change the WHERE clause to filter by a deterministic defined value. B. Change query to SOSL. C. Remove description from the requested field set. D. Add LIMIT 100 to the query.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has a variety of customers that include households, businesses, and individuals. The following conditions exist within its system: 1. NTO has a total of five million customers. 2. Duplicate records exist, which is replicated across many systems, including Salesforce. Given these conditions, there is a lack of consistent presentation and clear identification of a customer record. Which three options should a data architect perform to resolve the Issues with the customer data? (Choose three.) A. Invest in data duplication tool to de-dupe and merge duplicate records across all systems. B. Use Salesforce CDC to sync customer data across all systems to keep customer record in sync. C. Create a customer master database external to Salesforce as a system of truth and sync the customer data with all systems. D. Create a unique global customer ID for each customer and store that in all systems for referential identity. E. Duplicate customer records across the systems and provide a two-way sync of data between the systems.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) wants to implement backup and restore for Salesforce data. Currently, it has data backup processes that runs weekly, which backs up all Salesforce data to an enterprise data warehouse (EDW). NTO wants to move to daily backups and provide restore capability to avoid any data loss in case of outage. What should a data architect recommend for a daily backup and restore solution? A. Change weekly backup process to daily backup, and implement a custom restore solution. B. Use Bulk API to extract data on daily basis to EDW and REST API for restore. C. Use ETL tool for backup and restore from EDW. D. Use AppExchange package for backup and restore.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) operates a majority of its business from a central Salesforce org. NTO also owns several secondary orgs that the service, finance, and marketing teams work out of. At the moment, there is no integration between central and secondary orgs, leading to data visibility issues. Moving forward, NTO has identified that a hub-and-spoke model is the proper architecture to manage its data, where the central org is the hub and the secondary orgs are the spokes. Which tool should a data architect use to orchestrate data between the hub org and spoke orgs? A. A middleware solution that extracts and distributes data across both the hub and spokes. B. Develop custom APIs to poll the spoke org for change data and push into the hub org. C. Develop custom APIs to poll the hub org for change data and push into the spoke orgs. D. A backup and archive solution that extracts and restores data across orgs.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A large retail B2C customer wants to build a 360-degree view of its customers for its call center agents. The customer information is currently maintained in the following systems: 1. Salesforce CRM 2. Custom billing solution 3. Customer master data management (MDM) 4. Contract management system 5. Marketing solution What should a data architect recommend that would help uniquely identify the customer across multiple systems? A. Store the Salesforce ID in all the solutions to identify the customer. B. Create a custom field as external ID to maintain the customer ID from the MDM solution. C. Create a custom object that will serve as a cross-reference for the customer ID. D. Create a customer database, and use this ID in all systems.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) is in the process of evaluating big objects to store large amounts of asset data from an external system. NTO will need to report on this asset data weekly. Which two native tools should a data architect recommend to achieve this reporting requirement? (Choose two.) A. Standard SOQL queries B. Async SOQL with a custom object C. Standard reports and dashboards D. Einstein Analytics",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "To address different compliance requirements such as General Data Protection Regulation (GDPR), personally identifiable information (PII), Health Insurance Portability and Accountability Act (HIPPA) and others, a Salesforce customer decided to categorize each data element in Salesforce with the following: 1. Data owner 2. Security level (i.e. confidential) 3. Compliance type (i.e. GDPR. PII, HIPAA) A compliance audit would require Salesforce admins to generate reports to manage compliance. What should a data architect recommend to address this requirement? A. Build reports for field Information, then export the information to classify and report for audits. B. Create a custom object and field to capture necessary compliance information and build custom reports. C. Use the Metadata API to extract field attribute information and use the extract to classify and build reports. D. Use field metadata attributes for compliance categorization, data owner, and data sensitivity level.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) is in the process of implementing an enterprise data warehouse (EDW). UC needs to extract 100 million records from Salesforce for migration to the EDW. What data extraction strategy should a data architect use for maximum performance? A. Utilize PK Chunking with the Bulk API. B. Install a third-party AppExchange tool. C. Use the Bulk API in parallel mode. D. Call the REST API in successive queries.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has the following systems: Customer master—source of truth for customer information Service cloud—customer support Marketing cloud—marketing communications Enterprise data warehouse-business reporting The customer data is duplicated across all these systems and are not kept in sync. Customers are also complaining that they get repeated marketing emails and have to call in to update their information. NTO is planning to implement a master data management (MDM) solution across the enterprise. Which three data issues will an MDM tool solve? (Choose three.) A. Data loss and recovery B. Data accuracy and quality C. Data completeness D. Data duplication E. Data standardization",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has a legacy client server app that has a relational database that needs to be migrated to Salesforce. What are the three key actions that should be done when data modeling in Salesforce? (Choose three.) A. Work with legacy application owner to analyze the legacy data model. B. Map legacy data to Salesforce objects. C. Implement the legacy data model within Salesforce using custom fields. D. Identify data elements to be persisted in Salesforce. E. Map legacy data to custom metadata types.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer wants to maintain geographic location information including latitude and longitude in a custom object. What should a data architect recommend to satisfy this requirement? A. Create formula fields with geolocation functions for this requirement. B. Create custom fields to maintain latitude and longitude information. C. Create a geolocation custom field to maintain this requirement. D. Recommend AppExchange packages to support this requirement.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) is in the process of selling half of its company. As part of this split, UC’s main Salesforce org will be divided into two orgs: Org A and Org B. UC has delivered these requirements to its data architect: 1. The data model for Org B will drastically change with different objects, fields, and picklist values. 2. Three million records will need to be migrated from Org A to Org B for compliance reasons. 3. The migration will need occur within the next two months, prior to the spilt. Which migration strategy should a data architect use to successfully migrate the data? A. Use an ETL tool to orchestrate the migration. B. Write a script to use the Bulk API. C. Use the Salesforce CLI to query, export, and import. D. Use Data Loader for export and Data Import Wizard for import.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has a requirement to store more than 100 million records in Salesforce and needs to create a custom big object to support this business requirement. Which two tools should a data architect use to build custom big object? (Choose two.) A. Go to Big Object in Setup and select new to create big object. B. Use Metadata API to create big object. C. Go to Object Manager in Setup and select new to create big object. D. Use DX to create big object.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A casino is implementing Salesforce and is planning to build a customer 360-degree view for a customer who visits its resorts. The casino currently maintains the following systems that record customer activity: 1. Point-of-sale system: All purchases for a customer 2. Salesforce: Ail customer service activity and sales activities for a customer 3. Mobile app: All bookings, preferences, and browser activity for a customer 4. Marketing: All email, SMS, and social campaigns for a customer Customer service agents using Salesforce would like to view the activities from all four systems to provide support to customers. The information has to be current and real time. What strategy should the data architect implement to satisfy this requirement? A. Use a customer data mart to create the 360-degree view of the customer. B. Periodically upload summary information in Salesforce to build a 360-degree view. C. Migrate customer activities from all four systems into Salesforce. D. Explore external data sources in Salesforce to build a 360-degree view of the customer.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) would like to build a Human Resources application on Salesforce to manage employee details, payroll, and hiring efforts. To adequately maintain and store the relevant data, the application will need to leverage 45 custom objects. In addition to this, UC expects roughly 20,000 API calls into Salesforce from an on-premise application dally. Which license type should a data architect recommend that best fits these requirements? A. Lightning Platform Plus B. Service Cloud C. Lightning External Apps Starter D. Lightning Platform Starter",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has the following systems: 1. Billing system 2. Customer support system 3. CRM system UC has been having trouble with business intelligence across the different systems. Recently UC implemented a master data management (MDM) solution that will be the system of truth for the customer records. Which MDM data element is needed to allow reporting across these systems? A. Phone number B. Email address C. Full name D. Globally Unique Identifier",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) has a Salesforce org with multiple automated processes defined for group membership processing. UC also has multiple admins on staff that perform manual adjustments to the role hierarchy. The automated tasks and manual tasks overlap daily, and UC is experiencing \"lock errors\" consistently. What should a data architect recommend to mitigate these errors? A. Remove SOQL statements from Apex Loops. B. Enable sharing recalculations. C. Ask Salesforce support for additional CPU power. D. Enable granular locking.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has a loyalty program to reward repeat customers. The following conditions exist: 1. Reward levels are earned based on the amount spent during the previous 12 months. 2. The program will track every item a customer has bought and grant them points for discounts. 3. The program generates 100 million records each month. NTO Customer Support would like to see a summary of a customer's recent transactions and the reward level(s) they have attained. Which solution should the data architect use to provide the information within Salesforce for the customer support agents? A. Create a custom big object to capture the reward program data, display it on the contact record, and update nightly from the point-of-sale system. B. Create a custom object in Salesforce to capture and store all reward programs, populate nightly from the point-of-sale system, and present on the customer record. C. Provide a button so that the agent can quickly open the point-of-sale system that displays the customer’s history. D. Capture the reward program data in an external data store, and present the 12-month trailing summary in Salesforce using Salesforce Connect and an external object.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Northern Trail Outfitters is migrating to Salesforce from a legacy CRM system that identifies the agent relationships in a look-up table. What should the data architect do in order to migrate the data to Salesforce? A. Migrate to Salesforce without a record owner. B. Migrate the data and assign to a non-person system user. C. Create custom object to store agent relationships. D. Assign record owners based on relationship.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) uses Sales Cloud and Service Cloud to manage their sales and support processes. Some of NTOs teams are complaining they see new fields on their page and are unsure of which values need be input. NTO is concerned about lack of governance in making changes to Salesforce. Which governance measure should a data architect recommend to solve this issue? A. Create reports to identify which fields users are leaving blank, and use external data sources to augment the missing data. B. Add description fields to explain why the field is used, and mark the fields as Required. C. Create and manage a data dictionary, and use a governance process for changes made to common objects. D. Create validation rules with error messages to explain why the field is used.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers needs to load a large volume of leads into Salesforce on a weekly basis. During this process the validation rules are disabled. What should a data architect recommend to ensure data quality is maintained in Salesforce? A. Allow validation rules to be activated during the load of leads into Salesforce. B. Develop a custom Batch Apex process to improve quality once the load is completed. C. Activate validation rules once the leads are loaded into Salesforce to maintain quality. D. Ensure the lead data is preprocessed for quality before loading into Salesforce.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During the implementation of Salesforce, a customer has the following requirements for Sales Order: 1. Sales Order information needs to be shown to users in Salesforce. 2. Sales Orders are maintained in the on-premise enterprise resource planning (ERP). 3. Sales Order information has more than 150 million records. 4. Sales Orders will not be updated in Salesforce. What should a data architect recommend for maintaining Sales Orders in Salesforce? A. Use custom objects to maintain Sales Orders in Salesforce. B. Use external objects to maintain Sales Orders in Salesforce. C. Use custom big objects to maintain Sales Orders in Salesforce. D. Use Standard Order object to maintain Sale Orders in Salesforce.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers is preparing to implement Sales Cloud and would like its users to have Read Only access to an Account record if they have access to its child Opportunity record. How would a data architect implement this sharing requirement between objects? A. Implicit sharing will automatically handle this with standard functionality. B. Create an owner-based sharing rule. C. Add appropriate users to the Account team. D. Create a criteria-based sharing rule.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) stores 10 million rows of inventory data in a cloud database. As part of creating a connected experience in Salesforce, UC would like to expose this inventory data to Sales Cloud without a direct import. UC has asked its data architect to determine if Salesforce Connect is needed. Which three considerations should the data architect make when evaluating the need for Salesforce Connect? (Choose three.) A. You want real-time access to the latest data from other systems. B. You need small amounts of external data at any one time. C. You need to expose data via a virtual private connection. D. You have a large amount of data and would like to copy subsets of it into Salesforce. E. You have a large amount of data that you don't want to copy into your Salesforce org.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has implemented Salesforce. UC is running out of storage and needs to have an archiving solution. UC would like to maintain two years of data in Salesforce and archive older data out of Salesforce. Which solution should a data architect recommend as an archiving solution? A. Build a batch job to move all records off platform, and delete all records from Salesforce. B. Build a batch job to move two-year-old records off platform, and delete old records from Salesforce. C. Build a batch job to move all records off platform, and delete old records from Salesforce. D. Use a third-party backup solution to back up all data off platform.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) has a very large and complex Salesforce org with hundreds of validation rules and triggers. The triggers are responsible for system updates and data manipulation as records are created or updated by users. A majority of the automation tools within UC's org were not designed to run during a data load. UC is importing 100,000 records into Salesforce across several objects over the weekend. What should a data architect do to mitigate any unwanted results during the import? A. Ensure validation rules, triggers, and other automation tools are disabled B. Ensure duplication and matching rules are defined C. Bulkify the triggers to handle import loads D. Import the data is smaller batches over a 24-hour period",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers is using Salesforce for Opportunity management and enterprise resource planning (ERP) for order management. Sales reps do not have access to the ERP and have no visibility into order status. What solution should a data architect recommend to give the sales team visibility into order status? A. Leverage Canvas to bring the order management UI in to the Salesforce tab. B. Build real-time integration to pull order line items into Salesforce when viewing orders. C. Build batch jobs to push order line items to Salesforce. D. Leverage Salesforce Connect to bring the order line item from the legacy system to Salesforce.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A large multinational B2C Salesforce customer is looking to implement their distributor management application in Salesforce. The application has the following capabilities: 1. Distributors create Sales Orders in Salesforce. 2. Sales Orders are based on Product prices applicable to their region. 3. Sales Orders are closed once they are fulfilled. 4. It is decided to maintain Sales Orders in Opportunities object. How should the data architect model this requirement? A. Create lookup to Custom Price object and share with distributors. B. Manually update Opportunities with Prices applicable to distributors C. Configure Price Books for each region and share with distributors. D. Add custom fields in Opportunity and use triggers to update prices.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) uses the following Salesforce products: Sales Cloud for customer management. Marketing Cloud for marketing. Einstein Analytics for business reporting. UC occasionally gets a list of prospects from third-party sources as comma-separated values (CSV) files for marketing purposes. Historically, UC would load these contacts into Lead object in Salesforce and sync to Marketing cloud to send marketing communications. The number of records in the Lead object has grown over time and has been consuming large amounts of storage in Sales Cloud. UC is looking for recommendations to reduce the storage and advice on how to optimize the marketing process. What should a data architect recommend to UC in order to immediately avoid storage issues in the future? A. Load the CSV files in an external database and sync with Marketing Cloud prior to sending marketing communications. B. Continue to use the existing process to use Lead object to sync with Marketing Cloud and delete Lead records from Sales Cloud after the sync is complete. C. Load the contacts directly to Marketing Cloud and have a reconciliation process to track prospects that are converted to customers. D. Load the CSV files in Einstein Analytics and sync with Marketing Cloud prior to sending marketing communications.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) is migrating from a legacy system to Salesforce CRM. UC is concerned about the quality of data being entered by users and through external integrations. Which two solutions should a data architect recommend to mitigate data quality issues? (Choose two.) A. Leverage third-party AppExchange tools. B. Leverage Apex to validate the format of data being entered via a mobile device. C. Leverage validation rules and workflows. D. Leverage picklist and lookup fields where possible.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A large Insurance provider is looking to implement Salesforce. The following conditions exist: 1. Multiple channels for lead acquisition 2. Duplicate leads across channels 3. Poor customer experience and higher costs On analysis, it was found that there are duplicate leads that are resulting in multiple quotes and opportunities. Which three actions should a data architect recommend to mitigate the issues? (Choose three.) A. Implement third-party solution to dean and enrich lead data. B. Implement de-duplication strategy to prevent duplicate leads. C. Build a custom solution to identify and merge duplicate leads. D. Standardize lead information across all channels. E. Build process to manually search and merge duplicates.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A large automobile company has implemented Salesforce for its sales associates. Leads flow from its website to Salesforce using a batch integration in Salesforce. The batch job converts the leads to Accounts in Salesforce. Customers visiting their retail stores are also created in Salesforce as Accounts. The company has noticed a large number of duplicate Accounts in Salesforce. On analysis, it was found that certain customers could interact with its website and also visit the store. The sales associates use Global Search to search for customers in Salesforce before they create the customers. Which option should a data architect choose to implement to avoid duplicates? A. Develop an Apex class that searches for duplicates and removes them nightly. B. Build a custom search functionality that allows sales associates to search for customer in real time upon visiting their retail stores. C. Leverage duplicate rules in Salesforce to validate duplicates during the account creation process. D. Implement an MDM solution to validate the customer information before creating Accounts in Salesforce.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers is experiencing frequent and persistent group membership locking issues that severely restricts its ability to manage manual and automated updates at the same time. What should a data architect do in order to resolve the issue? A. Enable granular locking. B. Enable parallel sharing rule calculation. C. Enable defer sharing calculation. D. Enable implicit sharing.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has implemented Sales Cloud for its entire sales organization. UC has built a custom object called Projects__c that stores customer project details and employee billable hours. The following requirements are needed: 1. A subset of individuals from the finance team will need access to the Projects object for reporting and adjusting employee utilization. 2. The finance users will not need access to any sales objects, but they will need to interact with the custom object. Which license type should a data architect recommend for the finance team that best meets the requirements? A. Lightning Platform Starter B. Service Cloud C. Lightning Platform Plus D. Sales Cloud",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "As part of addressing General Data Protection Regulation (GDPR) requirements, Universal Containers (UC) plans to implement a data classification policy for all of its internal systems that store customer information including Salesforce. What should a data architect recommend so that UC can easily classify customer information maintained in Salesforce under both standard and custom objects? A. Use Data Classification metadata fields available in Field definition. B. Build reports that contain customer data and classify manually. C. Create a custom picklist field to capture classification of information on the Contact object. D. Use an AppExchange product to classify fields based on policy.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers requires all customers to provide either a phone number or an email address when registering for an account. What should the data architect use to ensure this requirement is met? A. Validation Rule B. Apex Class C. Process Builder D. Required Fields",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers is migrating 100,000 accounts from an enterprise resource planning (ERP) to Salesforce and is concerned about ownership skew and performances. Which three recommendations should a data architect provide to prevent ownership skew? (Choose three.) A. Assign a default user as owner of accounts and assign the user to the top most role in the hierarchy. B. Assign a default user as owner of accounts and do not assign any role to the default user. C. Keep users out of public groups that can be used as the source for sharing rules. D. Assign a default user as owner of accounts and assign them a role in the hierarchy. E. Assign View All permissions to a group of users for the Account object.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has a rollup summary field on account to calculate the number of contacts associated with an account. During the account load, Salesforce is throwing an \"UNABLE_TO_LOCK_ROW\" error. Which solution should a data architect recommend to resolve the error? A. Perform a batch job in parallel mode and reduce the batch size. B. Defer rollup summary field calculation during data migration. C. Perform a batch job in serial mode and reduce the batch size. D. Leverage Data Loader’s platform API to load data.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) owns a complex Salesforce org with many Apex classes, triggers, and automated processes that will modify records if available. UC has identified that, in its current development state, UC runs chance of encountering race conditions on the same record. What should a data architect recommend to guarantee that records are not being updated at the same time? A. Embed the keywords FOR UPDATE after SOQL statements. B. Refactor or optimize classes and triggers for maximum CPU performance. C. Migrate programmatic logic to processes and flows. D. Disable classes or triggers that have the potential to obtain the same record.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has accumulated data over years and has never deleted data from its Salesforce org. UC is now exceeding the storage allocations in the org. UC is now looking for options to delete unused records from the org. Which three recommendations should a data architect make in order to reduce the number of records from the org? (Choose three.) A. Use hard delete in Bulk API to permanently delete records from Salesforce. B. Identify records in objects that have not been modified or used in last 3 years. C. Use hard delete in Batch Apex to permanently delete records from salesforce. D. Use Rest API to permanently delete records from the Salesforce org. E. Archive the records in enterprise data warehouse (EDW) before deleting from Salesforce.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A large retail company has recently chosen Salesforce as Its CRM solution. They have the following record counts: 2,500,000 Accounts 25,000,000 Contacts When doing an initial performance test, the data architect noticed an extremely slow response-time for reports and list views. What should a data architect do to solve the performance issues? A. Create a Skinny Table to represent Account and Contact objects. B. Limit data loading to the 2,000 most recently created records. C. Add Custom Indexes on frequently searched Account and Contact fields. D. Load only data that the user is permitted to access.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) has one Salesforce org (Org A) and recently acquired a secondary company with its own Salesforce org (Org B). UC has decided to keep the orgs running separately, but would like to bidirectionally share Opportunities between orgs in near-real time. Which three options should a data architect recommend to share data between Org A and Org B? (Choose three.) A. Install a third-party AppExchange tool to handle the data sharing. B. Leverage Heroku Connect and Heroku Postgres to bidirection ally sync Opportunities. C. Develop an Apex class that pushes Opportunity data between orgs daily via the Apex scheduler. D. Use Salesforce Connect and the cross-org adapter to virtualize Opportunities into external objects. E. Leverage middleware tools to bidirectionally send Opportunity data across orgs.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Universal Containers (UC) is going through major reorganization of their sales team. This would require changes to a large a number of group membership and sharing rules. UCs administrator is concerned about long processing time and failures during the process. What should a Data Architect implement to make changes efficiently? A. Log out all users and make change to sharing rules. B. Enable Defer Sharing Calculation prior to making sharing rule changes. C. Log a case with salesforce to make sharing rule changes. D. Delete old sharing rules and build new sharing rules.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers developers have created a new Lightning component that leverages an Apex controller using a SOQL query to populate a custom list view. Users are complaining that the component often fails to load and returns a timeout error. What tool should a data architect use to identify why the query is taking too long? A. Use Salesforce's query optimizer to analyze the query in the developer console. B. Use Splunk to query the system logs looking for transaction time and CPU usage. C. Enable and use the Query Plan tool in the developer console. D. Open a ticket with Salesforce support to retrieve transaction logs to be analyzed for processing time.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Container has implemented Sales Cloud to manage patient and related health records. During a recent security audit of the system, it was discovered that some standard and custom fields need to encrypted. Which solution should a data architect recommend to encrypt existing fields? A. Implement shield platform encryption to encrypt custom and standard fields. B. Export data out of Salesforce and encrypt custom and standard fields. C. Implement classic encryption to encrypt custom and standard fields. D. Use Apex Crypto Class to encrypt custom and standard fields.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has a complex Salesforce org which has been developed over the past five years. Internal users are complaining about multiple data issues, including incomplete and duplicate data in the org. NTO has decided to engage a data architect to analyze and define data quality standards. Which three key factors should a data architect consider while defining data quality standards? (Choose three.) A. Measure data timeliness and consistency. B. Define key fields in a staging database for data cleansing. C. Identify an extract, transform, load (ETL) tool for more complete data migrations. D. Measure data completeness and accuracy. E. Define data duplication standards and rules.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has one million customer records spanning 25 years. As part of its new Salesforce project, NTO would like to create a master data management strategy to help preserve the history and relevance of its customer data. Which three activities will be required to identify a successful master data management strategy? (Choose three.) A. Choose a business intelligence tool. B. Install a data warehouse. C. Create a data archive strategy. D. Identify data to be replicated. E. Define the system of record for critical data.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has multiple Salesforce orgs based on geographical regions (AMER, EMEA, APAC). NTO products are mastered in the AMER org and need to be created in the EMEA and APAC orgs after the products are approved. Which two features should a data architect recommend to share records between Salesforce orgs? (Choose two.) A. Federated Search B. Salesforce 2 Salesforce C. Change Data Capture (CDC) D. Salesforce Connect",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A large healthcare provider wishes to use Salesforce to track patient care. The following actors are in Salesforce: 1. Payment providers: Organizations who pay for the care to patients. 2. Doctors: They provide care plans for patients and need to support multiple patients. They are provided access to patient information. 3. Patients: These are individuals who need care. A data architect needs to map the actors to Salesforce objects. What should be the optimal selection by the data architect? A. Patients as Person Accounts, Payment providers as Accounts, and Doctors as Person Accounts B. Patients as Person Accounts, Payment providers as Accounts, and Doctors as Contacts C. Patients as Contacts, Payment providers as Accounts, and Doctors as Accounts D. Patients as Accounts, Payment providers as Accounts, and Doctors as Person Accounts",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has decided to franchise its brand. Upon implementation 1,000 franchisees will be able to access NTO's product information and track large customer sales and opportunities through a portal. The franchisees will also be able to run monthly and quarterly sales reports and projections as well as view the reports in dashboards. Which license does NTO need to provide these features to the franchisees? A. Customer Community License B. Lighting Platform License C. Salesforce Sales Cloud License D. Partner Community License",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) has built a B2C ecommerce site on Heroku that shares customer and order data with a Heroku Postgres database. UC is currently utilizing Postgres as the Single Source of Truth for both customers and orders. UC has asked a data architect to replicate this data into Salesforce so that Salesforce can now act as the System of Record. What are the three considerations that a data architect should weigh before implementing this requirement? (Choose three.) A. Ensure there is a tight relationship between order data and an enterprise resource planning (ERP) application. B. Determine if the data is a driver of key processes implemented within Salesforce. C. Consider whether the data is required for sales reports, dashboards, and KPIs. D. Ensure the data is CRM-centric and able to populate standard or custom objects. E. A selection of the tool required to replicate the data.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has millions of cases and are running out storage. Some user groups need to have access to historical cases for up to seven years. Which two solutions should a data architect recommend in order to minimize performance and storage issues? (Choose two.) A. Export data out of Salesforce and store in flat files on external system. B. Leverage Salesforce Privacy Center to archive case data and view archived cases through an external object. C. Create a custom object to store case history and run reports on it. D. Leverage big objects to archive case data and Lightning components to show archived data.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "United Containers (UC) has released a new disaster recovery (DR) policy that states that cloud solutions need a business continuity plan in place separate from the cloud provider's built-in data recovery solution. Which solution should a data architect use to comply with the DR policy? A. Leverage a third-party tool that extracts Salesforce data/metadata, and stores the information in an external protected system. B. Utilize an ETL tool to migrate data to an on-premise archival solution. C. Leverage Salesforce weekly exports, and store data in flat files on a protected system. D. Write a custom batch Job to extract data changes nightly, and store on an external protected system.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) needs to run monthly and yearly reports on opportunities and orders for sales reporting. There are 5 million opportunities and 10 million orders. Sales users are complaining that the report will regularly timeout. What is the fastest and most effective way for a data architect to solve the time-out issue? A. Create a skinny table in Salesforce, and copy order and opportunity fields into the skinny table and create the required reports on it. B. Extract opportunity and order data from Salesforce, and use a third-party reporting tool to run reports outside of Salesforce. C. Create custom fields on opportunity, and copy data from order into those custom fields and run all reports on Opportunity object. D. Create an aggregate custom object that summarizes the monthly and yearly values into the required format for the required reports.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has outgrown its current Salesforce org and will be migrating to a new org shortly. As part of this process, NTO will be migrating all of its metadata and data. NTO's data model in the source org has a complex relationship hierarchy with several master-detail and lookup relationships across objects, which should be maintained in the target org. Which three things should a data architect do to maintain the relationship hierarchy during migration? (Choose three.) A. Redefine the master-detail relationship fields to lookup relationship fields in the target org. B. Use Data Loader to export the data from the source org and then import/upsert into the target org in sequential order. C. Keep the relationship fields populated with the source record IDs in the import file. D. Replace source record IDs with new record IDs from the target org in the import file. E. Create an external ID field for each object in the target org and map source record IDs to this field.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) has millions of case records with case history and service level agreement data. UC's compliance team would like historical cases to be accessible for 10 years for audit purposes. What solution should a data architect recommend? A. Purchase more data storage to support the case object. B. Use a custom big object to store archived case data. C. Archive case data using a Salesforce Archival solution. D. Use a custom object to store archived case data.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has a large number of orders coming in from its online portal. Historically all orders are assigned to a generic user. Which two measures should a data architect recommend to avoid any performance issues while working with a large number of order records? (Choose two.) A. Salesforce handles the assignment of orders automatically and there is no performance impact. B. Clear the role field in the generic user record. C. Create a pool of generic users and distribute the assignment of owners to the pool of users. D. Create a role at the top of the role hierarchy and assign the role to the generic user.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) requires 2 years of customer related cases to be available on Salesforce for operational reporting. Any cases older than 2 years and up to 7 years need to be available on demand to service agents. UC creates 5 million cases per year. Which two data archiving strategies should a data architect recommend? (Choose two.) A. Sync cases older than 2 years to an external database and provide service agents access to the database. B. Use Custom objects for cases older than 2 years and use a nightly batch to move them. C. Use Heroku and external objects to display cases older than 2 years and the Bulk API to hard delete them from Salesforce. D. Use Big objects for cases older than 2 years and use a nightly batch to move them.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) is implementing Salesforce for lead management. UC procures lead data from multiple sources and would like to make sure lead data has company profile and location information. Which solution should a data architect recommend to make sure lead data has both profile and location information? A. Export data out of Salesforce and send to another team to populate company profile and location data. B. Leverage external data providers to populate company profile and location data. C. Run reports to identify records which do not have company profile and location data. D. Ask sales people to search for and populate company profile and location data.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) Is migrating data from a legacy system to Salesforce. UC would like to preserve the following information on records being migrated: 1. Date time stamps for created date and last modified date 2. Ownership of records belonging to inactive users being migrated to Salesforce Which two solutions should a data architect recommend to preserve date timestamps and ownership on records? (Choose two.) A. Log a case with Salesforce to allow updating these fields. B. Enable Modify All and View All permissions. C. Enable Update Records with Inactive Owners permission. D. Enable Set Audit Fields upon Record Creation permission.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) is implementing Salesforce and will be using Salesforce to track customer complaints, provide white papers on products, and provide subscription based support. Which license type will UC users need to fulfill UC's requirements? A. Sales Cloud License B. Salesforce License C. Service Cloud License D. Lightning Platform Starter License",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) needs to extract 50 million records from a custom object every day from its Salesforce org. NTO is facing query time-out issues while extracting these records. What should a data architect recommend in order to get around the time-out issue? A. Use a custom auto number and formula field to chunk records while extracting data, B. Use the Rest API to extract data as it automatically chunks records by 200. C. Use extract, transform, load (ETL) tool for extraction of records. D. Ask Salesforce support to increase the query timeout value.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has implemented Salesforce for its sales users. The opportunity management in Salesforce is implemented as follows: 1. Sales users enter their opportunities in Salesforce for forecasting and reporting purposes. 2. NTO has a product pricing system (PPS) that is used to update the Opportunity Amount field on opportunities on a daily basis. 3. PPS is the trusted source within NTO for Opportunity Amount. 4. NTO uses Opportunity Forecast for its sales planning and management. Sales users have noticed that their updates to the Opportunity Amount field are overwritten when PPS updates their opportunities. How should a data architect address this overwriting issue? A. Change PPS integration to update only Opportunity Amount field when the value is null. B. Create a custom field for Opportunity Amount that sales users update separating the field that PPS updates. C. Create a custom field for Opportunity amount that PPS updates separating the field sales user updates. D. Change Opportunity Amount field access to Read Only for sales users using field-level security.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers is migrating individual customers (B2C) data from legacy systems to Salesforce. There are millions of customers stored as accounts and contacts in the legacy database. Which object model should a data architect configure within Salesforce? A. Leverage a custom person account object in Salesforce. B. Leverage a custom account and contact object in Salesforce. C. Leverage the standard account and contact object in Salesforce. D. Leverage the person account object in Salesforce.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) has lead assignment rules to assign leads to owners. Leads not routed by assignment rules are assigned to a dummy user. Sales rep are complaining of high load times and issues with accessing leads assigned to the dummy user. What should a data architect recommend to solve these performance issues? A. Assign dummy user last role in role hierarchy. B. Assign dummy user to highest role in role hierarchy. C. Periodically delete leads to reduce number of leads. D. Create multiple dummy user and assign leads to them.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) is migrating data from legacy system to Salesforce. During data analysis it was discovered that data types of fields being migrated do not match with Salesforce data types. Which solution should a data architect use to ensure successful data migrations? A. Migrate legacy data to a staging database for mapping then leverage an ETL tool to transform the data and load into Salesforce. B. Migrate the legacy data leveraging an ETL tool to transform data types and load data into Salesforce. C. Export legacy data into CSV files and leverage data loader to load data into Salesforce. D. Export legacy data into the staging database and leverage stored procedures to transform data types before loading into Salesforce.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers has been a customer of Salesforce for 10 years. Currently they have 2 million accounts in the system. Due to an erroneous integration built 3 years ago, it is estimated there are 500,000 duplicates in the system. Which solution should a data architect recommend to remediate the duplication issue? A. Extract the data using data loader and use excel to merge the duplicate records B. Utilize a data warehouse as the system of truth C. Develop an ETL process that utilizes the merge API to merge the duplicate records D. Implement duplicate rules",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) has implemented a master data management strategy, which uses a central system of truth, to ensure the entire company has the same customer information in all systems. UC customer data changes need to be accurate at all times in all of the systems. Salesforce is the identified system of record for this information. What is the correct solution for ensuring all systems using customer data are kept up to date? A. Send customer record changes from Salesforce to the system of truth in real time. B. Send customer data nightly to the system of truth in a scheduled batch job. C. Have each system pull the record changes from Salesforce using change data capture. D. Send customer record changes from Salesforce to each system in a nightly batch job.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Northern Trail Outfitters is planning to build a consent form to record customer authorization for marketing purposes. What should a data architect recommend to fulfill this requirement? A. Use AppExchange solution to address the requirement. B. Utilize the Authorization Form Consent object to capture the consent. C. Use custom fields to capture the authorization details. D. Create a custom object to maintain the authorization.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) plans to maintain contact preferences for customers and employees. NTO has implemented the following: 1. Customers are Person Accounts for their retail business. 2. Customers are represented as Contacts for their commercial business. 3. Employees are maintained as Users. 4. Prospects are maintained as Leads. NTO needs to implement a standard communication preference management model for Person Accounts, Contacts, Users, and Leads. Which option should the data architect recommend NTO to satisfy this requirement? A. Create case for contact preferences, and use this to validate the preferences for Lead, Person Accounts, and Users. B. Use Individual objects to maintain the preferences with relationships to Lead, Person Account, and Users. C. Create custom fields for contact preferences in Lead, Person Account, and Users objects. D. Create a custom object to maintain preferences and build relationships to Lead, Person Account, and Users.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A national nonprofit organization is using Salesforce to recruit members. The recruitment process requires a member to be matched with a volunteer opportunity. Given the following: 1. A record is created in Project__c and used to track the project through completion. 2. The member may then start volunteering and is required to track their volunteer hours, which is stored in VTOTime__c object related to the project. 3. Ability to view or edit the VTOTime__c object needs to be the same as the Project__c record. 4. Managers must see total hours volunteered while viewing the Project__c record. Which data relationship should the data architect use to support this requirement when creating the custom VTOTime__c object? A. Master Detail field on Project__c to VTOTime__c showing a list of VTOTime__c Records in a related list. B. Lookup field on VTOTime__c to Project__c with formula filed on Project__c showing Sum of hours from VTOTime__c records. C. Lookup Field on Project__c to VTOTime__C displaying a list of VTOTime__C in a related list. D. Master Detail Field on VTOTime__c to Project__c with rollup summary field on Project__c showing sum of hours from VTOTime__c records.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has multiple Salesforce orgs based on regions. Users need read-only access to customers across all Salesforce orgs. Which feature in Salesforce can be used to provide access to customer records across all NTO orgs? A. Salesforce 2 Salesforce B. External APIs C. Salesforce Connect D. Federated Search",
+    "options": {},
+    "most_voted": "C"
+  }
+]
