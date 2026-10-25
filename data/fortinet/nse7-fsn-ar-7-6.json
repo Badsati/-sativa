@@ -1,0 +1,162 @@
+[
+  {
+    "question": "In the context of SD-WAN, the terms underlay and overlay are commonly used to categorize links. Which two statements about underlay and overlay links are correct? (Choose two.) A. Overlay links provide routing flexibility. B. Only wired connections can be used as underlay links. C. A VLAN is a type of overlay link. D. FortiLink interface is considered an underlay link. E. Wireless connections can be used to build overlay links.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have a FortiGate configuration with three user-defined SD-WAN zones and two members in each of these zones. One SD-WAN member is no longer in use in health-check and SD-WAN rules. You want to delete it. What happens if you delete the SD-WAN member from the FortiGate GUI? A. FortiGate accepts the SD-WAN member deletion with no further action. B. FortiGate displays an error message. SD-WAN zones must contain at least two members. C. FortiGate accepts the deletion and removes static routes as required. D. FortiGate accepts the deletion and places the member in the default SD-WAN zone.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. An OSPF peer is advertising route 172.16.52.0/24. The local FortiGate is configured with an inbound distribution list that allows the 172.16.0.0/14 network to be injected into its routing table. However, the 172.16.52.0/24 subnet cannot be seen in the FIB. Which two steps can the administrator of the local FortiGate take to ensure that the advertised 172.16.52.0/24 subnet will be injected into the routing table? (Choose two.) A. Modify the default prefix-list behavior from implicit deny to implicit allow. B. Change the ge value to 17. C. Add another entry to the prefix list to specifically allow the 172.16.52.0/24 network. D. Change the le value to 16.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. An ADVPN network is shown. You must configure an ADVPN using IBGP for each local region and EBGP across regions to connect Overlay 1 with Overlay 2. Which two options must you configure in the Hub2Hub BGP peering? (Choose two.) A. set. ebgp-enforce-multihop enable B. set. ibgp-enforce-multihop advpn C. set. attribute-unchanged next-hop D. set. next-hop-self enable",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. You want to configure SD-WAN on a network, as shown in the exhibit. The network contains many FortiGate devices. Some are used as next-generation firewalls (NGFW), and some are installed with extensions such as FortiSwitch, FortiAP, or FortiExtender. Which factors should you consider when planning your deployment? A. You should exclude the FortiGate devices with FortiLink connection from the SD-WAN topology. B. You should build multiple SD-WAN topologies. Each topology should contain only one type of extension. C. You can build an SD-WAN topology that includes all devices. The hubs can be FortiGate devices with FortiExtender. D. You can build an SD-WAN topology that includes all devices. The hubs must be devices without extensions.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. For your ZTP deployment, you review the CSV file shown in exhibit and note that it is missing important information. Which two elements must you change before you can import it into FortiManager? (Choose two.) A. You must define a name for each device. B. You must define a value for each device and each user-defined metadata variable. C. You must associate a device blueprint with each device. D. You must define a value for each device and each metadata variable that defines an IP address.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two troubleshooting steps should you perform if you encounter issues with intermittent web filter behavior? (Choose two.) A. Check that the inspection mode configured for the web filter profile matches that of the firewall policy where it is applied. B. Check that the correct port is mapped to HTTP in the Protocol Options. C. Check that the communication between FortiGate and FortiGuard is stable. D. Check that FortiGate is not entering conserve mode.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. The output of diagnose sys session list command is shown. If the HA ID for the primary device is 0, what happens if the primary fails and the secondary becomes the primary? A. The session state is preserved but the kernel will re-evaluate the session because the routing information will be flushed. B. The session is synchronized with the secondary device, however, because application control is applied, the session is marked dirty and has to be re-evaluated after failover. C. The session will be removed from the session table of the secondary device because the TCP session is not yet fully established. D. The session continues to permit traffic on the new primary device after failover, without requiring the client to restart the session with the server.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. How does FortiGate handle the traffic with the source IP address 10.0.1.125 and the destination IP address 128.66.0.125? A. FortiGate routes the traffic flow according to the forwarding information base (FIB). B. FortiGate drops the traffic flow. C. FortiGate steers the traffic flow through port7. D. FortiGate load balances the traffic flow through port7 and port8.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You use the FortiManager SD-WAN overlay orchestrator to prepare an SD-WAN deployment. Using information provided through the SD-WAN overlay template wizard, FortiManager creates templates that are ready to install on the spoke and hub devices. Which three templates are created by the SD-WAN overlay orchestrator for a spoke device? (Choose three.) A. CLI template B. Static route template C. Rules template D. BGP template E. IPsec tunnel template",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which order does FortiGate consider the following elements during the route lookup process? A. SD-WAN rules, policy routes, static routes, ISDB routes B. Policy routes, ISDB routes, SD-WAN rules, static routes C. Policy routes, SD-WAN rules, Internet Service Database (ISDB) routes, BGP routes D. SD-WAN rules, ISDB routes, policy routes, BGP routes",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "While troubleshooting a FortiGate web filter issue, users report that they cannot access any websites, even though those sites are not explicitly blocked by any web filter profiles that are applied to firewall policies. What are the three most likely reasons for this behavior? (Choose three.) A. The SSL/TLS deep inspection was configured but the browsers do not have the FortiGate certificate installed. B. The web filter cache has been cleared causing all websites to take longer to be rated. C. The DNS server is unreachable, preventing URL resolution. D. The webfilter-force-off setting has been enabled under config system fortiguard. E. The FortiGuard Web Filtering license has expired, causing FortiGate to apply the default block action.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You manage an SD-WAN topology and you will soon deploy 50 new branches. Which two tasks can you do in advance to simplify this deployment? (Choose two.) A. Create model devices. B. Create a policy blueprint. C. Define metadata variable values for each device. D. Create a zero-touch provisioning (ZTP) template.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. The VDOM configuration on a FortiGate device is shown. You discover that web filtering stopped working in Core1 and Core2 after a maintenance window. What are two reasons why web filtering stopped working? (Choose two.) A. The Core1 and Core2 VDOMs must also be enabled as management VDOMs to receive FortiGuard updates. B. The root VDOM does not have access to FortiManager in a closed network. C. The root VDOM does not use a VDOM link to connect with the Core1 and Core2 VDOMs. D. The root VDOM does not have access to any valid, public Fortinet Distribution Network (FDN).",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. You used the SD-WAN overlay orchestrator to prepare an IPsec tunnels configuration for a hub-and-spoke SD-WAN topology. The exhibit shows the FortiManager installation preview for one FortiGate device. Based on the exhibit, which statement correctly describes the configuration applied to the FortiGate device? A. It is a hub device. It can send ADVPN shortcut offers. B. It is a spoke device that establishes dynamic IPsec tunnels to the hub. It can send auto-discovery VPN (ADVPN) shortcut requests. C. It is a hub device. It will automatically discover the spoke devices and add them to the SD-WAN topology. D. It is a spoke device that establishes dynamic IP sec tunnels to the hub. The local subnet range is 10.10.128.0/23.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. The routing tables of FortiGate A and FortiGate B are shown. FortiGate_A and FortiGate_B are in the same autonomous system. You want to add only route 172.16.1.248/30 on FortiGate_A by updating the BGP configuration. Which configuration must you apply? A. A BGP route map in for 172.16.1.248/30 on FortiGate_A B. The prefix 172.16.1.248/30 in the BGP Networks section on FortiGate_B C. A BGP route map out for 172.16.1.248/30 on FortiGate_B D. Enable Redistribute Connected in the BGP section on FortiGate_B",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The output of a BGP debug command is shown. What is the most likely reason that the local FortiGate is not receiving any prefixes from its neighbors? A. None of the three neighbors has successfully established the TCP three-way handshake with the local router. B. The local router is waiting for the keepalive message from the router 10.125.0.60. C. The router 100.64.3.1 is waiting for the OPEN message from the local router. D. The RIB-OUT configuration for router 10.127.0.75 prevents any route advertisement to the local router.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. A network topology and the routing table of a FortiGate device is shown. What must the administrator configure in the BGP section to add only the subnet 100.64.2.0/24 in the routing table of FortiGate_A? A. The administrator must configure BGP route redistribution on FortiGate_B. B. The administrator must configure the 100.64.2.0/24 network on FortiGate_C. C. The administrator must configure connected routes redistribution on FortiGate_C. D. The administrator must configure route-map-in on FortiGate_A.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. Two hub-and-spoke groups are connected through redundant site-to-site IPsec VPNs between Hub 1 and Hub 2. Which two configuration settings are required for spoke A 1 to establish an auto-discovery VPN (ADVPN) shortcut with spoke B2? (Choose two.) A. On the hubs, auto-discovery-forwarder must be enabled on the IPsec VPNs to hubs. B. On the spokes, auto-discovery-receiver must be enabled on the IPsec VPNs to the hub. C. On the hubs, auto-discovery-receiver must be enabled on the IPsec VPNs to spokes. D. On the spokes, auto-discovery-sender must be enabled on the IPsec VPNs to hubs.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. An SD-WAN zone configuration on the FortiGate GUI is shown. What can you conclude about the zone and member configuration on this device? A. You can delete the virtual-wan-link zone. B. The WAN2 zone contains no member. C. You can add the member B-125 to the WAN3 zone and keep it as a member of the Test zone. D. You can delete the WAN1 zone.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. Which two statements are true about the health and performance of SD-WAN members 3 and 4? (Choose two.) A. The performance is an average of the metrics measured for Facebook and YouTube traffic passing through the member. B. Only related TCP traffic is used for performance measurement. C. FortiGate identifies the member as dead when there is no Facebook and YouTube traffic passing through the member. D. Encrypted traffic is not used for the performance measurement.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Partial output of a real-time OSPF debug is shown. Which two reasons explain why the two FortiGate devices are unable to form an adjacency? (Choose two.) A. The local FortiGate does not have OSPF authentication configured. B. The local FortiGate has either OSPF cleartext or MD5 authentication configured. C. There is an OSPF authentication configuration mismatch. D. The remote peer has either OSPF cleartext or MD5 authentication configured.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are three key routing principles of SD-WAN? (Choose three.) A. SD-WAN rules are skipped if the best route to the destination is not an SD-WAN member. B. Routes to directly connected subnets have precedence over SD-WAN rules. C. SD-WAN members are skipped if they do not have a valid route to the destination. D. Internet Service Database (ISDB) routes have precedence over SD-WAN rules. E. SD-WAN rules are skipped if the best route to the destination is a static route.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You configure the overlay tunnels for an SD-WAN hub-and-spoke topology defined with IPsec tunnels, BGP on loopback, and dynamic BGP. Which are two recommended IPsec settings for this topology? (Choose two.) A. On the hub, set the tunnel type to static. B. On the spoke, set the parameter net-device to enable. C. On the hub, set the parameter mode-cfg to enable. D. On the spoke, configure the parameter localid.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Consider the scenario where the server name indication (SNI) does not match either the common name (CN) or any of the subject alternative names (SAN) in the server certificate. Which two actions will FortiGate take when using the default settings for SSL certificate inspection? (Choose two.) A. FortiGate uses the CN information from the Subject field in the server certificate. B. FortiGate does not decrypt the traffic if the traffic is allowed by the web filter profile. C. FortiGate will automatically rewrite the SNI to match the CN in the certificate. D. FortiGate uses the SNI from the user's web browser.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three factors about service-level agreement (SLA) targets and SD-WAN rules should you consider when configuring SD-WAN rules? (Choose three.) A. SLA targets are used by only SD-WAN rules that are configured with a lowest cost (SLA) strategy. B. Member metrics are measured when an SLA target references them. C. When configuring an SD-WAN rule, you can select multiple SLA targets from the same performance SLA. D. Best performance SD-WAN rules cannot use SLA targets. E. When configuring an SD-WAN rule, you can select only one SLA target.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The output of a BGP debug command is shown. Why has the local router at 172.16.23.58 been unable to establish adjacency with its only neighbor? A. There is no active route to the BGP neighbor. B. The neighbor router has become unreachable, which is evident by the low ratio of messages received to messages sent. C. The local router has not received an OPEN message from the neighbor. D. The local router has not received a SYN/ACK packet from the neighbor.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. The configuration of an SD-WAN rule and the corresponding rule status and routing table are shown. You want to understand the expected behavior for traffic that matches the SD-WAN rule, at the time the output was collected. Based on the exhibits, which behavior can you expect for traffic that matches the SD-WAN rule? A. The traffic will be routed over HUB1-VPN3. B. The traffic will be load balanced across all three overlays. C. The traffic will be routed over HUB1-VPN1. D. The traffic will be routed over HUB1-VPN2.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. A FortiGate segmented into VDOMs is shown. You must ensure effective and accelerated internet access for all of the VDOMs in this enterprise network. How can you achieve this? A. Configure network processing unit (NPU) vlinks. B. Create VLANs over network processing unit (NPU) vlinks. C. Connect a physical interface from each VDOM to the root VDOM. D. Create VDOM links.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. The administrator increases the member priority on port2 to 20. Assuming the route egressing port2 is still valid, upon configuration changes and the receipt of new packets. Which two actions does FortiGate perform on existing sessions established over port2? (Choose two.) A. FortiGate updates the gateway information of the sessions with SNAT so that they use port1 instead of port2. B. FortiGate continues routing all existing sessions over port2. C. FortiGate flags all sessions as dirty. D. FortiGate routes new sessions over port1. E. FortiGate flags all source network address translation (SNAT) sessions as dirty only if the administrator has assigned an IP pool to the firewall policies with NAT.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The health-check configuration on a FortiGate device used as a spoke is shown. You notice that the hub FortiGate does not prioritize the traffic as expected. Which two configuration elements should you check on the hub? (Choose two.) A. The performance SLA has the parameter priority-out-sla configured. B. This performance SLA uses the same members. C. The performance SLA is configured with set embedded-measure accept. D. The performance SLA uses the same criteria.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "As an IT manager, you want to delegate the installation and management of your SD-WAN deployment to a managed security service provider (MSSP). Each site must maintain direct internet access and be secure. You expect significant traffic flow between the sites and want to delegate as much of the network administration and management as possible to the MSSP. Which two MSSP deployment blueprints address the your requirements? (Choose two.) A. Use a shared hub on the MSSP premises and a dedicated hub on the customer premises, and install the spokes on the customer premises. B. Install the hub and spokes on the customer premises, and enable the MSSP to manage the SD-WAN deployment using FortiManager with a dedicated ADOM. D. Install a dedicated hub on the MSSP premises for the customer, and install the spokes on the customer premises. E. Use a shared hub on the MSSP premises with a dedicated VDOM for the customer, and install the spokes on the customer premises.",
+    "options": {},
+    "most_voted": "D"
+  }
+]
