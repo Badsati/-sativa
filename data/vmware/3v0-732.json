@@ -1,0 +1,247 @@
+[
+  {
+    "question": "A network team has decided to utilize NSX to enable microsegmentation in its environment. Several networks have been created to support a three-tiered application network. An architect has been asked to incorporate this into the vRealize Automation environment and consume these networks on demand. What are two things the architect needs to take into consideration in this scenario? (Choose two.) A. usable Subnet Mask in the network profiles B. routed network profiles assigned to virtual machine port groups in the reservation C. external network profile for each application tier D. routed network profile for each application tier",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect is tasked with designing a backup strategy for vRealize Orchestrator as part of an upcoming production rollout of a Cloud Management Platform. Which are two valid backup design recommendations? (Choose two.) A. If vRealize Orchestration is embedded within the vRealize Automation appliance, perform its backup along with Manager Services for vRealize Automation. B. Perform backup of vRealize Orchestrator virtual machines in the order of the startup priority. C. If vRealize Orchestrator is a standalone component, perform its backup before backing up vRealize Automation components in no particular order. D. Perform file-level backup of the Orchestrator database only after a successful full virtual machine backup.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has a main office, three regional offices, and six branches offices. The network links are configured as shown in the exhibit. View the Exhibit: [sampleXML/xmlfile-3_1.jpg] During information gathering, an architect records: ✑ The regional offices are located in secure bunkers. The CTO feels this would be a good location for all the vRealize Automation components to meet their BC/ DR objectives. However, the CTO is looking for the best design while maintaining their very high security requirements. ✑ The branch offices are located in very remote locations with unpredictable network performance. Reliance on the main and regional offices needs to be minimal while still allowing provisioning of machines in the branch offices. The branch offices consist of three host vSphere clusters. ✑ There is synchronous vSphere Metro Storage Cluster (vMSC) between the regional offices as well as replicated backups between the regional offices with replication running nightly. The CEO wants to have the lowest possible RPO and RTO of the vRealize portal including the ability to manage already provisioned machines while NOT increasing the amount of data being replicated between the regional offices as much as possible. Referring to the exhibit, which two design specifications can the architect recommend to meet requirements? (Choose two.) A. distributed vRealize Automation management solution in the main office B. vSphere agents in each of the branch offices C. distributed vRealize Automation management solution in each of the regional offices D. distributed vRealize Automation management solution across the regional offices E. vSphere agents in the regional offices that manage the regional and branch offices",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The architect for a vRealize Automation project has a customer who wants the ability to do \"˜Backup as a Service' capabilities through day two operations. This is to allow end users to do on-demand backup and restores of their vRealize Automation workload machines without the need to open a ticket with Support. To which two infrastructure qualities does this technical requirement map? (Choose two.) A. Recoverability B. Security C. Manageability D. Availability E. Performance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two-factor authentication mechanism is supported by vRealize Automation? A. Mobile SSO (Secure Sign-On) authentication B. AirWatch Cloud Connector authentication C. Certificate-based authentication D. RADIUS (Remote Authentication Dial-In User Service) authentication",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The tenant administrator for a company's vRealize Automation deployment is asked to create a profile for a user that should be able to assemble the blueprints that define catalog items for consumers to request from the service catalog. Which tenant role should this user be granted? A. Fabric administrator B. Catalog architect C. Blueprint administrator D. Application architect",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "During requirements gathering for an organization's private cloud on a single machine catalog, the following requirements were identified: ✑ A user should be able to select a data center location which is mapped to a custom resource by the fabric administrator. ✑ A Guest VM custom hostname format should be based on the first two letters of the data center location. ✑ A generated VM custom hostname format should be displayed as a drop-down in the catalog request page using a vRealize Automation (vRA) custom property backed by external vRealize Orchestrator (vRO) action. Which design recommendation would best address these requirements? A. Define a custom property â€œ_vrm.DataCenter.Locationâ€ with static datacenter values, assign it to the blueprint with the â€œShow in the requestâ€ check box selected and map it as an input to the required vRO action. B. Define a custom property â€œVrm.DataCenter.Locationâ€ with static datacenter values, assign it to the blueprint with the â€œShow in the requestâ€ check box selected and map it as an input to the required vRO action. C. Enable â€œDisplay location on requestâ€ in the blueprintâ€™s VM machine type, map the built-in â€œVrm.DataCenter.Locationâ€ custom property as an input to the required vRO action. D. No new custom property is required since the fabric administrator has already mapped datacenter locations to the correct compute resources. Map the built-in â€œ_vrm.DataCenter.Locationâ€ custom property as an input to the required vRO action.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A cloud architect is trying to determine the operational impacts of adding another business group (DevOps) to the company's existing vRealize Automation (vRA) deployment. Existing users have reported that response times for login into their vRA infrastructure has spiked recently and it is taking longer than usual. The Active Directory user base, after the addition of DevOps users, could increase to well over 100,000 users and 50 groups. What is the VMware-recommended design to address this scenario? A. Add an additional connector to the existing Active Directory. B. Add an additional IaaS proxy agent. C. Add an additional IaaS DEM server. D. Change the default access policy when adding the additional user base. E. Increase the vRA virtual appliance memory allocation on each machine as per sizing guidelines.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A cloud architect is tasked with designing a Guest virtual machine (VM) request form for an organization's new vRealize Automation (vRA) implementation. Its current PowerCLI VM request tool uses a PowerShell script that retrieves user IDs from Active Directory, which is the same identity source for vRealize Automation. The intent of the script is to retrieve and display John Smith when the actual value in Active Directory is JSmith01. What is the most secure way to utilize the same script for user's display name in the vRA request form? A. Design a schedule vRealize Orchestrator workflow to execute the PowerShell Script and update the vRealize Automation drop-down custom property with static values. B. Design a schedule vRealize Orchestrator (vRO) workflow to execute the PowerShell Script and store values in vRO, then utilize the vRA external drop-down to retrieve these values from vRO. C. Design a display custom property in the vRA â€˜Administration/Active Directory Policyâ€™ that maps to the correct organizational unit. D. Create a drop-down custom property with external values that returns a display name using the existing PowerShell script.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company is currently experiencing long infrastructure provisioning times, given that the process to ask, review, approve and deploy their services is manual with many people involved. It is considering vRealize Automation as a resolution, but it wants to better understand how much resources it is going to need. Which three should the architect consider when determining the appropriate vRealize Automation deployment size for this environment? (Choose three.) A. number of managed machines B. number of concurrent machine provisions C. number of catalog items D. number of blueprints E. number of endpoints",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP The lead architect for a teaching hospital in Seattle is planning the deployment of a highly-distributed Cloud Management Platform based on VMware vRealize Automation. The design must include log aggregation and analytics for in-depth troubleshooting and analysis when issues arise and ensure a seamless experience for the operations teams. ✑ The organization must use vRealize Log Insight for log aggregation and analysis. ✑ The organization currently uses vRealize Operations for monitoring, alerting and capacity management. ✑ The design will use external vRealize Orchestrator Appliances. Match the actions to the components. Some of the components may be associated with more than one action. Select and Place: [sampleXML/xmlfile-8_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A cloud architect is tasked with providing a design for integration with a third-party system. The following requirements have been identified: ✑ When a user requests a virtual machine, vRealize Automation should pass the user selected application name with its key to the third-party system. The application list could be updated weekly following the architecture approval meeting. It currently has 250 items. [sampleXML/xmlfile-8_4.png] ✑ Impacts to the vRealize Automation virtual machine request screen's performance should be minimized. What would be the best solution to meet these requirements? A. Create a vRO action to return application values as â€œArray\\Stringâ€ by reading from the third-party system dynamically, Create a display drop-down custom property with external values and map it to the vRO action. B. Design a schedule vRealize Orchestrator (vRO) workflow to read values from the third-party system and store in vRO, Create a vRO action to return application values stored in vRO as â€œPropertiesâ€, Create a Display drop-down custom property with external values and map it to the vRO action. C. Create a Display drop-down custom property with external values and provide AJAX call information to the third-party system. D. Design a schedule vRO workflow to read values from the third-party and store in vRO, Create a vRO action to return application values stored in vRO as â€œArray \\Stringâ€, Create a Display drop-down custom property with external values and map it to the vRO action.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IaaS Administrator has been tasked with organizing virtualization compute resources and cloud endpoints into fabric groups by type and intent. One or more fabric administrators will manage the resources in each fabric group. Which are three considerations to take into account when designing the fabric groups? (Choose three.) A. Fabric administrators are responsible for creating reservations on the compute resources in their fabric groups to allocate fabric to specific business groups. B. Fabric administrators monitor the resource use for their group(s) and often are approvers for catalog requests. C. Fabric administrators may submit requests on behalf of other users. These users could be a member of more than one group and have different roles in different groups. D. The IaaS administrator must grant the role of fabric administrator to the appropriate users. E. Fabric groups will be created in a specific tenant, but their resources could be made available to users who belong to business groups in all tenants.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP The architect for a teaching hospital is planning the deployment of a highly-distributed cloud management platform based on VMware vRealize Automation. The design must ensure that all virtual machines should be setup in a prescribed order. ✑ vSphere 6.5 will be used as the deployment platform. ✑ vSphere Availability VM Groups and VM Rules will be used. ✑ The design will use vRealize Orchestrator embedded in the vRealize Automation Appliances. Place the virtual machine groups in the correct start-up order. Select and Place: [sampleXML/xmlfile-10_4.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Development team members would like to deploy multiple software packages within a blueprint. One of these software packages, Tax Processing 1.0, has licensing requirements. Any member of the finance team can authorize the installation per request, but the entire team must be notified. Which approval policies would satisfy this request? A. [sampleXML/xmlfile-11_1.png] B. [sampleXML/xmlfile-11_2.png] C. [sampleXML/xmlfile-11_3.png] D. [sampleXML/xmlfile-11_4.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three statements are true regarding a multitenant deployment where each tenant managed its own infrastructure in vRealize Automation? (Choose three.) A. Each tenant has an IaaS administrator who could create fabric groups and appoint fabric administrators with their respective tenants. B. Fabric administrators CANNOT create reservations for business groups in other tenants. C. Each tenant must provide its own infrastructure resources and CANNOT share a common infrastructure. D. The system administrator is the only user who logs in to the default tenant to manage system-wide configurations and create tenants. E. Fabric administrators manage reservations only for the users in their own tenant.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect has been tasked with designing a vRealize Automation blueprint that includes Linux machines. The design includes a requirement that all newly- created machines be added to the corporate DNS. Which two design specifications will address the needs of this scenario? A. Use custom properties on each machine within the blueprint that provides the details for adding the machine to the corporate DNS. B. Create an Event Broker subscription that runs an appropriate vRealize Orchestrator workflow during an appropriate machine lifecycle state. C. Add and configure the appropriate XaaS component into the machine blueprint. D. Create an XaaS blueprint that adds the machine to DNS and then builds the machine.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect has been tasked with designing a blueprint containing web, application and database machines utilizing NSX for networking. Upon provisioning, network traffic must be automatically restricted to allow: ✑ The web server to communicate only to the application server ✑ The application server to communicate to both the web and database servers ✑ The database server to be blocked from communicating to the other servers Which two methods could the architect use to accomplish this? (Choose two.) A. Assign an appropriate security group to the entitled items or entitled service within the entitlement. B. Add an appropriate security group to the blueprint from within the blueprint properties, under NSX Settings. C. Create or update an appropriate security group within NSX to include the provisioned machines. D. Specify an appropriate security group in the blueprint and assign it to each machine. E. Use an Event Broker subscription to ensure that provisioned machines are receiving the appropriate security group assignment.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "IT Services would like to automate the allocation of software applications. The company uses a modern virtual desktop platform with software management capabilities, and the platform supports interoperability via a REST API. The following requirements have been established for this project: ✑ Business users will use a self-service portal to request software added to their existing system. ✑ The requestor may select one or more software applications from a list during the request. ✑ The software application list must be up-to-date. ✑ The virtual desktop team will provide REST API calls needed to interface with the existing platform. Which three of these listed elements are required for this scenario? (Choose three.) A. Customization of XaaS form B. vRealize Orchestrator workflow with script action C. Resource mapping D. Resource action E. External value definition",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect is tasked with designing a multi-region Software Defined Data Center (SDDC) deployment. The operations team has mandated that the solution enable real-time logging for all automation components. The architect makes a design decision to use a vRealize Log Insight cluster in each region, consisting of a total of three nodes. Which three data sources are required to be in scope? (Choose three.) A. vRealize Automation Appliance B. NSX Manager, NSX Controller instances and NSX Edge instances C. vRealize Operations Manager D. vRealize Orchestrator E. vRealize IaaS Server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An emerging software start-up company is growing rapidly. The Engineering department is looking to quickly scale its testing environment into the cloud. The vRealize Automation architect has been tasked with recommending the appropriate user role for a newly-formed integration team to integrate VMware vCloud Air into the Engineering Tenant. What is the minimum user role that must be granted to the integration team? A. Container Administrator B. Fabric Administrator C. Tenant Administrator D. IaaS Administrator",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has deployed vRealize Automation into its production environment and now wants to integrate it with different components of its infrastructure through the REST API. What are three services provided by the REST API? (Choose three.) A. Blueprint Service B. Forms Service C. Monitoring Service D. Portal Service E. Approval Service",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has a service called Databases with a MySQL and a PostgreSQL catalog item within it. The architect has created a new blueprint for MS SQL Server and added the published catalog item to the Databases service. Management has requested that the MS SQL Server catalog item be available only to the Enterprise business group. Currently, the Developers business group has access to the entire Databases service with the existing MySQL and PostgreSQL catalog items. Which two should the architect recommend to reconfigure Developers and Enterprise entitlements to meet these requirements? (Choose two.) A. Edit the Enterprise entitlement and add the MS SQL Server catalog item. B. Edit the Enterprise entitlement and add the Databases service and the MS SQL Server catalog item. C. Edit the Developers entitlement and remove the Databases service and add the MySQL and PostgreSQL catalog items individually. D. Edit the Developers entitlement and add the MySQL and PostgreSQL catalog items individually.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The development team has decided to move its 12-node application into its vRealize Automation environment. There are several teams of developers all working on the same application, so the traffic needs to be separated from the other teams. Since the application has no dependencies outside of itself, what could be done to address the needs of this scenario? A. Create a separate logical network and add it to the development reservation. B. Create a new NSX routed network using a /28 netmask and add it to the development reservation. C. Create an NSX One-To-One NAT network and add it to the development reservation. D. Create an NSX One-To-Many NAT network and enable the DHCP feature and add it to the development reservation.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has recently implemented a DevOps strategy amongst the development and operations teams. In the second phase of the project, it needs to apply the same best practices of version control, unit testing, and continuous delivery to its vSphere infrastructure. Considering the scenario, which two statements are true regarding the solution? (Choose two.) A. Content changes for the infrastructure generally flow from development to multiple test and production environments and are often developed separately by different team members and then merged into a shared environment. B. Infrastructure content is usually binary, and this makes it difficult to use a source control system to handle updates and merges. A different tool must be used to manage these requirements. C. Multiple steps of imports and exports of infrastructure contents are required for a single change to propagate through the release pipeline from development to production. D. Once the movement of such content between environments is automated, consistent results are guaranteed for the deployment of infrastructure components.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The architect for a vRealize Automation project has met with the IT team and identified the following requirements: 1. Fine grained logging and monitoring of all events 2. VMs have to be available within 5 minutes of request 3. Utilize built-in functionality 4. HIPAA Compliance 5. API calls to vRA and NSX 6. Custom Portal To which infrastructure quality would the \"˜VMs have to be available within 5 minutes of request' requirement map? A. Manageability B. Recoverability C. Security D. Performance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The architect for a vRealize Automation project met with the IT team and identified the following requirements: 1. Fine grained logging and monitoring of all events 2. 99.99% SLA of the custom portal 3. Utilize built-in functionality 4. HIPAA Compliance 5. API calls to vRA and NSX 6. Custom Portal 7. Ability for 150 concurrent DEM wokflows To which infrastructure quality would the \"˜Ability for 150 concurrent DEM workflows' technical requirement map? A. Manageability B. Recoverability C. Security D. Performance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The architect for a software defined data center (SDDC) project is implementing a vRealize Automation solution. The company has multiple locations but wants management to be centralized in its main offices. Each of the cities needs to have its own roles to ensure resources, create blueprints and perform daily functions. Which design recommendation would meet the requirements of this scenario? A. Create a single business group and separate the users from the various cities using entitlements. B. Create a single tenant for all of the cities and separate the users from the various cities using entitlements. C. Create a business group for each of the cities and create a single tenant for all of the cities. D. Create a tenant for each of the cities and create a single business group for all of the cities.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Development team members would like to build new virtual machines using vRealize Orchestrator workflow. ✑ They would also like them to be added automatically to DNS prior to initial start. ✑ The domain administration team is responsible for DNS and requires review of any DNS entry requests prior the creation of new machines. Which design will satisfy these requirements? A. [sampleXML/xmlfile-19_1.png] B. [sampleXML/xmlfile-19_2.png] C. [sampleXML/xmlfile-19_3.png] D. [sampleXML/xmlfile-19_4.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company is currently reviewing all of its security roles and permissions due to a compliance audit. It needs to specify which roles are tenant-specific and which are system-wide. Which two roles are system-wide? (Choose two.) A. Services architect B. Approval administrator C. IaaS administrator D. Fabric administrator E. Application architect F. System administrator",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has been successfully deploying virtual machines to its data center in Boston for over a year. The architect has added the endpoint in vRealize Automation and been tasked with consuming the resources in a new data center in Las Vegas. With minimal change to the catalog design, which two design options could the architect consider in order to enable users to begin deploying machines to both data centers? (Choose two.) A. Configure the locations.xml file on the IaaS Manager servers to contain a location for Las Vegas. Select â€˜Display Location on Requestâ€™ within your existing blueprints. B. Create a new reservation utilizing compute resources in Las Vegas. Create a new reservation policy and assign it to the new reservation. C. Configure the locations.xml file on the IaaS Web servers to contain a location for Las Vegas. Select â€˜Display location on requestâ€™ within your existing blueprints. D. Copy your existing blueprints and set the reservation policy to the new reservation policy that is set on the Las Vegas reservation. E. Create a new reservation utilizing compute resources in Las Vegas. Set the reservation policy to the same as the Boston reservation.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect was tasked with providing a temporary vRealize Automation instance for a test environment that includes a single vRealize Automation appliance and an IaaS server that includes a SQL database instance. After testing is complete, the architect is tasked to convert the existing instance into a distributed, load-balanced instance to be used for production. Which design solution would best address this request? A. [sampleXML/xmlfile-20_1.png] B. [sampleXML/xmlfile-21_1.png] C. [sampleXML/xmlfile-21_2.png] D. [sampleXML/xmlfile-21_3.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "During initial provisioning lifecycle of its vRealize Automation workloads, an architect wants the ability to call an external system during state changes of machines. Which are three acceptable lifecycle states that could be used for calling out to a system? (Choose three.) A. WFStubMachineRetired B. WFStubMachineProvisioned C. WFStubMachineDisposing D. WFStubExtendMachine E. WFStubMachineExpired",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements are true regarding a vRealize Automation appliance configured for high availability? (Choose two.) A. The vRealize Automation appliance supports active-active high availability for all components except the appliance database. B. The appliance database is automatically clustered within the vRealize Automation appliance and failover is a manual operation. C. The vRealize Automation appliance supports active-active high availability for all components including the appliance database. D. Since the appliance database is automatically clustered within the vRealize Automation appliance, failover is an automated operation.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A development team has requested the ability to refresh database contents for existing pre-production SQL servers managed by vRealize Automation. The developers have provided the cloud architect with a T-SQL script suitable for performing this task. Which design recommendation would address the requirements of this scenario? A. Build a software component to run the T-SQL script. B. Design an XaaS blueprint based on a custom Orchestrator workflow. C. Design a blueprint and use custom properties to run the T-SQL script. D. Build a resource action and publish it to the developers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect has been asked to design a machine blueprint for the development team. The machine(s) of each deployment must contain dynamically-assigned unique IP's that could be reached by the resources on the corporate network. Which type of network should the architect recommend for this blueprint? A. On-Demand NAT Network B. Existing Network C. On-Demand Routed Network D. On-Demand Load Balancer",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company with a full vRealize solution stack deployment has recently been considering the Amazon Web Services (EC2) offering. The vRealize Automation architect is being tasked with integrating the Amazon test account with its environment for testing. What would be the easiest way to complete this integration without adding any risks to the production environment? A. Deploy a vCenter 6.0 appliance in Amazon and connect it as an endpoint to vRealize Automation. B. Create an Openstack endpoint and connect it to Amazonâ€™s cloud. C. Use the Amazon EC2 endpoint using a restricted access key for a test environment. D. Use the vRealize Orchestrator Plug-in for Amazon Web Services to create an Amazon EC2 endpoint using a restricted access key for a test environment.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect is tasked with designing a solution to satisfy the following requirements for vSphere Machine provisioning: ✑ All business groups share the same vCenter template. ✑ Based on the user selected application name, a corresponding vCenter customization specification should be selected. If no match is found, the business group's default customization specification should be used. Which two solutions could meet these requirements? A. [sampleXML/xmlfile-24_3.png] B. [sampleXML/xmlfile-24_4.png] C. [sampleXML/xmlfile-24_5.png] D. [sampleXML/xmlfile-24_6.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A large non-profit organization is working to automate deployment of servers and software. For one popular software package, the organization owns a limited number of instance licenses which must be tracked per deployment. Currently this is a manual process, involving an operator updating a SQL database of licensing information. The cloud architect has already designed a software component and blueprint capable of deploying the software. Which design meets the requirements of this scenario? A. Publish the blueprint as a catalog item with a quota configured to limit the number of deployments. B. Publish the blueprint as a catalog item with the appropriate custom property. C. Design an approval policy using event subscription. D. Design an approval policy using the â€œRequired based on conditionsâ€ option to validate against the SQL database.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company's vRealize Automation infrastructure is using replicated storage as well as local storage. All production virtual machine deployments should be places into the \"Production\" folder so that it is on replicated storage. For the company's development environment, all deployments should be placed in the \"Development\" VM folder so that it is on non-replicated storage. Which setting should be configured for the production blueprint? A. VMware.VirtualCenter= Development B. VMware.VirtualCenter= Production C. VMware.VirtualCenter.Folder= Production D. VMware.VirtualCenter.Folder= Development",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The architect for a vRealize Automation project met with the IT team and identified the following requirements: 1. Fine grained logging and monitoring of all events 2. 99.99% SLA of the custom portal 3. Utilize built-in functionality 4. HIPAA Compliance 5. API calls to vRA and NSX 6. Custom Portal To which two infrastructure qualities would the \"˜Fine grained logging and monitoring of all events' technical requirement map? A. Manageability B. Recoverability C. Security D. Performance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator maintains multiple tenants on a vRealize Automation environment. Consumers of Tenant B have requested to modify their current tenant architecture from the default to incorporate their own mail servers so that their user base can respond to notifications for completing work items and approvals. Consumers of Tenant A insist that no change be made to their current mail settings. Which design changes are required to the architecture to meet the requirements for both tenants? A. Log in to the default tenant as administrator and under the Administration tab, select Email Servers, then add and configure the additional new mail servers. B. Log in to Tenant B as a tenant administrator and under the Administration tab, select each mail server and click Override Global, then configure the requested new mail servers. C. Log in to the default tenant as administrator and under the Administration tab, select Tenant B, then add and configure the requested new mail servers for the tenant. D. Log in to Tenant B as an IaaS administrator and grant approval administrator privileges to the required user base of the tenant.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has the full VMware software-defined data center (SDDC) stack deployed and is now considering Amazon Web Services (EC2). The vRealize Automation (vRA) architect needs to integrate an Amazon test account to perform testing. What should the architect do to move forward with the initiative? A. Create an Openstack endpoint and connect it to Amazonâ€™s cloud. B. Create an Amazon EC2 endpoint. C. Deploy a vCenter server appliance in Amazon AWS and connect it as an endpoint to vRealize Automation. D. Use the vRealize Orchestrator Plug-in for Amazon Web Services (AWS).",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three privileges are assigned to a fabric administrator in a vRealize Automation solution? (Choose three.) A. create reservations for any tenant that uses their fabric group B. manage property groups and machine prefixes and the property dictionary that are used across all tenants and business groups C. define cost profiles for compute resources of their fabric group D. manage physical machines and compute resources assigned to the fabric group E. create and manage the reservations and policies associated with the physical resources for their fabric group",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company is in the process of finalizing its cross-team requirements for its Cloud Management Platform design. The Cloud Infrastructure team has indicated that it would like a way to interact with the platform programmatically. After some research, the decision is made to use vRealize CloudClient. What are three use cases for using the selected command-line utility? (Choose three.) A. Browse the catalog and submit a request. B. Execute a workload reclamation request. C. Import and export blueprints and other content to a human-readable format. D. Update DNS on the vRealize Automation appliance. E. Execute vRealize Orchestrator workflows.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company is in the initial stage of planning a vRealize Automation project for its cloud datacenter. It wants to provide self-service provisioning of applications based on templates created by IT and application subject matter experts. ✑ Security policy will be predefined by the security team and applied dynamically as new application instances are provisioned. ✑ The existing private cloud infrastructure will be utilized to host this, along with existing Active Directory and other common infrastructure such as the enterprise IP address management system. Which are two design constraints in this scenario? (Choose two.) A. There may be insufficient capacity. B. The existing IP address management system must be used. C. There are existing DNS and NTP servers. D. No further ESXi hosts can be added.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect is designing for the ability to deploy a maximum of 9,000 managed machines and 300 catalog items in a vRealize Automation (vRA) environment. Which vRA deployment method would meet this requirement while keeping the number of machines to a minimum? A. Extra Large B. Large C. Small D. Medium",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company is developing its storage-as-a-service solution using vRealize Automation. It has created a security group that will be assigned to the engineers developing this solution. Following the principle of least privilege, which role should be associated with this security group? A. XaaS architect B. Catalog administrator C. Infrastructure architect D. Application architect E. Tenant administrator",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A financial services company has mandated that all IP and DNS entries be allocated from an existing third-party IPAM solution. Also, for auditing purposes, all systems must handle user authentication via the existing open source LDAP directory. When considering a logical design for this scenario, which is true about the dependency relationships of these systems? A. The LDAP system is an upstream dependency and the IPAM system is a downstream dependency of vRealize Automation. B. The LDAP system is an upstream dependency and the LDAP system is a downstream dependency of vRealize Automation. C. Both the IPAM and LDAP systems are external, upstream dependencies of vRealize Automation. D. Both the IPAM and LDAP systems are external, downstream dependencies of vRealize Automation.",
+    "options": {},
+    "most_voted": ""
+  }
+]
