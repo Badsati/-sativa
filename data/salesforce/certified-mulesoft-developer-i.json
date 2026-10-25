@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Refer to the exhibits. The Mule application does NOT define any global error handlers. The Validation component in the private flow throws an error. What response message is returned to a web client request to the main flow's HTTP Listener? A. \"Parent error\" B. \"Child error\" C. \"Parent completed\" D. \"Validation Error''",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A function named toUpper needs to be defined that accepts a string named userName and returns the string in uppercase. What is the correct DataWeave code to define the toUpper function? A. var toUpper(userName) = upper(userName) B. fun toUpper(userName) = upper(userName) C. var toUpper(userName) -> upper(userName) D. fun toUpper(userName) -> upper(userName)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. The Set Variable transformer is set with value #[ { first: \"Max\", last: Mule\" } ] What is a valid DataWeave expression to set as the message attribute of the Logger to access the value \"Max\" from the Mule event? A. \"customer.first\" B. vars.\"customer\".\"first\" C. vars.\"customer.first\" D. customer.first",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. The main flow contains an HTTP Request operation configured to call the child flow's HTTP Listener. A web client sends a GET request to the HTTP Listener with the qty query parameter set to 30. After the HTTP Request operation completes, what parts of the Mule event at the main flow's Logger component are the same as the Mule event that was input to the HTTP Request operation? A. The entire Mule event B. All variables C. The payload and all attributes D. The payload and all variables",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. The Set Payload transformer in the addItem child flow uses DataWeave to create an order object. What is the correct DataWeave code for the Set Payload transformer in the createOrder flow to use the addItem child flow to add a router cable with the price of 100 to the order? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. The input array of strings is processed by the batch job that processes, filters, and aggregates the values. What is the last message logged by the Logger component after the batch job completes processing? A. [ \"A\", \"C\", \"D\", \"E\" ] B. [ \"D\", \"E\" ] C. [ \"E\" ] D. [ [ \"A\", \"C\", \"D\" ], [ \"E\" ] ]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Northern Trail Outfitters is developing a Mule application to process web client POST requests with payloads containing order information, including the user name and purchased items. The Shipping connector returns a shipping address for the input payload's user name. The Shipping connector's Shipping Address operation is configured with a target named shippingAddress. The Set Payload transformer needs to set an item key equal to the items value from the original received payload and a shippingInfo key equal to the Shipping Address operation's response. What is a straightforward way to properly configure the Set Payload transformer with the required data? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. In the color flow, both the variable named color and the payload are set to \"red\". An HTTP POST request is then sent to the decideColor flow's HTTP Listener. What is the payload value at the Logger component after the HTTP Request completes? A. \"blue\" B. \"white\" C. \"red\" D. An error message",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The Default scope in the Choice router recursively calls the color flow. A web client sends a PUT request to the HTTP Listener with payload \"Blue\". What response is returned to the web client? A. \"Green\" B. \"Blk\" C. \"Red\" D. An error message",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. A web client sends sale data in a POST request to the Mule application. The Transform Message component then enriches the payload by prepending a vendor name to the sale data. What is written to the sales.csv file when the flow executes? A. The enriched payload in CSV format B. The enriched payload in XML format C. An error message D. The enriched payload in JSON format",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. A database Address table contains a ZIPCODE column and an increasing ID column. The Address table currently contains four (4) records. The On Table Row Database listener is configured with its watermark set to the Address table's ZIPCODE column and then the Mule application is run in Anypoint Studio for the first time, and the On Table Row Database listener polls the Address table. A new row is added to the database with ID=5 and ZIPCODE=90006, and then the On Table Row Database listener polls the database again. After the next execution of the On Table Row Database listener polling, what database rows have been processed by the Mule flow since the Mule application was started? A. B. C. D.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. The Mule application does NOT define any global error handler elements. A web client sends a GET request to the HTTP Listener. What response message is returned to the web client? A. \"Start\" B. \"String is not blank\" C. \"\" D. \"End\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. What DataWeave expression transforms the example XML input to the CSV output? A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. The Mule application configures and uses two HTTP Listener global configuration elements. The Mule application is run in Anypoint Studio. If the Mule application starts correctly, what URI and port number(s) can receive web client requests; if the Mule application fails to start, what is the cause of the failure? A. The Mule application fails to start There is a URL path conflict because both HTTP Listeners are configured with the same path / B. The Mule application fails to start There is a port bind conflict because the HTTP Request also uses port 3333 C. The Mule application starts successfully Web client requests can only be received at the URI / on port 2222, not on port 3333 D. The Mule application starts successfully Web client requests can be received at the URI / on port 2222 or port 3333",
+    "options": {},
+    "most_voted": "D"
+  }
+]
