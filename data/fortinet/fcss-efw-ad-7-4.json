@@ -1,0 +1,287 @@
+[
+  {
+    "question": "A company that acquired multiple branches across different countries needs to install new FortiGate devices on each of those branches. However, the IT staff lacks sufficient knowledge to implement the initial configuration on the FortiGate devices. Which three approaches can the company take to successfully deploy advanced initial configurations on remote branches? (Choose three.) A. Use metadata variables to dynamically assign values according to each FortiGate device. B. Use provisioning templates and install configuration settings at the device layer. C. Use the Global ADOM to deploy global object configurations to each FortiGate device. D. Apply Jinja in the FortiManager scripts for large-scale and advanced deployments. E. Add FortiGate devices on FortiManager as model devices, and use ZTP or LTP to connect to FortiGate devices.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is checking an enterprise network and sees a suspicious packet with the MAC address e0:23:ff:fc:00:86. What two conclusions can the administrator draw? (Choose two.) A. The suspicious packet is related to a cluster that has VDOMs enabled. B. The network includes FortiGate devices configured with the FGSP protocol. C. The suspicious packet is related to a cluster with a group-id value lower than 255. D. The suspicious packet corresponds to port 7 on a FortiGate device.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company's guest internet policy, operating in proxy mode, blocks access to Artificial Intelligence Technology sites using FortiGuard. However, a guest user accessed a page in this category using port 8443. Which configuration changes are required for FortiGate to analyze HTTPS traffic on nonstandard ports like 8443 when full SSL inspection is active in the guest policy? A. Add a URL wildcard domain to the website CA certificate and use it in the SSL/SSH Inspection Profile. B. In the Protocol Port Mapping section of the SSL/SSH Inspection Profile, enter 443, 8443 to analyze both standard (443) and non-standard (8443) HTTPS ports. C. To analyze nonstandard ports in web filter profiles, use TLSv1.3 in the SSL/SSH Inspection Profile. D. Administrators can block traffic on nonstandard ports by enabling the SNI check in the SSL/SSH Inspection Profile.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator needs to install an IPS profile without triggering false positives that can impact applications and cause problems with the user's normal traffic flow. Which action can the administrator take to prevent false positives on IPS analysis? A. Use the IPS profile extension to select an operating system, protocol, and application for all the network internal services and users to prevent false positives. B. Enable Scan Outgoing Connections to avoid clicking suspicious links or attachments that can deliver botnet malware and create false positives. C. Use an IPS profile with action monitor, however, the administrator must be aware that this can compromise network integrity. D. Install missing or expired SSL/TLS certificates on the client PC to prevent expected false positives.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a hub and spokes deployment. An administrator is deploying several spokes, including the BGP configuration for the spokes to connect to the hub. Which two commands allow the administrator to minimize the configuration? (Choose two.) A. neighbor-group B. route-reflector-client C. neighbor-range D. ibgp-enforce-multihop",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Why does the ISDB block layers 3 and 4 of the OSI model when applying content filtering? (Choose two.) A. FortiGate has a predefined list of all IPs and ports for specific applications downloaded from FortiGuard. B. The ISDB blocks the IP addresses and ports of an application predefined by FortiGuard. C. The ISDB works in proxy mode, allowing the analysis of packets in layers 3 and 4 of the OSI model. D. The ISDB limits access by URL and domain.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. The Administrators section of a root FortiGate device and the Security Fabric Settings section of a downstream FortiGate device are shown. When prompted to sign in with Security Fabric in the downstream FortiGate device, a user enters the AdminSSO credentials. What is the next status for the user? A. The user is prompted to create an SSO administrator account for AdminSSO. B. The user receives an authentication failure message. C. The user accesses the downstream FortiGate with super_admin_readonly privileges. D. The user accesses the downstream FortiGate with super_admin privileges.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user reports that their computer was infected with malware after accessing a secured HTTPS website. However, when the administrator checks the FortiGate logs, they do not see that the website was detected as insecure despite having an SSL certificate and correct profiles applied on the policy. How can an administrator ensure that FortiGate can analyze encrypted HTTPS traffic on a website? A. The administrator must enable reputable websites to allow only SSL/TLS websites rated by FortiGuard web filter. B. The administrator must enable URL extraction from SNI on the SSL certificate inspection to ensure the TLS three-way handshake is correctly analyzed by FortiGate. C. The administrator must enable DNS over TLS to protect against fake Server Name Indication (SNI) that cannot be analyzed in common DNS requests on HTTPS websites. D. The administrator must enable full SSL inspection in the SSL/SSH Inspection Profile to decrypt packets and ensure they are analyzed as expected.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows an ADVPN network. The client behind Spoke-1 generates traffic to the device located behind Spoke-2. What is the first message that the hub sends to Spoke-1 to bring up the dynamic tunnel? A. Shortcut query B. Shortcut offer C. Shortcut reply D. Shortcut forward",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the initial step performed by FortiGate when handling the first packets of a session? A. Installation of the session key in the network processor (NP) B. Data encryption and decryption C. Security inspections such as ACL, HPE, and IP integrity header checking D. Offloading the packets directly to the content processor (CP)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator applied a block-all IPS profile for client and server targets to secure the server, but the database team reported the application stopped working immediately after. How can an administrator apply IPS in a way that ensures it does not disrupt existing applications in the network? A. Use an IPS profile with all signatures in monitor mode and verify patterns before blocking. B. Limit the IPS profile to server targets only to avoid blocking connections from the server to clients. C. Select flow mode in the IPS profile to accurately analyze application patterns. D. Set the IPS profile signature action to default to discard all possible false positives.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is extensively using VXLAN on FortiGate. Which specialized acceleration hardware does FortiGate need to improve its performance? A. NP7 B. SP5 C. СР9 D. NTurbo",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a partial enterprise network. An administrator would like the area 0.0.0.0 to detect the external network. What must the administrator configure? A. Enable RIP redistribution on FortiGate B. B. Configure a distribute-route-map-in on FortiGate B. C. Configure a virtual link between FortiGate A and B. D. Set the area 0.0.0.l type to stub on FortiGate A and B.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the ADVPN network topology and partial BGP configuration. Which two parameters must an administrator configure in the config neighbor range for spokes shown in the exhibit? (Choose two.) A. set max-neighbor-num 2 B. set neighbor-group advpn C. set route-reflector-client enable D. set prefix 172.16.1.0 255.255.255.0",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements about IKEv2 are true if an administrator decides to implement IKEv2 in the VPN topology? (Choose two.) A. It includes stronger Diffie-Hellman (DH) groups, such as Elliptic Curve (ECP) groups. B. It supports interoperability with devices using IKEv1. C. It exchanges a minimum of two messages to establish a secure tunnel. D. It supports the extensible authentication protocol (EAP).",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator must enable direct communication between multiple spokes in a company's network. Each spoke has more than one internet connection. The requirement is for the spokes to connect directly without passing through the hub, and for the links to automatically switch to the best available connection. How can this automatic detection and optimal link utilization between spokes be achieved? A. Set up OSPF routing over static VPN tunnels between spokes. B. Utilize ADVPN 2.0 to facilitate dynamic direct tunnels and automatic link optimization. C. Establish static VPN tunnels between spokes with predefined backup routes. D. Implement SD-WAN policies at the hub to manage spoke link quality.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What does the command set forward-domain <domain_ID> in a transparent VDOM interface do? A. It configures the interface to prioritize traffic based on the domain ID, enhancing quality of service for specified VLANs. B. It isolates traffic within a specific VLAN by assigning a broadcast domain to an interface based on the VLAN ID. C. It restricts the interface to managing traffic only from the specified VLAN, effectively segregating network traffic. D. It assigns a unique domain ID to the interface, allowing it to operate across multiple VLANs within the same VDOM.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a physical topology and a traffic log. The administrator is checking on FortiAnalyzer traffic from the device with IP address 10.1.10.1, located behind the FortiGate ISFW device. The firewall policy in on the ISFW device does not have UTM enabled and the administrator is surprised to see a log with the action Malware, as shown in the exhibit. What are the two reasons FortiAnalyzer would display this log? (Choose two.) A. Security rating is enabled in ISFW. B. ISFW is in a Security Fabric environment. C. ISFW is not connected to FortiAnalyzer and must go through NGFW-1. D. The firewall policy in NGFW-1 has UTM enabled.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which contains a partial VPN configuration. What can you conclude from this VPN IPsec phase 1 configuration? A. This configuration is the best for networks with regular traffic intervals, providing a balance between connectivity assurance and resource utilization. B. Peer IDs are unencrypted and exposed, creating a security risk. C. FortiGate will not add a route to its routing or forwarding information base when the dynamic tunnel is negotiated. D. A separate interface is created for each dial-up tunnel, which can be slower and more resource intensive, especially in large networks.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company's users on an IPsec VPN between FortiGate A and B have experienced intermittent issues since implementing VXLAN. The administrator suspects that packets exceeding the 1500-byte default MTU are causing the problems. In which situation would adjusting the interface’s maximum MTU value help resolve issues caused by protocols that add extra headers to IP packets? A. Adjust the MTU on interfaces only if FortiGate has the FortiGuard enterprise bundle, which allows MTU modification. B. Adjust the MTU on interfaces in all FortiGate devices that support the latest family of Fortinet SPUs: NP7, CP9 and SP5. C. Adjust the MTU on interfaces in controlled environments where all devices along the path allow MTU interface changes. D. Adjust the MTU on interfaces only in wired connections like PPPoE, optic fiber, and ethernet cable.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a command output. FortiGate_A and FortiGate_B are members of an FGSP cluster in an enterprise network. While testing the cluster using the ping command, the administrator monitors packet loss and found that the session output on FortiGate_B is as shown in the exhibit. What could be the cause of this output on FortiGate_B? A. The session synchronization is encrypted. B. session-pickup-connectionless is set to disable on FortiGate_B. C. FortiGate_B is configured in passive mode. D. FortiGate_A and FortiGate_B have the same standalone-group-id value.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a partial troubleshooting command output. An administrator is extensively using IPsec on FortiGate. Many tunnels show information similar to the output shown in the exhibit. What can the administrator conclude? A. IPsec SAs cannot be offloaded. B. The two IPsec SAs, inbound and outbound, are copied to the NPU. C. Only the outbound IPsec SA is copied to the NPU. D. Only the inbound IPsec SA is copied to the NPU.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a corporate network and a new remote office network. An administrator must integrate the new remote office network with the corporate enterprise network. What must the administrator do to allow routing between the two networks? A. The administrator must implement BGP to inject the new remote office network into the corporate FortiGate device. B. The administrator must configure a static route to the subnet 192.168.l.0/24 on the corporate FortiGate device. C. The administrator must configure virtual links on both FortiGate devices. D. The administrator must implement OSPF over IPsec on both FortiGate devices.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows an enterprise network connected to an internet service provider. The administrator must configure the BGP section of FortiGate A to give internet access to the enterprise network. Which command must the administrator use to establish a connection with the internet service provider? A. config neighbor B. config redistribute bgp C. config router route-map D. config redistribute ospf",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the FortiGuard Distribution Network of a FortiGate device. FortiGuard Distribution Network on FortiGate An administrator is trying to find the web filter database signature on FortiGate to resolve issues with websites not being filtered correctly in a flow-mode web filter profile. Why is the web filter database version not visible on the GUI, such as with IPS definitions? A. The web filter database is stored locally, but the administrator must run over CLI diagnose autoupdate versions. B. The web filter database is stored locally on FortiGate, but it is hidden behind the GUI. It requires enabling debug mode to make it visible. C. The web filter database is not hosted on FortiGate: FortiGate queries FortiGuard or FortiManager for web filter ratings on demand. D. The web filter database is only accessible after manual syncing with a valid FDS server using diagnose test update info.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows an ADVPN network An administrator must configure an ADVPN using IBGP and EBGP to connect overlay network 1 with 2. What two options must the administrator configure in BGP? (Choose two.) A. set ebgp-enforce-multrhop enable B. set next-hop-self enable C. set ibgp-enforce-multihop advpn D. set attribute-unchanged next-hop",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. A pre-run CLI template that is used in zero-touch provisioning (ZTP) and low-touch provisioning (LTP) with FortiManager is shown. The template is not assigned even though the configuration has already been installed on FortiGate. What is true about this scenario? A. The administrator did not assign the template correctly when adding the model device because pre-CLI templates remain permanently assigned to the firewall B. Pre-run CLI templates are automatically unassigned after their initial installation C. Pre-run CLI templates for ZTP and LTP must be unassigned manually after the first installation to avoid conflicting error objects when importing a policy package D. The administrator must use post-run CLI templates that are designed for ZTP and LTP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a revision history window in the FortiManager device layer. The IT team is trying to identify the administrator responsible for the most recent update in the FortiGate device database. Which conclusion can you draw about this scenario? A. This retrieved process was automatically triggered by a Remote FortiGate Directly (via CLI) script. B. The user script_manager is an API user from the Fortinet Developer Network (FDN) retrieving a configuration. C. To identify the user who created the event, check it on the Configuration and Installation widget on FortiGate within the FortiManager device layer. D. Find the user in the FortiManager system logs and use the type=script command to find the administrator user in the user field.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which contains the partial output of an OSPF command. An administrator is checking the OSPF status of a FortiGate device and receives the output shown in the exhibit. What two conclusions can the administrator draw? (Choose two.) A. The FortiGate device is a backup designated router B. The FortiGate device is connected to multiple areas C. The FortiGate device injects external routing information D. The FortiGate device has OSPF ECMP enabled",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which contains a partial command output. The administrator has configured BGP on FortiGate. The status of this new BGP configuration is shown in the exhibit. What configuration must the administrator consider next? A. Configure a static route to 100.65.4.1. B. Configure the local AS to 65300. C. Contact the remote peer administrator to enable BGP D. Enable ebgp-enforce-multihop.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the packet capture output of a three-way handshake between FortiGate and FortiManager Cloud. What two conclusions can you draw from the exhibit? (Choose two.) A. FortiGate will receive a certificate that supports multiple domains because FortiManager operates in a cloud computing environment. B. FortiGate is connecting to the same IP server and will receive an independent certificate for its connection between FortiGate and FortiManager Cloud. C. If the TLS handshake contains 17 cipher suites it means the TLS version must be 1.0 on this three-way handshake. D. The wildcard for the domain *.fortinet-ca2.support.fortinet.com must be supported by FortiManager Cloud.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a LAN interface connected from FortiGate to two FortiSwitch devices. What two conclusions can you draw from the corresponding LAN interface? (Choose two.) A. You must enable STP or RSTP on FortiGate and FortiSwitch to avoid layer 2 loopbacks. B. The LAN interface must use a 802.3ad type interface. C. This connection is using a FortiLInk to manage VLANs on FortiGate. D. FortiGate is using an SD-WAN-type interface to connect to a FortiSwitch device with MCLAG.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the HA status of an active-passive cluster. An administrator wants FortiGate_B to handle the Core2 VDOM traffic. Which modification must the administrator apply to achieve this? A. The administrator must disable override on FortiGate_A. B. The administrator must change the priority from 100 to 160 for FortiGate_B. C. The administrator must change the load balancing method on FortiGate_B. D. The administrator must change the priority from 128 to 200 for FortiGate_B.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During the maintenance window, an administrator must sniff all the traffic going through a specific firewall policy, which is handled by NP6 interfaces. The output of the sniffer trace provides just a few packets. Why is the output of sniffer trace limited? A. The traffic corresponding to the firewall policy is encrypted. B. auto-asic-off load is set to enable in the firewall policy, C. inspection-mode is set to proxy in the firewall policy. D. The option npudbg is not added in the diagnose sniff packet command.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a network diagram. An administrator would like to modify the MED value advertised from FortiGate_1 to a BGP neighbor in the autonomous system 30. What must the administrator configure on FortiGate_1 to implement this? A. route-map-out B. network-import-check C. prefix-list-out D. distribute-list-out",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator received a FortiAnalyzer alert that a 1 ТВ disk filled up in a day. Upon investigation, they found thousands of unusual DNS log requests, such as JHCMQK.website.com, with no answers. They later discovered that DNS exfiltration was occurring through both UDP and TLS. How can the administrator prevent this data theft technique? A. Create an inline-CASB to protect against DNS exfiltration. B. Configure a File Filter profile to prevent DNS exfiltration. C. Enable DNS Filter to protect against DNS exfiltration. D. Use an IPS profile and DNS exfiltration-related signatures.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator configured the FortiGate devices in an enterprise network to join the Fortinet Security Fabric. The administrator has a list of IP addresses that must be blocked by the data center firewall. This list is updated daily. How can the administrator automate a firewall policy with the daily updated list? A. With FortiNAC B. With FortiAnalyzer C. With a Security Fabric automation D. With an external connector from Threat Feeds",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows an OSPF network. Which configuration must the administrator apply to optimize the OSPF database? A. Set a route map in the AS boundary FortiGate. B. Set the area 0.0.0.1 to the type STUB in the area border FortiGate. C. Set an access list in the AS boundary FortiGate. D. Set the area 0.0.0.1 to the type NSSA in the area border FortiGate.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The IT department discovered during the last network migration that all zero phase selectors in phase 2 IPsec configurations impacted network operations. What are two valid approaches to prevent this during future migrations? (Choose two.) A. Use routing protocols to specify allowed subnets over the tunnel. B. Configure an IPsec-aggregate to create redundancy between each firewall peer. C. Clearly indicate to the VPN which segments will be encrypted in the phase two selectors. D. Configure an IP address on the IPsec interface of each firewall to establish unique peer connections and avoid impacting network operations.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How will configuring set tcp-mss-sender and set tcp-mss-receiver in a firewall policy affect the size and handling of TCP packets in the network? A. The maximum segment size permitted in the firewall policy determines whether TCP packets are allowed or denied. B. Applying commands in a firewall policy determines the largest payload a device can handle in a single TCP segment. C. The administrator must consider the payload size of the packet and the size of the IP header to configure a correct value in the firewall policy. D. The TCP packet modifies the packet size only if the size of the packet is less than the one the administrator configured in the firewall policy.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A vulnerability scan report has revealed that a user has generated traffic to the website example.com (10.10.10.10) using a weak SSL/TLS version supported by the HTTPS web server. What can the firewall administrator do to block all outdated SSL/TLS versions on any HTTPS web server to prevent possible attacks on user traffic? A. Configure the unsupported SSL version and set the minimum allowed SSL version in the HTTPS settings of the SSL/SSH inspection profile. B. Enable auto-detection of outdated SSL/TLS versions in the SSL/SSH inspection profile to block vulnerable websites. C. Install the required certificate in the client's browser or use Active Directory policies to block specific websites as defined in the SSL/SSH inspection profile. D. Use the latest certificate, Fortinet_SSL_ECDSA256, and replace the CA certificate in the SSL/SSH inspection profile.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which contains the partial output of an OSPF command. An administrator is checking the OSPF status of a FortiGate device and receives the output shown in the exhibit. Which statement on this FortiGate device is correct? A. The FortiGate device can inject external routing information. B. The FortiGate device is in the area 0.0.0.5. C. The FortiGate device does not support OSPF ECMP. D. The FortiGate device is a backup designated router.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is setting up an ADVPN configuration and wants to ensure that peer IDs are not exposed during VPN establishment. Which protocol can the administrator use to enhance security? A. Use IKEv2, which encrypts peer IDs and prevents exposure. B. Opt for SSL VPN web mode because it does not use peer IDs at all. C. Choose IKEv1 aggressive mode because it simplifies peer identification. D. Stick with IKEv1 main mode because it offers better performance.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. The exhibits show a network topology, a firewall policy, and an SSL/SSH inspection profile configuration. Why is FortiGate unable to detect HTTPS attacks on firewall policy ID 3 targeting the Linux server? A. The administrator must set the policy to inspection mode to analyze the HTTPS packets as expected. B. The administrator must enable HTTPS in the protocol port mapping of the deep- inspection SSL/SSH inspection profile. C. The administrator must enable SSL inspection of the SSL server and upload the certificate of the Linux server website to the SSL/SSH inspection profile. D. The administrator must enable cipher suites in the SSL/SSH inspection profile to decrypt the message.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator must minimize CPU and RAM use on a FortiGate firewall while also enabling essential security features, such as web filtering and application control for HTTPS traffic. Which SSL inspection setting helps reduce system load while also enabling security features, such as web filtering and application control for encrypted HTTPS traffic? A. Use full SSL inspection to thoroughly inspect encrypted payloads. B. Disable SSL inspection entirely to conserve resources. C. Configure SSL inspection to handle HTTPS traffic efficiently. D. Enable SSL certificate inspection mode to perform basic checks without decrypting traffic.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator must standardize the deployment of FortiGate devices across branches with consistent interface roles and policy packages using FortiManager. What is the recommended best practice for interface assignment in this scenario? A. Enable metadata variables to use dynamic configurations in the standard interfaces of FortiManager. B. Use the Install On feature in the policy package to automatically assign different interfaces based on the branch. C. Create interfaces using device database scripts to use them on the same policy package of FortiGate devices. D. Create normalized interface types per-platform to automatically recognize device layer interfaces based on the FortiGate model and interface name.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows an enterprise network connected to an internet service provider. An administrator must configure a loopback as a BGP source to connect to the ISP. Which two commands are required to establish the connection? (Choose two.) A. ebgp-enforce-multihop B. update-source C. ibgp-enforce-multihop D. recursive-next-hop",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What action can be taken on a FortiGate to block traffic using IPS protocol decoders, focusing on network transmission patterns and application signatures? A. Use the DNS filter to block application signatures and protocol decoders. B. Use application control to limit non-URL-based software handling. C. Enable application detection-based SD-WAN rules. D. Configure a web filter profile in flow mode.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is designing an ADVPN network for a large enterprise with spokes that have varying numbers of internet links. They want to avoid a high number of routes and peer connections at the hub. Which method should be used to simplify routing and peer management? A. Deploy a full-mesh VPN topology to eliminate hub dependency. B. Implement static routing over IPsec interfaces for each spoke. C. Use a dynamic routing protocol using loopback interfaces to streamline peers and routes. D. Establish a traditional hub-and-spoke VPN topology with policy routes.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the ADVPN IPsec interface representing the VPN IPsec phase 1 from Hub A to Spoke 1 and Spoke 2, and from Hub В to Spoke 3 and Spoke 4. An administrator must configure an ADVPN using IBGP and EBGP to connect overlay network 1 with 2. What must the administrator configure in the phase 1 VPN IPsec configuration of the ADVPN tunnels? A. set auto-discovery-sender enable and set network-id x B. set auto-discovery-forwarder enable and set remote-as x C. set auto-discovery-crossover enable and set enforce-multihop enable D. set auto-discovery-receiver enable and set npu-offload enable",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A FortiGate device with UTM profiles is reaching the resource limits, and the administrator expects the traffic in the enterprise network to increase. The administrator has received an additional FortiGate of the same model. Which two protocols should the administrator use to integrate the additional FortiGate device into this enterprise network? (Choose two.) A. FGSP with external load balancers B. FGCP in active-active mode and with switches C. FGCP in active-passive mode and with VDOM disabled D. VRRP with switches",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. The routing tables of FortiGate_A and FortiGate_B are shown. FortiGate_A and FortiGate_B are in the same autonomous system. The administrator wants to dynamically add only route 172.16.1.248/30 on FortiGate_A. What must the administrator configure? A. The prefix 172.16.1.248/30 in the BGP Networks section on FortiGate_B B. A BGP route map out for 172.16.1.248/30 on FortiGate_B C. Enable Redistribute Connected in the BGP section on FortiGate_B. D. A BGP route map in for 172.16.1.248/30 on FortiGate_A",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a network diagram showing the addition of site 2 with an overlapping network segment to the existing VPN IPsec connection between the hub and site 1. Which IPsec phase 2 configuration must an administrator make on the FortiGate hub to enable equal-cost multi-path (ECMP) routing when multiple remote sites connect with overlapping subnets? A. Set route-overlap to either use-new or use-old B. Set net-device to ecmp C. Set single-source to enable D. Set route-overlap to allow",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator wants to scale the IBGP sessions and optimize the routing table in an IBGP network. Which parameter should the administrator configure? A. network-import-check B. ibgp-enforce-multihop C. neighbor-group D. route-reflector-client",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. The configuration of a user's Windows PC, which has a default MTU of 1500 bytes, along with FortiGate interfaces set to an MTU of 1000 bytes, and the results of PC1 pinging server 172.16.0.254 are shown. Why is the user in Windows PC1 unable to ping server 172.16.0.254 and is seeing the message: Packet needs to be fragmented but DF set? A. Option ip.flags.mf must be set to enable on FortiGate. The user has to adjust the ping MTU to 1000 to succeed. B. Fragmented packets must be encrypted. To connect any application successfully, the user must install the Fortinet_CA certificate in the Microsoft Management Console. C. FortiGate honors the do not fragment bit and the packets are dropped. The user has to adjust the ping MTU to 972 to succeed. D. The user must trigger different traffic because path MTU discovery techniques do not recognize ICMP payloads.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the VDOM section of a FortiGate device. An administrator discovers that webfilter stopped working in Core1 and Core2 after a maintenance window. Which two reasons could explain why webfilter stopped working? (Choose two.) A. The root VDOM does not have access to FortiManager in a closed network. B. The root VDOM does not have a VDOM link to connect with the Corel and Core2 VDOMs. C. The Core1 and Core2 VDOMs must also be enabled as Management VDOMs to receive FortiGuard updates D. The root VDOM does not have access to any valid public FDN.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator is deploying a hub and spokes network and using OSPF as dynamic protocol. Which configuration is mandatory for neighbor adjacency? A. Set bfd enable in the router configuration B. Set network-type point-to-multipoint in the hub interface C. Set rfc1583-compatible enable in the router configuration D. Set virtual-link enable in the hub interface",
+    "options": {},
+    "most_voted": "B"
+  }
+]
