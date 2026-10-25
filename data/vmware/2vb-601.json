@@ -1,0 +1,107 @@
+[
+  {
+    "question": "What are two main advantages of using multiple disk groups within each host? (Choose two.) A. Performance B. Backward compatibility C. Cost D. Redundancy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are three fundamental concepts of vSAN clusters? (Choose three.) A. Flash devices can be shared between disk groups. B. A maximum of seven capacity disks per disk group is supported. C. A maximum of five disk groups per host is supported. D. Dual socket CPU for each host is required. E. Once cache drive per disk group is required.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement accurately describes cache tier sizing guidance for an all-flash vSAN cluster that will be supporting write-intensive workloads? A. Multiple disk groups with larger cache devices should be used. B. Multiple disk groups with two cache devices per disk group should be used. C. A single disk group with a small cache device should be used to minimize de-staging write amplification. D. Two cache devices per disk group should be configured for redundancy.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two ways to examine the storage policy compliance of a virtual machine? (Choose two.) A. 1. Browse to the virtual machine in the vSphere Web Client navigator. 2. On the Summary tab, examine the value of the VM Storage Policy Compliance property under VM Storage Policies. B. 1. Browse to the virtual machine in the vSphere Web Client navigator. 2. Right-click the virtual machine and select \"Check storage policy compliance\". C. 1. In the vSphere Web Client, navigate to the vSAN cluster. 2. On the Storage tab, click vSAN and select Virtual Disks. 3. Right-click on the virtual machine and select \"Compliance status\". D. 1. In the vSphere Web Client, navigate to the vSAN cluster. 2. On the Monitor tab, click vSAN and select Virtual Objects. 3. Select a virtual object.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following vSAN cluster scenario: ✑ All hosts are members of the same cluster. ✑ All hosts are contributing storage capacity to the vSAN datastore. ✑ There is not vSAN Witness Host. All virtual machines are assigned a storage policy where Primary level of failures to tolerate = 1. [sampleXML/xmlfile-3_4.png] What is the minimum number of physical hosts required to be a supported vSAN configuration? A. Five (5) B. Three (3) C. Two (2) D. Four (4)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "VMware vSAN encryption requires the use of a key management server (KMS) solution. Which Key Management Interoperability Protocol (KMP) must the KMS solution support? A. 1.0 B. 1.3 C. 1.2 D. 1.1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which services for vSAN are provided by NexentaConnect? A. Encryption and key management B. Apache and JavaScript C. NFS and SMB D. iSCSI and FC",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which are two characteristics of a RAID-5 storage configuration? (Choose two.) A. Data remain available with the loss to two storage devices. B. It uses less storage capacity than mirroring with the same level of availability. C. Data is striped across multiple storage devices. D. It requires a minimum of five storage devices.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements are true about the vSAN health and performance services? (Choose two.) A. The vSAN performance service must be enabled before the vSAN health service. B. The vSAN health service is enabled by default. C. The vSAN health service is disabled by default. D. The vSAN performance service is disabled by default.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two ways that the storage policies can be allied? (Choose two.) A. Execute a PowerCLI script B. Right-click a virtual machine in the vSphere Web Client C. Run the \"esxcli vsan storage tag add\" command D. Select the vSAN datastore and click \"Apply Storage Policy\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the listed configurations is a supported vSAN configuration? A. Four physical hosts Every host has one vSAN disk group Each vSAN disk group contains one cache device and five capacity devices The vSAN service is enabled on a VMkernel adapter on every host B. Three physical hosts Every host has one vSAN disk group Each vSAN disk group contains two cache devices and four capacity devices The vSAN service is enabled on a VMkernel adapter on every host C. Four physical hosts Two of the host have one vSAN disk group, the other two hosts are \"compute-only\" nodes Each vSAN disk group contains one cache device and three capacity devices The vSAN service is NOT enabled on the \"compute-only\" nodes D. Four physical hosts Two of the host have one vSAN disk group, the other two hosts are \"compute-only\" nodes Each vSAN disk group contains one cache device and three capacity devices",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "View the exhibit. The exhibit shows a single node of a vSAN cluster. All nodes have been configured identically. Which statement is true about the exhibit? [sampleXML/xmlfile-13_1.png] A. This is an invalid design. There are too many disk groups. B. This is an invalid design. You CANNOT mix all-flash disk groups with hybrid disk groups. C. This is a valid all-flash vSAN configuration. D. This is a valid hybrid vSAN configuration. E. This is an invalid design. There are too few capacity disks.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a vSAN stretched cluster with Primary level to tolerate set to 1 and Secondary level of failure to tolerate set to 2, what is the maximum amount of space that a 100GB virtual disk could consume without any other policy rules set? A. 200GB B. 100GB C. 400GB D. 600GB",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following scenario in a vSAN cluster that contains six hosts: ✑ All virtual machines are assigned the vSAN Default Storage Policy, which has not been modified. ✑ Deduplication and compression are not enabled. ✑ Every vSAN disk group in the cluster contains one cache device and five capacity devices What happens when a capacity devices transmits SCSI sense code errors and fails? A. All components on the affected device are marked \"degraded\". vSAN attempts to rebuild the components on other healthy devices in the cluster without delay. B. All components on the affected device are marked \"degraded\". The host containing the affected drive is placed into maintenance mode using the ‘ensure accessibility’ option. C. All components on the affected device are marked \"offline\". vSAN attempts to rebuild the components on other healthy devices in the cluster after 60 minutes by default. D. The host containing the affected device is placed into maintenance mode using the \"ensure accessibility\" option. An administrator must log into the vSphere",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A six-node all-flash vSAN cluster has been deployed. Deduplication and compression are enabled. All virtual machines are produced by policies with the rule Primary level of failures to tolerate set to 1. How is a vSAN disk group impacted when the cache device belonging to that disk group fails? A. The capacity devices are automatically reassigned to another disk group in the same host. B. The cache device is marked \"Absent\". A capacity device is automatically promoted to a cache device to minimize downtime. C. The cache device is marked \"Degraded\". The disk group remains online with lower performance levels. D. The disk group is taken offline.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three of the listed items are monitored by the vSAN performance service? (Choose three.) A. VMkernel adapters at the cluster level B. Virtual machine consumption at the cluster level C. Disk group at the host level D. VMkernel adapters at the virtual disk level E. Backend traffic at the cluster level",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Given a limited maximum queue depth, what can an administrator do to potentially improve performance when deploying vSAN iSCSI volumes? A. Utilize multiple iSCSI targets. B. Change the erasure coding to RAID-6 C. Adjust the maximum iSCSI queue depth values D. Configure multiple VMkernel ports",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is designing a vSphere cluster with the VSAN default policy. The requirement is to maintain full redundancy of data and virtual disks during any patching or maintenance of this cluster. What is needed to meet the needs of this scenario? A. A minimum of four hosts in the cluster B. VMware Proactive HA C. Multiple disk groups per host D. Use of RAID-5/6 erasure coding",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is designing a vSAN cluster for a number of new workloads. The design calls for the use of erasure coding with RAID 5. Which statement is true about what is needed to meet the needs of this scenario? A. vSAN Standard licensing is sufficient B. vSAN Enterprise licensing is required C. An all-flash configuration is required. D. Six nodes are required at a minimum.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following are the configuration details of a 12-node all-flash VSAN cluster: ✑ Every node has one disk group ✑ Each disk group consists of one cache device and six capacity devices Which two methods can be used to increase the size of the cache tier in each host? (Choose two.) A. Promote a capacity device to a cache device so that each disk group has two cache devices. B. Add a new cache device to the host. Reconfigure the host to have two disk groups with one cache device and three capacity devices per disk group. C. Add a second cache device to each disk group. D. Replace the existing cache device in each disk group with a larger cache device.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true about vSAN three-node cluster configuration? A. Three-node clusters can tolerate a maximum of 2 host failures as long as there at least 2 disk groups in each host. B. A storage policy with a RAID-5/6 erasure coding rule cannot be applied to a virtual machine object. C. A storage policy with a deduplication and compression rule can be applied to a virtual machine object. D. Three-node clusters can tolerate a maximum of 2 host failures.",
+    "options": {},
+    "most_voted": ""
+  }
+]
