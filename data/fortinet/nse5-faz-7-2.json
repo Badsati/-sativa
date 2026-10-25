@@ -1,0 +1,232 @@
+[
+  {
+    "question": "Which two statements are correct regarding the export and import of playbooks? (Choose two.) A. You can import a playbook even if there is another one with the same name in the destination. B. Playbooks can be exported and imported only within the same FortiAnalyzer device. C. You can export only one playbook at a time. D. A playbook that was disabled when it was exported will be disabled when it is imported.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A playbook contains five tasks in total. An administrator runs the playbook and four out of five tasks finish successfully, but one task fails. What will be the status of the playbook after it is run? A. Running B. Failed C. Upstream_failed D. Success",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement about the FortiSIEM management extension is correct? A. Allows you to manage the entire life cycle of a threat or breach. B. Its use of the available disk space is capped at 50%. C. It requires a licensed FortiSIEM supervisor. D. It can be installed as a dedicated VM.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two statements are true regarding the outbreak detection service? (Choose two.) A. New alerts are received by email. B. Outbreak alerts are available on the root ADOM only. C. An additional license is required. D. It automatically downloads new event handlers and reports.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What must you consider when using log fetching? (Choose two.) A. The fetch client can retrieve logs from devices that are not added to its local Device Manager. B. You can use filters to include only logs from a single device. C. The fetching profile must include a user with the Super_User profile. D. The archive logs retrieved from the server become archive logs in the client.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement describes a dataset in FortiAnalyzer? A. They determine what data is retrieved from the database. B. They provide the layout used for reports. C. They are used to set the data included in templates. D. They define the chart types to be used in reports.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. How many events will be added to the incident created after running this playbook? A. Thirteen events will be added. B. Five events will be added. C. No events will be added. D. Ten events will be added.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. What does the data point at 12:20 indicate? A. The performance of FortiAnalyzer is below the baseline. B. FortiAnalyzer is using its cache to avoid dropping logs. C. The log insert lag time is increasing. D. The sqlplugind service is caught up with new logs.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You created a playbook on FortiAnalyzer that uses a FortiOS connector. When configuring the FortiGate side, which type of trigger must be used so that the actions in an automation stitch are available in the FortiOS connector? A. FortiAnalyzer Event Handler B. Incoming webhook C. Fabric Connector event D. FortiOS Event Log",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which FortiAnalyzer feature allows you to use a proactive approach when managing your network security? A. Outbreak alert services B. FortiView Monitor C. Threat hunting D. Incidents dashboard",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which log will generate an event with the status Contained? A. An IPS log with action=pass. B. AWebFilter log with action=dropped. C. An AV log with action=quarantine. D. An AppControl log with action=blocked.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the purpose of trigger variables? A. To display statistics about the playbook runtime B. To use information from the trigger to filter the action in a task C. To provide the trigger information to make the playbook start running D. To store the start times of playbooks with On_Schedule triggers",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. What is the purpose of using the Chart Builder feature on FortiAnalyzer? A. To add a new chart under FortiView to be used in new reports B. To build a dataset and chart automatically, based on the filtered search results C. To add charts directly to generate reports in the current ADOM D. To build a chart automatically based on the top 100 log entries",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two effects of enabling auto-cache in a FortiAnalyzer report? (Choose two.) A. The size of newly generated reports is optimized to conserve disk space. B. FortiAnalyzer local cache is used to store generated reports. C. When new logs are received, the hard-cache data is updated automatically. D. The generation time for reports is decreased.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement about sending notifications with incident updates is true? A. Notifications can be sent only when an incident is created or deleted. B. You must configure an output profile to send notifications by email. C. Each incident can send notifications to a single external platform. D. Each connector used can have different notification settings.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Why must you wait for several minutes before you run a playbook that you just created? A. FortiAnalyzer needs that time to parse the new playbook. B. FortiAnalyzer needs that time to back up the current playbooks. C. FortiAnalyzer needs that time to ensure there are no other playbooks running. D. FortiAnalyzer needs that time to debug the new playbook.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Based on the partial outputs displayed, which devices can be members of a FortiAnalyzer Fabric? A. FortiAnalyzer1 and FortiAnalyzer3 B. FortiAnalyzer1 and FortiAnalyzer2 C. All devices listed can be members D. FortiAnalyzer2 and FortiAnalyzer3",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has configured the following settings: config system fortiview setting set resolve-ip enable end What is the significance of running this command? A. Use this command only if the source IP addresses are not resolved on FortiGate. B. It resolves the source and destination IP addresses to a hostname in FortiView on FortiAnalyzer. C. It resolves the destination IP address to a hostname in FortiView on FortiAnalyzer. D. You must configure local DNS servers on FortiGate for this command to resolve IP addresses on FortiAnalyzer.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. Laptop1 is used by several administrators to manage FortiAnalyzer. You want to configure a generic text filter that matches all login attempts to the web interface generated by any user other than “admin”, and coming from Laptop1. Which filter will achieve the desired result? A. operation~login & dstip==10.1.1.210 & user!~admin B. operation~login & srcip==10.1.1.100 & dstip==10.1.1.210 & user==admin C. operation~login & performed_on==\"GUI(10.1.1.210)\" & user!=admin D. operation~login & performed_on==\"GUI(10.1.1.100)\" & user!=admin",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two actions should an administrator take to view Compromised Hosts on FortiAnalyzer? (Choose two.) A. Enable web filtering in firewall policies on FortiGate devices, and make sure these logs are sent to FortiAnalyzer. B. Subscribe FortiAnalyzer to FortiGuard to keep its local threat database up to date. C. Make sure all endpoints are reachable by FortiAnalyzer. D. Enable device detection on the FortiGate devices that are sending logs to FortiAnalyzer.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement describes online logs on FortiAnalyzer? A. Logs that reached a specific size and were rolled over B. Logs that can be used to create reports C. Logs that can be viewed using Log Browse D. Logs that are saved to disk, compressed, and available in FortiView",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can you attach a report to an incident? A. By attaching it to an event handler alert B. By editing the settings of the desired report C. From the properties of an existing incident D. Saving it in JSON format, and then importing it",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Why run the command diagnose sql status sqlplugind? A. To list the current SQL processes running B. To check what is the database log insertion status C. To display the SQL query connections and hcache status D. To view the current hcache size",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two benefits of using fabric connectors? (Choose two.) A. They allow FortiAnalyzer to send logs in real-time to public cloud accounts. B. You do not need an additional license to send logs to the cloud platform. C. Fabric connectors allow you to improve redundancy. D. Using fabric connectors is more efficient than using third-party polling with API.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What happens when the IOC breach detection engine on FortiAnalyzer finds web logs that match a blocklisted IP address? A. The endpoint is marked as Compromised and, optionally, can be put in quarantine. B. FortiAnalyzer flags the associated host for further analysis. C. A new Infected entry is added for the corresponding endpoint. D. The detection engine classifies those logs as Suspicious.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "After generating a report, you notice the information you were expecting to see is not included in it. What are two possible reasons for this scenario? (Choose two.) A. You enabled auto-cache with extended log filtering. B. The logfiled service has not indexed all the expected logs. C. The logs were overwritten by the data retention policy. D. The time frame selected in the report is wrong.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement about the FortiSOAR management extension is correct? A. It requires a FortiManager configured to manage FortiGate. B. It requires a dedicated FortiSOAR device or VM. C. It does not include a limited trial by default. D. It runs as a docker container on FortiAnalyzer.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which item must you configure on FortiAnalyzer to email generated reports automatically? A. Output profile B. Report scheduling C. SFTP server D. SNMP server",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the purpose of using prefilters when configuring event handlers? A. They limit which logs are checked for matches by the other filters. B. They can filter the logs before they are processed by FortiAnalyzer. C. They download new filters to be used in event handlers. D. They are common filters applied simultaneously to all event handlers.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Which statement is correct regarding the event displayed? A. The security event risk is considered open. B. The security risk was blocked or dropped. C. The risk source is isolated. D. An incident was created from this event.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Which statement is correct regarding the event displayed? A. The security event risk is considered open. B. The security risk was blocked or dropped. C. The risk source is isolated. D. An incident was created from this event.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the purpose of predefined report templates on FortiAnalyzer? A. They can be customized to meet the needs of the intended audience. B. They can be created by saving reports as templates. C. They specify the layout used in reports. D. They include the data used in reports charts.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. What does the data point at 21:20 indicate? A. FortiAnalyzer has temporarily stopped receiving logs so older logs can be indexed. B. FortiAnalyzer is dropping logs to catch up. C. The fortilogd daemon is ahead in indexing by one log. D. FortiAnalyzer is indexing logs faster than logs are being received.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the purpose of output variables? A. To store playbook execution statistics B. To save all the task settings when a playbook is exported C. To display details of the connectors used by a playbook D. To use the output of the previous task as the input of the current task",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two methods can you use to send notifications when an event occurs that matches a configured event handier? (Choose two.) A. Send Alert through Fabric Connectors B. Send Alert through FortiSIEM MEA C. Send SNMP trap D. Send SMS notification",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Which FortiAnalyzer tool can refer to the Cyber Kill Chain stages and allows you to identify which Fortinet products can protect you against new vulnerabilities? A. Threat hunting SIEM table B. Outbreak detection services C. FortiSOC dashboards D. FortiView Monitor top threats",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements are true regarding log fetching on FortiAnalyzer? (Choose two.) A. Log fetching allows the administrator to fetch analytics logs from another FortiAnalyzer for redundancy. B. Log fetching allows the administrator to run queries and reports against historical data by retrieving archived logs from one FortiAnalyzer device and sending them to another FortiAnalyzer device. C. A FortiAnalyzer device can perform either the fetch server or client role, and it can perform two roles at the same time with the same FortiAnalyzer devices at the other end. D. Log fetching can be done only on two FortiAnalyzer devices that are running the same firmware version.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which SQL query is in the correct order to query the database in the FortiAnalyzer? A. FROM $log WHERE 'user'='USER1' SELECT devid GROUP BY devid B. SELECT devid FROM $log GROUP BY devid WHERE 'user'='USER1' C. SELECT devid FROM $log WHERE 'user'='USER1' GROUP BY devid D. SELECT devid WHERE 'user'='USER1' FROM $log GROUP BY devid",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are looking for a playbook that was exported by a junior administrator. You perform a search and find the files listed below. Which file will perform an import operation? A. Exported_playbook.json B. Exported_playbook.csv C. Exported_playbook.txt D. Exported_playbook.sql",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements about a FortiAnalyzer Fabric are true? (Choose two.) A. Fabric members must be in the same time zone as the supervisor. B. Fabric members and the supervisor support HA. C. All fabric members must run in collector mode except the supervisor. D. The supervisor can access the logs in the fabric members using an API.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true about sending notifications with incident updates? A. If you use multiple fabric connectors, all connectors must have the same notification settings. B. Notifications can be sent only by email. C. Notifications can be sent only when an incident is updated or deleted. D. You can send notifications to multiple external platforms.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement describes archive logs on FortiAnalyzer? A. Logs compressed and saved in files with the .gz extension B. Logs a FortiAnalyzer administrator can access in FortiView C. Logs that are indexed and stored in the SQL database D. Logs previously collected from devices that are offline",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement correctly describes the management extensions available on FortiAnalyzer? A. Management extensions allow FortiAnalyzer to act as a FortiSIEM supervisor. B. Management extensions may require a minimum number of CPU cores to run. C. Management extensions require a dedicated VM for best performance. D. Management extensions do not require additional licenses.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The image shows the details of a playbook after it finished running. What is the status of the playbook? A. Running B. Success C. Upstream_failed D. Failed",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are two advantages of grouping similar reports? (Choose two.) A. Reduces the number of hcache tables and improves auto-hcache completion time B. Conserves disk space on FortiAnalyzer by grouping multiple similar reports C. Improves report completion time D. Provides a better summary of reports",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In Log View, you can use the Chart Builder feature to build a dataset and chart based on the filtered search results. Similarly, which feature can you use for FortiView? A. Export to Chart Library B. Export to Custom Chart C. Export to Chart Builder D. Export to Report Chart",
+    "options": {},
+    "most_voted": "D"
+  }
+]
