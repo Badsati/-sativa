@@ -1,0 +1,352 @@
+[
+  {
+    "question": "Refer to the exhibit. The exhibit shows the BGP configuration on the hub in a hub-and-spoke topology. The administrator wants BGP to advertise prefixes from spokes to other spokes over the IPsec overlays, including additional paths. However, when looking at the spoke routing table, the administrator does not see the prefixes from other spokes and the additional paths. Based on the exhibit, which three settings must the administrator configure inside each BGP neighbor group so spokes can learn other spokes prefixes and their additional paths? (Choose three.) A. Enable soft-reconfiguration B. Enable route-reflector-client C. Set additional-path to send D. Set adv-additional-path to the number of additional paths to advertise E. Set advertisement-interval to the number of additional paths to advertise",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two advantages of using an IPsec recommended template to configure an IPsec tunnel in an hub-and-spoke topology? (Choose two.) A. It ensures consistent settings between phase1 and phase2. B. It guides the administrator to use Fortinet recommended settings. C. The VPN monitor tool provides additional statistics for tunnels defined with an IPsec recommended template. D. It automatically install IPsec tunnels to every spoke when they are added to the FortiManager ADOM.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. A. FortiGate does not change the routing information on existing sessions that use a valid gateway, after a route change. B. FortiGate always blocks all traffic, after a route change. C. FortiGate performs routing lookups for new sessions only, after a route change. D. FortiGate flushes all routing information from the session table, after a route change.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In a hub-and-spoke topology, what are two advantages of enabling ADVPN on the IPsec overlays? (Choose two.) A. It provides the benefits of a full-mesh topology in a hub-and-spoke network. B. It enables spokes to establish shortcuts to third-party gateways. C. It provides direct connectivity between spokes by creating shortcuts. D. It enables spokes to bypass the hub during shortcut negotiation.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. The exhibit shows output of the command diagnose sys sdwan service collected on a FortiGate device. The administrator wants to know through which interface FortiGate will steer the traffic from local users on subnet 10.0.1.0/255.255.255.192 and with a destination of the business application Salesforce located on HQ servers 10.0.0.1. Based on the exhibits, which two statements are correct? (Choose two.) A. There is no service defined for the Salesforce application, so FortiGate will use the service rule 3 and steer the traffic through interface T_HQ1. B. FortiGate steers traffic to HQ servers according to service rule 1 and it uses port1 or port2 because both interfaces are selected. C. When FortiGate cannot recognize the application of the flow it steers the traffic destined to server 10.0.0.1 according to service rule 3. D. FortiGate steers traffic for business application according to service rule 2 and steers traffic through port2.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which are three key routing principles in SD-WAN? (Choose three.) A. By default. SD-WAN members are skipped if they do not have a valid route to the destination. B. By default. SD-WAN rules are skipped if the best route to the destination is not an SD-WAN member. C. FortiGate performs route lookups for new sessions only. D. SD-WAN rules have precedence over ISDB routes. E. Regular policy routes have precedence over SD-WAN rules.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Two hub-and-spoke groups are connected through a site-to-site IPsec VPN between Hub 1 and Hub 2. Which two configuration settings are required for Toronto and London spokes to establish an ADVPN shortcut? (Choose two.) A. On the hubs, net-device must be enabled on all IPsec VPNs. B. auto-discovery-forwarder must be enabled on all IPsec VPNs. C. On the spokes, auto-discovery-receiver must be enabled on the IPsec VPN to the hub. D. On the hubs, auto-discovery-sender must be enabled on the IPsec VPNs to spokes.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which CLI command do you use to perform real-time troubleshooting for ADVPN negotiation? A. get router info routing-table all B. get ipsec tunnel list C. diagnose vpn tunnel list D. diagnose debug application ike",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are two common use cases for remote internet access (RIA)? (Choose two.) A. Provide internet access through the hub. B. Centralize security inspection on the hub. C. Provide thorough inspection on spokes. D. Provide direct internet access on spokes.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A. Exhibit B. An administrator is testing application steering in SD-WAN. Before generating test traffic, the administrator collected the information shown in exhibit A. After generating GoToMeeting test traffic, the administrator examined the respective traffic log on FortiAnalyzer, which is shown in exhibit B. The administrator noticed that the traffic matched the implicit SD-WAN rule, but they expected the traffic to match rule ID 1. Which two reasons explain why some log messages show that the traffic matched the implicit SD-WAN rule? (Choose two.) A. Port1 and port2 do not have a valid route to the destination. B. The session 3-tuple did not match any of the existing entries in the ISDB application cache. C. Full SSL inspection is not enabled on the matching firewall policy. D. FortiGate did not refresh the routing information on the session after the application was detected.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which diagnostic command can you use to show the configured SD-WAN zones and their assigned members? A. diagnose sys sdwan member B. diagnose sys sdwan interface C. diagnose sys sdwan zone D. diagnose sys sdwan service",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement is correct about SD-WAN and ADVPN? A. SD-WAN can steer traffic to ADVPN shortcuts only for rules defined with strategy manual or best quality. B. SD-WAN does not monitor the health and performance of ADVPN shortcuts. C. SD-WAN cannot steer traffic to ADVPN shortcuts established over IPSec overlays if the zone contains physical interfaces. D. SD-WAN can steer traffic to ADVPN shortcuts established over IPsec overlays configured as SD-WAN members.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. The exhibit shows the SD-WAN rule status and configuration. Based on the exhibit, which change in the measured latency will make T_MPLS_0 the new preferred member? A. When T_INET_0_0 has a latency of 250 ms. B. When T_MPLS_0 has a latency of 80 ms. C. When T_INET_0_0 and T_MPLS_0 have the same latency. D. When T_MPLS_0 has a latency of 100 ms.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is a benefit of using application steering in SD-WAN? A. The traffic always skips the regular policy routes. B. You do not need to configure firewall policies that accept the SD-WAN traffic. C. You steer traffic based on the detected application. D. You do not need to enable SSL inspection.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. Based on the exhibit, which two statements are correct about the health of the selected members? (Choose two.) A. After FortiGate switches to active mode, the SLA performance rule never fallsback to passive monitoring. B. FortiGate passively monitors the member if TCP traffic is passing through the member. C. FortiGate can offload the traffic that is subject to passive monitoring to hardware. D. During passive monitoring, the SLA performance rule cannot detect dead members.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements about the SD-WAN members are true? (Choose two.) A. Interfaces of type virtual wire pair can be used as SD-WAN members. B. You can manually define the SD-WAN members sequence number. C. An SD-WAN member can belong to two or more SD-WAN zones. D. Interfaces of type VLAN can be used as SD-WAN members.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator is troubleshooting SD-WAN on FortiGate. A device behind branch1_fgt generates traffic to the 10.0.0.0/8 network. The administrator expects the traffic to match SD-WAN rule ID 1 and be routed over T_INET_0. However, the traffic is routed over T_INET_1. Based on the output shown in the exhibit, which two reasons can cause the observed behavior? (Choose two.) A. T_INET_1 has a lower route priority value (higher priority) than T_INET_0. B. The traffic matches a regular policy route configured with T_INET_1 as the outgoing device. C. T_INET_1 has a higher member configuration priority than T_INET_0. D. T_INET_0 does not have a valid route to the destination.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Within IPsec tunnel templates available on FortiManager, which template will you use to configure static tunnels for a hub and spoke topology? A. Hub_IPsec_Recommended B. Static_IPsec_Recommended C. IPsec Fortinet Recommended D. Branch IPsec Recommended",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The administrator uses the FortiManager SD-WAN overlay template to prepare an SD-WAN deployment. With information provided through the SD-WAN overlay template wizard, FortiManager creates templates ready to install on spoke and hub devices. Select three templates created by the SD-WAN overlay template for a spoke device. (Choose three.) A. IPsec tunnel template B. BGP template C. Overlay template D. System template E. CLI template",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Based on the output, which two conclusions are true? (Choose two.) A. Entry 1 (id=1) is a regular policy route. B. There is more than one SD-WAN rule configured. C. The SD-WAN rules take precedence over regular policy routes. D. The all_rules rule represents the implicit SD-WAN rule.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two benefits of using forward error correction (FEC) in IPsec VPNs? (Choose two.) A. FEC can leverage multiple IPsec tunnels for parity packets transmission. B. FEC transmits parity packets that can be used to reconstruct packet loss. C. FEC improves reliability of noisy links. D. FEC supports hardware offloading.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which shows an SD-WAN zone configuration on the FortiGate GUI. Based on the exhibit, which statement is true? A. You can move port1 from the underlay zone to the overlay zone. B. You can delete the virtual-wan-link zone because it contains no member. C. The corporate zone contains no member. D. The overlay zone contains four members.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Based on the exhibit, which two actions does FortiGate perform on sessions after a firewall policy change? (Choose two.) A. FortiGate terminates the old sessions. B. FortiGate evaluates new sessions. C. FortiGate does not change existing sessions. D. FortiGate flushes all sessions.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The exhibit shows the details of a session and the index numbers of some relevant interfaces on a FortiGate appliance that supports hardware offloading. Based on the information shown in the exhibits, which two statements about the session are true? (Choose two.) A. The main session cannot be offloaded to hardware. B. The original direction of the symmetric traffic flows from port3 to port2. C. The reply direction of the asymmetric traffic flows from port2 to port3. D. The auxiliary session can be offloaded to hardware.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The SD-WAN overlay template helps to prepare SD-WAN deployments. To complete the tasks performed by the SD-WAN overlay template, the administrator must perform some post-run tasks. What are three mandatory post-run tasks that must be performed? (Choose three.) A. Assign an sdwan_id metadata variable to each device (branch and hub). B. Assign a branch_id metadata variable to each branch device. C. Create policy packages for branch devices. D. Configure SD-WAN rules. E. Configure routing through overlay tunnels created by the SD-WAN overlay template.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. In a dual-hub hub-and-spoke SD-WAN deployment, which is a benefit of disabling the anti-replay setting on the hubs? A. It instructs the hub to skip content inspection on TCP traffic, to improve performance. B. It instructs the hub to not check the ESP sequence numbers on IPsec traffic, to improve performance. C. It instructs the hub to disable TCP sequence number check, which is required for TCP sessions originated from spokes to fail over back and forth between the hubs. D. It instructs the hub to disable the reordering of TCP packets on behalf of the receiver, to improve performance.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two statements are correct when traffic matches the implicit SD-WAN rule? (Choose two.) A. The session information output displays no SD-WAN-specific details. B. All SD-WAN rules have the default and gateway setting enabled. C. Traffic does not match any of the entries in the policy route table. D. Traffic is load balanced using the algorithm set for the v4-ecmp-mode setting.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows the packet duplication rule configuration, the SD-WAN zone status output, and the sniffer output on a FortiGate device acting as the sender. Exhibit B shows the sniffer output on a FortiGate device acting as the receiver. The administrator configured packet duplication on both FortiGate devices. The sniffer output on the sender FortiGate shows that FortiGate forwards an ICMP echo request packet over three overlays, but it only receives one reply packet through T_INET_1. Based on the output shown in the exhibits, which two reasons can cause the observed behavior? (Choose two.) A. The ICMP echo request packets sent over T_INET_0 and T_MPLS were dropped along the way. B. On the receiver FortiGate, packet-de-duplication is enabled. C. On the sender FortiGate, duplication-max-num is set to 3. D. The sender FortiGate has anti-replay enabled to block duplicate ICMP replies.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Which statement about the role of the ADVPN device in handling traffic is true? A. This is a spoke that has received an offer from a remote hub. B. Two spokes, 192.2.0.1 and 10.0.2.101, establish a shortcut. C. This is a hub that has received an offer from a spoke and has forwarded it to another spoke. D. An IKE session is established between 10.0.1.101 and 10.0.2.101 in the process of forming a shortcut tunnel.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements are true about using SD-WAN to steer local-out traffic? (Choose two.) A. By default, FortiGate does not check if the selected member has a valid route to the destination. B. You must configure each local-out feature individually, to use SD-WAN. C. By default, local-out traffic does not use SD-WAN. D. FortiGate does not consider the source address of the packet when matching an SD-WAN rule for local-out traffic.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows the SD-WAN performance SLA and exhibit B shows the SD-WAN member status, the routing table, and the performance SLA status. If port2 is detected dead by FortiGate, what is the expected behavior? A. Host 8.3.8.8 is reachable through port1 and port2. B. Port2 becomes alive after three successful probes are detected. C. The administrator manually restores the static routes for port2, if port2 becomes alive. D. FortiGate disables all static routes for port2.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In which SD-WAN template field can you use a metadata variable? A. You can use metadata variables only to define interface members and the gateway IP. B. Any field identified with a dollar sign (S) in a magnifying glass. C. Any field identified with an \"M\" in a circle. D. All SD-WAN template fields support metadata variables.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The device exchanges routes using IBGP. Which two statements are correct about the IBGP configuration and routing information on the device? (Choose two.) A. Each BGP route is three hops away from the destination. B. ibgp-multipath is disabled. C. You can run the get router info routing-table database command to display the additional paths. D. additional-path is enabled.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows output of the command diagnose sys sdwan health-check status collected on a FortiGate device. Which two statements are correct about the health check status on this FortiGate device? (Choose two.) A. The interface T_INET_0 missed three SLA targets. B. The interface T_INET_1 missed one SLA target. C. There is no SLA criteria configured for the health-check Level3_DNS. D. The health-check VPN_PING orders the members according to the measured jitter.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows a policy package definition. Exhibit B shows the install log that the administrator received when he tried to install the policy package on FortiGate devices. Based on the output shown in the exhibits, what can the administrator do to solve the issue? A. Create dynamic mapping for the LAN interface for all devices in the installation target list. B. Policies can refer to only one LAN source interface. Keep only the D-LAN, which is the dynamic LAN interface. C. Dynamic mapping should be done automatically. Review the LAN interface configuration for branch2_fgt. D. Use a metadata variable instead of a dynamic interface to define the firewall policy.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is true about SD-WAN multiregion topologies? A. It is not compatible with ADVPN. B. Routing between the hub and spokes must be BGP. C. Regions must correspond to geographical areas. D. Each region has its own SD-WAN topology.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the IPsec phase 1 configuration of a spoke. What must you configure on the IPsec phase 1 configuration for ADVPN to work with SD-WAN? A. You must disable idle-timeout. B. You must set ike-version to 1. C. You must enable auto-discovery-sender. D. You must enable net-device.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement about using BGP for ADVPN is true? A. IBGP is preferred over EBGP, because IBGP preserves next hop information. B. You must configure AS path prepending. C. You must configure BGP communities. D. You must use BGP to route traffic for both overlay and underlay links.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit that shows VPN event logs on FortiGate. Based on the output shown in the exhibit, which statement is true? A. There is one shortcut tunnel built from master tunnel T_MPLS_0. B. The master tunnel T_INET_0 cannot accept the ADVPN shortcut. C. There are no IPsec tunnel statistics log messages for ADVPN shortcuts. D. The VPN tunnel T_MPLS_0 is a shortcut tunnel.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. Based on the exhibit which action does FortiGate take? A. FortiGate brings down port5 after it detects all SD-WAN members as dead. B. FortiGate brings up port5 after it detects all SD-WAN members as alive. C. FortiGate bounces port5 after it detects all SD-WAN members as dead. D. FortiGate fails over to the secondary device after it detects all SD-WAN members as dead.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two settings can you configure to speed up routing convergence in BGP? (Choose two.) A. link-down-failover B. update-source C. holdtime-timer D. set-route-rag",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Which algorithm does SD-WAN use to distribute traffic that does not match any of the SD-WAN rules? A. All traffic from a source IP is sent to the most used interface. B. All traffic from a source IP to a destination IP is sent to the same interface. C. All traffic from a source IP is sent to the same interface. D. All traffic from a source IP to a destination IP is sent to the least used interface.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows two IPsec templates to define BranchIPsec_1 and Branch_IPsec_2. Each template defines a VPN tunnel. Exhibit B shows the error message that FortiManager displayed when the administrator tried to assign the second template to the FortiGate device. Which statement best explain the cause for this issue? A. You should review the branch1_fgt configuration for the already configured tunnel with the name HUB1-VPN2. B. You can define only one IPsec tunnel from branch devices to HUB1. C. You can assign only one template with a tunnel of type static to each FortiGate device. D. You can assign only one IPsec template to each FortiGate device.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two statements about SLA targets and SD-WAN rules are true? (Choose two.) A. SD-WAN rules use SLA targets to check if the preferred members meet the SLA requirements. B. Member metrics are measured only if an SLA target is configured. C. When configuring an SD-WAN rule, you can select multiple SLA targets of the same performance SLA. D. SLA targets are used only by SD-WAN rules that are configured with Lowest Cost (SLA) or Maximize Bandwidth (SLA) as strategy.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements about the SD-WAN zone configuration are true? (Choose two.) A. You can use the service-sla-tie-break setting to configure preferred member selection based on the best route to the destination. B. The default zone is virtual-wan-link. C. You can delete the default zones. D. An SD-WAN member can belong to two or more zones.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Which statement explains the output shown in the exhibit? A. FortiGate performed standard FIB routing on the session. B. FortiGate will not re-evaluate the session following a firewall policy change. C. FortiGate used 192.2.0.1 as the gateway for the original direction of the traffic. D. FortiGate must re-evaluate the session due to routing change.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows a site-to-site topology between two FortiGate devices: branch1_fgt and dc1_fgt. Exhibit B shows the system global and system settings configuration on dc1_fgt. When branch1_client establishes a connection to dc1_host, the administrator observes that, on dc1_fgt, the reply traffic is routed over T_INET_0_0, even though T_INET_1_0 is the preferred member in the matching SD-WAN rule. Based on the information shown in the exhibits, what configuration change must be made on dc1_fgt so dc1_fgt routes the reply traffic over T_INET_1_0? A. Disable tcp-session-without-syn under config system settings. B. Disable allow-subnet-overlap under config system settings. C. Enable auxiliary-session under config system settings. D. Enable snat-route-change under config system global.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two interfaces are considered overlay links? (Choose two.) A. IPsec B. LAG C. Physical D. GRE",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Which configuration change is required if the responder FortiGate uses a dynamic routing protocol to exchange routes over IPsec? A. type must be set to static. B. add-route must be disabled. C. mode-cfg must be enabled. D. exchange-interface-ip must be enabled.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Two hub-and-spoke groups are connected through a site-to-site IPsec VPN between Hub 1 and Hub 2. The administrator configured ADVPN on both hub-and-spoke groups. Which two outcomes are expected if a user in Toronto sends traffic to London? (Choose two.) A. London generates an IKE information message that contains the Toronto public IP address. B. The first packets from Toronto to London are routed through Hub 1 then to Hub 2. C. Traffic from Toronto to London triggers the dynamic negotiation of a direct site-to-site VPN. D. Toronto needs to establish a site-to-site tunnel with Hub 2 to bypass Hub 1.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which diagnostic command can you use to show the member utilization statistics measured by performance SLAs for the last 10 minutes? A. diagnose sys sdwan sla-log B. diagnose sys sdwan log C. diagnose sys sdwan health-check D. diagnose sys sdwan intf-sla-log",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows the source NAT (SNAT) global setting and exhibit B shows the routing table on FortiGate. Based on the exhibits, which two actions does FortiGate perform on existing sessions established over port2, if the administrator increases the static route priority on port2 to 20? (Choose two.) A. FortiGate continues routing the sessions with no SNAT, over port2. B. FortiGate updates the gateway information of the sessions with SNAT so that they use port1 instead of port2. C. FortiGate flags the sessions as dirty. D. FortiGate performs a route lookup for the original traffic only.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three matching traffic criteria are available in SD-WAN rules? (Choose three.) A. Type of physical link connection B. Source and destination IP address C. URL categories D. Application categories E. Internet service database (ISDB) address object",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the route-tag setting in an SD-WAN rule used for? A. To indicate the routes that can be used for routing SD-WAN traffic. B. To indicate the members that can be used to route SD-WAN traffic. C. To indicate the routes for health check probes. D. To indicate the destination of a rule based on learned BGP prefixes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are two characteristics of the internet service database (ISDB) in an SD-WAN rule? (Choose two.) A. The ISDB is dynamically updated and reduces administrative overhead. B. The ISDB contains the IP addresses and port ranges of well-known internet services. C. The ISDB applies rules to traffic from specific sources, based on application type. D. The ISDB requires application control to maintain signatures and perform load balancing.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which SD-WAN setting enables FortiGate to delay the recovery of ADVPN shortcuts? A. idle-timeout B. link-down-failover C. auto-discovery-shortcuts D. hold-down-time",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement about SD-WAN zones is true? A. You can configure up to 32 SD-WAN zones per VDOM. B. You cannot use an SD-WAN zone in static route definitions. C. An SD-WAN zone can contain only one type of interface. D. An SD-WAN zone can contain between 0 and 512 members.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which three characteristics apply to provisioning templates available on FortiManager? (Choose three.) A. You cannot apply a system template and CLI template to the same FortiGate device. B. A CLI template can be of type CLI script or Perl script. C. A CLI template group can contain CLI templates of both types. D. A template group can include a system template and an SD-WAN template. E. CLI templates are applied in order, from top to bottom.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are two benefits of using CLI templates in FortiManager? (Choose two.) A. You can configure FortiManager to sync local configuration changes made on the managed device, to the CLI template. B. You can configure advanced CLI settings. C. You can configure interfaces as SD-WAN members without having to remove references first. D. You can reference metadata variables.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two benefits of choosing packet duplication over FEC for data loss correction on noisy links? (Choose two.) A. Packet duplication does not require a route to the destination. B. Packet duplication can leverage multiple IPsec overlays for sending additional data. C. Packet duplication supports hardware offloading. D. Packet duplication uses smaller parity packets which results in less bandwidth consumption.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Which two statements about the IPsec VPN configuration and the status of the IPsec VPN tunnel are true? (Choose two.) A. The phase 1 configuration supports the network-overlay setting. B. FortiGate does not install IPsec static routes for remote protected networks in the routing table. C. UDP port 4500 is used for IPsec VPN traffic (ESP). D. FortiGate facilitated the negotiation of the T_INET_1_0 ADVPN shortcut over T_INET_1.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows the SD-WAN performance SLA configuration, the SD-WAN rule configuration, and the application IDs of Facebook and YouTube. Exhibit B shows the firewall policy configuration and the underlay zone status. Based on the exhibits, which two statements are correct about the health and performance of port1 and port2? (Choose two.) A. Non-TCP Facebook and YouTube traffic are not used for performance measurement. B. FortiGate is unable to measure jitter and packet loss on Facebook and YouTube traffic. C. The performance is an average of the metrics measured for Facebook and YouTube traffic passing through the member. D. FortiGate identifies the member as dead when there is no Facebook and YouTube traffic passing through the member.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows an SD-WAN event log and exhibit B shows the member status and the SD-WAN rule configuration. Based on the exhibits, which two statements are correct? (Choose two.) A. FortiGate updated the outgoing interface list on the rule so it prefers port2. B. Port2 has the highest member priority. C. SD-WAN rule ID 1 is set to lowest cost (SLA) mode. D. Port2 has a lower latency than port.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows the SD-WAN rule status and the learned BGP routes with community 65000:10. Exhibit B shows the SD-WAN rule configuration, the BGP neighbor configuration, and the route map configuration. The administrator wants to steer corporate traffic using route tags in the SD- WAN rule ID 1. However, the administrator observes that the corporate traffic does not match the SD-WAN rule ID 1. Based on the exhibits, which configuration change is required to fix the issue? A. In the dc1-lan-rm route map configuration, set set-route-tag to 10. B. In SD-WAN rule ID 1, change the destination to use ISDB entries. C. In the dc1-lan-rm route map configuration, unset match-community. D. In the BGP neighbor configuration, apply the route map dc1-lan-rm in the outbound direction.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. The administrator used the SD-WAN overlay template to prepare an IPsec tunnels configuration for a hub-and-spoke SD-WAN topology. The exhibit shows the FortiManager installation preview for one FortiGate device. Based on the exhibit, which statement best describes the configuration applied to the FortiGate device? A. It is a spoke device that establishes dynamic IPsec tunnels to the hub. It can send ADVPN shortcut requests. B. It is a hub device. It can send ADVPN shortcut offers. C. It is a hub device and will automatically discover the spoke devices that are part of the SD-WAN topology. D. It is a spoke device that establishes dynamic IPsec tunnels to the hub. The local subnet range is 10.10.128.0/23.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What does enabling the exchange-interface-ip setting enable FortiGate devices to exchange? A. The tunnel ID of their IPsec interfaces. B. The name of their IPsec interfaces. C. The gateway address of their IPsec interfaces. D. The IP address of their IPsec interfaces.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. The exhibit shows the SD-WAN rule status and configuration. Based on the exhibit, which change in the measured packet loss will make T_INET_1_0 the new preferred member? A. When T_INET_1_0 has 4% packet loss. B. When T_INET_0_0 has 12% packet loss. C. When T_INET_0_0 has 4% packet loss. D. When all three members have the same packet loss.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. Which statement about the role of the ADVPN device in handling traffic is true? A. Two spokes, 192.2.0.1 and 10.0.2.101, forward their queries to their hubs. B. This is a spoke that has received a query from a remote hub and has forwarded the response to its hub. C. This is a hub that has received a query from a spoke and has forwarded it to another spoke. D. Two hubs, 10.0.1.101 and 10.0.2.101, are receiving and forwarding queries between each other.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit C Exhibit A shows the system interface, exhibit B shows the static route configuration, and exhibit C shows the firewall policies on the managed FortiGate device. Based on the FortiGate configuration shown in the exhibits, which issue might you encounter when creating an SD-WAN Zone for port and port2? A. port1 and port2 are not administratively down. B. port2 is referenced in a static route. C. port1 is assigned a manual IP address. D. port1 is referenced in a firewall policy.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit A Exhibit B Exhibit A shows the configuration for an SD-WAN rule and exhibit B shows the respective rule status, the routing table, and the member status. The administrator wants to understand the expected behavior for traffic matching the SD-WAN rule. Based on the exhibits, what can the administrator expect for traffic matching the SD-WAN rule? A. The traffic will be load balanced across all three overlays. B. The traffic will be routed over T_INET_1_0. C. The traffic will be routed over T_INET_0_0. D. The traffic will be routed over T_MPLS_0.",
+    "options": {},
+    "most_voted": "B"
+  }
+]
