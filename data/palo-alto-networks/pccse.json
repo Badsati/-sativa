@@ -1,0 +1,1237 @@
+[
+  {
+    "question": "Given a default deployment of Console, a customer needs to identify the alerted compliance checks that are set by default. Where should the customer navigate in Console? A. Monitor > Compliance B. Defend > Compliance C. Manage > Compliance D. Custom > Compliance",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which container scan is constructed correctly? A. twistcli images scan -u api -p api --address https://us-west1.cloud.twistlock.com/us-3-123456789 --container myimage/latest B. twistcli images scan --docker-address https://us-west1.cloud.twistlock.com/us-3-123456789 myimage/latest C. twistcli images scan -u api -p api --address https://us-west1.cloud.twistlock.com/us-3-123456789 --details myimage/latest D. twistcli images scan -u api -p api --docker-address https://us-west1.cloud.twistlock.com/us-3-123456789 myimage/latest",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The development team wants to fail CI jobs where a specific CVE is contained within the image. How should the development team configure the pipeline or policy to produce this outcome? A. Set the specific CVE exception as an option in Jenkins or twistcli. B. Set the specific CVE exception as an option in Defender running the scan. C. Set the specific CVE exception as an option using the magic string in the Console. D. Set the specific CVE exception in Consoleג€™s CI policy.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which three types of classifications are available in the Data Security module? (Choose three.) A. Personally identifiable information B. Malicious IP C. Compliance standard D. Financial information E. Malware",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer has a requirement to terminate any Container from image topSecret:latest when a process named ransomWare is executed. How should the administrator configure Prisma Cloud Compute to satisfy this requirement? A. set the Container model to manual relearn and set the default runtime rule to block for process protection. B. set the Container model to relearn and set the default runtime rule to prevent for process protection. C. add a new runtime policy targeted at a specific Container name, add ransomWare process into the denied process list, and set the action to ג€preventג€. D. choose ג€copy into ruleג€ for the Container, add a ransomWare process into the denied process list, and set the action to ג€blockג€.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement is true about obtaining Console images for Prisma Cloud Compute Edition? A. To retrieve Prisma Cloud Console images using basic auth: 1. Access registry.paloaltonetworks.com, and authenticate using ג€˜docker loginג€™. 2. Retrieve the Prisma Cloud Console images using ג€˜docker pullג€™. B. To retrieve Prisma Cloud Console images using basic auth: 1. Access registry.twistlock.com, and authenticate using ג€˜docker loginג€™. 2. Retrieve the Prisma Cloud Console images using ג€˜docker pullג€™. C. To retrieve Prisma Cloud Console images using URL auth: 1. Access registry-url-auth.twistlock.com, and authenticate using the user certificate. 2. Retrieve the Prisma Cloud Console images using ג€˜docker pullג€™. D. To retrieve Prisma Cloud Console images using URL auth: 1. Access registry-auth.twistlock.com, and authenticate using the user certificate. 2. Retrieve the Prisma Cloud Console images using ג€˜docker pullג€™.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements are true about the differences between build and run config policies? (Choose two.) A. Run and Network policies belong to the configuration policy set. B. Build and Audit Events policies belong to the configuration policy set. C. Run policies monitor resources, and check for potential issues after these cloud resources are deployed. D. Build policies enable you to check for security misconfigurations in the IaC templates and ensure that these issues do not get into production. E. Run policies monitor network activities in your environment, and check for potential issues during runtime.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A security team notices a number of anomalies under Monitor > Events. The incident response team works with the developers to determine that these anomalies are false positives. What will be the effect if the security team chooses to Relearn on this image? A. The model is deleted, and Defender will relearn for 24 hours. B. The anomalies detected will automatically be added to the model. C. The model is deleted and returns to the initial learning state. D. The model is retained, and any new behavior observed during the new learning period will be added to the existing model.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer does not want alerts to be generated from network traffic that originates from trusted internal networks. Which setting should you use to meet this customer's request? A. Trusted Login IP Addresses B. Anomaly Trusted List C. Trusted Alert IP Addresses D. Enterprise Alert Disposition",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A DevOps lead reviewed some system logs and notices some odd behavior that could be a data exfiltration attempt. The DevOps lead only has access to vulnerability data in Prisma Cloud Compute, so the DevOps lead passes this information to SecOps. Which pages in Prisma Cloud Compute can the SecOps lead use to investigate the runtime aspects of this attack? A. The SecOps lead should investigate the attack using Vulnerability Explorer and Runtime Radar. B. The SecOps lead should use Incident Explorer and Compliance Explorer. C. The SecOps lead should use the Incident Explorer page and Monitor > Events > Container Audits. D. The SecOps lead should review the vulnerability scans in the CI/CD process to determine blame.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer finds that an open alert from the previous day has been resolved. No auto-remediation was configured. Which two reasons explain this change in alert status? (Choose two.) A. user manually changed the alert status. B. policy was changed. C. resource was deleted. D. alert was sent to an external integration.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three steps are involved in onboarding an account for Data Security? (Choose three.) A. Create a read-only role with in-line policies B. Create a Cloudtrail with SNS Topic C. Enable Flow Logs D. Enter the RoleARN and SNSARN E. Create a S3 bucket",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has deployed Console into a Kubernetes cluster running in AWS. The administrator also has configured a load balancer in TCP passthrough mode to listen on the same ports as the default Prisma Compute Console configuration. In the build pipeline, the administrator wants twistcli to talk to Console over HTTPS. Which port will twistcli need to use to access the Prisma Compute APIs? A. 8084 B. 443 C. 8083 D. 8081",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer is reviewing Container audits, and an audit has identified a cryptominer attack. Which three options could have generated this audit? (Choose three.) A. The value of the mined currency exceeds $100. B. High CPU usage over time for the container is detected. C. Common cryptominer process name was found. D. The mined currency is associated with a user token. E. Common cryptominer port usage was found.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which step is included when configuring Kubernetes to use Prisma Cloud Compute as an admission controller? A. copy the Console address and set the config map for the default namespace. B. create a new namespace in Kubernetes called admission-controller. C. enable Kubernetes auditing from the Defend > Access > Kubernetes page in the Console. D. copy the admission controller configuration from the Console and apply it to Kubernetes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Prisma Cloud administrator is onboarding a single GCP project to Prisma Cloud. Which two steps can be performed by the Terraform script? (Choose two.) A. enable flow logs for Prisma Cloud. B. create the Prisma Cloud role. C. enable the required APIs for Prisma Cloud. D. publish the flow log to a storage bucket.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement about build and run policies is true? A. Build policies enable you to check for security misconfigurations in the IaC templates. B. Every type of policy has auto-remediation enabled by default. C. The four main types of policies are: Audit Events, Build, Network, and Run. D. Run policies monitor network activities in the environment and check for potential issues during runtime.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator sees that a runtime audit has been generated for a host. The audit message is: `Service postfix attempted to obtain capability SHELL by executing /bin/sh /usr/libexec/postfix/postfix-script.stop. Low severity audit, event is automatically added to the runtime model` Which runtime host policy rule is the root cause for this runtime audit? A. Custom rule with specific configuration for file integrity B. Custom rule with specific configuration for networking C. Default rule that alerts on capabilities D. Default rule that alerts on suspicious runtime behavior",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which option identifies the Prisma Cloud Compute Edition? A. Package installed with APT B. Downloadable, self-hosted software C. Software-as-a-Service (SaaS) D. Plugin to Prisma Cloud",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which type of compliance check is available for rules under Defend > Compliance > Containers and Images > CI? A. Host B. Container C. Functions D. Image",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The security team wants to protect a web application container from an SQLi attack. Which type of policy should the administrator create to protect the container? A. CNAF B. Runtime C. Compliance D. CNNF",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An S3 bucket within AWS has generated an alert by violating the Prisma Cloud Default policy `AWS S3 buckets are accessible to public`. The policy definition follows: config where cloud.type = 'aws' AND api.name='aws-s3api-get-bucket-acl' AND json.rule=\"((((acl.grants[?(@.grantee=='AllUsers')] size > 0) or policyStatus.isPublic is true) and publicAccessBlockConfiguration does not exist) or ((acl.grants[?(@.grantee=='AllUsers')] size > 0) and publicAccessBlockConfiguration.ignorePublicAcis is false) or (policyStatus.isPublic is true and publicAccessBlockConfiguration.restrictPublicBuckets is false)) and websiteConfiguration does not exist\" Why did this alert get generated? A. an event within the cloud account B. network traffic to the S3 bucket C. configuration of the S3 bucket D. anomalous behaviors",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "DRAG DROP Which order of steps map a policy to a custom compliance standard? (Drag the steps into the correct order of occurrence, from the first step to the last.) Select and Place: [sampleXML/xmlfile-12_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer is interested in PCI requirements and needs to ensure that no privilege containers can start in the environment. Which action needs to be set for `do not use privileged containers`? A. Prevent B. Alert C. Block D. Fail",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Given an existing ECS Cluster, which option shows the steps required to install the Console in Amazon ECS? A. The console cannot natively run in an ECS cluster. A onebox deployment should be used. B. Download and extract the release tarball Ensure that each node has its own storage for Console data Create the Console task definition Deploy the task definition C. Download and extract release tarball Download task from AWS Create the Console task definition Deploy the task definition D. Download and extract the release tarball Create an EFS file system and mount to each node in the cluster Create the Console task definition Deploy the task definition",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which options show the steps required to upgrade Console when using projects? A. Upgrade all Supervisor Consoles Upgrade Central Console B. Upgrade Central Console Upgrade Central Console Defenders C. Upgrade Defender Upgrade Central Console Upgrade Supervisor Consoles D. Upgrade Central Console Upgrade all Supervisor Consoles",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer has Prisma Cloud Enterprise and host Defenders deployed. What are two options that allow an administrator to upgrade Defenders? (Choose two.) A. with auto-upgrade, the host Defender will auto-upgrade. B. auto deploy the Lambda Defender. C. click the update button in the web-interface. D. generate a new DaemonSet file.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which intensity setting for anomaly alerts is used for the measurement of 100 events over 30 days? A. High B. Medium C. Low D. Very High",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Given this information: ✑ The Console is located at https://prisma-console.mydomain.local ✑ The username is: cluster ✑ The password is: password123 ✑ The image to scan is: myimage:latest Which twistcli command should be used to scan a Container for vulnerabilities and display the details about each vulnerability? A. twistcli images scan --console-address https://prisma-console.mydomain.local -u cluster -p password123 --details myimage:latest B. twistcli images scan --console-address prisma-console.mydomain.local -u cluster -p password123 --vulnerability-details myimage:latest C. twistcli images scan --address prisma-console.mydomain.local -u cluster -p password123 --vulnerability-details myimage:latest D. twistcli images scan --address https://prisma-console.mydomain.local -u cluster -p password123 --details myimage:latest",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The development team wants to block Cross Site Scripting attacks from pods in its environment. How should the team construct the CNAF policy to protect against this attack? A. create a Host CNAF policy, targeted at a specific resource, check the box for XSS attack protection, and set the action to ג€preventג€. B. create a Container CNAF policy, targeted at a specific resource, check the box for XSS attack protection, and set the action to alert. C. create a Container CNAF policy, targeted at a specific resource, check the box for XSS protection, and set the action to prevent. D. create a Container CNAF policy, targeted at a specific resource, and they should set ג€Explicitly allowed inbound IP sourcesג€ to the IP address of the pod.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Prisma Cloud administrator has configured a new policy. Which steps should be used to assign this policy to a compliance standard? A. Edit the policy, go to step 3 (Compliance Standards), click + at the bottom, select the compliance standard, fill in the other boxes, and then click Confirm. B. Create the Compliance Standard from Compliance tab, and then select Add to Policy. C. Open the Compliance Standards section of the policy, and then save. D. Custom policies cannot be added to existing standards.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator wants to install the Defenders to a Kubernetes cluster. This cluster is running the console on the default service endpoint and will be exporting to YAML. ✑ Console Address: $CONSOLE_ADDRESS ✑ Websocket Address: $WEBSOCKET_ADDRESS ✑ User: $ADMIN_USER Which command generates the YAML file for Defender install? A. <PLATFORM>/twistcli defender \\ --address $CONSOLE_ADDRESS \\ --user $ADMIN_USER \\ --cluster-address $CONSOLE_ADDRESS B. <PLATFORM>/twistcli defender export kubernetes \\ --address $WEBSOCKET_ADDRESS \\ --user $ADMIN_USER \\ --cluster-address $CONSOLE_ADDRESS C. <PLATFORM>/twistcli defender YAML kubernetes \\ --address $CONSOLE_ADDRESS \\ --user $ADMIN_USER \\ --cluster-address $WEBSOCKET_ADDRESS D. <PLATFORM>/twistcli defender export kubernetes \\ --address $CONSOLE_ADDRESS \\ --user $ADMIN_USER \\ --cluster-address $WEBSOCKET_ADDRESS",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which options show the steps required after upgrade of Console? A. Uninstall Defenders Upgrade Jenkins Plugin Upgrade twistcli where applicable Allow the Console to redeploy the Defender B. Update the Console image in the Twistlock hosted registry Update the Defender image in the Twistlock hosted registry Uninstall Defenders C. Upgrade Defenders Upgrade Jenkins Plugin Upgrade twistcli where applicable D. Update the Console image in the Twistlock hosted registry Update the Defender image in the Twistlock hosted registry Redeploy Console",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization wants to be notified immediately to any `High Severity` alerts for the account group `Clinical Trials` via Slack. Which option shows the steps the organization can use to achieve this goal? A. 1. Configure Slack Integration 2. Create an alert rule and select ג€Clinical Trialsג€ as the account group 3. Under the ג€Select Policiesג€ tab, filter on severity and select ג€Highג€ 4. Under the Set Alert Notification tab, choose Slack and populate the channel 5. Set Frequency to ג€As it Happensג€ B. 1. Create an alert rule and select ג€Clinical Trialsג€ as the account group 2. Under the ג€Select Policiesג€ tab, filter on severity and select ג€Highג€ 3. Under the Set Alert Notification tab, choose Slack and populate the channel 4. Set Frequency to ג€As it Happensג€ 5. Set up the Slack Integration to complete the configuration C. 1. Configure Slack Integration 2. Create an alert rule 3. Under the ג€Select Policiesג€ tab, filter on severity and select ג€Highג€ 4. Under the Set Alert Notification tab, choose Slack and populate the channel 5. Set Frequency to ג€As it Happensג€ D. 1. Under the ג€Select Policiesג€ tab, filter on severity and select ג€Highג€ 2. Under the Set Alert Notification tab, choose Slack and populate the channel 3. Set Frequency to ג€As it Happensג€ 4. Configure Slack Integration 5. Create an Alert rule",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A business unit has acquired a company that has a very large AWS account footprint. The plan is to immediately start onboarding the new company's AWS accounts into Prisma Cloud Enterprise tenant immediately. The current company is currently not using AWS Organizations and will require each account to be onboarded individually. The business unit has decided to cover the scope of this action and determined that a script should be written to onboard each of these accounts with general settings to gain immediate posture visibility across the accounts. Which API endpoint will specifically add these accounts into the Prisma Cloud Enterprise tenant? A. https://api.prismacloud.io/cloud/ B. https://api.prismacloud.io/account/aws C. https://api.prismacloud.io/cloud/aws D. https://api.prismacloud.io/accountgroup/aws",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A security team has a requirement to ensure the environment is scanned for vulnerabilities. What are three options for configuring vulnerability policies? (Choose three.) A. individual actions based on package type B. output verbosity for blocked requests C. apply policy only when vendor fix is available D. individual grace periods for each severity level E. customize message on blocked requests",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Unusual protocol activity (Internal) network anomaly is generating too many alerts. An administrator has been asked to tune it to the option that will generate the least number of events without disabling it entirely. Which strategy should the administrator use to achieve this goal? A. Disable the policy B. Set the Alert Disposition to Conservative C. Change the Training Threshold to Low D. Set Alert Disposition to Aggressive",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the behavior of Defenders when the Console is unreachable during upgrades? A. Defenders continue to alert, but not enforce, using the policies and settings most recently cached before upgrading the Console. B. Defenders will fail closed until the web-socket can be re-established. C. Defenders will fail open until the web-socket can be re-established. D. Defenders continue to alert and enforce using the policies and settings most recently cached before upgrading the Console.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How are the following categorized? ✑ Backdoor account access ✑ Hijacked processes ✑ Lateral movement ✑ Port scanning A. audits B. incidents C. admission controllers D. models",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP An administrator needs to write a script that automatically deactivates access keys that have not been used for 30 days. In which order should the API calls be used to accomplish this task? (Drag the steps into the correct order from the first step to the last.) Select and Place: [sampleXML/xmlfile-22_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which method should be used to authenticate to Prisma Cloud Enterprise programmatically? A. single sign-on B. SAML C. basic authentication D. access key",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which option shows the steps to install the Console in a Kubernetes Cluster? A. Download the Console and Defender image Generate YAML for Defender Deploy Defender YAML using kubectl B. Download and extract release tarball Generate YAML for Console Deploy Console YAML using kubectl C. Download the Console and Defender image Download YAML for Defender from the document site Deploy Defender YAML using kubectl D. Download and extract release tarball Download the YAML for Console Deploy Console YAML using kubectl",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer has a requirement to automatically protect all Lambda functions with runtime protection. What is the process to automatically protect all the Lambda functions? A. Configure a function scan policy from the Defend/Vulnerabilities/Functions page. B. Configure serverless radar from the Defend/Compliance/Cloud Platforms page. C. Configure a manually embedded Lambda Defender. D. Configure a serverless auto-protect rule for the functions.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement accurately characterizes SSO Integration on Prisma Cloud? A. Prisma Cloud supports IdP initiated SSO, and its SAML endpoint supports the POST and GET methods. B. Okta, Azure Active Directory, PingID, and others are supported via SAML. C. An administrator can configure different Identity Providers (IdP) for all the cloud accounts that Prisma Cloud monitors. D. An administrator who needs to access the Prisma Cloud API can use SSO after configuration.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Match the service on the right that evaluates each exposure type on the left. (Select your answer from the pull-down list. Answers may be used more than once or not at all.) Select and Place: [sampleXML/xmlfile-25_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two ways to scan container images in Jenkins pipelines? (Choose two.) A. twistcli B. Jenkins Docker plugin C. Compute Jenkins plugin D. Compute Azure DevOps plugin E. Prisma Cloud Visual Studio Code plugin with Jenkins integration",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer wants to harden its environment from misconfiguration. Prisma Cloud Compute Compliance enforcement for hosts covers which three options? (Choose three.) A. Docker daemon configuration files B. Docker daemon configuration C. Host cloud provider tags D. Host configuration E. Hosts without Defender agents",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Prisma Cloud administrator is tasked with pulling a report via API. The Prisma Cloud tenant is located on app2.prismacloud.io. What is the correct API endpoint? A. https://api.prismacloud.io B. https://api2.eu.prismacloud.io C. httsp://api.prismacloud.cn D. https://api2.prismacloud.io",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer has Defenders connected to Prisma Cloud Enterprise. The Defenders are deployed as a DaemonSet in OpenShift. How should the administrator get a report of vulnerabilities on hosts? A. Navigate to Monitor > Vulnerabilities > CVE Viewer B. Navigate to Defend > Vulnerabilities > VM Images C. Navigate to Defend > Vulnerabilities > Hosts D. Navigate to Monitor > Vulnerabilities > Hosts",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "DRAG DROP Order the steps involved in onboarding an AWS Account for use with Data Security feature. Select and Place: [sampleXML/xmlfile-28_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has a requirement to scan serverless functions for vulnerabilities. Which three settings are required to configure serverless scanning? (Choose three.) A. Defender Name B. Region C. Credential D. Console Address E. Provider",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are tasked with configuring a Prisma Cloud build policy for Terraform. What type of query is necessary to complete this policy? A. YAML B. JSON C. CloudFormation D. Terraform",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have onboarded a public cloud account into Prisma Cloud Enterprise. Configuration Resource ingestion is visible in the Asset Inventory for the onboarded account, but no alerts are being generated for the configuration assets in the account. Config policies are enabled in the Prisma Cloud Enterprise tenant, with those policies associated to existing alert rules. ROL statements on the investigate matching those policies return config resource results successfully. Why are no alerts being generated? A. The public cloud account is not associated with an alert notification. B. The public cloud account does not have audit trail ingestion enabled. C. The public cloud account does not access to configuration resources. D. The public cloud account is not associated with an alert rule.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The security team wants to target a CNAF policy for specific running Containers. How should the administrator scope the policy to target the Containers? A. scope the policy to Image names. B. scope the policy to namespaces. C. scope the policy to Defender names. D. scope the policy to Host names.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The InfoSec team wants to be notified via email each time a Security Group is misconfigured. Which Prisma Cloud tab should you choose to complete this request? A. Notifications B. Policies C. Alert Rules D. Events",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has access to a Prisma Cloud Enterprise. What are the steps to deploy a single container Defender on an ec2 node? A. Pull the Defender image to the ec2 node, copy and execute the curl | bash script, and start the Defender to ensure it is running. B. Execute the curl | bash script on the ec2 node. C. Configure the cloud credential in the console and allow cloud discovery to auto-protect the ec2 node. D. Generate DaemonSet file and apply DaemonSet to the twistlock namespace.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer wants to turn on Auto Remediation. Which policy type has the built-in CLI command for remediation? A. Anomaly B. Audit Event C. Network D. Config",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer is deploying Defenders to a Fargate environment. It wants to understand the vulnerabilities in the image it is deploying. How should the customer automate vulnerability scanning for images deployed to Fargate? A. Set up a vulnerability scanner on the registry B. Embed a Fargate Defender to automatically scan for vulnerabilities C. Designate a Fargate Defender to serve a dedicated image scanner D. Use Cloud Compliance to identify misconfigured AWS accounts",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which container image scan is constructed correctly? A. twistcli images scan --docker-address https://us-west1.cloud.twistlock.com/us-3-123456789 myimage/latest B. twistcli images scan --address https://us-west1.cloud.twistlock.com/us-3-123456789 myimage/latest C. twistcli images scan --address https://us-west1.cloud.twistlock.com/us-3-123456789 --container myimage/latest D. twistcli images scan --address https://us-west1.cloud.twistlock.com/us-3-123456789 --container myimage/latest --details",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP An administrator has been tasked with creating a custom service that will download any existing compliance report from a Prisma Cloud Enterprise tenant. In which order will the APIs be executed for this service? (Drag the steps into the correct order of occurrence, from the first step to the last.) Select and Place: [sampleXML/xmlfile-34_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two processes ensure that builds can function after a Console upgrade? (Choose two.) A. allowing Jenkins to automatically update the plugin B. updating any build environments that have twistcli included to use the latest version C. configuring build pipelines to download twistcli at the start of each build D. creating a new policy that allows older versions of twistcli to connect the Console",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The compliance team needs to associate Prisma Cloud policies with compliance frameworks. Which option should the team select to perform this task? A. Custom Compliance B. Policies C. Compliance D. Alert Rules",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Review this admission control policy: match[{\"msg\": msg}] { input.request.operation == \"CREATE\" input.request.kind.kind == \"Pod\" input.request.resource.resource == \"pods\" input.request.object.spec.containers[_].securityContext.privileged msg := \"Privileged\" } Which response to this policy will be achieved when the effect is set to `block`? A. The policy will block all pods on a Privileged host. B. The policy will replace Defender with a privileged Defender. C. The policy will alert only the administrator when a privileged pod is created. D. The policy will block the creation of a privileged pod.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Per security requirements, an administrator needs to provide a list of people who are receiving e-mails for Prisma Cloud alerts. Where can the administrator locate this list of e-mail recipients? A. Target section within an Alert Rule. B. Notification Template section within Alerts. C. Users section within Settings. D. Set Alert Notification section within an Alert Rule.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer wants to scan a serverless function as part of a build process. Which twistcli command can be used to scan serverless functions? A. twistcli function scan <SERVERLESS_FUNCTION.ZIP> B. twistcli scan serverless <SERVERLESS_FUNCTION.ZIP> C. twistcli serverless AWS <SERVERLESS_FUNCTION.ZIP> D. twiscli serverless scan <SERVERLESS_FUNCTION.ZIP>",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer has a development environment with 50 connected Defenders. A maintenance window is set for Monday to upgrade 30 stand-alone Defenders in the development environment, but there is no maintenance window available until Sunday to upgrade the remaining 20 stand-alone Defenders. Which recommended action manages this situation? A. Go to Manage > Defender > Manage, then click Defenders, and use the Scheduler to choose which Defenders will be automatically upgraded during the maintenance window. B. Find a maintenance window that is suitable to upgrade all stand-alone Defenders in the development environment. C. Upgrade a subset of the Defenders by clicking the individual Actions > Upgrade button in the row that corresponds to the Defender that should be upgraded during the maintenance window. D. Open a support case with Palo Alto Networks to arrange an automatic upgrade.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is an example of an outbound notification within Prisma Cloud? A. AWS Inspector B. Qualys C. Tenable D. PagerDuty",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A security team has been asked to create a custom policy. Which two methods can the team use to accomplish this goal? (Choose two.) A. add a new policy B. clone an existing policy C. disable an out-of-the-box policy D. edit the query in the out-of-the-box policy",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The security auditors need to ensure that given compliance checks are being run on the host. Which option is a valid host compliance policy? A. Ensure functions are not overly permissive. B. Ensure host devices are not directly exposed to containers. C. Ensure images are created with a non-root user. D. Ensure compliant Docker daemon configuration.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer wants to be notified about port scanning network activities in their environment. Which policy type detects this behavior? A. Network B. Port Scan C. Anomaly D. Config",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A security team is deploying Cloud Native Application Firewall (CNAF) on a containerized web application. The application is running an NGINX container. The container is listening on port 8080 and is mapped to host port 80. Which port should the team specify in the CNAF rule to protect the application? A. 443 B. 80 C. 8080 D. 8888",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three types of buckets exposure are available in the Data Security module? (Choose three.) A. Public B. Private C. International D. Differential E. Conditional",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The administrator wants to review the Console audit logs from within the Console. Which page in the Console should the administrator use to review this data, if it can be reviewed at all? A. Navigate to Monitor > Events > Host Log Inspection B. The audit logs can be viewed only externally to the Console C. Navigate to Manage > Defenders > View Logs D. Navigate to Manage > View Logs > History",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "DRAG DROP What is the order of steps in a Jenkins pipeline scan? (Drag the steps into the correct order of occurrence, from the first step to the last.) Select and Place: [sampleXML/xmlfile-42_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP What is the order of steps to create a custom network policy? (Drag the steps into the correct order of occurrence, from the first step to the last.) Select and Place: [sampleXML/xmlfile-44_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP You wish to create a custom policy with build and run subtypes. Match the query types for each example. (Select your answer from the pull-down list. Answers may be used more than once or not at all.) Select and Place: [sampleXML/xmlfile-46_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement is true regarding CloudFormation templates? A. Scan support does not currently exist for nested references, macros, or intrinsic functions. B. A single template or a zip archive of template files cannot be scanned with a single API request. C. Request-Header-Field ג€˜cloudformation-versionג€™ is required to request a scan. D. Scan support is provided for JSON, HTML and YAML formats.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has a large environment that needs to upgrade Console without upgrading all Defenders at one time. What are two prerequisites prior to performing a rolling upgrade of Defenders? (Choose two.) A. manual installation of the latest twistcli tool prior to the rolling upgrade B. all Defenders set in read-only mode before execution of the rolling upgrade C. a second location where you can install the Console D. additional workload licenses are required to perform the rolling upgrade E. an existing Console at version n-1",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator sees that a runtime audit has been generated for a Container. The audit message is `DNS resolution of suspicious name wikipedia.com. type A`. Why would this message appear as an audit? A. The DNS was not learned as part of the Container model or added to the DNS allow list. B. This is a DNS known to be a source of malware. C. The process calling out to this domain was not part of the Container model. D. The Layer7 firewall detected this as anomalous behavior.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which `kind` of Kubernetes object is configured to ensure that Defender is acting as the admission controller? A. MutatingWebhookConfiguration B. DestinationRules C. ValidatingWebhookConfiguration D. PodSecurityPolicies",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three options are selectable in a CI policy for image scanning with Jenkins or twistcli? (Choose three.) A. Scope - Scans run on a particular host B. Credential C. Apply rule only when vendor fixes are available D. Failure threshold E. Grace Period",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which component(s), if any, will Palo Alto Networks host and run when a customer purchases Prisma Cloud Enterprise Edition? A. Defenders B. Console C. Jenkins D. twistcli",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which port should a security team use to pull data from Console's API? A. 53 B. 25 C. 8084 D. 8083",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are an existing customer of Prisma Cloud Enterprise. You want to onboard a public cloud account and immediately see all of the alerts associated with this account based off ALL of your tenant's existing enabled policies. There is no requirement to send alerts from this account to a downstream application at this time. Which option shows the steps required during the alert rule creation process to achieve this objective? A. Ensure the public cloud account is assigned to an account group Assign the confirmed account group to alert rule Select ג€select all policiesג€ checkbox as part of the alert rule Confirm the alert rule B. Ensure the public cloud account is assigned to an account group Assign the confirmed account group to alert rule Select one or more policies checkbox as part of the alert rule Confirm the alert rule C. Ensure the public cloud account is assigned to an account group Assign the confirmed account group to alert rule Select one or more policies as part of the alert rule Add alert notifications Confirm the alert rule D. Ensure the public cloud account is assigned to an account group Assign the confirmed account group to alert rule Select ג€select all policiesג€ checkbox as part of the alert rule Add alert notifications Confirm the alert rule",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer has configured the JIT, and the user created by the process is trying to log in to the Prisma Cloud console. The user encounters the following error message: What is the reason for the error message? A. The attribute name is not set correctly in JIT settings. B. The user does not exist. C. The user entered an incorrect password D. The role is not assigned for the user.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the two ways to scope a CI policy for image scanning? (Choose two.) A. container name B. image name C. hostname D. image labels",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which policy type in Prisma Cloud can protect against malware? A. Data B. Config C. Network D. Event",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "If you are required to run in an air-gapped environment, which product should you install? A. Prisma Cloud Jenkins Plugin B. Prisma Cloud Compute Edition C. Prisma Cloud with self-hosted plugin D. Prisma Cloud Enterprise Edition",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the maximum number of access keys a user can generate in Prisma Cloud with a System Admin role? A. 1 B. 2 C. 3 D. 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP Put the steps involved to configure and scan using the IntelliJ plugin in the correct order.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator needs to detect and alert on any activities performed by a root account. Which policy type should be used? A. config-run B. config-build C. network D. audit event",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "One of the resources on the network has triggered an alert for a Default Config policy. Given the following resource JSON snippet: Which RQL detected the vulnerability? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer has multiple violations in the environment including: • User namespace is enabled • An LDAP server is enabled • SSH root is enabled Which section of Console should the administrator use to review these findings? A. Manage B. Vulnerabilities C. Radar D. Compliance",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer has serverless functions that are deployed in multiple clouds. Which serverless cloud provider is covered be “overly permissive service access” compliance check? A. Alibaba B. GCP C. AWS D. Azure",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer has a requirement to restrict any container from resolving the name www.evil-url.com. How should the administrator configure Prisma Cloud Compute to satisfy this requirement? A. Choose “copy into rule” for any Container, set www.evil-url.com as a blocklisted DNS name in the Container policy and set the policy effect to alert. B. Set www.evil-url.com as a blocklisted DNS name in the default Container runtime policy, and set the effect to block. C. Choose “copy into rule” for any Container, set www.evil-url.com as a blocklisted DNS name, and set the effect to prevent. D. Set www.evil-url.com as a blocklisted DNS name in the default Container policy and set the effect to prevent.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which API calls can scan an image named myimage: latest with twistcli and then retrieve the results from Console? A. $ twistcli images scan \\ --address \\ --user \\ --password \\ --verbose \\ myimage: latest B. $ twistcli images scan \\ --address \\ --user \\ --password \\ --details \\ myimage: latest C. $ twistcli images scan \\ --address \\ --user \\ --password \\ myimage: latest D. $ twistcli images scan \\ --address \\ --user \\ --password \\ --console \\ myimage: latest",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Given the following RQL: event from cloud.audit_logs where operation IN (‘CreateCryptoKey’, ‘DestroyCryptoKeyVersion’, ‘v1.compute.disks.createSnapshot’) Which audit event snippet is identified? A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two of the following are required to be entered on the IdP side when setting up SSO in Prisma Cloud? (Choose two.) A. Username B. SSO Certificate C. Assertion Consumer Service (ACS) URL D. SP (Service Provider) Entity ID",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator sees that a runtime audit has been generated for a container. The audit message is: “/bin/ls launched and is explicitly blocked in the runtime rule. Full command: ls -latr” Which protection in the runtime rule would cause this audit? A. Networking B. File systems C. Processes D. Container",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which data security default policy is able to scan for vulnerabilities? A. Objects containing Vulnerabilities B. Objects containing Threats C. Objects containing Malware D. Objects containing Exploits",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Given the following audit event activity snippet: Which RQL will be triggered by the audit event? A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which three fields are mandatory when authenticating the Prisma Cloud plugin in the IntelliJ application? (Choose three.) A. Secret Key B. Prisma Cloud API URL C. Tags D. Access Key E. Asset Name",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are correct statements regarding the use of access keys? (Choose two.) A. Access keys must have an expiration date B. Up to two access keys can be active at any time C. System Admin can create access key for all users D. Access keys are used for API calls",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Given the following RQL: Which audit event snippet is identified by the RQL? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The development team is building pods to host a web front end, and they want to protect these pods with an application firewall. Which type of policy should be created to protect this pod from Layer7 attacks? A. The development team should create a WAAS rule for the host where these pods will be running. B. The development team should create a WAAS rule targeted at all resources on the host. C. The development team should create a runtime policy with networking protections. D. The development team should create a WAAS rule targeted at the image name of the pods.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A manager informs the SOC that one or more RDS instances have been compromised and the SOC needs to make sure production RDS instances are NOT publicly accessible. Which action should the SOC take to follow security best practices? A. Enable “AWS S3 bucket is publicly accessible” policy and manually remediate each alert. B. Enable “AWS RDS database instance is publicly accessible” policy and for each alert, check that it is a production instance, and then manually remediate. C. Enable “AWS S3 bucket is publicly accessible” policy and add policy to an auto-remediation alert rule. D. Enable “AWS RDS database instance is publicly accessible” policy and add policy to an auto-remediation alert rule.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator wants to enforce a rate limit for users not being able to post five (5) .tar.gz files within five (5) seconds. What does the administrator need to configure? A. A ban for DoS protection with an average rate of 5 and file extensions match on .tar.gz on WAAS B. A ban for DoS protection with a burst rate of 5 and file extensions match on .tar.gz on CNNF C. A ban for DoS protection with a burst rate of 5 and file extensions match on .tar gz on WAAS D. A ban for DoS protection with an average rate of 5 and file extensions match on .tar.gz on CNNF",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is an automatically correlated set of individual events generated by the firewall and runtime sensors to identify unfolding attacks? A. policy B. incident C. audit D. anomaly",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer wants to monitor the company’s AWS accounts via Prisma Cloud, but only needs the resource configuration to be monitored for now. Which two pieces of information do you need to onboard this account? (Choose two.) A. Cloudtrail B. Subscription ID C. Active Directory ID D. External ID E. Role ARN",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "An administrator for Prisma Cloud needs to obtain a graphical view to monitor all connections, including connections across hosts and connections to any configured network objects. Which setting does the administrator enable or configure to accomplish this task? A. ADEM B. WAAS Analytics C. Telemetry D. Cloud Native Network Firewall E. Host Insight",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two fields are required to configure SSO in Prisma Cloud? (Choose two.) A. Prisma Cloud Access SAML URL B. Identity Provider Issuer C. Certificate D. Identity Provider Logout URL",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two IDE plugins are supported by Prisma Cloud as part of its DevOps Security? (Choose two.) A. BitBucket B. Visual Studio Code C. CircleCI D. IntelliJ",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two CI/CD plugins are supported by Prisma Cloud as part of its DevOps Security? (Choose two.) A. BitBucket B. Visual Studio Code C. CircleCI D. IntelliJ",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Given the following JSON query: $.resource[*].aws_s3_bucket exists Which tab is the correct place to add the JSON query when creating a Config policy? A. Details B. Compliance Standards C. Remediation D. Build Your Rule (Run tab) E. Build Your Rule (Build tab)",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which two attributes of policies can be fetched using API? (Choose two.) A. policy label B. policy signature C. policy mode D. policy violation",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two options may be used to upgrade the Defenders with a Console v20.04 and Kubernetes deployment? (Choose two.) A. Run the provided curl | bash script from Console to remove Defenders, and then use Cloud Discovery to automatically redeploy Defenders. B. Remove Defenders DaemonSet, and then use Cloud Discovery to automatically redeploy the Defenders. C. Remove Defenders, and then deploy the new DaemonSet so Defenders do not have to automatically update on each deployment. D. Let Defenders automatically upgrade.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Move the steps to the correct order to set up and execute a serverless scan using AWS DevOps.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has a requirement to scan serverless functions for vulnerabilities. What is the correct option to configure scanning? A. Configure serverless radar from the Defend > Compliance > Cloud Platforms page. B. Embed serverless Defender into the function. C. Configure a function scan policy from the Defend > Vulnerabilities > Functions page. D. Use Lambda layers to deploy a Defender into the function.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has been tasked with a requirement by your DevSecOps team to write a script to continuously query programmatically the existing users, and the user’s associated permission levels, in a Prisma Cloud Enterprise tenant. Which public documentation location should be reviewed to help determine the required attributes to carry out this step? A. Prisma Cloud Administrator’s Guide (Compute) B. Prisma Cloud API Reference C. Prisma Cloud Compute API Reference D. Prisma Cloud Enterprise Administrator’s Guide",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When would a policy apply if the policy is set under Defend > Vulnerability > Images > Deployed? A. when a serverless repository is scanned B. when a Container is started form an Image C. when the Image is built and when a Container is started form an Image D. when the Image is built",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two required request headers interface with Prisma Cloud API? (Choose two.) A. Content-type:application/json B. x-redlock-auth C. >x-redlock-request-id D. Content-type:application/xml",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has a requirement to ingest all Console and Defender logs to Splunk. Which option will satisfy this requirement in Prisma Cloud Compute? A. Enable the API settings for logging. B. Enable the CSV export in the Console. C. Enable the syslog option in the Console D. Enable the Splunk option in the Console.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The security team wants to enable the “block” option under compliance checks on the host. What effect will this option have if it violates the compliance check? A. The host will be taken offline. B. Additional hosts will be prevented form starting. C. Containers on a host will be stopped. D. No containers will be allowed to start on that host.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During an initial deployment of Prisma Cloud Compute, the customer sees vulnerabilities in their environment. Which statement correctly describes the default vulnerability policy? A. It blocks all containers that contain a vulnerability. B. It alerts on any container with more than three critical vulnerabilities. C. It blocks containers after 30 days if they contain a critical vulnerability. D. It alerts on all vulnerabilities, regardless of severity.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Console is running in a Kubernetes cluster, and you need to deploy Defenders on nodes within this cluster. Which option shows the steps to deploy the Defenders in Kubernetes using the default Console service name? A. From the deployment page in Console, choose pod name for Console identifier, generate DaemonSet file, and apply the DaemonSet to twistlock namespace. B. From the deployment page configure the cloud credential in Console and allow cloud discovery to auto-protect the Kubernetes nodes. C. From the deployment page in Console, choose twistlock-console for Console identifier, generate DaemonSet file, and apply DaemonSet to the twistlock namespace. D. From the deployment page in Console, choose twistlock-console for Console identifier, and run the curl | bash script on the master Kubernetes node.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which RQL query type is invalid? A. Event B. IAM C. Incident D. Config",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "On which cloud service providers can you receive new API release information for Prisma Cloud? A. AWS, Azure, GCP, Oracle, IBM B. AWS, Azure, GCP, Oracle, Alibaba C. AWS, Azure, GCP, IBM D. AWS, Azure, GCP, IBM, Alibaba",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Web-Application and API Security (WAAS) provides protection for which two protocols? (Choose two.) A. HTTP B. SSH C. Tomcat Web Connector via AJP D. TLS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the most reliable and extensive source for documentation on Prisma Cloud APIs? A. prisma.pan.dev B. docs.paloaltonetworks.com C. Prisma Cloud Administrator’s Guide D. Live Community",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How often do Defenders share logs with Console? A. Every 10 minutes B. Every 30 minutes C. Every 1 hour D. Real time",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Prisma Cloud Software Release 22.06 (Kepler), which Registry type is added? A. Azure Container Registry B. Google Artifact Registry C. IBM Cloud Container Registry D. Sonatype Nexus",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three actions are required in order to use the automated method within Azure Cloud to streamline the process of using remediation in the identity and access management (IAM) module? (Choose three.) A. Install boto3 & requests library. B. Configure IAM Azure remediation script. C. Integrate with Azure Service Bus. D. Configure IAM AWS remediation script. E. Install azure.servicebus & requests library.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two roles have access to view the Prisma Cloud policies? (Choose two.) A. Build AND Deploy Security B. Auditor C. Dev SecOps D. Defender Manager",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three elements are part of SSH Events in Host Observations? (Choose three.) A. Startup process B. User C. System calls D. Process path E. Command",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two variables must be modified to achieve automatic remediation for identity and access management (IAM) alerts in Azure cloud? (Choose two.) A. API_ENDPOINT B. SQS_QUEUE_NAME C. SB_QUEUE_KEY D. YOUR_ACCOUNT_NUMBER",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has added a Cloud account on Prisma Cloud and then deleted it. What will happen if the deleted account is added back on Prisma Cloud within a 24-hour period? A. No alerts will be displayed. B. Existing alerts will be displayed again. C. New alerts will be generated. D. Existing alerts will be marked as resolved.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In which two ways can Prisma Cloud images be retrieved in Prisma Cloud Compute Self-Hosted Edition? (Choose two.) A. Pull the images from the Prisma Cloud registry without any authentication. B. Authenticate with Prisma Cloud registry, and then pull the images from the Prisma Cloud registry. C. Retrieve Prisma Cloud images using URL auth by embedding an access token. D. Download Prisma Cloud images from github.paloaltonetworks.com.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which action would be applicable after enabling anomalous compute provisioning? A. It detects the activity caused by the spambot. B. It detects unusual server port activity or unusual protocol activity from a client within or outside the cloud environment. C. It detects potential creation of an unauthorized network of compute instances with AutoFocus. D. It detects potential creation of an unauthorized network of compute instances either accidentally or for cryptojacking.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the function of the external ID when onboarding a new Amazon Web Services (AWS) account in Prisma Cloud? A. It is a unique identifier needed only when Monitor & Protect mode is selected. B. It is the resource name for the Prisma Cloud Role. C. It is a UUID that establishes a trust relationship between the Prisma Cloud account and the AWS account in order to extract data. D. It is the default name of the PrismaCloudApp stack.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which IAM Azure RQL query would correctly generate an output to view users who have sufficient permissions to create security groups within Azure AD and create applications? A. config where api.name = ‘azure-active-directory-authorization-policy’ AND json.rule = defaultUserRolePermissions.allowedToCreateSecurityGroups is true and defaultUserRolePermissions.allowedToCreateApps is true B. config from cloud.resource where api.name = ‘azure-active-directory-authorization-policy’ AND json.rule = defaultUserRolePermissions exists C. config from network where api.name = ‘azure-active-directory-authorization-policy’ AND json.rule = defaultUserRolePermissions.allowedToCreateSecurityGroups is false and defaultUserRolePermissions.allowedToCreateApps is true D. config from cloud.resource where api.name = ‘azure-active-directory-authorization-policy’ AND json.rule = defaultUserRolePermissions.allowedToCreateSecurityGroups is true and defaultUserRolePermissions.allowedToCreateApps is true",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two bot types are part of Web Application and API Security (WAAS) bot protection? (Choose two.) A. Chat bots B. User-defined bots C. Unknown bots D. Customer bots",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two actions are required in order to use the automated method within Amazon Web Services (AWS) Cloud to streamline the process of using remediation in the identity and access management (IAM) module? (Choose two.) A. Install boto3 & requests library. B. Configure IAM Azure remediation script. C. Integrate with Azure Service Bus. D. Configure IAM AWS remediation script.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three public cloud providers are supported for VM image scanning? (Choose three.) A. GCP B. Alibaba C. Oracle D. AWS E. Azure",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where can Defender debug logs be viewed? (Choose two.) A. /var/lib/twistlock/defender.log B. From the Console, Manage > Defenders > Manage > Defenders. Select the Defender from the deployed Defenders list, then click Actions > Logs C. From the Console, Manage > Defenders > Deploy > Defenders. Select the Defender from the deployed Defenders list, then click Actions > Logs D. /var/lib/twistlock/log/defender.log",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How many CLI remediation commands can be added in a custom policy sequence? A. 2 B. 1 C. 4 D. 5",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator wants to retrieve the compliance policies for images scanned in a continuous integration (CI) pipeline. Which endpoint will successfully execute to enable access to the images via API? A. GET /api/v22.01/policies/compliance B. GET /api/v22.01/policies/compliance/ci C. GET /api/v22.01/policies/compliance/ci/images D. GET /api/v22.01/policies/compliance/ci/serverless",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The attempted bytes count displays? A. traffic that is either denied by the security group or firewall rules or traffic that was reset by a host or virtual machine that received the packet and responded with a RST packet. B. traffic that is either denied by the security group or firewall rules. C. traffic that is either denied by the firewall rules or traffic that was reset by a host or virtual machine that received the packet and responded with a RST packet. D. traffic denied by the security group or traffic that was reset by a host or virtual machine that received the packet and responded with a RST packet.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Anomaly policy uses which two logs to identify unusual network and user activity? (Choose two.) A. Network flow B. Audit C. Traffic D. Users",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two alarm types that are registered after alarms are enabled? (Choose two.) A. Onboarded Cloud Accounts status B. Resource status C. Compute resources D. External integrations status",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct method for ensuring key-sensitive data related to SSNs and credit card numbers cannot be viewed in Dashboard > Data view during investigations? A. Go to Settings > Data > Snippet Masking and select Full Mask. B. Go to Settings > Data > Data Patterns, search for SSN Pattern, edit it, and modify the proximity keywords. C. Go to Settings > Cloud Accounts > Edit Cloud Account > Assign Account Group and select a group with limited permissions. D. Go to Policies > Data > Clone > Modify Objects containing Financial Information publicly exposed and change the file exposure to Private.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two integrations enable ingesting host findings to generate alerts? (Choose two.) A. Splunk B. Tenable C. JIRA D. Qualys",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which data storage type is supported by Prisma Cloud Data Security? A. IBM Cloud Object Storage B. AWS S3 buckets C. Oracle Object Storage D. Google storage class",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which action must be taken to enable a user to interact programmatically with the Prisma Cloud APIs and for a nonhuman entity to be enabled for the access keys? A. Create a role with System Admin and generate access keys. B. Create a user with a role that has minimal access. C. Create a role with Account Group Read Only and assign it to the user. D. Create a role and assign it to the Service Account.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which three types of runtime rules can be created? (Choose three.) A. Processes B. Network-outgoing C. Filesystem D. Kubernetes-audit E. Waas-request",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Who can access saved searches in a cloud account? A. Administrators B. Users who can access the tenant C. Creators D. All users with whom the saved search has been shared",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Compute Console has recently been upgraded, and the administrator plans to delay upgrading the Defenders and the Twistcli tool until some of the team’s resources have been rescaled. The Console is currently one major release ahead. What will happen as a result of the Console upgrade? A. Defenders will disconnect, and Twistcli will stop working. B. Defenders will disconnect, and Twistcli will remain working. C. Both Defenders and Twistcli will remain working. D. Defenders will remain connected, and Twistcli will stop working.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are two key requirements for integrating Okta with Prisma Cloud when multiple Amazon Web Services (AWS) cloud accounts are being used? (Choose two.) A. Super Administrator permissions B. A valid subscription for the IAM security module C. An Okta API token for the primary AWS account D. Multiple instances of the Okta app",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which resource and policy type are used to calculate AWS Net Effective Permissions? (Choose two.) A. Service Linked Roles B. Lambda Function C. Amazon Resource Names (ARNs) using Wild Cards D. AWS Service Control Policies (SCPs)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When an alert notification from the alarm center is deleted, how many hours will a similar alarm be suppressed by default? A. 12 B. 8 C. 24 D. 4",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which component of a Kubernetes setup can approve, modify, or reject administrative requests? A. Kube Controller B. Terraform Controller C. Admission Controller D. Control plane",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three actions are available for the container image scanning compliance rule? (Choose three.) A. Allow B. Snooze C. Block D. Ignore E. Alert",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What will happen when a Prisma Cloud Administrator has configured agentless scanning in an environment that also has Host and Container Defenders deployed? A. Agentless scan will automatically be disabled, so Defender scans are the only scans occurring. B. Agentless scans do not conflict with Defender scans, so both will run. C. Defender scans will automatically be disabled, so agentless scans are the only scans occurring. D. Both agentless and Defender scans will be disabled and an error message will be received.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator of Prisma Cloud wants to enable role-based access control for Docker engine. Which configuration step is needed first to accomplish this task? A. Configure Docker’s authentication sequence to first use an identity provider and then Console. B. Set Defender’s listener type to TCP. C. Set Docker’s listener type to TCP. D. Configure Defender’s authentication sequence to first use an identity provider and then Console.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the below actions would indicate – “The timestamp on the compliance dashboard”? A. indicates the most recent data B. indicates the most recent alert generated C. indicates when the data was ingested D. indicates when the data was aggregated for the results displayed",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During the Learning phase of the Container Runtime Model, Prisma Cloud enters a “dry run” period for how many hours? A. 4 B. 48 C. 1 D. 24",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which three incident types will be reflected in the Incident Explorer section of Runtime Defense? (Choose three.) A. Crypto miners B. Brute Force C. Cross-Site Scripting D. Port Scanning E. SQL Injection",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two filters are available in the SecOps dashboard? (Choose two.) A. Time range B. Account Groups C. Service Name D. Cloud Region",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Under which tactic is “Exploit Public-Facing Application” categorized in the ATT&CK framework? A. Defense Evasion B. Initial Access C. Execution D. Privilege Escalation",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which alert deposition severity must be chosen to generate low and high severity alerts in the Anomaly settings when user wants to report on an unknown browser and OS, impossible time travel, or both due to account hijacking attempts? A. High B. Aggressive C. Moderate D. Conservative",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A user from an organization is unable to log in to Prisma Cloud Console after having logged in the previous day. Which area on the Console will provide input on this issue? A. SSO B. Audit Logs C. Users & Groups D. Access Control",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What happens when a role is deleted in Prisma Cloud? A. The access key associated with that role is automatically deleted. B. Any integrations that use the access key to make calls to Prisma Cloud will stop working. C. The users associated with that role will be deleted. D. Any user who uses that key will be deleted.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the default namespace created by Defender DaemonSet during deployment? A. Redlock B. Defender C. Twistlock D. Default",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three OWASP protections are part of Prisma Cloud Web-Application and API Security (WAAS) rule? (Choose three.) A. DoS Protection B. Local file inclusion C. SQL injection D. Suspicious binary E. Shellshock",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is displayed in the asset inventory? A. EC2 instances B. Asset tags C. SSO users D. Federated users",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the frequency to create a compliance report? (Choose two.) A. Weekly B. One time C. Monthly D. Recurring",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When configuring SSO how many IdP providers can be enabled for all the cloud accounts monitored by Prisma Cloud? A. 2 B. 4 C. 1 D. 3",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two services require external notifications to be enabled for policy violations in the Prisma Cloud environment? (Choose two.) A. Splunk B. QROC C. SQS D. Email",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two variables must be modified to achieve automatic remediation for identity and access management (IAM) alerts in the Amazon Web Services (AWS) Cloud? (Choose two.) A. API_ENDPOINT B. SB_QUEUE_KEY_NAME C. SQS_QUEUE_NAME D. alert_id",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "While writing a custom RQL with array objects in the investigate page, which type of auto-suggestion a user can leverage? A. Auto-suggestion for array objects that are useful for comparing between arrays B. Auto-suggestion is not available for array objects C. Auto-suggestion for array objects that are useful for categorization of resource parameters D. Auto-suggestion for array objects that are useful for comparing between array elements",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which file extension type is supported for Malware scanning in Prisma Cloud Data Security (PCDS)? A. .bat B. .apk C. .vb D. .py",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two bot categories belong to unknown bots under Web-Application and API Security (WAAS) bot protection? (Choose two.) A. News bots B. Search engine crawlers C. Web scrapers D. HTTP libraries",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which IAM RQL query would correctly generate an output to view users who enabled console access with both access keys and passwords? A. config from network where api.name = ‘aws-iam-get-credential-report’ AND json.rule = cert_1_active is true or cert_2_active is true and password_enabled equals \"true\" B. config from cloud.resource where api.name = 'aws-iam-get-credential-report' AND json.rule = access_key_1_active is true or access_key_2_active is true and password_enabled equals \"true\" C. config from cloud.resource where api.name = 'aws-iam-get-credential-report’ AND json.rule = access_key_1_active is false or access_key_2_active is true and password_enabled equals \"*\" D. config where api.name = ‘aws-iam-get-credential-report' AND json.rule= access_key_1_active is true or access_key_2_active is true and password_enabled equals “true”",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In WAAS Access control file upload controls, which three file types are supported out of the box? (Choose three.) A. Text B. Images C. Audio D. Documents E. Journal",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two built-in RBAC permission groups for Prisma Cloud? (Choose two.) A. Group Membership Admin B. Group Admin C. Account Group Admin D. Account Group Read Only",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which role does Prisma Cloud play when configuring SSO? A. JIT B. Service provider C. SAML D. Identity provider issuer",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Defender type performs registry scanning? A. Serverless B. Container C. Host D. RASP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The exclamation mark on the resource explorer page would represent? A. resource has been deleted B. the resource was modified recently C. resource has alerts D. resource has compliance violation",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where are Top Critical CVEs for deployed images found? A. Defend → Vulnerabilities → Code Repositories B. Defend → Vulnerabilities → Images C. Monitor → Vulnerabilities → Vulnerabilities Explorer D. Monitor → Vulnerabilities → Images",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which categories does the Adoption Advisor use to measure adoption progress for Cloud Security Posture Management? A. Visibility, Compliance, Governance, and Threat Detection and Response B. Network, Anomaly, and Audit Event C. Visibility, Security, and Compliance D. Foundations, Advanced, and Optimize",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the three states of the Container Runtime Model? (Choose three.) A. Initiating B. Learning C. Active D. Running E. Archived",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What must be created in order to receive notifications about alerts generated when the operator is away from the Prisma Cloud Console? A. Alarm rule B. Notification rule C. Alert rule D. Offline alert",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which alerts are fixed by enablement of automated remediation? A. All applicable open alerts regardless of when they were generated, with alert status updated to \"resolved\" B. Only the open alerts that were generated before the enablement of remediation, with alert status updated to \"resolved\" C. All applicable open alerts regardless of when they were generated, with alert status updated to \"dismissed\" D. Only the open alerts that were generated after the enablement of remediation, with alert status updated to \"resolved\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements apply to the Defender type Container Defender - Linux? A. It is implemented as runtime protection in the userspace. B. It is deployed as a service. C. It is deployed as a container. D. It is incapable of filesystem runtime defense.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which field is required during the creation of a custom config query? A. resource status B. api.name C. finding.type D. cloud.type",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which role must be assigned to DevOps users who need access to deploy Container and Host Defenders in Compute? A. Cloud Provisioning Admin B. Build and Deploy Security C. System Admin D. Developer",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three serverless runtimes are supported by Prisma Cloud for vulnerability and compliance scans? (Choose three.) A. Swift B. Python C. Dart D. Java E. Node.js",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two attributes are required for a custom config RQL? (Choose two.) A. json.rule B. cloud.account C. api.name D. tag",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which type of query is used for scanning Infrastructure as Code (laC) templates? A. API B. XML C. JSON D. RQL",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which RQL will trigger the following audit event activity? A. event from cloud.audit_logs where operation = ConsoleLogin AND user = ‘root’ B. event from cloud.audit_logs where cloud.service = ‘s3.amazonaws.com’ AND json.rule = $.userAgent contains ‘parrot’ C. event from cloud.audit_logs where operation IN (‘cloudsql.instances.update’,‘cloudsql.sslCerts.create’,‘cloudsql.instances.create’,‘cloudsql.instance’) D. event from cloud.audit_logs where operation IN (‘GetBucketWebsite’, ‘PutBucketWebsite’, ‘DeleteBucketWebsite’)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which report includes an executive summary and a list of policy violations, including a page with details for each policy? A. Compliance Standard B. Business Unit C. Cloud Security Assessment D. Detailed",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Prisma Cloud Compute has been installed on Onebox. After Prisma Cloud Console has been accessed. Defender is disconnected and keeps returning the error \"No console connectivity\" in the logs. What could be causing the disconnection between Console and Defender in this scenario? A. Port 8083 is not open for Console and Defender communication. B. The license key provided to the Console is invalid. C. Onebox script installed an older version of the Defender. D. Port 8084 is not open for Console and Defender communication.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which categories does the Adoption Advisor use to measure adoption progress for Cloud Security Posture Management? A. Visibility, Compliance, Governance, and Threat Detection and Response B. Network, Anomaly, and Audit Event C. Visibility, Workload Scanning, and Compliance D. Foundations, Advanced, and Optimize",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer wants to monitor its Amazon Web Services (AWS) accounts via Prisma Cloud, but only needs the resource configuration to be monitored at present. Which two pieces of information are needed to onboard this account? (Choose two.) A. CloudTrail B. Role ARN C. Active Directory ID D. External ID",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which policy type should be used to detect and alert on cryptominer network activity? A. Anomaly B. Config-run C. Config-build D. Audit event",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Given the following information, which twistcli command should be run if an administrator were to exec into a running container and scan it from within using an access token for authentication? • Console is located at https://prisma-console.mydomain.local • Token is: TOKEN_VALUE • Report ID is: REPORT_ID • Container image running is: myimage:latest A. twistcli images scan --address https://prisma-console.mydomain.local --token TOKEN_VALUE --containerized --details myimage:latest B. twistcli images scan --console-address https://prisma-console.mydomain.local --auth-token TOKEN_VALUE --containerized --vulnerability-details REPORT_ID C. twistcli images scan --address https://prisma-console.mydomain.local --token TOKEN_VALUE --containerized --details REPORT_ID D. twistcli images scan --console-address https://prisma-console.mydomain.local --auth-token MY_TOKEN --local-scan --details myimage:latest",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Prisma Cloud supports which three external systems that allow the import of vulnerabilities and provide additional context on risks in the cloud? (Choose three.) A. Splunk B. Qualys C. Amazon Inspector D. Amazon GuardDuty E. ServiceNow",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements explain differences between build and run config policies? (Choose two.) A. Run and Network policies belong to the configuration policy set. B. Build policies allow checking for security misconfigurations in the IaC templates and ensure these issues do not get into production. C. Run policies monitor network activities in the environment and check for potential issues during runtime. D. Run policies monitor resources and check for potential issues after these cloud resources are deployed.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two integrated development environment (IDE) plugins are supported by Prisma Cloud as part of its Code Security? (Choose two.) A. BitBucket B. Visual Studio Code C. CircleCI D. IntelliJ",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Creation of a new custom compliance standard that is based on other individual custom compliance standards needs to be automated. Assuming the necessary data from other standards has been collected, which API order should be used for this new compliance standard? A. 1) https://api.prismacloud.io/compliance/add 2) https://api.prismacloud.io/compliance/requirementld/section 3) https://api.prismacloud.io/compliance/complianceld/requirement B. 1) https://api.prismacloud.io/compliance 2) https://api.prismacloud.io/compliance/complianceld/requirement 3) https://api.prismacloud.io/compliance/requirementld/section C. 1) https://api.prismacloud.io/compliance/add 2) https://api.prismacloud.io/compliance/complianceld/requirement 3) https://api.prismacloud.io/compliance/requirementld/section D. 1) https://api.prismacloud.io/compliance 2) https://api.prismacloud.io/compliance/requirementld/section 3) https://api.prismacloud.io/compliance/complianceld/requirement",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is a reason for alert dismissal? A. SNOOZED_AUTO_CLOSE B. ALERT_RULE_ADDED C. POLICY_UPDATED D. USER_DELETED",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer's Security Operations Center (SOC) team wants to receive alerts from Prisma Cloud via email once a day about all policies that have a violation, rather than receiving an alert every time a new violation occurs. Which alert rule configuration meets this requirement? A. Configure an alert rule with all the defaults except selecting email within the \"Alert Notifications\" tab and specifying recipient. B. Configure an alert rule. Under the \"Policies\" tab, select \"High Risk Severity Policies.\" In the \"Set Alert Notifications\" tab, select \"Email > Recurring,\" set to repeat every 1 day, and enable \"Email.\" C. Set up email integrations under the \"Integrations\" tab in \"Settings\" and create a notification template. D. Configure an alert rule. Under the \"Policies\" tab, select \"All Policies.\" In the \"Set Alert Notifications\" tab, select \"Email > Recurring,\" set to repeat every 1 day, and then enable \"Email.\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In which Console menu would an administrator verify whether a custom compliance check is failing or passing? A. Monitor > Compliance B. Defend > Compliance C. Container Security > Compliance D. Custom > Compliance",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three Orchestrator types are supported when deploying Defender? (Choose three.) A. Red Hat OpenShift B. Amazon ECS C. Docker Swarm D. Azure ACS E. Kubernetes",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three platforms support the twistcli tool? (Choose three.) A. Solaris B. Android C. Linux D. MacOS E. Windows",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three options for hardening a customer environment against misconfiguration are included in Prisma Cloud Compute compliance enforcement for hosts? (Choose three.) A. Serverless functions B. Docker daemon configuration C. Cloud provider tags D. Host configuration E. Hosts without Defender agents",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Taking which action will automatically enable all seventy levels? A. Navigate to Policies > Settings and enable all severity levels in the alarm center. B. Navigate to Settings > Enterprise Settings and enable all severity levels in the alarm center. C. Navigate to Policies > Settings and ensure all severity levels are checked under \"auto-enable default policies.\" D. Navigate to Settings > Enterprise Settings and ensure all severity levels are checked under \"auto-enable default policies.\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two CI/CD plugins are supported by Prisma Cloud as part of its Code Security? (Choose two.) A. Checkov B. Visual Studio Code C. CircleCI D. IntelliJ",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which policy type provides information about connections from suspicious IPs in a customer database? A. Anomaly B. Threat detection C. Network D. AutoFocus",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where can a user submit an external new feature request? A. Aha B. Help Center C. Support Portal D. Feature Request",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What improves product operationalization by adding visibility into feature utilization and missed opportunities? A. Alert Center B. Alarm Center C. Alarm Advisor D. Adoption Advisor",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Prisma Cloud supports sending audit event records to which three targets? (Choose three.) A. SNMP Traps B. Syslog C. Stdout D. Prometheus E. Netflow",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Prisma Cloud for Azure Net Effective Permissions Calculation, the following Azure permission levels are supported by which three permissions? (Choose three.) A. Resources B. Tenant C. Subscription D. Resource groups E. Management Group",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the purpose of Incident Explorer in Prisma Cloud Compute under the \"Monitor\" section? A. To store large amounts of forensic data on the host where Console runs to enable a more rapid and effective response to incidents B. To sort through large amounts of audit data manually in order to identify developing attacks C. To identify and suppress all audit events generated by the defender D. To correlate individual events to identify potential attacks and provide a sequence of process, file system, and network events for a comprehensive view of an incident",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is a benefit of the Cloud Discovery feature? A. It does not require any specific permissions to be granted before use. B. It enables engineers to continuously monitor all accounts and report on the services that are unprotected. C. It offers coverage for serverless functions on AWS only. D. It helps engineers find all cloud-native services being used only on AWS.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are the subtypes of configuration policies in Prisma Cloud? A. Security and Compliance B. Build and Deploy C. Build and Run D. Monitor and Analyze",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What factor is not used in calculating the net effective permissions for a resource in AWS? A. IPTables firewall rule B. AWS IAM policy C. AWS service control policies (SCPs) D. Permission boundaries",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Systems Engineer is the administrator of a self-hosted Prisma Cloud console. They upgraded the console to the latest version. However, after the upgrade, the console does not show all the policies configured. Before they upgraded the console, they created a backup manually and exported it to a local drive. Now they have to install a Prisma Cloud to restore from the backup that they manually created. Which Prisma Cloud version can they can restore with the backup? A. Any version of Prisma Cloud Self-Hosted Console B. The same version of the Prisma Cloud Self-Hosted Console that the backup created C. Up to N-2 versions of the Prisma Cloud Self-Hosted Console that the backup created D. The latest version of Prisma Cloud Self-Hosted Console",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement applies to Adoption Advisor? A. It helps adopt security capabilities at a fixed pace regardless of the organization's needs. B. It is only available for organizations that have completed the cloud adoption journey. C. It only provides guidance during the deploy phase of the application lifecycle. D. It includes security capabilities from subscriptions for CSPM, CWP, CCS, CIEM, and Data Security.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which resources can be added in scope while creating a vulnerability policy for continuous integration? A. Images and cluster B. Images and labels C. Images and containers D. Labels and AccountID",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A container and image compliance rule has been configured by enabling all checks; however, upon review, the container's compliance view reveals only the entries in the image below. What is the appropriate action to take next? A. Deploy defenders to scan complete container compliance. B. Change the rule options to list both failed and passed checks in the compliance rule edit window. C. Wait until Prisma Cloud finishes the compliance scan and recheck. D. Change the rule options to list only failed checks in the compliance rule edit window.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the primary purpose of Prisma Cloud Code Security? A. To address cloud infrastructure misconfigurations in code before they become alerts or incidents B. To provide a platform for developers to create custom security policies for applications C. To offer instant feedback on application performance issues and bottlenecks D. To triage alerts and incidents in realtime during deployment",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How does assigning an account group to an administrative user on Prisma Cloud help restrict access to resources? A. It restricts access to all resources and data within the cloud account. B. It restricts access only to certain types of resources within the cloud account. C. It restricts access only to the resources and data that pertains to the cloud account(s) within an account group. D. It does not restrict access to any resources within the cloud account.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three AWS policy types and identities are used to calculate the net effective permissions? (Choose three.) A. AWS IAM group B. AWS IAM role C. AWS service control policies (SCPs) D. AWS IAM tag policy E. AWS IAM User",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Based on the following information, which RQL query will satisfy the requirement to identify VM hosts deployed to organization public cloud environments exposed to network traffic from the internet and affected by Text4Shell RCE (CVE-2022-42889) vulnerability? • Network flow logs from all virtual private cloud (VPC) subnets are ingested to the Prisma Cloud Enterprise Edition tenant. • All virtual machines (VMs) have Prisma Cloud Defender deployed. A. network from vpc.flow_record where bytes > 0 AND dest.resource IN (resource where finding.type IN ('Host Vulnerability') AND finding.source IN ('Prisma Cloud') AND finding.name IN ('CVE-2022-42889')) AND source.publicnetwork IN ('Internet IPs', 'Suspicious IPs') B. config from vpc.flow_record where bytes > 0 AND dest.resource IN (resource where finding.type IN ('Host Vulnerability') AND finding.source IN ('Prisma Cloud') AND finding.name IN ('CVE-2022-42889')) AND source.publicnetwork = ('Internet IPs' or 'Suspicious IPs') C. network from vpc.flow_record where bytes > 0 AND finding.type IN ('Host Vulnerability') AND finding.source IN ('Prisma Cloud') AND finding.name IN ('CVE-2022-42889') AND source.publicnetwork = 'Internet IPs' D. config from cloud.resource where cloud.type = 'aws' AND api.name = 'aws-ec2-describe-instances' AND json.rule = publicIpAddress exists AND finding.type IN ('Host Vulnerability') AND finding.source IN ('Prisma Cloud') AND finding.name IN ('CVE-2022-42889')",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is not a supported external integration for receiving Prisma Cloud Code Security notifications? A. ServiceNow B. Splunk C. Microsoft Teams D. Cortex XSOAR",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which type of RQL query should be run to determine if AWS Elastic Compute Cloud (EC2) instances without encryption was enabled? A. NETWORK B. CONFIG C. EVENT D. SECURITY",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which RQL query is used to detect certain high-risk activities executed by a root user in AWS? A. event from cloud.audit_logs where operation IN ( 'ChangePassword', 'ConsoleLogin', 'DeactivateMFADevice', 'DeleteAccessKey' , 'DeleteAlarms' ) AND user = 'root' B. event from cloud.security_logs where operation IN ( 'ChangePassword', 'ConsoleLogin', 'DeactivateMFADevice', 'DeleteAccessKey' , 'DeleteAlarms' ) AND user = 'root' C. config from cloud.audit_logs where operation IN ( 'ChangePassword', 'ConsoleLogin', 'DeactivateMFADevice', 'DeleteAccessKey', 'DeleteAlarms' ) AND user = 'root' D. event from cloud.audit_logs where Risk.Level = 'high' AND user = 'root'",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is required for Prisma Cloud to successfully execute auto-remediation commands? A. Access to the cloud platform only for Azure B. Write access to the cloud platform C. Read access to the cloud platform D. Prisma Cloud requires no access to the cloud platform",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Azure, what permissions need to be added to Management Groups to allow Prisma Cloud to calculate net effective permissions? A. PaloAltoNetworks.PrismaCloud/managementGroups/* B. Microsoft.Management/managementGroups/descendants/read C. PaloAltoNetworks.PrismaCloud/managementGroups/descendants/read D. Microsoft.Management/managementGroups/descendants/calculate",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which command should be used in the Prisma Cloud twistcli tool to scan the nginx:latest image for vulnerabilities and compliance issues? A. $ twistcli images scan --console-address --user --password --output-file scan-results.json nginx:latest B. $ twistcli images scan --address --user --password --details nginx:latest C. $ twistcli images build --console-address --user --password --details nginx:latest D. $ twistcli images scan --address --username --password --details nginx:latest",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Prisma Cloud Administrator onboarded an AWS cloud account with agentless scanning enabled successfully to Prisma Cloud. Which item requires deploying defenders to be able to inspect the risk on the onboarded AWS account? A. Host vulnerability risks B. Container vulnerability risks C. Container runtime risks D. Host compliances risks",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two information types cannot be seen in the data security dashboard? (Choose two.) A. Top Publicly Exposed Objects By Data Profile B. Bucket owner C. Object content D. Total objects E. Object Data Profile by Region",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How is the scope of each rule determined in the Prisma Cloud Compute host runtime policy? A. By the order in which it is created B. By the collection assigned to that rule C. By the type of network traffic it controls D. By the target workload",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which RQL query will help create a custom identity and access management (IAM) policy to alert on Lambda functions that have permission to terminate EC2 instances? A. iam from cloud.resource where dest.cloud.type = ’AWS’ AND source.cloud.service.name = ’lambda’ AND source.cloud.resource.type = ’function’ AND dest.cloud.service.name = ’ec2’ AND action.name = ’ec2:TerminateInstances’ B. config from iam where dest.cloud.type = ’AWS’ AND source.cloud.service.name = ’ec2’ AND source.cloud.resource.type = ’instance’ AND dest.cloud.service.name = ’lambda’ AND action.name = ’ec2:TerminateInstances’ C. iam from cloud.resource where cloud.type equals ’AWS’ AND cloud.resource.type equals ’lambda function’ AND cloud.service.name = ’ec2’ AND action.name equals ’ec2:TerminateInstances’ D. config from iam where dest.cloud.type = ’AWS’ AND source.cloud.service.name = ’lambda’ AND source.cloud.resource.type = ’function’ AND dest.cloud.service.name = ’ec2’ AND action.name = ’ec2:TerminateInstances’",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "DRAG DROP Put the steps of integrating Okta with Prisma Cloud in the right order in relation to CIEM or SSO okra integration.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which command correctly outputs scan results to stdout in tabular format and writes scan results to a JSON file while still sending the results to Console? A. $ twistcli images scan --address --user --password --stdout-tabular --output-file scan-results.json nginx:latest B. $ twistcli images scan --address --username --password --details --json-output scan-results.json nginx:latest C. $ twistcli images scan --address --user --password --details --file-output scan-results.json nginx:latest D. $ twistcli images scan --address --u --p --details --output-file scan-results.json nginx:latest",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Prisma Cloud cannot integrate which of the following secrets managers? A. IBM Secret Manager B. AzureKey Vault C. HashiCorp Vault D. AWS Secret Manager",
+    "options": {},
+    "most_voted": "A"
+  }
+]
