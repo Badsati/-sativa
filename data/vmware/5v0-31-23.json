@@ -1,0 +1,207 @@
+[
+  {
+    "question": "An administrator is evaluating the options to leverage HCI Mesh within the existing VMware Cloud Foundation (VCF) environment. This will help them consume data center resources efficiently by enabling cross-cluster use of remote datastore capacity in their workload domains (WLD). Which two scenarios are valid when using HCI Mesh with VCF? (Choose two.) A. A VCF-created cluster in WLD1 providing remote storage to another VCF-created cluster in WLD2 via HCI Mesh B. A VCF-created stretched cluster in WLD1 providing remote storage to another VCF-created cluster in WLD1 via HCI Mesh C. A VCF Management WLD leveraging HCI mesh as a supplementary storage D. A VCF-created cluster in WLD1 providing remote storage to another VCF-created cluster in WLD1 via HCI Mesh E. A VCF-created cluster in WLD1 providing remote storage to another non VCF-created cluster via HCI Mesh",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has been tasked with deploying an additional VI Workload Domain, WLD03. The following information has been provided about the existing VMware Cloud Foundation (VCF) environment: • There are two existing VI Workload Domains, WLD01 and WLD02. • WLD01 is configured to use vSphere Lifecycle Manager Baselines. • WLD02 is configured to use vSphere Lifecycle Manager Images. To minimize the Management Workload Domain resources required to deploy WLD03, the administrator has decided to configure the environment so that WLD03 shares the NSX Manager of WLD02. What impact does this decision have on the VCF solution? A. WLD03 must be configured to use vSphere Lifecycle Manager Images. B. WLD02 must be configured to use vSphere Lifecycle Manager Baselines. C. WLD01 must be configured to use vSphere Lifecycle Manager Images. D. WLD01 must be configured to share the same NSX Manager as WLD02 and WLD03.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An application is being deployed into a VMware Cloud Foundation (VCF) environment. Due to the constraints of the application, the architect has requested two edge clusters deployed with the following configuration: • One Edge VM cluster to host the Tier-0 gateway • Another Edge VM cluster to host the Tier-1 gateway What deployment approach should be followed to achieve this requirement? A. Use the SDDC Manager to deploy the Tier-1 Gateway Edge VM cluster only and assign it B. Use the NSX Manager to deploy the Edge VM clusters and assign the Tier-0 and Tier-1 gateways C. Use the NSX Manager to deploy the Edge VM clusters then assign the gateways through the SDDC Manager D. Use the SDDC Manager to deploy the Edge VM clusters and assign the Tier-0 and Tier-1 gateways",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator wants to create a new VI Workload Domain with a dedicated NSX instance. The environment already consists of one existing VI Workload Domain and the Management Domain. Where will the NSX Managers be deployed for the new VI Workload Domain? A. In the Management Domain B. In the first VI Workload Domain C. In the newly created VI Workload Domain D. Administrator can choose where to deploy",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which component in VMware Cloud Foundation (VCF) can be updated using vSphere Lifecycle Manager? A. ESXi Host B. vCenter Server C. NSX Manager D. SDDC Manager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has been tasked with deleting an existing Workload Domain but needs to ensure all virtual machines continue to run during the process. Which action, if any, must be performed to meet the requirement? A. Migrate virtual machines to other workload domains manually B. Virtual machines will be automatically migrated to other workload domains and no further action is required C. Deploy and use VMware HCX to migrate virtual machines using bulk migration to other workload domains D. Backup all virtual machines and restore in other workload domains",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator wants to manage certificates of various SDDC Components. What are the two components certificates an SDDC manager can manage? (Choose two.) A. VMware Aria Operations B. VMware Aria Suite Lifecycle C. ESXi Host D. vCenter Server E. VMware Aria Automation",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct sequence to upgrade VMware Cloud Foundation (VCF) components? A. 1. SDDC Manager 2. Aria Suite Lifecycle 3. NSX Data Center 4. ESXi 5. vCenter Server B. 1. SDDC Manager 2. vCenter Server 3. ESXi 4. NSX Data Center 5. Aria Suite Lifecycle C. 1. SDDC Manager 2. Aria Suite Lifecycle 3. NSX Data Center 4. vCenter Server 5. ESXi D. 1. Aria Suite Lifecycle 2. NSX Data Center 3. vCenter Server 4. ESXi 5. SDDC Manager",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When deploying a new VMware Cloud Foundation (VCF) environment, what are the two supported platforms to deploy the VMware Cloud Builder Virtual Appliance? (Choose two.) A. A system running Red Hat Enterprise Linux OS B. An ESXi host not designated for the Management Domain C. An ESXi host designated for the Management Domain D. A system running VMware Workstation or VMware Fusion connected to the Management network E. A system running Microsoft Windows OS",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A VMware Cloud Foundation (VCF) administrator wants to download the install bundles to deploy a new VI Workload Domain. The SDDC Manager is currently not connected to the internet. Which two methods can the VCF administrator use to download the install bundles? (Choose two.) A. Use the Bundle Transfer Utility B. Use a proxy in the SDDC Manager C. Use a custom ESXi image D. Use the Async Patch tool E. Use a proxy in the Aria Suite Lifecycle",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator wants to implement password rotation as a security measure in VMware Cloud Foundation (VCF). Which statement regarding password rotation in VCF is true? A. The parameters of password rotation can be manually changed to customize the generated passwords. B. To retrieve passwords for an entity in VCF, run the lookup_passwords command, but user credentials do not need to be entered. C. Scheduled password rotation is available for ESXi Hosts, and it runs every 30 days by default. D. Password rotation generates randomized passwords with a minimum length of 20 characters, at least one uppercase letter, one number, and one special character.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator wants to deploy a VMware Cloud Foundation (VCF) VI Workload Domain (WLD). The WLD will use a vSAN stretched cluster across availability zones. What configuration step meets the requirements? A. Create a single host overlay network per availability zone with a DHCP scope B. Create a single host overlay network per availability zone with an IP Pool C. Create a site for the vSAN Witness by placing a single node ESXi host in the VI WLD D. Create a site for the vSAN Witness by placing a single node ESXi host in the management WLD",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two are true regarding vSphere Namespaces in a Workload Management-enabled VI Workload Domain? (Choose two.) A. A vSphere Namespace can support Role Based Access Control for a directly integrated Active Directory. B. A vSphere Namespace is an extension of a vSphere resource pool. C. A vSphere Namespace is a resource boundary that can only contain Kubernetes clusters. D. A vSphere Namespace’s primary function is to run workloads. E. A vSphere Namespace requires its own license.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is experiencing issues with NTP during a pre-check before performing an upgrade of VMware Cloud Foundation (VCF). As a precaution the administrator would like to check if NTP is synchronized properly between the SDDC Manager and the ESXi hosts by using the SoS utility. Which command option should the administrator use? A. --esxi-ntp-health B. --ntp-health C. --get-ntp-health D. --check-ntp-health",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In which order does a VI Workload Domain with Workload Management enabled need to be upgraded? A. 1. NSX 2. vCenter Server 3. Workload Management 4. ESXi B. 1. ESXi 2. NSX 3. vCenter Server 4. Workload Management C. 1. Workload Management 2. vCenter Server 3. ESXi 4. NSX D. 1. NSX 2. vCenter Server 3. ESXi 4. Workload Management",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How would an administrator remove an unused certificate from SDDC Manager? A. Use the SDDC Manager User Interface B. Unused certificates are automatically removed C. Use the SDDC Manager command line D. Revoke the unused certificates from the certificate authority",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has been tasked with increasing the available capacity within an existing VMware Cloud Foundation (VCF) environment to support the deployment of production workloads. The VCF environment consists of a single VI Workload Domain (which is using vSphere Lifecycle Manager images as the update method) with only a single vSAN Cluster called Prod-01. Two new hosts have been added to SDDC Manager inventory for the capacity expansion. The new hosts have identically configured CPU and RAM to the hosts in Prod-01. VMFS on FC is the required principal storage option. Which process must the administrator complete to increase the available capacity without the need for additional management components? A. Create a new network pool in the existing Workload Domain to support vSAN B. Create a new vSphere Cluster within a new workload domain C. Create a new vSphere Cluster within the existing VI Workload Domain D. Expand the existing Prod-01 cluster by adding the additional hosts",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has discovered that not all DNS PTR records are created and would like to perform a health check with the SoS utility if this is the case for more components. Which command option should the administrator use? A. --get-dns-health B. --dns-health C. --get-dns-forward-reverse-health D. --dns-forward-reverse-health",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A vSphere administrator is tasked with deploying VMware Aria Operations for Logs in the company’s VMware Cloud Foundation (VCF) environment. Which two are valid Application Virtual Network (AVN) options for Aria Operations for Logs? (Choose two.) A. Region-A - Overlay backed segment B. Region-A - VLAN backed segment C. X-Region - VLAN backed segment D. X-Region - Overlay backed segment E. A vSphere distributed Port Group in the Management Domain",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company’s vSphere administrator is deploying Aria Suite Lifecycle through SDDC Manager. On which Application Virtual Network (AVN) is the appliance deployed? A. On the region AVN in the VI Workload Domain B. On the cross-region AVN in a non-federated NSX environment C. On the cross-region AVN in a federated NSX environment D. On the region AVN in the Management Domain",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect wants more compute resources in the Production cluster of a Production Workload Domain (WLD). As a design decision the architect decided to expand this cluster by adding more ESXi hosts. What is the right method to add these ESXi hosts in this cluster? A. 1. Deploy ESXi Hosts 2. Access SDDC Manager 3. Commission those Hosts 4. Access Production WLD 5. Add Hosts B. 1. Access SDDC Manager 2. Commission these Hosts 3. Access Production WLD 4. Access Production Cluster 5. Add Hosts C. 1. Prepare ESXi Hosts 2. Access vSphere Client 3. Add these in Production cluster D. 1. Prepare ESXi Hosts 2. Commission Hosts using SDDC Manager 3. Access Production WLD 4. Access Production Cluster 5. Add Hosts",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company’s vSphere administrator is assigned a password rotation task for the company’s VMware Cloud Foundation (VCF) environment. For which three VCF components are passwords being managed by SDDC Manager? (Choose three.) A. VMware Aria Operations B. SDDC Manager backup user C. SDDC Manager view user D. NSX Manager E. vCenter Server Appliance F. Cloud Builder Appliance",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is tasked with deploying a new VMware Cloud Foundation (VCF) 5.0 environment based on the consolidated VCF architecture model. Which type of principal storage would the administrator configure for the environment? A. VMFS on FC Datastore B. vSAN Original Storage Architecture (OSA) C. vSAN Express Storage Architecture (ESA) D. vSAN Remote Datastore (HCI Mesh)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator needs to deploy a new VMware Cloud Foundation (VCF) environment. Due to the lack of physical space within the co-located data center, the administrator is looking to deploy VCF with the minimum amount of hardware needed to start migrating workloads and then plans to scale out the environment at a later date. Which type of Workload Domain must the administrator deploy first to support the requirement? A. Management Domain B. Consolidated Domain C. Virtual Infrastructure Workload Domain D. Isolated Virtual Infrastructure Workload Domain",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is tasked with upgrading a VMware Cloud Foundation (VCF) infrastructure having two VCF instances running across two sites with NSX federation. What should be considered regarding the NSX Managers upgrade order in this environment? A. 1. Upgrade all NSX Local Managers at both sites manually 2. Upgrade active NSX Global Managers via SDDC Manager 3. Upgrade standby NSX Global Managers via SDDC Manager B. 1. Upgrade all NSX Local Managers at both sites via SDDC Manager 2. Upgrade standby NSX Global Managers manually 3. Upgrade active NSX Global Managers manually C. 1. Upgrade all NSX Local Managers at both sites manually 2. Upgrade standby NSX Global Managers via SDDC Manager 3. Upgrade active NSX Global Managers via SDDC Manager D. 1. Upgrade all NSX Local Managers at both sites via SDDC Manager 2. Upgrade active NSX Global Managers manually 3. Upgrade standby NSX Global Managers manually",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is planning the IP addressing before deploying the Workload Management solution to a new Workload Domain. What is the correct minimum subnet mask for the ingress network following VMware best practices? A. /24 B. /27 C. /22 D. /18",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In which order does the VMware Cloud Foundation (VCF) Management need to be upgraded? A. 1. VMware Cloud Foundation config drift 2. SDDC Manager and VMware Cloud Foundation services 3. Aria Suite Lifecycle, Aria Suite products, and Workspace ONE Access 4. NSX 5. vCenter Server 6. ESXi B. 1. SDDC Manager and VMware Cloud Foundation services 2. VMware Cloud Foundation config drift 3. Aria Suite Lifecycle, Aria Suite products, and Workspace ONE Access 4. NSX 5. vCenter Server 6. ESXi C. 1. SDDC Manager and VMware Cloud Foundation services 2. VMware Cloud Foundation config drift 3. Aria Suite Lifecycle, Aria Suite products, and Workspace ONE Access 4. vCenter Server 5. ESXi 6. NSX D. 1. Aria Suite Lifecycle, Aria Suite products, and Workspace ONE Access 2. SDDC Manager and VMware Cloud Foundation services 3. VMware Cloud Foundation config drift 4. NSX 5. vCenter Server 6. ESXi",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is tasked with deploying an existing VMware Cloud Foundation (VCF) instance into a federated VCF environment. The administrator needs to stretch a segment between the two VCF instances. Which task must be completed first? A. Delete the existing Tier-1 Gateway in the additional VCF instance B. Delete the existing Tier-0 Gateway in the additional VCF instance C. Connect the additional VCF instance to the cross-instance Tier-0 Gateway D. Add the additional VCF instance as a location to the cross-instance Tier-1 Gateway",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A VMware Cloud Foundation (VCF) administrator deployed a VI Workload Domain for the purpose of a required vSphere with Tanzu environment. When deploying the NSX Edge cluster, the administrator needs to select an NSX Edge VM form factor. Which is the minimal NSX Edge VM form factor that the VCF administrator should select? A. Medium B. Extra Large C. Small D. Large",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A VMware Cloud Foundation (VCF) administrator wants to add a host with more than two physical NICs to an existing cluster within a VI Workload Domain. Which tool should the administrator use to accomplish this task? A. vSphere Client B. Aria Suite Lifecycle API C. SDDC Manager API D. SDDC Manager UI",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the reason to use a custom profile type when deploying an NSX Edge cluster via SDDC Manager? A. If the environment requires the OSPF routing protocol. B. If the NSX Edges need to be deployed to a workload domain with Workload Management enabled. C. If the environment requires that the NSX Edge’s utilize load balancing. D. If the environment requires a Bidirectional Forwarding Detection (BFD) configuration.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two steps would an administrator complete to upgrade the components of a VMware Cloud Foundation (VCF) aware Aria Suite? (Choose two.) A. Upgrade Aria Suite components through Aria Suite Lifecycle B. Upgrade Aria Suite components directly and then refresh the SDDC Manager repository C. Upgrade Aria Suite Lifecycle through the SDDC Manager D. Upgrade Aria Suite Lifecycle directly since it is an independent component E. Upgrade Aria Suite components through the SDDC Manager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "For which three products can SDDC Manager manage the certificates? (Choose three.) A. VMware Horizon products B. VMware vCenter Server C. VMware Cloud Director D. VMware Aria Suite products E. VMware SDDC Manager F. VMware NSX Manager",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A vSphere administrator has changed a VMware Cloud Foundation (VCF) managed password at the component level and wants to update the respective credentials in the SDDC manager. What steps are required to accomplish this? A. 1. Log into the SDDC manager 2. Go to the workload domain section 3. Select the component for which the password was changed 4. Select the update option B. 1. Log in to SDDC manager 2. Go to the password management section 3. Select the component user for which the password was changed 4. Select the remediate option C. 1. Log in to SDDC manager 2. Go to the password management section 3. Select the component for which the password was changed 4. Select the rotate now option D. 1. Log in to SDDC manager 2. Go to the password management section 3. Select the component for which the password was changed 4. Select the update option",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A new devops team has been created to conduct a Proof of Concept using vSphere with Tanzu for large scale app deployment. The administrator must use SDDC Manager to deploy the Workload Management solution to a newly created workload domain. Which option is required for the Workload Management solution to deploy correctly? A. The SDDC Manager must have the vSphere with Tanzu license applied. B. A Workload Management ready NSX Edge cluster must be deployed to the Management Domain. C. The ESXi Hosts must have the vSphere with Tanzu license applied. D. A new Workload Management ready NSX Manager cluster must be deployed to the Workload Domain.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Management has asked the cloud administration team to investigate transitioning to the VMware Cloud Foundation+ (VCF+) licensing model. The cloud administration team found there are workload domain limitations. For VMware Cloud Foundation 5.0 + licensing, which maximum Workload Domain deployment architecture is supported? A. 4 Workload Domains B. 8 additional Workload Domains beyond the Management Domain C. 4 additional Workload Domains beyond the Management Domain D. 8 Workload Domains",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two prerequisites must be met before an NSX Edge cluster can be deployed through SDDC Manager in a VI Workload Domain? (Choose two.) A. Host overlay and Edge overlay networks must be routable B. vMotion and Edge overlay networks must be routable C. The NSX Edge nodes must be configured through an LDAP provider D. SSH must be enabled on the NSX Edge nodes E. The FQDN of the NSX Edge nodes must be resolvable through DNS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A VMware Cloud Foundation (VCF) administrator is adding a new cluster to an existing VI Workload Domain. There are currently two existing clusters in the VI Workload Domain where each ESXi host uses four physical NICs. Where should the administrator specify the licenses for vSphere and vSAN? A. SDDC Manager B. VMware Host Client C. JSON Specification File D. vSphere Client",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which step must be performed before commissioning the hosts for a new Workload Domain that is going to use NFS as the principal storage? A. Create a new network pool in SDDC Manager B. Configure the NFS VMkernel network adapter C. Expand the network pool for the Management Domain D. Deploy a virtual distributed switch using vSphere Client",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the maximum supported roundtrip latency between VMware Cloud Gateway and VMware SDDC Manager? A. 300 ms B. 350 ms C. 30 ms D. 160 ms",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct order of steps required to deploy a new Workload Domain in a VMware Cloud Foundation (VCF) environment? A. 1. Install the ESXi hypervisor 2. Commission hosts 3. Create a network pool 4. Assign permissions on the newly deployed vCenter Server 5. Deploy Workload Domain B. 1. Commission hosts 2. Install the ESXi hypervisor 3. Create a network pool 4. Deploy Workload Domain 5. Assign permissions on the newly deployed vCenter Server C. 1. Install the ESXi hypervisor 2. Create a network pool 3. Commission hosts 4. Deploy Workload Domain 5. Assign permissions on the newly deployed vCenter Server D. 1. Install the ESXi hypervisor 2. Commission hosts 3. Assign permissions on the newly deployed vCenter Server 4. Create a network pool 5. Deploy Workload Domain",
+    "options": {},
+    "most_voted": "C"
+  }
+]
