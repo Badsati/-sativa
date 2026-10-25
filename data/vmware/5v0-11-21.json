@@ -1,0 +1,327 @@
+[
+  {
+    "question": "An environment is running a VMware Cloud on AWS software-defined data center (SDDC) with six i3.metal hosts. Storage space usage has increased and the administrator is required to add storage capacity. Which two approaches can the administrator take to add storage capacity? (Choose two.) A. Deploy Amazon Elastic File System (EFS) file shares from the AWS console and attach them to the i3.metal hosts. Use VMware Storage vMotion to migrate the storage-bound virtual machines to the Amazon EFS data stores. B. Deploy Amazon Elastic Block Store (EBS) storage volumes (GP2) from the AWS console and attach them to the i3.metal hosts. Allow VMware vSAN extend the storage capacity automatically. C. Deploy an additional cluster based on i3en.metal hosts and migrate the storage-bound virtual machines to the i3en.metal hosts. D. Add additional i3.metal hosts to increase the total vSAN storage space. E. Add additional i3en.metal hosts and migrate the storage-bound virtual machines to the i3en.metal hosts.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which API endpoint serves as the authentication point for VMware Cloud on AWS? A. Cloud Services Platform API B. NSX-T Data Center API C. Deployed SDDC API D. VMware Cloud on AWS API",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An environment is running a cluster with six i3.metal hosts in the VMware Cloud on AWS software-defined data center (SDDC). If one host fails, what happens after a new host is automatically added to the cluster? A. The SDDC and NVMe drives backing VMware vSAN capacity are unmounted from the failed host and attached to the new host. There is no VMware vSAN rebuild required. B. The VMware vSAN rebuild starts in the background. Performance might be degraded during rebuild and the failures to tolerate (FTT) is lowered to 0. C. The VMware vSAN rebuild starts in the background. Performance might be degraded during rebuild and the failures to tolerate (FTT) is lowered to 1. D. A notification is received from VMware Support to start the VMware vSAN rebuild. Performance might be degraded during rebuild.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator deploys a virtual machine and configures it to perform backups to an AWS Simple Storage Service (S3) bucket. After the first month of use, the administrator receives a bill from AWS indicating egress charges were applied to the backup traffic leaving the software-defined data center (SDCC), destined for the AWS S3 bucket. What can the administrator do to ensure backup traffic travels to the linked Amazon Virtual Private Cloud (VPC) through the Elastic Network Interface? A. Configure the S3 bucket with a public endpoint accessible over the Internet through HTTPS. B. Configure Direct Connect to a private virtual interface for access to AWS services. C. Create a gateway endpoint in the linked AWS VPC and configure it for use with the S3 bucket. D. Configure a route-based virtual private network (VPN) for the SDDC to the VPC.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer wants to ensure that VMware Cloud on AWS maintenance operations are performed during their maintenance window. Which option would allow the customer to achieve this outcome? A. Schedule a maintenance preference in the software-defined data center (SDDC) console. B. Schedule a call with VMware Cloud on AWS Support and schedule a maintenance window. C. Schedule a call with AWS Support and schedule a maintenance window. D. Schedule a maintenance window through an online support request.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator runs an analysis on all workloads using Live Optics and confirms there are a variety of applications, including Microsoft SQL server and Oracle databases. The Microsoft SQL workloads are averaging 4,000 IOPS per virtual machine, approximately 50% writes. The Oracle workloads are averaging 3,000 IOPS per virtual machine, and approximately 80% writes. Which method should be used to input the data into the VMware Cloud on AWS Sizer for the most accurate results? A. Use the Advanced Sizer in 'database' mode. Create workload profiles for the analyzed virtual machines, including profiles for Microsoft SQL and Oracle. Set the values for vCPU, vRAM, utilized storage, IOPS and I/O profile manually. B. Use the Quick Sizer. Set the values for vCPU, vRAM, utilized storage, IOPS and I/O profile manually. C. Use the Advanced Sizer in 'import' mode. Import the Live Optics data and let the Advanced Sizer set the values for vCPU, vRAM, utilized storage, IOPS and I/ O automatically. D. Use the Advanced Sizer in 'manual' mode. Create workload profiles for the analyzed virtual machines, including profiles for Microsoft SQL and Oracle. Use the default values for the SQL and Oracle workload profiles.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has deployed VMware Cloud on AWS and requires a single broadcast domain for a set of virtual machines that reside both in the data center and in the software-defined data center (SDDC) over a DirectConnect connection. How can the administrator accomplish this without adding additional components in the cloud? A. Duplicate the IP space in both locations and manually move the virtual machines. B. Deploy a Layer 2 Virtual Private Network (L2VPN). C. Use a third-party networking tool to extend the broadcast domain. D. Deploy VMware HCX and a Service Mesh with a Network Extension appliance.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two benefits of completing a full data center evacuation to VMware Cloud on AWS? (Choose two.) A. Reduce the risk of migrating applications to the cloud by removing the need for application transformation. B. Maintain existing investment in skills and toolsets. C. Provide a hybrid cloud management solution. D. Provide a seamless way to expand the on-premises software-defined data center (SDDC) into the cloud. E. Diversify the risk associated with migrating applications to the cloud by automatically deploying workloads to multiple regions.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A new VMware Cloud on AWS customer has previously deployed a VMware Horizon-based VDI solution into their data centerto support their remote developer workforce. Due to unforeseen growth, the company needs to quickly expand their remote workforce. The growth will consume any forecast capacity in the VDI solution and, therefore, additional capacity is now required. The VDI solution service owner would like the solution to support the ability to quickly scale in/out to provide additional capacity based on demand. Which three steps should the administrator take to scale out the VDI solution? (Choose three.) A. Deploy a new VMware Horizon pod on VMware Cloud on AWS. B. Deploy a new VMware Horizon pod on-premises. C. Configure network connectivity and firewall rules to allow communications between the two on-premises connection servers. D. Configure network connectivity and firewall rules to allow communications between on-premises and VMware Cloud on AWS connection servers. E. Connect the two VMware Horizon pods together using the security servers. F. Connect the two VMware Horizon pods together using a Horizon Cloud Pod Architecture (CPA).",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is trying to identify how many hosts will be required to evacuate a cluster from an existing data center and relocate those workloads into VMware Cloud on AWS. The cluster runs a variety of workloads for the corporate customer relationship management system. Which three profiles could the administrator create in the VMware Cloud on AWS Sizer? (Choose three.) A. Databases ג€\" Oracle B. Databases ג€\" Microsoft SQL Server C. General Purpose (Application VMs) D. VDI ג€\" Instant Clone E. VDI ג€\" Full Clone F. General Purpose (General VMs)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator deploys a VMware Cloud on AWS environment and configures an IPsec virtual private network (VPN) tunnel to their data center. Hybrid Linked Mode connectivity, however, does NOT appear to be working. Before contacting VMware Support, what could the administrator do to narrow down the possible issue? A. Fill in the relevant IP information for the on-premises infrastructure and run the desired troubleshooting connectivity test. B. Download and review the Tier-0 (TO) gateway firewall logs. C. Configure a packet capture device in the on-premises data center to capture packets from the VMware Cloud on AWS software-defined data center (SDDC) to determine which packets are being dropped. D. Configure a packet capture appliance on a local segment within VMware Cloud on AWS to capture and analyze traffic across a specific NSX-T gateway interface.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When deploying a VMware Cloud on AWS software-defined data center (SDDC), which components are deployed automatically? A. VMware ESXi, vCenter, vSAN, NSX, Hybrid Linked Mode B. VMware ESXi, vCenter, vSAN, NSX in active/passive mode C. VMware ESXi, vCenter, vSAN, NSX, HCX D. VMware ESXi, vCenter, vSAN, NSX in active/active mode",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-15_1.jpg] An administrator completes an assessment of its local data center for potential migration into VMware Cloud on AWS. After reviewing and analyzing the data and taking into account the company's business and IT priorities and budget constraints, connectivity between its on-premises and VMware Cloud on AWS environment will NOT require any high speed low latency connections. All new networks should be added to the software-defined data center (SDDC) routing table automatically when created. Which connection supports these requirements? A. Layer 2 VPN (L2VPN) B. AWS Direct Connect C. Route-based VPN D. Policy-based VPN",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A consultant is asked to help evaluate an environment for deployment into a new software-defined data center (SDDC) in VMware Cloud on AWS. The consultant is provided with a comma-separated value (CSV) file containing a list of workloads exported from VMware vCenter detailing only virtual machine configuration data, including vCPU, vRAM, and utilized storage. How should the consultant use the VMC on AWS Sizer? A. Use the Advanced Sizer. Create workload profiles for the different workload types and set the values for configured resources manually. B. Use the Advanced Sizer. Import the CSV file from VMware vCenter Server and let the VMware Cloud on AWS Sizer set the values for configured resources. C. Use the Advanced Sizer. Import the CSV file from VMware vCenter Server and let the VMware Cloud on AWS Sizer set the values for configured resources. D. Use the Quick Sizer. Manually enter the number of virtual machines and total resources for configured resources.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator deploys a virtual machine to its software-defined data center (SDDC) and configures it to perform backups of the other virtual machines in the SDDC. The administrator also creates an AWS Simple Storage Service (S3) bucket in the linked Amazon Virtual Private Cloud (VPC) and is attempting to use the S3 bucket as a repository for their backups. The administrator confirms that the backup software is capable of using AWS S3 storage as a backup repository, and that the AWS S3 bucket is configured to use an endpoint in the linked VPC. What else should the administrator do to ensure connectivity between SDDC virtual machines and the AWS S3 repository in the linked VPC through the Elastic Network Interface? A. Configure Direct Connect to a Private Virtual Interface for access to AWS services. B. Configure a route-based VPN for the SDDC to the VPC. C. Configure Direct Connect to a Public Virtual Interface for access to AWS services. D. Ensure Service Access for S3 is enabled in Networking and Security for the SDDC.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-18_1.jpg] An administrator builds a software-defined data center (SDDC) group to enable connectivity to native Amazon Virtual Private Clouds (VPCs). Which connectivity option is needed to enable connectivity across environments? A. Tier-0 (T0) Router B. Transit Gateway C. Virtual Private Network D. The Default Storage Scale-Out policy storage threshold is set 5% higher than the other Elastic DRS storage policies.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements are true about the characteristics of the Default Storage Scale-Out policy? (Choose two.) A. Elastic DRS automatically sets to the Default Storage Scale-Out policy, adding hosts only when storage utilization exceeds a certain threshold. B. When the storage threshold of the Default Storage Scale-Out policy has been resolved, Elastic DRS automatically performs a scale-in operation. C. The Default Storage Scale-Out policy storage threshold level is set to meet SLA requirements and can not be superseded by other Elastic DRS policies. D. The Default Storage Scale-Out policy thresholds for CPU or memory usage are set higher than the other Elastic DRS policies. E. The Default Storage Scale-Out policy storage threshold is set 5% higher than the other Elastic DRS storage policies.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two accounts are mandatory prerequisites for the successful deployment of a VMware Cloud on AWS solution? (Choose two.) A. A VMware vCenter Server account B. An AWS account C. A VMware Cloud account D. An Amazon Elastic Compute Cloud (EC2) account E. A VMware Cloud on AWS account",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is designing a company's hybrid cloud environment. Traffic between their local data center and VMC on AWS software-defined data center (SDDC) requires a high-speed, low latency connection. The connection type should also support connectivity to services currently being consumed in AWS. Which connection type will meet these requirements? A. Multiprotocol Label Switching (MPLS) B. AWS Direct Connect C. Four IPSec tunnels for greater bandwidth & resiliency D. Route-based VPN",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is asked to create a new network segment in VMware Cloud on AWS. This network segment should be accessible from the on-premises data center. How would the administrator create this new network and what segment type should it be? A. ✑ Connect to the on-premises VMware vCenter Server and create the network segment through the VMware vSphere user interface. ✑ Select the stretched network segment type. B. ✑ Connect to the VMware Cloud console to create the network segment. ✑ Select the routed network segment type. C. ✑ Connect to the VMware Cloud console to create the network segment. ✑ Select the extended network segment type. D. ✑ Connect to the VMware Cloud on AWS vCenter Server and create the network segment through the VMware vSphere user interface. ✑ Select the routed network segment type.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is a supported approach when deploying multiple instances of VMware Site Recovery with VMware Cloud on AWS? A. A single software-defined data center (SDDC) paired with up to 25 remote sites B. A single software-defined data center (SDDC) connected to multiple on-premises sites and to other cloud SDDCs C. VMware Site Recovery add-on deployed in the VMware vSphere Web Client D. VMware Site Recovery with multiple protected sites and a shared recovery site",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the minimum value for Maximum Transmission Unit (MTU) of the AWS network hardware used with VMware Cloud on AWS? A. 1500 MTU B. 9000 MTU C. 1492 MTU D. 1600 MTU",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer is currently running 153 virtual machines in an eight-node vSphere cluster. Each host is equipped with 256GB RAM, two AMD CPUs and four 10Gb NICs. Which migration strategy should the administrator recommend? A. HCX Replication Assisted vMotion (RAV) with Enhanced vMotion Compatibility B. HCX Cold Migration C. Cross vCenter vMotion with Hybrid Linked Mode D. HCX vMotion with Enhanced vMotion Compatibility",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are three possible reasons that would prevent virtual machines from migrating to VMware Cloud on AWS using VMware vSphere vMotion? (Choose three.) A. Paravirtual SCSI disks are mounted. B. Virtual serial ports are connected with network output. C. Remote devices are attached. D. VMware Tools are NOT installed. E. The virtual machine (VM) is a linked clone. F. The virtual machine (VM) remote console is open.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is planning to migrate a VMware vSphere environment to VMware Cloud on AWS. A first analysis returns the following specifications: ✑ 37 virtual machines will be live migrated ✑ All virtual machines have been created using VMware vSphere 5.0 (Compatibility Version 8) ✑ All virtual machines are connected to Standard Switches ✑ The bandwidth between the local data center and VMware Cloud on AWS is 250 Mbps What are two valid approaches for live migrating these virtual machines? (Choose two.) A. ✑ Upgrade Virtual Machine Compatibility to Version 9. ✑ Ensure Standard Switch is named the same as the target segment in VMware Cloud on AWS. ✑ Activate and deploy VMware HCX. ✑ Let HCX configure Enhanced vMotion Compatibility (EVC) automatically. B. ✑ Upgrade Virtual Machine Compatibility to Version 9. ✑ Configure Hybrid Linked Mode for Cross vCenter vMotion. Configure AWS Direct Connect Private VIF. [sampleXML/xmlfile-26_11.png] ✑ Configure Enhanced vMotion Compatibility (EVC) on the source virtual machines as required. C. ✑ Ugrade Virtual Machine Compatibility to Version 9. ✑ Migrate the Virtual Machines to a Distributed Virtual Switch. ✑ Activate and deploy VMware HCX. ✑ Let HCX configure Enhanced vMotion Compatibility (EVC) automatically. D. ✑ Upgrade the bandwidth between the local data center and VMware Cloud on AWS to 400 Mbps. ✑ Migrate the virtual machines to a Distributed Virtual Switch. ✑ Activate and deploy VMware HCX. ✑ Let HCX configure Enhanced vMotion Compatibility (EVC) automatically. E. ✑ Upgrade the bandwidth between the local data center and VMware Cloud on AWS to 400 Mbps. ✑ Configure Hybrid Linked Mode for Cross vCenter vMotion. ✑ Configure AWS Direct Connect Private VIF. ✑ Configure Enhanced vMotion Compatibility (EVC) on the target software-defined data center (SDDC) as required.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator recently completed the first migration of on-premises production workloads into VMware Cloud on AWS. The administrator intends to scale the hybrid cloud environment in a phased approach over the next 12 months, but the Service Owner has some concerns about being able to complete workload optimization and balancing, capacity and cost management, and compliance reporting. Which VMware solution should the administrator recommend to address the concerns of the Service Owner? A. VMware vRealize Automation Cloud B. VMware vRealize Network Insight Cloud C. VMware vRealize Log Insight Cloud D. VMware vRealize Operations Cloud",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The Tier-O (TO) router will send northbound packets through which device? A. The AWS Elastic Network Adapter (ENA) of the VMware ESXi host that the active TO Edge virtual machine is currently running on. B. The AWS Elastic Network Adapter (ENA) of the VMware ESXi host where the packet is originating from. C. The AWS Elastic Network Adapter (ENA) of the VMware ESXI host that the passive TO Edge virtual machine is currently running on. D. The AWS Elastic Network Adapter (ENA) of the VMware ESXi host that is currently the least utilized.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is designing a solution for a customer that will include VMware Cloud on AWS. The solution will enable the customer to progress with their business objective to migrate all of their VMware vSphere workloads to the cloud and completely exit their physical data center. The following information was provided by key stakeholders as part of the initial design workshop: ✑ The customer already consumes a number of AWS native services as part of their existing application landscape. ✑ The customer currently uses both VMware vRealize Log Insight Cloud and VMware vRealize Operations Cloud to monitor their existing on-premises vSphere solution. ✑ The customer currently has configured Federated Identity Management to enable role based access control to VMware Cloud services using their on-premises Active Directory. What should the architect recommend to ensure that all the prerequisites for deploying a VMware Cloud on AWS solution are successfully met while minimizing operational complexity? A. A new VMware Cloud account must be created to enable access to the VMware Cloud on AWS service. B. A new AWS account must be created to enable dedicated connectivity for VMware Cloud on AWS. C. The existing VMware Cloud account should be used to enable access to the VMware Cloud on AWS service. D. The ownership of the existing AWS account should be transferred to VMware so that the VMware Cloud on AWS software-defined data center (SDDC) can be deployed.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is deploying a VMware Cloud on AWS software-defined data center (SDDC) in an AWS region and needs to plan for mission-critical application availability across availability zones. Which AWS Virtual Private Cloud (VPC) configuration needs to be in place in order to accomplish this? A. One AWS VPC with four subnets, one per availability zone B. Two AWS VPCs with two subnets, two per availability zone C. One AWS VPC with two subnets, one per availability zone D. Four AWS VPCs with two subnets, two per availability zone",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two VMware Cloud on AWS maintenance tasks are the responsibility of AWS personnel? (Choose two.) A. Back up and restore VMware appliances and infrastructure. B. Patch VMware Cloud on AWS components. C. Refresh hardware and replace failed components. D. Upgrade workload VMware Tools.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user with an Organization Member role would like to add another user to an organization. How would this be accomplished? A. Only users with an Organization Owner role can invite and add users to the organization. B. The user with an Organization Member role needs to have CloudAdmin permissions in order to add a new user. C. The user with an Organization Member role will be able to add a new user through the Identity and Access Management page. D. Users with an Organization Member role are automatically granted access to all roles within VMware Cloud on AWS.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When deploying a VMware Cloud on AWS software-defined data center (SDDC), which three default components are located behind the T1 Management Gateway? (Choose three.) A. Three-node VMware NSX-T Controller Cluster B. VMware vCenter Server C. VMware Site Recovery D. VMware vRealize Log Insight E. VMware NSX-T Data Center Manager F. VMware HCX Cloud Manager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is deploying a new solution based on VMware Cloud on AWS. The customer is already running several native AWS services and would like the new workloads deployed into VMware Cloud on AWS to consume these services without incurring additional traffic charges. During the initial deployment of the VMware Cloud on AWS software-defined data center (SDDC), which option must the customer choose to meet the requirement? A. Choose a connected Virtual Private Cloud (VPC) that is located in the same region as the native AWSservices to be consumed. B. Any availability zone within the same AWS region can be selected. After the SDDC deployment, deploy a services gateway and connect it to the target availability zone. C. Choose a subnet from the connected Virtual Private Cloud (VPC) that is located in the same availability zone as the native AWS services to be consumed. D. Choose a connected Virtual Private Cloud (VPC) that is located in the same availability zone as the native AWS services to be consumed.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement is true regarding how vSphere High Availability (HA) provides rapid recovery from outages in VMware Cloud on AWS? A. Sphere HA restarts virtual machines if their host becomes isolated on the VMware vSAN network. B. vSphere HA restarts impacted virtual machines on another host when an application fails. C. vSphere HA is enabled by default in VMware Cloud on AWS but can be disabled or modified. D. vSphere HA restarts impacted virtual machines (VMs) on another host when a VM stops sending heartbeats or the VM process fails (vmx).",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company is operating a main data center and two smaller data centers in branch offices. The main data center is being replicated to a disaster recovery site at a co-located data center with a recovery point objective (RPO) of five minutes and a recovery time objective (RTO) of two hours. The branch data centers are shipping backup tapes to the main data center on a weekly basis. What would be a cost-efficient VMware solution that would improve RTO and RPO for the branch office data centers while maintaining the recovery time for the main data center? A. Create a software-defined data center (SDDC) in VMware Cloud on AWS. Create a shared content librand let the branch offices subscribe to it. Export the virtual machines in the branch offices to OVF files on the shared content library on a weekly basis. B. Create a software-defined data center (SDDC) in VMware Cloud on AWS. Migrate the disaster recovery solution from the co-located data center to the VMware Cloud on AWS SDDC. Create regular copies of the virtual machines at the branch offices and use AWS Snowball to directly ship the copies to an AWS data center and store them on AWS S3 buckets. C. Create a software-defined data center (SDDC) in VMware Cloud on AWS. Activate VMware Site Recovery. Replace the co-located disaster recovery (DR) site for the main data center with VMware Site Recovery. For the branch offices, implement VMware Cloud Disaster Recovery (VCDR). D. Create a software-defined data center (SDDC) in VMware Cloud on AWS. Replace the co-located site for the main data center and the backup tape shipping for the branch offices with VMware Cloud Disaster Recovery (VCDR).",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer plans to use VMware Cloud on AWS to support their public cloud adoption initiatives. Their use case for VMware Cloud on AWS is predominately data center extension to support seasonal and business specific demands. There will also be a number of workloads running in VMware Cloud on AWS on a long-term, permanent basis. Based on a recent sizing assessment, it is determined that utilization of VMware Cloud on AWS will fluctuate between two and five hosts throughout the year based on seasonal and market conditions. Which possible subscription option would result in the greatest benefit to this customer and why? A. Create a subscription for five hosts for three years. This option provides the greatest cost savings to the customer and eliminates the amount of time needed to provision and configure VMware ESXi hosts as consumption fluctuates. B. Create a subscription for two hosts for one year and consume the remaining hosts, as needed, on-demand. This option allows the customer to lock in a term rate for required hosts and leverage on-demand rates for additional hosts as needed. C. Consume VMware Cloud on AWS on-demand based on seasonal and business requirements. This option provides the cost benefits of cloud through an on- demand consumption model. D. Create a subscription for three hosts for three years and consume the remaining hosts, as needed, on-demand. This option allows the customer to lock in a term rate for required hosts and leverage on-demand rates for additional hosts as needed.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator is preparing to deploy a VMware Cloud on AWS software-defined data center (SDDC) and is planning to scale up to 48 nodes in the future. What is the minimum size management CIDR block that is needed to meet this requirement? A. /24 B. /16 C. /23 D. /20",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Due to a recent acquisition, an architect is being asked to identify and design a cloud-based solution that will assist in merging several data centers together without incurring undue operational overhead while adhering to a very strict project timeline. The proposed solution must have the capability to be rapidly recovered in the event of a cloud provider outage. After careful consideration, the architect determines that VMware Cloud on AWS would be an appropriate solution, requiring a total of nine hosts for capacity. Which additional configuration options would satisfy the requirements of this project? A. ✑ Deploy a VMware Cloud on AWS software-defined data center (SDDC) with a single stand-alone cluster. ✑ Deploy a second stand-alone cluster into the SDDC in a separate region. ✑ Configure VMware Cloud Disaster Recovery to replicate and protect workloads to the second cluster. B. ✑ Deploy a VMware Cloud on AWS software-defined data center (SDDC) with a single stretched cluster across two separate availability zones. ✑ Configure the cluster to ensure that all virtual machines can be restarted in the second availability zone with a near zero recovery point objective (RPO) in the event of any environment or system failures. C. ✑ Deploy a VMware Cloud on AWS software-defined data center (SDDC) with a single stretched cluster across two separate regions. Configure the cluster to ensure that all virtual machines can be restarted in the second region with a near zero recovery point objective (RPO) in the event [sampleXML/xmlfile-34_8.png] of any environment or system failures. D. ✑ Deploy a VMware Cloud on AWS software-defined data center (SDDC) with a single stand-alone cluster. ✑ Deploy a second SDDC with a stand-alone cluster into a different AWS region. ✑ Configure VMware Cloud Disaster Recovery to replicate and protect workloads to the second cluster.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements are true for the pre-defined resource pools in VMware Cloud on AWS? (Choose two.) A. Users are allowed to monitor and modify the resource allocation settings in the Mgmt-RsourcePool. B. The Mgmt-ResourcePool is able to utilize resources in subsequently created clusters if needed. C. Users can modify the pre-configured vSphere DRS settings in their own Compute-ResourcePool. D. Users can rename child resource pools to better match company policy. E. All workload virtual machines are created in the top-level (root) Compute-ResourcePool by default.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is a key functionality of the vRealize Automation Cloud Service Broker? A. Provides a common catalog for easy consumption on VMware Cloud. B. Manages blueprints as a code in a YAML format. C. Automates the DevOps release lifecycle. D. Creates and deploys virtual machines, applications, and services to multiple clouds.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When deploying within VMware Cloud on AWS, which three VMware Horizon features are supported? (Choose three.) A. Linked clone desktops B. Instant clone desktops C. Full clone Remote Desktop Session Hosts (RDSH) D. Persona management E. Unmanaged desktops F. Full clone desktops",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer is running a software-defined data center (SDDC) in the US-West-1 region and wants to connect the workload network segment to their on-premises data center and their company Amazon Virtual Private Cloud (VPC) running in US-West-1. Which two supported connectivity options can they use to accomplish this? (Choose two.) A. One virtual private network (VPN) and one VPC Peering B. VMware SD-WAN by VeloCloud C. VMware Managed Transit Gateway (VTGW) D. Two virtual private networks (VPNs) E. VMware HCX",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is looking to establish a hybrid connection between on-premises and VMware Cloud on AWS software-defined data center (SDDC) environments in order to migrate virtual machines. The on-premises environment is NOT using NSX today; however, the administrator wants to avoid having to change IP addresses after each migration, and there are some applications that require the same broadcast domain. Which connection is needed to meet these requirements? A. Policy-based VPN B. Layer 2 VPN (L2VPN) C. AWS Direct Connect D. Route-based VPN",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are three valid migration modes in VMware HCX? (Choose three.) A. Planned Failover B. Hybrid Linked Mode C. Bulk Migration D. Replication Assisted vMotion (RAV) E. HCX vMotion F. Cross vCenter vMotion",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator deploys a normal (non-stretched) cluster of six i3en.metal hosts in VMware Cloud on AWS. When deploying virtual machines to this cluster, which two of the listed storage policies would satisfy the service-level agreement (SLA) for a six host cluster? (Choose two.) A. Failure to tolerate = 1 failure - RAID-1 (mirroring) B. Site disaster tolerance = Dual Site Mirroring C. Failure to tolerate = 1 failure - RAID-5 (erasure coding) D. Failure to tolerate = 2 failures - RAID-6 (erasure coding) E. MC Workload Storage Policy - <cluster name>",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Where would a VMware Cloud on AWS administrator generate an API token? A. Organizational Settings B. Identity and Access Management C. Developer Center D. My Account Section",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator is creating a runbook of the tasks that the Support team is responsible for within a new VMware Cloud on AWS software-defined data center (SDDC) configured with Hybrid Linked Mode. Which two tasks must be performed by the Support team in both environments? (Choose two.) A. Monitor workload virtual machines and infrastructure. B. Patch guest operating systems. C. Back up and restore workload virtual machines. D. Manage the lifecycle of VMware vCenter Server. E. Replace failed components.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three statements are true about the Elastic DRS Optimize for Rapid Scale-Out policy? (Choose three.) A. Hosts are added incrementally when needed for storage. B. Hosts will NOT be removed automatically when they are no longer needed. C. Multiple hosts are added at a time when needed for memory or CPU. D. After a storage scale-out event is triggered, single hosts are added every 30 minutes. E. High threshold for storage, like the other policies, is set at 75%. F. To resolve constraints related to CPU and memory, hosts are added two at a time.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization has purchased both VMware Cloud on AWS and VMware vRealize Network Insight Cloud. Which additional integrated functionality are they able to utilize? A. Creation of VMware HCX mobility groups from VMware vRealize Network Insight Cloud discovered applications B. Automatic creation of network segment in VMware Cloud on AWS by VMware vRealize Network Insight Cloud C. Collection of underlying AWS networking information sent to VMware vRealize Network Insight Cloud without additional configuration D. Automatic software-defined data center (SDDC) grouping in VMware Cloud on AWS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which VMware solution provides customers with the ability to query and graphically display activities for audits, events and custom real-time alerts for the VMware NSX-T firewall running in VMware Cloud on AWS? A. VMware vRealize Network Insight Cloud B. VMware vRealize Log Insight Cloud C. VMware vRealize Operations Cloud D. CloudHealth by VMware",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Standard security practice for a company requires that all administrator-level user accounts have their passwords changed every 60 days. The [email protected] account password is changed by an administrator through the VMware vSphere Cliento adhere to the security policy. When the administrator attempts to log into the VMware Cloud on AWS vCenter Server through the VMware vSphere Client a few days later as [email protected] using the account credentials copied from the VMware Cloud console, the administrator's access is denied. What is the likely cause of this issue? A. The [email protected] account password should not be changed through the VMware vSphere Client. In order to prevent unauthorized access to VMware Cloud on AWS by non-authorized individuals, VMware will lock the account out. B. When the password for [email protected] is updated from the VMware vSphere Client, the updated password is not reflected in the VMware Cloud console. C. The [email protected] password change confirmation email has not been approved by an Organization Owner. D. The [email protected] account password should only be changed through the appliance management interface of the VMware vCenter Server.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is reducing a five-node cluster down to four. What happens to all virtual machines (VMs) when a host is removed from a cluster? A. All VMs on the host being removed are deleted. B. All VMs are powered off. C. All VMs are migrated from the host. D. All VMs are unregistered from VMware vCenter.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is tasked with migrating workloads from one of the company's primary data centers to VMware Cloud on AWS. The migration of these workloads must meet the follow criteria: ✑ Must have zero downtime ✑ Must be organized based on service-level agreement (SLA) ✑ Should not communicate with the on-premises gateway Which three VMware HCX features would meet these requirements? (Choose three.) A. Mobility Optimized Networking B. Replication-Assisted vMotion C. Network Extension D. Bulk Migration E. Mobility Groups F. Application Path Resiliency",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which method can be used to deploy a VMware Cloud on AWS software-defined data center? A. VMware Data Center Command-Line Interface B. AWS Management Console C. REST APIs D. VMware vCenter Server",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When configuring Hybrid Linked Mode from the vCenter Cloud Gateway appliance, which groups are mapped from a customer's on-premises environment to the cloud? A. LDAP Groups B. vSphere Groups C. Active Directory Groups D. Local Groups",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two network types can be extended with VMware HCX Network Extension? (Choose two.) A. vSphere Distributed Switch VLAN Networks B. NSX Overlay Networks C. Trunk Networks D. vSphere Standard Switch VLAN Networks E. Private VLAN Networks",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are three benefits of using VMware Cloud on AWS? (Choose three.) A. With VMware Cloud on AWS, IT teams can manage their VMware Cloud on AWS resources with familiar VMware tools. B. With VMware Cloud on AWS, IT teams can manage their native AWS resources with familiar VMware tools. C. VMware Cloud on AWS supports optimized virtual AWS Elastic Compute Cloud (EC2) instances. D. Native VMware workloads can be migrated back and forth between on-premises VMware vSphere environments and VMware Cloud on AWS. E. With VMware Cloud on AWS, VMware and AWS administrators will manage, maintain and update all virtual machines. F. Native AWS services can be consumed over the global AWS backbone with high bandwidth and low latency.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Upon connecting a VMware Managed Transit Gateway (VTGW), the administrator discovers that there is an overlapping workload CIDR bleck. How will the software-defined data center (SDDC) handle the overlapping IP space? A. It will reject the remote IP space. B. It will isolate the overlapping segment in the cloud. C. It will allow the overlapping IP space. D. It will ensure both CIDR blocks work in both locations.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A virtual machine in VMware Cloud on AWS sends a packet to an Amazon Elastic Compute Cloud (EC2) Linux instance in the associated AWS account. Which device is the next hop for the packet? A. Edge Virtual Machine B. AWS Elastic Network Adapter (ENA) on the VMware ESXI host C. Tier-0 (T0) Router D. Tier-1 (T1) Router",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement is true about a VMware Cloud on AWS software-defined data center (SDDC)? A. It is a VMware environment integrating VMware vCenter Server, VMware vSAN and, optionally, VMware NSX-T that runs on an AWS Elastic Compute Cloud (EC2) bare-metal infrastructure and is able to consume native AWS services. B. It is a VMware environment integrating VMware vCenter Server, VMware vSAN and VMware NSX-T that runs nested VMware ESXi on AWS Elastic Compute Cloud (EC2) instances and is able to consume native AWS services. C. It is a VMware environment integrating VMware vCenter Server, VMware vSAN and VMware NSX-T that runs VMware ESXi on an AWS Elastic Compute Cloud (EC2) bare-metal infrastructure and is able to consume native AWS services. D. It is a VMware environment with VMware vCenter Server, VMware vSAN and VMware NSX-T managing native AWS Elastic Compute Cloud (EC2) instances and able to consume native AWS services.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator would like their VMware Cloud on AWS software-defined data center (SDDC) cluster to scale down a host when CPU utilization drops below 60% . Which Elastic DRS policy should be selected? A. Optimize for Lowest Cost B. Optimize for Best Performance C. Default Storage Scale-Out D. Optimize for Rapid Scale-Out",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the maximum Gbps of bandwidth that each AWS Elastic Network Adapter (ENA) provides on a i3.metal host? A. 25 Gbps B. 50 Gbps C. 10 Gbps D. 100 Gbps",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "To assist with seasonal workload demands over the next two months, a group of interns are hired to assist with day 2 virtual machine operations in VMware Cloud on AWS. Which method should be used for creating these temporary user accounts and assigning the appropriate permissions to them? A. Log into vCenter in VMware Cloud on AWS with the CloudAdmin account. Create the required number of user accounts in the vmc.local SSO domain and assign the appropriate roles to the accounts. B. Log into on-premises VMware vCenter. Create the required number of user accounts in the vsphere. local SSO domain and assign the appropriate roles to the accounts. Ensure that Hybrid Linked Mode is enabled to allow account propagation to the VMware Cloud on AWS SSO domain. C. Create the required user accounts within Active Directory and assign them to the required group. With Hybrid Linked Mode enabled, assign the correct role in VMware Cloud on AWS to the Active Directory group that contains the user accounts. D. Log into vCenter in VMware Cloud on AWS with the CloudAdmin account. Create the required number of user accounts in the vsphere. local SSO domain and assign the appropriate roles to the accounts in Active Directory.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-57_1.jpg] How would an administrator accomplish the given configuration leveraging the firewall capabilities within VMware Cloud on AWS? A. ✑ Create a gateway firewall rule permitting bi-directional traffic to Subnet A from the Internet. ✑ Create a gateway firewall rule denying bi-directional traffic to Subnet B and Suubnet C from the Internet. ✑ Create a distributed firewall rule under the Application category to permit bi-directional traffic from Subnet A to Subnet B and from Subnet B to Subnet C. B. ✑ Create a gateway firewall rule permitting bi-directional traffic to Subnet A from the Internet. ✑ Create a distributed firewall rule denying bi-directional traffic to Subnet B and Subnet C from the Internet. ✑ Create a distributed firewall rule under the Ethernet category to permit bi-directional traffic from Subnet A to Subnet B and from Subnet B to Subnet C. C. ✑ Create a gateway firewall rule permitting bi-directional traffic to Subnet A from the Internet. ✑ Create a gateway firewall rule denying bi-directional traffic from the Internet to all subnets. ✑ Create a distributed firewall rule under the Infrastructure category to permit bi-directional traffic from Subnet A to Subnet B and from Subnet B to Subnet C. D. ✑ Create a gateway firewall rule permitting bi-directional traffic to Subnet A from the Internet. ✑ Create a gateway firewall rule denying bi-directional traffic to Subnet B and Subnet C from the Internet. Create a gateway firewall rule to permit bi-directional traffic from Subnet A to Subnet B and from Subnet B to Subnet C. [sampleXML/xmlfile-57_13.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three of the listed VMware Cloud on AWS service roles can be assigned from the VMware Cloud console? (Choose three.) A. SSO Administrator B. Administrator (Delete Restricted) C. NSX Cloud Auditor D. Root E. NSX Cloud Admin F. vCenter Administrator",
+    "options": {},
+    "most_voted": "B"
+  }
+]
