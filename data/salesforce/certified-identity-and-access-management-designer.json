@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Universal Containers (UC) has decided to build a new, highly sensitive application on the Lightning platform. The security team at UC has decided that they want users to provide a fingerprint in addition to username/password to authenticate to this application. How can an Architect support fingerprints as a form of identification for Salesforce authentication? A. Use Custom Login Flows with callouts to a third-party fingerprint scanning application. B. Use Salesforce Two-factor Authentication with callouts to a third-party fingerprint scanning application. C. Use Delegated Authentication with callouts to a third-party fingerprint scanning application. D. Use an AppExchange product that does fingerprint scanning with native Salesforce Identity Confirmation.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) is successfully using Delegated Authentication for their Salesforce users. The service supporting Delegated Authentication is written in Java. UC has a new CIO that is requiring all company web services be REST-ful and written in .Net. Which two considerations should the UC Architect provide to the new CIO? (Choose two.) A. Delegated Authentication will continue to work with REST services. B. Delegated Authentication will continue to work with a .Net service. C. Delegated Authentication will not work with REST services. D. Delegated Authentication will not work with a .Net service.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) is setting up delegated authentication to allow employees to log in using their corporate credentials. UC's security team is concerned about the risks of exposing the corporate login service on the internet and has asked that a reliable trust mechanism be put in place between the login service and Salesforce. What mechanism should an Architect put in place to enable a trusted connection between the login service and Salesforce? A. Require the use of Salesforce security tokens on passwords. B. Enforce mutual authentication between systems using SSL. C. Set up a proxy service for the login service in the DMZ. D. Include Client Id and Client Secret in the login header callout.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) has decided to use Identity Connect as its Identity Provider. UC uses Active Directory (AD) and has a team that is very familiar and comfortable with managing AD groups. UC would like to use AD Groups to help configure Salesforce users. Which three actions can AD Groups control through Identity Connect? (Choose three.) A. Public Group Assignment B. Role Assignment C. Custom Permissions Assignment D. Granting Report Folder Access E. Permission Sets Assignment",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The CIO of Universal Containers (UC) wants to start taking advantage of the refresh token capability for the UC applications that utilize OAuth 2.0. UC has enlisted an Architect to analyze all of the applications that use OAuth flows to see where refresh tokens can be applied. Which two OAuth flows should the Architect consider in their evaluation? (Choose two.) A. JWT Bearer Token B. Web Server C. Username-Password D. User-Agent",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect needs to advise the team that manages the Identity Provider how to differentiate Salesforce from other Service Providers. What SAML SSO setting in Salesforce provides this capability? A. SAML Identity Location B. Identity Provider Login URL C. Entity Id D. Issuer",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) uses middleware to integrate multiple systems with Salesforce. UC has a strict, new requirement that usernames and passwords cannot be stored in any UC system. How can UC's middleware authenticate to Salesforce while adhering to this requirement? A. Create a Connected App that supports the Refresh Token OAuth Flow. B. Create a Connected App that supports the JWT Bearer Token OAuth Flow. C. Create a Connected App that supports the User-Agent OAuth Flow. D. Create a Connected App that supports the Web Server OAuth Flow.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Customer Service Representatives at Universal Containers (UC) are complaining that whenever they click on links to case records and are asked to log in with SAML SSO, they are being redirected to the Salesforce Home tab and not the specific case record. What item should an Architect advise the identity team at UC to investigate first? A. My Domain is configured and active within Salesforce. B. The users have the correct Federation ID within Salesforce. C. The Salesforce SSO settings are using HTTP POST. D. The Identity Provider is correctly preserving the RelayState.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers has implemented a multi-org strategy and would like to centralize the management of their Salesforce user profiles. What should the Architect recommend to allow Salesforce profiles to be managed from a central system of record? A. Implement JIT provisioning on the SAML IdP that will pass the ProfileID in each assertion. B. Implement Delegated Authentication that will update the user profiles as necessary. C. Create an Apex scheduled job in one org that will synchronize the other org's profiles. D. Implement an OAuth JWT flow to pass the profile credentials between systems.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) is looking to purchase a third-party application as an Identity Provider. UC is looking to develop a business case for the purchase in general and has enlisted an Architect for advice. Which two capabilities of an Identity Provider should the Architect detail to help strengthen the business case? (Choose two.) A. The Identity Provider can authenticate multiple applications. B. The Identity Provider can authenticate multiple social media accounts. C. The Identity Provider can store credentials for multiple applications. D. The Identity Provider can centralize enterprise password policy.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) wants to implement Delegated Authentication for a certain subset of Salesforce users. Which three items should UC take into consideration when building the web service to handle the Delegated Authentication request? (Choose three.) A. The web service can be written using either the SOAP or REST protocol. B. UC should whitelist all Salesforce IP ranges on their corporate firewall. C. The web service needs to include SourcelP as a method parameter. D. The return type of the web service method should be a boolean value. E. Delegated Authentication is enabled for the System Administrator profile.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) wants its Closed Won opportunities to be synced to a Data Warehouse in near real time. UC has implemented. Outbound Message to enable near real-time data sync. UC wants to ensure that communication between Salesforce and Target System is secure. What Certificate is sent along with the Outbound Message? A. The Self-Signed Certificates from the Certificate & Key Management menu. B. The CA-Signed Certificate from the Certificate and Key Management menu. C. The default Client Certificate from the Develop --> API Menu. D. The default Client Certificate or a Certificate from Certificate and Key Management menu.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A group of users try to access one of Universal Containers’ Connected Apps and receive the following error message: “Failed: Not approved for access.” What is the probable cause of this issue? A. The Salesforce Administrators have revoked the OAuth authorization. B. The Connected App setting “All users may self-authorize” is enabled. C. The use of High Assurance sessions are required for the Connected App. D. The users do NOT have the correct permission set assigned to them.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) is building a custom Innovation platform on their Salesforce instance. The Innovation platform will be written completely in Apex and Visualforce and will use custom objects to store the data. UC would like all users to be able to access the system without having to log in with Salesforce credentials. UC will utilize a third-party IdP using SAML SSO. What is the recommended Salesforce license type for all of the UC employees? A. Salesforce Platform license B. External Identity license C. Identity license D. Salesforce license",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers wants to build a custom mobile app connecting to Salesforce using OAuth, and would like to restrict the types of resources mobile users can access. What OAuth feature of Salesforce should be used to achieve the goal? A. Refresh Tokens B. Scopes C. Access Tokens D. Mobile PINs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) is building an integration between Salesforce and a legacy web application using the Canvas framework. The security team for UC has determined that a signed request from Salesforce is not an adequate authentication solution for the third-party app. Which two options should the Architect consider for authenticating the third-party app using the Canvas framework? (Choose two.) A. Utilize Authorization Providers to allow the third-party application to authenticate itself against Salesforce as the IdP. B. Utilize the SAML Single Sign-on flow to allow the third-party to authenticate itself against UC's IdP. C. Create a registration handler Apex class to allow the third-party application to authenticate itself against Salesforce as the IdP. D. Utilize the Canvas OAuth flow to allow the third-party application to authenticate itself against Salesforce as the IdP.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) is building an authenticated Customer Community for its customers. UC does not want customer credentials stored in Salesforce and is confident its customers would be willing to use their social media credentials to authenticate to the Community. Which two actions should an Architect recommend UC to take? (Choose two.) A. Configure SSO settings for Facebook to serve as a SAML Identity Provider. B. Configure an Authentication Provider for LinkedIn social media accounts. C. Create a custom Apex Registration Handler to handle new and existing users. D. Use Delegated Authentication to call the Twitter login API to authenticate users.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) implemented SSO to a third-party system for their Salesforce users to access the App Launcher. UC enabled \"User Provisioning” on the Connected App so that changes to user accounts can be synched between Salesforce and the third-party system. However, UC quickly notices that changes to user roles in Salesforce are not getting synched to the third-party system. What is the probable reason for this behavior? A. The Approval queue for User Provisioning Requests is unmonitored. B. User Provisioning for Connected Apps does NOT support role sync. C. Required operation(s) was NOT mapped in User Provisioning Settings. D. Salesforce roles have more than three levels in the role hierarchy.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The security team at Universal Containers has identified exporting reports as a high-risk action and would like to require users to be logged into Salesforce with their Active Directory (AD) credentials when doing so. For all other uses of Salesforce, users should be allowed to use AD credentials or Salesforce credentials. What solution should be recommended to prevent exporting reports except when logged in using AD credentials while maintaining the ability to view reports when logged in with Salesforce credentials? A. Use SAML Federated Authentication and Custom SAML JIT Provisioning to dynamically add or remove a Permission Set that grants the Export Reports permission. B. Use SAML Federated Authentication, treat SAML Sessions as High Assurance, and raise the session level required for exporting reports. C. Use SAML Federated Authentication with a Login Flow to dynamically add or remove a Permission Set that grants the Export Reports permission. D. Use SAML Federated Authentication and block access to reports when accessed through a Standard Assurance session.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three capabilities does SAML-based Federated authentication provide? (Choose three.) A. Centralized federation provides single point of access, control and auditing. B. Access tokens are used to access resources on the server once the user is authenticated. C. Web applications with no passwords are more secure and stronger against hacks. D. Trust relationships between Identity Provider and Service Provider are required. E. SAML tokens can be in XML or JSON format and can be used interchangeably.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) would like to enable self-registration for their Salesforce Partner Community Users. UC wants to capture some custom data elements from the partner user, and based on these data elements, wants to assign the appropriate Profile and Account values. Which two actions should the Architect recommend to UC? (Choose two.) A. Configure Registration for Communities to use a custom Visualforce Page. B. Configure Registration for Communities to use a custom Apex Controller. C. Modify the CommunitiesSelfRegController to assign the Profile and Account. D. Modify the SelfRegistration trigger to assign Profile and Account.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) wants to build a mobile application that will be making calls to the Salesforce REST API. UC's Salesforce implementation relies heavily on custom objects and custom Apex code. UC does not want its users to have to enter credentials every time they use the app. Which two scope values should an Architect recommend to UC? (Choose two.) A. full B. api C. refresh_token D. custom_permissions",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) has decided to use Salesforce as an Identity Provider for multiple external applications. UC wants to use the Salesforce App Launcher to control the apps that are available to individual users. Which three steps are required to make this happen? (Choose three.) A. Add each Connected App to the App Launcher with a Start URL. B. Create a Connected App for each external application. C. Set up Salesforce as a SAML IdP with My Domain. D. Set up Identity Connect to synchronize user data. E. Set up an Auth Provider for each external application.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has implemented an SP-initiated SAML flow between an external IdP and Salesforce. A user at UC is attempting to log in to Salesforce mobile app for the first time and is being prompted for Salesforce credentials instead of being shown the IdP login page. What is the likely cause of the issue? A. The \"Redirect to Identity Provider” option has NOT been selected in the My Domain configuration. B. The \"Redirect to Identity Provider\" option has NOT been selected on the SAML configuration. C. The user has NOT been granted the “Enable Single Sign-on” permission. D. The user has NOT configured the Salesforce mobile app to use My Domain for login.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two security risks can be mitigated by enabling Two-Factor Authentication in Salesforce? (Choose two.) A. Users accessing Salesforce from a public Wi-Fi access point. B. Users creating simple-to-guess password reset questions. C. Users leaving laptops unattended and NOT logging out of Salesforce. D. Users choosing passwords that are the same as their Facebook password.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect needs to set up a Facebook Authentication provider as a login option for a Salesforce Customer Community. What portion of the authentication provider setup associates a Facebook user with a Salesforce user? A. Apex Registration Handler B. Federation ID C. Consumer Key and Consumer Secret D. User Info Endpoint URL",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) employees have Salesforce access from restricted IP ranges only, to protect against unauthorized access. UC wants to roll out the Salesforce mobile app and make it accessible from any location. Which two options should an Architect recommend? (Choose two.) A. Use Login Flow to bypass IP range restriction for the mobile app. B. Relax the IP restriction with a second factor in the Connect App settings for Salesforce mobile app. C. Relax the IP restriction in the Connect App settings for the Salesforce mobile app. D. Remove existing restrictions on IP ranges for all types of user access.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers wants to implement Single Sign-on for a Salesforce org using an external Identity Provider and corporate identity store. What type of authentication flow is required to support deep linking? A. Service-Provider-initiated SSO B. Web Server OAuth SSO flow C. Identity-Provider-initiated SSO D. StartURL on Identity Provider",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has a Customer Community that uses Facebook for authentication. UC would like to ensure that changes in the Facebook profile are reflected on the appropriate Customer Community user. How can this requirement be met? A. Develop a scheduled job that calls out to Facebook on a nightly basis. B. Use the updateUser() method on the Registration Handler class. C. Use SAML Just-In-Time Provisioning between Facebook and Salesforce. D. Use information in the Signed Request that is received from Facebook.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) is concerned that having a self-registration page will provide a means for “bots” or unintended audiences to create user records, thereby consuming licenses and adding dirty data. Which two actions should UC take to prevent unauthorized form submissions during the self-registration process? (Choose two.) A. Require a CAPTCHA at the end of the self-registration process. B. Use open-ended security questions and complex password requirements. C. Primarily use lookup and picklist fields on the self-registration page. D. Use hidden fields populated via JavaScript events in the self-registration page.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has a desktop application to collect leads for marketing campaigns. UC wants to extend this application to integrate with Salesforce to create leads. Integration between the desktop application and Salesforce should be seamless. What Authorization flow should the Architect recommend? A. JWT Bearer Token Flow B. Username and Password Flow C. User Agent Flow D. Web Server Authentication Flow",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) uses a legacy Employee portal for employees to collaborate and post ideas. UC decides to use Salesforce Ideas for voting and better tracking purposes. To avoid provisioning users on Salesforce, UC decides to push ideas posted on the Employee portal to Salesforce through API. UC decides to use an API user using OAuth Username-Password flow for the connection. How can the connection to Salesforce be restricted only to the Employee portal server? A. Add the Employee portal's IP address to the Login IP range on the user profile. B. Use a dedicated profile for the user the Employee portal uses. C. Use a digital certificate signed by the Employee portal server. D. Add the Employee portal's IP address to the Trusted IP range for the Connected App.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers wants to set up SSO for a selected group of users to access external applications from Salesforce through App Launcher. Which three steps must be completed in Salesforce to accomplish the goal? (Choose three.) A. Associate User profiles with the Connected Apps. B. Complete My Domain and Identity Provider setup. C. Create Connected Apps for the external applications. D. Complete Single Sign-on Settings in Security Controls. E. Create Named Credentials for each external system.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
