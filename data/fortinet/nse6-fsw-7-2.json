@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Refer to the diagnostic output: Two entries in the exhibit show that the same MAC address has been used in two different VLANs. Which MAC address is shown in the above output? A. It is a MAC address of FortiLink interface on FortiGate. B. It is a MAC address of a switch that accepts multiple VLANs. C. It is a MAC address of an upstream FortiSwitch. D. It is a MAC address of FortiGate in HA configuration.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Core-1 and Access-1 are managed and authorized by FortiGate-1, which uses port4 as the FortLink interface. After FortiGate authorizes and manages Core-2, port1 status becomes STP discarding. Why is port1 in the discarding state? A. port1 on Core-2 is discarding only management traffic. B. Core-1 and Core-2 do not have MCLAG configuration. C. Access-1 is the root bridge and can only have one root port. D. Core-2 has the lowest bridge priority.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements about the FortiLink authorization process are true? (Choose two.) A. The administrator must manually pre-authorize FortiGate on FortiSwitch by adding the FortiGate serial number. B. FortiSwitch requires a reboot to complete the authorization process. C. Fortiink frame is sent by FortiGate to FortiSwitch to complete the authorization. D. FortiLink authorization sets the FortiSwitch management mode to FortiLink.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. Traffic arriving on port2 on FortiSwitch is tagged with VLAN ID 10 and destined for PC1 connected on port1. PC1 expects to receive traffic untagged from port1 on FortiSwitch. Which two configurations can you perform on FortiSwitch to ensure PC1 receives untagged traffic on port1? (Choose two.) A. Add the MAC address of PC1 as a member of VLAN 10. B. Add VLAN ID 10 as a member of the untagged VLANs on port1 C. Remove VLAN 10 from the allowed VLANs and add it to untagged VLANs on port1 D. Enable Private VLAN on VLAN 10 and add VLAN 20 as an isolated VLAN.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. Port1 and port2 are the only ports configured with the same native VLAN 10. What are two reasons that can trigger port1 to shut down? (Choose two.) A. port1 was shut down by loop guard protection. B. STP triggered a loop and applied loop guard protection on port1. C. An endpoint sent a BPDU on port1 that it received from another interface. D. Loop guard frame sourced from port1 was received on port1.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the diagnostic output: What makes the use of the sniffer command on the FortiSwitch CLI unreliable on _port_23? A. The types of packets captured is limited. B. Just the port egress payloads are printed on CLI. C. Only untagged VLAN traffic can be captured. D. The switch port might be used as a trunk member.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which interfaces on FortiSwitch send out FortiLink discovery frames by default in order to detect a FortiGate with an enabled FortiLink interface? A. All ports have auto-discovery enabled by default B. No ports are enabled by default for auto-discovery. This must be configured under config switch interface. C. The ports with auto-discovery enabled by default are dependent upon the FortiSwitch model. D. The last four switch ports on FortiSwitch have auto-discovery by default.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which LLDP-MED Type-Length-Values does FortiSwitch collect from endpoints to track network devices and determine their characteristics? A. Network policy B. Power management C. Location D. Inventory management",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit What two conclusions can be made regarding DHCP snooping configuration? (Choose two.) A. Maximum value to accept clients DHCP request is configured as per DHCP server range. B. Fortiswitch is configured to trust OHCP replies coming on FortLink interface. C. DHCP clients that are trusted by DHCP snooping configured is only one. D. Global configuration for DHCP snooping is set to forward DHCP client requests on all ports in the VLAN.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two reasons why time synchronization between FortiGate and its managed FortiSwitch is critical in switch management? (Choose two.) A. FortiSwitch does not retain its time after a reboot, which gets reset after each reboot. B. FortiSwitch will not be able to become an NTP server for downstream devices. C. FortiSwitch cannot complete the DTLS handshake used in the CAPWAP tunnel. D. FortiSwitch will not allow other FortiSwitch devices in the chain be discovered by FortiGate.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement about the quarantine VLAN on FortiSwitch is true? A. Quarantine VLAN has no DHCP server. B. Users who fail 802.1X authentication can be placed on the quarantine VLAN. C. It is only used for quarantined devices if global setting is set to quarantine by VLAN. D. FortiSwitch can block devices without configuring quarantine VLAN to be part of the allowed VLANs.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The exhibit shows the current status of the ports on the managed FortiSwitch, Access-1. Why would FortiGate display a serial number in the Native VLAN column associated with the port23 entry? A. port23 is configured as the dedicated management interface. B. Ports connected to adjacent FortiSwitch devices show their serial number as the native VLAN. C. port23 is a member of a trunk that uses the Access-1 FortiSwitch serial number as the name of the trunk D. A standalone switch with the shown serial number is connected on port23.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two ways in which automatic MAC address quarantine works on FortiSwitch? (Choose two.) A. FortiSwitch supports only by VLAN quarantine mode. B. FortiGate applies the quarantine-related configuration only on FortiGate. C. FortiAnalyzer with a threat detection services license is required. D. MAC address quarantine can be enabled through the FortiGate CLI only.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How does FortiGate handle configuration of flow tracking sampling if you export the settings to a managed FortiSwitch stack with sampling mode set to perimeter is true? A. FortiGate configures FortiSwitch to perform ingress sampling on all switch interfaces. B. FortiGate configures FortiSwitch to perform ingress sampling on all switch interfaces, except ICL and ISL interfaces. C. FortiGate configures and enables flow sampling on FortiSwitch but does not change existing sampling settings of interfaces D. FortiGate configures and enables egress sampling on all management interfaces.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The profile shown in the exhibit is assigned to a group of managed FortiSwitch ports, and these ports are connected to endpoints which are powered by PoE. Which configuration action can you perform on the LLDP profile to cause these endpoints to exchange PoE information and negotiate power with the managed FortiSwitch? A. Create new a LLDP-MED application type to define the PoE parameters. B. Assign a new LDP profile to handle different LLDP-MED TLVs. C. Define an LLDP-MED location ID to use standard protocols for power. D. Add power management as part of LLDP-MED TLVs to advertise.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two types of Layer 3 interfaces can participate in dynamic routing on FortiSwitch? (Choose two.) A. Detected management interfaces B. Loopback interfaces C. Switch virtual interfaces D. Physical interfaces",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What feature can network administrators use to segment network operations and the administration of managed FortiSwitch devices on FortiGate? A. FortiGate multi-tenancy B. Multi-chassis links aggregation trunk C. FortiGate clustering protocol D. FortiLink split interface",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Two routes are not installed in the forwarding information base (FIB) as shown in the exhibit. Which two statements about these two route entries are true? (Choose two.) A. These two routes have a higher administrative distance value available to the destination networks. B. These two routes will be used as load-balancing routes. C. These two routes will become primary, if the best routes are removed. D. These two routes are available in the hardware routing table.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which packet capture method allows FortiSwitch to capture traffic on trunks and management interfaces? A. SPAN B. Sniffer profile C. sFlow D. TCP dump",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Ethernet frame can create Layer 2 flooding due to all bytes on the destination MAC address being set to all FF? A. The broadcast Ethernet frame B. The unicast Ethernet frame C. The multicast Ethernet frame D. The anycast Ethernet frame",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which is a requirement to enable SNMP v2c on a managed FortiSwitch? A. Create a SNMP user to use for authentication and encryption. B. Specify an SNMP host to send traps to. C. Enable an SNMP v3 to handle traps messages with SNMP hosts. D. Configure SNMP agent and communities.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What can an administrator do to maintain a Forti-Gate-compatible FortiSwitch configuration when changing the management mode from standalone to FortiLink? A. Use a migration tool based on Python script to convert the configuration. B. Enable the FortiLink setting on FortiSwitch before the authorization process. C. FortiGate automatically saves the existing FortiSwitch configuration during the FortiLink management process. D. Register FortiSwitch to FortiSwitch Cloud to save a copy before managing with FortiGate.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Which two statements best describe what is displayed in the FortiLink debug output shown in the exhibit? (Choose two.) A. FortiSwitch is sending FortiLink heartbeats to FortiGate. B. FortiSwitch is discovered and authorized by FortiGate. C. FortiSwitch is in a waiting state to join the stack group on FortiGate. D. FortiSwitch is ready to push its new hostname to FortiGate.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements about VLAN assignments on FortiSwitch ports are true? (Choose two.) A. Configure a native VLAN on the FortiLink B. Assign an IP address and subnet mask to FortiSwitch VLANs C. Only assign one native VLAN on a port D. Assign untagged VLANs using FortiGate CLI",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two rules used by MSTP are similar to rules used by other STP methods? (Choose two.) A. MSTP uses port role election, similar to rapid STP on the instances. B. MSTP uses alternate path and primary path, similar to regular STP. C. MSTP uses root bridge selection, similar to rapid STP. D. MSTP uses timers for transitioning the ports, similar to regular STP.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the configuration: Which two conditions does FortiSwitch need to meet successfully configure the options shown in the exhibit above? (Choose two.) A. The FortiSwitch model is equipped with a maximum of 54 interfaces. B. FortiSwitch would need to be rebooted. C. The split port can be assigned to a native VLAN. D. The port full speed prior to the split was 100G QSFP+.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which QoS mechanism maps packets with specific CoS or DSCP markings to an egress queue? A. Queuing for egress traffic B. Classification for ingress traffic C. Rate limiting for egress traffic D. Marking for ingress traffic",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement about 802.1X security profiles using MAC-based authentication mode is true? A. FortiSwitch allows connectivity to all hosts connected to a port, if one host is authenticated. B. FortiSwitch can grant each device a different access level based on the credentials provided. C. FortiSwitch performs faster when using this security mode on the ports. D. FortiSwitch must communicate with the RADIUS server to authenticate devices.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. You are asked to ensure that managed FortiSwitch devices are reachable by other devices, such as SNMP and other management tools across your network. Which setting must you configure to ensure traffic from other devices in the network reaches FortiSwitch? A. Select a specific default gateway provided to FortiSwitch as an upstream device. B. Change the FortiLink interface IP address and DHCP server address range. C. Recreate the FortiLink interface with a nonaggregate setting. D. Enable NAC settings to select the onboarding VLAN.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which drop policy mode, if assigned to a congested port, will drop incoming packets until there is no congestion on the egress port? A. Tail-drop mode B. Weighted round robin mode C. Random early detection mode D. Strict mode",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How does FortiSwitch perform actions on ingress and egress traffic using the access control list (ACL)? A. Only high-end FortiSwitch models support ACL. B. ACL can be used only at the prelookup stage in the traffic processing pipeline. C. Classifiers enable matching traffic based only on the VLAN ID. D. FortiSwitch checks ACL policies only from top to bottom.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator needs to deploy managed FortiSwitch devices in a remote location where multiple VLANs must be utilized to segment devices. No Layer 3 switch or router is present. The only WAN connectivity is the router provided by the ISP connected to the public internet. Which two items will the administrator need to use? (Choose two.) A. A FortiSwitch interface connected to the ISP router configured with fortilink-13-mode enabled. B. FortiSwitch and FortiGate devices configured with VXLAN interfaces. C. FortiSwitch devices configured with NAT disabled. D. FortiSwitch devices that have the required internal hardware for this configuration. E. FortiSwitch and FortiGate devices configured with IPsec interfaces.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. config switch-controller security-policy local-access edit default set mgmt-allowaccess https ping ssh set internal-allowaccess https ping ssh next end config switch-controller snmp-sysinfo set status enable set contact-info \"Training\" set location \"Synnyvale\" end config switch-controller snmp-community edit 1 next end Which configuration change will allow the managed FortiSwitch to accept SNMP requests from any source? A. Create a new local access profile for SNMP only. B. Configure an SNMP host to send SNMP traps. C. Enable SNMP on the internal interface of the switch. D. Add SNMP service on the management interface of the switch.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which feature should enable to reduce the number of unwanted IGMP reports processed by the IGMP querier? A. Enable IGMP snooping proxy. B. Enable the IGMP flood setting on the static port for all multicast groups. C. Enable the IGMP flood reports setting on the mRouter port. D. Enable IGMP flood unknown multicast traffic on the global setting.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What type of multimode transceiver can be used to split a 40G port? A. QSFP+ transceiver B. SFP+ transceiver C. QSFP transceiver D. SFP transceiver",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. FortiGate is unable to establish a tunnel with the FortiSwitch device it is supposed to manage. Based on the debug output shown in the exhibit, what is the reason for the failure? A. FortiSwitch has disabled FortiLink and is only managed as a standalone. B. The handshake process timed out before FortiSwitch responded. C. The CAPWAP tunnel failed to come up due to a mismatch in time. D. DTLS client hello had the incorrect pre-shared key.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement about using MAC, IP, and protocol-based VLANs on FortiSwitch is true? A. It provides benefits that can be obtained when using 802.1X authentication. B. It is a scalable and secure solution in comparison to other Layer 2 security measures. C. FortiSwitch uses only the Ethernet type to assign traffic to VLANs. D. Endpoints are required to use the same FortiSwitch port to remain members of the VLAN.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements about DHCP snooping enabled on a FortiSwitch VLAN are true? (Choose two.) A. Settings related to DHCP option 82 are only configurable through the CLI. B. Enabling DHCP snooping on a FortiSwitch VLAN ensures requests and replies are seen by all DHCP servers. C. By default, all FortiSwitch ports are set to forward client DHCP requests to untrusted ports. D. switch-controller-dhcp-snooping-verify-mac verifies the destination MAC address to protect against DHCP exhaustion attacks.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How is traffic routed on FortiSwitch? A. ASIC hardware routing can only handle dynamic routing, if supported. B. Layer 3 routing can be configured on FortiSwitch, while managed by FortiGate. C. FortiSwitch looks up the hardware routing table and then the forwarding information base (FIB). D. Hardware-based routing on FortiSwitch is handled by the CPU.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In which two ways can you assign a FortiSwitch port to a VDOM using multi-tenancy setup? (Choose two.) A. Assign a port to a VDOM directly on the managed FortiSwitch. B. Create a virtual port pool on the FortiGate CLI. C. Remove the managed FortiSwitch and allocate ports directly on FortiSwitch. D. Switch the FortiLink interface to the target VDOM.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How does flow tracking work on FortiSwitch if you export the settings to a managed FortiSwitch stack with sampling mode set to local? A. FortiGate does not change existing sampling settings of interfaces. B. FortiGate configures FortiSwitch to perform ingress sampling on all switch interfaces. C. FortiGate configures FortiSwitch to perform ingress sampling on all switch interfaces, except ICL and ISL interfaces. D. FortiGate turns egress sampling on all management interfaces.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement about the IGMP snooping querier when enabled on a VLAN is true? A. IGMP reports on the VLAN are forwarded to all switch ports. B. Active multicast receiver entries are aging on each IGMP query sent on the VLAN. C. The setting can only be enabled using the FortiSwitch CLI D. All other indirectly connected switches will be unable to get IGMP multicast traffic.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How are the ‘by VLAN redirect MAC address quarantine’ mode and the ‘by redirect MAC address quarantine’ mode on FortiGate similar? A. Both modes add quarantined device MAC addresses to the blocked firewall address group. B. Both modes move quarantined devices to the quarantine VLAN. C. Both modes block intra-VLAN traffic by FortiGate automatically. D. Both modes require firewall policies to block inter-VLAN traffic.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement about the use of the switch port analyzer (SPAN) packet capture method is true? A. Traffic on the management interface can be mirrored and captured by the monitoring device. B. The monitoring device must be connected to the same switch where the traffic is being mirrored. C. SPAN can be configured only on a standalone FortiSwitch. D. Mirrored traffic can be sent across multiple switches.",
+    "options": {},
+    "most_voted": "B"
+  }
+]
