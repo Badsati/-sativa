@@ -1,0 +1,427 @@
+[
+  {
+    "question": "What is the VMware recommended way to deploy a virtual NSX Edge Node? A. Through the NSX UI B. Through automated or interactive mode using an ISO C. Through the vSphere Web Client D. Through the OVF command line tool",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three selections are capabilities of Network Topology? (Choose three.) A. Display how the different NSX components are interconnected. B. Display the VMs connected to Segments. C. Display how the Physical components are interconnected. D. Display the uplinks configured on the Tier-1 Gateways. E. Display the uplinks configured on the Tier-0 Gateways.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An NSX administrator has deployed a single NSX Manager node and will be adding two additional nodes to form a 3-node NSX Management Cluster for a production environment. The administrator will deploy these two additional nodes and Cluster VIP using the NSX UI. What two are the prerequisites for this configuration? (Choose two.) A. The cluster configuration must be completed using API. B. All nodes must be in the same subnet. C. All nodes must be in separate subnets. D. A compute manager must be configured. E. NSX Manager must reside on a Windows Server.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two commands does an NSX administrator use to check the IP address of the VMkernel port for the Geneve protocol on the ESXi transport node? (Choose two.) A. net-dvs B. esxcfg-nics -l C. esxcli network ip interface ipv4 get D. esxcfg-vmknic -l E. esxcli network nic list",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two are supported by L2 VPN clients? (Choose two.) A. NSX Autonomous Edge B. NSX Edge C. NSX for vSphere Edge D. 3rd party Hardware VPN Device",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "As part of an organization’s IT security compliance requirement, NSX Manager must be configured for 2FA (two-factor authentication). What should an NSX administrator have ready before the integration can be configured? A. Active Directory LDAP integration with ADFS B. VMware Identity Manager with NSX added as a Web Application C. VMware Identity Manager with an OAuth Client added D. Active Directory LDAP integration with OAuth Client added",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What should an NSX administrator check to verify that VMware Identity Manager integration is successful? A. From the NSX UI the status of the VMware Identity Manager Integration must be “Enabled”. B. From the NSX CLI the status of the VMware Identity Manager Integration must be “Configured”. C. From VMware Identity Manager the status of the remote access application must be green. D. From the NSX UI the URI in the address bar must have “local=false” part of it.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has been tasked with implementing the SSL certificates for the NSX Manager Cluster VIP. Which is the correct way to implement this change? A. Send an API call to https://<nsx-mgr>/api/vl/cluster/api-certificate?action=set_cluster_certificate&certificate_id=<certificate_id> B. Send an API call to https://<nsx-mgr>/api/vl/node/services/http?action=apply_certificate&certificate_id=<certificate_id> C. SSH as admin into the NSX manager with the cluster VIP IP and run nsxcli cluster certificate node install <certificate_id> D. SSH as admin into the NSX manager with the cluster VIP IP and run nsxcli cluster certificate vip install <certificate_id>",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator wants to validate the BGP connection status between the Tier-0 Gateway and the upstream physical router. What sequence of commands could be used to check this status on NSX Edge node? A. - enable <LR-D> - get vrf <ID> - show bgp neighbor B. - get gateways - vrf <number> - get bgp neighbor C. - set vrf <ID> - show logical-routers - show <LR-D> bgp D. - show logical-routers - get vrf - show ip route bgp",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is VMware’s recommendation for the minimum MTU requirements when planning an NSX deployment? A. MTU should be set to 1700 or greater across the data center network including inter-data center connections. B. MTU should be set to 1500 or less only on inter-data center connections. C. Configure Path MTU Discovery and rely on fragmentation. D. MTU should be set to 1550 or less across the data center network including inter-data center connections.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which VPN type are the Virtual Tunnel interfaces (VTI) used? A. SSL-based VPN B. Route & SSL based VPNs C. Policy & Route based VPNs D. Route-based VPN",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In an NSX environment, an administrator is observing low throughput and congestion between the Tier-0 Gateway and the upstream physical routers. Which two actions could address low throughput and congestion? (Choose two.) A. Configure ECMP on the Tier-0 gateway. B. Configure a Tier-1 gateway and connect it directly to the physical routers. C. Deploy Large size Edge node/s. D. Configure NAT on the Tier-0 gateway. E. Add an additional vNIC to the NSX Edge node.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company security policy requires all users to log into applications using a centralized authentication system. Which two authentication, authorization, and accounting (AAA) systems are available when integrating NSX with VMware Identity Manager? (Choose two.) A. RSA SecureID B. SecureDAP C. RADII 2.0 D. LDAP and OpenLDAP based on Active Directory (AD) E. Keygen Enterprise",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An NSX administrator would like to export syslog events that capture messages related to NSX host preparation events. Which message ID (msgid) should be used in the syslog export configuration command as a filter? A. FABRIC B. SYSTEM C. GROUPING D. MONITORING",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An NSX administrator wants to create a Tier-0 Gateway to support equal cost multi-path (ECMP) routing. Which failover detection protocol must be used to meet this requirement? A. Host Standby Router Protocol (HSRP) B. Beacon Probing (BP) C. Virtual Router Redundancy Protocol (VRRP) D. Bidirectional Forwarding Detection (BFD)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator has connected two virtual machines on the same overlay segment. Ping between both virtual machines is successful. What type of network boundary does this represent? A. Layer 2 bridge B. Layer 2 broadcast domain C. Layer 2 VPN D. Layer 3 route",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two supported host switch modes? (Choose two.) A. Overlay Datapath B. Secure Datapath C. Standard Datapath D. Enhanced Datapath E. DPDK Datapath",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which is an advantage of an L2 VPN in an NSX 4.x environment? A. Achieve better performance B. Use the same broadcast domain C. Enables Multi-Cloud solutions D. Enables VM mobility with re-IP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two steps must an NSX administrator take to integrate VMware Identity Manager in NSX to support role-based access control? (Choose two.) A. Create a SAML authentication in VMware Identity Manager using the NSX Manager FQDN. B. Add NSX Manager as a Service Provider (SP) in VMware Identity Manager. C. Enter the Identity Provider (IdP) metadata URL in NSX Manager. D. Enter the service URL, Client Secret, and SSL thumbprint in NSX Manager. E. Create an OAuth 2.0 client in VMware Identity Manager.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the two following characteristics about NAT64 are true? (Choose two.) A. NAT64 requires the Tier-1 gateway to be configured in active-active mode. B. NAT64 is stateless and requires gateways to be deployed in active-standby mode. C. NAT64 is supported on Tier-0 and Tier-1 gateways. D. NAT64 is supported on Tier-1 gateways only. E. NAT64 requires the Tier-1 gateway to be configured in active-standby mode.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which VMware GUI tool is used to identify problems in a physical network? A. VMware Aria Operations Networks B. VMware Aria Automation C. VMware Site Recovery Manager D. VMware Aria Orchestrator",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three protocols could an NSX administrator use to transfer log messages to a remote log server? (Choose three.) A. HTTPS B. SSH C. TCP D. UDP E. SSL F. TLS",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where does an administrator configure the VLANs used in VRF Lite? (Choose two.) A. uplink interface of the VRF gateway B. uplink interface of the default Tier-0 gateway C. downlink interface of the default Tier-0 gateway D. uplink trunk segment E. segment connected to the Tier-1 gateway",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two logical router components span across all transport nodes? (Choose two.) A. SERVICE_ROUTER_TIER0 B. TIER0_DISTRIBUTED_ROUTER C. DISTRIBUTED_ROUTER_TIER0 D. DISTRIBUTED_ROUTER_TIER1 E. SERVICE_ROUTER_TIER1",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What must be configured on Transport Nodes for encapsulation and decapsulation of Geneve protocol? A. TEP B. STT C. VXLAN D. UDP",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is preparing to deploy a VMware Kubernetes solution in an NSX environment. What is the minimum MTU size for the UPLINK profile? A. 1700 B. 1500 C. 1550 D. 1650",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are three NSX Manager roles? (Choose three.) A. master B. cloud C. policy D. zookeeper E. manager F. controller",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two CLI commands could be used to see if vmnic link status is down? (Choose two.) A. esxcfg-nics -l B. esxcli network nic list C. esxcfg-vmknic -l D. esxcfg-vmsvc/get.networks E. esxcli network vswitch dvs vmware list",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which VMware NSX Portfolio product can be described as a distributed analysis solution that provides visibility and dynamic security policy enforcement for NSX environments? A. NSX Manager B. NSX Distributed IDS/IPS C. NSX Intelligence D. NSX Cloud",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has a requirement to have consistent policy configuration and enforcement across NSX instances. What feature of NSX fulfills this requirement? A. Multi-hypervisor support B. Federation C. Load balancer D. Policy-driven configuration",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When collecting support bundles through NSX Manager, which files should be excluded for potentially containing sensitive information? A. Core Files B. Controller Files C. Audit Files D. Management Files",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What can the administrator use to identify overlay segments in an NSX environment if troubleshooting is required? A. Geneve ID B. VNI ID C. Segment ID D. VLAN ID",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How does the Traceflow tool identify issues in a network? A. Compares intended network state in the control plane with Tunnel End Point (TEP) keepalives in the data plane. B. Compares the management plane configuration states containing control plane traffic and error reporting from transport node agents. C. Injects ICMP traffic into the data plane and observes the results in the control plane. D. Injects synthetic traffic into the data plane and observes the results in the control plane.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Where is the insertion point for East-West network introspection? A. Tier-0 router B. Guest VM vNIC C. Partner SVM D. Host Physical NIC",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which is the only supported mode in NSX Global Manager when using Federation? A. Proxy B. Policy C. Controller D. Proton",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When a stateful service is enabled for the first time on a Tier-0 Gateway, what happens on the NSX Edge node? A. DR is instantiated and automatically connected with SR. B. SR is instantiated and automatically connected with DR. C. SR and DR doesn’t need to be connected to provide any stateful services. D. SR and DR is instantiated but requires manual connection.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An NSX administrator is creating a Tier-1 Gateway configured in Active-Standby High Availability Mode. In the event of node failure, the failover policy should not allow the original failed node to become the Active node upon recovery. Which failover policy meets this requirement? A. Enable Preemptive B. Non-Preemptive C. Preemptive D. Disable Preemptive",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which CLI command is used for packet capture on the ESXi Node? A. tcpdump B. set capture C. pktcap-uw D. debug",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which command on ESXi is used to verify the Local Control Plane connectivity with Central Control Plane? A. esxcli network ip connection list | grep netcpa B. esxcli network ip connection list | grep ccpd C. esxcli network ip connection list | grep 1234 D. esxcli network ip connection list | grep 1235",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two statements describe the characteristics of an Edge Cluster in NSX? (Choose two.) A. Must have only active-active edge nodes B. Can contain multiple types of edge nodes (VM or bare metal) C. Must contain only one type of edge nodes (VM or bare metal) D. Can have a maximum of 10 edge nodes E. Can have a maximum of 8 edge nodes",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An NSX administrator is using ping to check connectivity between VM1 running on ESXi1 to VM2 running on ESXi2. The ping tests fail. The administrator knows the maximum transmission unit size on the physical switch is 1600. Which command does the administrator use to check the VMware kernel ports for tunnel end point communication? A. vmkping ++netstack=geneve -d -s 1572 <destination IP address> B. vmkping ++netstack=vxlan -d -s 1572 <destination IP address> C. esxcli network diag ping –H <destination IP address> D. esxcli network diag ping -I vmk0 -H <destination IP address>",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An NSX administrator is creating a NAT rule on a Tier-0 Gateway configured in active-standby high availability mode. Which two NAT rule types are supported for this configuration? (Choose two.) A. Port NAT B. 1:1 NAT C. Destination NAT D. Reflexive NAT E. Source NAT",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When deploying an NSX Edge Transport Node, what two valid IP address assignment options should be specified for the TEP IP addresses? (Choose two.) A. Use an IP Pool B. Use RADIUS C. Use a Static IP List D. Use BootP E. Use a DHCP Server",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "DRAG DROP Match the NSX Intelligence recommendations with their correct purpose.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two built-in VMware tools will help identify the cause of packet loss on VLAN Segments? (Choose two.) A. Flow Monitoring B. Traceflow C. Live Flow D. Packet Capture E. Activity Monitoring",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer has a network where BGP has been enabled and the BGP neighbor is configured on the Tier-0 Gateway. An NSX administrator used the get gateways command to retrieve this information: Which two commands must be executed to check BGP neighbor status? (Choose two.) A. vrf 3 B. sa-nsxedge-01(tier0_dr)> get bgp neighbor C. vrf 1 D. sa-nsxedge-01(tier1_sr)> get bgp neighbor E. sa-nsxedge-01(tier0_sr)> get bgp neighbor F. vrf 4",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two of the following will be used for ingress traffic on the Edge node supporting a Single Tier topology? (Choose two.) A. Tier-1 SR Router Port B. Tier-0 Uplink interface C. Downlink Interface for the Tier-0 DR D. Downlink Interface for the Tier-1 DR E. Inter-Tier interface on the Tier-0 gateway",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which TraceFlow traffic type should an NSX administrator use for validating connectivity between App and DB virtual machines that reside on different segments? A. Anycast B. Multicast C. Broadcast D. Unicast",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two tools are used for centralized logging in VMware NSX? (Choose two.) A. Syslog Server B. VMware Aria Automation C. VMware Aria Operations for Logs D. VMware Aria Operations for Networks E. VMware Aria Operations",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is configuring service insertion for Network Introspection. Which two places can the Network Introspection be configured? (Choose two.) A. Edge Node B. Host pNIC C. Tier-0 gateway D. Tier-1 gateway E. Partner SVM",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Where can an administrator see a visual overview of network connections between different VMs and different networks, within the NSX domain? A. Network Intelligence B. NSX Intelligence C. VMware Aria Operations D. VMware Aria Operations for Networks",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An NSX administrator is troubleshooting a connectivity issue with virtual machines running on an ESXi transport node. Which feature in the NSX UI shows the mapping between the virtual NIC and the host’s physical adapter? A. Port Mirroring B. Activity Monitoring C. IPFIX D. Switch Visualization",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are the four types of role-based access control (RBAC) permissions? (Choose four.) A. Auditor B. Full access C. Enterprise Admin D. None E. Execute F. Read G. Network Admin",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which CLI command does an NSX administrator run on the NSX Manager to generate support bundle logs if the NSX UI is inaccessible? A. esxcli system syslog config logger set --id=nsxmanager B. get support-bundle file vcpnv.tgz C. vm-support D. set support-bundle file vcpnv.tgz",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which NSX CLI command is used to change the authentication policy for local users? A. set hardening-policy B. get auth-policy minimum-password-length C. set cli-timeout D. set auth-policy",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When configuring OSPF on Tier-0 Gateway, which three of the following must match in order to establish a neighbor relationship with an upstream router? (Choose three.) A. Area ID B. MTU of the Uplink C. Naming convention D. Address of the neighbor E. Subnet mask F. Protocol and Port",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which command is used to set the NSX Manager’s logging-level to debug mode for troubleshooting? A. set service manager log-level debug B. set service nsx-manager logging-level debug C. set service nsx-manager log-level debug D. set service manager logging-level debug",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which CLI command shows syslog on NSX Manager? A. show log manager follow B. get log-file syslog C. get log-file auth.log D. /var/log/syslog/syslog.log",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two BGP configuration parameters can be configured in the VRF Lite gateways? (Choose two.) A. Route Aggregation B. Route Distribution C. BGP Neighbors D. Graceful Restart E. Local AS",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which CLI command would an administrator use to allow syslog on an ESXi transport node when using the esxcli utility? A. esxcli network firewall ruleset set -a -e false B. esxcli network firewall ruleset set -r syslog -e false C. esxcli network firewall ruleset -e syslog D. esxcli network firewall ruleset set -r syslog -e true",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which troubleshooting step will resolve an error with code 1001 during the configuration of a time-based firewall rule? A. Restarting the NTPservice on the ESXi host. B. Reconfiguring the ESXi host with a local NTP server. C. Re-installing the NSX VIBs on the ESXi host. D. Changing the time zone on the ESXi host.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement is true about an alarm in a Suppressed state? A. An alarm can be suppressed for a specific duration in hours. B. An alarm can be suppressed for a specific duration in seconds. C. An alarm can be suppressed for a specific duration in days. D. An alarm can be suppressed for a specific duration in minutes",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are four NSX built-in role-based access control (RBAC) roles? (Choose four.) A. None B. Read C. Auditor D. Full Access E. Network Admin F. Enterprise Admin G. LB Operator",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has deployed 10 Edge Transport Nodes in their NSX Environment, but has forgotten to specify an NTP server during the deployment. What is the efficient way to add an NTP server to all 10 Edge Transport Nodes? A. Use a Node Profile B. Use Transport Node Profile C. Use the CLI on each Edge Node D. Use a PowerCLI script",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which table on an ESXi host is used to determine the location of a particular workload for a frame-forwarding decision? A. Routing Table B. ARP Table C. TEP Table D. MAC Table",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the most restrictive NSX built-in role which will allow a user to apply configuration changes on an NSX Edge? A. Network Engineer B. Cloud Service Administrator C. NSX Administrator D. Network Operator",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator would like to change the private IP address of the NAT VM 172.16.101.11 to a public address of 80.80.80.1 as the packets leave the NAT-Segment network. Which type of NAT solution should be implemented to achieve this? A. NAT64 B. Reflexive NAT C. DNAT D. SNAT",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which command is used to display the network configuration of the Tunnel Endpoint (TEP) IP on a bare metal transport node? A. debug B. tcpdump C. tcpconfig D. ifconfig",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which VPN type must be configured before enabling an L2VPN? A. Policy-based IPSec VPN B. Port-based IPSec VPN C. SSL-based IPSec VPN D. Route-based IPSec VPN",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "DRAG DROP Refer to the exhibits. Drag and drop the NSX graphic element icons on the left found in an NSX Intelligence visualization graph to its correct description on the right.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three DHCP Services are supported by NSX? (Choose three.) A. Gateway DHCP B. Segment DHCP C. DHCP Relay D. Port DHCP per VNF E. VRF DHCP Server",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which choice is a valid insertion point for North-South network introspection? A. Host Physical NIC B. Tier-0 gateway C. Guest VM vNIC D. Partner SVM",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following settings must be configured in an NSX environment before enabling stateful active-active SNAT? A. Tier-1 gateway in active-standby mode B. A Punting Traffic Group for the NSX Edge uplinks C. An Interface Group for the NSX Edge uplinks D. Tier-1 gateway in distributed only mode",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An NSX administrator is reviewing syslog and notices that Distributed Firewall Rules hit counts are not being logged. What could cause this issue? A. Zero Trust Security is not enabled. B. Syslog is not configured on the NSX Manager. C. Syslog is not configured on the ESXi transport node. D. Distributed Firewall Rule logging is not enabled.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How is the RouterLink port created between a Tier-1 Gateway and Tier-0 Gateway? A. Automatically created when Tier-1 is created. B. Manually create a Logical Switch and connect to bother Tier-1 and Tier-0 Gateways. C. Manually create a Segment and connect to both Tier-1 and Tier-0 Gateways. D. Automatically created when Tier-1 is connected with Tier-0 from NSX UI.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two of the following parameters are required for deploying the NSX Application Platform? (Choose two.) A. Interface Name B. Upload XML File C. Cluster Format Type D. Interface Service Name E. Upload Kubernetes Configuration File",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three of the following describe the Border Gateway Routing Protocol (BGP) configuration on a Tier-0 Gateway? (Choose three.) A. It supports a 4-byte autonomous system number. B. Can be used as an Exterior Gateway Protocol. C. The network is divided into areas that are logical groups. D. EIGRP is disabled by default. E. BGP is enabled by default.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which CLI command on NSX Manager and NSX Edge is used to change NTP settings? A. set timezone B. set ntp-server C. get timezone D. get time-server",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What needs to be configured on a Tier-0 Gateway to make NSX Edge Services available to a VM on a VLAN-backed logical switch? A. VLAN Uplink B. Downlink interface C. Loopback Router Port D. Service interface",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The security administrator turns on logging for a firewall rule. Where is the log stored on an ESXi transport node? A. /var/log/messages.log B. /var/log/vmware/nsx/firewall.log C. /var/log/fw.log D. /var/log/dfwpktlogs.log",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator needs to download the support bundle for NSX Manager. Where does the administrator download the log bundle from? A. System > Support Bundle B. System > Settings C. System > Utilities > Tools D. System > Settings > Support Bundle",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two statements are true for IPSec VPN? (Choose two.) A. IPSec VPN services can be configured at Tier-0 and Tier-1 gateways. B. Dynamic routing is supported for any IPSec mode in NSX. C. IPSec VPNs use the DPDK accelerated performance library. D. VPNs can be configured on the command line interface on the NSX manager.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An NSX administrator noticed that the nsxcli command times out after 600 secs of idle time. Which CLI command disables the nsxcli time out value on NSX Manager? A. set cli-timeout 1 B. set cli-timeout enabled C. set cli-timeout disabled D. set cli-timeout 0",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which tool could be used to configure BGP on a Tier-0 Gateway? A. ESX CLI B. NSX CLI C. API D. iPerf3",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements is true regarding the use of a Dynamic Routing Protocol on a Tier-1 Gateway? A. Both BGP and OSPF can be used on a Tier-1 Gateway. B. You can only use OSPF on the Tier-1 Gateway. C. A Dynamic Routing Protocol cannot be used on a Tier-1 Gateway. D. You can only use BGP on the Tier-1 Gateway.",
+    "options": {},
+    "most_voted": "C"
+  }
+]
