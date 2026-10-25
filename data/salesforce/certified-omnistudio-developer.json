@@ -1,0 +1,387 @@
+[
+  {
+    "question": "A developer is creating an OmniScript that provisions trial orgs to their customers. The following text block in the OmniScript uses a merge code to display the ID for the new trial org: Welcome to Salesforce! Your ID is %Details:Customer|0:ID% During testing, the developer notices that the ID does not display. The data JSON is structured as shown below. How should the developer correct the merge code in order for the ID to display? A. To %Details:Customer|n:ID% B. To $Details:Customer|0:ID$ C. To %Details:Customer|1:ID% D. To %%Details:Customer|0:ID%%",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is building an OmniScript and needs to retrieve data from many fields in a Salesforce record. Which OmniScript element does this? A. Lookup B. HTTP Action C. Select D. DataRaptor Extract Action",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A developer creates an OmniScript to display FirstName, LastName, and BirthDate of a contact using a Type Ahead Block. The DataRaptor used in the Type Ahead has been tested and fetches the correct data. When previewing the OmniScript, the developer enters a name in the Type Ahead and makes a selection of a contact from the list. However, the text fields FirstName, LastName. and BirthDate are not getting populated with the data. Refer to the exhibit below. What is the reason that the fields fail to display the fetched data? A. Use Data JSON is not selected in the properties of the Type Ahead Block. B. The Typeahead Key is not in the correct format. C. Lookup Mode is not selected in the properties of the Type Ahead Block. D. FirstName, LastName, and BirthDate are not placed inside the Type Ahead Block.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An OmniScript displays data from an API using an Integration Procedure, but all of the data is missing. What two errors could cause this? (Choose two.) A. The API url is not allowlisted in Salesforce. B. The JSON sent from the Integration Procedure Action does not match any of the Original Input for the Integration Procedure. C. The OmniScript has no active version. D. The Integration Procedure Preview Input Parameters do not match the JSON sent from the OmniScript.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Integration Procedure uses an HTTP action to make a REST API call. The response from the REST API must be converted into a specific XML structure before sending it as an input to another external web service. How should the developer configure the Integration Procedure to meet this requirement? A. Use a DataRaptor Transform to convert JSON to XML B. Use a Remote Action that calls the XMLStreamReader class C. Use a DataRaptor Extract and check the XML checkbox on the Output JSON Path D. Use a Remote Action that calls the XMLStreamWriter class",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer creates a FlexCard with five state elements. Four of the states have a condition. To test the FlexCard, the developer previews it using sample data that causes two of the states to have true conditions. In this scenario, how will the developer know which state will display? A. The first state with a true nested condition, regardless of sequence in the FlexCard canvas, will display. B. The first state with true conditions sequenced closest to the top of the FlexCard canvas will display. C. The first state with a true AND condition, regardless of sequence in the FlexCard canvas, will display. D. The state sequenced first in the FlexCard canvas will display.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer is building a DataRaptor Load for an Integration Procedure used in an OmniScript. Based on best practices, how should the developer configure the Input JSON? A. Build the Input JSON node by node in an editor. B. Build the Input JSON node by node in the DataRaptor Designer. C. Copy the Input JSON from the OmniScript {Data} modal. D. Copy the Input JSON from the DataRaptor Action Debug node.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer has an existing DataRaptor Load that inserts Contact records with inputs as lastName and firstName. The DataRaptor works as expected when previewed. The developer creates an Integration Procedure to test the DataRaptor and is using a SetValues element in the Integration Procedure to set the first name and last name for the contact record. The DataRaptor and Integration Procedure are set up as shown in the exhibits below. When the developer executes the Integration Procedure in Preview, the following error message displays: “Required fields are missing: [Last Name]”. How should the developer address this issue? A. SetValuesContactDetails should have been added to Additional Input of DataRaptor Post Action in Integration Procedure B. The Set Values Action keys should include the DataRaptor Post Action element name path, e.g. LoadContactDetails:lastname C. The DataRaptor Post Action in the Integration Procedure should have been executed before the Set Values Action D. The valid field names should be added in the Domain Object Field in the DataRaptor",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to display the following information together on one FlexCard: account name, address, phone number, website primary contact first name, contact last name, address, phone number, email The account information must always be visible, and the contact information should only be visible as needed by the user. What approach should the developer use to display the contact Information on the card? A. Set the collapsible property on the block element B. Use a Datatable element C. Use a conditional FlexCard State D. Set the class=\"collapsible\" on the block element",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two fields in an Integration Procedure can use a function like CONCAT or DATEDIFF? (Choose two.) A. In Procedure Configuration, in a Tracking Custom Data value field. B. In a Response Action, in an Additional Input value field. C. In a Remote Action, in an Additional Output value field. D. In a Remote Action, In a Remote Options value field.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer is troubleshooting an Integration Procedure with two elements: a Remote Action named FetchCart and a Response Action named ResponseCart. In Preview, what JSON node shows the data sent to the Remote Action? A. ResponseCart B. ResponseCartDebug C. FetchCartDebug D. FetchCart",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "On a FlexCard canvas, several fields display with Salesforce data, but one of the fields shows only the label. What could cause this? A. In the FlexCard state, the Field type for the field does not match the type in the Salesforce record. B. The Field name in the FlexCard state does not match the DataRaptor Extract's Output JSON Path name. C. There are No Test Data Test Parameters configured. D. In the Setup Panel, {recordId} is misspelled in the Data Source Input Map.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer is creating a FlexCard for a new Community page. The FlexCard will display case information along with actions to close the case and update the case, and it will be styled using the Community's theme. What must the developer do to configure the FlexCard for deployment in a Community? A. Set the Deployment property in Card Configuration to \"Community\" B. Add the FlexCard's API name to the FlexCard Player component C. Configure the Component Visibility in the Custom Component D. Set the Target property in Publish Options to \"CommunityPage\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In an Integration Procedure, a developer needs to perform a multi-step calculation on every element of an array. Based on best practices, what two methods are recommended? (Choose two.) A. Use a Matrix Action to call a Calculation Matrix. B. Use a Calculation Action to call a Calculation Procedure. C. Use a Set Values Element inside a Loop Block. D. Use a List Action to merge the array elements together.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A communications provider wants to enable their customers to troubleshoot mobile devices using a self-service portal. The developer builds an OmniScript to meet this requirement. The OmniScript must retrieve device details stored in the Asset object and then call an external system to send troubleshooting commands via REST API to the device. Which two OmniScript elements should the developer use to configure this functionality? A. SOQL Action B. HTTP Action C. REST API Action D. DataRaptor Extract Action E. Navigate Action",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit below. A developer has configured an Integration Procedure element with Additional Input. Alternatively, how could the developer configure SEND/RESPONSE TRANSFORMATIONS to send exactly the same data? Assume the developer has un-checked Send Only Additional Input. A. Send JSON PathSend JSON Node SecondaryAccountDRExtractAction:Account B. Send JSON PathSend JSON Node %SecondaryAccount%DRExtractAction:Account C. Send JSON PathSend JSON Node DRExtractAction:Account%SecondaryAccount% D. Send JSON PathSend JSON Node DRExtractAction:AccountSecondaryAccount",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit below. What JSON code correctly represents the step in the OmniScript Structure panel shown’ A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer is creating a FlexCard and needs to display additional information using a Flyout. Which two types of components can the developer embed in the flyout? (Choose two.) A. A DataRaptor B. An Integration Procedure C. An OmniScript D. A child FlexCard",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer creates a new FlexCard to display customer data and actions, such as updating billing information and changing the primary contact for the customer account. The FlexCard contains 10 fields and 5 actions. During testing, several fields display with the correct data, but one of the fields shows only the label. What could cause this? A. There are no test parameters configured. B. The field is null in the Salesforce record. C. {recordId} is misspelled in the Data Source Input Map. D. The fields have exceeded the maximum number allowed on the card.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What OmniStudio tool pre-populates the data in a PDF used by an OmniScript? A. A Data Raptor Extract B. A Data Raptor Transform C. A DataRaptor Load D. A SOQL Query",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. All inputs to the Calculation Matrix are set correctly. The Calculation Matrix has the following input: What is the output? A. 12.99,13.99 B. null C. 12.99 D. 13.99",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer creates a FlexCard that displays a contact's mailing address and passes the contact's postal code to a child FlexCard. When configuring text elements in the child FlexCard, what syntax should a developer use to refer to the contact s postal code? A. {postalcode} B. {Params.postalcode} C. {Parent.postalcode} D. {Records.postalcode}",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is building an OmniScript and needs to retrieve data from a single field in a Salesforce record. Which OmniScript element does this? A. HTTP Action B. Lookup C. Select D. DataRaptor Post Action",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Why would you version an Integration Procedure instead of cloning it? A. The new Integration Procedure will be used independently. B. The new Integration Procedure is Chainable. C. The new Integration Procedure will replace the existing one. D. The new Integration Procedure uses a Cache Block.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In an OmniScript, a developer needs to configure a Disclosure element to require user input only if the user already checked a Non-Disclosure Agreement checkbox. How should the developer configure the conditional view to meet this requirement? A. Set element to required if true B. Show element if true C. Set element to optional if false D. Disable read only if true",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to configure a DataRaptor to retrieve data from a single object. The structure of the output data does not need to be changed. Following best practices, which type of DataRaptor should the developer use? A. DataRaptor Turbo Extract B. DataRaptor Extract C. DataRaptor Transform D. DataRaptor Load",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer has a new Engagement Manager who is going to be the new Primary Contact for the Account. What type of mapping does a DataRaptor Load use to create the new contact and then add it as the new Primary Contact? A. Lookup Key B. Relationship Query C. Lookup Mapping D. Linked Mapping",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer creates an Integration Procedure with a Set Values and a DataRaptor Extract Action that requires AccountId as a key. When the developer previews the Integration Procedure, the developer enters the AccountId correctly and executes the preview. The developer sees the data extracted by the DataRaptor in the Debug Log, but the response is empty. What is the likely cause of this issue? A. The Response cannot be previewed directly. B. A Response Action was not added to the Integration Procedure. C. The AccountId used for the preview is Invalid. D. The DataRaptor Action did not have the Add Response To Response JSON property set to true.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer builds a new OmniScript. It contains a Set Values element with a ContextId key/value pair that was used during testing. What should the developer do before moving the OmniScript to a production org? A. Deactivate the ContextId key/value pair. B. Delete or deactivate the Set Values element. C. Update the ContextId value to specify an id from the production org. D. Add a Show/Hide condition on the Set Values element.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer has a requirement to create a child FlexCard that contains all of its parent FlexCard’s records in a Datatable How should the developer configure the parent FlexCard's Data Node? A. {recordId} B. {Params.records} C. {records} D. {records[0]}",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What should a developer's first step be when troubleshooting whether a DataRaptor Extract is retrieving data? A. Deactivate the card and layout, and go to the PREVIEW tab for the card to test. B. Add a key/value pair in the DataRaptor to test it. C. Go to the PREVIEW tab in OmniScript to test. D. Go to the Lightning Console and reload the page to test.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Integration Procedure contains a Remote Action element that calls a method of an APEX class. The method requires two fields as input: AccountId and ProductId. The Integration Procedure data JSON contains the following nodes: How should the Remote Action element be configured to pass the data correctly to the method? A. Check the DataRaptor Transform checkbox, and add the following Key/Value pairs to Output JSON Path: AccountId: %AccountId ProductId: %Details:ProductId% B. Add the following to Send JSON Path: AccountId: %AccountId, ProductId: %Details:ProductId% C. Check the Send Only Additional Input checkbox, and add the following Key/Value pairs to Additional Input: AccountId: %AccountId% ProductId: %Details:ProductId% D. Set Return Only Additional Output to true, and add the following Key/Value pairs to Additional Input: AccountId: %AccountId% ProductId: %Details:ProductId%",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer needs to create a list of cases for an account in a single Datatable in a FlexCard, like the one shown below. How can the developer configure the FlexCard to display the case records in this way? A. Enable the Repeat Records feature on the FlexCard setup tab B. Enable the Record Looping feature on the data table elements C. Disable the Repeat Records feature on the FlexCard setup tab D. Select the Repeatable Mode property on the data table elements",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is building an OmniScript and needs to retrieve data from Salesforce and from an AWS Order Management system. Which two OmniScript elements could retrieve this data? (Choose two.) A. Remote Action B. Navigate Action C. Response Action D. DataRaptor Extract Action",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer sets up two LWC OmniScripts, one embedded into another. AccountId is set in a Set values element in the parent OmniScript. The AccountId set in the parent OmniScript is used to set another Set Values element ContextAccountId in the embedded OmniScript. The embedded OmniScript is activated. While previewing the OmniScript flow from the parent, it is found that AccountId is set correctly in the parent OmniScript. However, ContextAccountId in the embedded OmniScript is not set with the AccountId from parent OmniScript. On previewing the embedded OmniScript individually, it is found that ContextAccountId is set correctly. What is the reason for this? Refer to the exhibits below. Parent OmniScript: Embedded OmniScript: A. The LWC PubSub Message flag in the Set Values action of the parent OmniScript has not been set. B. A developer failed to include a Navigate Action Element to pass data from the parent OmniScript. C. The flag passDataJSON in the parent OmniScript in not configured correctly. D. Both parent and embedded OmniScripts have the same element name for the Set Values element.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which calculation procedure version in the list would execute on 2/15/2020 at 12:00 PM? A. Version Number 1 B. Version Number 2 C. Version Number 3 D. Version Number 4",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Users receive an APEX CPU Limit Exceeded error when running an OmniScript in a Salesforce Community. The OmniScript includes an Integration Procedure that contains two DataRaptors. Which two locations should the developer check to troubleshoot the issue? (Choose two.) A. Community logs B. DataRaptor configuration C. Action Debugger D. Script Configuration",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit below. The card layout has an Integration Procedure as a data source. The cards use the layout data source. Which JSON data structure below supports this card layout and uses best practices? A. B. C. D.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer creates a DataRaptor Extract to retrieve data to pass to an external service. The external service expects the field value to be an integer. However, the DataRaptor is sending it as a string. Which action can the developer take to fix this? A. In the DataRaptor Extract tab, set the Input Data Type field to Integer. B. In the DataRaptor Formula tab, define a formula using the function TOINTEGER and use the formula as output. C. In the DataRaptor Output tab, enter the default value as 0 on the field. D. In the DataRaptor Output tab, select the Output Data Type of that field to Integer.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer needs to limit the output of a DataRaptor Extract to a maximum of one result. How should the developer configure this? A. Define a formula with the Filter function B. Use a Custom Output Type when creating the DataRaptor C. Use the LIMIT filter on the Extract definition D. Set the Limit property on the action that calls the DataRaptor Extract",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer writes an OmniScript that includes a DataRaptor that updates the Account status based on information provided from the OmniScript. The information must be updated only if the Account record already exists. Otherwise, a new account must be created. How should the developer accomplish this task? A. Check the Upsert Key and Is Required for Upsert checkboxes on the Account Id field B. Check Overwrite Target For All Null Inputs checkbox on the Account Id field C. Populate the Lookup Object and Lookup Fields D. Check the Upsert Key checkbox on the Account Status field",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two of these options can a developer use to retrieve data from a Salesforce object? (Choose two.) A. A Lookup Input Element B. A DataRaptor Extract Action C. A DataRaptor Load Action D. A DataRaptor Post Action",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A healthcare company wants to enable its subscribers to add, edit, or delete dependents related to their policy via their Community portal. The developer on the project decides to use an OmniScript. How should the developer configure the OmniScript to provide this functionality? A. use a Text Block element and a Remote Action element. B. Use an Edit Block element configured with SOQL statements. C. Use an Edit Block element configured with Remote Actions. D. Use an Input Block element and a DataRaptor Post Action element.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is configuring a DataRaptor Load to save contact data. The developer needs to set the record type of the contact using DeveloperName. Which two configuration actions should the developer take to set this up in the DataRaptor Load? (Choose two.) A. Check Is Lookup property when mapping the fields. B. Add Link to RecordType object in the Contact Object with the Id field of RecordType object. C. Select RecordType in the Lookup Object list, ID in the Lookup Field list, and DeveloperName in the Lookup Requested Field list. D. Select RecordType in the Lookup Object list, DeveloperName in the Lookup field list, and ID in the Lookup Requested Field list.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit below. What is the merge code needed for this Integration Procedure structure to pass a CaseData node from the HTTP Action's output to the DataRaptor Transform Action? A. %DRXfromCaseData:CaseData% B. {{CaseData}} C. {{HTTPGetCaseDetails:CaseData}} D. %HTTPGetCaseDetails:CaseData%",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company wants to allow agents to send customers a quote for signature. The quote is a document created using a DocuSign template that has been prefilled with all of the quote details. The document will be emailed to one or more recipients for signature. How should a developer configure this functionality in an OmniScript? A. DocuSign Envelope Action B. Email Action C. DocuSign Signature Action D. PDF Action",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to configure a calculation procedure to calculate a subtotal using two different formulas depending on whether the input Boolean variable isCustomer is set to true or false. How should a developer configure the calculation procedure to conditionally execute the correct formula? A. Use a single Calculation Step with an IF statement directly in the formula definition to reference the isCustomer variable and conditionally perform the appropriate calculation. B. Use two separate Calculation Steps with the Conditional Step property selected; reference just the isCustomer variable in the Condition syntax (no comparison necessary). C. Use two separate Calculation Steps with the Conditional Step property selected; use the ISTRUE(isCustomer) and NOT(ISTRUE(isCustomer) functions in the Condition syntax. D. Use two separate Calculation Steps with the Conditional Step property selected; compare the isCustomer variable directly to the literal true and false values in the Condition syntax.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer creates an OmniScript to update billing information. After analyzing the different types of customer interactions that occur at the company, the developer determines updating billing information should be included in the majority of customer interactions, which are represented by more than 20 different FlexCards. What is the most efficient way for the developer to configure the action that invokes the OmniScript? A. As an OS Action B. As a Lightning Action C. As an OmniStudio Action D. As a Custom Action",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to create a DataRaptor to retrieve the name of an account for a contact. Following best practices, how should a developer configure the extraction steps? A. Define extraction steps for the Contact and the Account objects, and set the Extract JSON Path to Contact.Account.Name B. Define extraction steps for the Contact and the Account objects, and set the Extract JSON Path to Account.Name C. Define an extraction step for the Contact object and set the Extract JSON Path to Contact:Account.Name D. Define an extraction step for the Account object, and set the Extract JSON Path to Account:Contact.Name",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer needs to change some field labels on a FlexCard. The FlexCard is currently deployed to production. The developer decides that the best course of action is to version the FlexCard rather than cloning it. Which factor would lead the developer to this decision? A. Another team member is developing new actions, fields and styling for the current version of the FlexCard. B. The new and current versions will be displayed together on the same target. C. All instances of the FlexCard must be updated with the changes. D. The new version of the FlexCard will be used in a new Console, and the current version of the FlexCard should remain unchanged.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer needs to build a multi-step intake form. Each step must allow the user to cancel the intake at any time. The developer is using an LWC OmniScript to build the form. How should the developer implement the cancel functionality for all steps using the LWC OmniScript Designer? A. Check the Enable Cancel checkbox in the Setup tab under Cancel Options. B. Add a Navigate Action inside each step and set the Element Name to \"Cancel\". C. Add a Navigate Action inside each step and set the Component Name to \"Cancel\". D. Add a Navigate Action outside each step and set the Element Name to \"Cancel\".",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When launching an OmniScript from an action on a FlexCard, the OmniScript displays, but no Salesforce data is populated. Which two errors could cause this behavior? (Choose two.) A. There is no active version of the OmniScript. B. In the DataRaptor Extract Action, the Input Parameters Filter Value is misspelled. C. There is no active version of the DataRaptor Extract. D. The Id Field for Actions in the FlexCard is blank.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer needs to retrieve data from an external system that stores policy data. The external system supports REST APIs to access and update the policies. Due to the volume of the policy data and peak hours of business, calls to the REST APIs sometimes take longer than expected to respond. The developer creates an Integration Procedure to retrieve the policy data for use in an OmniScript. Given the external system's known performance issues, which two configurations should be used to implement the call to the external system? (Choose two.) A. Check the Chain On Step checkbox on the HTTP Action in the Integration Procedure B. Set the Timeout property on the HTTP Action in the Integration Procedure C. Configure a Remote action with timeout settings of 120000 D. Check the Chainable checkbox on the Integration Procedure Action in the OmniScript",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to configure a calculation procedure to calculate the sum of the entire BasePrice. What is the most efficient way for the developer to meet this requirement? A. Add a Calculation Step as SUM(BasePrice). B. Add an Aggregation Step as SUM(BasePrice). C. Create a Postprocessor apex class to calculate the sum. D. Create a Preprocessor apex class to calculate the sum.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What two advantages does a DataRaptor Turbo Extract have over a standard DataRaptor Extract? (Choose two.) A. It is easier to configure B. It has better performance at runtime C. It populates data in PDF and DocuSign format D. It supports complex field mappings",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer needs to display read-only contact information in an OmniScript. The developer will format the information as a table, using merge codes to dynamically include first name, last name, street address, state, postal code, and country from the data JSON. Which OmniScript element should the developer use to meet this requirement? A. Text Area B. Text Block C. Edit Block D. Rich Text Area",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit below. In this Integration Procedure structure, what Send JSON Path would you use to send the output of the ActionZ element to a Response Action? A. BlockX.BlockY.ActionZ B. ActionZ.BIockY.BlockX C. BlockX:BlockY:ActionZ D. ActionZ:BlockY:BlockX",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer needs to transform contact data into a JSON array. Given the Input JSON shown above, what are two ways a developer could configure a DataRaptor Transform to achieve the expected Output JSON? (Choose two.) A. Set the Input JSON Path as LIST(Contact) and the Output JSON Path as Contact. B. Set the Input JSON Path as Contact and the Output JSON Path as LIST(Contact). C. Use a formula LIST(Contact), and add the output of the formula as the input in the Transform tab. D. Set the Input JSON Path as Contact, the Output JSON Path as Contact, and Output Data Type as List.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is building an OmniScript and needs to save data to Salesforce and to an AWS Order Management system. Which OmniScript element could save all of this data? A. DataRaptor Post Action B. Integration Procedure Action C. HTTP Action D. DataRaptor Load Action",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An OmniScript updates data from one Salesforce record, but when it completes, only some of the data is updated in Salesforce. A DataRaptor Load saves the data. What error could cause this behavior? (Choose two.) A. ContextID is misspelled in the merge code that passes the RecordId to the DataRaptor. B. The Input JSON paths in the DataRaptor Load do not match the JSON sent from the OmniScript. C. In the DataRaptor Load, in the preview tab, the RecordId is from the wrong record type. D. The fields that are not updated are read only in Salesforce.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit below. In this Integration Procedure structure, what Send JSON Path would be used to send the output of the Action1 element to a Remote Action? A. Action1:BlockB:BlockA B. BlockA:BlockB:Action1 C. Action1.BlockB.BlockA D. BlockA.BlockB.Action1",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An OmniScript displays data from an API using an Integration Procedure, but some of the data is missing. Which two configuration errors could cause this? (Choose two.) A. The missing data is trimmed in the Integration Procedure Action Response JSON Path. B. The JSON sent from the Integration Procedure Action does not match any of the Original Input for the Integration Procedure. C. The element name for the missing data does not match the JSON node key in the Integration Procedure Response. D. The Integration Procedure Preview Input Parameters do not match the JSON sent from the OmniScript.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to build a DataRaptor Transform to send current weather to both an OmniScript and Card Layout. Which of these samples would be valid for the Expected Output JSON? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit below. The card layout uses an Integration Procedure as a data source. The cards use the layout data source. Which JSON data structure supports this card layout and follows best practices? A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer creates an OmniScript to update billing information. After analyzing the different types of customer interactions that occur at the company, the developer determines updating billing information should be included in the majority of customer interactions. What should the developer use to configure the action that invokes the OmniScript? A. OmniScript Action B. Custom Action C. Lightning Action",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Why would a developer clone an Integration Procedure instead of versioning it? A. The new Integration Procedure Is replacing stub data. B. The new Integration Procedure will be used independently. C. The new Integration Procedure uses a Cache Block. D. The new Integration Procedure is Chainable.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit below. A developer has configured an Integration Procedure element with SEND/RESPONSE TRANSFORMATIONS as shown. Alternatively, how could the developer configure Additional Input to send exactly the same data? Assume that the developer checked Send Only Additional Input. A. Key Value SecondaryAccount DRExtractAction:Account B. Key Value SecondaryAccount %DRExtractAction:Account% C. Key Value DRExtractAction:Account SecondaryAccount D. Key Value %DRExtractAction:Account% SecondaryAccount",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the following row-versioned decision matrix. The developer needs to delete the row that contains the Code CA-SF. If the developer deletes that row in Version 3, what is the result? A. The row is deleted in all versions. B. The row is deleted in Versions 2 and 3 but will remain in Version 1. C. The row is deleted only in Version 3. D. The row is deleted in Version 3 and Version 1.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer examines data received from an external data source. The data is nested two levels down in the JSON structure. Which OmniStudio tool could the developer use to simplify this data? A. A DataRaptor Transform B. An HTTP Action Element C. A guided workflow D. An Integration Procedure",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to use the COUNTIF function to process data entered by the user in an OmniScript. The output of the function needs to be displayed to the user immediately in the current step. Based on best practice, what element should the developer use this function in? A. A Set Values element B. A Range element C. A Formula element",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer configures a FlexCard with a DataRaptor data source that uses the params.id as an input. When the developer clicks View Data on the FlexCard, valid data displays. However, when the developer previews the layout, the FlexCard does not display. What could cause this error? (Choose two.) A. The RecordId in the Test Data Source Settings is for the wrong record type. B. The Attributes haven’t been configured to pass the data to the fields. C. There is no Salesforce record for the FlexCard based on the RecordId in the layout’s Test Data Source Settings. D. The Data Node field for the FlexCard is empty.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer is configuring the API URL in an HTTP Action element within an Integration Procedure. What is the merge code syntax for passing a Date node from an element named SetValues in the URL? A. %SetValues:Date% B. ['SetValues']['Date'] C. %SetValues.Date% D. {{SetValues.Date}}",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is building an OmniScript and needs to retrieve data from Salesforce and from an on-premises billing database. Which two OmniScript elements could retrieve this data? (Choose two.) A. HTTP Action B. Response Action C. Navigate Action D. DataRaptor Extract Action",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is configuring an Integration Procedure Action in an OmniScript. The OmniScript needs a JSON response from the Integration Procedure but does not need to wait for the response for the user to proceed. Which feature should the developer enable? A. Invoke Mode Non-Blocking B. Invoke Mode Fire and Forget C. Toast Completion D. Use Future",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer needs to configure an expression set to calculate the sum of the entire BasePrice. What is the most efficient way for the developer to meet this requirement? A. Add a Calculation Step as SUM(BasePrice). B. Add an Aggregation Step as SUM(BasePrice). C. Add a Sub Expression step as SUM(BasePrice).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two fields in an Integration Procedure or DataRaptor can execute a function like CONCAT or DATEDIFF? (Choose two.) A. In a Remote Action in an Additional Output value field. B. In a Set Values Action in a Value field. C. In a DataRaptor in an Output Tab Output JSON Path. D. In a DataRaptor Action in an Input Parameters value field.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit below. What is the merge code needed for this Integration Procedure structure to pass a CaseNumber node from the DRReadCase DataRaptor Extract Action to the HTTP Action’s HTTP Path URL? A. %HTTPGetCaseDetails:CaseNumber% B. {{DRReadCase.CaseNumber}} C. %DRReadCase:CaseNumber% D. {{CaseNumber}}",
+    "options": {},
+    "most_voted": "C"
+  }
+]
