@@ -1,0 +1,537 @@
+[
+  {
+    "question": "To maintain security efficacy of its public cloud resources by using native tools, a company purchases Cloud NGFW credits to replicate the Panorama, PA-Series, and VM-Series devices used in physical data centers. Resources exist on AWS and Azure: The AWS deployment is architected with AWS Transit Gateway, to which all resources connect The Azure deployment is architected with each application independently routing traffic The engineer deploying Cloud NGFW in these two cloud environments must account for the following: Minimize changes to the two cloud environments Scale to the demands of the applications while using the least amount of compute resources Allow the company to unify the Security policies across all protected areas Which two implementations will meet these requirements? (Choose two.) A. Deploy a VM-Series firewall in AWS in each VPC, create an IPSec tunnel between AWS and Azure, and manage the policy with Panorama. B. Deploy Cloud NGFW for Azure in vNET/s, update the vNET/s routing to path traffic through the deployed NGFWs, and manage the policy with Panorama. C. Deploy Cloud NGFW for Azure in vWAN, create a vWAN to route all appropriate traffic to the Cloud NGFW attached to the vWAN, and manage the policy with local rules. D. Deploy Cloud NGFW for AWS in a centralized Security VPC, update the Transit Gateway to route all appropriate traffic through the Security VPC, and manage the policy with Panorama.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During an upgrade to the routing infrastructure in a customer environment, the network administrator wants to implement Advanced Routing Engine (ARE) on a Palo Alto Networks firewall. Which firewall models support this configuration? A. PA-5280, PA-7080, PA-3250, VM-Series B. PA-455, VM-Series, PA-1410, PA-5450 C. PA-3260, PA-5410, PA-850, PA-460 D. PA-7050, PA-1420, VM-Series, CN-Series",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements apply to configuring required security rules when setting up an IPSec tunnel between a Palo Alto Networks firewall and a third- party gateway? (Choose two.) A. For incoming and outgoing traffic through the tunnel, creating separate rules for each direction is optional. B. The IKE negotiation and IPSec/ESP packets are allowed by default via the intrazone default allow policy. C. For incoming and outgoing traffic through the tunnel, separate rules must be created for each direction. D. The IKE negotiation and IPSec/ESP packets are denied by default via the interzone default deny policy.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement describes the role of Terraform in deploying Palo Alto Networks NGFWs? A. It acts as a logging service for NGFW performance metrics. B. It orchestrates real-time traffic inspection for network segments. C. It provides Infrastructure-as-Code (IaC) to automate NGFW deployment. D. It manages threat intelligence data synchronization with NGFWs.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "By default, which type of traffic is configured by service route configuration to use the management interface? A. Security zone B. IPSec tunnel C. Virtual system (VSYS) D. Autonomous Digital Experience Manager (ADEM)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In regard to the Advanced Routing Engine (ARE), what must be enabled first when configuring a logical router on a PAN-OS firewall? A. License B. Plugin C. Content update D. General setting",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two zone types are valid when configuring a new security zone? (Choose two.) A. Tunnel B. Intrazone C. Internal D. Virtual Wire",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization has configured GlobalProtect in a hybrid authentication model using both certificate-based authentication for the pre-logon stage and SAML-based multi-factor authentication (MFA) for user logon. How does the GlobalProtect agent process the authentication flow on Windows endpoints? A. The GlobalProtect agent uses the machine certificate to establish a pre-logon tunnel; upon user sign-in, it prompts for SAML-based MFA credentials, ensuring both device and user identities are validated before granting full access. B. The GlobalProtect agent uses the machine certificate during pre-logon for initial tunnel establishment, and then seamlessly reuses the same machine certificate for user-based authentication without requiring MFA. C. Once the machine certificate is validated at pre-logon, the Windows endpoint completes MFA on behalf of the user by passing existing Windows Credential Provider details to the GlobalProtect gateway without prompting the user. D. GlobalProtect requires the user to log in first for SAML-based MFA before establishing the pre-logon tunnel, rendering the pre-logon certificate authentication (CA) flow redundant.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An NGFW engineer is configuring multiple Panorama-managed firewalls to start sending all logs to Strata Logging Service. The Strata Logging Service instance has been provisioned, the required device certificates have been installed, and Panorama and the firewalls have been successfully onboarded to Strata Logging Service. Which configuration task must be performed to start sending the logs to Strata Logging Service and continue forwarding them to the Panorama log collectors as well? A. Modify all active Log Forwarding profiles to select the “Cloud Logging” option in each profile match list in the appropriate device groups. B. Enable the “Panorama/Cloud Logging” option in the Logging and Reporting Settings section under Device --> Setup --> Management in the appropriate templates. C. Select the “Enable Duplicate Logging” option in the Cloud Logging section under Device --> Setup --> Management in the appropriate templates. D. Select the “Enable Cloud Logging” option in the Cloud Logging section under Device --> Setup --> Management in the appropriate templates.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An NGFW engineer is configuring multiple Layer 2 interfaces on a Palo Alto Networks firewall, and all interfaces must be assigned to the same VLAN. During initial testing, it is reported that clients located behind the various interfaces cannot communicate with each other. Which action taken by the engineer will resolve this issue? A. Configure each interface to belong to the same Layer 2 zone and enable IP routing between them. B. Assign each interface to the appropriate Layer 2 zone and configure a policy that allows traffic within the VLAN. C. Assign each interface to the appropriate Layer 2 zone and configure Security policies for interfaces not assigned to the same zone. D. Enable IP routing between the interfaces and configure a Security policy to allow traffic between interfaces within the VLAN.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In a Palo Alto Networks environment, GlobalProtect has been enabled using certificate-based authentication for both users and devices. To ensure proper validation of certificates, one or more certificate profiles are configured. What function do certificate profiles serve in this context? A. They store private keys for users and devices, effectively allowing the firewall to issue or reissue certificates if the primary Certificate Authority (CA) becomes unavailable, providing a built-in fallback CA to maintain continuous certificate issuance and authentication. B. They define trust anchors (root / intermediate Certificate Authorities (CAs)), specify revocation checks (CRL/OCSP), and map certificate attributes (e.g., CN) for user or device authentication. C. They allow the firewall to bypass certificate validation entirely, focusing only on username / password-based authentication. D. They provide a one-click mechanism to distribute certificates to all endpoints without relying on external enrollment methods.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How does a Palo Alto Networks NGFW respond when the preemptive hold time is set to 0 minutes during configuration of route monitoring? A. It does not accept the configuration. B. It accepts the configuration but throws a warning message. C. It removes the static route because 0 is a NULL value. D. It reinstalls the route into the routing information base (RIB) as soon as the path comes up.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After an engineer configures an IPSec tunnel with a Cisco ASA, the Palo Alto Networks firewall generates system messages reporting the tunnel is failing to establish. Which of the following actions will resolve this issue? A. Ensure that an active static or dynamic route exists for the VPN peer with next hop as the tunnel interface. B. Configure the Proxy IDs to match the Cisco ASA configuration. C. Check that IPSec is enabled in the management profile on the external interface. D. Validate the tunnel interface VLAN against the peer’s configuration.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which configuration in the LACP tab will enable pre-negotiation for an Aggregate Ethernet (AE) interface on a Palo Alto Networks high availability (HA) active/passive pair? A. Set Transmission Rate to “fast.” B. Set passive link state to “Auto.” C. Set “Enable in HA Passive State.” D. Set LACP mode to “Active.”",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When integrating Kubernetes with Palo Alto Networks NGFWs, what is used to secure traffic between microservices? A. Service graph B. Ansible automation modules C. Panorama role-based access control (RBAC) D. CN-Series firewalls",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When configuring a Zone Protection profile, in which section (protection type) would an NGFW engineer configure options to protect against activities such as spoofed IP addresses and split handshake session establishment attempts? A. Flood Protection B. Protocol Protection C. Packet-Based Attack Protection D. Reconnaissance Protection",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "For which two purposes is an IP address configured on a tunnel interface? (Choose two.) A. Use of dynamic routing protocols B. Tunnel monitoring C. Use of peer IP D. Redistribution of User-ID",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which PAN-OS method of mapping users to IP addresses is the most reliable? A. Port mapping B. GlobalProtect C. Syslog D. Server monitoring",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In an active/active high availability (HA) configuration with two PA-Series firewalls, how do the firewalls use the HA3 interface? A. To forward packets to the HA peer during session setup and asymmetric traffic flow B. To exchange hellos, heartbeats, HA state information, and management plane synchronization for routing and User-ID information C. To synchronize sessions, forwarding tables, IPSec security associations, and ARP tables between firewalls in an HA pair D. To perform session cache synchronization among all HA peers having the same cluster ID",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A PA-Series firewall with all licensable features is being installed. The customer’s Security policy requires that users do not directly access websites. Instead, a security device must create the connection, and there must be authentication back to the Active Directory servers for all sessions. Which action meets the requirements in this scenario? A. Deploy the transparent proxy with Web Cache Communications Protocol (WCCP). B. Deploy the Next-Generation Firewalls as normal and install the User-ID agent. C. Deploy the Advanced URL Filtering license and captive portal. D. Deploy the explicit proxy with Kerberos authentication scheme.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What must be configured before a firewall administrator can define policy rules based on users and groups? A. User Mapping profile B. Authentication profile C. Group mapping settings D. LDAP Server profile",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement applies to the relationship between Panorama-pushed Security policy and local firewall Security policy? A. When a policy match is found in a local firewall policy, if any Panorama shared post-rule is configured, it will still be evaluated. B. Local firewall rules are evaluated after Panorama pre-rules and before Panorama post-rules. C. Panorama post-rules can be configured to be evaluated before local firewall policy for the purpose of troubleshooting. D. The order of policy evaluation can be configured differently in different device groups.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which networking technology can be configured on Layer 3 interfaces but not on Layer 2 interfaces? A. DDNS B. Link Duplex C. NetFlow D. LLDP",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a result of enabling split tunneling in the GlobalProtect portal configuration with the “Both Network Traffic and DNS” option? A. It specifies when the secondary DNS server is used for resolution to allow access to specific domains that are not managed by the VPN. B. It allows users to access internal resources when connected locally and external resources when connected remotely using the same FQDN. C. It allows devices on a local network to access blocked websites by changing which DNS server resolves certain domain names. D. It specifies which domains are resolved by the VPN-assigned DNS servers and which domains are resolved by the local DNS servers.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "According to dynamic updates best practices, what is the recommended threshold value for content updates in a mission- critical network? A. 8 hours B. 16 hours C. 32 hours D. 48 hours",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which type of firewall resource can be assigned when configuring a new firewall virtual system (VSYS)? A. CPU B. Sessions limit C. Memory D. Security profile limit",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which forwarding methods can be used on the Objects tab when configuring the Log Forwarding profile? A. Panorama, syslog, email B. Syslog, HTTP, NetFlow C. Panorama, ADEM, syslog D. SNMP, HTTP, RADIUS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In a hybrid cloud deployment, what is the primary function of Ansible in managing Palo Alto Networks NGFWs? A. It provides a web interface for managing NGFW hardware clusters. B. It enables centralized log collection and correlation for NGFWs. C. It facilitates dynamic updates to NGFW threat databases. D. It automates NGFW policy updates and configurations through playbooks.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Palo Alto Networks NGFWs use SSL/TLS profiles to secure which two types of connections? (Choose two.) A. NAT tables B. User Authentication C. GlobalProtect Gateways D. GlobalProtect Portal",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How does a Palo Alto Networks firewall choose the best route when it receives routes for the same destination from different routing protocols? A. The route that was received first will be entered into the forwarding table, and all subsequent routes will be rejected. B. It will attempt to load balance the traffic across all routes. C. It compares the administrative distance and chooses the one with the highest value. D. It compares the administrative distance and chooses the one with the lowest value.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A large enterprise wants to implement certificate-based authentication for both users and devices, using an on-premises Microsoft Active Directory Certificate Services (AD CS) hierarchy as the primary certificate authority (CA). The enterprise also requires Online Certificate Status Protocol (OCSP) checks to ensure efficient revocation status updates and reduce the overhead on its NGFWs. The environment includes multiple Active Directory forests, Panorama management for several geographically dispersed firewalls, GlobalProtect portals and gateways needing distinct certificate profiles for users and devices, and strict Security policies demanding frequent revocation checks with minimal latency. Which approach best addresses these requirements while maintaining consistent policy enforcement? A. Deploy self-signed certificates at each site to simplify local certificate validation and reduce dependencies on a centralized CTurn off certificate revocation checks for lower overhead, rely on IP-based rules for GlobalProtect authentication, and use a single certificate profile for both users and devices. B. Distribute the root and intermediate CA certificates via Panorama as shared objects to ensure all firewalls have a consistent trust chain. Configure OCSP responder profiles on each firewall to offload revocation checks to an internal OCSP server while keeping CRL checks as a fallback. Maintain separate certificate profiles for user and device authentication and use an automated enrollment method – such as Group Policy or SCEP – to deploy certificates to endpoints. C. Configure each firewall independently to trust the root and intermediate CA certificates. Rely only on manual CRL checks for certificate revocation, and import both user and device certificates directly into each firewall’s local certificate store for authentication. D. Obtain wildcard certificates from a public CA for both user and device authentication, and configure firewalls to perform CRL polling at the default update interval. Manually install user certificates on endpoints and synchronize firewall certificate stores through frequent manual SSH updates to maintain consistency.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization runs multiple Kubernetes clusters both on-premises and in public clouds (AWS, Azure, GCP). They want to deploy the Palo Alto Networks CN-Series NGFW to secure east-west traffic within each cluster, maintain consistent Security policies across all environments, and dynamically scale as containerized workloads spin up or down. They also plan to use a centralized Panorama instance for policy management and visibility. Which approach meets these requirements? A. Install standalone CN-Series instances in each cluster with local configuration only. Export daily policy configuration snapshots to Panorama for recordkeeping, but do not unify policy enforcement. B. Configure the CN-Series only in public cloud clusters, and rely on Kubernetes Network Policies for on-premises cluster security. Synchronize partial policy information into Panorama manually as needed. C. Use Kubernetes-native deployment tools (e.g., Helm) to deploy CN-Series in each cluster, ensuring local insertion into the service mesh or CNI. Manage all CN-Series firewalls centrally from Panorama, applying uniform Security policies across on-premises and cloud clusters. D. Deploy a single CN-Series firewall in the on-premises data center to process traffic for all clusters, connecting remote clusters via VPN or peering. Manage this single instance through Panorama.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When deploying Palo Alto Networks NGFWs in a cloud service provider (CSP) environment, which method ensures high availability (HA) across multiple availability zones? A. Deploying Ansible scripts for zone-specific scaling B. Implementing Terraform templates for redundancy within one availability zone C. Using load balancer and health probes D. Configuring active/active HA",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer at a managed services provider is updating an application that allows its customers to request firewall changes to also manage SD-WAN. The application will be able to make any approved changes directly to devices via API. What is a requirement for the application to create SD-WAN interfaces? A. REST API’s “sdwanInterfaceprofiles” parameter on a Panorama device B. REST API’s “sdwanInterfaces” parameter on a firewall device C. XML API’s “sdwanprofiles/interfaces” parameter on a Panorama device D. XML API’s “InterfaceProfiles/sdwan” parameter on a firewall device",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two actions in the IKE Gateways will allow implementation of post-quantum cryptography when building VPNs between multiple Palo Alto Networks NGFWs? (Choose two.) A. Select IKE v2, enable the Advanced Options  PQ PPK, then set a 64+ character string for the post-quantum pre shared key. B. Ensure Authentication is set to “certificate,” then import a post-quantum derived certificate. C. Select IKE v2 Preferred, enable the Advanced Options  PQ KEM, then add one or more “Rounds.” D. Select IKE v2, enable the Advanced Options  PQ KEM, then create an IKE Crypto Profile with Advanced Options adding one or more “Rounds.”",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An NGFW engineer is establishing bidirectional connectivity between the accounting virtual system (VSYS) and the marketing VSYS. The traffic needs to transition between zones without leaving the firewall (no external physical connections). The interfaces for each VSYS are assigned to separate virtual routers (VRs), and inter-VR static routes have been configured. An external zone has been created correctly for each VSYS. Security policies have been added to permit the desired traffic between each zone and its respective external zone. However, the desired traffic is still unable to successfully pass from one VSYS to the other in either direction. Which additional configuration task is required to resolve this issue? A. Create a transit VSYS and route all inter-VSYS traffic through it. B. Add each VSYS to the list of visible virtual systems of the other VSYS. C. Enable the “allow inter-VSYS traffic” option in both external zone configurations. D. Create Security policies to allow the traffic between the two external zones.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Without performing a context switch, which set of operations can be performed that will affect the operation of a connected firewall on the Panorama GUI? A. Restarting the local firewall, running a packet capture, accessing the firewall CLI B. Modification of local security rules, modification of a Layer 3 interface, modification of the firewall device hostname C. Modification of pre-security rules, modification of a virtual router, modification of an IKE Gateway Network Profile D. Modification of post NAT rules, creation of new views on the local firewall ACC tab, creation of local custom reports",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which set of options is available for detailed logs when building a custom report on a Palo Alto Networks NGFW? A. Traffic, User-ID, URL B. Traffic, threat, data filtering, User-ID C. GlobalProtect, traffic, application statistics D. Threat, GlobalProtect, application statistics, WildFire submissions",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator plans to upgrade a pair of active/passive firewalls to a new PAN-OS release. The environment is highly sensitive, and downtime must be minimized. What is the recommended upgrade process for minimal disruption in this high availability (HA) scenario? A. Suspend the active firewall to trigger a failover to the passive firewall. With traffic now running on the former passive unit, upgrade the suspended (now passive) firewall and confirm proper operation. Then fail traffic back and upgrade the remaining firewall. B. Shut down the currently active firewall and upgrade it offline, allowing the passive firewall to handle all traffic. Once the active firewall finishes upgrading, bring it back online and rejoin the HA cluster. Finally, upgrade the passive firewall while the newly upgraded unit remains active. C. Isolate both firewalls from the production environment and upgrade them in a separate, offline setup. Reconnect them only after validating the new software version, resuming HA functionality once both units are fully upgraded and tested. D. Push the new PAN-OS version simultaneously to both firewalls, having them upgrade and reboot in parallel. Rely on automated HA reconvergence to restore normal operations without manually failing over traffic.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements describe an external zone in the context of virtual systems (VSYS) on a Palo Alto Networks firewall? (Choose two.) A. It is associated with an interface within a VSYS of a firewall. B. It is a security object associated with a specific virtual router of a VSYS. C. It is not associated with an interface; it is associated with a VSYS itself. D. It is a security object associated with a specific VSYS.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which zone type allows traffic between zones in different virtual systems (VSYS), without the traffic leaving the firewall? A. Isolated B. Transient C. External D. Internal",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A multinational organization wants to use the Cloud Identity Engine (CIE) to aggregate identity data from multiple sources (on premises AD, Azure AD, Okta) while enforcing strict data isolation for different regional business units. Each region’s firewalls, managed via Panorama, must only receive the user and group information relevant to that region. The organization aims to minimize administrative overhead while meeting data sovereignty requirements. Which approach achieves this segmentation of identity data? A. Create one CIE tenant, aggregate all identity data into a single view, and redistribute the full dataset to all firewalls. Rely on per-firewall Security policies to restrict access to out-of-scope user and group information. B. Establish separate CIE tenants for each business unit, integrating each tenant with the relevant identity sources. Redistribute user and group data from each tenant only to the region’s firewalls, maintaining a strict one-to-one mapping of tenant to business unit. C. Disable redistribution of identity data entirely. Instead, configure each regional firewall to pull user and group details directly from its local identity providers (IdPs). D. Deploy a single CIE tenant that collects all identity data, then configure segments within the tenant to filter and redistribute only the relevant user/group sets to each regional firewall group.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An engineer is implementing a new rollout of SAML for administrator authentication across a company’s Palo Alto Networks NGFWs. User authentication on company firewalls is currently performed with RADIUS, which will remain available for six months, until it is decommissioned. The company wants both authentication types to be running in parallel during the transition to SAML. Which two actions meet the criteria? (Choose two.) A. Create a testing and rollback plan for the transition from Radius to SAML, as the two authentication profiles cannot be run in tandem. B. Create an authentication sequence that includes both the “RADIUS” Server Profile and “SAML Identity Provider” Server Profile to run the two services in tandem. C. Create and apply an authentication profile with the “SAML Identity Provider” Server Profile. D. Create and add the “SAML Identity Provider” Server Profile to the authentication profile for the “RADIUS” Server Profile.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An enterprise uses GlobalProtect with both user- and machine-based certificate authentication and requires pre-logon, OCSP checks, and minimal user disruption. They manage multiple firewalls via Panorama and deploy domain-issued machine certificates via Group Policy. Which approach ensures continuous, secure connectivity and consistent policy enforcement? A. Use a wildcard certificate from a public CA, disable all revocation checks to reduce latency, and manage certificate renewals manually on each firewall. B. Distribute root and intermediate CAs via Panorama template, use distinct certificate profiles for user versus machine certs, reference an internal OCSP responder, and automate certificate deployment with Group Policy. C. Configure a single certificate profile for both user and machine certificates. Rely solely on CRLs for revocation to minimize complexity. D. Deploy self-signed certificates on each firewall, allow IP-based authentication to override certificate checks, and use default GlobalProtect settings for user / machine identification.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement applies to Log Collector Groups? A. Log redundancy is available only if each Log Collector has the same amount of total disk storage. B. Enabling redundancy increases the log processing traffic in a Collector Group by 50%. C. In any single Collector Group, all the Log Collectors must run on the same Panorama model. D. The maximum number of Log Collectors in a Log Collector Group is 18 plus two hot spares.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which interface types should be used to configure link monitoring for a high availability (HA) deployment on a Palo Alto Networks NGFW? A. HA, Virtual Wire, and Layer 2 B. Tap, Virtual Wire, and Layer 3 C. Virtual Wire, Layer 2, and Layer 3 D. HA, Layer 2, and Layer 3",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which CLI command is used to configure the management interface as a DHCP client? A. set network dhcp interface management B. set network dhcp type management-interface C. set deviceconfig system type dhcp-client D. set deviceconfig management type dhcp-client",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which configuration step is required when implementing a new self-signed root certificate authority (CA) certificate for SSL decryption on a Palo Alto Networks firewall? A. Import the new subordinate CA certificate into the trust stores of all client devices. B. Set the subordinate CA certificate as the default routing certificate for all network traffic. C. Configure the subordinate CA to issue certificates with indefinite validity periods. D. Disable all existing SSL decryption rules until the new certificate is fully propagated.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the phases of the Palo Alto Networks AI Runtime Security: Network Intercept solution? A. Scanning, Isolation, Whitelisting, Logging B. Discovery, Deployment, Detection, Prevention C. Policy Generation, Discovery, Enforcement, Logging D. Profiling, Policy Generation, Enforcement, Reporting",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the purpose of assigning an Admin Role Profile to a user in a Palo Alto Networks NGFW? A. Allow access to all resources without restrictions. B. Enable multi-factor authentication (MFA) for administrator access. C. Define granular permissions for management tasks. D. Restrict access to sensitive report data.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization is deploying VM-Series firewalls in Microsoft Azure to secure its VNets. A key requirement is that the security infrastructure must be resilient to the failure of an entire Azure Availability Zone. What is the recommended method to achieve this goal? A. Deploy multiple, independent VM-Series firewalls in different Availability Zones and use an Azure Load Balancer to distribute traffic to them. B. Implement a Terraform configuration that automatically redeploys the firewall in a new zone if the original one fails. C. Use Azure Traffic Manager to direct traffic to a primary VM-Series firewall, with a second firewall in another zone as a failover target. D. Configure PAN-OS active/passive high availability (HA) between two VM-Series instances in separate Availability Zones using HA links over a VNet peering connection.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When creating a Log Forwarding profile on a PAN-OS firewall to direct logs to various external and internal systems, which set of methods is available? A. Syslog, Panorama, SD-WAN B. Panorama/Cloud logging, email, Syslog C. Email, Syslog, NetFlow D. HTTP, RADIUS, SNMP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company is enabling SSL Forward Proxy to inspect encrypted traffic. A security engineer generates a new certificate on the firewall and flags it with the \"Forward Trust\" certificate property. What is the critical next step that must be performed for decryption to function correctly without causing security warnings for end users? A. Set the forward trust certificate as the SSL/TLS Service profile for the management interface. B. Create a Security policy rule that allows traffic from the certificate of the firewall to all the zones. C. Import the private key of the forward trust certificate onto the domain controller. D. Install the public portion of the forward trust certificate into the trust store of all client machines.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator is configuring a site-to-site IPSec VPN and assigns an IP address to the tunnel interface. Which two abilities are enabled by this specific configuration step? (Choose two.) A. Configuring tunnel monitoring to verify the liveliness of the connection. B. Firewall performing NAT traversal. C. Running a dynamic routing protocol like OSPF over the tunnel. D. Firewall encrypting and decrypting packet payloads.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A DevOps team is building a repeatable process for deploying new Palo Alto Networks VM-Series firewalls. The entire infrastructure, including virtual networks, subnets, and the firewalls themselves, must be defined in code to ensure consistency and enable version control. Which tool is primarily used for this type of declarative Infrastructure as Code (IaC) provisioning? A. Terraform B. Azure DevOps C. Ansible D. Panorama",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A network security engineer is segmenting a single firewall into VSYS-A and VSYS-B. For traffic to flow from VSYS-A to VSYS-B, external zones are required. What are two fundamental properties of the external zones needed for this configuration? (Choose two.) A. They must be linked to the same virtual router as the ingress interface. B. They represent their parent VSYS without being tied to a physical or logical interface. C. They are a security construct belonging to a single VSYS. D. They are automatically created when inter-VSYS routing is enabled.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A network engineer observes a pattern of anomalous traffic hitting an external-facing zone, including a high volume of TCP packets that are not part of a new session handshake (non-SYN), and a large number of ICMP fragments. The engineer decides to apply a Zone Protection profile to mitigate these potential threats. Which protection type within the profile must be configured? A. Protocol Protection B. Flood Protection C. Reconnaissance Protection D. Packet-Based Attack Protection",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator is configuring a GlobalProtect pre-logon VPN. The administrator has already imported the necessary internal certificate authority (CA) certificates for issuing machine certificates onto the firewall. Which configuration is required on the GlobalProtect Gateway to enable pre-logon using these machine certificates? A. Create a device-based Security policy that allows traffic from the pre-logon user to an internal management zone. B. Create an authentication profile that points to the machine certificate's CA and assign it by using the client authentication settings of the GlobalProtect Portal. C. Create a certificate profile that trusts the machine certificate's CA and assign it within the Gateway Agent --> Client Authentication settings. D. Configure the Gateway Agent --> Tunnel Settings to use IPSec with machine certificate authentication for the pre- logon tunnel.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A network administrator needs to replace the default self-signed certificate on a firewall with one signed by the company's internal certificate authority (CA). Which two firewall features would require this new certificate to be assigned via an SSL/TLS service profile? (Choose two.) A. User-ID agent redistribution B. RADIUS server authentication C. Authentication portal D. GlobalProtect gateway",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A network administrator is establishing a site-to-site VPN between a Palo Alto Networks firewall and a partner's Check Point Security Gateway. The partner has provided a specific list of local and remote IP address subnets that are permitted through the tunnel. The initial tunnel configuration on the PAN-OS firewall fails during the IKE Phase 2 exchange. Which configuration step is essential to ensure compatibility with the policy-based Check Point gateway? A. Define the local and remote subnets provided by the partner in the Proxy ID settings. B. Create individual Security policies for each pair of local and remote subnets. C. Assign a specific IP address to the tunnel interface to match the Check Point gateway. D. Enable Dead Peer Detection (DPD) in the IKE Gateway configuration.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which method creates the most reliable user-to-IP mapping due to being based on a direct authentication from the user's device to the firewall? A. Portal authentication B. PAN-OS XML API to push mappings C. Polling security event logs with a User-ID agent D. Authentication logs from Syslog receiver",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator configures a GlobalProtect gateway with split tunneling for network traffic based on an access route. Users report that public web browsing works, but they cannot resolve the names of internal servers. The administrator determines that all DNS queries are being sent to the public DNS servers configured on the users' endpoints. Which GlobalProtect portal setting should be configured to resolve this issue? A. Split tunneling for DNS and specify the internal corporate domains in the \"Domain\" list B. DNS Proxy feature on the firewall to point clients to the gateway IP for DNS C. \"DNS Forwarding\" option on the gateway's tunnel interface D. NAT rule to allow DNS traffic from the GlobalProtect clients to the internal DNS servers",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which initial action is required to configure logical routers? A. Changing the virtual router type from \"default\" to \"advanced\" B. Activating an advanced routing subscription C. Committing a new advanced routing software module D. Checking \"advanced routing\" in general settings",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A network security engineer at a 24/7 online retailer is upgrading an active/passive high availability (HA) cluster of PAN-OS firewalls. The primary goal is to perform the upgrade with no service interruption to online transactions. The engineer has already downloaded the new software to both devices. Which sequence of actions will meet this requirement? A. From Panorama, create a scheduled software update job targeting both firewalls in the HA pair to run at the same time, then rely on the HA election process to manage the failover automatically. B. Upgrade the passive firewall first while it is still in the passive state. Once it reboots and is operational, suspend the active firewall to fail over to the newly upgraded device. Then, upgrade the remaining firewall. C. Force the active firewall into a suspended state to trigger a failover, then upgrade and reboot it. Suspend the currently active firewall to fail traffic back to the upgraded unit. Upgrade the remaining firewall. D. Disable HA synchronization on the active firewall, upgrade the passive firewall, and then re-enable synchronization. Once synchronized, repeat the process on the other firewall.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A government agency needs to ensure that all user web access is explicitly mediated and authenticated. The agency has the following requirements: • Client browsers must be manually configured to send traffic to the firewall's IP address and a specific port. • The firewall must support seamless single sign-on (SSO) with the users' existing Active Directory credentials. Which feature set should the engineer configure to meet the agency's requirements? A. Web proxy in explicit mode with an Authentication policy by using Kerberos B. Decryption policy that redirects users to a SAML identity provider for authentication C. Web proxy in transparent mode with an Authentication policy by using multi-factor authentication (MFA) D. User-ID agent integration with Authentication Portal for authentication",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A network security engineer is reviewing the dynamic update settings for a fleet of firewalls in a financial institution that has a policy prioritizing operational stability above all else. The engineer notes that the current content update threshold is set to 24 hours. Following the Palo Alto Networks recommended best practices for mission-critical deployments, which adjustment should be made to the threshold? A. Change to \"download only\" and schedule manual installation. B. Increase to 48 hours. C. Decrease to 12 hours. D. Reset to reconfirm 24 hours.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the correct sequence of evaluation for Security policy rulebases? A. Panorama Pre-Rules --> Local Firewall Rules --> Panorama Post-Rules B. Panorama Post-Rules --> Panorama Pre-Rules --> Local Firewall Rules C. Panorama Shared Rules --> Local Firewall Rules --> Device Group Rules D. Local Firewall Rules --> Panorama Pre-Rules --> Panorama Post-Rules",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator needs to ensure that a firewall can download threat prevention and software updates, but the management port is on an isolated network without internet access. Which service must be rerouted through a data plane interface using a service route to allow the firewall to download these updates? A. External dynamic lists B. GlobalProtect Clientless VPN C. Palo Alto Networks Services D. Syslog",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization is adopting an Infrastructure as Code (IaC) approach to manage its entire network environment, including its Palo Alto Networks firewalls. The organization has chosen Ansible as its primary tool for this initiative. How does Ansible enable an IaC model for managing this organization's firewalls? A. By providing real-time threat intelligence feeds directly to the firewalls' data plane B. By providing a graphical user interface that simplifies the creation of security policies through a drag-and-drop interface C. By automatically discovering and mapping all network devices to generate a baseline configuration D. By defining firewall configurations in playbooks that can be version-controlled and executed repeatedly",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A network security engineer wants to create Security policy rules that allow or deny traffic based on a user's department, which corresponds to groups in the company's Active Directory. To achieve this, the firewall needs to retrieve group information from the directory server. Which configuration object must be created first to establish the connection with the Active Directory server? A. LDAP server profile B. User-ID agent service account C. Authentication sequence D. Kerberos server profile",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When an engineer creates a new VSYS on a supported firewall platform, which resource can be explicitly limited in the VSYS configuration to control its capacity? A. Dedicated dataplane memory B. Maximum number of admin accounts C. Maximum number of log entries D. Maximum number of NAT rules",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A large organization has separate production and development environments, each with its own set of firewalls managed by Panorama. The organization uses Cloud Identity Engine (CIE) to consolidate user identities from Active Directory (AD) and Okta. A security mandate requires that development firewalls must only learn about \"DEV\" and \"QA\" user groups, while production firewalls should only see \"Prod\" user groups. How can an administrator enforce this separation using CIE with minimal complexity? A. Create two segments, one with only \"DEV\" and \"QA\" groups, and one with \"Prod\" groups Redistribute each segment to the corresponding group of firewalls. B. Redistribute all user and group information to all firewalls and use Panorama Device Group hierarchy to apply different Group Mapping profiles. C. Create filters using CLI commands to filter \"Prod,\" \"DEV,\" and \"QA\" groups. D. Configure two separate CIE instances, one for production and the other for development. Sync each instance to both AD and Okta.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator must perform several actions on a fleet of firewalls from a central Panorama instance. To maintain efficiency, the administrator wants to only perform actions that do not require switching context into each firewall's individual web interface. Which set of actions is available to the administrator directly from the Panorama UI? A. Creating a new VLAN Assigning an interface to the new VLAN Configuring a new DHCP server on the firewall B. Modifying a pre-rule Editing a shared service object Creating a new certificate profile C. Accessing the CLI Restarting the device Installing the latest content and software versions D. Configuring a new IPSec tunnel Modifying the IKE gateway Changing the DNS server settings of the firewall",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A network administrator is configuring an Aggregate Ethernet (AE) interface on an active/passive high availability (HA) pair. To reduce network downtime during a failover, the administrator wants the passive firewall's AE interface to be fully negotiated with the switch before it becomes active. Which Link Aggregation Control Protocol (LACP) setting achieves this administrator's goal? A. LACP Mode active B. Enable in HA passive state C. System Priority: 1 D. Transmission Rate: fast",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A firewall administrator needs to configure a new Palo Alto Networks firewall so that its management interface automatically obtains an IP address, netmask, and default gateway from the network. Which command should be executed in the CLI to accomplish this goal? A. set deviceconfig system interface mgt mode dhcp B. set network interface management dhcp enable C. set deviceconfig system type dhcp-client D. configure system management-interface ip dynamic",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When multiple routes have the same destination prefix, which attribute does the firewall use first to determine route preference? A. Administrative distance B. Route metric C. Next-hop availability D. Longest prefix match",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization must secure its AWS and Azure environments using a managed Palo Alto Networks solution, and all policies must be synchronized from an existing Panorama deployment. The organization wants to insert security with the least possible impact on its application teams and use existing hub-and-spoke network designs. • The AWS environment uses a centralized AWS Transit Gateway (TGW) architecture. • The Azure environment uses a Virtual WAN (vWAN) hub. Which two actions are the most appropriate in this use case? (Choose two.) A. Deploy Cloud NGFW endpoints in every application virtual private cloud (VPC), ignoring the TGW. B. Deploy Cloud NGFW into the vWAN hub as a trusted security partner, and update routing policies to secure traffic. C. Deploy individual VM-Series firewalls in each spoke virtual network (VNet) and manage them as a device group in Panorama. D. Deploy Cloud NGFW endpoints into a security virtual private cloud (VPC), and adjust the TGW route tables to inspect traffic flowing though the hub.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A network architect is planning the deployment of a new IPSec VPN tunnel to connect a local data center to a cloud environment. The plan must include all necessary Security policy configurations for both tunnel negotiation and data transit. Which two Security policy requirements must be included in the implementation plan? (Choose two.) A. A policy must explicitly permit the IPSec container application between the external-facing zone and local zone. B. A policy must explicitly permit only the IKE application between the external-facing zone and local zone. C. A pair of policies is required to control the flow of data traffic into and out of the security zone assigned to the tunnel interface. D. The default interzone-default security policy is sufficient to allow the tunnel negotiation traffic between the firewall and the remote peer.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A network security engineer needs to permit traffic between two distinct VSYS that reside on one Palo Alto Networks firewall. This traffic will not egress the firewall to an external device. Which zone type must be configured to act as the logical source and destination for this traffic flow? A. External B. TAP C. Layer 3 D. Layer 2",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the requirement for interface link speeds when configuring a virtual wire on a Palo Alto Networks firewall? A. They must be configured with auto-negotiate settings regardless of the port type. B. They must all be either copper or fiber optic, however they can be different. C. They must have the same link speed and transmission mode. D. They must be the same media type.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When configuring a physical interface on a Palo Alto Networks firewall, which IP-based service is only available if the interface is set to Layer 3 mode? A. DDNS client B. NetFlow export C. QoS D. Link monitoring",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A network engineer observes that after a primary link recovers, the firewall immediately switches traffic back from the backup static route to the primary static route. The engineer checks the path monitoring configuration for the primary route. Which value is configured for the preemptive hold time to cause this behavior? A. Lowest possible value greater than 0 B. 0 C. Default value D. Feature disabled",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is designing a public key infrastructure (PKI) integration for a large-scale deployment with thousands of users authenticating via client certificates. A key design goal is to ensure that certificate revocation status is checked efficiently with minimal impact on firewall performance and minimal delay for the connecting user. What is the primary advantage of using the Online Certificate Status Protocol (OCSP) instead of certificate revocation lists (CRLs) in this scenario? A. OCSP allows the firewall to act as its own certificate authority (CA), and it simplifies certificate management. B. OCSP provides real-time status for a certificate on demand, is more scalable, and uses less firewall memory. C. OCSP is an older, more widely supported protocol than CRLs. ensuring compatibility with all client devices. D. OCSP bundles all certificate statuses into a single, digitally signed file for faster downloads by the firewall.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two services are configured by applying an SSL/TLS service profile? (Choose two.) A. Global Protect portal B. Log forwarding to Strata Logging Service C. Forward-Trust certificate D. Syslog server monitoring",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A firewall administrator uses Panorama to manage a fleet of firewalls. After successfully onboarding the firewalls to Strata Logging Service and enabling cloud logging via a template, the security operations team reports that they can no longer see new logs on the on-premises Panorama log collectors. Logs are appearing correctly in Strata Logging Service. Which setting was likely missed in the Panorama template configuration? A. The device certificates for the Panorama log collectors were not renewed after enabling the cloud logging connection. B. Duplicate logging (cloud and on-premises) is disabled under Device --> Setup --> Management. C. The Log Forwarding profile was modified to send logs only to the Strata Logging Service and no longer includes the on-premises Panorama log collectors. D. The Panorama log collectors were not defined as primary destinations within the collector group configuration for the managed firewalls.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is a valid configurable limit for setting resource quotas when defining a new VSYS on a Palo Alto Networks firewall? A. Percentage of total CPU utilization B. Maximum number of SSL decryption rules C. Maximum number of virtual routers D. Disk space allocation for logs",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When considering the various methods for User-ID to learn user-to-IP address mappings, which source is considered the most accurate due to the mapping being explicitly created through an authentication event directly with the firewall? A. X-Forwarded-For (XFF) headers B. Server monitoring C. GlobalProtect D. Authentication Portal",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After a recent high availability (HA) failover test on an active/passive cluster, an engineer noted a 30-45 second delay before traffic started flowing through a Link Aggregation Control Protocol (LACP) aggregate interface on the newly active firewall. What should have been configured to support LACP pre-negotiation to minimize LACP convergence delay? A. Enable LACP fast failover. B. Set LACP mode to passive. C. Enable in HA passive state. D. Set HA link monitoring to aggressive.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer is creating an automation workflow. The first step is to deploy a new VM-Series firewall into a VMware vSphere environment, including its virtual machine (VM) configuration and network interfaces. The second step is to connect to the firewall and configure a complex set of Security policies and objects. The team uses both Terraform and Ansible. For which part of this workflow would Terraform typically be used? A. Pushing threat intelligence updates to the new firewall B. Deploying the VM and associated network interfaces C. Storing the credentials needed to access the vSphere environment D. Applying the detailed Security policies and objects",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization uses Cloud Identity Engine (CIE) to gather user information from its on-premises Active Directory (AD) for employees and a separate Azure AD for external partners. Due to compliance regulations, the firewalls protecting the internal network must not have any identity information about external partners. Conversely, firewalls in the partner-facing DMZ should only be aware of partner identities. Which CIE feature is designed to solve this data partitioning requirement? A. Panorama templates, which can be used to push different User-ID agent configurations to each firewall group B. Segments, which can be configured to create distinct, filter-based views of users and groups that are then redistributed only to the appropriate firewalls C. Multiple tenants, where a separate CIE tenant is required for each user directory to maintain isolation D. Directory sync filtering, which is used at the source to prevent specific OUs from being imported into CIE",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are two valid zone types that can be selected from the zone configuration menu, per Palo Alto Networks best practices? (Choose two.) A. Layer 3 B. Layer 2 C. Management D. DMZ",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An automation engineer is developing a Python script to standardize SD-WAN deployments across multiple customer tenants in Panorama. A key requirement is to programmatically create path quality profiles to monitor link performance based on latency, jitter, and packet loss. Which API call is required for this task? A. XML API command with an xpath of config/devices/entry/vsys/entry/path-quality-profiles on Panorama B. XML API command with an xpath of sdwan/path-quality-profiles on a managed firewall C. POST request to the SDWanPathQualityProfiles object endpoint via the REST API on Panorama D. POST request to the pathMonitoringProfiles object endpoint via the REST API on a managed firewall",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A security administrator is creating a new custom report to get a consolidated view of network events and needs to select a database to query for the report data. Which valid set of databases is available for the task? A. Threat, URL Filtering, WildFire Submissions, GlobalProtect B. Traffic, User-ID, Application Statistics, HIP Match C. Data Filtering, IP-Tag, User-ID, Endpoint Security D. System, Config, Authentication, Session Flow",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization's Security policy states that for all outbound web traffic, the TCP session to the external web server must be established by the firewall, not the user's workstation. This requires configuring user web browsers to point to the firewall. Authentication is also required. Which solution on a PA-Series firewall meets these specific needs? A. Transparent proxy B. Explicit proxy C. GlobalProtect with User-ID D. Decryption policy with Authentication Portal",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is troubleshooting a newly configured site-to-site VPN between a PAN-OS firewall and a third-party policy-based VPN gateway. The tunnel allows traffic between the first pair of configured subnets, but traffic to a newly added remote subnet is failing. The administrator has confirmed that routing and Security policies are correct. What is the most likely cause of this issue? A. A static route for the new subnet pointing to the tunnel interface is missing. B. The Security policy for the new subnet must be placed above the existing VPN policy. C. The new local and remote subnets are missing from the Proxy ID configuration. D. The tunnel's maximum transmission unit (MTU) size must be increased to accommodate the new traffic.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization needs a GlobalProtect solution that meets two key requirements: • IT administrators must be able to run scripts and push updates to endpoints before a user logs in. • Users must authenticate with their cloud identity provider, which is protected by multi-factor authentication (MFA). Which GlobalProtect authentication configuration should be used to meet both requirements? A. Cookie-based authentication for both pre-logon and user logon. B. SAML authentication for pre-logon and certificate-based authentication for user logon. C. Single authentication profile using Kerberos to handle both pre-logon and user logon. D. Certificate-based authentication for pre-logon and SAML authentication for user logon.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator enables SSL Forward Proxy decryption using a self-signed certificate on a Palo Alto Networks firewall as the forward trust certificate. Shortly after, users report receiving \"Your connection is not private\" browser errors for all external websites. What is the most likely cause of these widespread certificate errors? A. The decryption policy is configured with a \"no-decrypt\" action, which causes browsers to reject the connection. B. The external websites are using TLS 1.3, which cannot be decrypted by the firewall without a specific license. C. The firewall's forward untrust certificate has expired, preventing it from identifying untrusted sites. D. The firewall's self-signed CA certificate is not deployed to the trusted certificate store on client endpoints.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An engineer configures a PA-440 firewall to act as a switch by creating several Layer 2 interfaces and assigning them all to VLAN 20. A file server is connected to interface ethernet1/1, and client workstations are connected to interfaces ethernet1/2 and ethemet1/3. All devices are in VLAN 20. The clients are unable to access the file server. Which configuration step to allow this communication by default is missing? A. Create an Aggregate Ethernet (AE) group that includes all three interfaces. B. Place ethernet1/1, ethernet1/2, and ethernet1/3 into the same Layer 2 zone. C. Create an \"allow\" Security policy with the source and destination VLAN set to \"VLAN 20\". D. Create a Layer 3 subinterface for VLAN 20 to enable routing.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization is migrating its GlobalProtect user authentication from an existing LDAP directory to a new Kerberos server. To ensure a smooth transition, the network security team needs to allow users from both directories to authenticate for a period of 90 days. The firewall should first attempt authentication against the new Kerberos server and then fall back to the legacy LDAP server if the initial attempt fails. Which two configurations are required to implement this authentication fallback strategy? (Choose two.) A. Configure a new RADIUS proxy on the firewall to handle authentication requests for both Kerberos and LDAP. B. Implement a User-ID Group Mapping policy to link users between the LDAP and Kerberos directories. C. Configure an authentication sequence that lists the Kerberos authentication profile first, followed by the LDAP authentication profile. D. Configure a new authentication profile that references the Kerberos server profile.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A network administrator is hardening a new Palo Alto Networks firewall and wants to ensure that all firewall-generated management traffic, such as calls to Strata Logging Service, uses a dedicated in-band data port instead of the out-of-band management port. Which configuration setting should the administrator modify to reroute this type of traffic? A. Service route B. Interface Management profile C. Virtual router D. Static route",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Managed Security Service Provider (MSSP) is creating a new VSYS for a customer. To prevent this customer’s traffic from overwhelming the firewall’s state table, which resource limit should the MSSP configure for the new VSYS? A. Max security profiles B. Max bandwidth C. Max sessions D. Max Log Forwarding profiles",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two Palo Alto Networks firewall services are secured by attaching an SSL/TLS service profile to their configuration? (Choose two.) A. Authentication portal B. GlobalProtect portal C. LDAP server profiles D. Prisma Access service connections",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "To comply with new directives mandating the use of quantum-resistant cryptography for all data-in-transit a network engineer is tasked with reconfiguring existing IKEv2 VPN tunnels between PA-Series firewalls to meet this requirement. Which two actions should the engineer take to ensure compliance? (Choose two.) A. Configure an IKE Crypto profile with one or more post-quantum rounds selected and apply it to an IKE Gateway configured for the post-quantum key exchange mechanism. B. Establish a shared secret of at least 64 characters and configure it as a post-quantum pre-shared key (PPK) within an IKEv2-only IKE Gateway. C. Generate a post-quantum pre-shared key (PPK) and apply it within the IPSec tunnel configuration's advanced settings. D. Enable GlobalProtect with quantum-resistant tunneling and apply the profile to the IKE Gateway.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization is securing its cloud workloads using the Palo Alto Networks platform. The goal is to use a fully managed firewall service that integrates with Panorama for consistent policy management. The solution must be scalable and require minimal changes to the existing routing fabric. • The AWS cloud uses a distributed architecture where each application virtual private cloud (VPC) routes internet traffic through its own internet gateway. • The Azure cloud is built around a Virtual WAN (vWAN) hub for centralized connectivity. Which two deployments meet these criteria? (Choose two.) A. Native cloud provider firewalls in both cloud environments and connected to Panorama for management B. Cloud NGFW in each spoke VNet with User-Defined Routes (UDRs) to redirect traffic bypassing the vWAN hub C. Cloud NGFW endpoints in each application VPC, updating the VPC route tables to direct traffic through the endpoints D. Cloud NGFW as a security partner in the vWAN hub with routing configured to send traffic through the NGFW",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A holding company has recently acquired two new businesses, each with its own Okta identity provider. The holding company wants to use a single Cloud Identity Engine (CIE) instance to provide User-ID for all three organizations’ firewalls. However, for legal reasons, the firewalls of Company A must only receive identity data from Company A's Okta instance, and the firewalls of Company B must only receive data from Company B's Okta instance. Which configuration in CIE supports this requirement with highest operational efficiency? A. Configure a CIE tenant, connect Okta, and create segments. B. Configure the firewalls for each company to query their respective Okta IdPs directly, bypassing CIE for redistribution. C. Push all identity data to Panorama and use Panorama's group mapping include/exclude lists to control what each firewall learns. D. Create a master CIE tenant for the holding company and peer it with two subordinate tenants, one for each acquired business.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A network engineer has configured a PAN-OS firewall for client certificate authentication. The firewall has the corporate root CA certificate loaded. Client certificates are issued by an intermediate certificate authority (CA), which is signed by the root CA. However, when users attempt to connect, the authentication fails, and system logs indicate an \"invalid certificate\" error. What is the most likely cause of this authentication failure? A. Intermediate CA certificate has not been imported onto the firewall and added to the trust chain. B. Client certificates were generated with an insecure key length (e.g., 1024-bit RSA). C. Firewall clock is out of sync with the CA server by more than five minutes. D. Online Certificate Status Protocol (OCSP) responder is unreachable, and no certificate revocation list (CRL) fallback is configured.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator needs to perform several maintenance tasks on a managed firewall directly from the Panorama console without using the Context Switch feature. Which set of tasks can the administrator fully execute from the Panorama UI? A. Edit a post-rule. Create a new certificate profile. Configure the firewall's hostname. B. Download and install a new content update. View current firewall session details. Initiate a device reboot. C. Create a new zone. Configure a new virtual router. View the local ACC on the firewall. D. Modify the IP address of a Layer 3 interface. Configure a new local administrator account. Edit a pre-rule.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
