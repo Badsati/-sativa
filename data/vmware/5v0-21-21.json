@@ -1,0 +1,477 @@
+[
+  {
+    "question": "In a stretched vSAN cluster, how is Read Locality established after fail over to the secondary site? A. 100% of the reads comes from vSAN hosts on the local site B. 50% of the reads comes from vSAN hosts on the local site C. 100% of the reads comes from vSAN hosts on the remote site D. 50% of the reads comes from vSAN hosts on the remote site",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In a vSAN stretched cluster, which value must be set in the vSAN policy if there is no requirement for data mirroring across sites? A. SFTT = 0 B. SFTT = 1 C. PFTT = 1 D. PFTT = 0",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect needs to automate an infrastructure that supports VMware Horizon as well as VMware Tanzu. Which solution mandates the use of VMware vSAN? A. VMware Cloud Foundation B. VMware Horizon C. VMware Tanzu D. VMware vRealize Automation",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is setting up vSAN file services on a vSAN cluster. Which two security policies on the distributed port groups are automatically enabled in the process? (Choose two.) A. Forged Transmits B. Promiscuous Mode C. DVFiltering D. Jumbo Frames E. MacLearning",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has been tasked to reboot a node in an encrypted vSAN cluster. The vSAN disk groups on that node become locked after rebooting the node. Which step should be performed to exit the locked state? A. Manually replace the Host Encryption Key (HEK) of each affected host. B. Restore the communication with the KMS server, and re-establish the trust relationship. C. Replace the caching device in each affected disk group. D. Run /etc/init.d/vsanvpd restart to rescan the VASA providers.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer is planning to deploy a vSAN cluster to host their in-house distributed ERP system. The hardware specifications for their server nodes include: ✑ 2 x Intel Xeon CPU E5-2697 v3 @ 2.60GHz ✑ 1TB memory Which boot device is supported for the vSAN ESXi nodes for this customer? A. A 16GB single-level cell (SLC) SATADOM device must be used. B. A 4GB USB or SD device must be used. C. A 16GB multiple-level cell (MLC) SATADOM device must be used. D. ESXi Hosts must boot from a PMEM device.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company hosts a vSAN 7 stretched cluster for all development workloads. The original sizing of a maximum of 250 concurrent workloads in the vSAN cluster is no longer sufficient and needs to increase to at least 500 concurrent workloads within the next six months. To meet this demand, the original 8-node (4-4-1) cluster has recently been expanded to 16 nodes (8-8-1). Which three additional steps should the administrator take to support the current growth plans while minimizing the amount of resources required at the witness site? (Choose three.) A. Add the new vSAN witness appliance to vCenter Server. B. Deploy a new large vSAN witness appliance at the witness site. C. Configure the vSAN stretched cluster to use the new vSAN witness. D. Deploy a new extra large vSAN witness appliance at the witness site. E. Upgrade the vSAN stretched cluster to vSAN 7.0 U1. F. Configure the new vSAN witness as a shared witness appliance.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Upon investigating a workload performance issue, a vSAN administrator observed a high backend IOPs on a vSAN cluster. Which two causes explain this behavior? (Choose two.) A. The cluster DRS threshold has been set to Aggressive. B. There is a vSAN node failure. C. The vSAN Resync throttling is enabled. D. The object repair timer value has been increased. E. The vSAN policy protection level has changed from FTT=0 to FTT=1.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "An administrator wants to check the performance metrics for the workloads and their virtual disks that are running on a vSAN cluster, but no statistical charts are displayed in the vSphere client. Why is this behavior being seen? A. vSAN network diagnostic mode is not enabled. B. vSAN proactive tests havenג€™t been run yet. C. vSAN performance service is turned off. D. vSAN performance verbose mode is not enabled.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "During a maintenance action on a vSAN node, a vSAN administrator noticed that the default repair delay time is about to be reached. Which two commands must be run to extend the time? (Choose two.) A. /etc/init.d/vsanmgmtd restart B. esxcli system settings advanced set -o /VSAN/ClomRepairDelay -i 50 C. esxcli system settings advanced set -o /VSAN/ClomRepairDelay -i 80 D. /etc/init.d/clomd restart E. /etc/init.d/vsanobserver restart",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator wants to deploy a desktop and application virtualization solution on top of vSAN. Which VMware product should the administrator install? A. VMware Dynamic Environment Manager B. VMware Horizon Apps C. VMware Workspace One Access D. VMware Horizon",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator has been tasked with enabling encryption for existing virtual machines on a vSAN cluster. Which three prerequisites must be satisfied before completing the task? (Choose three.) A. Create an encryption storage policy B. Enable Data-In-Transit encryption first C. Enable that the virtual machines are powered on D. Verify if a role with privilege ג€Cryptographic operations.Encrypt newג€ is assigned E. Verify if a role with privilege ג€Cryptographic operations.Migrateג€ is assigned F. Establish a trusted connection with the KMS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Upon checking the latency goal under vSAN performance diagnostics, the vSAN Administrator sees this message displayed: The increase in latency in the vSAN stack might be beyond expected limits. Which two root causes can be identified to help remediate the issue? (Choose two.) A. vSAN VMKemel portgroup is configured with the ג€Route based on IP hashג€ teaming policy B. vSAN encryption is enabled C. Large packet losses and retransmissions on the network layer D. Incorrect sizing of the disk groups capacity disks E. One or more disk groups are congested",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is designing for a production vSAN cluster, and the customer introduced these requirements related to File Services: ✑ A minimum of 12 files shares. ✑ 30TB NFS capacity to mount workload VMs. What should be the architect's recommendations? A. Point out the risks regarding putting the hosts in maintenance mode in terms of FSVM. B. Confirm on all of the requirements and move forward with the physical design. C. Raise concerns regarding support when running VMs on an NFS share as risk. D. Highlight the required number of nodes required for the vSAN cluster as a constraint.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has received an alert indicating that a single capacity device is close to failing within the production vSAN Cluster. The administrator must now complete preemptive maintenance on the vSAN Cluster without impacting the availability of workloads or vSAN File Services. The following information is known about the vSAN Cluster: ✑ vSAN 7.x Cluster ✑ vSAN node count: 8 ✑ De-Duplication and Compression: Enabled. ✑ Encryption: Disabled Current Utilization: 45% [sampleXML/xmlfile-8_7.png] ✑ Disk Groups: 2 ✑ Devices per node: 2 x 400 GB SSD, 6 x 1.8 TB SSD Which three steps should the administrator take to successfully complete the task? (Choose three.) A. Remove the affected Disk Group from the vSAN Cluster, and choose Full Data Migration. B. Replace the failed disk with a storage device that is identical in class and capacity. C. Remove the affected Disk Group from the vSAN Cluster, and choose No Data Migration. D. Replace the failed disk with a storage device that is identical in class but smaller in capacity. E. Put the affected vSAN host into maintenance mode to physically replace the storage device. F. Remove the affected Disk from the Disk Group, and choose Full Data Migration.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A 30-minute power maintenance window has been approved on Sunday. Due to a delay, the maintenance took 20 minutes longer to finish. During this time, the vSAN administrator noticed that one of the clusters nodes was affected by a power shortage, as it was connected to an affected power source. The default vSAN storage policy has been applied. What will be the status of the vSAN objects on the affected host immediately after it is recovered? A. The cluster will be partitioned and the vSAN host will need to be rejoined. B. A rebuild of the affected objects will occur. C. All objects will remain accessible. D. All objects on the affected host will be lost.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Due to the success of the recently deployed developer-only private cloud solution, a company has a new requirement to at least double the usable capacity in their all-flash vSAN cluster. The vSAN cluster is deployed into a co-located datacenter that is owned by a third-party hosting company. The hosting company charges a fixed monthly cost for rack space and power consumption. The service owner has been given a limited budget for additional hardware purchases, but not for on-going co-location costs. The current vSAN cluster has the following configuration: ✑ 10 vSAN Nodes with 2 CPUs (20 cores), 512 GB RAM ✑ 1 Disk Group per vSAN node - 1 x 400 GB - 4 x 1.8 TB ✑ De-duplication and Compression is enabled. ✑ vSAN Capacity is currently: - Total: 72 TB - Usable: ~40 TB (FTT1/RAID1) and ~60 TB (FTT1/RAID5). As a result of any action taken, the service owner would like to ensure that overall availability of the vSAN cluster is increased. Which two recommendations meet the requirement to increase capacity while maintaining service availability? (Choose two.) A. Install an additional 400 GB SSD and 4 x 1.8 TB SSDs per vSAN node. B. Update the existing Disk Group, and claim the newly installed drives for each node. C. Create a new Disk Group, and claim the newly installed cache and capacity SSD drives for each node. D. Install an additional 3 x 1.8 TB SSDs per vSAN node. E. Replace existing SSDs with an 800 GB SSD and 4 x 3.8 TB SSDs per vSAN node.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "After a vSAN Witness Appliance network configuration, the vSAN administrator notices that vSAN traffic flows from vmk0 (Management Traffic) rather than vmk1 (vSAN Traffic). Which step should be taken to resolve this issue? A. Configure vmk0 with IP address on the same range as that of vmk1. B. Tag the vmk0 for vSAN traffic. C. Configure vmk1 with IP address on the different network than that of vmk0. D. Tag the vmk1 for Witness traffic.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer has upgraded to vSAN 7, but there is still an existing legacy host which must be removed from the vSAN cluster. Which three steps must an administrator take to successfully remove this host from the vSAN cluster? (Choose three.) A. Place the host in maintenance mode with Ensure Accessibility B. Disconnect from vCenter Server C. Place the host in maintenance mode with Full Data migration D. Place the host in maintenance mode with no data migration E. Remove from vSAN cluster F. Delete the disk group(s) on the legacy host",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "During a vSAN design workshop, an architect collected these customer requirements: ✑ Leverage vSAN storage policies with Erasure Coding. ✑ Enable Deduplication and Compression. ✑ Use the minimum number of hosts in the cluster. ✑ Maintain full storage policy compliance when two nodes are down. Which vSAN cluster design meets the customer's requirements? A. Five nodes All-Flash vSAN cluster B. Six nodes All-Flash vSAN cluster C. Six nodes Hybrid vSAN cluster D. Five nodes Hybrid vSAN cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is tasked with setting up Kerberos authentication only for the vSAN File services. Which version of Kerberos must be selected if the NFS version is v4.1? A. krb5i B. krb4 C. krb5 D. krb5p",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator wants to enable encryption on an existing vSAN cluster that already contains virtual machines. Which additional step should the administrator take to ensure no data is lost during the encryption process? A. Select ג€˜Erase disks before useג€™ check box when enabling encryption on a vSAN cluster. B. Make vCenter Server trust the KMS, either by trusting the KMS or by uploading a KMS certificate. C. Ensure that the vSAN Encryption is enabled by default on the existing cluster to encrypt old and new data. D. Disable vSphere Distributed Resources Schedule (DRS) on the vSAN cluster.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization has two vSAN clusters managed by the same vCenter Server, each providing 100TB of storage. The first cluster runs at 75% of its storage capacity, and the second cluster runs at 50% of its storage capacity. The company also has the following: ✑ An iSCSI array of 300TB. which runs at 76% of its capacity ✑ A NAS system of 200TB, which runs at 10% of its capacity ✑ A Fiber channel (FC) array of 300TB, which runs at 80% of its capacity The administrator is asked to add an additional 25TB of storage to the first cluster. The administrator is also made aware that there is no budget to purchase new hardware and that the vSAN Storage Policy Based Management must be kept in place. Which storage option will work for this use case? A. Create an HCI Mesh using the first clusterג€™s datastore. B. Obtain additional free capacity from the existing NAS storage. C. Obtain additional free capacity from the existing FC storage. D. Create an HCI Mesh using the second clusterג€™s datastore.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement accurately describes the result when proper VM Storage Policy Affinity Rules on a stretched vSAN cluster are set? A. When a site is disconnected, the VM will lose access to its VMDK. B. When a site is disconnected, the VM will continue to have access to its VMDK. C. Bandwidth is unnecessarily sent across the inter-site link. D. Proper policies result in higher inter-site bandwidth utilization.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A cache disk failure marked a vSAN disk group as failed, and the data is being rebuilt on other disk groups. Which action should the vSAN administrator take to reduce the negative impact on the VMs? A. Enabling Resync Throttling B. Enabling Maintenance mode with no data evacuation C. Enabling automatic rebalance D. Setting the vSAN policyג€™s IOPS limit for object value to 0 (unlimited)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is tasked to design a VMware Horizon Solution with vSAN. The architect needs to use a solution to host the user's profile shares in a highly available manner, and it must be guest OS independent. Which solution will match these requirements? A. Cluster out of the box B. Cluster in a box C. NFS on vSAN D. iSCSI on vSAN",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "During a design workshop for a stretched vSAN cluster, the requirement that some of the VMs be configured with no-mirror between sites was discussed. Which three recommendations should the architect provide to address an event of a network partition between two sites? (Choose three.) A. Host isolation response must exclude the VMs required B. The default gateway must be used as the only isolation address C. One of isolation addresses should reside in the site 1 data center D. VMware vSphere DRS rules to force the VMs to run where the data resides E. One isolation address reachable only from the witness appliance in both sites F. One of isolation addresses should reside in the site 2 data center",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An 8-Node vSAN Stretched Cluster (4+4+1) with a single disk group has a policy with PFTT=1 (mirrored across sites) and SFTT=1/FTM Mirroring (Local Protection) configured. The administrator has been alerted that there is a problem with the cluster. The following has been observed: ✑ The vSAN Witness Host is offline. ✑ Two disk failures on two hosts have occurred in the preferred site. This has resulted in a critical production virtual machine's vmdk becoming inaccessible. Which step needs to be performed by the administrator to resolve the issue? A. Replace all failed disks on the preferred site. B. Replace the vSAN Witness Host C. Replace access to the existing vSAN Witness Host D. Replace only one failed disk on the preferred site.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is tasked to create a custom storage policy for workloads and is including additional disk stripes while defining the storage policy. What is the main purpose of this practice? A. To increase available storage space B. To set a failure tolerance C. To improve performance D. To reconstruct corrupted data",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect collected the below technical requirements from the customer during a vSAN cluster design workshop: ✑ Maximize the vSAN datastore usable capacity. ✑ Deduplication and compression are required to help utilize available capacity efficiency. ✑ Ensure the highest level of resiliency wherever possible. Which disk group configuration should the architect include in the design? A. One disk group per host, with one cache tier flash disk and four capacity tier flash disks. B. Two disk groups per host, each with one cache tier flash disk and four capacity tier flash disks. C. Two disk groups per host, each with one cache tier flash disk and six capacity tier flash disks. D. Two disk groups per host, each with one cache tier flash disk and six capacity tier magnetic disks.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is working with an All-Flash vSAN configuration and will be using the Flash Caching Devices in vSAN. Which requirement is specifically needed for these devices? A. Write endurance B. IOPS C. Read endurance D. Capacity",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is tasked with migrating a VMware Horizon View environment that is currently running on an NFS Datastore to VMware vSAN. Which Horizon configuration option will not be available when configuring vSAN in Horizon View? A. Instant Clones B. Linked Clones C. Storage Tiers D. Storage Profiles",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator managing a vSAN cluster of six-nodes with policy FTT-2/RAID-6 decided to put one of the nodes in maintenance mode using the `Full-data migration` option. What will happen after this action is taken? A. The host will enter in maintenance mode and the data will remain accessible until the host exits maintenance mode. B. The system will prompt to add an additional host to the cluster in order to preserve the policy compliance. C. The host will enter in maintenance mode and only data with no redundancy will remain accessible. D. The host will enter into maintenance mode if both components of a certain object are residing on that host, then one of the components will be moved to another available host.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A 4-node vSAN cluster is configured with an erasure coding storage policy. The Ensure Accessibility maintenance mode was selected. While performing the maintenance, a second node fails. What will be the impact on the vSAN cluster? A. There will be no impact on performance. B. The VMs will no longer be accessible. C. The performance will be degraded. D. The VMs will be in a suspended state.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is working with vSAN and setting the fault domains to support FTT=1. How many fault domains will be needed? A. 2 B. 3 C. 4 D. 1",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has an absent capacity disk. Which action, if any, should the administrator take to resolve the problem? A. Wait, and vSAN will rebuild it. B. Replace the faulty disk. C. Replace the faulty host. D. Verify the host is not isolated.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is planning to migrate their physical Microsoft SQL Server clustered workloads to vSAN enabled vSphere clusters. The following requirements must be met: ✑ Each MSSQL cluster is made up of 3 nodes ✑ Highest possible availability against node failures ✑ Some of the vSAN clusters will only consume storage What should the architect recommend? A. vSAN iSCSI Target Service B. Stretched vSAN Cluster C. vSAN Direct D. vSAN File Services",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company has engaged a consultant to upgrade an existing vSAN cluster to vSAN 7.0 U1. During the discovery phase, the consultant found the following information about the existing environment: ✑ The VMware vCenter Server has recently been upgraded from VMware vSphere 6.7 U3 to version 7.0 U1. ✑ The vSAN Cluster was recently expanded with identical hardware specification, but from a different hardware vendor. The hardware for each vSAN node is listed on the vSAN Compatibility Guide (VCG) for vSAN 7. [sampleXML/xmlfile-20_6.png] ✑ The vSAN Cluster has the following configuration: - vSAN version: 6.6.1 - Number of vSAN nodes: 10 - Encryption: enabled - Deduplication and Compression: enabled - vSAN Capacity Utilization: 60% ✑ Each vSAN node has the following configuration: - VMware vSphere ESXi version: 6.5 Update 3 - CPU: 2 processors, 20 cores - RAM: 768GB RAM. - Disk: 2 Cache SSDs and 6 Capacity SSDs - Network: 4 x 10GbE Which three recommendations should the consultant make to ensure all data remains protected in the event of a vSAN failure? (Choose three.) A. The Full data migration maintenance mode option must be chosen to protect the data during the upgrade. B. The Ensure accessibility, migration maintenance mode option must be chosen to protect the data during the upgrade. C. The upgrade process should be completed using host upgrade baselines in VMware vSphere Lifecycle Manager (vLCM). D. The vSAN nodes should be upgraded to vSphere ESXi 7.0 U1. E. The upgrade process should be completed using images in VMware vSphere Lifecycle Manager (vLCM). F. The vSAN nodes should be upgraded to vSphere ESXi 6.7 U3.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During a planning session for new vSAN clusters in multiple data centers, the customer relayed the following information: ✑ Highest possible mitigation during a host failure in terms of capacity. ✑ A constraint in this year's IT budget. What should the architect recommend? A. Enable operations reserve. A minimum cluster of 3 vSAN nodes. B. Enable host build reserve. A minimum cluster of 4 vSAN nodes. C. Enable performance services. A minimum cluster of 6 vSAN nodes. D. Enable IOInsight Metrics. A minimum cluster of 2 vSAN ROBO nodes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company has engaged a consultant to upgrade an existing vSAN cluster to vSAN 7.0 U1. The company wants to ensure that the same vSAN process can be used in the future. During the discovery phase, the consultant found the following information about the existing environment: ✑ The vCenter Server is currently version 7.0. ✑ The vSAN Cluster has the following configuration: - vSAN version: 7.0 - Number of vSAN nodes: 6 - Encryption: enabled - Deduplication and Compression: enabled - Fault Domains: 1 - vSAN Capacity Utilization: 60% ✑ Each vSAN node has the following configuration: - ESXi version: VMware vSphere 7.0 - CPU: 2 processors, 20 cores - RAM: 1024GB RAM. - Disk: 2 Cache SSDs and 6 Capacity SSDs - Network: 4 x 10GbE ✑ All current hardware (which is from a single vendor) is listed on the vSAN Compatibility Guide for vSAN 7. Which three recommendations should the consultant make to ensure that the vSAN cluster upgrade is completed? (Choose three.) A. Upgrade all vSAN nodes to VMware vSphere 7.0 U1 using the baselines capability within VMware Update Manager (VUM). B. Disable vSAN Encryption before starting the upgrade process. C. Upgrade all vSAN nodes to VMware vSphere 7.0 U1 using the images capability within VMware Update Manager (VUM). D. Set VMware Distributed Resource Scheduling (DRS) to partially automated. E. Upgrade to VMware vCenter Server 7.0 U1. F. Choose the Allow reduced redundancy option.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator of `vsan-prod` cluster noticed the witness components of VMs are flagged as absent after a failed attempt to replace the vSAN Witness Host. Which action should the administrator take to resolve this issue? A. Upgrading the vSAN on-disk format B. Running the vSAN Skyline Health check to ensure there are vSAN Object Health errors and executing the Repair Object Immediately option C. Using the RVC command: vsan.resync_dashboard ~/computers/vsan-prod D. Placing the vSAN Witness Host in Maintenance Mode and adding to the vSAN cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is designing a vSAN cluster. Which storage controller option will yield optimal performance? A. Hugh queue depth B. Set caching to 50% read on the controller C. Enable battery write-back caching D. RAID 0",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is planning to deploy cloud-native workloads onto the vSAN Direct datastore. Which storage policy structure rule is supported? A. Host-based rules B. vVOL storage rules C. Tag-based placement rules D. Storage performance-based rules",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is planning to change a vSAN Storage Policy to apply a Failures To Tolerate (FTT) of 2, using RAID-6. What is the minimum number of vSAN nodes required? A. 6 B. 4 C. 5 D. 8",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is planning to deploy workloads on a six node vSAN cluster, and all nodes are distributed equally across three racks. Which action is required to ensure that the workload VMs remain compliant with the default vSAN policy after a complete rack failure? A. Add an additional rack with two hosts, and configure vSAN with four fault domains and FTT=1 (erasure coding). B. Add two additional hosts per rack, and configure vSAN with three fault domains and FTT=1. C. Add an additional host per rack, and configure vSAN with three fault domains and FTT=2. D. Add an additional rack with two hosts, and configure vSAN with four fault domains and FTT=1 (mirroring).",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company has deployed a 12-node (6-6-1) vSAN 7.0 stretched cluster for all production workloads. The customer currently uses four different vSAN storage policies for running the workloads depending on the applications requirements: ✑ Policy 1 - Site Disaster Tolerance=Dual Site Mirroring, FTT=Erasure Coding ✑ Policy 2 - Site Disaster Tolerance=Dual Site Mirroring, FTT=Mirroring ✑ Policy 3 - Site Disaster Tolerance=None - Keep Data on Preferred, FTT=Mirroring ✑ Policy 4 - Site Disaster Tolerance=None - Keep Data on Non-Preferred, FTT=Mirroring During the setup of the vSAN stretched cluster, the following VM/Host Rules were created: ✑ Preferred Site - Preferred Site workloads should run on DC1 hosts. ✑ Secondary Site - Secondary Site workloads should run on DC2 hosts. Which two activities should the administrator complete to ensure that there is no impact to production services during the maintenance window in the Preferred Site? (Choose two.) A. Change the Site Disaster Tolerance setting in Policy 3 to be ג€Dual Site Mirroringג€. B. Update vSphere DRS site affinity rules so that Preferred Site workloads should not run on hosts in DC1. C. Change the Site Disaster Tolerance setting in Policy 4 to be ג€None - Keep Data on Preferredג€. D. Change the FTT setting in Policy 3 to be ג€Erasure Codingג€. E. Update vSphere DRS site affinity rules so that Preferred Site workloads must run on hosts in DC2.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator wants to deploy Kubernetes on an end-to-end VMware stack, using VMware vSAN for storage. Which VMware product should the administrator install as the Kubernetes platform choice? A. VMware Tanzu Kubernetes Grid B. VMware Tanzu Data services C. VMware Tanzu Build service D. VMware Tanzu Mission Control",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is tasked with preparing for a Cross vCenter migration in a stretched vSAN cluster where the virtual machines migration will be orchestrated via VMware Site Recovery Manager. Which action should the administrator take so the migration is successful? A. Disable vSAN Deduplication and Compression B. Reconfigure vCenter HA Admission control C. Enable vCenter Single Sign-On Enhanced Linked Mode D. Make sure that Witness traffic is on the management NIC.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is designing a new Hybrid five node vSAN cluster for a customer who is planning to use vRealize Automation to provision 600 virtual machines into that cluster, with expected growth up to 1,000 VM. Each VM has a 40GB thick-provisioned disk. Which flash disk size is required for the cache tier per ESXi node to meet all requirements? A. 400GB B. 700GB C. 600GB D. 800GB",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is tasked with sharing storage from one vSAN cluster to another vSAN cluster. SPBM management must be preserved end-to-end, and the policy must be applied by the source vSAN cluster which is storing the data. Both vSAN clusters are managed by the same vCenter server. What should the administrator configure? A. NFS volumes on vSAN B. iSCSI targets on vSAN C. HCI Mesh on vSAN D. vVOLs on vSAN",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "During a vSAN design workshop, a customer expressed a requirement to decommission an existing enterprise NAS device that provides iSCSI services for a clustered application. Based on the current state analysis, the following information was noted: • Current utilization is 500 LUNs. • All clustered workloads are configured for Multiple Connections per Session. • LUN sizes range between 10 TB to 30 TB. What should the architect state regarding the requirements? A. All requirements can be satisfied without any change. B. Only single connection per session is supported. C. The number of LUNs require additional licensing. D. It is a best practice to maintain a LUN size of 8 TB.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three steps are required to decommission a stretched cluster and convert it to a standard vSAN cluster? (Choose three.) A. Reinstall the ESXi hosts B. Remove the Fault Domain configuration C. Remove the vSAN partition schema on the disk groups D. Delete the witness host VM E. Repair the cluster objects F. Disable and remove the stretched cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A vSAN administrator noticed that in the case of a preferred site failure in a vSAN stretched cluster, VMs having different restart priorities assigned to them are starting up automatically at almost the same time in the secondary site. Which two steps should be performed to ensure that the VMware vSphere HA will proceed with the next VM restart priority only when the previous VM group has loaded the operating system? (Choose two.) A. Change \"DRS automation level\" to \"Partially automated\". B. Install VMware Tools on all VMs, if not yet installed. C. Change the \"VM dependency restart condition\" to \"Guest Heartbeats\". D. Change \"VM restart priority condition timeout\" to 4 minutes. E. Change the \"VM dependency restart condition\" to \"Resource allocation\".",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect intends to use the Primary Level of Failures To Tolerate (PFTT) to calculate the minimum number of required hosts for a vSAN cluster. Which calculation model should be used? A. 1 * PFTT + 1 B. 2 * PFTT + 2 C. 1 * PFTT + 2 D. 2 * PFTT + 1",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is designing a vSAN cluster where the hosts have more than 512 GB of memory. Which two boot devices are recommended for these hosts? (Choose two.) A. USB B. PMEM C. SD D. Disk Device E. SATADOM",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During a vSAN design workshop, the infrastructure team highlighted the need to ensure the availability and resiliency of the vSAN network for their production clusters. Each ESXi host is connected to the TOR switches with two 1 GB physical adapters. The physical network fabric is using a spine-leaf architecture. These subnets are available for the ESXi hosts: • Subnet A: 192.168.10.0/24 • Subnet B: 192.168.20.0/24 Which three strategies can the architect suggest to satisfy these customer requirements? (Choose three.) A. Configure MTU 9K jumbo frame on the hosts and leaf switches. B. Configure NIC teaming. C. Replace the server NICs with 10 GB ones. D. Add one vSAN VMKernel port to subnet B. E. Add one vSAN VMKernel port to subnet A. F. Add two vSAN VMKernel ports to subnet A.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect is tasked with implementing a solution that allows the creation of an active-active datacenter that leverages a vSAN Stretched Cluster. The requirement is to automate deployment with the least administrative efforts. Which product meets this requirement? A. VMware VVD B. vRealize Automation C. VMware Cloud Foundation D. vRealize Orchestrator",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Administrator deployed VMs with vSAN Stretched Cluster aware storage policy. Which percentage of read locality will be maintained? A. 25% B. 50% C. 100% D. 75%",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is tasked to utilize vSAN Direct for the deployment of Kubernetes workloads and needs to make the vSAN Datastores visible as a compatible storage. Which setting should be enabled to make this possible? A. Tag based placement rules B. Deduplication and Compression C. Kubernetes service in the vSAN configuration D. Resource pools on the vSAN cluster",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A vSAN cluster recently experienced a network partition due to a major network outage. The system administrator noticed that: • The virtual machines running on the vSAN cluster remained powered on all hosts. • When the network was restored, some VMs were duplicated between the different ESXi hosts. What should the administrator check to prevent this from happening again? A. vSphere HA Admission Control B. vSphere DRS Advanced Parameters C. Proactive HA Failures and Responses D. vSphere HA Advanced Parameters",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect has been tasked to deliver a higher availability of the current deployed VMware vSAN Stretched Cluster infrastructure. The new design should incorporate three different sites that can run workloads in case of a failure. Which product should the architect add to the design to meet these requirements? A. VMware Site Recovery Manager B. VMware vSphere Replication C. VMware Tanzu D. VMware Horizon",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator has noticed that a number of the virtual machines in the preferred site are showing as either failed or partitioned. In which two ways would the administrator expect the virtual machines to respond? (Choose two.) A. They will be disconnected. B. They will be restarted in the secondary site. C. They will be restarted at the preferred site. D. They will be powered off. E. They will be removed from inventory.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is tasked with setting up HCI mesh between the following two vSAN clusters: • Cluster 1 uses FTT=1 via mirroring • Cluster 2 uses FTT=1 via Erasure Coding The administrator configures Cluster 2 as the cluster that is contributing storage to HCI mesh. Which FTT applies to objects created on Cluster 1 when using the HCI Mesh shared storage? A. HCI mesh always uses FTT = 1. B. HCI Mesh always uses the default vSAN policy from the target site. C. HCI Mesh always uses the source vSAN cluster to set its policy. D. HCI mesh always uses FTT = 0.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Due to an update in their security requirements, an organization is no longer compliant because the metadata traffic between hosts in their vSAN cluster is not being encrypted. Which step must be taken by the administrator to meet the new security requirements? A. Enable vMotion encryption on the vSAN cluster. B. Enable virtual machine encryption on the vSAN cluster. C. Enable Data-At-Rest Encryption on the vSAN cluster. D. Enable Data-In-Transit Encryption on the vSAN cluster.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A vSAN administrator notices that all the applications on a vSAN cluster are suffering from performance degradation. The main applications on this cluster are very random write-intensive and generate a lot of i/o. De-staging seems to be going awfully slow. Given the following information: • Each host has a single disk group. • Each disk group has 7 capacity disks. • The size of each cache disk is 600 GB. How should the administrator solve this problem? A. Add additional disk groups B. Add more capacity disks C. Add more cache disks D. Increase the size of cache disks",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization has two vSAN clusters managed by the same vCenter server, each providing 100 TB of storage. The first cluster runs at 75% of its storage capacity, and the second cluster runs at 40% of its storage capacity. The company also has the following: • an iSCSI array of 300 TB, which runs at 76% of its capacity • a NAS system of 200 TB, which runs at 10% of its capacity • a Fiber channel (FC) array of 300 TB, which runs at 80% of its capacity The administrator is asked to add an additional 25 TB of storage to the first cluster but is also made aware that there is no budget to purchase new hardware and that the vSAN Storage Policy Based Management must be kept in place. Which storage option will work for this use case? A. Use the iSCSI array to obtain additional free capacity. B. Use the NAS to obtain additional free capacity. C. Use an HCI Mesh to obtain additional capacity. D. Use the FC array to obtain additional free capacity.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A capacity upgrade to a production vSAN 7.0 U1 cluster will provide an administrator with a number of SSD storage devices that can be reused in the development vSAN Cluster. The company security policy mandates the following: • All data must be encrypted-at-rest. • All data on all drives must be securely erased before being removed and reused. Which two steps should the administrator take to ensure that all data on the storage devices is securely erased? (Choose two.) A. When putting the node in maintenance mode, choose the Ensure data accessibility option. B. Run the Start-VsanWipeDisk PowerCLI command. C. Turn off vSAN Encryption on the vSAN Cluster. D. When putting the nodes in maintenance mode, choose the Evacuate all data option. E. When putting the node in maintenance mode, choose the No data evacuation option.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A faulty disk was not cleanly removed from the vSAN cluster when being replaced. Which action should be taken to resolve the problem and restore the vSAN cluster to a healthy state? A. Delete and recreate the disk group. B. Reboot the host to clear the lock. C. Rescan the SCSI adapter to clear the lock. D. Ignore the errors, and add the new disk into the disk group.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is discussing the \"No Data Migration\" vSAN maintenance mode. In which situation should the administrator recommend this mode? A. When the VMs are protected by vSphere Fault Tolerance B. When the vSAN host requiring maintenance is a compute node only C. When the cluster has three fault domains configured D. When objects are configured with FTT=0",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator notes that the Data-At-Rest Encryption keys have expired. Which action is needed to resolve this situation? A. Add a new Standard Key Provider at the vSAN cluster level B. Generate new encryptions keys at the vSAN cluster level C. Add an additional KMS at the vCenter server level D. Generate new encryptions keys at the vCenter server level",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has changed the Virtual Machine Storage Policy from RAID-5 to RAID-6. How many failures can be tolerated when this change is made? A. 3 B. 4 C. 2 D. 5",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is troubleshooting vSAN performance issues, and the performance diagnostics reports: \"There are errors seen in one or more physical NICs on one or more hosts.\" Which two problems must be resolved to fix this issue? (Choose two.) A. A 25 Gb/s NIC needs to be installed. B. There are incompatible firmware and driver versions. C. There is an incorrectly set MTU. D. The vSAN version needs to be upgraded to 7.0. E. A firewall is blocking ports.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During a vSAN design workshop, the customer has provided the following information: • There are many development activities that require burst compute and that there is an in-tention to use the existing ESXi hosts. • The existing ESXi hosts are not vSAN ready nodes, so they will not be participating in vSAN capacity. Which three recommendations should the architect make? (Choose three.) A. Compute-only hosts can have a vSAN VMkernel with same pNIC speed. B. It is recommended to add hosts with at least a disk controller for cluster expansion. C. Compute-only hosts can consume from vSAN even if not within the same cluster. D. Adding identical vSAN nodes for cluster expansion will support an efficient operation. E. Compute-only hosts must exist in the same vSAN cluster. F. Compute-only hosts must have a vSAN VMkernel with same pNIC speed.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During a vSAN design workshop, the customer expressed the following requirements: • The ESXi hosts will have their disk related hardware changed to become vSAN nodes. • The default storage policy will be based on an FTT=2 (Failures to Tolerate). • The vSAN Primary level of failures to tolerate (PFTT) will be set to a value of 2. Based on the request, the architect was shown the following information about the current cluster: • The number of existing ESXi hosts is 8. • vSphere High Availability (HA) Admission control set to 37.5%. How does this information impact the vSAN cluster design? A. Secondary level of failures to tolerate must be defined with a value of 2. B. The current configuration is recommended for the vSAN transformation. C. The vSphere HA Admission Control must be set to a maximum of 25%. D. Proactive HA should be enabled on the vSAN cluster.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A vSAN policy has been configured with Erasure Coding on a vSAN stretched cluster. Which RAID level and FTT setting have been specified? A. SFTT with RAID1 B. PFTT with RAID1 C. PFTT with RAID5/6 D. SFTT with RAID5/6",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "During a vSAN design workshop, an architect collected the following customer requirements: • Reduce the impact of a disk failure on a vSAN capacity node. • Reduce the need for a rebuild upon a disk failure. • Achieve the best performance for application workloads. • Leverage the amount of available vSAN space efficiently. The customer has already purchased all hardware and therefore the vSAN 7.0 U1 cluster is constrained to one Disk Group per node. Which vSAN cluster option should the architect enable to meet these requirements? A. Deduplication and Compression B. Compression only C. Data-at-rest encryption D. Deduplication only",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "As a part of a network hardware refresh project, all the network switches have been replaced with a newer, high-performance model. After the replacement, the company users started experiencing slowness on the applications hosted on their vSAN-backed VMs. The vSAN administrator checked the vSAN Network Health status and noticed that the \"Hosts large ping test\" has failed. What could be the cause of this performance degradation issue? A. MTU 9K is not configured on the hosts vSAN vMKernel ports. B. MTU 9K is not configured on the hosts VMnic ports. C. MTU 9K is not configured on the ToR switch. D. MTU 9K is not configured on the vDS switch.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company has deployed a 12-node (6-6-1) vSAN 7.0 stretched cluster for all production workloads. The customer currently uses two different vSAN storage policies for running the workloads depending on the applications requirements: • Policy 1 - Site Disaster Tolerance=Dual Site Mirroring, FTT=Erasure Coding • Policy 2 - Site Disaster Tolerance=Dual Site Mirroring, FTT=Mirroring During the setup of the vSAN stretched cluster, the following VM/Host Rules were created: • Preferred Site - Preferred Site workloads should run on DC1 hosts. • Secondary Site - Secondary Site workloads should run on DC2 hosts. Which two actions should the administrator take to ensure that there is no impact to production services before completing the maintenance window in the Preferred Site? (Choose two.) A. Update the Preferred Site vSphere DRS affinity rule to be \"Should not run on hosts in group\". B. Change the Host Groups in the Preferred Site rule to the DC2 hosts. C. Update the Preferred Site vSphere DRS affinity rule to be \"Must run on hosts in group\". D. Change the Host Groups in the Secondary Site rule to the DC1 hosts. E. Update the Secondary Site vSphere DRS affinity rule to be \"Must run on hosts in group\".",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "While a vSAN administrator is deploying new VMs on a vSAN stretched cluster, the secondary site fails. The vSAN displays the following warning while trying to deploy those VMs: 'Datastore does not match current VM policy'. Which step should be performed to provision the new VMs? A. Provision VMs with 'Force Provisioning' rule enabled. B. Provision VMs with the 'Number of disk stripes per object' set to 2. C. Provision VMs with the 'Object space reservation' set to 50% reservation. D. Provision VMs with a vSAN Default Storage Policy.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is setting up vSAN file services on a vSAN cluster but is unable to join the vSAN File Services to the domain. Which two possible reasons could explain this failure? (Choose two.) A. A read-only domain controller was being used. B. The administrator did not pre-create a dedicated organizational unit in Active Directory. C. The administrator wanted to register the file services to a sub-domain. D. The administrator was using IP addresses from an IP pool. E. The administrator was using pre-created computer objects for the file services in the Active Directory.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is tasked with setting up a disaster recovery solution on top of a standard vSAN cluster in the first site and a separate standard vSAN cluster in the secondary site. Costs are a constraint and should be kept to the absolute minimum. Which solution fits this use case best? A. VMware vSphere Replication B. vSAN stretched cluster and VMware vSphere Replication C. SRM and VMware vSphere Replication D. Storage replication and SRM",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has decided to switch the Preferred Fault Domain in a vSAN stretched cluster. Resynchronization activity increased drastically after this change. Which action should the administrator take next time to avoid this problem? A. Changing the Data locality setting to None B. Adding additional hosts to both domains in existing vSAN cluster C. Adding disks to hosts and creating additional disk groups D. Putting all hosts from Secondary domain into maintenance mode",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Following the deployment of a new all-flash vSAN 7.0 U1 stretched cluster, an administrator has been tasked with decommissioning the existing hybrid vSAN 6.7 U3 stretched cluster since the hardware is becoming end-of-life. In addition to Virtual Machine storage, the hybrid vSAN cluster also provides iSCSI target services. The administrator has completed the following tasks: • All workloads have been successfully migrated to the new vSAN stretched cluster. • The iSCSI target service has been enabled on the new vSAN stretched cluster. Which three additional tasks should the administrator complete to properly decommission the hybrid vSAN stretched cluster and ensure that all data is removed? (Choose three.) A. Run the Wipe-Disk PowerCLI command to securely wipe any data. B. Disable vSAN File Services. C. Convert the vSAN stretched cluster into a vSAN standard cluster. D. Remove any disk groups before decommissioning the vSAN data nodes. E. Disable the vSAN performance service. F. Ensure all data has been evacuated from the vSAN cluster.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is currently working with a customer to transform their existing ESXi hosts to vSAN nodes. The customer expressed the following requirements. • First phase will transform 50% of the hosts to a hybrid vSAN nodes. • Second phase will transform the remaining 50% hosts to an All-Flash vSAN nodes. The following constraint exists: • Each host has a 4-port x 1 GbE network interface. Which two recommendations should the architect make to align with the customer's requirements? (Choose two.) A. Hybrid vSAN clusters can have shared 1 GbE network adapters. B. All-Flash vSAN clusters must have dedicated 10 GbE network adapters. C. Hybrid vSAN clusters must have dedicated 1 GbE network adapters. D. All-Flash vSAN clusters can have shared 10 GbE network adapters. E. Hybrid vSAN clusters must have dedicated 10 GbE network adapters.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is setting up a clustered application and is concerned about the additional space requirements stemming from traditional vSAN storage and Failure to Tolerate (FTT) storage policies. The administrator would like to leverage a vSAN service for this clustered application that would not consume more storage than is actually required. Which vSAN service should be used to meet this goal? A. vSAN File services B. vSAN iSCSI C. vSAN Compression Only D. VMware vSAN Direct",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is tasked to plan a VMware Horizon environment using vSAN as the primary storage for a vSphere HA-enabled Cluster, but it must consume the least amount of storage possible. Which vSAN Storage Policy should be used for the Instant Clone VMs? A. FTT=3 B. FTT=0 C. FTT=1 D. FTT=2",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is reviewing a vSAN cluster that has an unbalanced cluster configuration. Which behavior will the architect observe? A. Consistent maintenance procedures B. Reduced predictability of storage performance C. Reduced deduplication capabilities D. Faster rebuild times",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is tasked with designing a solution that includes the following requirements: • The solution must support 5,000 virtual machines. • The solution must include software defined storage. • The deployment of the solution must be automated. • The solution must provide storage-policy based disaster recovery for all workloads. Which combination of three products will fulfill these requirements? (Choose three.) A. VMware Site Recovery Manager B. VMware Cloud Foundation C. VMware vRealize Automation D. VMware ESXi E. VMware vSAN F. VMware vSphere Replication",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator would like to upgrade ten identically configured 2-node vSAN clusters from vSAN 6.7 U3 to vSAN 7.0 U1. Currently, each 2-node vSAN cluster is using a dedicated vSAN witness host appliance. As a result of the upgrade, the administrator would like to leverage the vSAN shared witness feature to reduce the resources being consumed. In preparation for the first vSAN cluster upgrade, the administrator has completed the following tasks: 1. Upgraded vCenter Server to vCenter Server 7.0 U1. 2. vSphere High Availability (HA) has been disabled on the vSAN Cluster. 3. Upgraded the vSAN witness host appliance to vSphere 7.0 U1. 4. Upgraded both vSAN data nodes to vSphere 7.0 U1. The key requirement is to ensure that backwards compatibility to the existing version of vSAN is maintained during the upgrade process. Which three additional steps should the administrator complete to ensure that subsequent clusters can share the same vSAN Witness? (Choose three.) A. Upgrade the vSAN On-Disk Format (ODF) to version 12. B. Manually update the vSAN Witness with a vSAN 7 license key. C. Update the vSAN cluster to use the new vSAN witness host appliance. D. Configure the existing witness host appliance to act as a shared witness. E. Deploy a new vSAN 7.0 U1 witness host appliance to act as a shared witness. F. Upgrade the vSAN On-Disk Format (ODF) to version 13.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which description is a valid use case for an administrator to configure an HCI Mesh? A. Share storage hosted by or on a vSAN cluster, and each client vSAN cluster must mount a maximum of five remote vSAN datastores. B. Share storage hosted by or on a vSAN cluster that must be applied to different vSAN SPBM policies for different client clusters. C. Share storage hosted by or on a vSAN cluster to six or more client clusters. D. Share storage hosted by or on a vSAN cluster to more than 64 hosts, including both local and remote hosts connected.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator wants to put the witness host in a 2-node vSAN configuration in maintenance mode. What should be verified before putting the witness host in maintenance mode? A. No data migration has been set as an option. B. Ensure accessibility has been enabled. C. All virtual machines are in compliance. D. The storage policy is set to FTT=1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is reviewing the root cause analysis of a failure event that resulted in vSAN Data Loss. The following information is known about the event: 1. The RAID battery-replacing procedure on one of the first vSAN cluster node took much more time than the vSAN administrator predicted. 2. The only Storage policy has a Primary level of Failures To Tolerate = 1. 3. Whilst the first host was in maintenance mode, another node failure occurred, causing da-ta loss in the vSAN cluster. The administrator needs to update the procedure for completing maintenance on the cluster. Which Maintenance Mode option should the administrator choose to ensure that data loss does not occur in the future? A. No data migration B. Ensure accessibility C. No data migration with selected option 'Move powered-off and suspended virtual machines to other hosts in the cluster' D. Full data migration",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An existing vSAN customer is considering vSAN File Services, and based on the current state analysis, the following information was provided: • 7 vSAN ROBO clusters • The clusters have two hardware BoM (Bill of Materials): o BoM-01 Test & Dev Environment: • 4 CPUs @ 2.50 GHz with 2 cores per CPU. • 128 GB Memory. • CachingTier 960 GB. • CapacityTier 1.8 TB x 4. • 10 GigE. o BoM-02 Production Environment: • 4 CPUs @ 2.60 GHz with 6 cores per CPU. • 256 GB Memory. • CachingTier 960 GB. • CapacityTier 6 TB x 4. • 10 GigE. Which two recommendation should the architect propose? (Choose two.) A. Scale the vSAN clusters to 4 nodes at minimum. B. Upgrade BoM-01 CPU to have 6 cores minimum. C. Scale the vSAN clusters to 3 nodes at minimum. D. Upgrade both BoM to have 2 disk groups at minimum. E. Upgrade BoM-01 CPU to have 4 cores minimum.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Due to the success of the recently deployed developer-only private cloud solution, a company has a new requirement to increase the cache size and overall capacity of the solution to support an unexpected change in the workload profile and increase the overall performance of the solution. The current vSAN cluster has the following configuration: • 6 vSAN Nodes with 2 CPUs (20 cores), 512 GB RAM • 2 Disk Groups per vSAN node (2 x 400 GB, 6 x 3.84 TB) • De-duplication and Compression is enabled. • Encryption is enabled. • vSAN Total Capacity is: ~112 TB RAID6/FTT=2 (80% utilized) Following the administrator's recommendations, the service owner agrees to purchase 12 x 800 GB SSDs and 36 x 3.84 TB SSDs to upgrade the vSAN but would like to ensure that during the upgrade the availability of the workloads are not affected. Which three actions should the administrator take to meet this requirement? (Choose three.) A. Remove the old Disk Groups, and create a new Disk Group using all remaining cache and capacity devices. B. Migrate all existing workloads to the new Disk Group(s). C. Put each vSAN node into maintenance mode using the Ensure Accessibility option. D. Remove the old Disk Groups, and claim the original capacity drives equally across the remaining Disk Groups. E. Create two new Disk Groups (each with 1 x 800 GB, 3 x 3.84 TB per node) in the vSAN Cluster using the new storage devices. F. Create one new Disk Group (with 1 x 800 GB, 3 x 3.84 TB per node) on the vSAN Cluster using the new storage devices.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A write intensive application has been deployed recently into an All-flash 4-node vSAN cluster. Each node has one disk group with the following configuration: • 1 x 400 GB SSD for Cache • 4 x 3.84 TB SSD for Capacity After the deployment, the administrator notices that the overall workload performance is degraded and observes a low-write, buffer-free percentage. Which action should be taken to remediate this issue? A. Adding a second cache disk to the existing disk group B. Replacing the cache disk in the existing disk group with a larger one C. Enabling automatic rebalance from the vSAN services advanced options D. Increasing the number of capacity disks in the existing disk group",
+    "options": {},
+    "most_voted": "A"
+  }
+]
