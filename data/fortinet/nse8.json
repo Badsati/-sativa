@@ -1,0 +1,122 @@
+[
+  {
+    "question": "The dashboard widget indicates that FortiGuard Web Filtering is not reachable. However, AntiVirus, IPS, and Application Control have no problems as shown in the exhibit. [sampleXML/xmlfile-2_1.jpg] You contacted Fortinets customer service and discovered that your FortiGuard Web Filtering contract is still valid for several months. What are two reasons for this problem? (Choose two.) A. You have another security device in front of FortiGate blocking ports 8888 and 53. B. FortiGuard Web Filtering is not enabled in any firewall policy. C. You did not enable Web Filtering cache under Web Filtering and E-mail Filtering Options. D. You have a firewall policy blocking ports 8888 and 53.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer is authenticating users using a FortiGate and an external LDAP server. The LDAP user, John Smith, cannot authenticate. The administrator runs the debug command diagnose debug application fnbamd 255 while John Smith attempts the authentication: Based on the output shown in the exhibit, what is causing the problem? [sampleXML/xmlfile-3_1.jpg] A. The LDAP administrator password in the FortiGate configuration is incorrect. B. The user, John Smith, does have an account in the LDAP server. C. The user, John Smith, does not belong to any allowed user group. D. The user, John Smith, is using an incorrect password.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "[sampleXML/xmlfile-5_1.jpg] The exhibit shows an explicit Web proxy configuration in a FortiGate device. The FortiGate is installed between a client with the IP address 172.16.10.4 and a Web server using port 80 with the IP address 10.10.3.4. The client Web browser is properly sending HTTP traffic to the FortiGate Web proxy IP address 172.16.10.254. Which two sniffer commands will capture this HTTP traffic? (Choose two.) A. diagnose sniffer packet any ‘host 172.16.10.4 and host 172.16.10.254’ 3 B. diagnose sniffer packet any ‘host 172.16.10.254 and host 10.10.3.4’ 3 C. diagnose sniffer packet any ‘host 172.16.10.4 and port 8080’ 3 D. diagnose sniffer packet any ‘host 172.16.10.4 and host 10.10.3.4’ 3",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Your colleague has enabled virtual clustering to load balance traffic between the cluster units. You notice that all traffic is currently directed to a single FortiGate unit. Your colleague has applied the configuration shown in the exhibit. [sampleXML/xmlfile-6_1.jpg] Which step would you perform to load balance traffic within the virtual cluster? A. Issue the diagnose sys ha reset-uptime command on the unit that is currently processing traffic to enable load balancing. B. Add an additional virtual cluster high-availability link to enable cluster load balancing. C. Input Virtual Cluster domain 1 and Virtual Cluster domain 2 device priorities for each cluster unit. D. Use the set override enable command on both units to allow the secondary unit to load balance traffic.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data center for example.com hosts several separate Web applications. Users authenticate with all of them by providing their Active Directory (AD) login credentials. You do not have access to Example, Inc.s AD server. Your solution must do the following: - provide single sign-on (SSO) for all protected Web applications - prevent login brute forcing - scan FTPS connections to the Web servers for exploits - scan Webmail for OWASP Top 10 vulnerabilities such as session cookie hijacking, XSS, and SQL injection attacks Which solution meets these requirements? A. Apply FortiGate deep inspection to FTPS. It must forward FTPS, HTTP, and HTTPS to FortiWeb. Configure FortiWeb to query the AD server, and apply SSO for Web requests. FortiWeb must forward FTPS directly to the Web servers without inspection, but proxy HTTP/HTTPS and block Web attacks. B. Deploy FortiDDos to block brute force attacks. Configure FortiGate to forward only FTPS, HTTP, and HTTPS to FortiWeb. Configure FortiWeb to query the AD server, and apply SSO for Web requests. Also configure it to scan FTPS and Web traffic, then forward allowed traffic to the Web servers. C. Use FortiGate to authenticate and proxy HTTP/HTTPS; to verify credentials, FortiGate queries the AD server. Also configure FortiGate to scan FTPS before forwarding, and to mitigate SYN floods. Configure FortiWeb to block Web attacks. D. Install FSSO Agent on servers. Configure FortiGate to inspect FTPS. FortiGate will forward FTPS, HTTP, and HTTPS to FortiWeb. FortiWeb must block Web",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company wants to protect against Denial of Service attacks and has launched a new project. They want to block the attacks that go above a certain threshold and for some others they are just trying to get a baseline of activity for those types of attacks so they are letting the traffic pass through without action. Given the following: - The interface to the Internet is on WAN1. - There is no requirement to specify which addresses are being protected or protected from. - The protection is to extend to all services. - The tcp_syn_flood attacks are to be recorded and blocked. - The udp_flood attacks are to be recorded but not blocked. - The tcp_syn_flood attacks threshold is to be changed from the default to 1000. The exhibit shows the current DoS-policy. [sampleXML/xmlfile-8_1.jpg] Which policy will implement the project requirements? A) [sampleXML/xmlfile-9_1.png] B) [sampleXML/xmlfile-10_1.png] C) [sampleXML/xmlfile-11_1.png] D) [sampleXML/xmlfile-12_1.png] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your security department has requested that you implement the OpenSSL.TLS.Heartbeat.Information.Disclosure signature using an IPS sensor to scan traffic destined to the FortiGate. You must log all packets that attempt to exploit this vulnerability. Referring to the exhibit, which two configurations are required to accomplish this task? (Choose two.) [sampleXML/xmlfile-13_1.jpg] A) [sampleXML/xmlfile-14_1.png] B) [sampleXML/xmlfile-14_2.png] C) [sampleXML/xmlfile-14_3.png] D) [sampleXML/xmlfile-15_1.png] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which command syntax would you use to configure the serial number of a FortiGate as its host name? A) [sampleXML/xmlfile-15_2.png] B) [sampleXML/xmlfile-15_3.png] C) [sampleXML/xmlfile-16_1.png] D) [sampleXML/xmlfile-16_2.png] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Referring to the exhibit, which statement is true? [sampleXML/xmlfile-17_1.jpg] A. The packet failed the HMAC validation. B. The packet did not match any of the local IPsec SAs. C. The packet was protected with an unsupported encryption algorithm. D. The IPsec negotiation failed because the SPI was unknown.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are asked to establish a VPN tunnel with a service provider using a third-party VPN device. The service provider has assigned subnet 30.30.30.0/24 for your outgoing traffic going towards the services hosted by the provider on network 20.20.20.0/24. You have multiple computers which will be accessing the remote services hosted by the service provider. [sampleXML/xmlfile-18_1.jpg] Which three configuration components meet these requirements? (Choose three.) A. Configure an IP Pool of type Overload for range 30.30.30.10-30.30.30.10. Enable NAT on a policy from your LAN forwards the VPN tunnel and select that pool. B. Configure IPsec phase 2 proxy IDs for a source of 10.10.10.0/24 and destination of 20.20.20.0/24. C. Configure an IP Pool of Type One-to-One for range 30.30.30.10-30.30.30.10. Enable NAT on a policy from your LAN towards the VPN tunnel and select that pool. D. Configure a static route towards the VPN tunnel for 20.20.20.0/24. E. Configure IPsec phase 2 proxy IDs for a source of 30.30.30.0/24 and destination of 20.20.20.0/24.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "FortiGate1 has a gateway-to-gateway IPsec VPN to FortiGate2. The entire IKE negotiation between FortiGate1 and FortiGate2 is on UDP port 500. A PC on FortuGate2s local area network is sending continuous ping requests over the VPN tunnel to a PC of FortiGate1s local area network. No other traffic is sent over the tunnel. [sampleXML/xmlfile-20_1.jpg] Which statement is true on this scenario? A. FortiGate1 sends an R-U-THERE packet every 300 seconds while ping traffic is flowing. B. FortiGate1 sends an R-U-THERE packet if pings stop for 300 seconds and no IKE packet is received during this period. C. FortiGate1 sends an R-U-THERE packet if pings stop for 60 seconds and no IKE packet is received during this period. D. FortiGate1 sends an R-U-THERE packet every 60 seconds while ping traffic is flowing.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "There is an interface-mode IPsec tunnel configured between FortiGate1 and FortiGate2. You want to run OSPF over the IPsec tunnel. On both FortiGates. the IPsec tunnel is based on physical interface port1. Port1 has the default MTU setting on both FortiGate units. Which statement is true about this scenario? A. A multicast firewall policy must be added on FortiGate1 and FortiGate2 to allow protocol 89. B. The MTU must be set manually in the OSPF interface configuration. C. The MTU must be set manually on the IPsec interface. D. An IP address must be assigned to the IPsec interface on FortiGate1 and FortiGate2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three configuration scenarios will result in an IPsec negotiation failure between two FortiGate devices? (Choose three.) A. mismatched phase 2 selectors B. mismatched Anti-Replay configuration C. mismatched Perfect Forward Secrecy D. failed Dead Peer Detection negotiation E. mismatched IKE version",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three statements about throughput on a wireless network are true? (Choose three.) A. A wireless device labelled as 300 Mbps should be expected to provide a throughput of 300Mbps. B. Be careful to ensure the capabilities of the wireless clients match those of the access points, in order to achieve higher throughput. C. Reducing the duty cycles of the wireless media by generating fewer beacons may improve throughput. D. Because of the higher level of RF noise that is typical in the 2.4 GHz ISM band, throughput of 2.4 GHz devices will typically be less than 5 GHz devices. E. Because of the full-duplex nature of the medium and the minimal overhead generated by CSMA/CA, the actual aggregate throughput is typically close to the",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator wants to assign static IP addresses to users connecting tunnel-mode SSL VPN. Each SSL VPN user must always get the same unique IP address which is never assigned to any other user. Which solution accomplishes this task? A. TACACS+ authentication with an attribute-value (AV) pair containing each user’s IP address. B. RADIUS authentication with each user’s IP address stored in a Vendor Specific Attribute (VSA). C. LDAP authentication with an LDAP attribute containing each user’s IP address. D. FSSO authentication with an LDAP attribute containing each user’s IP address.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You notice that memory usage is high and FortiGate has entered conserve mode. You want FortiGates IPS engine to focus only on exploits and attacks that are applicable to your specific network. Which two steps would you take to reduce RAM usage without weakening security? (Choose two.) A. Configure IPS to pass files that are larger than a specific threshold, instead of buffering and scanning them. B. Reduce the size of the signature three (filters) that FortiGate must search by disabling scans for applications and OS stacks that do not exist on your network. C. Disable application control for protocols that are not used on your network. D. Disable IPS for traffic destined for the FortiGate itself.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You verified that application control is working from previous configured categories. You just added Skype on blocked signatures. However, after applying the profile to your firewall policy, clients running Skype can still connect and use the application. What are two causes of this problem? (Choose two.) A. The application control database is not updated. B. SSL inspection is not enabled. C. A client on the network was already connected to the Skype network and serves as relay prior to configuration changes to block Skype D. The FakeSkype.botnet signature is included on your application control sensor.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You are an administrator of FortiGate devices that use FortiManager for central management. You need to add a policy on an ADOM, but upon selecting the ADOM drop-down list, you notice that the ADOM is in locked state. Workflow mode is enabled on your FortiManager to define approval or notification workflow when creating and installing policy changes. What caused this problem? A. Another administrator has locked the ADOM and is currently working on it. B. There is pending approval waiting from a previous modification. C. You need to use set workspace-mode workflow on the CLI. D. You have read-only permission on Workflow Approve in the administrator profile.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "[sampleXML/xmlfile-33_1.jpg] The output shown in the exhibit from FortiManager is displayed during an import of the device configuration. Which statement describes the correct action taken for these duplicate objects? A. The import fails because of the duplicate entries detected which exist in the ADOM database. B. FortiManager installs these duplicate objects to the managed device from the ADOM database. C. FortiManager does not import these duplicate entries into the ADOM database because they already exist in the ADOM database. D. FortiManager creates indexed duplicate entries for these objects in the ADOM database.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your FortiGate has multiple CPUs. You want to verify the load for each CPU. Which two commands will accomplish this task? (Choose two.) A. get system performance status B. diag system mpstat C. diag system cpu stat D. diag system top",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "[sampleXML/xmlfile-42_1.jpg] You are installing a new FortiAP as shown in the exhibit, however, the FortiAP cannot discover the FortiGate. The FortiAP obtained an IP from the DHCP server and is reachable. Which two configurations will resolve the problem? (Choose two.) A) [sampleXML/xmlfile-43_1.png] B) [sampleXML/xmlfile-43_2.png] C) [sampleXML/xmlfile-44_1.png] D) [sampleXML/xmlfile-44_2.png] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The FortiGate is used as an IPsec gateway at a branch office. Two tunnels, tunA and tunB, are established between this FortiGate and the headquarters IPsec gateway. The branch offices subnet is 10.1.1.0/24. The headquarters subnet is 10.2.2.0/24. The desired usage for tunA and tunB has been defined as follows: - sessions initiated from 10.1.1.0/24 to 10.2.2.0/24 must be routed out over tunA when tunA is up - sessions initiated from 10.1.1.0/24 to 10.2.2.0/24 have to be routed out over tunB when tunA is down - sessions initiated from 10.2.2.0/24 can ingress either on tunA or on tunB Which static routing configuration meets the requirements? A) [sampleXML/xmlfile-46_1.png] B) [sampleXML/xmlfile-46_2.png] C) [sampleXML/xmlfile-47_1.png] D) [sampleXML/xmlfile-47_2.png] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "[sampleXML/xmlfile-48_1.jpg] You must establish a BGP peering with a service provider. The provider has supplied you with BGP peering parameters and you performed the basic configuration shown in the exhibit on your FortiGate unit. You notice that your peering session is not coming up. Which three missing configuration statements are needed to make this configuration functional? (Choose three.) A) [sampleXML/xmlfile-49_1.png] B) [sampleXML/xmlfile-49_2.png] C) [sampleXML/xmlfile-49_3.png] D) [sampleXML/xmlfile-50_1.png] E) [sampleXML/xmlfile-50_2.png] A. Option A B. Option B C. Option C D. Option D E. Option E",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "[sampleXML/xmlfile-52_1.jpg] A customer just bought an additional FortiGate device and plans to use their existing load balancer to distribute traffic across two FortiGate units participating on a BGP network serving different neighbors. The customer has mixed traffic of IPv4 and IPv6 TCP, UDP, and ICMP. The two FortiGate devices shown in the exhibit should be redundant to each other so that the NAT session and active session tables will synchronize and fail over to the unit that is still operating without any loss of data if one of the units fail. Which high availability solution would you implement? A. FortiGate Cluster Protocol (FGCP) B. Fortinet redundant UTM protocol (FRUP) C. FortiGate Session Life Support Protocol (FGSP) D. Virtual Router Redundancy Protocol (VRRP)",
+    "options": {},
+    "most_voted": ""
+  }
+]
