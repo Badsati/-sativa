@@ -1,0 +1,197 @@
+[
+  {
+    "question": "A client is creating a new API application. The app should only be accessible from other apps that they deploy to Heroku. Also, traffic between the other apps and the API should not transit the public internet. Which solution should an Architect recommend to meet these requirements? A. Create the application in a Private Space with default options. B. Create the application in a Private Space and restrict the application's set of trusted IP ranges. C. Create the application with Internal Routing enabled, in a Private Space. D. Create the application in a Shield Private Space to enforce stricter requirements for TLS termination.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client has data in a production Heroku Postgres database, and needs to quickly get access to a subset of that data for reporting needs. Which two features does Heroku Dataclips provide to enable this? (Choose two.) A. JSON export of query results, with CORS support B. CSV export of query results C. A simple REST API access to query results D. Postgres dump file of query results",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client wants to create a secure network connection between Heroku applications running in a Private Space and an AWS VPC. Which Heroku feature should an Architect recommend to create the connection? A. Internal Routing B. Private Space Peering C. Private Space VPN connections D. Heroku Connect",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers has a Heroku app that uses several third-party add-ons. They now need to enforce data privacy and be compliant with General Data Protection Regulation (GDPR). What should an Architect advise UC regarding data residency in this scenario? A. Heroku does not control where add-on providers store data. B. Heroku support can configure add-ons for specific data residency needs. C. Heroku guarantees the physical location of its control surface APIs. D. Data residency for add-ons is covered under Salesforce's GDPR compliance.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An app uses a queue of worker dynos to perform complex image processing, but the worker dynos are occasionally running out of memory when performing the processing. All of their dynos are currently standard-1x dynos. What should an Architect recommend in this scenario? A. Add additional worker dynos. B. Break up the image processing across multiple dynos. C. Move the app to a Private Space. D. Change the type of dynos to standard-2x.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client wants to use Heroku to build a data bridge between Salesforce and Google Cloud Platform (GCP). Which combination of Heroku features should an Architect recommend to secure the connection between Heroku and GCP? A. Heroku Shield Private Spaces and Heroku Shield Connect B. Heroku Private Spaces and Private Space VPN Connections C. Heroku Private Spaces and Private Space Peering D. Heroku Shield Private Spaces and Internal Routing",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "For which two use cases should an Architect recommend using Heroku Redis? (Choose two.) A. Providing long-term data warehousing B. Adding jobs to a queue C. Providing a data cache layer D. Querying relational data",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers experienced an outage with their production Heroku Postgres database due to a fault with the underlying infrastructure. The database was unavailable for an hour. The database is on the Standard-0 plan. Which two actions should an Architect recommend to mitigate such database failures and outages in the future? (Choose two.) A. Create a follower database that uses the same plan as the leader. B. Migrate the database to a Premium-tier plan. C. Migrate the database to a larger Standard-tier plan. D. Create a fork of the database that uses the same plan as the leader.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A web application on Heroku wants to surface Salesforce data. All users of the web application will: 1) Authenticate using SSO with Salesforce. 2) Have user records in Salesforce. What architecture should be recommended in order to maintain the Salesforce security model already in place? A. Use Heroku Connect to sync the Salesforce data and Salesforce security model to Heroku Postgres. B. Have the application query Salesforce data and the security model directly using a cached admin credential. C. Use Heroku Connect, with a per-user authentication model, to sync the Salesforce data to Heroku Postgres. D. Have the application query Salesforce data directly through the Salesforce APIs as the running user.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client wants to create a scalable set of microservices that communicate with each other, where multiple microservices have a public REST API. Which architecture strategy allows this on Heroku? A. Each microservice is a separate Heroku app. The microservices communicate by using Apache Kafka as a message bus. B. Each microservice is a separate process type in a single Heroku app. The microservices communicate by using Redis as a message bus. C. Each microservice is a separate private space. The microservices communicate by using DNS Service Discovery. D. Each microservice is a separate process in a single Heroku app. The microservices communicate by using shared memory.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers has a Heroku Private Space with a VPN connection to their on-premise network. They want their remote employees to be able to access their Heroku applications using a VPN connection only. Which solution should an Architect recommend? A. Clone the Heroku applications to a second Private Space, and configure its VPN for remote employees. B. Enable remote employees to VPN into the company's on-premise network. C. Configure a second VPN connection for the Private Space that remote employees can use. D. Add all remote employees to an Enterprise Team, and configure it to connect to the Private Space via SSO.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) has configured SSO for their Heroku Enterprise Team using an identity provider (IdP). When a new employee joins the company, how should their Heroku account be created? A. A Heroku account is created for the employee automatically the first time they log in to Heroku via SSO. B. The employee should create a new Heroku account with the exact email address listed in their IdP record. C. No account creation is required, because all SSO users in a particular Enterprise Team are associated with a single Heroku account. D. An administrator of the Enterprise Team creates the Heroku account with the exact email address listed in the employee's IdP record.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client wants to use Heroku Connect to sync data bidirectionally between a Salesforce org and a Heroku Postgres database. In this scenario, which two are advantages to setting a custom External Identifier field in the Heroku Connect mapping? (Choose two.) A. External IDs simplify the mapping of polymorphic relationships in the Salesforce org. B. External IDs improve speed when inserting multiple related objects. C. External IDs prevent the creation of orphaned duplicates in Heroku Postgres. D. External IDs are required to enable bidirectional synchronization.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) recently acquired another company, International Shipping. Each company has its own Salesforce org, and UC wants those orgs to remain separate for the foreseeable future. Given this scenario, which Heroku feature should an Architect recommend to provide additional value to UC following the acquisition? A. Heroku Connect can be used to synchronize data directly between the two Salesforce orgs. B. Both orgs can be attached to the same Heroku application as an add-on to ensure data residency in the application's region. C. Heroku External Objects can expose read-only data from both Salesforce orgs to Heroku Postgres. D. A Heroku Postgres database can sync data from both orgs for advanced querying capabilities.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers uses Heroku Connect to sync their Salesforce org's data with Heroku Postgres. Periodically, they write a very large set of changes that needs to be fully replicated between these two systems. Which two sets of actions should an Architect propose? (Choose two.) A. Make the changes directly in Heroku Postgres. Then allow Heroku Connect to expose them to the Salesforce org using Heroku External Objects. B. Use Data Loader to write the changes to the Salesforce org. Then allow Heroku Connect to sync them to Heroku Postgres. C. Make the changes directly in Heroku Postgres. Then allow Heroku Connect to use the Bulk API to sync them to the Salesforce org. D. Pause Heroku Connect then make the changes directly in the Salesforce org. Then allow Heroku Connect to use the Salesforce Bulk API to sync them to Heroku Postgres.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) has expressed a desire to have encryption-at-rest enabled on their Heroku Postgres databases. Which three tiers would UC need to use to have that feature enabled? (Choose three.) A. Private B. Standard C. Hobby D. Shield E. Premium",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "At Universal Containers (UC), a developer named Yuichiro wrote a PHP application that, in production, uses a MySQL database. Yuichiro is onboarding Mary, a new UC developer, who is setting up her development environment. Yuichiro asks Mary to: 1) install the related PHP libraries manually so the application will run; 2) use MongoDB, instead of MySQL, in the development environment. According to the Twelve-Factor methodology, which changes should an Architect recommend? A. Explicitly declare code dependencies in the application's environment variables and use the same type of database in both development and production. B. Persist code dependencies in the application's production database. Use the same type of database locally to ensure that the dependencies are accessible. C. Recursively determine code dependencies on application startup and maintain separate Git branches for the MongoDB- and MySQL- compatible versions of the application. D. Explicitly declare code dependencies in the application's source and use the same type of database in both development and production.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client wants to perform complex processing on large data sets in Salesforce. The data is confidential, but it does not have advanced compliance requirements. What Heroku Enterprise features should an Architect recommend in this scenario? A. Shield Private Spaces and Heroku External Objects B. Private Spaces and Heroku Connect C. Private Spaces and Heroku External Objects D. Shield Private Spaces and Heroku Shield Connect",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Heroku application uses Heroku Connect to integrate with data from a Salesforce org. Since then, several fields from the Salesforce objects that were mapped using Connect have been removed. As a result, the development team will reload the mapping using Heroku Connect. What is an implication of reloading the mapping? A. The mapped tables in Heroku Postgres will continue to store the previously synchronized data, and synchronization will restart normally. B. The mapped tables in Heroku Postgres will be truncated as part of the reload action. The data in removed fields will be lost, and synchronization will pause until manually restarted. C. The mapped tables in Heroku Postgres will continue to store the previously synchronized data, but synchronization will pause until manually restarted. D. The mapped tables in Heroku Postgres will be truncated as part of the reload action. The data in removed fields will be lost, and synchronization will restart normally.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer wants to sync data between their Salesforce org and Heroku Postgres. Which two limitations should an Architect remember when recommending Heroku Connect? (Choose two.) A. Heroku Connect can only access fields and objects that its associated Salesforce integration user can access. B. Heroku Connect does not support all Salesforce objects and fields. C. Heroku Connect does not provide an API. D. Heroku Connect cannot sync custom objects.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client wants to use Heroku Connect to sync data from a Heroku Postgres table to a Salesforce org. The client only needs to sync a specific subset of the rows in the table. How should this be performed? A. Add a mapping filter to the table when setting up the sync, and select appropriate criteria from the list. B. Filter the data in the database, and provide an alternative table or view for use in the sync. C. Use the Heroku Connect Mapping Query Editor, and add filters to the query. D. Place Sharing Rules on the records, and restrict visibility to only those rows that are needed.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client requires that their web application's logs are accessible only from within the same isolated network as the application itself. Which solution should an Architect recommend in this scenario? A. Deploy the application to a Private Space. Provide the Private Space's stable outbound IPs to Heroku's Logplex router to block all logs originating from the Private Space. B. Deploy the application to a Shield Private Space with Private Space Logging enabled. Forward logs to a destination within the Shield Private Space. C. Deploy the application to a Private Space. Connect the Private Space to an on-premise logging system using VPN and specify it as a log drain. D. Deploy the application to a Private Space. Enable Internal Routing to prevent the application's logs from being forwarded outside of the Private Space.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which is a characteristic of an add-on that is \"available\" for applications in Private Spaces but not \"installable\" in a Private Space? A. The add-on always runs in the same Private Space as the provisioning application. B. The traffic between the provisioning app and the add-on will travel across the public Internet. C. The add-on will always run in the same region, but not in the same Private Space, as the provisioning application. D. The add-on's data will always be stored in the same Private Space as the provisioning application.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client's Heroku application is publishing messages to an instance of Apache Kafka on Heroku. What does a second Heroku application need to do to consume those messages? A. Subscribe to the Kafka partition(s) that the messages are being published to. B. Join a consumer group that also includes the publishing application. C. Subscribe to the Kafka topic(s) that the messages are being published to. D. Convert the publishing application into a stream processor.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client provisions a Heroku Postgres database in the EU region. Which two services related to Heroku Postgres are located in the U.S.? (Choose two.) A. Fork and follower databases B. Heroku Postgres Continuous Protection backups C. Snapshots created with Heroku PGBackups D. Heroku Dataclips",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two Heroku features require Heroku Enterprise Teams? (Choose two.) A. Fire-grained app access controls B. Single Sign-on C. Paid add-on plans D. Heroku Pipelines",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client runs an application on a background worker dyno. The application allows its users to request personalized information as a PDF. At peak usage, the app processes millions of requests at once. The resulting number of requests has caused a bottleneck that is impacting its performance. Which two solutions can an Architect recommend to resolve the bottleneck and improve performance? (Choose two.) A. Increase the number of workers to consume the job faster. B. Move the application to a Private Space. C. Add Heroku Redis as a job queue. D. Add a CDN add-on from the Elements marketplace.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client's application needs to run in a European country for data residence purposes. What is a consideration in this scenario? A. When a dyno is cycled, its replacement might run in a different region. B. European regions are only available for applications running in Private Spaces. C. Heroku Postgres backup snapshots and dataclips are always stored in the U.S. D. There is no guarantee that a Heroku Postgres database will be created in the same region as the application that provisions it.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers wants to limit the total cost of their Heroku usage while they're getting started on the platform. To accomplish this, they are considering replacing certain add-ons with comparable open-source components, but the development team doesn't want to lose access to certain features that the add-ons provide. Which option should an Architect recommend for reducing add-on costs without affecting feature availability? A. Remove aliases for high-cost add-ons. B. Share a single instance of a compatible paid add-on across multiple applications. C. Remove data store add-ons from the staging and development versions of the applications. D. Migrate add-ons to free plans.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A hospital wants to build a mobile app that allows patients to check the status of submitted insurance claims, which the hospital stores in Salesforce Health Cloud. The app's back end will run on Heroku. Which two measures should an Architect recommend to help ensure that the app is compliant with HIPAA? (Choose two.) A. Use Heroku Shield Connect to sync claim data from Salesforce to a Heroku Postgres database. B. Use only Heroku Shield Postgres databases to store claim data outside of Salesforce Health Cloud. C. Ensure that the back-end application's code encrypts all claim data before writing it to a Heroku Postgres database. D. Ensure that the mobile app can only run when on the hospital's intranet, which is connected to the back end's Shield Private Space via VPN.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) has a Heroku Postgres database attached to a Heroku app, which is running in the Common Runtime. What should an Architect recommend UC do to secure their database to only trusted locations? A. Move the database and the app into the Private Space. B. Add a Trusted IP range to the Heroku Postgres configuration. C. Set up a VPN from the trusted locations to the app. D. Set up a VPC in a one-off dyno when access to Heroku Postgres is needed.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) wants to allow its developers to only use certain add-ons. UC enables Add-on Controls for Enterprise Teams and adds the add-ons they wish to allow to the list. There is an existing set of add-ons attached to applications, which are NOT on the list. What happens to these add-ons? A. They are deleted, and all data is backed up and saved. B. They are added to the allowed add-ons list. C. They are added to the exception list and not affected. D. They are flagged for removal, and the developers are notified.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers has an application running in the Common Runtime that uses Heroku Redis. The data in Heroku Redis needs to be accessed by a third-party application. Which connection method should an Architect recommend to ensure the security of the data as it moves from Heroku Redis to the third-party application? A. Use stunnel to secure the connection between Heroku Redis and the third-party application. B. Set up SSL Certificates on Heroku and the third-party application. C. Only allow access to Heroku Redis through an SSH connection. D. Set up both a VPN and a VPC between Heroku and the third-party application.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which Heroku runtimes provide keystroke logging? A. The Common Runtime, Private Spaces, and Shield Private Spaces B. Private Spaces and Shield Private Spaces C. Shield Private Spaces only D. Keystroke logging is not available on Heroku",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements describe characteristics of Private Space Logging? (Choose two.) A. Log entries are forwarded as HTTPS POST requests. B. Log entries are collated and forwarded by Heroku's Logplex router. C. Log entries can be forwarded to up to three logging services. D. Log entries can be forwarded to only one logging service.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client wants to migrate their on-premise application to Heroku. The application maintains a local, in-memory cache for its data store to improve performance. What should an Architect advise the client about running the application on Heroku? A. The application should declare its in-memory cache as a separate process type to preserve it across deploys. B. All of the application's web dynos will share a single in-memory cache. C. The application should replicate its in-memory cache to a local disk to preserve it across deploys. D. The application's in-memory cache might be cleared at any time.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two conventions of the Heroku platform reflect the Twelve-Factor methodology's recommendation to \"execute the app as one or more stateless processes?\" (Choose two.) A. Log messages from each of an app's dynos are kept separate from each other. B. Heroku apps define process types in a Procfile. C. A Heroku app's config vars are deleted on deploys and app restarts. D. Dynos have an ephemeral filesystem.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A client's Heroku web application displays data that is fetched from a back-end file storage system. The client now wants this data to be viewable, but not editable, from their Salesforce org. Which recommendation should an Architect make in this scenario? A. Replicate the files to tables in a Heroku Postgres database, and use Heroku Connect to synchronize the tables to the Salesforce org. B. Store all file URLs in a Heroku Postgres table, and use Heroku Connect to synchronize the table to the Salesforce org. C. Replicate the files to tables in a Heroku Postgres database, and use Heroku External Objects to expose the tables to the Salesforce org. D. Replicate the files to the application's local filesystem, and use worker dynos to periodically sync them to the Salesforce org.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) is opening offices in Japan and Germany. This will allow them to serve new customers in Asia and in Europe. UC is concerned about application latency for their new customers, especially because the app serves large amounts of dynamic content. Which Heroku Enterprise feature should an Architect recommend to alleviate this concern? A. Create Salesforce orgs in each region and use Heroku Connect to link them. B. Deploy instances of their applications into Private Spaces in Tokyo and Frankfurt. C. Deploy a globally-distributed CDN in front of the application. D. Create a Heroku Pipeline to mirror the app and its data in each region.",
+    "options": {},
+    "most_voted": ""
+  }
+]
