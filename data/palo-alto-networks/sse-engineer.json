@@ -1,0 +1,297 @@
+[
+  {
+    "question": "A customer is implementing Prisma Access (Managed by Strata Cloud Manager) to connect mobile users, branch locations, and business-to- business (B2B) partners to their data centers. The solution must meet these requirements: The mobile users must have internet filtering, data center connectivity, and remote site connectivity to the branch locations. The branch locations must have internet filtering and data center connectivity. The B2B partner connections must only have access to specific data center internally developed applications running on non-standard ports. The security team must have access to manage the mobile user and access to branch locations. The network team must have access to manage only the partner access. How should Prisma Access be implemented to meet the customer requirements? A. Deploy two Prisma Access instances - the first with mobile users, remote networks, and private access for all internal connection types, and the second with remote networks and private application access for B2B connections - and use the Strata Multitenant Cloud Manager Prisma Access configuration scope to manage access. B. Deploy a Prisma Access instance with mobile users, remote networks, and private access for all connection types, and use the Prisma Access Configuration scope to manage all access. C. Deploy two Prisma Access instances - the first with mobile users, remote networks, and private access for all internal connection types, and the second with remote networks and private application access for B2B connections - and use the specific configuration scope for the connection type to manage access. D. Deploy a Prisma Access instance with mobile users, remote networks, and private access for all connection types, and use the specific configuration scope for the connection type to manage access.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A customer is implementing Prisma Access (Managed by Strata Cloud Manager) to connect mobile users, branch locations, and business-to- business (B2B) partners to their data centers. The solution must meet these requirements: The mobile users must have internet filtering, data center connectivity, and remote site connectivity to the branch locations. The branch locations must have internet filtering and data center connectivity. The B2B partner connections must only have access to specific data center internally developed applications running on non-standard ports. The security team must have access to manage the mobile user and access to branch locations. The network team must have access to manage only the partner access. How can the engineer configure mobile users and branch locations to meet the requirements? A. Use GlobalProtect and Remote Networks to filter internet traffic and provide access to data center resources using service connections. B. Use Explicit Proxy to filter internet traffic and provide access to data center resources using service connections. C. Use GlobalProtect to filter internet traffic and provide access to data center resources using service connections. D. Use Explicit Proxy and Remote Networks to filter internet traffic and provide access to data center resources using service connections.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is implementing Prisma Access (Managed by Strata Cloud Manager) to connect mobile users, branch locations, and business-to- business (B2B) partners to their data centers. The solution must meet these requirements: The mobile users must have internet filtering, data center connectivity, and remote site connectivity to the branch locations. The branch locations must have internet filtering and data center connectivity. The B2B partner connections must only have access to specific data center internally developed applications running on non-standard ports. The security team must have access to manage the mobile user and access to branch locations. The network team must have access to manage only the partner access. Which two options will allow the engineer to support the requirements? (Choose two.) A. Configure the CPE with Static Routes pointing to Prisma Access Infrastructure and Mobile User routes. B. Enable eBGP for dynamic routing and configure RemoteNetworks. C. Configure Remote Networks and define the branch IP subnets using Static Routes. D. Enable Remote Networks Advertise Default Route.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer is implementing Prisma Access (Managed by Strata Cloud Manager) to connect mobile users, branch locations, and business-to- business (B2B) partners to their data centers. The solution must meet these requirements: The mobile users must have internet filtering, data center connectivity, and remote site connectivity to the branch locations. The branch locations must have internet filtering and data center connectivity. The B2B partner connections must only have access to specific data center internally developed applications running on non-standard ports. The security team must have access to manage the mobile user and access to branch locations. The network team must have access to manage only the partner access. Which two components can be provisioned to enable data center connectivity over the internet? (Choose two.) A. ZTNA Connector B. SD-WAN Connector C. Service connections D. Colo-Connect",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two actions can a company with Prisma Access deployed take to use the Egress IP API to automate policy rule updates when the IP addresses used by Prisma Access change? (Choose two.) A. Configure a webhook to receive notifications of IP address changes. B. Copy the Egress IP API Key in the service infrastructure settings. C. Enable the Egress IP API endpoint in Prisma Access. D. Download a client certificate to authenticate to the Egress IP API.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can an engineer verify that only the intended changes will be applied when modifying Prisma Access policy configuration in Strata Cloud Manager (SCM)? A. Review the SCM portal for blue circular indicators next to each configuration menu item and ensure only the intended areas of configuration have this indicator. B. Compare the candidate configuration and the most recent version under “Config Version Snapshots.” C. Select the most recent job under Operations > Push Status to view the pending changes that would apply to Prisma Access. D. Open the push dialogue in SCM to preview all changes which would be pushed to Prisma Access.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When using the traffic replication feature in Prisma Access, where is the mirrored traffic directed for analysis? A. Specified internal security appliance B. Dedicated cloud storage location C. Panorama D. Strata Cloud Manager (SCM)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When a review of devices discovered by IoT Security reveals network routers appearing multiple times with different IP addresses, which configuration will address the issue by showing only unique devices? A. Add the duplicate entries to the ignore list in IoT Security. B. Merge individual devices into a single device with multiple interfaces. C. Create a custom role to merge devices with the same hostname and operating system. D. Delete all duplicate devices, keeping only those discovered using their management IP addresses.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the impact of selecting the “Disable Server Response Inspection” checkbox after confirming that a Security policy rule has a threat protection profile configured? A. Only HTTP traffic from the server to the client will bypass threat inspection. B. The threat protection profile will override the “Disable Server Response Inspection” only for HTTP traffic from the server to the client. C. All traffic from the server to the client will bypass threat inspection. D. The threat protection profile will override the “Disable Server Response Inspection” for all traffic from the server to the client.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company has a Prisma Access deployment for mobile users in North America and Europe. Service connections are deployed to the data centers on these continents, and the data centers are connected by private links. With default routing mode, which action will verify that traffic being delivered to mobile users traverses the service connection in the appropriate regions? A. Configure BGP on the customer premises equipment (CPE) to prefer the assigned community string attribute on the mobile user prefixes in its respective Prisma Access region. B. Configure each service connection to filter out the mobile user pool prefixes from the other region in the advertisements to the data center. C. Configure BGP on the customer premises equipment (CPE) to prefer the MED attribute on the mobile user prefixes in its respective Prisma Access region. D. Configure each service connection to prepend the BGP ASN five times for mobile user pool prefixes originating from the other region.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Based on the image below, which two statements describe the reason and action required to resolve the errors? (Choose two.) A. The client is misconfigured. B. Create a do not decrypt rule for the hostname “google.com.” C. The server has pinned certificates. D. Create a do not decrypt rule for the hostname “certificates.godaddy.com.”",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can a network security team be granted full administrative access to a tenant's configuration while restricting access to other tenants by using role-based access control (RBAC) for Panorama Managed Prisma Access in a multitenant environment? A. Create an Access Domain and restrict access to only the Device Groups and Templates for the Target Tenant. B. Create a custom role enabling all privileges within the specific tenant’s scope and assign it to the security team’s user accounts. C. Create a custom role with Device Group and Template privileges and assign it to the security team’s user accounts. D. Set the administrative accounts for the security team to the “Superuser” role.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An engineer has configured a Web Security rule that restricts access to certain web applications for a specific user group. During testing, the rule does not take effect as expected, and the users can still access blocked web applications. What is a reason for this issue? A. The rule was created with improper threat management settings. B. The rule was created in the wrong scope, affecting only GlobalProtect users instead of all users. C. The rule was created at a higher level in the rule hierarchy, giving priority to a lower-level rule. D. The rule was created at a lower level in the rule hierarchy, giving priority to a higher-level rule.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What will cause a connector to fail to establish a connection with the cloud gateway during the deployment of a new ZTNA Connector in a data center? A. There is a misconfiguration in the DNS settings on the connector. B. The connector is deployed behind a double NAT. C. The connector is using a dynamic IP address. D. There is a high latency in the network connection.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which feature will fetch user and group information to verify whether a group from the Cloud Identity Engine is present on a security processing node (SPN)? A. SASE Health Dashboard B. User Activity Insights C. Prisma Access Locations D. Region Activity Insights",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An engineer configures User-ID redistribution from an on-premises firewall connected to Prisma Access (Managed by Panorama) using a service connection. After committing the configuration, traffic from remote network connections is still not matching the correct user-based policies. Which two configurations need to be validated? (Choose two.) A. Ensure the Remote_Network_Template is selected when adding the User-ID Agent in Panorama. B. Confirm there is a Security policy configured in Prisma Access to allow the communication on port 5007. C. Confirm the Collector Pre-Shared Keys match between Prisma Access and the on-premises firewall. D. Ensure the Service_Conn_Template is selected when adding the User-ID Agent in Panorama.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the purpose of embargo rules in Prisma Access? A. Rate-limiting connections originating from specific countries B. Allowing traffic only from specific countries C. Blocking connections from specific countries D. Blocking traffic from Russia, China, and North Korea only",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Strata Logging Service is configured to forward logs to an external syslog server; however, a month later, there is a disruption on the syslog server. Which action will send the missing logs to the external syslog server? A. Configure a replay profile with the affected time range and associate it with the affected syslog server profile. B. Delete the affected syslog server profile and create a new one. C. Export the logs from Strata Logging Service, and then manually import them to the syslog server. D. Configure a log filter under the syslog server profile with the affected time range.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A large retailer has deployed all of its stores with the same IP address subnet. An engineer is onboarding these stores as Remote Networks in Prisma Access. While onboarding each store, the engineer selects the “Overlapping Subnets” checkbox. Which Remote Network flow is supported after onboarding in this scenario? A. To private applications B. To the internet C. To remote network D. To mobile users",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An intern is tasked with changing the Anti-Spyware Profile used for security rules defined in the GlobalProtect folder. All security rules are using the Default Prisma Profile. The intern reports that the options are greyed out and cannot be modified when selecting the Default Prisma Profile. Based on the image below, which action will allow the intern to make the required modifications? A. Request edit access for the GlobalProtect scope. B. Change the configuration scope to Prisma Access and modify the profile group. C. Create a new profile, because default profile groups cannot be modified. D. Modify the existing anti-spyware profile, because best-practice profiles cannot be removed from a group.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can role-based access control (RBAC) for Prisma Access (Managed by Strata Cloud Manager) be used to grant each member of a security team full administrative access to manage the Security policy in a single tenant while restricting access to other tenants in a multitenant deployment? A. Add the team to the Parent Tenant, select the Prisma Access Configuration Scope, and set the role to Security Administrator. B. Add the team to the Child Tenant, select All Apps & Services, and set the role to Security Administrator. C. Add the team to the Parent Tenant, select Prisma Access & NGFW Configuration, and set the role to Security Administrator. D. Add the team to the Child Tenant, select Prisma Access & NGFW Configuration, and set the role to Security Administrator.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An engineer configures a Security policy for traffic originating at branch locations in the Remote Networks configuration scope. After committing the configuration and reviewing the logs, the branch traffic is not matching the Security policy. Which statement explains the branch traffic behavior? A. The source address was configured with an address object including the branch location prefixes. B. The source zone was configured as “Trust.” C. The Security policy did not meet best practice standards and was automatically removed. D. The traffic is matching a Security policy in the Prisma Access configuration scope.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the flow impact of updating the Cloud Services plugin on existing traffic flows in Prisma Access? A. They will experience latency during the plugin upgrade process. B. They will automatically terminate when the upgrade begins. C. They will be unaffected because the plugin upgrade is transparent to users. D. They will be unaffected only if Panorama is deployed in high availability (HA) mode.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which overlay protocol must a customer premises equipment (CPE) device support when terminating a Partner Interconnect-based Colo-Connect in Prisma Access? A. Geneve B. IPSec C. GRE D. DTLS",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer has configured IPSec tunnels for two remote network locations; however, users are experiencing intermittent connectivity issues across the tunnels. What action will allow the engineer to receive notifications when the IPSec tunnels are down or experiencing instability? A. Create a new notification profile specifying conditions for remote network IPSec tunnels. B. Create a tunnel log notification rule to alert on specified remote network IPSec tunnel conditions. C. Set up the operational health dashboard to email alerts for remote Network IPSec tunnel issues. D. Select the IPSec tunnel monitoring and notifications checkbox when configuring the remote network IPSec tunnels.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two configurations must be enabled to allow App Acceleration for SaaS applications? (Choose two.) A. Acceleration agent for the client machines B. QoS for user traffic C. Trusted Root CA for the CA certificate D. Forward Trust Certificate for the CA certificate",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two statements apply when a customer has a large branch office with employees who all arrive and log in within a five-minute time period? (Choose two.) A. DNS results are only cached for frequently used hostnames. B. Maximum pending TCP DNS requests is 64. C. Maximum number of TCP DNS retries is 3. D. DNS results are cached for 300 seconds.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement applies when enabling multitenancy in Prisma Access (Managed by Panorama)? A. Service connection licenses will be assigned only to the first tenant, and these service connections can be shared with the other tenants. B. A single tenant cannot consist solely of mobile users or solely of remote networks. C. Each tenant is allocated its own dedicated Prisma Access instances, with compute resources that are not shared across tenants. D. There is flexibility to manage different tenants using separate Panoramas, which allows for better organization and management of the multiple tenants.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company has four branch offices between Canada Central and Canada East which use the same IPSec termination node and have QoS configured with customized bandwidth per site. An engineer wants to onboard a new branch office on the same IPSec termination node. What is the QoS behavior for the new branch office? A. Automatically distributed to 25% for each site B. Unallocated until manually assigned C. Automatically distributed to 20% for each site D. Cannot be added to existing QoS configuration",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer using Prisma Access (Managed by Panorama) wants to monitor traffic patterns across all remote networks and use Strata Logging Service to gather insights on network usage. An engineer notices that some network data is missing from the Application Command Center (ACC). What should the engineer do to ensure complete data visibility? A. Reconfigure the Prisma Access remote networks to log directly to Panorama instead of using Strata Logging Service. B. Verify that the Panorama web interface has been configured to aggregate logs from both the Panorama data and RN-SPNs. C. Enable the “Use Data for Pre-Defined Reports” setting in the Logging and Reporting configuration on Panorama. D. Ensure that log forwarding profiles are applied to all Prisma Access policies and directed to Strata Logging Service.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How can a senior engineer use Strata Cloud Manager (SCM) to ensure that junior engineers are able to create compliant policies while preventing the creation of policies that may result in security gaps? A. Use security checks under posture settings and set the action to “deny” for all checks that do not meet the compliance standards. B. Configure role-based access controls (RBACs) for all junior engineers to limit them to creating policies in a disabled state, manually review the policies, and enable them using a senior engineer role. C. Configure an auto tagging rule in SCM to trigger a Security policy review workflow based on a security rule tag, then instruct junior engineers to use this tag for all new Security policies. D. Run a Best Practice Assessment (BPA) at regular intervals and manually revert any policies not meeting company compliance standards.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which policy configuration in Prisma Access Browser (PAB) will protect an organization from malicious BYOD and minimize the impact on the user experience? A. One that blocks file exchange B. One for session recording C. One that blocks elements such as screen scrapers D. One that allows access to applications with data masking or watermarking",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During a deployment of Prisma Access (Managed by Strata Cloud Manager) for mobile users, a SAML authentication type and authentication profile in the Cloud Identity Engine application is successfully created. Using this SAML authentication, what is a valid next step to configure authentication for mobile users? A. Perform a full commit to Strata Cloud Manager so the Cloud Identity Engine profiles get synchronized from the application. B. Permit the Cloud Identity Engine service account RBAC access to the mobile user folder in Strata Cloud Manager. C. In Strata Cloud Manager, create a new authentication type of “Cloud Identity Engine.” D. Create a SAML authentication profile in Strata Cloud Manager and link it to the Cloud Identity Engine profile.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After configuring domain-based split tunnel for zoom.us, how is expected behavior on the client machine confirmed? A. Verify from the routing table. B. Enable dump level logs on GlobalProtect Application. C. Verify zoom.us is resolved by the tunnel assigned DNS server. D. Ping zoom.us from the CLI.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Cloud Identity Engine capability will create a Security policy that uses Entra ID attributes as the source identification? A. Entra ID Group Attribute B. Attribute Group Mapping C. Entra ID Cloud Group D. Cloud Dynamic User Group",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An engineer deploys a new branch connected to Prisma Access. From the customer premises equipment (CPE) device at the branch, Phase 1 on the tunnel is established, but Phase 2-encrypted packets are not coming back from Prisma Access. Which Strata Logging Service log facility should the engineer review to determine why Phase 2-encrypted traffic is not being received? A. Decrypt logs B. System logs C. Traffic logs D. Tunnel logs",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When configuring Remote Browser Isolation (RBI) with Prisma Access (Managed by Strata Cloud Manager), which element is required to define the protected URLs for mobile users? A. A URL access management profile with site access set to “Isolate” applied to a Security policy B. A DNS Security profile applied to a Security policy with the action of “Isolate” for the target remote browser DNS categories C. An RBI profile applied to the URL access management profile D. A Security policy with the target URL categories and set the action to “Isolate”",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A malicious user is attempting to connect to a blocked website by crafting a packet using a fake SNI and the correct website in the HTTP host header. Which option will prevent this form of attack? A. Advanced Threat Prevention option to block “Domain Fronting” B. Advanced URL Filtering and block the “Malicious Behavior” category C. Advanced URL Filtering and block “SNI mismatch with Server Certificate (SAN/CN)” D. SSL Decryption to “Block sessions on SNI mismatch with Server Certificate (SAN/CN)”",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A user connected to Prisma Access reports that traffic intermittently is denied after matching a Catch-All Deny rule at the bottom and bypassing HIP-based policies. Refreshing VPN connection restores the access. What are two reasons for this behavior? (Choose two.) A. “Collect HIP data” needs to be enabled in the configuration. B. User mapping is learned from sources other than gateway authentication. C. Firewall loses user mapping due to missed HIP report checks. D. HIP-enforced policy is scheduled for certain hours of the day.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which feature can help address a customer concern about the length of time it takes to update their SaaS-allowed IP addresses while onboarding to Prisma Access? A. Dynamic IP pooling B. DNS-based load balancing C. Traffic steering D. Dedicated IP addresses",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which feature within Strata Cloud Manager (SCM) allows an operations team to view applications, threats, and user insights for branch locations for both NGFW and Prisma Access simultaneously? A. Command Center B. Log Viewer C. Branch Site Monitor D. SASE Health Dashboard",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In addition to creating a Security policy, how can an AI Access Security be used to prevent users from uploading financial information to ChatGPT? A. Apply File Blocking to stop file uploads containing financial information. B. Configure an Enterprise DLP rule to block uploads containing financial information. C. Add the ChatGPT domains using URL Filtering to block uploads containing financial information. D. Apply a vulnerability profile to stop attempts to exploit system flaws or gain unauthorized access to financial systems.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement is valid in relation to certificates used for GlobalProtect and pre-logon? A. A public certificate authority (CA) must sign and validate all certificates used. B. The certificate used for pre-logon must include both Subject and Subject-Alt fields. C. Certificates must be deployed in the Machine Certificate Store. D. The GlobalProtect agent may be used to distribute pre-logon certificates.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What must be configured to accurately report an application's availability when onboarding a discovered application for ZTNA Connector? A. icmp ping B. https ping C. tcp ping D. udp ping",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "All mobile users are unable to authenticate to Prisma Access (Managed by Strata Cloud Manager) using SAML authentication through the Cloud Identity Engine. Users report that after entering their credentials on the Identity Provider (IdP) login page, they are redirected to the Prisma Access portal without successful authentication, and they receive this error message: Error: Prisma Access Portal Authentication Failed using CIE-SAML with message “400 Bad Request” Which action will identify the root cause of this error? A. Verify the SAML metadata configuration in both Strata Cloud Manager and the IdP portal to confirm that the endpoint URLs and certificates are correctly configured. B. Examine the Security policy rules in Prisma Access to ensure that traffic from the IdP is allowed and not blocked. C. Verify the SAML metadata configuration in both the Cloud Identity Engine and the IdP portal to confirm that the endpoint URLs and certificates are correctly configured. D. Review the Authentication logs in Strata Cloud Manager to check for any SAML error messages or authentication failures.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer has configured a new Remote Networks connection using BGP for route advertisements. The IPSec tunnel has been established, but the BGP peer is not up. Which two elements must the engineer validate to solve the issue? (Choose two.) A. Secret B. MRAI Timers C. Peer AS Number D. Advertise Default Route Checkbox",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In an Explicit Proxy deployment where no agent can be used on the endpoint, which authentication method is supported with mobile users? A. LDAP B. Kerberos C. SAMLD. SSO",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which advanced AI-powered functionality does Strata Copilot provide to enhance the capabilities of Prisma Access security teams? A. Real-time traffic analysis for automated threat prevention B. Initial configuration of Prisma Access using a natural language interface C. Customized guidance for resolving issues through recommended next steps D. Automated remediation of misconfigured security policies",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where are tags applied to control access to Generative AI when implementing AI Access Security? A. To Generative AI applications for identifying sanctioned, tolerated, or unsanctioned applications B. To security rules for defining which types of Generative AI applications are allowed or blocked C. To user devices for identifying and controlling which Generative AI applications they can access D. To Generative AI URL categories for classifying trusted and untrusted Generative AI websites",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can an engineer use risk score customization in SaaS Security Inline to limit the use of unsanctioned SaaS applications by employees within a Security policy? A. Lower the risk score of sanctioned applications and increase the risk score for unsanctioned applications. B. Increase the risk score for all SaaS applications to automatically block unwanted applications. C. Build an application filter using unsanctioned SaaS as the category. D. Build an application filter using unsanctioned SaaS as the characteristic.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An employee reports being unable to use any video conferencing features across various web-based collaboration tools. However, colleagues not using the Prisma Access Browser (PAB) can use these features without any problem. Which two policy rule types or categories control this configuration? (Choose two.) A. Browser Security Controls B. Browser Customization Controls C. Access & Data Controls D. Network Security Controls",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization deploys the Prisma Access Browser (PAB) to secure web access from diverse endpoints, including personal devices where IT has limited control. To maintain a strong and proactive security posture across these varied environments, why is the use of PAB device posture attributes, such as OS version, file system encryption, and device type, considered essential? A. It permits PAB to function as a standalone endpoint detection and response (EDR) solution. B. It provides the administrators of PAB the ability to enable disk encryption on all endpoints. C. It allows administrators to identify and restrict access based on OS version and browser type on unmanaged devices. D. It enables the administrators of PAB to independently perform OS and browser patching on unmanaged devices.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer is implementing Prisma Access (Managed by Strata Cloud Manager) to connect mobile users, branch locations, and business-to-business (B2B) partners to its data centers. The solution must meet these requirements: • The mobile users must have internet filtering, data center connectivity, and remote site connectivity to the branch locations. • The branch locations must have internet filtering and data center connectivity. • The B2B partner connections must only have access to internally hosted proprietary applications running on non-standard ports. • There are overlapping prefixes advertised by the B2B partners. Which two actions will meet the customer requirements for the B2B connections? (Choose two.) A. Advertise the corresponding network prefixes using eBGP or static routes. B. Configure remote networks with NAT pools for each of the B2B connections. C. Configure service connections for data center connectivity. D. NAT the traffic at the customer premises equipment (CPE).",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is configuring a dedicated visitor sign-in kiosk in the main corporate office using Prisma Access Browser (PAB). A key security requirement is to ensure the device is locked down, which includes preventing users from creating paper copies of any on-screen information. The policy must specifically apply to this fixed-location kiosk. Which two PAB match criteria will enforce these restrictions on the kiosk? (Choose two.) A. Configuring the print control as the specific data control for the rule B. Configuring the kiosk control, which prevents printing C. Defining the policy scope based on location, specifying the location of the corporate offices D. Defining the policy scope based on networks, specifying the corporate public IP range or CIDR",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two advantages the Prisma Access Browser (PAB) offers in providing consistent security for accessing web-based resources across corporate-managed laptops and personal devices, as well as contractors using devices issued by third parties? (Choose two.) A. It enforces SSL Forward Proxy decryption to enable inspection of encrypted traffic, allowing for enhanced security and threat prevention capabilities. B. It provides all users on any devices secure access to the internet with enhanced security and threat prevention capabilities for encrypted traffic. C. It routes all traffic to Prisma Access to perform deep packet inspection of encrypted traffic, allowing for enhanced security and threat prevention capabilities. D. It applies an encryption layer to protect all browser assets with a trusted encryption chain that is independent of the operating system.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the network impact when a Prisma Access service connection is set as a dedicated service connection for traffic steering? A. It maintains its zone as Trust and continues to participate in both internal and external BGP routing. B. It changes its zone to Untrust. applies source NAT to forwarded traffic, and no longer participates in BGP routing. C. It maintains its zone as Trust; however, it disables all Security policies, allowing unrestricted traffic flow through the dedicated service connection. D. It applies destination NAT to forwarded traffic, maintains its BGP routing configurations, and allows traffic from both Trust and Untrust zones.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two actions will ensure an organization using Prisma Access (Managed by Panorama) receives notifications about service updates, including data plane upgrades? (Choose two.) A. Enable email notifications for the Cloud Services plugin in Panorama that are forwarded to the organization's email server. B. Configure SNMP traps on the Panorama appliance to receive alerts. C. Register for email or text notifications for Prisma Access on the SASE status page. D. Create a notification profile in Strata Cloud Manager (SCM) that will send an email when an alert is matched.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A large company with multiple branch offices requiring connectivity with location redundancy and active/active tunnels has requested a high-performance remote network architecture. What is the maximum number of IPSec tunnels supported per branch for this deployment? A. 2 B. 4 C. 6 D. 8",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A network security engineer is troubleshooting a newly provisioned remote network connection in Prisma Access. While the IKE Phase 1 and Phase 2 negotiations have successfully completed on the branch customer premises equipment (CPE), the engineer observes that no return traffic is arriving over the tunnel from the Prisma Access cloud. Which Strata Logging Service log facility should the engineer investigate to identify potential issues with VPN tunnel formation, security association errors, or negotiation failures? A. Tunnel B. Configuration C. Decryption D. System",
+    "options": {},
+    "most_voted": "D"
+  }
+]
