@@ -1,0 +1,62 @@
+[
+  {
+    "question": "A custom object Trainer_c has a lookup field to another object Gym_c. Which SOQL query will get the record for the Viridian Gym and all it’s trainers? A. SELECT Id, (SELECT Id FROM Trainer_c) FROM Gym_c WHERE Name = ‘Viridian City Gym’ B. SELECT Id, (SELECT Id FROM Trainers_c) FROM Gym_c WHERE Name = ‘Viridian City Gym’ C. SELECT ID FROM Trainer_c WHERE Gym_r.Name = ‘Viridian City Gym’ D. SELECT Id, (SELECT Id FROM Trainers_r) FROM Gym_c WHERE Name = ‘Viridian City Gym’",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Given the following Apex statement: Account myAccount = [SELECT Id, Name FROM Account]; What occurs when more than one Account is retuned by the SOQL query? A. The query fails and an error is written to the debug log. B. An unhandled exception is thrown and the code terminates. C. The variable, myAccount, is automatically cast to the List data type. D. The first Account returned is assigned to myAccount.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The OrderHelper class is a utility class that contains business logic for processing orders. Consider the following code snippet: public class without sharing OrderHelper( //code implementation } A developer needs to create a constant named DELIVERY_MULTIPLIER with a value of 4.15. The value of the constant should not change at any time in the code. How should the developer declare the DELIVERY_MULTIPLIER constant to meet the business objectives? A. A decimal DELIVERY_MULTIPLIER = 4.15; B. static final decimal DELIVERY_MULTIPLIER = 4.15; C. constant decimal DELIVERY_MULTIPLIER = 4.15; D. static decimal DELIVERY_MULTIPLIER = 4.15;",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which annotation should a developer use on an Apex method to make it available to be wired to a property in a Lightning web component? A. @RemoteAction (cacheable=true) B. @AuraEnabled C. @AuraEnabled (cacheable=true) D. @RemoteAction",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer has the following requirements: Calculate the total amount on an Order Calculate the line amount for each Line Item based on quantity selected and price Move Line Items to a different Order if a Line Item is not in stock Which relationship implementation supports these requirements on its own? A. A Line Item has a re-parentable lookup field to Order. B. Order has a re-parentable lookup field to Line Item. C. Order has a re-parentable master-detail field to Line Item. D. Line Item has a re-parentable master-detail field to Order.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the following Apex code: What is the value of x when it is written to the debug log? A. 0 B. 1 C. 3 D. 2",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Assuming that name is a String obtained by an <apex:inputText> tag on a Visualforce page, which two SOQL queries performed are safe from SOQL injection? (Choose two.) A. String query = ‘SELECT Id FROM Account WHERE Name LIKE \\‘%’ + name ‘%\\’’; List<Account> results = Database.query(query); B. String query = ‘SELECT Id FROM Account WHERE Name LIKE \\‘%’ + name.noQuotes() + ‘%\\’’; List<Account> results = Database.query(query); C. String query = ‘SELECT Id FROM Account WHERE Name LIKE \\‘%’+ String.escapeSingleQuotes(name) + ‘%\\’’; List<Account> results = Database.query(query); D. String query = ‘%’ + name + ‘%’ List<Account> results = [SELECT Id FROM Account WHERE Name LIKE :query];",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A credit card company needs to implement the functionality for a service agent to process damaged or stolen credit cards. When the customers call in, the service agent must gather many pieces of information. A developer is tasked to implement this functionality. What should the developer use to satisfy this requirement in the most efficient manner? A. Screen-based flow B. Approval process C. Apex trigger D. Lightning Component",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two characteristics related to formulas? (Choose two.) A. Formulas can reference themselves. B. Formulas are calculated at runtime and not stored in the database. C. Formulas can reference values in related objects. D. Fields that are used in a formula field can be deleted or edited without editing the formula.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers recently transitioned from Classic to Lightning Experience. One of its business processes requires certain values from the Opportunity object to be sent via an HTTP REST callout to its external order management system when the user presses a custom button on the Opportunity detail page. Example values are as follows: Name Amount Account Which two methods should the developer implement to fulfill the business requirement? (Choose two.) A. Create a custom Visualforce quick action that performs the HTTP REST callout, and use a Visualforce quick action to expose the component on the Opportunity detail page. B. Create a Remote Action on the Opportunity object that executes an Apex immediate action to perform the HTTP REST callout whenever the Opportunity is updated. C. Create a Lightning component quick action that performs the HTTP REST callout, and use a Lightning Action to expose the component on the Opportunity detail page. D. Create an after update trigger on the Opportunity object that calls a helper method using @Future (Callout=true) to perform the HTTP REST callout.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "While developing Apex class with custom search functionality that will be launched from a Lightning Web Component, how can the developer ensure only records accessible to the currently logged in user are displayed? A. Use the with sharing keyword. B. Use the intertied sharing keyword. C. Use the without sharing keyword. D. Use the WITH SECURITY_ENFORCED clause within the SOQL",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two settings must be defined in order to update a record of a junction object? (Choose two.) A. Read/Write access on the primary relationship B. Read/Write access on the junction object C. Read/Write access on the secondary relationship D. Read access on the primary relationship",
+    "options": {},
+    "most_voted": "A"
+  }
+]
