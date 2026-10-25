@@ -1,0 +1,1197 @@
+[
+  {
+    "question": "A user needs to amend a contract and change prices to reflect new discounts for existing active subscriptions and assets. How should the user achieve this? A. Change the status of the contract to Draft. Make price changes on the original quote used to generate the contract and check Contracted on the Opportunity again. B. Create a Price Book with Price Book Entries to reflect the new prices. Populate the Contract Amendment Price Book ID field with the new Price Book ID to generate Amendment Lines with new prices. C. Clone the Quote Lines which need to be updated. Modified the desired discounts on the cloned Quote Lines. Update the original Quote Lines to a Quantity of zero. D. Change the values for Net Price on the subscription or Price field on the asset. Amend the contract and use Refresh Prices.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers requires sales reps to choose a Square Footage value on the Configuration Attribute on one of the bundles to hide Product Options that are incompatible for the selected square footage. When the sales reps re-configure the bundle on a Renewal Quote, the Square Footage value that was set on the Configuration Attribute of the original Quote is reset to its default value. Currently, the sales reps must select the square footage again on the Renewal Quote. How should the Admin improve this process so the Configuration Attribute retains its value upon Renewal? A. Set the Renewed Asset lookup field on the renewal Quote Lines to reference the original Assets. B. Create a Twin Field of the Square Footage field on the Quote Line object. C. Set the Renewed Subscription lookup field on the renewal Quote Lines to reference the original Subscriptions. D. Create a Twin Field of the Square Footage field on the Asset and Subscription objects.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers allows clients to negotiate a discount for Product A until a specified date upon Contract activation. Which three fields on the Contracted Price record should be configured to satisfy this requirement? (Choose three.) A. Effective Date B. Expiration Date C. Product D. Contract E. Discount",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Admin wants to allow the user the ability to choose options and define option quantity via bundle configuration. Which three values for Configuration Type will meet this requirement? (Choose three.) A. Configurable B. Required C. Allowed D. None E. Disabled",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Given the Discount Schedule and pricing details of the Cloud Storage Product, what is the calculated Regular Unit Price for the Quote Line? Quote Line field values: List Price: $100 Quantity: 5 Discount Schedule field values: Type: Slab Discount Unit: Percent Discount Tiers: A. $500.00 B. $450.00 C. $480.00 D. $470.00",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "While making changes in the Quote Line Editor, sales reps have mentioned that clicking the Calculate button after each set of changes is too slow. Management has asked the Admin to streamline the Quote Line Editor so calculations occur automatically after each change is made. What Managed Package setting should the Admin enable to meet this requirement? A. Enable Quick Calculate B. Calculate Immediately C. Use Inactive Prices D. Use Legacy Calculator",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Admin is creating a Product Rule with an Advanced Condition. How should the Admin reference a specific Error Condition record in the text of the Advanced Condition field? A. Value of the Index field B. API name of the field in the Tested Field C. Salesforce ID of the Error Condition record D. Value of the Condition # field",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Admin wants to add a second level of categorization: groupings of Product Features in the Configurator to be displayed as tabs. Which step should the Admin take to meet this requirement? A. Set Option Layout to Tabs on the Product. B. Set and choose a Category on the Feature. C. Set Option Layout to Tabs on the Feature. D. Set and choose a Group on the Feature.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An annual subscription for Product A sells for $100 and has a Term Discount Schedule established on its Product record. A volume-based Discount Schedule is related to a Contracted Price that applies to Product A. Product A is added to a Quote for an Account that uses the Contracted Price. As quoted, Product A qualifies for a 10% volume-based discount and a $20 term-based discount. Which values for Special Price and Regular Price are expected if the Quote’s Subscription Term is 24 months? A. Special Price = $90, Regular Price = $140 B. Special Price = $100, Regular Price = $140 C. Special Price = $100, Regular Price = $144 D. Special Price = $72, Regular Price = $144",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) has a required Configuration Attribute for Color on all containers it sells. UC wants to display the Color of the containers in the output document. On which objects will the Admin need to create the Color field to meet this requirement? A. Product, Product Option B. Product, Quote Line C. Quote Line, Asset D. Product Option, Quote Line",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers wants to ensure that information in custom fields provided on original Quote Lines should also appear on Quote Lines for the Renewal Quotes. How should the Admin set up this data flow? A. Renewal Quote Line values are automatically mapped from original Quote Lines. B. A twin field should be created on both the Asset and Subscription objects to bring back to Renewal Quote Lines. C. A custom formula field should look up through the SBQQ_Source_c Quote Line lookup to the original Quote Line. D. A Price Rule should be created to pull the value from the original Quote Line and populate the Renewal Quote Line.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "For a quote with a Subscription Term of 18 months, what is the calculated price for the standard pricing fields? A. -- Regular Unit Price: $500 -- Distributor Unit Price: $550 -- Partner Unit Price: $275 -- Net Unit Price: $192.50 B. -- Regular Unit Price: $1,350 -- Customer Unit Price: $1,080 -- Partner Unit Price: $540 -- Net Unit Price: $594 C. -- Regular Unit Price: $1,500 -- Distributor Unit Price: $1650 -- Partner Unit Price: $825 -- Net Unit Price: $577.50 D. -- Regular Unit Price: $270 -- Customer Unit Price: $216 -- Partner Unit Price: $108 -- Net Unit Price: $118.80",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers uses Contracted Pricing to set pricing for specific distributors and those distributors’ business units (child accounts). Product A has a product family of Storage and a list price of $300. The parent account has a Contracted Price set to $200 and a filter based on the product family of Storage. Which two ways can the Admin set Product A back to list price on a business unit account? (Choose two.) A. Set Ignore Parent Contracted Prices to True on the Parent Contracted Price. B. Create a new Contracted Price record for Product A on the business unit account and set its Ignore Parent Contracted Prices to True. C. Create a new Contracted Price for Product A on the business unit account with a price of $300. D. Set Ignore Parent Contracted Prices to True on the business unit account record.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers wants to have quantity requirements for certain Product Options in a bundle. The Product Option’s quantity must be multiplied by the quantity of the bundle product. How should the Admin set this up in the bundle to meet the requirement? A. Select the Multiplier checkbox on the Bundle. B. Select Component as the Type field on the Product Option. C. Select the Quantity Editable checkbox on the Product Option. D. Select the Bundled checkbox on the Product Option.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Product A is a Product Option in a bundle and has a Price Book price of $100. When Product A is selected and its quantity is greater than 10, its price falls to $50. The Admin decides to use a Price Rule targeting the Configurator to implement this price change. Which minimum set of Price Conditions and Price Actions should the Admin create for this Price Rule? A. -- One Price Condition using a Summary Variable counting Product A to verify that Product A is selected. -- One Price Action to inject the value 10 into the Quantity field -- One Price Action to inject the value 50 into the List Unit Price field B. -- One Price Condition using a Summary Variable counting Product A to verify that Product A is selected -- One Price Condition using a Summary Variable summing up the quantity of Product A to verify that this Summary Variable is greater than 10 -- One Price Action to inject the value 50 into the List Unit Price field C. -- One Price Condition verifying that the SBQQ_ProductName_c field on the Product Option object is equal to “Product A” -- One Price Condition using a Summary Variable summing up the quantity of Product A to verify that this Summary Variable is greater than 10 -- One Price Action to inject the value 50 into the List Unit Price field D. -- One Price Condition using a Summary Variable summing up the quantity of Product A to verify that this Summary Variable is greater than 10 -- One Price Action to inject the value 10 into the Quantity field -- One Price Action to inject the value 50 into the List Unit Price field",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The sales operations team at Universal Containers used the Create Order button to generate an Order with only half of the available Quote Lines and then the team selects the Ordered checkbox. What updates should the sales operations team expect? A. An Order without Order Products is created. B. The existing Order is updated with the remaining Quote Lines. C. A second Order is generated with the remaining Quote Lines. D. An error is thrown informing the user an Order already exists.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers sells a product which must be priced as 10% of the total of all other fixed-priced products present on a quote. Which two represent a valid configuration to meet this requirement? (Choose two.) A. Pricing Method set to List and Subscription Pricing set to Percent of Total B. Pricing Method set to Percent of Total and Subscription Pricing set to Custom C. Pricing Method set to Percent of Total and Subscription Pricing blank D. Pricing Method set to Custom and Subscription Pricing set to Custom",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has products that will only be utilized as Product Options inside five different bundle products. When a user adds products to the Quote Line Editor, UC wants: Bundle products to show in the Product Selection page. Products that are Product Options of the bundles to be excluded from the Product Selection page. How should the Admin set up the bundles? A. Select the Component checkbox on any Product that is a Product Option for the bundles. B. Select the bundled checkbox on each Product Option and mark the Product inactive. C. Select the Selected checkbox on each Product Option and mark the Product inactive. D. Select the Hidden checkbox for any Product that is a Product Option for the bundles.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Quote Template has Template Sections related to these types of Template Content: Template Top Line Items HTML Quote Terms The Admin has associated these Template Content records to four Template Sections. Which three statements are valid about these types of Template Content? (Choose three.) A. Template Top and HTML are fully code-customizable. B. Line Items are either displayed as Standard or with Price Dimensions. C. Template Top is the only section that can show Billing/Shipping info. D. Quote Terms can be dynamic if Term Conditions are defined. E. Line Items can be coded into an HTML section.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Universal Containers user states that a Configuration Attribute value can be set up during the initial configuration, but the value is absent when the user reconfigures. What should the admin check to ensure the Configuration Attribute value is properly saved? A. A twin field must be created on the Product Option object. B. A twin field must be created on the Product object. C. A twin field must be created on the Quote object. D. A twin field must be created on the Quote Line object.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The Admin at Universal Containers recently created a new custom field referenced on the Target Field on a Price Action in a Price Rule. While testing the Price Rule, the Admin noticed that the Price Action failed to populate the custom field. The Admin checked the CPQ Package Setting and noticed that the Triggers Disabled checkbox was checked. After unchecking Triggers Disabled, the custom field still failed to populate. How can the Admin ensure this custom field can be referenced by the Calculator? A. Revoke the Advanced Calculator and re-authorize the Calculation Service. B. Re-execute the Post Install Script in Package Settings to ensure the Calculator Referenced Fields are up-to-date. C. Rename the custom field label, then recreate the Price Action to reference the new field label. D. The Admin must reference a standard CPQ field because custom fields are unsupported with Price Rules.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers uses over 45,000 different Container Product records with CPQ. When a sales rep views the Add Products page, a list of the first 2,000 Products is displayed in a disorganized manner. The product management team wants the products to display in collapsible groups based on the product family. How should a CPQ Specialist enable this functionality from the Salesforce CPQ managed package configuration settings? A. Add the Product Family field to the Search Results Field Set on the Product object. B. Check the Solution Groups Enabled checkbox, set Object to Quote Line and set Name Field to Product Family. C. Select Product Family in the Product Search Plugin field in Plugins. D. Select Product Family in the Product Results Group Field Name field in Additional Settings.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers has a Quote that contains a Quote Line associated to an Asset Product in addition to another Quote Line. Which property must be present on the additional Quote Line to create a Subscribed Asset at the time of Contract generation? A. Subscription Pricing equals Percent Of Total B. Package equals True C. Pricing Method equals Percent of Total D. Bundled equals True",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which scenario must an Admin choose the Custom value for the Condition Met field of a Price Rule? A. One or more Price Condition records have a lookup to a Summary Variable. B. One or more Price Condition records use a formula that references a non-CPQ object field. C. The Price Rule uses a combination of AND and OR logic when evaluating three or more Price Conditions. D. The Price Rule uses a custom lookup object to store key-value pairs for Price Conditions.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers has a Product that requires a price of USD 100 and EUR 95 in the 2019 Price Book. When the Product is selected under a bundle, the price be included as part of the bundle. How should the Admin meet this requirement? A. -- Change the Price Book Entries for the Product in the 2019 Price Book to 100 USD and 95 EUR. -- On the Product Option, set the Bundle field to True. B. -- Change the Price Book Entries for the Product in the 2019 Price Book to 100 USD and 95 EUR. -- On the Product Option, set the Selected field to True. C. -- Create a Product Option record and set the Unit Price field to 100 and the Currency field to USD. -- Create a Product Option record and set the Unit Price field to 95 and the Currency field to EUR. -- On both Product Option records, set the Required field to True. D. -- Change the Price Book Entries for the Product in the 2019 Price Book to 100 USD and 95 EUR. -- On the Product Option, set the System field to True.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) sells a Product in four geographical regions that comes in 10 colors and four sizes. Instead of having a separate SKU for all combinations, UC needs the sales reps to specify location, color, and size during configuration. What CPQ functionality can UC’s Admin leverage to meet this requirement? A. Option Constraints B. Product Options C. Product Features D. Configuration Attributes",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The Products sold by Universal Containers (UC) have a Product Family of Hardware or Software. Each Quote should only contain one of the Product Families. At the time of Quote creation, the sales rep is required to populate a custom picklist with the API name Family__c with values of Hardware or Software. If the sales rep selects Hardware for the Family__c field, the rep should only be able to add Products with the Product Family of Hardware to the Quote. The same premise applies for the value Software for the Family__c field. How should the Admin meet this requirement? A. Create a Search Filter related to the Add Products Custom Action where: Target Object is Product Target Field is Product Family Operator is Equals Filter Source Object is Quote Filter Source field is Family__c Hidden is True B. Create a Custom Action Condition related to the Add Products Custom Action where: Target Object is Product Field is Product Family Filter Value is Family__c C. Create a Custom Action Condition related to the Add Products Custom Action where: Target Object is Quote Field is Family__c Filter Value is Product Family D. Create a Search Filter related to the Add Products Custom Action where: Target Object is Quote Target Field is Family__c Operator is Equals Filter Source Object is Product Filter Source Field is Product Family Hidden is True",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers requires that all users add at least one Product Option from the Maintenance Feature to a bundle. Additionally, users must select at least one and no more than two Product Options from the Support Feature. How should the Admin set up these requirements for the users? A. Set Min Options and Max Options to zero for Maintenance. Set Min Options to zero and Max Options to two for Support. B. Set Max Options for Maintenance to one. Set Min Options to one and Max Options to two for Support. C. Set Min Options for Maintenance to one. Set Min Options to one and Max Options to two for Support. D. Set Min Options for Maintenance to one. Set Min Options to zero and Max Options to two for Support.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers provides a discount for an enterprise-level customer if a single line’s Net Price is above a certain threshold. The Admin has set up a Price Rule with a reference to a custom formula field on the Price Condition to apply the discount automatically. The user has to click Calculate twice for the discount to apply. What is the most likely cause of the issue? A. The Evaluation Scope of the Price Rule is set incorrectly to fire on the Configurator, so the Price Rule fires the Configure Products page. B. The referenced formula field contains information that has yet to be calculated, so the Price Rule fires the second time it’s evaluated. C. The use of formula fields in Price Conditions is unsupported, so the Price Rule fires and returns an error the first time. D. The referenced formula field contains date/time data information that is unsupported, so the Price Rule fires sporadically.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has a single Price Book for several currencies. The Admin is creating a Primary Quote from an Opportunity and notices the Quote inherits the Price Book from the Opportunity. Which Products will be available within the Product Selection page? A. All Products with Price Book Entries in the Opportunity/Quote Currency B. All Products with Price Book Entries with a positive Price C. All Products with Price Book Entries in all Active Currencies D. All Products with Price Book when Dated Exchange Rates are enabled",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has created a Discount Schedule with the Override Behavior set to All Tiers and applied it to a Product. A sales rep then adds this Product to a Quote, manually changes the discount percent of a Discount Tier, and saves the Quote. At what point during the sales process can the sales rep be assured that the override amount will be unaffected by changes the Admin may make to the original Discount Schedule? A. The Quote status has changed to Approved. B. The Opportunity status has changed to Proposal/Price Quote. C. The Save or Quick Save buttons are clicked. D. Override values are subject to Discount Schedule updates made by the Admin.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In Universal Containers’ original implementation, all Additional Discount fields were removed from the Quote Line Editor interface in favor of a custom field. Today, Universal Containers wants to use the out-of-the-box Additional Discount field to apply on a Product-by-Product basis for all Products. To which Field Set does the Admin need to add the Additional Discount field? A. The Quote Line object’s Summary Fields Field Set B. The Quote Line object’s Line Editor Field Set C. The Quote Line Group object’s Line Editor Field Set D. The Quote object’s Line Editor Field Set",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The Admin decides to use a Price Rule to set a default 10% discount on Product A if a client has already purchased this item. Product A is an Asset product. The Admin has already created Price Conditions to target Quote Lines for Product A and the appropriate Actions to apply the 10% discount. Which Summary Variable and Price Condition are needed to apply this Price Rule to Quotes Lines for Product A, the item the customer purchased previously? A. Create a Summary Variable counting the Asset records for Product A and create a Price Condition verifying that the Summary Variable is greater than the value 0. B. Create a Summary Variable summing the quantity of the Asset records for Product A and create a Price Condition with the Tested Field value set to Quantity and the Tested Object value set to Asset is greater than the value 0. C. Create a Summary Variable summing the quantity of Product A from Quote Lines and create a Price Condition verifying that the Summary Variable is greater than the value 1. D. Create a Summary Variable counting the Asset records for Product A and create a Price Condition verifying that the Quantity field on the Quote Line is greater than the Summary Variable.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The EditLinesFieldSetName special field on the Quote object references a Field Set that directly controls which characteristic of the Quote Line Editor? A. The Quote fields that may be edited. B. The fields that trigger a calculation event to occur. C. The Quote Line fields that are visible. D. The fields that appear in the Quote Line Drawer.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user is contracting an Amendment Opportunity to increase the Quantity of a subscription. The subscription is generating on the amended Contract, but the existing Renewal Opportunity contains only the original Opportunity Products. Which product and contract field values should the Admin set to ensure the Quantity of the Renewal Opportunity Products is updated? A. -- The Product’s Subscription Type = Renewable -- The Contract’s Renewal Forecast = False -- The Contract’s Renewal Quoted = True B. -- The Product’s Subscription Type = Renewable -- The Contract’s Renewal Forecast = False -- The Contract’s Renewal Quoted = False C. -- The Product’s Subscription Type = Renewable -- The Contract’s Renewal Forecast = True -- The Contract’s Renewal Quoted = False D. -- The Product’s Subscription Type = Renewable -- The Contract’s Renewal Forecast = True -- The Contract’s Renewal Quoted = True",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How should an Admin enable renewal uplift on an Account? A. Update the Markup (%) field on the Renewal Quote. B. Update the Renewal Pricing Method to Uplift on the Account, then populate the Renewal Uplift (%) field on the Contract record. C. Select the Combine Subscription Quantities checkbox on the Contract record to the Account. D. Change the Renewal Pricing Method to Same on the Account.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers wants to show a custom text field with the API name Additional_Text__c on the Quote Document. This field already exists and is located on the Quote object. What is the correct syntax to insert this into an HTML Template Content? A. {!quote.Additional_Text__c} B. {!SBQQ__Quote__c.Additional_Text__c} C. {!SBQQ__Quote__r.Additional_Text__c} D. {!quote__r.Additional_Text__c}",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Admin at Universal Containers has hidden the prices of Products on the Configure Products page. How should the Admin make the prices visible again? A. Go to the Product Option record and check if the Price Editable field is False. B. Go to the Product Option object’s OptionConfiguration Field Set and add the Unit Price field. C. Go to the Product Option object’s Unit Price field and add visibility to its Field-level Security. D. Go to the Product Option record and check if the Default Pricing Table field is set to Standard.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "While performing an amendment, a sales rep is unable to edit the Additional Discount for an existing subscription Quote Line. What is the cause of this behavior? A. The org is using legacy amendment and renewal service. B. A Product Rule is preventing the Additional Discount from being edited. C. Additional Discount is a locked field on amendment Quotes. D. The Non Discountable field is marked True on the Product record for the Quote Line.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user is quoting four subscription Products: Product A, Product B, Product C, and Product D. Product A and B are in Quote Line Group 1, while Product C and D are in Quote Line Group 2. The Quote’s Start Date is June 4, 2020. The Quote’s End Date is June 2. 2021. The user wants Product A and B’s Subscriptions to end on June 3, 2021, and Product C and D’s Subscriptions to end on December 3, 2021. Which two methods could the user apply individually to meet the requirement? (Choose two.) A. Change the End Date on Quote Line Group 2 to December 3, 2021. B. Change the Subscription Term on Quote Line Group 2 to the value 18. C. Change the Subscription Term on the Quote Lines for C and D to the value 18. D. Change the End Date on the Quote Lines for C and D to December 3, 2021.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Universal Containers Admin is creating a custom formula field, Approval Score, on the Quote Line object to calculate approval score. This field will calculate the average approval score for the Quote to determine how many levels of approval the record should go through when submitted. The Admin planned to use a roll-up summary field on the Quote to average the Quote Line Approval Score field. The Admin received an error when attempting to create the field. The Quote object has too many roll-up summary fields. In addition to creating a custom number field on the Quote object to capture the average Approval Score, which CPQ functionality should the Admin use to resolve the issue? A. Create a Workflow Rule with a Field Update to populate the average Approval Score. B. Create a trigger to populate the average Approval Score. C. Create a Summary Variable and Price Rule to populate the number field with the average Approval Score. D. Create a Summary Variable and Product Rule to populate the number field with the average Approval Score.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How can an Admin prevent users from reconfiguring a specific bundle after initial configuration? A. Set the Configuration Type to Disabled. B. Set the Active checkbox on Reconfigure Line Custom Action to False. C. Set the Configuration Type to Allowed and Configuration Event to Always. D. Set the Configuration Type to Allowed and Configuration Event to Add.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) sells a Product that is only sold as part of a bundle. UC wants to remove this item from the Product Selection screen. How can the Admin configure the Product to meet this requirement? A. Select the Component checkbox on the Product. B. Set the Asset Conversion field to One per unit. C. Select the Hidden checkbox on the Product. D. Set the Configuration Type field to Allowed.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers wants to show a Monthly Price column on the Quote Document if the Quote has Payment Terms of Net 30. In addition to creating the Monthly Price Line Column, which two configurations are needed to satisfy this requirement? (Choose two.) A. Set the Conditional Print Field on the Line Column record. B. Create a custom checkbox formula field indicating if the Payment Terms are Net 30. C. Include Monthly Price in the Quote Line Editor Field Set. D. Create an additional Line Items section without the Monthly Price field.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How should the Admin ensure Universal Container’s users can generate output documents in Microsoft Word format? A. Set the Allow Output Format Change checkbox on the Quote Template. B. Create a second Quote Template in Microsoft Word format. C. Create duplicate Template Sections in Microsoft Word format. D. Set the Allow Output Format Change checkbox on each user in User Settings.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After installing the Advanced Approvals managed package, which object is enabled out of the box to leverage all Advanced Approval functionality? A. CPQ Quote object B. Opportunity object C. Core Salesforce Quote object D. CPQ Quote Line object",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) has an approval structure that involves both the Deal Desk and Finance teams. UC wants to send both Approval requests simultaneously when a Quote is submitted to reduce the time for Quote approval. Which Approval type best suits UC’s needs? A. Native Approvals; multiple Approval Processes can be set up to send Approval requests in parallel. B. Native Approvals; multiple Approval Steps can be set up with the same Step Number to send Approval requests in parallel. C. Advanced Approvals; multiple Approval Chains can be set up to send Approval requests in parallel. D. Advanced Approvals; multiple Approval Steps can be set up in a single Approval Chain to send Approval requests in parallel.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Admin created a picklist field on the Product Option object called Picklist123__c. The Admin created a Configuration Attribute related to a Product called Bundle Z whose Target Field is Picklist123__c. The Admin selected Bundle Z during Product Selection and populated a value for Picklist123__c on the Configuration Attribute and saved from configuration. The Admin noticed that when Bundle Z is reconfigured, the value populated in the Configuration Attribute has reverted. How can the Admin ensure the selected value persists in the Configuration Attribute when Bundle Z is reconfigured? A. Create a Product Option formula field named AtributeMapping that returns a comma-separated string of field name and value pairs. B. Create a Price Rule with Configurator scope that injects the Quote Line field value into the Product Option field. C. Create a Workflow Rule that updates the Product Option field upon entering configuration. D. Create field Picklist123__c on the Quote Line object so the value is auto-mapped back to the Configuration Attribute when the user enters configuration.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers wants to update the Quantity of a Product in the Line Editor with a Price Rule. The rule should apply only for this one specific Product. What should the Admin do to ensure that the Price Rule only changes Quote Lines referencing this Product. A. Fill the Product field on the Price Rule with the Product. B. Create a Price Condition against a Quote Line field that contains a value that is unique to the product selected. C. Create an Error Condition against a Quote Line field that contains a value that is unique to the product selected. D. Fill in the Lookup Object field on the Price Rule with the Product.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers sells a bundle Product which contains many Features and Options. Users report that the bundle is difficult to configure due to a significant amount of scrolling to find the desired Features and Options. What are three ways the Admin can adjust the design of this bundle to reduce scrolling in Configuration? (Choose three.) A. Set Option Selection Method to Add on the Product Features. B. Set System to True on the Product Options to be excluded from the Configurator. C. Group the Product Features of the bundle into tabs using the Category field. D. Change Enable Large Configuration to True on the bundle Product. E. Change Option Layout to Tabs on the bundle Product.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When an Order is Contracted, the sales operations team needs to store a unique license number on the Asset record for each downloadable Product sold. How should the Admin meet the business requirement? A. Set Asset Conversion for each downloadable Product to One per quote line. B. Set Asset Conversion for each downloadable Product to null. C. Set Asset Conversion for each downloadable Product to One per unit. D. Set Asset Conversion for each downloadable Product to a custom value.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers has come to an agreement for future pricing with a specific customer. The agreement is for special volume-based tiered pricing for Product A on all future quotes. How can this agreement be configured to set the Regular Price for this customer? A. Create a Discount Schedule and add it to a Contracted Price record for Product A from the customer’s Account. B. Create a Discount Schedule and add Product A to the Product lookup on the Discount Schedule. C. Create a Discount Schedule and add it to the Discount Scheduled field on Product A. D. Create a Discount Schedule and add the customer to the Contracted Prices related list on the Discount Schedule.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Admin wants to generate one Asset record for each Quantity of a new Product. Currently, zero Asset records are generated for this Product when included on Quotes that are Contracted. Which setting should the Admin change to meet the business requirement? A. Set the Account field Renewal Model to Asset Based. B. Set the Product field Asset Amendment Behavior picklist to Allow Refund. C. Set the Product field Asset Conversion picklist to One per Unit. D. Set the CPQ Package setting Renewal Model to Asset Based.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers has a slab Discount Schedule for Product A with these Discount Tiers: If Product A has a List Price of $100.00, what is the Net Total for a Quote Line with the quantity of 21? A. $1,725.00 B. $1,050.00 C. $1,700.00 D. $1,575.00",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) has a Product Family called Software. When a Configuration Attribute in the bundle is set to Perpetual, UC wants to Hide all Products with the Product Family called Software. The Admin has created a Product Rule with a Configuration Rule. Which additional supporting records should the Admin configure so the Product Rule meets this requirement? A. An Error Condition should check the Product Family value on the Product Option record. A Product Action using the Filter Field should Hide the Products. B. An Error Condition should compare the Product Family value on the Product Option record. A Product Action should Show all Products with Product Family other than Software. C. An Error Condition should compare the Perpetual value against the Configuration Attribute. A Product Action should Hide each Product. D. An Error Condition should compare the Perpetual value against the Configuration Attribute. A Product Action using the Filter Field should Hide the Products.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers sells a monthly subscription service with tiered pricing: Which two pricing configurations meet these requirements? (Choose two.) A. Block pricing with slab Discount Schedule B. Block pricing with overage C. Block pricing with range Discount Schedule D. List pricing with slab Discount Schedule E. List pricing with lookup Price Rule",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A sales user generated a Renewal Opportunity with Opportunity Products by using the Renewal Forecast checkbox on the Contract. Near the end of the Contract, the sales user navigates to the Renewal Opportunity and uses the New button from the Quotes Related List. The sales user notices the Renewal Quote is missing some of the renewable Products. Preserve Bundle Structure on the Contract is set to True. What are two ways a sales user should generate an accurate Renewal Quote? (Choose two.) A. Clone the original Quote and update Quote Type to Renewal. B. Create Renewal Quotes using the Renew Contracts button from the Account’s Contract Related List. C. Create Renewal Quotes using the Renewal Quoted checkbox on the Contract. D. Clone the original Opportunity using the Clone with Products button and use the New Quote button in the Quote related list.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the correct order of data import to load Price Rules into CPQ? A. Price Books, Price Rules, Lookup Queries, Price Conditions, Price Actions B. Summary Variables, Price Rules, Price Conditions, Lookup Queries, Price Actions C. Costs, Price Books, Price Rules, Discount Categories, Discount Schedules D. Price Books, Price Rules, Price Dimensions, Discount Tiers, Price Actions",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two objects could a Discount Schedule be applied to and take precedence over the Discount Schedule identified in a Product Feature? (Choose two.) A. Contracted Price B. Product C. Product Option D. Segmented Product",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has a bundle with many Features. In one of these Features, Feature A, all Product Options share the same Discount Schedule. How should the Admin set up a Discount Schedule so the quantities of all Product Options in Feature A are aggregated when determining the Discount Tier? A. Set the Discount Schedule on the Product Option records and mark the Cross Products checkbox as False on the Discount Schedule. B. Set the Discount Schedule on Product Feature A and mark the Cross Products checkbox as True on the Discount Schedule. C. Set the Discount Schedule on the Product Option records and mark the Cross Orders checkbox as True on the Discount Schedule. D. Set the Discount Schedule on Product Feature A and mark the Cross Orders checkbox as True on the Discount Schedule.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) created a Custom Action called Add Subscriptions and a Search Filter for Products flagged as subscription Products. How can UC ensure that sales reps are restricted to subscription Products when the reps click on the Custom Action called Add Subscriptions? A. Remove the Subscription flag from the Product’s Search Filters Field Set. B. Set the Filter Value on the Add Subscriptions Search Filter to True and mark the Hidden checkbox on the subscription Search Filter to True. C. Set the Filter Value on the Add Subscriptions Search Filter to Hidden. D. Remove the Subscription flag from the Product’s Search Results Field Set.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Admin created a dynamic bundle and needs a Product Rule to limit which products users see when configuring the bundle. Which type of Product Action should the Admin create to ensure that only a specific set of products may be selected for the dynamic bundle? A. Show B. Enable C. Optional Filter D. Default Filter",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Admin is setting up multiple Option Constraints. When configuring the bundle, a user should be unable to select Product B unless the user has also selected Product A. What are two steps the Admin must take to set up the Option Constraint? (Choose two.) A. The Active checkbox should be set to True. B. Type should be Dependency. C. Check Prior Purchases should be set to False. D. Option Constraint Group should be populated.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In what way does Smart Approvals expedite the approval process? A. Rejected quotes that are resubmitted within previously approved values go directly to the person who rejected. B. Quotes with multiple steps in the approval chain go directly to the highest approver required. C. Quotes within defined thresholds will be automatically approved. D. Approving a quote will auto-approve any lesser-discount quotes related to the same opportunity.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) licenses shipping software that is sold for a fixed price based on each quantity tier as seen in the table below. For example, buying eight licenses would cost a total of $1,800 rather than multiplying unit price by quantity. Further discounts on this product are unavailable. Which three steps should the Admin take to set up this pricing? (Choose three.) A. Set Pricing Method to Fixed Price on the Product record. B. Create Block Pricing records on the Product for each quantity tier with a different price for each tier. C. Create a Slab Discount Schedule for the Product for each quantity tier with a different discount for each tier. D. Set Non Discountable to True on the Product record. E. Set Pricing Method to Block on the Product record.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) wants to sell products with monthly subscription terms. UC wants additional days to round up to the nearest month for calculating the prorated price. Which CPQ package settings should UC use to meet the business requirement? A. Subscription Term Unit: Month Subscription Prorate Precision: Month B. Subscription Term Unit: Day Subscription Prorate Precision: Day C. Subscription Term Unit: Month Subscription Prorate Precision: Monthly + Daily D. Subscription Term Unit: Month Subscription Prorate Precision: Day",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is implementing CPQ to support two languages. Which two portions of text can be translated using the Salesforce CPQ Localization object? (Choose two.) A. The Feature Name field on the Configure Products page B. HTML Template Content in the Quote document C. Picklist values in the Product Family field on the Product object D. Configuration Attribute picklist values",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers must be able to create Quotes that contain Quote Lines with different Start Dates. Order Products must be separated into Orders after generation based on the Start Dates. How can a CPQ Specialist meet this business requirement? A. Set both the Order by Quote Line Group and Ordered checkboxes to True. B. Change Default Order Start Date in CPQ Package settings to Quote Start Date. C. Separate Quotes must be created for each unique Start Date. D. Set the Order By picklist on the Quote to SBQQ_StartDate_c, and the Ordered checkbox to True.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) is planning to end-of-life a subscription Product by preventing any new sales of the Product. UC wants to allow renewals if a customer has already purchased the Product. How can the Admin meet this requirement? A. Delete the Product so it is unavailable for new business Quotes. B. Create a new renewal Product, then link it to the end-of-life Product by using the Renewal Product lookup. C. Deactivate the Product since CPQ allows inactive Products to be renewed. D. Create an end-of-life checkbox on the Product, then create a Search Filter to exclude any Product marked end-of-life from Product Selection.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When creating Orders from Quotes with Salesforce CPQ, the Admin wants to separate similar Products into Orders based on the Product Family of the Products being ordered. Which two steps must the Admin perform to automatically split these types of Orders? (Choose two.) A. Enable Allow Multiple Orders from a checkbox in the CPQ Package Settings. B. Enable Allow Multiple Orders from a checkbox on the Quote. C. Set the Order By field on the Quote Line to Product Family. D. Set the Order By field on the Quote to Product Family.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers wants to update a custom Quote Line field within the Quote Line Editor with a value of Low, Medium, or High to categorize the margin of each Quote Line. Which approach should the CPQ Specialist recommend to meet this business requirement? A. A Process Builder on the Quote Line to update the picklist field B. A Price Rule with the Calculation Event of On Initialization to update the picklist field C. A Price Rule with the Calculation Event of After Calculate to update the picklist field D. A Workflow Rule and field update on the Quote Line to update the picklist field",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers wants its premier service, Shipping Plus, to appear at the top of Product Selection when users add Products to the Quote. How can the Admin configure the Shipping Plus Product record to meet this requirement? A. Set the Product's Sort Order as the only null Sort Order of any Product. B. Set the Product Code as the first alphabetically of any Product's Product Code. C. Set the Product's Product Code as the only null Product Code of any Product. D. Set the Sort Order as the lowest numerical value of any Product's Sort Order.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers has a customer account with specific pricing. Which two individual actions could the Admin take to set up a Contracted Price for this customer? (Choose two.) A. Populate the Generate Contracted Price field on a Quote record. B. Generate a Contracted Price via the Contracted checkbox on the Quote record. C. Add a Partner to the Partner field on the Quote record. D. Create a Contracted Price record related to an Account record.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Admin has pasted the Salesforce ID of an image into the Watermark ID field of a Quote Template, but the watermark image is absent from the rendered Document. What is preventing the watermark from appearing? A. The Watermark Shown Quote field is unchecked. B. The image file type is PNG. C. The Opportunity's Stage field is equal to Closed/Won. D. The Quote's Status field is equal to Approved.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers sells a bundle with several pre-selected Product Options. Most of the time, sales reps leave the bundle configuration as is, but want the ability to change the configuration if desired. What should the Admin do to meet this requirement? A. Set the Configuration Type field of the bundle to a value of Required and the Configuration Event field to a value of Always. B. Set the Configuration Type field of the bundle to a value of Allowed and the Configuration Event field to a value of Add. C. Set the Configuration Type field of the bundle to a value of Allowed and the Configuration Event field to a value of Edit. D. Set the Configuration Type field of the bundle to a value of Disabled and the Configuration Event field to a value of Always.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Admin at Universal Containers has observed that the value in the Quantity field on an Opportunity Product is different from the value in the Quantity field on its associated Quote Line. Which two scenarios describe when Quote Line Quantity and Opportunity Product Quantity will be different? (Choose two.) A. The Quote Line's Product has Pricing Method set to Block. B. The Quote Line's Product has Asset Conversion set to One Per Unit. C. There is a Price Rule that changes the Quote Line's Quantity on the After Calculate event. D. The Quote Line is on an amendment Quote and has a different Quantity from its original Quote Line.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers has a bundle that has a set price regardless of the number of Product Options that are included in the bundle. Any of the Product Options selected must show on the Quote Line Editor with: • A List Price of Included • A Net Price of $0 because it is included with the price of the bundle How should the Admin set up the bundle to meet this requirement? A. Select the Required checkbox on the Product Options. B. Select the Selected checkbox on the Product Options. C. Select the Bundled checkbox on the Product Options. D. Set the Unit Price on the Product Options to be $0.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the correct order of data import to load Quote Template in CPQ? A. Quote Templates, Template Sections, Line Columns, Template Content, Quote Terms, Term Conditions B. Quote Name, Quote Section, Quote Line Columns, Quote Content, Template Terms, Term Conditions C. Quote Content, Quote Name, Quote Section, Quote Line Columns, Template Terms, Term Conditions D. Template Content, Quote Templates, Template Sections, Line Columns, Quote Terms, Term Conditions",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers sends a company PDF brochure with each Quote to potential customers. Sales reps attach the brochure to each email sent. What should the Admin do to simplify this process? A. Add the PDF as a required Additional Document on the Quote Template. B. Manually attach the PDF as an Additional Document on each Quote the sales rep sends. C. Create an HTML Template Content record for the PDF and include it in a Template Section. D. Upload the PDF into the Documents object folder named Output Attachments.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers wants a group of users to receive Approval requests at the same time. Only one user from the group needs to respond to the Approval request. What should the Admin do to meet this requirement? A. Create an Approver and Approval Rule record for each user. Set the Parallel checkbox to True and Approval Step to 1 for each rule, then add all rules to the same Approval Chain. B. Create an Approver record for each user, and a single Approval Rule record related to one of the Approvers. Using the Next Approver lookup field, sequence each Approver record to form a chain. C. Create an Approver record related to the Approval Rule, and reference a Group ID for the users who will be involved. Set the Unanimous checkbox to False on the Approver record. D. Create an Approver and Approval Rule record for each user. On each Approval Rule, reference the same Approval Chain and Approval Conditions, and assign a unique Approval Step for each Approval Rule.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Admin at Universal Containers has received feedback about the amount of horizontal scrolling necessary to access Clone and Delete actions on Quote Lines in the Quote Line Editor. What should the Admin do to resolve this issue? A. Update the Custom Action Location to Left. B. Set a lower value in the Display Order field on the Custom Action record. C. Move the Clone and Delete actions into the Quote Line Editor drawers. D. Change the Actions Column Placement in package settings to Left.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers is rolling out a new version of its Premier Support offering named Premier Pro. The sales operations team wants to ensure that when a sales rep renews an existing Contract with Premier Support, it is replaced with Premier Pro. What does the Admin need to do to support this business requirement? A. Set the Renewal Product field on the Premier Support Product record to Premier Pro. B. Set the Upgrade Target field on the Premier Support Product record to Premier Pro. C. Create a Report of all Renewal Quotes with Premier Support Product and replace Quote Lines with Premier Pro. D. Create a Price Rule to replace Premier Support Quote Lines with Premier Pro.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has multiple sales teams that need to select from a subset of the product catalog on the Product Selection page. Which solution meets the business requirement without creating a separate Price Book? A. Create a Hidden Filter in Product Selection based on Profile. B. Create multiple bundles with validation Product Rules. C. Create a Filter Product Rule. D. Create a bundle with a Configuration Attribute.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) wants to organize quoted products representing different project milestones with Quote Line Groups in the Quote Line Editor. When the customer accepts the Quote, UC wants the sales operations team to generate a separate order per Quote line Group. How should the Admin meet the business requirements? A. Leverage Salesforce automation to select the Order by Quote Line Group field on the Quote. B. Create a procedure where Sales Reps enter notes on each Quote Line to indicate which products belong on the same Order. C. Leverage Salesforce automation to set the Ordered By field on the Quote to a picklist value that represents a custom Quote Line field. D. Create a Validation Rule that prevents an Order Product from being created on an Order representing the wrong milestone.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers wants to change its $500 maintenance product to be based on a percentage of subscription products in the Storage product family. The maintenance product has been updated to be priced as Percent Of Total and the percentage has been set. How should the product records be altered to meet this requirement? A. Set the maintenance product Include in Percent of Total to True. On all Storage subscription products, set the Percent Of Total Category to Storage and set Include in Percent of Total to True. B. Set the maintenance product Percent Of Total Category to Storage. On all Storage subscription products, set the Percent Of Total Category to Storage and set Exclude From Percent of Total to False. C. Set the maintenance product Percent Of Total Category to Storage. On all Storage subscription products, set the Percent Of Total Category to Storage and set Include in Percent of Total to True. D. Set the maintenance product Percent Of Total Category to Storage and set Include in Percent of Total to True. On all Storage subscription products, set the Percent Of Total Category to Storage.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers has two products: • C-STOR-L, which is a Large Storage Container. • C-LID-L, which is a Lid for a Large Storage Container. These are Product Options within the same bundle. C-STOR-L is required before C-LID-L is selected in the bundle. The Admin wants to create an Option Constraint. What field should C-LID-L be stored in to meet this requirement? A. Selected Option B. Dependent Option C. Constrained Option D. Required for Option",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Given a customer's tiered pricing model, an Admin wants to allow users to define Discount Tiers and use those values as the Regular Price instead of an Amount deducted from the List Price. How should the Admin configure the Discount Schedule to meet this requirement? A. Set the Discount Unit to Amount, choose All from the Override Behavior picklist, and then select the Use Price for Amount checkbox. B. Set the Discount Unit to Percent, set the Aggregation Scope to Quote, choose Current Tier from the Override Behavior picklist, and then select the Use Price for Amount checkbox. C. Set the Discount Unit to Percent, set the Aggregation Scope to Quote, choose Current Tier from the Override Behavior picklist, and then select the User Defined checkbox. D. Set the Discount Unit to Amount, create a custom Override_Amount_c field on the Edit Tiers page, select the User Defined checkbox, and then choose All from the Override Behavior picklist.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers offers the same Products in different regions of the country. Each sales rep is assigned to a single region numbered 1 through 10. Each region has some Products which are region-specific and unavailable to users from other regions. Managers can add Products to a sales rep's Quotes that are inaccessible to other sales reps. The Admin has created and populated a custom Region field on the Product object. Which two steps should the Admin take to meet the business requirement? (Choose two.) A. Add a Search Filter to the Add Products Custom Action to filter Products based on the current user. B. Create a single Price Book with all Products. Share the Price Book with all users. C. Create a Price Book per region for sales reps. Share the regional Price Book with appropriate sales reps. D. Use Product rules to hide Products from some sales reps.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Admin wants to map Configuration Attribute values to Quote Lines that are for parent bundle products only. The fields are set up to correctly map between Quote Lines and Product Options. Which setup will ensure this condition is met? A. On the child options, Apply Immediately is False and Apply Immediately Context is Always. B. On the bundled parent, Apply to Product Options is False. C. On the Configuration Attribute, Apply to Product Options is False. D. On the Configuration Attribute, Auto-Select is False.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers wants its users to be able to apply Additional Discounts in the Line Editor at both the Quote and Group level. Which two steps should the Admin take to fulfill this requirement? (Choose two.) A. Add Additional Disc. (%) to the Line Editor Field Set on the Quote object. B. Add Additional Disc. (%) to the Line Editor Field Set on the Quote Line Group object. C. Add Additional Disc. to the Line Editor Field Set on the Quote Line object. D. Add Additional Disc. to the Segmented Line Editor Field Set on the Quote Line object.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers implemented CPQ Contract Amendment functionality via the Amend button on the Opportunity. Since an Account can have many different Contracts, the Admin implemented a Contract Name custom field to allow the user to enter identifying information on each Contract record. How can the Admin ensure that the user is presented with the custom Contract Name field when the user initiates an Amendment? A. Create a custom Page Layout and add the custom Contract Name field to the layout. B. Create a custom Field Set on Contract and add the custom Contract Name fields to the Field Set. C. Add the custom Contract Name field into the Active Contract Lookup Field Set on the Contract object. D. Add the custom Contract Name field into the Active Contract Lookup Field Set on the Opportunity object.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Admin at Universal Containers wants to add some Maintenance and some Support products to the parent bundle. Maintenance and Support products should display in separate sections during configuration, with the Support products displaying above the Maintenance products. How should the Admin set up the bundle to meet both requirements? A. Create two Product Features: Maintenance and Support. The maintenance Feature will always display first, due to alphabetical ordering. B. Create two Product Options: Maintenance and Support. The Support Option should have a lower value in the Number field. C. Create two Product Features: Maintenance and Support. The Support Feature should have a lower value in the Number field. D. Create two Product Options: Maintenance and Support. The Maintenance Option will always display first, due to alphabetical ordering.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers has four Price Rules, each with differing Calculator Evaluation Events and Evaluation Orders. Which rule will evaluate first? A. Rule C with Evaluation Order of 20, and Calculator Evaluation Event of Before Calculate B. Rule B with Evaluation Order of 20, and Calculator Evaluation Event of On Initialization C. Rule D with Evaluation Order of 5, and Calculator Evaluation Event of On Calculate D. Rule A with Evaluation Order of 10, and Calculator Evaluation Event of Before Calculate",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has a growing list of Products. NTO has experienced challenges in keeping its bundled Products up-to-date and has asked the CPQ Specialist if there is a better way to manage its Product catalog. Which option is the most appropriate for the CPQ Specialist to suggest first? A. Use a Dynamic Feature for the bundle parent and create a Filter Product Rule. B. Use Nested Bundles to reduce the number of Product Options that need to be maintained when new products become available. C. Use Option Layout of Tabs for the bundle parent to expose Features on individual tabs within Product Configuration. D. Use the Preserve Bundle Structure checkbox in Package Settings to allow new products to be added to existing bundles.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Admin creates a Search Filter for Product Code that has a predefined Filter Value of Green and an operator of \"starts with.\" If the Search Filter is visible, how can sales reps interact with the filter on the Product Selection screen? A. Sales reps can replace the text, but are unable to leave the required field blank. B. Sales reps can see the filter, but are unable to alter the filter text. C. Sales reps can change the operator from \"starts with\" to \"contains.\" D. Sales reps can delete the text to ignore the filter.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers has a multi-layer bundle with a Percent of Total option in the first level. This Percent of Total option's calculation should be based on other options in the same level. How should the Admin set this up? A. Set the Percent of Total Scope field on the Product Option record to a value of Components. B. Set the Percent of Total Scope field on the Product Option record to a value of Group. C. Set the Percent of Total Scope field on the Product Option record to a value of Package. D. Set the Percent of Total Category field on each Product in the bundle to the same value.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers wants to notify its users when approval is required to discourage users from discounting while in the Quote Line Editor. Which type of Product Rule should be used to meet this requirement? A. Filter B. Alert C. Selection D. Validation",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) wants to reflect future renewals in its forecast pipeline as soon as the current Contract is created. Some customers will require changes to existing Contracts during the Contract Term. NTO wants the Opportunity pipeline to reflect this as soon as these changes are applied. What should the Admin configure to meet the requirement? A. Automate renewal forecasting with a Lightning Quick Action on the Opportunity. B. Automate setting the Renewal Forecast checkbox on the current Contract upon creation. C. Automate setting the Renewal Forecast checkbox and Renewal Quoted checkbox on the current Contract upon creation. D. Automate setting the Renewal Quoted checkbox on the current Contract upon creation.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has a Standard Warranty product that is priced as a Percent of Total subscription product. It is priced as 25 % of the Net Price of all Shipping Container products added to the Quote. When generating a partial Order via the Create Order button, the Admin notices the Standard Warranty was absent from the Order Product selection page. What should the Admin do to allow the Standard Warranty product to create an Order Product? A. Set the Product Family picklist on the Standard Warranty product's Product record to Services. B. Select any Shipping Container product on the Order Product selection page to automatically generate a Standard Warranty Order Product on the Order. C. Ensure that the Standard Warranty Quote Line's Start Date and End Date match the Order's Start Date and End Date. D. Create one Standard Warranty Quote Line for every Shipping Container Quote Line on the Quote.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) sells licenses set up as subscription Products. A UC sales rep has closed an Opportunity associated to a Quote with a Subscription Term of 36 months. The sales rep and a customer have agreed to a Quantity of 100 licenses for the term of the Contract. The customer wants to decrease the license count to 80 licenses after the first year. After the second year, the Contract will be amended again to increase the license count to 120 licenses. After the sales rep amends the Contract to incorporate these changes, what are the respective Quantities of: • The original Subscription • The first amended Subscription • The second amended Subscription A. 100, 80, 120 B. 80, 0, 40 C. 100, −20, 40 D. 120, −20, 40",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are two ways Salesforce CPQ Advanced Approvals support obtaining approval from a group in a single Approval Step? (Choose two.) A. Any group member may approve. B. Approval must be obtained from one group member at a time. C. Smart Approvals can exclude group members below the approval threshold. D. All group members must approve.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "If a manager is taking a leave of absence, how can the Admin using Advanced Approval ensure that another manager will receive Approval requests during the period in which the original manager is absent? A. On the original manager's Approver record, reference a different manager's Approver record in the Next Approver lookup field. Clear the Next Approver lookup field once the original manager returns from leave. B. On the original manager's Approver record, set the Delegated Approver lookup field to reference a different manager's Approver record, and set the Delegation End field for the date of the original manager's return. C. Create a new Approver record, with the Group ID field set to the ID of a Public Group that contains all of the managers. On the original manager's Approver record, click the Replace button and select the new Approver record. D. Create an Approval Rule with an Effective Start Date and Effective End Date spanning the absence. Populate the Approver field of the rule with the substitute Approver, then add the rule to the existing Approval Chain as the first step.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers wants to automatically generate Contracted Prices for certain Products in its catalog across all Accounts whenever a Contract is created. Which field should the Admin adjust to ensure that the desired Products have Contracted Prices created for all Accounts? A. Set the Generate Contracted Prices field on the Quotes on these Accounts. B. Set the Generate Contracted Price picklist on the desired Product records. C. Set the Generate Contracted Prices field on the Opportunities on these Accounts. D. Set the Generate Contracted Price picklist on the desired Quote Lines before creation.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three CPQ pricing functionalities contribute to Regular Unit Price during the price calculation sequence? (Choose three.) A. Prorate Multiplier B. Target Customer Amount C. Additional Discount Fields D. Contracted Price E. Discount Schedules",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers requires its customers to commit to a new 12-month Contract Term whenever requests to modify the existing Contract are made. Which two steps should the Admin take to generate accurate Order records? (Choose two.) A. Amend the existing Contract and extend the End Date to 12 months from today. Process the Amendment using the normal Quote > Order > Contract flow. B. Renew the existing Contract, amend the Quote Start Date to today, and modify the Quote Lines to reflect a new 12-month term. Process the Renewal using the normal Quote > Order > Contract flow. C. Use the Evergreen Contract feature to permit existing Contracts to be extended beyond the original term. D. Amend the existing Contract, updating all Quote Line Quantities to zero, effectively canceling the Contract. Process the Amendment using the normal Quote > Order > Contract flow.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has set the CPQ package settings of both Subscription Term Unit and Subscription Prorate Precision to Month. UC wants to quote a Fixed Price Subscription Product with a Start Date of June 18, 2019 and an End Date of August 21, 2020. The Product record has a Subscription Term of 12, a Pricing Method of List, and a Pricebook Entry of USD 100. What is the Prorated List Unit Price for the Quote Line? A. USD 118.31 B. USD 116.67 C. USD 125.00 D. USD 100.00",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two scenarios can be supported using Amendments? (Choose two.) A. Add new Products; co-terminate to existing Contract B. Change quantities of existing Products; maintain same discounts as original Quote C. Change quantities of existing Products; apply different discounts than original Quote D. Add new Products; use different End Date from existing Contract",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A sales rep notices on Opportunities that only some Opportunity Products are synched from Quotes. This discrepancy causes inaccuracies in the pipeline. Which three troubleshooting steps should the Admin take to resolve the issue? (Choose three.) A. Check the Quote's Primary checkbox for a value of False. B. Ensure the Quote's Account lookup is populated. C. Check the Quote's Primary checkbox for a value of True. D. Ensure the Opportunity's Primary Quote lookup is populated. E. Ensure the Quote's Opportunity lookup is populated.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Universal Containers (UC) sells a product that uses Percent of Total to determine its price. UC wants to ensure that this product is always priced at a minimum of $100, even if the calculated amount falls under $100. Which two steps should the Admin take to meet this requirement? (Choose two.) A. Set the product's Percent of Total Constraint field to List price is minimum. B. Set the Price Book Entry custom field Percent_of_Total_Target_c to $100. C. Create a Price Book Entry of $100 for the product. D. Create a Price Book Entry of $0 for the product.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Admin has created a validation Product Rule that must display an error message upon clicking Save if a Product Option is selected while a Configuration Attribute is set to a specific value. When the user chooses the Product Option, then sets the Configuration Attribute to the specific value, the error message appears before Save is clicked. What can the Admin change on the Product Rule or Configuration Attribute to ensure the error message only appears upon clicking Save? A. Add a Product Rule Error Condition to check if Evaluation Action = Save. B. Change the Product Rule field Evaluation Event to Save. C. Change the Product Option field Apply Immediately to True. D. Change the Configuration Attribute field Apply Immediately to False.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers has a fixed bundle with selected Product Options. After selecting the bundle, the user should bypass the configuration process. How should the Admin set up the bundle to meet this requirement? A. Set the bundle product record fields Configuration Type to Required and Configuration Event to Always. B. Set the bundle product record fields Configuration Type to Allowed and Configuration Event to Add. C. Set the bundle product record fields Configuration Type to Allowed and Configuration Event to Always. D. Set the bundle product record fields Configuration Type to Disabled and Configuration Event to Always.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) sells containers in three sizes. The Admin has created a bundle product for the container with Product Options for different size lids. The Admin has also created a Configuration Attribute called Container Size with three different values. When a user selects a particular size container in the Configuration Attribute, only the lid for that size container should be available for selection. An Admin has created a lookup table to capture which Product Options are valid for each container size. Which steps should the Admin take using a Product Rule to ensure only the lids of the correct size are sold with each container? A. Create a Product Rule of type Selection. Create a Lookup Query which compares the Configuration Attribute value to the lookup table and selects the valid option. B. Create a Product Rule of type Selection. Create a Lookup Query which compares the Configuration Attribute value to the lookup table to disable the invalid options. C. Create a Product Rule of type Validation. Create a Lookup Query which compares the Configuration Attribute value to the lookup table and prevents the user from saving without selecting the valid option. D. Create a Product Rule of type Alert. Create a Lookup Query which compares the Configuration Attribute value to the lookup table and warns the user from saving without selecting the valid option.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Admin wants to set up a bundle product so a user can view all available options and selected options by scrolling in a single page. Which updates should the Admin make to meet this requirement? A. Update Option Layout on the parent Product record to Wizard. B. Create Features related to the parent Product and assign each Feature the Option Selection Method of Dynamic. C. Update Option Layout on the parent Product record to Sections. D. Create Features related to the parent Product and assign all Options to one of the created Features.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Bundle G contains various add-on options for the purpose of cross sales. Universal Containers (UC) wants to ensure that sales reps have the flexibility to increase the quantity of add-on options without re-configuring the bundle. Which two configurations should UC set to allow for this flexibility? (Choose two.) A. Set the Product Option Type to Related Product. B. Set the Product Option Type to Accessory. C. Set the Product to Quantity Editable = TRUE. D. Set the Product Option to Quantity Editable = TRUE.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers wants to make sure that Product Option A is included when Product B is being configured and sold. Sales reps should be unable to remove Product A. Which field should be set for the Product Option A? A. Required B. Selected C. Bundled D. Quantity Editable",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has a bundle with two Product Features: a Standard Treatments feature with Option Selection Method set to Dynamic, and a Custom Treatment feature. The Standard Treatments feature filters for products that are tagged Standard. If a user selects any option from Custom Treatments, selecting options from Standard Treatments is prohibited. Which two steps can the Admin take to resolve the issue? (Choose two.) A. Create a selection Product Rule that hides all Standard Treatment options when Custom Treatment options are selected. B. Create a filter Product Rule that excludes all products on the Standard Treatment feature when Custom Treatment options are selected. C. Create a selection Product Rule that removes all Standard Treatment options when Custom Treatment options are selected. D. Create an exclusion Option Constraint rule that disables Standard Treatment options when constrained by Custom Treatment options.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The admin has created a bundle with several options. The option’s prices contribute to the Package Total, and must be discountable by the sales rep. However, these options must be hidden on the generated proposal document. How should the admin change the options to meet this requirement? A. Set Quote Line Visibility to Quote Line Editor. B. Set Type to Related Product. C. Set Bundled to True. D. Set Number to a value greater than 1,000.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct order of data import to load Products and Product bundles in CPQ? A. Product, Product Features, Product Options, Option Constraints, Configuration Attributes. B. Product Option, Product Feature, Product, Option Constraints, Configuration Attributes. C. Product Features, Product, Product Options, Option Constraints D. Product Rules, Error Conditions, Configuration Rules, Product Action",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "At Universal Containers, the Fulfillment team requires that Order Item dates reflect when orders are created, rather than Quote Line start dates, because there can be gaps between anticipated versus actual start dates. At the same time, the Account Management team wants to ensure that all items from one order appear on one contract. What are two ways the CPQ Specialist can meet these requirements? (Choose two.) A. Set Quote Contracting Method to By Subscription End Date. B. Set Order Product Date to Today when the record is created using Process Builder. C. Set package Default Order Start Date to Today. D. Set Contracting Method on the Order to Single Contract.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user at Universal Containers has logged a ticket stating that Cloud Storage Support is priced incorrectly. Based on a Quote with a 12-month Subscription Term and the information in the tables below, the Admin needs to verify the claim by calculating the support pricing. What is the calculated List Unit Price the user should see for Cloud Storage Support? A. $25 B. $275 C. $50 D. $225",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) sells Product A with a tiered pricing model using a Discount Schedule with three discount tiers. UC signed an agreement that gives the client a 50% discount on Product A with a flat rate for the next calendar year, overriding the current Discount Schedule. Which set of actions would meet these requirements? A. Create a Product Rule that clears the Discount Schedule and injects 50% into the Additional Discount field on the Quote Lines for Product A when the Account associated with the Quote is this client. B. Create a Price Rule that applies the 50% discount to the List Price and inserts it into the Customer Price field on the Quote Line when the Account associated with the Quote is this client. C. Create a Discount Schedule with a single Discount Tier at 0% discount and associate it with a Contacted Price giving 50% discount to Product A on this client’s Account record. D. Create a Price Book for this client with a Price Book entry at half the price for Product A and a Workflow Rule that assigns this Price Book to all Opportunities for this client.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The sales reps at Universal Containers want the Quote Line Editor to always display the column headers and the Quote Total on the desktop user interface, regardless of how many Quote Lines are present. How can an admin meet the requirement? A. Enable the Group Line Items checkbox on the Quote to be checked by default. B. Enable Large Configurations to freeze the Total and Column Headers. C. Enable Compact Mode so all of the Quote Lines fit on the screen at once. D. Enable Large Quote Experience to freeze the Total and Column Headers.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An admin has constructed a Price Rule that utilizes a Lookup Object and Lookup Queries. In a given scenario, two lookup records meet the query criteria for a single Quote Line. Which behavior can the admin expect in this scenario? A. The Target Field maintains its original value and an error message appears in the Quote Line Editor. B. The value from the record that was created most recently is applied to the Target Field. C. The value from the second record sorted alphabetically by Name is applied to the Target Field. D. The value from the first record sorted alphabetically by Name is applied to the Target Field.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A renewal quote has been generated through automation 45 days before the contract ends on December 31. The customer wants to increase the quantity of their monthly service subscription. The customer is unprepared to renew at the moment, but needs to arrange the quantity increase for the last month of the contract immediately. Upon finalizing the amendment Quote and contracting the amendment Opportunity, the sales ops team had discovered that the renewal Opportunity is out of sync with the latest change. How can the sales ops team ensure the renewal Quote reflects the increased quantity? A. Delete the Renewal Opportunity, contract the amendment Opportunity again, then create a new renewal Opportunity and Quote. B. Delete the existing Renewal Quote, and uncheck and re-check the Renewal Quoted checkbox on the Contract. C. Terminate the Contract with an End Date of November 30, and set the renewal Quote Start Date to December 1 of this year. D. Create an Order from the amendment Opportunity, then contract the amendment Order and refresh the renewal Quote.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers wants to prevent a Quote Term from being edited by other users. What should the admin do to meet this requirement? A. On the User Profile, make the object Read-Only. B. On the Quote Term record, check the Locked checkbox. C. On the Quote Term object, make the object Read-Only. D. On the Quote Term record, check the Read-Only checkbox.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) sells a subscription Product, Monitoring Service. Although it is often sold in a bundle, UC wants to ensure that sales reps leave the quantity as 1 when it is sold outside of a bundle. Which solution can UC apply? A. Set Type to Accessory on the Product Option. B. Set Quantity Editable to FALSE on the Product. C. Set Default Quantity to 1 on the Product. D. Set Max Quantity to 1 on the Product Option.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) sells a product that uses Percent of Total to determine its price. UC wants to ensure that this product is always priced at a minimum of $100, even if the calculated amount falls under $100. Which two steps should the Admin take to meet this requirement? (Choose two.) A. Set the product's Percent of Total Constraint field to List price is minimum. B. Set the product’s Price Editable field to TRUE. C. Create a Price Book Entry of $100 for the product. D. Create a Price Book Entry of $0 for the product.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An admin has created a Small Business Bundle product with List Price = $5.00 with these Product Options: Option 1: Optional SKU = Small Storage Container Unit Price = $2.00 Quantity = 10 Selected = True Bundled = False Option 2: Optional SKU = Medium Storage Container Unit Price = $4.00 Quantity = 10 Selected = False Bundled = False Option 3: Optional SKU = Custom Box Label Unit Price = $0.05 Quantity = 100 Selected = False Bundled = True Option 4: Optional SKU = Shipping Unit Price = $7.50 Quantity = 1 Selected = True Bundled = True If a user adds this bundle and saves it without making changes to the configuration, what will the Package Total be on the Small Business Bundle parent product Quote Line? A. $5.00 B. $25.00 C. $17.50 D. $37.50",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An admin has set the Group Field on one of the Quote Templates. On output documents on Quote A, Quote Lines appear to be grouped incorrectly. What are two explanations for this grouping? (Choose two.) A. Bundles on Quote A contain a Configuration Attribute designating location. B. There are Quote Line Groups related to Quote A. C. Template Section with Template Content of Line Items type has a value in Group Field. D. Modified By field on the user’s Quote was last modified before the new Quote Template was implemented.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has three different range discount schedules. All three have a reference to Product A through the objects show below. Product A is an option in a bundle and has a list price of $100. Given this scenario, what should the Net Total Price of Product. A be if the user enters a Quantity of 15 on a quote where contracted pricing is applicable? A. $1,275.00 B. $1,350.00 C. $1,125.00 D. $1,320.00",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An admin created a workflow rule to automatically generate the renewal Opportunity and Quote when a user activates the Contract. The Renewal Pricing Method is set to List. The original Quote contains only standalone fixed-price subscription products and non-subscription products. What should the user see on the renewal Quote? A. All Quote Line items will be pulled through from the original Quote. B. The renewal Quote start date will be the Contract end date plus one day. C. Additional discounts from the original Quote will automatically populate on the renewal. D. Optional products from the original Quote will pull into the renewal.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers restricts users from selling more than 10 different products within a specific Product Feature at once. What should the admin set up to satisfy this requirement? A. A Summary Variable with Filter Fields should be used in an Error Condition of a Product Alert Rule. B. The Min Quantity and Max Quantity fields on each Option should be set to zero and 10, respectively. C. An Error Condition in a Product Rule should be set up to validate that all Product Option’s Quantity field is less than or equal to 10. D. A value of 10 should be added to the Max Options field on the Feature record.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When sold a la carte, a processor Product should be priced at USD 200 and EUR 150. When sold as a component of a laptop bundle in USD, this processor should be priced at USD 180 and EUR 135. If Universal Containers must enable multi-currency, how should the admin implement this discounted price? A. Set the Unit Price field on the processor Product Option to a value of 180. B. Create a new Product record with a USD 180 Price Block Entry for the discounted Processor. C. Set the Discount % field on the processor Production Option to 10%. D. Set the Bundled checkbox to True.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Configuration Attribute displays a Product Option picklist field named Custom_Picklist_c. A picklist field with the same name exists on the Quote Line object, and is set to restrict the picklist to the values defined in the value set. The Quote Line picklist contains fewer values than the field from the Product Option. Which behavior can the user expect if they choose a value for the configuration attribute that is unique to the Product Option picklist, and then tries to save the bundle? A. The selected value is saved to the quote line field. B. An error message appears that prevents saving the configuration. C. A null value is saved to the quote line field. D. The Save button is gray and unavailable in the configurator.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) is a reseller of a Product made by another company. UC wants to price the Product based on the Cost that UC pays for it. How should the admin set the Cost for this Product? A. Create a Cost record in the Product’s Costs related list. B. Add a Cost Discount Schedule to the Product’s Discount Schedule related list. C. Use a Price Rule to set the Cost field on the Quote Line. D. Add the Cost to the Product’s Price Book Entry Cost field.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The admin wants to ensure that within one bundle, either Product A or Product B can be added to the Quote. During configuration, the user should be able to freely switch between these options. If a user selects both, the system should only add Product A to the Quote rather than Product B. Which setup should the admin use to meet these requirements? A. A Product Selection Rule where two Error Conditions with Summary Variables test if Product A and B have both been selected. If so, a Product Action will remove Product B. B. A Product Selection Rule with a higher Evaluation Order where the Product Action removes Product A when Product B is chosen, and a second Product Selection Rule with a lower Evaluation Order which removes Product B when Product A is chosen. C. A Product Alert Rule where two Error Conditions with Summary Variables test if Product A and B have both been selected. If so, a message will display, instructing the user to remove Product B. D. A Product Validation Rule where two Error Conditions with Summary Variables test if Product A and B are both selected. If so, a message will display, instructing the user to remove Product B.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers requires a subset of products to be viewed based on a button on the Quote Line Editor. Which Salesforce CPQ functionality will satisfy this requirement? A. Price Rules B. Custom Action with Search Filter C. Custom page security plug-in script D. Product Rules of filter type",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) offers the same services for consumption in different parts of the country, but at different prices. UC has configured this without cloning bundles or pricebooks. A single quote can contain products for consumption anywhere in the country. A custom object has been created to maintain a Price Multiplier per product per geographic area. The quote document should display the List Price of the appropriate geographic area. How should the CPQ specialist complete the configuration? A. Create a Lookup Price Rule to retrieve the multiplier and apply it to the Special Price field on the Quote Line. B. Create a custom List Unit Price field on the Quote Line and a Lookup Price Rule to retrieve the multiplier and apply it to the custom List Unit Price field on the Quote Line. C. Create a Lookup Price Rule to retrieve the multiplier and apply it to the List Unit Price field on the Quote Line. D. Enable the Consumption Schedules checkbox in the CPQ Managed Package Settings.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) sells its Products in three currencies: USD, GBP, and EUR. UC wants to make a renewable Support SKU available for selection in only USD and EUR and has completed the necessary configuration and/or record creation to support the behavior. What is the expected behavior when a user attempts to add the Support SKU to a Quote in each currency? A. USD: Added to Quote at Pricebook Entry’s List Price GBP: Product is unavailable in Product Selection EUR: Added to Quote at Pricebook Entry’s List Price B. USD: Added to Quote at Pricebook Entry’s List Price GBP: Added to Quote with 0 List Price EUR: Added to Quote at Pricebook Entry’s List Price C. USD: Product is unavailable in Product Selection GBP: Product is unavailable in Product Selection EUR: Product is unavailable in Product Selection D. USD: Error presented to User in Product Selection GBP: Error presented to User in Product Selection EUR: Error presented to User in Product Selection",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has developed a new subscription Product that will replace anther subscription Product. The admin needs to ensure: Only the new Product can be added to new Quotes. Contracts with the old Product can be amended. Renewals will be created with the replacement Product. Which two actions should the admin take to meet the requirements? (Choose two.) A. Uncheck the Active field on all Price Book entries for the old Product. B. Set the Renewal Product field on the old Product to lockup to the new Product. C. Update the SBQ__Product_c field on the Subscriptions that need to be renewed. D. Make the Product unavailable by unchecking the Active field on the old Product.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When amending a contract, users have reported that the net pricing of some products is incorrect. The admin has done a preliminary investigation and found that the issue only happens on existing products when the quantity is adjusted. What is the likely cause? A. The Revised Quantity has been set on the Subscription record. B. Price Rule is firing Before Calculate and changing the Regular Unit Price. C. A Price Rule is firing On Calculate and changing the Effective Quantity. D. The products have a Discount Schedule and Cross Order is unselected.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An admin has a requirement within a specific bundle to ensure that Product B is automatically selected when the user selects Product A. The admin correctly configured a Product Rule to meet this requirement, however Product B remains unselected when Product A is checked. What does the admin need to adjust so the Product Rule fires as expected? A. Set Apply Immediately to True on Product Option record for Product B. B. Set Apply Immediately to True on Product Option record for Product A. C. Set System field to True on Product Option record for Product B. D. Set System field to True on Product Option record for Product A.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A sales rep at Universal Containers is configuring an amendment Quote. The original Quote featured a single annual Subscription with a Net Unit Price of $600, a Quantity of 10, and a Subscription Term of 24 months. Ten months into the term of the Contract, the sales rep wants to issue a prorated refund for the original purchase and quote a new, more expensive Subscription in its place. Using the standard price waterfall, what is the expected Net Total of the amended Subscription once the Quantity is set to 0? A. –$3,500 B. –$2,500 C. –$250 D. –$350",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers is utilizing Lookup Price Rules to pull Daily Rate values from the Rental Rates object. After activating the Price Rule, the admin notices the Dally Rate value remains blank, but the user is still able to save the quote. Which aspect of the Price Rule should the admin review to identify the underlying issue? A. Confirm the Lookup Queries of the Price Rule are configured to pull only a single referenced value from the Lookup object. B. Confirm the Conditions of the Price Rule are configured accurately based on expected behavior. C. Confirm the API Name selected in the SBQQ_LookupObject_c field on the Price Rule record is inputted accurately. D. Confirm the Tested Field(s) referenced in the Lookup Queries of the Price Rule exist on the Lookup object.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Upon renewal of a Contract, a user has reported that bundles are being created without preserving the structure. This leads to validation errors and unwanted price changes. The admin has identified that Preserve Bundle Structure is set to FALSE on a system generated Contract record. What should the admin do to prevent this issue from happening in the future? A. Set Preserve Bundle Structure to TRUE on existing Account Records, and update the Re-evaluate Bundle Logic on Renewals, setting in the Installed Package Settings to TRUE. B. Set Preserve Bundle Structure to TRUE on existing Account Records, and change the default field value on the Contract object to TRUE. C. Set Preserve Bundle Structure to TRUE on existing Contract Records, and set field level security for Preserve Bundle Structure on the Contract object to only be editable by System Admins. D. Set Preserve Bundle Structure to TRUE on existing Contract and Account Records, and update the Preserve Bundle Structure setting in the Installed Package Settings to TRUE.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The admin at Universal Containers set up a Price Rule to override List Price with a discounted promotional price. The Price Action has a formula which is as follows: SBQQ_ListPrice_c* (1 – Promotional_Discount__c) The admin is finding that every time Calculate is clicked, the price is adjusted. For example, if List Price is $10.00 and promotional discount is 10%. 10.00 * (1 – 0.10) = 9.00 The next time Calculate is clicked, the following calculation takes place: 9*(1 – 0.10) = 8.10 If List Price must be overridden, how can this problem be fixed? A. Create a field to hold the Price Book price, and populate Before Calculate with a Price Rule for use in the formula. B. Create a field to hold the Price Book price, and populate on Quote creation with a Workflow Rule for use in the formula. C. The Salesforce CPQ package has an MSRP field which should be used instead of List Price in the formula D. The Salesforce CPQ package has an Original Price field which should be used instead of List Price in the formula.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers (UC) utilizes bundles to sell hardware and related accessories together as a package. Several of the accessories are component-type Options, with quantities dependent on the hardware. UC wants to begin using split Orders to manage a fulfillment process, with Orders broken out based on when items are shipped to the customer. What should UC consider before implementing split Orders? A. The hardware bundle and component-type Options can be split into separate Orders without preserving the bundle structure. B. The hardware bundle and component-type Options can be split using the Order By field. C. The hardware bundle and component-type Options must be placed in the same Order together. D. The hardware bundle and component-type Options can be split manually,",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user has created an Amendment Quote. Opportunity Product records were created for only some Quote Lines. What are two reasons that could explain this behavior? (Choose two.) A. The Disable Initial Quote Sync has been set to TRUE in the Installed Package Settings. B. The Exclude from Opportunity checkbox on the Product has been set to TRUE. C. The Price Book Entry of the Product has been set to Inactive. D. Opportunity Products are only created for Quote Lines with a Net Total that is different than 0.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Northern Trail Outfitters has two products: Both products are added to a one-year quote. The Adventure in a Box product has a list price of $10 with a discount of 50%. What is the expected Net Total of Premium Support? A. $54.00 B. $6.00 C. $60.00 D. $12.00",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers requires an output document that has Quote Terms localized in three languages selectable by the user. Which two tasks should the admin complete to set up localization of the quote PDF? (Choose two.) A. Set the Quote Term field Language to the desired output language for each Quote Term. B. Create Localization records for individual Quote Terms for all three languages. C. Create a Quote picklist field named OutputLanguage with language codes as values. D. Check the Enable Multi-Language Translations box in the managed package settings.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers’ users are able to generate Quote Documents and navigate to all Quote Document records in the org. These users are unable to use the View button on documents created by another user. How should the admin ensure that users are able to view these documents by default? A. View all permissions should be granted on the Quote Document object. B. View All permissions should be granted on the standard Document object. C. A workflow rule should be used to change the Document Folder field on the Quote object. D. The Document Folder chosen in package settings must be visible to all users,",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Users at Universal Containers want to know how Approval requests will be routed prior to submitting a Quote for approval. How can the admin meet this requirement? A. Using Native Approvals, build a custom Visualforce Page to display the Approval Process for the Quote. B. Using Native Approvals, build a custom button to display the approval matrix to users. C. Using Advanced Approvals, place the Preview Approval button on the Quote page layout. D. Using Advanced Approvals, build a custom Visualforce Page to display the approval Chains for the Quote.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers sells a total of 100 Products. There are 80 Products that are generally available for selection by all users (General Access). The remaining 20 Products should only be available to a certain group of users (Special Access). Which Product Selection and Price Book strategy should the admin utilize to meet the requirement? A. Create one Price Book that contains all 100 Products. Create a custom Product field to designate General Access and/or Special Access. Utilize Hidden Search Filters to support dynamic Product visibility based on the level of User access. B. Create two Price Books: one General Access Price Book with the 80 generally available Products, and one Special Access Price Book with the 20 Special Access Products. Create automation to populate the appropriate Price Book ID into the SBQQ__QuotePricebookId_c on the Opportunity. C. Create one Price Book that contains all 100 Products. Create a Validation Rule on the Quote object to prevent selection of a Special Access Product based on the level of User access. D. Create two Price Books: one General Access Price Book with the 80 generally available Products, and one Special Access Price Book with all 100 Products. Use Guided Selling to assign the appropriate Price Book based on the level of User access.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) uses the Advanced Approvals package for Its Approvals process on Quotes. UC's business model requires that Approval requests are assigned to the user's direct manager. How can the admin ensure that these Approval Rules assign generated Approvals to the user's manager? A. Define the approver Field on the Approval Rule as a custom Quote field which contains the user's manager's User 1D. B. Populate the Approver lookup on the Approval Rule with the Approver corresponding to the user's manager. C. Set Next Automated Approver Determined By to Manager on the Approval Process. D. Let the user choose the Approver manually and create a Validation Rule to prevent the user from choosing different Approver than the manager.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An admin wants to set up a product bundle that dynamically generates SKUs depending on what users choose during the selling process. Which three fields are required for this type of configuration? (Choose three.) A. Configured Code Pattern B. Component Description Position C. Component Code Position D. Configured Description Pattern E. Component Code",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) sells its Support SKU both as a stand-alone Product and a Product Option within a bundle. When sold as a stand-alone Product, the expected List Unit Price is $1,000. When sold as part of a bundle, UC wants to reduce the List Unit Price to $800. What should the admin do to meet the requirement? A. Create a Product Rule to insert 800 into the SBQQ_ListPrice_c field on the Quote Line when the SBQQ_RequiredBy__c field is blank. B. Create a workflow rule to insert 800 into the SBQQ_ListPrice_c field on the Quote Line when the SBQQ_RequiredBy__c field is blank. C. Enter 800 into the S8QQ_UnitPrice__c field on the Product Option to define a bundle-specific price for Support. D. Enter 20 into the SBQQ__Discount_c field on the Product Option to reduce the price from $1,000 to $800.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The sales team at Universal Containers (UC) has received customer feedback that numerous lines on atypical Quote make it difficult to understand how the total amount breaks down across the various types of Products: Hardware, Software, and Professional Services. UC uses Quote Templates to generate Quote Documents. Which solution would allow customers to see separate tables and subtotals organized by Product Family? A. Create a Line Items section and set SBQQ_ProductFamily__c as the Roll-Up field, B. Create Roll-Up Summary fields on the Quote for each Product Family and add them as merge fields to the Template Too. C. Create an HTML Template Content record with three tables to represent each Product Family. D. Create a Line Items section and set SBQQ__ProductFamily__c as the Group field.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A user is unable to see a particular Product on the Product Selection screen when clicking Add Products. What are two potential reasons the Product is unavailable? (Choose two.) A. The Hidden checkbox on the Product record is set to TRUE. B. The Component checkbox on the Product record is set to TRUE. C. The Add Products button has a Search Filter associated to it. D. The Add Products button has a Custom Action Condition associated to it.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) sells Product for a List Unit Price of $150. One of UC customers, Cloud Kicks (CK), has negotiated a Contracted Price of $100 for Product A on all of its deals, and has negotiated an additional 10% discretionary discount to be applied for a deal set to close at the end of the month. If CK purchases 10 units of Product A, what is the expected List Unit Price, Regular Unit Price, Customer Unit Price, and Net Unit Price? A. List Unit rice: $150 Regular Unit Price: $150 Customer nit Price: $140 Net Unit Price: $140 B. List Unit rice: $100 Regular Unit Price: $100 Customer Unit Price: $90 Net Unit Price: $90 C. List Unit Price: $150 Regular Unit Price: $150 Customer Unit Price: $100 Net Unit Price: $90 D. List Unit Price: $150 Regular Unit Price: $100 Customer Unit Price: $90 Net Unit Price: $90",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An admin sets Asset Conversion for a non-subscription Product A to “One per unit”. A sales rep creates a quote that includes Product A with a quantity of 2. Sales Operations creates an order from the quote, then creates a contract from the order, then creates a renewal opportunity from the contract. Which object(s) show multiple records related to Product A? A. Asset and Opportunity Product B. Asset C. Order Product D. Asset and Order Product",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two objects could a Discount Schedule be applied to and take precedence over the Discount Schedule identified in a Product Feature? (Choose two.) A. Contracted Price B. Product C. Product Option D. Opportunity Product",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has an add-on Product that can only be sold as part of bundles. Which two steps should the admin take to meet this requirement? (Choose two.) A. Set the Component checkbox to True on the add-on Product record. B. Set the Customer Community Availability picklist on the add-on Product to Never. C. Create a Product Feature record referencing the add-on Product. D. Create a Product Option record referencing the add-on Product for each bundle.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has rolled out a new product, Warranty, priced as 10% of all the hardware products on the Quote. After Implementing, UC realizes that the price is calculating a percentage of the prices before discounts have been applied, whereas UC actually wants it to reflect the discounted prices. Which field should UC update to ensure the pricing is correct to meet the requirement? A. Update Percent of Total Base on Warranty to Net Price. B. Update Percent of Total Target on Warranty to Standard Warranty. C. Update Percent of Total (%) on the hardware products to 10. D. Update Percent of Total Category on the hardware products to Hardware.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An admin wants the user to have the ability to choose options and define option quantity via bundle configuration. Which three values for Configuration Type will meet this requirement? (Choose three.) A. Allowed B. Required C. Disabled D. Add E. None",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) sells two fixed-priced subscriptions (Products A and B) and one Percent Of Total subscription Product (Product C), which is calculated as a percentage of the List total of Products A and B. Both Products A and B are marked as 'Include in Percent Of Total'. UC also wants to enable ramping of quantities and pricing for all three Products on a yearly basis. Which solution should the admin use to meet the requirement? A. Implement a Quote Calculator Plugin (QCP) to aggregate Products A and B by segment. B. Use Quote Line Groups for each annual term and set the Percent Of Total Scope on Product C to Group. C. Add Products A, B. and C to the Quote for the desired Quote Subscription Term. D. Set the Percent Of Total Target to Product C for Products A and B.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) builds Quotes that can be delivered to multiple locations using a Quote Line Group for each location. UC wants to split orders by delivery location automatically. How should the consultant meet the requirement? A. Set the Order By picklist field to the value of SBQQ__Group__c, and then click the Create Order button. B. Set the Order By picklist field to the Location field on the Quote Line Group., and then set the Ordered field to TRUE. C. Ensure the Order by Quote Line Group field is set to TRUE, and then set the Ordered field to TRUE. D. Ensure the Order by Quote Line Group field is set to TRUE, and then click the Create Order button.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Quote has one Quote Line for a subscription product with an End Date that differs from the Quote's End Date. Which date will CPQ use to calculate the prorate multiplier? A. The earliest date B. The Quote Line date C. The Quote date D. The latest date",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers offers a bundle with two Products. Product A should always be added. Product B should be included initially, but can be removed by the user. What are two Option configurations that must be utilized for Product B to meet the requirement? (Choose two.) A. Set Required to FALSE. B. Set Quantity Editable to TRUE. C. Set Bundled to FALSE. D. Set Selected to TRUE.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An admin has created a new bundle, and a separate, unrelated Product Rule. Universal Containers wants the Product Rule to fire within this specific bundle. What is a valid setup for the Configuration Rule? A. The Configuration Rule must be associated with Product records used in Product Actions. B. The Configuration Rule must be associated with the Product Feature used within the bundle. C. The Configuration Rule must be associated with the Parent Product in the bundle. D. The Configuration Rule must be associated with the Product Option records used in Product Actions.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "At Universal Containers, each storage container is configured as a bundle. An important property of the bundle is cubic volume. The volume selected at the bundle level must match the volume of every Product Option. Which two actions must the admin take to allow a sales rep to choose a volume that will apply to all Product Options? (Choose two.) A. Set up a Lookup Price Rule referencing a custom object. B. Create a Feature level Configuration Attribute. C. Create a bundle level Configuration Attribute. D. Set the Configuration Attribute with Apply to Product Options to True.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two conditions must be met so a user can change the Quantity on an Order Product? (Choose two.) A. The package setting Allow Multiple Orders is enabled. B. The Order setting Enable Negative Quantities is enabled. C. The Ordered checkbox on the Quote must be False. D. The Order is in Draft Status.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An admin is working on a Primary Quote attached to an Opportunity. The Price Book and Currency on the Quote and Opportunity match. However, only some of the Products from the Quote are being synched to the Opportunity, and zero error messages are displayed. Which three reasons explain why these Products failed to create Opportunity Products? (Choose three.) A. Only Products with a price greater than zero synch to the Opportunity. B. Only Products with an Effective Quantity greater than zero synch to the Opportunity. C. Exclude from Opportunity is checked on the Product record. D. Validation Rules on the Opportunity Product silently fail. E. Some Products are missing Price Book Entries.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Northern Trail Outfitters has two different user profiles that need to see different Quote Line fields in the Quote Line Editor. How should the admin configure CPQ so users automatically see the desired fields in the Quote Line Editor? A. Create two field sets on the Quote object representing each profile, and create a text formula field with the API name HeaderFieldSetName on the Quote object that returns the appropriate field set name based on the user's profile. B. Create two field sets on the Quote Line object representing each profile, and create a text formula field with the API name EditlinesFieldSetName on the Quote object that returns the appropriate field set name based on the user’s profile. C. Create two field sets on the Quote Line object representing each profile, and create a text formula field with the API name HeaderFieldSetName on the Quote object that returns the appropriate field set name based on the user's profile. D. Create two field sets on the Quote object representing each profile, and create a text formula field with the API name EditUnesFieldSetName on the Quote object that returns the appropriate field set name based on the user's profile.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An admin has created a Product and defined Price Dimensions for yearly segments. They want the Product to appear unsegmented when it is first added to a Quote, with the option to segment when needed. How should the admin meet this requirement? A. Set the Product's Default Pricing Table to Standard. B. Set the Price Dimension's Type to One-Time. C. Set the Display Order of the Desegment Line action to 1. D. Create a Quote formula field named StartSegmented__c that returns 0.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A subscription product that was newly created fails to display in the Product Selection screen when users search for it. What are three possible reasons for this behavior? (Choose three.) A. The Product is missing a related Cost record. B. The Optional checkbox is TRUE on the Product record. C. The Product is missing a Pricebook Entry for the Quote's Pricebook. D. The Active checkbox is FALSE on the Product record. E. The Component checkbox is TRUE on the Product record.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The admin at Universal Containers is setting up permissions for internal sales users. In addition to assigning the Salesforce CPQ User permission set, for which objects do the users need Read, Create, Edit, Delete permissions? A. Discount Category, Discount Schedule, Discount Tier, Term Schedule B. Quote, Quote Line, Quote Line Group, Quote Document C. Price Rule, Price Action, Price Condition, Lookup Query D. Quote Template, Template Content, Template Section, Line Column",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has a number of Contracts that are due to expire next month. Sales wants to uplift the products of Product Family X by 5%, and the products of Product Family Y by 10% upon renewal. Which two actions should the admin take to ensure CPQ applies the correct price uplift? (Choose two.) A. Fill in the appropriate Renewal Uplift Rate on each Subscription record. B. Fill in the appropriate Renewal Uplift Rate on each Quote Line record. C. Set the Renewal Pricing Method on the Contract to Uplift. D. Set the Renewal Pricing Method on the Account to Uplift.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An admin has implemented a new CPQ business requirement in a sandbox. They have created new products and used them to construct a bundle. The admin has also created a Product Rule that automatically selects Product Options when the user selects a specific Configuration Attribute. In which sequence should the admin migrate the records related to the new CPQ functionality in order to maintain record relationships? A. Products, Configuration Attributes, Product Rules, Configuration Rules, Product Options B. Products, Product Options, Configuration Attributes, Product Rules, Configuration Rules C. Products, Configuration Attributes, Product Options, Product Rules, Configuration Rules D. Configuration Attributes, Products, Product Options, Product Rules, Configuration Rules",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has a series of required PDF documents that need to be attached to the output document when generated. These PDF files are already stored in Documents. What should the admin do on the Quote Template to meet this requirement? A. Create a new Template Section for each PDF document. B. Select the correct Documents Folder from the Documents field on the Quote Template. C. Reference each PDF Document in Custom Template Content records. D. Create a new Additional Document on the Quote Template for each PDF document.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When using Advanced Approvals, a sales rep submits a Quote for Approval. On the Preview Approvals page, multiple Approval Chains display on screen from left-to-right. How is the approval order determined? A. The Approval Chains are completed in the order displayed on screen. B. The Approval Chain with the lowest Final Approval Step value is completed first. C. The Approval Chain with the lowest Approval Step is completed first. D. The Approval Chains start at the same time and are completed independent of other chains.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers sells a container management bundle with Product Options representing different service levels. The admin has created a Configuration Attribute for the bundle to let users specify the service level. What should the admin do to limit the options in the bundle that are displayed to the user when a service level is selected? A. Create a selection Product Rule that uses a Lookup Query to a custom object and shows or hides Product Options based on the service level. B. Create a validation Product Rule that uses a Lookup Query to a custom object and shows a message to the user when an inconsistent option is selected. C. Create a Price Rule that uses a Lookup Query and sets the quantity to zero for any Product Options that are mismatched with the selected service level. D. Create a filter Product Rule that uses a Lookup Query and shows the relevant Product Options for the selected service level.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The admin at Universal Containers receives a report from a user that checking the Contracted box on an Opportunity with a single Product fails to result in a Contract. What are two possible reasons a Contract is unable to be created? (Choose two.) A. The Subscription Conversion Behavior field on the Product is set to None. B. The Opportunity must have a Primary Quote associated to it. C. The Subscription Pricing field on the Product is One-time. D. The Subscription Pricing field on the Product is blank.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers sells Subscription Products with prorated pricing dependent on the total Subscription Term as follows: Product A is configured to have a 36 Month Subscription Term (SBQQ__SubscriptionTerm__c = 36) with a List Unit Price of $36,000. Product B is configured to have a 1 Month Subscription Term (SBQQ__SubscriptionTerm__c - 1) with a List Unit Price of $2,000. Each Quote Line has a Quantity of 15. The Quote has a Subscription Term of 18 Months without a discount applied. What is the expected Prorate Multiplier and resulting Net Total for both Quote Lines? A. • Product A Prorate Multiplier - 0.5 • Product A Net Total = $270,000 • Product B Prorate Multiplier - 18 • Product B Net Total = $540,000 B. • Product A Prorate Multiplier = 0.5 • Product A Net Total - $27,000 • Product B Prorate Multiplier = 18 • Product B Net Total - $36,000 C. • Product A Prorate Multiplier - 0.5 • Product A Net Total = $270,000 • Product B Prorate Multiplier - 18 • Product B Net Total = $360,000 D. • Product A Prorate Multiplier = l • Product A Net Total - $27,000 • Product B Prorate Multiplier = 1 • Product B Net Total - $36,000",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers only sells lid Products as part of a container Product. The admin wants to hide all lid Products from Product Selection. How should the admin set up lid Products? A. Check the Hidden checkbox. B. Check the Component checkbox. C. Include lid Products in the description of container Products. D. Set the Product Family value to Accessory.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A user has created a Quote with a Start Date of January 1, 2022, and added two subscription Quote Lines. The term of the first subscription Quote Line is set to 11. The term of the second subscription Quote Line is set to 12. The Subscription Term Unit in the Installed Package Settings is set to Months. After creating a single Contract, the user creates a renewal Quote. If the Amendment & Renewal Behavior is set to Latest End Date, what is the End Date of each Renewal Quote Line? A. The End Date of the first subscription will be October 31, 2023; the End Date of the second subscription will be December 31, 2023. B. The End Date of both subscriptions will be November 30, 2023. C. The End Date of both subscriptions will be December 31, 2023. D. The End Date of the first subscription will be November 30, 2023; the End Date of the second subscription will be December 31, 2023.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers has a new eco-friendly business line, and wants to create a subset of products that include those tagged as eco-friendly, and those that are bundles. When quoting on Opportunities that are flagged as eco-friendly, the sales reps should see only those products when they click Add Products. However, UC wants the flexibility to allow the sales reps to bypass the default subset and include all bundles, even if the Opportunity is flagged as eco-friendly. Which strategy should UC apply? A. Add the Eco-Friendly custom field to the Search Filters Field Set on the Product object. B. Set the Default field on the Add Products Custom Action to TRUE. C. Create a Search Filter with Filter Value set to Eco-Friendly and Hidden set to FALSE. D. Create a Filter Product Rule and Product Action with Type set to Optional Filter.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An admin has created a bundle with four Product Options for Products A, B, C, and D. When configuring the bundle, the user should not be allowed to select both Product C and Product D at the same time. How should the admin set up Bundle A to accomplish this? A. Create a Product Feature and set both Min Options and Max Options to 1. B. Create an Option Constraint and set Type = Exclusion. C. Create an Option Constraint and set Type = Dependency. D. Create a Product Feature and set both Min Options and Max Options to 4.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The Require Approved Quote package-level setting prevents CPQ from generating records for which object? A. Order B. Contracted Price C. Contract D. Quote Document",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The admin at Universal Containers has created a Configuration Attribute in a bundle that allows the end user to choose a picklist field value. A Price Rule has been created in the calculator that will set a discount based on the chosen picklist field value. This discount should be applied on the bundle Product and its Options. What should the admin do to confirm the Price Rule is working correctly when setting up the Configuration Attribute? A. Ensure that the Default Object field is set to Quote Line. B. Ensure that the Configuration Attribute's Feature field is set to Null. C. Ensure that Apply to Product Options has been set to TRUE. D. Ensure that Apply Immediately has been set to TRUE.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The admin at Universal Containers (UC) has created one bundle that contains all of its Products as Options. The bundle has Subscription Pricing and Asset Conversion set to null on its Product record. Implementing the Product catalog via a bundle allows UC to enforce logic about which Products can be sold together. A bundle sold by UC contains a combination of Assets and Subscriptions. After making selections within the bundle, a sales user saves the Quote and creates a Contract from the Opportunity associated with the primary Quote. Later, the sales user needs to amend this Contract based on new requirements from the customer. When UC amends the Contract using the Amend button, the sales user notices that the bundle is excluded in the Amendment Quote. Why is the bundle excluded in the Amendment Quote? A. The sales user neglected to select the Preserve Bundle Structure field on the Contract. B. The parent Product is excluded from the amendment because it lacks an Asset or a Subscription. C. The sales user must use the Amend Assets field on the Account to amend a Contract which contains Assets. D. By default, bundled Assets and Subscriptions are excluded in Amendment Quotes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers sells a non-renewable subscription Product that is priced on a yearly basis. Which Subscription field values should the admin set to meet this requirement? A. • Subscription Term: l • Subscription Type: One-Time • Subscription Pricing: Percent of Total B. • Subscription Term: 12 • Subscription Type: Evergreen • Subscription Pricing: Fixed Price C. • Subscription Term: 1 • Subscription Type: Evergreen • Subscription Pricing: Percent of Total D. • Subscription Term: 12 • Subscription Type: One-Time • Subscription Pricing: Fixed Price",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers wants to provide a 10% discount to Product A, but only when customers who have previously purchased at least one unit of Product A decide to purchase more. The CPQ admin has set up a price rule, but it is currently running on all lines that contain Product A. Product A is a subscription product. How should the CPQ admin prevent this rule from firing when a customer first purchases Product A? A. Create a condition to evaluate a Summary Variable over previous subscriptions. B. Create a lookup query to check subscriptions for previously purchased products. C. Create an Option Constraint with Check Prior Purchases set to True. D. Create a condition that checks that the Quote Line's Existing checkbox is set to True.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An admin wants to set up a rule involving three Term Conditions, where Term Condition 1 is required, and either Term Condition 2 or Term Condition 3 is required. How should the admin write this Advanced Condition? A. 1 AND (2 OR 3) B. 1 OR (2 AND 3) C. 1 AND 2 (3) D. (1 AND 2) OR 3",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has a product that can either be sold in increments of one year or can be purchased by customers and priced per month until the customer cancels their subscription. Which two actions should the admin take to set this product up so it can be renewed or last perpetually? (Choose two.) A. Expose the Subscription Type field in the Quote Line Editor, allowing sales reps to choose between Renewable and Evergreen. B. Set the product up to use the Renewable/Evergreen value in the Subscription Type field. C. Create a workflow rule to check the Evergreen checkbox on the generated contract. D. Set the product up to use the Renewable value in the Subscription Type field.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) uses USD, GBP, and EUR and has Multi-Currency enabled. UC products have two sets of USD prices: one for American customers and one for Asia Pacific customers. UC products have one set of EUR and GBP prices for European customers. What is the most effective way to set up UC's Price Books? A. Create three Price Books, one for each region (America. Asia Pacific, Europe). B. Create two Price Books: one for standard USD, EUR. and GBP prices, and one for USD in Asia Pacific. C. Create three Price Books, one for each currency (USD, EUR, GBP). D. Create four Price Books, one for each unique currency and region (America - USD, Asia Pacific - USD, Europe - EUR, Europe - GBP).",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has multiple sales teams that need to select from a subset of the product catalog on the Product Selection page. Which solution meets the business requirement without creating a separate Price Book? A. Create multiple bundles with Validation Product Rules. B. Create a Hidden Search Filter in Product Selection based on Profile. C. Create a bundle with a Configuration Attribute. D. Create a Product Rule where Type = Filter.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A user is renewing a Contract that was uploaded during a data migration. There is no Opportunity or Quote associated to the Contract. After renewing the Contract, the user has noticed that the Price Book on the Renewal Opportunity and Quote is incorrect. What should the admin do to resolve this issue? A. Build Automation to automatically populate the correct Price Book on the Renewal Quote. B. Populate the Opportunity or Quote Price Book Id field on the Contract. C. Populate the Renewal Pricebook ID field on the Contract. D. Associate an Order with the correct Price Book to the Contract before renewing.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers has a customer account for which the sales reo has negotiated a lower price for a product. The new price for the product should stay in effect for new quotes, renewal and amendment quotes. Which two individual actions could the admin take to set up a Contracted Price for this customer? (Choose two.) A. Generate a Contracted Price via the Contracted checkbox on the Quote record. B. Populate the Generate Contracted Price field on a Quote record. C. Create a Contracted Price record related to the desired Account. D. Use a Price Action to inject the discounted price into the SBQQ__CustomerPrice__c field.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers requires a specific level of approval for an enterprise-level customer if a single line’s Net Price is above a certain threshold. The admin has set up a Price Rule with a reference to a custom formula field on the Price Condition to update a field used to flag this Quote Line for approval. The user has to click Calculate twice for the field to update. What is the most likely cause of the issue? A. The referenced formula field contains information that has yet to be calculated, so the Price Rule fires the second time it is evaluated. B. The Evaluation Scope of the Price Rule is set incorrectly to fire on the Configurator, so the Price Rule fires on the Configure Products page. C. The referenced formula field contains date/time data information that is unsupported, so the Price Rule fires sporadically. D. The use of formula fields in Price Conditions is unsupported, so the Price Rule fires and returns an error the first time.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A sales rep at Universal Containers is adjusting pricing for a subscription Product on a new business Quote. The Subscription Term is 24 months. The Product's Default Subscription Term is 12 months. The Quantity is 10. The List Unit Price is $120. If a 10% Volume Discount, 20% Additional Discount, and 5% Partner Discount are applied, what are the values at each step in the standard price waterfall? A. • Regular Unit Price: $216.00 • Customer Unit Price: $168.00 • Net Unit Price: $156.00 B. • Regular Unit Price: $216.00 • Customer Unit Price: $172.80 • Net Unit Price: $164.16 C. • Regular Unit Price: $108.00 • Customer Unit Price: $86.40 • Net Unit Price: $82.08 D. • Regular Unit Price: $108.00 • Customer Unit Price: $168.00 • Net Unit Price: $156.00",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers wants to give a 25% discount on a specific Product Option purchased in the Big Box bundle. In which two ways could the admin configure CPQ to automatically apply this discount? (Choose two.) A. Set Discounted by Package to TRUE on the Product Option for the bundle. B. Set the Option Discount (%) field on the Product Option for the bundle. C. Set the Option Discount (%) field on the Product Feature for the bundle. D. Create a Price Rule that applies the 25% discount when the product is added as part of the bundle.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) defines a Warranty Period in a field on its Products and wants to ensure that this Warranty Period is correctly stored on the Asset record. A twin field has been created on the Asset record. UC contracts from the Order. When leveraging the twin field functionality to pass this information to the Asset record, on which object should the admin create a twin field? A. Quote Line B. Opportunity Product C. Product Option D. Order Product",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A user has added multiple bundles to the Quote. Each bundle consists of Product Options of the Product Families: • Hardware • Licenses • Maintenance On the output document, different line columns need to be rendered that contain the Products of each Family. Moreover, the Product Options of each Family need to be rendered separately for each bundle. Which two steps should the admin take to meet the requirement? (Choose two.) A. Populate the Sort Order field on each Product record to properly sort the Quote Lines within each section. B. Construct a formula field on the Quote Line object that returns the bundle's Name and Number, and use this field in the Group field on the Line Item section. C. Create a different Line Item section for each Product Family and leverage the Conditional Print field to show the correct products. D. Create a different Line Item section for each Product Family, and leverage the Filter field to show the correct products.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers sells a monthly subscription service with tiered pricing: Which approach will allow the Quote Line's List Price to reflect these tiers? A. Create a Discount Schedule with Type = Slab and Discount Unit = Amount. B. Create a Discount Schedule with Type = Range and Discount Unit = Price. C. Set the Product’s Pricing Method = Block and Create Block Prices. D. Set the Product’s Pricing Method = List and Create Block Prices.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers wants to allow customers to return and receive credit for asset Products. How should the admin meet the requirement? A. Set Asset Amendment Behavior to Allow Refund for the Product and reduce the Quantity on the Amendment Quote. B. Edit the Effective Quantity field on the Asset record to reflect the updated Quantity. C. Set Asset Amendment Behavior to Allow Refund for the Product and set a negative Quantity on the Amendment Quote. D. Edit the Quantity field on the Asset record to reflect the updated Quantity.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Cloud Kicks (CK) has recently phased out Product Option X and is no longer actively selling it to new customers. New customers can sign up for the current Product Option Y instead. Management has decided that CK will also migrate existing contracts to this new product version at renewal. Which steps should the admin take to achieve this? A. Update the Renewal Product field on the Product and Product Options, and set the Renewal Forecast checkbox to TRUE on the Contract record. B. On the Subscription record, change the Product Lookup to refer to the new version of the Product. C. Leverage a Selection Product Rule to remove the old Product, and automatically add the new Product. D. Use a Price Rule to swap the Product Lookup on Quote Line when a Renewal Quote Line is generated.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) has an upcoming user conference that UC wants to promote to its customers. The admin has created a Product Selection Rule to automatically add a Conference Pass Product to all new Quotes. When can a user expect the Conference Pass Product to be added to the Quote during the quoting process? A. The user selects a Configuration Attribute value for a Product. B. The user selects a Product for the Quote. C. The user calculates a Quote. D. The user saves the Quote.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers has Products that should only be selected as part of a bundle. How should the admin configure CPQ so users are unable to add this Product outside of a bundle? A. Ensure that the Component checkbox on the Product is set to TRUE. B. Create a Product Rule with a Remove action when the Product is sold a la carte. C. Ensure that the Configuration Event field on the Product is set to Always. D. Remove the Product's Price Book Entry, then set Unit Price on the Product Option record.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An admin has created a text field Configuration Attribute for Bundle A. The admin wants the attribute to start with a dynamic value the moment the configuration page loads. Which steps should the admin take to meet this requirement? A. Create a text field on the Quote Line object with the same API name as the Configuration Attribute field. Create a Price Rule to target the Quote Line field to give it a value. B. Create a Flow to update the Product Option field that is used for the Configuration Attribute value. Set the process to trigger upon new record creation. C. Create a formula text field on the Quote, constructing the formula to return the desired default value. Update the Configuration Attribute Default Field to identify the Quote formula field. D. Create a Price Rule to target the Product Option field that is used for Configuration Attribute to give it a value. Ensure the end user selects Apply Rules in the Configurator.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) maintains a large Product catalog with more than 500 Products. Ten Products from various Product Families are frequently requested and purchased by UC's customers and must be easy to find for users. How should the admin meet the requirement? A. Create a Global Action to clone a pre-made Quote containing the ten Products, and then refresh prices. B. Create a Custom Action with Search Filters that targets the Product Selection page to show only the ten Products. C. Set the Sort Order for each of the ten Product records to a numeric value that is greater than any other Product. D. Create a Custom Action that targets the Product Configuration page for a bundle that contains the ten Products.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A user has created two Quotes related to an Opportunity. The user has changed the Primary Quote by checking the Primary checkbox on the non-Primary Quote. After performing this action, the amount of the Opportunity fails to update and the Quote Lines fail to sync to the Opportunity. What is the root cause of this issue? A. Twin fields between the Quote Line and the Opportunity Product need to be set up. B. The triggers have been disabled in the Installed Package Settings. C. The Primary field on the Quote is missing from the Quote object’s Calculating Fields field set. D. Primary Quote Keeps Opportunity Products is set to FALSE in the Installed Package Settings.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers sells a monthly subscription service with tiered pricing: Which pricing method should the admin select for this service? A. Block B. List C. Segmented D. Tiered",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Subscription Product A has a Subscription Term of 6, a List Price of $100, and a Ranged Discount Schedule. A user has added this Product to a Quote with a Term of 12. The Ranged Discount Schedule is automatically applying a Discount of 25%. What is the Regular Price in this scenario? A. Regular Price of $150 B. Regular Price of $75 C. Regular Price of $100 D. Regular Price of $200",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The sales team at Universal Containers wants more control over the Product Information that is displayed on the Quote Template output. Specifically, the team wants to stop displaying the Additional Discount column based on the needs of the transaction. How should an admin meet the requirement? A. Create a custom field called HideAdditionalDiscount__c on the Template Section object, then create two Template Sections, one with HideAdditionalDiscount__c checked. B. Create a custom checkbox, Show_Discount__c, and reference it in the Conditional Print Field picklist for the Additional Discount Line Column. C. Create two Quote Templates, one with Show Customer Discount as TRUE and another with Show Customer Discount as FALSE. D. Create a Special Field on the Quote object with the API Name of HideAdditionalDiscount__c and display it in the Quote Line Editor.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When selecting Product Option A inside a bundle, Universal Containers has a requirement that Product Option B's Quantity should be updated in real time. Apply Immediately has been set on Product Option A. Which settings should be used on the Price Rule to meet these requirements? A. Evaluation Scope = Configurator Configurator Evaluation Event = Edit B. Evaluation Scope = Calculator Calculator Evaluation Event = Save C. Evaluation Scope = Configurator Configurator Evaluation Event = Save D. Evaluation Scope = Calculator Calculator Evaluation Event = Edit",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Cloud Kicks (CK) wants to ensure its sales reps are able to edit non-contracted and non-activated Orders to re-distribute Order Products from one Order to another. What are two considerations the CPQ admin must take into account to meet the requirement? (Choose two.) A. Ensure the sales rep is listed as the owner of the Order. B. Ensure the sales rep has Modify All in their profile. C. Ensure the Edit Order Products button is exposed in the Order Page Layout. D. Ensure the CPQ Orders package setting \"Allow Multiple Orders\" is selected.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Cloud Kicks (CK) uses Salesforce CPQ to streamline its sales process for customers, partners, and distributors. As part of CK's implementation, sales reps are able to specify a Partner Discount within the Quote Line Editor. Sales reps are reporting the Quote and Quote Lines' prices fail to recalculate automatically after a value is entered or changed in the Partner Discount field. The reps must press the Save or Quick Save button manually to trigger the calculation instead. How can the consultant ensure the real-time calculation is triggered in response to field changes within the Quote Line Editor? A. Enable the Partner Discount in the Calculating Fields field set. B. Ensure the ApplyPartnerDiscountFirst__c field value is set to 1. C. Enable the Calculate Immediately field on the Pricing and Calculation tab. D. Ensure the ChannelDiscountsOffList__c field value is set to 1.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When Product A is added to a Primary Quote, sales reps can view the Quote Line and make adjustments. However, an Opportunity Line Item is missing for Product A after the Primary Quote has been saved. What are two possible causes for this behavior? (Choose two.) A. Product A has \"Exclude From Opportunity\" set to TRUE. B. Product A has \"Optional\" set to TRUE. C. Product A has \"Component\" set to TRUE. D. Product A has \"Hidden\" set to TRUE.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has a high volume of contracts that are renewed each year. Recently, a number of orders have failed to generate a contract despite those orders being activated and containing subscription-based products. Where should the admin look to identify the source of the error? A. Record Jobs B. Paused & Failed Flow Interviews C. Apex Jobs D. Debug Logs",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A sales per at Universal Containers is trying to determine why a new Contract was unable to be created from a recently contracted Order. The sales rep has confirmed that the Order is for a new customer. This is the sales rep’s first attempt to contract the Order. What are three troubleshooting steps an admin should take to identify the issue? (Choose three.) A. Verify that the related Opportunity is in Closed/Won status. B. Ensure there is at least one subscription-based Order Product on the Order. C. Ensure the Order Start Date is later than the Opportunity Close Date. D. Confirm that each of the Order Products have been activated. E. Check recent Apex Jobs to identify any errors in the contracting process.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are two considerations the CPQ specialist should take into account when authorizing the Salesforce CPQ calculation serves for a user who is currently logged in? (Choose two.) A. The user’s role should be placed at the top of the Role Hierarchy. B. The user that authorizes the calculation service is a non-human admin user. C. The user must have access to the CPQ quote and all related objects. D. The user that authorizes the calculation service has API Only enabled.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers sells Tiny Boxes for $0.005 each. Tiny Boxes are Non Discountable. How should the admin set the decimal precision for the unit price? A. Set the Unit Price Scale to 3 in the Pricing and Calculation Package Settings. B. Use a Price Rule that sets the Net Unit Price to $0,005 when the product is added to a Quote. C. Set the Unit Price Scale field to 3 on the tiny boxes Product record. D. Edit the Unit Price field on the Quote Lire object end set the precision to 3.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Product A has the \"One per unit\" option selected within the Asset Conversion picklist. Users are reporting that when they modify the quantity for Product A on an amendment Quote, the following error displays: \"Product cannot be refunded. The quantity of Line # cannot decrease without a corresponding update.\" What should the CPQ specialist co to ensure sales reps can edit the quantity of asset-based products within an amendment Quote? A. Set the Asset Conversion field value to \"None\". B. Set the Asset Amendment Behavior field value to \"Default\". C. Set the Asset Amendment Behavior field value to \"Allow Refund\". D. Set the Asset Conversion field value to \"One per Quote\".",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal containers warts to quote a product that will persist until the customer cancels the subscription. How should the admin set up this product so all downstream processes create perpetual subscriptions? A. The value Evergreen should be put into the Subscription Type field on the Product. B. The admin should uncheck the Auto-calculate contract end date setting to prevent contracts from expiring. C. A Price Rule should put the value Evergreen into the Subscription Type field on each of that Product’s Quote Lines. D. The sales rep should create a Quote without an end dote or a subscription term associated with it.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers sells a container management bundle with Product Options representing different service levels. The admin has created a Configuration Attribute for the bundle to let users specify the service level. Which two actions should the admin take to limit the options in the bundle that are displayed to the user when a service level is selected? (Choose two.) A. Create a Selection Product Rule that automatically shows and hides Product Options based on the service level. B. Ensure Apply to Product Options is set to TRUE on the Configuration Attribute. C. Ensure Apply Immediately is set to TRUE on the Configuration Attribute. D. Create a Selection Price Rule that automatically shows and hides Product Options based on the service level.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) uploads all product photos to an external content management system (CMS). The VP of sales wants sales reps to leverage these images when configuring Quotes, Product searches, and Quote documents. What is the most efficient method for the CPQ specialist to meet the business requirement? A. Create a Rich-Text Area field and store the image value. B. Create an integrator! between the CMS and Salesforce. C. Create a Hyperlink field that stores the URL of the image. D. Create a formula field that leverages the IMAGE function.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers warts to introduce a new Support SKU to be sold in increments of 1 month. The product is non-renewable but the support agreement can be canceled before the agreed End Date. What should the admin configure in the product to meet this requirement? A. When creating the Product record, the SBQQ__SubscriptionType__c field is set to Renewable. Use the SBQQ__SubscriptionTerm__c field on the Quote record to define the number of months of Support requested by the customer. B. When creating the Product record, the SBQQ__SubscriptionPricing__c field is set to None. Use the SBQQ__Quantity__c field on the Quote Line record to define the number of months of Support requested by the customer. C. When creating the Product record, the SBQQ__SubscriotionType__c field and the SBQQ__AssetConversion__c field are set to Null. Use the SBQQ__Quantity__c field on the Quote Line record to define the number of months of Support requested by the customer. D. When creating the Product record, the SBQQ__SubscriptionType__c field is set to One-Time. Use the SBQQ__SubscriptionTerm__c field on the Quote record to define the number of months of Support requested by the customer.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The sales manager at Universal containers wants to ensure that bundles: • Cannot be reconfigured when a Renewal Quote is created. • Allow sales reps to configure bundles only on new or amendment quotes. What should the CPQ specialist co to meet these requirements? A. Ensure SBQQ__ReconfigurationDisabled__c is set to TRUE on the Bundle product. B. Create a Custom Action Condition on the Reconfigure Line custom action where SBQQ__Type__c is equal to \"Renewal\". C. Create a Custom Action Condition on the Reconfigure Line custom action where SBQQ__Type__c is not equal to \"Renewal\". D. Ensure SBQQ__ReconfigurationDisabled__c is set to \"Disabled\" on the Bundle product.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers needs sales reps to look up Campaign records to associate with specific Quote Lines in the Quote Line Editor. The admin created a lookup field on the Quote Line object that relates to the Campaign object, then added the lookup field into the Line Editor Field Set on the Quote Line object. What does the admin need to do so the sales reps can search Campaign records in the Quote Line Editor without seeing a warning message? A. Add the name of the lookup field into the Line Editor Field Set on the Quote object. B. Create and populate a Field Set on the Campaign object named CPQ_Lookup. C. Add the lookup field to the Quote Line page layout. D. Create a twin field on the Campaign object using the same API name as the lookup field.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The Universal Containers sales operations team wants to ensure that without reopening the Quote Line Editor, quotes have the most current pricing logic prior to submitting them for approval. Which two actions could the admin take to meet the business requirement? (Choose two.) A. Add the Calculate button to the quote layout. B. Create a new Lightning button to trigger recalculation. C. Create a Flow to trigger recalculation upon record save. D. Change the value of a field in the Calculating Fields Field Set.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) wants to display the sum of a custom field within the standard table of the Line Editor. UC wants to keep the original subtotal and total fields. Where should the admin place the custom field to display this total? A. The Totals Field package setting B. The Line Subtotals Total field package setting C. The Segmented Summary Fields field set D. The Summary Fields field set",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The admin at universal Containers has a group of Price Rules with Lookup Queries that references a new Rental Rates object. After testing to confirm the Price Rules produce the expected behavior, the Price Rules are ready to be deployed to Production. In which order should the admin deploy Price Rules with Lookup Queries to align with best practices? A. Rental Rates, Price Rules, Price Conditions, Lookup Queries, Price Actions B. Price Rules, Price Conditions, Rental Rates, Lookup Queries, Price Actions C. Rental Rates, Lookup Queries, Price Rules, Price Conditions, Price Actions D. Price Rules, Rental Rates, Lookup Queries, Price Actions, Price Conditions",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers needs to generate two styles of PDF output, one that includes prices in the line item table if the Quote is primary, and another that hides prices when the Quote Primary checkbox is False. Where should the admin reference the Primary checkbox field to set up this requirement? A. The Hide Totals Field or the Quote Template B. The Conditional Print Field of a Template Section for only price Line Columns C. The Conditional Print Field for each price Line Column D. The Hide Group Subtotals Field on the Quote Template",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) has categorized its Products into three Product Families. When rendering a document, UC wants to separate the Products into different Line Item tables by Product Family. How should the admin meet the requirement in the most efficient manner? A. Create a Template Section for each Product Family, and set up the appropriate filtering within each section using the Conditional Print field. B. Create a single Template Section, and use the Group Field functionality to ensure appropriate grouping by Product Family. C. Create a single Template Section, and use the LineSortField special field to ensure appropriate grouping by Product Family. D. Create a Template Section for each Product Family, and set up the appropriate filtering within each section using the Filter field.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers has two products: • C-STOR-L, which is a Large Storage Container. • C-LID-L, which is a Lid for a Large Storage Container. These are Product Options within the same bundle. C-STOR-L is required before C-LID-L is selected in the bundle. The Admin wants to create an Option Constraint. What field should C-LID-L be stored in to meet this requirement? A. Configured SKU B. Optional SKU C. Constrained Option D. Constraining Option",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) created a Custom Action called Add Subscriptions and a Search Filter for Products flagged as subscription Products. How can UC ensure that sales reps are restricted to subscription Products when the reps click on the Custom Action called Add Subscriptions? A. Remove the Subscription flag from the Product’s Search Filters Field Set. B. Set the Filter Value on the Add Subscriptions Custom Action Search Filter to Hidden. C. Mark hidden as TRUE on the Search Filter and attach it to the Add Subscriptions Custom Action. D. Remove the Subscription flag from the Product’s Search Results Field Set.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A sales rep at Universal Containers is trying to determine why a new Contract was unable to be created from a recently contracted Order. The sales rep has confirmed that the Order is for a new customer. This is the sales rep’s first attempt to contract the Order. What are three troubleshooting steps an admin should take to identify the issue? (Choose three.) A. Check recent Apex Jobs to identify any errors in the contracting process. B. Ensure the Order Start Date is later than the Opportunity Close Date. C. Ensure there is at least one subscription-based Order Product on the Order. D. Verify that the related Opportunity is in Closed/Won status. E. Confirm that each of the Order Products have been activated.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Universal Containers wants to introduce a new Support SKU to be sold in increments of one month. The support agreement can be canceled before the agreed End Date. What should the admin do to ensure the contract is properly generated? A. Use the default Subscription Term field on Product to define the term. B. Ensure the Asset Conversion field on the Product is blank. C. Ensure the Subscription Pricing field on the Product is set. D. Use the Subscription Term field on Quote to define the term.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers (UC) offers several enterprise server bundles with professional services. UC has a large catalog of professional services that are compatible with any server. New professional services are constantly being introduced. UC wants to design the product configuration to minimize maintenance and ensure scalability. Which two actions should the admin take to construct these new bundles? (Choose two.) A. Create a Dynamic Feature for Professional Services Products. B. Create a Filter Product Rule with a Product Action filtering for Professional Services Products. C. Create a nested bundle that contains all Professional Services Products. D. Create a new Custom Action that is filtered to show only Professional Services Products.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
