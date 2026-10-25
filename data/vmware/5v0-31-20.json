@@ -1,0 +1,347 @@
+[
+  {
+    "question": "What is the number of SDDC Manager controller instances that can fail in a highly available VMware Cloud Foundation federation? A. 2 B. 1 C. 0 D. 3",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator needs to install certificates for the VMware Cloud Foundation components. They need to be fully automated and not require additional configuration. Which two certificate authority types meet these requirements? (Choose two.) A. DV SSL CA B. UCC CA C. MDC CA D. Microsoft CA E. OpenSSL CA",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator has to work with multiple VMware Cloud Foundation sites, and Multi-Instance Federation is setup. How can the administrator access different sites? A. VMware Cloud Foundation will federate, but access to all sites is only available in the vSphere client. B. The administrator should login to the master controller to access all site data. C. Any node in the system will provide the information across all instances. D. The administrator should still log into each individual site.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Why is the Pass-Through mode preferred over HBA mode for disks connected to RAID controller in a vSAN environment? A. It does not require an ESXi host to be rebooted when a disk fails as part of the disk change procedure. B. It requires an ESXi host to be rebooted when a disk fails as part of the disk change procedure. C. It supports RAID5 and RAID6, which is required by vSAN to provide protection against disk failure. D. It provides better performance and additional features such as de-duplication and compression.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the minimum hardware requirements to host VMware Cloud Foundation infrastructure components within the management cluster? A. 4 vSAN Ready Nodes with two 1 GbE NICs B. 4 vSAN Ready Nodes with two 10 GbE NICs and optionally one 1 GbE BMC NIC C. 3 vSAN Ready Nodes with two 10 GbE NICs and optionally one 1 GbE BMC NIC D. 3 vSAN Ready Nodes with two 25 GbE NICs",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement is correct about the VMware Cloud Foundation upgrade process? A. Management Domain must be upgraded first before any Workload Domain B. The ESXi hosts must be upgraded using VMware generic ESXi image; customized OEM images can't be used C. Upgrade bundles must be manually downloaded and uploaded to vCenter Server. D. Hosted workloads must be shut down as the upgrade process requires hosts reboots.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is creating a workload domain where NSX-T must be configured to allow for dynamic routing. Which two configurations are required? (Choose two.) A. Reserving a BGP Autonomous System Number to use for the NSX-T Edge cluster's Tier-0 gateway B. Using the same Autonomous System Number on both the NSX-T Tier-0 gateway and the ToR switches C. Having two BGP peers on ToR switches with an interface IP, BGP Autonomous System Number, and BGP password D. Configuring OSPF on the Tier-0 gateway on the NSX-T Edge nodes E. Using two MPLS peers on ToR switches with an interface IP and iBGP Autonomous System Number",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has decided to combine management and user workloads into one domain. Which three considerations for designing consolidated architecture of VMware Cloud Foundation must be noted? (Choose three.) A. Future migration from a consolidated architecture to a standard architecture will be possible only if VMware Cloud Foundation on VxRail deployment takes place. B. Consolidated architecture does not align with the VMware best practice of separating management workloads from customer workloads. C. Resource pools with shares, limits, and reservations must be used to isolate workloads when they coexist in the management cluster. D. VMware Cloud Foundation Multi-Instance Management does not support consolidated deployment architectures. E. The consolidated architecture design targets bigger VMware Cloud Foundation deployments. F. Management and user workloads are running under management vCenter.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A system administrator wants to configure 2 pNICs and 1 vDS, which is used for Management Traffic, vMotion, vSAN, Host Overlay, Edge Overlay, and Uplink networks. Which vDS profile does the administrator needs to set? A. Profile 3 B. Profile 1 C. Profile 4 D. Profile 2",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is preparing a VMware Cloud Foundation upgrade. The administrator wants to use SDDC Manager to automate as many tasks as possible, but SDDC Manager does not have direct access to the Internet. Which action should the administrator take to perform the upgrade? A. Configure proxy on SDDC Manager and download binaries directly from SDDC Manager GUI. B. Use vRealize Suite Lifecycle Manager to download binaries and upload to SDDC Manager. C. Ask the network team to temporarily allow direct access to the internet from SDDC Manager. D. Use the bundle transfer utility to download the bundles and manually upload to SDDC Manager.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which role is required to commission new hosts in SDDC Manager following the principle of least privilege? A. POWER USER B. OPERATOR C. SUPER ADMIN D. ADMIN",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A SDDC Manager must be restored from a file-level backup. Which two steps are part of the recovery process? (Choose two.) A. Import any file-level backup to a new deployment of SDDC Manager B. Deploy a new SDDC Manager from the management vCenter server C. Use a VMware assisted backup solution to restore the SDDC Manager D. Use the restore utility in the old SDDC Manager to restore the file-level backup E. Use the SoS Utility to restore the SDDC Manager configuration",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is one major benefit for IT Operators when it comes to vSphere with Tanzu? A. Simplifies NSX for vSphere deployment and configuration with SDDC Manager B. Limited access when consuming Cloud Native Storage (vSAN) C. Create and manage multiple Kubernetes clusters inside a namespace D. Full visibility over VMs, vSphere Pods, and Tanzu Kubernetes clusters",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A system administrator needs to configure a file-based backup schedule for SDDC Manager VM using Cloud Foundation API. Which action must be performed prior to obtaining an access token? A. Set the backup schedule. B. Configure an external SFTP server. C. Take a non-quiesced backups of SDDC Manager. D. Replace the SDDC Manager IP address, username, and password.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has performed the first step to rotate third-party certificates and has downloaded the tar.gz bundle from SDDC Manager. What do the sub-directories in the bundle contain? A. A .csr file B. A .crt file C. A PEM file D. A pfx file",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Is it possible to expand a consolidated architecture to a standard architecture? A. Yes, deploy a new Cloud Foundation environment and migrate workloads. B. Yes, add an additional workload domain. C. No, once deployed, the architecture cannot be changed. D. Yes, deploy a new Cloud Foundation management cluster, and then change the mode of the existing to workload cluster.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which use case is valid for the deployment of a Stretched Cluster within a VMware Cloud Foundation Workload Domain? A. Manual initiation of VM restart or recovery B. Leveraging existing storage investments with support for principal and supplemental external storage C. Physical Traffic Segregation for security D. Planned maintenance of one site without any service downtime",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During a design discussion around VMware Cloud Foundation, the customer said they would like to use vSphere with Tanzu in a dedicated workload domain. How can this be addressed when planning for VMware Cloud Foundation NSX Edge deployment? A. Use Workload Management, and specify the workload cluster. B. Use the Custom option, and specify the workload cluster. C. Deploy Bare Metal Edges for that specific workload cluster. D. Use NSX-T API calls to specify the workload cluster.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which step is required to configure permissions for a vSphere with Tanzu namespace? A. Create a content library B. Provide access to Docker Hub C. Enable Harbor registry D. Define users and groups in vCenter SSO",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator reviews all requirements in the environment before deploying a stretched cluster. Which two requirements must be ready? (Choose two.) A. VMware NSX Service Mesh B. vSAN Enterprise license C. VMware HCX D. NSX Advanced Load Balancer E. DHCP on overlay network in each site",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Review this deployment parameter sheet extract (table): Which two required VLANs are missing from the table for deploying the workload domain? (Choose two.) A. vMotion Network B. K8s Network C. vSAN Network D. Native Network E. Horizon Network",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During the management domain bring-up process two AVN networks (NY-xRegion01-SEG01 and NY-RegionA01-SEG01) are created. What is NY-RegionA01-SEG01 used for? A. Only for vRealize Log Insight guided deployment B. For vRealize Suite components which require portability across regions or failover capability C. Only for vRealize Automation Proxy Servers guided deployment D. For vRealize Suite components that do not require portability between regions",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement is correct about Supportability and Serviceability (SOS) utility on VMware Cloud Foundation (VCF)? A. It is used to renew VCF licenses upon expiration. B. It is used to upload upgrade bundles to SDDC Manager when internet access to SDDC Manager is forbidden. C. It is used to stretch VCF domains to multiple availability zones. D. It is used to enable/disable lockdown mode on ESXi hosts.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator creates network pools in preparation for workload domains. Which two network types can be included in the network pool? (Choose two.) A. vSphere Replication B. vSphere Fault Tolerance C. iSCSI D. vMotion E. vSAN",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Why is token-based authentication used in VMware Cloud Foundation (VCF)? A. To enable integration with VMware Identity Manager B. To allow connection to VMware Cloud on AWS C. To secure VCF API calls D. To complete two-step verification",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement is true about vSphere with Tanzu namespaces? A. All namespace permissions require at least a vSphere Power User role along with permission to the namespace. B. Permissions assigned to a namespace grant permissions to vSphere. C. Only [email protected] can assign permissions to namespaces. D. Users can have permission to a namespace without requiring vSphere permissions.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator is preparing to image several hosts using the VMware Imaging Appliance. The appliance has been modified with an additional virtual network interface (eth1), which is connected to the same untagged L2 network as the servers which will be imaged. The original interface (eth0) is connected to a routable network, which is reachable from the administrator's desktop. Which action must the administrator take to allow for successful host imaging? A. Update the via.properties on the VMware Imaging Appliance B. Ensure the networks connected to eth0 and eth1 are routable C. Configure a dedicated DHCP server on the untagged imaging network D. Move all the servers to a VLAN-backed network",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is one method of updating or upgrading the ESXi software on all hosts in a workload domain? A. VMware Imaging Appliance (VIA) B. vRealize Automation C. vRealize Suite Lifecycle Manager D. vSphere Lifecycle Manager",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A bug has been identified in VMware NSX-T that causes ESXi hosts to randomly PSOD and crash when a high volume of firewall rules are being applied. VMware has released an update for NSX-T to address the issue. Which method should the administrator use to apply this update to the environment? A. Upgrade VMware Cloud Foundation to a version that includes this patch. B. Apply the latest HotFix directly to NSX-T to address the issue immediately. C. Use VMware Lifecycle Manager to upgrade NSX-T to the latest version. D. Utilize SDDC Manager to upgrade NSX-T to the latest version.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two statements are correct concerning the upgrade pre-checks of the VMware Cloud Foundation 4.x upgrade process? (Choose two.) A. Upgrade prechecks validate that ESXi hosts have enough space on principal storage for the ISO image staging. B. Upgrade prechecks validate that custom ESXi ISOs are compatible with the current environment in VUM-based workload domains. C. Upgrade prechecks will not allow continuing the upgrade if there's one or more alarms. D. Upgrade prechecks validate that all required bundles are downloaded successfully to the SDDC Manager. E. Upgrade prechecks are optional to guarantee the success of the upgrade, but they can be skipped.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "There has been a service outage that has caused VMware NSX Manager to become unresponsive, and it must be recovered from the last known good backup. The backed up configuration file has been located, and the restore procedure is ready to commence. Which step should be taken first? A. Disconnect VMware NSX Manager from VMware vCenter. B. Deploy a new VMware NSX Manager into VMware vCenter. C. Migrate the existing VMware NSX Manager. D. Restart the existing VMware NSX Manager.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is tasked with designing a VMware Cloud Foundation workload domain with multiple tenant clusters. Each tenant cluster is in a dedicated rack. The network design includes a leaf/spine architecture where only one rack is connected to upstream routers. All NSX-T Edge nodes must run in a single vSphere Cluster in the Edge rack. Refer to the exhibit: Which design constraint must be considered as part of this design? A. A separate NSX-T Manager instance must be deployed for each tenant cluster. B. Only eight tenant workload clusters can be deployed. C. NSX-T Manager only supports Edge clusters in the management domain. D. All clusters in a workload domain must use the same NSX-T Edge cluster.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has been tasked with increasing the available capacity within an existing VMware Cloud Foundation deployment to support the deployment of production workloads. The VMware Cloud Foundation environment consists of a single workload domain called Production. The existing workload domain consists of a single vSAN Cluster called Production-01. Three new hosts have been commissioned in SDDC Manager for the capacity expansion. The new hosts have identically configured CPU and RAM to the hosts in Production-01. NFS is the required principal storage option. Which process must the administrator complete to increase the available capacity without the need for additional management components? A. Create a new vSphere Cluster within the Production workload domain. B. Expand the existing Production-01 cluster by adding the additional hosts. C. Create a new network pool in the existing Workload Domain to support vSAN. D. Create a new vSphere Cluster within a new workload domain.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During initial assessment workshops, a customer expressed that capacity management was one of the major pain points when looking at their geographically spread data centers. How can VMware Cloud Foundation help to achieve this requirement? A. VMware HCX Integration B. Joining all sites into a Federation C. 3rd party Capacity Management D. Creating a SDDC Manager Cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which step within the bring-up process is optional when considering the automated deployment of VMware Cloud Foundation? A. Downloading the latest Deployment Parameter Workbook or creating JSON B. Uploading the completed Deployment Parameter Workbook or JSON C. Using the VMware Imaging Appliance (VIA) service to image VMware ESXi Hosts D. Deploying the VMware Cloud Builder Appliance",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which solution should be considered when designing the management cluster? A. VMware Cloud Director B. vRealize Suite Lifecycle Manager Cluster C. vRealize Suite components D. vCenter High Availability",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The administrator of a new VMware Cloud Foundation instance will deploy the first workload domain. The workload domain will consist of two vSphere clusters using vSAN as principle storage. The organization has a policy that defines the naming of all objects in the SDDC, such as clusters, distributed switches, distributed port groups, and datastores. The administrator must ensure that all objects in the workload domain conform to the organization's policies. How can the administrator accomplish this task? A. Deploy the workload domain and the second cluster using the SDDC Manager UI, and then use APIs to rename the objects after deployment. B. Deploy the workload domain and the second cluster using the SDDC Manager UI, and then input the names for all objects to be created. C. Deploy the workload domain and the second cluster using the SDDC Manager UI, and then rename the objects in the vSphere client after deployment. D. Deploy the workload domain and the second cluster using the SDDC Manager Developer Center.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A new team member has recently joined the backup and recovery team. This team member has been tasked with configuring backups within VMware Cloud Foundation. Which role should the VMware Cloud Foundation administrator assign this team member? A. AUDITOR B. ADMIN C. ENTERPRISE ADMINISTRATOR D. OPERATOR",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is tasked with designing a VMware Cloud Foundation solution containing two regions. The company wants to make use of existing investments where possible, including re-use of compute, storage, and networking hardware as well as existing implementations of software. The two sites are well connected with 10Gbps and a round trip latency of 230ms between them. The customer has existing installations of vRealize Operations that they must preserve for historical purposes. Their existing backup solution supports a data retention policy of three years. All data must be encrypted while at rest. They also have a centralized syslog repository that all capable devices must send or forward logs to for deep data analytics. Which two constraints could impact this design? (Choose two.) A. RTT Latency is 230ms between sites. B. The Data Retention Policy is too long. C. There is an existing vRealize Operations instance. D. vMotion must be encrypted. E. All syslog events must be sent to a third-party.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An environment requires physical segregation for workload security. How can VMware Cloud Foundation achieve this requirement? A. Isolate vSAN traffic to a separate pair of physical NICs. B. Activate Network I/O Control. C. Isolate VM traffic to a separate pair of physical NICs. D. Activate Guest Introspection.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are two requirements for the automated deployment of the vRealize Suite products using vRealize Suite Lifecycle Manager? (Choose two.) A. An IP Pool must be created for each of the solutions. B. vRealize Suite Lifecycle Manager must be deployed from SDDC Manager during the bring-up process. C. DNS must be reachable. D. NTP must be reachable. E. A connection to the \"My VMware\" Account must be set up in vRealize Lifecycle Manager.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is a valid use case for using multiple clusters in a workload domain? A. Four new hosts are racked and stacked. B. Resource pools are configured for separation of development and production workloads. C. Applications and database servers should not run on the same host. D. Applications are licensed per physical CPU.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which network type must be added to Network Pools within SDDC Manager to support the deployment of a Workload Domain with VMFS on Fibre Channel storage? A. vMotion only B. vSAN and NFS only C. vMotion, NFS, and vSAN D. vSAN and vMotion only",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which tool should be used to plan the size of a workload domain? A. VMware vRealize Log Insight B. VMware Capacity Planner C. Planning and Preparation Workbook D. VMware StorageHub",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which MTU range should be entered when a network pool is created? A. 1496 and 4096 B. 1500 and 9000 C. 1 and 4096 D. 1480 and 9000",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator wants to create a namespace for VMware vSphere with Tanzu. Which two options can be defined as part of the namespace? (Choose two.) A. Authorization permissions B. Virtual machine resource pools C. NSX Edge sizing D. NSX Manager sizing E. Resource limits",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the minimum required amount of RAM (in GB) in a VMware ESXi host when deploying a VMware Cloud Foundation Management Domain? A. 512 B. 256 C. 384 D. 128",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has created a separate workload domain for a virtual desktop environment and has deployed an NSX Edge cluster to support networking for the virtual desktops. Which software component is deployed by VMware Cloud Foundation within the workload domain? A. vCenter Server B. NSX-T Manager C. SDDC Manager D. NSX Edge nodes",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a customer's VMware Cloud Foundation environment, all workload domains share the same NSX-T Manager. Which consideration should be taken when performing NSX-T upgrades? A. New features introduced in the upgrade are configurable while the NSX-T Manager cluster is being upgraded. B. The NSX-T Manager cluster is upgraded after the host clusters in the workload domain. C. No operations can be performed on the NSX-T workload domains while NSX-T is being upgraded. D. Host clusters in an NSX-T workload domain must be upgraded while the NSX-T Manager is being upgraded.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator creates a management domain using the VMware Cloud Builder appliance. Which two components are automatically created during the process? (Choose two.) A. vCenter Server B. vRealize Automation C. vRealize Operations D. SDDC Manager E. vRealize Log Insight",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three core third-party requirements are needed before the deployment of VMware Cloud Foundation? (Choose three.) A. Proxy for Internet access B. Physical servers C. DNS configuration D. Physical network E. Public IP address range F. Certificate authority services",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the minimum number of hosts needed to create a vSAN Workload Domain that can tolerate one host failure? A. 5 B. 3 C. 4 D. 2",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is tasked with preparing hosts for the deployment of a new workload domain in a VMware Cloud Foundation environment. The ESXi hosts have GPUs that require the installation of a separate VMware Installation Bundle (VIB). Which imaging method must the administrator use to ensure the full functionality of these new hosts? A. VMware vSphere Auto Deploy B. VMware Imaging Appliance C. Manual installation using the base ISO from VMware D. VMware SDDC Manager",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is planning on creating network pools. Which two details must be known to complete this task? (Choose two.) A. The number of NSX Edges B. The number of hosts in workload domain C. The number of NSX Load Balancers D. The number of virtual machines E. The type of network desired",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The company has very tight controls on procurement and requires that all licenses keys be annotated to include the purchase order used to acquire them whenever possible. During a routine audit, the new VMware Cloud Foundation environment was found to be missing the details for the vSAN license keys. An administrator has been tasked with updating the license key description to include this information. Where should the administrator go in order to edit the license key description? A. VMware SDDC Manager > Administration > Licensing B. VMware vCenter Server > Hosts and Clusters C. VMware vCenter Server > Administration > Licensing D. VMware vRealize Suite Lifecycle Manager > Locker",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has been tasked with deploying an NSX Edge Cluster within a VI Workload Domain to support container workloads on VMware Cloud Foundation with Tanzu. Which use case option should be selected during the Add Edge Cluster Wizard to ensure that the correct settings are applied and cannot be edited? A. Default B. Workload Management C. Active-Active D. Custom",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which VMware Cloud Foundation edition allows the administrator to do large scale workload migration from old environment? A. Starter Edition B. Enterprise Edition C. Advanced Edition D. Standard Edition",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement is correct about vSphere with Tanzu Supervisor Cluster? A. Supervisor Cluster requires using vSAN to provide storage resources to vSphere Pods. B. Supervisor Cluster requires using NSX-T to service vSphere Pods networking. C. Supervisor Cluster mandates using NSX-T to service Tanzu Kubernetes clusters networking. D. Supervisor Cluster mandates using vSAN to provide storage resources to Tanzu Kubernetes clusters.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is planning to deploy a VMware Cloud Foundation with Tanzu cluster. Which three requirements must be considered when configuring the Workload Management? (Choose three.) A. A large format NSX-T Edge cluster must have been deployed. B. Use routable subnets for Kubernetes cluster egress and ingress for the NSX-T edge cluster. C. Use a routable subnet for Service IP addresses. D. All ESXi hosts that are part of workload domain must have 'VMware vSphere 7 Enterprise Plus with Add-on for Kubernetes' license. E. All ESXi hosts that are part of workload domain must have 'VMware vSphere 7 Enterprise' license. F. Use a routable subnet for pod networking.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The administrator for a new VMware Cloud Foundation instance for an organization needs to automate the deployment of an NSX-T Edge Cluster for the workload domain that will be stored in the SDDC Manager inventory. Which two options may the administrator use? (Choose two.) A. PowerShell B. SDDC Manager UI C. Terraform D. SDDC Manager API E. Ansible",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has imaged the servers with ESXi and VIBs and must now perform some post-imaging tasks. What is the most common task that needs to be completed after the bring-up process? A. Making a cluster image available in VMware Cloud Foundation B. Uploading ISO and VIB files to the VMware Imaging Appliance service C. Configuring the Management Network and the VM Network port groups with the same VLAN ID D. Sizing compute and storage resources for VMware Cloud Foundation with Tanzu",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two statements are true regarding VMware NSX Manager backup configuration in VMware SDDC Manager? (Choose two.) A. The backup server configuration can be edited to change the backup location, but previous backups must be manually copied from the old location to the new location. B. Only NSX Manager VMs are backed up. C. A separate external backup server must be registered for each NSX Manager instance. D. The file transfer protocol used for NSX backups is insecure, so the administrator must create a secure network tunnel for backup traffic. E. Only a user with the ADMIN role can configure the NSX backup server details in SDDC Manager.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which VMware SDDC Manager user account can be configured to use password rotation? A. Backup User (backup) B. Root User (root) C. Super User (vcf) D. API User (admin)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement accurately describes the underlay network that is used for NSX-T Data Center in VMware Cloud Foundation environment? A. Hierarchical multi-tier network topology is not supported as an underlay network in NSX-T Data Center. B. NSX-T Data Center can work with any existing underlay network topology as long as other prerequisites are satisfied. C. Spine and leaf network topology must be used as an underlay network in NSX-T Data Center. D. Spine and leaf network topology is not supported as an underlay network in NSX-T Data Center.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the minimum NSX-T Edge virtual appliance form factor that needs to be deployed in the VMware Cloud Foundation Consolidated Architecture management domain to integrate with vSphere with Tanzu? A. Extra Large B. Medium C. Large D. Small",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is required before deleting a storage policy from a Supervisor Cluster Namespace? A. Make sure that no persistent volume claim with the corresponding storage class runs in the namespace. B. All cluster nodes must be entered in to Maintenance Mode. C. New Namespace with new storage policy assigned must be created first. D. Storage policy should be converted to default.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator is tasked with deploying the management domain for a new VMware Cloud Foundation deployment. Which storage option is a supported? A. VMFS on FC B. NFS v3 C. vSAN D. VMFS on iSCSI",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has been tasked with deploying a VMware Cloud Foundation Workload Domain Stretched Cluster that consists of eight (8) hosts. Four (4) hosts have been successfully deployed and commissioned into Availability Zone 1 (AZ1). All other required prerequisites have been met, and the administrator is now ready to start the process of stretching the VMware vSAN cluster into Availability Zone 2 (AZ2). Which step should the administrator complete first? A. Commission the four (4) hosts in AZ2. B. Validate the stretch cluster API. C. Stretch the cluster. D. Create a network pool in AZ2.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a prerequisite to support a migration of workload VMs from a consolidated architecture to a standard architecture? A. Extend the existing workload networking into the new VI Workload Domain. B. Migrate using VMware Lifecycle Manager to the new VI Workload Domain. C. Migrate the Resource Pools from Management Domain to the Workload Domain. D. Commission a minimum of four hosts per domain.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
