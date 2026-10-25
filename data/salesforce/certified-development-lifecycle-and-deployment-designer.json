@@ -1,0 +1,87 @@
+[
+  {
+    "question": "Universal Containers (UC) is preparing for the new Salesforce release in a couple of months, and has several ongoing development projects that may be affected. Which three steps should the team at UC take to prepare for this release? (Choose three.) A. Upgrade any SOAP integrations to the newest WSDL as early as possible. B. Contact Salesforce to schedule a time to upgrade the Full sandbox. C. Review the release notes for automatically-enabled features and technical debt. D. Refresh a Sandbox during the Release Preview Window to ensure they have the upcoming release. E. Run regression tests in an upgraded sandbox to detect any issues with the upgrade.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers is replacing an old legacy system with Salesforce. Which two strategies should the plan consider to mitigate the risks associated with migrating data from the legacy system to Salesforce? (Choose two.) A. Identify the data relevant to the new system, including dependencies, and develop a plan/scripts for verification of data integrity. B. Migrate users in phases based on their function, requiring parallel use of legacy system and Salesforce for certain period of time. C. Use a full sandbox environment for all the systems involved, a full deployment plan with test data generation scripts, and full testing including integrations. D. Use a full sandbox environment and perform test runs of data migration scripts/processes with real data from the legacy system.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) wants to shorten their deployment time to production by controlling which tests to run in production. UC's Architect has suggested that they run only subsets of tests. Which two statements are true regarding running specific tests during deployments? (Choose two.) A. Specifying the test method is NOT supported in DeployOptions; therefore, specify only the test classes that are required to be executed. B. To run a subset of tests, set the RunSpecifiedTests test level on the DeployOptions object and pass it as an argument to deploy() call. C. To run a subset of tests, set the RunLocalTests test level on the DeployOptions object and pass it as an argument to deploy() call. D. Specify both test classes and individual test methods that are required to be executed, as both are supported in DeployOptions.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) is implementing a governance framework and has asked the Architect to make recommendations regarding release planning. Which two decisions should the Architect make when planning for releases? (Choose two.) A. How to roll back to the previous Salesforce release if there are issues. B. How to test existing functionality to ensure no regressions are introduced. C. When to test a new UC feature release on a preview sandbox. D. Whether Salesforce will wait to upgrade the pod until after a UC release is complete.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "There has been an increase in the number of defects. Universal Containers (UC) found the root cause to be decreased quality of code. Which two options can enforce code quality in UC's continuous integration process? (Choose two.) A. Introduce manual code review before deployment to the production org. B. Increase the size of the testing team assigned to the project. C. Introduce static code analysis before deployment to the testing sandbox. D. Introduce manual code review before deployment to the testing sandbox.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) is planning for a huge data migration as part of their Service Cloud Implementation. UC has approximately 15 million customers, 30 million contacts, and 30 million active cases. Which two key areas of UC's data migration test plan should be included? (Choose two.) A. APIs to be used for data migration B. Target Salesforce Server and Source system IP address C. Manual and Automated data validation approaches D. Success criteria for data migration",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers (UC) has three types of releases in their release management strategy: daily, minor (monthly), and major (quarterly). UC is releasing a new Service Cloud implementation to a large support center, which will require lengthy training and change management. The implementation has dependencies on the existing Salesforce Sales Cloud implemental. What release strategy would an Architect recommend? A. Utilize the minor release process to create and test in production, bypassing the full sandbox. B. Utilize the daily release process and deploy directly to production, bypassing the full sandbox. C. Utilize the daily release process to create and test in a full sandbox and then deploy to production. D. Utilize the major release process to create and test in a full sandbox and then deploy to production.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Universal Containers is using Salesforce for Order Management and has integrated with an in-house Enterprise Resource Planning (ERP) system for order fulfillment. There is an urgent requirement to include a new order status value from the ERP system into the Order Status picklist in Salesforce. Which two considerations should be made when addressing the above requirement? (Choose two.) A. Existing Apex test classes may start failing in Production. B. Integration with the ERP system may NOT function as expected. C. Implement the change in the sandbox, validate, and release to Production. D. The change can be performed in Production, as it is a configuration change.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Universal Containers (UC) is a high-tech company using SFDX tools and methodologies for its Salesforce development. T UC has moved some of its code and configuration to Unlocked Packages. Which two best practices should an architect recommend to support UC’s new package development strategy? (Choose two.) A. Consult the metadata coverage report to identify features supported by packages B. Move everything in the existing codebase to a single monolithic package C. Version control does not need to be used, as packages manage all the code and configuration D. Test developed packages in test environments before installing to production",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) recently acquired Eastern Trail Outfitters (ETO). NTO’s sales leadership team had hands-on experience with the ETO’s Sales Optimization app and have given the feedback that the app would benefit NTO’s sales team. Which option should the architect recommend for having ETO’s Sales Optimization app in NTO’s Salesforce org in the shortest possible time? A. Create a managed package of the app and deploy in NTO’s org B. Create a core team and build the Sales Optimization app in NTO’s org C. Create users in ETO’s org and provide access to NTO’s sales team D. Create an unmanaged package of the app and deploy in NTO’s org",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Sales and Service products will be created by two teams that will use second-generation managed package(s). The Sales team will use a specific function of the Service product, but the architect wants to ensure that this team will only use the functions exposed by the Service team. No other team will use these same functions. What should an architect recommend? A. Create two managed packages. Create an authentication function in the Service package that will return a token if a Sales user is authorized to call the exposed function. Validate the token in the Service functions. B. Create two second generation managed packages with the same namespace and set the methods that should be shared with the @namespaceAccessible annotation. C. Create two managed packages with Sales and Service namespaces. Set the methods to be shared with the @salesAccessible annotation. D. Create a managed package with both products and create a code review process with an approver from each team.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Northern Trail Outfitters (NTO) has well-defined release management processes for both large and small projects. NTO’s development team created a workflow and a trigger for the changes in its opportunity renewal process. What should the architect recommend for release planning of these changes? A. Plan this as a minor release with training and change management B. Plan this an interim release after checking with Salesforce support C. Plan this as a major release and align with a Salesforce major release D. Plan this as a patch release and align with the Salesforce patch release",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers has a highly integrated environment with significant process orchestration between systems. When refreshing UAT, Objects that have external Ids from Production no longer point to valid External Ids in the UAT environment. What should an Architect do to resolve this? A. In the post refresh plan, modify external ids to a known valid set of values for UAT B. Mask the External Id so nobody can see the production value C. Let UAT point to production integrations and rollback each transaction after it finishes D. Delete all the data and use an Automated testing tool to create new data across all the systems in UAT",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) is using Salesforce Performance Edition. They are planning to host weekly training sessions for the next four weeks. Each training will be five days long and a new set of trainees will attend every week. UC wants to train these users on samples of production data and delete all the data generated during the training session at the end of the week. What optimal option should a technical architect recommend? A. Refresh a Partial Copy sandbox every weekend and include an appropriate sandbox template B. Refresh a Developer Pro sandbox every weekend and include an appropriate sandbox template C. Refresh a Developer Pro sandbox every weekend and load data needed using data loader D. Refresh a Partial Copy sandbox every weekend and load data needed using data loader",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Universal Containers (UC) has multi-cloud architecture in a single org. The Sales Cloud dev team is working in a Dev Pro sandbox (DevPro1) of delivering a release in three months. The business requirements from Service Cloud warrant a quicker release in four weeks, but need part of the Sales Cloud work that is completed in DevPro1. The decision of using a separate Dev Pro sandbox (DevPro2) is still pending. The DevPro1 was upgraded to preview for next salesforce major release two weeks ago. What should an Architect recommend? A. DevPro1 cannot be cloned because it is on a different version from Production. Just create a new DevPro2, and migrate metadata from DevPro1. B. Ask the second work stream team to work on the same DevPro1 sandbox. C. Push back on the requirements because adding another work stream will bring some risks with it D. Clone the DevPro1 sandbox and name it DevPro2 for the second work stream to work on the Service Cloud requirements",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are three advantages of the package development model? (Choose three.) A. Significantly reducing the need for manually tracking changes B. Improving team development and collaboration C. Facilitating automated testing and continuous integration D. Eliminating the need of using change set, which should no longer be used as it can get messy working with package development models E. Providing its own source control, so the source can be deployed in any sandbox orgs",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Cloud Kicks is switching to Salesforce from a different CRM. They have existing datasets for all standard Salesforce objects. In which optimized order should the architect recommend these objects be loaded? A. Leads, Contacts, Accounts, Opportunities, Products, Opportunity Line Items B. Leads, Accounts, Contacts, Products, Opportunities, Opportunity Line Items C. Accounts, Contacts, Leads, Products, Opportunities, Opportunity Line Items D. Accounts, Contacts, Opportunities, Products, Opportunity Line Items, Leads",
+    "options": {},
+    "most_voted": ""
+  }
+]
