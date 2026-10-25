@@ -1,0 +1,617 @@
+[
+  {
+    "question": "An administrator working in a vSphere with Tanzu environment wants to ensure that all persistent volumes configured by developers within a namespace are placed on a defined subset of datastores. The administrator has applied tags to the required datastores in the vSphere Client. Which action should the administrator take next to meet the requirement? A. Create a storage policy containing the tagged datastores, and apply it to the vSphere Namespace. B. Create a storage class containing the tagged datastores, and apply it to the Supervisor Cluster. C. Create a persistent volume claim containing the tagged datastores, and apply it to the vSphere Namespace. D. Create a storage Policy containing the tagged datastores, and apply it to the Supervisor Cluster.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three roles does the Spherelet perform? (Choose three.) A. Determines placement of vSphere pods B. Manages node configuration C. Starts vSphere pods D. Provides a key-value store for pod configuration E. Communicates with Kubernetes API F. Provisions Tanzu Kubernetes clusters",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Why would developers choose to deploy an application as a vSphere Pod instead of a Tanzu Kubernetes cluster? A. They need the application to run as privileged pods. B. The application works with sensitive customer data, and they want strong resource and security isolation. C. They want to have root level access to the control plane and worker nodes in the Kubernetes cluster. D. The application requires a version of Kubernetes that is above the version running on the supervisor cluster.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company needs to provide global visibility and consistent policy management across multiple Tanzu Kubernetes Clusters, namespaces, and clouds. Which VMware solution will meet these requirements? A. vSphere with Tanzu Supervisor Cluster B. vCenter Server C. Tanzu Mission Control D. Tanzu Kubernetes Grid Service",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is connecting to a Tanzu Kubernetes Cluster using the kubectl vsphere login command. Which information must be specified, in addition to both the name of the cluster and the Supervisor Cluster Control Plane IP? A. The path to the existing kubeconfig file and the SSO Username B. The path to the existing kubeconfig file and the Token ID for the SSO credentials C. The name of the Supervisor Namespace and the Token ID for the SSO credentials D. The name of the Supervisor Namespace and the SSO Username",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which value must be increased or decreased to horizontally scale a Tanzu Kubernetes cluster? A. Namespaces B. etcd instance C. Worker node count D. ReplicaSets",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two container network interfaces (CNIs) are supported with Tanzu Kubernetes clusters created by the Tanzu Kubernetes Grid Service? (Choose two.) A. NSX-T B. WeaveNet C. Flannel D. Antrea E. Calico",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Where are the virtual machine images stored that are used to deploy Tanzu Kubernetes clusters? A. Content Library B. Supervisor Cluster C. Harbor Image Registry D. Namespace",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which capability do persistent volumes provide to containerized applications? A. Automated disk archival B. Support for in-memory databases C. Support for ephemeral workloads D. Retention of application state and data",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the proper way to delete a Persistent Volume Claim? A. By using the kubectl delete persistentvolumeclaim command B. By using the kubectl remove pvc command C. Through the SPBM policy engine using the vSphere Client D. By unmounting the volume from the VM and deleting it from the vSphere datastore",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which command will show the Tanzu Kubernetes cluster versions available in the vSphere content library? A. kubectl get rc,services B. kubectl get contentlibrary C. kubectl get tanzukubernetesreleases D. kubectl get tanzuimages",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which object helps maintain copies of a vSphere pod? A. ReplicaSets B. Network Policies C. Namespaces D. Persistent Volume",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "On which network are TKG clusters deployed in vSphere with Tanzu when using the vSphere networking stack? A. Workload B. Backend C. Edge D. Frontend",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct process to store images in a project on the Registry Service? A. Use the kubectl push command B. Use the docker push command C. Use the vSphere Client to upload the image the content library D. Use the vSphere Client to upload the image to the Registry Service",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which functionality does the Cloud Native Storage (CNS) component take advantage of to support the creation of container volumes? A. First Class Disk B. VMware Disk Encryption C. Virtual Disk D. Storage Based Policy Management",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which step in vSphere with Tanzu enablement using the vSphere Distributed Switch process is done prior to using the Workload Management Enablement Wizard? A. Deploy the load balancer B. Choose the Kubernetes content library that should be used in the Supervisor Cluster C. Define the Primary workload network IP range D. Define the Management network interfaces for the Supervisor Cluster",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can a vSphere administrator replace the Supervisor Cluster API endpoint certificate? A. Use the certificate-manager CLI utility to replace the Supervisor Cluster API endpoint certificate. B. Use the vSphere Client to replace the Workload platform MTG certificate. C. Use the vSphere Client to replace the NSX Load Balancer certificate. D. Use kubectl to replace the Supervisor Cluster API endpoint certificate.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The Gold storage policy has been assigned to the Web namespace, and the DevOps engineer wants to place a persistent volume for the Web application in the Gold storage class. How should this goal be accomplished? A. Indicate the Gold storage class in the persistent volume claim specification B. Assign the persistent volume to the Gold storage class C. Indicate the Gold storage class in the persistent volume specification D. Configure tag-based placement for the persistent volume",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is tasked with increasing the amount of CPU and memory in an existing Tanzu Kubernetes cluster. Which change must the administrator complete to ensure the cluster scales successfully when updating the YAML definition? A. Manually update the CPU and memory of the nodes B. Update the Virtual Machine Class Type C. Increase the number of worker nodes D. Increase the number of control plane nodes",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An organization is preparing to deploy vSphere with Tanzu and will be using the vSphere Networking stack. How should the administrator allocate management network IP addresses for the Kubernetes Control Plane within the Supervisor Cluster? A. Five IP addresses are required, one for each of the Control Plane VMs, one for the floating IP address of the Control Plane VM, and one spare for performing rolling cluster upgrades. B. Four IP addresses are required, one for each of the Control Plane VMs and one spare for performing rolling cluster upgrades. C. Three IP addresses are required, one for each of the Control Plane VMs. D. Six P addresses are required, one for each of the Control Plane VMs, one for the floating IP address of the Control Plane VM, one for performing rolling cluster upgrades, and one for the rage Registry VM.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which command should be used by a developer to log in to the vSphere with Tanzu Supervisor Cluster? A. vmwarectl login –server=<KUBERNETES-CONTROL-PLANE-IP-ADDRESS> --vsphere-username <VCENTER-SSO-USER> B. kubectl vsphere login --server=<KUBERNETES-CONTROL-PLANE-IP-ADDRESS> --vsphere-username <VCENTER-SSO-USER> C. vmwarectl vsphere login --server-<KUBERNETES-CONTROL-PLANE-IP-ADDRESS> --vsphere-username <VCENTER-SSO-USER> D. kubectl login --server=<KUBERNETES-CONTROL-PLANE-IP-ADDRESS> --vsphere-username <VCENTER-SSO-USER>",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which external load balancer is supported in vSphere 7 U1 using the vSphere networking stack? A. Nginx B. Seesaw C. Loadmaster D. HAProxy",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A user needs to identify the namespaces that may be accessed. Which command will provide the desired output? A. kubectl get storageclasses B. kubectl config use-context C. kubectl config get-contexts D. kubectl get contexts",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is required to enable Workload Management? A. vSphere Distributed Switch B. Windows Network Load Balancer C. Github repository D. NSX-V",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A vSphere administrator is required to provide a developer with read/write permissions on a vSphere Namespace. Which role should the vSphere administrator apply for the developer? A. Assign the developer user with the \"can edit\" role at the vSphere Namespace object. B. Assign the developer user with the \"vSphere Kubernetes Manager\" role at the vSphere Namespace object. C. Assign the developer user with the \"vSphere Kubernetes Manager\" role at the cluster object. D. Assign the developer user with the \"can edit\" role at the cluster object.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement accurately describes a vSphere with Tanzu Supervisor Cluster? A. It is a Kubernetes cluster deployed by developers using a YAML specification file. B. It aggregates hosts across vSphere clusters to form a Kubernetes cluster on vSphere. C. It enables vSphere High Availability and Distributed Resource Scheduler. D. It exposes a Kubernetes API for use by DevOps teams.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "On which cluster can a Supervisor Namespace be created? A. A Tanzu Kubernetes Grid Integrated cluster B. A vSphere 7 cluster enabled with Workload Management C. A Tanzu Kubernetes cluster D. A vSphere 6.7 cluster enabled with Workload Management",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which command provides valid syntax to deploy a vSphere Pod? A. tkg apply -c containerName B. docker run containerName C. kubectl apply -c deployment.yaml D. kubectl apply -f deployment.yaml",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement describes a characteristic of Supervisor Cluster control plane VMs? A. Manage the lifecycle of ESXi hosts B. Are manually created by a vSphere administrator C. Host developer workloads D. Run system and infrastructure pods",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The creation of which object by an administrator in the vSphere client automatically results in the creation of a new segment within NSX-T? A. Service B. Pod C. Network policy D. Namespace",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How does Kubernetes implement the vSphere storage policy in vSphere with Tanzu? A. Storage class B. Paravirtual CSI C. Static Persistent Volume D. Persistent Volume",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two functions are provided by the NSX Container Plug-in (NCP)? (Choose two.) A. Implements Kubernetes Ingress with an NSX-T layer 7 load balancer B. Integrates with container-based PaaS such as Docker C. Creates an NSX-T logical topology for a Kubernetes cluster and a separate logical network for each Kubernetes namespace D. Configures Overlay Transport Zones E. Implements Kubernetes Ingress with an NSX-T layer 4 load balancer",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How do Tanzu Kubernetes clusters communicate with Storage Policy Based Management to request PersistentVolumes? A. Through a proxy VM B. Directly with vCenter Server and the underlying ESXi hosts C. Through the Supervisor Cluster D. Directly with the vCenter Server",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which kubectl command is used to list all pods in the current active namespace? A. kubectl get nodes B. kubectl get pods C. kubectl get services D. kubectl list pods",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which vSphere with Tanzu Workload Network topology provides Layer 2 isolation between Tanzu Kubernetes clusters across namespaces when vSphere Distributed Switches are used? A. A dedicated Primary Workload Network for the Supervisor Cluster control plane VMs and separate Workload Networks for each namespace B. A dedicated Primary Workload Network for the Supervisor Cluster control plane VMs and a single Workload Network for namespaces C. A single Workload Network for the Supervisor Cluster control plane VMs and Tanzu Kubernetes clusters D. Distributed firewall rules to isolate namespaces",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "To which network are HA Proxy virtual server IP addresses issued when using the vSphere networking stack default configuration? A. vMotion B. Overlay C. Primary workload D. Management",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How is information found about all Kubernetes Persistent Volumes in a vSphere environment? A. Navigating to the Cloud Native Storage view in vCenter Server B. Using: kubectl get persistentvolumes C. Accessing the FCD folder on a Datastore D. Using: esxcli storage cloud native get",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "To which set of networks are the Supervisor Cluster nodes attached when deploying with an NSX-T network topology? A. Frontend and Workload B. Frontend and Management C. Workload and NSX Overlay D. Management and NSX Overlay",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Kubernetes object types are going to be limited by an administrator within a vSphere with Tanzu namespace. Which three Kubernetes object types may be limited? (Choose three.) A. Number of Persistent Volume Claims B. Number of Pods C. Number of Operators D. Number of DaemonSets E. Number of Ingress frontends F. Number of Load Balancer Services",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two capabilities are associated with vSphere Pod? (Choose two.) A. Compatibility with vSphere vMotion B. Compatibility with vSphere performance charts C. Compatibility with NSX-V Datacenter D. Compatibility with vSphere HA and DRS E. Compatibility with Windows and Linux kernels",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Why would an organization set up private image registries? A. Role-based access control can be assigned by integrating the image registry with user identity management. B. DevOps engineers are able to store virtual machine images in a central location. C. Open source registry server projects enable organizations to modify them as necessary. D. Public image registries lack enterprise support.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The network topology for a Supervisor Cluster deployed using the vSphere networking stack, and a HAProxy load balancer is being planned. In addition to the control plane management IP range and services IP range, how many non-overlapping IP address ranges are needed? A. 3 B. 1 C. 4 D. 2",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Where is a storage policy applied to enable Persistent Volumes? A. Namespace B. Datastore C. Virtual Machine D. Cluster",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The virtualization team supports many development teams on a Supervisor cluster. For a specific development team, they would like to limit persistent volumes that can be created on Tanzu Kubernetes clusters to only an NFS based storage array. Which action should be taken to accomplish this goal? A. Use kubectl to create a storage class in the Supervisor cluster. B. Set a resource quota limiting the number of PVCs for that development team. C. Add a storage policy to that development team's Supervisor Namespace containing only the NFS datastore. D. Disconnect non-NFS datastores from the ESXi hosts that make up the Supervisor cluster.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which command displays the storage limits that have been set together with the amount of resources consumed? A. kubectl get resourcequotas B. kubectl config get-resourcequotas limits C. kubectl list resourcequotas D. kubectl describe resourcequotas",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which is a valid version change for a Tanzu Kubernetes cluster running Kubernetes version 1.16.7? A. Upgrade one major version (e.g., 2.0.1) B. Upgrade two minor versions (e.g., 1.18.0) C. Downgrade one patch version (e.g., 1.16.5) D. Upgrade one minor version (e.g., 1.17.0)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the minimum number of portgroups needed, in addition to the management portgroup, to provide connectivity for external services on a Supervisor Cluster? A. 1 B. 4 C. 3 D. 2",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer is trying to deploy a Kubernetes Application into a namespace within a Supervisor Cluster. The deployment must utilize the latest assets that have been pushed into the Registry Service. What should the developer add to the YAML file to ensure that the deployment is successful? A. image: /<namespace>/<image name>:latest B. template: <image registry url>/<namespace name>/<image name>:latest C. image: <image registry url>/<namespace name>/<image name>:latest D. template: /<namespace name>/<image name>:latest",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which requirement is valid for vSphere with Tanzu on vSphere Distributed Switch Network? A. Workload networks that are routable to the primary workload network B. HAProxy Virtual Server IP range that is allocated to NSX-T edge router external interface C. Network Interface Cards with Single Root IO Virtualization Support (SR-IOV) D. HAProxy Frontend Interface that has a common subnet and bridged interface to workload networks",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which open-source project extends the Docker registry source code to provide an enterprise-class registry server? A. Namespace B. Manifest C. Harbor D. Github",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A development team has deployed a Tanzu Kubernetes cluster and would like to verify the version of Kubernetes that is running. Which command will show this information? A. kubectl describe tkc dev-cluster B. kubectl explain tkg dev-cluster C. kubectl get version D. kubectl get vm dev-cluster",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which object provides user access to applications running on vSphere with Tanzu? A. External load balancer B. vSphere Distributed Switch C. Round-robin DNS D. Internal load balancer",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How is the storage selected for the Harbor pods when the embedded Harbor image registry is enabled? A. vCenter Server automatically selects a local ESXi host datastore. B. An administrator selects a VM storage policy as part of enablement. C. vCenter Server automatically chooses a VM storage policy. D. An administrator selects a specific datastore as part of enablement.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which process should be used to upgrade the vSphere with Tanzu Supervisor Cluster? A. Use the vSphere Client, navigate to Workload Management, and apply updates. B. Use kubectl, and apply an update manifest specification to the Supervisor Cluster. C. Use the vSphere Client, navigate to vSphere Lifecycle Manager, and apply updates. D. Allow vSphere with Tanzu Supervisor Cluster to upgrade automatically when new versions are available.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can you remove unreferenced container images from a project in an embedded Registry Service? A. Delete images in Content Library. B. Use kubectl to delete the images. C. Delete the namespace using the vSphere Client. D. Purge a namespace using the vSphere Client.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the minimum number of virtual distributed portgroups that must be configured on the vSphere Distributed Switch before enabling Workload Management using the vSphere networking stack and a HAProxy load balancer? A. 2 B. 1 C. 4 D. 3",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three elements should be configured by a vSphere administrator after creating vSphere Namespace? (Choose three.) A. Permissions B. Capacity and Usage limits C. License D. Namespace name E. Storage Policy F. NSX Segment",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The application development team is pushing a Kubernetes application into production. It consists of an application server and a database. The team wants to ensure that only the production application server can access the production database. Can the development team meet this requirement using Kubernetes Network Policy? A. Yes, by using kubectl to create a Network Policy that only allows pods on the same network segment to talk to each other. B. Yes, by logging in to NSX Manager and creating a firewall rules to only allow the production application server pod to talk to the database. C. Yes, by using kubectl to create a policy that disables pod to pod communication in the Namespace. D. No, Kubernetes Network Policy does not support this action.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which type of service is created by default when publishing a Kubernetes service? A. ClusterIP B. NodePort C. LoadBalancer D. ExternalName",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which kubectl command should be used to change the active vSphere namespace to namespace-01? A. kubectl config use-context namespace-01 B. kubectl describe ns namespace-01 C. kubectl get ns namespace-01 D. kubectl config change-context namespace-01",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two items must be provided before a vSphere with Tanzu Supervisor Namespace can be created? (Choose two.) A. vSphere with Tanzu Enabled Cluster B. DNS-compliant Name C. Permissions D. Storage Policy E. Resource Limits",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two considerations needs to be made when deciding on a virtual machine class type during the process of creating a Tanzu Kubernetes cluster? (Choose two.) A. Whether the resources provided by the virtual machine class type should be reserved on the host B. The configuration parameters which need to be edited in the cluster C. The amount of CPU, memory, and storage the virtual machine should have D. Connectivity between the Tanzu Kubernetes cluster and the Subscribed Content Library E. The storage classes which need to be made available to the cluster",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which authentication method is supported for logging into the vSphere with Tanzu Supervisor cluster? A. Key-based authentication B. Workspace ONE access C. Static username and password D. vCenter Single Sign-On",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How would information be found about which Kubernetes cluster and pod are using a given PersistentVolume in vSphere? A. Through the file browser in the Datastore view within vCenter B. By querying the CNS API using the esxcli command C. Using the vSphere Client, go to the Cloud Native Storage view for the datastore D. By using vmwarectrl get persistentvolumes command",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What provides a declarative, Kubernetes-style API for cluster creation, configuration, and management? A. Tanzu Kubernetes Grid Service B. kubectl C. vSphere REST API D. Virtual Machine Service",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which description accurately characterizes virtual machine class types for Tanzu Kubernetes cluster (TKC) nodes? A. A best-effort class does not provide high availability for TKC nodes. B. A best-effort class reserves CPU and Memory resources for TKC nodes. C. A guaranteed class provides high availability for TKC nodes. D. A guaranteed class reserves CPU and Memory resources for TKC nodes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How are quotas and permissions guaranteed by vSphere with Tanzu for Tanzu Kubernetes (TKG) clusters that are deployed within a namespace? A. By routing quota and permission API calls to vCenter Server via the Supervisor Cluster B. By ensuring each TKG cluster has a quotas and permissions system built into it natively which enforces all requests C. By having the Supervisor Cluster poll the TKG cluster periodically to ensure adherence to quotas and permissions D. By deploying an external authentication solution",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two configurations are needed to meet the minimum vSphere with Tanzu on vSphere Distributed Switch Network Requirements? (Choose two.) A. Network Interface Cards with Single Root IO Virtualization support (SR-IOV) B. vCenter Server connected to the workload network C. Non-overlapping subnets on workload networks D. One workload network designated as the primary workload network E. Physical Network MTU set to 1600 Bytes",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement is true about Kubernetes Network Policies? A. The Supervisor cluster contains a firewall to implement the network policy. B. The policy is created by developers and applied using a YAML specification. C. vSphere administrator adds the Kubernetes Network policy to the Development team's Namespace to implement the rules. D. vSphere administrator creates the network policy in NSX Manager to restrict app-to-app communication.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator needs to configure a Supervisor Cluster with the vSphere networking stack (vSphere Distributed Switch) and HAProxy appliance using default configuration. The administrator has already connected all hosts in the cluster to a vSphere Distributed Switch and created distributed portgroups. Which designation must be mapped to a distributed portgroup? A. Primary Workload Network B. Load Balancer Network C. Frontend Network D. Supervisor Cluster Network",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the primary purpose of the Cloud Native Storage component within VMware vCenter Server? A. Enabling the configuration of Public Cloud Storage in vCenter B. Replacing Storage Policy Based Management for container volumes C. Importing vSphere metadata into Kubernetes D. Provisioning and lifecycle operations for persistent volumes",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is trying to deploy a Kubernetes Application by using an image from the embedded Registry Service into an existing Namespace within a Supervisor Cluster. Which three steps must be completed to ensure the deployment is successful? (Choose three.) A. Include the image: / / : in the YAML spec. B. Run kubectl config use-context to switch to the correct namespace. C. Run kubectl config set-context to switch to the correct namespace. D. Pull the image into the Registry service with docker pull / / : . E. Include the image: / : in the YAML spec. F. Push the image to the Registry service with docker push / / : .",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator needs to get a list of all Tanzu Kubernetes clusters running in the current namespace. Which command will provide the desired output? A. kubectl get vmservice B. kubectl get clusters C. kubectl get virtualnetwork D. kubectl get tanzukubernetescluster",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Kubernetes Service Types exposes the service externally using a static port? A. Headless B. NodePort C. ExternalName D. ClusterIP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement provides the most accurate description for the Sphere let? A. The Spherelet allows the ESXi host to become part of the Kubernetes cluster. B. The Spherelet provides high availability for the Kubernetes cluster. C. The Spherelets exist as VMs and are load balanced, each with their own IP address. D. The Spherelet includes a paravirtualized Linux kernel that works together with the hypervisor.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which name is a valid namespace name? A. name$pace01 B. namespace-01 C. namespace_01 D. NameSpace 01",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the primary way that the Supervisor Cluster enables vSphere administrators to provide governance around DevOps on-demand workloads? A. Namespaces act as resource envelopes with policy that limits access and resource consumption. B. Root access to ESXi hosts is disabled. C. Load Balancer and multiple control plane nodes provide high availability. D. Prometheus provides observability to the cluster.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A HAProxy appliance has been deployed using a 3 NIC configuration. Which network will developers and external services use to connect? A. DMZ B. Frontend C. HAProxy D. Workload",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which requirement is needed to deploy Tanzu Kubernetes clusters but is unnecessary when deploying vSphere Pods? A. Harbor Image Registry B. vSphere Single Sign-On C. vSphere Content Library D. Namespaces",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two distributed port groups is HAProxy connected to when using the vSphere networking stack default configuration? (Choose two.) A. Edge B. Backend C. Frontend D. Workload E. Management",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which action is required to enable workload management? A. Assign vSphere Enterprise Plus license to the Supervisor Cluster B. Change Kubernetes API Endpoint Certificate C. Use NSX-T as the Networking Stack for Supervisor Cluster D. Enable vSphere HA and vSphere DRS in Fully Automated mode",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator is planning the deployment of a vSphere with Tanzu using an NSX-T environment and must ensure that the control plane VMs and container images are placed onto different datastores. The administrator decides to create two datastores and apply differently named tags to each datastore. Which additional action would the administrator need to perform to meet this requirement? A. Create two storage policies with different tag criteria and apply to the Supervisor Cluster using the vSphere Client. B. Create two storage policies with different tag criteria and apply to the Supervisor Cluster using kubectl commands. C. Create two storage policies with all tag criteria and apply to the Supervisor Cluster using kubectl commands. D. Create a single storage policy containing all tag criteria and apply to the Supervisor Cluster using the vSphere Client.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How do vSphere Namespaces allow different teams to share a Kubernetes cluster? A. Attaches authorization and policy to a subsection of the cluster B. Installs Calico CNI C. Installs a network policy provider D. Advertises extended resources for a node",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What can be used to define whether a vSphere pod can be scaled? A. Deployment B. Namespaces C. Persistent Volume D. Network Policies",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can the vSphere administrator purge unused images from the image registry? A. Enable the garbage collector service to purge all unreferenced images from the corresponding namespace. B. From the Harbor UI, navigate to the project associated with namespace, and select the option to purge unreferenced images. C. Download the vSphere Docker Credential Helper CLI Tool, and use it to purge all unreferenced images from the corresponding namespace. D. From vSphere Client, navigate to the namespace, and select the option to purge unreferenced images.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What needs to be deployed to access applications on vSphere with Tanzu? A. vSphere Distributed Switch B. Virtual router C. Internal load balancer D. External load balancer",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The application development team plans to test a few CPU intensive applications. The virtualization team is concerned about these applications impacting other teams. How should the team manage this problem? A. Set a CPU reservation on the Namespace Resource Pool in vCenter. B. Add a CPU limit to the Namespace Resource Pool in vCenter. C. Set a network policy to limit network bandwidth within the vSphere Namespace. D. Add a CPU limit to the vSphere Namespace for the development team.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator needs to limit resource consumption within a vSphere with Tanzu namespace. Which three actions should be taken to meet this goal? (Choose three.) A. Limit the capacity of the storage able to be consumed. B. Change the size of the Supervisor Control Plane nodes. C. Limit the number of load balancers able to be deployed. D. Limit the CPU and Memory able to be consumed. E. Limit the number of Operators able to be deployed. F. Limit the number of vSphere Pods able to be provisioned.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement describes the characteristics of vSphere with Tanzu using vSphere Distributed Switch network topology? A. Supervisor Cluster control plane VMs are attached to the primary workload network. B. Supervisor Cluster control plane VMs are attached to primary and non-primary workload networks. C. vCenter Server is attached to all workload networks. D. Load balancer appliance is attached to all workload networks.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two actions are orchestrated by the NSX Container Plugin (NCP)? (Choose two.) A. Creation of an embedded registry B. Creation of an NSX Edge C. Creation of a portgroup D. Creation of a service E. Creation of a network policy",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two networks are used to attach Supervisor Cluster control plane VMs when using the vSphere networking stack? (Choose two.) A. vMotion B. Frontend C. Primary workload D. Management E. Non-primary workload",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What should be increased or reduced in order to scale a Tanzu Kubernetes cluster up or down? A. The number of Pods that it contains B. The number of Namespaces that it contains C. The number of Deployments that it contains D. The number of worker nodes that it contains",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which command will display the container image(s) used in a vSphere pod deployment name nginx-deployment? A. kubectl get deployment nginx-deployment B. kubectl get pod nginx C. kubectl describe deployment nginx-deployment D. docker ps",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What does vSphere with Tanzu integrate with to provision persistent storage for Kubernetes workloads? A. Cloud Native Storage (CNS) B. DaemonSet C. S3 external volume D. vSAN Direct for vSphere",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is tasked with horizontally scaling an existing Tanzu Kubernetes cluster from 6 to 4 nodes. Which action does the administrator need to complete to ensure the cluster scales successfully when updating the YAML definition? A. Decrease the number of control plane nodes to 4. B. Decrease the number of worker nodes to 4. C. Update the Virtual Machine Class Type. D. Update the Kubernetes version to the latest supported version.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement accurately describes the upgrade of a vSphere with Tanzu Supervisor Cluster? A. vCenter Server performs an in-place upgrade of the Supervisor Cluster control plane VMs. B. vCenter Server orchestrates the rolling upgrade of Supervisory control plane VMs and upgrades the ESXi host spherelet component. C. An administrator manually deploys new Supervisor Cluster control plane VMs and uses vSphere Lifecycle Manager to update the ESXi host spherelet component. D. An administrator downloads and installs new RPMs to the Supervisor Cluster control plane VMs.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which description reflects a use case for an embedded image registry? A. Manage source code changes B. Configure network settings of the image C. Maintain desired state configuration for containers D. Secure artifacts with policies and role-based access control",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company needs its administrators to be able to manage access, apply security policies, and inspect Kubernetes clusters for security and configuration risks across multiple platforms. Which solution will meet these requirements? A. Kubernetes Security Contexts B. Kubernetes Role Based Access Control (RBAC) C. Tanzu Kubernetes Grid Service D. Tanzu Mission Control",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which three elements are part of the Container Runtime for ESXi (CRX)? (Choose three.) A. Image Service B. Kube Proxy C. Linux kernel D. Customized VMX E. Spherelet F. Container Engine",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement accurately describes the Primary Workload Network? A. It carries traffic between load balancer and vCenter. B. It carries traffic between load balancer and Supervisory control plane. C. It is created by developers as part of TKG cluster deployment. D. It carries traffic between Supervisory control plane and vCenter.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When creating a Supervisor Namespace, which item must be added to ensure that the end user can consume the namespace? A. Content Library B. Permissions C. Storage D. Limits",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which command would be used to deploy a Tanzu Kubernetes cluster? A. kubectl create cluster -f CLUSTER-NAME.yaml B. kubectl apply cluster CLUSTER-NAME.yaml C. kubectl apply -f CLUSTER-NAME.yaml D. kubectl create -f CLUSTER-NAME.yaml",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator is configuring a vSphere with Tanzu Supervisor Cluster with the vSphere networking stack. Which two minimum requirements must be met for the compute and networking components? (Choose two.) A. The cluster configured with vSphere High Availability enabled B. A DHCP IP address range for the Kubernetes control plane VMs C. A DHCP IP address range for the HA Proxy virtual IPs D. A minimum of three distinct subnets E. The cluster configured with vSphere DRS enabled and automation level set to Fully Automated",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which element defines the type of storage backing the Persistent Volume? A. Datastore Cluster B. Storage Class C. vVols D. Persistent Volume Claim",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "At which three levels of the vSphere Client is information about Kubernetes Persistent Volumes found? (Choose three.) A. Resource Pool B. Cluster C. vCenter D. Datastore E. Virtual Machine F. Network",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which summary page should an administrator use in the vSphere Client to identify the CPU resources consumed in a namespace? A. ESXi host B. Namespace C. vSphere cluster D. Supervisor Cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement accurately describes a characteristic of load balancers in vSphere with Tanzu using the vSphere networking stack? A. A load balancer balances pods between Tanzu Kubernetes cluster nodes. B. A load balancer distributes Tanzu Kubernetes cluster nodes between ESXi hosts. C. A load balancer provides external access to Supervisor Clusters and Tanzu Kubernetes clusters. D. A load balancer performs authentication and authorization for Supervisor Clusters and Tanzu Kubernetes clusters.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Namespace contains multiple Tanzu Kubernetes clusters. How is access granted to a single Tanzu Kubernetes cluster? A. Create a custom Role and RoleBinding, and then apply to the Namespace using kubectl commands. B. Use the vSphere Client to grant access to the Namespace. C. Create a custom Role and RoleBinding, and then apply to the Tanzu Kubernetes cluster using kubectl commands. D. Use the vSphere Client to grant access to the Tanzu Kubernetes cluster.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is automatically created within NSX-T when an administrator creates a new namespace in the vSphere client? A. A new segment connected to a Tier-1 gateway and a new overlay transport zone B. A new segment connected to a Tier-0 gateway and a new overlay transport zone C. A new segment connected to a Tier-0 gateway and an existing overlay transport zone D. A new segment connected to a Tier-1 gateway and an existing overlay transport zone",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which kubectl command is used to list the Kubernetes services in the current active namespace? A. kubectl get services B. kubectl get loadbalancer C. kubectl services get ip D. kubectl list services",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A development team has submitted a YAML specification to create a Tanzu Kubernetes cluster called dev-cluster and wants to verify that the cluster is running. Which command should be run to obtain this verification? A. kubectl show tkc dev-cluster B. kubectl get cluster dev-cluster C. kubectl get tkc dev-cluster D. kubectl list cluster dev-cluster",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How are updates applied to Tanzu Kubernetes clusters? A. The cluster is shutdown, Update Manager applies patches to VMs, and the cluster is restarted. B. Worker nodes are shutdown while Controllers are patched and restarted after the update. C. New nodes are incrementally added with new Kubernetes versions so as a new node is added, an older node is removed. D. A new cluster is completely configured and runs in parallel to the primary cluster prior to switchover.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which kubectl command is used to deploy the application when using a Kubernetes deployment specification file, my-app.yaml? A. kubectl run my-app.yaml B. kubectl apply -f my-app.yaml C. kubectl create my-app.yaml D. kubectl apply spеc my-app.yaml",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which step is necessary in order to allocate storage to a newly created namespace? A. Assign a VM Storage Policy B. Assign permissions to users C. Define resource limits D. Add a content library",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator needs to label and push an image into Harbor. Which command should the administrator run first? A. docker tag demoapp01:14.04 /demo/demoapp01:14.04 B. kubectl tag demoapp01:14.04 /demo/demoapp01:14.04 C. kubectl label demoapp01:14.04 /demo/demoapp01:14.04 D. docker label demoapp01:14.04 /demo/demoapp01:14.04",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which object is deployed on the workload network when vSphere with Tanzu is configured with vSphere network stack? A. Windows Virtual Machines B. Registry Service C. Tanzu Kubernetes clusters D. NSX Edge",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which corresponding object is automatically created in the embedded Registry Service when a new Namespace is created in the Supervisor Cluster? A. Pod B. Project C. Container D. Image",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three characteristics are true of Control Plane VMs? (Choose three.) A. They can be resized by administrators directly through vCenter Inventory View. B. They each run the Spherelet. C. They each expose the Kubernetes API. D. They do not run any Kubernetes Pods. E. They are connected to a Management portgroup. F. They are deployed via a vCenter Service.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What provides the North-South connectivity from NSX-T Data Center to the physical infrastructure? A. Tier-1 uplink B. vSphere Distributed Switch C. Tier-0 uplink segment D. Transport Zones",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which process should be used to enable the embedded Harbor image registry in vSphere with Tanzu? A. Deploy the Harbor OVF template to the cluster. B. Use kubectl, and deploy a Harbor deployment specification. C. Deploy the Harbor Helm chart. D. Enable directly through the vSphere Client.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which type of application will typically require a persistent volume? A. API gateway B. Proxy server C. Relational database D. Web server",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator needs to assign access to a vSphere Namespace. Which two valid roles may be assigned to a user or a group of users? (Choose two.) A. Create B. Modify C. Delete D. View E. Edit",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How can the vSphere administrator generate a certificate signing request for the Supervisor Cluster API endpoint certificate? A. Use kubectl to generate a certificate signing request for the Supervisor Cluster API endpoint certificate. B. Use the certificate-manager CLI utility to generate a certificate signing request for the Supervisor Cluster API endpoint certificate. C. Use the vSphere Client to generate a certificate signing request for the NSX Load Balancer certificate. D. Use the vSphere Client to generate a certificate signing request for the Workload platform MTG certificate.",
+    "options": {},
+    "most_voted": "D"
+  }
+]
