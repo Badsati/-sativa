@@ -1,0 +1,702 @@
+[
+  {
+    "question": "Which two advanced attributes can be applied to incident fields when editing? (Choose two.) A. Set a field trigger script B. Associate to an incident type C. Change field type D. Change field name",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Given an incident with three files, how could the name of the second file be referenced? A. ${Files.[2].Name} B. ${Files.Name.[2]} C. ${File.[1].Name} D. ${File.Name.[1]}",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which component can be part of a load balancing group? A. Distributed database B. D2 agent C. Engine D. Load balancing server",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which method accesses a field called `˜User Mail' in a playbook? A. ${incident.usermail} B. ${incident.User Mail} C. ${incident.UserMail} D. ${usermail}",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A SOC manager built a dashboard and would like to share the dashboard with other team members. How would the SOC manager create a dashboard that meets this requirement? A. Manually share the dashboard through user emails B. Dashboard is shared to all XSOAR users C. Propagate the dashboard based on SAML authentication D. Dashboard is shared to all XSOAR users in a selected role",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two methods will allow data to be saved in incident fields within a playbook? (Choose two.) A. setFields B. Field mapping C. setIncident D. Layout inline editing",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Match the action with the most appropriate playbook task type. Select and Place: [sampleXML/xmlfile-5_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An engineer notices that playbooks only start once the user clicks the `˜investigate' button and he/she would like the playbook to start automatically. How can this be implemented? A. Add the playbook to the integrationג€™s settings B. Select ג€˜Run playbook automaticallyג€™ from the incident type settings C. Add the !startinvestigation automation to the beginning of the playbook D. Select ג€˜Run playbook automaticallyג€™ from the integration settings",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two causes may be occurring if an integration test is working, but the integration is not fetching incidents? (Choose two.) A. The ג€™Fetches Incidentsג€™ option may not have been enabled B. There are no new events from the external service C. The first fetch should be manually triggered to start the fetching process D. It can take up to 1-hour before incidents are initially fetched",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two capabilities do Automation script settings include? (Choose two.) A. Define ג€˜parametersג€™ B. Correlate to incident types C. Define ג€˜outputsג€™ D. Set password protection",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a primary use case of data collection tasks? A. To allow multi-question surveys without authentication restrictions B. To automate tasks such as parsing a file or enriching indicators C. To generate new widgets for a dashboard D. To determine different paths in a playbook",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which three locations can an engineer try to find information, when troubleshooting a failed integration instance error produced by the test button? (Choose three.) A. The audit log B. The log bundle C. The source code for an integration D. The error message returned directly below the button E. The playground war room",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements describe how timers are configured to start and stop automatically in a playbook? (Choose two.) A. Use a field of Number to count the number of seconds elapsed between two tasks B. After the playbook has run, calculate the total time taken and set the timer field with this value C. To begin counting time taken, add a task in the playbook with automation startTimer. To end the counting, add a task with automation stopTimer D. From the Timers tab of the playbook task, choose the action for the timer and the timer field to perform the action on",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where can engineers add the post-processing scripts to incidents? A. The post-processing tag must be added to the automation B. Post-processing scripts must be added at the end of playbooks C. Post-processing scripts must be added from the Incident Type editor D. Post-processing scripts must be added from the Post-Process Rules editor",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer would like to present a trend using widgets to compare to a previous week's data. Which two methods will allow the engineer to meet the requirement? (Choose two.) A. Create widget of type Line, check ג€˜Display Trendג€™ and define as 7 days ago B. Create a custom widget using a new incident query C. Create widget of type Number, check ג€˜Display Trendג€™ and define as 7 days ago D. Create a custom widget using a script",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What happens when an integration is deprecated? A. The integration commands in a playbook can no longer be used B. The integration commands can be used, but it is recommended to update to the latest content pack C. The configuration settings will be lost and the integration will no longer function D. The integration commands in a playbook can be used, but it will fail at runtime",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which investigation element is best suited for collaboration among users? A. Work Plan B. Related Incidents C. War Room D. Context Data",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three authentication methods are supported when logging into XSOAR? (Choose three.) A. OTP token B. User name and password C. SAML D. Active Directory authentication E. RADIUS",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two components have their own context data? (Choose two.) A. Sub-playbook B. Task C. Field D. Incident",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Multiple company assets were reported by vulnerability scanners as being vulnerable to CVE-2017-11882. This vulnerability affects applications installed on workstations. The SOC team needs to take action and apply the new vulnerability patch that was just released. The team must first create a cause for each of the identified assets in ServiceNow IT Service Management (ITSM), in order to notify the IT department. Next, the team creates a task in the main playbook, which extracts the list of assets from the scanner report. After the list of assets are created, what are the two solutions that the SOC team could take so that a case could be created and a patch installed? (Choose two.) A. Create a sub-playbook with a single input containing the computer names that will loop until the last item from the asset list (Condition: AreValuesEqual ג€\" Exit on yes ג€\" left:1, right 1) and perform the following tasks: - Active Directory User Enrichment based on the computerName - Create the ServiceNow Record by adding the enrichment information - Mark the ticket severity as Urgent B. Create a sub-playbook with a single input containing the computer names that will loop ג€˜For Each Inputג€™ and perform the following tasks: - Active Directory User Enrichment based on the computerName - Create the ServiceNow Record by adding the enrichment information - Mark the ticket severity as Urgent C. Set a key for storing the iteration number and create a sub-playbook with a single input containing the computer names that will loop until the last item from the asset list (Exit condition: iterator contains the count of the number of items in the list) and perform the following tasks: - Active Directory User Enrichment based on the computerName - Create the ServiceNow Record by adding the enrichment information - Mark the ticket severity as Urgent D. Set a key for storing the iteration number and create a sub-playbook with a single input containing the computer names that will loop until the last item from the asset list (Exit condition: iterator equal to count of the number of item in the list) and perform the following tasks: - Increase the iterator value by one each time - Active Directory User Enrichment based on the computerName - Create the ServiceNow Record by adding the enrichment information - Mark the ticket severity as Urgent",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When creating a new tab in the layout, which section cannot be added? A. Retrieve widget chart based on script B. Related incidents C. War room entries picked by entry query D. Incident team members",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "By default, which components does an XSOAR implementation include? A. XSOAR server, XSOAR engine B. Application server, distributed DB server C. Application server, distributed DB server, Backup server D. All in one server",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "DRAG DROP Match the operations with the appropriate context. Select and Place: [sampleXML/xmlfile-17_1.jpg]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which three statements are true about the Marketplace? (Choose three.) A. Allows reverting back to a previous version of a content pack B. Enables users to participate in the community by sharing content C. Publishes content without additional review from the Cortex XSOAR team D. Allows uploading of content in additional languages E. Offers granularity in installation through content packs",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What can be added to offload integration instance processing from the main server? A. Database node B. Application server C. Engine D. Development server",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An incident field is created having the display name as Source_IP. How can the field be accessed? A. ${incident.sourceip} B. ${incident.Source_IP} C. ${incident.srcip} D. ${incident.Source IP}",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "DRAG DROP Arrange these steps in the order that they occur during an incident fetch. Select and Place: [sampleXML/xmlfile-20_1.png]",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An engineer deployed two different instances of Active Directory for each organization site. As part of account enrichment use case, the engineer would like to delete a user from one specific site. Which command will accomplish this? A. run ג€˜ad-delete-userג€™ command with ג€˜user-dnג€™ arg and using-brand=ג€Active Directory Query v2ג€ B. run ג€˜ad-delete-userג€™ command with ג€˜user-dnג€™ arg and raw-response=true C. run ג€˜ad-delete-userג€™ command with ג€˜user-dnג€™ arg and ignore-outputs=true D. run ג€˜ad-delete-userג€™ command with ג€˜user-dnג€™ arg and using=ג€Active Directory Query v2_instance_1ג€",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An engineer is developing a playbook that will be run multiple times for testing purposes. What is the recommended first task to be used in the playbook? A. DeleteContext B. GenerateTest C. PrintContext D. SetContext",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the most effective way to correlate multiple raw events coming from a SIEM and link them together? A. Process all alerts by running the respective playbook and link related incidents during post-processing B. Ingest all raw events, run a custom script to find the relationship between them and proceed to link them together C. Configure a pre-process rule to link related events as they are ingested D. Manually go through the incidents created by the raw events and link related incidents",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the correct expression to use when filtering only PDF files? A. Use File.Extension that does not equal (string comparison) PDF B. Use File.Name contains PDF C. Use File.Extension contains (general) PDF D. Use File.Extension equals (string comparison) PDF",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Whar are possible war room result (entry) types? A. Context, file, error, image B. Note, indicator, error, image C. Video, file, error, image D. Note, file, error, image",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An engineer asked for a specific command in an integration but the capability does not exist. The engineer decided to edit the existing integration by copying the integration and adding the needed commands. What is the main concern when adding these commands? A. The commands must return a proper result to the war room for the analysts to understand B. The code may not be written to XSOAR standards C. The integrations are locked and cannot be edited with additional commands D. The custom integration will not be maintained and updated by XSOAR content team",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A large number of incidents were deleted by mistake. Which two architecture components can be used to recover the lost data? (Choose two.) A. Live backup B. Engine C. Distributed database D. Local backup",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An engineer's organization system is registered in the following manner: <SiteName-SystemID-Username>. The engineer created a new indicator type for detecting systems using regex. The engineer would now like the username to be created as a separate `˜User' indicator automatically once a system is found. What is the most efficient way for the engineer to achieve this? A. Create a custom indicator field named ג€˜usernameג€™ and link it to the internal system indicator B. Change the reputation command for the internal system indicator type C. Create a new indicator type of the internal username and set a formatting script to extract only the username D. Create a new indicator type of the internal username and have the regex included on any string that has dash at the beginning",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two options are the most effective for moving content between two environments? (Choose two.) A. Remote repository based content sharing B. UI based content import/export button C. Copy the content backup from one environment file system (/var/lib/demisto/backup/content-backup-*) and move it to the other environment D. Download the content items separately and upload them to the other environment",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two features does XSOAR offer to help recover from a server failure? (Choose two.) A. Live backup (disaster recovery) B. Distributed database C. Backup data to XSOAR engines D. Local backup",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When uploading content, which two options could the upload include? (Choose two.) A. Indicators B. Incidents C. Reports D. Fields",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer defined a dashboard which allows important metrics to be displayed. The engineer would like to make this dashboard the default dashboard. How can it be accomplished? A. Default Dashboard can be defined by ג€˜Roleג€™ B. Use the server configuration key: default.dashboards C. Save the dashboard as a widget and apply it to all users D. Right click on the dashboard tab and ג€˜Set as Defaultג€™",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How would context data be filtered to receive only malicious indicator values with DBotScore? A. Get DBotScore.value where DBotScore.Score (Larger or equals) 4 B. Get DBotScore.value where DBotScore.Score (equals (int)) 3 C. Get DBotScore where DBotScore.Score (Larger than) 1 D. Get DBotScore where DBotScore.Score (Larger or equals) 2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Can an automation script execute an integration command and an integration command execute an automation script? A. An automation script cannot execute an integration command and an integration command cannot execute an automation script B. An automation script can execute an integration command and an integration command cannot execute an automation script C. An automation script cannot execute an integration command and an integration command can execute an automation script D. An automation script can execute an integration command and an integration command can execute an automation script",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two options will troubleshoot an integration's fetch incidents command? (Choose two.) A. In the instance settings, enable the fetch incidents parameter and wait for one minute B. Create a one task playbook with a fetch-incident command C. execute !<integration_instance_name>-fetch D. execute !<integration_name>-fetch",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Incidents need to be filtered by all of the following criteria: 1. Status `\" Pending 2. Exclude Category `\" Job 3. Severity `\" High 4. Owner `\" None (No owner assigned) 5. Type `\" Phishing 6. Email Subject `\" `You have won a million dollars` What is the correct query syntax for the above incident search filter? A. status==ג€Pendingג€ && category!=ג€jobג€ && severity==ג€Highג€ && owner==ג€Noneג€ && type==ג€Phishingג€ && emailsubject==ג€You have won a million dollarsג€ B. Status:Pending and ג€\"Category:job and Severity:High and Owner:ג€ג€ and Type:Phishing and Email Subject:You have won a million dollars C. status:Pending and ג€\"category:job and severity:High and owner:ג€ג€ and type:Phishing and emailsubject:ג€You have won a million dollarsג€ D. status:Pending or ג€\"category:job or severity:High or owner:ג€ג€ or type:Phishing or emailsubject:ג€You have won a million dollarsג€",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What does Script helper contain? A. Available commands B. Permission settings C. Automation version history D. Automation timeout configuration",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When mapping incoming data to incident fields, which statement is correct? A. Data that is not mapped is placed under labels B. Only text fields are classified C. Classification cannot be used if mapping is enabled D. Every incoming field must be mapped",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two situations would an engineer consider when configuring classification and mapping for an incident type? (Choose two.) A. When creating incidents from the XSOAR REST API B. When manually creating an incident from the UI C. When adding a new analyst account to XSOAR D. When fetching many different incident types from a single mailbox",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two options may be added when a content pack is being installed? (Choose two.) A. Lists B. Roles C. Other content packs D. Indicator layouts",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three scripting languages can an engineer use to write XSOAR automations? (Choose three.) A. Python B. Perl C. Go D. JavaScript E. Powershell",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two primary uses of standard tasks? (Choose two.) A. To highlight different paths in a playbook B. To generate new widgets for a dashboard C. To create an incident or escalate an existing incident D. To automate tasks such as parsing a file or enriching indicators",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An engineer would like to change an incident's SLA according to the severity field changes. How can the engineer achieve this task? A. Use a field trigger script B. Use a field display script C. Create a job that queries for incident severity changes D. Change the SLA manually every time the severity changes",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are three different loop types in a playbook? (Choose three.) A. Automation B. Built-in C. Data collection D. Conditional E. For-each",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two common use cases for conditional tasks? (Choose two.) A. They are used for branching paths in a playbook B. They are used to interact with users through survey functionality C. They are used to determine which incident will be executed D. They are used for sending a specific question to a person or team",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which two scenarios would it be appropriate to implement a loop for a sub-playbook? (Choose two.) A. In repetitive process flows to iterate for each playbook input B. When continuously ingesting incidents from third-party systems C. In repetitive process flows with no more than 10 loops D. In repetitive processes that requires sub-playbook re-execution",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which configuration is a valid distributed database (DB) implementation? A. 2 main DBs, 1 application server, 2 node servers B. 1 main DB, 1 application server, 3 node servers C. 2 application servers, 1 main DB, 1 node server D. 1 application server, 2 main DBs, 1 node server",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An engineer would like to add a custom field to the New Job form for a job triggered from a threat intel feed. How would the engineer implement this? A. The new job form changes based on the threat intel feed integration configuration B. The new job form can be edited from the Indicator Feed incident type editor C. The new job form for a threat intel feed job cannot be edited D. The new job form can be edited from the threat intel feeds integration settings",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An automation returned an output called: csvReport. What filter would be used to check if the automation returned results? A. Contains/Includes B. Equals/Matches C. In/In list D. Is defined/Exist",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the difference between labels and fields? A. Fields can be used in playbooks and labels cannot B. Fields are indexed in the database and labels are not C. Labels can be used in queries and fields cannot D. Labels are indexed in the database and fields are not",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the default task type when creating an empty task? A. Standard (Manual) B. Conditional C. Section header D. Standard (Automated)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two methods are used to add new content to the XSOAR Content Repository? (Choose two.) A. Create content and add it to the standard content by contributing through the Marketplace B. Use the XSOAR GitHub Contribution Guide to add the contribution to the standard content C. Create a support ticket with the custom content for review by the support team D. Any custom content will be automatically uploaded to the content repository",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which two options can an automation script be executed? (Choose two.) A. Engine B. Integration C. War room D. Playbook",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "By default, automation written in which language will be executed in a Docker container? A. Python B. Go C. JavaScript D. Perl",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct definition regarding integration parameters and command arguments? A. Parameters are global variables which means that every command can use these configurable options in order to run. Arguments are shared with other commands and must be present for each command. B. Parameters are local variables which means that every command can use these configurable options in order to run. Arguments are shared with other commands and must be present for each command. C. Parameters are local variables which means that every command can use these configurable options in order to run. Arguments are specific to only one command. D. Parameters are global variables which means that every command can use these configurable options in order to run. Arguments are specific to only one command.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In which two locations can filters and transformers be used in XSOAR? (Choose two.) A. Classification and Mapping B. Playbook Tasks C. Evidence Fields D. Incident Fields",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three actions can an engineer take on the troubleshooting page? (Choose three.) [sampleXML/xmlfile-41_1.png] A. Download the debug log bundle B. Put the XSOAR server in maintenance mode C. View and modify server configuration settings D. Export and import custom content E. View a list of server administrators",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An XSOAR Engineer has developed a playbook and would like to contribute it to the XSOAR Marketplace to share with other users. Which two options are available to the Engineer for contributing to the Marketplace? (Choose two.) A. Open a ticket with the XSOAR support team B. Create a pull request directly on Github C. Contribute through the XSOAR UI D. Send an email to [email protected]",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two input requirements are needed to train a machine learning model? (Choose two.) A. 3000 Incidents B. Incident Field C. Verdict Label D. Incident Type",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two solutions are available to scale an overloaded XSOAR environment? (Choose two.) A. Add a distributed database server B. Add an indexing server C. Add a live backup server (disaster recovery) D. Add an engine",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Management would like to get an incident report automatically following an incident's closure. How would this be accomplished? A. Define a task in a playbook to generate an incident report before the closure occurs B. Manually create an ג€˜Incident Reportג€™ C. Configure post-processing using a script D. Create an ג€˜Incident Reportג€™ from the Reports page",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two reasons would lead an engineer to create a custom widget? (Choose two.) A. To visualize server configuration keys B. To visualize XSOAR list data C. To visualize complex incident data calculations D. To visualize context data E. To visualize a custom query",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "While testing a custom integration, an XSOAR engineer noticed that the incident fetch interval is missing. How can this be fixed? A. Define the Incident Fetch Interval when running the integration’s commands. B. Duplicate the integration. Edit the resulting copy and add incidentFetchInterval as a parameter. Save the integration. Configure the new integration instance with the interval required. C. Configure the application to send incidents on the required interval. D. Duplicate the integration. Add the interval in the code. Save the integration and Configure the new integration instance with the interval required.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the default landing page for a new user in XSOAR? A. Dashboards B. Threat Intel C. Settings D. Marketplace",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "On the System Diagnostics page, what is the default minimum size for a Work Plan to be considered big? A. 2MB B. 3MB C. 1MB D. 5MB",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What will happen if a playbook debugger is left running for more than 24 hours? A. By default, every 24 hours, the system closes any debugger sessions that have been open for more than 180 minutes. B. The session must be stopped during 180 minutes manually by administrator, user will receive notification automatically. C. The session will be running till stopped manually by administrator. D. By default, the system closes automatically any debugger session that have been open 180 minutes.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You need to retrieve a list of all malicious hashes over the last 30 days. What is the correct query to use? A. type:File reputation:Malicious sourcetimestamp:\"30 days ago\" B. type:File verdict:Malicious sourcetimestamp:<=\"30 days ago\" C. type:File reputation:Malicious sourcetimestamp:=\"30 days ago\" D. type:File verdict:Malicious sourcetimestamp:>=\"30 days ago\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the default configuration for indicator auto-extraction when incidents are created? A. Inline B. Inband C. None D. Out of band",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The XSOAR administrator is writing an automation and would like to return an error entry back into XSOAR if a particular command errors out. How can this be achieved? A. Using the demisto_error() function B. Using a print statement C. Using the demisto.debug() function D. Using the return_error() function",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An organization has recently acquired another company as its subsidiary. The subsidiary has its infrastructure on AWS cloud as illustrated in the image below: The organization wants to use the mail server location on the subsidiary's cloud to send emails. Without acquiring additional licenses, which XSOAR component can fulfill the requirement? A. XSOAR D2 Agents, to send the required emails. B. An XSOAR engine that is downloaded from the XSOAR server and installed within the subsidiary. C. Another XSOAR server that uses the same license as their primary XSOAR server. D. A Linux server connected with an XSOAR server using SSH integration. Commands can be run remotely to access the mail server.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A playbook task generates a report as HTML in the context data. An engineer creates a custom indicator field of type \"HTML\" and adds the field to a section in a custom indicator layout. How can the engineer populate the HTML field in the indicator layout? A. Populate the custom indicator field with the built-in !SetIndicator command. B. Add HTML to a list using !setList and use it as an HTML template to populate the custom indicator field. C. Create a custom Indicator Mapper and populate the custom indicator field. D. Use the Mapping option in the playbook task that generates the HTML report to populate the custom indicator field.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are the three ways to add/mark entries as evidence inside the Evidence Board? (Choose three.) A. Manually directly from the War Room with the Actions drop-down B. From the Notes section (mark as entry icon) C. Manually from the playbook task (mark as entry icon) D. Automatically from playbook tasks when the option is selected on the Advanced tab E. By running the command !MarkAsEvidence",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which tag must be applied to an Automation Script in order for it to be available when configuring an Indicator Type? A. reputation-script B. enrich C. reputationScript D. reputation",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a feature of XSOAR automations? A. can run on multiple docker containers B. can be set to run on a scheduled basis in the automation settings C. can be password protected D. can be written in C++",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When is the post-processing script executed in XSOAR? A. Just after the incident is created B. Just after the pre-processing is executed C. Just after the playbook is executed D. Just after the Close Incident button is clicked",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which option is available in XSOAR to create the body of a Threat Intel Report? A. Markdown B. Grid Fields C. DOC format D. Javascript",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Given the following context data, what would be the expected output of the expression? A. 1E56733826E5035233A097FCEA2046AF96EC616C B. E6EF5142E2553C1E442A0FFAC07636EAC61E6EDD C. 8D193FA162A305E4859BA8C45F5121F7265E3ABB D. e6ef5142e2553c1e442a0ffac07636eac61e6edd",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where are incident layouts customized? A. Settings > Object Setup > Incidents > Layouts B. Settings > Integrations > Instance configuration C. Settings > Object Setup > Indicators > Layouts D. Settings > Advanced > Incident Layouts",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can Cortex XSOAR administrators prevent junior analysts from viewing a senior analyst dashboard? A. Share the dashboard in Read and Edit mode for senior analysts. B. Share the dashboard in Read & Edit mode for senior analysts and Read Only for juniors analysts. C. Share the dashboard in Read and Write mode for senior analysts. D. Share the dashboard in Read Only mode for junior analysts and senior analysts.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which content type cannot be managed using remote repositories? A. Lists B. Jobs C. Pre-processing rules D. Exclusion List",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which task type would be used to verify/check that an integration was enabled? A. Standard task B. Conditional task C. Section Header task D. Data Collection task",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "After executing the DeleteContext automation with all=yes argument, how would the context data of an incident present? A. All the data, including the incident key will be deleted, and the context data will be completely empty. B. No difference, the automation cannot be executed manually. C. All context data, including custom incident fields will be deleted, system incident fields will remain. D. All context data, except the incident key will be deleted.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An XSOAR engineer has been tasked with exporting all indicators from the production environment in the last 90 days. The final report needs to be in CSV format containing all indicator fields. How can this task be achieved? A. Run the command !GetIndicatorsByQuery in CLI with its default arguments and export all indicators in the last 90 days. B. SSH into the server and copy the indicator's database. C. In the Threat Intel page, add query firstSeen:>=\"90 days ago\", select All columns in Table View, and click Export to export as a CSV. D. Run the command !findIndicators in CLI with the query firstSeen:>=\"90 days ago\" and export to CSV.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has noticed that an incident fetch has failed, causing several internal workflows to be backed up. The administrator would like to receive notifications the next time the incident fetch fails. How can they achieve this? A. Create a custom playbook that sends an email each time the fetch fails. B. Create a new integration that monitors the incident fetch and sends an email if the fetch fails. C. Schedule a job that runs and monitors incidents in XSOAR that will send an email if there are no new incidents. D. Add a server config to notify when incident fetch fails.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Threat Intel search queries can be shared with which of the following? (Select 1) A. Users defined in the platform (email or username) B. Other organizations via the Marketplace C. Users outside XSOAR via email invite D. Roles defined in the platform",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator wants to run an automation in the War Room to set the incident field \"Description\" to \"Confirmed Phishing\". Which command should they enter in the War Room CLI? A. !incidentSet description=\"Confirmed Phishing\" B. /incidentSet description=Confirmed Phishing C. !setIncident description=\"Confirmed Phishing\" D. /setIncident description=Confirmed Phishing",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Select the correct incident life cycle on XSOAR. A. Planning > Incident Ingestion > Incident Creation > Mapping and Classification > Pre-processing > Playbook runs > Post-processing B. Planning > Incident Ingestion > Pre-processing > Incident Creation > Mapping and Classification > Playbook runs > Post-processing C. Planning > Incident Ingestion > Pre-processing > Mapping and Classification > Incident Creation > Playbook runs > Post-processing D. Planning > Incident Ingestion > Mapping and Classification > Pre-processing > Incident Creation > Playbook runs > Post-processing",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a prerequisite to editing out-of-the-box (OOTB) content? A. Download the content from the Marketplace. B. Go to Settings > About >Troubleshooting and set a flag to allow custom content. C. Register a user account with support.paloaltonetworks.com . D. Detach the content item you want to edit from the Marketplace.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "At what stage during the incident lifecycle is an incident type assigned? A. Pre-processing B. Incident creation C. Classification D. Playbook execution",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What can you use to assign a layout, field, and playbook to an incoming incident? A. Playbook B. Classification and mapping C. Incident type D. Pre-processing",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "For troubleshooting, after a log bundle is created, where do the logs appear on the XCSOAR server? A. /var/lib/demisto B. /tmp/log/demisto C. /usr/local/demisto D. /var/log/demisto",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which three types of information are displayed on the incident Quick View? (Choose three.) A. Indicators and relationships B. Timeline information C. Evidence Board D. Context data E. Incident severity",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where do you navigate to monitor and improve the system performance and resilience for hosts in a multitenant environment? A. Settings > About > Troubleshooting, in the main host account. Each host has a System Diagnostics page. B. Settings > Advanced > System Diagnostics, in the main host account. Each host has a System Diagnostics page. C. Settings > Account Management > Hosts, in the main host account. Each host has a System Diagnostics page. D. Settings > About > System Diagnostics, in the main host account. Each host has a System Diagnostics page.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When creating an automation in XSOAR, what is the best way to create a log message? A. Using a debug statement B. Using the demisto.debug() function C. Using a print statement D. Using the demisto.results() function",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is an example of a generic reputation command? A. !ip B. !getReputation C. !reputation D. !enrichIndicator",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During the regular maintenance of XSOAR a customer noticed that there was an update available for the Active Directory content pack (current version 1.4.6) and updated the content pack to the latest version (version 1.4.11). However, after the update the customer noticed that the Active Directory Query integration is not working properly and asked you to resolve the issue. Which of the following set of steps can help to resolve the issue? A. a) Navigate to Settings b) View the configured integrations and select Active Directory Authentication c) Delete all integration instances and add all integration instances again B. a) Navigate to Marketplace b) View the installed content pack and select Active Directory content pack c) Select version 1.4.6 and click on \"Revert to this version\" C. a) Navigate to Settings b) View the configured integrations and select Active Directory Query c) Delete all integration instances and add all integration instances again D. a) Navigate to Marketplace b) View the installed content pack and select Active Directory content pack c) Click on uninstall content pack d) Navigate to Marketplace browser and reinstall the Active Directory content pack",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When developing the playbook, which of the following can be used by a XSOAR Administrator? A. The Debugger panel to test data with one of last five incidents. This will affect the incident’s original incident data. B. Context data from existing incidents by exporting the YAML data from incidents and importing it to playbook editor. C. Debugger panel and XML data from a similar incident with New Mock Incident. This will not affect the incidents original incident data. D. The Debugger panel to test data with one of last fifty incidents. This will not affect the incident’s original incident data.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which field type provides an interactive and editable display of table-based data? A. HTML B. Grid (table) C. Markdown D. Multi Select",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the function of timer SLA fields in Cortex XSOAR? A. To track SLA breaches per playbook B. To run a script that executes on SLA assignment C. To automatically alert the analyst on SLA breach D. To count the time between one or more tasks",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are inputs and outputs in reference to a Playbook Development Lifecycle? (Choose three.) A. Inputs are data pieces that are present in the playbook B. Inputs are data pieces that are present in the task C. Outputs are used as incident trigger for playbook D. Outputs can be derived from the result of a task or command E. Inputs are the data fields parsed by the Classifier",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Inside the Incidents table view, which actions can be performed on the selected incidents? (Choose two.) A. Run Command, Export, and Close and Delete for all selected incidents regardless of their status B. Assign, Edit, and Mark as Duplicate for all selected incidents regardless of their status C. Run Command for all selected incidents having Active status D. Export incidents as JSON and change incident status",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has noticed that an integration has failed to fetch incidents. Where would they go to download logs to troubleshoot the error? A. Go to the Marketplace > Download the Fix my XSOAR playbook pack > Run the playbook > Download logs from War Room B. Settings > About > Troubleshooting > Set Log Level to Debug > Download Logs C. Dashboards & Reports > System Health D. Settings > About > System Diagnostics",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Cortex XSOAR multi tenant setup, when content from a development server is pushed to the remote repository, where in the production server can the updates be found? A. Main Account B. Tenants C. Agent tools D. Marketplace",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "To avoid exceeding API quotas for third-party services, indicators are only updated after the indicator cache expiration period. What is the default cache expiration period for indicators in XSOAR (minutes/days)? A. 10,080 minutes (7 days) B. 20,160 minutes (14 days) C. 21,600 minutes (15 days) D. 4,320 minutes (3 days)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When browsing the Marketplace for new content packs, which details about each pack are you able to view? A. The integration’s source code B. A summary of each version history C. A test instance for the content pack D. The source code of each playbook",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A SOC analyst needs to retrieve the list of all open phishing incidents in the last 30 days. What is the correct query to use? A. -status:closed -category:job type:Phishing created:>=\"30 days ago\" B. status:closed -category:job & type:Phishing created:>=\"30 days ago\" C. -status:closed -category:job & type:Phishing created:<=\"30 days ago\" D. -status:closed -category:job type:Phishing created:=\"30 days ago\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During configuration of the inputs of a sub-playbook in the main playbook, there is an option under the Loop tab called \"For Each Input\". What is this option used to? A. To loop the sub-playbook over all context values present in the investigation B. To loop the sub-playbook over all incident fields for the given incident C. To loop the sub-playbook over all the fields marked as important D. To loop the sub-playbook over all defined sub-playbook inputs",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are two of the actions available on the Version History tab of a content pack in the marketplace? (Choose two.) A. Download content for offline installation B. Uninstall content pack C. Update to x version D. Revert to x version",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of these would be the most operationally efficient repository for moving XSOAR custom content from a development server to a production environment? A. A content repository specified in the Marketplace B. Remote git repository specified in the dev-prod configuration parameters C. The development server's default repository D. Cortex XSOAR public content repository",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where would you look to find a personalized view of your own incidents and tasks? A. Incident Summary View B. My Incidents C. My Threat Landscape D. My Dashboard",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a basic setting that can be configured in an automation? A. Summary B. Compiler C. Schedule D. Run On",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following are valid methods to contribute custom content? (Choose three.) A. Submit content directly through feature requests B. Private GitHub repository submission for premium content C. A Github pull request on the public XSOAR Content Repository D. Using the marketplace interface to upload the content E. Using the content submission tool on live.paloaltonetworks.com",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What does the outgoing mapper support? A. Mirroring B. Classification C. Dynamic fields D. Pre-processing",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What happens if both a Classifier and Incident Type are configured in an integration instance's settings? A. The administrator will receive a notification that there is both a Classifier and Incident Type set for that integration instance. B. The Incident Type will be ignored, and incoming incidents will be classified according to the Classifier. C. The Classifier will be ignored, and incoming incidents will be classified according to the Incident Type. D. Both the Classifier and Incident Type will classify incoming incidents.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You can customize most aspects of the incident layout, including which three of the following? (Choose three.) A. Which users have permissions to view the tabs B. Which roles have permissions to view the tabs C. Which dashboard settings are applied D. The information and how is it displayed E. Which tabs appear and in which order",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Who is permitted to create and submit content to the Marketplace? A. Only users with a valid Github account B. Any user who has signed up through the dev portal C. Any user who has a live.paloaltonetworks.com account D. All users with the correct XSOAR Role and Permissions",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Reliability scores in XSOAR range from A through F. What do A and F stand for? A. F - Reliability cannot be judged, A - Completely Reliable B. F - Not reliable, A - Usually Reliable C. F - Not usually reliable, A - Fairly Reliable D. F - Unreliable, A - Completely Reliable",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Newly created subplaybooks do not have any inputs, or outputs. What is necessary to make them functional? (Choose two.) A. Define input key in the subplaybook task. Map context values to pull from parent playbook. B. The output of the previous task automatically becomes the input of the subplaybook. C. Map inputs and outputs to the parent playbook and the subplaybook will use the same values. D. Open the subplaybook and add inputs or outputs in the Playbook triggered task.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Cortex XSOAR Administrator is tasked with building a button for an analyst in order for the analyst to be assigned to the incident as an owner. What is the process? A. Edit the incident layout to add a new button that calls the AssignAnalystToIncident automation with no argument B. Edit the incident layout to add a new button that calls the AssignToMeButton automation with argument assignBy={me} C. Edit the incident layout to add a new button that calls the AssignAnalystToIncident automation with argument owner={me} D. Edit the incident layout to add a new button that calls the AssignAnalystToIncident automation with argument assignBy=current",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which field type should be used to hold more than 60,000 characters of unformatted text? A. Short Text B. HTML C. Long Text D. Markdown",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two functions in XSOAR are incident types used for? (Choose two.) A. To run dedicated playbooks for different event types B. To classify events ingested from various sources into the relevant types C. To classify indicators extracted in XSOAR incidents to their respective types D. To facilitate role based access to XSOAR incidents",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When creating an incident layout section, it is best to place long field values within which of the following? A. Section headers B. Rows C. Canvas D. Cards",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The default expiration method for non-feed indicators is either to never expire or to expire after a specific period of time. How frequently does XSOAR check tor newly expired indicators? A. Every 24 hours B. Every 5 minutes C. Every 8 hours D. Every 1 hour",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which content type can be managed using remote repositories? A. Exclusion List B. Canvas C. Pre-processing rules D. Jobs",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which tag is mandatory for an Indicator reputation Script while configuring an indicator type? A. reputation-script B. enrich C. reputationScript D. reputation",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When is the post-processing script executed in XSOAR? A. When the incident is closed B. When the incident is created C. After the post processing task is executed D. After the pre-processing is executed",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Engineer wants to filter a csvList value according to a dynamic value saved under the context key named “test”. Refer to the image below. Which two values would save the “test” context key? (Choose two.) A. Get csvList.value where csvList.value equals test [as value] B. Get csvList.value where csvList.value equals test {}[from previous tasks] C. Get csvList.value where csvList.value equals test [from previous tasks] D. Get csvList.value where csvList.value equals ${test} [as value]",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which action would enable notifications of incident fetch fails? A. Create a new integration that monitors the incident fetch and sends an email if the fetch fails. B. Schedule a job that runs and monitors incidents in Cortex XSOAR that will send an email if there are no new incidents. C. Add a server config to notify when incident fetch fails. D. Create a custom playbook that sends an email each time the fetch fails.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Cortex XSOAR feature assigns newly ingested event attributes to incident fields? A. Playbooks B. Classification C. Mapping D. Layouts",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which task type will verify that an integration was enabled? A. Standard B. Conditional C. Section Header D. Data Collection",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is a feature of the outgoing mapper in Cortex XSOAR? A. Pre-processing rules B. Classification C. Indicator Extraction rules D. Mirroring",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are recommended for placing a long text incident field value in an incident layout? A. Section headers B. Display filters C. Cards D. Rows",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are three loop types in a sub-playbook? (Choose three.) A. For-each B. Loop automation C. Conditional D. Built-in E. Data collection",
+    "options": {},
+    "most_voted": "A"
+  }
+]
