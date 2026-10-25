@@ -1,0 +1,327 @@
+[
+  {
+    "question": "How will Cortex XSIAM help with raw log ingestion from third-party sources in an existing infrastructure? A. Any structured logs coming into it are left completely unchanged, and only metadata is added to the raw data. B. For structured logs, like CEF, LEEF, and JSON, it decouples the key-value pairs and saves them in table format. C. Any unstructured logs coming into it are left completely unchanged, and metadata is not added to the raw data. D. For unstructured logs, it decouples the key-value pairs and saves them in a table format.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In which two locations can correlation rules be monitored for errors? (Choose two.) A. XDR Collector audit logs (type = Rules, subtype = Error) B. correlations_auditing dataset through XQL C. Management audit logs (type = Rules, subtype = Error) D. Alerts table as a health alert",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which option should be used when customizing a dashboard in Cortex XSIAM to include a widget that will display data filtered by more than one dynamic value? A. Free text/number B. Multi-select C. Fixed filter D. Single-select",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How must Cloud Identity Engine be deployed and activated on Cortex XSIAM? A. In a different region than Cortex XSIAM; logs can be verified using pan_dss_raw dataset B. In a different region than Cortex XSIAM; logs can be verified using endpoints dataset C. In the same region as Cortex XSIAM; logs can be verified using pan_dss_raw dataset D. In the same region as Cortex XSIAM; logs can be verified using endpoints dataset",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which common issue can result in sudden data ingestion loss for a data source that was previously successful? A. Data source is using an unsupported data format. B. Data source has reached its maximum storage capacity. C. Data source has reached its end of life for support. D. API key used for the integration has expired.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "While using the remote repository on a Development XSIAM tenant, which two objects can be pushed or pulled to the remote repository? (Choose two.) A. Scripts B. Parsing rules C. Lists D. Layouts",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When a Cortex XSIAM playbook execution reaches a breakpoint on a non-manual task, which two actions will allow the playbook to continue? (Choose two.) A. Disable the breakpoint and rerun the playbook from the start. B. Skip the task with the breakpoint to let the playbook proceed automatically. C. Wait for all parallel tasks to be completed before the breakpoint task resumes automatically. D. Click Run Script Now or Complete Manually.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the purpose of using rolling tokens to manage Cortex XDR agents? A. To periodically rotate encryption keys used for tenant communication B. To perform administration on agents without requiring static credentials C. To authorize agents to download and install content updates D. To temporarily disable the agents during maintenance windows",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Based on the image below, which statement applies to the ability to remove tabs when creating a new alert layout? A. Only \"Alert Info\" tab can be removed. B. Only \"Alert Info\" and \"War Room\" tabs can be removed. C. Only \"War Room\" and \"Work Plan\" tabs can be removed. D. Only \"Work Plan\" tab can be removed.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Cortex XSIAM engineer is developing a playbook that uses reputation commands such as '!ip' to enrich and analyze indicators. Which statement applies to the use of reputation commands in this scenario? A. If no reputation integration instance is configured, the '!ip' command will execute but will return no results. B. Reputation commands such as '!ip' will fail if the required reputation integration instance is not configured and enabled. C. The mapping flow for enrichment commands is disabled if extraction is set to \"None.\" D. Enrichment data will not be saved to the indicator unless the extraction setting is manually configured in the playbook task.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An engineer wants to onboard data from a third-party vendor’s firewall. There is no content pack available for it, so the engineer creates custom data source integration and parsing rules to generate a dataset with the firewall data. How can the analytics capabilities of Cortex XSIAM be used on the data? A. Create a behavioral indicator of compromise (BIOC) rule on the network fields (source IP, source port, target IP, target port, IP protocol). B. Create a data model rule with network fields mapped (source IP, source port, target IP, target port, IP protocol). C. Create a correlation rule on the network fields (source IP, source port, target IP, target port, IP protocol). D. Create a parsing rule and ensure the network fields exist (source IP, source port, target IP, target port, IP protocol).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two requirements must be met for a Cortex XDR agent to successfully use the Broker VM as a download source for content updates? (Choose two.) A. Device Configuration profile applied to the XDR agent must specify the Broker VM as a Download Source. B. Agent Settings profile applied to the XDR agent must specify the Broker VM as a Download Source. C. Broker VM must be configured with an FQDN. D. XDR agent must authenticate to the Broker VM using a machine certificate.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During a new Cortex XSIAM deployment, a user consistently experiences timeout sessions while trying to connect to the agent through Live Terminal, even though the firewall engineer has confirmed that all source IP addresses, port 443, and destinations are allowed. What could be causing these persistent timeout issues? A. User does not have administrative privileges on the managed endpoint. B. SSL Decryption is currently being used to inspect the underlying traffic. C. NTP is not synchronized with the server time. D. Live Terminal feature is not supported on the current OS.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What should be considered when creating a custom incident domain? A. Alert grouping will not apply, but SmartScore will. B. Alert grouping will apply, but SmartScore will not. C. Alert grouping and SmartScore will not be applied to incidents. D. Alert grouping and SmartScore will be applied to incidents.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How does Cortex XSIAM manage licensing for Kubernetes environments? A. Managed per namespace and returned when the namespace is decommissioned B. Issued per container and returned upon container termination C. Issued for each node and returned when the agent is removed or the node is deleted D. Applied per service deployment and returned upon service deactivation",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Cortex XSIAM engineer is preparing to install a new content pack and notices that there are several optional content packs associated with the main one that needs to be installed. What must the engineer take into consideration when deciding whether or not to install the optional content packs? A. Mandatory dependencies required by the optional content packs are automatically included during installation. The engineer should consider the additional functionality and potential impact on system performance. B. The optional content packs without their associated dependencies are installed first, and then the main content pack installation is triggered. The engineer should ensure that the optional content packs do not conflict with existing configurations. C. Optional content packs are installed without any dependencies, as they are not necessary. The engineer should only install them if they require the additional features. D. Only the selected optional content packs are installed, without including any additional dependencies. The engineer should manually check for any required dependencies.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In the Incident War Room, which command is used to update incident fields identified in the incident layout? A. !setIncidentFields B. !setParentIncidentFields C. !setParentIncidentContext D. !updateParentIncidentFields",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Based on the images below, which command will allow the context data to be displayed as a table when troubleshooting a playbook task? A. !ConvertTableToHTML table=${parentIncidentFields.custom_fields} B. !JsonToTable value=${parentIncidentFields.custom_fields} C. !ToTable data=${parentIncidentFields.custom_fields.incidentassignment} D. !ExtractHTMLTables html=${parentIncidentFields.custom_fields.incidentassignment}",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the role of \"in\" in the query line below? action_local_port in (1122, 2234) A. Operand B. Operator C. Function D. Range",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which section of a parsing rule defines the newly created dataset? A. RULE B. COLLECT C. INGEST D. CONST",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which step must be taken to enable Cloud Identity Engine on Cortex XSIAM? A. Enable SSO integration. B. Activate it in the Customer Support Portal. C. Activate it on HUB. D. Enable Active Directory log collection.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A vulnerability analyst asks a Cortex XSIAM engineer to identify assets vulnerable to newly reported zero-day CVE affecting the \"ai_app\" application and versions 12.1, 12.2, 12.4, and 12.5. Which XQL query will provide the required result? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When Cortex XDR agents are on servers in a zone with no internet access, which configuration will keep them communicating with the platform? A. Logging service in the isolated zone B. Broker VM C. Integration using filebeat D. Engine",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which installer type should be used when upgrading a non-Linux Kubernetes cluster? A. Standalone B. Helm C. Upgrade from ESM D. Kubernetes",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A systems engineer overseeing the integration of data from various sources through data pipelines into Cortex XSIAM notices modifications occurring during the ingestion process, and these modifications reduce the accuracy of threat detection and response. The engineer needs to assess the risks associated with the pre-ingestion data modifications and develop effective solutions for data integrity and system efficacy. Which set of steps must be followed to meet these goals? A. Develop an advanced monitoring system to track and log all changes made to data during ingestion, and use analytics to compare pre- and post-ingestion states based on XDM to identify and mitigate discrepancies. B. Design a hybrid approach for critical data fields to be safeguarded against modifications during ingestion, while less critical data fields undergo allowable modifications that are rectified post-ingestion by using XDM to balance performance with data integrity. C. Implement a pre-ingestion data validation process that aligns with the post-ingestion standards set by XDM, ensuring data consistency and integrity before it enters Cortex XSIAM. D. Establish a process to minimize data modifications during ingestion, prioritizing raw data capture and using XDM post-ingestion for necessary transformations and integrity checks.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A security engineer notices that in the past week ingestion has spiked significantly. Upon investigating the anomaly, it is determined that a custom application developed in-house caused the spike. The custom application is sending syslog to the Broker VM Syslog Collector applet. The engineer consults with the SOC analyst, who determines that 90% of the logs from the custom application are not used. What can the engineer configure to reduce the ingestion? A. Parsing rule to drop the unnecessary data at the Broker VM B. Data model rule to drop the unnecessary data C. Correlation rule on the Cortex XSIAM server to drop the unnecessary data D. Data model rule to map the useful data",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An engineer is conducting a threat actor emulated test to determine which Cortex XDR module would provide protection or alert on a real-world attack. The first test was prevented. Which action must the engineer take to enable continued testing? A. Remove the hash from the restrictions profile. B. Add an indicator exclusion. C. Add a prevention rule. D. Change the profile from \"alert\" to \"prevent\" for the BTP module.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Cortex XSIAM engineer adds a disable injection and prevention rule for a specific running process. After an hour, the engineer disables the rule to reinstate the security capabilities, but the capabilities are not applied. What is the explanation for this behavior? A. The engineer needs to restart the process to get back the security capabilities. B. The engineer needs a support exception to get back the security capabilities. C. The engineer needs to wait for the time period configured in the rule to pass first. D. The engineer can disable the rule, but security capabilities are not applied to the process.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the function of the \"MODEL\" section when creating a data model rule? A. To make a list of all the relevant fields to be mapped from the logs to XDM B. To define the mapping between a single dataset and XDM C. To finalize rule definition with all XQL statements D. To map log fields to corresponding Cortex XSIAM Data Model (XDM) fields",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the primary benefit of setting the \"--memory-swap\" option to \"-1\" during Cortex XSIAM engine deployment? A. It enhances the network throughput by optimizing memory usage. B. It increases the total disk space available to the engine. C. It allows the engine to operate without requiring swap capabilities. D. It automatically doubles the available RAM to the engine.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A CISO has asked an engineer to create a custom dashboard in Cortex XSIAM that can be filtered to show incidents assigned to a specific user. Which feature should be used to filter the incident data in the dashboard? A. Filters and inputs in the custom dashboard B. Report template to set the incident user filter C. Visualization filter options in the widget configuration D. Incident summary view to filter by user",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can a Cortex XSIAM engineer resolve the issue when a SOC analyst escalates missing details after merging two similar incidents? A. Check the War Room of the destination incident. B. Examine the incident context of the source incident. C. Unmerge the incidents and copy the missing details into the incident notes. D. Check the child incident of the destination incident.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which cytool command will look up the policy being applied to a Cortex XDR agent? A. cytool adaptive_policy interval 0 B. cytool payload_execution query C. cytool adaptive_policy recalc D. cytool persist print agent_settings.db",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A file for a support exception that needs to be updated locally on a Linux endpoint has been supplied. Which cytool command will upload this support exception file to the endpoint? A. cytool upload suexfile -target </local/file/path> B. cytool upload suex -file </local/file/path> C. cytool import suex -path </local/file/path> D. cytool import suexfile -path </local/file/path>",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Using the integrationContext object, how is data stored and retrieved between integration command runs in Cortex XSIAM? A. The integrationContex object can only store strings, not key-value dictionaries. B. The integrationContex object is retrieved and set using the test-module command. C. The get_integration_context() method overrides the existing object that is stored. D. The integrationContex object supports get_integration_context() and set_integration_context().",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which types of content may be included in a Marketplace content pack? A. Integrations, playbooks, parsers, and server configuration keys B. Predefined dashboards, indicators, and reports C. Scripts, playbooks, integrations, and correlation rules D. Behavioral indicator of compromise (BIOC) rules, layouts, and custom dashboards",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Cortex XSIAM has not received any logs for 30 minutes from a Palo Alto Networks NGFW named \"MainFW.” An engineer wants to create an alert for this scenario. Correlation rule settings include: Time Schedule: Every 30 minutes Query Timeframe: 30 minutes Action: Generate alert Alert Name: No logs received from MainFW in the past 30 minutes Which query should be used in the correlation rule? A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Cortex XSIAM engineer at a SOC downgrades a critical threat intelligence content pack from the Cortex Marketplace while performing routine maintenance. As a result, the SOC team loses access to the latest threat intelligence data. Which action will restore the functionality of the content pack to its previously installed version? A. Contact Palo Alto Networks Support to create an exception to revert to the previously installed version. B. Back up the current configuration and data, then revert to the previously installed version. C. Remove all integrations and playbooks associated with the content pack, then revert to the previously installed version. D. Directly reinstall the previously installed version over the current one.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two alert notification options can be configured without creating a playbook? (Choose two.) A. Pager Duty B. Email C. Slack D. SMS",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An engineer needs to migrate Cortex XDR agents without internet connection from Cortex XSIAM tenant A to Cortex XSIAM tenant B. There is a broker configured for each tenant. This is the communication flow: XDR agents <-> Broker A <-> XSIAM tenant A XDR agents <-> Broker B <-> XSIAM tenant B Which two steps should be taken before moving the agents? (Choose two.) A. Install a new Broker C on site B, and register it into Cortex XSIAM tenant A. B. Install a new Broker C on site and register it into Cortex XSIAM tenant B. C. Also register Broker A to Cortex XSIAM tenant B. D. Select all endpoints in the console and add a new Broker C as proxy.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which field is automatically mapped from the dataset to the data model when creating a data model rule? A. _event_type B. _insert_time C. _host_name D. _cloud_id",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Cortex XSIAM engineer plans to add Kafka and Syslog Collectors to a Broker VM cluster. What are two expected behaviors of the applets when they are added to the cluster? (Choose two.) A. Syslog Collector applet is automatically initiated, enters an active state on the primary node, and is on standby on the standby nodes. B. Kafka Collector applet is automatically initiated, enters an active state on the primary node, and is on standby on the standby nodes. C. Syslog Collector applet is active on all cluster nodes, including primary and standby. D. Kafka Collector applet is active on all cluster nodes, including primary and standby.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Based on the _raw_log and XQL query information below, what will be the result(s) of the temp_value? A. 123 192.168.10.1 B. 20 C. 10.120.80.2 D. 149.235.219.208 59977",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When activating the Cortex XSIAM tenant, how is the data at rest configured with AES 128 encryption? A. Under Advanced -> Encryption Method, choose the desired encryption method during the initial setup of the tenant. B. Under Advanced, choose \"BYOK,\" and adhere to the wizard's instructions as outlined in the encryption method section. C. Create encryption keys with AES 128 and upload it securely through Cortex Gateway. D. Under Advanced -> Encryption Method, choose the desired encryption method after the initial setup of the tenant.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A sub-playbook is configured to loop with a For Each Input. The following inputs are given to the sub-playbook: Input x: W,X,Y,Z Input y: a,b,c,d Input z: 9 Which inputs will be used for the second iteration of the loop? A. a,b,c,d B. X,b,9 C. X,b D. X,b,c",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The following string is a value of a key named \"Data2\" in the context: {\"@admin\":\"admin\",\"@dirtyld\":\"1\",\"@loc\":\"Lab\",\"@name\":\"default1\",\"@oldname\":\"Test\",\"@time\":\"2024/08/28 07:45:15\",\"alert\":{\"@admin\":\"admin\",\"@dirtyld\":\"2\",\"@time\":\"2024/08/28 07:45:15\",\"member\":{\"#text\":\" Based on the image below, what will be displayed in the \"Test result\" field when the \"Test\" button is pressed? A. 1 B. \"1 C. 2 D. \"2",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Cortex XDR agent is installed on an endpoint, but the agent is unable to download content updates and has not registered with the Cortex XSIAM server. An engineer troubleshoots the network connection and determines that, by design, this endpoint does not have direct internet access to the required network destinations for the Cortex XDR agent traffic. A Broker VM that has the local agent settings applet enabled with Agent Proxy configured is reachable by the endpoint. The Broker VM details are as follows: FQDN: crtxbroker01.company.net Proxy listening port: 8888 How should the engineer configure the Cortex XDR agent to use the existing Broker VM as a proxy for the agent network traffic? A. cytool proxy set \"crtxbroker01. company.net: 8888\" B. cytool config proxy --host crtxbroker01.company.net --port 8888 C. cytool set proxy --host crtxbroker01.company.net --port 8888 D. cytool proxy config \"crtxbroker01.company.net:8888\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Behavioral Threat Protection (BTP) alert is triggered with an action of \"Prevented (Blocked)\" on one of several application servers running Windows Server 2022. The investigation determines the involved processes to be legitimate core OS binaries, and the description from the triggered BTP rule is an acceptable risk for the company to allow the same activity in the future. This type of activity is only expected on the endpoints that are members of the endpoint group \"AppServers,\" which already has a separate prevention policy rule with an exceptions profile named \"Exceptions-AppServers\" and a malware profile named \"Malware-AppServers.\" The CGO that was terminated has the following properties: SHA256: eb71ea69dd19f728ab9240565e8c7efb59821e19e3788e289301e1e74940c208 File path: C:\\Windows\\System32\\cmd.exe Digital Signer: Microsoft Corporation How should the exception be created so that it is scoped as narrowly as possible to minimize the security gap? A. Create the exception via the alert itself, selecting the CGO hash, CGO signer, CGO process path, and applying the scope to the \"Exceptions-AppServers\" profile. B. Create a Disable Prevention Rule via Exceptions Configuration with the following selections: C. Create a Legacy Agent Exception via Exceptions Configuration with the following selections: D. Create the exception via the alert itself, selecting the CGO hash, CGO signer, CGO process path, and applying the scope to \"Global.\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which action will prevent the automatic extraction of indicators such as IP addresses and URLs from a script's output? A. Add 'ExtractIndicators': False to the script. B. Add 'IgnoreAutoExtract': True to the script. C. Use 'AutoExtract': False in the script. D. Set 'IndicatorExtraction': None in the script.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An application which ingests custom application logs is hosted in an on-premises virtual environment on an Ubuntu server, and it logs locally to a .csv file. Which set of actions will allow the ingestion of the .csv logs into Cortex XSIAM directly from the server? A. Install a Broker VM in the environment, and configure the CSV Collector to collect the files of interest. B. Install a Cortex XDR agent on the Ubuntu server, and configure the agent to collect the files of interest. C. Install a Broker VM in the environment, and migrate the application to the Broker VM. D. Install XDR Collector on the Ubuntu server, and configure the agent to collect the files of interest.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which action is required to enable use of a custom script in an alert layout? A. Tag the script with \"dynamic-section,\" add a general purpose dynamic section, and edit the section settings to add the automation script. B. Tag the script with \"general-purpose-dynamic-section,\" add a custom script section, and edit the section settings to add the automation script. C. Add a general purpose dynamic section and edit the section settings to add the automation script. D. Tag the script with \"general-purpose-dynamic-section,\" add a general purpose dynamic section, and edit the section settings to add the automation script.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the reason all Broker VM options are greyed out when a user attempts to select a Broker VM as a download source in the Agent Settings profile? A. The Broker VM is offline. B. NTP is not synchronized properly on the Broker VM. C. Local Agent Setting applet is currently activated without SSL certificate. D. Local Agent Setting applet is currently activated without FQDN.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is a key characteristic of a parsing rule in Cortex XSIAM? A. It uses regular expressions exclusively for data modifications, discards unmatched logs by default, and only retains fields with non-null values. B. It is bound to all vendors and products, performs data parsing once per log, and does not allow grouping. C. It is bound to a specific vendor and product, performs data parsing once per log, and does not allow grouping. D. It is bound to a specific vendor and product which allow grouping with a no-match policy, and retains all fields.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which type of parsing error is categorized in the dataset \"parsing_rules_errors\"? A. Compilation B. Unrecognized code C. Invalid syntax D. Data mismatch",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Before initiating a malware scan action on a Linux workstation, an engineer notices that the Cortex XDR agent's operational status on the workstation is reporting as \"partially protected.\" There have been no configuration changes made from the Cortex XSIAM server. What are two explanations for this operational status? (Choose two.) A. The Linux endpoint is currently running 4.0 kernel version. B. The Linux endpoint's kernel modules failed to load due to unsupported kernel versions. C. The agent is outdated and requires an upgrade to the latest version to regain full protection. D. The agent was manually disabled on the endpoint by the user or an administrator.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Cortex XSIAM engineer is implementing role-based access control (RBAC) and scope-based access control (SBAC) for users accessing the Cortex XSIAM tenant with the following requirements: Users managing machines in Europe should be able to manage and control all endpoints and installations, create profiles and policies, view alerts, and initiate Live Terminal, but only for endpoints in the Europe region. Users managing machines in Europe should not be able to create, modify, or delete new or existing user roles. The Europe region endpoints are identified by both of the following: Endpoint Tag = \"Europe-Servers\" and Endpoint Group = \"Europe\" for servers in Europe Endpoint Group = \"Europe\" and Endpoint Tag = \"Europe-Workstation\" for workstations in Europe Which two sets of implementation actions should the engineer take? (Choose two.) A. Verify and confirm that SBAC mode under \"Server Settings\" is set to \"Restrictive,\" and assign \"EG:Europe\" under the user permission scope configuration. B. Use the pre-defined roles, assign the \"Instance Administrator\" role to the user or user group managing Europe-based endpoints. C. Verify and confirm that SBAC mode under \"Server Settings\" is set to \"Permissive,\" and assign \"EG:Europe\" under the user permission scope configuration. D. Use the pre-defined roles, assign the \"Privileged IT Admin\" role to the user or user group managing Europe-based endpoints.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Administrators from Building 3 have been added to Cortex XSIAM to perform limited functions on a subset of endpoints. Custom roles have been created and applied to the administrators to limit their permissions, but their access should also be constrained through the principle of least privilege according to the endpoints they are allowed to manage. All endpoints are part of an endpoint group named \"Building3,\" and some endpoints may also be members of other endpoint groups. Which technical control will restrict the ability of the administrators to manage endpoints outside of their area of responsibility, while maintaining visibility to Building 3's endpoints? A. SBAC enabled in Building 3's IP range with the \"EG:Building3\" tag assigned to each administrator's scope B. SBAC enabled in Permissive Mode with the \"EG:Building3\" tag assigned to each administrator's scope C. SBAC enabled in Restrictive Mode with the \"EG:Building3\" tag assigned to each administrator's scope D. SBAC enabled globally with the \"EG:Building3\" tag assigned to each administrator's scope",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "While using the playbook debugger, an engineer attaches the context of an alert as test data. What happens with respect to the interactions with the list objects via tasks in this scenario? A. The original content of the list and the original context are not altered, because Cortex XSIAM is running inside debug mode. B. The original content of the list is not altered, but the original context is, because XSIAM commands are running within debug mode. C. The original content of the list is altered, but the original context is not, because Cortex XSIAM commands interact directly with the original list objects within debug mode. D. The original content of the list and the original context are altered, because Cortex XSIAM tasks interact directly with the objects, even within debug mode.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the primary function of the URL \"https://<region>-docker.pkg.dev\" in the context of a Palo Alto Networks infrastructure? A. It downloads Docker content updates. B. It downloads Kubernetes images for agent installation. C. It imports Docker licensing. D. It downloads Engine Docker containers.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "After configuring Cloud Identity Engine, which dataset should be queried to validate proper ingestion of Active Directory data? A. auth_logs B. external_services C. pan_dss_raw D. agent_auditing",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In the Marketplace, a Cortex XSIAM engineer sees the revision note for a content pack with new alert fields, updated alert layouts, and a revised playbook. The engineer completes the update without errors. The new alert fields and layouts are then reflected, but the playbook is not updated. What is the reason for this behavior? A. The playbook is detached. B. The playbook was duplicated for use. C. The playbook is being used in incident configuration. D. The last execution of the playbook resulted in an error.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An analyst reports to an engineer that after merging two incidents, specific custom context fields from the source incident are no longer visible in the destination incident. What is the explanation for this behavior? A. Source context data is moved to the Linked Incidents tab of the destination incident. B. War Room entries from the source incident are deleted for security reasons. C. Source context data is not preserved, but War Room entries transfer to the destination incident. D. Source context data is hidden in the destination incident, and an unhide action must be completed manually.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which alert source has the capability to automatically map fields to the Cortex Data Model (XDM)? A. XDR agent B. Behavioral indicator of compromise (BIOC) C. Indicator of compromise (IOC) D. Correlation rule",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Cortex XSIAM analyst merges Incident A (source) into Incident B (destination). Later, the analyst needs to view the results of a specific command that was executed in Incident A prior to the merge, but the data is missing from the context of the destination incident. Where can the analyst find the information? A. War Room of Incident B B. Evidence board of Incident A C. Context data of Incident B D. War Room of Incident A",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A SOC team is managing ingestion costs and identifies that a custom security application is sending large volumes of redundant metadata through a Broker VM Syslog applet. The team decides to apply a filter to discard any logs containing the string \"HEALTH_CHECK_OK.\" Which action will implement this filtering logic? A. Modification of the Broker VM applet settings to ignore strings containing \"HEALTH_CHECK_OK\" B. Creation of a parsing rule that uses the filter or drop command for \"HEALTH_CHECK_OK\" C. Configuration of an alert exclusion rule to silence the \"HEALTH_CHECK_OK\" logs D. Adjustment of the data retention policy for the custom application dataset to one day",
+    "options": {},
+    "most_voted": "B"
+  }
+]
