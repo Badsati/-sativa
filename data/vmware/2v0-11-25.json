@@ -1,0 +1,262 @@
+[
+  {
+    "question": "What is a symptom of an issue with vSphere HA? A. Snapshots cannot be created or consolidated. B. VMs are not restarted after a host failure. C. VMs are not being migrated using vMotion. D. Hosts frequently disconnect from vCenter Server.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which prerequisite task must be completed before deploying VMware Cloud Foundation (VCF) using VMware Cloud Builder? A. Ensure that all ESXi hosts are connected to a single vCenter Server. B. Verify network configurations and DNS settings for all components. C. Verify configurations on Virtual Distributed Switch on the ESXi hosts that will be used for the deployment. D. Ensure HCX is configured for workload migration.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The administrator has been tasked with applying asynchronous software updates to the VMware Cloud Foundation (VCF) instance using the VMware Async Patch CLI Tool. Which four steps would an administrator take to complete the task? (Choose four.) A. Download the bundles from SDDC Manager. B. Download the bundles. C. Upload the confirmation to SDDC Manager. D. Apply the patches directly through the Async Patch CLI Tool. E. Enable the bundles. F. Apply the patches through the SDDC Manager UI. G. Upload the bundles to SDDC Manager.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the primary benefit of using HCX Replication Assisted vMotion (RAV) for VM migration? A. It requires no configuration changes to the VM(s) within the destination environment. B. It performs a test migration to ensure compatibility. C. It ensures zero downtime to the VM(s). D. It provides the fastest migration method by powering off the VM(s) before initiating the migration.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has been tasked with deploying a new VMware Cloud Foundation (VCF) environment and is preparing the physical hosts that will be used for the management domain. The administrator has completed the following tasks for all of the physical hosts: The required version of ESXi has been installed. Networking has been configured for the ESXi management interface. DNS entries have been created for forward and reverse name resolution. NTP has been configured and the time synchronized with a centralized time source. VLAN 10 has been presented to the ESXi hosts on the physical network infrastructure for the VCF ESXi management network. A combination of which two additional tasks must the administrator complete before starting the bring-up of the management domain? (Choose two.) A. Upload the Cloud Builder appliance OVA file to the new shared NFS datastore. B. Create a new vSphere Standard Switch for the VCF ESXi management network on each ESXi host. C. Configure a new shared NFS datastore on each ESXi host. D. Replace the SSL certificate with either a CA signed or self-signed certificate on each ESXi host. E. Configure VLAN 10 on the VM network Port Group of the vSphere Standard Switch on each ESXi host.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator configures a Local Content Library on vCenter Server A, enables publishing, and creates Subscribed Content Libraries on vCenter Server B and vCenter Server C using the publishing URL. However, the contents of the subscribed libraries on vCenter B and C are not synchronizing with the source library on vCenter A. Which step should the administrator take to troubleshoot the issue? A. Recreate the Subscribed Content Libraries on vCenter B and C with a new publishing URL from vCenter Server A to reset the synchronization configuration. B. Verify that network connectivity exists between vCenter Server A and the other two vCenters, and ensure that the required ports for Content Library synchronization are open. C. Enable bidirectional synchronization on the Content Library settings to ensure updates are propagated back and forth between vCenter Server A and the subscribed libraries. D. Manually export the library content from vCenter Server A and import it into the subscribed libraries on vCenter B and C to initialize synchronization.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two steps should an administrator perform to configure the backup of the VMware Cloud Foundation (VCF) SDDC Manager and NSX components to allow them to be recovered in the event of a full site failure? (Choose two.) A. Backup the NSX Manager configuration by exporting it to an archive file. B. Configure the backup settings in SDDC Manager. C. Configure image-based backup for the NSX Manager cluster. D. Prepare an external SFTP server to store file-based backups. E. Define a scheduled task in vCenter to create a snapshot of the NSX Edge cluster.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Cloud Administrator has been tasked with verifying all of the prerequisites are in place prior to deploying VMware Aria Suite Lifecycle. The following information has been provided for the Aria Suite Lifecycle implementation: hostname: lcm domain: vcf.company.com IP address: 10.0.0.150 /24 IP gateway: 10.0.0.1 Which three items must the Cloud Administrator ensure are available prior to deploying VMware Aria Suite Lifecycle? (Choose three.) A. Connectivity between Application Virtual Networks, Management Network, and network services (DNS and NTP) B. A DNS A Record for lcm.vcf.company.com that points to 10.0.0.150 C. The IP address for the Standalone Tier 1 Load Balancer for VMware Aria components is prepared D. A DNS PTR Record for 10.0.0.1 that points to lcm.vcf.company.com E. A CA-signed SSL certificate for Aria Suite Lifecycle added to SDDC Manager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is configuring a newly provisioned workload domain within a VMware Cloud Foundation (VCF) environment. The workload domain will contain virtual machines hosting applications which are considered business critical, and the administrator wants to ensure that the virtual machines are given priority over other network traffic types. Which three steps should the administrator perform to achieve this goal? (Choose three.) A. Configure a bandwidth resource allocation for the virtual machine traffic type. B. Enable Network I/O control (NIOC) on the workload domain vSphere Distributed Switch (vDS). C. Create a new vSphere Distributed Switch (vDS) specifically for virtual machine traffic. D. Configure dedicated physical network adapters for the ESXi management traffic. E. Disable bandwidth resource allocations for all other traffic types to ensure virtual machine traffic gets full bandwidth. F. Configure a new network resource pool to assign shares, limits and reservations for the virtual machine traffic.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which feature of VMware Data Services Manager enhances security and compliance? A. Automated workload migration B. Network traffic encryption C. Storage replication D. Database level authentication",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are three prerequisites for deploying an NSX Edge cluster in a VMware Cloud Foundation (VCF) solution? (Choose three.) A. Set up vSAN storage policies for the Edge VMs. B. Verify that the NSX host overlay VLAN and NSX Edge overlay VLAN are routed to each other. C. Create DNS entries for the NSX Edge nodes. D. Use separate VLAN IDs and subnets for the NSX host overlay and NSX Edge overlay networks. E. Configure BGP as a dynamic routing protocol on the physical switches. F. Install Aria Operations and enable Edge Cluster monitoring.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is tasked with enabling Workload Management (vSphere Supervisor) on a VMware Cloud Foundation (VCF) workload domain using the SDDC Manager UI. Which three are prerequisites for enabling Workload Management? (Choose three.) A. Verify that the vSphere Distributed Switch is configured with sufficient port groups. B. Verify at least one Content Library is available. C. Verify all hosts within the selected Sphere clusters have the proper vSphere with Tanzu licensing to support Workload Management. D. Verify at least one NSX Edge cluster is deployed and available. E. Verify that the cluster is running vSAN.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What three steps are required to commission a new host into the SDDC Manager inventory? (Choose three.) A. Self-signed certificate regenerated based on FQDN of host. B. Four NIC ports with a minimum 10 Gbps speed. C. Delete all disk partitions on HDD/SSD. D. Update the DNS records and add the host directly to the SDDC Manager appliance using the root credentials. E. Manually import the host into the vCenter Server inventory and assign it to a cluster. F. A supported version of ESXi installed on the host.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator recently incorrectly deployed a new isolated VI workload domain within an existing VMware Cloud Foundation (VCF) instance. How can the administrator reconfigure the VI workload domain to share the SSO domain from the management workload domain? A. From the management domain vCenter Server instance, use the rsautil command to add the VI workload domain to the management domain. B. From the VI workload domain vCenter Server instance, add the management domain SSO and remove the isolated SSO. C. From the SDDC Manager console, migrate the VI workload domain to the management domain. D. A new VI workload domain must be created through SDDC Manager.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Following an internal security audit of the new VMware Cloud Foundation (VCF) instance, the following audit finding was documented for priority remediation: All users from the custom administrators group could access the Direct Console User Interface (DCUI) on all ESXi hosts within the workload domain. RISK=High, IMPACT=High The company IT security policy around accessing ESXi servers states the following: Users within the custom administrators group must access ESXi host configurations from within vCenter Server or the vSphere Web Client only. Only users within the restricted administrators group must be allowed direct access to ESXi hosts. Which two actions should the administrator perform on each of the hosts within the workload domain to remediate the security finding? (Choose two.) A. Disable SSH and the ESXi Shell. B. Add the custom administrators group to the DCUI.Access advanced system setting. C. Add the restricted administrators group to the DCUI.Access advanced system setting. D. Enable Strict Lockdown Mode. E. Enable Normal Lockdown Mode.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has deployed a new VI Workload Domain and must deploy a Kubernetes cluster on the vSphere Supervisor. Which three steps should be followed to successfully deploy the Kubernetes cluster? (Choose three.) A. Configure a vSphere Namespace and assign resource quotas. B. Deploy a vSphere Pod Service. C. Create a new VM template for the Kubernetes nodes. D. Deploy an NSX Edge Cluster. E. Enable Workload Management on the vSphere Cluster within SDDC Manager.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is responsible for maintaining a VMware Cloud Foundation (VCF) instance. The administrator has been tasked with scaling the CPU and RAM resources of a virtual machine. Which three configuration limitations must the administrator consider when completing the task? (Choose three.) A. To add Memory to a powered on virtual machine, Memory Hot Add must be enabled. B. To remove Memory to a powered on virtual machine, Memory Hot Add must be enabled. C. To add vCPUs to a powered on virtual machine CPU Hot Add must be enabled. D. To enable Memory Hot Add feature, the virtual machine compatibility must be ESXi 7.0 Update 2 or later. E. To add vCPUs to a powered down virtual machine, CPU Hot Add must be enabled. F. To enable the CPU Hot Add or Memory Hot Add feature, the virtual machine must be powered off.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the recommended method for IP address allocation for the management interface of VMware ESXi hosts in a VMware Cloud Foundation (VCF) environment? A. Dynamic IP addresses assigned via DHCP without any reservations B. Dynamic IP addresses assigned via DHCP with a reservation based on MAC address C. Static IP addresses assigned manually D. Static IP address assigned using VMware NSX IP Pools",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator is enabling VMware's Virtual Machine Encryption for an existing VMware Cloud Foundation (VCF) Workload Domain in order to meet their organization's compliance regulations. Which three steps should the administrator take to complete this task? (Choose three.) A. Configure a Key Management Server (KMS) and add it to the vCenter. B. Enable SSH on the ESXi hosts to manage encryption keys. C. Create an encryption policy in vCenter. D. Apply the encryption policy to the ESXi hosts. E. Apply the encryption policy to the existing VMs. F. Enable the encryption feature on the ESXi hosts.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator needs to ensure that specific virtual machines within a VMware Cloud Foundation (VCF) environment use storage that can tolerate at least two host failures within a vSAN cluster. Due to financial limitations, the configuration used must prioritize providing the highest level of usable disk space for the datastore. Which three steps should be performed to meet the requirements? (Choose three.) A. Reconfigure the existing Default Storage Policy in the vSphere Client. B. Apply the storage policy to the target VMs. C. Set Failures to Tolerate to \"2 failures - RAID-6 (Erasure Coding)\" in the policy configuration. D. Create a new VM Storage Policy in the vSphere Client. E. Set Failures to Tolerate to \"2 failures - RAID-1 (Mirroring)\" in the policy configuration. F. Configure the policy to use thin provisioning.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which step must an administrator take to configure Application Virtual Networks (AVNs) from SDDC Manager while preparing to deploy VMware Aria Suite Lifecycle? A. Deploy NSX Edge Cluster. B. Ensure that an NSX load balancer is available. C. Enable AVNs in the vCenter Server. D. Assign AVNs to specific ESXi hosts.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator needs to scale an NSX Edge cluster by adding additional Edge nodes. Which three steps must be taken before scaling an Edge cluster from SDDC Manager? (Choose three.) A. Assign a unique management IP for each Edge node. B. Assign two Tunnel Endpoint (TEP) addresses for each Edge node. C. Add an additional NSX VDS uplink for each Edge node being added. D. Verify DNS records have been added for each new Edge node. E. Place the Edge cluster in maintenance mode prior to expanding.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization is planning to manage a diverse set of databases across multiple VMware Cloud Foundation (VCF) environments using Data Services Manager. Which three capabilities of Data Services Manager would help the organization managing these databases efficiently? (Choose three.) A. Centralized monitoring and alerting for all managed databases B. Automated database migration between on-premises and cloud environments C. Policy-based backup and recovery for databases D. Integration with vSAN for optimized storage management E. Automated database provisioning and deployment",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is troubleshooting a high CPU usage issue of the SDDC Manager VM. Access to SDDC Manager UI is exhibiting degraded performance. What two steps should the administrator take to diagnose the issue? (Choose two.) A. Reboot the SDDC Manager VM to clear any temporary issues. B. Login to SDDC Manager using console with root credentials, run the top command to identify any services that may be consuming high %CPU. C. Upgrade the vSphere version to the latest release. D. Review the CPU usage of the ESXi management domain hosts to identify any that are overcommitted. E. Reconfigure the DRS settings to be more aggressive in load balancing.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is deploying a new VMware Cloud Foundation (VCF) environment. After uploading the completed Deployment Parameter Workbook, the validation task fails and an error message is displayed within the VMware Cloud Builder GUI. Which log file can the administrator use to identify the cause of the validation error? A. vcf-bringup-debug.log B. sos.log C. domainmanager.log D. jsongenerator-<timestamp>.log",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which tool is most appropriate for diagnosing and resolving a disk failure when using VMware vSAN with Deduplication enabled? A. vSphere Client B. Aria Operations C. vSphere CLI (esxcli) D. vSAN Skyline Health",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator can set resource limits and container defaults on a vSphere Namespace. Which three resource limits can be set? (Choose three.) A. Storage B. Memory C. CPU D. Number of containers E. Network",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has been tasked with adding a new VI workload Domain to an instance of VMware Cloud Foundation (VCF). The administrator only has two prepared ESXi host servers showing in SDDC Manager. The new VI Workload Domain must use vSphere Lifecycle Images. Which three supported principal storage options are available to the administrator when configuring the new VI Workload Domain? (Choose three.) A. VSAN B. vVols C. iSCSI D. NFS v3 E. VMFS on FC F. VMFS on local disk",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are the three prerequisites an administrator must meet to deploy VMware Aria Suite Lifecycle using SDDC Manager? (Choose three.) A. Ensure the Management Domain was deployed using vSphere Lifecycle Manager Images. B. Ensure the VMware Software Install Bundle for VMware Aria Suite Lifecycle is in the local bundle repository. C. Ensure that a custom SSL certificate specifying the FQDN of the appliance is available. D. Ensure that the NTP and DNS settings specified in SDDC Manager are valid for all management components. E. Ensure that the Application Virtual Networks have been configured.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has been tasked with updating the version of VMware Tools on virtual machines that have been migrated into a VMware Cloud Foundation (VCF) instance so that they are compliant with the company's security policies. The following information is shared with the administrator about this task: The VMs have been migrated from environments running earlier releases of vSphere. The VMs are spread across multiple clusters within a single workload domain in the VCF instance. The upgrade must not initiate a reboot of the VMs to avoid downtime to the business. Which three steps should the administrator perform in order to complete this task? (Choose three.) A. Select the VI workload domain so that all VMs across all clusters are automatically selected. B. Use vSphere Lifecycle Manager in the VI workload domain vCenter to initiate the upgrade. C. Select the cluster hosting the VMs to upgrade. D. Select the Upgrade to Match Host option. E. Use SDDC Manager in the management domain to initiate the upgrade. F. Select the Set Auto Update option and set its value to On.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is tasked with deploying a new VMware Cloud Foundation (VCF) instance. The management domain is designed to be created with three virtual distributed switches (VDS) configured as follows: VDS1 - used for management and vMotion traffic VDS2 - used for vSAN traffic VDS3 - used for NSX Overlay traffic What action would the administrator take to deploy the designed configuration? A. A JSON file must be prepared with the defined configuration and used to run the bring-up process. B. vSphere Distributed Switch Profile 2 must be selected in the VCF Deployment parameter workbook. C. The design must be changed to ensure vSAN and NSX overlay traffic are on the same VDS. D. The ESXi hosts have to be configured with twelve physical NICs to ensure redundancy.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two operations can be completed in the SDDC Manager UI on an NSX Edge cluster after it has been deployed into a workload domain? (Choose two.) A. Redeploy B. Expand C. Sync D. Delete E. Shrink",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is unable to log in to the SDDC Manager UI on their local workstation. After entering the correct URL, the login page does not load and the administrator is unable to enter their credentials in order to view the SDDC Manager inventory. They confirm that the SDDC Manager appliance responds to a ping command from their local workstation against both its FQDN and IP address. After checking the VM console of the SDDC Manager appliance in the management vCenter UI, they determine that the operating system is online and they can log in to it with the relevant administrator level accounts. What two actions could the administrator take whilst logged in to the SDDC Manager VM via the VM console to help identify the root cause of the UI not loading? (Choose two.) A. Verify that port 80 is open and listening for connections using the command netstat. B. Perform a restart of the network adapter using the command systemctl restart. C. Verify the health of the SDDC Manager services using the command sos --get-vcf-services-summary. D. Perform a restart of the services using the command systemctl restart. E. Verify that there is free disk space remaining using the command df -h.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization is integrating VMware vCenter with Active Directory (AD) to streamline user authentication. As part of this process, the administrator needs to add AD as an identity source in vCenter. Which three steps must be performed to successfully add AD as an identity source? (Choose three.) A. Enter the Domain Name and the credentials of an AD user with a minimum of read-only access to Base DN for users and groups. B. Select 'Identity Sources' and choose 'Active Directory Domain'. C. Configure DNS settings on all ESXi hosts to point to the AD DNS servers. D. Navigate to the vCenter Single Sign-On configuration in the vSphere Client. E. Create an Active Directory object for the vCenter Server Appliance. F. Reboot the vCenter to apply the identity source settings.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which three tools could identify and assist with troubleshooting a misconfigured vSAN network? (Choose three.) A. vCheck B. Supportability and Serviceability (SoS) C. Direct Console User Interface (DCUI) D. esxcli E. vmkping F. Ruby vSphere Console (RVC) commands",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "To help troubleshoot an issue with the vSphere Supervisor, an administrator must log into the Supervisor Control Plane VMs. Which three actions should the administrator take to meet the objective? (Choose three.) A. Log into the vCenter Server Appliance using SSH. B. Log into the Supervisor Control Plane VM using the admin user and <password>. C. Log into the SDDC Manager appliance using SSH. D. Log into the Supervisor Control Plane VM using the root user and <password>. E. Update the <password> by running /usr/lib/vmware/auth/bin/chpw admin. F. Obtain the <password> by running /usr/lib/vmware-wcp/decryptK8Pwd.py.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What option should be selected when placing a vSAN host into maintenance mode to ensure that all data remains accessible throughout the maintenance process while also minimizing the duration of the operation? A. Ensure Data Accessibility B. Ensure Accessibility C. Full Data Migration D. No Data Migration",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Following an update to the Information Security policy, an administrator has been reviewing the status SSL certificates within the VMware Cloud Foundation (VCF) solution. The new Information Security Policy states: All SSL certificates must be generated and signed from the shared Microsoft Certificate Authority (CA). The administrator has discovered the following: All Aria Suite Components already use CA-signed Subject Alternate Name (SAN) SSL certificates. All other VCF-based SSL certificates are either self-signed or generated using the VMware Certificate Authority (VMCA). Which three steps must the administrator take to ensure the VCF solution remains compliant and managed by SDDC Manager? (Choose three.) A. In VMware vCenter, replace the ESXi SSL certificates. B. Integrate the OpenSSL CA into SDDC Manager. C. Integrate the Microsoft CA into SDDC Manager. D. In SDDC Manager, replace the SSL certificates for vCenter, NSX Manager, SDDC Manager and Aria Suite Lifecycle. E. In Aria Suite Lifecycle, replace the VMware Identity Manager, Aria Automation, Aria Operations and Aria Operations for Logs SSL certificates. F. In SDDC Manager, replace the SSL certificates for vCenter, ESXi, NSX Manager, SDDC Manager and Aria Suite Lifecycle.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An organization has 3 data center sites and is implementing a solution to achieve a Recovery Point Objective (RPO) of 0 to ensure continuous availability of storage in the event of a single site failure. The sites are connected via a high bandwidth/low latency link. Which two VMware Cloud Foundation (VCF) components can be used to support this capability? (Choose two.) A. vSphere B. Aria Operations C. NSX D. vSphere Replication E. vSAN",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "As part of the deployment of VMware Cloud Foundation (VCF), a cloud administrator has been tasked with deploying and configuring VMware Aria Suite Lifecycle. The VCF Management domain deployment has already completed successfully. What is the benefit of installing VMware Aria Suite Lifecycle in VCF mode compared to standalone mode? A. Removes all restrictions and requirements imposed for updating product admin passwords B. Flexible infrastructure selection in the VMware Aria Suite Lifecycle deployment wizards C. Allows customers to deploy VMware Aria Suite Lifecycle in a clustered configuration D. Automatic load balancer configuration for Aria components",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After deploying the VMware Cloud Foundation (VCF) management domain, an administrator needs to configure file-based backup for the components within the domain. Which three steps are involved in configuring the backup of VCF management components? (Choose three.) A. Configure an external SFTP server within SDDC Manager. B. Create a backup schedule for NSX within SDDC Manager. C. Install a third-party backup solution on each ESXi host. D. Create a backup schedule on the SDDC Manager to automate taking regular backups. E. Create a backup schedule for vCenter Server.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two components are collected and packaged into the .zip file for a vSAN Support Bundle? (Choose two.) A. vCenter support bundle B. Storage policy bundle C. supportbundie.json D. Network configuration file E. Host support bundle",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has been tasked with expanding an existing VMware Cloud Foundation (VCF) environment by adding a new workload domain. The environment currently has one management domain and one VI workload domain. What options are available to the administrator for deploying NSX in the second VI workload domain? A. The new workload domain can have a dedicated NSX Fabric or it can join the existing NSX Fabric configured in either the management domain or existing VI domain. B. The new workload domain can have its own dedicated NSX Fabric or it can join the existing NSX Fabric configured in the existing VI domain. C. The new workload domain can have its own dedicated NSX Fabric or it can join the existing NSX Fabric configured in the management domain. D. The new workload domain must have a dedicated NSX Fabric.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has been tasked with upgrading VMware Aria Suite components to the latest version supported in VMware Cloud Foundation (VCF). The administrator completes the following steps: • Downloads the update repository files for each of the Aria Suite components from the Broadcom support portal • Uploads the files to the Aria Suite Lifecycle appliance using SSFI However, when attempting to import the binaries into Aria Suite Lifecycle using the Binary Mapping feature, the following error presents itself: Error Code: LCMSOURCEMAPPING10018 Selected files checksums does not match with any product versions supported by VMware Aria Suite Lifecycle. One or more selected files checksums does not match with any product versions supported by VMware Aria Suite Lifecycle: [/data/Prelude_VA-8.18.1.36791-24282366-updaterepo.iso ] What action must the administrator take to ensure the successful completion of the task? A. Upload the Aria Suite install ISOs to the /data repository. B. Update the Product Support Pack to the correct version. C. Remove all existing product files from the /data repository. D. Upgrade VMware SDDC Manager to the latest available version.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company wants to enhance the network virtualization and security capabilities within their VMware Cloud Foundation (VCF) environment. The goal is to block traffic even between virtual machines connected to the same logical segment (L2 network) using micro segmentation. Which solution can achieve the company's goals? A. VMware AVI Load Balancer B. VMware Aria Operations for Networks C. VMware vDefend D. VMware NSX Intelligence",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator modifies the networking configuration of a port group on a vSphere Distributed Switch (vDS) that includes the VMkernel adapters for the management network. The hosts lose connectivity to the vCenter Server, and their status in the vSphere Client appears as nonresponsive. What action should the administrator take to restore connectivity to the vCenter Server? A. Restart the affected hosts to allow automatic reconfiguration of the networking settings. B. Right-click the port group in the vSphere Client and choose \"Restore Configuration\" to recover the configuration from a backup file. C. From the Direct Console User Interface (DCUI) on the affected host, select the Restore vDS option from the Network Restore Options menu. D. Use the vSphere Client to correct the settings of the distributed port group for the management network and wait for changes to apply within 24 hours.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has been tasked with deploying a VMware Cloud Foundation (VCF)-Aware VMware Aria Suite Lifecycle within a newly provisioned VMware Cloud Foundation environment. Which four details will the Cloud Administrator require to complete the deployment via SDDC Manager? (Choose four.) A. The password for the root account B. A free IP Address within the cross-region virtual network segment C. The FQDN of the Aria Suite Lifecycle appliance D. The password for the vcfadmin@local account E. A free IP address on the VMware NSX Tier 0 F. The password for the admin@local account G. The FQDN of the Aria Suite Lifecycle cluster",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is tasked with adding a new cluster to an existing VI workload domain, where the current cluster is configured to use NFS as its principal storage. What principal storage options can be utilized for the new cluster? A. vSAN, NFS, or VMFS on Fibre Channel B. vSAN, NFS, VMFS on Fibre Channel, or vVols C. vSAN, NFS, VMFS on Fibre Channel, iSCSI, or vVols D. NFS only",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator has been tasked with configuring the Tunnel Endpoint (TEP) IP addresses for an NSX Edge transport node for a VMware Cloud Foundation (VCF) VI workload domain. When using the SDDC Manager UI, how should IP addresses be assigned? A. Edge node TEP IPs must be assigned using DHCP. B. Edge node TEP IPs must be assigned using an NSX IP pool. C. Edge node TEP IPs must be assigned using SDDC Manager network pools. D. Edge node TEP IPs must be assigned statically.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Whilst preparing to expand an existing workload domain in a VMware Cloud Foundation (VCF) environment, an administrator notices that one of the new ESXi hosts is showing as disconnected in the vCenter inventory. Performing the Connect operation on the host in the vCenter GUI does not resolve the issue. What two steps could the administrator take to diagnose and resolve this issue? (Choose two.) A. Restart the management agents on the ESXi host. B. Perform the Connect operation on the host in the SDDC Manager GUI. C. Check the ESXi host is assigned a license for VMware Cloud Foundation. D. Verify that the management network is correctly configured on the ESXi host.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is deploying VMware Cloud Foundation (VCF) and needs to deploy an NSX Edge cluster to support the deployment of VMware Aria Suite components. What requirement must the administrator meet before completing this task? A. The NSX Edge cluster must be deployed in the management domain. B. The NSX Edge transport nodes must be deployed using the 'large' form factor. C. The NSX Edge cluster must be configured for NSX Federation. D. The NSX Edge transport nodes must be configured with an MTU of 1500.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has been tasked with adding a new vSphere cluster within a VI Workload Domain in VMware Cloud Foundation (VCF). The VI Workload Domain currently has a single 5-node vSphere cluster that is backed with vSphere Lifecycle Manager (vLCM) Images and uses vSAN for storage. The administrator wants to minimize administrative effort by continuing to use vLCM images. What is the minimum number of hosts required to deploy the new vSphere Cluster? A. 2 B. 3 C. 4 D. 5",
+    "options": {},
+    "most_voted": "B"
+  }
+]
