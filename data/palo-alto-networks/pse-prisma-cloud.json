@@ -1,0 +1,292 @@
+[
+  {
+    "question": "Which two cloud-native providers are supported by Prisma Cloud? (Choose two.) A. DigitalOcean B. Azure C. IBM Cloud D. Oracle Cloud",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An image containing medium vulnerabilities that do not have available fixes is being deployed into the sock-shop namespace. Prisma Cloud has been configured for vulnerability management within the organization's continuous integration (CI) tool and registry. What will occur during the attempt to deploy this image from the CI tool into the sock-shop namespace? A. The image will pass the CI policy, but will be blocked by the deployed policy; therefore, it will not be deployed. B. The CI policy will fail the build; therefore, the image will not be deployed. C. The image will be deployed successfully, and all vulnerabilities will be reported. D. The image will be deployed successfully, but no vulnerabilities will be reported.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement applies to optimization of registry scans with version pattern matching? A. It requires Linux images to rely on optimizing registry scans due to various Linux elements. B. It is only necessary in registries with tens of thousands of repositories and millions of images. C. It is best practice to always optimize registry scans for faster results. D. It is rarely successful in the Windows Operating System (OS).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the Prisma Cloud Enterprise required configuration to identify Amazon Web Services (AWS) Elastic Cloud Compute (EC2) distances that have been tagged as \"Private\"? A. Open the Asset Dashboard, filter on tags, and choose \"Private.\" B. Generate a CIS compliance report and review the \"Asset Summary.\" C. Create an RQL config query to identify resources with the tag \"Private.\" D. Create an RQL network query to identify traffic from resources tagged \"Private.\"",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two templates are supported by Cloud Code Security scan service? (Choose two.) A. Azure Resource Manager (ARM) B. Hyper Text Markup Language (HTML) C. GitHub D. Terraform",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which type of Prisma Cloud Enterprise alert supports autoremediation? A. network B. audit C. anomaly D. config",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What subcommand invokes the Prisma Cloud Compute (PCC) edition image scanner? A. > twistcli images scan B. > twistcli project scan C. > twistcli scan projects D. > twistcli scan images",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where can rules be configured and viewed to configure trusted images? A. Monitor > Compliance > Trusted Images B. Monitor > Compliance > Images C. Defend > Compliance > Trusted Images D. Defend > Compliance > Images",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two elements does Prisma Cloud monitor when analyzing for unusual user activity? (Choose two.) A. Operating System (OS) B. browser C. location D. time",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How does Prisma Cloud Enterprise autoremediate unwanted violations to public cloud infrastructure? A. It inspects the application program interface (API) call made to public cloud and blocks the change if a policy violation is found. B. It makes changes after a policy violation has been identified in monitoring. C. It locks all changes to public cloud infrastructure and stops any configuration changes without prior approval. D. It uses machine learning (ML) to identify unusual changes to infrastructure.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which framework in Prisma Cloud can be used to provide general best practices when no specific legal requirements or regulatory standards need to be met? A. Payment Card Industry (PCI) Data Security Standard (DSS) V3 B. Health Insurance Portability and Accountability Act (HIPAA) C. Center for Internet Security (CIS) Benchmark D. General Data Protection Regulation (GDPR)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which pattern syntax will add all images to a trusted images rule within a registry? A. *.acme.com B. acme/* C. acme.com/myrepo/allimages:/* D. registry.acme.com/*",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Resource Query Language (RQL) query monitors all \"delete\" activities for the user \"user1\"? A. event where crud = 'delete' AND subject = 'user1' B. event where crud = 'delete' C. event where crud = 'delete' AND subject = 'user1' AND cloud.type = 'aws' D. event where subject = 'user1'",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which type of Resource Query Language (RQL) query is used to create a custom policy that looks for untagged resources? A. config B. alert C. event D. data",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two data sources are ingested by Prisma Cloud? (Choose two.) A. network flow logs B. list of all database instances' tables C. metadata about compute resources' configuration D. Cortex Data Lake",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Resource Query Language (RQL) query type monitors specific administrator activities? A. Event B. Network C. User D. Config",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Resource Query Language (RQL) string searches for all Elastic Block Store (EBS) volumes that do not have a \"DataClassification\" tag? A. config cloud.resource from api.name = 'aws-ec2-describe-volumes' AND json.rule = tags[*].key exists B. config cloud.resource from api.name = 'aws-ec2-describe-volumes' AND json.rule = tags[*].key = 1 C. config cloud.resource from api.name = 'aws-ec2-describe-volumes' AND json.rule = tags[*].key contains DataClassification D. config cloud.resource from api.name = 'aws-ec2-describe-volumes' AND json.rule = tags[*].key does not contain DataClassification",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Resource Query Language (RQL) string using network query attributes returns all traffic destined for Internet or Suspicious IPs, what also exceed 1GB? A. network from vpc.flow_record where publicnetwork = ( 'Internet IPs', 'Suspicious IPs' ) AND bytes > 1000000000 B. network from vpc.flow_record where bytes > 1GB and destination = 'Internet IPs' OR 'Suspicious IPs' C. show traffic from vpc.flow_record where destination.network = ( 'Internet IPs', 'Suspicious IPs' ) AND bytes > 1000000000 D. network from vpc.flow_record where dest.publicnetwork IN ( 'Internet IPs', 'Suspicious IPs' ) AND bytes > 1000000000",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Resource Query Language (RQL) query monitors all traffic from the internet and suspicious internet protocols (IPs) destined for Amazon Web Services (AWS) databases? A. network from vpc.flow_record where dest.resource IN ( resource where role = 'Database') B. network from vpc.flow_record where source.publicnetworк IN ( 'Suspicious IPs' , 'Internet IPs' ) and dest.resource IN ( resource where role IN ( 'LDAP' ) ) C. network from vpc.flow_record where source. publicr.etwork IN ( 'Suspicious IPs' ) and dest.resource IN ( resource where role IN ( 'AWS RDS' , 'Database' ) ) D. network from vpc.flow_record where source.publicnetwork IN ( 'Suspicious IPs' , 'Internet IPs' ) and dest.resource IN ( resource where role IN ( 'AWS RDS' , 'Database' ) )",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which type of alert captures unusual user activity and excessive login failures? A. Anomaly B. Audit Event C. Configuration D. Network",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two actions are appropriate when configuring Prisma Cloud to scan a registry? (Choose two.) A. Allow Prisma Cloud to automatically optimize registry scans with version pattern matching. B. Allow Prisma Cloud to automatically distribute the scan job across a pool of available Defenders. C. Explicitly specify the Defender to do the job. D. Explicitly specify the predefined version pattern-matching algorithm.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a permanent public IP called on Amazon Web Services (AWS)? A. floating IP B. Public IP (PIP) C. reserved IP D. Elastic IP (EIP)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In which two ways can Prisma Cloud Compute (PCC) edition be installed? (Choose two.) A. self-managed in a customer's own container platform B. self-contained hardware appliance C. as a stand-alone Windows application D. Cloud-hosted as part of a Prisma Cloud Enterprise tenant from Palo Alto Networks",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which pillar of the Prisma Cloud platform provides support for both public and private clouds as well as flexible agentless scanning and agent-based protection? A. Cloud Network Security B. Cloud Security Posture Management C. Cloud Identity Security D. Cloud Workload Protection (CWP)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two deployment methods are supported for Prisma Cloud Compute (PCC) container Defenders? (Choose two.) A. Azure SQL database instances B. Google Kubernetes Engine C. Oracle Functions service D. Kubernetes DaemonSet",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two valid effects are used to deal with images within a rule for trusted images? (Choose two.) A. Deny B. Alert C. Block D. Ignore",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What occurs with the command twistcli when scanning images? A. If options are listed after the image name, they will be ignored. B. If option \"--user\" is used, it is mandatory to use option \"--password.\" C. If option \"--address\" is unspecified, all images are scanned. D. Option \"--output-file\" cannot be used in conjunction with option \"--details.\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the creation and change of public cloud services managed in a repeatable and predictable fashion? A. infrastructure as code (IaC) B. infrastructure as a service (IaaS) C. platform as a service (PaaS) D. software as code",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the Palo Alto Networks default Prisma Cloud setting for Alert Disposition to reduce the number of false positives? A. Conservative B. Moderate C. High D. Aggressive",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two template formats are supported by the Prisma Cloud infrastructure as code (IaC) scan service? (Choose two.) A. ARMB. XMLC. YAML D. JSON",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two resources provide operational insight within the Prisma Cloud Asset Inventory? (Choose two.) A. Cortex Data Lake B. Cloud Storage buckets C. Prisma Access Gateways D. Compute Engine instance",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What does Prisma Cloud execute to change public cloud infrastructure when autoremediation is enabled? A. local scripts to public cloud APIs B. remote function calls to host agents C. third-party integration tools D. public cloud CLI commands",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which pillar of the Prisma Cloud platform can secure outbound traffic, stop lateral attack movement, and block inbound threats? A. Cloud Workload Protection (CWP) B. Cloud Code Security C. Cloud Network Security D. Cloud Identity Security",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which RQL query returns a list of all Azure virtual machines that are not currently running? A. config from cloud.resource where api.name = 'azure-vm-list' AND json.rule = powerState contains \"running\" B. config from cloud.resource where api.name = 'azure-vm-list' AND json.rule = powerState = \"running\" C. config from cloud.resource where api.name = 'azure-vm-list* AND json.rule = powerState = \"off\" D. config from cloud.resource where api.name = 'azure-vm-list' AND json.rule = powerState does not contain \"running\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement applies to vulnerability management policies? A. Host and serverless rules support blocking, whereas container rules do not. B. Rules explain the necessary actions when vulnerabilities are found in the resources of a customer environment. C. Policies for containers, hosts, and serverless functions are not separate. D. Rules are evaluated in an undefined order.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What happens in Prisma Cloud after Training Model Threshold or Alert Disposition is changed? A. Changes will take effect after a new learning phase of 30 days. B. System will perform a reboot, deleting all past alerts. C. Existing alerts and new alerts are regenerated based on the new setting. D. New alerts are generated based on the new setting.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "All Amazon Regional Database Service (RDS)-deployed resources and the regions in which they are deployed can be identified by Prisma Cloud using which two methods? (Choose two.) A. Configure an Inventory report from the \"Alerts\" tab. B. Write an RQL query from the \"Investigate\" tab. C. Open the Asset dashboard, filter on Amazon Web Services, and click \"Amazon RDS\" resources. D. Generate a compliance report from the Compliance dashboard.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which subcommand invokes the scan for images built with Jenkins in an OpenShift environment? A. > twistcli project scan B. > twistcli scan projects C. > twistcli hosts scan D. > twistcli scan hosts",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Resource Query Language (RQL) query returns a list of all TERMINATED Google Compute Engine (GCE) instances? A. config from cloud.resource where api.name = 'gcloud-compute-instances-list' and json.rule = is TERMINATED B. config from cloud.resource where api.name = 'gcloud-compute-instances-list' = TERMINATED C. config from cloud.resource where api.name = 'gcloud-compute-instances-list* and json.rule = status TERMINATED D. config from cloud.resource where api.name = 'gcloud-compute-instances-list' and json.rule = contains TERMINATED status",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The following error is received when performing a manual twistcli scan on an image: sudo ./twistcli images scan -u bca208cf-26fa-43c6-ac6S-edbl840f8a5S -p 69s+DUqceuxndIF52mo4JDHlpLA-proxy:1.0 What is missing from the command? A. registry path for image name B. password C. console address D. username",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Resource Query Language (RQL) query returns a list of all Azure SQL Databases that have transparent data encryption turned on? A. config from cloud.resource where api.name = 'azure-sql-db-list' and json.rule = transparentDataEncryption is false B. config from cloud.resource where api.name = 'azure-sql-db-list' and json.rule transparentDataEncryption is true C. config from cloud.resource where api.name = 'azure-sql-db-list' and json.rule transparentDataEncryption is on D. config from cloud.resource where api.name = 'azure-sql-db-list' and json.rule = transparentDataEncryption = true",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Resource Query Language (RQL) query searches for all Relational Database Service (RDS) instances that have a public IP address? A. config from cloud.resource where api.name = 'aws-rds-describe-db-instances' and json.rule = publicIpAddress exists B. config from cloud.resource where api.name = 'aws-rds-describe-db-instances' and json.rule = 0.0.0.0/0 C. config from cloud.resource where api.name = 'aws-rds-describe-db-instances' and json.rule = publiclyAccessible is true D. config from cloud.resource where api.name = 'aws-rds-describe-db-snapshots' and json.rule = publicIpAddress is true",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are the asset severity levels within Prisma Cloud asset inventory? A. Low, Medium, and High B. Low, Medium, High, and Critical C. Informational, Low, Medium, and High D. Low, Medium, High, Severe, and Critical",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Under which operating systems (OSs) is twistcli supported? A. Linux, macOS, and Windows B. Windows only C. Linux and Windows D. Linux, macOS, PAN-OS, and Windows",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which filter type is valid in Asset Explorer? A. resource name B. instance C. cloud region D. feature",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which RQL query should be used to quickly identify any events related to an organization's Google Cloud Platform Big Guery database the in last 24 hours? A. event from cloud.audit_logs where cloud.type = 'gcp' AND cloud.service = 'Google Bigtable Instance' B. event from cloud.audit_logs where cloud.service = 'Google Bigquery Dataset' C. event from cloud.audit_logs where cloud.type = 'gcp' AND cloud.service = 'bigquery.googleapis.com' D. event from cloud.audit_logs where cloud.type = 'gcp'",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are two benefits of Cloud Security Posture Management (CSPM) over other solutions? (Choose two.) A. guaranteed proof of concept (РОС) extensions beyond 30 days B. native integration of network, endpoint, and cloud data to stop attacks C. elimination of blind spots D. proactive addressing of risks",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How can a range of dates in the Prisma Cloud default policy be modified? A. Clone the existing policy and change the value. B. Click the gear icon next to the policy name to open the \"Edit Policy\" dialog. C. Manually create the Resource Query Language (RQL) statement. D. Override the value and commit the configuration.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can all alerts related to \"Amazon RDS\" be quickly identified within the Prisma Cloud dashboard? A. Generate a Center for Internet Security (CIS) compliance report and search for \"Amazon RDS\" policy violations B. View the alert data on the \"Asset Inventory\" dashboard and filter on \"Amazon RDS.\" C. Within the \"Alerts\" tab, filter on \"Amazon RDS\" as a service D. Create a custom Resource Query Language (RQL) configuration report",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement explains the correlation between the block and alert thresholds in a vulnerability management policy? A. The thresholds can be set to informational, low, medium, high, and critical. B. The alert threshold always has precedence over, and can be greater than, the block threshold. C. The block threshold must always be equal to or greater than the alert threshold. D. The block threshold always has precedence over, and can be less than, the alert threshold.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What does Infrastructure as Code (IaC) collect to enable automation? A. modern representation formats that describe and deploy infrastructure B. orchestrated workflows to enable cross-functional teams to deploy infrastructure C. images to easily replicate and manage infrastructure D. infrastructure monitoring tool sets",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement is specific for Prisma Cloud when integrating into cloud environments? A. An AutoFocus license is included in Prisma Cloud. B. For multi-cloud environment licenses are required for the number of Prisma Cloud instances. C. Can be natively integrated into Prisma Access. D. No agents or proxies are required.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Prevention against which type of attack is configurable in Web-Application and API Security (WAAS)? A. credential stuffing B. cross-site scripting (XSS) C. shoulder surfing D. distributed denial of service (DDoS)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two cloud providers provide egress load balancing? (Choose two.) A. Microsoft Azure B. Alibaba Cloud C. Amazon Web Services D. Oracle Cloud",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which pillar of the Prisma Cloud platform allows cloud entitlements to be quickly audited and secured? A. Cloud Security Posture Management B. Cloud Identity Security C. Cloud Network Security D. Cloud Code Security",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two business values of Cloud Code Security? (Choose two.) A. consistent controls from build time to runtime B. prebuilt and customizable polices to detect data such as personally identifiable information (PII) in publicly exposed objects C. support for multiple languages, runtimes and frameworks D. continuous monitoring of all could resources for vulnerabilities, misconfigurations, and other threats",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Amazon Web Services (AWS) service supplies information for Prisma Cloud \"event where\" Resource Query Language (RQL) queries? A. GuardDuty B. CloudTrail Audit Logs C. Activity Logs D. Inspector",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which regulatory framework in Prisma Cloud measures compliance with European Union (EU) data privacy regulations in Amazon Web Services (AWS) workloads? A. General Data Protection Regulation (GDPR) B. International Organization for Standardization (ISO) 27001 C. Payment Card Industry (PCI) Data Security Standard (DSS) 3.0 D. EU Data Protection Directive 95/46/EC",
+    "options": {},
+    "most_voted": "A"
+  }
+]
