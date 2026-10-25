@@ -1,0 +1,452 @@
+[
+  {
+    "question": "Which two of the listed requirements would be classified as performance non-functional requirements? (Choose two.) A. The vSphere platform must be able to provide a recovery time objective of 30 minutes B. The vSphere platform must be able to provide a minimum throughput of 400 MB/s C. The vSphere platform must be able to provide N+1 redundancy D. The vSphere platform must be able to provide a maximum read latency of 15 ms E. The vSphere platform must be able to provide a service-level agreement (SLA) of 99,9%",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect will be taking over control of a former Linux server fleet and repurposing the hardware into a new vSphere cluster. The current environment is already connected to the network but the hosts do not have any local disks. Since the fleet hardware is uniform, the architect can use a single ESXi image. All hosts within the cluster have the same CPU and memory capacity. Which ESXi deployment method should the architect use? A. Stateless cached vSphere Auto Deploy B. Stateless vSphere Auto Deploy C. Manual install of each ESXi host with an image from USB D. Stateful vSphere Auto Deploy",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is finalizing the design for a new vCenter Server High Availability deployment. What is one thing the architect must document in the design? A. The load balancing algorithm used by the Management Distributed Virtual Switches (DVS) B. The SSH configuration settings for the vCenter Serverג€™s active node C. The vCenter Management Network IPv4 addresses for the witness node vCenter Server D. The details of each of the vCenter Server licenses for active, passive and witness nodes",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is considering placement of virtual machines within an existing VMware software-defined data center (SDDC). During the discovery phase, the following information is documented: Cluster One ✑ Six ESXi hosts ✑ vSphere HA with host failures cluster tolerates = 1 ✑ Proactive HA is enabled and set to automated ✑ Fully Automated vSphere DRS ✑ Transparent Page Sharing (TPS) is enabled Cluster Two ✑ Eight ESXi hosts ✑ vSphere HA with host failures cluster tolerates = 1 ✑ Proactive HA is disabled ✑ Partially Automated vSphere DRS ✑ Transparent Page Sharing (TPS) is disabled Cluster Three ✑ Three ESXi hosts ✑ vSphere HA with admission control is disabled ✑ Proactive HA is not supported ✑ Transparent Page Sharing (TPS) is disabled Virtual Machine Resource Profile 1 ✑ Memory sharing techniques should not be used ✑ Virtual machines should be automatically restarted in the event of host failure if resources are available ✑ Automated initial virtual machine placement Virtual Machine Resource Profile 2 ✑ Memory sharing techniques should not be used ✑ Virtual machines should be automatically restarted in the event of host failure regardless of available resources ✑ Automated initial virtual machine placement Which two recommendations should the architect make for placement of the virtual machines to meet resource profile requirements? (Choose two.) A. All virtual machines matching Virtual Machine Resource Profile 2 should be placed on Cluster One. B. All virtual machines matching Virtual Machine Resource Profile 1 should be placed on Cluster One. C. All virtual machines matching Virtual Machine Resource Profile 2 should be placed on Cluster Two. D. All virtual machines matching Virtual Machine Resource Profile 1 should be placed on Cluster Two. E. All virtual machines matching Virtual Machine Resource Profile 2 should be placed on Cluster Three.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is designing a new VMware solution for a customer that has a number of different resource profiles. The following are the business requirements for the design: ✑ The solution must support virtual machines with the following storage profiles: - Write-intensive - Backup - Write-Once-Read-Many (WORM) archive ✑ The solution must support migration of virtual machine disks between storage profiles. ✑ The WORM archive data must be located at an isolated secure site. ✑ The backup storage array must only be connected to a backup media server. ✑ All data should be recoverable from backup. Which design decision should the architect make to meet the business requirements? A. The solution will leverage a single storage array for the WORM archive and write-intensive storage profiles B. The solution will leverage the same array for the backup and write-intensive storage profiles C. The solution will leverage a different array for each storage profile D. The solution will leverage a single storage array for all storage profiles",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is preparing a design for a company planning digital transformation. During the requirements gathering workshop, the following requirements (REQ) and constraints (CON) are identified: ✑ REQ01 The platform must host different types of workloads including applications that must be compliant with internal security standard. ✑ REQ02 The infrastructure must initially run 100 virtual machines. REQ03 Ten of the virtual machines must be compliant with internal security standard. [sampleXML/xmlfile-6_8.png] ✑ REQ04 The internal security standard specifies logical network separation for in-scope applications. ✑ CON01 The customer has already purchased the licenses as part of another project. ✑ CON02 The customer has five physical servers that must be reused. Additionally, based on resource requirements, four physical servers will be enough to run all workloads. Which recommendation should the architect make to meet requirements while minimizing project costs? A. Use Network I/O Control to ensure the internal security zone has higher share value B. Purchase additional servers and plan separate, isolated clusters for workloads that must be compliant with internal security standard C. Use a single cluster and ensure that different security zones are separated at least with dedicated VLANs and firewall D. Use a single cluster and configure DRS anti-affinity rules to ensure internal security compliant virtual machines cannot migrate between ESXi hosts.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is designing the expansion of an existing vSphere 7 environment. The customer is requesting a design for a new cluster to support the anticipated future business growth. The requirements specified for the existing environment design must be considered when designing the new cluster. The existing design has the following requirements: ✑ REQ01 The environment has an availability target of 99.5% for all infrastructure. ✑ REQ02 The recovery time objective (RTO) for Tier 1 virtual machines is one hour. ✑ REQ03 Windows and Linux virtual machines must reside on separate clusters. ✑ REQ04 Access to the management cluster within the environment must be controlled. Which of the listed requirements would be classified as a functional requirement? A. The environment has an availability target of 99.5% for all infrastructure B. The recovery time objective (RTO) for Tier 1 virtual machines is one hour C. Access to the management cluster within the environment must be controlled D. Windows and Linux virtual machines must reside on separate clusters",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two of the listed requirements would be classified as manageability non-functional requirements? (Choose two.) A. ESXi clusters must scale when compute resources are sustained above 70% for five business days B. vSphere Fault Tolerance must be supported to improve application uptime C. ESXi host updates must be installed within one week of release D. The vSphere environment must support administrator password rotation E. ESXi clusters must scale to 500 concurrent virtual machines",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect makes the design decision to install ESXi on embedded and resilient 8 GB SD cards. What is the impact of this design decision? A. Host profiles must be used for this kind of installation B. Scratch partition would need to be created on the external storage C. The size of the SD cards is too small and the installation will fail D. The vSphere Auto Deploy feature must be enabled on vCenter Server",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is designing a new vSphere environment to meet the following requirements: ✑ The environment must support 800 virtual machines. ✑ The environment will be built initially using 200 hosts. Which vCenter Server appliance deployment size should the architect specify for the design? A. Large B. Small C. X-Large D. Medium",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is designing a new greenfield environment with 600 ESXi hosts in an automated fashion. The engineering department already has a PXE Boot server, TFTP server, and DHCP server set up with an NFS mount for their current Linux servers. The architect must be able to demonstrate and meet a security requirement to have all infrastructure processes separated. Which recommendation should the architect make for the ESXi host deployment? A. Request an isolated network segment to use and dedicate it to Auto Deploy functions B. Ask the business to expand the engineering environment to service the virtual environment as well C. Request a common shared network with flexible security measures to accommodate different auto deployment options D. Deploy each ESXi host individually and document it to satisfy security requirements",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is designing a new vSphere environment with the following resources: ✑ 600 vCPU ✑ 5,760 GB RAM Average resource usage is: ✑ 60 vCPU ✑ 1,152 GB RAM The design must meet the following requirements: ✑ The environment has the ability to burst by 25%. ✑ Each host can schedule 36 vCPUs and has 512 GB RAM. ✑ Management overhead is 20%. What is the minimum number of hosts required to meet the design requirements? A. Three B. Five C. Four D. Two",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is designing a new vSphere platform to meet a list of requirements from the security team. Which two requirements would be classified as non-functional requirements? (Choose two.) A. Migration of virtual machines between hosts must be encrypted B. Log information must be verbose to support incident resolution C. Critical events generated within the platform must be logged to an external Syslog service D. Data integrity must be ensured E. A common content library must be maintained across all data centers",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is finalizing the design for a new vSphere platform based on the following information: ✑ All Windows virtual machines will be hosted on a dedicated cluster for licensing purposes. ✑ All Linux virtual machines will be hosted on a dedicated cluster for licensing purposes. ✑ All management virtual machines will be hosted on a dedicated cluster. ✑ A total of ten physical sites will be used to host virtual machines. ✑ In the event of one physical datacenter becoming unavailable, the manageability of the virtual infrastructure in the remaining data centers should not be impacted. ✑ Access to configure the management virtual machines via vCenter Server must be controlled through the management Active Directory domain. ✑ Access to configure the Windows and Linux virtual machines must be controlled through the resource Active Directory domain. ✑ The management and resource Active Directory domains are part of separate Active Directory forests and do not have any trusts between them. The design will use Active Directory with Integrated Windows Authentication. [sampleXML/xmlfile-11_9.png] How should the architect document the vCenter Server configuration for this design? A. Deploy a vCenter server for the management cluster. Deploy a vCenter Server for all remaining clusters. Create a shared SSO domain for each physical site. B. Deploy a vCenter Server for the management cluster. Deploy a vCenter Server for all remaining clusters. Create a shared SSO domain across all physical sites. C. Deploy a vCenter Server for the management cluster with a dedicated SSO domain. Deploy a vCenter Server for all remaining clusters and use a dedicated SSO domain for each physical site. D. Deploy a vCenter Server for the management cluster with a dedicated SSO domain. Deploy a vCenter Server for all remaining clusters and use a dedicated SSO domain into a single physical site.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is reviewing a physical storage design. The customer has specified that storage DRS will be used for ease of operational management for capacity and performance. Which recommendation should the architect include in the design? A. Create smaller datastores to balance space with Storage DRS B. Use a larger number of storage profiles (varied disk speeds and RAID levels) to improve performance C. Create larger datastores to balance space with Storage DRS D. Create more datastores within each Storage DRS cluster to balance space and performance",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The Chief Information Security Officer (CISO) for an organization is concerned about the security posture of the operating system images that are used for the provisioning of their Software-as-a-Service (SaaS) applications. The organization is in a growth period. The organization is opening a new data center to launch its next phase of new SaaS-based solutions. The DevOps team currently creates encrypted virtual machine (VM) templates that are used for various operating systems and adds these to the vSphere inventory. The DevOps team already uses a published content library and has been granted a role with the ability to add and delete library items. The following requirements have been noted: ✑ Impacts to the DevOps team's operational processes must be kept to a minimum. ✑ The DevOps team must be able to regularly check out a copy of the image for updates and check in a new version of the image. ✑ Images must be synchronized from the primary data center to the new data center. Which three recommendations should the architect make to design a content library solution that will meet these requirements? (Choose three.) A. Clone virtual machines as VM templates to the published content library B. Create a subscribed library from the published library and synchronize Open Virtualization Format (OVF) templates on-demand C. Create a subscription and publish VM templates to a subscribed content library D. Create a subscribed library from the published library and synchronize Open Virtualization Format (OVF) templates automatically E. Clone virtual machines as Open Virtualization Format (OVF) templates to the published content library F. Update the role for the DevOps team with new privileges",
+    "options": {},
+    "most_voted": "F"
+  },
+  {
+    "question": "An architect is tasked with planning the design of a new vSphere environment. When commissioned, this environment will be used to migrate an existing set of virtual machines. An inventory of the existing infrastructure, including configured vCPU, RAM and storage sizes has been provided. In order for each virtual machine to be migrated, which two data sources with peak and average utilization data are required for sizing? (Choose two.) A. %Ready B. Disk Write latency C. CPU D. Ballooned memory E. IOPS",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which design decision must be included in a design to allow for the deployment of a minimum supported configuration of vCenter High Availability (HA)? A. A new subnet will be provisioned for vCenter HA services B. A vSphere cluster will consist of more than three nodes C. The deployed vCenter Server will be Tiny D. The vCenter HA network will support a latency of less than 50 ms",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. During a requirements gathering workshop, the customer shares the following about their existing ESXi host virtual networking infrastructure: [sampleXML/xmlfile-16_1.png] The customer confirms that: ✑ Each ESXi host has approximately 200 virtual machines. ✑ They want to maximize the number of concurrent virtual machine migrations. ✑ When placing a host in maintenance mode, it takes a long time to evacuate the virtual machines. Which two recommendations should the architect make in order to help the customer overcome their challenge? (Choose two.) A. Configure the network to use MTU for the VMotion VMKernel to 1,600 bytes B. Configure the network to use MTU for the VMotion VMKernel to 9,000 bytes C. Create an additional standard switch with pNIC3 to use for vMotion D. Use the 3 pNICs and bundle them in a link aggregation group (LAG) configuration E. Use 10 GbE NICs instead of 1 GbE",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is designing a VMware solution for a customer based on the following information: ✑ The solution must use investments in existing storage array that supports both block and file storage. ✑ The solution must support the ability to migrate workloads between hosts within a cluster. ✑ The solution must support resource management priorities. ✑ The solution must support the ability to connect virtual machines directly to LUNs. ✑ The solution should use existing IPv4 based network infrastructure. ✑ There is no budget for additional physical hardware. Which two design decisions could the architect make to meet these requirements? (Choose two.) A. The ESXi hosts will leverage Fibre Channel (FC) B. The ESXi hosts will leverage NFS 3 C. The ESXi hosts will leverage Fibre Channel over Ethernet (FCoE) D. The ESXi hosts will leverage iSCSI E. The ESXi hosts will leverage NFS 4.1",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Cloud Service Provider wants to introduce backup as a service for a customer's vSphere-based virtual machines. The following information is noted: ✑ They have a single four-port (2 ֳ— 10 GbE and 2 ֳ— 1 GbE) NIC per ESXi host ✑ All top-of-rack (ToR) switches are 10 GbE and fully populated ✑ The backup traffic must not impact existing services Which two recommendations should the architect make to help the customer incorporate the service? (Choose two.) A. Enable and tag traffic on the backup distributed port group B. Add a new two-port 10 GbE NIC per ESXi host C. Replace the existing NIC with a two-port 25 GbE NIC per ESXi host D. Match the Class of Service (CoS) and Differentiated Services Code Point (DSCP) values to the physical network E. Create a new virtual switch using the 1 GbE uplinks",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer has six hosts available in a cluster. When running at full capacity, all virtual machines can be run on two hosts. How many hosts can the customer place into maintenance mode at the same time while still providing N+2 resiliency to the cluster? A. Two B. Three C. One D. None",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is designing a series of new vSphere environments for an organization. The environments will be deployed in their US-East and US-West region data centers. Each data center may have one or more dedicated vSphere environments. Only the vSphere environments within a data center will be configured with Enhanced Linked Mode. The Chief Technology Officer (CTO) has authorized the use of VMware vRealize Automation Cloud for automation. The build team creates standardized virtual machine images for various operating systems in Open Virtualization Format (OVF) and publishes the latest version on an as-needed basis to an internal HTTPS-accessible repository. The architect must design a content library topology that meets the following requirements: ✑ A localized content library must be available in each data center. Each content library must be updated when an image is updated and released by the build team. [sampleXML/xmlfile-18_2.png] ✑ The cloud automation platform must be able to consume the latest approved content library images. ✑ It must leverage the existing build team processes. What should the architect recommend to meet the requirements? A. Work with the build team to create a local content library for each vSphere environment. Import the OVF images when new image are published to the repository. B. Create a local content library for the primary vSphere environment in each data center. Create a subscribed content library for each additional vSphere environment in each data center. Configure the content library to download content automatically. C. Work with the build team to automate a JSON-based manifest to the repository when changes occur in the repository. Create a subscribed content library for each vSphere environment. Configure the content library to download content when needed. D. Work with the build team to automate a JSON-based manifest to the repository when changes occur in the repository. Create a subscribed content library for each vSphere environment. Configure the content library to download content automatically.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is designing storage for a new vSphere environment to meet the following requirements: ✑ Asynchronous replication is required between two sites. ✑ The impact on the storage layer should not impact the performance of the compute layer. ✑ Each application tier will require different replication attributes. ✑ Virtual machine live migration across compute and storage must be supported. ✑ Virtual machine aware back up will be leveraged. ✑ Operational management overhead should be minimized. ✑ Operational automation should be supported. Which storage design recommendations would meet the requirements? A. Two new Fibre Channel storage arrays will be deployed, one at either site. Each application tier will be initially provisioned a new LUN. Data replication will be offloaded to the new arrays. B. Two new vSphere clusters enabled with vSAN will be deployed, one at either site. vSAN will be used to provide policy-based management for each application tier. vSphere Replication will be used to replicate the virtual machine data in an asynchronous configuration. C. Two new ISCSI storage arrays will be deployed, one at either site. Each application tier will be initially provisioned a new LUN. Data replication will be offloaded to the new arrays. D. Two new storage arrays will be deployed, one at either site. vSphere Volumes (vVOLs) will be used to provide policy-based management for each application tier. Data replication will be offloaded to the new arrays.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An organization's data scientists are executing a plan to use machine learning (ML). They must have access to graphical processing unit (GPU) capabilities to execute their computational models when needed. The solutions architect needs to design a solution to ensure that GPUs can be shared by multiple virtual machines. Which two solutions should the architect recommend to meet these requirements? (Choose two.) A. NVIDIA vGPU B. AMD MxGPU C. vSphere DirectPath I/O D. vSGA E. vSphere Bitfusion",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is designing a solution for an environment with two types of resource profiles that must be virtualized. The first type consists of Tier 1 virtual machines that are disk I/O intensive, but do NOT require high CPU or memory. The second type consists of Tier 2 virtual machines that require a lower CPU and memory allocation and have minimal disk I/O. Which design recommendation should the architect make for distributing the resource profiles? A. Separate the two resource profiles into two clusters. The Tier 1 cluster will have fast storage while the Tier 2 cluster will not. B. Run both resource profiles on the same cluster with the same host hardware platform. C. Separate the two resource profiles into two clusters. The Tier 2 cluster will have faster CPU and more memory while the Tier 1 cluster will have slower CPU and less memory but more disk space. D. Run both resource profiles on the same cluster with host hardware that has fast CPU, large amounts of memory, and the fastest storage platform.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Application owners require support of a Microsoft Windows Server Failover Cluster (WSFC). Their current environment consists of the following components: ✑ vSphere 7.0 and vSAN 7.0 ✑ External array supporting NFS 3.0/4.1, Server Message Block (SMB) 2.1 ✑ 10 GbE storage connectivity for all devices The solution architect is tasked with coming up with a solution to meet this requirement while utilizing their existing investments. Which two recommendations could the architect make? (Choose two.) A. Use vSAN native support for WSFC B. Use NFS 4.1 shares for quorum and shared disk C. Use raw device mapping (RDM) D. Use the SMB 2.1 protocol for sharing disks E. Run WSFC on vSAN iSCSI Target Service",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "As part of a new hybrid cloud initiative for a large financial company, the customer technical team is presenting an overview of the current state of the infrastructure and their vision for a new solution. The project team captures notes during the presentation and adds them to the discovery documentation. Which of the listed statements is a design constraint? A. The applications are created in-house with in-guest recovery protection B. The maximum tolerable data loss is 10 minutes C. The two data center locations have a network latency of 8 ms round-trip time (RTT) D. The existing storage is out of maintenance",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is tasked with expanding an existing VMware software-defined data center (SDDC) solution so that it can be used to deliver a virtual desktop infrastructure (VDI) service off-shore development activities. The production environment is currently delivered across two geographically dispersed data centers. The two data centers are currently connected to each other through multiple diversely routed, high bandwidth and low latency links. The current operations management components are deployed to a dedicated management cluster that is configured with N+1 redundancy. The current VMware software-defined data center (SDDC) has a monthly availability target of 99.5%, which includes all management components. The customer requires that the new solution scale to support the concurrent running of 500 persistent virtual desktops. The virtual desktops must not share the same virtual infrastructure as existing virtual machines, but can be managed using the same VMware operations management components. Any new VDI service management components must be installed into the management cluster. There is no requirement to back up the virtual desktops because all relevant user data is stored centrally. The VDI service is providing business critical services and must have an availability target of 99.9%. Given the information from the customer, which two assumptions would the architect include in the design? (Choose two.) A. The existing virtual infrastructure has sufficient capacity to host the new VDI workloads B. The existing operations monitoring tools have sufficient capacity to monitor the new VDI services C. The existing management cluster has enough available capacity to host any VDI service management component D. The management cluster has N+1 redundancy E. The VDI service has a higher service-level agreement (SLA) than the operations management SLA",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Following a company merger, there are two data centers running vSphere environments. Both data centers are leveraging separate Layer 3 vMotion networks. Which requirement must be met in order to enable vMotion migration between these locations? A. The vMotion service must be configured on the Management VMkernel adapter B. A dedicated TCP/IP stack for vMotion with a dedicated gateway must be configured C. A stretched vMotion network must be configured between data centers D. Virtual machines must be powered off in order to migrate them between data centers",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is designing a solution based on the following information: ✑ Each ESXi host has a single physical NIC with two 10 Gbps ports. ✑ There is a performance-based service-level agreement (SLA) that guarantees 15 Gbps bandwidth for production virtual machines at all times. ✑ There is no budget to purchase additional hardware. ✑ The hardware replacement SLA is based on a delivery agreement of two business days. Which recommendation for the configuration of vSphere High Availability (HA) should the architect include in the design? A. Configure vSphere HA Configure % based admission control Configure two isolation addresses Consider an OEM with NIC failure conditions in their Proactive HA plugin B. Configure vSphere HA Set das.IgnoreRedundantNetWarning to true Consider an OEM with NIC failure conditions in their Proactive HA plugin C. Configure vSphere HA Configure two existing data stores for heartbeat Consider an OEM with NIC failure conditions in their Proactive HA plugin D. Configure Proactive HA Automation Level: Automated Remediation: Maintenance mode for all failures Consider an OEM with NIC failure conditions in their Proactive HA plugin",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is tasked with reviewing the design of a VMware software-defined data center (SDDC) for a software development company. The platform is used to developing applications and services. It is important that the customer be able to accurately benchmark performance of developed applications. The platform has recently commissioned new hosts to update the development cluster. The development cluster host configuration is: ✑ 4 ESXi hosts with 2 sockets ֳ— 16 cores ✑ 512 GB RAM divided evenly between sockets ✑ There is no resource contention The benchmarking cluster host configuration is: ✑ 8 ESXi hosts with 2 sockets ֳ— 8 cores ✑ 256 GB RAM divided evenly between sockets ✑ There is no resource contention The customer is developing an application that includes a database virtual machine. The application developer states that the database virtual machine performs as required only when allocated 8 vCPUs 256 GB RAM. The database virtual machine performance meets the required levels when run from the development cluster. Performance benchmarking for the database virtual machine yields highly variable results when run from the benchmarking cluster. The application cannot be released without reliable performance benchmarking data. What is a possible reason for the difference in performance test results between the development and benchmarking clusters? A. The database tier breaches a single NUMA node boundary for the benchmarking cluster B. The database tier breaches a single NUMA node boundary for the development cluster C. The development cluster can support a lower %Ready time per vCPU D. The development cluster has more available RAM per host",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During a transformation project kick-off meeting, an architect highlights specific areas on which to focus while developing the new conceptual design. Which two of the listed statements are business requirements? (Choose two.) A. The project should use the existing storage devices within the data center B. Sites must support a network latency of less than 12 ms round-trip time (RTT) C. The solution must allow data replication between sites D. There is no budget specifically assigned for disaster recovery E. There must not be a single point of failure for the virtual infrastructure",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is designing a VMware software-defined data center (SDDC) solution based on the following customer requirements: ✑ The solution must initially support 1,000 virtual machines ✑ The solution must scale to support the concurrent running of up to 5,000 virtual machines ✑ The production environment should be delivered across two data centers ✑ The solution should have a maximum tolerable downtime (MTD) of four hours ✑ The solution should have a monthly service availability target of 99.8% Which two assumptions could the architect make based on the information from the customer to help size the solution? (Choose two.) A. The number of vSphere hosts in a cluster B. The average resource utilization of a virtual machine C. The size (CPU/RAM/storage) of the average virtual machine D. The guest operating system for each virtual machine E. The size (CPU/RAM/storage) of the vSphere hosts",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer requires the use of data encryption to ensure data is not accessible when a drive is removed from the primary storage platform. However, there is also a requirement to use deduplication and compression against all workloads in order to conserve space. Which solution meets the customer requirements? A. Data-in-transit encryption B. OS-level encryption C. Encrypted backups D. Array-based encryption",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "During a requirements gathering workshop, the customer's Chief Information Security Office (CISO) provides the following requirements that are pertinent to the design of a new vSphere environment: ✑ All operating system critical patches must be installed within 24 hours of release. ✑ All virtual machine templates must be updated every three months in line with company policy. Which requirement classification is being gathered for the design documentation? A. Security B. Manageability C. Recoverability D. Availability",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is tasked with designing a greenfield VMware software-defined data center (SDDC) solution that will be used to deliver a private cloud service for a customer. During the initial meeting with the service owner and business sponsor, the customer has provided the following information to help inform the design: ✑ The solution must support the concurrent running of 1,000 virtual machines ✑ The production environment must be delivered across two geographically dispersed data centers ✑ All virtual machines must be capable of running in either data center. ✑ The two data centers are currently connected to each other through a single but diversely routed, high bandwidth and low latency link. ✑ The link between the two data centers is capable of supporting a round-trip time (RTT) of 150 ms ✑ The existing server hardware standard document states that all virtual infrastructure hosts must be deployed using vSAN ReadyNodes ✑ The service owner has stated that it is critical to ensure the availability target of 99.9% ✑ All virtual machine backups must be completed using the existing backup service ✑ The recovery time objective (RTO) for the service is five minutes ✑ The recovery point objective (RPO) of the service is four hours Which two elements represent risks to the successful delivery of this solution? (Choose two.) A. The use of only two data centers B. The network connectivity between data center sites C. The use of vSAN ReadyNodes D. The RTT on the link between the two data centers E. The use of the existing backup service",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is designing a new vSphere platform for a customer to meet the following requirements: ✑ The platform must be deployed into five physically separate sites. ✑ The sites are spread across multiple regions. ✑ Some sites require more than one vCenter Server. ✑ The platform must provide an administrator with the ability to access virtual infrastructure components across all sites from a single management tool instance. Which single sign-on (SSO) design recommendation will meet these requirements? A. Use an SSO domain across all vCenter Server instances B. Use an SSO domain per region C. Use an SSO domain per vCenter Server instance D. Use an SSO domain per site",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The storage team at an organization is planning to migrate from an older Fibre Channel storage environment to a new environment using IP-based storage. Which two switch features or characteristics are appropriate for IP storage networks? (Choose two.) A. Fabric extending devices B. Spanning Tree Protocol (STP) C. 2:1 or greater bandwidth oversubscription for 10 GbE switches D. Non-blocking switch E. Deep or ultra buffered switches",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is designing a new VMware software-defined data center (SDDC) that will consist of 100 branch sites connected to a single VMware vCenter Server within the primary data center. To allow for the use of existing automation scripts, there is a requirement to replicate the names of the virtual distributed port groups across all sites. The procurement team purchases licensing and there is no further budget allocated. Which design decision should the architect make to meet this requirement? A. A new vCenter Server will be deployed for each branch site B. A new host and cluster folder will be created for each branch site C. The automation script will be updated to reflect unique naming for each site D. A new virtual data center will be created for each branch site",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is designing a new greenfield environment that will install ESXi on local disks. There is a requirement to streamline initial and future installations of ESXi hosts. Which configuration option should the architect recommend for installing ESXi hosts to meet these requirements? A. Installation with kick start script B. Auto Deploy with stateless caching mode C. Manual installation using boot from SAN D. Auto Deploy with stateful install mode",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Following a recent acquisition, an architect needs to merge IT assets into its current data center. The combined vSphere environment will need to run the newly acquired company's virtual machines. Network integration work has already been completed and the current environment has capacity to host all virtual machines. The Operations team needs to identify which virtual machines belong to the acquired company and report on their usage. How should the architect merge the company's assets and virtual machines? A. Leave the newly acquired companyג€™s assets in its current place B. Lift and shift the acquired assets into the data center C. Migrate the acquired companyג€™s virtual machines into the existing vSphere environment D. Migrate and apply vSphere tags to the acquired companyג€™s virtual machines",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The Chief Operating Officer (COO) at an organization raises concerns that their virtual infrastructure environment is vulnerable. Recently, a security-related issue with a virtual machine caused all management services to become unavailable. No budget is available in the short term for additional platform investment. An architect is asked to review the current environment and make recommendations to mitigate concerns. A virtualization administrator has provided the following details: ✑ There is a single four node cluster of ESXi servers ✑ There are two, Layer 2, physical network switches connecting resources ✑ The data center network is presented as a single /16 subnet Given the information provided, which functional requirement should the architect include in the design to mitigate the COOs concerns? A. The virtual infrastructure environment must connect application virtual machines and management services to new physical network switches B. The virtual infrastructure environment must connect application virtual machines and management services to separate distributed virtual switches (DVS) C. The virtual infrastructure environment must connect application virtual machines and management services to separate VLANs D. The virtual infrastructure environment must connect management services to a vSphere standard switch (VSS)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is tasked with designing a greenfield VMware software-defined data center (SDDC) solution that will be used to deliver a private cloud service for a customer. During the initial meeting with the service owner and business sponsor, the customer has provided the following information to help inform the design: ✑ The solution must initially support the concurrent running of 300 production and 600 development virtual machines. ✑ The production environment should be delivered across two geographically dispersed data centers. ✑ The development environment must be vSphere-based but does not have to be deployed on-premises. ✑ The two data centers are connected to each other through multiple diversely routed, high bandwidth and low latency links. ✑ The customer's server hardware standard document states that all virtual infrastructure hosts must be based on blade architecture only. ✑ The service owner has said that is important to ensure that neither the availability target of 99.5% nor the resource capacity is affected when the operations team completes maintenance activities, such as the monthly software patching and ad-hoc hardware break/fix. ✑ All virtual machine backups must be completed using the existing backup service. ✑ The recovery time objective (RTO) for the service is four hours. ✑ The recovery point objective (RPO) of the service is 24 hours. Given the information from the customer, which two would be classified as assumptions within the design? (Choose two.) A. The backup service will store data in a secure facility B. The backup service has sufficient capacity for the new requirements C. The customer will update their hardware standard to support rack mount servers D. All virtual machines will be deployed with the same resource profile for production and development E. The clusters will have a minimum redundancy of N+1",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a meeting to discuss the minimum viable product (MVP) deployment of a new customer-facing application, the key stakeholder shares details of the application components and the application administrators share details of performance and integrity tests for the application. The application will be made up of the following components: A web server [sampleXML/xmlfile-32_10.png] - Steps to confirm the web server is operating correctly will take 15 minutes after the application server is online. ✑ An application server - Steps to confirm application server integrity will take 15 minutes after the database is online. ✑ A database server - The database server will be managed by a database administrator, with an agreed service-level agreement (SLA) to restore and validate database services within one hour. The existing VMware infrastructure offers a recovery point objective (RPO) of 5 minutes and recovery time objective (RTO) of 15 minutes through a combination of backups and replication. In the event of an outage impacting all three application components, how long will it take for the application to recover and complete all checks? A. 15 minutes B. 60 minutes C. 105 minutes D. 90 minutes",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "During a requirements gathering workshop to design a physical to virtual migration, the customer provides the following information: ✑ There is no physical firewall in the data center with no anticipated plans for a future network refresh. ✑ Leveraging the virtual infrastructure to mitigate the lack of network security must be addressed in the design. ✑ All physical servers to be migrated exist on the same VLAN. Which recommendation should the architect make to address the customer requirement with regard to virtual networking? A. ✑ Split the virtual machines into several VLANs ✑ Use tag actions B. ✑ Create port groups with different names and same VLAN IDs ✑ Enable traffic shaping for ingress and egress traffic C. ✑ Enable traffic filtering and marking ✑ Use allow or drop actions D. Disable traffic filtering and marking [sampleXML/xmlfile-33_12.png] ✑ Use tag actions",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer has a database cluster with 40/60 read/write ratio and a high IOPs requirement with no contention on an all-flash vSAN cluster. Which two storage settings should be configured for best performance? (Choose two.) A. IOPs limits enabled B. RAID 1 C. Deduplication and Compression disabled D. RAID 5/6 E. Deduplication and Compression enabled",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "There is a request for approved virtual machine applications through a new vSphere platform's integrated automation portal. The platform was built following all provided company security guidelines and has been assessed against Sarbanes-Oxley Act of 2002 (SOX) regulations. The platform has the following characteristics: ✑ vRealize Operations is being used to monitor all clusters. ✑ There is a dedicated ESXi cluster, supporting all management services. - All network traffic is via distributed virtual switches (DVS). ✑ There is a dedicated ESXi cluster for all line-of-business applications. - Network traffic is serviced by NSX-T. ✑ There is a dedicated ESXi cluster for virtual desktop infrastructure (VDI). - Network traffic is serviced by NSX-T. The application owner is requesting approval to install a new service that must be protected as per the Payment Card Industry (PCI) Data Security Standard. Which additional non-functional requirement should the architect include in the design to support the new service? A. The vSphere hosting platform and all PCI application virtual machines must be assessed against Payment Card Industry (PCI) Data Security Standard compliance. B. The vSphere hosting platform and all PCI application virtual machines must be assessed for SOX compliance. C. The vSphere hosting platform and all PCI application virtual machine network traffic must be routed via NSX-T. D. The vSphere hosting platform and all PCI application virtual machines must be monitored using the vRealize Operations Compliance Pack for Payment Card Industry.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is tasked with recommending a solution for a company that is running out of VLANs. Currently the company is running two separate data centers based on vSphere including an Enterprise Plus license. In the first data center, the problem was solved by using VMware NSX and overlay network. In the second data center, there is currently no VMware NSX implementation in place and no budget for additional licenses. What should the architect recommend as a potential solution to provide support for additional VLANs? A. Separate Distributed Virtual Switches (DVS) B. Private VLANs (PVLAN) C. Virtual Guest Tagging (VGT) D. vSwitch VLAN Tagging (VST)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A customer requests a review of its current vSphere platform design. The following information is noted: ✑ There are three different workload profiles for the virtual machines: - Tier-1 virtual machines operate resource-intensive applications and require dedicated allocations for CPU and RAM. - Tier-2 virtual machines operate internet-facing applications and require access to externally facing networks. - Tier-3 virtual machines operate platform management tools such as vCenter Server and have different lifecycle management requirements. ✑ Tier-1, Tier-2 and Tier-3 virtual machines are all hosted on a single large vSphere cluster. ✑ The Chief Information Security Officer (CISO) has raised concerns that hosting externally facing applications alongside management tools does not meet internal compliance standards. ✑ The Operations team has raised concerns about Tier-1 virtual machines negatively impacting the performance of vCenter Server. ✑ The Operations lead has stated that management changes have consistently been rejected by application teams. As a result of the review, which recommendation should the architect make regarding the design of this platform? A. Separate Tier-1, Tier-2 and Tier-3 virtual machines using dedicated distributed virtual switches (DVS) B. Separate Tier-2 virtual machines onto a dedicated cluster C. Separate Tier-1, Tier-2 and Tier-3 virtual machines onto dedicated clusters D. Separate Tier-1, Tier-2 and Tier-3 virtual machines using resource pools and shares",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer provides the following list of requirements for their vSphere platform: ✑ REQ01 The solution should utilize dual network connections to eliminate single points of failure. ✑ REQ02 The solution should allow logs to be retained for a period of 30 days. ✑ REQ03 All user access to the platform should be recorded for audit purposes. ✑ REQ04 The solution should allow the management of multiple ESXi hosts. ✑ REQ05 The solution should allow users to view the remote console of virtual machines. Which two of the listed requirements would be classified as non-functional requirements? (Choose two.) A. The solution should utilize dual network connections to eliminate single points of failure B. The solution should allow the management of multiple ESXi hosts C. The solution should allow users to view the remote console of virtual machines D. All user access to the platform should be recorded for audit purposes E. The solution should allow logs to be retained for a period of 30 days",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During a requirements gathering workshop, the customer provides the following requirement that is pertinent to the design of a new vSphere environment: ✑ The Maximum Tolerable Downtime (MTD) for all Tier 1 applications is one hour. Which requirement classification is being gathered for the design documentation? A. Manageability B. Performance C. Availability D. Recoverability",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. During a requirements gathering workshop, the architect shares the following diagram: [sampleXML/xmlfile-38_1.jpg] What should the architect recommend for guaranteed throughput for each service? A. Use explicit failover order with pNIC0 as Active for ESXi Management and VM Network Use explicit failover order with pNIC1 as Active for backup network Use explicit failover order with pNIC2 as Active for vMotion Use explicit failover order with pNIC3 as Active for replication B. Use the Route Based on IP Hash for ESXi management and VM network Use the Route Based on IP Hash for backup network Use the Route Based on the Originating Virtual Port for vMotion Use failover with pNIC3 as Active for replication C. Create a link aggregation group (LAG) for vDS_01 Use the Route Based on Physical NIC Load for vMotion Use the Route Based on Physical NIC Load for replication D. Use the Route Based on IP Hash for ESXi management and VM network Use failover with pNIC1 as Active for backup network Create a link aggregation group (LAG) for vDS_02",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer is deploying a new cluster and wants to be able to patch and update two hosts in parallel. The cluster must be able to maintain N+1 resiliency across the remaining hosts while patching activities are performed. The current expected utilization of the platform requires a minimum of two hosts to support all of the virtual machines. What is the minimum number of hosts the customer will require in the cluster in order to meet the required resiliency level? A. Five B. Six C. Four D. Seven",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A new vSphere platform is being created. The platform will host virtual machines that will run management services and line-of-business applications. What should the architect consider when designing the number and type of clusters required? A. Maximum tolerable downtime B. Predicted platform growth C. Auditing requirements for the virtual machines D. The level of isolation required between virtual machine classifications",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is creating a network design for a new vSphere environment. Based on customer requirements, the environment must support the following types of traffic: ✑ Management ✑ vMotion ✑ vSAN ✑ Fault Tolerance ✑ Virtual machine traffic, which cannot be impacted by other types of traffic Which design recommendation can the architect make for a resilient infrastructure with vSphere network service tiering? A. Use different logical networks to ensure traffic is isolated with separate VLANs B. Use Network I/O Control and ensure appropriate share value is defined for different types of traffic giving priority to the virtual machines traffic C. Use two dedicated virtual switches with a single adapter each, dedicating one virtual switch for Management, vMotion, vSAN and Fault Tolerance traffic, and the second one for virtual machine traffic D. Use a NIC teaming policy based on the physical NIC load",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is designing a vSphere environment for a customer based on the following information: ✑ The vSphere cluster will have three hosts only due to budget considerations. ✑ A database cluster (node majority) consisting of three virtual machines will be running on the vSphere cluster. Which two recommendations can the architect make so that the customer achieves the highest level of application availability while taking into consideration operational resiliency? (Choose two.) A. Create VM-VM anti-affinity rules B. Set das.respectvmvmantiaffinityrules to false C. Create VM-Host anti-affinity rules D. Disable vSphere HA during maintenance E. Set das.ignoreinsufficienthbdatastore to true",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During a requirements gathering workshop, the customer provides the following requirement (REQ) and constraints (CON): ✑ REQ01: The customer is looking for a way to limit database virtual machine (VM) placement to save on CPU licensing costs. ✑ CON01: There is a single cluster with no budget to scale. ✑ CON02: All virtual machines must run on the consolidated cluster. Which two design decisions should the architect make to meet the customer requirement? (Choose two.) A. The solution must use VM-VM anti-affinity rules B. The solution must use vSphere DRS in manual mode C. The solution must use a vRealize Orchestrator workflow for VM placement D. The solution must use VM-Host affinity rules E. The solution must use vSphere VM and host DRS groups",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. During a requirements gathering workshop, a customer shares the following diagram regarding their availability service-level agreements (SLAs): [sampleXML/xmlfile-42_1.png] The customer states that there is no application level availability for legacy applications. Which recommendation could the architect make to meet the customer's high availability requirements for the legacy applications virtual machines? A. Enable vSphere HA and add a VM Override with VM Restart Priority set to Disabled B. Enable Fault Tolerance C. Achieve application availability with snapshots D. Enable vSphere HA and add a VM Override with VM Restart Priority set to Lowest",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements are true about gathering functional business and application requirements? (Choose two.) A. It focuses on functional requirements with C-level stakeholders B. It leverages a single set of questions for all stakeholders C. It might require multiple rounds of stakeholder interviews D. It builds stakeholder consensus E. It is a non-iterative process",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is designing a vSphere environment for a customer and learns that the customer has: ✑ A single vSphere cluster ✑ Two storage arrays with different RAID capabilities Which two design decisions should the architect make to maximize data availability and data performance for this customer? (Choose two.) A. Use Storage DRS. B. Use VMDK anti-affinity rules. C. Use multiple datastores for heartbeat. D. Use a minimum of three storage arrays. E. Use VM to host DRS rules.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is planning the physical server configuration for a vSAN-based infrastructure. Which operations mode should a RAID controller support to minimize potential server downtime during physical disk failures? A. RAID controller with Passthru mode B. RAID controller with RAID 5 mode C. RAID controller with RAID 10 mode D. RAID controller with RAID 6 mode",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The architect for a large enterprise is tasked with reviewing a proposed design created by a service partner. Which design elements are expected to be detailed within the physical design section of the documentation? A. A design diagram illustrating the configuration and specific attributes, such as IP addresses B. A list of requirements, constraints, and risks C. A solution architecture diagram with the components and data flow D. An entity relationship diagram describing upstream and downstream dependencies for specific service components",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization's existing vSphere environments are configured for Enhanced Linked Mode. The DevOps team automates the creation of hardened virtual machine images for various operating systems. Their continuous integration/continuous delivery (CI/CD) pipeline runs a task at the end of a successful build, which uploads the Open Virtualization Format (OV) image to a sandbox content library, deploys a virtual machine from the image, and then destroys these objects after quality checks are complete. The following requirements have been noted: ✑ All content libraries and images must be centrally created and managed. ✑ All images must be capable of being updated. ✑ All images must be refreshed and available to subscribed libraries within 24 hours. ✑ All images must provide details of the image contents and versions. ✑ All images must be capable of being reverted to a previous version. ✑ All images must be capable of having the hardware and guest operating system customized during deployment. Which three recommendations should the architect make to design a content library solution that will meet these requirements? (Choose three.) A. Create a local content library in the primary vSphere environment and enable publishing. B. Create and publish a new subscription to a new subscriber library for each target vSphere environment. C. Deploy the OVF images to vSphere and clone as an OVF template to a local content library. D. Deploy the OVF images to vSphere and clone as a VM template to a local content library. E. Edit the Auto Sync Refresh Interval advanced setting for each subscribed library. F. Add a new subscriber library from each vSphere environment.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a benefit of using a scale-out method for handling vSphere cluster growth? A. An increase in the recovery time objective (RTO) for the cluster B. Faster to reach the limit of virtual machines per host C. An overall reduction in the license costs for the cluster D. Less potential impact to virtual machines during a single host failure",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. During a requirements gathering workshop, the customer shares the following diagram regarding their availability service-level agreements (SLAs): [sampleXML/xmlfile-47_1.png] The customer wants database application level availability to always take precedence. What should the architect recommend to meet the customer's requirement? A. Enable vSphere HA and add a VM Override with VM Restart Priority set to Highest. B. Enable Fault Tolerance. C. Enable Sphere HA and maintain the default settings. D. Enable vSphere HA and add a VM Override with VM Restart Priority set to Lowest.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is reviewing a physical storage design. The customer has specified that a new active-passive based storage array will be used to provide storage for the vSphere clusters. Which configuration should for the architect recommended? A. VMW_SATP_LOCAL B. VMW_PSP_MRU C. VMW_SATP_DEFAULT_AA D. VMW_PSP_FIXED",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is designing a new VMware software-designed data center (SDDC) using vSphere 7 to meet the following requirements: ✑ The SDDC must be deployed at two locations: primary and secondary. ✑ vSphere Replication must be used to replicate virtual machines between the two locations. ✑ Site Recovery Manager must be used to orchestrate disaster recovery (DR) activities. ✑ One single-sign on (SSO) domain must be used to authenticate access at both locations. Which design decision should the architect make to meet these requirements? A. A vCenter Server Appliance will be deployed to each site. Unique SSO domains will be created per site. B. A vCenter Server will be installed on Windows virtual machines deployed to both sites. C. A vCenter Server Appliance will be deployed to each site. D. A vCenter Server Appliance will be deployed to the primary site only.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is designing an environment for a retail customer. The design will use a single small vCenter Server Appliance and a cluster of eight ESXi hosts at a remote site. There is a single 10 GbE connected network at the remote site to support all management services. It is not possible to create additional management networks at the remote site. Virtual machine backups at the site will be dependent on the vCenter Server being available. Which design decision should the architect make to maximize availability for backups? A. vCenter Server High Availability will be configured. B. The vCenter Server Appliance will be protected with vSphere Fault Tolerance. C. The cluster will be configured to use vSphere DRS in fully automated mode. D. The cluster will be configured with vSphere HA and set to restart virtual machines based on guest operating system heartbeat monitoring.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "As part of a requirements gathering workshop, the customer provides the following requirements for the design of a new greenfield virtual infrastructure: ✑ Some applications have a latency that must be less than 5 minutes. ✑ The solution must be able to support a workload growth rate of 10% per year. Which requirement classification is being gathered for the design documentation? A. Performance B. Manageability C. Recoverability D. Availability",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is designing a new vSphere cluster. The requirement is to provide a total of 96 CPU cores and 1.5 TB RAM across all hosts. The following information has been provided: ✑ Two different physical hardware profiles are available for the ESXi hosts in the cluster. - Profile 1: 16 CPU cores and 256 GB RAM - Profile 2: 32 CPU cores and 512 GB RAM ✑ Profile 2 is twice as expensive to purchase as Profile 1. Which two aspects should the architect consider when selecting the hardware profile? (Choose two.) A. The manufacturer and model of the CPUs in the hosts B. The amount of capacity available for failover of virtual machines within the cluster C. The downtime allowed for virtual machines that will be running within the cluster D. The cost to procure and maintain the hardware E. The number of virtual machines that will be running within the cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During a requirements gathering workshop, the customer provides the following requirement: A new vSphere platform must be designed securely and all interfaces must be protected against potential snooping. [sampleXML/xmlfile-50_3.png] How should this non-functional security requirement be documented? A. Interfaces must be audited. B. Encrypted channels must be used for all communications. C. Unauthorized access to interfaces must be reported within 15 minutes. D. Communications must be through Private VLANs (PVLAN).",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is designing a new backup solution for a vSphere platform that has been recently upgraded to vSphere 7. The architect wants the backup solution to perform the following: ✑ Full virtual machine image backup and restore ✑ Incremental virtual machine image backup and restore ✑ File level backup and restore within both Windows and Linux virtual machines ✑ LAN-free backup Which functional requirement should the architect include in the design of the new backup solution? A. The backup solution must leverage the VMware Consolidated Backup (VCB) framework. B. The backup solution must leverage virtual machine snapshots. C. The backup solution must leverage VMware vSphere Storage APIs - Data Protection. D. The backup solution must leverage VMware vStorage APIs for Data Protection (VADP).",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An architect is tasked with designing a new VMware software-defined data center (SDDC) solution for an online retail customer who has a primary and secondary data center as well as 10 distribution hubs. The customer has provided the following business requirements to help inform the design: ✑ The solution must support the running of up to 1,000 concurrent virtual machines across the primary and secondary data center. ✑ The solution must support the running of up to 20 concurrent virtual machines in each distribution hub. ✑ The solution must support the separation of management and lines-of-business application virtual machines. ✑ All management components (including directory services, backup, automation, operations and logging) must be deployed to the primary data center. ✑ All virtual infrastructure components must have redundancy of N+1. ✑ All sites are connected to each other using a wide area network that has multiple diversely routed links. ✑ The solution should support a monthly uptime target of 99.9%. ✑ The recovery time objective (RTO) for the solution must be four hours. ✑ The recovery point objective (RPO) for the solution must be 24 hours. Given the information from the customer, which assumption should the architect include in the design? A. All business application virtual machines can be deployed into a single cluster within the primary data center. B. Each distribution hub should be configured with a backup device. C. The wide area network has sufficient bandwidth to support centralized management. D. Each cluster will have a minimum of four hosts.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the listed requirements would be classified as a recoverability non-functional requirement? A. The platform must be integrated with existing change control policies. B. The platform must be able to support a maximum tolerable downtime (MTD) of 30 minutes. C. Maintenance windows must be scheduled to take place monthly during an established overnight period. D. The platform must be available 24 hours a day, 7 days a week with the exception of scheduled downtime.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect has 50 ESXi hosts to deploy and DHCP servers are not allowed on any network. Which automated host deployment method should the architect use? A. Stateless vSphere Auto Deploy B. Stateful vSphere Auto Deploy C. Scripted installation D. Interactive installation",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer defines a requirement to minimize the vMotion migration time during a maintenance period. The servers being used are equipped with eight 1 GbE network adapters. Per the defined logical network configuration, there are two network adapters each used for: ✑ Management traffic ✑ vMotion traffic ✑ iSCSI traffic ✑ Virtual machine traffic Which design decision should the architect make to meet the customer requirement? A. Use Network I/O Control to define a reservation for vMotion traffic. B. Implement Multi-NIC vMotion by adding additional vMotion VMkernels. C. Configure a dedicated TCP/IP stack for vMotion traffic. D. Combine vMotion and Management traffic to make use of four adapters.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An architect is preparing a design for a customer. Based on requirements, the architect recommends an HCI-based infrastructure with all-flash architecture. During the assessment, it is confirmed that the network throughput generated by virtual machines does not exceed 150 Mb/s. What is the minimum number and type of network adapters in each server that the architect can recommend to ensure requirements are met and there is no single point of failure? A. Two 1 GbE network adapters per server B. Four 1 GbE network adapters per server C. Four 10 GbE network adapters per server D. Two 10 GbE network adapters per server",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect decides to separate virtual desktops and application servers into separate vSphere clusters to meet security and management requirements. What are two implications of this design decision? (Choose two.) A. There will be an increase in management overhead. B. Identical hardware must be procured for all hosts. C. There will be a reduction in performance. D. The patching cycles will affect both clusters at the same time. E. There will be additional licensing and cost requirements for both clusters.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is considering placement of virtual machines within an existing VMware software-defined data center (SDDC). During the discovery phase, the following information is documented: Cluster One ✑ Six ESXi hosts ✑ vSphere HA with host failures cluster tolerates = 1 ✑ Proactive HA is enabled and set to automated ✑ Fully Automated vSphere DRS ✑ Transparent Page Sharing (TPS) is enabled Cluster Two ✑ Eight ESXi hosts ✑ vSphere HA with host failures cluster tolerates = 1 ✑ Proactive HA is disabled ✑ Partially Automated vSphere DRS ✑ Transparent Page Sharing (TPS) is disabled Cluster Three ✑ Three ESXi hosts ✑ vSphere HA with admission control is disabled ✑ Proactive HA is not supported ✑ Transparent Page Sharing (TPS) is disabled Virtual Machine Resource Profile 1 ✑ Memory sharing techniques should not be used ✑ Virtual machines should be automatically restarted in the event of host failure if resources are available ✑ Automated initial virtual machine placement Virtual Machine Resource Profile 2 ✑ Memory sharing techniques can be used ✑ Virtual machines should be protected from any host hardware failures ✑ Automated initial virtual machine placement Which two recommendations should the architect make for placement of the virtual machines to meet resource profile requirements? (Choose two.) A. All virtual machines matching Virtual Machine Resource Profile 2 should be placed on Cluster One. B. All virtual machines matching Virtual Machine Resource Profile 1 should be placed on Cluster One. C. All virtual machines matching Virtual Machine Resource Profile 2 should be placed on Cluster Two. D. All virtual machines matching Virtual Machine Resource Profile 1 should be placed on Cluster Two. E. All virtual machines matching Virtual Machine Resource Profile 2 should be placed on Cluster Three.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Following a recent acquisition, the architect learns that both companies use vSphere on-premise and will need to combine the data centers into one. The acquired company's licenses will not be renewed for cost-savings related to the acquisition. All consumed vSphere licenses must have active support to support line-of- business operations. The merged environment must maintain 25% spare capacity. The architect has a small budget remaining unallocated for hardware. The architect has calculated that the current vSphere environment can absorb the acquired company's virtual machines but the cluster will run at 90% memory utilization and at 50% CPU utilization. Which design decision can the architect make to incorporate the new company's virtual machines into the combined vSphere environment? A. Migrate the acquired company's virtual machines into the vSphere environment as it will currently fit. B. Use the current budget to add memory to the cluster to increase each ESXi host's capacity and add the new virtual machines. C. Purchase extra hosts to add to the cluster in anticipation of adding the acquired company's virtual machines. D. Purchase new licenses for some of the acquired company's ESXi hosts and add them to the cluster to hold the acquired company's virtual machines.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which requirement would be classified as a functional requirement within the application design documentation? A. The application must be hosted with redundancy levels of N+1 or better. B. Penetration testing must be executed quarterly with a pass rate of 80% or higher. C. The application must be capable of handling 200 transactions per second. D. Administrators must monitor the network traffic of the desired systems.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is designing a VMware solution for a customer to meet the following requirements: ✑ The solution must use investments in existing storage array that supports both block and file storage. ✑ The solution must support the ability to migrate workloads between hosts within a cluster. ✑ The solution must support resource management priorities. ✑ The solution must support the ability to connect virtual machines directly to LUNs. ✑ The solution should use existing 32G fabric infrastructure. ✑ There is no budget for additional physical hardware. Which design decision should the architect make to meet these requirements? A. The ESXi hosts will leverage Fibre Channel (FC). B. The ESXi hosts will leverage iSCSI. C. The ESXi hosts will leverage Fibre Channel over Ethernet (FCoE). D. The ESXi hosts will leverage NFS.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An architect is tasked with designing a new VMware software-defined data center (SDDC) using VMware vSAN. The architect uses a storage assessment tool to determine the storage requirements for the new vSAN cluster. The new SDDC is going to be deployed into the existing data center and must be connected to a shared core network switch. The architect decides to use vSAN ReadyNodes with the following configuration: ✑ Two disk groups with: - Write Intensive NVMe 800 GB drive for cache - Four 3.84 TB Mixed Use NVMe for capacity ✑ Four 10 GbE ports Which element represents a risk that should be included in this design? A. The number of 10 GbE capable ports in the vSAN ReadyNode B. The use of vSAN ReadyNodes C. The existing network is 10 GbE capable D. The use of NVMe drives for cache and capacity",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A VMware Service Provider is tasked with delivering a solution for continuous availability for a subset of Tier 1 virtual machines (VMs) and vApps running in their vSAN environment. The VMs make up a mission-critical application and there can be no data loss in the event of an outage at their primary data center. In the event of a regional outage, they have established a 10-minute recovery point objective (RPO). Failover/failback to the third site must be automated. They have the following in place: ✑ Two local data centers (primary and secondary) connected with 100 Gb dedicated fiber - 2ms round-trip time (RTT) latency between the sites ✑ A third data center located on another power grid - 70ms latency between the primary and secondary data centers ✑ Matching storage arrays at all locations Which two solutions could be used to meet the requirements? (Choose two.) A. Site Recovery Manager B. Snapshots C. vSAN Metro Cluster D. vSphere Data Protection E. vStorage APIs for Array Integration (VAAI)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "During a requirements gathering workshop, the customer provides the following information: ✑ Each host has 2 ֳ— 10 GbE NIC ✑ EtherChannel is not currently configured ✑ No changes can be made to the physical network ✑ Network throughput must be prioritized for defined critical services Which two recommendations should the architect make with regard to virtual networking? (Choose two.) A. Use Route Based on Physical NIC Load. B. Use Network I/O Control with Shares. C. Use Network I/O Control with Reservation. D. Use Link Aggregation Control Protocol (LACP). E. Use Network I/O Control with Limits.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A new real-time financial service application is being developed by the engineering team at a financial firm and will be released as a public Software-as-a-Service (SaaS) offering. The solutions architect has designed and deployed a new vSphere environment and the supporting network infrastructure for hosting all public services. ESXi hosts are configured to use Precision Time Protocol (PTP) and a local stratum-1 network time server. Application provisioning and scaling will be managed by VMware vRealize Automation and can be run on Microsoft Windows or multiple distributions of Linux. Which three recommendations should the architect include in the design to ensure that the service maintain timekeeping within an accuracy of one second? (Choose three.) A. Use Microsoft Windows Server as the guest operating system. B. Configure the chrony time-sync agent on each virtual machine guest operating system. C. Set the virtual hardware device to use Host System Time (NTP) for each virtual machine running the application. D. Add a precision clock virtual device to each virtual machine running the application. E. Use a Linux distribution as the guest operating system. F. Add a virtual watchdog timer (VWDT) device to each virtual machine running the application.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which requirement would be classified as a functional requirement within the design documentation? A. The system must perform virtual machine backups through an API. B. Virtual machines must be patched within one month of the patch release date. C. Virtual machines must be restarted within 30 minutes of a host failure. D. The system must be able to scale to support 500 concurrent virtual machines.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An architect is designing a new vSphere environment to meet the following requirements: ✑ The environment must support 5,000 virtual machines. ✑ The environment will be built initially using 350 hosts. Which vCenter Server appliance deployment size should the architect specify for the design? A. Large B. Small C. Tiny D. Medium",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An architect is considering placement of virtual machines within an existing VMware software-defined data center (SDDC). During the discovery phase, the following information is documented: Cluster One Six ESXi hosts [sampleXML/xmlfile-61_3.png] ✑ vSphere HA with host failures cluster tolerates = 1 ✑ Proactive HA is enabled and set to automated ✑ Fully Automated vSphere DRS ✑ Transparent Page Sharing (TPS) is enabled Cluster Two ✑ Eight ESXi hosts ✑ vSphere HA with host failures cluster tolerates = 1 ✑ Proactive HA is disabled ✑ Partially Automated vSphere DRS ✑ Transparent Page Sharing (TPS) is disabled Cluster Three ✑ Three ESXi hosts ✑ vSphere HA with admission control is disabled ✑ Proactive HA is not supported ✑ Transparent Page Sharing (TPS) is disabled Virtual Machine Resource Profile 1 ✑ Memory sharing techniques should not be used ✑ Virtual machines should be automatically restarted in the event of host failure if resources are available ✑ Automated initial virtual machine placement Virtual Machine Resource Profile 2 ✑ Memory sharing techniques should not be used ✑ Virtual machines should be protected from any host hardware failures ✑ Automated initial virtual machine placement Which two recommendations should the architect make for placement of the virtual machines to meet resource profile requirements? (Choose two.) A. All virtual machines matching Virtual Machine Resource Profile 2 should be placed on Cluster One. B. All virtual machines matching Virtual Machine Resource Profile 1 should be placed on Cluster One. C. All virtual machines matching Virtual Machine Resource Profile 2 should be placed on Cluster Two. D. All virtual machines matching Virtual Machine Resource Profile 1 should be placed on Cluster Two. E. All virtual machines matching Virtual Machine Resource Profile 2 should be placed on Cluster Three.",
+    "options": {},
+    "most_voted": "D"
+  }
+]
