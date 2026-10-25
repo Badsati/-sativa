@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Which three conditions are required for two FortiGate devices to form an OSPF adjacency? (Choose three.) A. OSPF interface network types match. B. OSPF router IDs are unique. C. OSPF interface priority settings are unique. D. Authentication settings match. E. OSPF link costs match.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which contains partial output from an IKE real-time debug. The administrator does not have access to the remote gateway. Based on the debug output, which configuration change can the administrator make to the local gateway to resolve the phase 1 negotiation error? A. In the phase 1 network configuration, set the IKE version to 2. B. In the phase 1 proposal configuration, add AES128-SHA128 to the list of encryption algorithms. C. In the phase 1 proposal configuration, add AESCBC-SHA2 to the list of encryption algorithms. D. In the phase 1 proposal configuration, add AES256-SHA256 to the list of encryption algorithms.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of a web filtering diagnose command. Which configuration change would result in non-zero results in the cache statistics section? A. set server-type rating under config system central-management B. set webfilter-cache enable under config system fortiguard C. set webfilter-force-off disable under config system fortiguard D. set ngfw-mode policy-based under config system settings",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits, which show the configuration on FortiGate and partial session information for internet traffic from a user on the internal network. If the priority on route ID 2 were changed from 10 to 0, what would happen to traffic matching that user session? A. The session would remain in the session table, but its traffic would now egress from both port1 and port2. B. The session would remain in the session table, and its traffic would egress from port2. C. The session would be deleted, and the client would need to start a new session. D. The session would remain in the session table, and its traffic would egress from port1.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits, which show the configuration on FortiGate and partial internet session information from a user on the internal network. An administrator would like to test session failover between the two service provider connections. What changes must the administrator make to force this existing session to immediately start using the other interface? (Choose two.) A. Configure set snat-route-change enable. B. Change the priority of the port2 static route to 5. C. Change the priority of the port1 static route to 11. D. unset snat-route-change to return it to the default setting.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two functions of automation stitches? (Choose two.) A. Automation stitches can be configured on any FortiGate device in a Security Fabric environment. B. An automation stitch configured to execute actions sequentially can take parameters from previous actions as input for the current action. C. Automation stitches can be created to run diagnostic commands and attach the results to an email message when CPU or memory usage exceeds specified thresholds. D. An automation stitch configured to execute actions in parallel can be set to insert a specific delay between actions.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a partial web filter profile configuration. Which action will FortiGate take if a user attempts to access www.dropbox.com, which is categorized as File Sharing and Storage? A. FortiGate will block the connection, based on the FortiGuard category based filter configuration. B. FortiGate will block the connection as an invalid URL. C. FortiGate will exempt the connection, based on the Web Content Filter configuration. D. FortiGate will allow the connection, based onthe URL Filter configuration.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which contains the partial output of the get vpn ipsec tunnel details command. Based on the output, which two statements are correct? (Choose two.) A. The npu_flag for this tunnel is 03. B. Different SPI values are a result of auto-negotiation being disabled for phase 2 selectors. C. Anti-replay is enabled. D. The npu_flag for this tunnel is 02.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a session table entry. Which statement about FortiGate behavior relating to this session is true? A. FortiGate redirected the client to the captive portal to authenticate, so that a correct policy match could be made. B. FortiGate forwarded this session without any inspection. C. FortiGate is performing security profile inspection using the CPU. D. FortiGate applied only IPS inspection to this session.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits, which contain the partial configurations of two VPNs on FortiGate. An administrator has configured two VPNs for two different user groups. Users who are in the Users-2 group are not able to connect to the VPN. After running a diagnostics command, the administrator discovered that FortiGate is not matching the user-2 VPN for members of the Users-2 group. Which two changes must the administrator make to fix the issue? (Choose two.) A. Use different pre-shared keys on both VPNs. B. Enable XAuth on both VPNs. C. Set up specific peer IDs on both VPNs. D. Change to aggressive mode on both VPNs.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows partial outputs from two routing debug commands. Which change must an administrator make on FortiGate to route web traffic from internal users to the internet, using ECMP? A. Set the priority of the static default route using port1 to 10. B. Set the priority of the static default route using port2 to 1. C. Set preserve-session-route to enable. D. Set snat-route-change to enable.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a partial routing table. Assuming all the appropriate firewall policies are configured, what two changes would an administrator need to make if they wanted to send traffic from a client directly connected to port3, to a server directly connected to port4? (Choose two.) A. Configure route leaking between VRF 12 and VRF 21. B. Disable auto-asic-offload as this is not supported between VRF instances. C. Configure RIPv2 to exchange route information between the VRF instances. D. Configure route leaking between port3 and port4. E. Enable SNAT on the relevant firewall policies to prevent RPF check drops.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the diagnose test application ipsmenitor 5 command used for? A. To enable IPS bypass mode B. To disable the IPS engine C. To restart all IPS engines and monitors D. To provide information regarding IPS sessions",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has configured two FortiGate devices for an HA cluster. While testing HA failover, the administrator notices that some of the switches in the network continue to send traffic to the former primary device. What can the administrator do to fix this problem? A. Configure remote link monitoring to detect an issue in the forwarding path. B. Configure set send-garp-on-failover enable under config system ha on both cluster members. C. Verify that the speed and duplex settings match between the FortiGate interfaces and the connected switch ports. D. Configure set link-failed-signal enable under config system ha on both cluster members.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement about IKE and IKE NAT-T is true? A. IKE is used to encapsulate ESP traffic in some situations, and IKE NAT-T is used only when the local FortiGate is using NAT on the IPsec interface. B. IKE is the standard implementation for IKEv1 and IKE NAT-T is an extension added in IKEv2. C. They both use UDP as their transport protocol and the port number is configurable. D. They each use their own IP protocol number.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which contains the partial output of a diagnose command. Based on the output, which two statements are correct? (Choose two.) A. The remote gateway has quick mode selectors containing a destination subnet of 10.1.2.0/24. B. The remote gateway IP is 10.200.5.1. C. DPD is disabled. D. Anti-replay is enabled.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement about the designated router (DR) and backup designated router (BDR) in an OSPF multi-access network is true? A. Only the DR receives link state information from non-DR routers. B. Non-DR and non-BDR routers form full adjacencies to DR only. C. Non-DR and non-BDR routers send link state updates and acknowledgements to 224.0.0.6. D. FortiGate first checks the OSPF ID to elect a DR.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has been assigned the task of creating a set of firewall policies which must be evaluated before any custom policies defined within the policy packages of managed FortiGate devices, across all 25 ADOMSs in FortiManager. How should the administrator accomplish this task? A. Create a footer policy in the Global ADOM containing the firewall policies that must be evaluated first, and then assign this footer policy to all other ADOMs. B. Create a header policy in the Global ADOM containing the firewall policies that must be evaluated first, and then assign this header policy to all other ADOMs. C. Move the FortiGate devices into a single globally scoped ADOM, and merge policy packages, inserting the new firewall policies at the top. D. Use a CLI script from the root ADOM on FortiManager to push these new policies to all FortiGate devices, through the FGFM tunnel.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which configuration can be used to reduce the number of BGP sessions in an IBGP network? A. route-reflector enable B. route-reflector-server enable C. route-reflector-client enable D. route-reflector-peer enable",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of a debug command. What can be concluded from the debug command output? A. The OSPF router with the ID 0.0.0.69 has its OSPF priority set to 0. B. The local FortiGate has a different MTU value from the OSPF router with ID 0.0.0.2, based on the state information. C. There are more than two OSPF routers on the wan2 network. D. The interface ToRemote is a broadcast OSPF network.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a FortiGate configuration. An administrator is troubleshooting a web filter issue on FortiGate. The administrator has configured a web filter profile and applied it to a policy; however, the web filter is not inspecting any traffic that is passing through the policy. What must the administrator do to fix the issue? A. Increase webfilter-timeout. B. Change protocol to TCP. C. Enable fortiguard-anycast. D. Disable webfilter-force-off.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two configuration commands change the default behavior for content-inspected traffic while FortiGate is in conserve mode? (Choose two.) A. set av-failopen off B. set av-failopen pass C. set fail-open enable D. set ips fail-open disable",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of a diagnose command. What can you conclude from the output shown in the exhibit? (Choose two.) A. This is a pinhole session created to allow traffic for a protocol that requires additional sessions to operate through FortiGate. B. This is an expected session created by the IPS engine. C. Traffic in the original direction (coming from the IP address 10.171.121.38) will be routed to the next-hop IP address 10.200.1.1. D. Traffic in the original direction (coming from the IP address 10.171.121.38) will be routed to the next-hop IP address 10.0.1.10.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have configured FortiManager as a local FDS to provide FortiGate AV and IPS updates, but FortiGate devices are not receiving updates to their AV signature databases, IPS engines, or IPS signature databases. Which two settings need to be verified for these features to function? (Choose two.) A. FortiGate needs to have the server list entry for FortiManager set to server-type update under config system central-management. B. FortiManager needs to be the license validation server for FortiGate devices trying to retrieve updated AV and IPS packages. C. Service access needs to be enabled on FortiManager under System Settings > Network. D. FortiGate needs to have include-default-servers disabled under config system central-management.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of a debug command. Which two statements about the output are true? (Choose two.) A. In the network connected to port 4, two OSPF routers are down. B. Based on the network type of port 4, OSPF hello packets will be sent to 224.0.0.5. C. Based on the network type of port 4, OSPF hello packets will be sent to 224.0.0.6. D. There are a total of 5 OSPF routers attached to the Port4 network segment.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows partial outputs from two routing debug commands. Why is the port2 default route not in the second command output? A. The port2 interface is disabled in the FortiGate configuration. B. The port1 default route has a lower distance than the default route using port2. C. The port1 default route has a higher priority value than the default route using port2. D. The port1 default route has a lower priority value than the default route using port2.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In which two ways does FortiManager function when it is deployed as a local FDS? (Choose two.) A. It provides VM license validation services. B. It supports rating requests from non-FortiGate devices. C. It caches available firmware updates for unmanaged devices. D. It can be configured as an update server, a rating server, or both.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which contains the output of a debug command. If the default settings are in place, what can be concluded about the conserve mode shown in the exhibit? A. FortiGate is currently blocking all new sessions regardless of the content inspection requirements or configuration settings due to high memory use. B. FortiGate is currently allowing new sessions that require flow-based or proxy-based content inspection but is not performing inspection on those sessions. C. FortiGate is currently blocking new sessions that require flow-based or proxy-based content inspection. D. FortiGate is currently allowing new sessions that require flow-based content inspection and blocking sessions that require proxy-based content inspection.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which contains a screenshot of some phase 1 settings. The VPN is not up. To diagnose the issue, the administrator enters the following CLI commands to an SSH session on FortiGate: diagnose vpn ike log-filter dst-addr4 10.0.10.1 diagnose debug application ike -1 However, the IKE real-time debug does not show any output. Why? A. The administrator must also run the command diagnose debug enable. B. The administrator must enable the following real-time debug: diagnose debug application ipsec -1. C. The log-filter setting is incorrect. The VPN traffic does not match this filter. D. The debug shows only error messages. If there is no output, then the phase 1 and phase 2 configurations match.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which contains partial output from an IKE real-time debug. Which two statements about this debug output are correct? (Choose two.) A. The initiator provided remote as its IPsec peer ID. B. It shows a phase 2 negotiation. C. Perfect Forward Secrecy (PFS) is enabled in the configuration. D. The local gateway IP address is 10.0.0.1.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements about an auxiliary session are true? (Choose two.) A. With the auxiliary session setting disabled, only auxiliary sessions are offloaded. B. With the auxiliary session setting enabled, two sessions are created in case of routing change. C. With the auxiliary session setting enabled, ECMP traffic is accelerated to the NP6 processor. D. With the auxiliary session setting disabled, for each traffic path, FortiGate uses the same auxiliary session.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which ADVPN configuration must be configured using a script on FortiManager, when using VPN Manager to manage FortiGate VPN tunnels? A. Set protected network to all B. Enable AD-VPN in IPsec phase 1 C. Configure IP addresses on IPsec virtual interfaces D. Disable add-route on hub",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of a diagnose command What can you conclude from the RTT value? A. Its value represents the time it takes to receive a response after a rating request is sent to a particular server. B. Its value is incremented with each packet lost. C. It determines which FortiGuard server is used for license validation. D. Its initial value is statically set to 10.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which action will FortiGate take when using the default settings for SSL certificate inspection, where the server name indication (SNI) does not match either the common name (CN) or any of the subject altemative names (SAN) in the server certificate? A. FortiGate uses the CN information from the Subject field in the server certificate. B. FortiGate uses the first entry listed in the SAN field in the server certificate. C. FortiGate uses the SNI from the user's web browser. D. FortiGate closes the connection because this represents an invalid SSL/TLS configuration.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of a BGP debug command. What can be concluded about the router in this scenario? A. The router 100.64.3.1 needs to update the local AS number in its BGP configuration in order to bring up the BGP session with the local router. B. The State/PfxRcd for neighbor 100.64.3.1 will not change until an administrator on the local router adjusts the inbound route filtering so that prefixes received can be added to the RIB. C. All of the neighbors displayed are part of a single BGP configuration on the local router with the neighbor-range set to a value of 4. D. The BGP session with peer 10.127.0.75 is up.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How are bulk configuration changes made using FortiManager CLI scripts? (Choose two.) A. When run on the All FortiGate in ADOM, changes are automatically installed without the creation of a new revision history. B. When run on the Device Database, changes are applied directly to the managed FortiGate device. C. When run on the Remote FortiGate directly, administrators do not have the option to review the changes prior to installation. D. When run on the Policy Package, ADOM database, you must use the installation wizard to apply the changes to the managed FortiGate device.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two tasks are automated using the Import Configuration wizard on FortiManager? (Choose two.) A. Importing firewall address objects from managed devices B. Importing interface mappings from managed devices C. Importing static and dynamic route configurations from managed devices D. Importing devices to FortiManager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement about protocol options is true? A. Protocol options allows administrators a streamlined method to instruct FortiGate to block all sessions corresponding to disabled protocols. B. Protocol options allows administrators the ability to configure the Any setting for all enabled protocols which provides the most efficient use of system resources. C. Protocol options allow administrators to configure a maximum number of sessions for each configured protocol. D. Protocol options allows administrators to configure which Layer 4 port numbers map to upper-layer protocols, such as HTTP, SMTP, FTP, and so on.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator has created a VPN community within VPN Manager on FortiManager. They also added gateways to the VPN community and are now trying to create firewall policies to permit traffic over the tunnel; however, the VPN interfaces are not listed as available options. What step must the administrator take to resolve this issue? A. Install the VPN community and gateway configuration to the FortiGate devices, in order for the interfaces to be displayed within Policy & Objects on FortiManager B. Set up all of the phase 1 settings in the VPN community that they neglected to set up initially. The interfaces will be automatically generated after the administrator configures all of the required settings. C. Refresh the device status from the Device Manager so that FortiGate will populate the IPsec interfaces. D. Create interface mappings for the IPsec VPN interfaces, before they can be used in a policy.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of a diagnose command. What can be concluded about the debug output in this scenario? A. Servers with a negative TZ value are less preferred for rating requests. B. There is a natural correlation between the value in the Packets field and the value in the Weight field. C. FortiGate used 64.26.151.37 as the initial server to validate its contract. D. The first server provided to FortiGate when it performed a DNS query looking for a list of rating servers, was 121.111.236.179.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a session entry. Which statement about this session is true? A. It is an ICMP session from 10.1.10.10 to 10.200.1.1. B. Return traffic to the initiator is sent to 10.1.0.1. C. It is an ICMP session from 10.1.10.1 to 10.200.5.1. D. Return traffic to the initiator is sent to 10.200.1.254.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which shows a central management configuration. Which server will FortiGate choose for web filter rating requests, if 10.0.1.240 is experiencing an outage? A. Public FortiGuard servers B. 10.0.1.243 C. 10.0.1.242 D. 10.0.1.244",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of diagnose sys session list. If the HA ID for the primary device is 0, what will happen if the primary fails and the secondary becomes the primary? A. Traffic for this session continues to be permitted on the new primary device after failover, without requiring the client to restart the session with the server. B. The secondary device has this session synchronized; however, because application control is applied, the session will be marked dirty and have to be re-evaluated after failover. C. The session state will be preserved but the kernel will need to re-evaluate the session due to NAT being applied. D. The session will be removed from the session table of the secondary device due to the presence of allowed error packets, which will force the client to restart the session with the server.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which contains partial output from an IKE real-time debug. Why did the tunnel not come up? A. The local gateway has configured less secure encryption and hashing algorithms compared to the remote gateway. B. The Diffie-Hellman group does not match on the local and remote gateways. C. The proposal ID does not match between local and remote gateways. D. The encapsulation method for phase 2 is set to none on local and remote gateways.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of diagnose sys session stat. Which statement about the output shown in the exhibit is correct? A. There are two sessions that have not been removed in case of any out-of-order packets that arrive. B. There are 166 TCP sessions waiting to complete the three-way handshake. C. 162 sessions have been deleted because of memory page exhaustion. D. All the sessions in the session table are TCP sessions.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which contains the output of the diagnose vpn tunnel list. Which command will capture ESP traffic for the VPN named DialUp_0? A. diagnose sniffer packet any ‘esp and host 10.200.3.2’ B. diagnose sniffer packet any ‘ip proto 50’ C. diagnose sniffer packet any ‘host 10.0.10.10’ D. diagnose sniffer packet any ‘port 4500’",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of a real-time debug. Which statement about this output is true? A. The requested URL belongs to category ID 255. B. The server hostname was extracted from the SNI in the client request, or from the CN in the server certificate. C. FortiGate found the requested URL in its local cache. D. This web request was inspected using the ftgd-allow web filter profile.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits, which contain the network topology and BGP configuration for a hub. An administrator is trying to configure ADVPN with a hub and spoke VPN setup using iBGP. All the VPNs are up and connected to the hub. The hub is receiving route information from both spokes over iBGP; however, the spokes are not receiving route information from each other. What change must the administrator make to the hub BGP configuration so that the routes learned from one spoke are forwarded to the other spoke? A. Enable route redistribution under config router bgp. B. Configure the hub as a route reflector. C. Configure auto-discovery-sender on the hub. D. Add a prefix list to the hub that permits routes to be shared between the spokes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which contains a TCL script configuration on FortiManager. An administrator has configured the TCL script on FortiManager, but the TCL script failed to apply any changes to the managed device after being run. Why did the TCL script fail to make any changes to the managed device? A. The TCL script must start with #include <>. B. The TCL procedure lacks the required loop statements to iterate through the changes. C. There is no corresponding #! to signify the end of the script. D. The TCL procedure run_cmd has not been created.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two statements about the Security Fabric are true? (Choose two.) A. Only the root FortiGate collects network topology information and forwards it to FortiAnalyzer. B. Only the root FortiGate sends logs to FortiAnalyzer. C. Only FortiGate devices with fabric-object-unification set to default will receive and synchronize global CMDB objects sent by the root FortiGate. D. FortiGate uses FortiTelemetry protocol to communicate with FortiAnalyzer.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements about application-layer test commands are true? (Choose two.) A. Some of them display real-time application debugs. B. Some of them can be used to restart an application. C. Some of them display statistics and configuration information about a feature or process. D. Some of them only display output, after you run the diagnose debug console enable command.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What does the dirty flag mean in a FortiGate session configured for NGFW policy mode? A. The existing session table entry has been updated with the app_id and the firewall policy table needs to be checked for a match. B. The application or URL category is unknown and needs to be rescanned by the IPS engine to try to identify the Layer 7 details. C. The URL category for this session has been updated by FortiGuard and the session needs to be checked against the policy again to ensure proper web filtering is applied. D. Traffic has been identified as coming from an application that is not allowed and the relevant replacement message needs to be displayed to the user, if configured.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of a BGP debug command. Which statement explains why the state of the 10.200.3.1 peer is Connect? A. The local router has a different AS number than the remote peer. B. The local router is receiving BGP keepalives from the remote peer, but the local peer has not received the openConfirm yet. C. The local router initiated the BGP session to 10.200.3.1 but did not receive a response. D. The router 10.200.3.1 has authentication configured for BGP and the local router does not.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit, which contains a CLI script configuration on FortiManager. An administrator configured the CLI script on FortiManager, but the script failed to apply any changes to the managed device after being executed. What are two reasons why the script did not make any changes to the managed device? (Choose two.) A. Static routes can be added using only TCL scripts. B. The commands that start with the # sign did not run. C. CLI scripts must start with #!. D. Incomplete commands can cause CLI scripts to fail.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator wants to capture encrypted phase 2 traffic between two FortiGate devices using the built-in sniffer. If the administrator knows that there is no NAT device located between both FortiGate devices, which command should the administrator run? A. diagnose sniffer packet any ‘ah’ B. diagnose sniffer packet any ‘ip proto 50’ C. diagnose sniffer packet any ‘udp port 4500’ D. diagnose sniffer packet any ‘udp port 500’",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit, which contains partial output from an IKE real-time debug. Based on the debug output, which phase 1 setting is enabled in the configuration of this VPN? A. auto-discovery-receiver B. auto-discovery-forwarder C. auto-discovery-shortcut D. auto-discovery-sender",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit, which shows the output of get system ha status. NGFW-1 and NGFW-2 have been up for a week. Which two statements about the output are true? (Choose two.) A. If FGVM...649 is rebooted, FGVM...650 will become the primary and retain that role, even after FGVM...649 rejoins the cluster. B. If no action is taken, the primary FortiGate will leave the cluster due to the current sync status. C. If port7 becomes disconnected on the secondary, both FortiGate devices will elect itself the primary. D. If a configuration change is made to the primary FortiGate at this time, the secondary will initiate a synchronization reset.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two conditions would prevent a static route from being added to the routing table? (Choose two.) A. There is another other route to the same destination, with a lower distance. B. The route has a lower priority value than another route to the same destination. C. The next-hop IP address is unreachable. D. The interface specified in the route configuration is down.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In which two states is a given session categorized as ephemeral? (Choose two.) A. A TCP session waiting for FIN ACK B. A UDP session with packets sent and received C. A UDP session with only one packet received D. A TCP session waiting for the SYN ACK",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two statements about conserve mode are true? (Choose two.) A. FortiGate starts taking the configured action for new sessions requiring content inspection when the system memory reaches the configured red threshold. B. FortiGate starts dropping all new sessions when the system memory reaches the configured red threshold. C. FortiGate enters conserve mode when the system memory reaches the configured extreme threshold. D. FortiGate exits conserve mode when the system memory goes below the configured green threshold.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
