@@ -1,0 +1,257 @@
+[
+  {
+    "question": "Refer to the exhibit. Examine the FortiGate user group configuration and the Windows AD LDAP group membership information shown in the exhibit. FortiGate is configured to authenticate SSL VPN users against Windows AD using LDAP. The administrator configured the SSL VPN user group for SSL VPN users. However, the administrator noticed that both the t and student and jsmith users can connect to SSL VPN. Which change can the administrator make on FortiGate to restrict the SSL VPN service to the student user only? A. In the SSL VPN user group configuration, set Group Name to CN=SSLVPN,CN=Users,DC=trainingAD,DC=training,DC=lab. B. In the SSL VPN user group configuration, change Name to CN=SSLVPN,CN=Users,DC=trainingAD,DC=training,DC=lab. C. In the SSL VPN user group configuration, set Group Name to CN=Domain Users,CN=Users,DC=trainingAD,DC=training,DC=lab. D. In the SSL VPN user group configuration, change Type to Fortinet Single Sign-On (FSSO).",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. Examine the firewall policy configuration and SSID settings. An administrator has configured a guest wireless network on FortiGate using the external captive portal. The administrator has verified that the external captive portal URL is correct. However, wireless users are not able to see the captive portal login page. Given the configuration shown in the exhibit and the SSID settings, which configuration change should the administrator make to fix the problem? A. Disable the user group from the SSID configuration. B. Enable the captive-portal-exempt option in the firewall policy with the ID 11. C. Apply a guest.portal user group in the firewall policy with the ID 11. D. Include the wireless client subnet range in the Exempt Source section.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements about the MAC-based 802.1X security mode available on FortiSwitch are true? (Choose two.) A. FortiSwitch authenticates a single device, and opens the port to other devices connected to the port. B. FortiSwitch authenticates each device connected to the port. C. It cannot be used in conjunction with MAC authentication bypass. D. FortiSwitch can grant different access levels to each device connected to the port.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A wireless network in a school provides guest access using a captive portal to allow unregistered users to self-register and access the network. The administrator is requested to update the existing configuration to provide captive portal authentication through a secure connection (HTTPS). Which two changes must the administrator make to enforce HTTPS authentication? (Choose two.) A. Create a new SSID with the HTTPS captive portal URL. B. Enable HTTP redirect in the user authentication settings. C. Disable HTTP administrative access on the guest SSID to enforce HTTPS connection. D. Update the captive portal URL to use HTTPS on FortiGate and FortiAuthenticator.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. The exhibits show the wireless network (VAP) SSID profiles defined on FortiManager and an AP profile assigned to a group of APs that are supported by FortiGate. None of the APs are broadcasting the SSIDs defined by the AP profile. Which changes do you need to make to enable the SSIDs to broadcast? A. In the SSIDs section, enable Tunnel. B. Enable one channel in the Channels section. C. Enable multiple channels in the Channels section and enable Radio Resource Provision. D. In the SSIDs section, enable Manual and assign the networks manually.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the IPsec VPN phase 1 configuration shown in the exhibit. An administrator wants to use certificate-based authentication for an IPsec VPN user. Which three configuration changes must you make on FortiGate to perform certificate-based authentication for the IPsec VPN user? (Choose three.) A. Create a PKI user for the IPsec VPN user, and then configure the IPsec VPN tunnel to accept the PKI user as peer certificate. B. In the Authentication section of the IPsec VPN tunnel, in the Method drop-down list, select Signature, and then select the certificate that FortiGate will use for IPsec VPN. C. In the IKE section of the IPsec VPN tunnel, in the Mode field, select Main (ID protection). D. Import the CA that signed the user certificate. E. Enable XAUTH on the IPsec VPN tunnel.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are investigating a report of poor wireless performance in a network that you manage. The issue is related to an AP interface in the 5 GHz range. You are monitoring the channel utilization over time. What is the recommended maximum utilization value that an interface should not exceed? A. 85% B. 95% C. 75% D. 65%",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which CLI command should an administrator use to view the certificate verification process in real time? A. diagnose debug application foauthd -1 B. diagnose debug application radiusd -1 C. diagnose debug application authd -1 D. diagnose debug application fnbamd -1",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two statements about the guest portal on FortiAuthenticator are true? (Choose two.) A. Each remote user on FortiAuthenticator can sponsor up to 10 guest accounts. B. Administrators must approve all guest accounts before they can be used. C. The guest portal provides pre and post-log in services. D. Administrators can use one or more incoming parameters to configure a mapping rule for the guest portal.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. In the wireless configuration shown in the exhibits, an AP is deployed in a remote site and has a wireless network (VAP) called Corporate deployed to it. The network is a tunnelled network; however, clients connecting to a wireless network require access to a local printer. Clients are trying to print to a printer on the remote site, but are unable to do so. Which configuration change is required to allow clients connected to the Corporate SSID to print locally? A. Configure split-tunneling in the vap configuration. B. Configure split-tunneling in the wtp-profile configuration. C. Disable the Block Intra-SSID Traffic (Intra-vap-privacy) setting on the SSID (VAP) profile. D. Configure the printer as a wireless client on the Corporate wireless network.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which EAP method requires the use of a digital certificate on both the server end and the client end? A. EAP-TTLS B. PEAP C. EAP-GTC D. EAP-TLS",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the FortiManager configuration and FortiGate CLI output shown in the exhibit. An administrator is testing the NAC feature. The test device is connected to a managed FortiSwitch device (S224EPTF19005867) on port2. After applying the NAC policy on port2 and generating traffic on the test device, the test device is not matching the NAC policy; therefore, the test device remains in the onboarding VLAN. Based on the information shown in the exhibit, which two scenarios are likely to cause this issue? (Choose two.) A. Management communication between FortiGate and FortiSwitch is down. B. The MAC address configured on the NAC policy is incorrect. C. The device operating system detected by FortiGate is not Linux. D. Device detection is not enabled on VLAN 4089.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two pieces of information can the diagnose test authserver ldap command provide? (Choose two.) A. It displays whether the admin bind user credentials are correct. B. It displays whether the user credentials are correct. C. It displays the LDAP codes returned by the LDAP server. D. It displays the LDAP groups found for the user.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are setting up an SSID (VAP) to perform RADIUS-authenticated dynamic VLAN allocation. Which three RADIUS attributes must be supplied by the RADIUS server to enable successful VLAN allocation? (Choose three.) A. Tunnel-Private-Group-ID B. Tunnel-Pvt-Group-ID C. Tunnel-Preference D. Tunnel-Type E. Tunnel-Medium-Type",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the FortiManager information shown in the exhibit. Which two statements about the FortiManager status are true? (Choose two.) A. FortiSwitch manager is working in per-device management mode. B. FortiSwitch is not authorized. C. FortiSwitch manager is working in central management mode. D. FortiSwitch is authorized and offline.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is testing the connectivity for a new VLAN. The devices in the VLAN are connected to a FortiSwitch device that is managed by FortiGate. Quarantine is disabled on FortiGate. While testing, the administrator noticed that devices can ping FortiGate and FortiGate can ping the devices. The administrator also noticed that inter-VLAN communication works. However, intra-VLAN communication does not work. Which scenario is likely to cause this issue? A. The native VLAN configured on the ports is incorrect. B. The FortiSwitch MAC address table is missing entries. C. The FortiGate ARP table is missing entries. D. Access VLAN is enabled on the VLAN.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. By default, FortiOS creates the following DHCP server scope for the FortiLink interface as shown in the exhibit. What is the objective of the vci-string setting? A. To ignore DHCP requests coming from FortiSwitch and FortiExtender devices B. To reserve IP addresses for FortiSwitch and FortiExtender devices C. To restrict the IP address assignment to FortiSwitch and FortiExtender devices D. To restrict the IP address assignment to devices that have FortiSwitch or FortiExtender as their hostname",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has configured an SSID in bridge mode for corporate employees. All APs are online and provisioned using default AP profiles. Employees are unable to locate the SSID to connect. Which two configurations can the administrator verify? (Choose two.) A. Verify that the broadcast SSID option is enabled in the SSID configuration. B. Verify that the Block Intra-SSID Traffic (Intra-vap-privacy) option in the SSID configuration is disabled. C. Verify that the SSID to an AP group that should be broadcasting the SSID is applied. D. Verify that the SSID is manually applied on AP profiles for both 2.4 GHz and 5 GHz radios.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the purpose of enabling Windows Active Directory Domain Authentication on FortiAuthenticator? A. It enables FortiAuthenticator to use Windows administrator credentials to perform an LDAP lookup for a user search. B. It enables FortiAuthenticator to use a Windows CA certificate when authenticating RADIUS users. C. It enables FortiAuthenticator to import users from Windows AD. D. It enables FortiAuthenticator to register itself as a Windows trusted device to proxy authentication using Kerberos.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the LDAP server configuration shown in the exhibit. Note that the Username setting has been expanded to display its full content. On the Windows AD server 10.0.1.10, the administrator used dsquery, which returned the following output: >dsquery user -samid student \"CN=student,CN=Users,DC=trainingAD,DC=training,DC=lab\" According to the output, which FortiGate LDAP setting is configured incorrectly? A. Common Name Identifier B. Bind Type C. Distinguished Name D. Username",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the FortiGate configuration, FortiAnalyzer logs, and FortiGate widget shown in the exhibit. An administrator is testing the Security Fabric quarantine automation. The administrator added FortiAnalyzer to the Security Fabric, and configured an automation stitch to automatically quarantine compromised devices. The test device (10.0.2.1) is connected to a managed FortiSwitch device. After trying to access a malicious website from the test device, the administrator verifies that FortiAnalyzer has a log for the test connection. However, the device is not getting quarantined by FortiGate, as shown in the quarantine widget. Which two scenarios are likely to cause this issue? (Choose two.) A. The web filtering rating service is not working. B. FortiAnalyzer does not have a valid threat detection services license. C. The device does not have FortiClient installed. D. FortiAnalyzer does not consider the malicious website an indicator of compromise (IOC).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. Examine the troubleshooting outputs shown in the exhibits. Users have been reporting issues with the speed of their wireless connection in a particular part of the wireless network. The interface that is having issues is the 2.4 GHz interface that is currently configured on channel 6. The administrator of the wireless network has investigated and surveyed the local RF environment using the tools available at the AP and FortiGate. Which configuration would improve the wireless connection? A. Change the AP 2.4 GHz channel to 11 B. Change the AP 2.4 GHz channel to 1 C. Change the AP 2.4 GHz channel to 9. D. Change the AP 2.4 GHz channel to 13.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the debug output shown in the exhibit. Which two statements about the RADIUS debug output are true? (Choose two.) A. The user student belongs to the SSLVPN group. B. User authentication failed. C. The RADIUS server sent a vendor-specific attribute in the RADIUS response. D. User authentication succeeded using MSCHAP.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which two statements about FortiSwitch manager are true? (Choose two.) A. Per-device management is the default management mode on FortiManager. B. FortiManager obtains the FortiSwitch status information by querying the FortiGate REST API every three minutes. C. If the administrator makes any changes on FortiSwitch manager, they must also install those changes on FortiGate so that those changes are applied on the managed switches. D. Any switch discovered or authorized on FortiGate must be added manually on FortiSwitch manager.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements about MAC address quarantine by redirect mode are true? (Choose two.) A. The quarantined device is moved to the quarantine VLAN. B. The device MAC address is added to the QuarantinedDevices firewall address group. C. It is the default mode for MAC address quarantine. D. The quarantined device is kept in the current VLAN.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the FortiSwitch security policy shown in the exhibit. If the security profile shown in the exhibit is assigned to all ports on a FortiSwitch device for 802.1X authentication, which statement about the switch is correct? A. FortiSwitch cannot authenticate multiple devices connected to the same port. B. FortiSwitch will try to authenticate non-802.1X devices using the device MAC address as the username and password. C. FortiSwitch will assign non-802.1X devices to the onboarding VLAN. D. All EAP messages will be terminated on FortiSwitch.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are configuring a FortiGate wireless network to support automated wireless client quarantine using IOC. Which two configurations must you put in place for a wireless client to be quarantined successfully? (Choose two.) A. Configure the wireless network to be in tunnel mode. B. Configure the FortiGate device in the Security Fabric with a FortiAnalyzer device. C. Configure a firewall policy to allow communication. D. Configure the wireless network to be in bridge mode.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the RADIUS server configuration shown in the exhibit. An administrator has configured a RADIUS server on FortiGate that points to FortiAuthenticator. FortiAuthenticator is acting as an authentication proxy and is configured to relay all authentication requests to a remote Windows AD server using LDAP. While testing the configuration, the administrator noticed that the diagnose test authserver command worked with PAP; however, authentication requests failed when using MSCHAP2. Which two solutions can the administrator implement to get MSCHAP2 authentication to work? (Choose two.) A. On FortiAuthenticator, enable Windows Active Directory Domain Authentication to add FortiAuthenticator to the Windows domain. B. On FortiGate, configure the NAS IP setting on the RADIUS server. C. On FortiAuthenticator, change the back-end authentication server from LDAP to RADIUS. D. On FortiGate, update the Secret setting on the RADIUS server.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where can FortiGate learn the FortiManager IP address or FQDN for zero-touch provisioning? A. From an LDAP server using a simple bind operation B. From a TFTP server C. From a DHCP server using options 240 and 241 D. From a DNS server using A or AAAA records",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which FortiSwitch VLANs are automatically created on FortiGate when the first FortiSwitch device is discovered? A. default, quarantine, rspan, voice, video, onboarding, and nac_segment B. access, quarantine, rspan, voice, video, and onboarding C. default, quarantine, rspan, voice, video, and nac_segment D. fortilink, quarantine, erspan, voice, video, and onboarding",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit showing a network topology and SSID settings. FortiGate is configured to use an external captive portal. However, wireless users are not able to see the captive portal login page. Which configuration change should the administrator make to fix the problem? A. Enable NAT in the firewall policy with the ID 13. B. Add the FortiAuthenticator and WindowsAD address objects as exempt destinations/services. C. Enable the captive-portal-exempt option in the firewall policy with the ID 12. D. Remove the guest.portal user group in the firewall policy with the ID 12.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the network diagram and packet capture shown in the exhibit. The packet capture was taken between FortiGate and FortiAuthenticator, and shows a RADIUS Access-Request packet sent by FortiSwitch to FortiAuthenticator through FortiGate. Why does the User-Name attribute in the RADIUS Access-Request packet contain the client MAC address? A. The client is performing AD machine authentication. B. FortiSwitch is authenticating the client using MAC authentication bypass. C. The client is performing user authentication. D. FortiSwitch is sending a RADIUS accounting message to FortiAuthenticator.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the FortiGate RSSO configuration shown in the exhibit. FortiGate is configured to receive RADIUS accounting messages on port3 to authenticate RSSO users. The users are located behind port3, and the internet link is connected to port1. FortiGate is processing incoming RADIUS accounting messages successfully, and RSSO users are getting associated with the RSSO Group user group. However, all the users are able to access the internet, and the administrator wants to restrict internet access to RSSO users only. Which configuration change should the administrator make to fix the problem? A. Change the RADIUS Attribute Value setting to match the name of the RADIUS attribute containing the group membership information of the RSSO users. B. Add RSSO Group to the firewall policy. C. Enable Security Fabric Connection on port3. D. Create a second firewall policy from port3 to port1, and select the target destination subnets.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. A device connected to port2 on FortiSwitch cannot access the network. The port is assigned a security policy to enforce 802.1X authentication. While troubleshooting the issue, the administrator obtains the debug output shown in the exhibit. Which two scenarios are likely to cause this issue? (Choose two.) A. The device is not configured for 802.1X authentication. B. The device has been quarantined for 3600 seconds. C. The device has been assigned the guest VLAN. D. The device does not support 802.1X authentication.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit showing certificate values. Wireless guest users are unable to authenticate because they are getting a certificate error while loading the captive portal login page. This URL string is the HTTPS POST URL guest wireless users see when attempting to access the network using the web browser: https://fac.trainingad.training.com/guests/login/? login&post=https://auth.trainingad.training.lab:1003/fgtauth&magic=000a038293d1f411&usermac=b8:27:eb:d8:50:02&apmac=70:4c:a5:9d:0d:28&apip=10.10.100.2&userip=10.0.3.1&ssid=Guest03&apname=PS221ETF18000148&bssid=70:4c:a5:9d:0d:30 Which two settings are the likely causes of the issue? (Choose two.) A. The external server FQDN is incorrect. B. The wireless user’s browser is missing a CA certificate. C. The FortiGate authentication interface address is using HTTPS. D. The user address is not in DDNS form.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When you configure a FortiAP wireless interface for auto TX power control, which statement describes how it configures its transmission power? A. Every 30 seconds, the AP will measure the signal strength of the AP using the client. The AP will adjust its signal strength up or down until the AP signal is detected at -70 dBm. B. Every 30 seconds, FortiGate measures the signal strength of adjacent AP interfaces. It will adjust its own AP power to match the adjacent AP signal strength. C. Every 30 seconds, FortiGate measures the signal strength of adjacent FortiAP interfaces. It will adjust the adjacent AP power to be detectable at -70 dBm. D. Every 30 seconds, FortiGate measures the signal strength of the weakest associated client. The AP will then configure its radio power to match the detected signal strength of the client.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the sections of the configuration shown in the output. What action will FortiGate take when verifying the student certificate through OCSP? A. Reject the student certificate if the OCSP server replies that the student certificate status is unknown B. Not verify the OCSP server certificate C. Use the OCSP URL included in the student certificate to verify the student certificate D. Consider the student certificate status as valid if the OCSP server is unreachable",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator has deployed multiple dual-band wireless APs in a wireless network. APs are installed at measured distances to ensure fast roaming for the clients. Multiple 2.4 GHz-only wireless clients are connecting to the network, and subsequent monitoring shows that individual AP 2.4 GHz interfaces are being overloaded with wireless connections. Which configuration change would best resolve the overloading issue? A. Configure load balancing AP handoff on both AP interfaces on all APs. B. Configure a client limit on all AP 2.4 GHz interfaces. C. Configure load balancing AP handoff on only the 2.4 GHz interfaces of all APs. D. Configure load balancing frequency handoff on both AP interfaces.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements about FortiSwitch trunks are true? (Choose two.) A. Trunks do not support tagged Ethernet frames. B. By default, when connecting two FortiSwitch devices to each other, a trunk is automatically created between the switches. C. A trunk is a link aggregation group interface. D. LACP is not supported.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements about MAC address quarantine by VLAN mode are true? (Choose two.) A. The quarantined device is moved to the quarantine VLAN. B. The device MAC address is added to the QuarantinedDevices firewall address group. C. It is the default mode for MAC address quarantine. D. The quarantined device is kept in the current VLAN.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator is deploying APs that are connecting over an IPsec network. All APs have been configured to connect to FortiGate manually. FortiGate can discover the Aps and authorize them. However, FortiGate is unable to establish CAPWAP tunnels to manage the APs. Which configuration setting can the administrator perform to resolve the problem? A. Upgrade the FortiAP firmware image to ensure compatibility with the FortiOS version. B. Assign a custom AP profile for the remote APs with the set mpls-connection option enabled. C. Decrease the CAPWAP tunnel MTU size for APs to prevent fragmentation. D. Enable CAPWAP administrative access on the IPsec interface.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "To troubleshoot configuration push issues on a managed FortiSwitch, which FortiGate process should an administrator enable debug for? A. httpsd B. cu_acd C. fortilinkd D. flcfgd",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two statements about the use of digital certificates are true? (Choose two.) A. In a chain of trust, the root CA is signed by another certificate. B. To validate the signature on a certificate, an endpoint does not need to know the CA of that certificate. C. A chain of trust may include one or more intermediate CAs. D. An intermediate CA can sign other certificates.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. In the WTP profile configuration shown in the exhibit, the AP profile is assigned to two FAP-320 APs that are installed in an open plan office. The first AP has 32 clients associated with the 5 GHz radios and 22 clients associated with the 2.4 GHz radio. The second AP has 12 clients associated with the 5 GHz radios and 20 clients associated with the 2.4 GHz radio. A dual-band-capable client enters the office near the first AP and the first AP measures the new client at -33 dBm signal strength. The second AP measures the new client at -43 dBm signal strength. If the new client attempts to connect to the corporate wireless network, with which AP radio will the client be associated? A. The first AP 2.4 GHz interface. B. The second AP 2.4 GHz interface. C. The second AP 5 GHz interface. D. The first AP 5 GHz interface.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator wants to telnet into the S224EPTF19005867 switch over the FortiGate FortiLink interface. Which configuration change should the administrator make? A. On the default local-access profile, add telnet to the list of allowed protocols for internal-allowaccess. B. On the default local-access profile, add telnet to the list of allowed protocols for mgmt-allowaccess. C. Factory reset the switch to enable telnet access. D. Enable telnet access on the FortiLink interface.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which CLI command should an administrator use on FortiGate to view the RSSO authentication process in real time? A. diagnose debug application fnbamd -1 B. diagnose debug application authd -1 C. diagnose debug application radiusd -1 D. diagnose debug application foauthd -1",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three FortiOS tools can you use to troubleshoot RADIUS authentication issues? (Choose three.) A. You can enable debug for the fssod process to view RADIUS authentication details. B. You can use the diagnose test authserver radius command to verify RADIUS server configuration, user credentials, and user group membership. C. You can check the Firewall Users widget to view the list of active RADIUS users. D. You can enable debug for the fnbamd process to view RADIUS authentication details. E. You can use the diagnose test application radiusd command to verify the RADIUS server configuration, user credentials, and user group membership.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the IPsec VPN phase 1 configuration shown in the exhibit. An administrator wants to use certificate-based authentication for an IPsec VPN user. Which three configuration changes must you make on FortiGate to perform certificate-based authentication for the IPsec VPN user? (Choose three.) A. Create a PKI user for the IPsec VPN user, and then configure the IPsec VPN tunnel to accept the PKI user as peer certificate. B. In the IKE section of the IPsec VPN tunnel, in the Mode field, select Main (ID protection). C. Import the CA that signed the user certificate. D. Enable XAUTH on the IPsec VPN tunnel. E. In the Authentication section of the IPsec VPN tunnel, in the Method drop-down list, select Signature, and then select the certificate that FortiGate will use for IPsec VPN.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement correctly describes the guest portal behavior on FortiAuthenticator? A. All self-registered and sponsored accounts are listed on the local Users GUI page on FortiAuthenticator. B. FortiAuthenticator uses POST parameters and a RADIUS client configuration to map the request to a guest portal for authentication. C. Sponsored accounts cannot authenticate using guest portals. D. All guest accounts must be activated using SMS or email activation codes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is deploying a new FortiGate device using zero-touch provisioning. Before deployment, the administrator added the FortiGate serial number on FortiManager and configured all the FortiGate settings. FortiGate has a factory default configuration. However, when the administrator connects FortiGate to the network, FortiManager does not start the installation automatically. Which two scenarios are likely to cause this issue? (Choose two.) A. The serial number added on FortiManager does not match the FortiGate serial number. B. The DHCP server that serves FortiGate is not configured with options 240 and 241. C. The pre-shared key set on FortiManager does not match the one set on FortiGate. D. Zero-touch provisioning is disabled on FortiManager.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Examine the FortiSwitch security policy shown in the exhibit. A device that does not support 802.1X authentication is connected to a port using the Port-Security security policy. What action does the FortiSwitch take on the port? A. FortiSwitch assigns the port to the onboarding VLAN. B. FortiSwitch shuts down the port. C. FortiSwitch assigns the port to the quarantine VLAN. D. FortiSwitch authenticates the device using the device MAC address as username and password.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
