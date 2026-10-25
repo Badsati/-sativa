@@ -1,0 +1,107 @@
+[
+  {
+    "question": "When identifying devices for IoT classification purposes, which two methods does Prisma SD-WAN use to discover devices that are not directly connected to the branch ION? (Choose two.) A. LLDP B. CDP C. SNMP D. Syslog",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "User-ID integration is configured for a Prisma SD-WAN deployment. Branch- 1 has the user-to-IP mappings available, and User-1 is mapped to IP-1. To which two use cases can User-ID based zone-based firewall policies be applied? (Choose two.) A. User-1 accessing a SaaS application on direct internet and source User-ID based zone-based firewall rules on Branch-1 ION B. User-1 accessing a private application within Branch-1, and source User-ID based zone-based firewall rules on Branch-1 ION C. User-1 accessing a private application in data center via SD-WAN overlay, and destination User-ID based zone-base firewall rules DC ION D. User-1 accessing a private application in Branch-2 via SD-WAN overlay, and destination User-ID based zone-based firewall rules on Branch-2 ION",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A site has two internet circuits: Circuit A with 500 Mbps capacity and Circuit B with 100 Mbps capacity. Which path policy configuration will ensure traffic is automatically shifted from a saturated circuit to the circuit with available bandwidth? A. Circuit A as an active, Circuit B as a backup B. Circuit B as an active, Circuit A as a backup C. Both circuits under active path D. Circuit B as an L3 failure path",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Site templates are to be used for the large-scale deployment of 100 Prisma SD-WAN branch sites across different regions. Which two statements align with the capabilities and best practices for Prisma SD-WAN site templates? (Choose two.) A. The use of Jinja conditional statements within a site template is not supported, thereby limiting dynamic customization options. B. Mandatory variables for any site template include the site name, ION software version, and at least one ION serial number /device name pair. C. Site templates offer the capability to pre-stage device configurations by creating a device shell. D. Once a site has been deployed using a template, its configuration can be updated or modified by applying an updated version of the template.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which implementation allows Prisma SD-WAN to improve application performance for organizations facing inconsistent user experiences across branch locations, especially due to varying device types and network conditions, by using Layer 4 and Layer 7 optimization to boost throughput? A. Packet duplication B. WAN optimization C. Forward Error Correction (FEC) D. Application acceleration",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In which modes can a Prisma SD-WAN branch be deployed? A. Testing, Control, POV B. Production, Control, Disabled C. Disabled, Analytics, Control D. POV, Production, Analytics",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are two requirements for implementing user/group-based path policies? (Choose two.) A. Cloud Identity Engine B. Internal host detection C. Autonomous Digital Experience Manager (ADEM) D. Data center ION",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "For how many hours are Prisma SD-WAN VPN shared secrets valid? A. 1 B. 8 C. 24 D. 72",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A multinational company is deploying Prisma SD-WAN across North America, Europe, and Asia. The data centers in the North America region have served all regions, but regional policies are now being enforced that mandate each of the regions to build their own data centers and branch sites to only connect to their respective regional data centers. How can this regionalization be achieved so that new or existing branch sites only build tunnels to the regional DC IONs? A. Create a new cluster for each regional DC ION and move the sites from the existing cluster to the new cluster. B. Disable to auto-tunnel feature globally on the Prisma SD-WAN portal and manually create all necessary tunnels exclusively between IONs within their designated regions. C. Remove the circuit labels and apply new circuit labels for in-region circuits only. D. Assign WAN interfaces to distinct Virtual Routing and Forwarding (VRF) instances for each region on the DC IONs, ensuring that branches only connect to the WAN interfaces/VRFs designated for their region.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "By default, how many days will Prisma SD-WAN VPNs stay operational before the keys expire when an ION device loses connection with the controller? A. 1 B. 3 C. 5 D. 7",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the number and structure of Prisma SD-WAN QoS queues supported per WAN interface? A. 12 queues 4 classes 3 application criteria within each class B. 16 queues 4 classes 4 application criteria with each class C. 8 queues 1 priority queue 7 non-priority queues D. 8 queues 2 classes 4 application criteria within each class",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which IONs can support Branch Gateway? A. 3102V, 3200, 1200S, 5200 B. 1200, 3200, 9200, 7108V C. 3104V, 1200S, 5200, 7108V D. 9200, 3200, 5200, 7116V",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A network engineer isle to ping and traceroute from SD-WAN branch IP 192.168.1.123 to servers in primary data center – DC1, but is unable to ping or traceroute to a server 10.2.2.22 in the newly configured secondary data center, DC2. The DC2 ION device is advertising the branch IP subnet 192.168.1.0/24 to the DC2 core via eBGP Core Peer. The DC2 data center site has site prefix 10.2.2.0/23 configured. Which configuration will resolve the issue in this scenario? A. The default 0.0.0.0/0 static route to the DC2 ION pointing to the DC2 next hop. B. Reconfigure eBGP Core Peer to iBGP Core Peer. C. Reconfigure eBGP Core Peer as Edge Peer type. D. Remove site prefix 10.2.2.0/23 from DC2 site configuration.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A network administrator for an organization using Prisma SD-WAN needs to identity the top applications specifically associated with the primary data center site. Which WAN Clarity report approach will be most effective in this use case? A. Traffic Distribution: Top Applications report, when viewed in the context of the primary data center site, to list applications by their consumption directly related to that site’s traffic. B. Application Performance report, globally aggregated across all sites, to see which applications have the highest overall bandwidth usage, then correlate these with known data center services C. Hotspots: Undefined Domains report, specifically filtered for the data center site, to identify high-bandwidth FQDNs that might represent applications hosted in the data center D. Utilization Quadrant report, focusing on the WAN circuits directly connected to the data center, to infer high application bandwidth from periods of high circuit use.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are two potential causes when a secondary public circuit has been added to the branch site, but the Prisma SD-WAN tunnel is not forming to the data center? (Choose two.) A. Interface role is not selected as “internet.” B. Circuit label is missing from interface type. C. DNS is not configured. D. Interface scope is set to “local.”",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement is valid when integrating Prisma SD-WAN with Prisma Access remote networks? A. Security policies for remote networks are configured in Prisma Access and pushed to Prisma SD-WAN for enforcement on the branch ION devices. B. Easy onboarding automatically recommends the closest preconfigured remote network security processing nodes and can be overridden manually. C. A branch with multiple internet circuits will automatically connect to Prisma Access on each circuit and will be used in an active/standby manner for internet-bound traffic. D. Bandwidth must be allocated to each Prisma Access remote network compute location, and this bandwidth is shared between all branches that terminate on this remote network node.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In a data center (DC) with two ION devices, all of the remote branch Prisma SD-WAN VPNs are active only on DC ION-1. Why are no VPNs active on DC ION-2? A. The BGP core peer is down. B. The static route to core as a next hop is missing. C. The ION device is behind a NAT. D. The DC and branches are in a different domain.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Based on the HA topology image below, which two statements describe the end-state when power is removed from the ION 1200-S labeled “Active”, assuming that the ION labeled “Standby” becomes the active ION? (Choose two.) A. Both the connection to ISP A and the connection to LTE/5G will be usable. B. The VRRP Virtual IP address assigned to any SVIs will be moved to the newly active ION. C. The newly active ION will send a gratuitous ARP to the LAN for the IP address of any SVIs. D. The connection to ISP A will be usable, but the connection to LTE/5G will not.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the default action for real-time media applications if link performance is poor? A. Drop the flow. B. Move flows. C. Apply Forward Error Correction (FEC). D. Raise an alarm.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When an ION device has been claimed, the cloud-based controller generates and communicates with the device by which method? A. Manufacturer Installed Certificate (MIC) B. Existing customer public key infrastructure (KPI) C. Self-signed certificate D. Customer Installed Certificate (CIC)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which troubleshooting step should be taken when users at a branch site are experiencing a maximum throughput of 200 Mbps for Direct Internet Access (DIA) traffic on a 1Gbps internet connection? A. Ensure QoS policy is applies to the site. B. Ensure the WAN interface is set to 1 Gbps or auto mode. C. Ensure performance policy is applied to the site. D. Ensure the circuit configuration at the site level is properly set.",
+    "options": {},
+    "most_voted": "D"
+  }
+]
