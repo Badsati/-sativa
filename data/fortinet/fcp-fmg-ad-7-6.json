@@ -1,0 +1,312 @@
+[
+  {
+    "question": "You want to let multiple administrators work in the same ADOM without creating configuration conflicts. What is the best and the most effective solution to apply? A. Configure RADIUS authentication to assign ADOM roles to each user. B. Enable workflow mode, which is the only way to prevent concurrent configuration conflicts. C. Assign administrators with JSON API access to the FortiManager. D. Activate workspace mode in the ADOM settings.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. If the monitored interface for the primary FortiManager device fails, what must you do to maintain high availability (HA)? A. The FortiManager HA failover is transparent to administrators and does not require any additional action. B. Manually promote one of the working secondary devices to the primary role: and reboot the original primary device to remove the peer IP address of the failed device. C. Reconfigure the primary device to remove the peer IP address of the failed device from its configuration. D. Check the integrity database of the primary device to force a secondary device to become the new primary with all active interfaces.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator has created a firewall address object that is used in multiple policy packages for multiple FortiGate devices in an ADOM. After the installation operation is performed, which IP/netmask will be installed on Remote-Firewall [VDOM1] for the LAN firewall address object? A. 21.21.2.5/255.255.255.255 B. 172.16.5.20/255.255.255.255 C. 172.16.5.0/255.255.255.0 D. 10.10.10.5/255.255.255.255",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. An administrator needed to recover all the configurations related to the user, Support. The configurations were saved in configuration revision ID 9. The administrator reverted the configuration using the Configuration Revision History window and received the CLI output shown in the exhibit. What can you conclude from the CLI output? A. The administrator set the flag to 0 to prevent configuration overrides. B. The administrator reinstalled the policy package. C. The administrator needs to retrieve the device to correctly detect the FortiGate firmware version. D. The administrator installed only the device-level configuration.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator wants to configure and manage multiple objects in the FortiManager database and give access to other users who work in the same database. To stay in control of the changes made to firewall policies by other team members, the administrator needs a setup where all modifications go through a central check before they can be installed. How can the administrator create this setup? A. Enable the prompt asking the administrator to accept firewall policies changes before saving. B. Enable the workspace (for all ADOMs) to control all changes made by any administrator. C. Enable device lock and the advanced mode feature in the ADOM. D. Enable workflow mode and the ADOM lock feature.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two conditions trigger FortiManager to create a new revision history? (Choose two.) A. When FortiManager installs device-level changes on a managed device B. When changes to the device-level database are made on FortiManager C. When FortiManager is auto-updated with configuration changes made directly on a managed device D. When a provisioning template is assigned to a managed device on the device-level database",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator has assigned a global policy package to a new ADOM named ADOM1. What will happen if the administrator tries to create a new policy package in ADOM1? A. The administrator will be able to select the option to assign the global policy package to the new policy package. B. FortiManager will automatically assign the global policy package to the new policy package. C. FortiManager will automatically install policies on the policy package in ADOM1. D. The administrator will have to assign the global policy package from the global ADOM.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. FortiGate HQ-NGFW-1 downloads and validates FortiGuard databases from FortiManager which acts as a local FortiGuard Distribution Server (FDS) in a closed network. An administrator pushes a new firewall policy with an intrusion prevention system (IPS) profile from FortiManager to FortiGate HQ- NGFW-1 However, FortiGate does not recognize the new IPS signature from FortiManager. What is the most likely reason why FortiGate HQ-NGFW-1 does not recognize the new IPS signature? A. FortiGate must enable rating for the FortiManager IP address, 192.168.1.120, in server list 1. B. FortiManager and FortiGate have different IPS database versions. C. The administrator must enable IPv6 connections for FortiGuard services on FortiManager. D. The administrator must enable the fortiguard-anycast option to correctly download all signatures from the local FDS.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which is recommended when you are managing a high volume of logs in your network? A. Store logs on FortiManager and use FortiView. B. Add and manage FortiAnalyzer from FortiManager. C. Enable advanced ADOM mode on FortiManager. D. Forward logs from FortiAnalyzer to FortiManager daily.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "While attempting to push a NetFlow configuration script through the FortiManager policy package: an administrator encounters an error stating that an object is unrecognized in line 4. What must the administrator do to successfully apply the NetFlow configuration script and avoid the object unrecognized error? A. Make sure the user running the script has full access to the VDOM—AGEUSR. B. Run the script on the device database. C. Use metadata variables if they use VDOMs in the script. D. Create a normalized interface on the policy layer before running the script.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the best explanation of how FortiManager helps with mass provisioning? A. It upgrades the OS of each FortiGate device. B. It provides local FortiGuard Distribution Server (FDS) services to the network. C. It uses templates to configure the same settings on many devices simultaneously. D. It sends email alerts when new devices connect.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the purpose of ADOM revisions? A. ADOM revisions find unused, duplicate, and unnecessary firewall policies and objects. B. ADOM revisions show specific changes in a policy package when it is installed. C. ADOM revisions compare previous snapshots of the Policy Package and ADOM-level objects with the device-level database. D. ADOM revisions save the current state of all policy packages and objects for an ADOM.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator assigned a new policy package to FortiGate HQ-NGFW-1. In the installation preview, they noticed some settings they did not modify and are unsure about the changes. Based on the exhibit, which two things will happen if they continue with the installation? (Choose two.) A. FortiGate HQ-NGFW-1 can use FortiManager firmware templates to upgrade firmware and ratings. B. FortiGate HQ-NGFW-1 can contact the FortiManager acting as FortiGuard Distribution Server (FDS) to download FortiGuard updates. C. FortiGate HQ-NGFW-1 will use the root_CA3 certificate in firewall address objects or policies. D. FortiManager will install the CA certificate named root_CA3 to authenticate FortiGate-to-FortiManager communication protocol (FGFM) tunnel connections with FortiGate HQ- NGFW-1.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator created two new meta fields in FortiManager. Which operation can you perform with these parameters? A. You can add them to objects as custom attributes. B. You can export them to be used in other ADOMs. C. You can use them as variables in scripts. D. You can invoke them using the $ character.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Push updates are failing on a FortiGate device located behind a network address translation (NAT) device? Which two settings should the administrator check to correct this problem? (Choose two.) A. Make sure the NAT device IP address and the correct ports are configured on FortiManager. B. Make sure FortiGuard updates and web service are enabled on the FortiGuard service interface. C. Make sure the virtual IP address and the correct ports are configured on the NAT device. D. Make sure the Bind to IP address option on the FortiGuard service interface is set to the virtual IP address from the NAT device.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The administrator uses FortiManager to push a CLI script using the Remote FortiGate Directly (via CLI) option to configure an IPsec VPN. However, when running the script, the administrator receives the following error: config vpn ipsec phase2-interface [parameter(s) invalid. detail: object mismatch] What must the administrator do to resolve the script error and successfully apply the IPsec configuration? A. Add the end command after finishing the IPsec phase 1-interface configuration block. B. Use IPsec templates to deploy provisioning templates. C. Add a second config vpn ipsec phase2-interface block without linking it to phase1. D. Run the script using the policy package or ADOM database method.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator has a FortiGate-HQ device with VDOMs—root, HR and Facilities, currently managed under the FortiManager ADOM—Site1. They try to move VDOM HR to the FortiManager ADOM—Site2, but it does not work. Why is the administrator not able to move FortiGate-HQ VDOM HR to FortiManager ADOM—Site2? A. The FortiGate-HQ must be managed under the FortiManager ADOM—root to allow moving its VDOMs to different ADOMs. B. The administrator must have full access in the device layer of FortiGate-HQ VDOM-root before they can VDOMs to different ADOMs. C. FortiManager must be in ADOM normal mode, which does not allow VDOMs to be managed separately. D. The administrator must delete the FortiGate-HQ device from FortiManager and add it again using the Add Device wizard before moving the VDOM.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. FortiManager is operating behind a network address translation (NAT) device, and the administrator configured the FortiManager NATed IP address under the FortiManager system administration settings. What is the expected result during discovery? A. FortiManager sets both the 100.65.0.120 IP address and 10.0.13.120 IP address on FortiGate. B. FortiManager sets both the 100.65.0.120 IP address and 100.65.0.101 IP address on FortiGate. C. FortiManager sets the 100.65.0.101 IP address on FortiGate. D. FortiManager sets the 100.65.0.120 IP address on FortiGate.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator configures a new BGP peer in the FortiManager device-level database of FortiGate. They reinstall the policy package to the managed FortiGate device without any errors. However, when the administrator logs in to FortiGate, they do not see the BGP configuration changes. What is the most likely reason why FortiManager did not push the BGP peer changes to FortiGate? A. The administrator must run a sanity check on FortiManager to make sure the database is not corrupted. B. Fortigate has a BGP template assigned on the FortiManager database. C. The administrator must use the Install Wizard and select Install device settings only to push BGP settings D. The FortiGate firmware version is different from the FortiManager ADOM version.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Company policy dictates that any time a change is made to a policy package on FortiManager an ADOM revision is created before the change installed, and that revision is held for a minimum of 90 days. Over the past three months, each installed change has resulted in several unused policies and duplicate objects. The FortiManager administrator plans to upgrade the FortiGate devices and then upgrade the FortiManager ADOM from version 7.4 to 7.6. Which action can the administrator take to avoid slow ADOM upgrades? A. Check and repair the global configuration database before upgrading. B. Export firewall policies to Excel, delete them on the ADOM, then reimport them after upgrading the ADOM. C. Find unused firmware templates, then delete them before upgrading. D. Limit ADOM revisions before upgrading.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator added a FortiGate device to FortiManager with the default object settings at the ADOM layer. What can you conclude from the import policy package process of the HQ-NGFW- 1 device? A. The administrator must select Per Platform for all interfaces to correctly detect all interfaces from HQ-NGFW-1. B. The administrator must manually create the port4 interface on the ADOM layer to avoid import policy errors. C. FortiManager will create LAN, port4, and port6 as normalized interfaces at the ADOM layer. D. FortiGate may not work as expected when the administrator does not import all objects.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator must create a policy and install it on a FortiGate device within an ADOM in backup mode. How can the administrator perform this task? A. Use the Install Wizard located on the device manager. B. Enable workflow mode to allow policy creation and approval. C. Make sure the ADOM and FortiGate firmware versions match and use the ADOM policy package. D. Use a FortiManager script to apply the configuration changes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. An administrator needs to push a FortiToken Mobile to assign it to HR_user in the HQ-NGFW-1. However, when installing the policy package, they receive the following error message: Why is the administrator not able to install the FortiToken on the HQ-NGFW-1 firewall? A. The administrator must use a user local meta field to assign FortiToken. B. The administrator must use a valid FortiToken that exists on HQ-NGFW-1. C. The administrator must use a metadata variable to assign the same FortiToken to multiple users in FortiManager. D. The administrator must use per-device mapping to assign the FortiToken to HQ-NGFW-1.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Which two statements about the output are true? (Choose two.) A. The latest revision history for the managed FortiGate does not match the device-level database. B. Configuration changes have been installed on FortiGate, updating policy and device-level database. C. The latest revision history for the managed FortiGate does match the FortiManager policy database. D. The system template default will override device-level database configurations.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. An administrator has been asked to install the same policies from a central policy package onto the BR1-FGT-1 firewall. The administrator added BR1-FGT-1 as a target in the central policy package installation. What should the administrator do when reinstalling the central policy package on the BR1-FGT-1 firewall? A. Assign only one policy package to the firewall because FortiManager does not allow more than one policy package assigned per device at the same time. B. Import the policy package to change the unknown status and synchronize the policy package. C. Use the install wizard to install the central policy package on the BR1-FGT-1 firewall. D. First resolve the modified status in the configuration and provisioning templates to allow a smooth installation.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "After correcting a policy package configuration issue, you want to prevent administrators from repeating the mistake that caused the issue. Which FortiManager approach best meets this need? A. Configure an TCL script to run locally on FortiManager for each FortiGate. B. Restrict administrators with an administration profile from viewing the revision history to limit who can make changes. C. Enable the change note to require administrators to add a note whenever they change object configurations. D. Enable a workflow requiring approval before installing policy packages on any FortiGate.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which output is displayed right after moving the ISFW device from one ADOM to another? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A service provider administrator has assigned a global policy package to a managed customer ADOM named My_ADOM. The customer administrator has access only to My_ADOM. How can the customer administrator edit the global header policy of the global policy package? A. The customer administrator can edit the header policy by using workspace mode on the global ADOM. B. The customer administrator can edit the header policy by using workflow mode on the global ADOM and My_ADOM. C. The service provider administrator can unlock the global policy from the global ADOM to authorize changes to the customer administrator. D. The customer administrator cannot edit the global header policy; only the service provider administrator can make changes from the global ADOM.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. What can you conclude from the downloaded import report? A. FortiManager does not support per-device mapping for firewall addresses. B. The administrator will see a new policy package named Remote-FortiGate_root in the FortiManager ADOM database. C. ortiManager will change the configuration of REMOTE_SUBNET to match the interface mapping coming in from Remote-FortiGate. D. As a result of this policy import process, FortiManager will create a new firewall address called REMOTE_SUBNET in the ADOM database.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator is copying a system template profile between ADOMs by running the following command: execute fmprofile export-profile ADOM 3547 /tmp/Backup_File output dump to file: [/tmp/Backup_File] Where does this command export the system template profile from? A. FortiManager /tmp/Backup_File folder B. FortiManager ADOM policy database C. ADOM device database D. FortiManager configuration backup file",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. What are two results from the configuration shown in the exhibit? (Choose two.) A. Ungraceful closed sessions will keep the ADOM in a locked state until the administrator session times out. B. The administrator can lock policy blocks and FortiManager global ADOM. C. The same administrator can lock more than one ADOM at the same time. D. The administrator must have access to the ADOM to approve changes.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. Which two results occur if you run the script using the Device Database option? (Choose two.) A. The device Config Status is tagged as Modified. B. The script history shows the successful installation of the script on the remote FortiGate. C. The successful execution of a script on the Device Database creates a new revision history. D. The administrator must install these changes on a managed device using the Install Wizard.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. An administrator runs the reload failure command diagnose test deploymanager reloadconf 262 on FortiManager. Why does the administrator receive an error message? A. The administrator must use the FortiGate name instead of the ID number. B. The administrator just recently added FortiGate HQ-NGFW as a model device. C. FortiManager requires the FortiGate serial number instead of the ID number. D. FortiManager does not support FortiOS version 7.0.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibits. An administrator admin used the Configuration Revision History window to revert the FortiGate device configuration to revision ID 6. After running the reinstall policy package, the administrator noticed problems with the firewall policy- they could not see the unset comment on policy ID 1. Why did FortiManager not remove the comment from policy ID 1 when the administrator ran reinstall policy package? A. Because the administrator student must install the configuration changes to correctly see the expected results. B. Because the administrator must import the firewall policies to update the firewall policy package. C. Because every time the administrator uses the revert config file, they must use the Install Wizard instead of running the reinstall policy package. D. Because the administrator used the Revision Diff view, which shows what changed, not what will be installed.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What allows FortiManager to run CLI scripts on FortiGate devices without prompting for SSH authentication each time? A. FortiGate devices using the legacy login method. B. The secure management tunnel between FortiManager and FortiGate devices. C. The script using the Remote FortiGate Directly (via CLI) option. D. The script on the FortiManager device database.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator assigned the Training global policy package to the Branches policy package in ADOM1. Later, the administrator created a new policy package named Remotes on ADOM1. What should the administrator do to sync the Training global policy package with the Remotes policy package in ADOM1? A. Manually add and assign the Remotes policy package to the Training global policy package B. Use the automatically install policies to ADOM devices method to sync from the Training global policy package to the Remotes policy package C. Assign the Training global policy package to the Remotes policy package D. Unassign the Training policy package and reassign it to all policy packages within ADOM1",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator receives the import report after importing policies into the policy package layer. Based on the import report, how did FortiManager handle the profile-protocol-options object named default? A. FortiManager deleted the duplicate value from its database. B. FortiManager created a new service category in its database. C. FortiManager did not update its database with the value. D. FortiManager updated the duplicate value in the FortiGate database.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. Which two statements about the configuration shown in the exhibit are true? (Choose two.) A. An administrator can lock the Local-FortiGate_root policy package. B. The administrator created a snapshot of the Remote-FortiGate policy package. C. The FortiManager ADOM workspace mode is set to normal. D. The FortiManager is in workflow mode.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator notices that CLI scripts are failing on some FortiGate devices because they use different FortiOS versions. Which two actions should the administrator take to fix the failing CLI scripts? (Choose two.) A. Create separate ADOMs for each FortiOS version. B. Disable CLI scripts for devices using older firmware. C. Modify the CLI scripts to include conditional commands based on FortiOS version. D. Create version-specific CLI script groups and assign them to the appropriate devices.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. An administrator ran the Install Wizard and selected to install both the policy package and device settings. Why can the administrator not install the policy package on HQ-NGFW-1? A. The administrator must change the Install on column from Installation Targets to HQ-NGFW-1. B. The administrator must replace the interface Port6 with port6. C. The administrator must use the admin user to install the policy package. D. The administrator must remove the policy block assigned to HQ-NFFW-1.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which FortiGate configuration settings is part of an ADOM-level database on FortiManager? A. NSX-T service template B. Security template C. Routing D. SNMP",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An administrator sees that the policy package status of HQ-NGFW-1 is Never Installed. What can you conclude from this status? A. The policy package was never imported to the revision history after HQ-NGFW-1 was registered on FortiManager. B. The policies have not yet been retrieved from the HQ-NGFW-1 device-level database of FortiManager. C. The firewall policies exist only in the HQ-NGFW-1 device-level database, and no policy package has been assigned to the firewall. D. The firewall policies were created or changed in the ADOM, and they need to be installed on the managed HQ-NGFW-1 for the first time.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A FortiManager administrator has moved a FortiGate device to a new ADOM, but they cannot see the policy or object configurations for that FortiGate. What should the administrator do to see the policy or object configurations? A. Use ADOM shared objects to restore all missing data. B. Reset the device and add it to the new ADOM again. C. Import the policy package manually using the Import Configuration wizard. D. Use ADOM sync to restore the missing configurations.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. How does FortiManager get antivirus and IPS updates? A. It uses all URLs in the list that contain the fds host name. B. It gets updates from the server with IP address 10.0.1.50. C. It connects to all servers marked as FortiGuard Distribution Network through Internet (FDNI) sources. D. It connects to the public FortiGuard servers listed in the configuration.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator upgrades FortiManager with workspace mode (per ADOM) enabled to the latest version but notices that the ADOM versions did not change. Why were the ADOMs not upgraded? A. The administrator did not run the database integrity check before performing the upgrade. B. FortiManager does not automatically upgrade ADOMs after a firmware upgrade. C. A FortiManager process task is stuck and blocking the ADOM upgrade, so the administrator must fix it. D. A user had all ADOMs locked before the upgrade, which stopped them from being upgraded.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Which two actions will occur if you run the script using the Remote FortiGate Directly (via CLI) option? (Choose two.) A. FortiManager will provide a preview of CLI commands before executing this script on a managed FortiGate. B. FortiManager will create a new revision history. C. FortiGate will auto-updated the FortiManager device-level database. D. You will have to install these changes using the Install Wizard.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are two expected results when both FortiManager and FortiGate are behind network address translation (NAT) devices? (Choose two.) A. During discovery, the FortiManager NATed IP address is not set by default on FortiGate. B. FortiGate is discovered by FortiManager through the FortiGate NATed IP address. C. If the FortiGate-FortiManager communication protocol (FGFM) tunnel is torn down, FortiManager will try to reestablish the FGFM tunnel. D. FortiGate can announce itself to FortiManager only if the FortiManager non-NATed IP address is configured on FortiGate under central management.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibits. What can you conclude, based on the configuration shown in the exhibit? A. Policy sequence #1 will be installed on the internal segmentation firewall (ISFW) device root [NAT] and Trainer [NAT] VDOMs. B. Policy sequence #3 must have devices or VDOMs listed in the Install On column; otherwise, it will cause errors. C. The global policy package will be added to the top of the ISFW policy package. D. The administrator needs to retrieve the Local-FortiGate configuration to sync with the Security Fabric group, Training.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An administrator created a new global policy package that includes both header policies and footer policies. What two things must the administrator know before deploying the global policy package to ADOM2? (Choose two.) A. They can synchronize policy packages by importing from the ADOM2 policy package into the global ADOM policy package. B. They can promote ADOM2 objects to global objects. C. They can assign the global policy package to all or selected policy packaged within ADOM2. D. They must install from the ADOM2 layer to FortiGate when using the Automatically install policies to ADOM devices option.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which two statements about the integrity of databases on FortiManager are correct? (Choose two.) A. Scheduled backups run database integrity commands automatically. B. The diagnose dvm check-integrity command attempts to fix a corrupted file system. C. The diagnose cdb check adom-integrity command can correct issues related to locked devices. D. You should fix all database integrity issues before performing a script. E. Not following the correct upgrade path may cause inconsistencies in the databases.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "What are two outcomes of ADOM revisions? (Choose two.) A. ADOM revisions can save the current state of the entire ADOM. B. ADOM revisions do not increase the size of configuration backups. C. ADOM revisions can save the current state of all policy packages and objects for an ADOM. D. ADOM revisions appear in the Install Policy & Package Settings section of the install wizard.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A FortiManager administrator opens the revision history and choose to revert to a previous version. What will this action do to the current device configuration? A. It will trigger an unknown device-level database status, and the administrator will have to import a policy package to sync. B. It will trigger a conflict status if it is using any provisioning template, and the administrator will have to install changes. C. It will revert both configurations: device-level database and policy layer database. D. It will modify the device-level database.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "If one of the secondary FortiManager devices fails, which action must be performed to return the FortiManager HA manual mode to a working state? A. The FortiManager high availability (HA) state transition is transparent to administrators and does not require any reconfiguration. B. Run a sanity check on the failed device to make sure HA heartbeat packets are using TCP port 5199. C. Manually promote one of the working secondary devices to the primary role. D. Remove the peer IP of the failed device on the primary device.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. An administrator added BR1-FGT-1 to FortiManager and started importing the policy package. During the process, they saw that they need to choose values from FortiGate or FortiManager. Which conclusion is most clearly supported by the exhibits? A. BR1-FGT-1 does not support the SSL/SSH profile with HTTPS on port 443. B. The administrator must match the FortiOS firmware version with the FortiManager ADOM firmware version to resolve the conflict status. C. The default Firewall Profile-Protocol-Options object is the only profile that does not significantly affect any configuration changes on either FortiManager or FortiGate. D. FortiManager has a different FortiGuard database compared to FortiGate BR1-FGT-1 for the QUIC protocol.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. What percentage of the available RAM is being used by the process in charge of downloading the web and email filter databases from the public FortiGuard servers? A. 1.5 B. 3.1 C. 4.1 D. 2.9",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibits. Which IP/netmask will be present in the LAN firewall address object on the Remote-Firewall? A. 172.16.0.0/255.255.255.0 B. 10.0.0.0/255.255.255.0 C. 192.168.1.0/255.255.255.0 D. 172.16.10.0/255.255.255.0",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. What are two results from the configuration shown in the exhibit? (Choose two.) A. The same administrator can lock more than one ADOM at the same time. B. Multiple administrators can lock and work on separate AOMs at the same time. C. All changes must be approved before they can be installed on a device. D. Concurrent read-write access to an ADOM is disabled.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. An administrator has assigned the default system template to install all devices with the FortiAnalyzer IP address 10.0.13.12. However, not all FortiGate devices can reach FortiAnalyzer using the default interface. Some devices may use the LAN interface, while others may use the WAN interface. How can the administrator change the source interface for FortiGate devices using the default system template? A. Use per-device dynamic object configurations at the ADOM level and apply them in the template. B. Configure a metadata variable at the ADOM level and use it in the template. C. Create a different system template for each FortiGate, if the configuration is different. D. Create a meta field on FortiManager system settings of type Device and use it in the template.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Refer to the exhibit. Which statement about the environment shown in the exhibit is true? A. You must restart the secondary device if you promote it to primary. B. No FortiGuard packages have been synchronized between the cluster member. C. A failover will take place after five minutes without receiving heartbeat packets. D. FortiAnalyzer features are not enabled on this FortiManager device.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. What can you conclude from the failed installation log shown in the exhibit? A. Policy ID 2 is installed in the disabled state. B. Policy ID 2 will not be installed. C. Policy ID 2 is installed without a source address. D. Policy ID 2 is installed without the remote user student.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An administrator created a new ADOM named Training for FortiGate devices only. Then, the administrator added the root FortiGate device of a Security Fabric group to the Training ADOM. Which statement correctly describes the expected result for the downstream devices in the Security Fabric, given the actions taken by the administrator? A. The downstream devices are automatically authorized. B. The downstream devices will appear in the Managed FortiGate section of the root ADOM. C. The downstream devices show as unauthorized in the root ADOM. D. The downstream devices must be added using the Add Device wizard.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibits. An administrator must replace the source LAN interface in policy ID 2 on their FortiGateRugged-70F. However, when they try to install the policy package, they receive the error shown in the exhibit. What should the administrator do to resolve the error? A. Use the API to assign a system template interface forFortiGateRugged-70F model. B. Use a metadata variable to dynamically assign an interface when this error occurs. C. Create a per0device mapping for the LAN interface. D. Replace LAN with lan1, which is supported by FortiGateRugged-70F models.",
+    "options": {},
+    "most_voted": "C"
+  }
+]
