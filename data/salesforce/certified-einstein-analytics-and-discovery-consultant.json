@@ -1,0 +1,77 @@
+[
+  {
+    "question": "A consultant created an Einstein Analytics dashboard in a sandbox. Now, the dashboard needs to be migrated into production. To complete the migration, what are the consultant’s three options? (Choose three.) A. Ant Migration Tool B. Change sets C. Analytics External Data API D. Analytics REST API E. Analytics dashboard connector",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which set of statements generates monthly amount on a cumulative basis annually? A. result = load “opportunity1”; result = group result by (‘CloseDate_Year’,’CloseDate_Month’); result = foreach result generate ‘CloseDate_Year’,’CloseDate_Month’, sum(sum(Amount)) over ([..0] partition by ‘CloseDate_Year’ order by (‘CloseDate_Year’,’CloseDate_Month’)) as ‘Cumulative Closed Amount’; B. result = load “opportunity1”; result = group result by (‘CloseDate_Year’,’CloseDate_Month’); result = foreach result generate ‘CloseDate_Year’,’CloseDate_Month’, sum(sum(Amount)) over ([..] partition by ‘CloseDate_Year’ order by (‘CloseDate_Year’,’CloseDate_Month’)) as ‘Cumulative Closed Amount’; C. result = load “opportunity1”; result = group result by (‘CloseDate_Year’,’CloseDate_Month’); result = foreach result generate ‘CloseDate_Year’,’CloseDate_Month’, sum(sum(Amount)) over ([..0] partition by all order by (‘CloseDate_Year’,’CloseDate_Month’)) as ‘Cumulative Closed Amount’; D. result = load “opportunity1”; result = group result by (‘CloseDate_Year ~ ~ ~ CloseDate_Month’); result = foreach result generate ‘CloseDate_Year’,’CloseDate_Month’, sum(sum(Amount)) over ([..0] partition by ‘CloseDate_Year’ order by (‘CloseDate_Year’,’CloseDate_Month’)) as ‘Cumulative Closed Amount’;",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Universal Containers company plans to upload target data from an external tool to Einstein Analytics so they can calculate the Sales team target attainments. The target data changes every month, so the datasets need to be updated on a monthly basis. The target data is CSV file that contains the Salesforce ID of the sales representative, the target amount, and the month of the target. For each sales representative, the file contains a target for every month of the current year as well as all previous years. Based on this information, which operation should a consultant use with the Analytics External Data API to upload the file? A. Overwrite B. Upsert C. Append D. Update",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An insurance company has many Einstein Analytics dashboards that show the influence of weather, such as atmospheric temperature, on customer cases. A service agent commented that it is sometimes difficult to determine, by looking at a dashboard, whether the temperature data is reported in degrees Fahrenheit or in degrees Celsius. How can a dashboard designer ensure the temperature data is easier to interpret on the dashboards? A. Customize the number format in the number widget properties of the dashboard B. Use the XMD node in the dataflow to customize the number format of the field C. Add a text widget to the dashboard to indicate Fahrenheit or Celsius D. In Explorer, go to the Fields menu and then customize the number format of the measure",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A large company is rolling out Einstein Analytics to their field sales. They have a well-defined role hierarchy where everyone is assigned to an appropriate node on the hierarchy. An individual Sales rep should be able to view all opportunities that she/he owns or as part of the account team or opportunity team. The Sales Manager should be able to view all opportunities for the entire Sales team. Similarly, the Sales Vice President should be able to view opportunities for everyone who rolls up in that hierarchy. The opportunity dataset has a field called ‘OwnerId’ which represents the opportunity owner. Given this information, how can an Einstein Consultant implement the above requirements? A. As part of the dataflow, use computeRelative on the RoleId field to create an attribute called ‘ParentRoleIDs’ on the opportunity dataset and apply following security predicate: ‘ParentRoleIDs’ = = “$User.UserRoleId” || ‘OwnerId’ = = “$User.Id”. B. As part of the dataflow, use computeExpression on the RoleId field to create an attribute called ‘ParentRoleIDs’ on the opportunity dataset and apply following security predicate: ‘ParentRoleIDs’ = = “$User.UserRoleId” || ‘OwnerId’ = = “$User.Id”. C. As part of the dataflow, use the flatten operation on the role hierarchy and create a multivalue attribute called ‘ParentRoleIDs’ on the opportunity dataset and apply following security predicate: ‘ParentRoleIDs’ = = “$User.UserRoleId” && ‘OwnerId’ = = “$User.Id”. D. As part of the dataflow, use the flatten operation on the role hierarchy and create a multivalue attribute called ‘ParentRoleIDs’ on the opportunity dataset and apply following security predicate: ‘ParentRoleIDs’ = = “$User.UserRoleId” || ‘TeamMember.Id’ = = “User.Id” || ‘OwnerId’ = = “$User.Id”.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A dataset is ready for analysis in Einstein Discovery. What is the first step a consultant should take after the data is loaded? A. Load the data into Einstein Analytics B. Analyze data columns and decide which, if any, to drop C. Identify data types and define the appropriate data as numeric D. Produce a graph of the data to analyze",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Universal Containers has a Sales Manager dashboard. They have a compare table that displays the count of Customers and the Sum of Annual Revenue per year and per Account type. A consultant is asked to add more groupings to enhance details about their customers. What is the maximum number of grouping columns that the consultant must be aware of in order to continue using a compare table versus creating the query using SAQL? A. 8 B. 4 C. 10 D. unlimited",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company created a dataset myExternalDataset. It contains a dimension, called UserRegion, that is populated by the standard User object’s picklist: Region. The company has security requirements for this dataset: Only a subset of users should be able to access the dataset. Users who can access the dataset should see only data that belongs to their region. In which two ways can an Einstein Analytics consultant help them implement these requirements? (Choose two.) A. Use a security predicate in the dataset to users can see only rows belonging to their respective regions. B. Save the dataset under a new application and give “viewer” access to a public group containing the list of users allowed to see the dataset. C. Save the dataset under “My Private App” so only a subset of selected users can access the dataset. D. Create a sharing rule in Salesforce based on the Region field in the user object and set the dataset to inherit sharing from Salesforce",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An Einstein Consultant receives a new project from a client that wants to implement Einstein Analytics. They do not currently have Einstein Analytics, but want guidance around how to ensure that their users have correct access. They have 1000 users with a small team of three people who will build datasets and dashboards. An additional 15 people should be able to create dashboards. Which recommendation should the consultant give the client? A. Create and assign Salesforce permission sets according to the three types of roles defined. B. Assign the app permissions “viewer”, “editor”, and “manager” to the three types of roles defined. C. Assign “Einstein Analytics Explorer” licenses to users that should only view the dashboard, and assign “Einstein Analytics Developer” licenses to users that should be able to create datasets and dashboards. D. Create and assign three new Salesforce profiles according to the three types of roles defined.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A client has a dataset comprised of Opportunity data and Opportunity Line level data. The client wants to use this dataset with Einstein Discovery to understand the Opportunity win rate. What must be done to the dataset to achieve this goal? A. Click Create Story and Einstein will take care of the rest B. Filter to only look at isWon = True records to avoid skewing the results C. Change the grain by removing the line level detail as it will skew the win rate D. Select the isWon = True outcome variable and generate the story",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Universal Containers has a dashboard for Sales Managers to visualize the YoY Growth of their customers. The formula used is: YoY = [(This Year – Last Year) / last Year] % Based on the graphic, when there is no account in the Last Year column, the YoY Growth shows null results. The Sales Managers want to replace it with 100% value. What is the correct function to use? A. number_to_string() B. replace() C. substr() D. coalesce()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The Universal Containers Einstein Analytics team built a dashboard with two widgets: 1: List widget associated to the step “Type_2” and grouped by the dimension “Type” (multi-selection) 2: Pie chart widget associated to the step “Step_pie_3” and grouped by the dimension “Type” The team wants to use bindings so any selection in the List widget will filter the Pie chart. Additional notes: * The steps use different datasets. * Users should be able to choose more than one Type (multi-selection). What is the right syntax for the binding? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company wants to use Einstein Analytics to analyze the trend of their sales pipeline. The company wants to accelerate the sales process. To do so, they need to know the average time an opportunity spends in each stage. This value is not pre-calculated in Salesforce, so a consultant recommends using a dataflow to calculate it. How can a dataflow be used to calculate the average time an opportunity spends in each stage? A. flatten Transformation with Offset Expressions to calculate the duration B. computeExpression Transformation with SAQL Expression to calculate the duration C. computeRelative Transformation with SAQL Expression to calculate the duration D. computeRelative Transformation with offset parameter to calculate the duration",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer displays a lot of data and wants to dynamically emphasize certain values on a bar chart in order to properly grab the user’s attention. What can an Einstein Consultant use to accomplish this task? A. Customize tooltip B. Compare Table C. XMD D. Chart Markers",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A small Business Intelligence team is overwhelmed with multiple requests to create new dashboards. An option is to use layout templates to help with dashboard development. What are two advantages of using layout templates? (Choose two.) A. Layout templates are equipped with design best practice, such as optimally positioned KPIs and filters B. Layout templates are fast to create because they are fixed and read-only C. Layout templates offer a consistent end user experience D. Layout templates offer a universal layout thus reducing the hours spent on design",
+    "options": {},
+    "most_voted": "A"
+  }
+]
