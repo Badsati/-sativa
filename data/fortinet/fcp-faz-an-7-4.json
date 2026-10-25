@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Refer to the exhibit. What can you conclude about the output? A. The output is not ADOM specific. B. There are more event logs than traffic logs. C. The low indexing values require investigation. D. The log rate being higher than the message rate is not normal.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements about exporting and importing playbooks are true? (Choose two.) A. You can export only one playbook at a time. B. A playbook that was disabled when it was exported will be disabled when it is imported. C. You can import a playbook even if there is another one with the same name in the destination. D. Playbooks can be imported to a different FortiAnalyzer device, but only if the connectors already exist.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are trying to configure a task in the playbook editor to run a report. However, when you try to select the desired playbook, you do not see it listed. What is the reason? A. The report has no results and must be reconfigured. B. You must create a trigger to run the report first. C. The playbook is currently running and will be available after it is finished. D. The report does not have auto-cache and extended log filtering enabled.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When managing incidents on FortiAnalyzer, what must an analyst be aware of? A. The status of the incident is always linked to the status of the attached event. B. Incidents must be acknowledged before they can be analyzed. C. Severity incidents rated with the level High have an initial service-level agreement (SLA) response time of 1 hour. D. You can manually attach generated reports to incidents.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. What can you conclude about these search results? (Choose two.) A. They were searched by using text mode. B. They can be downloaded to a file. C. They are sortable by columns and customizable. D. They are not available for analysis in FortiView.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the purpose of running the command diagnose sql status sqlplugind? A. To list the current SQL processes running B. To view the current hcache size C. To identify the database log insertion status D. To display the SQL query connections and hcache status",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. What does the data point at 12:20 indicate? A. FortiAnalyzer is using its cache to avoid dropping logs. B. The log insert lag time is increasing. C. The performance of FortiAnalyzer is below the baseline. D. The sqlplugind service is caught up with new logs.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which two statements about playbook execution are true? (Choose two.) A. Even if the playbook status is Failed, individual tasks may have succeeded. B. FortiAnalyzer will not commit changes made by a Failed playbook. C. You can run the default debugging playbook to investigate playbook errors. D. The Playbook Monitor provides troubleshooting logs.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement correctly describes one difference between templates and reports? A. Templates can be cloned, but reports cannot be cloned. B. Templates are mapped to device groups, while reports are mapped to ADOMs. C. Reports support macros, but templates do not. D. Reports provide more configuration options than templates.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Refer to the exhibit. A FortiAnalyzer analyst is customizing a SQL query to use in a report. Which SQL query should the analyst run to get the expected results? A. SELECT srcip AS \"Source IP\", dstport AS \"Destination Port\" FROM $log WHERE $filter AND srcip = '10.0.1.10' GROUP BY srcip, dstport ORDER BY dstport DESC B. SELECT srcip AS \"Source IP\", dstport AS \"Destination Port\" FROM $log WHERE $filter AND Source IP != '10.0.1.10' GROUP BY srcip, dstport ORDER BY dstport DESC C. SELECT srcip AS \"Source IP\", dstport AS \"Destination Port\" ORDER BY dstport DESC GROUP BY srcip, dstport FROM $log WHERE $filter AND srcip = '10.0.1.10' D. SELECT srcip AS \"Source IP\", dstport AS \"Destination Port\" FROM $log WHERE $filter AND srcip = '10.0.1.10' ORDER BY dstport GROUP by srcip, dstport DESC",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two statements regarding the outbreak detection service are true? (Choose two.) A. An additional license is required. B. Outbreak alerts are available on the root ADOM only. C. New alerts are received by email. D. It automatically downloads new event handlers and reports.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which log will generate an event with the status Contained? A. An IPS log with action=pass. B. An AV log with action=quarantine. C. A WebFilter log with action=dropped. D. An AppControl log with action=blocked.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement about automation connectors in FortiAnalyzer is true? A. An ADOM with the Fabric type comes with multiple connectors configured. B. The actions available with FortiOS connectors are determined by automation rules configured on FortiGate. C. The local connector becomes available after you configure any external connector. D. The SOC module must be enabled before external connectors are displayed.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement about the FortiSIEM management extension is correct? A. It requires a licensed FortiSIEM supervisor. B. Its use of the available disk space is capped at 50%. C. It can be installed as a dedicated VM. D. It allows you to manage the entire life cycle of a threat or breach.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement about exporting items in Report Definitions is true? A. Template exports contain associated charts and datasets. B. Datasets can be exported. C. Chart exports contain associated datasets. D. Templates can be exported.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit. Client-1 is trying to access the internet for web browsing. All FortiGate devices in the topology are part of a Security Fabric with logging to FortiAnalyzer configured. All firewall policies have logging enabled. All web filter profiles are configured to log only violations. Which statement about the logging behavior for this specific traffic flow is true? A. Both FGT-Aand FGT-B will create traffic logs. B. FGT-A will see the MAC address of FGT-B in the packets and know it does not need to log this flow. C. FGT-A will create logs for web filter events only if FGT-B did not already detect a violation. D. Only FGT-A will create traffic logs.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Refer to the exhibit. What can you conclude from this output? A. Archive logs are using more space than analytic logs. B. FGT-B is the Security Fabric root. C. The allocated disk quota to ADOM1 is 3 GB. D. There is no disk quota allocated to quarantining files.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Refer to the exhibit with partial output. Your colleague exported a playbook and has sent it to you for review. You open the file in a text editor and observe the output as shown in the exhibit. Which statement about the export is true? A. Your colleague put a password on the export. B. The option to include the connector was not selected. C. The playbook is misconfigured. D. The export data type is zipped.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement about sending notifications with incident updates is true? A. Notifications can be sent only when an incident is created or deleted. B. Each incident can send notifications to a single external platform. C. Each connector used can have different notification settings. D. You must configure an output profile to send notifications by email.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A playbook contains five tasks in total. An administrator runs the playbook and four out of five tasks finish successfully, but one task fails. What will be the status of the playbook after it is run? A. Success B. Attention_required C. Upstream_failed D. Failed",
+    "options": {},
+    "most_voted": "D"
+  }
+]
