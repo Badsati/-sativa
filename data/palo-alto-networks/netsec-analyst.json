@@ -1,0 +1,162 @@
+[
+  {
+    "question": "A security administrator is creating an internet of things (IoT) Security policy and needs to select behaviors for the trafficю Which characteristic has the greatest impact to the risk level of applications? A. Used by Malware B. Pervasive C. Tunnels Other Apps D. Known Vulnerabilities",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which action ensures that sensitive information such as medical records, financial transactions, and legal communications are not decrypted and that they maintain strong security? A. Create a log forwarding filter to exclude sensitive information. B. Disable decryption globally to avoid exposing sensitive data. C. Create an SSL Inbound Inspection policy to identify users sending sensitive information. D. Create a no-decrypt policy for traffic matching specific URL categories.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An alert indicates that multiple internal endpoints are communicating with a known malicious IP address, and the analyst needs to identify the scope of this activity by using Log Viewer. What is the first step in identifying which internal hosts have communicated with the malicious IP address and determining the extent of the communication? A. Filter the traffic logs by the known endpoint IP addresses. B. Filter the traffic logs by the DNS Server's IP address. C. Filter the traffic logs by the NGFWs IP addresses. D. Filter the traffic logs by the malicious IP address.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A security administrator wants to determine which action a URL Filtering profile will take on the URL \"www.chatgpt.com.\" The firewall has a custom URL object with \"www.chatgpt.com/\" as a member called \"Permitted-AI.\" The URL \"www.chatgpt.com\" is also categorized as \"Artificial-Intelligence, \" \"Computer-and-Internet-Info,\" and \"Low-Risk.\" The URL Filtering profile has the following in descending order: • Artificial-Intelligence set to continue • Computer-and-Internet-Info set to block • Low-Risk set to alert • Permitted-AI set to allow Which action will the URL Filtering profile take when traffic matches the \"www.chatgpt.com\" URL on a rule with this profile attached? A. Continue B. Alert C. Allow D. Block",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A security administrator is building out Decryption policies and wants to decrypt according to Palo Alto Networks best practices. Which URL categories should the administrator add to the policies? A. Proxy avoidance and anonymizers, ransomware unknown, web-based email, web advertisements, and not resolved. B. Online storage and backup web-based email web hosting, personal sites and blogs, content delivery networks, and high-risk URL. C. AI website generator, Command and Control, compromised website, encrypted DNS, and dynamic DNS. D. Newly registered domains, internet communications and telephony, high-risk URL, insufficient content, hacking, and grayware.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A new firewall has been added to Panorama After entering the firewall serial number and configuring the Panorama IP address on the firewall the device still appears as \"disconnected\" under Panorama Managed Devices. Given that both Panorama and the firewall are on the same subnet, what are two causes for this behavior? (Choose two.) A. Panorama policy and objects are disabled in the firewall under Panorama settings. B. The firewall does not have a management profile to allow the Panorama IP address. C. Panorama IP is not allowed in the firewall management interface permitted IP list. D. Panorama is running on a PAN-OS version lower than the firewall.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Strata Logging Service is experiencing an issue with log retention because the quota has been filled. While the manager works with Palo Alto Networks to potentially increase the quota, an administrator is asked to ensure certain logs are given priority to meet compliance requirements, as the company has not approved increased budgets. Which steps should the administrator take to meet compliance without incurring additional cost? A. Make a custom report in Strata Cloud Manager (SCM) for the needed areas then clear the Strata Log Service logs used in the report after the report is made. B. Download all logs to ensure they are retained then clear the Strata Logging Service tenant so new logs can flow again. C. Create a new AWS account and S3 bucket, then create a Log Forwarding profile that sends all logs to the S3 bucket. D. Gather the information on the log types used for compliance reporting, then reallocate appropriate quota percentages in the configure page.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company uses a load balancer with a single public IP address to distribute inbound traffic to multiple internal servers running a custom application on the non-standard port 8443. For example, traffic destined to the load balancer IP address 203.0.113.50:8443 needs to be forwarded to 10.20.30.40:9443. The load balancer directs traffic to internal hosts based on the destination port. The company requires the NAT policy to support precise port translation to ensure proper server load balancing and application availability. Which Destination NAT configuration should be implemented? A. Configure a static NAT rule with source translation enabled to translate the public and private IP addresses, leaving port translation unchanged. B. Configure a static NAT rule that maps the public IP address and port 8443 to the corresponding internal IP address and port 9443. C. Configure a No NAT rule, because the load balancer dynamically handles the port 8443 to 9443 translation. D. Configure Dynamic IP and Port (DIPP) NAT rule to automatically handle port translation, and translate the destination IP address.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which set of actions will allow an administrator to handle traffic redirection most efficiently when degradation occurs on a specific SaaS application that has an on-premises backup? A. Use Advanced Routing Engine to create a logical router with BGP, then set up a new AS routing environment. Peer the AS to the SaaS company's AS and redistribute routes from the SaaS company's AS with BGP Filtering profile for the application-specific traffic. B. Use VPN tunneling to create tunnels between the branches and the SaaS application provider with a backup tunnel pointing to the on-premises backup. Use OSPF to determine the shortest path to reach the application which will reconverge when there is a failure. C. Use Policy-Based Forwarding (PBF) to create a rule that sends sessions for the SaaS application to the on-premises backup, then create a path monitor with \"wait-recover\" selected. Ensure that \"enforce symmetric return\" is enabled for the rule so failures do not create routing loops. D. Use Advanced SD-WAN to create SaaS Quality profiles and Path Quality profiles with appropriate SLA levels, then create a Traffic Distribution profile set for \"top down\" with a DIA interface first and the SD-WAN path that leads to on-premises backup second. Use these in an SD-WAN rule.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two actions can be taken by a Data Filtering profile when sensitive data is detected? (Choose two.) A. Block B. Encrypt C. Alert D. Captive Portal",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the expected behavior of an NGFW for handling traffic that does not match any of the SD-WAN rules in the policy? A. It will send the traffic out the first interface listed in the SD-WAN interface profile. B. It will send the traffic using an implied SD-WAN round-robin rule. C. It will not use SD-WAN but will fall back to the standard routing table to determine how to handle the traffic. D. It will drop the traffic using an implied SD-WAN default deny rule.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Beyond being a SaaS-based delivery platform, what is an advantage of Strata Cloud Manager (SCM) over Panorama? A. Live, inline best practice checks B. NGFW and Prisma Access management C. Customizable dashboards D. Real-time alerting",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A team of analysts uses four NGWFs with the Precision Al Bundle, SaaS Security Inline, and Strata Cloud Manager Pro Collectively this secures all company assets across the data center and two remote sites. A security incident requires the team to review a mobile user, John Doe. During the audit, the team prompts, \"How was the application experience for John Doe over the past 60 days?” What is an expected response from Strata Copilot? A. \"The average application test score for 'john doe’ over the past 60 days is 37 67.\" B. The user ’John Doe' encountered a total of 219 threats in the last 3 hours.\" C. The top three threats impacting John Doe are phishing, SQL injections, and ransomware.\" D. \"Your organization doesn’t have ADEM.\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An analyst notices latency on the firewall and wants to improve performance. Which steps can be taken to reduce management plane CPU while working to determine the underlying problem? A. Disable log at session start and only log at session end. B. Enable logging for intrazone-default and interzone-default security rules. C. Disable log at session end and only log at session start. D. Enable log forwarding from the firewall to an external destination.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company requires that all file transfers only over HTTP (tcp/80 and tcp/8080) to SaaS storage must be inspected for data exfiltration. Traffic to encrypted HTTPS SaaS storage cannot be inspected based on the company decryption restrictions. When using a security profile group, which Security policy configuration meets this requirement? A. One with data filtering to inspect all HTTP traffic on the web-browsing application using application-default for the service. B. One with URL filtering and file blocking to block all file uploads to the URL category online-storage-and-backup, then set the service to tcp/80 and tcp/8080. C. One with data filtering and the service set to tcp/80 and tcp/8080, then verify block threshold is set to \"1\" to stop exfiltration. D. One with data filtering and an application filter that matches \"file-sharing\" applications, then set the service to tcp/80 and tcp/8080.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A financial company is deploying NGFWs with the Advanced SD-WAN subscription to improve uptime and bandwidth across thousands of ATMs. The company requires that traffic flows to the internal application needed by the ATMs always use the path with the lowest latency and packet loss. Which unique SD-WAN rule parameters meet this criteria? A. Application/Service: \"Internal Application for ATMs\" → Path Selection: \"Best Available Path\" in Traffic Distribution Profile. B. Application/Service: \"Internal Application for ATMs\" & \"Management\" in Path Quality Profile → Path Selection \"Any.\" C. Application/Service: \"Internal Application for ATMs\" → Path Selection \"Weighted Distribution\" in Traffic Distribution Profile. D. Application/Service: \"Internal Application for ATMs\" & \"ATM Path(Custom)\" in Path Quality Profile → Path Selection \"Any.\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A network security analyst is having difficulty configuring a data protection setup to find references to company secret information. The phrases and words that indicate secret information are not unique and can show up in publicly available assets. Which steps will result in a successful configuration? A. Create a custom data pattern with basic regular expression, then use expression quantifiers to validate that the secret information is being matched an appropriate number of times. B. Create a custom data pattern with weighted regular expression, weight the key phrases positively, and weight information that would disqualify negatively. C. Create a custom data pattern with regular expression for the key phrases and proximity keywords containing what is typically around those phrases when it is secret. D. Create two data dictionaries, one with all the key phrases and the other with phrases that would disqualify the secrecy. Use the first dictionary in a primary rule and the second in the secondary rule.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "To comply with new regulations, a company requires all traffic logs related to the \"HR-App\" application across all Security policies be sent to a compliance syslog server. A Log Forwarding profile already exists to send logs to a default syslog server. What is the most efficient process for configuring an NGFW to comply with the new regulations without disrupting existing traffic logs being sent to the default syslog server? A. Edit the existing Log Forwarding profile by adding a new match list consisting of Log Forwarding filter for the application named \"HR-App\" to direct logs to the compliance syslog server. B. Create a new Log Forwarding profile, update the profile with the details of the compliance syslog server and attach the profile to the relevant Security policy rule. C. Edit the existing Log Forwarding profile, add a new entry, use the filter builder to match on application \"HR-App, \" and add the details for the compliance syslog server. D. Create a Log Forwarding profile and enable the predefined filter for \"Application\" In the associated dropdown, select or create a new application object with the name \"HR-App,\" and add the details for the compliance syslog server.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "There are intermittent connectivity issues between two internal zones on a PA-Series firewall. Although the Security policies appear correctly configured, traffic between the zones is experiencing unexpected drops. Which troubleshooting step will isolate the root cause of this behavior? A. Use the PAN-OS GUI Troubleshooting tool to review interface status, verify zone assignments, and confirm that all links are operational. B. Use the CLI command show system state filter sys.s1.* | match Error to find interface errors across all the interfaces. C. Use the CLI command tcpdump filter and set the source and destination zones in the filter to capture and analyze traffic flows between zones, checking for packet loss on the data plane. D. Use the CLI command show system info to monitor CPU and memory usage, ensuring that resource constraints are not causing interfaces to drop packets between zones.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company requires that all employees connecting through GlobalProtect VPN are allowed access only to approved web browsing and email applications. These sessions must undergo strict content inspection, and user access must be authenticated based on their Active Directory group membership. Which Security policy configuration meets these requirements? A. Configure GlobalProtect split tunneling to provide access to web browsing and email applications through the GlobalProtect Gateway, override the default interzone policy action to allow, and attach the strict security profile group. B. Configure a User-ID Access profile on the source zone, use App-ID to provide access to approved applications, and attach the strict security profile group. C. Configure a source user group to authorize GlobalProtect users, use App-ID to provide access to only the approved applications, and attach a best practice security profile group. D. Configure group mapping to authorize GlobalProtect users, use App-ID to restrict access to only email-base and web browsing applications, and attach a best practice security profile group.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Following a configuration change, the management interface of a PA-Series NGFW becomes unreachable, and no data plane interface is configured with a management profile. Which troubleshooting step will help identify recent changes? A. Log into an alternate management port and review the commit history via the PAN-OS GUI to pinpoint changes affecting the management interface. B. Access the device via the serial console and use the CLI command show config diff to compare the running configuration with a saved backup. C. Access the device via the serial console and use the CLI command show config audit info to identify recent configuration changes. D. Export a named configuration snapshot and compare it manually using a text editor from the remote management portal.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which aspect of a network’s current health does the Strata Cloud Manager (SCM) Device Health dashboard provide? A. Health trends based on which CVEs are not remediated. B. Health score based on current physical hardware issues detected. C. Health score based on security profile feature adoption. D. Health trends for firewalls filtered by how long the issue has been experienced.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which log type should be checked first using Log Viewer when a user reports being unable to access a specific website? A. Firewall/URL B. Firewall/Traffic C. Firewall/Threat D. Firewall/DNS Security",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the most granular method for ensuring that traffic to a firewall’s public IP address on the public interface is translated to the private IP address of the web server? A. Create one NAT policy, ensure the policy has original packet destination IP as the public IP address and translated packet destination IP as the private IP address, and mark Bi-directional as \"Yes.\" B. Create one NAT policy, set the source address to the public IP address and destination address to the private IP address, and ensure Bi-directional is checked. C. Create two static NAT policies, ensure one policy has original packet destination IP as the public IP address and translated packet destination IP as the private IP address, ensure the other policy has original packet source IP as the private IP address and the translated packet source IP as the public IP address. D. Create one NAT policy, ensure the policy has original packet source IP as the private IP address and the translated packet source IP as the public IP address, and mark Bi-directional as \"Yes.\"",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are two valid pattern types in a Data Filtering profile? (Choose two.) A. Custom Dictionary B. Proximity Pattern C. File Properties D. Regular Expression",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A firewall administrator implementing Palo Alto Networks best practices on the company firewall reviews NGFW alerts in Strata Cloud Manager (SCM) and determines that one alert does not apply to this environment. If the administrator has no intention to resolve the underlying issue, what is the appropriate next step? A. Click \"Copilot” in the top right, and ask the Copilot to make an exception for the NGFW alert. B. Change the NGFW alert priority to \"Not Set.\" C. Assign the NGFW alert to the \"Dismiss\" user. D. Open the NGFW alert and click \"Suppress\" under \"Actions.\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Palo Alto Networks NGFW for a high-security environment is being configured and requires a security profile group that includes vulnerability protection. When configuring the action based on the severity of the threat types, what does Palo Alto Networks recommend? A. Use action \"allow\" for critical high, and medium vulnerabilities. B. Use action \"alert\" for critical, high, and medium vulnerabilities. C. Use action \"default\" for critical, high, and medium vulnerabilities. D. Use action \"reset-both\" for critical, high, and medium vulnerabilities.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A firewall administrator is creating an application override rule to bypass Layer 7 inspection for a pre-defined application. What is the expected behavior for Content-ID checks for this application? A. DNS Security will have degraded performance for advanced features. B. WildFire will only use inline-ML checks instead of sending items to WildFire Cloud. C. No additional security checks will occur due to there being only Layer 4 handling. D. Threat inspection will occur if the pre-defined application supports threat inspection.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which action ensures that a Panorama push will not fail due to pending local firewall changes? A. Commit configurations locally on the device and then repeat the same configuration from Panorama. B. Disable \"Merge with Device Candidate Config.\" C. Enable \"Force Template Values.\" D. Enable both options \"Include Device and Network Templates\" and \"Include Firewall Clusters.\"",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A custom spyware signature that includes implementing a pattern match for the HTTP header content and HTTP message body is being created. Which type of context should be used for the standards within the signature? A. String B. Integer C. Parameter D. Body",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A network security team is planning a maintenance window to address several Palo Alto Networks security advisories. They need to correlate specific CVEs with their managed firewalls to prioritize the most critical updates. Where in Strata Cloud Manager (SCM) can the team find this correlation and get guidance? A. Insights → Health Insights B. Dashboard → Command Center C. Insights → Software Upgrade Planner D. Dashboard → PAN-OS CVEs",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A security engineer is configuring a destination NAT rule to facilitate access to a resource. The engineer notices that the DNS Rewrite option is greyed out in the rule configuration dialog. Which action must the engineer take within the Destination Address Translation settings to enable this option? A. Enable the Bi-directional NAT checkbox. B. Change the Translation Type to \"None.\" C. Set the Translation Type to \"Static IP.\" D. Specify a Translated Port in the Service column.",
+    "options": {},
+    "most_voted": "C"
+  }
+]
