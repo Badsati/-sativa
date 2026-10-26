@@ -1,0 +1,162 @@
+[
+  {
+    "question": "As a developer, you want to ensure your plugins are up-to-date with the latest versions. Which Terraform command should you use? A. terraform refresh -upgrade B. terraform apply -upgrade C. terraform providers -upgrade D. terraform init -upgrade",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Your security team scanned some Terraform workspaces and found secrets stored in plaintext in state files. How can you protect that data? A. Delete the state file every time you run Terraform. B. Store the state in an encrypted backend. C. Always store your secrets in a secrets.tfvars file. D. Edit your state file to scrub out the sensitive data.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You can reference a resource created with for_each using a splat ( * ) expression. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You add a new resource to an existing Terraform configuration, but do not update the version constraint in the configuration. The existing and new resources use the same provider. The working directory contains a .terraform.lock.hcl file. How will Terraform choose which version of the provider to use? A. Terraform will use the latest version of the provider for the new resource and the version recorded in the lock file to manage existing resources. B. Terraform will use the version recorded in your lock file. C. Terraform will check your state file to determine the provider version to use. D. Terraform will use the latest version of the provider available at the time you provision your new resource.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "All standard backend types support state storage, locking, and remote operations like plan, apply, and destroy. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A resource block is shown in the Exhibit section of this page. How would you reference the attribute name of this resource in HCL? A. data.kubernetes_namespace.name B. kubernetes_namespace.example.name C. kubernetes_namespace.test.name D. resource.kubernetes_namespace.example.name",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which argument(s) are required when declaring a Terraform variable? A. type B. default C. description D. All of the above E. None of the above",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which Terraform command checks that your configuration syntax is correct? A. terraform show B. terraform init C. terraform fmt D. terraform validate",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How does the HCP Terraform/Terraform Cloud integration differ from backends such as S3, Consul, etc.? A. It can execute Terraform runs on dedicated infrastructure in HCP Terraform/Terraform Cloud. B. It doesn’t show the output of a terraform apply locally. C. It is only available to paying customers. D. All of the above.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of these actions will prevent two Terraform runs from changing the same state file at the same time? A. Delete the state before running Terraform. B. Refresh the state after running Terraform. C. Run Terraform with parallelism set to 1. D. Configure state locking for your state backend.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When should you use the force-unlock command? A. When apply has failed due to a state lock. B. When automatic unlocking has failed. C. When you see a status message stating that you cannot acquire the lock. D. When you have a high priority change.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You used Terraform to create an ephemeral development environment in the cloud and are now ready to destroy all the infrastructure described by your Terraform configuration. To be safe, you would like to first see all the infrastructure that Terraform will delete. Which command should you use to show all the resources that will be deleted? (Choose two.) A. Run terraform state rm *. B. Run terraform destroy.This will output all the resources that will be deleted before prompting for approval. C. Run terraform plan -destroy. D. Run terraform show -destroy.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following locations can Terraform use as a private source for modules? (Choose two.) A. Public repository on GitHub. B. Internally hosted VCS (Version Control System) platform. C. Public Terraform Registry. D. Private repository on GitHub.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool. However, you are standardizing with Terraform and want to manage these VMs using Terraform instead. What are the two things you must do to achieve this? (Choose two.) A. Provision new VMs using Terraform with the same VM names. B. Use the terraform import command for the existing VMs. C. Write Terraform configuration for the existing VMs. D. Run the terraform import-gcp command.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A resource block is shown in the Exhibit space of this page. How would you reference the name value of the second instance of this resource? A. aws_instance.web[1] B. element(aws_instance.web, 2) C. aws_instance.web[2].name D. aws_instance.web[1].name E. aws_instance.web.*.name",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of these is true about Terraform’s plugin-based architecture? A. You can create a provider for your API if none exists. B. Terraform can only source providers from the internet. C. All providers are part of the Terraform core binary. D. Every provider in a configuration has its own state file for its resources.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Terraform can only manage resource dependencies if you set them explicitly with the depends_on argument. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You decide to move a Terraform state file to Amazon S3 from another location. You write the code shown in the Exhibit space into a file called backend.tf. Which command will migrate your current state file to the new S3 backend? A. terraform refresh B. terraform init C. terraform push D. terraform state",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have declared a variable called var.list which is a list of objects that all have an attribute id . Which options will produce a list of the IDs? (Choose two.) A. [ for o in var.list : o.id ] B. var.list[*].id C. [ var.list[*].id ] D. { for o in var.list : o => o.id }",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "terraform validate uses provider APIs to verify your infrastructure settings. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "It is ____________ to change the Terraform backend from the default “local” backend to a different one after performing your first terraform apply. A. impossible B. discouraged C. optional D. mandatory",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is true about terraform apply? (Choose two.) A. You cannot target specific resources for the operation. B. Depending on provider specification, Terraform may need to destroy and recreate your infrastructure resources. C. It only operates on infrastructure defined in the current working directory or workspace. D. By default, it does not refresh your state file to reflect the current infrastructure configuration. E. You must pass the output of a terraform plan command to it.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is available only in HCP Terraform workspaces and not in Terraform CLI? A. Secure variable storage. B. Support for multiple cloud providers. C. Dry runs with terraform plan. D. Using one workspace’s state as a data source for another.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which two steps are required to provision new infrastructure in the Terraform workflow? (Choose two.) A. import B. init C. apply D. plan E. validate",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which parameters does terraform import require? (Choose two.) A. Provider B. Path C. Resource ID D. Resource address",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You must initialize your working directory before running terraform validate. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When does Terraform create the .terraform.lock.hcl file? A. After your first terraform plan. B. After your first terraform apply. C. After your first terraform init. D. Whenever you enable state locking.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You have a Terraform configuration that defines a single virtual machine with no references to it. You have run terraform apply to create the resource, then removed the resource definition from your Terraform configuration file. What will happen when you run terraform apply in the working directory again? A. Terraform will destroy the virtual machine. B. Terraform will remove the virtual machine from the state file, but the resource will still exist. C. Terraform will error. D. Nothing.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a Terraform provider not responsible for? A. Provisioning infrastructure in multiple cloud providers. B. Managing actions to take based on resource differences. C. Understanding API interactions with a hosted service. D. Managing resources and data sources based on an API.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "One cloud block always maps to a single HCP Terraform/Terraform Cloud workspace. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You use a Cloud provider account that is shared with other team members. You previously used Terraform to create a load balancer that listens on port 80. After some application changes, you updated the Terraform code to change the port to 443. You run terraform plan and see that the execution plan shows the port changing from 80 to 443 like you intended, and step away to grab some coffee. In the meantime, another team member manually changes the load balancer port to 443 through the Cloud provider console before you get back to your desk. What will happen when you run terraform apply upon returning to your desk? A. Terraform will not make any changes to the load balancer and will update the state file to reflect the manual change. B. Terraform will fail with an error because the state file is no longer accurate. C. Terraform will change the load balancer port to 80, and then change it back to 443. D. Terraform will recreate the load balancer.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When using Terraform to deploy resources into Azure, which scenarios are true regarding state files? A. Changing resources via the Azure Cloud Console records the change in the current state file. B. When you change a resource via the Azure Cloud Console. Terraform records the changes in a new state file. C. When you change a Terraform-managed resource via the Azure Cloud Console. Terraform updates the state file to reflect the change during the next plan or apply. D. Changing resources via the Azure Cloud Console does not update current state file.",
+    "options": {},
+    "most_voted": "C"
+  }
+]
