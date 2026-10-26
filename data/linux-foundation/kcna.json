@@ -1,0 +1,1417 @@
+[
+  {
+    "question": "What native runtime is Open Container Initiative (OCI) compliant? A. runC B. runV C. kata-containers D. gvisor",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which API object is the recommended way to run a scalable, stateless application on your cluster? A. ReplicaSet B. Deployment C. DaemonSet D. Pod",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A CronJob is scheduled to run by a user every one hour. What happens in the cluster when it's time for this CronJob to run? A. Kubelet watches API Server for CronJob objects. When it's time for a Job to run, it runs the Pod directly. B. Kube-scheduler watches API Server for CronJob objects, and this is why it's called kube-scheduler. C. CronJob controller component creates a Pod and waits until it finishes to run. D. CronJob controller component creates a Job. Then the Job controller creates a Pod and waits until it finishes to run.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the purpose of the kubelet component within a Kubernetes cluster? A. A dashboard for Kubernetes Clusters that allows management and troubleshooting of applications. B. A network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept. C. A component that watches for newly created Pods with no assigned node, and selects a node for them to run on. D. An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the default value for authorization-mode in Kubernetes API server? A. --authorization-mode=RBAC B. --authorization-mode=AlwaysAllow C. --authorization-mode=AlwaysDeny D. --authorization-mode=ABAC",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Let's assume that an organization needs to process large amounts of data in bursts, on a cloud-based Kubernetes cluster. For instance: each Monday morning, they need to run a batch of 1000 compute jobs of 1 hour each, and these jobs must be completed by Monday night. What's going to be the most cost-effective method? A. Run a group of nodes with the exact required size to complete the batch on time, and use a combination of taints, tolerations, and nodeSelectors to reserve these nodes to the batch jobs. B. Leverage the Kubernetes Cluster Autoscaler to automatically start and stop nodes as they're needed. C. Commit to a specific level of spending to get discounted prices (with e.g. “reserved instances” or similar mechanisms). D. Use PriorityСlasses so that the weekly batch job gets priority over other workloads running on the cluster, and can be completed on time.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is a Kubernetes service with no cluster IP address called? A. Headless Service B. Nodeless Service C. IPLess Service D. Specless Service",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "CI/CD stands for: A. Continuous Information / Continuous Development B. Continuous Integration / Continuous Development C. Cloud Integration / Cloud Development D. Continuous Integration / Continuous Deployment",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What default level of protection is applied to the data in Secrets in the Kubernetes API? A. The values use AES Symmetric Encryption B. The values are stored in plain text C. The values are encoded with SHA256 hashes D. The values are base64 encoded",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What function does kube-proxy provide to a cluster? A. Implementing the Ingress resource type for application traffic. B. Forwarding data to the correct endpoints for Services. C. Managing data egress from the cluster nodes to the network. D. Managing access to the Kubernetes API.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How long should a stable API element in Kubernetes be supported (at minimum) after deprecation? A. 9 months B. 24 months C. 12 months D. 6 months",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the name of the lightweight Kubernetes distribution built for IoT and edge computing? A. OpenShift B. k3s C. RKE D. k1s",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Kubernetes ___ allows you to automatically manage the number of nodes in your cluster to meet demand. A. Node Autoscaler B. Cluster Autoscaler C. Horizontal Pod Autoscaler D. Vertical Pod Autoscaler",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements is correct concerning Open Policy Agent (OPA)? A. The policies must be written in Python language. B. Kubernetes can use it to validate requests and apply policies. C. Policies can only be tested when published. D. It cannot be used outside Kubernetes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a cloud native world, what does the IaC abbreviation stands for? A. Infrastructure and Code B. Infrastructure as Code C. Infrastructure above Code D. Infrastructure across Code",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In which framework do the developers no longer have to deal with capacity, deployments, scaling and fault tolerance, and OS? A. Docker Swam B. Kubernetes C. Mesos D. Serverless",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following characteristics is associated with container orchestration? A. Application message distribution B. Dynamic scheduling C. Deploying application JAR files D. Virtual Machine distribution",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following workload require a headless service while deploying into the namespace? A. StatefulSet B. CronJob C. Deployment D. DaemonSet",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is Helm? A. An open source dashboard for Kubernetes. B. A package manager for Kubernetes applications. C. A custom scheduler for Kubernetes. D. An end to end testing project for Kubernetes applications.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which is the correct kubectl command to display logs in real time? A. kubectl logs -p test-container-1 B. kubectl logs -c test-container-1 C. kubectl logs -l test-container-1 D. kubectl logs -f test-container-1",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How to load and generate data required before the Pod startup? A. Use an init container with shared file storage. B. Use a PVC volume. C. Use a sidecar container with shared volume. D. Use another pod with a PVC.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the core functionality of GitOps tools like Argo CD and Flux? A. They track production changes made by a human in a Git repository and generate a human-readable audit trail. B. They replace human operations with an agent that tracks Git commands. C. They automatically create pull requests when dependencies are outdated. D. They continuously compare the desired state in Git with the actual production state and notify or act upon differences.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Kubernetes resource workload ensures that all (or some) nodes run a copy of a Pod? A. ReplicaSet B. StatefulSet C. DaemonSet D. Deployment",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "We can extend the Kubernetes API with Kubernetes API Aggregation Layer and CRDs. What is CRD? A. Custom Resource Definition B. Custom Restricted Definition C. Customized RUST Definition D. Custom RUST Definition",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Kubernetes project work is carried primarily by SIGs. What does SIG stand for? A. Special Interest Group B. Software Installation Guide C. Support and Information Group D. Strategy Implementation Group",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the order of 4C’s in Cloud Native Security, starting with the layer that a user has the most control over? A. Cloud -> Container -> Cluster -> Code B. Container -> Cluster -> Code -> Cloud C. Cluster -> Container -> Code -> Cloud D. Code -> Container -> Cluster -> Cloud",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which group of container runtimes provides additional sandboxed isolation and elevated security? A. rune, cgroups B. docker, containerd C. runsc, kata D. crun, cri-o",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the common standard for Service Meshes? A. Service Mesh Specification (SMS) B. Service Mesh Technology (SMT) C. Service Mesh Interface (SMI) D. Service Mesh Function (SMF)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement about Ingress is correct? A. Ingress provides a simple way to track network endpoints within a cluster. B. Ingress is a Service type like NodePort and ClusterIP. C. Ingress is a construct that allows you to specify how a Pod is allowed to communicate. D. Ingress exposes routes from outside the cluster to services in the cluster.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What best describes cloud native service discovery? A. It's a mechanism for applications and microservices to locate each other on a network. B. It's a procedure for discovering a MAC address, associated with a given IP address. C. It's used for automatically assigning IP addresses to devices connected to the network. D. It's a protocol that turns human-readable domain names into IP addresses on the Internet.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What components are common in a service mesh? A. tracing and log storage B. circuit breaking and Pod scheduling C. data plane and runtime plane D. service proxy and control plane",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which storage operator in Kubernetes can help the system to self-scale, self-heal, etc? A. Rook B. Kubernetes C. Helm D. Container Storage Interface (CSI)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What fields must exist in any Kubernetes object (e.g. YAML) file? A. apiVersion, kind, metadata B. kind, namespace, data C. apiVersion, metadata, namespace D. kind, metadata, data",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following would fall under the responsibilities of an SRE? A. Developing a new application feature. B. Creating a monitoring baseline for an application. C. Submitting a budget for running an application in a cloud. D. Writing policy on how to submit a code change.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What are the initial namespaces that Kubernetes starts with? A. default, kube-system, kube-public, kube-node-lease B. default, system, kube-public C. kube-default, kube-system, kube-main, kube-node-lease D. kube-default, system, kube-main, kube-primary",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a probe within Kubernetes? A. A monitoring mechanism of the Kubernetes API. B. A pre-operational scope issued by the kubectl agent. C. A diagnostic performed periodically by the kubelet on a container. D. A logging mechanism of the Kubernetes API.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Kubernetes feature would you use to guard against split brain scenarios with your distributed application? A. Replication controllers B. Consensus protocols C. Rolling updates D. StatefulSet",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What feature must a CNI support to control specific traffic flows for workloads running in Kubernetes? A. Border Gateway Protocol B. IP Address Management C. Pod Security Policy D. Network Policies",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the main role of the Kubernetes DNS within a cluster? A. Acts as a DNS server for virtual machines that are running outside the cluster. B. Provides a DNS as a Service, allowing users to create zones and registries for domains that they own. C. Allows Pods running in dual stack to convert IPv6 calls into IPv4 calls. D. Provides consistent DNS Names for Pods and Services for workloads that need to communicate with each other.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Scenario: You have a Kubernetes cluster hosted in a public cloud provider. When trying to create a Service of type LoadBalancer, the external-ip is stuck in the \"Pending\" state. Which Kubernetes component is failing in this scenario? A. Cloud Controller Manager B. Load Balancer Manager C. Cloud Architecture Manager D. Cloud Load Balancer Manager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the characteristics for building every cloud-native application? A. Resiliency, Operability, Observability, Availability B. Resiliency, Containerd, Observability, Agility C. Kubernetes, Operability, Observability, Availability D. Resiliency, Agility, Operability, Observability",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What does CNCF stand for? A. Cloud Native Community Foundation B. Cloud Native Computing Foundation C. Cloud Neutral Computing Foundation D. Cloud Neutral Community Foundation",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called: A. namespaces B. containers C. hypervisors D. cgroups",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What component enables end users, different parts of the Kubernetes cluster, and external components to communicate with one another? A. kubectl B. AWS Management Console C. Kubernetes API D. Google Cloud SDK",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which command will list the resource types that exist within a cluster? A. kubectl api-resources B. kubectl get namespaces C. kubectl api-versions D. curl https://kubectrl/namespaces",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of these components is part of the Kubernetes Control Plane? A. coredns B. cloud-controller-manager C. kube-proxy D. kubelet",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following systems is NOT compatible with the CRI runtime interface standard? A. CRI-0 B. dockershim C. systemd D. containerd",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a key feature of a container network? A. Proxying REST requests across a set of containers. B. Allowing containers running on separate hosts to communicate. C. Allowing containers on the same host to communicate. D. Caching remote disk access.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can you monitor the progress for an updated Deployment/DaemonSets/StatefulSets? A. kubectl rollout watch B. kubectl rollout progress C. kubectl rollout state D. kubectl rollout status",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the goal of load balancing? A. Automatically measure request performance across instances of an application. B. Automatically distribute requests across different versions of an application. C. Automatically distribute instances of an application across the cluster. D. Automatically distribute requests across instances of an application.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How are ReplicaSets and Deployments related? A. Deployments manage ReplicaSets and provide declarative updates to Pods. B. ReplicaSets manage stateful applications, Deployments manage stateless applications. C. Deployments are runtime instances of ReplicaSets. D. ReplicaSets are subsets of Jobs and CronJobs which use imperative Deployments.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What factors influence the Kubernetes scheduler when it places Pods on nodes? A. Pod memory requests, node taints, and Pod affinity. B. Pod labels, node labels, and request labels. C. Node taints, node level, and Pod priority. D. Pod priority, container command, and node labels.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the core metric type in Prometheus used to represent a single numerical value that can go up and down? A. Summary B. Counter C. Histogram D. Gauge",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the primary mechanism to identify grouped objects in a Kubernetes cluster? A. Custom Resources B. Labels C. Label Selector D. Pod",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the name of the Kubernetes resource used to expose an application? A. Port B. Service C. DNS D. Deployment",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is a DaemonSet? A. It's a type of workload that ensures a specific set of nodes run a copy of a Pod. B. It's a type of workload responsible for maintaining a stable set of replica Pods running in any node. C. It's a type of workload that needs to be run periodically on a given schedule. D. It's a type of workload that provides guarantees about ordering, uniqueness, and identity of a set of Pods.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the telemetry component that represents a series of related distributed events that encode the end-to-end request flow through a distributed system? A. Metrics B. Logs C. Spans D. Traces",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In the Kubernetes platform, which component is responsible for running containers? A. etcd B. CRI-O C. cloud-controller-manager D. kube-controller-manager",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Services and Pods in Kubernetes are ______ objects. A. JSON B. YAML C. Java D. REST",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What Kubernetes component handles network communications inside and outside of a cluster, using operating system packet filtering if available? A. kube-proxy B. kubelet C. etcd D. kube-controller-manager",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What Kubernetes control plane component exposes the programmatic interface used to create, manage and interact with the Kubernetes objects? A. kube-controller-manager B. kube-proxy C. kube-apiserver D. etcd",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which type of Service requires manual creation of Endpoints? A. LoadBalancer B. Services without selectors C. NodePort D. ClusterIP with selectors",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of these commands is used to retrieve the documentation and field definitions for a Kubernetes resource? A. kubectl explain B. kubectl api-resources C. kubectl get --help D. kubectl show",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is a lightweight tool that manages traffic flows between services, enforces access policies, and aggregates telemetry data, all without requiring changes to application code? A. NetworkPolicy B. Linkerd C. kube-proxy D. Nginx",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Kubernetes resource uses immutable: true boolean field? A. Deployment B. Pod C. ConfigMap D. ReplicaSet",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement about the Kubernetes network model is correct? A. Pods can only communicate with Pods exposed via a Service. B. Pods can communicate with all Pods without NAT. C. The Pod IP is only visible inside a Pod. D. The Service IP is used for the communication between Services.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the resource type used to package sets of containers for scheduling in a cluster? A. Pod B. ContainerSet C. ReplicaSet D. Deployment",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Can a Kubernetes Service expose multiple ports? A. No, you can only expose one port per each Service. B. Yes, but you must specify an unambiguous name for each port. C. Yes, the only requirement is to use different port numbers. D. No, because the only port you can expose is port number 443.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which persona is normally responsible for defining, testing, and running an incident management process? A. Site Reliability Engineers B. Project Managers C. Application Developers D. Quality Engineers",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the default deployment strategy in Kubernetes? A. Rolling update B. Blue/Green deployment C. Canary deployment D. Recreate deployment",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which command provides information about the field replicas within the spec resource of a deployment object? A. kubectl get deployment.spec.replicas B. kubectl explain deployment.spec.replicas C. kubectl describe deployment.spec.replicas D. kubectl explain deployment --spec.replicas",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is a responsibility of the governance board of an open source project? A. Decide about the marketing strategy of the project. B. Review the pull requests in the main branch. C. Outline the project's “terms of engagement”. D. Define the license to be used in the project.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the role of a NetworkPolicy in Kubernetes? A. The ability to cryptic and obscure all traffic. B. The ability to classify the Pods as isolated and non isolated. C. The ability to prevent loopback or incoming host traffic. D. The ability to log network security events.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are the most important resources to guarantee the performance of an etcd cluster? A. CPU and disk capacity. B. Network throughput and disk I/O. C. CPU and RAM memory. D. Network throughput and CPU.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How do you deploy a workload to Kubernetes without additional tools? A. Create a Bash script and run it on a worker node. B. Create a Helm Chart and install it with helm. C. Create a manifest and apply it with kubectl. D. Create a Python script and run it with kubectl.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How do you perform a command in a running container of a Pod? A. kubectl exec -- B. docker exec C. kubectl run -- D. kubectl attach -i",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How to create a headless service? A. By specifying .spec.ClusterIP: headless B. By specifying .spec.clusterIP: None C. By specifying .spec.ClusterIP: 0.0.0.0 D. By specifying .spec.ClusterIP: localhost",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How does dynamic storage provisioning work? A. A user requests dynamically provisioned storage by including an existing storage class in their PersistentVolumeClaim. B. An administrator creates a storage class and includes it in their pod YAML definition file without creating a PersistentVolumeClaim. C. A pod requests dynamically provisioned storage by including a storage class and the pod name in their PersistentVolumeClaim. D. An administrator creates a PersistentVolume and includes the name of the PersistentVolume in their pod YAML definition file.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are tasks performed by a container orchestration tool? A. Schedule, scale, and manage the health of containers. B. Create images, scale, and manage the health of containers. C. Debug applications, and manage the health of containers. D. Store images, scale, and manage the health of containers.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is a definition of Hybrid Cloud? A. An architecture that uses a combination of services running in public and private data centers, only including data centers from the same cloud provider. B. A cloud native architecture that uses a combination of services running in public clouds, excluding data centers in different availability zones. C. A cloud native architecture that uses a combination of services running in different public and private clouds, including on-premises data centers. D. An architecture that uses a combination of services running in public and private data centers, excluding serverless functions.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a Kubernetes Service Endpoint? A. It is the API Endpoint of our Kubernetes cluster. B. It is a name of special Pod in kube-system namespace. C. It is an IP address that we can access from the Internet. D. It is an object that gets IP addresses of individual Pods assigned to it.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Why is Cloud-Native Architecture important? A. Cloud Native Architecture revolves around containers, microservices and pipelines. B. Cloud Native Architecture removes constraints to rapid innovation. C. Cloud Native Architecture is modern for application deployment and pipelines. D. Cloud Native Architecture is a bleeding edge technology and service.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which kubernetes component is the smallest deployable unit of computing? A. StatefulSet B. Deployment C. Pod D. Container",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which are the two primary modes for Service discovery within a Kubernetes cluster? A. Environment variables and DNS B. API Calls and LDAP C. Labels and Radius D. Selectors and DHCP",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following capabilities are you allowed to add to a container using the Restricted policy? A. CHOWN B. SYS_CHROOT C. SETUID D. NET_BIND_SERVICE",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What methods can you use to scale a deployment? A. With kubectl edit deployment exclusively. B. With kubectl scale-up deployment exclusively. C. With kubectl scale deployment and kubectl edit deployment. D. With kubectl scale deployment exclusively.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which is an industry-standard container runtime with an “emphasis” on simplicity, robustness, and portability? A. cri-o B. lxd C. containerd D. kata-runtime",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What does vertical scaling an application deployment describe best? A. The act of adding/removing applications to meet demand. B. The act of adding/removing node instances to the cluster to meet demand. C. The act of adding/removing resources to applications to meet demand. D. The act of adding/removing application instances of the same application to meet demand.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Prometheus metric represents a single value that can go up and down? A. Counter B. Gauge C. Summary D. Histogram",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is Serverless computing? A. A computing method of providing backend services on an as-used basis. B. A computing method of providing services for AI and ML operating systems. C. A computing method of providing services for quantum computing operating systems. D. A computing method of providing services for cloud computing operating systems.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the purpose of the CRI? A. To provide runtime integration control when multiple runtimes are used. B. Support container replication and scaling on nodes. C. Provide an interface allowing Kubernetes to support pluggable container runtimes. D. Allow the definition of dynamic resource criteria across containers.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In CNCF, who develops specifications for industry standards around container formats and runtimes? A. Open Container Initiative (OCI) B. Linux Foundation Certification Group (LFCG) C. Container Network Interface (CNI) D. Container Runtime Interface (CRI)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following options includes valid API versions? A. alpha1v1, beta3v3, v2 B. alpha1, beta3, v2 C. v1alpha1, v2beta3, v2 D. v1alpha1, v2beta3, 2.0",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following will view the snapshot of previously terminated ruby container logs from Pod web-1? A. kubectl logs -p -c ruby web-1 B. kubectl logs -c ruby web-1 C. kubectl logs -p ruby web-1 D. kubectl logs -p -c web-1 ruby",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Kubernetes _____ is an abstraction that defines a logical set of Pods and a policy by which to access them. A. Selector B. Controller C. Service D. Job",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How many hosts are required to set up a highly available Kubernetes cluster when using an external etcd topology? A. Four hosts. Two for control plane nodes and two for etcd nodes. B. Four hosts. One for a control plane node and three for etcd nodes. C. Three hosts. The control plane nodes and etcd nodes share the same host. D. Six hosts. Three for control plane nodes and three for etcd nodes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of these events will cause the kube-scheduler to assign a Pod to a node? A. When the Pod crashes because of an error. B. When a new node is added to the Kubernetes cluster. C. When the CPU load on the node becomes too high. D. When a new Pod is created and has no assigned node.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which resource do you use to attach a volume in a Pod? A. StorageVolume B. PersistentVolume C. StorageClass D. PersistentVolumeClaim",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which key-value store is used to persist Kubernetes cluster data? A. etcd B. ZooKeeper C. ControlPlaneStore D. Redis",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What Linux namespace is shared by default by containers running within a Kubernetes Pod? A. Host Network B. Network C. Process ID D. Process Name",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is a Dockerfile? A. A bash script that is used to automatically build a docker image. B. A config file that defines which image registry a container should be pushed to. C. A text file that contains all the commands a user could call on the command line to assemble an image. D. An image layer created by a running container stored on the host.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What does the \"nodeSelector\" within a PodSpec use to place Pods on the target nodes? A. Annotations B. IP Addresses C. Hostnames D. Labels",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What do Deployments and StatefulSets have in common? A. They manage Pods that are based on an identical container spec. B. They support the OnDelete update strategy. C. They support an ordered, graceful deployment and scaling. D. They maintain a sticky identity for each of their Pods.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the practice of bringing financial accountability to the variable spend model of cloud resources? A. FaaS B. DevOps C. CloudCost D. FinOps",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is a best practice to minimize the container image size? A. Use a DockerFile. B. Use multistage builds. C. Build images with different tags. D. Add a build.sh script.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which tools enable Kubernetes HorizontalPodAutoscalers to use custom, application-generated metrics to trigger scaling events? A. Prometheus and the prometheus-adapter. B. Graylog and graylog-autoscaler metrics. C. Graylog and the kubernetes-adapter. D. Grafana and Prometheus.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is a valid PromQL query? A. SELECT * from http_requests_total WHERE job=apiserver B. http_requests_total WHERE (job=\"apiserver\") C. SELECT * from http_requests_total D. http_requests_total(job=\"apiserver\")",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following best describes horizontally scaling an application deployment? A. The act of adding/removing node instances to the cluster to meet demand. B. The act of adding/removing applications to meet demand. C. The act of adding/removing application instances of the same application to meet demand. D. The act of adding/removing resources to application instances to meet demand.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How many different Kubernetes service types can you define? A. 2 B. 3 C. 4 D. 5",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the difference between a Deployment and a ReplicaSet? A. With a Deployment, you can’t control the number of pod replicas. B. A ReplicaSet does not guarantee a stable set of replica pods running. C. A Deployment is basically the same as a ReplicaSet with annotations. D. A Deployment is a higher-level concept that manages ReplicaSets.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The Container Runtime Interface (CRI) defines the protocol for the communication between: A. The kubelet and the container runtime. B. The container runtime and etcd. C. The kube-apiserver and the kubelet. D. The container runtime and the image registry.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which authorization-mode allows granular control over the operations that different entities can perform on different objects in a Kubernetes cluster? A. Webhook Mode Authorization Control B. Role Based Access Control C. Node Authorization Access Control D. Attribute Based Access Control",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is a correct definition of a Helm chart? A. A Helm chart is a collection of YAML files bundled in a tar.gz file and can be applied without decompressing it. B. A Helm chart is a collection of JSON files and contains all the resource definitions to run an application on Kubernetes. C. A Helm chart is a collection of YAML files that can be applied on Kubernetes by using the kubectl tool. D. A Helm chart is similar to a package and contains all the resource definitions to run an application on Kubernetes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following sentences is true about namespaces in Kubernetes? A. You can create a namespace within another namespace in Kubernetes. B. You can create two resources of the same kind and name in a namespace. C. The default namespace exists when a new cluster is created. D. All the objects in the cluster are namespaced by default.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How does Horizontal Pod autoscaling work in Kubernetes? A. The Horizontal Pod Autoscaler controller adds more CPU or memory to the pods when the load is above the configured threshold, and reduces CPU or memory when the load is below. B. The Horizontal Pod Autoscaler controller adds more pods when the load is above the configured threshold, but does not reduce the number of pods when the load is below. C. The Horizontal Pod Autoscaler controller adds more pods to the specified DaemonSet when the load is above the configured threshold, and reduces the number of pods when the load is below. D. The Horizontal Pod Autoscaler controller adds more pods when the load is above the configured threshold, and reduces the number of pods when the load is below.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is a Pod? A. A networked application within Kubernetes. B. A storage volume within Kubernetes. C. A single container within Kubernetes. D. A group of one or more containers within Kubernetes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What element allows Kubernetes to run Pods across the fleet of nodes? A. The node server. B. The etcd static pods. C. The API server. D. The kubelet.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the Kubernetes object used for running a recurring workload? A. Job B. Batch C. DaemonSet D. CronJob",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In the DevOps framework and culture, who builds, automates, and offers continuous delivery tools for developer teams? A. Application Users B. Application Developers C. Platform Engineers D. Cluster Operators",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which kubectl command is useful for collecting information about any type of resource that is active in a Kubernetes cluster? A. describe B. list C. expose D. explain",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The cloud native architecture centered around microservices provides a strong system that ensures ______________. A. fallback B. resiliency C. failover D. high reachability",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is the correct command to run a nginx deployment with 2 replicas? A. kubectl run deploy nginx --image=nginx --replicas=2 B. kubectl create deploy nginx --image=nginx --replicas=2 C. kubectl create nginx deployment --image=nginx –replicas=2 D. kubectl create deploy nginx --image=nginx --count=2",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What does \"Continuous Integration\" mean? A. The continuous integration and testing of code changes from multiple sources manually. B. The continuous integration and testing of code changes from multiple sources via automation. C. The continuous integration of changes from one environment to another. D. The continuous integration of new tools to support developers in a project.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following options is true about considerations for large Kubernetes clusters? A. Kubernetes supports up to 1000 nodes and recommends no more than 1000 containers per node. B. Kubernetes supports up to 5000 nodes and recommends no more than 500 pods per node. C. Kubernetes supports up to 5000 nodes and recommends no more than 110 pods per node. D. Kubernetes supports up to 50 nodes and recommends no more than 1000 containers per node.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which component of the node is responsible to run workloads? A. The kubelet. B. The kubeproxy. C. The kube-apiserver. D. The container runtime.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The IPv4/IPv6 dual stack in Kubernetes: A. Translates an IPv4 request from a service to an IPv6 service. B. Allows you to access the IPv4 address by using the IPv6 address. C. Requires NetworkPolicies to prevent services from mixing requests. D. Allows you to create IPv4 and IPv6 dual stack services.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What does \"continuous\" mean in the context of CI/CD? A. Frequent releases, Manual processes, Repeatable, Fast processing B. Periodic releases, Manual processes, Repeatable, Automated Processing C. Frequent releases, Automated processes, Repeatable, Fast processing D. Periodic releases, Automated processes, Repeatable, Automated processing",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is ephemeral storage? A. Storage space that need not persist across restarts. B. Storage that may grow dynamically. C. Storage used by multiple consumers (e.g. multiple Pods). D. Storage that is always provisioned locally",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the reference implementation of the OCI runtime specification? A. lxc B. cri-o C. runc D. docker",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a Service? A. A static network mapping from a Pod to a port. B. A way to expose an application running on a set of Pods. C. The network configuration for a group of Pods. D. An NGINX load balancer that gets deployed for an application.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What's the difference between a security profile and a security context? A. Security Contexts configure Clusters and Namespaces at runtime. Security profiles are control plane mechanisms to enforce specific settings in the Security Context. B. Security Contexts configure Pods and Containers at runtime. Security profiles are control plane mechanisms to enforce specific settings in the Security Context. C. Security Profiles configure Pods and Containers at runtime. Security Contexts are control plane mechanisms to enforce specific settings in the Security Profile. D. Security Profiles configure Clusters and Namespaces at runtime. Security Contexts are control plane mechanisms to enforce specific settings in the Security Profile.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "At which layer would distributed tracing be implemented in a cloud native deployment? A. Network B. Application C. Database D. Infrastructure",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What framework does Kubernetes use to authenticate users with JSON Web Tokens? A. OpenID Connect B. OpenID Container C. OpenID Cluster D. OpenID CNCF",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is a feature Kubernetes provides by default as a container orchestration tool? A. A portable operating system. B. File system redundancy. C. A container image registry. D. Automated rollouts and rollbacks.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following sentences is true about container runtimes in Kubernetes? A. If you let iptables see bridged traffic, you don't need a container runtime. B. If you enable IPv4 forwarding, you don't need a container runtime. C. Container runtimes are deprecated, you must install CRI on each node D. You must install a container runtime on each node to run pods on it.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "If a Pod was waiting for container images to download on the scheduled node, what state would it be in? A. Failed B. Succeeded C. Unknown D. Pending",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is CloudEvents? A. It is a specification for describing event data in common formats for Kubernetes network traffic management and cloud providers. B. It is a specification for describing event data in common formats in all cloud providers including major cloud providers C. It is a specification for describing event data in common formats to provide interoperability across services, platforms and systems D. It is a Kubernetes specification for describing events data in common formats for iCloud services, iOS platforms and iMac.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Imagine you're releasing open-source software for the first time. Which of the following is a valid semantic version? A. 1.0 B. 2021-10-11 C. 0.1.0-rc D. v1beta1",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following scenarios would benefit the most from a service mesh architecture? A. A few applications with hundreds of pod replicas running in multiple clusters, each one providing multiple services. B. Thousands of distributed applications running in a single cluster, each one providing multiple services. C. Tens of distributed applications running in multiple clusters, each one providing multiple services. D. Thousands of distributed applications running in multiple clusters, each one providing multiple services.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Kubernetes___ protect you against voluntary interruptions (such as deleting Pods, draining nodes) to run applications in a highly available manner. A. Pod Topology Spread Constraints B. Pod Disruption Budgets C. Taints and Tolerances D. Resource Limits and Requests",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Manual reclamation policy of a PVC resource is known as: A. claimRef B. Delete C. Retain D. Recycle",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which component of the Kubernetes architecture is responsible for integration with the CRI container runtime? A. kubeadm B. kubelet C. kube-aplserver D. kubectl",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which one of the following is an open source runtime security tool? A. lxd B. containerd C. falco D. gvisor",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a good habit for cloud native cost efficiency? A. Follow an automated approach to cost optimization, including visibility and forecasting. B. Follow manual processes for cost analysis, including visibility and forecasting. C. Use only one cloud provider to simplify the cost analysis. D. Keep your legacy workloads unchanged, to avoid cloud costs.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of these is a valid container restart policy? A. On login B. On update C. On start D. On failure",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a challenge derived from running cloud native applications? A. The operational costs of maintaining the data center of the company. B. The cost optimization is complex to maintain across different public cloud environments. C. The lack of different container images available in public image repositories. D. The lack of services provided by the most common public clouds",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the correct hierarchy of Kubernetes components? A. Containers → Pods → Cluster → Nodes B. Nodes → Cluster → Containers → Pods C. Cluster → Nodes → Pods → Containers D. Pods → Cluster → Containers → Nodes",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement about Secrets is correct? A. A Secret is part of a Pod specification. B. Secrets data is encrypted with the cluster private key by default. C. Secrets data is base64 encoded and stored unencrypted by default D. A Secret can only be used for confidential data",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which mechanism allows extending the Kubernetes API? A. ConfigMap B. CustomResourceDefinition C. MutatingAdmissionWebhookmechamsm D. Kustomize",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following observability data streams would be most useful when desiring to plot resource consumption and predicted future resource exhaustion? A. stdout B. Traces C. Logs D. Metrics",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What can be used to create a job that will run at specified times/dates or on a repeating schedule? A. Job B. CalenderJob C. BatchJob D. CronJob",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "If kubectl is failing to retrieve information from the cluster, where can you find pod logs to troubleshoot? A. /var/log/pods/ B. ~/.kube/config C. /var/log/k8s/ D. /etc/kubernetes/",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which component in Kubernetes is responsible to watch newly created Pods with no assigned node, and selects a node for them to run on? A. etcd B. kube controller-manager C. kube proxy D. kube scheduler",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which control plane component is responsible for updating the node Ready condition if a node becomes unreachable? A. The kube-oroxy. B. The node controller. C. The kubelct. D. The kube-apiserver",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which GitOps engine can be used to orchestrate parallel jobs on Kubernetes? A. Jenkins X B. Flagger C. Flux D. Argo Workflows",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the main purpose of the Open Container Initiative (OCI)? A. Accelerating the adoption of containers and Kubernetes in the industry. B. Creating open industry standards around container formats and runtimes. C. Creating industry standards around container formats and runtimes for private purposes. D. Improving the security of standards around container formats and runtimes",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which are the core features provided by a service mesh? A. Authentication and authorization B. Distributing and replicating data C. Security vulnerability scanning D. Configuration management",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following options include only mandatory fields to create a Kubernetes object using a YAML file? A. apiVersion, template, kind, status B. apiVersion, metadata, status, spec C. apiVersion, template, kind, spec D. apiVersion, metadata, kind, spec",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is the name of a container orchestration software? A. OpenStack B. Docker C. Apache Mesos D. CRI-O",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What happens with a regular pod running in Kubernetes when a node fails? A. A new pod with the same UID is scheduled to another node after a while. B. A new, near-identical pod but with different UID is scheduled to another node. C. By default, a pod can only be scheduled to the same node when the node fails. D. A new pod is scheduled on a different node only if it is configured explicitly.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the minimum of etcd members that are required for a highly available Kubernetes cluster? A. Two etcd members. B. Five etcd members. C. Six etcd members. D. Three etcd members",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the main purpose of the Ingress in Kubernetes? A. Access HTTP and HTTPS services running in the cluster based on their IP address. B. Access services different from HTTP or HTTPS running in the cluster based on their IP address. C. Access services different from HTTP or HTTPS running in the cluster based on their path D. Access HTTP and HTTPS services running in the cluster based on their path.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How can you extend the Kubernetes API? A. Adding a CustomResourceDefinition or implementing an aggregation layer. B. Adding a new version of a resource, for instance v4beta3. C. With the command kubectl extend api, logged in as an administrator. D. Adding the desired API object as a kubelet parameter",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is an ephemeral container? A. A specialized container that runs as root for infosec applications. B. A specialized container that runs temporarily in an existing Pod. C. A specialized container that extends and enhances the ‘main’ container in a Pod D. A specialized container that run before app container in a Pod",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a cloud native environment, who is usually responsible for maintaining the workloads running across the different platforms? A. The cloud provider. B. The Site Reliability Engineering (SRE) team. C. The team of developers. D. The Support Engineering team (SE).",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Kubernetes-native deployment strategy supports zero-downtime updates of a workload? A. Canary B. Recreate C. BlueGreen D. RollingUpdate",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What service account does a Pod use in a given namespace when the service account is not specified? A. admin B. sysadmin C. root D. default",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is a cloud native application? A. It is a monolithic application that has been containerized and is running now on the cloud. B. It is an application designed to be scalable and take advantage of services running on the cloud. C. It is an application designed to run all its functions in separate containers. D. It is any application that runs in a cloud provider and uses its services.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What's the most adopted way of conflict resolution and decision-making for the open-source projects under the CNCF umbrella? A. Financial Analysis B. Discussion and Voting C. Flipism Technique D. Project Founder Say",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following options include resources cleaned by the Kubernetes garbage collection mechanism? A. Stale or expired CertificateSigningRequests (CSRs) and old deployments. B. Nodes deleted by a cloud controller manager and obsolete logs from the kubelet. C. Unused container and container images, and obsolete logs from the kubelet. D. Terminated pods, completed jobs, and objects without owner references.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the default eviction timeout when the Ready condition of a node is Unknown or False? A. Thirty seconds. B. Thirty minutes. C. One minute. D. Five minutes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the main purpose of a DaemonSet? A. A DaemonSet ensures that all (or certain) nodes run a copy of a Pod. B. A DaemonSet ensures that the kubelet is constantly up and running. C. A DaemonSet ensures that there are as many pods running as specified in the replicas field. D. A DaemonSet ensures that a process (agent) runs on every node.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Why do administrators need a container orchestration tool? A. To manage the lifecycle of an elevated number of containers. B. To assess the security risks of the container images used in production. C. To learn how to transform monolithic applications into microservices. D. Container orchestration tools such as Kubernetes are the future.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two elements are shared between containers in the same pod? A. Network resources and liveness probes. B. Storage and container image registry. C. Storage and network resources. D. Network resources and Dockerfiles.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In Kubernetes, if the API version of feature is v2beta3, it means that: A. The version will remain available for all future releases within a Kubernetes major version. B. The API may change in incompatible ways in a later software release without notice. C. The software is well tested. Enabling a feature is considered safe. D. The software may contain bugs. Enabling a feature may expose bugs.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the API that exposes resource metrics from the metrics-server? A. custom.k8s.io B. resources.k8s.io C. metrics.k8s.io D. cadvisor.k8s.io",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following resources helps in managing a stateless application workload on a Kubernetes cluster? A. DaemonSet B. StatefulSet C. kubectl D. Deployment",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which mechanism can be used to automatically adjust the amount of resources for an application? A. Horizontal Pod Autoscaler (HPA) B. Kubernetes Event-driven Autoscaling (KEDA) C. Cluster Autoscaler D. Vertical Pod Autoscaler (VPA)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a recommended security habit in Kubernetes? A. Run the containers as the user with group ID 0 (root) and any user ID. B. Disallow privilege escalation from within a container as the default option. C. Run the containers as the user with user ID 0 (root) and any group ID. D. Allow privilege escalation from within a container as the default option.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are the 3 pillars of Observability? A. Metrics, Logs, and Traces B. Metrics, Logs, and Spans C. Metrics, Data, and Traces D. Resources, Logs, and Tracing",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What edge and service proxy tool is designed to be integrated with cloud native applications? A. CoreDNS B. CNI C. gRPC D. Envoy",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is Flux constructed with? A. GitLab Environment Toolkit B. GitOps Toolkit C. Helm Toolkit D. GitHub Actions Toolkit",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Kubernetes, which abstraction defines a logical set of Pods and a policy by which to access them? A. Service Account B. NetworkPolicy C. Service D. Custom Resource Definition",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What does the livenessProbe in Kubernetes help detect? A. When a container has started successfully. B. When a container is unresponsive. C. When a container is ready to serve traffic. D. When a container exceeds resource limits.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which command updates the image of a running deployment without recreating the resource? A. kubectl edit deployment my-app my-container=my-app:v2 B. kubectl replace deployment/my-app my-container=my-app:v2 C. kubectl set image deployment/my-app my-container=my-app:v2 D. kubectl set image deployment/my-app rollout restart",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Kubernetes Secrets are specifically intended to hold confidential data. Which API object should be used to hold non-confidential data? A. CSI B. RBAC C. CNI D. ConfigMaps",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When a Kubernetes Secret is created, how is the data stored by default in etcd? A. As Base64-encoded strings that provide simple encoding but no actual encryption. B. As plain text values that are directly stored without any obfuscation or additional encoding. C. As encrypted records automatically protected using the Kubernetes control plane master key. D. As compressed binary objects that are optimized for space but not secured against access.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following cloud native proxies is used for ingress/egress in a service mesh and can also serve as an application gateway? A. Frontend proxy B. Kube-proxy C. Reverse proxy D. Envoy proxy",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which command retrieves container logs from a specific container in a multi-container Pod? A. kubectl logs -c B. kubectl logs -c C. kubectl exec -- tail /var/log/арр.log D. kubectl describe pod -c",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is a primary use case of Istio in a Kubernetes cluster? A. Provide service mesh capabilities such as traffic management, observability, and security between services. B. To provide secure built-in database management features for application workloads. C. To manage and control the versions of container runtimes used on nodes between services. D. To provision and manage persistent storage volumes for stateful applications.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which option best represents the Pod Security Standards ordered from most permissive to most restrictive? A. Privileged, Restricted, Baseline B. Baseline, Restricted, Privileged C. Baseline, Privileged, Restricted D. Privileged, Baseline, Restricted",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is an advantage of using the Gateway API compared to Ingress in Kubernetes? A. To provide clearer role separation between infrastructure providers and application developers. B. To expose an application externally by creating only a Service resource. C. To configure routing rules through annotations directly on Ingress resources. D. To automatically scale workloads based on CPU and memory utilization.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "There is an application running in a logical chain: Gateway API, Service, EndpointSlice, and Container. What Kubernetes API object is missing from this sequence? A. Docker B. Proxy C. Pod D. Firewall",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In a Kubernetes environment, which of the following kubectl patch commands correctly updates the image of a container in a Deployment without recreating the Deployment resource? A. kubectl patch deployment my-app \\ -p '{\"containers\":[{\"name\":\"app-container\",\"image\":\"nginx:1.25\"}]}' B. kubectl patch deployment my-app --image=nginx:l.25 C. kubectl patch deployment my-app \\ -p '{\"spec\":{\"containers\":[{\"name\":\"app-container\",\"image\":\"nginx:l.25\"}]}}' D. kubectl patch deployment my-app \\ -p '{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"app-container\",\"image\":\"nginx:1.25\"}]}}}}'",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Kubernetes Service type exposes a service only within the cluster? A. ClusterIP B. LoadBalancer C. ExternalName D. NodePort",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the main role of the CoreDNS within a cluster? A. Provides consistent DNS Names for Pods and Services for workloads that need to communicate with each other. B. Allows Pods running in dual stack to convert IPv6 calls into IPv4 calls. C. Acts as a DNS server for virtual machines that are running outside the cluster. D. Provides a DNS as a Service, allowing users to create zones and registries for domains that they own.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Pod has been created, but when checked with kubectl get pods, the ready column shows 0/1. What Kubernetes feature causes this behavior? A. Readiness Probes B. Security Contexts C. DNS Policy D. Node Selector",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A platform engineer is tasked with ensuring that an application can securely access the Kubernetes API without using a developer's personal credentials. What is the correct way to configure this? A. Creates ServiceAccount and bind it to the Pod for API access. B. Generate a certificate for the application to access the API. C. Set the application to use the default ServiceAccount in the namespace. D. Use a developer's kubeconfig file with restricted permissions.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the two essential operations that the kube-scheduler normally performs? A. Pod eviction or starting B. Filtering and Scoring nodes C. Resources monitoring and reporting D. Starting and terminating containers",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which set of resources can receive automatic updates from the HorizontalPodAutoscaler? A. DaemonSet, Deployment B. Pod, StatefulSet C. DaemonSet, StatefulSet D. Deployment, StatefulSet",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which option represents best practices when building container images? A. Use multi-stage builds, pin the base image version to a specific digest, and only install necessary packages. B. Use multi stage builds, pin the base image version to a specific digest, and install extra packages just in case. C. Avoid multi-stage builds, use the latest tag for image version, and install extra packages just in case. D. Use multi stage builds, use the latest tag for image version, and only install necessary packages.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Ceph is a highly scalable distributed storage solution for block storage, object storage, and shared filesystems with years of production deployments. Which open source cloud native storage orchestrator automates deployment and management of Ceph to provide self-managing, self-scaling, and self-healing storage services? A. MinIO B. OpenEBS C. CubeFS D. Rook",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In Kubernetes, what is the primary responsibility of the kubelet running on each worker node? A. To provide internal DNS resolution and route service traffic between Pods and nodes. B. To allocate persistent storage volumes and manage distributed data replication for Pods. C. To ensure that containers defined in Pod specifications are running and remain healthy on the node. D. To manage cluster state information and handle all scheduling decisions for workloads.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the role of the ingressClassName field in a Kubernetes Ingress resource? A. It indicates which Ingress Controller should Implement the rules defined in the Ingress resource. B. It specifies the backend Service used by the Ingress Controller to route external requests. C. It defines the type of protocol (HTTP or HTTPS) that the ingress Controller should process. D. It determines how routing rules are prioritized when multiple Ingress objects are applied.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What does SBOM stand for? A. Software Bill of Materials B. Software Bill Operations Management C. System Bill of Materials D. Security Baseline for Open Source Management",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Helm command deletes the release mysql-1234 from the Kubernetes cluster? A. helm reject mysql-1234 B. helm erase mysql-1234 C. helm uninstall mysql-1234 D. helm remove mysql-1234",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "During a team meeting, a developer mentions the significance of open collaboration in the cloud native ecosystem. Which statement accurately reflects principles of collaborative development and community stewardship? A. Community events and working groups foster collaboration by bringing people together to share knowledge and build connections. B. Maintainers of open source projects act independently to make technical decisions without requiring input from contributors. C. Community stewardship emphasizes guiding project growth but does not necessarily include sustainability considerations. D. Open source projects succeed when contributors focus on code quality without the overhead of community engagement.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the goal of load balancing? A. To move and reschedule application instances across nodes in the cluster for efficiency. B. To distribute traffic between different application versions as part of a deployment strategy. C. To distribute requests evenly across instances of an application to improve availability and reliability. D. To automatically measure and compare request performance across instances of an application.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What happens if only a limit is specified for a resource and no admission-time mechanism has applied a default request? A. Kubernetes copies the specified limit and uses it as the requested value for the resource. B. Kubernetes will create the container but it will fail with CrashLoopBackOff. C. Kubernetes chooses a random value and uses it as the requested value for the resource. D. Kubernetes does not allow containers to be created without request values, causing eviction.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following actions is supported when working with Pods in Kubernetes? A. Creating Pods through workload resources like Deployments. B. Guaranteeing Pods always stay on the same node once scheduled. C. Managing static Pods directly through the API server. D. Renaming containers in a Pod using kubectl patch.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In Kubernetes, what is the primary purpose of using annotations? A. To specify the deployment strategy for applications. B. To control the access permissions for users and service accounts. C. To provide a way to attach metadata to objects. D. To define the specifications for resource limits and requests.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Pod named my-app must be created to run a simple nginx container. Which kubectl command should be used? A. kubectl run my-app --image=nginx B. kubectl create my-app --image-nginx C. kubectl create nginx --name=my-app D. kubectl run nginx --name=my-app",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct method to access an internal service by forwarding a local port to a specific port inside a Pod running in a Kubernetes cluster? A. Load Balancer B. kubectl port-forward C. Gateway API D. NodePort",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Kubernetes Pod is returning a CrashLoopBackOff status. What is the most likely reason for this behavior? A. The container's image is missing or cannot be pulled. B. There are insufficient resources allocated for the Pod. C. The Pod is unable to communicate with the Kubernetes API server. D. The application inside the container crashed after starting.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A site reliability engineer needs to temporarily prevent new Pods from being scheduled on node-2, while keeping the existing workloads running without disruption. Which kubectl command should be used? A. kubectl pause deployment B. kubectl cordon node-2 C. kubectl drain node-2 D. kubectl delete node-2",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Kubernetes, what is the primary purpose of creating a Service resource for a Deployment? A. To automatically adjust the number of Pods based on CPU or memory utilization metrics. B. To centrally manage and apply runtime configuration values for application components. C. To provide a stable endpoint for accessing Pods even when their IP addresses change. D. To define and attach persistent volumes that store application data across Pod restarts.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement best describes the role of kubelet on a Kubernetes worker node? A. kubelet monitors cluster-wide resource usage and assigns Pods to the most suitable nodes for execution. B. kubelet acts as the primary API component that stores and manages cluster state information. C. kubelet manages the container runtime and ensures that all Pods scheduled to the node are running as expected. D. kubelet configures networking rules on each node to handle traffic routing for Services in the cluster.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the primary purpose of a Horizontal Pod Autoscaler (HPA) in Kubernetes? A. To allocate and manage persistent volumes required by stateful applications. B. To track performance metrics and report health status for nodes and Pods. C. To automatically scale the number of Pod replicas based on resource utilization. D. To coordinate rolling updates of Pods when deploying new application versions.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A request for 500 mebibytes of ephemeral storage must be specified in a YAML file. How should this be written? A. 0.5M B. 500m C. 500Mi D. 500mi",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What command is often used to troubleshoot a failing Pod? A. kubectl inspect B. kubectl analyze C. kubectl info D. kubectl describe",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In a Kubernetes cluster, which scenario best illustrates the use case for a StatefulSet? A. A web application that requires multiple replicas for load balancing. B. A service that routes traffic to various microservices in the cluster. C. A database that requires persistent storage and stable network identities. D. A background job that runs periodically and does not maintain state.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which file in a Helm chart is responsible for defining the default configuration values that can be overridden during deployment? A. templates/deployment.yaml B. Chart.yaml C. values.yaml D. requirements.yaml",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In Kubernetes. which command is the most efficient way to check the progress of a Deployment rollout and confirm if it has completed successfully? A. kubectl logs deployment/my-deployment --all-containers=true B. kubectl describe deployment my-deployment --namespace=default C. kubectl rollout status deployment/my-deployment D. kubectl get deployments --show-labels -o wide",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In a Kubernetes cluster, what is the primary role of the Kubernetes scheduler? A. To manage the lifecycle of the Pods by restarting them when they fail. B. To monitor the health of the nodes and pods in the cluster. C. To handle network traffic between services within the cluster. D. To distribute Pods across nodes based on resource availability and constraints.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Kubernetes administrator wants to limit the total memory usage of all Pods in a specific namespace to 4Gi. What should they create to enforce this limit? A. Namespace B. LimitRange C. ClusterRole D. ResourceQuota",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How does cert-manager integrate with Kubernetes resources to provide TLS certificates for an application? A. It injects TLS certificates directly into Pods when the workloads are deployed. B. It manages Certificate resources and Secrets that can be used by Ingress objects for TLS. C. It updates kube-proxy configuration to ensure encrypted traffic between Services. D. It replaces default Kubernetes API certificates with those from external authorities.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Kubernetes, what is the primary function of a RoleBinding? A. To create and define a new Role object that contains a specific set of permissions. B. To enforce namespace network rules by binding policies to Pods running in the namespace. C. To assign the permissions of a Role to a user, group, or service account within a namespace. D. To provide a user or group with permissions across all resources at the cluster level.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Pod is stuck in the CrashLoopBackoff state. Which is the correct way to troubleshoot this issue? A. Use kubectl top pod to check CPU usage and then scale the Deployment to more replicas. B. Use kubectl describe pod to review recent events and then kubectl logs to inspect container output. C. Use kubectl get nodes to verify node capacity and then kubectl apply -f to restart the Pod. D. Use kubectl exec -- bash to connect inside the container and then check system logs in /var/log/kubelet.log.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the Kubernetes abstraction that allows groups of Pods to be exposed inside a Kubernetes cluster? A. Service B. Deployment C. Unit D. Daemon",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is an important consideration when choosing a base image for a container in a Kubernetes deployment? A. It should be the largest available image to ensure all dependencies are included. B. It should always be the latest version to ensure access to the newest features. C. It should be minimal and purpose-built for the application to reduce attack surface and improve performance. D. It can be any existing image from the public repository without consideration of its contents.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When modifying an existing Helm release to apply new configuration values, which approach is the best practice? A. Edit the Helm chart source files directly and reapply them to push the updated configuration values. B. Use kubectl edit to modify the live release configuration and apply the updated resource values. C. Delete the release and reinstall it with the desired configuration to force an updated deployment. D. Use helm upgrade with the --set flag to apply new values while preserving the release history.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which field in a Pod or Deployment manifest ensures that Pods are scheduled only on nodes with specific labels? A. annotations: disktype: ssd B. labels: disktype: ssd C. nodeSelector: disktype: ssd D. resources: disktype: ssd",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the purpose of the Gateway API in Kubernetes? A. To collect, monitor, and log performance metrics for applications running inside Kubernetes Pods. B. To define and manage persistent storage resources that are used by Pods within the cluster. C. To provide a standardized interface for managing traffic routing to Services in a Kubernetes environment. D. To enable applications to automatically adjust resource usage and scale up or down based on demand.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Why are ServiceAccounts used in Kubernetes when assigning Role-Based Access Control (RBAC) permissions to Pods? A. They are used to authenticate Pods by creating special user identities for administrators to manage. B. They are designed to provide a secure mechanism for storing application credentials inside Pods. C. They automatically assign Pods high-level cluster-admin permissions for accessing resources. D. They let Pods authenticate to the API server securely without personal user credentials.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In a cloud native environment, how do containerization and virtualization differ in terms of resource management? A. Containerization consumes more memory than virtualization by default. B. Containerization shares the host OS, while virtualization runs a full OS for each instance. C. Containerization uses hypervisors to manage resources, while virtualization does not. D. Containerization allocates resources per container, virtualization does not isolate them.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following commands could a cluster administrator use to prevent Pod scheduling in a node temporarily, for maintenance purposes? A. kubectl cordon B. kubectl annotate C. kubectl label D. kubectl taint",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A platform engineer wants to ensure that a new microservice is automatically deployed to every cluster registered in Argo CD. Which configuration best achieves this goal? A. Create an Argo CD ApplicationSet that uses a Git repository containing the microservice manifests. B. Set up a Kubernetes CronJob that redeploys the microservice to all registered clusters on a schedule. C. Use a Helm chart to package the microservice and manage it with a single Application defined in ArgoCD. D. Manually configure every registered cluster with the deployment YAML for installing the microservice.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Lightweight network proxies such as Envoy are part of which plane in a service mesh? A. Management plane B. Control plane C. Data plane D. Gateway plane",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following common practices will be an antipattern when the GitOps workflow goes live? A. Deploying Kubernetes objects via imperative commands. B. Leaving manual comments in the PR comments forum. C. Deploying Kubernetes objects via declarative manifests. D. Pushing builds with the deploy label.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What command would be used to check the revisions of Deployment web-app? A. kubectl rollout history deployment/web-app B. kubectl rollout status deployment/web-app C. kubectl get history deployment/web-app D. kubectl describe rollout deployment/web-app",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement is true about the Container Storage Interface (CSI) in Kubernetes? A. CSI is a Kubernetes-only API built into the kubelet; drivers are compiled in-tree and selected directly in a PersistentVolume. B. CSI introduces a model where applications mount storage by referencing the driver name in the Pod specification instead of using PVs. C. CSI provides storage for workloads by focusing on NFS and iSCSI backends and offering basic volume provisioning. D. CSI is a cross-platform specification; in Kubernetes, CSI drivers run as pods with sidecars and are consumed through StoragClass and PersistentVolumeClaim objects.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Kubernetes deployment must run only on nodes with specific hardware capabilities. What configuration should be used to ensure that Pods are scheduled only on those nodes? A. Use Pod affinity rules in the deployment configuration. B. Set a PodDisruptionBudget for the deployment. C. Use a nodeSelector in the deployment specification. D. Configure resource limits and requests for the Pods.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which cloud native tool(s) keeps Kubernetes clusters in sync with sources of configuration (like Git repositories), and automates updates to configuration when there is new code to deploy? A. Flux and Argo CD B. Helm and Kustomize C. Linkerd and Istio D. Tekton and Jenkins X",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Pod was created that shows the ErrImagePull status. What is most the cause of the error? A. Kubelet is not running properly on the node. B. Kube-scheduler cannot find a node to execute the Pod. C. The container image cannot be downloaded. D. The container image needs to run using hostNetwork.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement best describes observability in a cloud native environment? A. Observability is the practice of collecting and analyzing logs, metrics, and traces to understand system behavior. B. Observability is the use of alerts and dashboards to notify administrators about system outages. C. Observability is the process of restarting failed Pods to maintain application availability. D. Observability is the configuration of health probes to check whether containers are running correctly.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement best explains the Container Storage Interface (CSI) concept in Kubernetes? A. CSI is a standard API specification that allows Kubernetes (and other orchestrators) to use different storage systems via plugins. B. CSI is a networking interface that manages container-to-container communication across nodes. C. CSI is a Kubernetes-only API that provides built-in storage drivers for Pods to access persistent volumes. D. CSI is a framework inside Kubernetes that automatically provisions local node storage without requiring external storage plugins.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Gateway API is a successor to what Kubernetes API? A. NetworkPolicy B. Service C. NodePort D. Ingress",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How are ConfigMap s correctly used in Kubernetes applications? A. A ConfigMap is used to adjust cluster scheduling rules applied by the Kubernetes scheduler. B. A ConfigMap is used to keep encrypted secrets such as passwords for databases or tokens. C. A ConfigMap is used to provide configuration values that Pods consume as files or variables. D. A ConfigMap is used to hold shared log files that applications produce during execution.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In a Kubernetes environment, how is an Argo CD ApplicationSet configured to ensure continuous deployment of an application? A. By manually deploying the application using kubectl commands every time changes are made. B. By defining the ApplicationSet in a YAML file and linking it to a Git repository containing application manifests. C. By defining the ApplicationSet containing deployment parameters and applying it with kubectl. D. By using a Helm chart to package the application and deploying it directly without GitOps.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DNS issues are suspected inside a Pod. Which command is most useful to verify the problem? A. kubectl delete pod to recreate the Pod and test if the issue resolves after restarting. B. kubectl get endpoints to confirm whether Services have the correct backend addresses. C. kubectl logs to review application output for errors related to DNS resolution. D. kubectl exec -- nslookup to check name resolution directly inside the Pod.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In Kubernetes Role-Based Access Control (RBAC), what is the primary difference between a Role and a ClusterRole? A. A Role is generally weaker in scope and power, while a ClusterRole is always considered stronger and more powerful than a Role. B. A Role is namespace-scoped and applies only within a single namespace, while a ClusterRole is cluster-scoped and applies across all namespaces. C. A Role defines permissions for modifying resources, while a ClusterRole defines permissions only for viewing resources across the cluster. D. A Role is limited to granting access to Pods and Services, while a ClusterRole can grant access to every type of Kubernetes resource.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Kubernetes resource provides standardized load balancing, TLS termination, and multi-context traffic routing across different implementations? A. Gateway API B. CoreDNS C. Ingress D. kube-proxy",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement describes the purpose of Labels in Kubernetes? A. Labels must be defined on objects before they can be created in Kubernetes. B. Labels assign objects to specific namespaces to support resource isolation. C. Labels provide globally unique identifiers for all objects across the cluster. D. Labels are used to attach identifying metadata to objects so they can be selected and grouped.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In a Kubernetes cluster, the component called etcd plays an essential role. What is the primary function of etcd? A. To replicate cluster state data across control plane nodes for high availability. B. To provide a distributed key-value store for all cluster state and data. C. To persist API object definitions such as Pods, ConfigMaps, and Secrets. D. To maintain the desired state of workloads by reconciling changes through controllers.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the correct command to scale multiple Pods for a deployment? A. kubectl scale --clones=3 deployment/my-app B. kubectl scale --pods=3 deployment/my-app C. kubectl scale --replicas=3 deployment/my-app D. kubectl scale --copy=3 deployment/my-app",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Pod Security Standard balances ease of adoption while still preventing known privilege escalations? A. Privileged B. Permissive C. Restricted D. Baseline",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A logging agent must be deployed to run on every node in a Kubernetes cluster. Which resource should be used to achieve this requirement? A. Deployment B. DaemonSet C. ReplicaSet D. StatefulSet",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can a tls-type secret be created that holds the TLS certificate and its associated key using the kubectl command? A. kubectl create secret generic tls-secret --cert=path/to/tls.crt --key=path/to/tls.key B. kubectl create secret tls tls-secret --cert=path/to/tls.crt --key=path/to/tls.key C. kubectl create secret tls tls-secret --from-file=cert=path/to/tls.crt --from-file=key=path/to/tls.key D. kubectl create secret generic tls-secret --from-file=cert=path/to/tls.crt --from-file=key=path/to/tls.key",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a Kubernetes cluster, how does DNS resolution work for services? A. DNS resolution for services uses the IP addresses of the Pods directly. B. DNS resolution for services is handled by an external DNS provider that manages all service names. C. Kubernetes creates service names that resolve to stable cluster IPs. D. Service names in Kubernetes are resolved using environment variables set in each Pod.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer is trying to understand the concept of containerization for their Kubernetes deployment. What best describes containerization? A. A technique that allows applications to run only on bare metal servers without any abstraction. B. A lightweight approach to running applications in isolated environments using shared OS resources. C. A way to create and manage virtual machines for running various applications. D. A method of virtualizing physical hardware to run multiple operating systems.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a Kubernetes cluster, how are Labels and Selectors utilized to manage and organize resources? A. Labels are used only for service discovery and do not affect resource management. B. Labels are used for categorizing resources, while Selectors are used to filter and retrieve resources based on those labels. C. Selectors can only be applied to Pods and not to other resource types in Kubernetes. D. Labels are automatically generated by Kubernetes, and Selectors are manually defined by users.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the primary role of a Service in a Kubernetes cluster? A. It exposes an application running behind a single outward-facing endpoint. B. To store configuration data and secrets in the cluster. C. To provide an endpoint for outward side to access the cluster on the Internet. D. To manage the scaling of applications automatically in the cluster.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What happens if a container runtime is missing on Kubernetes worker nodes? A. kubelet can not communicate with kube-api-server. B. Nodes can not communicate with each other. C. kubelet can not launch Pods. D. Pods can not communicate with each other.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following Pod Security Standards enforces the most restrictive settings, designed for security-critical workloads? A. Unrestricted B. Restricted C. Privileged D. Baseline",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement is correct about Role and ClusterRole objects in Kubernetes? A. Roles can only set permissions for resources within a particular namespace. B. ClusterRoles and Roles can remove permissions from resources within a namespace. C. ClusterRoles can only set permissions for resources that are not assigned to a namespace. D. Roles can set permissions for both namespaced and non-namespaced objects.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the possible options for PolicyTypes when configuring NetworkPolicy? A. inbound and outbound B. ingress and egress C. push and pull D. get and put",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Pod needs to be configured for a slow-starting application. What is the best approach to ensure the Pod is only marked as ready when it is fully initialized? A. Use a startup probe only. B. Use a readiness probe only. C. Use both liveness and startup probes. D. Use both readiness and startup probes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Kubernetes node is on hardware that is scheduled for maintenance. How can the Pods scheduled on that node be identified so workloads can be redirected before the node is taken out of service? A. kubectl describe node B. kubectl get pods -o wide --all-namespaces C. kubectl get pods --on D. kubectl describe pods --on",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "By default, Pods are non-isolated and accept traffic from any source. When a NetworkPolicy selects a Pod, it becomes isolated. How are multiple NetworkPolicies applied to the same Pod handled in Kubernetes? A. restricted B. additive C. conflicting D. hierarchical",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "CNCF supports and helps organize different Kubernetes related events: meetups, KubeCons, KubeDays, KCDs etc. What does KCD stand for? A. Kubernetes Cloud Developers B. Kubernetes Cloud Days C. Kubernetes Community Days D. Kubernetes Community Developers",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which command correctly uses kubectl exec to inspect environment variables inside a running container? A. Run kubectl exec -- show variables B. Run kubectl exec -- get env C. Run kubectl exec -- list config D. Run kubectl exec -- env",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A DevOps engineer is preparing worker-1 for maintenance. The node is running multiple Pods, but workloads must be safely evicted and rescheduled onto other nodes. Which kubectl command should the engineer use? A. kubectl delete node worker-1 --delete-emptydir-data B. kubectl drain worker-1 --ignore-daemonsets C. kubectl scale deployment --replicas=0 --namespace=production D. kubectl cordon worker-1 --daemonsets=off",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which CNCF project is primarily used as a high-performance proxy for microservices, handling service-to-service communication, load balancing, and observability in service meshes? A. Helm B. Fluentd C. Envoy D. Prometheus",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Kubernetes feature is the simplest way to force a Pod or Deployment to run only on nodes with a specific label? A. Taint B. NodeSelector C. NodeAffinity D. Toleration",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the primary purpose of an Ingress resource in Kubernetes? A. To monitor the health status of application Pods. B. To expose internal services to external web traffic. C. To store configuration data used by applications. D. To manage persistent volumes for application data.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In Kubernetes, how do Namespaces differ from Labels in managing resources within a cluster? A. Namespaces can only contain Pods, but Labels can be applied to any Kubernetes resource. B. Namespaces are assigned statically, while Labels can be modified dynamically. C. Namespaces are only used for access control, while Labels are solely for resource monitoring. D. Namespaces are used to isolate resources, while Labels are used for query and selection.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data science team is deploying a machine learning workload that performs best on nodes labeled disk=ssd. However, the Pods must still be able to run on other nodes if no SSD nodes are available. Which scheduling rule should they configure? A. Node Affinity with PreferredDuringSchedulingIgnoredDuringExecution B. Pod Anti-Affinity C. Taints and Tolerations D. Node Affinity with RequiredDuringSchedulingIgnoredDuringExecution",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the main role of CNCF Ambassadors in the cloud native ecosystem? A. They promote cloud native adoption by supporting communities, organizing events, and advocating for CNCF projects. B. They handle CNCF operations by managing budgets, securing sponsors, and negotiating agreements. C. They design Kubernetes features by writing code, planning releases, and coordinating development. D. They manage project governance by guiding development, reviewing code, and approving changes.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Prometheus has 4 core metric types: Summary, Histogram, Gauge. What is the 4th metric type? A. Sampler B. Counter C. Final D. Total",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can a Pod be configured to use a ServiceAccount for authenticated API access? A. By attaching the ServiceAccount directly to the kube-scheduler to change how the Pod is scheduled. B. By specifying the ServiceAccount name in the Pod specs, Kubernetes mounts its token as a volume. C. By embedding the ServiceAccount token inside the container image at build time. D. By converting the ServiceAccount into a ConfigMap that the Pod consumes as environment variables.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In a Kubernetes cluster, which component is responsible for maintaining the desired state of applications by reconciling resources such as Deployments and ReplicaSets? A. Controller Manager B. Kubernetes API Server C. kubelet D. etcd",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the primary purpose of Custom Resource Definitions (CRDs) in Kubernetes? A. To automatically scale pods based on resource usage. B. To facilitate network communication between Pods and services. C. To define a set of custom resources that extend the Kubernetes API. D. To manage the storage of persistent volumes within a Kubernetes cluster.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "If a Pod contains multiple containers, how can logs be viewed from one of the containers? A. kubectl logs --describe B. kubectl logs --container C. kubectl logs --application D. kubectl logs --docker",
+    "options": {},
+    "most_voted": "B"
+  }
+]
