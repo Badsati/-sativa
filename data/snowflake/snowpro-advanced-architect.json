@@ -1,0 +1,992 @@
+[
+  {
+    "question": "What built-in Snowflake features make use of the change tracking metadata for a table? (Choose two.) A. The MERGE command B. The UPSERT command C. The CHANGES clause D. A STREAM object E. Thee CHANGE_DATA_CAPTURE command",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When using the Snowflake Connector for Kafka, what data formats are supported for the messages? (Choose two.) A. CSV B. XML C. Avro D. JSON E. Parquet",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "At which object type level can the APPLY MASKING POLICY, APPLY ROW ACCESS POLICY and APPLY SESSION POLICY privileges be granted? A. Global B. Database C. Schema D. Table",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect uses COPY INTO with the ON_ERROR=SKIP_FILE option to bulk load CSV files into a table called TABLEA, using its table stage. One file named file5.csv fails to load. The Architect fixes the file and re-loads it to the stage with the exact same file name it had previously. Which commands should the Architect use to load only file5.csv file from the stage? (Choose two.) A. COPY INTO tablea FROM @%tablea RETURN_FAILED_ONLY = TRUE; B. COPY INTO tablea FROM @%tablea; C. COPY INTO tablea FROM @%tablea FILES = ('file5.csv'); D. COPY INTO tablea FROM @%tablea FORCE = TRUE; E. COPY INTO tablea FROM @%tablea NEW_FILES_ONLY = TRUE; F. COPY INTO tablea FROM @%tablea MERGE = TRUE;",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A large manufacturing company runs a dozen individual Snowflake accounts across its business divisions. The company wants to increase the level of data sharing to support supply chain optimizations and increase its purchasing leverage with multiple vendors. The company’s Snowflake Architects need to design a solution that would allow the business divisions to decide what to share, while minimizing the level of effort spent on configuration and management. Most of the company divisions use Snowflake accounts in the same cloud deployments with a few exceptions for European-based divisions. According to Snowflake recommended best practice, how should these requirements be met? A. Migrate the European accounts in the global region and manage shares in a connected graph architecture. Deploy a Data Exchange. B. Deploy a Private Data Exchange in combination with data shares for the European accounts. C. Deploy to the Snowflake Marketplace making sure that invoker_share() is used in all secure views. D. Deploy a Private Data Exchange and use replication to allow European data shares in the Exchange.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A user has the appropriate privilege to see unmasked data in a column. If the user loads this column data into another column that does not have a masking policy, what will occur? A. Unmasked data will be loaded in the new column. B. Masked data will be loaded into the new column. C. Unmasked data will be loaded into the new column but only users with the appropriate privileges will be able to see the unmasked data. D. Unmasked data will be loaded into the new column and no users will be able to see the unmasked data.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can an Architect enable optimal clustering to enhance performance for different access paths on a given table? A. Create multiple clustering keys for a table. B. Create multiple materialized views with different cluster keys. C. Create super projections that will automatically create clustering. D. Create a clustering key that contains all columns used in the access paths.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Company A would like to share data in Snowflake with Company B. Company B is not on the same cloud platform as Company A. What is required to allow data sharing between these two companies? A. Create a pipeline to write shared data to a cloud storage location in the target cloud provider. B. Ensure that all views are persisted, as views cannot be shared across cloud platforms. C. Setup data replication to the region and cloud platform where the consumer resides. D. Company A and Company B must agree to use a single cloud platform: Data sharing is only possible if the companies share the same cloud provider.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are some of the characteristics of result set caches? (Choose three.) A. Time Travel queries can be executed against the result set cache. B. Snowflake persists the data results for 24 hours. C. Each time persisted results for a query are used, a 24-hour retention period is reset. D. The data stored in the result cache will contribute to storage costs. E. The retention period can be reset for a maximum of 31 days. F. The result set cache is not shared between warehouses.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which organization-related tasks can be performed by the ORGADMIN role? (Choose three.) A. Changing the name of the organization B. Creating an account C. Viewing a list of organization accounts D. Changing the name of an account E. Deleting an account F. Enabling the replication of a database",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Data Engineer is designing a near real-time ingestion pipeline for a retail company to ingest event logs into Snowflake to derive insights. A Snowflake Architect is asked to define security best practices to configure access control privileges for the data load for auto-ingest to Snowpipe. What are the MINIMUM object privileges required for the Snowpipe user to execute Snowpipe? A. OWNERSHIP on the named pipe, USAGE on the named stage, target database, and schema, and INSERT and SELECT on the target table B. OWNERSHIP on the named pipe, USAGE and READ on the named stage, USAGE on the target database and schema, and INSERT end SELECT on the target table C. CREATE on the named pipe, USAGE and READ on the named stage, USAGE on the target database and schema, and INSERT end SELECT on the target table D. USAGE on the named pipe, named stage, target database, and schema, and INSERT and SELECT on the target table",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The IT Security team has identified that there is an ongoing credential stuffing attack on many of their organization’s system. What is the BEST way to find recent and ongoing login attempts to Snowflake? A. Call the LOGIN_HISTORY Information Schema table function. B. Query the LOGIN_HISTORY view in the ACCOUNT_USAGE schema in the SNOWFLAKE database. C. View the History tab in the Snowflake UI and set up a filter for SQL text that contains the text \"LOGIN\". D. View the Users section in the Account tab in the Snowflake UI and review the last login column.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect has a VPN_ACCESS_LOGS table in the SECURITY_LOGS schema containing timestamps of the connection and disconnection, username of the user, and summary statistics. What should the Architect do to enable the Snowflake search optimization service on this table? A. Assume role with OWNERSHIP on future tables and ADD SEARCH OPTIMIZATION on the SECURITY_LOGS schema. B. Assume role with ALL PRIVILEGES including ADD SEARCH OPTIMIZATION in the SECURITY LOGS schema. C. Assume role with OWNERSHIP on VPN_ACCESS_LOGS and ADD SEARCH OPTIMIZATION in the SECURITY_LOGS schema. D. Assume role with ALL PRIVILEGES on VPN_ACCESS_LOGS and ADD SEARCH OPTIMIZATION in the SECURITY_LOGS schema.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The table contains five columns and it has millions of records. The cardinality distribution of the columns is shown below: Column C4 and C5 are mostly used by SELECT queries in the GROUP BY and ORDER BY clauses. Whereas columns C1, C2 and C3 are heavily used in filter and join conditions of SELECT queries. The Architect must design a clustering key for this table to improve the query performance. Based on Snowflake recommendations, how should the clustering key columns be ordered while defining the multi-column clustering key? A. C5, C4, C2 B. C3, C4, C5 C. C1, C3, C2 D. C2, C1, C3",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which security, governance, and data protection features require, at a MINIMUM, the Business Critical edition of Snowflake? (Choose two.) A. Extended Time Travel (up to 90 days) B. Customer-managed encryption keys through Tri-Secret Secure C. Periodic rekeying of encrypted data D. AWS, Azure, or Google Cloud private connectivity to Snowflake E. Federated authentication and SSO",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company wants to deploy its Snowflake accounts inside its corporate network with no visibility on the internet. The company is using a VPN infrastructure and Virtual Desktop Infrastructure (VDI) for its Snowflake users. The company also wants to re-use the login credentials set up for the VDI to eliminate redundancy when managing logins. What Snowflake functionality should be used to meet these requirements? (Choose two.) A. Set up replication to allow users to connect from outside the company VPN. B. Provision a unique company Tri-Secret Secure key. C. Use private connectivity from a cloud provider. D. Set up SSO for federated authentication. E. Use a proxy Snowflake account outside the VPN, enabling client redirect for user logins.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How do Snowflake databases that are created from shares differ from standard databases that are not created from shares? (Choose three.) A. Shared databases are read-only. B. Shared databases must be refreshed in order for new data to be visible. C. Shared databases cannot be cloned. D. Shared databases are not supported by Time Travel. E. Shared databases will have the PUBLIC or INFORMATION_SCHEMA schemas without explicitly granting these schemas to the share. F. Shared databases can also be created as transient databases.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What integration object should be used to place restrictions on where data may be exported? A. Stage integration B. Security integration C. Storage integration D. API integration",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The following DDL command was used to create a task based on a stream: Assuming MY_WH is set to auto_suspend – 60 and used exclusively for this task, which statement is true? A. The warehouse MY_WH will be made active every five minutes to check the stream. B. The warehouse MY_WH will only be active when there are results in the stream. C. The warehouse MY_WH will never suspend. D. The warehouse MY_WH will automatically resize to accommodate the size of the stream.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is a characteristic of loading data into Snowflake using the Snowflake Connector for Kafka? A. The Connector only works in Snowflake regions that use AWS infrastructure. B. The Connector works with all file formats, including text, JSON, Avro, Ore, Parquet, and XML. C. The Connector creates and manages its own stage, file format, and pipe objects. D. Loads using the Connector will have lower latency than Snowpipe and will ingest data in real time.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A healthcare company wants to share data with a medical institute. The institute is running a Standard edition of Snowflake; the healthcare company is running a Business Critical edition. How can this data be shared? A. The healthcare company will need to change the institute’s Snowflake edition in the accounts panel. B. By default, sharing is supported from a Business Critical Snowflake edition to a Standard edition. C. Contact Snowflake and they will execute the share request for the healthcare company. D. Set the share_restriction parameter on the shared object to false.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect is designing a pipeline to stream event data into Snowflake using the Snowflake Kafka connector. The Architect’s highest priority is to configure the connector to stream data in the MOST cost-effective manner. Which of the following is recommended for optimizing the cost associated with the Snowflake Kafka connector? A. Utilize a higher Buffer.flush.time in the connector configuration. B. Utilize a higher Buffer.size.bytes in the connector configuration. C. Utilize a lower Buffer.size.bytes in the connector configuration. D. Utilize a lower Buffer.count.records in the connector configuration.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect has chosen to separate their Snowflake Production and QA environments using two separate Snowflake accounts. The QA account is intended to run and test changes on data and database objects before pushing those changes to the Production account. It is a requirement that all database objects and data in the QA account need to be an exact copy of the database objects, including privileges and data in the Production account on at least a nightly basis. Which is the LEAST complex approach to use to populate the QA account with the Production account’s data and database objects on a nightly basis? A. 1. Create a share in the Production account for each database 2. Share access to the QA account as a Consumer 3. The QA account creates a database directly from each share 4. Create clones of those databases on a nightly basis 5. Run tests directly on those cloned databases B. 1. Create a stage in the Production account 2. Create a stage in the QA account that points to the same external object-storage location 3. Create a task that runs nightly to unload each table in the Production account into the stage 4. Use Snowpipe to populate the QA account C. 1. Enable replication for each database in the Production account 2. Create replica databases in the QA account 3. Create clones of the replica databases on a nightly basis 4. Run tests directly on those cloned databases D. 1. In the Production account, create an external function that connects into the QA account and returns all the data for one specific table 2. Run the external function as part of a stored procedure that loops through each table in the Production account and populates each table in the QA account",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user can change object parameters using which of the following roles? A. ACCOUNTADMIN, SECURITYADMIN B. SYSADMIN, SECURITYADMIN C. ACCOUNTADMIN, USER with PRIVILEGE D. SECURITYADMIN, USER with PRIVILEGE",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A media company needs a data pipeline that will ingest customer review data into a Snowflake table, and apply some transformations. The company also needs to use Amazon Comprehend to do sentiment analysis and make the de-identified final data set available publicly for advertising companies who use different cloud providers in different regions. The data pipeline needs to run continuously ang efficiently as new records arrive in the object storage leveraging event notifications. Also, the operational complexity, maintenance of the infrastructure, including platform upgrades and security, and the development effort should be minimal. Which design will meet these requirements? A. Ingest the data using COPY INTO and use streams and tasks to orchestrate transformations. Export the data into Amazon S3 to do model inference with Amazon Comprehend and ingest the data back into a Snowflake table. Then create a listing in the Snowflake Marketplace to make the data available to other companies. B. Ingest the data using Snowpipe and use streams and tasks to orchestrate transformations. Create an external function to do model inference with Amazon Comprehend and write the final records to a Snowflake table. Then create a listing in the Snowflake Marketplace to make the data available to other companies. C. Ingest the data into Snowflake using Amazon EMR and PySpark using the Snowflake Spark connector. Apply transformations using another Spark job. Develop a python program to do model inference by leveraging the Amazon Comprehend text analysis API. Then write the results to a Snowflake table and create a listing in the Snowflake Marketplace to make the data available to other companies. D. Ingest the data using Snowpipe and use streams and tasks to orchestrate transformations. Export the data into Amazon S3 to do model inference with Amazon Comprehend and ingest the data back into a Snowflake table. Then create a listing in the Snowflake Marketplace to make the data available to other companies.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Snowflake Architect is designing an application and tenancy strategy for an organization where strong legal isolation rules as well as multi-tenancy are requirements. Which approach will meet these requirements if Role-Based Access Policies (RBAC) is a viable option for isolating tenants? A. Create accounts for each tenant in the Snowflake organization. B. Create an object for each tenant strategy if row level security is viable for isolating tenants. C. Create an object for each tenant strategy if row level security is not viable for isolating tenants. D. Create a multi-tenant table strategy if row level security is not viable for isolating tenants.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statements describe characteristics of the use of materialized views in Snowflake? (Choose two.) A. They can include ORDER BY clauses. B. They cannot include nested subqueries. C. They can include context functions, such as CURRENT_TIME(). D. They can support MIN and MAX aggregates. E. They can support inner joins, but not outer joins.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The Data Engineering team at a large manufacturing company needs to engineer data coming from many sources to support a wide variety of use cases and data consumer requirements which include: 1. Finance and Vendor Management team members who require reporting and visualization 2. Data Science team members who require access to raw data for ML model development 3. Sales team members who require engineered and protected data for data monetization What Snowflake data modeling approaches will meet these requirements? (Choose two.) A. Consolidate data in the company’s data lake and use EXTERNAL TABLES. B. Create a raw database for landing and persisting raw data entering the data pipelines. C. Create a set of profile-specific databases that aligns data with usage patterns. D. Create a single star schema in a single database to support all consumers’ requirements. E. Create a Data Vault as the sole data pipeline endpoint and have all consumers directly access the Vault.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect on a new project has been asked to design an architecture that meets Snowflake security, compliance, and governance requirements as follows: 1. Use Tri-Secret Secure in Snowflake 2. Share some information stored in a view with another Snowflake customer 3. Hide portions of sensitive information from some columns 4. Use zero-copy cloning to refresh the non-production environment from the production environment To meet these requirements, which design elements must be implemented? (Choose three.) A. Define row access policies. B. Use the Business Critical edition of Snowflake. C. Create a secure view. D. Use the Enterprise edition of Snowflake. E. Use Dynamic Data Masking. F. Create a materialized view.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following are characteristics of how row access policies can be applied to external tables? (Choose three.) A. An external table can be created with a row access policy, and the policy can be applied to the VALUE column. B. A row access policy can be applied to the VALUE column of an existing external table. C. A row access policy cannot be directly added to a virtual column of an external table. D. External tables are supported as mapping tables in a row access policy. E. While cloning a database, both the row access policy and the external table will be cloned. F. A row access policy cannot be applied to a view created on top of an external table.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect needs to allow a user to create a database from an inbound share. To meet this requirement, the user’s role must have which privileges? (Choose two.) A. IMPORT SHARE; B. IMPORT PRIVILEGES; C. CREATE DATABASE; D. CREATE SHARE; E. IMPORT DATABASE;",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Files arrive in an external stage every 10 seconds from a proprietary system. The files range in size from 500 K to 3 MB. The data must be accessible by dashboards as soon as it arrives. How can a Snowflake Architect meet this requirement with the LEAST amount of coding? (Choose two.) A. Use Snowpipe with auto-ingest. B. Use a COPY command with a task. C. Use a materialized view on an external table. D. Use the COPY INTO command. E. Use a combination of a task and a stream.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When loading data into a table that captures the load time in a column with a default value of either CURRENT_TIME() or CURRENT_TIMESTAMP() what will occur? A. All rows loaded using a specific COPY statement will have varying timestamps based on when the rows were inserted. B. Any rows loaded using a specific COPY statement will have varying timestamps based on when the rows were read from the source. C. Any rows loaded using a specific COPY statement will have varying timestamps based on when the rows were created in the source. D. All rows loaded using a specific COPY statement will have the same timestamp value.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How does a standard virtual warehouse policy work in Snowflake? A. It conserves credits by keeping running clusters fully loaded rather than starting additional clusters. B. It starts only if the system estimates that there is a query load that will keep the cluster busy for at least 6 minutes. C. It starts only f the system estimates that there is a query load that will keep the cluster busy for at least 2 minutes. D. It prevents or minimizes queuing by starting additional clusters instead of conserving credits.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which feature provides the capability to define an alternate cluster key for a table with an existing cluster key? A. External table B. Materialized view C. Search optimization D. Result cache",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect would like to save quarter-end financial results for the previous six years. Which Snowflake feature can the Architect use to accomplish this? A. Search optimization service B. Materialized view C. Time Travel D. Zero-copy cloning E. Secure views",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company is using a Snowflake account in Azure. The account has SAML SSO set up using ADFS as a SCIM identity provider. To validate Private Link connectivity, an Architect performed the following steps: Confirmed Private Link URLs are working by logging in with a username/password account Verified DNS resolution by running nslookups against Private Link URLs Validated connectivity using SnowCD Disabled public access using a network policy set to use the company’s IP address range However, the following error message is received when using SSO to log into the company account: IP XX.XXX.XX.XX is not allowed to access snowflake. Contact your local security administrator. What steps should the Architect take to resolve this error and ensure that the account is accessed using only Private Link? (Choose two.) A. Alter the Azure security integration to use the Private Link URLs. B. Add the IP address in the error message to the allowed list in the network policy. C. Generate a new SCIM access token using system$generate_scim_access_token and save it to Azure AD. D. Update the configuration of the Azure AD SSO to use the Private Link URLs. E. Open a case with Snowflake Support to authorize the Private Link URLs’ access to the account.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which steps are recommended best practices for prioritizing cluster keys in Snowflake? (Choose two.) A. Choose columns that are frequently used in join predicates. B. Choose lower cardinality columns to support clustering keys and cost effectiveness. C. Choose TIMESTAMP columns with nanoseconds for the highest number of unique rows. D. Choose cluster columns that are most actively used in selective filters. E. Choose cluster columns that are actively used in the GROUP BY clauses.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Snowflake data modeling approach is designed for BI queries? A. 3 NF B. Star schema C. Data Vault D. Snowflake schema",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How is the change of local time due to daylight savings time handled in Snowflake tasks? (Choose two.) A. A task scheduled in a UTC-based schedule will have no issues with the time changes. B. Task schedules can be designed to follow specified or local time zones to accommodate the time changes. C. A task will move to a suspended state during the daylight savings time change. D. A frequent task execution schedule like minutes may not cause a problem, but will affect the task history. E. A task schedule will follow only the specified time and will fail to handle lost or duplicated hours.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect needs to grant a group of ORDER_ADMIN users the ability to clean old data in an ORDERS table (deleting all records older than 5 years), without granting any privileges on the table. The group’s manager (ORDER_MANAGER) has full DELETE privileges on the table. How can the ORDER_ADMIN role be enabled to perform this data cleanup, without needing the DELETE privilege held by the ORDER_MANAGER role? A. Create a stored procedure that runs with caller’s rights, including the appropriate \"> 5 years\" business logic, and grant USAGE on this procedure to ORDER_ADMIN. The ORDER_MANAGER role owns the procedure. B. Create a stored procedure that can be run using both caller’s and owner’s rights (allowing the user to specify which rights are used during execution), and grant USAGE on this procedure to ORDER_ADMIN. The ORDER_MANAGER role owns the procedure. C. Create a stored procedure that runs with owner’s rights, including the appropriate \"> 5 years\" business logic, and grant USAGE on this procedure to ORDER_ADMIN. The ORDER_MANAGER role owns the procedure. D. This scenario would actually not be possible in Snowflake – any user performing a DELETE on a table requires the DELETE privilege to be granted to the role they are using.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company’s daily Snowflake workload consists of a huge number of concurrent queries triggered between 9pm and 11pm. At the individual level, these queries are smaller statements that get completed within a short time period. What configuration can the company’s Architect implement to enhance the performance of this workload? (Choose two.) A. Enable a multi-clustered virtual warehouse in maximized mode during the workload duration. B. Set the MAX_CONCURRENCY_LEVEL to a higher value than its default value of 8 at the virtual warehouse level. C. Increase the size of the virtual warehouse to size X-Large. D. Reduce the amount of data that is being processed through this workload. E. Set the connection timeout to a higher value than its default.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which system functions does Snowflake provide to monitor clustering information within a table (Choose two.) A. SYSTEM$CLUSTERING_INFORMATION B. SYSTEM$CLUSTERING_USAGE C. SYSTEM$CLUSTERING_DEPTH D. SYSTEM$CLUSTERING_KEYS E. SYSTEM$CLUSTERING_PERCENT",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company has a table with that has corrupted data, named Data. The company wants to recover the data as it was 5 minutes ago using cloning and Time Travel. What command will accomplish this? A. CREATE CLONE TABLE Recover_Data FROM Data AT(OFFSET => -60*5); B. CREATE CLONE Recover_Data FROM Data AT(OFFSET => -60*5); C. CREATE TABLE Recover_Data CLONE Data AT(OFFSET => -60*5); D. CREATE TABLE Recover Data CLONE Data AT(TIME => -60*5);",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company has an inbound share set up with eight tables and five secure views. The company plans to make the share part of its production data pipelines. Which actions can the company take with the inbound share? (Choose two.) A. Clone a table from a share. B. Grant modify permissions on the share. C. Create a table from the shared database. D. Create additional views inside the shared database. E. Create a table stream on the shared table.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company has several sites in different regions from which the company wants to ingest data. Which of the following will enable this type of data ingestion? A. The company must have a Snowflake account in each cloud region to be able to ingest data to that account. B. The company must replicate data between Snowflake accounts. C. The company should provision a reader account to each site and ingest the data through the reader accounts. D. The company should use a storage integration for the external stage.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What Snowflake features should be leveraged when modeling using Data Vault? A. Snowflake’s support of multi-table inserts into the data model’s Data Vault tables B. Data needs to be pre-partitioned to obtain a superior data access performance C. Scaling up the virtual warehouses will support parallel processing of new source loads D. Snowflake’s ability to hash keys so that hash key joins can run faster than integer joins",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company’s client application supports multiple authentication methods, and is using Okta. What is the best practice recommendation for the order of priority when applications authenticate to Snowflake? A. 1. OAuth (either Snowflake OAuth or External OAuth) 2. External browser 3. Okta native authentication 4. Key Pair Authentication, mostly used for service account users 5. Password B. 1. External browser, SSO 2. Key Pair Authentication, mostly used for development environment users 3. Okta native authentication 4. OAuth (ether Snowflake OAuth or External OAuth) 5. Password C. 1. Okta native authentication 2. Key Pair Authentication, mostly used for production environment users 3. Password 4. OAuth (either Snowflake OAuth or External OAuth) 5. External browser, SSO D. 1. Password 2. Key Pair Authentication, mostly used for production environment users 3. Okta native authentication 4. OAuth (either Snowflake OAuth or External OAuth) 5. External browser, SSO",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a valid object hierarchy when building a Snowflake environment? A. Account --> Database --> Schema --> Warehouse B. Organization --> Account --> Database --> Schema --> Stage C. Account --> Schema > Table --> Stage D. Organization --> Account --> Stage --> Table --> View",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following are characteristics of Snowflake’s parameter hierarchy? A. Session parameters override virtual warehouse parameters. B. Virtual warehouse parameters override user parameters. C. Table parameters override virtual warehouse parameters. D. Schema parameters override account parameters.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Snowflake Architect is designing a multi-tenant application strategy for an organization in the Snowflake Data Cloud and is considering using an Account Per Tenant strategy. Which requirements will be addressed with this approach? (Choose two.) A. There needs to be fewer objects per tenant. B. Security and Role-Based Access Control (RBAC) policies must be simple to configure. C. Compute costs must be optimized. D. Tenant data shape may be unique per tenant. E. Storage costs must be optimized.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect has been asked to clone schema STAGING as it looked one week ago, Tuesday June 1st at 8:00 AM, to recover some objects. The STAGING schema has 50 days of retention. The Architect runs the following statement: CREATE SCHEMA STAGING_CLONE CLONE STAGING at (timestamp => '2021-06-01 08:00:00'); The Architect receives the following error: Time travel data is not available for schema STAGING. The requested time is either beyond the allowed time travel period or before the object creation time. The Architect then checks the schema history and sees the following: CREATED_ON|NAME|DROPPED_ON 2021-06-02 23:00:00 | STAGING | NULL 2021-05-01 10:00:00 | STAGING | 2021-06-02 23:00:00 How can cloning the STAGING schema be achieved? A. Undrop the STAGING schema and then rerun the CLONE statement. B. Modify the statement: CREATE SCHEMA STAGING_CLONE CLONE STAGING at (timestamp => '2021-05-01 10:00:00'); C. Rename the STAGING schema and perform an UNDROP to retrieve the previous STAGING schema version, then run the CLONE statement. D. Cloning cannot be accomplished because the STAGING schema version was not active during the proposed Time Travel time period.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are purposes for creating a storage integration? (Choose three.) A. Control access to Snowflake data using a master encryption key that is maintained in the cloud provider’s key management service. B. Store a generated identity and access management (IAM) entity for an external cloud provider regardless of the cloud provider that hosts the Snowflake account. C. Support multiple external stages using one single Snowflake object. D. Avoid supplying credentials when creating a stage or when loading or unloading data. E. Create private VPC endpoints that allow direct, secure connectivity between VPCs without traversing the public internet. F. Manage credentials from multiple cloud providers in one single Snowflake object.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A healthcare company is deploying a Snowflake account that may include Personal Health Information (PHI). The company must ensure compliance with all relevant privacy standards. Which best practice recommendations will meet data protection and compliance requirements? (Choose three.) A. Use, at minimum, the Business Critical edition of Snowflake. B. Create Dynamic Data Masking policies and apply them to columns that contain PHI. C. Use the Internal Tokenization feature to obfuscate sensitive data. D. Use the External Tokenization feature to obfuscate sensitive data. E. Rewrite SQL queries to eliminate projections of PHI data based on current_role(). F. Avoid sharing data with partner organizations.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "There are two databases in an account, named fin_db and hr_db which contain payroll and employee data, respectively. Accountants and Analysts in the company require different permissions on the objects in these databases to perform their jobs. Accountants need read-write access to fin_db but only require read-only access to hr_db because the database is maintained by human resources personnel. An Architect needs to create a read-only role for certain employees working in the human resources department. Which permission sets must be granted to this role? A. USAGE on database hr_db, USAGE on all schemas in database hr_db, SELECT on all tables in database hr_db B. USAGE on database hr_db, SELECT on all schemas in database hr_db, SELECT on all tables in database hr_db C. MODIFY on database hr_db, USAGE on all schemas in database hr_db, USAGE on all tables in database hr_db D. USAGE on database hr_db, USAGE on all schemas in database hr_db, REFERENCES on all tables in database hr_db",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect runs the following SQL query: How can this query be interpreted? A. FILEROWS is a stage. FILE_ROW_NUMBER is line number in file. B. FILEROWS is the table. FILE_ROW_NUMBER is the line number in the table. C. FILEROWS is a file. FILE_ROW_NUMBER is the file format location. D. FILERONS is the file format location. FILE_ROW_NUMBER is a stage.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect entered the following commands in sequence: USER1 cannot find the table. Which of the following commands does the Architect need to run for USER1 to find the tables using the Principle of Least Privilege? (Choose two.) A. GRANT ROLE PUBLIC TO ROLE INTERN; B. GRANT USAGE ON DATABASE SANDBOX TO ROLE INTERN; C. GRANT USAGE ON SCHEMA SANDBOX.PUBLIC TO ROLE INTERN; D. GRANT OWNERSHIP ON DATABASE SANDBOX TO USER INTERN; E. GRANT ALL PRIVILEGES ON DATABASE SANDBOX TO ROLE INTERN;",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A DevOps team has a requirement for recovery of staging tables used in a complex set of data pipelines. The staging tables are all located in the same staging schema. One of the requirements is to have online recovery of data on a rolling 7-day basis. After setting up the DATA_RETENTION_TIME_IN_DAYS at the database level, certain tables remain unrecoverable past 1 day. What would cause this to occur? (Choose two.) A. The staging schema has not been setup for MANAGED ACCESS. B. The DATA_RETENTION_TIME_IN_DAYS for the staging schema has been set to 1 day. C. The tables exceed the 1 TB limit for data recovery. D. The staging tables are of the TRANSIENT type. E. The DevOps role should be granted ALLOW_RECOVERY privilege on the staging schema.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following COPY command which is loading data with CSV format into a Snowflake table from an internal stage through a data transformation query. This command results in the following error: SQL compilation error: invalid parameter 'validation_mode' Assuming the syntax is correct, what is the cause of this error? A. The VALIDATION_MODE parameter supports COPY statements that load data from external stages only. B. The VALIDATION_MODE parameter does not support COPY statements with CSV file formats. C. The VALIDATION_MODE parameter does not support COPY statements that transform data during a load. D. The value return_all_errors of the option VALIDATION_MODE is causing a compilation error.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company is storing large numbers of small JSON files (ranging from 1-4 bytes) that are received from IoT devices and sent to a cloud provider. In any given hour, 100,000 files are added to the cloud provider. What is the MOST cost-effective way to bring this data into a Snowflake table? A. An external table B. A pipe C. A stream D. A copy command at regular intervals",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company has a Snowflake account named ACCOUNTA in AWS us-east-1 region. The company stores its marketing data in a Snowflake database named MARKET_DB. One of the company’s business partners has an account named PARTNERB in Azure East US 2 region. For marketing purposes the company has agreed to share the database MARKET_DB with the partner account. Which of the following steps MUST be performed for the account PARTNERB to consume data from the MARKET_DB database? A. Create a new account (called AZABC123) in Azure East US 2 region. From account ACCOUNTA create a share of database MARKET_DB, create a new database out of this share locally in AWS us-east-1 region, and replicate this new database to AZABC123 account. Then set up data sharing to the PARTNERB account. B. From account ACCOUNTA create a share of database MARKET_DB, and create a new database out of this share locally in AWS us-east-1 region. Then make this database the provider and share it with the PARTNERB account. C. Create a new account (called AZABC123) in Azure East US 2 region. From account ACCOUNTA replicate the database MARKET_DB to AZABC123 and from this account set up the data sharing to the PARTNERB account. D. Create a share of database MARKET_DB, and create a new database out of this share locally in AWS us-east-1 region. Then replicate this database to the partner’s account PARTNERB.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What does a Snowflake Architect need to consider when implementing a Snowflake Connector for Kafka? A. Every Kafka message is in JSON or Avro format. B. The default retention time for Kafka topics is 14 days. C. The Kafka connector supports key pair authentication, OAUTH, and basic authentication (for example, username and password). D. The Kafka connector will create one table and one pipe to ingest data for each topic. If the connector cannot create the table or the pipe it will result in an exception.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A group of Data Analysts have been granted the role ANALYST_ROLE. They need a Snowflake database where they can create and modify tables, views, and other objects to load with their own data. The Analysts should not have the ability to give other Snowflake users outside of their role access to this data. How should these requirements be met? A. Grant ANALYST_ROLE OWNERSHIP on the database, but make sure that ANALYST_ROLE does not have the MANAGE GRANTS privilege on the account. B. Grant SYSADMIN OWNERSHIP of the database, but grant the create schema privilege on the database to the ANALYST_ROLE. C. Make every schema in the database a MANAGED ACCESS schema, owned by SYSADMIN, and grant create privileges on each schema to the ANALYST_ROLE for each type of object that needs to be created. D. Grant ANALYST_ROLE OWNERSHIP on the database, but grant the OWNERSHIP ON FUTURE [object type]s in database privilege to SYSADMIN.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What considerations need to be taken when using database cloning as a tool for data lifecycle management in a development environment? (Choose two.) A. Any pipes in the source are not cloned. B. Any pipes in the source referring to internal stages are not cloned. C. Any pipes in the source referring to external stages are not cloned. D. The clone inherits all granted privileges of all child objects in the source object, including the database. E. The clone inherits all granted privileges of all child objects in the source object, excluding the database.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which columns can be included in an external table schema? (Choose three.) A. VALUE B. METADATA$ROW_ID C. METADATA$ISUPDATE D. METADATA$FILENAME E. METADATA$FILE_ROW_NUMBER F. METADATA$EXTERNAL_TABLE_PARTITION",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which SQL ALTER command will MAXIMIZE memory and compute resources for a Snowpark stored procedure when executed on the snowpark_opt_wh warehouse? A. alter warehouse snowpark_opt_wh set max_concurrency_level = 1; B. alter warehouse snowpark_opt_wh set max_concurrency_level = 2; C. alter warehouse snowpark_opt_wh set max_concurrency_level = 8; D. alter warehouse snowpark_opt_wh set max_concurrency_level = 16;",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect clones a database and all of its objects, including tasks. After the cloning, the tasks stop running. Why is this occurring? A. Tasks cannot be cloned. B. The objects that the tasks reference are not fully qualified. C. Cloned tasks are suspended by default and must be manually resumed. D. The Architect has insufficient privileges to alter tasks on the cloned database.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which technique will efficiently ingest and consume semi-structured data for Snowflake data lake workloads? A. IDEF1X B. Schema-on-write C. Schema-on-read D. Information schema",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Is it possible for a data provider account with a Snowflake Business Critical edition to share data with an Enterprise edition data consumer account? A. A Business Critical account cannot be a data sharing provider to an Enterprise consumer. Any consumer accounts must also be Business Critical. B. If a user in the provider account with role authority to CREATE or ALTER SHARE adds an Enterprise account as a consumer, it can import the share. C. If a user in the provider account with a share owning role sets SHARE_RESTRICTIONS to False when adding an Enterprise consumer account, it can import the share. D. If a user in the provider account with a share owning role which also has OVERRIDE SHARE RESTRICTIONS privilege SHARE_RESTRICTIONS set to False when adding an Enterprise consumer account, it can import the share.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following ingestion methods can be used to load near real-time data by using the messaging services provided by a cloud provider? A. Snowflake Connector for Kafka B. Snowflake streams C. Snowpipe D. Spark",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Architect is designing a file ingestion recovery solution. The project will use an internal named stage for file storage. Currently, in the case of an ingestion failure, the Operations team must manually download the failed file and check for errors. Which downloading method should the Architect recommend that requires the LEAST amount of operational overhead? A. Use the Snowflake Connector for Python, connect to remote storage and download the file. B. Use the GET command in SnowSQL to retrieve the file. C. Use the GET command in Snowsight to retrieve the file. D. Use the Snowflake API endpoint and download the file.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A table for IOT devices that measures water usage is created. The table quickly becomes large and contains more than 2 billion rows. The general query patterns for the table are: 1. DeviceId, IOT_timestamp and CustomerId are frequently used in the filter predicate for the select statement 2. The columns City and DeviceManufacturer are often retrieved 3. There is often a count on UniqueId Which field(s) should be used for the clustering key? A. IOT_timestamp B. City and DeviceManufacturer C. DeviceId and CustomerId D. UniqueId",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Snowflake objects can be used in a data share? (Choose two.) A. Standard view B. Secure view C. Stored procedure D. External table E. Stream",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company has an external vendor who puts data into Google Cloud Storage. The company's Snowflake account is set up in Azure. What would be the MOST efficient way to load data from the vendor into Snowflake? A. Ask the vendor to create a Snowflake account, load the data into Snowflake and create a data share. B. Create an external stage on Google Cloud Storage and use the external table to load the data into Snowflake. C. Copy the data from Google Cloud Storage to Azure Blob storage using external tools and load data from Blob storage to Snowflake. D. Create a Snowflake Account in the Google Cloud Platform (GCP), ingest data into this account and use data replication to move the data from GCP to Azure.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can the Snowpipe REST API be used to keep a log of data load history? A. Call insertReport every 20 minutes, fetching the last 10,000 entries. B. Call loadHistoryScan every minute for the maximum time range. C. Call insertReport every 8 minutes for a 10-minute time range. D. Call loadHistoryScan every 10 minutes for a 15-minute time range.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The diagram shows the process flow for Snowpipe auto-ingest with Amazon Simple Notification Service (SNS) with the following steps: Step 1: Data files are loaded in a stage. Step 2: An Amazon S3 event notification, published by SNS, informs Snowpipe — by way of Amazon Simple Queue Service (SQS) - that files are ready to load. Snowpipe copies the files into a queue. Step 3: A Snowflake-provided virtual warehouse loads data from the queued files into the target table based on parameters defined in the specified pipe. If an AWS Administrator accidentally deletes the SQS subscription to the SNS topic in Step 2, what will happen to the pipe that references the topic to receive event messages from Amazon S3? A. The pipe will continue to receive the messages as Snowflake will automatically restore the subscription to the same SNS topic and will recreate the pipe by specifying the same SNS topic name in the pipe definition. B. The pipe will no longer be able to receive the messages and the user must wait for 24 hours from the time when the SNS topic subscription was deleted. Pipe recreation is not required as the pipe will reuse the same subscription to the existing SNS topic after 24 hours. C. The pipe will continue to receive the messages as Snowflake will automatically restore the subscription by creating a new SNS topic. Snowflake will then recreate the pipe by specifying the new SNS topic name in the pipe definition. D. The pipe will no longer be able to receive the messages. To restore the system immediately, the user needs to manually create a new SNS topic with a different name and then recreate the pipe by specifying the new SNS topic name in the pipe definition.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect needs to meet a company requirement to ingest files from the company’s AWS storage accounts into the company's Snowflake Google Cloud Platform (GCP) account. How can the ingestion of these files into the company's Snowflake account be initiated? (Choose two.) A. Configure the client application to call the Snowpipe REST endpoint when new files have arrived in Amazon S3 storage. B. Configure the client application to call the Snowpipe REST endpoint when new files have arrived in Amazon S3 Glacier storage. C. Create an AWS Lambda function to call the Snowpipe REST endpoint when new files have arrived in Amazon S3 storage. D. Configure AWS Simple Notification Service (SNS) to notify Snowpipe when new files have arrived in Amazon S3 storage. E. Configure the client application to issue a COPY INTO command to Snowflake when new files have arrived in Amazon S3 Glacier storage.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When activating Tri-Secret Secure in a hierarchical encryption model in a Snowflake account, at what level is the customer-managed key used? A. At the root level (HSM) B. At the account level (AMK) C. At the table level (TMK) D. At the micro-partition level",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are characteristics of the use of transactions in Snowflake? (Choose two.) A. Explicit transactions can contain DDL, DML, and query statements. B. The AUTOCOMMIT setting can be changed inside a stored procedure. C. A transaction can be started explicitly by executing a BEGIN WORK statement and end explicitly by executing a COMMIT WORK statement. D. A transaction can be started explicitly by executing a BEGIN TRANSACTION statement and end explicitly by executing an END TRANSACTION statement. E. Explicit transactions should contain only DML statements and query statements. All DDL statements implicitly commit active transactions.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which query will identify the specific days and virtual warehouses that would benefit from a multi-cluster warehouse to improve the performance of a particular workload? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company is designing high availability and disaster recovery plans and needs to maximize redundancy and minimize recovery time objectives for their critical application processes. Cost is not a concern as long as the solution is the best available. The plan so far consists of the following steps: 1. Deployment of Snowflake accounts on two different cloud providers. 2. Selection of cloud provider regions that are geographically far apart. 3. The Snowflake deployment will replicate the databases and account data between both cloud provider accounts. 4. Implementation of Snowflake client redirect. What is the MOST cost-effective way to provide the HIGHEST uptime and LEAST application disruption if there is a service event? A. Connect the applications using the - URL. Use the Business Critical Snowflake edition. B. Connect the applications using the - URL. Use the Virtual Private Snowflake (VPS) edition. C. Connect the applications using the - URL. Use the Enterprise Snowflake edition. D. Connect the applications using the - URL. Use the Business Critical Snowflake edition.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company's Architect needs to find an efficient way to get data from an external partner, who is also a Snowflake user. The current solution is based on daily JSON extracts that are placed on an FTP server and uploaded to Snowflake manually. The files are changed several times each month, and the ingestion process needs to be adapted to accommodate these changes. What would be the MOST efficient solution? A. Ask the partner to create a share and add the company's account. B. Ask the partner to use the data lake export feature and place the data into cloud storage where Snowflake can natively ingest it (schema-on-read). C. Keep the current structure but request that the partner stop changing files, instead only appending new files. D. Ask the partner to set up a Snowflake reader account and use that account to get the data for ingestion.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Based on the architecture in the image, how can the data from DB1 be copied into TBL2? (Choose two.) A. B. C. D. E.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Why might a Snowflake Architect use a star schema model rather than a 3NF model when designing a data architecture to run in Snowflake? (Choose two.) A. Snowflake cannot handle the joins implied in a 3NF data model. B. The Architect wants to remove data duplication from the data stored in Snowflake. C. The Architect is designing a landing zone to receive raw data into Snowflake. D. The BI tool needs a data model that allows users to summarize facts across different dimensions, or to drill down from the summaries. E. The Architect wants to present a simple flattened single view of the data to a particular group of end users.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect is troubleshooting a query with poor performance using the QUERY_HISTORY function. The Architect observes that the COMPILATION_TIME is greater than the EXECUTION_TIME. What is the reason for this? A. The query is processing a very large dataset. B. The query has overly complex logic. C. The query is queued for execution. D. The query is reading from remote storage.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Snowflake Architect is designing a multiple-account design strategy. This strategy will be MOST cost-effective with which scenarios? (Choose two.) A. The company wants to clone a production database that resides on AWS to a development database that resides on Azure. B. The company needs to share data between two databases, where one must support Payment Card Industry Data Security Standard (PCI DSS) compliance but the other one does not. C. The company needs to support different role-based access control features for the development, test, and production environments. D. The company security policy mandates the use of different Active Directory instances for the development, test, and production environments. E. The company must use a specific network policy for certain users to allow and block given IP addresses.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The following table exists in the production database: A regulatory requirement states that the company must mask the username for events that are older than six months based on the current date when the data is queried. How can the requirement be met without duplicating the event data and making sure it is applied when creating views using the table or cloning the table? A. Use a masking policy on the username column using an entitlement table with valid dates. B. Use a row level policy on the user_events table using an entitlement table with valid dates. C. Use a masking policy on the username column with event_timestamp as a conditional column. D. Use a secure view on the user_events table using a case statement on the username column.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which data models can be used when modeling tables in a Snowflake environment? (Choose three.) A. Graph model B. Dimensional/Kimball C. Data lake D. Inmon/3NF E. Bayesian hierarchical model F. Data vault",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Snowflake Architect is setting up database replication to support a disaster recovery plan. The primary database has external tables. How should the database be replicated? A. Create a clone of the primary database then replicate the database. B. Move the external tables to a database that is not replicated, then replicate the primary database. C. Replicate the database ensuring the replicated database is in the same region as the external tables. D. Share the primary database with an account in the same region that the database will be replicated to.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect is integrating an application that needs to read and write data to Snowflake without installing any additional software on the application server. How can this requirement be met? A. Use SnowSQL. B. Use the Snowpipe REST API. C. Use the Snowflake SQL REST API. D. Use the Snowflake ODBC driver.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What transformations are supported in the below SQL statement? (Choose three.) CREATE PIPE ... AS COPY ... FROM (...) A. Data can be filtered by an optional WHERE clause. B. Columns can be reordered. C. Columns can be omitted. D. Type casts are supported. E. Incoming data can be joined with other tables. F. The ON_ERROR - ABORT_STATEMENT command can be used.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Data is being imported and stored as JSON in a VARIANT column. Query performance was fine, but most recently, poor query performance has been reported. What could be causing this? A. There were JSON nulls in the recent data imports. B. The order of the keys in the JSON was changed. C. The recent data imports contained fewer fields than usual. D. There were variations in string lengths for the JSON values in the recent data imports.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What step will improve the performance of queries executed against an external table? A. Partition the external table. B. Shorten the names of the source files. C. Convert the source files' character encoding to UTF-8. D. Use an internal stage instead of an external stage to store the source files.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Business Intelligence team reports that when some team members run queries for their dashboards in parallel with others, the query response time is getting significantly slower. What can a Snowflake Architect do to identify what is occurring and troubleshoot this issue? A. Use larger warehouses to speed up the queries running in parallel. Identify the queries running in parallel using this query: B. Increase the size of the warehouse cache to speed up concurrent queries. Identify the concurrent queries using this query: C. Introduce multi-cluster warehouses to help with concurrent queries. Identify the concurrent queries by running this query: D. Identify which queries are spilled to remote storage and change the warehouse parameters to address this issue. Identify the issue by running this query:",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a key consideration when setting up search optimization service for a table? A. Search optimization service works best with a column that has a minimum of 100 K distinct values. B. Search optimization service can significantly improve query performance on partitioned external tables. C. Search optimization service can help to optimize storage usage by compressing the data into a GZIP format. D. The table must be clustered with a key having multiple columns for effective search optimization.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A retail company has 2000+ stores spread across the country. Store Managers report that they are having trouble running key reports related to inventory management, sales targets, payroll, and staffing during business hours. The Managers report that performance is poor and time-outs occur frequently. Currently all reports share the same Snowflake virtual warehouse. How should this situation be addressed? (Choose two.) A. Use a Business Intelligence tool for in-memory computation to improve performance. B. Configure a dedicated virtual warehouse for the Store Manager team. C. Configure the virtual warehouse to be multi-clustered. D. Configure the virtual warehouse to size 4-XL. E. Advise the Store Manager team to defer report execution to off-business hours.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company needs to have the following features available in its Snowflake account: 1. Support for Multi-Factor Authentication (MFA) 2. A minimum of 2 months of Time Travel availability 3. Database replication in between different regions 4. Native support for JDBC and ODBC 5. Customer-managed encryption keys using Tri-Secret Secure 6. Support for Payment Card Industry Data Security Standards (PCI DSS) In order to provide all the listed services, what is the MINIMUM Snowflake edition that should be selected during account creation? A. Standard B. Enterprise C. Business Critical D. Virtual Private Snowflake (VPS)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When using the COPY INTO [table] command with the CSV file format, how does the MATCH_BY_COLUMN_NAME parameter behave? A. It expects a header to be present in the CSV file, which is matched to a case-sensitive table column name. B. The parameter will be ignored. C. The command will return an error. D. The command will return a warning stating that the file has unmatched columns.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can the Snowflake context functions be used to help determine whether a user is authorized to see data that has column-level security enforced? (Choose two.) A. Set masking policy conditions using CURRENT_ROLE targeting the role in use for the current session. B. Set masking policy conditions using IS_ROLE_IN_SESSION targeting the role in use for the current account. C. Set masking policy conditions using INVOKER_ROLE targeting the executing role in a SQL statement. D. Determine if there are OWNERSHIP privileges on the masking policy that would allow the use of any function. E. Assign the ACCOUNTADMIN role to the user who is executing the object.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A retail company has over 3000 stores all using the same Point Of Sale (POS) system. The company wants to deliver near real-time sales results to category managers. The stores operate in a variety of time zones and exhibit a dynamic range of transactions each minute, with some stores having higher sales volumes than others. Sales results are provided in a uniform fashion using data engineered fields that will be calculated in a complex data pipeline. Calculations include exceptions, aggregations, and scoring using external functions interfaced to scoring algorithms. The source data for aggregations has over 100M rows. Every minute, the POS sends all sales transactions files to a cloud storage location with a naming convention that includes store numbers and timestamps to identify the set of transactions contained in the files. The files are typically less than 10MB in size. How can the near real-time results be provided to the category managers? (Choose two.) A. All files should be concatenated before ingestion into Snowflake to avoid micro-ingestion. B. A Snowpipe should be created and configured with AUTO_INGEST = TRUE. A stream should be created to process INSERTS into a single target table using the stream metadata to inform the store number and timestamps. C. A STREAM should be created to accumulate the near real-time data and a TASK should be created that runs at a frequency that matches the real-time analytics needs. D. An external scheduler should examine the contents of the cloud storage location and issue SnowSQL commands to process the data at a frequency that matches the real-time analytics needs. E. The COPY INTO command with a task scheduled to run every second should be used to achieve the near-real time requirement.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company needs to share its product catalog data with one of its partners. The product catalog data is stored in two database tables: PRODUCT_CATEGORY, and PRODUCT_DETAILS. Both tables can be joined by the PRODUCT_ID column. Data access should be governed, and only the partner should have access to the records. The partner is not a Snowflake customer. The partner uses Amazon S3 for cloud storage. Which design will be the MOST cost-effective and secure, while using the required Snowflake features? A. Use Secure Data Sharing with an S3 bucket as a destination. B. Publish PRODUCT_CATEGORY and PRODUCT_DETAILS data sets on the Snowflake Marketplace. C. Create a database user for the partner and give them access to the required data sets. D. Create a reader account for the partner and share the data sets as secure views.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company has a Snowflake environment running in AWS us-west-2 (Oregon). The company needs to share data privately with a customer who is running their Snowflake environment in Azure East US 2 (Virginia). What is the recommended sequence of operations that must be followed to meet this requirement? A. 1. Create a share and add the database privileges to the share 2. Create a new listing on the Snowflake Marketplace 3. Alter the listing and add the share 4. Instruct the customer to subscribe to the listing on the Snowflake Marketplace B. 1. Ask the customer to create a new Snowflake account in Azure EAST US 2 (Virginia) 2. Create a share and add the database privileges to the share 3. Alter the share and add the customer's Snowflake account to the share C. 1. Create a new Snowflake account in Azure East US 2 (Virginia) 2. Set up replication between AWS us-west-2 (Oregon) and Azure East US 2 (Virginia) for the database objects to be shared 3. Create a share and add the database privileges to the share 4. Alter the share and add the customer's Snowflake account to the share D. 1. Create a reader account in Azure East US 2 (Virginia) 2. Create a share and add the database privileges to the share 3. Add the reader account to the share 4. Share the reader account's URL and credentials with the customer",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Company A has recently acquired company B. The Snowflake deployment for company B is located in the Azure West Europe region. As part of the integration process, an Architect has been asked to consolidate company B's sales data into company A's Snowflake account which is located in the AWS us-east-1 region. How can this requirement be met? A. Replicate the sales data from company B's Snowflake account into company A's Snowflake account using cross-region data replication within Snowflake. Configure a direct share from company B's account to company A's account. B. Export the sales data from company B's Snowflake account as CSV files, and transfer the files to company A's Snowflake account. Import the data using Snowflake's data loading capabilities. C. Migrate company B's Snowflake deployment to the same region as company A's Snowflake deployment, ensuring data locality. Then perform a direct database-to-database merge of the sales data. D. Build a custom data pipeline using Azure Data Factory or a similar tool to extract the sales data from company B's Snowflake account. Transform the data, then load it into company A's Snowflake account.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Snowflake Architect created a new data share and would like to verify that only specific records in secure views are visible within the data share by the consumers. What is the recommended way to validate data accessibility by the consumers? A. Create reader accounts as shown below and impersonate the consumers by logging in with their credentials. create managed account reader_acct1 admin_name = user1 , admin_password = 'Sdfed43da!44' , type = reader; B. Create a row access policy as shown below and assign it to the data share. create or replace row access policy rap_acct as (acct_id varchar) returns boolean -> case when 'acct1_role' = current_role() then true else false end; C. Set the session parameter called SIMULATED_DATA_SHARING_CONSUMER as shown below in order to impersonate the consumer accounts. alter session set simulated_data_sharing_consumer = 'Consumer Acct1' D. Alter the share settings as shown below, in order to impersonate a specific consumer account. alter share sales_share set accounts = 'Consumer1' share_restrictions = true",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company is using Snowflake in Azure in the Netherlands. The company analyst team also has data in JSON format that is stored in an Amazon S3 bucket in the AWS Singapore region that the team wants to analyze. The Architect has been given the following requirements: 1. Provide access to frequently changing data 2. Keep egress costs to a minimum 3. Maintain low latency How can these requirements be met with the LEAST amount of operational overhead? A. Use a materialized view on top of an external table against the S3 bucket in AWS Singapore. B. Use an external table against the S3 bucket in AWS Singapore and copy the data into transient tables. C. Copy the data between providers from S3 to Azure Blob storage to collocate, then use Snowpipe for data ingestion. D. Use AWS Transfer Family to replicate data between the S3 bucket in AWS Singapore and an Azure Netherlands Blob storage, then use an external table against the Blob storage.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Based on the Snowflake object hierarchy, what securable objects belong directly to a Snowflake account? (Choose three.) A. Database B. Schema C. Table D. Stage E. Role F. Warehouse",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a characteristic of Role-Based Access Control (RBAC) as used in Snowflake? A. Privileges can be granted at the database level and can be inherited by all underlying objects. B. A user can use a \"super-user\" access along with SECURITYADMIN to bypass authorization checks and access all databases, schemas, and underlying objects. C. A user can create managed access schemas to support future grants and ensure only schema owners can grant privileges to other roles. D. A user can create managed access schemas to support current and future grants and ensure only object owners can grant privileges to other roles.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Assuming all Snowflake accounts are using an Enterprise edition or higher, in which development and testing scenarios would copying of data be required, and zero-copy cloning not be suitable? (Choose two.) A. Developers create their own datasets to work against transformed versions of the live data. B. Production and development run in different databases in the same account, and Developers need to see production-like data but with specific columns masked. C. Data is in a production Snowflake account that needs to be provided to Developers in a separate development/testing Snowflake account in the same cloud region. D. Developers create their own copies of a standard test database previously created for them in the development account, for their initial development and unit testing. E. The release process requires pre-production testing of changes with data of production scale and complexity. For security reasons, pre-production also runs in the production account.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A new user user_01 is created within Snowflake. The following two commands are executed: Command 1 --> show grants to user user_01; Command 2 --> show grants on user user_01; What inferences can be made about these commands? A. Command 1 defines which user owns user_01 Command 2 defines all the grants which have been given to user_01 B. Command 1 defines all the grants which are given to user_01 Command 2 defines which user owns user_01 C. Command 1 defines which role owns user_0l Command 2 defines all the grants which have been given to user_01 D. Command 1 defines all the grants which are given to user_01 Command 2 defines which role owns user_01",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A table, T1, has a table stream defined, named S1. The data retention time on the table is set for 10 days. Stream S1has not been consumed for 10 consecutive days. What consideration needs to be made if an Architect wants to implement an ELT process on the stream? A. Because of the data retention time setting on table T1, from the 11th day forward if any ETL process tries to access stream S1 the records from the stream will be inaccessible. B. An ETL process can access stream S1 after the 11th day because Snowflake automatically puts a temporary extension on the stream offset for 7 additional days. C. An ETL process can access stream S1 after the 11th day because Snowflake automatically puts a temporary extension on the stream offset for 14 additional days. D. An ETL process can access the stream S1 after the 11th day because streams have no dependency on the table DATA_RETENTION_TIME_IN_DAYS parameter.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Instead of updating a particular row, a user forgot to put in the where clause and accidentally updated the entire table, named customer. The variable error_update_query_id is set to query_id for the mistaken update statement. How can the current version of the table customer be preserved into the table CUSTOMER_ERROR, and the table CUSTOMER be restored to the version that was in place prior to the update? A. CREATE TABLE CUSTOMER_ERROR AS CUSTOMER BEFORE(STATEMENT => $error_update_query_id) ALTER TABLE CUSTOMER SWAP WITH CUSTOMER ERROR; __________________________________________________________ B. CREATE TABLE CUSTOMER_ERROR CLONE CUSTOMER BEFORE(STATEMENT => $error_update_query_id) ALTER TABLE CUSTOMER SWAP WITH CUSTOMER_ERROR; __________________________________________________________ C. CREATE TABLE CUSTOMER_ERROR LIKE CUSTOMER BEFORE(STATEMENT => $error_update_query_id); ALTER TABLE CUSTOMER SWAP WITH CUSTOMER ERROR; __________________________________________________________ D. CREATE TABLE CUSTOMER_ERROR AS SELECT * FROM CUSTOMER BEFORE(STATEMENT => $error_update_query_id); __________________________________________________________",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Snowflake Architect anticipates that a table will contain several terabytes of data, and so defines a custom cluster key of three columns to optimize query performance. However, the table still takes a long time to query. Why is this occurring? A. A multi-cluster virtual warehouse is not being used. B. The cluster key should not exceed two columns. C. The custom cluster key cardinality is too high. D. The table needs to be manually reclustered to partition the key.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company is implementing a machine learning use case on a very large data set which will require high volumes of memory and compute resources. How should this Snowflake architecture be designed to meet these requirements? A. Use a Snowpark-optimized virtual warehouse. B. Use a standard multi-cluster virtual warehouse in maximized mode. C. Use a standard virtual warehouse with the search optimization service implemented. D. Use a standard virtual warehouse with the query acceleration service implemented.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company needs to set up Snowflake with the ability to use zero-copy cloning from a production environment to keep data fresh in development and QA environments. Data from the development and QA environments can never be joined to the production environment data in queries. How can these requirements be met? A. Create a single Snowflake account with production, development, and QA schemas in all databases. Separate the roles for each environment by enabling secondary roles for all users. B. Create a single Snowflake account that includes production, development, and QA databases. Create separate roles for each of the environments. C. Create separate Snowflake accounts for production, development, and QA. Replicate the data from the production account to the development and QA accounts. D. Create separate Snowflake accounts for production, development, and QA. Establish data sharing from the production account to the development and QA accounts. Enable secondary roles for all users.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company has two Snowflake accounts, one for production and another for non-production. The accounts are located in different cloud provider regions. The company's data architecture has a separate database for the stage, integration, and presentation layers. The non-production account needs to have data updated every night from the production stage layer database. What is the FASTEST way to update the non-production account data using the LEAST amount of operational overhead? A. Clone the staging data from the production account to the non-production account. B. Create a secure data share of the staging data from the production account to the non-production account. C. Unload the staging data from the production account and ingest it in the non-production account using Snowpipe. D. Set up database replication of the staging database from the production to the non-production account and schedule a task for a nightly refresh.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect is investigating a performance issue with an existing architecture and found a query where the Query Profile indicates a high number of bytes spilled to remote storage. The query includes a where clause that filters out a high percentage of records. What actions can be taken to reduce the spillage to remote storage and improve the query performance? (Choose two.) A. Increase the size of the virtual warehouse. B. Increase the maximum number of clusters for the virtual warehouse. C. Define a clustering key on columns used for selective filtering with a high clustering depth. D. Ensure primary keys and foreign keys are defined for large tables referenced by the query. E. Decrease the data retention period for tables referenced by the query.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect created a database using the role DB_OWNER and a schema with managed access within this database using the role SCHEMA_OWNER. The team created a table inside this schema using the role OBJECT_OWNER. Which role will be required to grant privileges on the table to other roles? A. DB_OWNER B. OBJECT_OWNER C. SECURITYADMIN D. SYSADMIN",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Architect is using SnowCD to investigate a connectivity issue. Which system function will provide a list of endpoints that the network must be able to access to use a specific Snowflake account, leveraging private connectivity? A. SYSTEM$ALLOWLIST() B. SYSTEM$GET_PRIVATELINK C. SYSTEM$AUTHORIZE_PRIVATELINK D. SYSTEM$ALLOWLIST_PRIVATELINK()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect has a DEV and PROD schema within a database. The DEV schema is used to create all objects with the correct permissions before promoting to the PROD schema. The Architect wants to define a process to promote the changes made into PROD but keep the DEV environment intact for future development. Which solution meets this requirement? A. Swap SCHEMA with ALTER SCHEMA PROD SWAP WITH DEV. B. Create a STAGING schema which is a clone of DEV. Then ALTER SCHEMA PROD SWAP WITH STAGING. C. Compile a list of all the changed resources. Then CREATE OR REPLACE CLONE each DEV resource within PROD. D. Create a backup schema which is a clone of PROThen CREATE OR REPLACE SCHEMA PROD CLONE DEV.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which command will create a schema without Fail-safe and will restrict object owners from passing on access to other users? A. create schema EDW.ACCOUNTING WITH MANAGED ACCESS; B. create schema EDW.ACCOUNTING WITH MANAGED ACCESS DATA_RETENTION_TIME_IN_DAYS = 7; C. create TRANSIENT schema EDW.ACCOUNTING WITH MANAGED ACCESS DATA_RETENTION_TIME_IN_DAYS = 1; D. create TRANSIENT schema EDW.ACCOUNTING WITH MANAGED ACCESS DATA_RETENTION_TIME_IN_DAYS = 7;",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Snowflake architecture recommendation needs multiple Snowflake accounts for implementation? A. Enable a disaster recovery strategy across multiple cloud providers. B. Create external stages pointing to cloud providers and regions other than the region hosting the Snowflake account. C. Enable zero-copy cloning among the development, test, and production environments. D. Enable separation of the development, test, and production environments.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect is designing a data pipeline that processes JSON data from an untrusted source into Snowflake. The pipeline needs to handle instances where the incoming JSON is malformed or contains invalid records. Which components should an Architect use to meet these requirements? (Choose three.) A. Stream B. Task C. Stored procedure with exception block D. User-Defined Function (UDF) E. Event table F. Directory table",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A user creates table T1 in schema S1. The user immediately realizes that they left off a column in the table. Using the same role, the user runs this command: ALTER TABLE s1.t1 add column c5 number; The following error message is received: Insufficient privileges to operate on table 'T1'. What could cause this to occur? A. The user does not have the CREATE TABLE privilege on the schema S1. B. The user does not have the ALTER TABLE privilege on the schema S1. C. The schema S1 has a FUTURE OWNERSHIP grant on a higher-level role. D. The user needs to include the database in the reference for T1 in the ALTER TABLE command.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The result cache is not being used on the following query: select * from ORDERS Where O_ORDERDATE = date_trunc('day', current_timestamp()); The query is run hundreds of times a day by several different Analyst teams. The team members use different roles and warehouses. The table is updated once every month. What can be done to ensure that the query uses the result cache? A. Create a view on the table with the definition create view curr_orders as select * from ORDERS Where O_ORDERDATE = date_trunc ('day', current_timestamp ()); Then use the query SELECT * from curr_orders; B. Have all users reuse the same virtual warehouse. C. Assign the same user role to all Analysts. D. Change the query to select * from ORDERS Where O_ORDERDATE = current_date ();",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect is setting up a Snowflake environment with the requirement that connectivity from the company’s AWS VPC to Snowflake cannot traverse the public internet. What requirements MUST be met concerning the cloud provider, region, and Snowflake edition to meet this requirement? (Choose three.) A. Snowflake should be hosted on AWS as its sole cloud provider. B. Snowflake should be hosted on AWS, Azure, and GCP. C. Snowflake can be hosted in any region of any cloud provider. D. Snowflake should be hosted only in the same AWS region as the company’s AWS VPC. E. The minimum Snowflake edition must be Business Critical. F. The minimum Snowflake edition must be Enterprise.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which parameters can only be set at the account level? (Choose two.) A. DATA_RETENTION_TIME_IN_DAYS B. ENFORCE_SESSION_POLICY C. MAX_CONCURRENCY_LEVEL D. PERIODIC_DATA_REKEYING E. TIMESTAMP_INPUT_FORMAT",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect needs to define a storage solution for data tables with the following requirements: 1. Has the ability to use Time Travel across the tables. 2. Follows Atomicity, Consistency, Isolation, and Durability (ACID) compliance requirements. 3. The table format supports various query engines. Which solution meets these requirements? A. External table with a materialized view B. External table with a public Amazon S3 storage-compatible format C. Snowflake permanent table format using Enterprise edition D. Snowflake Apache Iceberg tables in a non-external format",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company wants to allow their Data Engineers, Data Scientists, and Developers to interact with their data within Snowflake and require the following: • Build applications using Python that bring their data to life for non-technical/business users. • Build a ML model for predictions. What should an Architect recommend for use? (Choose two.) A. Create visualizations and charts in Snowsight. B. Create visualizations and graphs in Tableau. C. Create and display interactive charts in Streamlit. D. Configure a data pipeline to get the extracted data. E. Create Snowpark DataFrames and perform data transformations.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Three tables (A, B and C) are loaded with an INSERT statement. Each INSERT statement is executed by a separate Snowflake task: TASK_A, TASK_B, or TASK_C. All tasks are scheduled for a daily execution at the same time. TASK_C has the longest average execution duration. How can an Architect create an aggregated data object based on a join of tables A, B and C? A. Create a materialized view based on a join of tables A, B and C. B. Create a task, TASK_D, to join tables A, B and C and INSERT the data into a target table. Set the predecessor of TASK_D to TASK_C. C. Create a task, TASK_D, to join tables A, B and C and INSERT the data into a target table. Set the predecessor of TASK_D to TASK_A, TASK_B, and TASK_C. D. Create a materialized view based on a join of tables A, B and C. Create TASK_D to execute a refresh of the materialized view once each hour.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What symptom of a join explosion is identified in the Query Profile? A. The number of rows output from a join operator is significantly more than the number of rows it consumed. B. The join completes in under 1% of the execution time. C. There is no join filter below the exploding join. D. The number of result rows is less than the number of rows output from the exploding join.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An EVENT table has 150 B rows and 1.5 M micro-partitions, with the following statistics: What three clustering keys should be used, in order? A. C_DATE, A_ID, NAME B. A_ID, NAME, C_DATE C. C_DATE, A_ID, EVENT_ACT_0 D. C_DATE, A_ID, EVENT_ACT_4",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect needs to improve the performance of reports that pull data from multiple Snowflake tables, join, and then aggregate the data. Users access the reports using several dashboards. There are performance issues on Monday mornings between 9:00am-11:00am when many users check the sales reports. The size of the group has increased from 4 to 8 users. Waiting times to refresh the dashboards has increased significantly. Currently this workload is being served by a virtual warehouse with the following parameters: AUTO-RESUME = TRUE AUTO_SUSPEND = 60 SIZE = Medium What is the MOST cost-effective way to increase the availability of the reports? A. Use materialized views and pre-calculate the data. B. Increase the warehouse to size Large and set AUTO_SUSPEND = 600. C. Use a multi-cluster warehouse in maximized mode with 2 size Medium clusters. D. Use a multi-cluster warehouse in auto-scale mode with 1 size Medium cluster, and set MIN_CLUSTER_COUNT = 1 and MAX_CLUSTER_COUNT = 4.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect is having query performance issues with data stored in external tables and wants to try partitioning the data. How should the data be partitioned? A. Partition the data based on the source file size to evenly distribute the data across multiple partitions. B. Partition the data based on a specific column that is frequently used in queries to reduce data scanning. C. Partition the data based on the file format used for storing the data in external tables. D. Partition the data randomly to ensure equal distribution across all available compute resources.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect has designed a data pipeline that is receiving small CSV files from multiple sources. All of the files are landing in one location. Specific files are filtered for loading into Snowflake tables using the COPY command. The loading performance is poor. What changes can be made to improve the data loading performance? A. Increase the size of the virtual warehouse. B. Create a multi-cluster warehouse and merge smaller files to create bigger files. C. Create a specific storage landing bucket to avoid file scanning. D. Change the file format from CSV to JSON.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company has a very large table that is being queried by two groups. Each group uses unique WHERE clauses in their queries. The first group consistently achieves high-performance results, while the second group experiences poor query performance. Analysis of the Query Profile reveals that the first group’s queries access a limited number of micro-partitions, in contrast to the second group’s queries that scan all micro-partitions in the table. What should be done to ensure that performance is MAXIMIZED for both sets of queries? A. Create a materialized view of the table and assign a cluster key to the view that supports the WHERE clause of the poorly-performing queries. B. Clone the table and assign a cluster key to the cloned table that supports the WHERE clause of the poorly-performing queries. C. Modify the table using the CLUSTER BY parameter, including all columns that are referenced in both groups’ WHERE clauses. D. Have the second group increase the size of the virtual warehouse when running queries.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company has a single Snowflake account for both its production and non-production environments. An Architect needs to design a solution defining the different database layers with a process that also includes a periodic data refresh from production to non-production with data governance in place to protect columns that contain sensitive data. How should the layers be configured, and what process should be followed? A. Database layers: RAW->Presentation->Integration Schedule tasks that share the identified tables using data sharing from production to non-production. Define Dynamic Data Masking on columns with sensitive data in the production environment, based on the defined roles. B. Database layers: RAW->Presentation->Integration Schedule tasks that clone the identified tables from production to non-production. Define Dynamic Data Masking on the columns that have sensitive data in the production environment, based on the defined roles. C. Database layers: RAW->Integration->Presentation Schedule tasks that clone the identified tables from production to non-production. Define Dynamic Data Masking on columns that have sensitive data in the production environment, based on the defined roles. D. Database layers: RAW->Integration->Presentation Schedule tasks that clone the identified tables from production to non-production. Define row access policies on the columns that have sensitive data in the production environment, based on the defined roles.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The company, myorg, has multiple Snowflake accounts. An Architect found one of the accounts, account1, does not have replication enabled. Executing which query will enable replication on account1? A. SELECT SYSTEM$DISABLE_DATABASE_REPLICATION('myorg.account1'), 'false'; B. SELECT SYSTEM$GLOBAL_ACCOUNT_SET_PARAMETER('myorg.account1', 'true'); C. SELECT SYSTEM$GLOBAL_ACCOUNT_SET_PARAMETER('myorg.account1', 'SYSTEM$DISABLE_DATABASE_REPLICATION', \"false\"); D. SELECT SYSTEM$GLOBAL_ACCOUNT_SET_PARAMETER('myorg.account1', 'ENABLE_ACCOUNT_DATABASE_REPLICATION', \"true\");",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An account has default settings for all parameters set. The MERGE command is used to update or delete target rows that join multiple source rows. What will be the outcome of the MERGE statement? A. An error will be returned that includes values from one of the target rows that caused the error. B. The merge will complete successfully, and the results of the merge will be nondeterministic. C. The merge will be performed based on the first match of the multiple source rows with the target row. D. The merge will be performed based on the last match of the multiple source rows with the target row.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect needs to design an architecture that will allow a company to upload small data files from a local directory into a Snowflake internal stage. Which tools should the Architect use to meet this requirement? (Choose three.) A. Use the PUT command with the .NET driver. B. Use the PUT command with the JDBC driver. C. Use the PUT command in SnowSQL. D. Use the aws s3 cp in the AWS CLI. E. Use the PUT command with the Ruby on Rails driver. F. Use Snowsight.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In a managed access schema, what are characteristics of the roles that can manage object privileges? (Choose two.) A. Users with the SYSADMIN role can grant object privileges in a managed access schema. B. Users with the SECURITYADMIN role or higher can grant object privileges in a managed access schema. C. Users who are database owners can grant object privileges in a managed access schema. D. Users who are schema owners can grant object privileges in a managed access schema. E. Users who are object owners can grant object privileges in a managed access schema.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A healthcare company needs a data sharing solution that will allow them to collaborate with an insurance company to analyze their patient treatment outcomes and improve service offerings. The solution must have the following requirements: 1. Data can be provided and consumed by both companies. 2. Sensitive data must be protected. 3. A data provider can define how the data consumer interacts with the data through query templates. Which solution will meet these requirements with the LEAST operational overhead? A. Direct shares B. Data Clean Rooms C. Listings D. Data Exchange",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect notes that a large table is having poor query performance. The Query Profile shows that the table is accessed by multiple teams within the company. Each team retrieved specific subsets of data using point-lookup queries on different columns. What can be done to ensure that the query is performant for all teams? A. Build multiple materialized views with cluster keys on each column. The teams can access the data by querying the materialized view that meets their requirements. B. Build multiple materialized views with cluster keys on each column. Snowflake will automatically replace the base table with the materialized view that optimizes the query. C. Use the search optimization service on the underlying table. D. Create clustering keys using the combination of columns used in the filter and lookup conditions.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Architect needs to design a solution for building environments for development, test, and pre-production, all located in a single Snowflake account. The environments should be based on production data. Which solution would be MOST cost-effective and performant? A. Use zero-copy cloning into transient tables. B. Use zero-copy cloning into permanent tables. C. Use CREATE TABLE...AS SELECT (CTAS) statements. D. Use a Snowflake task to trigger a stored procedure to copy data.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect is designing a single account strategy so that all the environments (production, test, and development) reside in the same account for simplified management. What are the advantages of this strategy over a multi-account strategy? (Choose two.) A. It is easy to reference production data during the development cycle. B. It is easy to create secure shares and share them internally within the same account. C. Objects may be promoted between environments through the use of zero-copy cloning. D. All objects reside within one account with one set of Role-Based Access Control (RBAC) privileges and one location for all data. E. Managing production and non-production environments in the same account eliminates the need to make modifications to the development cycle when promoting code through the environments.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company needs to adopt a data modeling technique that fits this business model: 1. A virtual data warehouse is needed to support data analytics 2. Data comes from diverse sources 3. Data has frequent structural changes 4. Need the ability to audit each structural change as it happens at the source Which modeling technique will meet the company’s requirements? A. Data Vault modeling B. Dimensional data modeling C. Star schema modeling D. Snowflake schema modeling",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A global company needs to securely share its sales and inventory data with a vendor using a Snowflake account. The company has its Snowflake account in the AWS eu-west 2 Europe (London) region. The vendor’s Snowflake account is on the Azure platform in the West Europe region. How should the company’s Architect configure the data share? A. 1. Create a share. 2. Add objects to the share. 3. Add a consumer account to the share for the vendor to access. B. 1. Create a share. 2. Create a reader account for the vendor to use. 3. Add the reader account to the share. C. 1. Create a new role called DB_SHARE. 2. Grant the DB_SHARE role privileges to read data from the company database and schema. 3. Create a user for the vendor. 4. Grant the DB_SHARE role to the vendor’s users. D. 1. Promote an existing database in the company’s local account to primary. 2. Replicate the database to Snowflake on Azure in the West-Europe region. 3. Create a share and add objects to the share. 4. Add a consumer account to the share for the vendor to access.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company’s management has requested insights concerning their Snowflake usage. An Architect needs to quickly build a reporting framework for a web application which stores its data in JSON format. How can this requirement be met with the LEAST operational overhead? A. Define a schema for the data before it is loaded from the application, so that it is loaded in a structured way and easy to build reports on top. B. Load the semi-structured data into Snowflake and after minimal transformations, query it for the reports. C. For the data that only has top-level key-value pairs and no nesting, load it in semi-structured format. For more complex data, define a schema and then load it in a structured table. D. Share the data in the third normal form (3NF). Load the data in semi-structured format and apply transformations to normalize the data for reporting.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect has implemented the search optimization service for a table. A user adds a new column to the table and there is a decrease in query performance. The Architect then executes the DESCRIBE SEARCH OPTIMIZATION command and finds that the newly-added column was not included in the search access path. Why did this occur? A. The new column has a data type that is not supported by the search optimization service. B. The new column is automatically included in the search access path, but there is a time delay before it takes effect. C. The ON clause was used when enabling the search optimization service, which does not automatically include new columns. D. The SEARCH OPTIMIZATION property needs to be dropped and then added back for the changes to take effect.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company implemented a Snowflake design solution using multiple public cloud services. An AWS Lambda function is invoked multiple times each day. The company has implemented Multi-Factor Authentication (MFA) based on user authentication. For machine-to-machine authentication, user names and passwords are used in many cases. The company wants a solution that will MINIMIZE interruptions to the production environment, security implementation, and operation costs, while protecting the Snowflake account from common vulnerabilities. How can these requirements be met? A. Implement a network policy on the account, using an allowlist for necessary CIDR ranges from the public cloud services. B. Implement key pair authentication and auto key rotation for authentication. C. Implement private connectivity on the Snowflake account and surrounding cloud services, restricting Snowflake access to private traffic only. D. Use a cloud provider’s secrets management service to protect passwords, and only supply the passwords at runtime.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A table, contacts_data, is created and data is inserted into it: create table contacts_data (c object); Insert into contacts_data select parse_json (' { \"customer”: { \"address\": \"509 Kings Hwy, Comptche, Missouri, 4848\", \"phone\": \"+1 (999) 407-2274\", \"email\": \" [email protected] \", \"company\": \"SNOWFLAKE\", \"name\": { \"last\": \"Person\", \"first\": \"Snow\" }, \"_id\": \"5730864df388fld653e37e6f\" } } '); Which queries will retrieve the first name value as Snow? (Choose two.) A. select o[customer][name][first]::string as first_name from contacts_data; B. select o['customer']['name']['first']::string as first_name from contacts_data; C. select o:['customer']:['name']:['first']::string as first_name from contacts_data; D. select 0:Customer.Name.First::string as first_name from contacts_data; E. select 0:customer.name.first::string as first_name from contacts_data;",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How does Snowflake handle replication for source and target accounts that have Tri-Secret Secure enabled? (Choose two.) A. Each replication job will use the same key. B. When replicating between accounts that have Tri-Secret Secure enabled, the same key is required for the source and target accounts. C. When replicating between accounts that have Tri-Secret Secure enabled, the same key is not required for the source and target accounts. D. Tri-Secret Secure requires key-pair authentication for replication. E. Snowflake encrypts the database files in transit from the source account to the target account.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Database DB1 has schema S1 which has one table, T1: DB1 --> S1 --> T1 The retention period of DB1 is set to 10 days. The retention period of S1 is set to 20 days. The retention period of T1 is set to 30 days. The user runs the following command: Drop Database DB1; What will the Time Travel retention period be for T1? A. 10 days B. 20 days C. 30 days D. 37 days",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What occurs when unloading data from Snowflake? (Choose two.) A. All data files unloaded to an external stage are automatically encrypted using 128-bit keys. B. All data files unloaded to an internal stage are automatically encrypted using 128-bit keys. C. Target cloud storage can only be in the same cloud and region as Snowflake. D. Output files are encoded using UTF-8. E. All data files are uncompressed by default.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company that is in one region wants to share data with two different consumers who are both based in a second region. How can this be accomplished with the LEAST amount of data duplication? A. Replicate one copy of the data to the second region, and share it with the two data consumers. B. Replicate two copies of the data to the second region, and share each one respectively with the two consumers. C. Replicate two copies of the data to the second region, but only share one of the copies with the two data consumers. D. Create a direct share from the first region to the second region, and provide access to both data consumers.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect needs to automate the daily import of two files from an external stage into Snowflake. One file has Parquet-formatted data, the other has CSV-formatted data. How should the data be joined and aggregated to produce a final result set? A. Use Snowpipe to ingest the two files, then create a materialized view to produce the final result set. B. Create a task using Snowflake scripting that will import the files, and then call a User-Defined Function (UDF) to produce the final result set. C. Create a JavaScript stored procedure to read, join, and aggregate the data directly from the external stage, and then store the results in a table. D. Create a materialized view to read, join, and aggregate the data directly from the external stage, and use the view to produce the final result set.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What considerations should be taken into account when deciding which method to use to load data into Snowflake? (Choose three.) A. The ETL method is typically faster than other methods, as it transforms data on ingestion. B. With the ETL method, users may need to reload the incoming data if there is an error in the process. C. The ELT method is more scalable than other methods as it uses Snowflake’s virtual warehouses. D. The ELT method can separate the ingestion and transformation resources, making it the most flexible method. E. The ELT method will not allow any type of data transformation on ingestion. F. With the ELT method, transformations may take longer to execute than other methods, as they depend on the size of the data.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company has data in two databases, DB1 and DB2, with the following roles: Role R1 has select access to all tables in database DB1. Role R2 has select access to all tables in database DB2. Users should, by default only, be allowed to access data from one of the databases to ensure that the DEFAULT_ROLE setting should be used. A limited number of users that have select access to DB1 also need select access to DB2 in the same query. How can the access be provided for this limited number of users using the LEAST amount of operational overhead? A. Alter the users and set the DEFAULT_SECONDARY_ROLE property to R2. B. Grant R2 to the users and use the USE_SECONDARY_ROLES setting for SELECT. C. Grant R2 access to the R1 role so the users can take advantage of privilege inheritance. D. Grant R2 access to the users and have them activate it using the USE_SECONDARY_ROLES command.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect is working with a healthcare company’s Enterprise data governance team to review how company-sensitive data is protected within Snowflake. Physicians in the company network can run queries against views. There are two views, one shows mental health information, and the other shows physical health information: create view mental_health_view as select * from patients where category = 'MentalHealth'; create view physical_health_view as select * from patients where category = 'PhysicalHealth'; Most physicians do not have direct access to the table. Instead, they are assigned one of two roles: 1. MentalHealth, which has privileges to read from mental_health_view. or 2. PhysicalHealth, which has privileges to read from physical_health_view. A physician with the PhysicalHealth role wants to know whether there are any mental health patients in the table, and used the following query: select * from physical_health_view where 1/iff(category = 'MentalHealth', 0, 1) = 1; How will this query affect the sensitive data? A. Snowflake will ensure that for any scenario, the underlying patient sensitive information will not be revealed directly or indirectly in any manner. B. If the physician is also assigned SECURITYADMIN or ACCOUNTADMIN roles, they will be able to view the mental health data, despite not being named explicitly in that role. C. If the physician is also assigned the SYSADMIN role and SYSADMIN is the owner of the patient table, the physician will be able to view the mental health data. D. It depends on what choices the query optimizer has made, and how the views are written. The physician with physical_health_view privileges will not see any rows for patients with mental health issues, but can deduce that there is at least one patient in the mental health category.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company that is new to Snowflake is able to connect to its account using SnowSQL, but receives the following error message in the connection logs: SEVERE: WARNING!!! Using fail-open to connect. Driver is connecting to an HTTPS endpoint without OCSP based Certificate Revocation checking as it could not obtain a valid OCSP Response to use from the CA OCSP responder. What does this message indicate? (Choose two.) A. The SnowSQL ocsp_fail_open parameter is set to use the default value in the connection. B. Private Link is not enabled in the account. C. The DNS team did not allow port 443 in the firewall. D. The DNS team did not allow port 80 in the firewall. E. The client IP is not on the allow list.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company is considering adopting Data Mesh as their data platform architecture. Which Snowflake features and services offer native support of this architecture? (Choose three.) A. Isolated compute and shared storage allowing data teams to manage their own workloads. B. Data sharing, the Snowflake Marketplace, and the Data Exchange supporting the Data Mesh publish-and-serve model. C. Dynamic Data Masking ensuring that data is always masked with hashing functions. D. Materialized views supporting that external tables in the mesh are visible from all databases and accounts. E. Built-In data governance managing the visibility and accessibility of data product components. F. Federated authentication supporting external user access to Snowflake data products accounts.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company’s table, employees, was replaced with a new version: How can the original table be recovered with the LEAST operational overhead? A. Use Time Travel to recover the data using this command: SELECT * FROM employees BEFORE(statement => ‘01a5c8b3-0601-ad2b-0067-a503000al312’); B. Use Time Travel with the timestamp to recover the data using this command: SELECT * FROM employees AT(timestamp => ‘2022-07-22 16:35:00.000 -0700’::timestamp_tz); C. Revert to the original employees table using this command: UNDROP TABLE employees; D. Rename the new employees table and undrop the original employees table using this command: ALTER TABLE employees rename to employees_bad; UNDROP TABLE employees;",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company has several applications that have been developed in-house that need to connect to Snowflake. These applications do not have access to a web browser, and have no redirect capabilities. Based on this scenario, what is the Snowflake best practice recommendation for application authentication? A. Use Snowflake OAuth. B. Use usernames and passwords. C. Use an external OAuth. D. Use key pair authentication with a service user.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect is troubleshooting a long-running statement and needs to identify the list of transactions that are blocked and the queries that are blocking them. Which views should be used for troubleshooting? (Choose two.) A. QUERY_HISTORY B. OBJECT_DEPENDENCIES C. DATA_TRANSFER_HISTORY D. LOCK_WAIT_HISTORY E. ACCESS HISTORY",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect is designing multiple data pipelines to ingest, transform, and consume data in Snowflake in support of a newly-developed application. While the development team has significant SQL expertise, most members lack experience with Python. Which architecture design will meet these requirements using the LEAST amount of operational overhead? A. Prioritize the use of external tables in the architecture to minimize the time required to ingest the data into Snowflake. B. Use streams, tasks, and stored procedures to set up the pipelines, and use templated patterns for the application of the MERGE logic. C. Use dynamic tables to build the Directed Acyclic Graphs (DAGs) using the CREATE DYNAMIC TABLE command for each node, and fine-tune the tables using custom DML. D. Use dynamic tables for the ingestion pipelines and use the TARGET LAG = DOWNSTREAM parameter for all but the final table in the Directed Acyclic Graphs (DAGs).",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect plans to stream data using the Snowflake Connector for Kafka in Snowpipe. What setting will optimize costs? A. Set a value of 1 to buffer.flush.time. B. Set a value of 1 to buffer.count.records. C. Set a value of 10 MB to buffer.size.bytes. D. Maximize the number of micro-partitions.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Architect wants to create an externally managed Iceberg table in Snowflake. What parameters are required? (Choose three.) A. External volume B. Storage integration C. External stage D. Data file path E. Catalog integration F. Metadata file path",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect needs to ensure that users are able to upload data from Snowsight into an existing table. What privileges need to be granted to the users to accomplish this? (Choose three.) A. Database: USAGE B. Database: OWNERSHIP C. Schema: CREATE TABLE D. Schema: USAGE E. Table: SELECT F. Table: OWNERSHIP",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A global retail company must ensure comprehensive data governance, security, and compliance with various international regulations while using Snowflake for its data warehousing and analytics. What should an Architect do to meet these requirements? (Choose two.) A. Create a network policy at the column level to secure the data. B. Use column-level security to restrict access to specific columns. C. Store encryption keys on an external server to manage encryption manually. D. Implement Role-Based Access Control (RBAC) to assign roles and permissions. E. Enable Secure Data Sharing with external partners for collaborative purposes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect is appraising the compute and storage costs of a storage strategy to augment performance techniques. What performance optimization techniques in Snowflake have storage costs associated with them? (Choose three.) A. Rekeying B. Materialized view C. Clustering a table D. Query acceleration service E. Search optimization service F. Multi-cluster virtual warehouse",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect executes the following query: What information does this query provide? (Choose two.) A. It shows the total execution time and credit estimates for the 10 most expensive queries executed on the 'WH_L' virtual warehouse over the last 3 days. B. It shows the total execution time and credit estimates for the 10 most expensive query groups (identical or similar queries) executed on the 'WH_L' virtual warehouse over the last 3 days. C. It shows the total execution time and credit estimates for the 10 most frequently run query groups (identical or similar queries) executed on the 'WH_L' virtual warehouse over the last 3 days. D. It calculates the relative cost for each group by converting the execution time to minutes and multiplying by the credits used by the virtual warehouse. E. It calculates the relative cost for each group by converting the execution time to hours and multiplying by the credits used by the virtual warehouse.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Why does a conditional multi-table INSERT option support the Data Vault data model? A. Data can be inserted in parallel to hubs and satellites using surrogate keys. B. Data can be inserted in parallel to dimensions and facts using surrogate keys. C. Data can be inserted in sequence to hubs and satellites using surrogate keys. D. Data can be inserted in sequence to dimensions and facts using surrogate keys.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect needs to define a table structure for an unfamiliar semi-structured data set. The Architect wants to identify a list of distinct key names present in the semi-structured objects. What function should be used? A. FLATTEN with RECURSIVE argument B. INFER_SCHEMA C. PARSE_JSON D. RESULT SCAN",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "User1 and User2 are new users that were each granted different functional roles. User1 was granted the IT_ANALYST_ROLE and User2 was granted the FIN_ANALYST_ROLE. Review the following security design: What tables can each role read? A. User1 will be the only user to read the tables from both schemas, since the DB_IT_RO_ROLE role has SELECT privileges on all the database tables. B. User1 will be able to read the tables from both schemas, while User2 will be able to read only the FINANCE_SCHEMA tables. C. User2 will be able to read the tables from the FINANCE_SCHEMA, while User1 will be unable to read any table. D. User2 will be able to read the tables from both schemas, while User1 will be able to read the tables only in IT_SCHEMA.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect wants to stream website logs near real-time to Snowflake and has decided to use Snowflake Connector for Kafka. What characteristics should the Architect consider regarding the different ingestion methods? (Choose two.) A. Snowpipe Streaming is the default ingestion method. B. Snowpipe Streaming supports schema detection. C. Snowpipe has a lower latency than Snowpipe Streaming. D. Snowpipe Streaming automatically flushes data every one second. E. Snowpipe can handle jumps or resetting offsets by default.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect has run the following commands: The catalog_sales table is very large, and the task_wh is a size X-Small. The actual insert statement will take approximately 40 hours. The Architect then executes the following command: EXECUTE TASK insert_task; How long will the insert execute? A. 1 minute B. 5 minutes C. 1 hour D. 40 hours",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An Architect executes the following statements in order: create table emp(id integer); insert into emp values (1),(2); create temporary table emp(id integer); insert into emp values (1) ; The Architect then executes the following statements: select count(*) from emp; drop table emp; select count(*) from emp; What will be the result? A. COUNT (*) 2 COUNT (*) 1 B. COUNT (*) 1 COUNT (*) 2 C. COUNT (*) 2 COUNT (*) 2 D. The final query will result in an error.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect is creating a new database role for a team of Data Analysts. The Architect is considering using the OR REPLACE keywords in the CREATE DATABASE ROLE command to ensure the role is created even if it already exists. What should the Architect consider before using the OR REPLACE keywords? A. The dropped database role cannot be recreated. B. The OR REPLACE keywords are unsupported when creating a database role. C. Recreating a database role drops it from any shares that it is granted to. D. The database role can only be dropped by a user with a role that has the MANAGE GRANTS privilege.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Architect is designing an account strategy that will include hosting Snowflake Notebooks using the Container Runtime environment in Snowpark Container Services. Enabling which Snowflake feature will aggregate the configurations needed to support installation from a Python Package Index (PyPI) package repository over a public network? A. Outbound private connectivity B. A network rule C. External access integration D. A SECRET",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Architect is supporting an Internet Protocol Security (IPsec) team to facilitate the management of the user identities that will be used to set up an additional Snowflake environment. The Architect recommended setting up a corporate-wide user identity management system. How can the impact of the new Snowflake environment be MINIMIZED? A. Set up Multi-Factor Authentication (MFA) on both the Identity Provider (IdP) and Snowflake. B. Ensure that all account-level roles in Snowflake mirror the groups in the Identity Provider (IdP). C. Set up user provisioning and federated authentication between Snowflake and the Identity Provider (IdP) using Snowflake integrations. D. Create and manage user identities in Snowflake, using scripts to export user identities and authentication data required by the identity management system.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Architect wants to construct an ETL pipeline that reads data from an external stage using an external table. This pipeline will perform multiple transformations on the changed data, incorporate data from dimension tables through joins, and ultimately load the processed data into a target table. What should the Architect do to accomplish this task automatically? A. Use streams and tasks. B. Use dynamic tables. C. Use materialized views. D. Use Snowpipe with the auto-ingest option enabled.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Snowflake account has the following parameters: 1. MIN_DATA_RETENTION_TIME_IN_DAYS is set to 5 at the account level. 2. DATA_RETENTION_TIME_IN_DAYS is set to 4 on database DB1, and 6 on Schema1 in Database DB1. 3. DATA_RETENTION_TIME_IN_DAYS is set to 5 on Database DB2, and 8 on Schema2 in Database DB2. What will be the result? A. Database DB1 and Schema1 will be retained for 5 days. Database DB2 and Schema2 will be retained for 5 days. B. Database DB1 and Schema1 will be retained for 4 days. Database DB2 and Schema2 will be retained for 5 days. C. Database DB1 will be retained for 4 days and Schema1 will be retained for 6 days. Database DB2 will be retained for 5 days and Schema2 will be retained for 8 days. D. Database DB1 will be retained for 5 days and Schema1 will be retained for 6 days. Database DB2 will be retained for 5 days and Schema2 will be retained for 8 days.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data ingestion pipeline loads data to a table randomly throughout the day. A requirement states that the data must be processed through a transformation pipeline within 10 minutes from the time that it lands in Snowflake. What is the MOST cost-effective way to meet this requirement? A. Use a third-party orchestration tool to execute the transformation pipeline at 5 minute intervals. B. Create a series of views that contain the transformation logic, so that the user can query the views and have access to new data as soon as it arrives. C. Create a task that runs at 5 minute intervals and executes a merge statement that queries the table. Then process any rows that have arrived since the last time the pipeline was executed. D. Create a stream on the landing table. Then create a task to run a transformation pipeline at 5 minute intervals using the SYSTEM$STREAM_HAS_DATA function.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company with an account on AWS in the us-east-1 region needs to share data with vendors who also have Snowflake accounts on AWS in the same region. The company maintains non-sensitive data in its database for each vendor. The company does not need to store or track telemetry data from consumer accounts. Which method of data collaboration will allow the company to monetize the data shares and track data usage over time, using the LEAST amount of operational overhead? A. A direct share with access granted to all vendor accounts B. A data share associated with a paid listing with access granted to all vendor accounts C. An approved application on a paid listing with access granted to all vendor accounts D. A reader account with users created for all vendors",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect is defining transaction rules to adhere to ACID (Atomicity, Consistency, Isolation, Durability) properties for a project to ensure that executed statements are either committed or rolled back. Based on this scenario, what characteristics of transactions should be considered? (Choose two). A. The AUTOCOMMIT setting can be changed inside a stored procedure. B. Explicit transactions should contain DDL, DML, and query statements. C. Explicit transactions should contain only DML statements and query statements. All DDL statements implicitly commit active transactions. D. An explicit transaction can be started by executing a BEGIN WORK statement and can be ended by executing a COMMIT WORK statement. E. An explicit transaction can be started by executing a BEGIN TRANSACTION statement and can be ended by executing an END TRANSACTION statement.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A global company with operations in North America, Europe, and Asia needs to secure its Snowflake environment, focus on data privacy, secure connectivity, and access control. The company uses AWS as their primary cloud provider and needs to ensure that all data transfers are secure and comply with regional regulations. How can these requirements be met? (Choose two). A. Configure SAML 2.0 to authenticate users in the Snowflake environment. B. Configure detailed logging and monitoring of all network traffic to and from Snowflake using Snowflake’s native capabilities. C. Use public endpoints with SSL encryption to secure data transfers between Snowflake and the company’s AWS infrastructure. D. Configure network policies to restrict access to Snowflake based on IP ranges corresponding to corporate offices. E. Use AWS PrivateLink to establish private connectivity between the company’s Snowflake account and its AWS VPCs.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Architect is designing a solution that includes using dynamic tables to transform data, with a maximum target lag of five minutes behind any updates to the base table. The base table contains a large data set against which there are frequent small updates. Queries against the data set contain only basic expressions. Which setting will OPTIMIZE the dynamic table performance? A. Use the REFRESH_MODE = AUTO setting to have the system select the optimal refresh mode based on performance. B. Use the REFRESH_MODE = INCREMENTAL setting to process updated data after each refresh execution. C. Use the REFRESH_MODE = FULL setting to reprocess the complete dataset during every refresh. D. Use the REFRESH_MODE = FULL for all refreshes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company is migrating to Snowflake. Production and non-production data cannot be in the same account. Which account design and lifecycle management plan will meet this requirement? A. 1. Create one Snowflake account. 2. Use Dynamic Data Masking and row access policies in a Production environment for performance and cost optimization. 3. Create three databases, Development, Test, and Production. 4. Use one role and one warehouse for all three databases for efficient warehouse caching. B. 1. Create two Snowflake accounts, Production and Non-Production. 2. Use the Non-Production account for development and testing. 3. When development is complete clone the databases for testing and execute workloads on top of the cloned data within the Non-Production account. 4. When testing is complete push the code to the Production account using version control. C. 1. Create three Snowflake accounts, Production, Test, and Development. 2. When development is complete, clone the data from the Development account to the Test account. 3. When testing is complete push the code and data to the Production account, using version control. D. 1. Create three Snowflake accounts, Production, Test, and Development. 2. When development is complete, unload the data from the Development account and load all the data into the Test account using the COPY INTO command. 3. When testing is complete unload the data from the Test account and load it into the Production account using the COPY INTO command.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company wants to configure the Client Redirect feature on their account to ensure business continuity during failover events. How should an Architect accomplish this? A. Enable the Snowflake users to use another URL to login into a Snowflake account where the replicated objects are available. B. Redirect the users’ workloads and queries of the impacted account between the available accounts in the company. C. Enable access to the data by redirecting the connection to an available account in the closest region that is part of the company. D. Redirect the client connections to another Snowflake account in a different region where a secondary account will act as the primary account.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which requirements indicate that a multi-Snowflake account strategy should be used? (Choose two.) A. A requirement to use different Snowflake editions B. A requirement for easy object promotion using zero-copy cloning C. A requirement to use Snowflake on a single cloud provider or in a single region D. A requirement to minimize the complexity of changing database names for environments during deployment E. A requirement to use Role-Based Access Control (RBAC) to govern DevOps processes across environments",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "PDF files are being ingested into a Snowflake environment. The files will be staged and processed into tables later. The data will be shared directly using software links to the PDF files, with server-side encryption enabled. How should these PDF files be ingested while creating a catalog of staged files, using server-side encryption? A. Create a Python User-Defined Function (UDF) to process the PDF files into tables. B. CREATE STAGE invoices_pdf_stage ENCRYPTION = (TYPE = 'SNOWFLAKE_SSE'); C. CREATE STAGE invoices_pdf_stage ENCRYPTION = (TYPE = 'SNOWFLAKE_SSE') DIRECTORY = ( ENABLE = true ); D. CREATE STAGE my_stage URL = 's3://bucketname/PDFs/' CREDENTIALS = (AWS_KEY_ID = 'xxyyzz' AWS_SECRET_KEY = 'zzyyxx');",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Architect has selected the Snowflake Connector for Python to integrate and manipulate Snowflake data using Python to handle large data sets and complex analyses. Which features should the Architect consider in terms of query execution and data type conversion? (Choose two.) A. The large queries will require conn.cursor() to execute. B. The Connector supports asynchronous and synchronous queries. C. The Connector converts NUMBER data types to DECIMAL by default. D. The Connector converts Snowflake data types to native Python data types by default. E. The Connector converts data types to STRING by default.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Company A acquired Company B. Company B has clients that are direct competitors of Company A. Both companies need to continue to run independent data operations. An Architect has been asked to investigate if a shared Snowflake infrastructure is feasible. Following Snowflake recommendations, which account design strategy would support this workload? A. Use a single Snowflake account with separate databases, using Role-Based Access Control to isolate Company A’s data from Company B’s data. B. Use a single Snowflake account with separate virtual warehouses, using data masking policies for client-level data access. C. Use a separate Snowflake account for each company, using Secure Data Sharing to exchange data as needed. D. Use one primary account for Company A under a Snowflake Organization, and use a secondary replicated account for Company B.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company uses Snowflake to store and analyze their customer data. The company has a strict regulatory requirement to protect Personally Identifiable Information (PII). What should an Architect do to meet this requirement? A. Use row-level security to mask PII data. B. Use tag-based masking policies for columns that contain PII data. C. Create secure views for the PII data and grant access to the views as needed. D. Create separate tables for columns containing PII and those that do not; grant access as needed",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An Architect has a table called leader_follower that has 1 column named JSON and has 1 row in it with the following structure: Which query will produce the following results? A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A company has a call center that processes sensitive Personally Identifiable Information (PII) and Protected Health Information (PHI). The company wants to implement the following security features: • Object owners and users with privileged roles should have access to columns that contain sensitive data. • Data loaded in pre-tokenized form should be de-tokenized at query time. What should be used to meet these requirements? (Choose two.) A. Object tagging B. Materialized views C. External tokenization D. Dynamic Data Masking E. Role-Based Access Control (RBAC)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An Architect wants to alter a virtual warehouse for horizontal scaling, but did not find where to configure minimum and maximum clusters in the interface even though they have an ACCOUNTADMIN role. What is MOST likely the issue? A. They do not have the necessary CREATE WAREHOUSE privilege. B. They are using an incorrect SQL command to alter the warehouse clusters. C. They are using Standard Snowflake edition where multi-cluster is not available. D. They need to create a ticket with Snowflake Support to fix the issue.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Snowflake account with three warehouses has this monitoring set up for the next 30 days: 1. Warehouse1 has resource_monitor1 set with a credit quota of 2000 2. Warehouse2 has resource_monitor2 set with a credit quota of 3000 3. Warehouse3 has resource_monitor3 set with a credit quota of 1000 At the account level resource_monitor4 is set with a quota of 5000 for the next 30 days. What will occur when Warehouse1 is at 1000, Warehouse2 is at 3000 and Warehouse3 is at 1000? A. Warehouse2 will suspend. B. Warehouse2 and Warehouse3 will suspend. C. Warehouse1, Warehouse2, and Warehouse3 will suspend. D. None of the warehouses will suspend until all three reach the quota of 5000.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A company stores large data sets in a Snowflake virtual warehouse. Complex analytical queries are used to generate real-time insights. Some queries take a long time to execute and are resource-intensive, impacting the warehouse performance. Which design change will OPTIMIZE the performance of all queries? A. Create data shares to offload the resource-intensive queries to a separate Snowflake account. B. Enable the query acceleration service for the queries requiring the most compute services. C. Create materialized views to pre-compute and store the results for queries that are run frequently. D. Enable the Auto-Scaling feature to increase and decrease the warehouse size as needed.",
+    "options": {},
+    "most_voted": "B"
+  }
+]
