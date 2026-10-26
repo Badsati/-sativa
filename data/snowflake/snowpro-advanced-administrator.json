@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Which authentication methods are available when connecting to Snowflake using the SQL API? (Choose two.) A. OAuth B. Key pair C. Username and password D. External browser E. Single Sign-On (SSO) with an external Identity Provider (IdP)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What role or roles should be used to properly create the object required to setup OAuth 2.0 integration? A. Any role with GRANT USAGE on SECURITY INTEGRATION B. ACCOUNTADMIN and SYSADMIN C. ACCOUNTADMIN and SECURITYADMIN D. ACCOUNTADMIN only",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When a role is dropped, which role inherits ownership of objects owned by the dropped role? A. The SYSADMIN role B. The role above the dropped role in the RBAC hierarchy C. The role executing the command D. The SECURITYADMIN rote",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Snowflake account is configured with SCIM provisioning for user accounts and has bi-directional synchronization for user identities. An Administrator with access to SECURITYADMIN uses the Snowflake UI to create a user by issuing the following commands: The new user named PTORRES successfully logs in, but sees a default role of PUBLIC in the web UI. When attempted, the following command fails: use DEVELOPER_ROLE; Why does this command fail? A. The DEVELOPER_ROLE needs to be granted to SYSADMIN before user PTORRES will be able to use the role. B. The new role can only take effect after USERADMIN has logged out. C. USERADMIN needs to explicitly grant the DEVELOPER_ROLE to the new USER. D. The new role will only take effect once the identity provider has synchronized by way of SCIM with the Snowflake account.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Snowflake Administrator configured access to table DB.S1.T1 to Role A leveraging the role inheritance with Role B. However, the users report that they cannot select from the table DB.S1.T1 when using Role A. Review the following SHOW GRANTS output: What could be the reason? A. Role B is missing the USAGE privilege on schema DB.S1. B. Role A inherits Role B. C. Role A should also be granted Role C. D. Role B inherits Role A.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A user has built a view named DB.VWS.TEST_VIEW in Snowflake which only allows users having ROLE_XYZ to retrieve data from the view. Roles Setup: GRANT USAGE ON DATABASE DB TO ROLE ROLE_ALPHA; GRANT USAGE ON SCHEMA DB.VWS TO ROLE ROLE_ALPHA; GRANT SELECT ON VIEW TEST_VIEW IN SCHEMA DB.VWS TO ROLE ROLE_ALPHA; GRANT ROLE ROLE_ALPHA TO ROLE ROLE_XYZ; GRANT ROLE ROLE_XYZ TO ROLE ROLE_BETA; GRANT ROLE ROLE_ALPHA TO USER USER1; GRANT ROLE ROLE_BETA TO USER USER2; GRANT ROLE ROLE_XYZ TO USER USER3; View definition: CREATE VIEW DB.VWS.TEST_VIEW AS ( SELECT * FROM TEST TABLE WHERE IS_ROLE_IN_SESSION('ROLE_XYZ')=TRUE ) ; Which user and current role combination can retrieve data from the view? (Choose two.) A. USER1 and ROLE_ALPHA B. USER2 and ROLE_BETA C. USER3 and ROLE_XYZ D. USER1 and ROLE_XYZ E. USER3 and ROLE_ALPHA",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The following exhibit is the output of the FUTURE GRANTS set in the database named DB: The output of the FUTURE GRANTS as configured in the schema, DB.S1 is shown below: A Snowflake Administrator creates a table in the schema DB.S1: USE ROLE SYSADMIN; CREATE TABLE DB.S1.T1 (C1 INT); The following command is run: SHOW GRANTS ON TABLE DB.S1.T1; What will be the outcome? A. Privilege OWNERSHIP is granted to Role A Privilege SELECT is granted to Role B B. Privilege OWNERSHIP is granted to role SYSADMIN Privilege SELECT is granted to Role A C. Privilege OWNERSHIP is granted to Role A Privilege SELECT is granted to Role A D. Privilege OWNERSHIP is granted to role SYSADMIN Privilege SELECT is granted to Role B",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Snowflake Administrator created a role ROLE_MANAGED_ACCESS and a schema SCHEMA_MANAGED_ACCESS as follows: The Administrator now wants to disable the managed access on the schema. How can this be accomplished? A. ALTER SCHEMA SCHEMA_MANAGED_ACCESS DISABLE MANAGED ACCESS; B. USE ROLE ROLE_MANAGED_ACCESS; DROP SCHEMA WORK.SCHEMA_MANAGED_ACCESS; CREATE SCHEMA SCHEMA_MANAGED_ACCESS; Then recreate all needed objects. C. REVOKE SELECT, INSERT ON FUTURE TABLES IN SCHEMA SCHEMA_MANAGED_ACCESS FROM ROLE MANAGED ACCESS; ALTER SCHEMA SCHEMA_MANAGED_ACCESS DISABLE MANAGED ACCESS; D. USE ROLE ROLE_MANAGED_ACCESS; DROP SCHEMA WORK.SCHEMA_MANAGED_ACCESS; CREATE SCHEMA SCHEMA_MANAGED_ACCESS WITHOUT MANAGED ACCESS; Then recreate all needed objects.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are characteristics of Dynamic Data Masking? (Choose two.) A. A masking policy that is currently set on a table can be dropped. B. A single masking policy can be applied to columns in different tables. C. A masking policy can be applied to the VALUE column of an external table. D. The role that creates the masking policy will always see unmasked data in query results. E. A single masking policy can be applied to columns with different data types.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What roles can be used to create network policies within Snowflake accounts? (Choose three.) A. SYSADMIN B. SECURITYADMIN C. ACCOUNTADMIN D. ORGADMIN E. Any role with the global permission of CREATE NETWORK POLICY F. Any rote that owns the database where the network policy is created",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "For Snowflake network policies, what will occur when the account_level and user_level network policies are both defined? A. The account_level policy will override the user_level policy. B. The user_level policy will override the account_level policy. C. The user_level network policies will not be supported. D. A network policy error will be generated with no definitions provided.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are benefits of using Snowflake organizations? (Choose two.) A. Administrators can change Snowflake account editions on-demand based on need. B. Administrators can monitor and understand usage across all accounts in the organization. C. Administrators can simplify data movement across all accounts within the organization. D. User administration is simplified across all accounts within the organization. E. Administrators have the ability to create accounts in any available cloud provider or region.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A resource monitor named MONTHLY_FINANCE_LIMIT has been created and applied to two virtual warehouses (fin_wh1 and fin_wh2) using the following SQL: On December 23rd, the combined total of credits consumed by fin_wh1 and fin_wh2, including cloud services, reaches 800 credits and both warehouses are suspended. Which statements should the ACCOUNTADMIN execute to allow both warehouses to be resumed? (Choose two.) A. alter warehouse fin_wh1 resume: alter warehouse fin_wh2 resume; B. alter warehouse fin_wh1 unset resource monitor MONTHLY_FINANCE_LIMIT; alter warehouse fin_wh2 unset resource monitor MONTHLY_FINANCE_LIMIT; C. alter resource monitor MONTHLY_FINANCE_LIMIT set credit_quota = 1500; D. alter resource monitor MONTHLY_FINANCE_LIMIT reset; E. alter warehouse fin_wh1 unset resource_monitor; alter warehouse fin_wh2 unset resource_monitor;",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are benefits of creating and maintaining resource monitors in Snowflake? (Choose three.) A. The cost of running a resource monitor is only 10% of a credit, per day of operation. B. Multiple resource monitors can be applied to a single virtual warehouse. C. Resource monitors add no additional load to virtual warehouse compute. D. Multiple triggers can be configured across various virtual warehouse thresholds. E. Resource monitor governance is tightly controlled and monitors can only be created by the ACCOUNTADMIN role or users with the CREATE MONITOR privilege. F. Resource monitors can be applied to more than one virtual warehouse.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a characteristic of Snowflake's transaction locking and concurrency modeling? A. A deadlock cannot occur in Snowflake, since concurrently executed queries and DML statements do not block one another. B. If two queries are concurrently executed against the same table, one of the two queries will be blocked until the other query completes. C. Transaction locking in Snowflake is enforced exclusively at the row and table levels. D. Queries executed within a given transaction see that transaction's uncommitted changes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What session parameter can be used to test the integrity of secure views based on the account that is accessing that view? A. MIMIC_CONSUMER_ACCOUNT B. TEST_ACCOUNT_ID C. PRODUCER_TEST_ACCT D. SIMULATED_DATA_SHARING_CONSUMER",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Company A uses Snowflake to manage audio files of call recordings. Company A hired Company B, who also uses Snowflake, to transcribe the audio files for further analysis. Company A's Administrator created a share. What object should be added to the share to allow Company B access to the files? A. A secure view with a column for file URLs. B. A secure view with a column for pre-signed URLs. C. A secure view with a column for METADATA$FILENAME. D. A secure view with a column for the stage name and a column for the file path.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are characteristics of data replication in Snowflake? (Choose three.) A. The ALTER DATABASE ... ENABLE REPLICATION TO ACCOUNTS command must be issued from the primary account. B. Users must be granted REPLICATIONADMIN privileges in order to enable replication. C. To start replication run the ALTER DATABASE ... REFRESH command on the account where the secondary database resides. D. Replication can only occur within the same cloud provider. E. Databases created from shares can be replicated. F. Users can have unlimited primary databases and they can be replicated to an unlimited number of accounts if all accounts are within the same organization.",
+    "options": {},
+    "most_voted": "C"
+  }
+]
