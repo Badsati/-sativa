@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Which of the following is a suspicious process behavior? A. PowerShell running an execution policy of RemoteSigned B. An Internet browser (eg., Internet Explorer) performing multiple DNS requests C. PowerShell launching a PowerShell script D. Non-network processes (e.g., notepad.exe) making an outbound network connection",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which field should you reference in order to find the system time of a *FileWritten event? A. ContextTimeStamp_decimal B. FileTimeStamp_decimal C. ProcessStartTime_decimal D. timestamp",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What Search page would help a threat hunter differentiate testing, DevOPs, or general user activity from adversary behavior? A. Hash Search B. IP Search C. Domain Search D. User Search",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An analyst has sorted all recent detections in the Falcon platform to identify the oldest in an effort to determine the possible first victim host. What is this type of analysis called? A. Visualization of hosts B. Statistical analysis C. Temporal analysis D. Machine Learning",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Falcon detected the above file attempting to execute. At initial glance, what indicators can we use to provide an initial analysis of the file? A. VirusTotal, Hybrid Analysis, and Google pivot indicator lights enabled B. File name, path, Local and Global prevalence within the environment C. File path, hard disk volume number, and IOC Management action D. Local prevalence, IOC Management action, and Event Search",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A benefit of using a threat hunting framework is that it: A. Automatically generates incident reports B. Eliminates false positives C. Provides high fidelity threat actor attribution D. Provides actionable, repeatable steps to conduct threat hunting",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is an example of a Falcon threat hunting lead? A. A routine threat hunt query showing process executions of single letter filename (e.g., a.exe) from temporary directories B. Security appliance logs showing potentially bad traffic to an unknown external IP address C. A help desk ticket for a user clicking on a link in an email causing their machine to become unresponsive and have high CPU usage D. An external report describing a unique 5 character file extension for ransomware encrypted files",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Falcon Detections page will attempt to decode Encoded PowerShell Command line parameters when which PowerShell Command line parameter is present? A. -Command B. -Hidden C. -e D. -nop",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which structured analytic technique contrasts different hypotheses to determine which is the best leading (prioritized) hypothesis? A. Model hunting framework B. Competitive analysis C. Analysis of competing hypotheses D. Key assumptions check",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which SPL (Splunk) field name can be used to automatically convert Unix times (Epoch) to UTC readable time within the Falcon Event Search? A. utc_time B. conv_time C. _time D. time",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following would be the correct field name to find the name of an event? A. Event_SimpleName B. Event_Simple_Name C. EVENT_SIMPLE_NAME D. event_simpleName",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Event Search data is recorded with which time zone? A. PST B. GMT C. EST D. UTC",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following Event Search queries would only find the DNS lookups to the domain: www.randomdomain.com? A. event_simpleName=DnsRequest DomainName=www.randomdomain.com B. event_simpleName=DnsRequest DomainName=randomdomain.com ComputerName=localhost C. Dns=randomdomain.com D. ComputerName=localhost DnsRequest “randomdomain.com”",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How do you rename fields while using transforming commands such as table, chart, and stats? A. By renaming the fields with the “rename” command after the transforming command. e.g. “stats count by ComputerName | rename count AS total_count” B. You cannot rename fields as it would affect sub-queries and statistical analysis C. By using the “renamed” keyword after the field name. e.g. “stats count renamed totalcount by ComputerName” D. By specifying the desired name after the field name. e.g. “stats count totalcount by ComputerName”",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "SPL (Splunk) eval statements can be used to convert Unix times (Epoch) into UTC readable time. Which eval function is correct? A. now B. typeof C. strftime D. relative_time",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following queries will return the parent processes responsible for launching badprogram.exe? A. [search (ParentProcess) where name=badprogram.exe ] | table ParentProcessName _time B. event_simpleName=processrollup2 [search event_simpleName=processrollup2 FileName=badprogram.exe | rename ParentProcessId_decimal AS TargetProcessId_decimal | fields aid TargetProcessId_decimal] | stats count by FileName _time C. [search (ProcessList) where Name=badprogram.exe ] | search ParentProcessName | table ParentProcessName _time D. event_simpleName=processrollup2 [search event_simpleName=processrollup2 FileName=badprogram.exe | rename TargetProcessId_decimal AS ParentProcessId_decimal | fields aid TargetProcessId_decimal] | stats count by FileName _time",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You want to produce a list of all event occurrences along with selected fields such as the full path, time, username etc. Which command would be the appropriate choice? A. fields B. distinctcount C. table D. values",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When exporting the results of the following event search, what data is saved in the exported file (assuming Verbose Mode)? event_simpleName=*Written | stats count by ComputerName A. The text of the query B. The results of the Statistics tab C. No data. Results can only be exported when the “table” command is used D. All events in the Events tab",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The help desk is reporting an increase in calls related to user accounts being locked out over the last few days. You suspect that this could be an attack by an adversary against your organization. Select the best hunting hypothesis from the following: A. A zero-day vulnerability is being exploited on a Microsoft Exchange server B. A publicly available web application has been hacked and is causing the lockouts C. Users are locking their accounts out because they recently changed their passwords D. A password guessing attack is being executed against remote access mechanisms such as VPN",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "To find events that are outliers inside a network, ___________is the best hunting method to use. A. time-based B. machine learning C. searching D. stacking",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a way to create event searches that run automatically and recur on a schedule that you set? A. Workflows B. Event Search C. Scheduled Searches D. Scheduled Reports",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a recommended technique to find unique outliers among a set of data in the Falcon Event Search? A. Hunt-and-Peck Search Methodology B. Stacking (Frequency Analysis) C. Time-based Searching D. Machine Learning",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Adversaries commonly execute discovery commands such as net.exe, ipconfig.exe, and whoami.exe. Rather than query for each of these commands individually, you would like to use a single query with all of them. What Splunk operator is needed to complete the following query? aid=my-aid event_simpleName=ProcessRollup2 (FileName=net.exe __________ FileName=ipconfig.exe _________ FileName=whoami.exe) | table ComputerName UserName FileName CommandLine A. OR B. IN C. NOT D. AND",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You would like to search for ANY process execution that used a file stored in the Recycle Bin on a Windows host. Select the option to complete the following EAM query. aid=my-aid ImageFileName=________ event_simpleName=ProcessRollup2 A. *$Recycle.Bin^ B. *$Recycle.Bin* C. ^$Recycle.Bin* D. ^$Recycle.Bin%",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is the proper method to quantify search results, enabling a hunter to quickly sort and identify outliers? A. Using the “| stats count by” command at the end of a search string in Event Search B. Using the “|stats count” command at the end of a search string in Event Search C. Using the “|eval” command at the end of a search string in Event Search D. Exporting Event Search results to a spreadsheet and aggregating the results",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What type of attack would this process tree indicate? A. Brute Forcing Attack B. Man-in-the-middle Attack C. Phishing Attack D. Web Application Attack",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which pre-defined reports offer information surrounding activities that typically indicate suspicious activity occurring on a system? A. Scheduled searches B. Hunt reports C. Sensor reports D. Timeline reports",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Lateral movement through a victim environment is an example of which stage of the Cyber Kill Chain? A. Command & Control B. Actions on Objectives C. Exploitation D. Delivery",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which tool allows a threat hunter to populate and colorize all known adversary techniques in a single view? A. MISP B. OWASP Threat Dragon C. Open XDR D. MITRE ATT&CK Navigator",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is an example of actor actions during the RECONNAISSANCE phase of the Cyber Kill Chain? A. Installing a backdoor on the victim endpoint B. Discovering internet-facing servers C. Emailing the intended victim with a malware attachment D. Loading a malicious payload into a common DLL",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which threat framework allows a threat hunter to explore and model specific adversary tactics and techniques, with links to intelligence and case studies? A. MITRE ATT&CK B. Lockheed Martin Cyber Kill Chain C. Director of National Intelligence Cyber Threat Framework D. NIST 800-171 Cyber Threat Framework",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In the MITRE ATT&CK Framework (version 11 - the newest version released in April 2022), which of the following pair of tactics is not in the Enterprise: Windows matrix? A. Persistence and Execution B. Impact and Collection C. Privilege Escalation and Initial Access D. Reconnaissance and Resource Development",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In which of the following stages of the Cyber Kill Chain does the actor not interact with the victim endpoint(s)? A. Exploitation B. Weaponization C. Command & control D. Installation",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What information is provided from the MITRE ATT&CK framework in a detection's Execution Details? A. Grouping Tag B. Command Line C. Technique ID D. Triggering Indicator",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You need details about key data fields and sensor events which you may expect to find from Hosts running the Falcon sensor. Which documentation should you access? A. Events Data Dictionary B. Streaming API Event Dictionary C. Hunting and Investigation D. Event stream APIs",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The Events Data Dictionary found in the Falcon documentation is useful for writing hunting queries because: A. It provides pre-defined queries you can customize to meet your specific threat hunting needs B. It provides a list of all the detect names and descriptions found in the Falcon Cloud C. It provides a reference of information about the events found in the Investigate > Event Search page of the Falcon Console D. It provides a list of compatible splunk commands used to query event data",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Falcon documentation guide should you reference to hunt for anomalies related to scheduled tasks and other Windows related artifacts? A. Hunting and Investigation B. Customizable Dashboards C. MITRE-Based-Falcon Detections Framework D. Events Data Dictionary",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What topics are presented in the Hunting and Investigation Guide? A. Detailed tutorial on writing advanced queries such as sub-searches and joins B. Detailed summary of event names, descriptions, and some key data fields for hunting and investigation C. Sample hunting queries, select walkthroughs and best practices for hunting with Falcon D. Recommended platform configurations and prevention settings to ensure detections are generated for hunting leads",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following does the Hunting and Investigation Guide contain? A. A list of all event types and their syntax B. A list of all event types specifically used for hunting and their syntax C. Example Event Search queries useful for threat hunting D. Example Event Search queries useful for Falcon platform configuration",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which document provides information on best practices for writing Splunk-based hunting queries, predefined queries which may be customized to hunt for suspicious network connections, and predefined queries which may be customized to hunt for suspicious processes? A. Real Time Response and Network Containment B. Hunting and Investigation C. Events Data Dictionary D. Incident and Detection Monitoring",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the main purpose of the Mac Sensor report? A. To identify endpoints that are in Reduced Functionality Mode B. To provide a summary view of selected activities on Mac hosts C. To provide vulnerability assessment for Mac Operating Systems D. To provide a dashboard for Mac related detections",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where would an analyst find information about shells spawned by root, Kernel Module loads, and wget/curl usage? A. Sensor Health report B. Linux Sensor report C. Sensor Policy Daily report D. Mac Sensor report",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following best describes the purpose of the Mac Sensor report? A. The Mac Sensor report displays a listing of all Mac hosts without a Falcon sensor installed B. The Mac Sensor report provides a detection focused view of known malicious activities occurring on Mac hosts, including machine-learning and indicator-based detections C. The Mac Sensor report displays a listing of all Mac hosts with a Falcon sensor installed D. The Mac Sensor report provides a comprehensive view of activities occurring on Mac hosts, including items of interest that may be hunting or investigation leads",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In the Powershell Hunt report, what does the “score” signify? A. Number of hosts that ran the PowerShell script B. How recently the PowerShell script executed C. Maliciousness score determined by NGAV D. A cumulative score of the various potential command line switches",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In the Powershell Hunt report, what does the filtering condition of CommandLine!=\"*badstring*\" do? A. Prevents command lines containing “badstring” from being displayed B. Displays only the command lines containing “badstring” C. Highlights “badstring” in all command lines in the output D. Highlights only the command lines containing “badstring”",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What Investigate tool would you use to allow an analyst to view all events for a specific host? A. Bulk Timeline B. Host Search C. Host Timeline D. Process Timeline",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What do you click to jump to a Process Timeline from many pages in Falcon, such as a Hash Search? A. PID B. Process ID or Parent Process ID C. CID D. Process Timeline Link",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What elements are required to properly execute a Process Timeline? A. Agent ID (AID) and Target Process ID B. Agent ID (AID) only C. Hostname and Local Process ID D. Target Process ID only",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the difference between a Host Search and a Host Timeline? A. Host Search is used for detection investigation and Host Timeline is used for proactive hunting B. A Host Search organizes the data in useful event categories like process executions and network connections; a Host Timeline provides an uncategorized view of recorded events in chronological order C. You access a Host Search from a detection to show you every recorded process event related to the detection and you can only populate the Host Timeline fields manually D. There is no difference. You just get to them different ways",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The Process Timeline Events Details table will populate the Parent Process ID and the Parent File columns when the cloudable Event data contains which event field? A. ContextProcessId_decimal B. RawProcessId_decimal C. ParentProcessId_decimal D. RpcProcessId_decimal",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "While you're reviewing Unresolved Detections in the Host Search page, you notice the User Name column contains “hostname$.” What does this User Name indicate? A. The User Name is a System User B. The User Name is not relevant for the dashboard C. There is no User Name associated with the event D. The Falcon sensor could not determine the User Name",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is TRUE about a Hash Search? A. Wildcard searches are not permitted with the Hash Search B. The Hash Search provides Process Execution History C. The Hash Search is available on Linux D. Module Load History is not presented in a Hash Search",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "With Custom Alerts you are able to configure email alerts using predefined templates so you're notified about specific activity in your environment. Which of the following outlines the steps required to properly create a custom alert rule? A. Choose the template you would like to configure, setup how often you would like the alert to run, and then schedule the alert B. Choose the template you would like to configure, preview the search results, and then schedule the alert C. Create the query for the alert, setup the email template for the alert, and then set the schedule for the alert D. Create a new custom template, configure the email template, and then create the custom query for the alert",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What information is provided when using IP Search to look up an IP address? A. Both internal and external IPs B. Suspicious IP addresses C. External IPs only D. Internal IPs only",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What kind of activity does a User Search help you investigate? A. A history of Falcon UI logon activity B. A list of process activity executed by the specified user account C. A count of failed user logon activity D. A list of DNS queries by the specified user account",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "To view Files Written to Removable Media within a specified timeframe on a host within the Host Search page, expand and refer to the _____________ dashboard panel. A. Command Line and Admin Tools B. Processes and Services C. Registry, Tasks, and Firewall D. Suspicious File Activity",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When performing a raw event search via the Events search page, what are Event Actions? A. Event Actions contains an audit information log of actions an analyst took in regards to a specific detection. B. Event Actions contains the summary of actions taken by the Falcon sensor such as quarantining a file, prevent a process from executing or taking no actions and creating a detection only. C. Event Actions are pivotable workflows including connecting to a host, pre-made event searches and pivots to other investigatory pages such as host search. D. Event Actions is the field name that contains the event name defined in the Events Data Dictionary such as ProcessRollup, SyntheticProcessRollup, DNS request, etc.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What information is shown in Host Search? A. Quarantined Files B. Prevention Policies C. Intel Reports D. Processes and Services",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are reviewing a list of domains recently banned by your organization's acceptable use policy. In particular, you are looking for the number of hosts that have visited each domain. Which tool should you use in Falcon? A. Create a custom alert for each domain B. Allowed Domain Summary Report C. Bulk Domain Search D. IP Addresses Search",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which field in a DNS Request event points to the responsible process? A. ContextProcessId_readable B. TargetProcessId_decimal C. ContextProcessId_decimal D. ParentProcessId_decimal",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When looking at a process tree, what do the nodes represent? A. The nodes only indicate severity B. The nodes represent process execution C. The nodes represent tactic and techniques used only D. The nodes do not give any information necessary for analysis but depict a picture for clarity",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Suspicious RDP connections have been observed on a host within your environment. How do you utilize Event Search to show all connections on this specific host? A. event_simpleName=UserIdentity LogonType_decimal=10 | table timestamp ComputerName UserName UserPrincipal LogonServer B. Table timestamp ComputerName UserName UserPrincipal LogonServer C. UserIdentity=LogonType_decimal=10 | table timestamp UserPrincipal LogonServer D. aid=[my-aid] event_simpleName=UserIdentity LogonType_decimal=10 | table timestamp ComputerName UserName UserPrincipal LogonServer",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "To best determine the root cause of an enterprise wide infection you would: A. Examine a list of processes by hash to determine the latest execution time and last infected machine. B. Perform frequency analysis to identify outlier processes that should not be running in your environment. C. Examine a list of process executions with a specific hash to determine the earliest execution time. D. Examine a list of outbound network connections on non-standard ports to identify suspicious processes.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following process trees should raise the most suspicion that adversary activity may be present on a web server? A. SMSS.EXE >> WINLOGON.EXE >> USERINIT.EXE >> EXPLORER.EXE >> WORD.EXE B. WINLOGON.EXE >> USERINIT.EXE >> EXPLORER.EXE >> OUTLOOK.EXE >> CHROME.EXE C. WININIT.EXE >> SERVICES >> SVCHOST.EXE >> TASKENG.EXE >> POWERSHELL.EXE D. WININIT.EXE >> SERVICES >> SVCHOST.EXE >> W3WP.EXE >> CMD.EXE",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When searching for all events related to a specific process which field(s) should be selected in a query from the Event Actions drop down menu? A. ContextProcessId_decimal B. timestamp C. Both TargetProcessId_decimal and ContextProcessId_decimal D. TargetProcessId_decimal",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your environment has several PowerShell scripts running that are Base64 encoded. Which of the following areas of Falcon will show you the decoded PowerShell commands? A. PowerShell Encoded Commands report B. PowerShell Hunt report C. Event Search for event_simpleName=processrollup2 FileName=powershell.exe D. Command Line view of a Detection",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Where in the Falcon console do you find hunting reports? A. Investigate module B. Endpoint security module C. Support and resources module D. Discover module",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which report would you use to find when a specific user last reset their password? A. Falcon UI Audit Trail B. Remote Access Graph Visibility Report C. User Timeline D. Logon Activities Visibility Report",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How would you find a list of executables running from the Recycle Bin across your environment? A. Executables running from Recycle Bin hunt report B. The only way to get this information is to copy the query from the Hunting Guide and search in Event Search C. There is no need for this report as it would always cause a detection in Falcon D. Processes can't run from the Recycle Bin",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which document in the Support and Resources section will help you write queries by providing prebuilt examples that you could modify? One such example shows execution of common reconnaissance tools. A. Streaming API Reference B. Events Data Dictionary C. Query API Reference D. Hunting and Investigation",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What document in the Support and Resources section will provide you with a breakdown of event types and related fields? A. Query API Reference B. Getting Started Guide C. Streaming API Reference D. Events Data Dictionary",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The MITRE ATT&CK Framework includes all of the following matrices, except: A. Blackberry B. Containers C. Android D. iOS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which information is returned after querying a hash on the Hash Search page? A. VirusTotal Score B. First Seen Date C. A Fuzzy Hash D. Hash Prevalence",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When configuring a custom alert, how do you separate recipient email addresses if including more than 1 recipient? A. Colon ':' B. Comma ',' C. Select emails via the dropdown user selector D. Semi-colon ';'",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your organization's next-gen firewall has detected evidence of DNS beaconing occurring from an internal source. The firewall provides you with the beaconing host's internal (private) IP address. In an IP search, which field would you leverage to identify the hostname based on this indicator? A. Destination IP B. Bulk Host Audit C. External IP D. Source IP",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When reviewing a DNS request in the Event Search, you're curious which process made the request. Which Event Action would be the quickest way to show you the process? A. Show Associated Event Data (from TargetProcessID_decimal) B. Show Parent Process C. Show Responsible Process Data D. Pivot - Host Search",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What kind of IP addresses are found using an IP Search? A. Source only B. IPV6 connections only C. Destination only D. Destination, Source, and External IP (AIP)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which event_simpleName has a field that contains the command line used to create a process? A. ProcessRollup2 B. DNSRequest C. CommandHistory D. PeVersionInfo",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have found a hash-based indicator of compromise (IOC) in an intelligence report and want to determine if the program has run in your environment. Which search would provide all of the process’ executions over the timeframe specified? A. Bulk Host Audit B. IOC Search C. Process Search D. Hash Search",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "While on the Statistics tab in Event Search you can click on results to perform a number of actions. If you select “Exclude from results” what happens? A. It will update the Search to remove that field name from results B. It will update the Search to remove results matching on the field valid pair C. There is no Exclude form results option D. It will update the Search to remove that results matching the value",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Event Search queries in Falcon are powered by which query language? A. LINQ B. Xpath C. Xquery D. Splunk",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the purpose of the rename command in this query? event_simpleName=ProcessRollup2 [search event_simpleName=ProcessRollup2 FileName=excel.exe | rename TargetProcessId_decimal AS ParentProcessId_decimal | fields aid ParentProcessId_decimal] | stats count by FileName CommandLine A. It runs a sub-search to locate all detections where excel.exe was blocked B. It renames a field to drive the main search in order to locate all children processes of excel.exe C. It joins all combinations of parent / children processes involving excel.exe D. It renames a field to drive the main search in order to locate all parent processes of excel.exe",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which event field contains the Falcon generated ID for a process? A. event_simpleName B. TargetProcessId-decimal C. ProcessRollup2 D. Process_Id_decimal",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You initiate a search with the following query: event_simpleName=UserLogon | table _time ComputerName UserName What results will display? A. Machine-readable event host time, host name, user name B. Human-readable event host time, host name, user name C. Machine-readable event cloud time, host name, user name D. Human-readable event cloud time, host name, user name",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What command will eliminate duplicates from a query? A. rmdup B. stats dc () C. dedup D. accum",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "During an investigation you find out that files are being written to disc by a malicious process. While many are displayed in the detections as context items, you want to see all files written to your host by this process. What Splunk search would work for this scenario? A. event_simpleName=*written ComputerName=MyPC ContextProcessId_decimal=0123456789 B. event_simpleName=*processrollup* ComputerName=MyPC TargetProcessId_decimal=0123456789 C. event_simpleName=*written ComputerName=MyPC TargetProcessId_decimal=0123456789 D. event_simpleName=*processrollup* ComputerName=MyPC ContextProcessId_decimal=0123456789",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When looking at a detection's details, you can pivot to an Event Search. What is the purpose of this Event Search? A. It takes you to the event data related to the detection and provides you with a number of Event Actions B. It provides chronological list of all the event data for the host C. It allows the analyst to view the full detection details D. It takes you to the Event Search and shows a +/-10-minute window of events",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What part of the Investigate module should you use when you want to write custom queries to analyze, explore, or hunt for suspicious or malicious activity in your environment? A. Host Search B. User Search C. Hash Execution Search D. Event Search",
+    "options": {},
+    "most_voted": "D"
+  }
+]
