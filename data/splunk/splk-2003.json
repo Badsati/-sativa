@@ -1,0 +1,187 @@
+[
+  {
+    "question": "During a second test of a playbook, a user receives an error that states: \"an empty parameters list was passed to phantom.act().\" What does this indicate? A. The container has artifacts not parameters. B. The playbook is using an incorrect container. C. The playbook debugger's scope is set to all. D. The playbook debugger's scope is set to new.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following can be edited or deleted in the Investigation page? A. Action results B. Comments C. Artifact values D. Approval records",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following are the default ports that must be configured on Splunk to allow connections from SOAR? A. SplunkWeb (8088), SplunkD (8089), HTTP Collector (8000) B. SplunkWeb (8472), SplunkD (8589), HTTP Collector (8962) C. SplunkWeb (8000), SplunkD (8089), HTTP Collector (8088) D. SplunkWeb (8089), SplunkD (8088), HTTP Collector (8000)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An active playbook can be configured to operate on all containers that share which attribute? A. Tag B. Label C. Artifact D. Severity",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which visual playbook editor block is used to assemble commands and data into a valid Splunk search within a SOAR playbook? A. An action block. B. A filter block. C. A prompt block. D. A format block.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Two action blocks, geolocate_ip_1 and file_reputation_2, are connected to a decision block. Which of the following is a correct configuration for making a decision on the action results from one of the given blocks? A. Select parameter set to: file_reputation_2:action_result.data.*.response_code; evaluation option set to: ==; and the Select Value set to: custom_list:Banned Countries. B. Select parameter set to: geolocate_ip_1:action_result.data.*.country_iso_code; evaluation option set to: in; and the Select Value set to: custom_list:Banned Countries. C. Select parameter set to: geolocate_ip_1:action_result.cef.*.country_iso_code; evaluation option set to: !=; and the Select Value box left empty. D. Select parameter set to: file_reputation_2:action_result.cef.*.response_code; evaluation option set to: in; and the Select Value set to: United States.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is enabled if the Logging option for a playbook' s settings is enabled? A. The playbook will write detailed execution information into the spawn.loq. B. More detailed information is available in the debug window. C. All modifications to the playbook will be written to the audit log. D. More detailed logging information is available in the Investigation page.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following items cannot be modified once entered into SOAR? A. A comment. B. A note. C. A container. D. An artifact.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following can be done with the System Health Display? A. Partially rewind processes, which is useful for debugging. B. Create a temporary, edited version of a process and test the results. C. Reset DECIDED to reset playbook environments back to at-start conditions. D. View a single column of status for SOAR processes. For metrics, click Details.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What values can be applied when creating Custom CEF fields? A. Name, Data Type B. Name C. Name, Value D. Name, Data Type, Severity",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is accurate? A. Phantom.debug() is the same as phantom.error() except it prints in red text. B. Phantom.debug() outputs to the VPE debugger display. C. System.Out.Prinln() outputs to the VPE debugger display. D. Users can output debug info using the print() or print \"\" syntax.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Playbooks typically handle which types of data? A. Container data, Artifact CEF data, Result data, List data B. Container data, Artifact data, Result data, Threat data C. Container data, Artifact CEF data, Result data, Threat data D. Container CEF data, Artifact data, Result data, List data",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following will show all artifacts that have the term =results in a filePath CEF value? A. .../rest/artifact?_query_cef__filepath__icontains=\"results\" B. .../rest/artifacts/filePath=\"%results%\" C. .../rest/artifacts/cef/filePath=\"%results%\" D. .../rest/artifact?_filter_cef__filePath__icontains=\"results\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following are tabs of an asset configuration? A. Asset Info, Asset Settings, Approval Settings, Access Control B. Asset Name, Asset IP, Asset URL, Asset Nickname C. Tags, Asset Name, Asset Date, Asset Order D. App Name, App Order, App Expiry, App Version",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Splunk user account(s) with which roles must be created to configure SOAR with an external Splunk Enterprise instance? A. phantomsearch, phantomdelete B. phantomcreate, phantomedit C. superuser, administrator D. admin, user",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How can the DECIDED process be restarted? A. By restarting the automation service. B. By restarting the playbook daemon. C. In Administration > Server Settings. D. On the System Health page.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are indicators? A. Artifact values that can appear in multiple containers. B. Action results that may appear in multiple containers. C. Artifact values with special security significance. D. Action result items that determine the flow of execution in a playbook.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following queries would return all failed playbook runs from the REST API? A. https://<PHANTOM_URL>/rest/playbook_run?_filter_status failed B. https://<PHANTOM_URL>/rest/playbook_run?_filter_status \"failed\" C. https://<PHANTOM_URL>/rest/playbook_run?_search_status=failed D. https://<PHANTOM_URL>/rest/playbook_run?_query_status=\"failed\"",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How does a user determine which app actions are available? A. Add an action block to a playbook canvas area. B. In the visual playbook editor, click Active and click the Available App Actions dropdown. C. From the Apps menu, click the supported actions dropdown for each app. D. Search the Apps category in the global search field.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When working with complex datapaths, which operator is used to access a sub-element inside another element? A. | (pipe) B. : (colon) C. . (dot) D. * (asterisk)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a reason to create a new role in SOAR? A. To define a set of users who have access to a special label. B. To define a set of users who have access to a restricted app. C. To define a set of users who have access to a sensitive tag. D. To define a set of users who have access to an event's reports.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following roles is appropriate for a Splunk SOAR account that will only be used to execute automated tasks? A. Service Account B. Automation Engineer C. Non-Human D. Automation",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a step when configuring event forwarding from Splunk to SOAR? A. Create a saved search that generates the JSON for the new container on SOAR. B. Map CIM to CEF fields. C. Map CEF to CIM fields. D. Create a Splunk alert that uses the event_forward.py script to send events to SOAR.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What primary integrations does Splunk SOAR provide for Role administration? (Choose all that apply.) A. LDAP B. SAML C. Local Authentication D. OpenID",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which set of steps will show the most detailed information for action results on the Investigation page? A. Viewing the evidence tab within the main display area. B. Viewing the action widget within the main display area. C. Clicking on the action within the recent activity pane. D. Clicking the arrow next to the action within the recent activities pane.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following applies to filter blocks? A. Can select containers by severity or status. B. Can select assets by tenant, approver, or app. C. Can select which blocks have access to container data. D. Can be used to select data for use by other blocks.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following views provides a holistic view of an incident - providing event metadata, Service Level Agreement status, Severity, sensitivity of an event, and other detailed event info? A. Technical B. Analyst C. Investigation D. Executive",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Without customizing container status within SOAR, what are the three types of status for a container? A. New, In Progress, Closed B. Low, Medium, Critical C. New, Open, Resolved D. Low, Medium, High",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following can be configured in the ROI Settings? A. Number of full time employees (FTEs). B. Annual analyst salary. C. Analyst hours per month. D. Time lost.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where can the Splunk App for SOAR Export be downloaded from? A. GitHub and Splunkbase. B. Splunk Answers and Splunkbase. C. SOAR Community and GitHub. D. Splunkbase and SOAR Community.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Under Asset Ingestion Settings, how many labels must be applied when configuring an asset? A. Labels are not configured under Asset Ingestion Settings. B. Zero or more. C. One. D. One or more.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "To limit the impact of custom code on the VPE, where should the custom code be placed? A. A separate container. B. A separate code repository. C. A custom function block. D. A custom container or a separate KV store.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Some of the playbooks on the SOAR server should only be executed by members of the admin role. How can this rule be applied? A. Make sure the Execute Playbook capability is removed from all roles except admin. B. Place restricted playbooks in a second source repository that has restricted access. C. Add a tag with restricted access to the restricted playbooks. D. Add a filter block to all restricted playbooks that filters for runRole = \"Admin\".",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A user selects the New option under Sources on the menu. What will be displayed? A. A list of new assets. B. A list of new events. C. A list of new data sources. D. The New Data Ingestion wizard.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which app allows a user to send Splunk Enterprise Security notable events to SOAR? A. Splunk App for SOAR. B. Any of the integrated Splunk/SOAR Apps. C. Splunk App for SOAR Export. D. Splunk App for SOAR Reporting.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When the Splunk App for SOAR Export executes a Splunk search, which activities are completed? A. CEF fields are mapped to CIM and a container is created on the Splunk server. B. CIM fields are mapped to CEF and a container is created on the Splunk server. C. CEF fields are mapped to CIM fields and a container is created on the SOAR server. D. CIM fields are mapped to CEF fields and a container is created on the SOAR server.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the default log level for system health debug logs? A. INFO B. WARN C. DEBUG D. ERROR",
+    "options": {},
+    "most_voted": "A"
+  }
+]
