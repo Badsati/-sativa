@@ -1,0 +1,172 @@
+[
+  {
+    "question": "IaC (Infrastructure as Code) can be stored in a version control system along with application code. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is an advantage of immutable infrastructure? A. Automatic infrastructure upgrades B. In-place infrastructure upgrades C. Quicker infrastructure upgrades D. Less complex infrastructure upgrades",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your team adopts an AWS CloudFormation as the standardized method for provisioning public cloud resources. Which scenario presents a challenge for your team? A. Deploying new infrastructure into Microsoft Azure. B. Automating a manual, web console-based provisioning process. C. Building a reusable code base that can deploy resources into any AWS region. D. Managing a new application stack built on AWS-native services.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which command lets you experiment with Terraform expressions? A. terraform console B. terraform env C. terraform validate D. terraform test",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You can install Community/Partner plugins using terraform init. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What functionality do providers offer in Terraform? (Choose three.) A. Group a collection of Terraform configuration files that map to a single state file. B. Provision resources for public cloud infrastructure services. C. Interact with cloud provider APIs. D. Enforce security and compliance policies. E. Provision resources for on-premises infrastructure services.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Terraform can only manage resource dependencies if you set them explicitly with the depends_on argument. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A resource block is shown in the Exhibit space of this page. resource “aws_vpc” “main” { name = “test” } What is the provider for this resource? A. main B. vpc C. aws D. test",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Terraform providers are always installed from the internet. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to determine from which paths Terraform is loading the providers referenced in your *.tf files. How can you enable additional logging to see this information? A. Set the environment variable TF_VAR_log=TRACE. B. Set the environment variable TF_LOG=TRACE. C. Set the environment variable TF_LOG=PATH. D. Set verbose logging for each provider in your Terraform configuration.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of these is stored in the .terraform directory? A. Providers and modules B. Lock file C. State file D. Configuration files",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Terraform providers are part of the Terraform core binary. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where can Terraform not load a provider from? A. Provider plugin cache B. Source code C. Official HashiCorp distribution on releases.hashicorp.com D. Plugins directory",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are creating a Terraform configuration which needs to make use of multiple providers, one for AWS and one for Datadog. Which provider blocks would allow you to do this? A. B. C. D.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which command must you run before you run a plan or apply for the first time? A. terraform validate B. terraform workspace C. terraform import D. terraform init",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You modified your local Terraform configuration and ran terraform plan to review the changes. Simultaneously, your teammate manually modified the infrastructure component you are working on. Since you already ran terraform plan locally, the execution plan for terraform apply will be the same. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which syntax check returns an error when you run terraform validate? A. None of these will return an error. B. There is a missing variable block. C. The state file does not match the current infrastructure. D. The code contains tabs for indentation instead of spaces.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Outside of the required_providers block, Terraform configurations always refer to providers by their local names. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You want to define multiple data disks as nested blocks inside the resource block for a virtual machine. What Terraform feature would help you define the blocks using the values in a variable? A. Count arguments B. Collection functions C. Local values D. Dynamic blocks",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are creating a reusable Terraform configuration and want to include an optional billing_dept tag so your Finance team can track team-specific spending on resources. Which of the following billing_dept variable declarations will achieve this? A. variable “billing_dept” { default = “” } B. variable “billing_dept” { type = optional(string) } C. variable “billing_dept” { optional = true } D. variable “billing_dept” { type = default }",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "If a module declares a variable without a default value, you must pass the value of the variable within the module block when you call the module in your configuration. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When you run terraform apply, the Terraform CLI will print output values from both the root module and any child modules. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When you include a module block in your configuration that references a module from the Terraform Registry, the version attribute is required. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Your team is using a version 3.1.4 of a module from the public Terraform Registry, and they’re worried about possible breaking changes in future versions of the module. Which version argument should you add to the module block to prevent newer versions from being used? A. version = “3.1.4” B. version = “< 3.2” C. version = “!=3.1.5” D. version = “~>3.1.4”",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You’ve just finished refactoring part of your Terraform workspace’s configuration to use a module to manage some of your resources. When you plan your changes, you notice that Terraform will destroy and recreate the affected resources. Doing so could cause unintended downtime in the application your workspace manages. What supported approach should you take to complete the refactor without destroying and recreating your resources? A. Add moved blocks to your configuration to let Terraform know the new resource addresses for the affected resources. B. Open your cloud provider’s console and rename the effected resources. C. Run the terraform console command to edit your workspace’s state and update the resource names. D. Manually edit your terraform.tfstate file and update the resource names.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What Terraform command always causes a state file to be updated with changes that might have been made outside of Terraform? A. terraform plan -refresh-only B. terraform show -json C. terraform apply =lock=false D. terraform plan -target=state",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The -refresh-only parameter will update your state file when used with terraform plan. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "It is _________ to change the Terraform backend from the default local backend to a different one after performing your first terraform apply. A. discouraged B. mandatory C. impossible D. optional",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "If you manually destroy resources within your infrastructure, what is the best practice for reflecting this change in Terraform? A. Run terraform import to reflect the changes in Terraform state. B. Manually update the state file to remove the destroyed resources. C. Remove the resource definition from your file and run terraform apply -refresh-only. D. The change will happen automatically during the next terraform apply.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When a check block’s assertion fails, Terraform blocks the current operation from executing. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What does terraform destroy do? A. Destroys all Terraform code files in the current directory, leaves the state file intact. B. Destroys all infrastructure in the Terraform state file. C. Destroys the Terraform state file, leaves the infrastructure intact. D. Destroys all infrastructure in the configured Terraform provider.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You have never used Terraform before and would like to test it out using a shared team account for a cloud provider. The shared team account already contains 15 VMs (virtual machines). You develop a new Terraform configuration containing one VM, perform terraform apply, and see that your VM was created successfully. How do you delete the newly-created VM with Terraform? A. Delete the Terraform state file and execute terraform apply. B. The Terraform state file only contains one new VM. Execute terraform destroy. C. The Terraform state file contains all 16 VMs in the team account. Execute terraform destroy and select the newly-created VM. D. Delete the VM using the cloud provider console, and execute terraform apply to apply the changes to the Terraform state file.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following does HCP Terraform perform during a health assessment for a workspace? (Choose two.) A. Sentinel policy checks B. Resource drift detection C. Estimate infrastructure cost D. Check block validation E. Terraform test execution",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You can configure multiple cloud blocks in your Terraform configuration to connect your workspace to both HCP Terraform and your Terraform Enterprise instance. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  }
+]
