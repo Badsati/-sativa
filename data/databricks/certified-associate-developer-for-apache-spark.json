@@ -1,0 +1,1122 @@
+[
+  {
+    "question": "Which of the following describes the relationship between nodes and executors? A. Executors and nodes are not related. B. Anode is a processing engine running on an executor. C. An executor is a processing engine running on a node. D. There are always the same number of executors and nodes. E. There are always more nodes than executors.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following will occur if there are more slots than there are tasks? A. The Spark job will likely not run as efficiently as possible. B. The Spark application will fail – there must be at least as many tasks as there are slots. C. Some executors will shut down and allocate all slots on larger executors first. D. More tasks will be automatically generated to ensure all slots are being used. E. The Spark job will use just one single slot to perform all tasks.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is the most granular level of the Spark execution hierarchy? A. Task B. Executor C. Node D. Job E. Slot",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about Spark jobs is incorrect? A. Jobs are broken down into stages. B. There are multiple tasks within a single job when a DataFrame has more than one partition. C. Jobs are collections of tasks that are divided up based on when an action is called. D. There is no way to monitor the progress of a job. E. Jobs are collections of tasks that are divided based on when language variables are defined.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following operations is most likely to result in a shuffle? A. DataFrame.join() B. DataFrame.filter() C. DataFrame.union() D. DataFrame.where() E. DataFrame.drop()",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The default value of spark.sql.shuffle.partitions is 200. Which of the following describes what that means? A. By default, all DataFrames in Spark will be spit to perfectly fill the memory of 200 executors. B. By default, new DataFrames created by Spark will be split to perfectly fill the memory of 200 executors. C. By default, Spark will only read the first 200 partitions of DataFrames to improve speed. D. By default, all DataFrames in Spark, including existing DataFrames, will be split into 200 unique segments for parallelization. E. By default, DataFrames will be split into 200 unique partitions when data is being shuffled.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following is the most complete description of lazy evaluation? A. None of these options describe lazy evaluation B. A process is lazily evaluated if its execution does not start until it is put into action by some type of trigger C. A process is lazily evaluated if its execution does not start until it is forced to display a result to the user D. A process is lazily evaluated if its execution does not start until it reaches a specified date and time E. A process is lazily evaluated if its execution does not start until it is finished compiling",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following DataFrame operations is classified as an action? A. DataFrame.drop() B. DataFrame.coalesce() C. DataFrame.take() D. DataFrame.join() E. DataFrame.filter()",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following DataFrame operations is classified as a wide transformation? A. DataFrame.filter() B. DataFrame.join() C. DataFrame.select() D. DataFrame.drop() E. DataFrame.union()",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following describes the difference between cluster and client execution modes? A. The cluster execution mode runs the driver on a worker node within a cluster, while the client execution mode runs the driver on the client machine (also known as a gateway machine or edge node). B. The cluster execution mode is run on a local cluster, while the client execution mode is run in the cloud. C. The cluster execution mode distributes executors across worker nodes in a cluster, while the client execution mode runs a Spark job entirely on one client machine. D. The cluster execution mode runs the driver on the cluster machine (also known as a gateway machine or edge node), while the client execution mode runs the driver on a worker node within a cluster. E. The cluster execution mode distributes executors across worker nodes in a cluster, while the client execution mode submits a Spark job from a remote machine to be run on a remote, unconfigurable cluster.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about Spark’s stability is incorrect? A. Spark is designed to support the loss of any set of worker nodes. B. Spark will rerun any failed tasks due to failed worker nodes. C. Spark will recompute data cached on failed worker nodes. D. Spark will spill data to disk if it does not fit in memory. E. Spark will reassign the driver to a worker node if the driver’s node fails.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following cluster configurations is most likely to experience an out-of-memory error in response to data skew in a single partition? Note: each configuration has roughly the same compute power using 100 GB of RAM and 200 cores. A. Scenario #4 B. Scenario #5 C. Scenario #6 D. More information is needed to determine an answer. E. Scenario #1",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Of the following situations, in which will it be most advantageous to store DataFrame df at the MEMORY_AND_DISK storage level rather than the MEMORY_ONLY storage level? A. When all of the computed data in DataFrame df can fit into memory. B. When the memory is full and it’s faster to recompute all the data in DataFrame df rather than read it from disk. C. When it’s faster to recompute all the data in DataFrame df that cannot fit into memory based on its logical plan rather than read it from disk. D. When it’s faster to read all the computed data in DataFrame df that cannot fit into memory from disk rather than recompute it based on its logical plan. E. The storage level MENORY_ONLY will always be more advantageous because it’s faster to read data from memory than it is to read data from disk.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Spark application has a 128 GB DataFrame A and a 1 GB DataFrame B. If a broadcast join were to be performed on these two DataFrames, which of the following describes which DataFrame should be broadcasted and why? A. Either DataFrame can be broadcasted. Their results will be identical in result and efficiency. B. DataFrame B should be broadcasted because it is smaller and will eliminate the need for the shuffling of itself. C. DataFrame A should be broadcasted because it is larger and will eliminate the need for the shuffling of DataFrame B. D. DataFrame B should be broadcasted because it is smaller and will eliminate the need for the shuffling of DataFrame A. E. DataFrame A should be broadcasted because it is smaller and will eliminate the need for the shuffling of itself.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following operations can be used to create a new DataFrame that has 12 partitions from an original DataFrame df that has 8 partitions? A. df.repartition(12) B. df.cache() C. df.partitionBy(1.5) D. df.coalesce(12) E. df.partitionBy(12)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following object types cannot be contained within a column of a Spark DataFrame? A. DataFrame B. String C. Array D. null E. Vector",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following operations can be used to create a DataFrame with a subset of columns from DataFrame storesDF that are specified by name? A. storesDF.subset() B. storesDF.select() C. storesDF.selectColumn() D. storesDF.filter() E. storesDF.drop()",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a DataFrame containing all columns from DataFrame storesDF except for column sqft and column customerSatisfaction. Identify the error. Code block: storesDF.drop(sqft, customerSatisfaction) A. The drop() operation only works if one column name is called at a time – there should be two calls in succession like storesDF.drop(\"sqft\").drop(\"customerSatisfaction\"). B. The drop() operation only works if column names are wrapped inside the col() function like storesDF.drop(col(sqft), col(customerSatisfaction)). C. There is no drop() operation for storesDF. D. The sqft and customerSatisfaction column names should be quoted like \"sqft\" and \"customerSatisfaction\". E. The sqft and customerSatisfaction column names should be subset from the DataFrame storesDF like storesDF.\"sqft\" and storesDF.\"customerSatisfaction\".",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame containing only the rows from DataFrame storesDF where the value in column sqft is less than or equal to 25,000 OR the value in column customerSatisfaction is greater than or equal to 30? A. storesDF.filter(col(\"sqft\") <= 25000 | col(\"customerSatisfaction\") >= 30) B. storesDF.filter(col(\"sqft\") <= 25000 or col(\"customerSatisfaction\") >= 30) C. storesDF.filter(sqft <= 25000 or customerSatisfaction >= 30) D. storesDF.filter(col(sqft) <= 25000 | col(customerSatisfaction) >= 30) E. storesDF.filter((col(\"sqft\") <= 25000) | (col(\"customerSatisfaction\") >= 30))",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame from DataFrame storesDF where column storeId is of the type string? A. storesDF.withColumn(\"storeId, cast(col(\"storeId\"), StringType())) B. storesDF.withColumn(\"storeId, col(\"storeId\").cast(StringType())) C. storesDF.withColumn(\"storeId, cast(storeId).as(StringType) D. storesDF.withColumn(\"storeId, col(storeId).cast(StringType) E. storesDF.withColumn(\"storeId, cast(\"storeId\").as(StringType()))",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame with a new column employeesPerSqft that is the quotient of column numberOfEmployees and column sqft, both of which are from DataFrame storesDF? Note that column employeesPerSqft is not in the original DataFrame storesDF. A. storesDF.withColumn(\"employeesPerSqft\", col(\"numberOfEmployees\") / col(\"sqft\")) B. storesDF.withColumn(\"employeesPerSqft\", \"numberOfEmployees\" / \"sqft\") C. storesDF.select(\"employeesPerSqft\", \"numberOfEmployees\" / \"sqft\") D. storesDF.select(\"employeesPerSqft\", col(\"numberOfEmployees\") / col(\"sqft\")) E. storesDF.withColumn(col(\"employeesPerSqft\"), col(\"numberOfEmployees\") / col(\"sqft\"))",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame from DataFrame storesDF where column modality is the constant string \"PHYSICAL\", Assume DataFrame storesDF is the only defined language variable. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF. _1_(_2_,_3_(_4_)) A. 1. withColumn 2. \"modality\" 3. col 4. \"PHYSICAL\" B. 1. withColumn 2. \"modality\" 3. lit 4. PHYSICAL C. 1. withColumn 2. \"modality\" 3. lit 4. \"PHYSICAL\" D. 1. withColumn 2. \"modality\" 3. SrtringType 4. \"PHYSICAL\" E. 1. newColumn 2. modality 3. SrtringType 4. PHYSICAL",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame where column storeCategory from DataFrame storesDF is split at the underscore character into column storeValueCategory and column storeSizeCategory? A sample of DataFrame storesDF is displayed below: A. (storesDF.withColumn(\"storeValueCategory\", split(col(\"storeCategory\"), \"_\")[1]) .withColumn(\"storeSizeCategory\", split(col(\"storeCategory\"), \"_\")[2])) B. (storesDF.withColumn(\"storeValueCategory\", col(\"storeCategory\").split(\"_\")[0]) .withColumn(\"storeSizeCategory\", col(\"storeCategory\").split(\"_\")[1])) C. (storesDF.withColumn(\"storeValueCategory\", split(col(\"storeCategory\"), \"_\")[0]) .withColumn(\"storeSizeCategory\", split(col(\"storeCategory\"), \"_\")[1])) D. (storesDF.withColumn(\"storeValueCategory\", split(\"storeCategory\", \"_\")[0]) .withColumn(\"storeSizeCategory\", split(\"storeCategory\", \"_\")[1])) E. (storesDF.withColumn(\"storeValueCategory\", col(\"storeCategory\").split(\"_\")[1]) .withColumn(\"storeSizeCategory\", col(\"storeCategory\").split(\"_\")[2]))",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame where column productCategories only has one word per row, resulting in a DataFrame with many more rows than DataFrame storesDF? A sample of storesDF is displayed below: A. storesDF.withColumn(\"productCategories\", explode(col(\"productCategories\"))) B. storesDF.withColumn(\"productCategories\", split(col(\"productCategories\"))) C. storesDF.withColumn(\"productCategories\", col(\"productCategories\").explode()) D. storesDF.withColumn(\"productCategories\", col(\"productCategories\").split()) E. storesDF.withColumn(\"productCategories\", explode(\"productCategories\"))",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame with column storeDescription where the pattern \"Description: \" has been removed from the beginning of column storeDescription in DataFrame storesDF? A sample of DataFrame storesDF is below: A. storesDF.withColumn(\"storeDescription\", regexp_replace(col(\"storeDescription\"), \"^Description: \")) B. storesDF.withColumn(\"storeDescription\", col(\"storeDescription\").regexp_replace(\"^Description: \", \"\")) C. storesDF.withColumn(\"storeDescription\", regexp_extract(col(\"storeDescription\"), \"^Description: \", \"\")) D. storesDF.withColumn(\"storeDescription\", regexp_replace(\"storeDescription\", \"^Description: \", \"\")) E. storesDF.withColumn(\"storeDescription\", regexp_replace(col(\"storeDescription\"), \"^Description: \", \"\"))",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame where column division from DataFrame storesDF has been replaced and renamed to column state and column managerName from DataFrame storesDF has been replaced and renamed to column managerFullName? A. (storesDF.withColumnRenamed([\"division\", \"state\"], [\"managerName\", \"managerFullName\"]) B. (storesDF.withColumn(\"state\", col(\"division\")) .withColumn(\"managerFullName\", col(\"managerName\"))) C. (storesDF.withColumn(\"state\", \"division\") .withColumn(\"managerFullName\", \"managerName\")) D. (storesDF.withColumnRenamed(\"state\", \"division\") .withColumnRenamed(\"managerFullName\", \"managerName\")) E. (storesDF.withColumnRenamed(\"division\", \"state\") .withColumnRenamed(\"managerName\", \"managerFullName\"))",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown contains an error. The code block is intended to return a new DataFrame where column sqft from DataFrame storesDF has had its missing values replaced with the value 30,000. Identify the error. A sample of DataFrame storesDF is displayed below: Code block: storesDF.na.fill(30000, col(\"sqft\")) A. The argument to the subset parameter of fill() should be a string column name or a list of string column names rather than a Column object. B. The na.fill() operation does not work and should be replaced by the dropna() operation. C. he argument to the subset parameter of fill() should be a the numerical position of the column rather than a Column object. D. The na.fill() operation does not work and should be replaced by the nafill() operation. E. The na.fill() operation does not work and should be replaced by the fillna() operation.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following operations fails to return a DataFrame with no duplicate rows? A. DataFrame.dropDuplicates() B. DataFrame.distinct() C. DataFrame.drop_duplicates() D. DataFrame.drop_duplicates(subset = None) E. DataFrame.drop_duplicates(subset = \"all\")",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks will most quickly return an approximation for the number of distinct values in column division in DataFrame storesDF? A. storesDF.agg(approx_count_distinct(col(\"division\")).alias(\"divisionDistinct\")) B. storesDF.agg(approx_count_distinct(col(\"division\"), 0.01).alias(\"divisionDistinct\")) C. storesDF.agg(approx_count_distinct(col(\"division\"), 0.15).alias(\"divisionDistinct\")) D. storesDF.agg(approx_count_distinct(col(\"division\"), 0.0).alias(\"divisionDistinct\")) E. storesDF.agg(approx_count_distinct(col(\"division\"), 0.05).alias(\"divisionDistinct\"))",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame with the mean of column sqft from DataFrame storesDF in column sqftMean. Identify the error. Code block: storesDF.agg(mean(\"sqft\").alias(\"sqftMean\")) A. The argument to the mean() operation should be a Column abject rather than a string column name. B. The argument to the mean() operation should not be quoted. C. The mean() operation is not a standalone function – it’s a method of the Column object. D. The agg() operation is not appropriate here – the withColumn() operation should be used instead. E. The only way to compute a mean of a column is with the mean() method from a DataFrame.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following operations can be used to return the number of rows in a DataFrame? A. DataFrame.numberOfRows() B. DataFrame.n() C. DataFrame.sum() D. DataFrame.count() E. DataFrame.countDistinct()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following operations returns a GroupedData object? A. DataFrame.GroupBy() B. DataFrame.cubed() C. DataFrame.group() D. DataFrame.groupBy() E. DataFrame.grouping_id()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks returns a collection of summary statistics for all columns in DataFrame storesDF? A. storesDF.summary(\"mean\") B. storesDF.describe(all = True) C. storesDF.describe(\"all\") D. storesDF.summary(\"all\") E. storesDF.describe()",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks fails to return a DataFrame reverse sorted alphabetically based on column division? A. storesDF.orderBy(\"division\", ascending – False) B. storesDF.orderBy([\"division\"], ascending = [0]) C. storesDF.orderBy(col(\"division\").asc()) D. storesDF.sort(\"division\", ascending – False) E. storesDF.sort(desc(\"division\"))",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following code blocks returns a 15 percent sample of rows from DataFrame storesDF without replacement? A. storesDF.sample(fraction = 0.10) B. storesDF.sampleBy(fraction = 0.15) C. storesDF.sample(True, fraction = 0.10) D. storesDF.sample() E. storesDF.sample(fraction = 0.15)",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks returns all the rows from DataFrame storesDF? A. storesDF.head() B. storesDF.collect() C. storesDF.count() D. storesDF.take() E. storesDF.show()",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following code blocks applies the function assessPerformance() to each row of DataFrame storesDF? A. [assessPerformance(row) for row in storesDF.take(3)] B. [assessPerformance() for row in storesDF] C. storesDF.collect().apply(lambda: assessPerformance) D. [assessPerformance(row) for row in storesDF.collect()] E. [assessPerformance(row) for row in storesDF]",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to print the schema of DataFrame storesDF. Identify the error. Code block: storesDF.printSchema A. There is no printSchema member of DataFrame – schema and the print() function should be used instead. B. The entire line needs to be a string – it should be wrapped by str(). C. There is no printSchema member of DataFrame – the getSchema() operation should be used instead. D. There is no printSchema member of DataFrame – the schema() operation should be used instead. E. The printSchema member of DataFrame is an operation and needs to be followed by parentheses.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown below should create and register a SQL UDF named \"ASSESS_PERFORMANCE\" using the Python function assessPerformance() and apply it to column customerSatisfaction in table stores. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: spark._1_._2_(_3_, _4_) spark.sql(\"SELECT customerSatisfaction, _5_(customerSatisfaction) AS result FROM stores\") A. 1. udf 2. register 3. \"ASSESS_PERFORMANCE\" 4. assessPerformance 5. ASSESS_PERFORMANCE B. 1. udf 2. register 3. assessPerformance 4. \"ASSESS_PERFORMANCE\" 5. \"ASSESS_PERFORMANCE\" C. 1. udf 2. register 3.\"ASSESS_PERFORMANCE\" 4. assessPerformance 5. \"ASSESS_PERFORMANCE\" D. 1. register 2. udf 3. \"ASSESS_PERFORMANCE\" 4. assessPerformance 5. \"ASSESS_PERFORMANCE\" E. 1. udf 2. register 3. ASSESS_PERFORMANCE 4. assessPerformance 5. ASSESS_PERFORMANCE",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to create a Python UDF assessPerformanceUDF() using the integer-returning Python function assessPerformance() and apply it to column customerSatisfaction in DataFrame storesDF. Identify the error. Code block: assessPerformanceUDF – udf(assessPerformance) storesDF.withColumn(\"result\", assessPerformanceUDF(col(\"customerSatisfaction\"))) A. The assessPerformance() operation is not properly registered as a UDF. B. The withColumn() operation is not appropriate here – UDFs should be applied by iterating over rows instead. C. UDFs can only be applied vie SQL and not through the DataFrame API. D. The return type of the assessPerformanceUDF() is not specified in the udf() operation. E. The assessPerformance() operation should be used on column customerSatisfaction rather than the assessPerformanceUDF() operation.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to use SQL to return a new DataFrame containing column storeId and column managerName from a table created from DataFrame storesDF. Identify the error. Code block: storesDF.createOrReplaceTempView(\"stores\") storesDF.sql(\"SELECT storeId, managerName FROM stores\") A. The createOrReplaceTempView() operation does not make a Dataframe accessible via SQL. B. The sql() operation should be accessed via the spark variable rather than DataFrame storesDF. C. There is the sql() operation in DataFrame storesDF. The operation query() should be used instead. D. This cannot be accomplished using SQL – the DataFrame API should be used instead. E. The createOrReplaceTempView() operation should be accessed via the spark variable rather than DataFrame storesDF.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The code block shown below should create a single-column DataFrame from Python list years which is made up of integers. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: _1_._2_(_3_, _4_) A. 1. spark 2. createDataFrame 3. years 4. IntegerType B. 1. DataFrame 2. create 3. [years] 4. IntegerType C. 1. spark 2. createDataFrame 3. [years] 4. IntegertType D. 1. spark 2. createDataFrame 3. [years] 4. IntegertType() E. 1. spark 2. createDataFrame 3. years 4. IntegertType()",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to cache DataFrame storesDF only in Spark’s memory and then return the number of rows in the cached DataFrame. Identify the error. Code block: storesDF.cache().count() A. The cache() operation caches DataFrames at the MEMORY_AND_DISK level by default – the storage level must be specified to MEMORY_ONLY as an argument to cache(). B. The cache() operation caches DataFrames at the MEMORY_AND_DISK level by default – the storage level must be set via storesDF.storageLevel prior to calling cache(). C. The storesDF DataFrame has not been checkpointed – it must have a checkpoint in order to be cached. D. DataFrames themselves cannot be cached – DataFrame storesDF must be cached as a table. E. The cache() operation can only cache DataFrames at the MEMORY_AND_DISK level (the default) – persist() should be used instead.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following operations can be used to return a new DataFrame from DataFrame storesDF without inducing a shuffle? A. storesDF.intersect() B. storesDF.repartition(1) C. storesDF.union() D. storesDF.coalesce(1) E. storesDF.rdd.getNumPartitions()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a new 12-partition DataFrame from the 8-partition DataFrame storesDF by inducing a shuffle. Identify the error. Code block: storesDF.coalesce(12) A. The coalesce() operation cannot guarantee the number of target partitions – the repartition() operation should be used instead. B. The coalesce() operation does not induce a shuffle and cannot increase the number of partitions – the repartition() operation should be used instead. C. The coalesce() operation will only work if the DataFrame has been cached to memory – the repartition() operation should be used instead. D. The coalesce() operation requires a column by which to partition rather than a number of partitions – the repartition() operation should be used instead. E. The number of resulting partitions, 12, is not achievable for an 8-partition DataFrame.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following Spark properties is used to configure whether DataFrame partitions that do not meet a minimum size threshold are automatically coalesced into larger partitions during a shuffle? A. spark.sql.shuffle.partitions B. spark.sql.autoBroadcastJoinThreshold C. spark.sql.adaptive.skewJoin.enabled D. spark.sql.inMemoryColumnarStorage.batchSize E. spark.sql.adaptive.coalescePartitions.enabled",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a DataFrame containing a column openDateString, a string representation of Java’s SimpleDateFormat. Identify the error. Note that column openDate is of type integer and represents a date in the UNIX epoch format – the number of seconds since midnight on January 1st, 1970. An example of Java’s SimpleDateFormat is \"Sunday, Dec 4, 2008 1:05 PM\". A sample of storesDF is displayed below: Code block: storesDF.withColumn(\"openDateString\", from_unixtime(col(\"openDate\"), \"EEE, MMM d, yyyy h:mm a\", TimestampType())) A. The from_unixtime() operation only accepts two parameters – the TimestampTime() arguments not necessary. B. The from_unixtime() operation only works if column openDate is of type long rather than integer – column openDate must first be converted. C. The second argument to from_unixtime() is not correct – it should be a variant of TimestampType() rather than a string. D. The from_unixtime() operation automatically places the input column in java’s SimpleDateFormat – there is no need for a second or third argument. E. The column openDate must first be converted to a timestamp, and then the Date() function can be used to reformat to java’s SimpleDateFormat.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame containing a column dayOfYear, an integer representation of the day of the year from column openDate from DataFrame storesDF? Note that column openDate is of type integer and represents a date in the UNIX epoch format – the number of seconds since midnight on January 1st, 1970. A sample of storesDF is displayed below: A. (storesDF.withColumn(\"openTimestamp\", col(\"openDate\").cast(\"Timestamp\")) . withColumn(\"dayOfYear\", dayofyear(col(\"openTimestamp\")))) B. storesDF.withColumn(\"dayOfYear\", get dayofyear(col(\"openDate\"))) C. storesDF.withColumn(\"dayOfYear\", dayofyear(col(\"openDate\"))) D. (storesDF.withColumn(\"openDateFormat\", col(\"openDate\").cast(\"Date\")) . withColumn(\"dayOfYear\", dayofyear(col(\"openDateFormat\")))) E. storesDF.withColumn(\"dayOfYear\", substr(col(\"openDate\"), 4, 6))",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block intended to return a new DataFrame that is the result of an inner join between DataFrame storesDF and DataFrame employeesDF on column storeId. Identify the error. Code block: StoresDF.join(employeesDF, \"inner\", \"storeID\") A. The key column storeID needs to be wrapped in the col() operation. B. The key column storeID needs to be in a list like [\"storeID\"]. C. The key column storeID needs to be specified in an expression of both DataFrame columns like storesDF.storeId == employeesDF.storeId. D. There is no DataFrame.join() operation – DataFrame.merge() should be used instead. E. The column key is the second parameter to join() and the type of join in the third parameter to join() – the second and third arguments should be switched.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following operations can perform an outer join on two DataFrames? A. DataFrame.crossJoin() B. Standalone join() function C. DataFrame.outerJoin() D. DataFrame.join() E. DataFrame.merge()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following pairs of arguments cannot be used in DataFrame.join() to perform an inner join on two DataFrames, named and aliased with \"a\" and \"b\" respectively, to specify two key columns? A. on = [a.column1 == b.column1, a.column2 == b.column2] B. on = [col(\"column1\"), col(\"column2\")] C. on = [col(\"a.column1\") == col(\"b.column1\"), col(\"a.column2\") == col(\"b.column2\")] D. All of these options can be used to perform an inner join with two key columns. E. on = [\"column1\", \"column2\"]",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The below code block contains a logical error resulting in inefficiency. The code block is intended to efficiently perform a broadcast join of DataFrame storesDF and the much larger DataFrame employeesDF using key column storeId. Identify the logical error. Code block: storesDF.join(broadcast(employeesDF), \"storeId\") A. The larger DataFrame employeesDF is being broadcasted rather than the smaller DataFrame storesDF. B. There is never a need to call the broadcast() operation in Apache Spark 3. C. The entire line of code should be wrapped in broadcast() rather than just DataFrame employeesDF. D. The broadcast() operation will only perform a broadcast join if the Spark property spark.sql.autoBroadcastJoinThreshold is manually set. E. Only one of the DataFrames is being broadcasted rather than both of the DataFrames.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame that is the result of a cross join between DataFrame storesDF and DataFrame employeesDF. Identify the error. Code block: storesDF.join(employeesDF, \"cross\") A. A cross join is not implemented by the DataFrame.join() operations – the standalone CrossJoin() operation should be used instead. B. There is no direct cross join in Spark, but it can be implemented by performing an outer join on all columns of both DataFrames. C. A cross join is not implemented by the DataFrame.join()operation – the DataFrame.crossJoin()operation should be used instead. D. There is no key column specified – the key column \"storeId\" should be the second argument. E. A cross join is not implemented by the DataFrame.join() operations – the standalone join() operation should be used instead.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame that is the result of a position-wise union between DataFrame storesDF and DataFrame acquiredStoresDF. Identify the error. Code block: storesDF.unionByName(acquiredStoresDF) A. There is no DataFrame.unionByName() operation – the concat() operation should be used instead with both DataFrames as arguments. B. There are no key columns specified – similar column names should be the second argument. C. The DataFrame.unionByName() operation does not union DataFrames based on column position – it uses column name instead. D. The unionByName() operation is a standalone operation rather than a method of DataFrame – it should have both DataFrames as arguments. E. There are no column positions specified – the desired column positions should be the second argument.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following code blocks writes DataFrame storesDF to file path filePath as JSON? A. storesDF.write.option(\"json\").path(filePath) B. storesDF.write.json(filePath) C. storesDF.write.path(filePath) D. storesDF.write(filePath) E. storesDF.write().json(filePath)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In what order should the below lines of code be run in order to write DataFrame storesDF to file path filePath as parquet and partition by values in column division? Lines of code: 1. .write() \\ 2. .partitionBy(\"division\") \\ 3. .parquet(filePath) 4. .storesDF \\ 5. .repartition(\"division\") 6. .write \\ 7. .path(filePath, \"parquet\") A. 4, 1, 2, 3 B. 4, 1, 5, 7 C. 4, 6, 2, 3 D. 4, 1, 5, 3 E. 4, 6, 2, 7",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block intended to read a parquet at the file path filePath into a DataFrame. Identify the error. Code block: spark.read.load(filePath, source – \"parquet\") A. There is no source parameter to the load() operation – the schema parameter should be used instead. B. There is no load() operation – it should be parquet() instead. C. The spark.read operation should be followed by parentheses to return a DataFrameReader object. D. The filePath argument to the load() operation should be quoted. E. There is no source parameter to the load() operation – it can be removed.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "In what order should the below lines of code be run in order to read a JSON file at the file path filePath into a DataFrame with the specified schema schema? Lines of code: 1. .json(filePath, schema = schema) 2. .storesDF 3. .spark \\ 4. .read() \\ 5. .read \\ 6. .json(filePath, format = schema) A. 3, 5, 6 B. 2, 4, 1 C. 3, 5, 1 D. 2, 5, 1 E. 3, 4, 1",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following storage levels should be used to store as much data as possible in memory on two cluster nodes while storing any data that does not fit in memory on disk to be read in when needed? A. MEMORY_ONLY_2 B. MEMORY_AND_DISK_SER C. MEMORY_AND_DISK D. MEMORY_AND_DISK_2 E. MEMORY_ONLY",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following Spark properties is used to configure the maximum size of an automatically broadcasted DataFrame when performing a join? A. spark.sql.broadcastTimeout B. spark.sql.autoBroadcastJoinThreshold C. spark.sql.shuffle.partitions D. spark.sql.inMemoryColumnarStorage.batchSize E. spark.sql.adaptive.skewedJoin.enabled",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following Spark properties is used to configure whether skewed partitions are automatically detected and subdivided into smaller partitions when joining two DataFrames together? A. spark.sql.adaptive.skewedJoin.enabled B. spark.sql.adaptive.coalescePartitions.enable C. spark.sql.adaptive.skewHints.enabled D. spark.sql.shuffle.partitions E. spark.sql.shuffle.skewHints.enabled",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about the Spark DataFrame is true? A. Spark DataFrames are mutable unless they've been collected to the driver. B. A Spark DataFrame is rarely used aside from the import and export of data. C. Spark DataFrames cannot be distributed into partitions. D. A Spark DataFrame is a tabular data structure that is the most common Structured API in Spark. E. A Spark DataFrame is exactly the same as a data frame in Python or R.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following operations can be used to return a new DataFrame from DataFrame storesDF without columns that are specified by name? A. storesDF.filter() B. storesDF.select() C. storesDF.drop() D. storesDF.subset() E. storesDF.dropColumn()",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame containing only the rows from DataFrame storesDF where the value in column sqft is less than or equal to 25,000? A. storesDF.where(storesDF[sqft] > 25000) B. storesDF.filter(sqft > 25000) C. storesDF.filter(\"sqft\" <= 25000) D. storesDF.filter(col(\"sqft\") <= 25000) E. storesDF.where(sqft > 25000)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame containing only the rows from DataFrame storesDF where the value in column sqft is less than or equal to 25,000 OR the value in column customerSatisfaction is greater than or equal to 30? A. storesDF.filter(col(\"sqft\") <= 25000 and col(\"customerSatisfaction\") >= 30) B. storesDF.filter(col(\"sqft\") <= 25000 | col(\"customerSatisfaction\") >= 30) C. storesDF.filter(col(sqft) <= 25000 or col(customerSatisfaction) >= 30) D. storesDF.filter(sqft <= 25000 | customerSatisfaction >= 30) E. storesDF.filter(col(\"sqft\") <= 25000 or col(\"customerSatisfaction\") >= 30)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame from DataFrame storesDF where column storeId is of the type string. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF.__1__(\"storeId\", __2__(\"storeId\").__3__(__4__) A. 1. withColumn 2. col 3. cast 4. StringType() B. 1. withColumn 2. cast 3. col 4. StringType() C. 1. newColumn 2. col 3. cast 4. StringType() D. 1. withColumn 2. cast 3. col 4. StringType E. 1. withColumn 2. col 3. cast 4. StringType",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame from DataFrame storesDF where column modality is the constant string \"PHYSICAL\"? Assume DataFrame storesDF is the only defined language variable. A. storesDF.withColumn(\"modality\", lit(PHYSICAL)) B. storesDF.withColumn(\"modality\", col(\"PHYSICAL\")) C. storesDF.withColumn(\"modality\", lit(\"PHYSICAL\")) D. storesDF.withColumn(\"modality\", StringType(\"PHYSICAL\")) E. storesDF.withColumn(\"modality\", \"PHYSICAL\")",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame where column managerName from DataFrame storesDF is split at the space character into column managerFirstName and column managerLastName. Identify the error. A sample of DataFrame storesDF is displayed below: Code block: storesDF.withColumn(\"managerFirstName\", col(\"managerName\").split(\" \").getItem(0)) .withColumn(\"managerLastName\", col(\"managerName\").split(\" \").getItem(1)) A. The index values of 0 and 1 are not correct – they should be 1 and 2, respectively. B. The index values of 0 and 1 should be provided as second arguments to the split() operation rather than indexing the result. C. The split() operation comes from the imported functions object. It accepts a string column name and split character as arguments. It is not a method of a Column object. D. The split() operation comes from the imported functions object. It accepts a Column object and split character as arguments. It is not a method of a Column object. E. The withColumn operation cannot be called twice in a row.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame where single quotes in column storeSlogan have been replaced with double quotes. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. A sample of DataFrame storesDF is below: Code block: storesDF.__1__(__2__, __3__(__4__, __5__, __6__)) A. 1. withColumn 2. \"storeSlogan\" 3. regexp_extract 4. col(\"storeSlogan\") 5. \"\\\"\" 6. \"'\" B. 1. newColumn 2. storeSlogan 3. regexp_extract 4. col(storeSlogan) 5. \"\\\"\" 6. \"'\" C. 1. withColumn 2. \"storeSlogan\" 3. regexp_replace 4. col(\"storeSlogan\") 5. \"\\\"\" 6. \"'\" D. 1. withColumn 2. \"storeSlogan\" 3. regexp_replace 4. col(\"storeSlogan\") 5. \"'\" 6. \"\\\"\" E. 1. withColumn 2. \"storeSlogan\" 3. regexp_extract 4. col(\"storeSlogan\") 5. \"'\" 6. \"\\\"\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame where column division from DataFrame storesDF has been replaced and renamed to column state and column managerName from DataFrame storesDF has been replaced and renamed to column managerFullName? A. storesDF.withColumnRenamed(\"division\", \"state\") .withColumnRenamed(\"managerName\", \"managerFullName\") B. storesDF.withColumn(\"state\", \"division\") .withColumn(\"managerFullName\", \"managerName\") C. storesDF.withColumn(\"state\", col(\"division\")) .withColumn(\"managerFullName\", col(\"managerName\")) D. storesDF.withColumnRenamed(Seq(\"division\", \"state\"), Seq(\"managerName\", \"managerFullName\")) E. storesDF.withColumnRenamed(\"state\", \"division\") .withColumnRenamed(\"managerFullName\", \"managerName\")",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame where column sqft from DataFrame storesDF has had its missing values replaced with the value 30,000? A sample of DataFrame storesDF is below: A. storesDF.na.fill(30000, Seq(\"sqft\")) B. storesDF.nafill(30000, col(\"sqft\")) C. storesDF.na.fill(30000, col(\"sqft\")) D. storesDF.fillna(30000, col(\"sqft\")) E. storesDF.na.fill(30000, \"sqft\")",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following operations can be used to return a DataFrame with no duplicate rows? Please select the most complete answer. A. DataFrame.distinct() B. DataFrame.dropDuplicates() and DataFrame.distinct() C. DataFrame.dropDuplicates() D. DataFrame.drop_duplicates() E. DataFrame.dropDuplicates(), DataFrame.distinct() and DataFrame.drop_duplicates()",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "QUESTION NO: 75 Which of the following code blocks returns a DataFrame where column divisionDistinct is the approximate number of distinct values in column division from DataFrame storesDF? A. storesDF.withColumn(\"divisionDistinct\", approx_count_distinct(col(\"division\"))) B. storesDF.agg(col(\"division\").approx_count_distinct(\"divisionDistinct\")) C. storesDF.agg(approx_count_distinct(col(\"division\")).alias(\"divisionDistinct\")) D. storesDF.withColumn(\"divisionDistinct\", col(\"division\").approx_count_distinct()) E. storesDF.agg(col(\"division\").approx_count_distinct().alias(\"divisionDistinct\"))",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame with the mean of column sqft from DataFrame storesDF in column sqftMean. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF.__1__(__2__(__3__).alias(\"sqftMean\")) A. 1. agg 2. mean 3. col(\"sqft\") B. 1. withColumn 2. mean 3. col(\"sqft\") C. 1. agg 2. average 3. col(\"sqft\") D. 1. mean 2. col 3. \"sqft\" E. 1. agg 2. mean 3. \"sqft\"",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following code blocks returns the number of rows in DataFrame storesDF for each unique value in column division? A. storesDF.groupBy(\"division\").agg(count()) B. storesDF.agg(groupBy(\"division\").count()) C. storesDF.groupby.count(\"division\") D. storesDF.groupBy().count(\"division\") E. storesDF.groupBy(\"division\").count()",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame sorted alphabetically based on column division? A. storesDF.sort(\"division\") B. storesDF.orderBy(desc(\"division\")) C. storesDF.orderBy(col(\"division\").desc()) D. storesDF.orderBy(\"division\", ascending - true) E. storesDF.sort(desc(\"division\"))",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following code blocks returns a 10 percent sample of rows from DataFrame storesDF with replacement? A. storesDF.sample(true) B. storesDF.sample(true, fraction = 0.1) C. storesDF.sample(true, fraction = 0.15) D. storesDF.sampleBy(fraction = 0.1) E. storesDF.sample(false, fraction = 0.1)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks returns the first 3 rows of DataFrame storesDF? A. storesDF.top_n(3) B. storesDF.n(3) C. storesDF.take(3) D. storesDF.head(3) E. storesDF.collect(3)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks applies the function assessPerformance() to each row of DataFrame storesDF? A. storesDF.collect.foreach(assessPerformance(row)) B. storesDF.collect().apply(assessPerformance) C. storesDF.collect.apply(row => assessPerformance(row)) D. storesDF.collect.map(assessPerformance(row)) E. storesDF.collect.foreach(row => assessPerformance(row))",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to print the schema of DataFrame storesDF. Identify the error. Code block: storesDF.printSchema.getAs[String] A. There is no printSchema member of DataFrame – the getSchema() operation should be used instead. B. There is no printSchema member of DataFrame – the schema() operation should be used instead. C. The entire line needs to be a string – it should be wrapped by str(). D. The printSchema member of DataFrame is an operation prints the DataFrame – there is no need to call getAs. E. There is no printSchema member of DataFrame – schema and the print() function should be used instead.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks creates and registers a SQL UDF named \"ASSESS_PERFORMANCE\" using the Scala function assessPerformance() and applies it to column customerSatisfaction in table stores? A. spark.udf.register(\"ASSESS_PERFORMANCE\", assessPerformance) spark.sql(\"SELECT customerSatisfaction, ASSESS_PERFORMANCE(customerSatisfaction) AS result FROM stores\") B. spark.udf.register(\"ASSESS_PERFORMANCE\", assessPerformance) C. spark.udf.register(\"ASSESS_PERFORMANCE\", assessPerformance) spark.sql(\"SELECT customerSatisfaction, assessPerformance(customerSatisfaction) AS result FROM stores\") D. spark.udf.register(\"ASSESS_PERFORMANCE\", assessPerformance) storesDF.withColumn(\"result\", assessPerformance(col(\"customerSatisfaction\"))) E. spark.udf.register(\"ASSESS_PERFORMANCE\", assessPerformance) storesDF.withColumn(\"result\", ASSESS_PERFORMANCE(col(\"customerSatisfaction\")))",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should use SQL to return a new DataFrame containing column storeId and column managerName from a table created from DataFrame storesDF. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__(\"stores\") __3__.__4__(\"SELECT storeId, managerName FROM stores\") A. 1. spark 2. createOrReplaceTempView 3. storesDF 4. query B. 1. spark 2. createTable 3. storesDF 4. sql C. 1. storesDF 2. createOrReplaceTempView 3. spark 4. query D. 1. spark 2. createOrReplaceTempView 3. storesDF 4. sql E. 1. storesDF 2. createOrReplaceTempView 3. spark 4. sql",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block intended to create a single-column DataFrame from Scala List years which is made up of integers. Identify the error. Code block: spark.createDataset(years) A. The years list should be wrapped in another list like List(years) to make clear that it is a column rather than a row. B. The data type is not specified – the second argument to createDataset should be IntegerType. C. There is no operation createDataset – the createDataFrame operation should be used instead. D. The result of the above is a Dataset rather than a DataFrame – the toDF operation must be called at the end. E. The column name must be specified as the second argument to createDataset.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks will always return a new 4-partition DataFrame from the 8-partition DataFrame storesDF without inducing a shuffle? A. storesDF.repartition(4, \"sqft\") B. storesDF.repartition() C. storesDF.coalesce(4) D. storesDF.repartition(4) E. storesDF.coalesce",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The code block shown below should return a new 12-partition DataFrame from DataFrame storesDF. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__(__3__) A. 1. storesDF 2. coalesce 3. 4 B. 1. storesDF 2. coalesce 3. 4, \"storeId\" C. 1. storesDF 2. repartition 3. \"storeId\" D. 1. storesDF 2. repartition 3. 12 E. 1. storesDF 2. repartition 3. Nothing",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to adjust the number of partitions used in wide transformations like join() to 32. Identify the error. Code block: spark.conf.set(\"spark.default.parallelism\", \"32\") A. spark.default.parallelism is not the right Spark configuration parameter – spark.sql.shuffle.partitions should be used instead. B. There is no way to adjust the number of partitions used in wide transformations – it defaults to the number of total CPUs in the cluster. C. Spark configuration parameters cannot be set in runtime. D. Spark configuration parameters are not set with spark.conf.set(). E. The second argument should not be the string version of \"32\" – it should be the integer 32.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block intended to return a DataFrame containing a column dayOfYear, an integer representation of the day of the year from column openDate from DataFrame storesDF. Identify the error. Note that column openDate is of type integer and represents a date in the UNIX epoch format – the number of seconds since midnight on January 1st, 1970. A sample of storesDF is displayed below: Code block: storesDF.withColumn(\"dayOfYear\", dayofyear(col(\"openDate\"))) A. The dayofyear() operation cannot extract the day of year from a column of type integer – column openDate must first be converted to type Timestamp. B. The dayofyear() operation takes a quoted column name rather than a Column object as its first argument – the first argument should be \"openDate\". C. The dayofyear() operation cannot extract the day of year from a column of type integer – column openDate must first be converted to type Date. D. The dayofyear() operation is not applicable in a withColumn() call – the newColumn() operation must be used instead. E. There is no dayofyear() operation – the day of year number must be extracted using substring utilities.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame that is the result of an inner join between DataFrame storeDF and DataFrame employeesDF on column storeId. Choose the response chat correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF.__1__(__2__, __3__, __4__) A. 1. join 2. employeesDF 3. \"inner\" 4. storesDF.storeId === employeesDF.storeId B. 1. join 2. employeesDF 3. \"storeId\" 4. \"inner\" C. 1. merge 2. employeesDF 3. \"storeId\" 4. \"inner\" D. 1. join 2. employeesDF 3. \"inner\" 4. \"storeId\" E. 1. join 2. employeesDF 3. \"inner\" 4. \"storeId\"",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame that is the result of an outer join between DataFrame storesDF and DataFrame employeesDF on column storeId. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF.__1__(__2__, __3__, __4__) A. 1. join 2. employeesDF 3. \"outer\" 4. Seq(\"storeId\") B. 1. merge 2. employeesDF 3. \"outer\" 4. Seq(\"storeId\") C. 1. join 2. employeesDF 3. \"outer\" 4. storesDF.storeId === employeesDF.storeId D. 1. merge 2. employeesDF 3. Seq(\"storeId\") 4. \"outer\" E. 1. join 2. employeesDF 3. Seq(\"storeId\") 4. \"outer\"",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks fails to return a new DataFrame that is the result of an inner join between DataFrame storesDF and DataFrame employeesDF on column storeId and column employeeId? A. storesDF.join(employeesDF, Seq(col(\"storeId\"), col(\"employeeId\"))) B. storesDF.join(employeesDF, Seq(\"storeId\", \"employeeId\")) C. storesDF.join(employeesDF, storesDF(\"storeId\") === employeesDF(\"storeId\") and storesDF(\"employeeId\") === employeesDF(\"employeeId\")) D. storesDF.join(employeesDF, Seq(\"storeId\", \"employeeId\"), \"inner\") E. storesDF.alias(\"s\").join(employeesDF.alias(\"e\"), col(\"s.storeId\") === col(\"e.storeId\") and col(\"s.employeeId\") === col(\"e.employeeId\"))",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The code block shown below should efficiently perform a broadcast join of DataFrame storesDF and the much larger DataFrame employeesDF using key column storeId. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.join(__2__(__3__), \"storeId\") A. 1. employeesDF 2. broadcast 3. storesDF B. 1. broadcast(employeesDF) 2. broadcast 3. storesDF C. 1. broadcast 2. employeesDF 3. storesDF D. 1. storesDF 2. broadcast 3. employeesDF E. 1. broadcast(storesDF) 2. broadcast 3. employeesDF",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following operations performs a cross join on two DataFrames? A. DataFrame.join() B. The standalone join() function C. The standalone crossJoin() function D. DataFrame.crossJoin() E. DataFrame.merge()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks writes DataFrame storesDF to file path filePath as CSV? A. storesDF.write().csv(filePath) B. storesDF.write(filePath) C. storesDF.write.csv(filePath) D. storesDF.write.option(\"csv\").path(filePath) E. storesDF.write.path(filePath)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks writes DataFrame storesDF to file path filePath as parquet and partitions by values in column division? A. storesDF.write.partitionBy(col(\"division\")).path(filePath) B. storesDF.write.option(\"parquet\").partitionBy(\"division\").path(filePath) C. storesDF.write.option(\"parquet\").partitionBy(col(\"division\")).path(filePath) D. storesDF.write.partitionBy(\"division\").parquet(filePath) E. storesDF.write().partitionBy(\"division\").parquet(filePath)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Of the following, which is the coarsest level in the Spark execution hierarchy? A. Slot B. Job C. Task D. Stage E. Executor",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements about slots is incorrect? A. Slots are the most granular level of execution in the Spark execution hierarchy. B. Slots are resources for parallelization within an executor. C. Tasks are assigned to slots for computation. D. There can be more slots than tasks. E. There must be at least as many slots as there are executors.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks returns a new Data Frame from DataFrame storesDF with no duplicate rows? A. storesDF.removeDuplicates() B. storesDF.getDistinct() C. storesDF.duplicates.drop() D. storesDF.duplicates() E. storesDF.dropDuplicates()",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return the exact number of distinct values in column division in DataFrame storesDF. Identify the error. Code block: storesDF.agg(approx_count_distinct(col(“division”)).alias(“divisionDistinct”)) A. The approx_count_distinct() operation needs a second argument to set the rsd parameter to ensure it returns the exact number of distinct values. B. There is no alias() operation for the approx_count_distinct() operation's output. C. There is no way to return an exact distinct number in Spark because the data Is distributed across partitions. D. The approx_count_distinct()operation is not a standalone function - it should be used as a method from a Column object. E. The approx_count_distinct() operation cannot determine an exact number of distinct values in a column.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks returns the number of rows in DataFrame storesDF for each distinct combination of values in column division and column storeCategory? A. storesDF.groupBy(Seq(col(“division”), col(“storeCategory”))).count() B. storesDF.groupBy(division, storeCategory).count() C. storesDF.groupBy(“division”, “storeCategory”).count() D. storesDF.groupBy(“division”).groupBy(“StoreCategory”).count() E. storesDF.groupBy(Seq(“division”, “storeCategory”)).count()",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a collection of summary statistics for column sqft in Data Frame storesDF. Identify the error. Code block: storesDF.describes(col(“sgft”)) A. The column sqft should be subsetted from DataFrame storesDF prior to computing summary statistics on it alone. B. The describe() operation does not accept a Column object as an argument outside of a sequence — the sequence Seq(col(“sqft”)) should be specified instead. C. The describe()operation doesn’t compute summary statistics for a single column — the summary() operation should be used instead. D. The describe()operation doesn't compute summary statistics for numeric columns — the summary() operation should be used instead. E. The describe()operation does not accept a Column object as an argument — the column name string “sqft” should be specified instead.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown below should extract the integer value for column sqft from the first row of DataFrame storesDF. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__.__3__[Int](__4__) A. 1. storesDF 2. first() 3. getAs() 4. “sqft” B. 1. storesDF 2. first 3. getAs 4. sqft C. 1. storesDF 2. first() 3. getAs 4. col(“sqft”) D. 1. storesDF 2. first 3. getAs 4. “sqft”",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below should print the schema of DataFrame storesDF. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__ A. 1. storesDF 2. printSchema(“all”) B. 1. storesDF 2. schema C. 1. storesDF 2. getAs[str] D. 1. storesDF 2. printSchema(true) E. 1. storesDF 2. printSchema",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to create and register a SQL UDF named “ASSESS_PERFORMANCE” using the Scala function assessPerformance() and apply it to column customerSatisfaction in the table stores. Identify the error. Code block: spark.udf.register(“ASSESS_PERFORMANCE”, assessPerforance) spark.sql(“SELECT customerSatisfaction, assessPerformance(customerSatisfaction) AS result FROM stores”) A. The customerSatisfaction column cannot be called twice inside the SQL statement. B. Registered UDFs cannot be applied inside of a SQL statement. C. The order of the arguments to spark.udf.register() should be reversed. D. The wrong SQL function is used to compute column result - it should be ASSESS_PERFORMANCE instead of assessPerformance. E. There is no sql() operation - the DataFrame API must be used to apply the UDF assessPerformance().",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to create the Scala UDF assessPerformanceUDF() and apply it to the integer column customers1t1sfaction in Data Frame storesDF. Identify the error. Code block: A. The input type of customerSatisfaction is not specified in the udf() operation. B. The return type of assessPerformanceUDF() must be specified. C. The withColumn() operation is not appropriate here - UDFs should be applied by iterating over rows instead. D. The assessPerformanceUDF() must first be defined as a Scala function and then converted to a UDF. E. UDFs can only be applied via SQL and not through the Data Frame API.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should create a single-column DataFrame from Scala list years which is made up of integers. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__(__3__).__4__ A. 1. spark 2. createDataFrame 3. years 4. IntegerType B. 1. spark 2. createDataset 3. years 4. IntegerType C. 1. spark 2. createDataset 3. List(years) 4. toDF D. 1. spark 2. createDataFrame 3. List(years) 4. IntegerType",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should cache DataFrame storesDF only in Spark's memory. Choose the response that correctly fil ls in the numbered blanks within the code block to complete this task. Code block: __1__.__2__(__3__).count() A. 1. storesDF 2. cache 3. StorageLevel.MEMORY_ONLY B. 1. storesDF 2. storageLevel 3. cache C. 1. storesDF 2. cache 3. Nothing D. 1. storesDF 2. persist 3. Nothing E. 1. storesDF 2. persist 3. StorageLevel.MEMORY_ONLY",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame containing a column month, an integer representation of the day of the year from column openDate from DataFrame storesDF. Note that column openDate is of type integer and represents a date in the UNIX epoch format – the number of seconds since midnight on January 1st, 1970. A sample of storesDF is displayed below: Code block: stored.withColumn(“openTimestamp”, col(“openDate”).cast(__1__)) .withColumn(__2__, __3__(__4__)) A. 1. “Data” 2. month 3. “month” 4. “openTimestamp” B. 1. “Timestamp” 2. month 3. “month” 4. col(“openTimestamp”) C. 1. “Timestamp” 2. month 3. getMonth 4. col(“openTimestamp”) D. 1. “Timestamp” 2. “month” 3. month 4. col(“openTimestamp”)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block intended to return a new DataFrame that is the result of an inner join between DataFrame storesDF and DataFrame employeesDF on column storeId. Identify the error. Code block: StoresDF.join(employeesDF, Seq(\"storeId\") A. The key column storeId needs to be a string like “storeId”. B. The key column storeId needs to be specified in an expression of both Data Frame columns like storesDF.storeId ===employeesDF.storeId. C. The default argument to the joinType parameter is “inner” - an additional argument of “left” must be specified. D. There is no DataFrame.join() operation - DataFrame.merge() should be used instead. E. The key column storeId needs to be wrapped in the col() operation.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following pairs of arguments cannot be used in DataFrame.join() to perform an inner join on two DataFrames, named and aliased with \"a\" and \"b\" respectively, to specify two key columns column1 and column2? A. joinExprs = col(“a.column1”) === col(“b.column1”) and col(“a.column2”) === col(“b.column2”) B. usingColumns = Seq(col(“column1”), col(“column2”)) C. All of these options can be used to perform an inner join with two key columns. D. joinExprs = storesDF(“column1”) === employeesDF(“column1”) and storesDF(“column2”) === employeesDF (“column2”) E. usingColumns = Seq(“column1”, “column2”)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame that is the result of a position-wise union between DataFrame storesDF and DataFrame acquiredStoresDF. A. concat(storesDF, acquiredStoresDF) B. storesDF.unionByName(acquiredStoresDF) C. union(storesDF, acquiredStoresDF) D. unionAll(storesDF, acquiredStoresDF) E. storesDF.union(acquiredStoresDF)",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks writes DataFrame storesDF to file path filePath as parquet overwriting any existing files in that location? A. storesDF.write(filePath, mode = “overwrite”) B. storesDF.write().mode(“overwrite”).parquet(filePath) C. storesDF.write.mode(“overwrite”).parquet(filePath) D. storesDF.write.option(“parquet”, “overwrite”).path(filePath) E. storesDF.write.mode(“overwrite”).path(filePath)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following code blocks reads a CSV at the file path filePath into a Data Frame with the specified schema schema? A. spark.read().csv(filePath) B. spark.read().schema(“schema”).csv(filePath) C. spark.read.schema(schema).csv(filePath) D. spark.read.schema(“schema”).csv(filePath) E. spark.read().schema(schema).csv(filePath)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame containing only the rows from DataFrame storesDF where the value in column sqft is less than or equal to 25,000 AND the value in column customerSatisfaction is greater than or equal to 30? A. storesDF.filter(col(\"sqft\") <= 25000 and col(\"customerSatisfaction\") >= 30) B. storesDF.filter(col(\"sqft\") <= 25000 or col(\"customerSatisfaction\") >= 30) C. storesDF.filter(sqft) <= 25000 and customerSatisfaction >= 30) D. storesDF.filter(col(\"sqft\") <= 25000 & col(\"customerSatisfaction\") >= 30) E. storesDF.filter(sqft <= 25000) & customerSatisfaction >= 30)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following sets of DataFrame methods will both return a new DataFrame only containing rows that meet a specified logical condition? A. drop(), where() B. filter(), select() C. filter(), where() D. select(), where() E. filter(), drop()",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The code block shown below should return a DataFrame containing all columns from DataFrame storesDF except for column sqft and column customerSatisfaction. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__(__3__) A. 1. drop 2. storesDF 3. col(“sqft”), col(“customerSatisfaction”) B. 1. storesDF 2. drop 3. sqft, customerSatisfaction C. 1. storesDF 2. drop 3. “sqft”, “customerSatisfaction” D. 1. storesDF 2. drop 3. col(sqft), col(customerSatisfaction) E. 1. drop 2. storesDF 3. col(sqft), col(customerSatisfaction)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following describes the difference between DataFrame.repartition(n) and DataFrame.coalesce(n)? A. DataFrame.repartition(n) will split a DataFrame into n number of new partitions with data distributed evenly. DataFrame.coalesce(n) will more quickly combine the existing partitions of a DataFrame but might result in an uneven distribution of data across the new partitions. B. While the results are similar, DataFrame.repartition(n) will be more efficient than DataFrame.coalesce(n) because it can partition a Data Frame by the column. C. DataFrame.repartition(n) will split a Data Frame into any number of new partitions while minimizing shuffling. DataFrame.coalesce(n) will split a DataFrame onto any number of new partitions utilizing a full shuffle. D. While the results are similar, DataFrame.repartition(n) will be less efficient than DataFrame.coalesce(n) because it can partition a Data Frame by the column. E. DataFrame.repartition(n) will combine the existing partitions of a DataFrame but may result in an uneven distribution of data across the new partitions. DataFrame.coalesce(n) will more slowly split a Data Frame into n number of new partitions with data distributed evenly.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following cluster configurations is most likely to experience delays due to garbage collection of a large Dataframe? Note: each configuration has roughly the same compute power using 100GB of RAM and 200 cores. A. More information is needed to determine an answer. B. Scenario #5 C. Scenario #4 D. Scenario #1 E. Scenario #2",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following DataFrame operations is classified as a transformation? A. DataFrame.select() B. DataFrame.count() C. DataFrame.show() D. DataFrame.first() E. DataFrame.collect()",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following operations will fail to trigger evaluation? A. DataFrame.collect() B. DataFrame.count() C. DataFrame.first() D. DataFrame.join() E. DataFrame.take()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below should read a JSON at the file path filePath into a DataFrame with the specified schema schema. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__.__3__(__4__).format(\"csv\").__5__(__6__) A. 1. spark 2. read() 3. schema 4. schema 5. json 6. filePath B. 1. spark 2. read() 3. json 4. filePath 5. format 6. schema C. 1. spark 2. read() 3. schema 4. schema 5. load 6. filePath D. 1. spark 2. read 3. schema 4. schema 5. load 6. filePath E. 1. spark 2. read 3. format 4. \"json\" 5. load 6. filePath",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame with a new column customerSatisfactionAbs that is the absolute value of column customerSatisfaction in DataFrame storesDF? Note that column customerSatisfactionAbs is not in the original DataFrame storesDF. A. storesDF.withColumn(“customerSatisfactionAbs”, abs(col(“customerSatisfaction”))) B. storesDF.withColumnRenamed(“customerSatisfactionAbs”, abs(col(“customerSatisfaction”))) C. storesDF.withColumn(col(“customerSatisfactionAbs”, abs(col(“customerSatisfaction”))) D. storesDF.withColumn(“customerSatisfactionAbs”, abs(col(customerSatisfaction))) E. storesDF.withColumn(“customerSatisfactionAbs”, abs(“customerSatisfaction”))",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about the Spark driver is true? A. Spark driver is horizontally scaled to increase overall processing throughput. B. Spark driver is the most coarse level of the Spark execution hierarchy. C. Spark driver is fault tolerant — if it fails, it will recover the entire Spark application. D. Spark driver is responsible for scheduling the execution of data by various worker nodes in cluster mode. E. Spark driver is only compatible with its included cluster manager.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should write DataFrame storesDF to file path filePath as parquet and partition by values in column division. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF.__1__.__2__(__3__).__4__(__5__) A. 1. write 2. partitionBy 3. “division” 4. path 5. filePath, node = parquet B. 1. write 2. partitionBy 3. “division” 4. parquet 5. filePath C. 1. write 2. partitionBy 3. col(“division”) 4. parquet 5. filePath D. 1. write() 2. partitionBy 3. col(“division”) 4. parquet 5. filePath E. 1. write 2. repartition 3. “division” 4. path 5. filePath, mode = “parquet”",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following types of processes induces a stage boundary? A. Shuffle B. Caching C. Executor failure D. Job delegation E. Application failure",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following cluster configurations will induce the least network traffic during a shuffle operation? Note: each configuration has roughly the same compute power using 100GB of RAM and 200 cores. A. This cannot be determined without knowing the number of partitions. B. Scenario 5 C. Scenario 1 D. Scenario 4 E. Scenario 6",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following describes a partition? A. A partition is the amount of data that fits in a single executor. B. A partition is an automatically-sized segment of data that is used to create efficient logical plans. C. A partition is the amount of data that fits on a single worker node. D. A partition is a portion of a Spark application that is made up of similar jobs. E. A partition is a collection of rows of data that fit on a single machine in a cluster.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following identifies multiple narrow operations that are executed in sequence? A. Slot B. Job C. Stage D. Task E. Executor",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Spark's execution/deployment mode determines where the driver and executors are physically located when a Spark application is run. Which of the following Spark execution/deployment modes does not exist? If they all exist, please indicate so with Response E. A. Client mode B. Cluster mode C. Standard mode D. Local mode E. All of these execution/deployment modes exist",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following will cause a Spark job to fail? A. Never pulling any amount of data onto the driver node. B. Trying to cache data larger than an executor's memory. C. Data needing to spill from memory to disk. D. A failed worker node. E. A failed driver node.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following best describes the similarities and differences between the MEMORY_ONLY storage level and the MEMORY_AND_DISK storage level? A. The MEMORY_ONLY storage level will store as much data as possible in memory and will store any data that does on fit in memory on disk and read it as it's called. The MEMORY_AND_DISK storage level will store as much data as possible in memory and will recompute any data that does not fit in memory as it’s called. B. The MEMORY_ONLY storage level will store as much data as possible in memory on two cluster nodes and will recompute any data that does not fit in memory as it’s called. The MEMORY_AND_DISK storage level will store as much data as possible in memory on two cluster nodes and will store any data that does on fit in memory on disk and read it as it's called. C. The MEMORY_ONLY storage level will store as much data as possible in memory on two cluster nodes and will store any data that does on fit in memory on disk and read it as it's called. The MEMORY_AND_DISK storage level will store as much data as possible in memory on two cluster nodes and will recompute any data that does not fit in memory as it's called. D. The MEMORY_ONLY storage level will store as much data as possible in memory and will recompute any data that does not fit in memory as it's called. The MEMORY_AND_DISK storage level will store as much data as possible in memory and will store any data that does on fit in memory on disk and read it as it's called. E. The MEMORY_ONLY storage level will store as much data as possible in memory and will recompute any data that does not fit in memory as it’s called. The MEMORY_AND_DISK storage level will store half of the data in memory and store half of the memory on disk. This provides quick preview and better logical plan design.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following Spark properties is used to configure whether DataFrames found to be below a certain size threshold at runtime will be automatically broadcasted? A. spark.sql.broadcastTimeout B. spark.sql.autoBroadcastJoinThreshold C. spark.sql.shuffle.partitions D. spark.sql.inMemoryColumnarStorage.batchSize E. spark.sql.adaptive.localShuffleReader.enabled",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame from DataFrame storesDF where column storeId is of the type string. Identify the error. Code block: storesDF.withColumn(“storeId”, cast(col(“storeId”), StringType())) A. Calls to withColumn() cannot create a new column of the same name on which it is operating. B. DataFrame columns cannot be converted to a new type inside of a call to withColumn(). C. The call to StringType should not be followed by parentheses. D. The column name storeId inside the col() operation should not be quoted. E. The cast() operation is a method in the Column class rather than a standalone function.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame where column division is the first two characters of column division in DataFrame storesDF? A. storesDF.withColumn(“division”, substr(col(“division”), 0, 2)) B. storesDF.withColumn(“division”, susbtr(col(“division”), 1, 2)) C. storesDF,withColumn(“division”, col(“division”).substr(0, 3)) D. storesDF.withColumn(“division”, col(“division”).substr(0, 2)) E. storesDF.withColumn(“division”, col(“division”).substr(l, 2))",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame where column division from DataFrame storesDF has been renamed to column state and column managerName from DataFrame storesDF has been renamed to column managerFullName. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF. __1__(__2__, __2__).__4__(__5__, __6__) A. 1. withColumnRenamed 2.\"state\" 3.\"division\" 4.withColumnRenamed 5.\"managerFullName\" 6.\"managerName\" B. 1.withColumnRenamed 2.division 3.col(\"state\") 4. withColumnRenamed 5.\"managerName\" 6.col(\"managerFullName\") C. 1. WithColumnRenamed 2. \"division\" 3.\"state\" 4. withColumnRenamed 5. \"managerName\" 6.\"managerFullName\" D. 1. withColumn 2. \"division\" 3. \"state\" 4.withcolumn 5.\"managerName\" 6.\"managerFullName E. 1. withColumn 2. \"division\" 3. \"state\" 4. withColumn 5.\"managerName\" 6.\"managerFullName\"",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame where rows in DataFrame storesDF with missing values in every column have been dropped. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF.__1__.2__(3__ = __4__) A. 1. na 2.drop 3. how 4.\"any\" B. 1. na 2.drop 3. subset 4.\"all\" C. 1. na 2.drop 3.subset 4. \"any\" D. 1. na 2.drop 3. how 4. \"all\" E. 1. drop 2. na 3. how 4. \"all\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below should return a collection of summary statistics for column sqft in DataFrame storesDF. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF.__1__(__2__) A. 1. summary 2. col(\"sqft\") B. 1. describe 2. col(\"sqft\") C. 1. summary 2. \"sqft\" D. 1. describe 2. \"sqft\" E. 1. summary 2. \"all\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks returns a 15 percent sample of rows from DataFrame storesDF without replacement? A. storesDF.sample(True, fraction = 0.15) B. storesDF.sample(fraction = 0.15) C. storesDF.sampleBy(fraction = 0.15) D. storesDF.sample(fraction = 0.10) E. storesDF.sample()",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks extracts the value for column sqft from the first row of DataFrame storesDF? A. storesDF.first()[col(\"sqft\")] B. storesDF[0][\"sqft\"] C. storesDF.collect(l)[0][\"sqft\"] D. storesDF.first.sqft E. storesDF.first().sqft",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks uses SQL to return a new DataFrame containing column storeId and column managerName from a table created from DataFrame storesDF? A. storesDF.createOrReplaceTempView() spark.sql(\"SELECT storeId, managerName FROM stores\") B. storesDF.query(”SELECT storeid, managerName from stores\") C. spark.createOrReplaceTempView(\"storesDF\") storesDF.sql(\"SELECT storeId, managerName from stores\") D. storesDF.createOrReplaceTempView(\"stores\") spark.sql(\"SELECT storeId, managerName FROM stores\") E. storesDF.createOrReplaceTempView(\"stores\") storesDF.query(\"SELECT storeId, managerName FROM stores\")",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should adjust the number of partitions used in wide transformations like join() to 32. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__(__2__, __3__) A. 1. spark.conf.get 2. \"spark.sql.shuffle.partitions\" 3. \"32\" B. 1. spark.conf.set 2. \"spark.default.parallelism\" 3. 32 C. 1. spark.conf.text 2. \"spark.default.parallelism\" 3. \"32\" D. 1. spark.conf.set 2. \"spark.default.parallelism\" 3. \"32\" E. 1. spark.conf.set 2. \"spark.sql.shuffle.partitions\" 3. \"32\"",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame containing a column openDateString, a string representation of Java’s SimpleDateFormat? Note that column openDate is of type integer and represents a date in the UNIX epoch format — the number of seconds since midnight on January 1st, 1970. An example of Java's SimpleDateFormat is \"Sunday, Dec 4, 2008 1:05 pm\". A sample of storesDF is displayed below: A. storesDF.withColumn(\"openDatestring\", from unixtime(col(\"openDate“), “EEEE, MMM d, yyyy h:mm a\")) B. storesDF.withColumn(\"openDateString\", from_unixtime(col(\"openDate“), \"EEEE, MMM d, yyyy h:mm a\", TimestampType())) C. storesDF.withColumn(\"openDateString\", date(col(\"openDate\"), \"EEEE, MMM d, yyyy h:mm a\")) D. storesDF.newColumn(col(\"openDateString\"), from_unixtime(\"openDate\", \"EEEE, MMM d, yyyy h:mm a\")) E. storesDF.withColumn(\"openDateString\", date(col(\"openDate“), \"EEEE, MMM d, yyyy h:mm a\", TimestampType))",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame that is the result of a cross join between DataFrame storesDF and DataFrame employeesDF? A. storesDF.crossJoin(employeesDF) B. storesDF.join(employeesDF, \"storeId\", \"cross\") C. crossJoin(storesDF, employeesDF) D. join(storesDF, employeesDF, \"cross\") E. storesDF.join(employeesDF, \"cross\")",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame that is the result of a position-wise union between DataFrame storesDF and DataFrame acquiredStoresDF? A. storesDF.unionByName(acquiredStoresDF) B. unionAll(storesDF, acquiredStoresDF) C. union(storesDF, acquiredStoresDF) D. concat(storesDF, acquiredStoresDF) E. storesDF.union(acquiredStoresDF)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In what order should the below lines of code be run in order to read a parquet at the file path filePath into a DataFrame? Lines of code: 1. storesDF 2. .load(filePath, source = \"parquet\") 3. .read \\ 4. spark \\ 5. .read() \\ 6. .parquet(filePath) A. 1, 5, 2 B. 4, 5, 2 C. 4, 3, 6 D. 4, 5, 6 E. 4, 3, 2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should read a CSV at the file path filePath into a DataFrame with the specified schema schema. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__.__3__(__4__).format(\"csv\").__5__(__6__) A. 1. spark 2. read() 3. schema 4. schema 5. json 6. filePath B. 1. spark 2. read() 3. schema 4. schema 5. load 6. filePath C. 1. spark 2. read 3. format 4. \"json\" 5. load 6. filePath D. 1. spark 2. read() 3. json 4. filePath 5. format 6. schema E. 1. spark 2. read 3. schema 4. schema 5. load 6. filePath",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following describes slots? A. Slots are the most coarse level of execution in the Spark execution hierarchy. B. Slots are resource threads that can be used for parallelization within a Spark application. C. Slots are resources that are used to run multiple Spark applications at once on a single cluster. D. Slots are the most granular level of execution in the Spark execution hierarchy. E. Slots are unique segments of data from a DataFrame that are split up by row.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following operations is least likely to result in a shuffle? A. DataFrame.join() B. DataFrame.fliter() C. DataFrame.orderBy() D. DataFrame.distinct() E. DataFrame.intersect()",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following cluster configurations is least likely to experience delays due to garbage collection of a large DataFrame? Note: each configuration has roughly the same compute power using 100GB of RAM and 200 cores. A. Scenario #4 B. Scenario #1 C. Scenario #5 D. More information is needed to determine an answer. E. Scenario #6",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame where column productСategories only has one word per row, resulting in a DataFrame with many more rows than DataFrame storesDF. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. A sample of storesDF is displayed below: Code block: storesDF.__1__(__2__, __3__(__4__(__5__))) A. 1. newColumn 2. \"productCategories\" 3. col 4. split 5. \"productCategories\" B. 1. withColumn 2. \"productCategory\" 3. split 4. col 5. \"productCategories\" C. 1. withColumn 2. \"productCategory\" 3. explode 4. col 5. \"productCategories\" D. 1. newColumn 2. \"productCategory\" 3. explode 4. col 5. \"productCategories\" E. 1. withColumn 2. \"productCategories\" 3. explode 4. col 5. \"productCategories\"",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame with column storeReview where the pattern \"End\" has been removed from the end of column storeReview in DataFrame storesDF? A sample DataFrame storesDF is below: A. storesDF.withColumn(\"storeReview\", col(\"storeReview\").regexp_replace(\" End$\", \"\")) B. storesDF.withColumn(\"storeReview\", regexp_replace(col(\"storeReview\"), \" End$\", \"\")) C. storesDF.withColumn(\"storeReview”, regexp_replace(col(\"storeReview\"), \" End$\")) D. storesDF.withColumn(\"storeReview\", regexp_replace(\"storeReview\", \" End$\", \"\")) E. storesDF.withColumn(\"storeReview\", regexp_extract(col(\"storeReview\"), \" End$\", \"\"))",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame where rows in DataFrame storesDF containing at least one missing value have been dropped. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: StoresDF.__1__.__2__(__3__ = __4__) A. 1. na 2. drop 3. subset 4. \"any\" B. 1. na 2. drop 3. how 4. \"all\" C. 1. na 2. drop 3. subset 4. \"all\" D. 1. na 2. drop 3. how 4. \"any\" E. 1. drop 2. na 3. how 4. \"any\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following operations calculates the simple average of a group of values, like a column? A. simpleAvg() B. mean() C. agg() D. average() E. approxMean()",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks fails to return the number of rows in DataFrame storesDF for each distinct combination of values in column division and column storeCategory? A. storesDF.groupBy((col(\"division\"), col(\"storeCategory\")]).count() B. storesDF.groupBy(\"division\").groupBy(\"storeCategory\").count() C. storesDF.groupBy([\"division\", \"storeCategory\"]).count() D. storesDF.groupBy(\"division\", \"storeCategory\").count() E. storesDF.groupBy(col(\"division“), col(\"storeCategory\")).count()",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a collection of summary statistics for column sqft in Data Frame storesDF. Identify the error. Code block: storesDF.describes(col(\"sgft \")) A. The describe() operation doesn't compute summary statistics for a single column — the summary() operation should be used instead. B. The column sqft should be subsetted from DataFrame storesDF prior to computing summary statistics on it alone. C. The describe() operation does not accept a Column object as an argument outside of a list — the list [col(\"sqft\")] should be specified instead. D. The describe() operation does not accept a Column object as an argument — the column name string \"sqft\" should be specified instead. E. The describe() operation doesn't compute summary statistics for numeric columns — the sumwary() operation should be used instead.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should return a 25 percent sample of rows from DataFrame storesDF with reproducible results. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: StoresDF.__1__(__2__ = __3__, __4__ = __5__) A. 1. sample 2. fraction 3. 0.25 4. seed 5. True B. 1. sample 2. withReplacement 3. True 4. seed 5. True C. 1. sample 2. fraction 3. 0.25 4. seed 5. 1234 D. 1. sample 2. fraction 3. 0.15 4. seed 5. 1234 E. 1. sample 2. withReplacement 3. True 4. seed 5. 1234",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks creates a Python UDF assessPerformanceUDF() using the integer-returning Python function assessPerformance() and applies it to Column customerSatisfaction in DataFrame storesDF? A. assessPerformanceUDF = udf(assessPerformance, IntegerType) storesDF.withColumn(\"result\", assessPerformanceUDF(col(\"customerSatisfaction\"))) B. assessPerformanceUDF = udf(assessPerformance, IntegerType()) storesDF.withColumn(\"result\", assessPerformanceUDF(col(\"customerSatisfaction\"))) C. assessPerformanceUDF - udf(assessPerformance) storesDF.withColumn(\"result\", assessPerformance(col(“customerSatisfaction\"))) D. assessPerformanceUDF = udf(assessPerformance) storesDF.withColumn(\"result\", assessPerformanceUDF(col(\"customerSatisfaction\"))) E. assessPerformanceUDF = udf(assessPerformance, IntegerType()) storesDF.withColumn(\"result\", assessPerformance(col(\"customerSatisfaction\")))",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to create a single-column DataFrame from Python list years which is made up of integers. Identify the error. Code block: spark.createDataFrame(years, IntegerType) A. The column name must be specified. B. The years list should be wrapped in another list like [years] to make clear that it is a column rather than a row. C. There is no createDataFrame operation in spark. D. The IntegerType call must be followed by parentheses. E. The IntegerType call should not be present — Spark can tell that list years is full of integers.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below should return a DataFrame containing a column openDateString, a string representation of Java’s SimpleDateFormat. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Note that column openDate is of type integer and represents a date in the UNIX epoch format — the number of seconds since midnight on January 1st, 1970. An example of Java’s SimpleDateFormat is \"Sunday, Dec 4, 2008 1:05 pm\". A sample of storesDF is displayed below: Code block: storesDF.__1__(\"openDateString\", __2__(__3__, __4__)) A. 1. withColumn 2. from_unixtime 3. col(\"openDate\") 4. “EEEE, MMM d, yyyy h:mm a\" B. 1. withColumn 2. date_format 3. col(\"openDate\") 4. \"EEEE, mmm d, yyyy h:mm a\" C. 1. newColumn 2. from_unixtinie 3. \"openDate\" 4. \"EEEE, MMM d, yyyy h:mm a\" D. 1. withColumn 2. from_unixtlme 3. col(\"openDate\") 4. SimpleDateFormat E. 1. withColumn 2. from_unixtime 3. col(\"openDate\") 4. \"dw, MMM d, yyyy h:mm a\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following operations can be used to perform a left join on two DataFrames? A. DataFrame.join() B. DataFrame.crossJoin() C. DataFrame.merge() D. DataFrame.leftJoin() E. Standalone join() function",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame that is the result of an inner join between DataFrame storesDF and DataFrame employeesDF on column storeId and column employeeId. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF.join(employeesDF, [__1__ == __2__, __3__ == __4__]) A. 1. storesDF.storeId 2. storesDF.employeeId 3. employeesDF.storeId 4. employeesDF.employeeId B. 1. col(\"storeId\") 2.col(\"storeId\") 3.col(\"employeeId\") 4. col(\"employeeId\") C. 1. storeId 2. storeId 3. employeeId 4. employeeId D. 1. col(\"storeId\") 2. col(\"employeeId\") 3. col(\"employeeId\") 4. col(''storeId\") E. 1. storesDF.storeId 2. employeesDF.storeId 3. storesDF.employeeId 4. employeesDF.employeeId",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should return a new DataFrame that is the result of a position-wise union between DataFrame storesDF and DataFrame acquiredStoresDF. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__(__3__) A. 1. DataFrame 2. union 3. storesDF, acquiredStoresDF B. 1. DataFrame 2. concat 3. storesDF, acqulredStoresDF C. 1. storesDF 2. union 3.acquiredStoresDF D. 1. storesDF 2. unionByName 3. acquiredStoresDF E. 1. DataFrame 2. unionAll 3. storesDF, acquiredStoresDF",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks writes DataFrame storesDF to file path filePath as text files overwriting any existing files in that location? A. storesDF.write(filePath, mode = \"overwrite\", source = \"text\") B. storesDF.write.mode(\"overwrite\").text(filePath) C. storesDF.write.mode(\"overwrite\").path(filePath) D. storesDF.write.option(\"text\", \"overwrite\").path(filePath) E. storesDF.write().mode(\"overwrite\").text(filePath)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to read JSON at the file path filePath into a DataFrame with the specified schema schema. Identify the error. Code block: spark.read.schema(\"schema\").format(\"json\").load(filePath) A. The schema operation from read takes a schema object rather than a string — the argument should be schema. B. There is no load() operation for DataFrameReader — it should be replaced with the json() operation. C. The spark.read operation should be followed by parentheses in order to return a DataFrameReader object. D. There is no read property of spark — spark should be replaced with DataFrame. E. The schema operation from read takes a column rather than a string — the argument should be col(\"schema\").",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following describes executors? A. Executors are the communication pathways from the driver node to the worker nodes. B. Executors are the most granular level of execution in the Spark execution hierarchy. C. Executors always have a one-to-one relationship with worker nodes. D. Executors are synonymous with worker nodes. E. Executors are processing engine instances for performing data computations which run on a worker node.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should return a DataFrame containing only the rows from DataFrame storesDF where the value in column sqft is less than or equal to 25,000 AND the value in column customerSatisfaction is greater than or equal to 30. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: storesDF.__1__(__2__ __3__ __4__) A. 1. filter 2. (col(\"sqft\") <= 25000) 3. & 4. (col(\"customerSatisfaction\") >= 30) B. 1. filter 2. (col(\"sqft\") <= 25000 3. & 4. col(\"customerSatisfaction\") >= 30 C. 1. filter 2. (col(\"sqft\") <= 25000) 3. and 4. (col(\"customerSatisfaction\") >= 30) D. 1. drop 2. (col(sqft) <= 25000) 3. & 4. (col(customerSatisfaction) >= 30) E. 1. filter 2. col(\"sqft\") <= 25000 3. and 4. col(\"customerSatisfaction\") >= 30",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame with column storeSlogan where single quotes in column storeSlogan in DataFrame storesDF have been replaced with double quotes? A sample of DataFrame storesDF is below: A. storesDF.withColumn(\"storeSlogan\", col(\"storeSlogan\").regexp_replace(\"’\" \"\\\"\")) B. storesDF.withColumn(\"storeSlogan\", regexp_replace(col(\"storeSlogan\"), \"’\")) C. storesDF.withColumn(\"storeSlogan\", regexp_replace(col(\"storeSlogan\"), \"’\", \"\\\"\")) D. storesDF.withColumn(\"storeSlogan\", regexp_replace(\"storeSlogan\", \"’\", \"\\\"\")) E. storesDF.withColumn(\"storeSlogan\", regexp_extract(col(\"storeSlogan\"), \"’\", \"\\\"\"))",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following operations can be used to rename and replace an existing column in a DataFrame? A. DataFrame.renamedColumn() B. DataFrame.withColumnRenamed() C. DataFrame.wlthColumn() D. col() E. DataFrame.newColumn()",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The code block shown below should print the schema of DataFrame storesDF. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__(__3__) A. 1. storesDF 2. schema 3. Nothing B. 1. storesDF 2. str 3. schema C. 1. storesDF 2. printSchema 3. True D. 1. storesDF 2. printSchema 3. Nothing E. 1. storesDF 2. printSchema 3. \"all\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to create and register a SQL UDF named \"ASSESS_PERFORMANCE\" using the Python function assessPerformance() and apply it to column customerSatistfaction in table stores. Identify the error. Code block: spark.udf.register(\"ASSESS_PERFORMANCE\", assessPerformance) spark.sql(\"SELECT customerSatisfaction, assessPerformance(customerSatisfaction) AS result FROM stores\") A. There is no sql() operation — the DataFrame API must be used to apply the UDF assessPerformance(). B. The order of the arguments to spark.udf.register() should be reversed. C. The customerSatisfaction column cannot be called twice inside the SQL statement. D. Registered UDFs cannot be applied inside of a SQL statement. E. The wrong SQL function is used to compute column result — it should be ASSESS_PERFORMANCE instead of assessPerformance.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks attempts to cache the partitions of DataFrame storesDF only in Spark’s memory? A. storesDF.cache(StorageLevel.MEMORY_ONLY).count() B. storesDF.persist().count() C. storesDF.cache().count() D. storesDF.persist(StorageLevel.MEMORY_ONLY).count() E. storesDF.persist(\"MEMORY_ONLY\").count()",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following operations will always return a new DataFrame with updated partitions from DataFrame storesDF by inducing a shuffle? A. storesDF.coalesce() B. storesDF.rdd.getNumPartitions() C. storesDF.repartition() D. storesDF.union() E. storesDF.intersect()",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame containing a column month, an integer representation of the month from column openDate from DataFrame storesDF? Note that column openDate is of type integer and represents a date in the UNIX epoch format — the number of seconds since midnight on January 1 st, 1970. A sample of storesDF is displayed below: A. storesDF.withColumn(\"month\", getMonth(col(\"openDate\"))) B. storesDF.withColumn(\"month\", substr(col(\"openDate\"), 4, 2)) C. (storesDF.withColumn(\"openDateFormat\", col(\"openDate\").cast(\"Date\")) .withColumn(\"month\", month(col(\"openDateFormat\")))) D. (storesDF.withColumn(\"openTimestamp\", col(\"openDate\").cast(\"Timestamp\")) .withColumn(\"month\", month(col(\"openTimestamp\")))) E. storesDF.withColumn(\"month\", month(col(\"openDate\")))",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below should read a parquet at the file path filePath into a DataFrame. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: __1__.__2__.__3__(__4__) A. 1.spark 2. read() 3. parquet 4. filePath B. 1. spark 2. read() 3. load 4. filePath C. 1. spark 2. read 3. load 4. filePath, source = \"parquet\" D. 1. storesDF 2. read() 3. load 4. filePath E. 1. spark 2. read 3. load 4. filePath",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following statements describing a difference between transformations and actions is incorrect? A. There are wide and narrow transformations but there are not wide and narrow actions. B. Transformations do not trigger execution while actions do trigger execution. C. Transformations work on DataFrames/Datasets while actions are reserved for native language objects. D. Some actions can be used to return data objects in a format native to the programming language being used to access the Spark API while transformations do not provide this ability. E. Transformations are typically logic operations while actions are typically focused on returning results.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following describes why garbage collection in Spark is important? A. Logical results will be incorrect if inaccurate data is not collected and removed from the Spark job. B. Spark jobs will fail or run slowly if inaccurate data is not collected and removed from the Spark job. C. Spark jobs will fail or run slowly if memory is not available for new objects to be created. D. Spark jobs will produce inaccurate results if there are too many different transformations called before a single action. E. Spark jobs will produce inaccurate results if memory is not available for new tasks to run and complete.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame where rows in DataFrame storesDF containing missing values in every column have been dropped? A. storesDF.na.drop() B. storesDF.dropna() C. storesDF.na.drop(\"all\", subset = \"sqft\") D. storesDF.na.drop(\"all\") E. storesDF.nadrop(\"all\")",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame where column productCategories only has one word per row, resulting in a DataFrame with many more rows than DataFrame storesDF. Identify the error and how to fix it. A sample of storesDF is displayed below: storesDF.withColumn(\"productCategories\", split(col(\"productCategories\"))) A. The split() operation does not accomplish the requested task in the way that it is used. It should be used provided an alias. B. The split() operation does not accomplish the requested task. The broadcast() operation should be used instead. C. The split() operation does not accomplish the requested task in the way that it is used. It should be used as a column object method instead. D. The split() operation does not accomplish the requested task. The explode() operation should be used instead. E. The split() operation does not accomplish the requested task. The array_distinct() operation should be used instead.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame where column managerName from DataFrame storesDF is split at the space character into column managerFirstName and column managerLastName? A sample of DataFrame storesDF is displayed below: A. (storesDF.withColumn(\"managerFirstName\", split(col(\"managerName\"), \" \")[0]) .withColumn(\"managerLastName\", split(col(\"managerName\"), \" \")[1])) B. (storesDF.withColumn(\"managerFirstName\", col(\"managerName\"). split(\" \")[1]) .withColumn(\"managerLastName\", col(\"managerName\").split(\" \")[2])) C. (storesDF.withColumn(\"managerFirstName\", split(col(\"managerName\"), \" \")[1]) .withColumn(\"managerLastName\", split(col(\"managerName\"), \" \")[2])) D. (storesDF.withColumn(\"managerFirstName\", col(\"managerName\").split(\" \")[0]) .withColumn(\"managerLastName\", col(\"managerName\").split(\" \")[1])) E. (storesDF.withColumn(\"managerFirstName\", split(\"managerName\"), \" \")[0]) .withColumn(\"managerLastName\", split(\"managerName\"), \" \")[1]))",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following cluster configurations will fail to ensure completion of a Spark application in light of a worker node failure? Note: each configuration has roughly the same compute power using 100GB of RAM and 200 cores. A. Scenario #5 B. Scenario #4 C. Scenario #6 D. Scenario #1 E. They should all ensure completion because worker nodes are fault tolerant",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame where column managerName from DataFrame storesDF has had its missing values replaced with the value \"No Manager\"? A sample of DataFrame storesDF is below: A. storesDF.na.fill(\"No Manager\", \"managerName\") B. storesDF.nafill(\"No Manager\", col(\"managerName\")) C. storesDF.na.fill(\"No Manager\", col(\"managerName\")) D. storesDF.fillna(\"No Manager\", col(\"managerName\")) E. storesDF.nafill(\"No Manager\", \"managerName\")",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following code blocks prints the schema of DataFrame storesDF? A. print(storesDF) B. storesDF.printSchema() C. print(storesDF.schema()) D. storesDF.schema E. storesDF.schema()",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following code blocks returns a DataFrame containing only the rows from DataFrame storesDF where the value in column sqft is less than or equal to 25,000 AND the value in column customerSatisfaction is greater than or equal to 30? A. storesDF.filter(col(\"sqft\") <= 25000 and col(\"customerSatisfaction\") >= 30) B. storesDF.filter(col(sqft) <= 25000 & col(customerSatisfaction) >= 30) C. storesDF.filter(col(\"sqft\") <= 25000 & col(\"customerSatisfaction\") >= 30) D. storesDF.filter((col(\"sqft\") <= 25000) & (col(\"customerSatisfaction\") >= 30)) E. storesDF.filter(sqft <= 25000 and customerSatisfaction >= 30)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The code block shown below should return a new 4-partition DataFrame from the 8-partition DataFrame storesDF without inducing a shuffle. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: _1_._2_(_3_) A. 1. storesDF 2. coalesce 3. Nothing B. 1. storesDF 2. coalesce 3. 4 C. 1. storesDF 2. coalesce 3. 4, \"storeId\" D. 1. storesDF 2. coalesce 3. \"storeId\"",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements about Spark DataFrames is incorrect? A. Spark DataFrames are the same as a data frame in Python or R. B. Spark DataFrames are built on top of RDDs. C. Spark DataFrames are immutable. D. Spark DataFrames are distributed. E. Spark DataFrames have common Structured APIs.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "The code block shown below contains an error. The code block intended to return a new DataFrame that is the result of an outer join between DataFrame storesDF and DataFrame employeesDF on column storeId. Identify the error. Code block: storesDF.join(employeesDF, \"storeId\") A. The default argument to the how parameter is \"inner\" – an additional argument of \"outer\" must be specified. B. The key column storeId needs to be wrapped in the col() operation. C. The key column storeId needs to be specified in an expression of both Data Frame columns like storesDF.storeId == employeesDF.storeId. D. The key column storeId needs to be in a list like [\"storeId\"]. E. There is no DataFrame.join() operation – DataFrame.merge() should be used instead.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following code blocks returns a new DataFrame with the mean of column sqft from DataFrame storesDF in column sqftMean? A. storesDF.withColumn(mean(col(\"sqft\")).alias(\"sqftMean\")) B. storesDF.agg(col(\"sqft\").mean().alias(\"sqftMean\")) C. storesDF.agg(mean(\"sqft\").alias(\"sqftMean\")) D. storesDF.agg(mean(col(\"sqft\")).alias(\"sqftMean\")) E. storesDF.withColumn(\"sqftMean\", mean(col(\"sqft\")))",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following code blocks fails to return a DataFrame sorted alphabetically based on column division? A. storesDF.sort(asc(\"division\")) B. storesDF.orderBy([\"division\"], ascending = [1]) C. storesDF.orderBy(col(\"division\").desc()) D. storesDF.orderBy(\"division\") E. storesDF.sort(\"division\")",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "If Spark is running in cluster mode, which of the following statements about nodes is incorrect? A. The Spark driver runs in its own node without any executors. B. Each executor is a running processing engine inside of a worker node. C. There may be more executors than total nodes or more total nodes than executors. D. There is always more than one node. E. There is a single node that contains the Spark driver and the executors.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "The code block shown below should create a Python UDF assessPerformanceUDF using the Python function assessPerformance() and apply it to column customerSatisfaction in DataFrame storesDF. Choose the response that correctly fills in the numbered blanks within the code block to complete this task. Code block: assessPerformanceUDF = _1_(_2_) storesDF.withColumn(“result”, _3_(_4_)) A. 1. udf 2. assessPerformance, IntegerType() 3. assessPerformanceUDF 4. col(“customerSatisfaction”) B. 1. udf 2. assessPerformance 3. assessPerformanceUDF 4. col(“customerSatisfaction”) C. 1. spark.register.udf 2. assessPerformanceUDF 3. assessPerformance 4. col(“customerSatisfaction”) D. 1. spark.register.udf 2. assessPerformance, IntegerType() 3. assessPerformanceUDF 4. col(“customerSatisfaction”) E. 1. spark.register.udf 2. assessPerformance 3. assessPerformanceUDF 4. “customerSatisfaction”",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A developer needs to produce a Python dictionary using data stored in a small Parquet table, which looks like this: The resulting Python dictionary must contain a mapping of region –> region_id containing the smallest 3 region_id values. Which code fragment meets the requirements? A. regions = dict( regions_df \\ .select(‘region’, ‘region_id’) \\ .sort(‘region_id’) \\ .take(3) ) B. regions = dict( regions_df \\ .select(‘region_id’, ‘region’) \\ .sort(‘region_id’) \\ .take(3) ) C. regions = dict( regions_df \\ .select(‘region_id’, ‘region’) \\ .limit(3) \\ .collect() ) D. regions = dict( regions_df \\ .select(‘region’, ‘region_id’) \\ .sort(desc(‘region_id’)) \\ .take(3) )",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Spark engineer is troubleshooting a Spark application that has been encountering out-of-memory errors during execution. By reviewing the Spark driver logs, the engineer notices multiple “GC overhead limit exceeded” messages. Which action should the engineer take to resolve this issue? A. Optimize the data processing logic by repartitioning the DataFrame. B. Modify the Spark configuration to disable garbage collection. C. Increase the memory allocated to the Spark Driver. D. Cache large DataFrames to persist them in memory.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data engineer is asked to build an ingestion pipeline for a set of parquet files delivered by an upstream team on a nightly basis. The data is stored in a directory structure with a base path of “/path/events/data”. The upstream team drops daily data into the underlying subdirectories following the convention year/month/day. A few examples of the directory structure are: Which of the following code snippets will read all the data within the directory structure? A. df = spark.read.option(“inferSchema”, “true”).parquet(“/path/evets/data/”) B. df = spark.read.option(“recursiveFileLookup”, “true”).paquet(“/path/events/data/”) C. df = spark.read.parquet(“/path/events/data/*”) D. df = spark.read.parquet(“/path/events/data/”)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Spark developer wants to improve the performance of an existing PySpark UDF that runs a hash function that is not available in the standard Spark functions library. The existing UDF code is: The developer wants to replace this existing UDF with a Pandas UDF to improve performance. The developer changes the definition of shake_256_udf to this: shake_256_udf = sf.pandas_udf(shake_256, StringType()) However, the developer receives the error: [UNSUPPORTED_SIGNATURE] Unsupported signature: (raw: str) –> str. What should the signature of the shake_256() function be changed to in order to fix this error? A. def shake 256(df: pd.Series) –> str: B. def shake_256(df: Iterator[pd.Series]) –> Iterator[pd.Series]: C. def shake 256(raw: str) –> str: D. def shake_256(df: pd.Series) –> pd.Series:",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Developer is working with a pandas DataFrame containing user behaviour data from a web application. Which approach should be used for executing groupby operation in parallel across all workers of Apache Spark 3.5? A. Use the applyInPandas API: import pandas as pd def mean_func(key, pdf): return pd.DataFrame([(key + (pdf['value'].mean(),)]) df .groupby (‘user_id') .applyInPandas (mean_func, schema= “user_id long, value double\") .show() B. Utilize the mapInPandas API: def mean_func(pdf_iter): for pdf in pdf_iter: yield pdf.groupby(‘user_id’).agg({‘value’: ‘mean’}).reset_index() df.mapInPandas(mean_func, schema=”user_id long, value double”).show() C. Use a regular Spark UDF (User-Defined Function): from pyspark.sql.functions import men df.groupBy (‘user_id’).agg(mean(‘value’)).show() D. Create a Pandas UDF (User-Defined Function): from pyspark.sql.functions import pandas_udf @pandas_udf(“double”) def mean_func(value: pd.Series) –> float: return value.mean() df.groupby(“user_id”).agg(mean_func(df[‘value’])).show()",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data engineer has been asked to produce a Parquet table which is overwritten every day with the latest data. The downstream consumer of this Parquet table has a hard requirement that the data in this table is produced with all records sorted by the market_time field. Which line of Spark code will produce a Parquet table that meets these requirements? A. final_df \\ .sort (\"market_time\") \\ .write \\ .format (\"parquet\") \\ .mode (\"overwrite\") \\ .saveAsTable (\"output .market_events\") B. final_df \\ .orderBy(\"market_time\") \\ .write \\ .format (\"parquet\") \\ .mode (\"overwrite\") \\ .saveAsTable (\"output .market_events\") C. final_df \\ .sort (\"market_time\") \\ .coalesce(1) \\ .write \\ .format (\"parquet\") \\ .mode (\"overwrite\") \\ .saveAsTable (\"output .market_events\") D. final_df \\ .sortWithinPartitions(\"market_time\") \\ .write \\ .format (\"parquet\") \\ .mode (\"overwrite\") \\ .saveAsTable (\"output .market_events\")",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In the code block below, aggDf contains aggregations on a streaming DataFrame. Which output mode at line 3 ensures that the entire result table is written to the console during each trigger execution? A. complete B. append C. replace D. aggregate",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data engineer is running a Batch processing job on Spark Cluster with the following configuration: • 10 worker nodes • 16 CPU cores per worker node • 64 GB RAM per node The data engineer wants to allocate four executors per node, each executor using four cores. What is the total number of CPU cores used by the application? A. 160 B. 64 C. 80 D. 40",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer wants to test Spark Connect with an existing Spark application. What are the two alternative ways the developer can start a local Spark Connect server without changing their existing application code? (Choose two.) A. Execute their pyspark shell with the option --remote \"https: //localhost\" B. Execute their pyspark shell with the option --remote \"sc: //localhost” C. Set the environment variable SPARK_REMOTE=\"sc://localhost” before starting the pyspark shell D. Add .remote (\"sc://localhost\") to their SparkSession.builder calls in their Spark code E. Ensure the spark property spark.connect.grpc.binding.port is set to 15002 in the application code",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Spark developer is developing a Spark application to monitor task performance across a cluster. One of the application’s requirements is to track the maximum processing time for tasks on each worker node and consolidate this information on the driver for further analysis. Which technique should the developer use to achieve this? A. Use an RDD action like reduce () to compute the maximum time. B. Use an accumulator to record the maximum time on the driver. C. Broadcast a variable to share the maximum time among workers. D. Configure the Spark UI to automatically collect maximum times.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which UDF implementation calculates the length of strings in a Spark DataFrame? A. df.withcolumn(\"length\", spark.udf(\"len\", StringType())) B. df.select(length (col(\"stringColumn\")) -alias(\"Length\")) C. spark.udf.register(\"stringLength\", lambda s: len(s)) D. df.withcolumn(\"length\", udf(lambda s: len(s), StringType()))",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Data Analyst is working on the sensor_df; this data frame contains two columns: a record_datetime: timestamp and record: array . Which code fragment returns a DataFrame that splits the record column into separate columns and has one array item per row? A. exploded_df = sensor_df.withColumn (“record_exploded”, explode(“record”)) exploded_df = exploded_df.select( \"record datetime\", “sensor_id\", \"status\", \"health\" ) exploded_df = sensor_df.withColumn (\"record exploded\", col (\"record\")) B. exploded_df = exploded_df.select( \"record datetime\", “record_exploded.sensor_id\", \"record_exploded.status\", \"record_exploded.health\" ) exploded_df = sensor_df.withColumn (\"record exploded\", explode(\"record\")) C. exploded_df = exploded_df.select( \"record datetime\", “record_exploded.sensor_id\", \"record_exploded.status\", \"record_exploded.health\" ) exploded_df = sensor_df.withColumn (\"record exploded\", explode(\"record\")) D. exploded_df = exploded_df.select(“record_datetime”, “record_exploded”)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data engineer is building a Structured Streaming pipeline that streams data from a Kafka topic. While the priority is to have it run at a minimal latency, the engineer also wants to maintain an Exactly-Once processing guarantee in the pipeline. Which trigger mode should the engineer use for their writeStream? A. .trigger(processingTime='1 second') B. .trigger(continuous=True) C. .trigger(continuous='1 second') D. .trigger(availableNow=True)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a feature of Spark Connect? A. It supports DataStreamReader,DataStreamWriter,StreamingQuery Streaming APIs. B. Supports DataFrame, Functions, Column, SparkContext PySpark APIs. C. It supports only PySpark applications. D. It has built-in authentication.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data scientist is working on a large dataset in Apache Spark using PySpark. The data scientist has a DataFrame df with columns ‘user_id’, 'product_id’, and ‘purchase_amount’ and needs to perform some operations on this data efficiently. Which sequence of operations results in transformations that require shuffle followed by transformations that do not? A. df.filter(df.purchase_amount > 100).groupBy(\"user_id\").sum(\"purchase_amount\") B. df.withcolumn(\"discount\", df.purchase_amount * 0.1).select (\"discount\") C. df.withcolumn(\"purchase_date\", current_date()).where(\"total_purchase > 50\") D. df.groupBy(\"user_id\").agg (sum (\"purchase_amount\").alias(\"total_purchase\")).repartition(10)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Spark engineer must select an appropriate deployment mode for the Spark jobs. What is the benefit of using cluster mode in Apache Spark™? A. In cluster mode, resources are allocated from a resource manager on the cluster, enabling better performance and scalability for large jobs B. In cluster mode, the driver is responsible for executing all tasks locally without distributing them across the worker nodes. C. In cluster mode, the driver runs on the client machine, which can limit the application’s ability to handle large datasets efficiently. D. In cluster mode, the driver program runs on one of the worker nodes, allowing the application to fully utilize the distributed resources of the cluster.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data engineer wants to create a Streaming DataFrame that reads from a Kafka topic called feed. 1. spark 2. .readStream 3. .format (\"kafka\") 4. .option(\"kafka.bootstrap.servers\", \"host1:port1,host2:port2\") 5. ._____________ 6. .load () Which code fragment should be inserted in line 5 to meet the requirement? A. .option(\"subscribe\", \"feed\") B. .option(\"subscribe.topic\", \"feed\") C. .option(\"kafka.topic\", \"feed\") D. .option(“topic”, “feed”)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data scientist is working on a project that requires processing large amounts of structured data, performing SQL queries, and applying machine learning algorithms. The data scientist is considering using Apache Spark for this task. Which combination of Apache Spark modules should the data scientist use in this scenario? A. Spark DataFrames, Structured Streaming, and Graphx B. Spark SQL, Pandas API on Spark, and Structured Streaming C. Spark Streaming, GraphX, and Pandas API on Spark D. Spark DataFrames, Spark SQL, and MLIib",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data engineer is implementing a streaming pipeline with watermarking to handle late-arriving records. The engineer has written the following code: inputStream .withWatermark (\"event_time\", \"10 minutes\") .groupBy (window (\"event_time\", \"15 minutes\")) .count () What happens to data that arrives after the watermark threshold? A. Records that arrive later than the watermark threshold (10 minutes) will automatically be included in the aggregation if they fall within the 15-minute window. B. Any data arriving more than 10 minutes after the watermark threshold will be ignored and not included in the aggregation. C. Data arriving more than 10 minutes after the latest watermark will still be included in the aggregation but will be placed into the next window. D. The watermark ensures that late data arriving within 10 minutes of the latest event_time will be processed and included in the windowed aggregation.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data scientist wants to ingest a directory full of plain text files so that each record in the output DataFrame contains the entire contents of a single file and the full path of the file the text was read from. The first attempt at the code does read the text files but each record contains a single line. This code is shown below: raw_txt_path = '/datasets/raw_txt/*' corpus = spark.read.text(raw_txt_path)\\ .select (\"*', '_metadata.file path\") Which code change can be implemented in a DataFrame that meets the data scientist’s requirements? A. Add the option wholetext=True to the text() function B. Add the option linesep=\"\\n\" to the text() function C. Add the option wholetext=False to the text() function D. Add the option lineSep=”,” to the text() function",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Spark configuration controls the number of tasks that can run in parallel on the executor? A. spark.executor.cores B. spark.task.maxFailures C. spark.driver.cores D. spark.executor.memory",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A developer wants to refactor some older Spark code in order to take advantage of built-in functions introduced in Spark 3.5.0. The developer comes across the following existing DataFrame code: import pyspark.sql.functions as F min_price = 110.50 result_df = prices_df \\ .filter(F.col(\"spot_price\") >= F.1it(min_price)) \\ .agg(F.count (\"*\")) Which code block should the developer use to refactor the code? A. result_df = prices_df \\ .withColumn(“valid_price”, F.when(F.col(“spot_price”) > F.lit(min_price), 1).otherwise(0)) B. result_df = prices_df \\ .agg(F.count_if(F.col(“spot_price”) >= F.lit(min_price))) C. result_df = prices_df \\ .agg(F.min(“spot_price”), F.max(“spot_price”)) D. result_df = prices_df \\ .agg(F.count(“spot_price”).alias(“spot_price”))\\ .filter(F.col(“spot_price”) > F.it(“min_price”))",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data engineer is optimizing a Spark application that performs the following operations in sequence: 1. Reads data from distributed storage into a DataFrame. 2. Applies a filter transformation to remove certain records. 3. Performs a join operation with another large DataFrame. 4. Applies a groupBy and agg to aggregate data. 5. Writes the result to storage. Which two statements describe how Apache Spark constructs the execution hierarchy for this application? (Choose two.) A. The groupBy and agg operations may cause a shuffle, resulting in additional stages. B. The application will execute as a single job initiated by the write action. C. The DataFrame API eliminates all shuffles through automatic optimization. D. The join operation causes a shuffle, leading to a new stage in the execution plan. E. The filter and join transformations, are executed in the same stage because they are narrow transformations.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data analyst at an e-commerce company needs to process daily sales data. The data consists of approximately 50,000 records stored in a single CSV file, totaling about 20 MB. The analyst needs to perform aggregations and generate a summary report. Which approach could the data analyst use in this situation? A. Deploy a real-time streaming solution using Spark Streaming to process incoming data. B. Use a local Python script with the pandas library to read and analyze the CSV file. C. Implement Apache Spark with a distributed cluster to process the data in parallel. D. Set up a Hadoop ecosystem with HDFS and MapReduce for distributed processing.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Given the code fragment: div_by_2 = my_df.filter(“number % 2 = 0”) print (div_by_2) The output ofthe code fragment is: DataFrame[nunber: bigint] What describes the output for this transformation on the Apache Spark engine? A. The filter transformation triggers an immediate computation and action returning only rows that match the condition. B. All transformations in Spark are lazy, in that they do not compute her results right away. C. After each transformation in Spark the results are processed using an action. D. The filter is an action in Spark it immediately executes the filing operation on my_df and returns the results as div_by_2.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data engineer works with streaming data, where records arrive randomly. The engineer needs to de-duplicate records based on order_id while ensuring that the latest records are kept in the stream. Which strategy should the engineer use for de-duplicating records while considering late-arriving data and imaging memory usage? A. Apply withWatermark() and than use dropDuplicates() on order_id to remove duplicates. B. Use dropDuplicates() on timestamp to remove duplicates based on the most recent timestamp. C. Deduplication is not supported in streaming while accounting to late-arriving data. D. Use dropDuplicates() on order_id without watermarking to remove all duplicates.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What happens if a developer registers two DataFrames with the same view name, myView using the createOrReplaceTempView function? A. Both DataFrames will be accessible under the same view name. B. The DataFrames merged into one under the view name myView. C. An Exception is thrown, indicating a duplicate view named myView. D. The previous view will be replaced by the new DataFrame’s view.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data engineer needs to control the size of micro-batches when running with the option of Available-now micro-batch. Which trigger should the engineer use? A. maxExecutorsPerTrigger B. maxCoresPerTrigger C. maxBytesPerTrigger D. maxFilesPerTrigger",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How does the Directed Acyclic Graph (DAG) represent the execution hierarchy in Apache Spark™? A. It represents the execution of multiple jobs, where each job runs independently of stages and tasks. B. It represents the execution of a job as a series of interdependent stages, each broken into parallel tasks. C. It represents the tasks executed by Spark as individual jobs, with each job containing multiple applications. D. It represents only the final tasks without considering stages or jobs.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data engineer has a PySpark DataFrame named sales_data containing millions of rows. They need to calculate the total sales amount grouped by region using Spark SQL for improved readability and maintainability. Which steps should the data engineer take to achieve this? A. Write the query directly on the DataFrame using PySpark’s ‘groupBy’ and ‘agg’ methods. B. Export the DataFrame as a CSV file, read it into a relational database, and write SQL queries in the database C. Use the ‘createOrReplaceTempView' method to register ‘sales_data’ as a temporary view and write the query in Spark SQL. D. Convert ‘sales _data’ to Pandas DataFrame and use SQL-ike queries with Pandas to achieve the grouping.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data engineer has been inspecting one of their scheduled Spark applications which has started running slowly on the most recent executions. Looking at the query plan the engineer notices that Adaptive Query Execution (AQE) is no longer converting one of their join operations from a sort-merge join to a broadcast join, causing extra shuffling in the Spark job. What explains the change in the behaviour of the application? A. The size of the smallest table has grown larger than the configured threshold where AQE will convert the join to a broadcast join. B. It has been too long since ANALYZE TABLE has been run on the tables and the table statistics are stale. C. A Spark version upgrade has disabled AQE. D. The distribution of the join keys between the two tables has become more skewed over time.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data scientist is working with a massive dataset that exceeds the memory capacity of a single machine. The data scientist is considering using Apache SparkTM instead of processing the data using traditional single-machine programming languages like standard Python scripts. Which two advantages does Apache SparkTM offer over a normal single-machine language in this scenario? (Choose two.) A. It eliminates the need to write any code, automatically handling all data processing. B. It has built-in fault tolerance, allowing it to recover seamlessly from node failures during computation. C. It processes data solely on disk storage, reducing the need for memory resources. D. It can distribute data processing tasks across a cluster of machines, enabling horizontal scalability. E. It requires specialized hardware to run, making it unsuitable for commodity hardware clusters.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data scientist at a large e-commerce company needs to process and analyze 2 TB of daily customer transaction data. The company wants to implement real-time fraud detection and personalized product recommendations. To process their data the company uses a traditional relational database system, which is struggling to handle the increasing data volume and velocity. Which feature of Apache Spark effectively addresses the challenge posed in this scenario? A. Ability to process small datasets efficiently B. Support for SQL queries on structured data C. In-memory computation and parallel processing capabilities D. Built-in machine learning libraries",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data engineer is investigating a Spark cluster that is experiencing underutilization during scheduled batch jobs. After checking the Spark logs, they noticed that tasks are often getting killed due to timeout errors, and there are several warnings about insufficient resources in the logs. Which action should the engineer take to resolve the underutilization issue? A. Increase the executor memory allocation in the Spark configuration. B. Set the spark.network.timeout property to allow tasks more time to complete without being killed. C. Increase the number of executor instances to handle more concurrent tasks. D. Reduce the size of the data partition to improve task scheduling.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data engineer is working on num_df DataFrame: num_df = spark.range(5).toDF(“num”) The engineer is using the Python UDF: def cubefunc(val): return val ** 3 Which code fragment registers and uses this UDF as a Spark SQL function to work with the DataFrame num_df? A. spark.udf.register(“cubeudf”, cubefunc, IntegerType()) num_df.selectExpr(“cubeudf(num)”) B. cubeudf = udf (cubefunc) num_df.select(cubeudf(col(“num”))) C. spark.udf.register(“cubeudf”, cubefunc, DoubleType()) num_df.selectExpr(“cubeudf(num)”) D. cubeudf = udf(cubefunc) num_df.selectExpr(cubeudf(num)”)",
+    "options": {},
+    "most_voted": "A"
+  }
+]
