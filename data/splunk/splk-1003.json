@@ -1,0 +1,882 @@
+[
+  {
+    "question": "Which setting in indexes.conf allows data retention to be controlled by time? A. maxDaysToKeep B. moveToFrozenAfter C. maxDataRetentionTime D. frozenTimePeriodInSecs",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The universal forwarder has which capabilities when sending data? (Choose all that apply.) A. Sending alerts B. Compressing data C. Obfuscating/hiding data D. Indexer acknowledgement",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In case of a conflict between a whitelist and a blacklist input setting, which one is used? A. Blacklist B. Whitelist C. They cancel each other out. D. Whichever is entered into the configuration first.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which Splunk configuration is the SEDCMD used? A. props.conf B. inputs.conf C. indexes.conf D. transforms.conf",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are supported configuration methods to add inputs on a forwarder? (Choose all that apply.) A. CLI B. Edit inputs.conf C. Edit forwarder.conf D. Forwarder Management",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which parent directory contains the configuration files in Splunk? A. $SPLUNK_HOME/etc B. $SPLUNK_HOME/var C. $SPLUNK_HOME/conf D. $SPLUNK_HOME/default",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which forwarder type can parse data prior to forwarding? A. Universal forwarder B. Heaviest forwarder C. Hyper forwarder D. Heavy forwarder",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Splunk component consolidates the individual results and prepares reports in a distributed environment? A. Indexers B. Forwarder C. Search head D. Search peers",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Splunk component distributes apps and certain other configuration updates to search head cluster members? A. Deployer B. Cluster master C. Deployment server D. Search head cluster master",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where should apps be located on the deployment server that the clients pull from? A. $SPLUNK_HOME/etc/apps B. $SPLUNK_HOME/etc/search C. $SPLUNK_HOME/etc/master-apps D. $SPLUNK_HOME/etc/deployment-apps",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "This file has been manually created on a universal forwarder: /opt/splunkforwarder/etc/apps/my_TA/local/inputs.conf [monitor:///var/log/messages] sourcetype=syslog index=syslog A new Splunk admin comes in and connects the universal forwarders to a deployment server and deploys the same app with a new inputs.conf file: /opt/splunk/etc/deployment-apps/my_TA/local/inputs.conf [monitor:///var/log/maillog] sourcetype=maillog index=syslog Which file is now monitored? A. /var/log/messages B. /var/log/maillog C. /var/log/maillog and /var/log/messages D. none of the above",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In which phase of the index time process does the license metering occur? A. Input phase B. Parsing phase C. Indexing phase D. Licensing phase",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You update a props.conf file while Splunk is running. You do not restart Splunk and you run this command: splunk btool props list `\"-debug. What will the output be? A. A list of all the configurations on-disk that Splunk contains. B. A verbose list of all configurations as they were when splunkd started. C. A list of props.conf configurations as they are on-disk along with a file path from which the configuration is located. D. A list of the current running props.conf configurations along with a file path from which the configuration was made.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When running the command shown below, what is the default path in which deploymentserver.conf is created? splunk set deploy-poll deployServer:port A. SPLUNK_HOME/etc/deployment B. SPLUNK_HOME/etc/system/local C. SPLUNK_HOME/etc/system/default D. SPLUNK_HOME/etc/apps/deployment",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The priority of layered Splunk configuration files depends on the file's: A. Owner B. Weight C. Context D. Creation time",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When configuring monitor inputs with whitelists or blacklists, what is the supported method of filtering the lists? A. Slash notation B. Regular expression C. Irregular expression D. Wildcard-only expression",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is required when adding a native user to Splunk? (Choose all that apply.) A. Password B. Username C. Full Name D. Default app",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the minimum required settings when creating a network input in Splunk? A. Protocol, port number B. Protocol, port, location C. Protocol, username, port D. Protocol, IP, port number",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Splunk component requires a Forwarder license? A. Search head B. Heavy forwarder C. Heaviest forwarder D. Universal forwarder",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which optional configuration setting in inputs.conf allows you to selectively forward the data to specific indexer(s)? A. _TCP_ROUTING B. _INDEXER_LIST C. _INDEXER_GROUP D. _INDEXER_ROUTING",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "To set up a network input in Splunk, what needs to be specified? A. File path. B. Username and password. C. Network protocol and port number. D. Network protocol and MAC address.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Splunk forwarder type allows parsing of data before forwarding to an indexer? A. Universal forwarder B. Parsing forwarder C. Heavy forwarder D. Advanced forwarder",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements describe deployment management? (Choose all that apply.) A. Requires an Enterprise license. B. Is responsible for sending apps to forwarders. C. Once used, is the only way to manage forwarders. D. Can automatically restart the host OS running the forwarder.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During search time, which directory of configuration files has the highest precedence? A. $SPLUNK_HOME/etc/system/local B. $SPLUNK_HOME/etc/system/default C. $SPLUNK_HOME/etc/apps/app1/local D. $SPLUNK_HOME/etc/users/admin/local",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Within props.conf, which stanzas are valid for data modification? (Choose all that apply.) A. Host B. Server C. Source D. Sourcetype",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct order of steps in Duo Multifactor Authentication? A. 1. Request Login 2. Connect to SAML server 3. Duo MFA 4. Create User session 5. Authentication Granted 6. Log into Splunk B. 1. Request Login 2. Duo MFA 3. Authentication Granted 4. Connect to SAML server 5. Log into Splunk 6. Create User session C. 1. Request Login 2. Check authentication / group mapping 3. Authentication Granted 4. Duo MFA 5. Create User session 6. Log into Splunk D. 1. Request Login 2. Duo MFA 3. Check authentication / group mapping 4. Create User session 5. Authentication Granted 6. Log into Splunk",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where can scripts for scripted inputs reside on the host file system? (Choose all that apply.) A. $SPLUNK_HOME/bin/scripts B. $SPLUNK_HOME/etc/apps/bin C. $SPLUNK_HOME/etc/system/bin D. $SPLUNK_HOME/etc/apps/<your_app>/bin",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How does the Monitoring Console monitor forwarders? A. By pulling internal logs from forwarders. B. By using the forwarder monitoring add-on. C. With internal logs forwarded by forwarders. D. With internal logs forwarded by deployment server.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What options are available when creating custom roles? (Choose all that apply.) A. Restrict search terms. B. Whitelist search terms. C. Limit the number of concurrent search jobs. D. Allow or restrict indexes that can be searched.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are supported options when configuring optional network inputs? A. Metadata override, sender filtering options, network input queues (quantum queues) B. Metadata override, sender filtering options, network input queues (memory/persistent queues) C. Filename override, sender filtering options, network output queues (memory/persistent queues) D. Metadata override, receiver filtering options, network input queues (memory/persistent queues)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the default character encoding used by Splunk during the input phase? A. UTF-8 B. UTF-16 C. EBCDIC D. ISO 8859",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following enables compression for universal forwarders in outputs.conf? A. [udpout:mysplunk_indexer11] compression=true B. [tcpout] defaultGroup=my_indexers compressed=true C. /opt/splunkforwarder/bin/splunk enable compression D. [tcpount:my_indexers] server=mysplunk_indexer1:9997, mysplunk_indexer2:9997 decompression=false",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "User role inheritance allows what to be inherited from the parent role? (Choose all that apply.) A. Parents B. Capabilities C. Index access D. Search history",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements apply to directory inputs? (Choose all that apply.) A. All discovered text files are consumed. B. Compressed files are ignored by default. C. Splunk recursively traverses through the directory structure. D. When adding new log files to a monitored directory, the forwarder must be restarted to take them into account.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How would you configure your distsearch.conf to allow you to run the search below? sourcetype=access_combined status=200 action=purchase splunk_server_group=HOUSTON A. [distributedSearch:NYC] default = false servers = nyc1:8089, nyc2:8089 [distributedSearch:HOUSTON] default = false servers = houston1:8089, houston2:8089 B. [distributedSearch] servers =nyc1, nyc2, houston1, houston2 [distributedSearch:NYC] default = false servers = nyc1, nyc2 [distributedSearch:HOUSTON] default = false servers = houston1, houston2 C. [distributedSearch] servers =nyc1:8089, nyc2:8089, houston1:8089, houston2:8089 [distributedSearch:NYC] default = false servers = nyc1:8089, nyc2:8089 [distributedSearch:HOUSTON] default = false servers = houston1:8089, houston2:8089 D. [distributedSearch] servers =nyc1:8089; nyc2:80893; houston1:8089; houston2:8089 [distributedSearch:NYC] default = false servers = nyc1:8089; nyc2:8089 [distributedSearch:HOUSTON] default = false servers = houston1:80897706; houston2:80898350",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a valid distributed search group? A. [distributedSearch:Paris] default = false servers = server1, server2 B. [searchGroup:Paris] default = false servers = server1:8089, server2:8089 C. [searchGroup:Paris] default = false servers = server1:9997, server2:9997 D. [distributedSearch:Paris] default = false servers = server1:8089; server2:8089",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Local user accounts created in Splunk store passwords in which file? A. $SPLUNK_HOME/etc/passwd B. $SPLUNK_HOME/etc/authentication C. $SPLUNK_HOME/etc/users/passwd.conf D. $SPLUNK_HOME/etc/users/authentication.conf",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "For single line event sourcetypes, it is most efficient to set SHOULD_LINEMERGE to what value? A. True B. False C. <regex string> D. Newline Character",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which Splunk component does a search head primarily communicate with? A. Indexer B. Forwarder C. Cluster master D. Deployment server",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which layers are involved in Splunk configuration file layering? (Choose all that apply.) A. App context B. User context C. Global context D. Forwarder context",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are methods for adding inputs in Splunk? (Choose all that apply.) A. CLI B. Splunk Web C. Editing inpits.conf D. Editing monitor.conf",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following authentication types requires scripting in Splunk? A. ADFS B. LDAP C. SAML D. RADIUS",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which option accurately describes the purpose of the HTTP Event Collector (HEC)? A. A token-based HTTP input that is secure and scalable and that requires the use of forwarders. B. A token-based HTTP input that is secure and scalable and that does not require the use of forwarders. C. An agent-based HTTP input that is secure and scalable and that does not require the use of forwarders. D. A token-based HTTP input that is insecure and non-scalable and that does not require the use of forwarders.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the difference between the two wildcards ... and * for the monitor stanza in inputs.conf? A. ... is not supported in monitor stanzas. B. There is no difference, they are interchangeable and match anything beyond directory boundaries. C. * matches anything in that specific directory path segment, whereas ... recurses through subdirectories as well. D. ... matches anything in that specific directory path segment, whereas * recurses through subdirectories as well.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What type of data is counted against the Enterprise license at a fixed 150 bytes per event? A. License data B. Metrics data C. Internal Splunk data D. Internal Windows logs",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which valid bucket types are searchable? (Choose all that apply.) A. Hot buckets B. Cold buckets C. Warm buckets D. Frozen buckets",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How do you remove missing forwarders from the Monitoring Console? A. By restarting Splunk. B. By rescanning active forwarders. C. By reloading the deployment server. D. By rebuilding the forwarder asset table.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Splunk indexer operating system platform is supported when sending logs from a Windows universal forwarder? A. Any OS platform. B. Linux platform only. C. Windows platform only. D. None of the above.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the required stanza attributes when configuring the transforms.conf to manipulate or remove events? A. REGEX, DEST, FORMAT B. REGEX, SRC_KEY, FORMAT C. REGEX, DEST_KEY, FORMAT D. REGEX, DEST_KEY, FORMATTING",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following indexes come pre-configured with Splunk Enterprise? (Choose all that apply.) A. _licence B. _internal C. _external D. _thefishbucket",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How often does Splunk recheck the LDAP server? A. Every 5 minutes. B. Each time a user logs in. C. Each time Splunk is restarted. D. Varies based on LDAP_refresh setting.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Where are license files stored? A. $SPLUNK_HOME/etc/secure B. $SPLUNK_HOME/etc/system C. $SPLUNK_HOME/etc/licenses D. $SPLUNK_HOME/etc/apps/licenses",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In which scenario would a Splunk Administrator want to enable data integrity check when creating an index? A. To ensure that hot buckets are still open for writers and have not been forced to roll to a cold state. B. To ensure that configuration files have not been tampered with for auditing and/or legal purposes. C. To ensure that user passwords have not been tampered with for auditing and/or legal purposes. D. To ensure that data has not been tampered with for auditing and/or legal purposes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which Splunk component performs indexing and responds to search requests from the search head? A. Forwarder B. Search peer C. License master D. Search head cluster",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When deploying apps, which attribute in the forwarder management interface determines the apps that clients install? A. App Class B. Client Class C. Server Class D. Forwarder Class",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In this sourcetype definition the MAX_TIMESTAMP_LOOKAHEAD is missing. Which value would fit best? [sshd_syslog] TIME_PREFIX = ^ TIME_FORMAT = %Y-%m-%d %H:%M:%S.%3N %z LINE_BREAKER = ([\\r\\n]+)\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2} SHOULD_LINEMERGE = false TRUNCATE = 0 Event example: 2018-04-13 13:42:41.214 -0500 server sshd[26219]: Connection from 172.0.2.60 port 47366 A. MAX_TIMESTAMP_LOOKAHEAD = 5 B. MAX_TIMESTAMP_LOOKAHEAD = 10 C. MAX_TIMESTAMP_LOOKAHEAD = 20 D. MAX_TIMESTAMP_LOOKAHEAD = 30",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following are required when defining an index in indexes.conf? (Choose all that apply.) A. coldPath B. homePath C. frozenPath D. thawedPath",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following apply to how distributed search works? (Choose all that apply.) A. The search head dispatches searches to the peers. B. The search peers pull the data from the forwarders. C. Peers run searches in parallel and return their portion of results. D. The search head consolidates the individual results and prepares reports.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What hardware attribute would you need to be changed to increase the number of simultaneous searches (ad-hoc and scheduled) on a single search head? A. Disk B. CPUs C. Memory D. Network interface cards",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "With authentication methods are natively supported within Splunk Enterprise? (Choose all that apply.) A. LDAP B. SAML C. RADIUS D. Duo Multifactor Authentication",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which configuration files are used to transform raw data ingested by Splunk? (Choose all that apply.) A. props.conf B. inputs.conf C. rawdata.conf D. transforms.conf",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What conf file needs to be edited to set up distributed search groups? A. props.conf B. search.conf C. distsearch.conf D. distibutedsearch.conf",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "After configuring a universal forwarder to communicate with an indexer, which index can be checked via the Splunk Web UI for a successful connection? A. index=main B. index=test C. index=summary D. index=_internal",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following are available input methods when adding a file input in Splunk Web? (Choose all that apply.) A. Index once. B. Monitor interval. C. On-demand monitor. D. Continuously monitor.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which is a valid stanza for a network input? A. [udp://172.16.10.1:9997] connection = dns sourcetype = dns B. [any://172.16.10.1:10001] connection_host = ip sourcetype = web C. [tcp://172.16.10.1:9997] connection_host = web sourcetype = web D. [tcp://172.16.10.1:10001] connection_host = dns sourcetype = dns",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which additional component is required for a search head cluster? A. Deployer B. Cluster Master C. Monitoring Console D. Management Console",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When are knowledge bundles distributed to search peers? A. After a user logs in. B. When Splunk is restarted. C. When adding a new search peer. D. When a distributed search is initiated.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Assume a file is being monitored and the data was incorrectly indexed to an exclusive index. The index is cleaned and now the data must be reindexed. What other index must be cleaned to reset the input checkpoint information for that file? A. _audit B. _checkpoint C. _introspection D. _thefishbucket",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "If an update is made to an attribute in inputs.conf on a universal forwarder, on which Splunk component would the fishbucket need to be reset in order to reindex the data? A. Indexer B. Forwarder C. Search head D. Deployment server",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can native authentication be disabled in Splunk? A. Remove the $SPLUNK_HOME/etc/passwd file B. Create an empty $SPLUNK_HOME/etc/passwd file C. Set SPLUNK_AUTHENTICATION=false in splunk-launch.conf D. Set nativeAuthentication=false in authentication.conf",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The volume of data from collecting log files from 50 Linux servers and 200 Windows servers will require multiple indexers. Following best practices, which types of Splunk component instances are needed? A. Indexers, search head, universal forwarders, license master B. Indexers, search head, deployment server, universal forwarders C. Indexers, search head, deployment server, license master, universal forwarder D. Indexers, search head, deployment server, license master, universal forwarder, heavy forwarder",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following configuration files are used with a universal forwarder? (Choose all that apply.) A. inputs.conf B. monitor.conf C. outputs.conf D. forwarder.conf",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "On the deployment server, administrators can map clients to server classes using client filters. Which of the following statements is accurate? A. The blacklist takes precedence over the whitelist. B. The whitelist takes precedence over the blacklist. C. Wildcards are not supported in any client filters. D. Machine type filters are applied before the whitelist and blacklist.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which configuration file would be used to forward the Splunk internal logs from a search head to the indexer? A. props.conf B. inputs.conf C. outputs.conf D. collections.conf",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When configuring HTTP Event Collector (HEC) input, how would one ensure the events have been indexed? A. Enable indexer acknowledgment. B. Enable forwarder acknowledgment. C. splunk check-integrity -index <index name> D. index=_internal component=ACK | stats count by host",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the valid option for a [monitor] stanza in inputs.conf? A. enabled B. datasource C. server_name D. ignoreOlderThan",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a benefit of distributed search? A. Peers run search in sequence. B. Peers run search in parallel. C. Resilience from indexer failure. D. Resilience from search head failure.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The CLI command splunk add forward-server indexer:<receiving-port> will create stanza(s) in which configuration file? A. inputs.conf B. indexes.conf C. outputs.conf D. servers.conf",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Splunk administrator wants to ensure data is distributed evenly amongst the indexers. To do this, he runs the following search over the last 24 hours: index=* What field can the administrator check to see the data distribution? A. host B. index C. linecount D. splunk_server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Social Security Numbers (PII) data is found in log events, which is against company policy. SSN format is as follows: 123-44-5678. Which configuration file and stanza pair will mask possible SSNs in the log events? A. props.conf [mask-SSN] REX = (?ms)^(.)\\<[SSN>\\d{3}-?\\d{2}-?(\\d{4}.*)$\" FORMAT = $1<SSN>###-##-$2 KEY = _raw B. props.conf [mask-SSN] REGEX = (?ms)^(.)\\<[SSN>\\d{3}-?\\d{2}-?(\\d{4}.*)$\" FORMAT = $1<SSN>###-##-$2 DEST_KEY = _raw C. transforms.conf [mask-SSN] REX = (?ms)^(.)\\<[SSN>\\d{3}-?\\d{2}-?(\\d{4}.*)$\" FORMAT = $1<SSN>###-##-$2 DEST_KEY = _raw D. transforms.conf [mask-SSN] REGEX = (?ms)^(.)\\<[SSN>\\d{3}-?\\d{2}-?(\\d{4}.*)$\" FORMAT = $1<SSN>###-##-$2 DEST_KEY = _raw",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Where are deployment server apps mapped to clients? A. Apps tab in forwarder management interface or clientapps.conf. B. Clients tab in forwarder management interface or deploymentclient.conf. C. Server Classes tab in forwarder management interface or serverclass.conf. D. Client Applications tab in forwarder management interface or clientapps.conf.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which Splunk configuration file is used to enable data integrity checking? A. props.conf B. global.conf C. indexes.conf D. data_integrity.conf",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An admin is running the latest version of Splunk with a 500 GB license. The current daily volume of new data is 300 GB per day. To minimize license issues, what is the best way to add 10 TB of historical data to the index? A. Buy a bigger Splunk license. B. Add 2.5 TB each day for the next 5 days. C. Add all 10 TB in a single 24 hour period. D. Add 200 GB of historical data each day for 50 days.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After how many warnings within a rolling 30-day period will a license violation occur with an enforced Enterprise license? A. 1 B. 3 C. 4 D. 5",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Who provides the Application Secret, Integration, and Secret keys, as well as the API Hostname when setting up Duo for Multi-Factor Authentication in Splunk Enterprise? A. Duo Administrator B. LDAP Administrator C. SAML Administrator D. Trio Administrator",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When does a warm bucket roll over to a cold bucket? A. When Splunk is restarted. B. When the maximum warm bucket age has been reached. C. When the maximum warm bucket size has been reached. D. When the maximum number of warm buckets is reached.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In a distributed environment, which Splunk component is used to distribute apps and configurations to the other Splunk instances? A. Indexer B. Deployer C. Forwarder D. Deployment server",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "How is a remote monitor input distributed to forwarders? A. As an app. B. As a forward.conf file. C. As a monitor.conf file. D. As a forwarder monitor profile.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How is data handled by Splunk during the input phase of the data ingestion process? A. Data is treated as streams. B. Data is broken up into events. C. Data is initially written to disk. D. Data is measured by the license meter.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which option on the Add Data menu is most useful for testing data ingestion without creating inputs.conf? A. Upload option B. Forward option C. Monitor option D. Download option",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization wants to collect Windows performance data from a set of clients, however, installing Splunk software on these clients is not allowed. What option is available to collect this data in Splunk Enterprise? A. Use Local Windows host monitoring. B. Use Windows Remote Inputs with WMI. C. Use Local Windows network monitoring. D. Use an index with an Index Data Type of Metrics.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following must be done to define user permissions when integrating Splunk with LDAP? A. Map Users B. Map Groups C. Map LDAP Inheritance D. Map LDAP to Active Directory",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In which phase do indexed extractions in props.conf occur? A. Inputs phase B. Parsing phase C. Indexing phase D. Searching phase",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements describes how distributed search works? A. Forwarders pull data from the search peers. B. Search heads store a portion of the searchable data. C. The search head dispatches searches to the search peers. D. Search results are replicated within the indexer cluster.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which feature in Splunk allows Event Breaking, Timestamp extractions, and any advanced configurations found in props.conf to be validated all through the UI? A. Apps B. Search C. Data preview D. Forwarder inputs",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements accurately describes using SSL to secure the feed from a forwarder? A. It does not encrypt the certificate password. B. SSL automatically compresses the feed by default. C. It requires that the forwarder be set to compressed=true. D. It requires that the receiver be set to compression=true.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which feature of Splunk's role configuration can be used to aggregate multiple roles intended for groups of users? A. Linked roles B. Grantable roles C. Role federation D. Role inheritance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is the use case for the deployment server feature of Splunk? A. Managing distributed workloads in a Splunk environment. B. Automating upgrades of Splunk forwarder installations on endpoints. C. Orchestrating the operations and scale of a containerized Splunk deployment. D. Updating configuration and distributing apps to processing components, primarily forwarders.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When running a real-time search, search results are pulled from which Splunk component? A. Heavy forwarders and seach peers B. Heavy forwarders C. Search heads D. Search peers",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Using SEDCMD in props.conf allows raw data to be modified. With the given event below, which option will mask the first three digits of the AcctID field resulting output: [22/Oct/2018:15:50:21] VendorID=1234 Code=B AcctID=xxx5309 Event: [22/Oct/2018:15:50:21] VendorID=1234 Code=B AcctID=xxx5309 A. SEDCMD-1acct = s/VendorID=\\d{3}(\\d{4})/VendorID=xxx/g B. SEDCMD-xxxAcct = s/AcctID=\\d{3}(\\d{4})/AcctID=xxx/g C. SEDCMD-1acct = s/AcctID=\\d{3}(\\d{4})/AcctID=\\1xxx/g D. SEDCMD-1acct = s/AcctID=\\d{3}(\\d{4})/AcctID=xxx\\1/g",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following accurately describes HTTP Event Collector indexer acknowledgement? A. It requires a separate channel provided by the client. B. It is configured the same as indexer acknowledgement used to protect in-flight data. C. It can be enabled at the global setting level. D. It stores status information on the Splunk server.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What action is required to enable forwarder management in Splunk Web? A. Navigate to Settings > Server Settings > General Settings, and set an App server port. B. Navigate to Settings > Forwarding and receiving, and click on Enable Forwarding. C. Create a server class and map it to a client in SPLUNK_HOME/etc/system/local/serverclass.conf. D. Place an app in the SPLUNK_HOME/etc/deployment-apps directory of the deployment server.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is accurate regarding the input phase? A. Breaks data into events with timestamps. B. Applies event-level transformations. C. Fine-tunes metadata. D. Performs character encoding.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When indexing a data source, which fields are considered metadata? A. source, host, time B. time, sourcetype, source C. host, raw, sourcetype D. sourcetype, source, host",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the default value of LINE_BREAKER? A. \\r\\n B. ([\\r\\n]+) C. \\r+\\n+ D. (\\r\\n+)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following monitor inputs stanza headers would match all of the following files? /var/log/www1/secure.log /var/log/www/secure.l /var/log/www/logs/secure.logs /var/log/www2/secure.log A. [monitor:///var/log/.../secure.*] B. [monitor:///var/log/www1/secure.*] C. [monitor:///var/log/www1/secure.log] D. [monitor:///var/log/www*/secure.*]",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the values for host and index for [stanza1] used by Splunk during index time, given the following configuration files? [sampleXML/xmlfile-47_1.png] A. host=server1 index=unixinfo B. host=server1 index=searchinfo C. host=searchsvr1 index=searchinfo D. host=unixsvr1 index=unixinfo",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An index stores its data in buckets. Which default directories does Splunk use to store buckets? (Choose all that apply.) A. bucketdb B. frozendb C. colddb D. db",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The LINE_BREAKER attribute is configured in which configuration file? A. props.conf B. indexes.conf C. inputs.conf D. transforms.conf",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After automatic load balancing is enabled on a forwarder, the time interval for switching indexers can be updated by using which of the following attributes? A. channelTTL B. connectionTimeout C. autoLBFrequency D. secsInFailureInterval",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A log file contains 193 days worth of timestamped events. Which monitor stanza would be used to collect data 45 days old and newer from that log file? A. followTail = -45d B. ignore = 45d C. includeNewerThan = 45d D. ignoreOlderThan = 45d",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After an Enterprise Trial license expires, it will automatically convert to a Free license. How many days is an Enterprise Trial license valid before this conversion occurs? A. 90 days B. 60 days C. 7 days D. 14 days",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider a company with a Splunk distributed environment in production. The Compliance Department wants to start using Splunk; however, they want to ensure that no one can see their reports or any other knowledge objects. Which Splunk Component can be added to implement this policy for the new team? A. Indexer B. Deployment server C. Universal forwarder D. Search head",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is an appropriate description of a deployment server in a non-cluster environment? A. Allows management of local Splunk instances, requires Enterprise license, handles job of sending configurations packaged as apps, can automatically restart remote Splunk instances. B. Allows management of remote Splunk instances, requires Enterprise license, handles job of sending configurations, can automatically restart remote Splunk instances. C. Allows management of remote Splunk instances, requires no license, handles job of sending configurations, can automatically restart remote Splunk instances. D. Allows management of remote Splunk instances, requires Enterprise license, handles job of sending configurations, can manually restart remote Splunk instances.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which Splunk forwarder has a built-in license? A. Light forwarder B. Heavy forwarder C. Universal forwarder D. Cloud forwarder",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What happens when the same username exists in Splunk as well as through LDAP? A. Splunk user is automatically deleted from authentication.conf. B. LDAP settings take precedence. C. Splunk settings take precedence. D. LDAP user is automatically deleted from authentication.conf.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following stanza in inputs.conf: [sampleXML/xmlfile-51_1.png] What will the value of the source filed be for events generated by this scripts input? A. /opt/splunk/etc/apps/search/bin/lister.sh B. unknown C. lister D. lister.sh",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following applies only to Splunk index data integrity check? A. Lookup table B. Summary Index C. Raw data in the index D. Data model acceleration",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following types of data count against the license daily quota? A. Replicated data B. splunkd logs C. Summary index data D. Windows internal logs",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which default Splunk role could be assigned to provide users with the following capabilities? Create saved searches Edit shared objects and alerts Not allowed to create custom roles A. admin B. power C. user D. splunk-system-role",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When Splunk is integrated with LDAP, which attribute can be changed in the Splunk UI for an LDAP user? A. Default app B. LDAP group C. Password D. Username",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Using the CLI on the forwarder, how could the current forwarder to indexer configuration be viewed? A. splunk btool server list --debug B. splunk list forward-indexer C. splunk list forward-server D. splunk btool indexes list --debug",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which artifact is required in the request header when creating an HTTP event? A. ackID B. Token C. Manifest D. Host name",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "All search-time field extractions should be specified on which Splunk component? A. Deployment server B. Universal forwarder C. Indexer D. Search head",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In addition to single, non-clustered Splunk instances, what else can the deployment server push apps to? A. Universal forwarders B. Splunk Cloud C. Linux package managers D. Windows using WMI",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the command to reset the fishbucket for one source? A. rm -r ~/splunkforwarder/var/lib/splunk/fishbucket B. splunk clean eventdata -index _thefishbucket C. splunk cmd btprobe -d SPLUNK_HOME/var/lib/splunk/fishbucket/splunk_private_db --file --reset D. splunk btool fishbucket reset",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which setting allows the configuration of Splunk to allow events to span over more than one line? A. SHOULD_LINEMERGE = true B. BREAK_ONLY_BEFORE_DATE = true C. BREAK_ONLY_BEFORE = D. SHOULD_LINEMERGE = false",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In this example, if useACK is set to true and the maxQueueSize is set to 7MB, what is the size of the wait queue on this universal forwarder? A. 21MB B. 28MB C. 14MB D. 7MB",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are reasons to create separate indexes? (Choose all that apply.) A. Different retention times. B. Increase number of users. C. Restrict user permissions. D. File organization.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which network input option provides durable file-system buffering of data to mitigate data loss due to network outages and splunkd restarts? A. diskQueueSize B. durableQueueSize C. persistentQueueSize D. queueSize",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A new forwarder has been installed with a manually created deploymentclient.conf. What is the next step to enable the communication between the forwarder and the deployment server? A. Restart Splunk on the deployment server. B. Enable the deployment client in Splunk Web under Forwarder Management. C. Restart Splunk on the deployment client. D. Wait for up to the time set in the phoneHomeIntervalInSecs setting.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When using a directory monitor input, specific source type can be selectively overridden using which configuration file? A. props.conf B. sourcetypes.conf C. transforms.conf D. outputs.conf",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When using license pools, volume allocations apply to which Splunk components? A. Indexers B. Indexes C. Heavy Forwarders D. Search Heads",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An add-on has configured field aliases for source IP address and destination IP address fields. A specific user prefers not to have those fields present in their user context. Based on the default props.conf below, which SPLUNK_HOME/etc/users/buttercup/myTA/local/props.conf stanza can be added to the user’s local context to disable the field aliases? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which forwarder is recommended by Splunk to use in a production environment? A. Heavy forwarder B. SSL forwarder C. Lightweight forwarder D. Universal forwarder",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following Splunk components require a separate installation package? A. Deployment server B. License master C. Universal forwarder D. Heavy forwarder",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which data pipeline phase is the last opportunity for defining event boundaries? A. Input phase B. Indexing phase C. Parsing phase D. Search phase",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What type of Splunk license is pre-selected in a brand new Splunk installation? A. Enterprise license B. Forwarder license C. Free license D. Enterprise trial license",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What event-processing pipelines are used to process data for indexing? (Choose all that apply.) A. Parsing pipeline B. Indexing pipeline C. fifo pipeline D. Typing pipeline",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are valid methods to create a Splunk user? (Choose all that apply.) A. API B. None of these C. Command line D. SplunkWeb",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a role in Splunk? (Choose all that apply.) A. A classification that determines if a Splunk server can remotely control another Splunk server. B. A classification that determines what indexes a user can search. C. A classification that determines what capabilities a user has. D. A classification that determines what functions a Splunk server controls.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following describes a Splunk deployment server? A. A Splunk app installed on a Splunk Enterprise server. B. A Splunk Forwarder that deploys data to multiple indexers. C. A server that automates the deployment of Splunk Enterprise to remote servers. D. A Splunk Enterprise server that distributes apps.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Multi-factor authentication works with which of the following? (Choose all that apply.) A. RADIUS B. LDAP C. Native authentication D. Scripted authentication",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In inputs.conf, which stanza would mean Splunk was only reading one local file? A. [monitor::/opt/log/crashlog/Jan27crash.txt] B. [monitor:///opt/log/crashlogs/Jan27crash.txt] C. [read://opt/log/crashlog/Jan27crash.txt] D. [monitor:///opt/log/]",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What will the following inputs.conf stanza do? [script://myscript.sh] interval=0 A. The script will run at the default interval of 60 seconds. B. The script will be run only once for each time Splunk is restarted. C. The script will be run. As soon as the script exits, Splunk restarts it. D. The script will not be run.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Load balancing on a Universal Forwarder is not scaling correctly. The forwarder’s outputs.conf and the tcpout stanza are setup correctly. What else could be the cause of this scaling issue? (Choose all that apply.) A. The indexAndForward value is not set properly. B. The DNS record used is not setup with a valid list of IP addresses. C. The inputs.conf’s _SYSLOG_ROUTING is not setup to use the right group names. D. The receiving port is not properly setup to listen on the right port.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which file will be matched for the following monitor stanza in inputs.conf? [monitor:///var/log/*/bar/.../*.txt] A. /var/log/host_469386086/bar/file/foo.txt B. /var/log/host_469336086/bar/foo.txt C. /var/log/host_469386086/temp/bar/file/csv/foo.txt D. /var/log/host_469386086/temp/bar/file/foo.txt",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A non-clustered Splunk environment has three indexers (A,B,C) and two search heads (X,Y). During a search executed on search head X, indexer A crashes. What is Splunk’s response? A. Inform the user in Splunk web that their results may be incomplete and have them attempt the search from search head Y. B. Update the user in Splunk web informing them that the results of their search may be incomplete. C. Update the user in Splunk web that their results may be incomple and that Splunk will try to re-execute the search. D. Repeat the search request on indexer B without informing the user.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the correct curl to send multiple events through HTTP Event Collector? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following methods will connect a deployment client to a deployment server? (Choose all that apply.) A. Create and edit a deploymentserver.conf file in $SPLUNK_HOME/erc/system/local on the deployment server. B. Run $SPLUNK_HOME/bin/splunk set deploy-poll : from the command line of the deployment server. C. Create and edit a deploymentclient.conf file in $SPLUNK_HOME/etc/system/local on the deployment client. D. Run $SPLUNK_HOME/bin/splunk set deploy-poll : from the command line of the deployment client.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the supported compatibility between search heads and search peers? A. Search heads and search peers must be on the same version. B. Search heads must be at the same version or lower than the search peers. C. Search heads must be at the same version or higher than the search peers. D. Search heads and search peers must be on the latest version.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In a customer managed Splunk Enterprise environment, what is the endpoint URI used to collect data? A. services/data/collector B. services/inputs?raw C. services/collector D. data/collector",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When should the Data Preview feature be used? A. When reviewing data on the source host. B. When extracting fields for ingested data. C. When validating the parsing of data. D. When previewing the data before searching.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A Splunk administrator has been tasked with developing a retention strategy to have frequently accessed data sets on SSD storage and to have older, less frequently accessed data on slower NAS storage. They have set a mount point for the NAS. Which parameter do they need to modify to set the path for the older, less frequently accessed data in indexes.conf? A. thawedPath B. coldPath C. homePath D. summaryHomePath",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When working with an indexer cluster, what changes with the global precedence when comparing to a standalone deployment? A. Nothing changes. B. The peer-apps local directory becomes the highest priority. C. The app local directories move to second in the priority list. D. The system default directory becomes the highest priority.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A user is assigned two roles with the following search filters. What is the user’s applied search filter? A. srchFilter = ((sourcetype=csv) AND (sourcetype!=json AND index=main)) B. srchFilter = ((sourcetype=csv) OR (sourcetype!=json AND index=main)) C. srchFilter = sourcetype!=json AND index=main D. srchFilter = sourcetype=csv",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company moves to a distributed architecture to meet the growing demand for the use of Splunk. What parameter can be configured to enable automatic load balancing in the Universal Forwarder to send data to the indexers? A. Splunk does not do load balancing and requires a hardware load balancer to balance traffic across the indexers. B. Create one outputs.conf file for each of the server addresses in the indexing tier. C. Set the tcpout :my_splunk_indexers stanza to have a server value equal to a comma-separated list of IP addresses and indexer ports for each of the indexers in the environment. D. Configure the outputs.conf file to point to any server in the indexing tier and Splunk will configure the data to be sent to all of the indexers.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What configuration file are remote Windows Management Instrumentation inputs defined in? A. wmi.conf B. inputs.conf C. wmi_inputs.conf D. None, the inputs are defined outside of Splunk.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What action could be taken to prevent a license warning with an ingest-based license? A. Add a new license before midnight on the indexer(s). B. Add a new license before midnight on the license manager. C. Delete the data before midnight on the indexer(s). D. Delete the data before midnight on the license manager.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is an example of a proper configuration for CHARSET within props.conf? A. [source::/var/log/splunk] CHARSET = BIG5 B. [sourcetype::json] CHARSET = BIG5 C. [host::server.splunk.com] CHARSET = BIG5 D. [index::main] CHARSET = BIG5",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the correct example to redact a plain-text password from raw events? A. in props.conf: [identity] REGEX-redact_pw = s/password=([^,|\\s]+)/####REDACTED####/g B. in transforms.conf: [identity] REGEX-redact_pw = s/password=([^,|\\s]+)/####REDACTED####/g C. in props.conf: [identity] SEDCMD-redact_pw = s/password=([^,|\\s]+)/####REDACTED####/g D. in transforms.conf: [identity] SEDCMD-redact_pw = s/password=([^,|\\s]+)/####REDACTED####/g",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Windows can prevent a Splunk forwarder from reading open files. If files need to be read while they are being written to, what type of input stanza needs to be created? A. Upload B. TailReader C. Monitor D. MonitorNoHandle",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When deploying apps on Universal Forwarders using the deployment server, what is the correct component and location of the app before it is deployed? A. On Deployment Server, $SPLUNK_HOME/etc/deployment-apps B. On Universal Forwarder, $SPLUNK_HOME/etc/apps C. On Deployment Server, $SPLUNK_HOME/etc/apps D. On Universal Forwarder, $SPLUNK_HOME/etc/deployment-apps",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which pathway represents where a network input in Splunk might be found? A. $SPLUNK HOME/var/lib/splunk/$inputName/homePath/ B. $SPLUNK_HOME/system/local/udp.conf C. $SPLUNK_HOME/etc/apps/$appName/local/inputs.conf D. $SPLUNK_HOME/etc/apps/network/inputs.conf",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An admin oversees an environment with a 1000 GB / day license. The configuration file server.conf has strict_pool_quota=false set. The license is divided into the following three pools, and today's usage is shown on the right-hand column: Given this, which pool(s) are issued warnings? A. Z only B. None C. All pools D. Y and Z",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A sourcetype has been explicitly set in inputs.conf. How can the sourcetype be fine-tuned in props.conf during the Input phase? A. By using the source stanza value in props.conf. B. By overriding it using the sourcetype value in a new source stanza. C. The sourcetype value cannot be changed in props.conf. D. By adding the new sourcetype, followed by a comma, after the old sourcetype in a new stanza of props.conf.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is an alternative method to manually editing the outputs.conf file on the forwarder to send data? A. Run the splunk add server command on each indexer. B. Run the splunk add forward-indexer command for each indexer. C. Run the splunk add forwarder command on each indexer. D. Run the splunk add forward-server command for each indexer.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of these is not a valid way to get data into Splunk? A. Splunk Connect for Syslog B. Splunk Universal Forwarder C. Splunk Connect for S3 D. Splunk Heavy Forwarder",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When configuring Distributed Search, which of the following stanzas will add search peers? A. [distributedSearch] servers = https://192.168.1.1:8089, https://192.168.1.2:8089 B. [distributedSearch] servers = ://192.168.1.1, ://192.168.1.2 C. [distributedSearch] servers = 192.168.1.1, 192.168.1.2 D. [distributedSearch] servers = 192.168.1.1:8089, 192.168.1.2:8089",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the correct order of index time precedence? (For each of the following, highest precedence is shown at the top and lowest precedence is shown at the bottom) A. .../etc/users/local .../etc/system/default .../etc/apps/aaa/local .../etc/apps/zzz/default .../etc/system/local B. .../etc/users/local .../etc/system/local .../etc/apps/aaa/local .../etc/apps/zzz/default .../etc/system/default C. .../etc/system/local .../etc/apps/aaa/local .../etc/apps/zzz/default .../etc/system/default D. .../etc/system/default .../etc/apps/aaa/local .../etc/apps/zzz/default .../etc/system/local",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following primary authentication methods is not supported with Splunk handling its paired multi-factor authentication method? A. SAML with Duo Security B. LDAP with Duo Security C. Scripted with Duo Security D. Native with Duo Security",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which scenario is applicable given the stanzas in authentication.conf below? A. Multifactor authentication is required to log into the host operating system. B. If Splunk cannot connect to the multifactor authentication provider, authentications will be successful without completing a multifactor challenge. C. If Splunk cannot connect to the multifactor authentication provider, all logins will be denied. D. The secretKey does not need to be protected since multifactor authentication is turned on.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "There is a file with a vast amount of old data. Which of the following inputs. conf attributes would allow an admin to monitor the file for updates without indexing the pre-existing data? A. followTail B. ignoreOlderThan C. monitor D. allowList",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An admin is configuring timestamp extraction for the following event: [13:11:08] [main/forge] Diamonds are blue Which of the following configurations will correctly extract the timestamp? A. B. C. D.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Universal Forwarder is monitoring a very active syslog stream and as a result is unable to switch between destinations. How would an admin safely remediate this issue? A. Configure forceTimebasedAutoLB on the forwarder. B. Configure useAck on the forwarder. C. Configure and enable the EVENT_BREAKER on the forwarder. D. Configure and enable the LINE_BREAKER on the forwarder.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the methods listed below supports multi-factor authentication? A. Security Assertion Markup Language (SAML) B. OpenID C. Lightweight Directory Access Protocol (LDAP) D. Single Sign-On (SSO)",
+    "options": {},
+    "most_voted": "A"
+  }
+]
