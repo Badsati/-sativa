@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What are the best practices for creating detectors? (Choose all that apply.) A. View data at highest resolution. B. Have a consistent value. C. View detector in a chart. D. Have a consistent type of measurement.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An SRE came across an existing detector that is a good starting point for a detector they want to create. They clone the detector, update the metric, and add multiple new signals. As a result of the cloned detector, which of the following is true? A. The new signals will be reflected in the original detector. B. The new signals will be reflected in the original chart. C. You can only monitor one of the new signals. D. The new signals will not be added to the original detector.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following are supported rollup functions in Splunk Observability Cloud? A. average, latest, lag, min, max, sum, rate B. std_dev, mean, median, mode, min, max C. sigma, epsilon, pi, omega, beta, tau D. 1min, 5min, 10min, 15min, 30min",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "One server in a customer's data center is regularly restarting due to power supply issues. What type of dashboard could be used charts and create detectors for this server? A. Single-instance dashboard B. Machine dashboard C. Multiple-service dashboard D. Server dashboard",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A customer operates a caching web proxy. They want to calculate the cache hit rate for their service. What is the best way to achieve this? A. Percentages and ratios B. Timeshift and Bottom N C. Timeshift and Top N D. Chart Options and metadata",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are correct ports for the specified components in the OpenTelemetry Collector? A. gRPC (4000), SignalFx (9943), Fluentd (6060) B. gRPC (6831), SignalFx (4317), Fluentd (9080) C. gRPC (4459), SignalFx (9166), Fluentd (8956) D. gRPC (4317), SignalFx (9080), Fluentd (8006)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When writing a detector with a large number of MTS, such as memory.free in a deployment with 30,000 hosts, it is possible to exceed the cap of MTS that can be contained in a single plot. Which of the choices below would most likely reduce the number of MTS below the plot cap? A. Select the Shared option when creating the plot. B. Add a filter to narrow the scope of the measurement. C. Add a restricted scope adjustment to the plot. D. When creating the plot, add a discriminator.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following are true about organization metrics? (Choose all that apply.) A. Organization metrics give insights into system usage, system limits, data ingested and token quotas. B. Organization metrics count towards custom MTS limits. C. Organization metrics are included for free. D. A user can plot and alert on them like metrics they send to Splunk Observability Cloud.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "To smooth a very spiky cpu.utilization metric, what is the correct analytic function to better see if the cpu.utilization for servers is trending up over time? A. Rate/Sec B. Median C. Mean (by host) D. Mean (Transformation)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The built-in Kubernetes Navigator includes which of the following? A. Map, Nodes, Workloads, Node Detail, Workload Detail, Group Detail, Container Detail B. Map, Nodes, Processors, Node Detail, Workload Detail, Pod Detail, Container Detail C. Map, Clusters, Workloads, Node Detail, Workload Detail, Pod Detail, Container Detail D. Map, Nodes, Workloads, Node Detail, Workload Detail, Pod Detail, Container Detail",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the limit on the number of properties that an MTS can have? A. 64 B. 36 C. No limit D. 50",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What Pod conditions does the Analyzer panel in Kubernetes Navigator monitor? (Choose all that apply.) A. Not Scheduled B. Unknown C. Failed D. Pending",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A customer deals with a holiday rush of traffic during November each year, but does not want to be flooded with alerts when this happens. The increase in traffic is expected and consistent each year. Which detector condition should be used when creating a detector for this data? A. Outlier Detection B. Static Threshold C. Calendar Window D. Historical Anomaly",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following are required in the configuration of a data point? (Choose all that apply.) A. Metric Name B. Metric Type C. Timestamp D. Value",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements are true about local data links? (Choose all that apply.) A. Anyone with write permission for a dashboard can add local data links that appear on that dashboard. B. Local data links can only have a Splunk Observability Cloud internal destination. C. Only Splunk Observability Cloud administrators can create local links. D. Local data links are available on only one dashboard.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Given that the metric demo.trans.count is being sent at a 10 second native resolution, which of the following is an accurate description of the data markers displayed in the chart below? A. Each data marker represents the average hourly rate of API calls. B. Each data marker represents the 10 second delta between counter values. C. Each data marker represents the average of the sum of datapoints over the last minute, averaged over the hour. D. Each data marker represents the sum of API calls in the hour leading up to the data marker.",
+    "options": {},
+    "most_voted": "D"
+  }
+]
