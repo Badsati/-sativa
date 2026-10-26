@@ -1,0 +1,117 @@
+[
+  {
+    "question": "What is the best method to operationalize the results of a threat hunt for daily use by SOC analysts? A. Communicate findings based on the hunt. B. Create monthly reports based on the documented findings. C. Create detections based on the documented findings. D. Communicate gaps to the architecture team.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "How can an engineer verify if results will return for a potential detection based on historical events within the organization? A. Run the detection in Splunk Attack Range against the latest Atomic Red Team™ injections. B. Run the detection with the added constraints of earliest=now latest=+24h. C. Run the detection against production data within the same Splunk instance. D. Run the detection with the added constraints of earliest=0 latest=l.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is not a type of metadata that can be returned by the metadata command? A. sourcetypes B. hosts C. sources D. assets",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What provides consistency for data mapping applied to data model and saved search exports between Splunk Enterprise Security and Splunk SOAR? A. Global field aliases B. Global field mappings C. Field labels D. Field aliases",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which tool can help provide a baseline of the data sources in a given Splunk environment? A. Enterprise Security Content Update B. Enterprise Security Data Library C. Splunk Security Essentials Analytic Stories D. Splunk Security Essentials Data Inventory",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An automation engineer for the Wonderland SOC, has configured a new asset and is getting an HTTP 403 response code. Which of the following is the possible cause of this error code? A. The asset endpoint requires a token not username and password. B. Asset credentials don't have adequate permissions. C. The endpoint that the asset is configured for does not exist. D. Either asset username or password are incorrect.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How does Mission Control decipher which response template to assign to findings? A. This is determined when creating a detection in ES, which gets carried over to Mission Control. B. Response templates are assigned to specific incident types. C. The only way to configure this is with SOAR. D. Mission Control uses AI to decipher which response templates are assigned.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A corporate laptop was disconnected from the internet Friday at 5PM local time. While offline, the user unknowingly opened a malicious file. The laptop came back online the following Monday morning, 9AM local time. The current detection has a 15 minute lookback period. How can the detection be tuned to account for this scenario? A. Increase the info_min_time to account for the weekend. B. Leverage an event time configuration within the detection. C. Leverage an index time configuration within the detection. D. Increase the info_max_time to account for the weekend.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If a correlation search cannot be run at the configured time, which scheduling option should an engineer use to ensure there are no backfill gaps in data? A. Default B. Continuous C. Real-time D. Auto",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following macro values will exclude all of the company networks if it is called from the following search? index=firewall sourcetype=pan:traffic NOT \"company_networks\" A. (src_ip IN (151.157.30.0/24, 26.06.18.0/24)) B. NOT (src_ip IN (151.157.30.0/24, 26.06.18.0/24)) C. NOT (src_ip=151.157.30.0/24 AND src_ip=26.06.18.0/24) D. (src_ip=151.157.30.0/24 AND src_ip=26.06.18.0/24)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Risk scores are associated with how many levels of risk in Enterprise Security by default? A. (4) Info, Medium, High, Critical B. (3) Low, Medium, High C. (5) Info, Low, Medium, High, Critical D. (6) Info, Low, Medium, High, Critical, Unknown",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "While working with the SOC analysts to review current contextualization processes, a request for automation has been raised by the SOC team. They are asking for a new automation that will check a potentially malicious URL against a remote URL filtering list. Which of the following options will work for them? A. Neither Adaptive Action or Input Playbook B. Adaptive Response Action or Input Playbook C. Adaptive Response Action D. Input Playbook",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is one method used in ESCU content to calculate a risk score when creating a detection that uses the Risk Analysis adaptive response action? A. Risk Score = (Impact * Confidence/100) B. Risk Score = (Risk Object Severity * Confidence/100) C. Risk Score = (Risk Object Priority * Confidence/100) D. Risk Score = (Impact * Priority/100)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Lookups append fields from an external source to events based on the values of fields that are already present in those events. What are the four supported lookup types? A. CSV, External, Dataset, Geospatial B. CSV, External, Geospatial, KV Store C. JSON, Dataset, Internal, Geospatial D. External, Internal, Geospatial, KV Store",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When creating a detection, how might an engineer ensure that all possible contextual fields about a given asset and identity are added to a risk event? A. Use | lookup identities.csv to call all available identity information in the detection output. B. Include the standard CIM fields (e.g. user, src, src_user, etc.) in the detection output. C. Call an adaptive response action for Active Directory using | ldapsearch for a real-time update. D. Use | lookup assets.csv to call all available asset information in the detection output.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is a reason to utilize an index-based search (index=…) over a data model search (| tstats…) in a detection? A. Index-based searches can utilize macros for ease of configuration and maintenance. B. When fields contained in raw data provide more details than what is contained in the data model. C. Data model searches are more CPU intensive and thus fewer can run concurrently. D. Index-based searches are more efficient as they have direct access to the raw data.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which field in the risk index is used to describe the activity within a finding? A. risk_message B. risk_description C. risk_object D. risk_reason",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which REST call will show a list of alerts with their specific commands, app, and title? A. | rest /servicesNS/admin/-/alerts/alert_actions | table title, eai:acl.app, label, payload_format, command B. | rest /servicesNS/user/-/alerts/alert_actions | table title, eai:acl.app, label, payload_format, command C. | rest /servicesNs/admin/-/actions/alert_actions | table title, eai:acl.app, label, payload_format, command D. | rest /servicesNS/user/-/actions/alert_actions | table title, eai:acl.app, label, payload_format, command",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is Enterprise Security's default way of determining the urgency of a finding (notable event)? A. Multiply the risk score of a detection by how many times it has run. B. Leverage the scheduling priority of the detection to know what's most critical. C. Add risk scores for associated objects within a network. D. Take into account the priority assigned to the asset/identity as well as the severity value assigned to the finding.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following should be the primary reference when designing a new playbook in Splunk SOAR? A. Existing investigation actions B. MITRE ATT&CK® framework C. Existing Standard Operating Procedure D. CIS Framework",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In Enterprise Security, what is the name of the threat intelligence lookup pertaining to files? A. file_hash B. file_intel C. user_intel D. user_hash",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The SOC manager has a desire to measure mean time to acknowledge findings (notable events) in order to meet a desired service level objective. Which two fields can be used to measure this metric? A. Severity, Owner B. Status, Owner C. User, Status D. Urgency, Status",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An engineer has discovered that an acquired company uses a duplicate IP address space. Which feature of the asset and identity framework could be turned on that would allow for the separation of company IP address ranges within a lookup? A. Entity Definitions B. Asset Classes C. Entity Zones D. Asset Annotations",
+    "options": {},
+    "most_voted": "C"
+  }
+]
