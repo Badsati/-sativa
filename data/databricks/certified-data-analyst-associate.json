@@ -1,0 +1,327 @@
+[
+  {
+    "question": "Which of the following layers of the medallion architecture is most commonly used by data analysts? A. None of these layers are used by data analysts B. Gold C. All of these layers are used equally by data analysts D. Silver E. Bronze",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data analyst has recently joined a new team that uses Databricks SQL, but the analyst has never used Databricks before. The analyst wants to know where in Databricks SQL they can write and execute SQL queries. On which of the following pages can the analyst write and execute SQL queries? A. Data page B. Dashboards page C. Queries page D. Alerts page E. SQL Editor page",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following describes how Databricks SQL should be used in relation to other business intelligence (BI) tools like Tableau, Power BI, and looker? A. As an exact substitute with the same level of functionality B. As a substitute with less functionality C. As a complete replacement with additional functionality D. As a complementary tool for professional-grade presentations E. As a complementary tool for quick in-platform BI work",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following approaches can be used to connect Databricks to Fivetran for data ingestion? A. Use Workflows to establish a SQL warehouse (formerly known as a SQL endpoint) for Fivetran to interact with B. Use Delta Live Tables to establish a cluster for Fivetran to interact with C. Use Partner Connect's automated workflow to establish a cluster for Fivetran to interact with D. Use Partner Connect's automated workflow to establish a SQL warehouse (formerly known as a SQL endpoint) for Fivetran to interact with E. Use Workflows to establish a cluster for Fivetran to interact with",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Data professionals with varying titles use the Databricks SQL service as the primary touchpoint with the Databricks Lakehouse Platform. However, some users will use other services like Databricks Machine Learning or Databricks Data Science and Engineering. Which of the following roles uses Databricks SQL as a secondary service while primarily using one of the other services? A. Business analyst B. SQL analyst C. Data engineer D. Business intelligence analyst E. Data analyst",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data analyst has set up a SQL query to run every four hours on a SQL endpoint, but the SQL endpoint is taking too long to start up with each run. Which of the following changes can the data analyst make to reduce the start-up time for the endpoint while managing costs? A. Reduce the SQL endpoint cluster size B. Increase the SQL endpoint cluster size C. Turn off the Auto stop feature D. Increase the minimum scaling value E. Use a Serverless SQL endpoint",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data engineering team has created a Structured Streaming pipeline that processes data in micro-batches and populates gold-level tables. The microbatches are triggered every minute. A data analyst has created a dashboard based on this gold-level data. The project stakeholders want to see the results in the dashboard updated within one minute or less of new data becoming available within the gold-level tables. Which of the following cautions should the data analyst share prior to setting up the dashboard to complete this task? A. The required compute resources could be costly B. The gold-level tables are not appropriately clean for business reporting C. The streaming data is not an appropriate data source for a dashboard D. The streaming cluster is not fault tolerant E. The dashboard cannot be refreshed that quickly",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following approaches can be used to ingest data directly from cloud-based object storage? A. Create an external table while specifying the DBFS storage path to FROM B. Create an external table while specifying the DBFS storage path to PATH C. It is not possible to directly ingest data from cloud-based object storage D. Create an external table while specifying the object storage path to FROM E. Create an external table while specifying the object storage path to LOCATION",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data analyst wants to create a dashboard with three main sections: Development, Testing, and Production. They want all three sections on the same dashboard, but they want to clearly designate the sections using text on the dashboard. Which of the following tools can the data analyst use to designate the Development, Testing, and Production sections using text? A. Separate endpoints for each section B. Separate queries for each section C. Markdown-based text boxes D. Direct text written into the dashboard in editing mode E. Separate color palettes for each section",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data analyst needs to use the Databricks Lakehouse Platform to quickly create SQL queries and data visualizations. It is a requirement that the compute resources in the platform can be made serverless, and it is expected that data visualizations can be placed within a dashboard. Which of the following Databricks Lakehouse Platform services/capabilities meets all of these requirements? A. Delta Lake B. Databricks Notebooks C. Tableau D. Databricks Machine Learning E. Databricks SQL",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data analyst is attempting to drop a table my_table. The analyst wants to delete all table metadata and data. They run the following command: DROP TABLE IF EXISTS my_table; While the object no longer appears when they run SHOW TABLES, the data files still exist. Which of the following describes why the data files still exist and the metadata files were deleted? A. The table's data was larger than 10 GB B. The table did not have a location C. The table was external D. The table's data was smaller than 10 GB E. The table was managed",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "After running DESCRIBE EXTENDED accounts.customers;, the following was returned: Now, a data analyst runs the following command: DROP accounts.customers; Which of the following describes the result of running this command? A. Running SELECT * FROM delta. `dbfs:/stakeholders/customers` results in an error. B. Running SELECT * FROM accounts.customers will return all rows in the table. C. All files with the .customers extension are deleted. D. The accounts.customers table is removed from the metastore, and the underlying data files are deleted. E. The accounts.customers table is removed from the metastore, but the underlying data files are untouched.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following should data analysts consider when working with personally identifiable information (PII) data? A. Organization-specific best practices for PII data B. Legal requirements for the area in which the data was collected C. None of these considerations D. Legal requirements for the area in which the analysis is being performed E. All of these considerations",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Delta Lake stores table data as a series of data files, but it also stores a lot of other information. Which of the following is stored alongside data files when using Delta Lake? A. None of these B. Table metadata, data summary visualizations, and owner account information C. Table metadata D. Data summary visualizations E. Owner account information",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is an advantage of using a Delta Lake-based data lakehouse over common data lake solutions? A. ACID transactions B. Flexible schemas C. Data deletion D. Scalable storage E. Open-source formats",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following benefits of using Databricks SQL is provided by Data Explorer? A. It can be used to run UPDATE queries to update any tables in a database. B. It can be used to view metadata and data, as well as view/change permissions. C. It can be used to produce dashboards that allow data exploration. D. It can be used to make visualizations that can be shared with stakeholders. E. It can be used to connect to third party BI cools.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The stakeholders.customers table has 15 columns and 3,000 rows of data. The following command is run: After running SELECT * FROM stakeholders.eur_customers, 15 rows are returned. After the command executes completely, the user logs out of Databricks. After logging back in two days later, what is the status of the stakeholders.eur_customers view? A. The view remains available and SELECT * FROM stakeholders.eur_customers will execute correctly. B. The view has been dropped. C. The view is not available in the metastore, but the underlying data can be accessed with SELECT * FROM delta. `stakeholders.eur_customers`. D. The view remains available but attempting to SELECT from it results in an empty result set because data in views are automatically deleted after logging out. E. The view has been converted into a table.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data analyst created and is the owner of the managed table my_ table. They now want to change ownership of the table to a single other user using Data Explorer. Which of the following approaches can the analyst use to complete the task? A. Edit the Owner field in the table page by removing their own account B. Edit the Owner field in the table page by selecting All Users C. Edit the Owner field in the table page by selecting the new owner's account D. Edit the Owner field in the table page by selecting the Admins group E. Edit the Owner field in the table page by removing all access",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data analyst has a managed table table_name in database database_name. They would now like to remove the table from the database and all of the data files associated with the table. The rest of the tables in the database must continue to exist. Which of the following commands can the analyst use to complete the task without producing an error? A. DROP DATABASE database_name; B. DROP TABLE database_name.table_name; C. DELETE TABLE database_name.table_name; D. DELETE TABLE table_name FROM database_name; E. DROP TABLE table_name FROM database_name;",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data analyst runs the following command: SELECT age, country FROM my_table WHERE age >= 75 AND country = 'canada'; Which of the following tables represents the output of the above command? A. B. C. D. E.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data analyst runs the following command: INSERT INTO stakeholders.suppliers TABLE stakeholders.new_suppliers; What is the result of running this command? A. The suppliers table now contains both the data it had before the command was run and the data from the new_suppliers table, and any duplicate data is deleted. B. The command fails because it is written incorrectly. C. The suppliers table now contains both the data it had before the command was run and the data from the new_suppliers table, including any duplicate data. D. The suppliers table now contains the data from the new_suppliers table, and the new_suppliers table now contains the data from the suppliers table. E. The suppliers table now contains only the data from the new_suppliers table.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A business analyst has been asked to create a data entity/object called sales_by_employee. It should always stay up-to-date when new data are added to the sales table. The new entity should have the columns sales_person, which will be the name of the employee from the employees table, and sales, which will be all sales for that particular sales person. Both the sales table and the employees table have an employee_id column that is used to identify the sales person. Which of the following code blocks will accomplish this task? A. B. C. D. E.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data analyst has been asked to use the below table sales_table to get the percentage rank of products within region by the sales: The result of the query should look like this: Which of the following queries will accomplish this task? A. B. C. D. E.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In which of the following situations should a data analyst use higher-order functions? A. When custom logic needs to be applied to simple, unnested data B. When custom logic needs to be converted to Python-native code C. When custom logic needs to be applied at scale to array data objects D. When built-in functions are taking too long to perform tasks E. When built-in functions need to run through the Catalyst Optimizer",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Consider the following two statements: Statement 1: Statement 2: Which of the following describes how the result sets will differ for each statement when they are run in Databricks SQL? A. The first statement will return all data from the customers table and matching data from the orders table. The second statement will return all data from the orders table and matching data from the customers table. Any missing data will be filled in with NULL. B. When the first statement is run, only rows from the customers table that have at least one match with the orders table on customer_id will be returned. When the second statement is run, only those rows in the customers table that do not have at least one match with the orders table on customer_id will be returned. C. There is no difference between the result sets for both statements. D. Both statements will fail because Databricks SQL does not support those join types. E. When the first statement is run, all rows from the customers table will be returned and only the customer_id from the orders table will be returned. When the second statement is run, only those rows in the customers table that do not have at least one match with the orders table on customer_id will be returned.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data analyst has created a user-defined function using the following line of code: CREATE FUNCTION price(spend DOUBLE, units DOUBLE) RETURNS DOUBLE RETURN spend / units; Which of the following code blocks can be used to apply this function to the customer_spend and customer_units columns of the table customer_summary to create column customer_price? A. SELECT PRICE customer_spend, customer_units AS customer_price FROM customer_summary B. SELECT price FROM customer_summary C. SELECT function(price(customer_spend, customer_units)) AS customer_price FROM customer_summary D. SELECT double(price(customer_spend, customer_units)) AS customer_price FROM customer_summary E. SELECT price(customer_spend, customer_units) AS customer_price FROM customer_summary",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data analyst has been asked to count the number of customers in each region and has written the following query: If there is a mistake in the query, which of the following describes the mistake? A. The query is using count(*), which will count all the customers in the customers table, no matter the region. B. The query is missing a GROUP BY region clause. C. The query is using ORDER BY, which is not allowed in an aggregation. D. There are no mistakes in the query. E. The query is selecting region, but region should only occur in the ORDER BY clause.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data analyst is processing a complex aggregation on a table with zero null values and their query returns the following result: Which of the following queries did the analyst run to obtain the above result? A. B. C. D. E.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is a benefit of Databricks SQL using ANSI SQL as its standard SQL dialect? A. It has increased customization capabilities B. It is easy to migrate existing SQL queries to Databricks SQL C. It allows for the use of Photon's computation optimizations D. It is more performant than other SQL dialects E. It is more compatible with Spark's interpreters",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How can a data analyst determine if query results were pulled from the cache? A. Go to the Query History tab and click on the text of the query. The slideout shows if the results came from the cache. B. Go to the Alerts tab and check the Cache Status alert. C. Go to the Queries tab and click on Cache Status. The status will be green if the results from the last run came from the cache. D. Go to the SQL Warehouse (formerly SQL Endpoints) tab and click on Cache. The Cache file will show the contents of the cache. E. Go to the Data tab and click Last Query. The details of the query will show if the results came from the cache.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about a refresh schedule is incorrect? A. A query can be refreshed anywhere from 1 minute to 2 weeks. B. Refresh schedules can be configured in the Query Editor. C. A query being refreshed on a schedule does not use a SQL Warehouse (formerly known as SQL Endpoint). D. A refresh schedule is not the same as an alert. E. You must have workspace administrator privileges to configure a refresh schedule.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data analyst creates a Databricks SQL Query where the result set has the following schema: region STRING number_of_customer INT When the analyst clicks on the \"Add visualization\" button on the SQL Editor page, which of the following types of visualizations will be selected by default? A. Violin Chart B. Line Chart C. Bar Chart D. Histogram E. There is no default. The user must choose a visualization type.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A data analyst has created a Query in Databricks SQL, and now they want to create two data visualizations from that Query and add both of those data visualizations to the same Databricks SQL Dashboard. Which of the following steps will they need to take when creating and adding both data visualizations to the Databricks SQL Dashboard? A. They will need to alter the Query to return two separate sets of results. B. They will need to add two separate visualizations to the dashboard based on the same Query. C. They will need to create two separate dashboards. D. They will need to decide on a single data visualization to add to the dashboard. E. They will need to copy the Query and create one data visualization per query.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data analyst has been asked to produce a visualization that shows the flow of users through a website. Which of the following is used for visualizing this type of flow? A. Heatmap B. Choropleth C. Word Cloud D. Pivot Table E. Sankey",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data analyst has been asked to configure an alert for a query that returns the income in the accounts_receivable table for a date range. The date range is configurable using a Date query parameter. The Alert does not work. Which of the following describes why the Alert does not work? A. Alerts don't work with queries that access tables. B. Queries that return results based on dates cannot be used with Alerts. C. The wrong query parameter is being used. Alerts only work with Date and Time query parameters. D. Queries that use query parameters cannot be used with Alerts. E. The wrong query parameter is being used. Alerts only work with dropdown list query parameters, not dates.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements about adding visual appeal to visualizations in the Visualization Editor is incorrect? A. Visualization scale can be changed. B. Data Labels can be formatted. C. Colors can be changed. D. Borders can be added. E. Tooltips can be formatted.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data team has been given a series of projects by a consultant that need to be implemented in the Databricks Lakehouse Platform. Which of the following projects should be completed in Databricks SQL? A. Testing the quality of data as it is imported from a source B. Tracking usage of feature variables for machine learning projects C. Combining two data sources into a single, comprehensive dataset D. Segmenting customers into like groups using a clustering algorithm E. Automating complex notebook-based workflows with multiple tasks",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements describes descriptive statistics? A. A branch of statistics that uses summary statistics to quantitatively describe and summarize data. B. A branch of statistics that uses a variety of data analysis techniques to infer properties of an underlying distribution of probability. C. A branch of statistics that uses quantitative variables that must take on a finite or countably infinite set of values. D. A branch of statistics that uses summary statistics to categorically describe and summarize data. E. A branch of statistics that uses quantitative variables that must take on an uncountable set of values.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which of the following situations will the mean value and median value of variable be meaningfully different? A. When the variable contains no outliers B. When the variable contains no missing values C. When the variable is of the boolean type D. When the variable is of the categorical type E. When the variable contains a lot of extreme outliers",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data analyst is working with gold-layer tables to complete an ad-hoc project. A stakeholder has provided the analyst with an additional dataset that can be used to augment the gold-layer tables already in use. Which of the following terms is used to describe this data augmentation? A. Data testing B. Ad-hoc improvements C. Last-mile dashboarding D. Last-mile ETL E. Data enhancement",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data analyst needs to query the data in my_table. They want to return the values in columns user_id and email_address where records fit the following filter criteria: age is greater than 25 and country is Canada. The analyst does not want to return values from any other columns. Which code block will accomplish the above task? A. SELECT * FROM my_table WHERE age > 25 AND country = ’Canada’; B. SELECT user_id, email_address FROM my_table WHERE age > 25 AND country = ’Canada’; C. SELECT age, country FROM my_table WHERE age > 25 AND country = ’Canada’; D. SELECT user_id, email_address FROM my_table WHERE age = 25 AND country > ’Canada’;",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which example of data projects represents a common analytics application to be completed in Databricks SQL? A. Augmenting gold-layer tables with additional external information B. Automating complex notebook-based workflows with multiple tasks C. Testing the quality of data as it is imported from a source D. Segmenting customers into like groups using a clustering algorithm",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data analyst wants the following output: Which statement will produce this output? A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is an advantage of using a Delta Lake-based data lakehouse over classic enterprise data warehouse solutions? A. Open-source formats B. Schema enforcement C. ACID transactions D. Generic optimizations",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Query History provides Databricks SQL users with a lot of benefits. A data analyst has been asked to share all of these benefits with their team as part of a training exercise. One of the benefit statements the analyst provided to their team is incorrect. Which statement about Query History is incorrect? A. It can be used to troubleshoot slow running queries. B. It can be used to view the query plan of queries that have run. C. It can be used to debug queries. D. It can be used to automate query execution on multiple warehouses (formerly endpoints).",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data scientist has asked a data analyst to create histograms for every continuous variable in a data set. The data analyst needs to identify which columns are continuous in the data set. What describes a continuous variable? A. A quantitative variable that never stops changing B. A quantitative variable that can take on a finite or countably infinite set of values C. A quantitative variable that can take on an uncountable set of values D. A categorical variable in which the number of categories continues to increase over time",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data analyst has been asked to use the below table sales_table to rank products within region by the sales: The result of the query should look like this: Which query will accomplish this task? A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A database was created in Databricks SQL using the following statement: CREATE SCHEMA accounting LOCATION ’dbfs:/accounting/data’; Where will data for this database be stored? A. dbfs:/accounting/data/accounting.db B. dbfs:/accounting/data C. dbfs:/accounting/data.db D. dbfs:/user/hive/warehouse/accounting.db",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data analyst is processing a complex aggregation on a table with zero null values and the query returns the following result: Which query did the analyst execute in order to get this result? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What describes the variance of a set of values? A. Variance is a measure of how far a single observed value is from a set of values. B. Variance is a measure of how far an observed value is from the variable’s maximum or minimum value. C. Variance is a measure of central tendency of a set of values. D. Variance is a measure of how far a set of values is spread out from the set's central value.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data analyst is working in an organization that utilizes a multi-hop, medallion architecture. They have been tasked with creating a new Gold table from an existing Silver table. Which query is performing a hop from a Silver table to a Gold table? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is used as a compute resource for Databricks SQL? A. Standard clusters B. Single-node clusters C. SQL warehouses D. Downstream BI tools integrated with Databricks SQL",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data analyst has opened up the SQL Editor page and written a new SQL statement. The data analyst now wants to save that statement to easily refer back to it later to add it to a dashboard. The results of the SQL statement must be able to be displayed as a counter, table, or a data visualization. Which approach should the data analyst use to accomplish this task? A. Save the SQL statement as a Dashboard B. Save the SQL statement within a Notebook C. Save the SQL statement as a Query D. Save the SQL statement in the Query History page",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data analyst wants to create a Databricks SQL dashboard with multiple data visualizations and multiple counters. What must be completed before adding the data visualizations and counters to the dashboard? A. All data visualizations and counters must be created using Queries. B. A SQL warehouse (formerly known as SQL endpoint) must be turned on and selected. C. A markdown-based tile must be added to the top of the dashboard displaying the dashboard’s name. D. The dashboard owner must also be the owner of the queries, data visualizations, and counters.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What does Partner Connect do when connecting Power BI and Tableau? A. Creates a Personal Access Token, downloads and installs an ODBC driver, and downloads a configuration file for connection by Power BI or Tableau to a SQL Warehouse (formerly known as a SQL Endpoint). B. Creates a Personal Access Token for authentication into Databricks SQL and emails it to you. C. Downloads a configuration file for connection by Power BI or Tableau to a SQL Warehouse (formerly known as a SQL Endpoint). D. Downloads and installs an ODBC driver.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data analyst is working with a nested array column products in table transactions. The analyst wants to return the first item in the array for each row. The data analyst is using the following incomplete command: Which lines of code should the data analyst use to fill in the blank in the above code block so that it successfully completes the task? A. products.1 B. products.0 C. products[0] D. products[1]",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A dashboard contains a bar chart visualization. The bar chart has a Date widget parameter associated with it. Which statement about the Date widget parameter is true? A. The Date widget parameter provides a start date and an end date that is used by a WHERE clause in the query that provides data to the bar chart. B. The Date widget parameter provides a start date and an end date that sets the x-axis range of the bar chart. C. The Date widget parameter provides a start date and an end date that filters all visualizations in the dashboard. D. The Date widget parameter functions only as a text box that tells the dashboard's users what date range the dashboard is using.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data analyst needs to share a Databricks SQL dashboard with stakeholders that are not permitted to have accounts in the Databricks deployment. The stakeholders need to be notified every time the dashboard is refreshed. Which approach can the data analyst use to accomplish this task with minimal effort? A. By granting the stakeholders’ email addresses permissions to the dashboard B. By adding the stakeholders’ email addresses to the refresh schedule subscribers list C. By granting the stakeholders’ email addresses to the SQL Warehouse (formerly known as endpoint) subscribers list D. By downloading the dashboard as a PDF and emailing it to the stakeholders each time it is refreshed",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What describes Partner Connect in Databricks? A. It allows for free use of Databricks partner tools through a common API. B. It allows multi-directional connection between Databricks and Databricks partners easier. C. It exposes connection information to third-party tools via Databricks partners. D. It is a feature that runs Databricks partner tools on a Databricks SQL Warehouse (formerly known as a SQL Endpoint).",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data analyst has come across a column in a table that contains personally identifiable information (PII). The data analyst should not have access to this type of PII data. How should the data analyst proceed? A. Stop working with the data and delete the table and any existing metadata or data files. B. Stop working with the data and proceed with the project using other data. C. Stop working with the data and notify their supervisor to ensure the data is handled following organizational and legal best practices. D. Drop the column containing PII data and continue with the project without notifying anybody.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where in the Databricks SQL workspace can a data analyst configure a refresh schedule for a query when the query is not attached to a dashboard or alert? A. Data Explorer B. The Visualization Editor C. The Query Editor D. The Dashboard Editor",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data analyst filters rows where the tags array includes the value ‘sql’ using this query: SELECT * FROM main.analytics.articles WHERE tags = ‘sql’; This query returns no results. How should the analyst query to filter for rows where the tags array contains ‘sql’? A. SELECT * FROM main.analytics.articles WHERE tags IN (‘sql’); B. SELECT * FROM main.analytics.articles WHERE tags LIKE ‘%sql%’; C. SELECT * FROM main.analytics.articles WHERE ‘sql’ IN tags; D. SELECT * FROM main.analytics.articles WHERE array_conatins (tags, ‘sql’);",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data analyst is troubleshooting a query in Databricks SQL that fails when processing large datasets and complex join operations. Logs indicate that the job consistently aborts due to resource constraint errors on the cluster. Which Query Profile metric should the analyst use to identify the operator that is causing resource overuse? A. Time spent per operator B. Shuffle read size per operator C. Memory peak per operator D. Bytes spilled to disk per operator",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A BI analyst is building an analytical data model in Databricks using Delta Lake tables. The source system contains transactional sales data that changes frequently. The analyst chooses to apply the Data Vault 2.0 methodology to manage historical changes while ensuring scalability and auditability across multiple business domains. Which component is used to capture the many-to-many relationship between hubs in a Data Vault v2 model? A. Hub Table B. Satellite Table C. Link Table D. Reference Table",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data analyst team is building reliable, production-grade data pipelines on Databricks. They require a solution that allows them to define data transformations declaratively, automatically enforce data quality expectations, and handle errors without manual intervention. Which Databricks capability addresses these requirements? A. Lakeflow Tables B. Lakeflow Spark Declarative Pipelines C. Lakeflow Jobs D. Lakeflow Connect",
+    "options": {},
+    "most_voted": "B"
+  }
+]
