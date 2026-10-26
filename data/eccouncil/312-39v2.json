@@ -1,0 +1,57 @@
+[
+  {
+    "question": "A SIEM alert is triggered due to unusual network traffic involving NetBIOS. The System log shows that “The TCP/IP NetBIOS Helper service entered the running state”. Concurrently, Event Code 4624: “An account was successfully logged on” appears for multiple machines within a short time frame. The logon type is identified as 3 (Network logon). Which of the following security incidents is the SIEM detecting? A. A user connecting to shared files from multiple workstations B. A malware infection spreading via SMB protocol C. A network administrator conducting routine maintenance D. An attacker performing lateral movement within the network",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An attacker attempts to gain unauthorized access to a secure network by repeatedly guessing login credentials. The SIEM is configured to generate an alert after detecting 10 consecutive failed login attempts within a short timeframe. However, the attacker successfully logs in on the 9th attempt, just before the threshold is reached, bypassing the alert mechanism. Security teams only become aware of the incident after detecting suspicious activity post-login, highlighting a gap in the SIEM’s detection rules. What type of alert classification does this represent? A. True Positive B. False Positive C. False Negative D. True Negative",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Daniel Clark, a cybersecurity specialist working in the Cloud SOC for a government agency, is responsible for ensuring secure access to cloud applications while maintaining compliance with regulatory frameworks. His team needs a security solution that can enforce access policies to prevent unauthorized access to cloud based applications, monitor and restrict data sharing within SaaS, PaaS, and IaaS environments, ensure compliance with government regulations for data security and privacy, and apply security controls to prevent sensitive data exposure in the cloud. To achieve these objectives, the team has implemented a security technology that governs control over cloud resources, applies security policies, and protects sensitive cloud-stored data. Which Cloud SOC technology is Daniel’s team using? A. Cloud Security Posture Management B. Cloud-native anomaly detection C. Cloud Workload Protection Platform D. Cloud Access Security Broker",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A mid-sized healthcare organization is facing frequent phishing and ransomware attacks. They lack an internal SOC and want proactive threat detection and response capabilities. Compliance with HIPAA regulations is essential. The organization seeks a solution that includes both monitoring and rapid response to incidents. Which service best meets their needs? A. MSSP with 24/7 log monitoring and incident escalation B. Self-hosted SIEM with in-house SOC analysts C. MDR with proactive threat hunting and incident containment D. Cloud-based SIEM with MSSP-Managed services",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A government agency responsible for protecting sensitive information needs to monitor its network for unusual data exfiltration attempts. Since traditional log data alone is insufficient to identify suspicious traffic patterns, the SIEM team decides to integrate traffic flow data into their system. This data will help detect anomalies, such as large data transfers to unauthorized destinations or unexpected traffic spikes. The team must choose the appropriate protocol to collect IP traffic information from network devices like routers and switches. Which protocol should be used to collect this data? A. Syslog B. SNMP (Simple Network Management Protocol) C. IPFIX (IP Flow Information Export) D. Net Flow (RFC 3954)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "As a SOC Administrator at a mid-sized financial institution, you noticed intermittent network slowdowns and unexplained high memory usage across multiple critical systems. Your initial analysis found no traces of malware, but a forensic investigation revealed unauthorized scheduled tasks that executed during off-peak hours. These tasks ran obfuscated scripts that connected to an external C2 server. Further investigations showed that the adversary had gained access months ago through a compromised VPN account, leveraging stolen credentials from a phishing campaign. Which phase of the Advanced Persistent Threat (APT) lifecycle does this scenario align with? A. Persistence B. Cleanup C. Search and Exfiltration D. Initial Intrusion",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Security Operations Center (SOC) team is investigating a suspected malware incident during the Analysis Phase of their incident response process. Their primary goal is to validate the initial detection, ensure the threat is real, and gather critical intelligence to understand the scope of the attack. Which of the following actions should the SOC team take to confirm their initial findings and eliminate false alarms? A. Verify generated logs B. Scan the enterprise environment and update the scope C. Root-cause analysis D. Verify false positives",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A newly hired SOC analyst has just joined a fast-growing multinational organization that manages a vast IT infrastructure across multiple regions. The analyst's first task is to quickly assess the company's external exposure and identify potential security risks before threat actors can exploit them. To begin the assessment, the analyst considers various techniques, including analyzing publicly available information, scanning for exposed services, reviewing DNS records, and gathering intelligence from external sources. However, given the sheer volume of data spanning multiple subsidiaries, cloud environments, and third- party integrations, the analyst quickly realizes that some methods may not scale well for large, complex infrastructures and may lead to delays or incomplete insights. Which technique is less practical for handling large or diverse data sets in this scenario? A. OSINT B. DNS Lookup C. Web Enumeration D. Stack Counting",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A threat hunter analyzing an infected endpoint finds that malicious processes keep reappearing even after termination, making traditional remediation ineffective. The user of the endpoint reports occasional system slowdowns, abnormal pop-ups, and unauthorized application launches. Upon deeper inspection, the threat hunter discovers that the system has multiple scheduled tasks executing unknown scripts at specific intervals, along with suspicious registry modifications that enable automatic script execution upon startup. Further investigation reveals that the endpoint has made occasional outbound connections to an unclassified external server, though the traffic is encrypted and intermittent. Additionally, the organization recently experienced multiple failed login attempts on privileged accounts originating from the same subnet, raising concerns about potential credential theft or lateral movement. With the possibility of persistence mechanisms, lateral movement, or external C2 activity, which signs should the threat hunter look out for to confirm and mitigate the threat? A. Network-Based Artifacts B. Threat Intelligence & Adversary C. Indicators of Attack (IoAs) D. Host-Based Artifacts",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A large financial services company has experienced an increasing number of sophisticated cyber threats targeting its critical assets. The company has a Security Operations Center (SOC) that primarily focuses on log collection and basic threat monitoring. However, recent security incidents have revealed gaps in its ability to detect and respond to advanced threats proactively. Senior management has decided to enhance the SOC's maturity by adopting the SOC Capability Maturity Model (CMM). The SOC team conducted an initial assessment using the CMM framework and found that their current state aligns with Level 1. The organization aims to reach Level 3. To achieve this, the SOC must enhance incident response procedures, improve threat intelligence integration, and establish key performance metrics. Additionally, the organization plans to automate incident triage, implement behavior-based analytics, and establish a continuous SOC training program. Based on the SOC Capability Maturity Model, which of the following should be the first priority in transitioning the SOC from Level 1 to Level 3? A. Outsourcing SOC operations to a Managed Security Service Provider (MSSP) for expertise. B. Implementing AI-driven automation for real-time threat detection and response. C. Deploying advanced deception technologies to lure attackers. D. Establishing well-defined and repeatable incident response processes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are a Threat Hunter in the SOC team of a prestigious law firm specializing in high-profile corporate cases. Your firm has recently suffered a data breach, where confidential client documents were leaked on a dark web forum. As part of your proactive threat-hunting initiative, you analyze security logs, network traffic, and endpoint activity to trace the attacker’s steps using the Cyber Kill Chain framework. Your investigation reveals that the attacker initially bypassed the firm’s multi-factor authentication (MFA) by masquerading as a legitimate user. Once inside, they moved laterally within the internal network, accessed sensitive client records from a shared file repository, and exfiltrated the data over an extended period. You are tasked to identify the attack phase within the Cyber Kill Chain framework to strengthen defenses against similar attacks. Implement proactive threat hunting measures to detect future intrusions before data exfiltration occurs. At which Cyber Kill Chain phase was the attack identified? A. Actions on Objectives B. Delivery C. Command & Control (C2) D. Exploitation",
+    "options": {},
+    "most_voted": "A"
+  }
+]
