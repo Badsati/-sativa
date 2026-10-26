@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Which of the following describes concept drift? A. Concept drift is when there is a change in the distribution of an input variable B. Concept drift is when there is a change in the distribution of a target variable C. Concept drift is when there is a change in the relationship between input variables and target variables D. Concept drift is when there is a change in the distribution of the predicted target given by the model E. None of these describe Concept drift",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A machine learning engineer is monitoring categorical input variables for a production machine learning application. The engineer believes that missing values are becoming more prevalent in more recent data for a particular value in one of the categorical input variables. Which of the following tools can the machine learning engineer use to assess their theory? A. Kolmogorov-Smirnov (KS) test B. One-way Chi-squared Test C. Two-way Chi-squared Test D. Jenson-Shannon distance E. None of these",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data scientist is using MLflow to track their machine learning experiment. As a part of each MLflow run, they are performing hyperparameter tuning. The data scientist would like to have one parent run for the tuning process with a child run for each unique combination of hyperparameter values. They are using the following code block: The code block is not nesting the runs in MLflow as they expected. Which of the following changes does the data scientist need to make to the above code block so that it successfully nests the child runs under the parent run in MLflow? A. Indent the child run blocks within the parent run block B. Add the nested=True argument to the parent run C. Remove the nested=True argument from the child runs D. Provide the same name to the run_name parameter for all three run blocks E. Add the nested=True argument to the parent run and remove the nested=True arguments from the child runs",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A machine learning engineer wants to log feature importance data from a CSV file at path importance_path with an MLflow run for model model. Which of the following code blocks will accomplish this task inside of an existing MLflow run block? A. B. C. mlflow.log_data(importance_path, \"feature-importance.csv\") D. mlflow.log_artifact(importance_path, \"feature-importance.csv\") E. None of these code blocks tan accomplish the task.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a simple, low-cost method of monitoring numeric feature drift? A. Jensen-Shannon test B. Summary statistics trends C. Chi-squared test D. None of these can be used to monitor feature drift E. Kolmogorov-Smirnov (KS) test",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data scientist has developed a model to predict ice cream sales using the expected temperature and expected number of hours of sun in the day. However, the expected temperature is dropping beneath the range of the input variable on which the model was trained. Which of the following types of drift is present in the above scenario? A. Label drift B. None of these C. Concept drift D. Prediction drift E. Feature drift",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data scientist wants to remove the star_rating column from the Delta table at the location path. To do this, they need to load in data and drop the star_rating column. Which of the following code blocks accomplishes this task? A. spark.read.format(“delta”).load(path).drop(“star_rating”) B. spark.read.format(“delta”).table(path).drop(“star_rating”) C. Delta tables cannot be modified D. spark.read.table(path).drop(“star_rating”) E. spark.sql(“SELECT * EXCEPT star_rating FROM path”)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following operations in Feature Store Client fs can be used to return a Spark DataFrame of a data set associated with a Feature Store table? A. fs.create_table B. fs.write_table C. fs.get_table D. There is no way to accomplish this task with fs E. fs.read_table",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineer is in the process of implementing a concept drift monitoring solution. They are planning to use the following steps: 1. Deploy a model to production and compute predicted values 2. Obtain the observed (actual) label values 3. _____ 4. Run a statistical test to determine if there are changes over time Which of the following should be completed as Step #3? A. Obtain the observed values (actual) feature values B. Measure the latency of the prediction time C. Retrain the model D. None of these should be completed as Step #3 E. Compute the evaluation metric using the observed and predicted values",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following is a reason for using Jensen-Shannon (JS) distance over a Kolmogorov-Smirnov (KS) test for numeric feature drift detection? A. All of these reasons B. JS is not normalized or smoothed C. None of these reasons D. JS is more robust when working with large datasets E. JS does not require any manual threshold or cutoff determinations",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data scientist is utilizing MLflow to track their machine learning experiments. After completing a series of runs for the experiment with experiment ID exp_id, the data scientist wants to programmatically work with the experiment run data in a Spark DataFrame. They have an active MLflow Client client and an active Spark session spark. Which of the following lines of code can be used to obtain run-level results for exp_id in a Spark DataFrame? A. client.list_run_infos(exp_id) B. spark.read.format(\"delta\").load(exp_id) C. There is no way to programmatically return row-level results from an MLflow Experiment. D. mlflow.search_runs(exp_id) E. spark.read.format(\"mlflow-experiment\").load(exp_id)",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data scientist has developed and logged a scikit-learn random forest model model, and then they ended their Spark session and terminated their cluster. After starting a new cluster, they want to review the feature_importances_ of the original model object. Which of the following lines of code can be used to restore the model object so that feature_importances_ is available? A. mlflow.load_model(model_uri) B. client.list_artifacts(run_id)[\"feature-importances.csv\"] C. mlflow.sklearn.load_model(model_uri) D. This can only be viewed in the MLflow Experiments UI E. client.pyfunc.load_model(model_uri)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a simple statistic to monitor for categorical feature drift? A. Mode B. None of these C. Mode, number of unique values, and percentage of missing values D. Percentage of missing values E. Number of unique values",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a probable response to identifying drift in a machine learning application? A. None of these responses B. Retraining and deploying a model on more recent data C. All of these responses D. Rebuilding the machine learning application with a new label variable E. Sunsetting the machine learning application",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data scientist has computed updated feature values for all primary key values stored in the Feature Store table features. In addition, feature values for some new primary key values have also been computed. The updated feature values are stored in the DataFrame features_df. They want to replace all data in features with the newly computed data. Which of the following code blocks can they use to perform this task using the Feature Store Client fs? A. B. C. D. E.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "After a data scientist noticed that a column was missing from a production feature set stored as a Delta table, the machine learning engineering team has been tasked with determining when the column was dropped from the feature set. Which of the following SQL commands can be used to accomplish this task? A. VERSION B. DESCRIBE C. HISTORY D. DESCRIBE HISTORY E. TIMESTAMP",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following describes label drift? A. Label drift is when there is a change in the distribution of the predicted target given by the model B. None of these describe label drift C. Label drift is when there is a change in the distribution of an input variable D. Label drift is when there is a change in the relationship between input variables and target variables E. Label drift is when there is a change in the distribution of a target variable",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following machine learning model deployment paradigms is the most common for machine learning projects? A. On-device B. Streaming C. Real-time D. Batch E. None of these deployments",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data scientist would like to enable MLflow Autologging for all machine learning libraries used in a notebook. They want to ensure that MLflow Autologging is used no matter what version of the Databricks Runtime for Machine Learning is used to run the notebook and no matter what workspace-wide configurations are selected in the Admin Console. Which of the following lines of code can they use to accomplish this task? A. mlflow.sklearn.autolog() B. mlflow.spark.autolog() C. spark.conf.set(“autologging”, True) D. It is not possible to automatically log MLflow runs. E. mlflow.autolog()",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data scientist has developed a model model and computed the RMSE of the model on the test set. They have assigned this value to the variable rmse. They now want to manually store the RMSE value with the MLflow run. They write the following incomplete code block: Which of the following lines of code can be used to fill in the blank so the code block can successfully complete the task? A. log_artifact B. log_model C. log_metric D. log_param E. There is no way to store values like this.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following MLflow operations can be used to automatically calculate and log a Shapley feature importance plot? A. mlflow.shap.log_explanation B. None of these operations can accomplish the task. C. mlflow.shap D. mlflow.log_figure E. client.log_artifact",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data scientist has developed a scikit-learn random forest model model, but they have not yet logged model with MLflow. They want to obtain the input schema and the output schema of the model so they can document what type of data is expected as input. Which of the following MLflow operations can be used to perform this task? A. mlflow.models.schema.infer_schema B. mlflow.models.signature.infer_signature C. mlflow.models.Model.get_input_schema D. mlflow.models.Model.signature E. There is no way to obtain the input schema and the output schema of an unlogged model.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A machine learning engineer and data scientist are working together to convert a batch deployment to an always-on streaming deployment. The machine learning engineer has expressed that rigorous data tests must be put in place as a part of their conversion to account for potential changes in data formats. Which of the following describes why these types of data type tests and checks are particularly important for streaming deployments? A. Because the streaming deployment is always on, all types of data must be handled without producing an error B. All of these statements C. Because the streaming deployment is always on, there is no practitioner to debug poor model performance D. Because the streaming deployment is always on, there is a need to confirm that the deployment can autoscale E. None of these statements",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following deployment paradigms can centrally compute predictions for a single record with exceedingly fast results? A. Streaming B. Batch C. Edge/on-device D. None of these strategies will accomplish the task. E. Real-time",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineering team wants to build a continuous pipeline for data preparation of a machine learning application. The team would like the data to be fully processed and made ready for inference in a series of equal-sized batches. Which of the following tools can be used to provide this type of continuous processing? A. Spark UDFs B. Structured Streaming C. MLflow D. Delta Lake E. AutoML",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A machine learning engineer wants to deploy a model for real-time serving using MLflow Model Serving. For the model, the machine learning engineer currently has one model version in each of the stages in the MLflow Model Registry. The engineer wants to know which model versions can be queried once Model Serving is enabled for the model. Which of the following lists all of the MLflow Model Registry stages whose model versions are automatically deployed with Model Serving? A. Staging, Production, Archived B. Production C. None, Staging, Production, Archived D. Staging, Production E. None, Staging, Production",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data scientist has written a function to track the runs of their random forest model. The data scientist is changing the number of trees in the forest across each run. Which of the following MLflow operations is designed to log single values like the number of trees in a random forest? A. mlflow.log_artifact B. mlflow.log_model C. mlflow.log_metric D. mlflow.log_param E. There is no way to store values like this.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A machine learning engineer is converting a Hyperopt-based hyperparameter tuning process from manual MLflow logging to MLflow Autologging. They are trying to determine how to manage nested Hyperopt runs with MLflow Autologging. Which of the following approaches will create a single parent run for the process and a child run for each unique combination of hyperparameter values when using Hyperopt and MLflow Autologging? A. Starting a manual parent run before calling fmin B. Ensuring that a built-in model flavor is used for the model logging C. Starting a manual child run within the objective_function D. There is no way to accomplish nested runs with MLflow Autologging and Hyperopt E. MLflow Autologging will automatically accomplish this task with Hyperopt",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data scientist has created a Python function compute_features that returns a Spark DataFrame with the following schema: The resulting DataFrame is assigned to the features_df variable. The data scientist wants to create a Feature Store table using features_df. Which of the following code blocks can they use to create and populate the Feature Store table using the Feature Store Client fs? A. B. C. features_df.write.mode(\"fs\").path(\"new_table\") D. E. features_df.write.mode(\"feature\").path(\"new_table\")",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is a benefit of logging a model signature with an MLflow model? A. The model will have a unique identifier in the MLflow experiment B. The schema of input data can be validated when serving models C. The model can be deployed using real-time serving tools D. The model will be secured by the user that developed it E. The schema of input data will be converted to match the signature",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements describes streaming with Spark as a model deployment strategy? A. The inference of batch processed records as soon as a trigger is hit B. The inference of all types of records in real-time C. The inference of batch processed records as soon as a Spark job is run D. The inference of incrementally processed records as soon as trigger is hit E. The inference of incrementally processed records as soon as a Spark job is run",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A machine learning engineer has deployed a model recommender using MLflow Model Serving. They now want to query the version of that model that is in the Production stage of the MLflow Model Registry. Which of the following model URIs can be used to query the described model version? A. https://<databricks-instance>/model-serving/recommender/Production/invocations B. The version number of the model version in Production is necessary to complete this task. C. https://<databricks-instance>/model/recommender/stage-production/invocations D. https://<databricks-instance>/model-serving/recommender/stage-production/invocations E. https://<databricks-instance>/model/recommender/Production/invocations",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following tools can assist in real-time deployments by packaging software with its own application, tools, and libraries? A. Cloud-based compute B. None of these tools C. REST APIs D. Containers E. Autoscaling clusters",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A machine learning engineer has registered a sklearn model in the MLflow Model Registry using the sklearn model flavor with UI model_uri. Which of the following operations can be used to load the model as an sklearn object for batch deployment? A. mlflow.spark.load_model(model_uri) B. mlflow.pyfunc.read_model(model_uri) C. mlflow.sklearn.read_model(model_uri) D. mlflow.pyfunc.load_model(model_uri) E. mlflow.sklearn.load_model(model_uri)",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A data scientist set up a machine learning pipeline to automatically log a data visualization with each run. They now want to view the visualizations in Databricks. Which of the following locations in Databricks will show these data visualizations? A. The MLflow Model Registry Model page B. The Artifacts section of the MLflow Experiment page C. Logged data visualizations cannot be viewed in Databricks D. The Artifacts section of the MLflow Run page E. The Figures section of the MLflow Run page",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A data scientist has developed a scikit-learn model sklearn_model and they want to log the model using MLflow. They write the following incomplete code block: Which of the following lines of code can be used to fill in the blank so the code block can successfully complete the task? A. mlflow.spark.track_model(sklearn_model, \"model\") B. mlflow.sklearn.log_model(sklearn_model, \"model\") C. mlflow.spark.log_model(sklearn_model, \"model\") D. mlflow.sklearn.load_model(\"model\") E. mlflow.sklearn.track_model(sklearn_model, \"model\")",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following describes the concept of MLflow Model flavors? A. A convention that deployment tools can use to wrap preprocessing logic into a Model B. A convention that MLflow Model Registry can use to version models C. A convention that MLflow Experiments can use to organize their Runs by project D. A convention that deployment tools can use to understand the model E. A convention that MLflow Model Registry can use to organize its Models by project",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In a continuous integration, continuous deployment (CI/CD) process for machine learning pipelines, which of the following events commonly triggers the execution of automated testing? A. The launch of a new cost-efficient SQL endpoint B. CI/CD pipelines are not needed for machine learning pipelines C. The arrival of a new feature table in the Feature Store D. The launch of a new cost-efficient job cluster E. The arrival of a new model version in the MLflow Model Registry",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineering team has written predictions computed in a batch job to a Delta table for querying. However, the team has noticed that the querying is running slowly. The team has already tuned the size of the data files. Upon investigating, the team has concluded that the rows meeting the query condition are sparsely located throughout each of the data files. Based on the scenario, which of the following optimization techniques could speed up the query by colocating similar records while considering values in multiple columns? A. Z-Ordering B. Bin-packing C. Write as a Parquet file D. Data skipping E. Tuning the file size",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A machine learning engineer needs to deliver predictions of a machine learning model in real-time. However, the feature values needed for computing the predictions are available one week before the query time. Which of the following is a benefit of using a batch serving deployment in this scenario rather than a real-time serving deployment where predictions are computed at query time? A. Batch serving has built-in capabilities in Databricks Machine Learning B. There is no advantage to using batch serving deployments over real-time serving deployments C. Computing predictions in real-time provides more up-to-date results D. Testing is not possible in real-time serving deployments E. Querying stored predictions can be faster than computing predictions in real-time",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineer has developed a random forest model using scikit-learn, logged the model using MLflow as random_forest_model, and stored its run ID in the run_id Python variable. They now want to deploy that model by performing batch inference on a Spark DataFrame spark_df. Which of the following code blocks can they use to create a function called predict that they can use to complete the task? A. B. It is not possible to deploy a scikit-learn model on a Spark DataFrame. C. D. E.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which of the following describes the purpose of the context parameter in the predict method of Python models for MLflow? A. The context parameter allows the user to specify which version of the registered MLflow Model should be used based on the given application's current scenario B. The context parameter allows the user to document the performance of a model after it has been deployed C. The context parameter allows the user to include relevant details of the business case to allow downstream users to understand the purpose of the model D. The context parameter allows the user to provide the model with completely custom if-else logic for the given application's current scenario E. The context parameter allows the user to provide the model access to objects like preprocessing models or custom configuration files",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A machine learning engineer has developed a model and registered it using the FeatureStoreClient fs. The model has model URI model_uri. The engineer now needs to perform batch inference on customer-level Spark DataFrame spark_df, but it is missing a few of the static features that were used when training the model. The customer_id column is the primary key of spark_df and the training set used when training and logging the model. Which of the following code blocks can be used to compute predictions for spark_df when the missing feature values can be found in the Feature Store by searching for features by customer_id? A. df = fs.get_missing_features(spark_df, model_uri) fs.score_model(model_uri, df) B. fs.score_model(model_uri, spark_df) C. df = fs.get_missing_features(spark_df, model_uri) fs.score_batch(model_uri, df) D. df = fs.get_missing_features(spark_df) fs.score_batch(model_uri, df) E. fs.score_batch(model_uri, spark_df)",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineer needs to select a deployment strategy for a new machine learning application. The feature values are not available until the time of delivery, and results are needed exceedingly fast for one record at a time. Which of the following deployment strategies can be used to meet these requirements? A. Edge/on-device B. Streaming C. None of these strategies will meet the requirements. D. Batch E. Real-time",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineer is using the following code block as part of a batch deployment pipeline: Which of the following changes needs to be made so this code block will work when the inference table is a stream source? A. Replace \"inference\" with the path to the location of the Delta table B. Replace schema(schema) with option(\"maxFilesPerTrigger\", 1) C. Replace spark.read with spark.readStream D. Replace format(\"delta\") with format(\"stream\") E. Replace predict with a stream-friendly prediction function",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A machine learning engineer is migrating a machine learning pipeline to use Databricks Machine Learning. They have programmatically identified the best run from an MLflow Experiment and stored its URI in the model_uri variable and its Run ID in the run_id variable. They have also determined that the model was logged with the name \"model\". Now, the machine learning engineer wants to register that model in the MLflow Model Registry with the name \"best_model\". Which of the following lines of code can they use to register the model to the MLflow Model Registry? A. mlflow.register_model(model_uri, \"best_model\") B. mlflow.register_model(run_id, \"best_model\") C. mlflow.register_model(f\"runs:/{run_id}/best_model\", \"model\") D. mlflow.register_model(model_uri, \"model\") E. mlflow.register_model(f\"runs:/{run_id}/model\")",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A machine learning engineer wants to move their model version model_version for the MLflow Model Registry model model from the Staging stage to the Production stage using MLflow Client client. Which of the following code blocks can they use to accomplish the task? A. B. C. D. E.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A machine learning engineer is manually refreshing a model in an existing machine learning pipeline. The pipeline uses the MLflow Model Registry model \"project\". The machine learning engineer would like to add a new version of the model to \"project\". Which of the following MLflow operations can the machine learning engineer use to accomplish this task? A. mlflow.register_model B. MlflowClient.update_registered_model C. mlflow.add_model_version D. MlflowClient.get_model_version E. The machine learning engineer needs to create an entirely new MLflow Model Registry model",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is an advantage of using the python_function(pyfunc) model flavor over the built-in library-specific model flavors? A. python_function provides no benefits over the built-in library-specific model flavors B. python_function can be used to deploy models in a parallelizable fashion C. python_function can be used to deploy models without worrying about which library was used to create the model D. python_function can be used to store models in an MLmodel file E. python_function can be used to deploy models without worrying about whether they are deployed in batch, streaming, or real-time environments",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following lists all of the model stages are available in the MLflow Model Registry? A. Development, Staging, Production B. None, Staging, Production C. Staging, Production, Archived D. None, Staging, Production, Archived E. Development, Staging, Production, Archived",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following MLflow Model Registry use cases requires the use of an HTTP Webhook? A. Starting a testing job when a new model is registered B. Updating data in a source table for a Databricks SQL dashboard when a model version transitions to the Production stage C. Sending an email alert when an automated testing Job fails D. None of these use cases require the use of an HTTP Webhook E. Sending a message to a Slack channel when a model version transitions stages",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineer wants to log and deploy a model as an MLflow pyfunc model. They have custom preprocessing that needs to be completed on feature variables prior to fitting the model or computing predictions using that model. They decide to wrap this preprocessing in a custom model class ModelWithPreprocess, where the preprocessing is performed when calling fit and when calling predict. They then log the fitted model of the ModelWithPreprocess class as a pyfunc model. Which of the following is a benefit of this approach when loading the logged pyfunc model for downstream deployment? A. The pyfunc model can be used to deploy models in a parallelizable fashion B. The same preprocessing logic will automatically be applied when calling fit C. The same preprocessing logic will automatically be applied when calling predict D. This approach has no impact when loading the logged pyfunc model for downstream deployment E. There is no longer a need for pipeline-like machine learning objects",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A machine learning engineering manager has asked all of the engineers on their team to add text descriptions to each of the model projects in the MLflow Model Registry. They are starting with the model project \"model\" and they'd like to add the text in the model_description variable. The team is using the following line of code: Which of the following changes does the team need to make to the above code block to accomplish the task? A. Replace update_registered_model with update_model_version B. There no changes necessary C. Replace description with artifact D. Replace client.update_registered_model with mlflow E. Add a Python model as an argument to update_registered_model",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A machine learning engineer wants to move their model version model_version for the MLflow Model Registry model model from the Staging stage to the Production stage using MLflow Client client. At the same time, they would like to archive any model versions that are already in the Production stage. Which of the following code blocks can they use to accomplish the task? A. B. C. D. E. It is not possible to transition models from Production to Archived.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following Databricks-managed MLflow capabilities is a centralized model store? A. Models B. Model Registry C. Model Serving D. Feature Store E. Experiments",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A machine learning engineer is attempting to create a webhook that will trigger a Databricks Job job_id when a model version for model model transitions into any MLflow Model Registry stage. They have the following incomplete code block: Which of the following lines of code can be used to fill in the blank so that the code block accomplishes the task? A. \"MODEL_VERSION_CREATED\" B. \"MODEL_VERSION_TRANSITIONED_TO_PRODUCTION\" C. \"MODEL_VERSION_TRANSITIONED_TO_STAGING\" D. \"MODEL_VERSION_TRANSITIONED_STAGE\" E. \"MODEL_VERSION_TRANSITIONED_TO_STAGING\", \"MODEL_VERSION_TRANSITIONED_TO_PRODUCTION\"",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following MLflow operations can be used to delete a model from the MLflow Model Registry? A. client.transition_model_version_stage B. client.delete_model_version C. client.update_registered_model D. client.delete_model E. client.delete_registered_model",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineer wants to programmatically create a new Databricks Job whose schedule depends on the result of some automated tests in a machine learning pipeline. Which of the following Databricks tools can be used to programmatically create the Job? A. MLflow APIs B. AutoML APIs C. MLflow Client D. Jobs cannot be created programmatically E. Databricks REST APIs",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineer wants to view all of the active MLflow Model Registry Webhooks for a specific model. They are using the following code block: Which of the following changes does the machine learning engineer need to make to this code block so it will successfully accomplish the task? A. There are no necessary changes B. Replace list with view in the endpoint URL C. Replace POST with GET in the call to http_request D. Replace list with webhooks in the endpoint URL E. Replace POST with PUT in the call to http_request",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A machine learning engineer has created a webhook with the following code block: Which of the following code blocks will trigger this webhook to run the associate job? A. B. C. D. E.",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "A machine learning engineer is converting a Hyperopt-based hyperparameter tuning process from manual MLflow logging to MLflow Autologging. They notice that not all details and objects are automatically logged, and they will need to manually log some things. Which of the following will need to be manually logged when performing nested runs with Hyperopt and MLflow Autologging? A. Trial models B. Trial status C. Best trial evaluation metric D. Hyperparameter values E. Evaluation metrics",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data scientist wants to track the runs of their random forest model. The data scientist is changing the number of trees and the maximum depth of the trees in the forest across each run. They write the following code block: Which Python object type does params need to be an instance of? A. array B. PySpark DataFrarne C. dict D. list",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data scientist wants to examine the data in the Feature Store table table from the database dev as a Spark DataFrame. They have access to Feature Store Client fs. Which line of code can be used to gel the data from table as a Spark DataFrame? A. fs.get_table(\"table) B. fs.read_table(\"dev.table\") C. fs.create_table(\"dev.table\") D. fs.get_table(\"dev.table\")",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A machine learning engineer has developed a machine learning pipeline that produces a scikit-learn model model and computes the RMSE rmse. MAE mae, and R-squared r2 values for the test set. They now want to log these values with the MLflow run. These values are stored in the dictionary metrics. They run the following code block: The code block produces an error. Which changes to the code block will successfully complete the task? A. Replace mlflow.log_metric with mlflow.sklearn.log_metric B. Replace metrics with model C. Replace log_metric with log_metrics D. Replace metrics with rmse, mae, r2",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A data scientist is utilizing MLflow to track their machine learning experiments. After completing a run with run ID run_id for the experiment with experiment ID exp_id, the data scientist wants to programmatically return the logged metrics for run_id. They have an active MLflow Client client and an active Spark session spark. Which lines of code can be used to return the logged metrics for run_id? A. client.qet_run(exp_id.run_id).data.metrics B. C. client.get_run(run_id).data.metrics D. spark.read.format(\"mlflow-run\").load(run_id)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A machine learning engineer wants to move their model version model_version for the MLflow Model Registry model model from the Staging stage to the Production stage using MLflow Client client. Which code block can they use to accomplish the task? A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which or the following statements about built-in library-specific MLflow Model flavors is true? A. Built-in library-specific flavors are required for model signature use B. Built-in library-specific flavors allow models to be exported as library objects C. Built-in library-specific flavors allow models to be used with any library/span> D. Built-in library-specific flavors can only be used for logging models",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which tool can be used to automatically start a testing Job when a new version of an MLflow Model Registry model is registered? A. MLflow Model Registry UI B. MLflow Client API C. MLflow Model Registry Webhooks D. MLflow REST API",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A machine learning engineer has developed a model and registered it using the FeatureStoreClient fs. The model has model URI model_uri. The engineer now needs to perform batch inference on the training set logged with the model, but a few of the feature values in the column spend have since been updated and arc present in the customer-level Spark DataFrame spark_df. The customer_id column is the primary key of spark_df and the training set used when training and logging the model. Which code block can be used to compute predictions for the training set while overwriting its old spend values with the new spend values from spark_df? A. fs.score_batch(model_uri, spark_df) B. fs.score_model(model_uri, spark_df) C. df = fs.get_updated_feature(spark_df, model=uri) fs.score_batch(model_uri, df) D. df = fs.get_updated_features(spark_df) fs.score_batch(model_uri, df)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A machine learning engineer has deployed a model recommender using MLflow Model Serving. They now want to query the version of that model that is in the Staging stage of the MLflow Model Registry. Which model URI can be used to query the described model version? A. The version number of the model version in Production is necessary to complete this task. B. https:// /model-serving/recommender/Staging/invocations C. It is not possible to query a model version in the Staging stage. D. https:// /model/recommender/Staging/invocations",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A machine learning engineer is working on a fraud detection machine learning application. When a transaction is made with a credit card, the machine learning application will immediately process the data and make a prediction to determine whether or not to approve the transaction based on the probability that the transaction is fraudulent. Which deployment strategy can be used to meet these requirements? A. Edge/on-device B. Real-time C. Batch D. Streaming",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A machine learning engineer has developed a random forest model using scikit-learn and registered the model using MLflow. They now want to deploy that model in parallel. Which of the following operations can they use to create a function they can use to deploy the registered scikit-learn model in parallel? A. It is not possible to deploy a scikit-learn model in parallel. B. mlflow.spark.pandas_udf C. mlflow.sklearn.spark.udf D. mlflow.pyfunk.spark.udf",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which tool can assist in real-time deployments by packaging software with its own application, tools, and libraries? A. Click B. Structured Streaming C. Docker D. Flask",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following describes batch deployment for machine learning projects? A. Predictions are computed and delivered as soon as feature values are available B. None of these describe batch deployment for machine learning projects C. Predictions are computed prior to delivery and stored for later querying D. Predictions are computed immediately as data arrives and stored for later querying",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A machine learning engineer needs to select a deployment strategy for a new machine learning application. The machine learning application requires central prediction computation and exceedingly fast results, but only a handful of predictions need to be computed at a time. Which deployment strategy can be used to meet these requirements? A. Streaming B. Real-time C. Batch D. Edge/on-device",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A machine learning engineer is in the process of implementing a feature drift monitoring solution. They are planning to use the following steps: 1. Measure the distributions of each feature variable in the training set 2. Deploy a model to production 3. Measure the distributions of each feature variable in inference 4. _______ Which action should be completed as Step #4? A. Retrain the model based on any new feature variables that have been added to the feature set B. Obtain the observed values (actual) feature values and compare to the predicted values C. Measure the latency of the model's prediction time D. Run a statistical test to determine if there are changes in the feature variable distribution over time",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A machine learning engineer has found drift in a production machine learning application. The engineer has determined that retraining and deploying a new model is necessary. Which statement must be true prior to deploying the new model? A. All of these statements must be true prior to deploying the new model B. The new model must perform better than the original model on a random subset of the available data C. The now model must perform better than the original model on all of the available data D. The new model must perform better than the original model on the most recently available data",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Label drift occurs where there is a change in which element? A. The relationship between input variables and target variables B. The distribution of the predicted target given by the model C. The distribution of a target variable D. The distribution of an input variable",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A machine learning engineer has detected that concept drift is occurring in a production machine learning application. Which result is the impact of concept drift? A. The model's latency will decrease B. The model's efficacy will increase C. The model's latency will increase D. The model's efficacy will decrease",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A machine learning engineer is monitoring label values for a production machine learning classification model. The engineer believes that the relative prevalence of the classes is becoming changing in more recent data. Which tool can the machine learning engineer use to assess their theory? A. One-way Chi-squared Test B. Jenson-Shannon distance C. Two-way Chi-squared Test D. Kolmogorov-Smirnov (KS) test",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A machine learning engineer wants to load the data from the very first version of a Delta table from location path. Which of the following lines of code can be used to accomplish this task? A. spark.read.format(\"delta\").option(\"version\", 0).load(path) B. spark.read.format(\"delta\").option(\"versionAsOf\", 0).load(path) C. spark.read.format(\"delta\").option(\"versionAsOf\", 1).load(path) D. spark.read.format(\"delta\").option(\"version\", 1).load(path)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which is a benefit of logging an input example with an MLflow model? A. The model evaluation metrics are stored with the model B. The environment requirements are packaged with the MLmodel file C. An example record is available to test serving applications D. An example prediction is available to test post-inference pipelines",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A data scientist wants to log outlier feature data from a CSV file at path outlier_path with an MLflow run for model model. Which code block will accomplish this task inside of an existing MLflow run block? A. mlflow.log_artifact(outlier_path, \"outlier-features.csv\") B. mlflow.log_data(outlier_path, \"outlier-features.csv\") C. D.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A data scientist has developed a model to predict whether or not it will rain using the expected temperature and expected cloud coverage. However, the proportion of days where it actually rains has increased dramatically from the proportion in the data on which the model was trained. Which type of drift is present in the above scenario? A. Feature drift B. Label drift C. Prediction drift D. Concept drift",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Machine Learning Engineer wants to monitor the quality and stability of their machine learning model’s predictions over time. They have a Delta table, retail_inference_log, which records each model prediction along with input features, a timestamp, and (when available) the true label. They need to detect data drift and monitor model performance trends using Databricks Lakehouse Monitoring, ensuring that alerts are triggered if the distribution of predictions or input features changes significantly. Which approach will set up monitoring for this use case? A. Create a monitor with the Inference profile on the retail_inference_log table, specifying the timestamp column and the columns for model inputs, predictions, and labels. Configure the monitor to compute drift and performance metrics over time windows. B. Create a monitor with the Inference profile on the retail_inference_log table, and specify a recent batch of production data as the baseline table for drift detection. Use this recent production data to compare against new data for drift and performance monitoring. C. Create a monitor with the Snapshot profile on the retail_inference_log table, so that metrics are calculated over the entire table each time the monitor runs and therefore is able to compare new values with previous ones to compute data drift. D. Create a monitor with the Time Series profile on the retail_inference_log table, specifying the timestamp column and including model input, prediction columns and the true label column. This will track drift in features and predictions over time, and model performance could also be tracked using a custom metric.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Machine Learning Engineer is using joblibspark and MLflowCallback to perform a distributed hyperparameter tuning experiment via Optuna. Assuming they have a single objective they are optimizing for, what will be the default sampler implemented by Optuna? A. GridSampler B. RandomSampler C. NSGAIISampler D. TPESampler",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A Machine Learning Engineer has created a custom PyFunc model wrapper for a fraud detection system that needs to be registered in Unity Catalog under the schema risk_models in the production catalog. The model requires specific dependencies and must be accessible for governance and version control. The engineer is working on a dedicated cluster with Unity Catalog enabled, but the model registration is failing. Why is the model failing to be registered in this case? A. The model signature must be provided, as Unity Catalog requires all models to have signatures. B. The cluster must be configured with shared access mode instead of dedicated mode. C. The PyFunc model must inherit from mlflow.sklearn.Model instead of mlflow.pyfunc.PythonModel. D. The model artifacts must be stored in DBFS rather than Unity Catalog volumes.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A Machine Learning Engineer needs a continuous deployment pipeline for their models hosted on Databricks Model Serving. The deployment automation should execute after a model is trained and registered using MLflow. The goal of the automation is to deploy the latest version of the model from the MLflow Model Registry only if the model can meet the company’s strict latency requirements (P95 < 300ms) while serving production traffic. How can the engineer validate that new models meet their latency requirements when served in production? A. A/B test the latest model with Databricks Model Serving so that the latest model receives 5% of production traffic and the current model receives the rest. Use inference tables to calculate P95 latency and verify it is less than 300ms. B. Serve the latest model on Databricks Model Serving and use a load testing client to generate requests at the production request rate. Use the load testing client to calculate P95 latency and verify it is less than 300ms. C. Use the MLflow Get Run API to retrieve the model metrics from MLflow Tracking and verify that the model_latency metric is less than 300ms. D. Use the MLflow Get Run API to retrieve the model metrics from MLflow Tracking and verify that the inference_latency metric is less than 300ms.",
+    "options": {},
+    "most_voted": "B"
+  }
+]
