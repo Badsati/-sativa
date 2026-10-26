@@ -1,0 +1,72 @@
+[
+  {
+    "question": "A Falcon Log Collector has been configured with 4 sinks of type memory, each having a queue size of 2GB. What is the minimum memory requirement produced by this configuration? A. 9 GB B. 12 GB C. 10 GB D. 8 GB",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which default role will maintain least privilege and allow for creation and management of parsers? A. NG SIEM Analyst B. NG SIEM Security Lead C. NG SIEM Administrator D. NG SIEM Analyst – Read Only",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement is accurate about how data ingest is measured and represented in Next-Gen SIEM? A. Average GB/day for all sources (pre-parsing) B. Average GB/month for first and third-party sources (pre-parsing) C. Average GB/month for all sources (post-parsing) D. Average GB/day for third-party sources only (pre-parsing)",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Following the principle of least privilege, which is the appropriate role to grant a Falcon Next-Gen SIEM user the permissions to read case data and write XDR data while denying the permission to write case templates? A. NG SIEM Security Lead B. NG SIEM Analyst – Read Only C. NG SIEM Analyst D. NGSIEM Administrator",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the time format for the @timestamp field when data is parsed using the CrowdStrike Parsing Standard (CPS)? A. ISO 8601 B. Unix Time in microseconds C. Human-readable D. Unix Time in milliseconds",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the correct mode to enroll LogCollector into Fleet Management with configuration of the log sources stored and managed centrally in Next-Gen SIEM? A. Full B. Complete C. Central D. localConfig",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When deploying the Falcon Log Collector using the commands in the CrowdStrike Fleet Management interface, what is the correct service name? A. flc-api B. humio-collector C. logscale-collector D. flc-collector",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You notice a larger than expected ingest delay from one of your high-volume streaming log collectors. Which setting should you increase on the log collector to improve performance? A. Amount of available disk space B. Available source throughput C. Number of concurrent requests a sink is using D. Default memory queue size",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the maximum number of active correlation rules in a CID? A. 1000 B. 250 C. 750 D. 500",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which three System alerts are enabled by default in Next-Gen SIEM for third-party connectors? A. Alert if connector receives no data in 24 hours Alert if connector is disconnected Resolve alerts within 30 days B. Alert if daily data ingestion limit exceeded Alert if monthly data ingestion limit is exceeded Resolve alerts within 30 days C. Alert if connector is disconnected Alert if daily data ingestion limit exceeded Alert if monthly data ingestion limit is exceeded D. Alert if connector receives no data in 24 hours Alert if daily data ingestion limit exceeded Alert if monthly data ingestion limit is exceeded",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which two tags are compliant with the CrowdStrike Parsing Standard (CPS)? A. #event.type and #event.kind B. #vendor.name and #event.type C. #observer.type and #event.kind D. #observer.type and #vendor.name",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An event has the following fields: Which CQL query will output the frequency of a unique set of ComputerName, UserName, CommandLine? A. #event_simpleName = ProcessRollup2 FileName = ssh.exe CommandLine = /\\s-R\\s.+\\s-p/ | table([ComputerName, UserName, CommandLine]) | count() B. #event_simpleName = ProcessRollup2 | FileName = ssh.exe | CommandLine = /\\s-R\\s.+\\s-p/ | table([ComputerName, UserName, CommandLine], function=count()) C. #event_simpleName = ProcessRollup2 | FileName = ssh.exe | CommandLine = /\\s-R\\s.+\\s-p/ | groupBy([ComputerName, UserName, CommandLine], function=count()) D. #event_simpleName = ProcessRollup2 FileName = ssh.exe CommandLine = /\\s-R\\s.+\\s-p/ | groupBy([ComputerName, UserName, CommandLine])",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You need to import a pre-built workflow into Fusion SOAR to automate a part of your incident response process. Which file format would you use? A. .CPP B. .JSON C. .PY D. .YAML",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What are the four required CPS-compliant Event parser tags? A. event.category event.kind event.module event.outcome B. event.category event.dataset event.kind event.outcome C. event.dataset event.kind event.module event.outcome",
+    "options": {},
+    "most_voted": "C"
+  }
+]
