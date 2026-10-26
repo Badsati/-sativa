@@ -1,0 +1,377 @@
+[
+  {
+    "question": "Which Enterprise Security framework provides a mechanism for running preconfigured actions within the Splunk platform or integrating with external applications? A. Asset and Identity B. Notable Event C. Threat Intelligence D. Adaptive Response",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following Splunk Enterprise Security features allows industry frameworks such as CIS Critical Security Controls, MITRE ATT&CK, and the Lockheed Martin Cyber Kill Chain® to be mapped to Correlation Search results? A. Annotations B. Playbooks C. Comments D. Enrichments",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is the primary benefit of using the CIM in Splunk? A. It allows for easier correlation of data from different sources. B. It improves the performance of search queries on raw data. C. It enables the use of advanced machine learning algorithms. D. It automatically detects and blocks cyber threats.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Tactics, Techniques, and Procedures (TTPs) are methods or behaviors utilized by attackers. In which framework are these categorized? A. NIST 800-53 B. ISO 27000 C. CIS18 D. MITRE ATT&CK",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A threat hunter executed a hunt based on the following hypothesis: As an actor, I want to plant rundll32 for proxy execution of malicious code and leverage Cobalt Strike for Command and Control. Relevant logs and artifacts such as Sysmon, netflow, IDS alerts, and EDR logs were searched, and the hunter is confident in the conclusion that Cobalt Strike is not present in the company’s environment. Which of the following best describes the outcome of this threat hunt? A. The threat hunt was successful because the hypothesis was not proven. B. The threat hunt failed because the hypothesis was not proven. C. The threat hunt failed because no malicious activity was identified. D. The threat hunt was successful in providing strong evidence that the tactic and tool is not present in the environment.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analyst notices that one of their servers is sending an unusually large amount of traffic, gigabytes more than normal, to a single system on the Internet. There doesn’t seem to be any associated increase in incoming traffic. What type of threat actor activity might this represent? A. Data exfiltration B. Network reconnaissance C. Data infiltration D. Lateral movement",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In which phase of the Continuous Monitoring cycle are suggestions and improvements typically made? A. Define and Predict B. Establish and Architect C. Analyze and Report D. Implement and Collect",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analyst is not sure that all of the potential data sources at her company are being correctly or completely utilized by Splunk and Enterprise Security. Which of the following might she suggest using, in order to perform an analysis of the data types available and some of their potential security uses? A. Splunk ITSI B. Splunk Security Essentials C. Splunk SOAR D. Splunk Intelligence Management",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "During their shift, an analyst receives an alert about an executable being run from C:\\Windows\\Temp. Why should this be investigated further? A. Temp directories aren’t owned by any particular user, making it difficult to track the process owner when files are executed. B. Temp directories are flagged as non-executable, meaning that no files stored within can be executed, and this executable was run from that directory. C. Temp directories contain the system page file and the virtual memory file, meaning the attacker can use their malware to read the in memory values of running programs. D. Temp directories are world writable thus allowing attackers a place to drop, stage, and execute malware on a system without needing to worry about file permissions.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analyst would like to visualize threat objects across their environment and chronological risk events for a Risk Object in Incident Review. Where would they find this? A. Running the Risk Analysis Adaptive Response action within the Notable Event. B. Via a workflow action for the Risk Investigation dashboard. C. Via the Risk Analysis dashboard under the Security Intelligence tab in Enterprise Security. D. Clicking the risk event count to open the Risk Event Timeline.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Risk Rule generates events on Suspicious Cloud Share Activity and regularly contributes to confirmed incidents from Risk Notables. An analyst realizes the raw logs these events are generated from contain information which helps them determine what might be malicious. What should they ask their engineer for to make their analysis easier? A. Create a field extraction for this information. B. Add this information to the risk_message. C. Create another detection for this information. D. Allowlist more events based on this information.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What device typically sits at a network perimeter to detect command and control and other potentially suspicious traffic? A. Host-based firewall B. Web proxy C. Endpoint Detection and Response D. Intrusion Detection System",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Upon investigating a report of a web server becoming unavailable, the security analyst finds that the web server’s access log has the same log entry millions of times: 147.186.119.200 - - [28/Jul/2023:12:04:13 -0300] \"GET /login/ HTTP/1.0\" 200 3733 What kind of attack is occurring? A. Denial of Service Attack B. Distributed Denial of Service Attack C. Cross-Site Scripting Attack D. Database Injection Attack",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "According to David Bianco's Pyramid of Pain, which indicator type is least effective when used in continuous monitoring? A. Domain names B. TTPs C. Network/Host artifacts D. Hash values",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analysis of an organization’s security posture determined that a particular asset is at risk and a new process or solution should be implemented to protect it. Typically, who would be in charge of implementing the new process or solution that was selected? A. Security Architect B. SOC Manager C. Security Engineer D. Security Analyst",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a correct Splunk search that will return results in the most performant way? A. index=foo host=i-478619733 | stats range(_time) as duration by src_ip | bin duration span=5min | stats count by duration, host B. | stats range(_time) as duration by src_ip | index=foo host=i-478619733 | bin duration span=5min | stats count by duration, host C. index=foo host=i-478619733 | transaction src_ip |stats count by host D. index=foo | transaction src_ip |stats count by host | search host=i-478619733",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "There are many resources for assisting with SPL and configuration questions. Which of the following resources feature community-sourced answers? A. Splunk Answers B. Splunk Lantern C. Splunk Guidebook D. Splunk Documentation",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A successful Continuous Monitoring initiative involves the entire organization. When an analyst discovers the need for more context or additional information, perhaps from additional data sources or altered correlation rules, to what role would this request generally escalate? A. SOC Manager B. Security Analyst C. Security Engineer D. Security Architect",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Splunk Enterprise Security has numerous frameworks to create correlations, integrate threat intelligence, and provide a workflow for investigations. Which framework raises the threat profile of individuals or assets to allow identification of people or devices that perform an unusual amount of suspicious activities? A. Threat Intelligence Framework B. Risk Framework C. Notable Event Framework D. Asset and Identity Framework",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "While the top command is utilized to find the most common values contained within a field, a Cyber Defense Analyst hunts for anomalies. Which of the following Splunk commands returns the least common values? A. least B. uncommon C. rare D. base",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The Lockheed Martin Cyber Kill Chain® breaks an attack lifecycle into several stages. A threat actor modified the registry on a compromised Windows system to ensure that their malware would automatically run at boot time. Into which phase of the Kill Chain would this fall? A. Act on Objectives B. Exploitation C. Delivery D. Installation",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Risk Notable Event has been triggered in Splunk Enterprise Security, an analyst investigates the alert, and determines it is a false positive. What metric would be used to define the time between alert creation and close of the event? A. MTTR (Mean Time to Respond) B. MTBF (Mean Time Between Failures) C. MTTA (Mean Time to Acknowledge) D. MTTD (Mean Time to Detect)",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An analyst needs to create a new field at search time. Which Splunk command will dynamically extract additional fields as part of a Search pipeline? A. rex B. fields C. regex D. eval",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is considered Personal Data under GDPR? A. The birth date of an unidentified user. B. An individual’s address including their first and last name. C. The name of a deceased individual. D. A company’s registration number.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What goal of an Advanced Persistent Threat (APT) group aims to disrupt or damage on behalf of a cause? A. Hacktivism B. Cyber espionage C. Financial gain D. Prestige",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Cyber Threat Intelligence (CTI) team produces a report detailing a specific threat actor’s typical behaviors and intent. This would be an example of what type of intelligence? A. Operational B. Executive C. Tactical D. Strategic",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An analyst is building a search to examine Windows XML Event Logs, but the initial search is not returning any extracted fields. Based on the above image, what is the most likely cause? A. The analyst does not have the proper role to search this data. B. The analyst is searching newly indexed data that was improperly parsed. C. The analyst did not add the extract command to their search pipeline. D. The analyst is not in the proper Search Mode and should switch to Smart or Verbose.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An organization is using Risk-Based Alerting (RBA). During the past few days, a user account generated multiple risk observations. Splunk refers to this account as what type of entity? A. Risk Factor B. Risk Index C. Risk Analysis D. Risk Object",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When searching in Splunk, which of the following SPL commands can be used to run a subsearch across every field in a wildcard field list? A. foreach B. rex C. makeresults D. transaction",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How are Notable Events configured in Splunk Enterprise Security? A. During an investigation. B. As part of an audit. C. Via an Adaptive Response Action in a regular search. D. Via an Adaptive Response Action in a correlation search.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analyst is investigating a network alert for suspected lateral movement from one Windows host to another Windows host. According to Splunk CIM documentation, the IP address of the host from which the attacker is moving would be in which field? A. host B. dest C. src_nt_host D. src_ip",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following data sources can be used to discover unusual communication within an organization’s network? A. EDS B. NetFlow C. Email D. IAM",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When threat hunting for outliers in Splunk, which of the following SPL pipelines would filter for users with over a thousand occurrences? A. | sort by user | where count > 1000 B. | stats count by user | where count > 1000 | sort - count C. | top user D. | stats count(user) | sort - count | where count > 1000",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The United States Department of Defense (DoD) requires all government contractors to provide adequate security safeguards referenced in National Institute of Standards and Technology (NIST) 800-171. All DoD contractors must continually reassess, monitor, and track compliance to be able to do business with the US government. Which feature of Splunk Enterprise Security provides an analyst context for the correlation search mapping to the specific NIST guidelines? A. Comments B. Notes C. Annotations D. Framework mapping",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An analyst is investigating the number of failed login attempts by IP address. Which SPL command can be used to create a temporary table containing the number of failed login attempts by IP address over a specific time period? A. index=security_logs eventtype=failed_login | eval count as failed_attempts by src_ip | sort -failed_attempts B. index=security_logs eventtype=failed_login | transaction count as failed_attempts by src_ip | sort -failed_attempts C. index=security_logs eventtype=failed_login | stats count as failed_attempts by src_ip | sort -failed_attempts D. index=security_logs eventtype=failed_login | sum count as failed_attempts by src_ip | sort -failed_attempts",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The field file_acl contains access controls associated with files affected by an event. In which data model would an analyst find this field? A. Malware B. Alerts C. Vulnerabilities D. Endpoint",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A threat hunter generates a report containing the list of users who have logged in to a particular database during the last 6 months, along with the number of times they have each authenticated. They sort this list and remove any user names who have logged in more than 6 times. The remaining names represent the users who rarely log in, as their activity is more suspicious. The hunter examines each of these rare logins in detail. This is an example of what type of threat-hunting technique? A. Least Frequency of Occurrence Analysis B. Co-Occurrence Analysis C. Time Series Analysis D. Outlier Frequency Analysis",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the main difference between hypothesis-driven and data-driven Threat Hunting? A. Data-driven hunts always require more data to search through than hypothesis-driven hunts. B. Data-driven hunting tries to uncover activity within an existing data set, hypothesis-driven hunting begins with a potential activity that the hunter thinks may be happening. C. Hypothesis-driven hunts are typically executed on newly ingested data sources, while data-driven hunts are not. D. Hypothesis-driven hunting tries to uncover activity within an existing data set, data-driven hunting begins with an activity that the hunter thinks may be happening.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The Security Operations Center (SOC) manager is interested in creating a new dashboard for typosquatting after a successful campaign against a group of senior executives. Which existing ES dashboard could be used as a starting point to create a custom dashboard? A. IAM Activity B. Malware Center C. Access Anomalies D. New Domain Analysis",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the main difference between a DDoS and a DoS attack? A. A DDoS attack is a type of physical attack, while a DoS attack is a type of cyberattack. B. A DDoS attack uses a single source to target a single system, while a DoS attack uses multiple sources to target multiple systems. C. A DDoS attack uses multiple sources to target a single system, while a DoS attack uses a single source to target a single or multiple systems. D. A DDoS attack uses a single source to target multiple systems, while a DoS attack uses multiple sources to target a single system.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Cyber Threat Intelligence (CTI) team delivers a briefing to the CISO detailing their view of the threat landscape the organization faces. This is an example of what type of Threat Intelligence? A. Tactical B. Strategic C. Operational D. Executive",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analyst is examining the logs for a web application’s login form. They see thousands of failed logon attempts using various usernames and passwords. Internet research indicates that these credentials may have been compiled by combining account information from several recent data breaches. Which type of attack would this be an example of? A. Credential sniffing B. Password cracking C. Password spraying D. Credential stuffing",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analysis of an organization’s security posture determined that a particular asset is at risk and a new process or solution should be implemented to protect it. Typically, who would be in charge of designing the new process and selecting the required tools to implement it? A. SOC Manager B. Security Engineer C. Security Architect D. Security Analyst",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After discovering some events that were missed in an initial investigation, an analyst determines this is because some events have an empty src field. Instead, the required data is often captured in another field called machine_name. What SPL could they use to find all relevant events across either field until the field extraction is fixed? A. | eval src = coalesce(src,machine_name) B. | eval src = src + machine_name C. | eval src = src . machine_name D. | eval src = tostring(machine_name)",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analyst would like to test how certain Splunk SPL commands work against a small set of data. What command should start the search pipeline if they wanted to create their own data instead of utilizing data contained within Splunk? A. makeresults B. rename C. eval D. stats",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the following step-by-step description an example of? 1. The attacker devises a non-default beacon profile with Cobalt Strike and embeds this within a document. 2. The attacker creates a unique email with the malicious document based on extensive research about their target. 3. When the victim opens this document, a C2 channel is established to the attacker’s temporary infrastructure on a compromised website. A. Tactic B. Policy C. Procedure D. Technique",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a best practice when creating performant searches within Splunk? A. Utilize the transaction command to aggregate data for faster analysis. B. Utilize Aggregating commands to ensure all data is available prior to Streaming commands. C. Utilize specific fields to return only the data that is required. D. Utilize multiple wildcards across fields to ensure returned data is complete and available.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which pre-packaged app delivers security content and detections on a regular, ongoing basis for Enterprise Security and SOAR? A. SSE B. ESCU C. Threat Hunting D. InfoSec",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which search command allows an analyst to match whatever is inside the parentheses as a single term in the index, even if it contains characters that are usually recognized as minor breakers such as periods or underscores? A. CASE() B. LIKE() C. FORMAT() D. TERM()",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which field is automatically added to search results when assets are properly defined and enabled in Splunk Enterprise Security? A. asset_category B. src_ip C. src_category D. user",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An IDS signature is designed to detect and alert on logins to a certain server, but only if they occur from 6:00 PM - 6:00 AM. If no IDS alerts occur in this window, but the signature is known to be correct, this would be an example of what? A. A True Negative. B. A True Positive. C. A False Negative. D. A False Positive.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is not a component of the Splunk Security Content library (ESCU, SSE)? A. Dashboards B. Reports C. Correlation searches D. Validated architectures",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The eval SPL expression supports many types of functions. Which of these function categories is not valid with eval? A. JSON functions B. Text functions C. Comparison and Conditional functions D. Threat functions",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is a tactic used by attackers, rather than a technique? A. Gathering information about a target. B. Establishing persistence with a scheduled task. C. Using a phishing email to gain initial access. D. Escalating privileges via UAC bypass.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which stage of continuous monitoring involves adding data, creating detections, and building drilldowns? A. Implement and Collect B. Establish and Architect C. Respond and Review D. Analyze and Report",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analyst is investigating how an attacker successfully performs a brute-force attack to gain a foothold into an organizations systems. In the course of the investigation the analyst determines that the reason no alerts were generated is because the detection searches were configured to run against Windows data only and excluding any Linux data. This is an example of what? A. A True Positive. B. A True Negative. C. A False Negative. D. A False Positive.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analyst investigates an IDS alert and confirms suspicious traffic to a known malicious IP. What Enterprise Security data model would they use to investigate which process initiated the network connection? A. Endpoint B. Authentication C. Network traffic D. Web",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is a best practice for searching in Splunk? A. Streaming commands run before aggregating commands in the Search pipeline. B. Raw word searches should contain multiple wildcards to ensure all edge cases are covered. C. Limit fields returned from the search utilizing the table command. D. Searching over All Time ensures that all relevant data is returned.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "While testing the dynamic removal of credit card numbers, an analyst lands on using the rex command. What mode needs to be set to in order to replace the defined values with X? | makeresults | eval ccnumber=\"511388720478619733\" | rex field=ccnumber mode=??? \"s/(\\d{4}-){3)/XXXX-XXXX-XXXX-/g\" Please assume that the above rex command is correctly written. A. sed B. replace C. mask D. substitute",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following use cases is best suited to be a Splunk SOAR Playbook? A. Forming hypothesis for Threat Hunting. B. Visualizing complex datasets. C. Creating persistent field extractions. D. Taking containment action on a compromised host.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is not considered an Indicator of Compromise (IOC)? A. A specific domain that is utilized for phishing. B. A specific IP address used in a cyberattack. C. A specific file hash of a malicious executable. D. A specific password for a compromised account.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "According to Splunk CIM documentation, which field in the Authentication Data Model represents the user who initiated a privilege escalation? A. username B. src_user_id C. src_user D. dest_user",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The following list contains examples of Tactics, Techniques, and Procedures (TTPs): 1. Exploiting a remote service 2. Lateral movement 3. Use EternalBlue to exploit a remote SMB server In which order are they listed below? A. Tactic, Technique, Procedure B. Procedure, Technique, Tactic C. Technique, Tactic, Procedure D. Tactic, Procedure, Technique",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An analyst is attempting to investigate a Notable Event within Enterprise Security. Through the course of their investigation they determined that the logs and artifacts needed to investigate the alert are not available. What event disposition should the analyst assign to the Notable Event? A. Benign Positive, since there was no evidence that the event actually occurred. B. False Negative, since there are no logs to prove the activity actually occurred. C. True Positive, since there are no logs to prove that the event did not occur. D. Other, since a security engineer needs to ingest the required logs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An analyst is looking at Web Server logs, and sees the following entry as the last web request that a server processed before unexpectedly shutting down: 147.186.119.107 - - [28/Jul/2006:10:27:10 -0300] \"POST /cgi-bin/shutdown/ HTTP/1.0\" 200 3333 What kind of attack is most likely occurring? A. Distributed denial of service attack. B. Denial of service attack. C. Database injection attack. D. Cross-Site scripting attack.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the Enterprise Security frameworks provides additional automatic context and correlation to fields that exist within raw data? A. Asset and Identity B. Threat Intelligence C. Adaptive Response D. Risk",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A user wants to view only the use cases for which the Splunk instance has all of the supporting source types to implement. In Splunk Security Essentials, what operation needs to happen first? A. Data Inventory B. Analytic Advisor C. Data Availability D. Content Mapping",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An analyst is looking for known C2 communication in a few billion NetFlow records, using a query similar to the following: index=network sourcetype=netflow src_ip=149.151.100.4 src_port=908 protocol=ip This query works, but due to the sheer size of the index, it is very slow. Which of the following SPL commands might the analyst use when rewriting their SPL to speed up the search? A. table B. tstats C. accelerate D. lookup",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A PCAP file contains what type of data? A. NetFlow records B. Windows authentication logs C. Asset inventory data D. Network packets",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the TTP elements represent the adversary's goal – the reason for performing an action? A. Technique B. Procedure C. Tactic D. Purpose",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which Splunk search mode is best for searches that contain commands such as chart, timechart, and top, but the analyst still wants results in the events tab? A. Verbose B. Smart C. Adaptive D. Fast",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following terms is associated with the behavior of a threat actor and a structured framework for executing a cyberattack, and defines why an attacker is performing an action? A. Playbooks B. Tactics C. Procedures D. Techniques",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Enterprise Security has been configured to generate a Notable Event when a user has quickly authenticated from multiple locations between which travel would be impossible. This would be considered what kind of an anomaly? A. Access Anomaly B. Endpoint Anomaly C. Identity Anomaly D. Threat Anomaly",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which dashboard in Enterprise Security would an analyst use to generate a report on users who are currently on a watchlist? A. Access Tracker B. Identity Tracker C. Identity Center D. Access Center",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following SPL searches is likely to return results the fastest? A. src_port=2938 AND protocol=tcp | stats count by src_ip | search src_ip=1.2.3.4 B. index=network src_port=2938 protocol=tcp | stats count by src_ip | search src_ip=1.2.3.4 C. index=network sourcetype=netflow src_ip=1.2.3.4 src_port=2938 protocol=tcp | stats count D. src_ip=1.2.3.4 src_port=2938 protocol=tcp | stats count",
+    "options": {},
+    "most_voted": "C"
+  }
+]
