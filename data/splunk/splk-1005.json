@@ -1,0 +1,212 @@
+[
+  {
+    "question": "When monitoring directories that contain mixed file types, which setting should be omitted from inputs.conf and instead be overridden in props.conf? A. sourcetype B. host C. source D. index",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How are HTTP Event Collector (HEC) tokens configured in a managed Splunk Cloud environment? A. Any token will be accepted by HEC, the data may just end up in the wrong index. B. A token is generated when configuring a HEC input, which should be provided to the application developers. C. Obtain a token from the organization’s application developers and apply it in Settings > Data Inputs > HTTP Event Collector > New Token. D. Open a support case for each new data input and a token will be provided.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The following Apache access log is being ingested into Splunk via a monitor input: How does Splunk determine the time zone for this event? A. The value of the TZ attribute in props.conf for the access_combined sourcetype. B. The value of the TZ attribute in props.conf for the my.webserver.example host. C. The time zone of the Heavy/Intermediate Forwarder with the monitor input. D. The time zone indicator in the raw event data.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What syntax is required in inputs.conf to ingest data from files or directories? A. A monitor stanza, sourcetype, and index is required to ingest data. B. A monitor stanza, sourcetype, index, and host is required to ingest data. C. A monitor stanza and sourcetype is required to ingest data. D. Only the monitor stanza is required to ingest data.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A user has been asked to mask some sensitive data without tampering with the structure of the file /var/log/purchases/transactions.log that has the following format: 2020-01-01 00:01:20 User=bob SuperSecretNumber=123456789012 Operation=purchase 2020-01-01 16:15:32 User=alice SuperSecretNumber=123456789012 Operation=purchase Which of the stanzas below will achieve this? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following are valid settings for file and directory monitor inputs? A. host, index, source_length, _TCP_Routing, host_segment B. host, index, sourcetype, _TCP_Routing, host_regex, host_segment C. host, index, directory, host_regex, host_segment D. host, index, sourcetype, _UDP_Routing, host_regex, host_segment",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following are features of a managed Splunk Cloud environment? A. Availability of premium apps, no IP address whitelisting or blacklisting, deployed in US East AWS region. B. 20GB daily maximum data ingestion, no SSO integration, no availability of premium apps. C. Availability of premium apps, SSO integration, IP address whitelisting and blacklisting. D. Availability of premium apps, SSO integration, maximum concurrent search limit of 20.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is correct in regard to configuring a Universal Forwarder as an Intermediate Forwarder? A. This can only be turned on using the Settings > Forwarding and Receiving menu in Splunk Web/UI. B. The configuration changes can be made using Splunk Web, CLI, directly in configuration files, or via a deployment app. C. The configuration changes can be made using CLI, directly in configuration files, or via a deployment app. D. It is only possible to make this change directly in configuration files or via a deployment app.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What does the followTail attribute do in inputs.conf? A. Pauses a file monitor if the queue is full. B. Only creates a tail checkpoint of the monitored file. C. Ingests a file starting with new content and then reading older events. D. Prevents pre-existing content in a file from being ingested.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In case of a Change Request, which of the following should submit a support case for Splunk Support? A. The party requesting the change. B. Certified Splunk Cloud administrator. C. Splunk infrastructure owner. D. Any person with the appropriate entitlement.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A monitor has been created in inputs.conf for a directory that contains a mix of file types. How would a Cloud Admin fine-tune assigned sourcetypes for different files in the directory during the input phase? A. On the Indexer parsing the data, leave sourcetype as automatic for the directory monitor. Then create a props.conf that assigns a specific sourcetype by source stanza. B. On the forwarder collecting the data, leave sourcetype as automatic for the directory monitor. Then create a props.conf that assigns a specific sourcetype by source stanza. C. On the Indexer parsing the data, set multiple sourcetype_source attributes for the directory monitor collecting the files. Then create a props.conf that filters out unwanted files. D. On the forwarder collecting the data, set multiple sourcetype_source attributes for the directory monitor collecting the files. Then create a props.conf that filters out unwanted files.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Windows input types are collected in Splunk via a script which is configurable using the GUI. What is this type of input called? A. Batch B. Scripted C. Modular D. Front-end",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which file or folder below is not a required part of a deployment app? A. app.conf (in default or local) B. local.meta C. metadata folder D. props.conf",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following files is used for both search-time and index-time configuration? A. inputs.conf B. props.conf C. macros.conf D. savedsearch.conf",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What Splunk command will allow an administrator to view the runtime configuration instructions for a monitored file in inputs.conf on the forwarders? A. ./splunk _internal call /services/data/inputs/filemonitor B. ./splunk show config inputs.conf C. ./splunk _internal rest /services/data/inputs/monitor D. ./splunk show config inputs",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When should Splunk Cloud Support be contacted? A. For scripted input troubleshooting. B. For all configuration changes. C. When unable to resolve issues or perform problem isolation. D. For resizing, license changes, or any purchases.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where does the regex-replacement processor run? A. Merging pipeline B. Typing pipeline C. Index pipeline D. Parsing pipeline",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the correct syntax to monitor /apache/foo/logs, /apache/bar/logs, and /apache/bar/1/logs? A. (monitor:///apache/*/logs] B. (monitor:///apache/foo/logs, /apache/bar/logs, /apache/bar/1/logs] C. [monitor:///apache/.../logs] D. [monitor:///apache/foo/logs, /apache/bar/logs, and /apache/bar/1/logs]",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In Splunk terminology, what is an index? A. A data repository that contains raw, compressed data along with psidx files. B. A data repository that contains raw, compressed data along with tsidx files. C. A data repository that contains raw, uncompressed data along with psidx files. D. A data repository that contains raw, uncompressed data along with tsidx files.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When monitoring network inputs, there will be times when the forwarder is unable to send data to the indexers. Splunk uses a memory queue and a disk queue. Which setting is used for the disk queue? A. queueSize B. maxQueueSize C. diskQueueSize D. persistentQueueSize",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following takes place during the input phase? A. Splunk annotates data with only 3 metadata keys: host, source, and sourcetype. B. Splunk sets the character encoding of the data. C. Splunk looks at the contents of the data to apply the correct source. D. Splunk breaks data into individual lines.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "At what point in the indexing pipeline set is SEDCMD applied to data? A. In the aggregator queue B. In the parsing queue C. In the exec pipeline D. In the typing pipeline",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following stanzas would enable a TCP input on port 1025, allowing traffic from all IP addresses except 10.5.5.1? A. [tcp://10.5.5.1:1025] B. [tcp://1025] acceptFrom = !10.5.5.1 C. [tcp://1025] D. [tcp://1025] acceptFrom = 10.5.5.1",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When a forwarder phones home to a Deployment Server it compares the check-sum value of the forwarder’s app to the Deployment Server’s app. What happens to the app if the check-sum values do not match? A. The app on the forwarder is always deleted and re-downloaded from the Deployment Server. B. The app on the forwarder is only deleted and re-downloaded from the Deployment Server if the forwarder’s app has a smaller check-sum value. C. The app is downloaded from the Deployment Server and the changes are merged. D. A warning is generated on the Deployment Server stating the apps are out of sync. An Admin will need to confirm which version of the app should be used.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When is data deleted from a Splunk Cloud index? A. When buckets roll to frozen, without a defined archive. B. When data is deleted via the Splunk Cloud Admin GUI. C. When TA_Delete is downloaded and enabled from SplunkBase. D. When the deleteindex command is executed from the CLI.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the recommended method to test the onboarding of a new data source before putting it in production? A. Send test data to a test index. B. Send data to the associated production index. C. Replicate Splunk deployment in a test environment. D. Send data to lastchanceindex.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following tasks is the responsibility of a Splunk Cloud administrator? A. Configuring deployer B. Configuring cluster master C. Configuring indexers D. Configuring indexes",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is a correct statement about Universal Forwarders? A. The Universal Forwarder must be able to contact the license master. B. Universal Forwarder must connect to Splunk Cloud via a Heavy Forwarder. C. Universal Forwarder can be an Intermediate Forwarder. D. The default output bandwidth is 500KBps.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "For the following data, what would be the correct attribute/value pair to use to successfully extract the correct timestamp from all the events? A. TIME_FORMAT = %b %d %H:%M:%S %z B. DATETIME_CONFIG = %Y-%m-%d %H:%M:%S %z C. TIME_FORMAT = %b %d %H:%M:%S D. DATETIME_CONFIG = %b %d %H:%M:%S",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following methods is valid for creating index-time field extractions? A. Use the UI to create a sourcetype, specify the field name and corresponding regular expression with capture statement. B. Create a configuration app with the index-time props.conf and/or transforms.conf, and upload the app via UI. C. Use the CLI app to define settings in fields.conf, and restart Splunk Cloud. D. Use the rex command to extract the desired field, and then save as a calculated field.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements is true about data transformations using SEDCMD? A. Can only be used to mask or truncate raw data. B. Configured in props.conf and transforms.conf. C. Can be used to manipulate the sourcetype per event. D. Operates on a REGEX pattern match of the source, sourcetype, or host of an event.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Consider the following configurations: What is the value of the sourcetype property for this stanza based on Splunk’s configuration file precedence? A. NULL, or unset, due to configuration conflict B. access_combined C. linux_secure D. linux_secure, access_combined",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following lists all parameters supported by the acceptFrom argument? A. IPv4, IPv6, CIDRs, DNS names, Wildcards B. IPv4, IPv6, CIDRs, DNS names C. CIDRs, DNS names, Wildcards D. IPv4, CIDRs, DNS names, Wildcards",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following tasks is not managed by the Splunk Cloud administrator? A. Forwarding events to Splunk Cloud. B. Upgrading the indexer’s Splunk software. C. Managing knowledge objects. D. Creating users and roles.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is a private app? A. An app where only a specific role has read and write access. B. An app that is only viewable by a specific user. C. An app that is created and used only by a specific organization. D. An app where only a specific role has read access.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Splunk Cloud administrator is looking to allow a new group of Splunk users in the marketing department to access the Splunk environment and view a dashboard with relevant data. These users need to access marketing data (stored in the marketing_data index), but shouldn’t be able to access other data, such as events related to security or operations. Which approach would be the best way to accomplish these requirements? A. Create a new user with access to the marketing_data index assigned. B. Create a new role that inherits the user role and remove the capability to search indexes other than marketing_data. C. Create a new role that inherits the admin role and assign access to the marketing_data index. D. Create a new role that does not inherit from any other role, turn on the same capabilities as the user role, and assign access to the marketing_data index.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is an accurate statement about the delete command? A. The delete command removes events from disk. B. By default, only admins can run the delete command. C. Events are virtually deleted by marking them as deleted. D. Deleting events reclaims disk space.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where is the recommended place to deploy input apps that are not permitted on Splunk Cloud? A. Universal Forwarder or Heavy Forwarder. B. Heavy Forwarder only. C. Universal Forwarder only. D. Apps cannot be installed on on-prem instances.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In what scenarios would transforms.conf be used? A. Per-Event Index Routing, Applying Event Types, SEDCMD operations B. Per-Event Sourcetype, Per-Event Host Name, Per-Event Index Routing C. Per-Event Host Name, Per-Event Index Routing, SEDCMD operations D. Per-Event Sourcetype, Per-Event Index Routing, Applying Event Types",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Li was asked to create a Splunk configuration to monitor syslog files stored on Linux servers at their organization. This configuration will be pushed out to multiple systems via a Splunk app using the on-prem deployment server. The system administrators have provided Li with a directory listing for the logging locations on three syslog hosts, which are representative of the file structure for all systems collecting this data. An example from each system is shown below: Host: syslog01 File path: /var/log/network/syslog01/linux_secure/syslog.log Host: syslog02 File path: /var/log/network/syslog02/linux_secure/syslog.log Host: us-syslog-01 File path: /var/log/network/us-syslog-01/linux_secure/syslog.log.2020090801 Which monitor:// stanza could Li use in their app to ensure all three of these files are ingested into Splunk? A. [monitor:///var/log/network/syslog*/linux_secure/*] B. [monitor:///var/log/network/*syslog*/linux_secure/syslog.log] C. [monitor:///var/log/network/*syslog*/linux_secure/syslog.log.*] D. [monitor:///var/log/network/*syslog*/linux_secure/syslog.log*]",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "By default, which of the following capabilities are granted to the sc_admin role? A. indexes_edit, edit_token_http, admin_all_objects, delete_by_keyword B. indexes_edit, fsh_manage, acs_conf, list_indexerdiscovery C. indexes_edit, fsh_manage, admin_all_objects, can_delete D. indexes_edit, edit_token_http, admin_all_objects, edit_limits_conf",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is the default bandwidth limit in the Splunk Universal Forwarder credentials package? A. 0 KBps B. 256 KBps C. 512 KBps D. 1024 KBps",
+    "options": {},
+    "most_voted": "B"
+  }
+]
