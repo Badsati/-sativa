@@ -1,0 +1,467 @@
+[
+  {
+    "question": "You are using the Vault userpass auth method mounted at auth/userpass. How do you create a new user named \"sally\" with password \"h0wN0wB4r0wnC0w\"? This new user will need the power-users policy. A. B. C. D.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The vault lease renew command increments the lease time from: A. The current time B. The end of the lease",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "HOTSPOT Where do you define the Namespace to log into using the Vault UI? To answer this question Use your mouse to click on the screenshot in the location described above. An arrow indicator will mark where you have clicked. Click the \"Answer” button once you have positioned the arrow to answer the question. You may need to scroll down to see the entire screenshot.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You have a 2GB Base64 binary large object (blob) that needs to be encrypted. Which of the following best describes the transit secrets engine? A. A data key encrypts the blob locally, and the same key decrypts the blob locally. B. To process such a large blob. Vault will temporarily store it in the storage backend. C. Vault will store the blob permanently. Be sure to run Vault on a compute optimized machine. D. The transit engine is not a good solution for binaries of this size.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "How would you describe the value of using the Vault transit secrets engine? A. Vault has an API that can be programmatically consumed by applications B. The transit secrets engine ensures encryption in-transit and at-rest is enforced enterprise wide C. Encryption for application data is best handled by a storage system or database engine, while storing encryption keys in Vault D. The transit secrets engine relieves the burden of proper encryption/decryption from application developers and pushes the burden onto the operators of Vault",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the Vault CLI command to query information about the token the client is currently using? A. vault lookup token B. vault token lookup C. vault lookup self D. vault self lookup",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is a machine-oriented Vault authentication backend? A. Okta B. AppRole C. Transit D. GitHub",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Security requirements demand that no secrets appear in the shell history. Which command does not meet this requirement? A. generate-password | vault kv put secret/password value=- B. vault kv put secret/password value=itsasecret C. vault kv put secret/password [email protected] D. vault kv put secret/password value=$SECRET_VALUE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "You can build a high availability Vault cluster with any storage backend. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What command creates a secret with the key \"my-password\" and the value \"53cr3t\" at path \"my-secrets\" within the KV secrets engine mounted at \"secret\"? A. vault kv put secret/my-secrets/my-password 53cr3t B. vault kv write secret/my-secrets/my-password 53cr3t C. vault kv write 53cr3t my-secrets/my-password D. vault kv put secret/my-secrets my-password-53cr3t",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What can be used to limit the scope of a credential breach? A. Storage of secrets in a distributed ledger B. Enable audit logging C. Use of a short-lived dynamic secrets D. Sharing credentials between applications",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What environment variable overrides the CLI’s default Vault server address? A. VAULT_ADDR B. VAULT_HTTP_ADDRESS C. VAULT_ADDRESS D. VAULT_HTTPS_ADDRESS",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements describe the CLI command below? $ vault login -method=ldap username=mitchellh A. Generates a token which is response wrapped B. You will be prompted to enter the password C. By default, the generated token is valid for 24 hours D. Fails because the password is not provided",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The following three policies exist in Vault What do these policies allow an organization to do? app.hcl callcenter.hcl rewrap.hcl A. Separates permissions allowed on actions associated with the transit secret engine B. Nothing, as the minimum permissions to perform useful tasks are not present C. Encrypt decrypt, and rewrap data using the transit engine all in one policy D. Create a transit encryption key for encrypting, decrypting, and rewrapping encrypted data",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your DevOps team would like to provision VMs in GCP via a CICD pipeline. They would like to integrate Vault to protect the credentials used by the tool. Which secrets engine would you recommend? A. Google Cloud Secrets Engine B. Identity secrets engine C. Key/Value secrets engine version 2 D. SSH secrets engine",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of these is not a benefit of dynamic secrets? A. Supports systems which do not natively provide a method of expiring credentials B. Minimizes damage of credentials leaking C. Ensures that administrators can see every password used D. Replaces cumbersome password rotation tools and practices",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following cannot define the maximum time-to-live (TTL) for a token? A. By the authentication method B. By the client system C. By the mount endpoint configuration D. A parent token TTL E. System max TTL",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are orphan tokens? A. Orphan tokens are tokens with a use limit so you can set the number of uses when you create them B. Orphan tokens are not children of their parent; therefore, orphan tokens do not expire when their parent does C. Orphan tokens are tokens with no policies attached D. Orphan tokens do not expire when their own max TTL is reached",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "To give a role the ability to display or output all of the end points under the /secrets/apps/* end point it would need to have which capability set? A. update B. read C. sudo D. list E. None of the above",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You have been tasked with writing a policy that will allow read permissions for all secrets at path secret/bar. The users that are assigned this policy should also be able to list the secrets. What should this policy look like? A. B. C. D.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When using Integrated Storage, which of the following should you do to recover from possible data loss? A. Failover to a standby node B. Use snapshot C. Use audit logs D. Use server logs",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "How many Shamir’s key shares are required to unseal a Vault instance? A. All key shares B. A quorum of key shares C. One or more keys D. The threshold number of key shares",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of these are a benefit of using the Vault Agent? A. Vault Agent allows for centralized configuration of application secrets engines B. Vault Agent will auto-discover which authentication mechanism to use C. Vault Agent will enforce minimum levels of encryption an application can use D. Vault Agent will manage the lifecycle of cached tokens and leases automatically",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following describes usage of an identity group? A. Limit the policies that would otherwise apply to an entity in the group B. When they want to revoke the credentials for a whole set of entities simultaneously C. Audit token usage D. Consistently apply the same set of policies to a collection of entities",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Vault supports which type of configuration for source limited token? A. Cloud-bound tokens B. Domain-bound tokens C. CIDR-bound tokens D. Certificate-bound tokens",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Where does the Vault Agent store its cache? A. In a file encrypted using the Vault transit secret engine B. In the Vault key/value store C. In an unencrypted file D. In memory",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Your organization has an initiative to reduce and ultimately remove the use of long lived X.509 certificates. Which secrets engine will best support this use case? A. PKI B. Key/Value secrets engine version 2, with TTL defined C. Cloud KMS D. Transit",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When unsealing Vault each Shamir unseal key should be entered: A. Sequentially from one system that all of the administrators are in front of B. By different administrators each connecting from different computers C. While encrypted with each administrators PGP key D. At the command line in one single command",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "As a best practice, the root token should be stored in which of the following ways? A. Should be revoked and never stored after initial setup B. Should be stored in configuration automation tooling C. Should be stored in another password safe D. Should be stored in Vault",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When creating a policy, an error was thrown: Which statement describes the fix for this issue? A. Replace write with create in the capabilities list B. You cannot have a wildcard (“*”) in the path C. sudo is not a capability",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Where can you set the Vault seal configuration? (Choose two.) A. Cloud Provider KMS B. Vault CLI C. Vault configuration file D. Environment variables E. Vault API",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following vault lease operations uses a lease_id as an argument? (Choose two.) A. renew B. revoke -prefix C. create D. describe E. revoke",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An organization wants to authenticate an AWS EC2 virtual machine with Vault to access a dynamic database secret. The only authentication method which they can use in this case is AWS. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are using Vault’s Transit secrets engine to encrypt your data. You want to reduce the amount of content encrypted with a single key in case the key gets compromised. How would you do this? A. Use 4096-bit RSA key to encrypt the data B. Upgrade to Vault Enterprise and integrate with HSM C. Periodically re-key the Vault's unseal keys D. Periodically rotate the encryption key",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What does the following policy do? A. Grants access for each user to a KV folder which shares their id B. Grants access to a special system entity folder C. Allows a user to read data about the secret endpoint identity D. Nothing, this is not a valid policy",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "To make an authenticated request via the Vault HTTP API, which header would you use? A. The X-Vault-Token HTTP Header B. The X-Vault-Request HTTP Header C. The Content-Type HTTP Header D. The X-Vault-Namespace HTTP Header",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following are replication methods available in Vault Enterprise? (Choose two.) A. Cluster sharding B. Namespaces C. Performance Replication D. Disaster Recovery Replication",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Use this screenshot to answer the question below: When are you shown these options in the GUI? A. Enabling policies B. Enabling authentication engines C. Enabling secret engines D. Enabling authentication methods",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Examine the command below. Output has been trimmed. Which of the following statements describe the command and its output? A. Missing a default token policy B. Generated token’s TTL is 60 hours C. Generated token is an orphan token which can be renewed indefinitely D. Configures the AppRole auth method with user specified role ID and secret ID",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The key/value v2 secrets engine is enabled at secret/. See the following policy: Which of the following operations are permitted by this policy? (Choose two.) A. vault kv get secret/webapp1 B. vault kv put secret/webapp1 apikey-\"ABCDEFGHIDK123W\" C. vault kv metadata get secret/webapp1 D. vault kv delete secret/super-secret E. vault kv list secret/super-secret",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are performing a high number of authentications in a short amount of time. You're experiencing slow throughput for token generation. How would you solve this problem? A. Increase the time-to-live on service tokens B. Implement batch tokens C. Establish a rate limit quota D. Reduce the number of policies attached to the tokens",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When looking at Vault token details, which key helps you find the paths the token is able to access? A. Meta B. Path C. Policies D. Accessor",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A developer mistakenly committed code that contained AWS S3 credentials into a public repository. You have been tasked with revoking the AWS S3 credential that was in the code. This credential was created using Vault’s AWS secrets engine and the developer received the following output when requesting a credential from Vault. Which Vault command will revoke the lease and remove the credential from AWS? A. vault lease revoke aws/creds/s3-access/f3e92392-7d9c-09c8-c921-575d62fe80d8 B. vault lease revoke AKIAIOMQXTLW36DV7IEA C. vault lease revoke f3e92392-7d9c-09c8-c921-575d62fe80d8 D. vault lease revoke access_key=AKIAIOWQXTLW36DV7IEA",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When an auth method is disabled, all users authenticated via that method lose access. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An authentication method should be selected for a use case based on: A. The auth method that best establishes the identity of the client B. The cloud provider for which the client is located on C. The strongest available cryptographic hash for the use case D. Compatibility with the secret engine which is to be used",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A web application uses Vault’s transit secrets engine to encrypt data in-transit. If an attacker intercepts the data in transit, which of the following statements are true? (Choose two.) A. You can rotate the encryption key so that the attacker won't be able to decrypt the data B. The keys can be rotated and min_decryption_version moved forward to ensure this data cannot be decrypted B. The Vault administrator would need to seal the Vault server immediately C. Even if the attacker was able to access the raw data, they would only have encrypted bits (TLS in transit)",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The Vault encryption key is stored in Vault’s backend storage. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements describe the secrets engine in Vault? (Choose three.) A. Some secrets engines simply store and read data B. Once enabled, you cannot disable the secrets engine C. You can build your own custom secrets engine D. Each secrets engine is isolated to its path E. A secrets engine cannot be enabled at multiple paths",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a benefit of response wrapping? A. Log every use of a secret B. Load balance secret generation across a Vault cluster C. Provide error recovery to a secret so it is not corrupted in transit D. Ensure that only a single party can ever unwrap the token and see what’s inside",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following describes the Vault’s auth method component? A. It verifies a client against an internal or external system, and generates a token with the appropriate policies attached B. It verifies a client against an internal or external system, and generates a token with root policy C. It is responsible for durable storage of client tokens D. It dynamically generates a unique set of secrets with appropriate permissions attached",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which Vault secret engine may be used to build your own internal certificate authority? A. Transit B. PKI C. PostgreSQL D. Generic",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements are true about Vault policies? (Choose two.) A. The default policy can not be modified B. You must use YAML to define policies C. Policies provide a declarative way to grant or forbid access to certain paths and operations in Vault D. Vault must be restarted in order for a policy change to take an effect E. Policies deny by default (empty policy grants no permission)",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Use this screenshot to answer the question below: Where on this page would you click to view a secret located at secret/my-secret? A. A B. B C. C D. D E. E",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An organization would like to use a scheduler to track & revoke access granted to a job (by Vault) at completion. What auth-associated Vault object should be tracked to enable this behavior? A. Token accessor B. Token ID C. Lease ID D. Authentication method",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement describes the results of this command: $ vault secrets enable transit? A. Enables the transit secrets engine at transit path B. Requires a root token to execute the command successfully C. Enables the transit secrets engine at secret path D. Fails due to missing -path parameter E. Fails because the transit secrets engine is enabled by default",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Running the second command in the GUI CU will succeed. A. True B. False",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of these options does not allow the creation of a root token? A. By using batch tokens B. By using another root token C. The initial root token generated at the vault operator init time D. By using vault operator generate-root with the permission of a quorum of unseal key holders",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You manage two Vault dusters: “vaultduster1.acme.corp” and “vaultduster2.acme.corp”. You want to write a secret to the first Vaultcluster vaultcluster1.acme.corp and run vault kv put secret/foo value=‘bar’. The command times out and the error references the Vault cluster, “vaultcluster2.acme.corp”. You run the command again with the following address flag: vault kv put -address=‘https://vaultcluster1.acme.corp’ secret/foo value=‘bar’ The command completes successfully. You find that the terminal session defines the environment variable VAULT_ADDR=‘https://vaultcluster2.acxe.corp:8200’ Why was the second attempt successful? A. Environment variables take precedence over flags B. VAULT_CLUSTER_ADDR needs to be provided C. Flags take precedence over environment variables D. Vault listener is misconfigured",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The ‘alpha’ secrets are stored in the team-based paths using this convention: secret/<team_name>/alpha. For example, secret/team01/alpha and /secrets/team02/alpha. Which Vault policy would not allow reading paths with the word “beta” in them, such as secrets/team01/beta? A. B. C. D. None of the above",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement describes the results of this command: vault kv list secret/test? A. Check the status of a specific key/value secrets engine B. List the existing key names at the “secret/test” path C. Output all key/value secrets engines D. Output all key names from all key/value secrets engine",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "HOTSPOT For the following statements, choose which secrets engine enables the use case. Each answer should only be used once.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "To encrypt your secret with the transit secrets engine, you must send the Base32-encoded plaintext to Vault. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Vault Agent supports which of the following? (Choose two.) A. Secrets Cachin B. Local key/value store C. Local replica of transit encryption key D. Auto-unseal Vault E. Auto authentication",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which is not true of Vault tokens? A. Vault tokens are the core method for authentication in Vault B. Vault tokens are generated by every authentication method login C. Vault tokens map to information including polices the token holder has, TTL and max usage, metadata, creation and last renewal time, and more D. Vault tokens are required for every Vault call",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "When using Integrated Storage, which of the following should you do to recover from possible data loss? A. Use local storage B. Enable audit device C. Use snapshot D. Use external storage",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is a reason to rekey a Vault cluster? (Choose two.) A. A keyholder joins or leaves the organization B. Adding additional Vault nodes to a cluster C. The rook token is lost D. A compliance mandate to rotate the master key at a regular interval E. Upgrading Vault Community Edition to Vault Enterprise",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What information is required to revoke a Vault lease? A. Secret ID B. User ID C. Lease ID D. Token ID",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Use this screenshot to answer the question below: Which statement describes this AppRole auth method configuration? A. Generates batch tokens with TTL set to 5 minutes B. Generates multiple tokens with TTL set to 5 minutes C. It is enabled at “App1” path D. It is enabled at “auth_approle_f23dd79f” path",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is a secret in the context of Vault? A. HTTP session token that provides authorization to Vault B. Threshold of keys required to unseal the Vault C. Anything stored or returned that contains confidential material D. Engine responsible for logging all requests and responses",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What methods of authentication does Vault support? (Choose four.) A. JWT/OIDC B. AppRole C. GitHub D. MMSQL E. PostgreSQL F. Nomad G. LDAP",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Vault Agent allows client-side caching of tokens and leases. If the agent is shut down, those tokens and leases cached will be revoked. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which kind of token can be renewed indefinitely? A. Periodic token B. Orphan token C. Use-limit token D. Root token E. All of the above",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You can use a response-wrapping token more than once for as long as it has not expired. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which statement describes the results of this command: $ vault secrets enable -version=2 kv (Choose two.) A. Enables the secrets engine at path kv2/ B. The -version is an invalid flag C. Enables the secrets engine at path kv/ D. Enables K/V v1 secrets engine E. Enables K/V v2 secrets engine",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of these are names of the replication methods available in Vault Enterprise? (Choose two.) A. Disaster Recovery B. Cluster sharping C. Namespaces D. Seal-Wrap E. Performance",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What attributes are unique to batch tokens? (Choose three.) A. Cannot be renewed B. Are not persisted C. Can be periodic D. Have a set time-to-live (TTL) E. Are persisted",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You have manually created some usernames and passwords for a Microsoft SQL database on Azure, and need to store these credentials in Vault. What secrets engine should you use for this? A. MSSQL database secrets engine B. Key/Value secrets engine version 2 C. Azure secrets engine D. Transit engine",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "To create a non-root token with time-to-live (TTL) set to 30 minutes but with no max TTL which flag would you use? A. -ttl=30n B. -explicit-max-ttl=0 C. -orphan D. None of the above",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A user successfully logs into Vault with the following cURL command: curl --request POST --data @payload.json http://127.0.0.1:8200/v1/auth/ldap/login/mitchellh The response will include what information? A. client_token and policies B. access_key and policies C. access_key and secrets available D. client_token and secrets available",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements are true about the default policy? (Choose two.) A. It is one of the built-in policies B. Provides a common set of permissions and is included on all tokens by default C. Can not be modified or deleted D. Gives a super admin permissions, similar to a root user on a Linux machine E. Vault upgrade will overwrite any update you made to the default policy",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Why might an application be mapped to an identity entity? A. To prohibit Vault administrators from revoking tokens associated with that application B. To get around cloud license limitations C. To allow an application deployed with multiple authentication methods have a consistent set of policies D. To allow the same application in one cloud to access already provisioned Vault tokens for that application in another cloud",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Unsealing a single Vault server in a cluster unseals all Vault servers in that cluster. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which endpoint can be used to list all tokens? A. /kv/secrets B. /auth/token/list C. /secrets/kv D. /auth/token/accessors",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The mechanism to associate an authentication method with access to specific secrets is by specifying a/an: A. Accessor B. Token C. Policy D. Secret",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are managing a Vault implementation that has been integrated with Azure SQL database to provide dynamic credentials. You have created a role that will provide database credentials for database administrators (DBAs) to use for managing their database in Azure SQL. A DBA has requested a new credential by issuing the following Vault CLI command: vault read azuresql/creds/dba_access. The following output is returned: The DBA has completed their work and would like to proactively remove the credential now that their work is complete. Which of the following commands should the DBA execute? A. vault delete azuresql/creds/dba_access B. vault lease revoke v-token-dba_acccss-tr2t4x9pxvqlz8878s9s-1513446795 C. vault delete azuresql/creds/dba_access/2e5b1e0b-a081-c7el-5622-39f58e79a7l9 D. vault lease revoke azuresql/creds/dba_access/2e5b1e0b-a081-c7el-5622-39f58e79a719",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "One of the benefits of using the Vault transit secrets engine is its ability to easily rotate encryption keys. Which of these is true regarding key rotation? A. Vault automatically rotates the encryption key based on a set period B. Vault can rotate encryption keys, but cannot enforce restrictions about the minimum encryption key version C. Vault does not maintain the versioned keyring D. Encryption keys can be rotated manually by a user, or by an automated process which invokes the key rotation API",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is not a function provided by Vault’s transit secret engine? A. Generating random bytes B. Encrypting data C. Storing ciphertext data D. Verifying signed data E. None of the above",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A user issues the following cURI command to encrypt data using the transit engine and the Vault API: Which payload.json file has the correct contents? A. B. C. D.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following storage backends supports high availability? A. Azure Storage Container B. Manta C. Amazon S3 D. Consul",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which command will generate a new transit key? A. vault put transit/keys/my-key B. vault create -f transit/keys/my-key C. vault write -f transit/keys/my-key D. vault create transit/keys/my-key",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is the correct option to authenticate to Vault using a token using the CLI? A. A token can be used to authenticate to Vault through the API, not the CLI or the UI B. vault login C. vault <token> D. A token cannot be used to authenticate to Vault",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A child token must be assigned the same or a subset the parent token’s policies. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "When enabling auto-unseal, how do you specify the seal type? (Choose two.) A. Set the VAULT_SEAL_TYPE environment variable B. Use the /sys/seal endpoint on the Vault API C. Create a seal block in the server configuration file D. Configure in the storage block of the server configuration file E. Use the vault operator command",
+    "options": {},
+    "most_voted": "A"
+  }
+]
