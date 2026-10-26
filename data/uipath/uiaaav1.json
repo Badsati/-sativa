@@ -1,0 +1,97 @@
+[
+  {
+    "question": "A developer is implementing a few-shot structured prompt for an email classification task. The prompt includes examples of email subjects labeled with their respective classifications, such as “Spam” or “Work”. What is the most important aspect to consider when selecting examples for the prompt? A. Use random and unrelated examples to test the prompt’s robustness. B. Always use more than 10 examples, regardless of task complexity. C. Choose examples that are diverse, relevant, and typical of the task’s expected input. D. Include examples with intentionally incorrect labels to improve training.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An agent uses Web Search, Slack integration, and a custom process to resolve IT support tickets. The agent must: a. Retrieve relevant troubleshooting steps from the web. b. Notify the user via Slack if a solution is found. c. Escalate unresolved tickets via a custom process. Which evaluation strategy ensures comprehensive coverage while avoiding redundancy? A. Use random input sampling across all tools and rely on the default “LLM-as-a-Judge” assertion. B. Create 30 evaluations for Slack notifications, 30 for web searches, and 30 for escalation processes. C. Group evaluations into sets: Valid web results triggering Slack notifications, Invalid web results triggering escalations, Edge cases. D. Create more than 30 evaluations for Slack notifications, more than 30 for web searches, and more than 30 for escalation processes.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What are the primary benefits of Context Grounding when querying data across multiple documents? A. Context Grounding is limited to querying within a single document at a time. B. Context Grounding only extracts random sentences without contextual understanding. C. Context Grounding requires manual intervention for identifying connections between data points across documents. D. Context Grounding understands relationships between data points across documents, enabling tasks like summarization, data comparison, and retrieval of highly relevant information.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An agent is built to extract customer feedback sentiment. You want to show the LLM how to classify it as ‘Positive’, ‘Neutral’, or ‘Negative’. Which few-shot design is most helpful? A. Input: “The app is okay I guess.” → Output: “Text” B. Input: “I love the new design, very intuitive!” Output: “Positive” Input: “Nothing special, just works.” Output: “Neutral” Input: “Terrible experience, won’t use again.” Output: “Negative” C. List words like: “great, okay, bad” and map them to tone. D. Use a multiple-choice table with numerical ratings from 1-5.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which configuration area defines what the agent should do after a human resolves the escalation? A. Inputs description fields B. Assignment recipient list C. Agent Memory toggle D. Outcome behavior section",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A developer is working on fine-tuning an LLM for generating step-by-step automation guides. After providing a detailed example prompt, they notice inconsistencies in the way the LLM interprets certain technical terms. What could be the reason for this behavior? A. The LLM’s tokenization process may have split complex technical terms into multiple tokens, causing slight variations in how the model interprets and weights their relationships within the context of the prompt. B. The LLM’s interpretation is solely based on the frequency of terms within the training dataset, rendering technical nuances irrelevant during generation. C. The inconsistency is related to the token limit defined for the prompt’s length, which affects the LLM’s ability to complete a response rather than its understanding of technical terms. D. The LLM does not rely on tokenization for understanding prompts; instead, misinterpretation arises from inadequate pre-programmed definitions of technical terms.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the main purpose of using a context grounding strategy with an ECS Index in Agents designer canvas in Studio Web? A. To retrieve data based on the user’s current session or inputs B. To define static rules for retrieving data from the index C. To limit the number of results retrieved from the ECS Index D. To keep the ECS Index stored in a shared Orchestrator folder",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the key difference between a system prompt and a user prompt when configuring an agent? A. A system prompt is used for input formatting and passing dynamic arguments, while a user prompt guides the agent’s behavior and planning over time. B. A system prompt defines the agent’s role, goals, rules, and when to use tools or escalate, while a user prompt structures how input arguments are passed to the agent at runtime. C. A system prompt and a user prompt both serve the same purpose but are written in different parts of the agent. D. System prompts exist solely to keep agents constantly adapting in real time, while user prompts are meant for agents that never change their behavior.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What is the purpose of grouping evaluations into evaluation sets? A. Evaluation sets help organize evaluations to address distinct testing needs. B. Evaluation sets automatically apply evaluators to all inputs without needing manual assignment. C. Evaluation sets are used to calculate and report evaluation scores for individual tests. D. Evaluation sets are predefined configurations that ensure evaluations target only root-level outputs.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is an essential aspect of crafting a comprehensive agent story during the validation stage? A. Starting immediately with agent behavior prototyping using tools like the Agents designer canvas in Studio Web without assessing mapped automations or impacted systems. B. Brainstorming automation use cases without validating personas or critically evaluating existing processes, focusing purely on agent capabilities. C. Understanding the daily pain points and inefficiencies of the selected role to identify tasks that consume unnecessary time and potential gains from agent intervention. D. Generalizing automation opportunities across all processes and roles without tailoring solutions based on specific personas or organizational contexts.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "An analyst opens Autopilot for Everyone inside Assistant Web in a browser and types, “Run the InvoiceReconciler process and compile the latest vendor invoices”, all without installing any desktop software. Which distinctive feature enables this workflow? A. The ability to run any UiPath automation from any device with absolutely no prerequisites B. Natural-language execution of cross-platform automations on a serverless machine, directly in the browser, removing the need for Assistant or Robot installation C. Built-in document-understanding models that silently install the Robot service in the background D. Browser access that lets users view automation logs but still requires a locally installed Robot to execute workflows",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You need to pass a DateTime to an agent tool. What is the correct way to handle this? A. Pass the date directly as a DateTime object, as it is natively supported. B. Send the date as a CRON expression for easier scheduling interpretation. C. Convert the DateTime to String and parse it inside the agent tool. D. Convert the date to an integer representing the number of days since 01/01/0001.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A solution architect is tasked with building a structured prompt for an agent that extracts key phrases from legal documents. Upon testing, they find that the agent frequently misses extraction patterns. How can the architect enhance the effectiveness of the few-shot prompt structure? A. Add clearly labeled examples demonstrating correct extraction for both simple and complex patterns. B. Remove extraction examples from the prompt to test the agent without guidance. C. Increase the word count of the legal document examples included in the prompt. D. Replace detailed phrases with shorter, random content to improve performance.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What are the characteristics of an agentic story within the ‘Do later’ quadrant in the impact and feasibility matrix? A. Low feasibility and Low Impact B. High feasibility and Low Impact C. Low feasibility and High Impact D. High feasibility and High Impact",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When you want to connector field value to be inferred dynamically at run time, which input method should you select in the activity tool? A. Prompt B. Static value C. Argument D. Clear value",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "While configuring an Integration Service activity as a tool for your agent in Studio Web, how should you set up the activity so the agent can decide the value of a required field (e.g. Channel ld) at runtime based solely on instructions in the prompt? A. Change every field, including Channel Id, to Variable because an agent cannot infer any field values without explicit arguments. B. Leave the field’s input method on Prompt (the default) and keep or refine the tool description; this lets the agent infer the value during execution. C. Change every field, including Channel ld, to Argument because an agent cannot infer any field values without explicit arguments. D. Declare the field as an output argument in Data Manager so the agent can feed a value back into the tool.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "You are working on a chatbot designed to assist users with troubleshooting software issues. You notice that the chatbot is providing inconsistent answers to the same question due to unclear prompts. What approach should you apply to improve the chatbot’s performance? A. Use step-by-step thinking exclusively, even for simple troubleshooting tasks, to improve overall accuracy. B. Add vague but creative instructions to make the AI responses flexible and adaptable to user queries. C. Incorporate a broad range of diverse examples to solve the inconsistencies without clarifying the initial prompt structure. D. Use clear and specific language, including key details that guide the AI toward the desired outcome for accurate troubleshooting responses.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the highlighted task’s type? A. Business Rule Task B. Process Task C. Service Task D. Connector Task",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A hospitality company is creating an Agent to assist waitstaff by generating friendly table side introductions. Given the input “John”, the desired output is: “Hello, I’m John, and I’ll be your server today”. How should the zero-shot prompt be crafted to achieve this? A. “Introduce yourself based on the provided name in a polite and welcoming manner.” B. “Generate a casual introduction: “Hi, this is John. How can I help you?” C. “Create statements for waitstaff to greet customers warmly.” D. “Write a friendly message introducing John as a server.”",
+    "options": {},
+    "most_voted": "D"
+  }
+]
