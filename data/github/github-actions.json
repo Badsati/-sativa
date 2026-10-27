@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Which statement is true regarding the ability to delete a workflow run? A. Pending workflow runs may be deleted. B. Completed workflow runs may be deleted. C. Admin access is required to delete a workflow run. D. Workflow runs must be older than 30 days to be deleted.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which command can you include in your workflow file to set the output parameter for an action? A. echo \"::debug::action_color=purple\" B. echo \"action_color=purple\" >> $GITHUB_OUTPUT C. echo \"action_color=purple\" >> $GITHUB_ENV D. echo \"::add-mask::$ACTION_COLOR\"",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "As a developer, which workflow steps should you perform to publish an image to the GitHub Container Registry? (Choose three.) A. Use the actions/setup-docker action B. Authenticate to the GitHub Container Registry. C. Build the container image. D. Push the image to the GitHub Container Registry E. Pull the image from the GitHub Container Registry.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "As a developer, you have a 10-MB data set that is required in a specific workflow. Which steps should you perform so the dataset is stored encrypted and can be decrypted during the workflow? (Choose three.) A. Encrypt the dataset. B. Leverage the actions/download-secret action in the workflow. C. Store the dataset in a GitHub encrypted secret. D. Store the encryption keys in a GitHub encrypted secret. E. Compress the dataset F. Commit the encrypted dataset to the same repository as the workflow G. Create a GitHub encrypted secret with the Large object option selected and upload the dataset.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which statement is true about using default environment variables? A. The environment variables can be read in workflows using the ENV: variable_name syntax. B. The environment variables created should be prefixed with GITHUB_ to ensure they can be accessed in workflows C. The environment variables can be set in the defaults: sections of the workflow D. The GITHUB_WORKSPACE environment variable should be used to access files from within the runner.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following commands will set the $FOO environment variable within a script, so that it may be used in subsequent workflow job steps? A. run: echo \"::set-env name=FOO::bar\" B. run: echo \"FOO=bar\" >> $GITHUB_ENV C. run: echo ${{ $FOO=bar }} D. run: export FOO=bar",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "You are reaching your organization's storage limit for GitHub artifacts and packages. What should you do to prevent the storage limit from being reached? A. via the .github repository owned by the organization B. via repositories owned by the organization C. via the GitHub Marketplace D. via a repository owned by a third party",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "As a developer, how can you identify a JavaScript action on GitHub? A. The actions repository name includes the keyword \"JavaScript.\" B. The action's repository includes a js.yml file in the .github/workflows directory. C. The action.yml metadata file references a package.json file. D. The action,yml metadata file has the runs.using value set to node16.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In which scenarios could the GITHUB_TOKEN be used? (Choose two.) A. to leverage a self-hosted runner B. to create a repository secret C. to publish to GitHub Packages D. to create issues in the repo E. to read from the file system on the runner F. to add a member to an organization",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "As a developer, you need to use GitHub Actions to deploy a microservice that requires runtime access to a secure token. This token is used by a variety of other microservices managed by different teams in different repos. To minimize management overhead and ensure the token is secure, which mechanisms should you use to store and access the token? (Choose two.) A. Store the token in a configuration file in a private repository. Use GitHub Actions to deploy the configuration file to the runtime environment. B. Store the token as a GitHub encrypted secret in the same repo as the code. Create a reusable custom GitHub Action to access the token by the microservice at runtime. C. Use a corporate non-GitHub secret store (e.g., HashiCorp Vault) to store the token. During deployment, use GitHub Actions to store the secret in an environment variable that can be accessed at runtime. D. Store the token as a GitHub encrypted secret in the same repo as the code. During deployment, use GitHub Actions to store the secret in an environment variable that can be accessed at runtime. E. Store the token as an organizational-level encrypted secret in GitHub. During deployment, use GitHub Actions to store the secret in an environment variable that can be accessed at runtime.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "While awaiting approval, how many days can a workflow be in the \"Waiting\" state before it automatically fails? A. 7 days B. 14 days C. 30 days D. 60 days",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When reviewing an action for use, what file defines its available inputs and outputs? A. inputs.yml B. config.json C. defaults.json D. workflow.yml E. action.yml",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "How can GitHub Actions encrypted secrets be used in if: conditionals within a workflow job? A. Set the encrypted secret as a job-level environment variable and then reference the environment variable within the conditional statement. B. Create a job dependency that exposes the encrypted secret as a job output, which can then be leveraged in a subsequent dependent job. C. Use the secrets context within the conditional statement, e.g. ${{ secrets.MySuperSecret }}. D. Use a workflow command to expose the encrypted secret via a step's output parameter and then use the step output in the job's if: conditional.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "As a developer, you need to make sure that only actions from trusted sources are available for use in your GitHub Enterprise Cloud organization. Which of the following statements are true? (Choose three.) A. Specific actions can individually be enabled for the organization, including version information. B. GitHub-verified actions can be collectively enabled for use in the enterprise. C. Actions can be restricted to only those available in the enterprise. D. Actions created by GitHub are automatically enabled and cannot be disabled. E. Individual third-party actions enabled with a specific tag will prevent updated versions of the action from introducing vulnerabilities. F. Actions can be published to an internal marketplace.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Scheduled workflows run on the: A. latest commit and branch on which the workflow was triggered B. latest commit from the branch named schedule C. latest commit from the branch named main D. specified commit and branch from the workflow YAML file E. latest commit on the default or base branch",
+    "options": {},
+    "most_voted": "E"
+  },
+  {
+    "question": "Which scopes are available to define custom environment variables within a workflow file? (Choose three.) A. the entire workflow, by using env at the top level of the workflow file B. all jobs being run on a single Actions runner, by using runner.env at the top of the workflow file C. the entire stage, by using env at the top of the defined build stage D. within the run attribute of a job step E. the contents of a job within a workflow, by using jobs.<job_id>.env F. a specific step within a job, by using jobs.<job_id>.steps[*].env",
+    "options": {},
+    "most_voted": "A"
+  }
+]
