@@ -1,0 +1,72 @@
+[
+  {
+    "question": "When you execute a reboot command on the vMaster, how is aVCS Chassis affected? A. Reboot is performed on vMaster and reload operation on vBlades. B. All devices in the chassis are rebooted. C. Reboot is performed on vMaster. D. Reboot is performed only on vBlades.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What information is typically submitted with every aXAPI call after the initial login is complete? A. Authorization header with signature B. The ACOS device serial number C. The programming language being used D. The AXAPI special permission XML file E. Log file location",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What is the purpose of a VRRP-A floating-IP address? A. To serve as a tie-breaker when selecting a VRRP-A owner. B. To provide a single next hop IP address for uplink and downlink devices. C. To use as source IP address for VRRP-A hellos. D. To provide a single IP to manage all VRRP-A devices in the set.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When vBlade A issues a “vcs vmaster-take-over 200” command, which statement is true? A. The command is ignored when the current vMaster is in vMaster maintenance mode. B. Any subsequent vmaster-take-over command within the chassis with a parameter smaller than 201 is ignored. C. The 200 priority is compared to the current vmaster’s default vrid priority to determine which device controls the chassis. D. If an administrator on vBlade B were to simultaneously issue command vcs vmaster-take-over 210, vBlade B would become the vMaster.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which statement describes the effect this command: erase preserve-management A. The startup-config file is erased and the ACOS is immediately rebooted B. All configuration profiles, SSL certificates, aFlex polices, black/white lists, and system logs are erased the next time the system reboots C. The startup-config file is erased but the management interface ip configuration is kept D. The start-up config file is erased but the all of the admin accounts are preserved",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which VRID priority scheme will implement an Active-Active-Active VRRP-A deployment with three ACOS devices? A. 1 B. 2 C. 3",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Select two aXAPI implementation use cases. (Choose two.) A. Auto-syncing the configurations via virtual chassis. B. Extract ACOS configurations or statistics from ACOS. C. Perform deep packet inspection on traffic and redirect and modify content. D. Writing scripts to automate configuration changes.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "ACOS can log the following accounting records for administrative sessions: A. device access attempts only B. syslog errors of a specified severity level C. device access and command entry attempts D. command entry attempts only E. syslog errors of severity greater than a specified level",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Given the following VRID 2 configuration, which device will host the VRID after the three devices at the same time? A. Device 2 B. Device 1 C. VCS will randomly assign the VRID to a device based on the uptime of the device. D. Device 3 E. The VRID will be hosted on all three devices at the same time.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When VRRP-A is enabled on a device with multiple partitions, which statement about VRID 0 is correct? A. Each partition has its own distinct VRID 0. B. VRID 0 only exists in the shared partition; private partitions can only contain VRIDs numbered higher than 0. C. VRID 0 is initially enabled only in the shared partition; partition administrators can enable VRID 0 in their partitions. D. When using VRRP-A on a device with multiple partitions, VRID 0 is automatically disabled.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You upgraded the boot image and changed the boot pointer to the new image using bootimage command. Which of the following operations will load the new image? A. reload B. restore C. system-reset D. shutdown –r E. restart F. reboot",
+    "options": {},
+    "most_voted": "F"
+  },
+  {
+    "question": "Device 1 is the vMaster in a virtual chassis. Select the command set that adds an IP address to VE interface 200 on device 3? A. interface ve 200 device 3 ip address 198.162.4.1 /24 B. interface device-context 3 interface ve 200 ip address 198.162.4.1 /24 C. interface ve 3/200 ip address 198.162.4.1 /24 D. vcs device-context device 3 interface ve 200 ip address 198.162.4.1 /24",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which statement correctly describes the following configuration? snmp enable traps slb-change server snmp enable traps slb-change server-port snmp enable traps slb-change vip snmp enable traps slb-change vip-port A. These commands enable SNMP traps for any SLB changes B. These commands enable SNMP traps for only SLB changes related to virtual-server C. These commands only enable SNMP traps for the creation or removal of virtual and real servers and ports D. These commands enable SNMP traps for only SLB changes related to real-servers",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Describe VRRP-A (high availability) and aVCS interoperability. A. Enabling VRRP-A requires that aVCS is operational B. Enabling aVCS require VRRP-A is operational C. VRRP-A and aVCS operate independently of each other D. VRRP-A and aVCS must function simultaneously",
+    "options": {},
+    "most_voted": "B"
+  }
+]
