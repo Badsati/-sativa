@@ -1,0 +1,147 @@
+[
+  {
+    "question": "To which of the following scenarios is radio calibration applicable? (Choose all that apply.) A. Enterprise office scenario B. Rail transportation scenario C. High-density scenario D. WDS or mesh backhaul scenario",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about the home agent are true? (Choose all that apply.) A. The home agent communicates with the gateway on the STAs’ home network at Layer 2 B. The home agent communicates with the gateway on the STAs’ home network at Layer 3 C. A home AP can function as a home agent of STAs. D. A home WAC can function as a home agent of STAs.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following types of non-Wi-Fi devices can be identified by Huawei APs? (Choose all that apply.) A. Bluetooth device B. ZigBee device C. Game controller D. 2.4 GHz wireless video and audio transmitter",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about EAP relay and EAP termination are false? (Choose all that apply.) A. In EAP termination mode, an access device encapsulates EAP packets sent by an 802.1X client into RADIUS packets, without processing the data in the EAP packets. B. In EAP relay mode, an access device extracts information from EAP packets, encapsulates the information into RADIUS packets, and sends the RADIUS packets to an authentication server. C. In EAP termination mode, an access device extracts client authentication information from the EAP packets sent by a client and encapsulates the information using the standard RADIUS protocol. The access device supports only the EAP MD5-Challenge authentication method. D. The EAP termination mode simplifies the processing on an access device and supports various authentication methods. However, this mode requires an authentication server to support EAP and have high processing capability.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following encapsulation formats are used for EAP termination in 802.1X authentication? A. EAP-TLS B. EAPoL C. EAPoR D. EAP",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The display sync-configuration compare command is executed on the backup WAC in HSB to check wireless configuration synchronization. Based on the command output, which of the following statements are true? (Choose all that apply.) <WAC> display sync-configuration compare <WAC>--- /tmp/master-common-cfg.cfg +++ /tmp/backup-common-cfg.cfg @@ -214,59 +214,6 @@ forward-mode tunnel service-vlan vlan-id 102 ssid-profile 2 - vap-profile name 2 - forward-mode tunnel - service-vlan vlan-id 102 - ssid-profile IR2D + vap-profile name 3 + forward-mode tunnel + service-vlan vlan-id 102 + ssid-profile 3 @@ -287,70 +234,21 @@ A. This command is used to check whether the public configurations on two WACs are consistent after wireless configuration synchronization. B. The configuration of ssid-profile 2 exists on both the master and backup WACs. C. The configuration of vap-profile name 3 exists on the master WAC but not on the backup WAC. D. The configuration of vap-profile name 2 exists on the backup WAC but not on the master WAC.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In a dual-link backup scenario, the active/standby link switchover mode is set to priority. When the active link recovers, the AP detects that the original active link has a higher priority and triggers a switchback. How many Echo intervals does the AP wait for before switching back to the original primary WAC? A. 20 B. 10 C. 15 D. 5",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a dual-link HSB scenario, after an AP sets up a CAPWAP links with the active and standby WACs, which of the following types of packets does the AP periodically send to the WACs to detect link status? A. DTLS B. Join C. Echo D. Keepalive",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP 802.11r fast roaming (over-the-air) is enabled on the WLAN shown in the figure. A STA roams from AP1 to AP2. Sort the steps in chronological order during the 802.11r fast roaming process between WACs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Assume that a large enterprise needs to deploy a WLAN to provide wireless access for both employees and guests. However, guest data may pose security threats on the network. Which of the following networking modes is applicable to this scenario? A. Navi WAC Networking B. Leader AP networking C. Mesh networking D. Fat AP networking",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In Huawei’s smart roaming solution, which of the following methods can be used by a WAC to discover and maintain neighboring AP entries of STAs? A. The WAC obtains such entries using 802.11v B. The AP listens to the Probe frames sent by STAs C. The AP periodically and proactively scans neighboring APs of STAs D. STAs proactively report neighboring AP information",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "As shown in the figure, STA_1 through STA_4 are associated with AP_1, and STA_5 is associated with AP_2. Assuming that the load balancing threshold is 2, the load difference threshold is 25%, and AP1 and AP2 support a maximum of 10 STAs, which of the following statements are true? A. The load percentage of AP_1 is 40%, and that of AP_2 is 10%. B. The load balancing mechanism needs to be enabled. Then some STAs are steered from AP_1 to AP_2. C. If load balancing is performed, the load percentage of AP_1 changes to 30%. D. The minimum load percentage is 10%, which is greater than the load difference threshold. Therefore, load balancing needs to be enabled.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements correctly arranges matching modes used by URL filtering in descending order of priority? A. Exact matching > Prefix matching > Suffix matching > Keyword matching B. Exact matching > Suffix matching > Keyword matching > Suffix matching C. Exact matching > Suffix matching > Prefix matching > Keyword matching D. Exact matching > Keyword matching > Suffix matching > Prefix matching",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements are true about the WLAN site survey in different typical scenarios? A. In a classroom scenario, if the walls are made of reinforced concrete, the signal attenuation is high. In this case, you are advised to test the attenuation during the site survey. Additionally, pay attention to the locations of ELV rooms in the teaching building. B. In an office scenario, the load-bearing columns and partitions affect the signal coverage. If an integrated ceiling is used, deploy APs near maintenance entrances. If a metal ceiling is used, mount APs on the ceiling or wall. C. In a ward-round scenario, high requirements are posed on the coverage field strength, roaming effect, and bandwidth. Determine the interference of medical equipment and the areas where Wi-Fi signals are not allowed. D. In a stadium scenario, the onsite environment is complex and cabling is difficult. Therefore, confirm with the property management company about ELV rooms and cabling. If the transmission distance is too long, consider deploying more switches. During the survey, focus on the interference between APs and AP mounting modes.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When calculating the number of APs, you can divide the total required bandwidth by the maximum bandwidth of a single AP. A. True B. False",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "DRAG DROP Drag the short-range wireless IoT technologies on the left to their corresponding descriptions on the right.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "DRAG DROP Differentiated network planning needs to be performed to meet requirements of different IoT services in Huawei’s CloudCampus IoT solutions. Drag the solutions on the left to their corresponding network planning suggestions on the right.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following components is not included in a typical RFID system? A. Information processing platform B. RFID tag C. Router D. RFID reader",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In a VRRP HSB scenario, if the VRRP preemption delay is set to a small value, which of the following problems may occur after a master/backup switchover? A. The batch backup process cannot be started. B. A master/backup switchback is triggered too quickly. C. Backup information is incomplete. D. Service data on the master and backup WACs is lost.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP Drag the Huawei’s wireless positioning solutions on the left to their corresponding features and application scenarios on the right.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "After multicast-to-unicast conversion is enabled on an AP’s air interface, which of the followings is the destination MAC address of multicast packets sent over the air interface? A. Multicast MAC address B. MAC address of the multicast source C. Broadcast MAC address D. MAC address of a STA",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Satellite positioning can achieve high positioning accuracy in both indoor and outdoor scenarios. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following parameters can be allocated to clients in DHCPv6 stateful autoconfiguration? (Choose all that apply.) A. IPv6 address B. PD prefix C. SNTP server address D. DNS server address",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the followings is not an IPv6 address type? A. Multicast address B. Unicast address C. Broadcast address D. Anycast address",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "When a STA roams from AP1 to AP2 at Layer 2, AP2 notifies its neighbors of the STA information to facilitate subsequent roaming. Traffic from this STA is encapsulated in a tunnel and sent to AP1 for forwarding. A. True B. False",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements about fingerprint-based positioning technology are true? A. The positioning engine generates a virtual fingerprint library through calculations based on the AP deployment and environment information. B. Terminals learn from each other to form a fingerprint library that can be shared. C. APs collect surrounding environment information to form a fingerprint library. D. The fingerprint map is obtained through onsite information collection.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements are true about data collection of iMaster NCE-CampusInsight? A. iMaster NCE-CampusInsight uses telemetry to implement efficient data collection. B. Calculated data can be displayed on iMaster NCE-CampusInsight only after a license is loaded on the device management page. C. To collect data from WLAN devices, ensure that WACs can communicate with the southbound IP address of iMaster NCE-CampusInsight. APs do not need to communicate with the southbound IP address of iMaster NCE-CampusInsight. D. The UTC time of iMaster NCE-CampusInsight must be the same as that of its managed devices.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following configuration may cause STAs to experience a slow Internet connection? A. QoS CAR is configured in the traffic profile B. Radio 1 of APs is disabled C. TKIP encryption is configured, causing a low link setup rate D. Rate limiting is configured in the SSID profile",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "DRAG DROP Drag the reasons for AP onboarding failures on the left to the corresponding troubleshooting operations on the right.",
+    "options": {},
+    "most_voted": ""
+  }
+]
