@@ -1,0 +1,267 @@
+[
+  {
+    "question": "Which of the following are possible criteria for classifying packets at the network port ingress on the Alcatel-Lucent 7750 SR? (Choose three) A. The EXP bits in the MPLS header. B. The packet's source and destination IP addresses. C. The packet's DSCP bits. D. The dot1p bits in the frame header. E. The ID of an SDP that is transporting the packet.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Click the exhibit button below. Given the slope-policy (below), which of the following statements are TRUE? (Choose two) [sampleXML/xmlfile-13_1.png] A. All out-of-profile traffic will be dropped before that of any in-profile traffic. B. The discard probability slope of an in-profile traffic is steeper than that of an out-of-profile traffic. C. When the shared buffer utilization reaches 55%, both in-profile and out-of-profile packets may be dropped. D. The maximum probability with which an out-of-profile packet can be dropped is higher than that of an in-profile packet. E. When the shared buffer utilization is at 61%, only in-profile packets are currently in the shared buffer pool.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "To manage the shared buffer space at network ports, slope policies are applied on _________ for the ingress direction, and on ________ or _________ for the egress direction. A. Interfaces, ports, SAPs B. Ports, ports, MDAs C. MDAs, MDAs, ports D. Interfaces, interfaces. MDAs E. MDAs, ports, interfaces",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In the context of hierarchical scheduling, a scheduler is configured with a CIR weight of 0. Which of the following statements is TRUE? A. The scheduler will be allocated its \"within CIR\" bandwidth before all other children at the same level have received their \"within CIR\" bandwidth. B. The scheduler will be allocated its \"within CIR\" bandwidth after all other children at the same level have received their \"within CIR\" bandwidth. C. The scheduler will be allocated its \"within CIR\" bandwidth after all other children at all levels have received their \"within CIR\" bandwidth. D. The scheduler will not be allocated its \"within CIR\" bandwidth.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When using an egress port scheduler, on which scheduling loop are orphaned queues serviced? A. Level 8 within CIR. B. Level 8 between CIR and PIR. C. Level 8, once all PIR is serviced. D. Level 1 within CIR. E. Level 1 between CIR and PIR. F. Level 1, once all PIR is serviced.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements regarding the egress port scheduler is TRUE? A. The egress port scheduler can have up to 17 children spread across 8 levels. B. Multiple egress port schedulers can be assigned to a single port with many HQoS children. C. Multiple HQoS policies can be children of a single port scheduler. D. Multiple egress port schedulers can be children of a single HQoS scheduler.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "To implement Hierarchical-QoS (Multi-tiered scheduling), which of the following actions must be undertaken? (Choose three) A. H-QoS capabilities must be enabled globally on the router B. A scheduler-policy must be configured. C. The queues in the SAP-ingress and SAP-egress policies do not require additional configuration attributes to make use of the hierarchical schedulers. D. The network queue policy must be configured to make use of the scheduler-policy. E. The scheduler-policy must be referenced in the SAP-ingress and SAP-egress policies. F. The scheduler-policy must be applied on the service SAP.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements are TRUE regarding the building of a QoS-enabled network? (Choose two) A. It is important that all packets are classified in the same way at all SAP-ingress points. B. Once a packet is classified to a forwarding class, it cannot change across the network. C. Packet enters a node will be treated as per the local hop's configured policy. D. Native IP packets entering a network port will be marked at the first network egress by default E. Native IP packets entering a network port will not be marked at the first network egress by default. F. Native IP packets entering a network port will be marked at the first network egress, regardless of the re-marking configuration.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements are TRUE regarding the remarking of packets arriving on the network interface whose ToS-marking-state is set to trusted and remarking enabled on network egress? (Choose two) A. Native IP Packets will not be remarked. B. Native IP Packets will be remarked. C. Packets associated with a VPRN service on an upstream node will not be remarked. D. Packets associated with an ES service on an upstream node will be remarked.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "On the Alcatel-Lucent 7750 SR, how many queues per FC are available for multipoint traffic within a VPLS on service ingress? A. 64 B. 8 C. 3 D. 16 E. 1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In which policies, on the Alcatel-Lucent 7750 SR. is classification performed? (Choose three) A. SAP-ingress policy B. SAP-egress policy C. IP-criteria policy D. Network-queue policy E. Slope policy F. Network policy",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following are categories of forwarding classes on the Alcatel-Lucent 7750 SR? (Choose two) A. Real-time B. Assured C. Non-conforming D. High priority E. In-profile",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements describe the operation of WRED on the Alcatel-Lucent 7750 SR? (Choose three) A. WRED monitors the shared buffer space utilization over a period of time. B. WRED disables the TCP slow-start congestion control mechanism. C. WRED uses two configurable slopes for each buffer pool: a high slope and a low slope. D. WRED uses the shared buffer utilization, instead of the individual queue depth, to get a better picture of the average resource utilization of the shared buffer space. E. WRED polices the shared buffer pool and marks all packets above a certain rate as \"discard eligible.\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following rate-limiting approaches are used on the Alcatel-Lucent 7750 SR? (Choose two) A. Shapeless policing at SAP-ingress only. B. Shapeless policing at SAP-ingress and egress. C. Biased round robin queuing at ingress only. D. Soft shaping at all network interfaces. E. Soft shaping at network ingress only.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Click the exhibit button below. [sampleXML/xmlfile-61_1.jpg] Based on the configuration of the network policy (below), what will be the forwarding class associated with a MPLS encapsulated customer packet that arrives on a dotlQ encapsulated network port 1/1/4:1 on P1 with the following characteristics: EXP value = 6 DSCP value = cs1 Dot1pvalue = 3 A. EF B. H1 C. L1 D. H2 E. L2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about the consequences of congestion is TRUE? A. Negative jitter results in a smaller than expected interval between transmitted packets. B. Jitter does not have any effect on the quality of video applications. C. Serialization delay is not affected by congestion. D. Queuing delay is a fixed form of delay in networks.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the statements about packet classification is TRUE? A. It sets the destination IP address of the packet. B. It uses RVSP to inform other QoS capable routers how the packet should be treated. C. It sets the TOS, DSCP, EXP, or DOT1p field based on classification criteria. D. It can use a customer’s encapsulated data to determine a packet’s forwarding class.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about CIR of a queue is TRUE? A. It may exceed PIR of the queue. B. It may be exceeded by the average servicing rate of the queue. C. It varies depending on the traffic characteristics. D. It is the rate at which packets are forwarded out of the queue.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is NOT a characteristic of policing? A. It smooths out traffic bursts. B. It drops the packets when average peak rate is exceeded. C. It may additionally color the packets as they arrive. D. It buffers the packets at its output before sending them out.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about network QoS policies is FALSE? A. Classification rules must specify both an FC and a profile for the packets. B. A network policy is applied at a physical port. C. Classification is performed with behavior-aggregate statements only. D. Match criteria can be chosen from dot1p, DSCP, and EXP fields in the packet.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The network QoS policy shown below is applied properly to a Nokia 7750 SR acting as a transit Label Switch Router (LSR) for a given MPLS tunnel. A packet is received inside the MPLS tunnel with EXP=4, dot1p=4, and DSCP=AF. Which forwarding class is assigned to this packet? A. L2 B. H1 C. AF D. BE",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A profile-mode queue is configured with MBS = 100 KB, CBS = 50 KB and High-Priority-Only = 40%. Assume there is no CBS overbooking, and the slope-policy is disabled. If the current queue depth is 70 KB, what will happen to an out-of-profile packet when it is transmitted to the queue? A. It will be stored in the reserved buffer space and remain out-of-profile. B. It will be stored in the reserved buffer space and become in-profile. C. It will contend for shared buffer space with packets from other queues. D. It will be discarded because the high-priority-only threshold has been reached.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "On the Nokia 7750 SR, what is the maximum number of ingress queues that a single network queue policy can support in a VPLS? A. 8 B. 16 C. 32 D. 48",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "According to the SAP-ingress QoS policy shown, which of the following statements about processing of the packets by policers 3 and 4 is TRUE? A. Policer 3 forwards packets as out-of-profile when its PIR bucket has 4000 tokens. B. Policer 3 starts discarding low-priority packets when its PIR bucket has at least 3000 tokens. C. Policer 4 forwards all its packets as out-of-profile. D. Policer 4 starts discarding low-priority packets when its PIR bucket has at least 3000 tokens.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is NOT an advantage of deploying queue-groups on a network port? A. It enables fine-tuned SLA control that is not possible when using a common set of queues for all L2/L3 services. B. It enables CFHP and hierarchy scheduling (egress) for each network interface. C. It improves scalability by allowing the use of queues instead of the default set of policers used on network egress. D. It allows for enforcing bandwidth reservations of the LSPs that are used by the SDPs configured on the network interfaces.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about a queue’s rate parameters is FALSE? A. If CIR = PIR, then all packets will be considered as in-profile. B. CIR can be set to 0. C. CIR can be larger than PIR. D. CIR can be set to ‘max’.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about burst-limit of a queue is FALSE? A. Burst-limit sets a limit on the maximum burst of packets transmitted during each scheduler visitation time. B. Proper configuration of the burst-limit can prevent packet drops on the downstream nodes resulting from traffic bursts. C. The lower the configured burst limit value, the lower the burst allowed to enter the queue. D. If the burst-limit is not configured, a default burst-limit value will be used by the queue.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An IOM3 card of a Nokia7750 SR is enabled with the default scheduler and the policy shown in the image is applied to an access port on this card. In which order will packets be scheduled out of the queues? A. Queue 3 within-CIR packets, then queue 4 within-CIR packets, then queue 3 and queue 4 above-CIR packets in round-robin. B. Queue 4 within-CIR packets, then queue 3 within-CIR packets, then queue 3 and queue 4 above-CIR packets in round-robin. C. Queue 3 within-CIR packets, then queue 4 within-CIR packets, then queue 3 above-CIR packets, and finally queue 4 above-CIR packets. D. Queue 4 within-CIR packets, then queue 3 within-CIR packets, then queue 4 above-CIR packets, and finally queue 3 above-CIR packets.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A hierarchical scheduler policy with the shown parameters is configured at a service ingress. If the offered rate of each queue is 10Mbps, what is the operational PIR and CIR for queue 3? A. PIR = 5 Mbps, CIR = 0 Mbps B. PIR= 4 Mbps, CIR = 1 Mbps C. PIR= 6 Mbps, CIR = 4 Mbps D. PIR= 6 Mbps, CIR = 1 Mbps",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about the bandwidth allocation criteria used by an egress port scheduler is TRUE? A. The available bandwidth of the port is divided in a strict priority over its children. B. Expedited queues must be serviced before best-effort queues. C. Orphaned queues are serviced on the 8th scheduling priority. D. The configured CIR dictates the maximum port bandwidth that can be allocated during the within-CIR pass for that level.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An egress port scheduler applied to an Ethernet port has a configured bandwidth of 100 Mbps. All frames transmitted on the port are 80 bytes. What is the aggregate transmit bandwidth of all queues using the port scheduler? A. 100Mbps * 20/(80 + 20) = 20 Mbps B. 100Mbps * 80/(80 + 20) = 80 Mbps C. 100Mbps D. 100+ 100 * 20/(80 + 20) = 120 Mbps",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "At which point are internal QoS markings added to the packets? A. SAP-ingress B. FFPC C. SAP-egress D. network-egress",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about marking packets is TRUE? A. Packets corresponding to a layer-2 service can be pre-marked on SAP-ingress. B. Packets corresponding to a layer-2 service can be pre-marked on network-ingress. C. Packets corresponding to a layer-3 service can be pre-marked on SAP-ingress. D. Packets corresponding to a layer-3 service can be pre-marked on network-ingress.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Packets arrive at the VPRN SAP on PE1 with DSCP marking of af11 and Dot1p of 2. According to the QoS policies applied at routers PE1, P, and PE2, what is the dot1p value of packets egressing routerPE2? (All the SDPs are MPLS-encapsulated, and all interfaces are using their default trust states). A. 2 B. 3 C. 5 D. 6",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about the QoS treatment of self-generated traffic in the Nokia 7750 SR is FALSE? A. All self-generated traffic is assigned into forwarding class NC by default. B. Ingress self-generated traffic is stored in CPM queues and egress self-generated traffic is stored in IOM queues. C. The self-generated packets will be marked with a default DSCP value. D. The self-generated packets will be marked with default EXP bits.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "According to the configurations shown, which of the following statements about the classification and queuing of self-generated OSPF traffic is TRUE? A. It will be classified into forwarding class BE and stored in queue 1. B. It will be classified into forwarding class BE and stored in queue 8. C. It will be classified into forwarding class NC and stored in queue 1. D. It will be classified into forwarding class NC and stored in queue 8.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which action does the packet remarking process perform? A. It determines the packet’s forwarding class based on classification criteria B. It modifies the current packet’s forwarding class to indicate promotion or demotion C. It sets the TOS, DSCP, EXP, or Dot1p field based on classification criteria D. It modifies the current TOS, DSCP, EXP, or Dot1p marking to indicate promotion or demotion",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a Nokia 7750 SR, which of the following is a class type that is intended for non-real-time customer traffic that requires some committed bandwidth? A. Gold B. Assured C. High Priority D. Best Effort",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In a Nokia 7750 SR, which of the following QoS policies CANNOT include packet classification criteria? A. SAP-ingress B. SAP-egress C. Network-queue D. Network",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If packets egressing a SAP do not match any criteria defined in the SAP-egress policy, which forwarding class will these packets be assigned to? A. The default forwarding class defined in the SAP-egress policy. B. The forwarding class inherited from network ingress classification. C. Best Effort. D. If there is no match, packets will be dropped.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about behavior aggregate classification is TRUE? A. It sets both the forwarding class and the packet’s dot1p, lsp-exp, precedence, or dscp field to the same value. B. It groups all packets together into a single aggregate stream, and gives all packets the same treatment. C. It copies the three most significant bits in the packet’s dscp field into the forwarding class. D. It assigns a forwarding class based on the packet’s dot1p, lsp-exp, precedence, or dscp value.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "According to the SAP-ingress QoS policy shown, what is the maximum amount of memory that queue 5 can use from the shared buffer pool? A. 1 kilobyte B. 2 kilobytes C. 10 kilobytes D. 20 kilobytes",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "According to the SAP-ingress QoS policy shown, which of the following statements about packets processed by policer 6 is TRUE? A. All forwarded packets will be in-profile B. Packets forwarded above CIR will be marked out-of-profile and the rest will be in-profile C. Excess packets that arrive within a burst larger than CBS will be forwarded as out-of-profile D. All forwarded packets will be out-of-profile",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How is buffer memory allocated per forwarding complex on a Nokia FP3-based IMM? A. 512 MB ingress, 512 MB egress B. 512 MB for network ports, 512 MB for access ports C. 3.84 GB dynamically allocated between ingress and egress D. 2 GB, with a minimum of 512 MB ingress and egress, and an additional 1 GB dynamically allocated",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is NOT a factor when deciding if a packet can be accepted into a queue? A. Profile/priority state of a packet B. Forwarding class C. Queue depth D. HPO setting",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following parameters is taken into account FIRST when a CFHP arbiter allocates bandwidth among its children policers? A. PIR B. CIR C. Level D. Weight",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following about scheduling is TRUE? A. HQoS schedulers cannot be children of an egress port-scheduler. B. HQoS schedulers provide a dynamic method of allocating scheduling resources to queues. C. HQoS scheduler policies can be applied to an MDA to schedule network ingress traffic. D. A scheduler policy applied to multiple SAPs within the same service will result in a single hardware scheduler operating across all SAPs within the service.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "If two queues complete for bandwidth in a hierarchical scheduler environment, which parameter is used by their parent scheduler to determine the priority with which each queue can use bandwidth above its committed rate? A. level B. cir-level C. weight D. cir-weight",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When using an egress port scheduler, which scheduling loop priority are orphaned queues serviced on? A. 1st B. 8th C. 9th D. 17th",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What type of unwanted packet drops can the proper configuration of a queue’s burst-limit parameter prevent? A. Packet drops in the local queue resulting from traffic congestion. B. Packet drops on the downstream nodes resulting from traffic congestion. C. Packet drops in the local queue resulting from traffic bursts. D. Packet drops on the downstream nodes resulting from traffic bursts.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about the default scheduler in the Nokia 7750 SR is TRUE? A. A queue will be serviced as expedited if all of the forwarding classes mapped to it are expedited, regardless of its configured type. B. A queue will be serviced as best-effort if all of the forwarding classes mapped to it are best-effort, regardless of its configured type. C. A queue will be serviced as expedited if at least one of the forwarding classes mapped to it is expedited, regardless of its configured type. D. A queue will be serviced as expedited if its type is configured as expedited, regardless of the forwarding classes mapped to it.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "According to the configuration shown above, which of the following about the classification and marking of self-generated BGP traffic is TRUE? A. It will be marked as DSCP BE and classified into forwarding class BE. B. It will be marked as DSCP NC1 and classified into forwarding class BE. C. It will be marked as DSCP NC1 and classified into forwarding class NC. D. It will be marked as DSCP NC1 and classified into forwarding class AF.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In the diagram shown above, applying policing and soft-policing on access ingress is typical for which of the following types of traffic? A. Real-time B. Assured C. Best-effort D. Self-generated",
+    "options": {},
+    "most_voted": ""
+  }
+]
