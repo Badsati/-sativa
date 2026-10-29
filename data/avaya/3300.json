@@ -1,0 +1,32 @@
+[
+  {
+    "question": "A customer with Avaya Aura Contact Center has created a loop in a script application with the following parameters: 1. While the caller is in the loop, the customer wants an announcement to play every thirty seconds, and the queued status of the call and the In-service status of the skillset must be evaluated 2. If the call is not queued, and if the skillset is out of service, the call will be sent to an out of service announcement 3. If the call is not queued and the skillset is in service. It must be re-queued. What is the proper script syntax to accomplish this requirement? A. Section wait_loop IF NOT QUEUED THEN IF OUT OF SERVICE SKILLSET automotive THEN GIVE RAN out_of_service_ran_gv DISCONNECT END IF END IF GIVE RAN agts_stlll_busy_ran_gv WAIT 30 EXECTUTE wait_loop B. Section wait_loop IF NOT QUEUED THEN IF NOT OUT OF SERVICE automotive THEN QUEUE TO SKILLSET automotive WAIT 2 ELSE GIVE RAN out_of_service_ran_gv DISCONNECT END IF END IF GIVE RAN agts_still_busy_ran_gv WAIT 30 EXECTUTE wait_loop C. Section wait_loop IF QUEUED AND IF OUT OF SERVICE automotive THEN GIVE RAN out_of_service_ran_gv DISCONNECT END IF END IF GIVE RAN agts_still_busy_ran_gv WAIT 30 EXECTUTE wait_loop D. Section wait_loop IF NOT QUEUED AND IF NOT OUT OF SERVICE SKILLSET automotive THEN GIVE RAN out_of_service_ran_gv DISCONNECT END IF END IF GIVE RAN agts_still_ran_gv WAIT 30",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer is using the intrinsic Call Rate in & script. For what Information is the system looking when the Call Rate Intrinsic is used? A. the number of contacts that entered the system in the last 10 minutes B. the total number of active calls in the system C. the number of calls that entered the system in the last 10 minutes D. the number of calls answered in the preceding 10 minutes",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A supervisor with Avaya Aura Contact Center would like to create a custom Application Display The data fields available are cumulative, fixed, and instantaneous. What is an example of a cumulative data field? A. Application Name B. Average Answered Delay C. Calls Waiting D. Service Level Threshold",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer with an Avaya Aura Contact Center has been notified that due to Inclement weather the contact center will not be opening today. The customer would like to remotely implement an announcement to explain the reason for the unscheduled closure and is going to use a Boolean variable to accomplish this. Which two statements regarding a Boolean variable are true? (Choose two.) A. A Boolean variable is a variable of the type TRUE/FALSE. B. A Boolean variable is a variable of the type ON/OFF. C. A Boolean variable can be used on a Master Script, a Primary Script or a Secondary Script. D. A Boolean variable cannot be used in a loop.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "When more than one agent is available to receive a call, the agent with the highest priority In the skillset will receive the call. If more than one agent has the highest priority, the customer would like the call to be presented to the agent who has been idle the longest since their last Automatic Call Distribution/Control Directory Number (ACD/CDN) call. Where is this parameter configured? A. Historical Statistics >Parameters B. Skillset Definition >Call Age Preference C. Real Time Statistics>Agent Stat. D. Global Setting > Agent Order Preference",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The data in the exhibit are found In the Route Definition window under the Configuration component of Avaya Aura Contact Center. [sampleXML/xmlfile-21_1.png] Which two statements describe how the Name and Number fields are used? (Choose two.) A. The name must match a variable name In the Service Creation Environment. B. The name must match a .wav file or a content group in the Avaya Media Server. C. The number must match a route created in the telephone system. D. The route is used in scripting to reference a specific recording or music.",
+    "options": {},
+    "most_voted": ""
+  }
+]
