@@ -1,0 +1,157 @@
+[
+  {
+    "question": "With regard to databases, what is normalization? A. The process of reducing the cardinality of a relation B. The process of organizing and refining relations C. The process of duplicating data to reduce the number of tables D. The process of limiting data stored in a table to a specific range of values",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which three pieces of information did E.F. Codd describe as necessary to retrieve a data value from a relational database? A. Attribute, domain, and tuple B. Entity, relation name, and domain C. Table name, primary key, and entity D. Attribute, relation name, and primary key",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is a virtual table? A. A virtual table is a relation created as the result of data manipulation; it exists only in computer memory, and is not a permanent part of the database. B. A virtual table is a relation stored in the database; it is used when multiple users access the same relation in a database. C. A virtual table is a relation derived from the database data dictionary; it contains metadata about a base relation. A virtual table is a relation derived from the database? data dictionary; it contains metadata about a base relation. D. A virtual table is a relation that consists of primary and foreign keys for a particular set of relations in a database.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Your enterprise has reached the conceptual design phase for a database project. What is the desired goal at the end of this design phase? A. A set of normalized relations B. A reviewed entity-relationship (ER) model C. An entity-relationship (ER) model with no redundant data D. A set of denormalized relations",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In which phase of database design do you identify entities, attribute domains, and relationships? A. Logical B. Physical C. Application D. Conceptual",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Consider the Dept1_Parts and Dept2_Parts relations shown in the exhibit. Which of the following SQL statements would create a set difference of the two relations with the widest variety of Structured Query Language dialects? [sampleXML/xmlfile-4_1.png] A. SELECT * FROM Dept1_Parts EXCEPT(SELECT PartJD FROM Dept2_Parts); B. SELECT * FROM Dept1_Parts MINUS (SELECT Part_ID FROM Dept2_Parts); C. SELECT * FROM Dept1_Parts DIFFERENCE (SELECT Part_ID FROM Dept2_Parts); D. SELECT * FROM Dept1_Parts WHERE Part_ID NOT IN (SELECT Part_ID FROM Dept2_Parts);",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Consider the Information Engineering diagram shown in the exhibit. Building_ID, R_ID, Room_Count and Room_Num are integer numbers, whereas Bldg_Name, Location and Res_Name are all represented by variable-length strings with a maximum of 20 characters. Which SQL statement best implements the RESIDENT relation shown in this diagram? [sampleXML/xmlfile-5_1.png] A. CREATE TABLE RESIDENT ( R_ID INTEGER NULL PRIMARY KEY, Room_Num FLOAT, Res_Name VARCHAR, Building_ID INTEGER NULL, FOREIGN KEY Building_ID REFERENCES BUILDING (Building_ID)); B. CREATE TABLE RESIDENT ( R_ID INTEGER NOT NULL PRIMARY KEY, Room_Num BINARY, Res_Name VARCHAR (20), Building_ID INTEGER NOT NULL, FOREIGN KEY Building_ID REFERENCES BUILDING (Building_ID)); C. CREATE TABLE RESIDENT ( R_ID INTEGER NOT NULL PRIMARY KEY, Room_Num INTEGER, Res_Name VARCHAR (20), Building_ID INTEGER NOT NULL); D. CREATE TABLE RESIDENT ( R_ID INTEGER NOT NULL PRIMARY KEY, Room_Num INTEGER, Res_Name VARCHAR (20), Building_ID INTEGER NOT NULL, FOREIGN KEY Building_ID REFERENCES BUILDING (Building_ID));",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which term describes one or more database operations that are executed as a single unit? A. Update B. Transaction C. Encapsulation D. Operational group",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Consider the following relations shown in the exhibit. Which of the following SQL statements would return the Customers2 relation from the Customers relation? [sampleXML/xmlfile-8_1.png] A. SELECT * FROM Customers WHERE Satisfaction_Rate <= 80 OR Satisfaction_Rate >= 90; B. SELECT * FROM Customers WHERE Satisfaction_Rate IN (80 AND 90); C. SELECT *FROM Customers WHERE Satisfaction_Rate >= 80 AND Satisfaction_Rate <= 89; D. SELECT * FROM Customers WHERE Satisfaction_Rate BETWEEN (80, 90);",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following best describes the ON DELETE NO ACTION referential integrity constraint? A. If a parent key is deleted, any child keys referenced by the parent key are automatically deleted. B. If a parent key is deleted, no test is made for referential integrity. C. If any child key references a parent key, the record containing the parent key cannot be deleted. D. If a parent key is deleted, all child keys are automatically set to a specified value. C",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Consider the following relational algebraic expression: Which of the following SQL statements is equivalent to this relational algebraic expression? [sampleXML/xmlfile-10_1.png] A. SELECT * FROM Customers, Employees WHERE Sales_Rep_No = Cust_No; B. SELECT Cust_No, Cust_Name, Emp_Name, Emp_Loc FROM Customers, Employees WHERE Customers.Sales_Rep_No = Employees.Sales_Rep_No; C. SELECT Cust_No, Cust_Name, Emp_Name, Emp_Loc FROM Customers, Employees WHERE Employees.Sales_Rep_No = Customers.Sales_Rep_No; D. SELECT * FROM Customers, Employees WHERE Customers.Sales_Rep_No = Employees.Sales_Rep_No;",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is a domain? A. A normalized set of data applicable to a particular relation B. A combination of attributes for a relation C. A definition of permissible values for one or more attributes D. A set of permissible values for one or more relations",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which pair of relational algebraic operations requires union compatibility? A. Union and join B. Selection and projection C. Intersection and difference D. Cartesian product and intersection",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is the most important service provided by a database management system? A. Provides support for a data manipulation language B. Allows users to store data in a distributed data repository C. Provides support for data formatting language commands D. Translates procedural commands into non-procedural commands",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Consider the table for an employee database shown in the exhibit. What is the cardinality of the table? [sampleXML/xmlfile-15_1.png] A. 6 B. 20 C. 4 D. 25",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "What is a relational database domain? A. A group of attributes B. A set of permissible tuple values C. A collection of related data items D. A set of permissible attribute values D",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Consider the table for an employee database shown in the exhibit. What is the degree of the table? [sampleXML/xmlfile-16_1.png] A. 25 B. 5 C. 4 D. 20",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What improvement can be made to file-based databases to overcome their limitations? A. Implement a tabular structure. B. Gather files in a distributed repository. C. Use a hierarchical database file system. D. Tightly couple database structure to database application programs.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You enterprise must decide whether to use a database management system. Which of the following lists four advantages of using a DBMS? A. Management of data redundancy, increased data integrity, increased data dependence, and increased application program flexibility. B. Consistency of data, adherence to standards, managed concurrency, and increased software complexity. C. Increased data access, increased data backup and recovery, data sharing, and consistency of data. D. Increased data security, increased data integrity, increased data independence, and decreased data separation.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Your enterprise is developing a database system that will contain highly sensitive data. Security of the data will take priority over database processing speed. Which database protection technique should be employed? A. Backups B. User views C. Encryption D. Integrity controls",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Consider the following database information: domain s_id: integer domain grd: fixed length character string length 1 STUDENT_GRADE( Student_Number: s_id NOT NULL Grade: grd ) Primary Key Student_Number During which phase of the database design process would this information be developed? A. Logical B. Physical C. Conceptual D. Implementation",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Consider the Information Engineering diagram shown in the exhibit. Building_ID, R_ID, Room_Count and Room_Num are integer numbers, whereas Bldg_Name and Res_Name are represented by variable-length strings with a maximum of 20 characters. Location can be up to 50 characters long, and no building has more than 600 rooms. Which SQL statement best implements the BUILDING relation shown in this diagram? [sampleXML/xmlfile-26_1.png] A. CREATE TABLE BUILDING ( Building_ID NOT NULL PRIMARY KEY, Bldg_Name, Location, Room_Count); B. CREATE TABLE BUILDING ( Building_ID NOT NULL PRIMARY KEY, Bldg_Name, Location, Room_Count, FOREIGN KEY Building_ID REFERENCES BUILDING (Building_ID)); C. CREATE TABLE BUILDING (Building_ID INTEGER NOT NULL PRIMARY KEY, Bldg_Name VARCHAR (20), Location VARCHAR (50), D. CREATE TABLE BUILDING (Building_ID INTEGER NOT NULL PRIMARY KEY, Bldg_Name VARCHAR (20), Location VARCHAR (50), Room_Count INTEGER CHECK (Room_Count > Room_Count INTEGER CHECK ( -1 And Room_Count < 601)); Room_Count > -1 Or Room_Count < 601));",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following four database design activities: 1 - Design user views. 2 - Select a DBMS. 3 - Apply normalization. 4 - Determine entities. Which choice shows the correct ordering of these activities, from first to last, by assigned numbers? A. 1,2,3,4 B. 3,4,1,2 C. 4,3,1,2 D. 4,2,3,1",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "The exhibit shows a table called Activity Relation that relates a unique student identification number with a sports activity and a fee for participating in that activity. A student can participate in only one activity. The key for the relation is Student_ID. What consequence would occur if the tuple for Student_ID 1001 were removed? [sampleXML/xmlfile-28_1.png] A. An update anomaly would occur. B. An insertion anomaly would occur. C. A deletion anomaly would occur. D. Both an insertion anomaly and a deletion anomaly would occur.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Several SQL operations are performed by User 1 to access the Fee information for Bowling in the Act_Fee relation (shown in the exhibit). The first access returns a fee of 50. An unrelated SQL operation by another user updates the Bowling fee to 60. The second access by User 1 returns a fee of 60. What problem has occurred? [sampleXML/xmlfile-29_1.png] A. Rollback B. Deadlock C. Dirty read D. No problem has occurred.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which subset of Structured Query Language (SQL) is used to limit access to a database or its data? A. Data Markup Language B. Data Control Language C. Data Formatting Language D. Data Manipulation Language",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which type of relational integrity is violated if a primary key in a database has a null value? A. Entity integrity B. Domain integrity C. Domain constraints D. Referential integrity",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Consider the relation shown in the exhibit. Which of the following SQL statements would properly remove all tuples for New York customers? [sampleXML/xmlfile-38_1.png] A. DELETE * FROM Customers WHERE Sales_Office = New York; B. DELETE FROM Customers WHERE Sales_Office = ew York?WHERE Sales_Office = ?ew York? C. DELETE * FROM Customers WHERE Sales_Office = ew York?WHERE Sales_Office = ?ew York? D. DELETE FROM Customers WHERE Sales_Office NOT LIKE ew York? WHERESales_Office NOT LIKE ?ew York?",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the Project relation shown in the exhibit as well as the following SQL statement: DELETE FROM Project WHERE Cust_Name = Acme; Which of the following tables shows the Project relation after execution of this SQL statement? [sampleXML/xmlfile-43_1.png] [sampleXML/xmlfile-44_1.png] A. Option A B. Option B C. Option C D. Option D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the Information Engineering diagram shown in the exhibit for a building management company. Referential integrity must be maintained such that a building cannot be deleted when it has residents. Building_ID, R_ID, Room_Count and Room_Num are integer numbers, whereas Bldg_Name, Location and Res_Name are all represented by variable-length strings with a maximum of 20 characters. Which SQL statement best implements the relations shown in this diagram? [sampleXML/xmlfile-62_1.png] A. CREATE TABLE BUILDING ( Building_ID INTEGER NOT NULL PRIMARY KEY, Bldg_Name VARCHAR (20), Location VARCHAR (20), Room_Count INTEGER ); CREATE TABLE RESIDENT ( R_ID NOT NULL PRIMARY KEY, Room_Num INTEGER, Res_Name VARCHAR (20), Building_ID INTEGER NOT NULL, FOREIGN KEY Building_ID REFERENCES RESIDENT (Building_ID) ON DELETE NO CHECK); B. CREATE TABLE BUILDING ( Building_ID INTEGER NOT NULL PRIMARY KEY, Bldg_Name VARCHAR (20), Location VARCHAR (20), Room_Count INTEGER ); CREATE TABLE RESIDENT ( R_ID NOT NULL PRIMARY KEY, Room_Num INTEGER, Res_Name VARCHAR (20), Building_ID INTEGER NOT NULL, FOREIGN KEY Building_ID REFERENCES BUILDING (Building_ID) ON DELETE NO CHECK ON UPDATE CASCADE); C. CREATE TABLE BUILDING ( Building_ID INTEGER NOT NULL PRIMARY KEY, Bldg_Name VARCHAR (20), Location VARCHAR (20), Room_Count INTEGER ); CREATE TABLE RESIDENT ( R_ID NOT NULL PRIMARY KEY, Room_Num INTEGER, Res_Name VARCHAR (20), Building_ID INTEGER NOT NULL, FOREIGN KEY Building_ID REFERENCES BUILDING (Building_ID) ON DELETE NO CHECK ON UPDATE CASCADE); D. CREATE TABLE BUILDING ( Building_ID INTEGER NOT NULL PRIMARY KEY, Bldg_Name VARCHAR (20), Location VARCHAR (20), Room_Count INTEGER ); CREATE TABLE RESIDENT ( R_ID NOT NULL PRIMARY KEY, Room_Num INTEGER, Res_Name VARCHAR (20), Building_ID INTEGER NOT NULL, FOREIGN KEY Building_ID REFERENCES BUILDING (Building_ID) ON DELETE NO CHECK ON UPDATE CASCADE);",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statement accurately describes a characteristic of attributes? A. The ordering of attributes in a table is significant. B. An attribute contains values from multiple domains. C. An attribute name can be used only once per table. D. An attribute name can be used only once in a relational database system with multiple tables. C",
+    "options": {},
+    "most_voted": ""
+  }
+]
