@@ -1,0 +1,157 @@
+[
+  {
+    "question": "When reviewing the actual protection output of N+4/2, what does the number “4” represent? A. FEC stripe units per stripe B. Hard drives used per stripe C. Volume stripes per file system D. FEC stripe units per file system",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "What defines FEC link aggregation mode? A. Switches to the next interface when the primary interface becomes unavailable. B. Balances outgoing traffic based on hashed protocol header information that includes source and destination addresses, and VLAN tag. C. Balances outgoing traffic based on hashed protocol header information that includes source and destination addresses. D. Balances outbound traffic across all active ports in the aggregated link.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In Isilon OneFS, what is a characteristic of CoW with snapshots? A. Used for small changes, inodes, and directories. B. Avoids the double write penalty. C. Increases file fragmentation. D. Used for more substantial changes such as deletes.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which OneFS networking option enables Isilon for DNS multitenant functionality? A. Groupnet B. Access zone C. Pool D. Subnet",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company wants to re-use HD400 nodes into a new cluster with OneFS 8.2.0. What is the minimum number of HD400 nodes required? A. 3 B. 4 C. 5 D. 6",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "On which node does the SSIP initially reside? A. Highest node ID B. Lowest node ID C. Lowest logical node number D. Highest logical node number",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company’s Isilon cluster has reached the capacity limit. The cluster consists of eight H500 nodes in a single node pool. Which action can be taken to resolve the capacity issue while new nodes are being delivered? A. Activate SmartPools B. Enable GNA C. Enable Spillover D. Release VHS drives",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which command shows the node running as the job coordinator? A. isi job statistics B. isi job status C. isi job status -v D. isi job statistics view -v",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the recommended number of delegations for a SmartConnect zone name for each SmarConnect zone alias on a cluster? A. 1 B. 2 C. 3 D. 4",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which role-based privilege must be granted to a user before they are allowed to log into the web administration interface? A. ISI_PRIV_AUTH B. ISI_PRIV_LOGIN_PAPI C. ISI_PRIV_CLUSTER D. ISI_PRIV_LOGIN_CONSOLE",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A company has a 4-node Isilon H600 cluster dedicated for a high-performance workflow. The administrator wants to convert their cluster SSD strategy from L3 cache to use the SSDs for metadata acceleration. What should be considered? A. Migration of data and metadata from the SSDs to HDDs can take hours. B. Once enabled, the L3 cache cannot be disabled without support assistance. C. Converting to use SSDs for metadata acceleration turns off prefetching. D. Deselecting L3 cache for an SSD strategy has no impact to the workflow.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company has an existing 8-node F800 Isilon cluster with two Z9100 Dell Ethernet back-end switches running on OneFS 8.2.0. The company is planning to add 72 A200 nodes into the cluster. What is the minimum number of additional switches required to support the configuration? A. 2 B. 3 C. 4 D. 6",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A company deployed an Isilon cluster that consists of eight nodes connected to a main production subnet by all available 10GB ports. Later, the company decided to implement a disaster recovery solution with a separate replication subnet. During the reconfiguration, one of the 10Gb ports from each of the nodes 1-4 was moved into the new pool and SBR was activated. After activating the replication policies, the administrator noticed that the main production ports on nodes 1-4 reached the bandwidth limit. What is a possible reason for this behavior? A. Default gateway for the replication subnet has a higher priority value. B. Default gateway for the replication subnet is not specified. C. Default gateway for the replication subnet has a lower priority value. D. Main production ports have a smaller bandwidth limit than replication ports.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Isilon administrator has four H600 nodes and eight A2000 nodes in the cluster. The file pool policy is configured to have all new data written to the H600 nodes. After a few weeks, the administrator has some concerns about the available capacity on the H600 nodes. Which feature should be configured to accept writes, even after the H600 nodes become full? A. SmartPools B. GNA C. Virtual Hot Spare D. Spillover",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "What is the maximum number of active Swift connections on a 5-node Isilon cluster? A. 250 B. 500 C. 750 D. 1000",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the minimum storage space needed on a datastore to hold InsightIQ? A. 50 GB B. 65 GB C. 70 GB D. 85 GB",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In an Isilon Gen 5 environment, what is the maximum number of data stripes for the N+3d:1n1d protection level? A. 15 B. 16 C. 18 D. 20",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An NFS export is created on the Isilon cluster. No clients are listed in the export rules. What is the client behavior when accessing the export? A. All clients on the network can access the export. B. No clients on the network can access the export. C. Clients can access the export with read-only permissions. D. Clients that access the export are mapped as root.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In an Isilon environment, what is a requirement to join multiple, untrusted Active Directory (AD) authentication sources to an access zone? A. Must use a common /ifs tree for all access zones. B. Only one of the AD provider instances can exist in a zone at one time. C. All untrusted AD provider instances must exist in all access zones. D. Must only join Active Directory domains in the same forest.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "An administrator uses a TreeDelete job to delete a large directory. After the job starts, users notice an issue with performance on the cluster. Which recommended action will resolve the performance issue with the job? A. Modify the running job to use a high impact policy to reduce the amount of time users are impacted. Schedule the job after business hours in the future. B. Let the job continue to run at the current impact level and schedule future jobs for after business hours so they do not impact users. C. Modify the running job to use an OFF_HOURS policy that runs at low impact during business hours and medium impact after business hours. D. Pause the running job and resume after business hours using a high impact policy so that it does not impact users.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which job checks for error correction codes? A. IntegrityScan B. Collect C. FlexProtect D. MediaScan",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has an Isilon cluster that is joined to an Active Directory (AD) domain. Previously, the company replaced their primary NTP server and added new NTP settings to the Isilon cluster. Now the users are experiencing authentication failures. What is a possible reason for this behavior? A. Cluster and the AD are configured to use the same NTP server. B. AD is not configured to synchronize its time from the cluster. C. SMB time is not configured on the cluster to synchronize with the AD. D. Time between the NTP and the AD differentiates by more than 5 minutes.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An Isilon cluster has ten A200 nodes and the node pool data protection level is set to N+2. The data access pattern is currently set to streaming. If the data access pattern is changed to concurrency, how many stripes for a 1 MB file are moved to the other drive(s)? A. 0 B. 2 C. 4 D. 6",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "DRAG DROP What is the correct sequence of actions performed by OneFS to generate an access token?",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An administrator wants to enable quotas on a group directory in their Isilon cluster. In addition, the administrator wants to monitor and limit the disk usage. Which type of quotas need to be configured? A. Advisory B. Enforcement C. Accounting D. Soft",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When manipulating a job, which task can an Isilon administrator perform? A. Change impact policies. B. Update schedules. C. Pause a job manually D. Create a custom impact level",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the lowest level of storage pool grouping on an Isilon cluster that is user-configurable and created manually or automatically? A. Node pool B. Sub-node pool C. Neighborhood D. Disk pool",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "If configuration auditing is enabled, where are the audit logs stored? A. /ifs/.ifsvar/audit/audit.log B. /var/log/audit_config C. /ifs/.ifsvar/audit/config/log D. /var/log/isi_papi_d_audit.log",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "A Job Engine is running in low space mode and no jobs are in the running state. What is the OneFS8.2 behavior if the AutoBalance job is initiated? A. Job is started. B. Job is failed. C. Job is put into the queue. D. Job is not started.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A systems administrator must ensure that an IP address never becomes unavailable, even if a node goes offline. What needs to be configured on SmartConnect? A. Dynamic Allocation B. Static Allocation C. Connection Count D. Round Robin",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "You are configuring the network on a Isilon source cluster. The administrator wants to dedicate a new subnet for replication. Which consideration must be addressed for SyncIQ to work properly? A. SyncIQ must run on a static IP pool. B. SnapshotIQ must be licensed first. C. 10GbE ports must be used for replication D. SyncIQ must run on a dynamic IP pool",
+    "options": {},
+    "most_voted": "A"
+  }
+]
