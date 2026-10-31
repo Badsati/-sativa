@@ -1,0 +1,552 @@
+[
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-3_1.jpg] A network administrator sets up prioritization for an application that runs between Device 1 and Device 2. However, the QoS for the application is not what the administrator expects. How can the administrator check if the network infrastructure prioritizes traffic from Device 1 and Device 2? A. Run a packet capture on Device 2, run the application, and look in the packet capture for a high value DSCP in the IP header. B. Set up RMON alarms on the switches that trigger when a high number of packets are dropped. Then, run the application and check for the alarm. C. Clear interface statistics on the switches. Then, run the application and check the interface queue statistics for the switch-to-switch links. D. Run a packet capture on Device 1, run the application, and look in the packet capture for a high value DSCP in the IP header.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1. [sampleXML/xmlfile-4_1.png] Exhibit 2. [sampleXML/xmlfile-5_1.png] The exhibits show the current operational state for routes on Switch-3. The company wants Switch-3 to prefer the link to Switch-1 over the link to Switch-2 for all intra-area, inter-area, and external traffic. What can the network administrator do to achieve this goal? A. Set the OSPF cost on VLAN 108 higher than 1 on Switch-2 and Switch-3. B. Set the OSPF administrative distance on Switch-2 higher than 110. C. Set the OSPF area type to normal on all of the switches in Area 1. D. Set the cost in the OSPF Area 1 stub command higher than 1 on Switch-2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-6_1.png] A network administrator needs to deploy AOS-Switches that implement port-based tunneled node. Their Aruba controller has IP address 10.1.10.5/24. The architect has assigned tunneled-node endpoints to VLAN 20. What is one issue with the current configuration planned for VLAN 20 on the switch? A. VLAN 20 must have GRE enabled on it. B. VLAN 20 cannot have an IP address. C. VLAN 20 must have an IP address in the same subnet as the controller. D. VLAN 20 must not enable jumbo frames.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "OSPF Area 1 has two ABRs. One ABR is configured with this range for Area 1: 10.10.0.0/16. The other ABR is not configured with a range for Area 1. Which type of issue occurs due to this mismatch? A. The ABRs create a discontinuous area and disrupt intra-area routing between devices within Area 1. B. The ABR core would send Area 1 traffic destined to the other switch through an access switch. C. The ABRs lose adjacency entirely and cannot route traffic between each other at all. D. The ABRs lose adjacency in Area 1 and must route all traffic to each other through Area 0.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1. [sampleXML/xmlfile-8_1.png] Exhibit 2. [sampleXML/xmlfile-9_1.png] The company wants to minimize congestion on Link 1. Which spanning tree implementation meets this goal? A. Instance 1 = VLANs 4-5 Instance 2 = VLANs 6-7 Switch 2 instance 1 priority = 0 Switch 2 instance 2 priority = 1 Switch 3 instance 1 priority = 1 Switch 3 instance 2 priority = 0 B. Instance 1 = VLANs 4,6 Instance 2 = VLANs 5,7 Switch 2 instance 1 priority = 0 Switch 2 instance 2 priority = 1 Switch 3 instance 1 priority = 1 Switch 3 instance 2 priority = 0 C. Instance 1 = VLANs 4,6 Instance 2 = VLANs 5,7 Switch 2 instance 1 priority = 0 Switch 2 instance 2 priority = 1 Switch 3 instance 1 priority = 0 Switch 3 instance 2 priority = 1 D. Instance 1 = VLANs 4-5 Instance 2 = VLANs 6-7 Switch 2 instance 1 priority = 0 Switch 2 instance 2 priority = 1 Switch 3 instance 1 priority = 0 Switch 3 instance 2 priority = 1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-11_1.png] The network administrator enables DHCP snooping globally and on VLAN 2. An additional step is mandatory for DHCP snooping to operate correctly and for clients to receive DHCP settings. What is the additional mandatory step? A. Define trk1 as a trusted DHCP port. B. Define an authorized DHCP server. C. Enable ARP protection. D. Define edge ports as untrusted DHCP ports.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. action. Device 1 crosses the threshold and triggers the action. What does the switch do? A. It temporarily drops all IP traffic from Device 1 only. B. It temporarily drops all IP traffic on interface 1. C. It drops all IP traffic from Device 1 until the host is manually unblocked. D. It drops all IP traffic on interface 1 until the interface is manually unblocked.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-13_1.jpg] The routing switches shown in the exhibit run OSPF on the links between each other. The commander in the Switch-1 VSF fabric goes down. Traffic is disrupted for several seconds. What should a network administrator do to support a faster failover in a similar situation? A. Configure echo mode BFD on the VLAN that connects Switch-1 and Switch-2. B. Add VRRP on the VLAN between Switch-1 and Switch-2. C. Configure graceful restart, or nonstop OSPF, on Switch-1 and Switch-2, with a proper timer. D. Create a redundant virtual link between Switch-1 and Switch-2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1. [sampleXML/xmlfile-15_1.png] Exhibit 2. [sampleXML/xmlfile-15_2.png] The VoIP phone connects, authenticates successfully, and is dynamically assigned to tagged VLAN 6. The endpoint connected to the phone does not authenticate but starts to send untagged traffic. How does the switch handle this traffic? A. It forwards the traffic in VLAN 5. B. It relays the traffic to the RADIUS server for authentication. C. It forwards the traffic in VLAN 6. D. It drops the traffic.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An AOS-Switch needs to be configured to support tunneled node in role-based mode. The Mobility Controller administrators tell the switch administrators that the AOS-Switch will integrate with a cluster of Mobility Controllers. The cluster virtual IP address is 10.1.1.10. How should switch administrator integrate the AOS-Switch with the cluster? A. Double-check the settings with the Mobility Controller administrators because the planned configuration is incomplete with the switch settings. B. Configure the virtual IP address as the tunneled-node-server address, tunneled node will work, but the clustering features will not provide redundancy. C. Configure the virtual IP address as the tunneled-node-server address. The switch will automatically learn controller IP addresses to which to tunnel various traffic. D. Configure the virtual IP address for the primary tunneled-node-server and an actual controller IP address for the backup tunneled-node-server in order to receive redundancy.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An AOS-Switch runs IGMP on A VLAN. What is a requirement for the switch to be a potential IGMP querier on that VLAN? A. The switch must run PIM-SM or PIM-DM on that VLAN. B. The switch must have an IP address on that VLAN. C. The switch must have IGMP fast leave disabled globally. D. The switch must have at least one IGMP group configured on it manually.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-18_1.jpg] Switch-1 runs BGP. What should the network administrator do to permit Switch-1 to establish a neighbor relationship with Router-1? A. Configure 192.168.1.2 as a neighbor manually within the BGP context. B. Specify 192.168.1.0/30 with the network command in the BGP context. C. Enable BGP on VLAN 100. D. Set the BGP AS number to 46501.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-19_1.png] An AOS-Switch has an extended ACL that is applied to several physical interfaces. - New interfaces have been brought online. - The ACL has been applied to them as well. A network administrator sees the output in the exhibit and is concerned that the switch will reach the limit for rules. What can the administrator do to address this concern? A. Resequence the ACL with less space in between the entries. B. Enable ACL grouping, and apply ACLs as shared ACLs. C. Reconfigure the ACL as a standard ACL, and then reapply it. D. Remove static ACLs, and have the RADIUS server send dynamic ACLs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-20_1.jpg] A company requires distribution layer switches that can provide Layer 2 and Layer 3 redundancy. The exhibit shows the proposal for these switches. Which change to the proposal will help meet the company's requirements? A. The proposed switches should be replaced with switches such as the Aruba 2930M to support the backplane stacking technology. B. VRRP should be implemented instead of backplane stacking to support the Layer 3 redundancy requirements. C. Link aggregations should be established without LACP to support the Layer 2 redundancy requirements and backplane stacking limitations. D. The proposed switches should be replaced with switches that support VSF to support the required distance between stack members.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Network administrators need to track when traffic matches deny entry in an ACL applied to a port. They want the alert to be sent to a syslog server that is already set up to send logs. What should administrators do to enable alerts? A. Specify the log option for the ACL entry, and enable ACL debugging. B. Set the debug destination to session, and enable ACL debugging. C. Enable ACL debugging, and enable SNMP port security traps. D. Specify the log option for the ACL entry, and enable SNMP port security traps.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-22_1.jpg] Exhibit 2 [sampleXML/xmlfile-22_2.jpg] In the exhibits, VLAN 20 under a device name indicates that the device is configured with that VLAN. The exhibits also indicate whether VLAN 20 is statically configured on each link, either as an untagged or a tagged VLAN. If the link has no label, VLAN 20 is not statically configured on that link. A network administrator needs to deploy AOS-Switches that use port-based tunneled node. The plan calls for tunneled-node endpoints to be assigned to VLAN 20 and for the Aruba Mobility Controller to handle the tunneled-node traffic at Layer 2. Which exhibit shows the correct plan for VLAN 20 in the wired infrastructure? A. A B. B C. C D. D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-23_1.jpg] Exhibit 2 [sampleXML/xmlfile-24_1.png] Switch-1 has a power issue that causes it to fail. When Switch-1 comes back up, endpoints lose connectivity for a few minutes. The network administrator decides to enter this command on Switch-1: Switch-1 (config)# vlan 10 vrrp vrid 10 preempt-delay-time 120 Exhibit 2 shows the VRRP configuration just after the change. What is the effect of this change? A. Switch-1 and Switch-2 both become Master in their own VRRP virtual router due to the delay timer mismatch. The mismatch must be fixed. B. Switch-1 now waits to take over as Master if it fails and recovers. This should prevent the connectivity issue from occurring again. C. Switch-1 experiences an internal error in the VRRP process. This error causes Switch-2 to take over as Master for VLAN 2. D. Switch-1 continues to act as it did before the preempt delay time was set. Administrators must plan additional changes to fix the issue.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-25_1.jpg] Exhibit 2 [sampleXML/xmlfile-26_1.jpg] Exhibit 1 shows a portion of the BGP routing table when the BGP solution was first deployed. Exhibit 2 shows the same portion at the current time. What can explain the current state? A. Due to changes in the private network, Switch-1 can no longer reach 192.168.2.1. B. Switch-1 can no longer reach ISP 1 at 192.168.1.1. C. Due to changes at ISP 1, Switch-1 now selects a different best route. D. An administrator has applied a route map on Switch-1 that filters advertised routes.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which switches can be deployed in a mesh topology for backplane stacking? A. Aruba 2920 switches B. Aruba 2930F switches C. Aruba 2930M switches D. Aruba 3810 switches",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-28_1.png] Exhibit 2 [sampleXML/xmlfile-29_1.png] Switch-1 and Switch-2 are configured to provide VRRP in VLAN 2. The default gateway for VLAN 2 is set to the VRRP virtual IP. Client-1 in VLAN 2 cannot ping its default gateway. Based on the exhibits, what can administrators determine? A. The VRRP preempt delay time has not yet expired, and administrators should try to ping the gateway again in several minutes. B. Switch-1 and Switch-2 have the same virtual router ID. The conflict interferes with connectivity. C. Preempt mode is enabled on both Switch-1 and Switch-2, so the Master role continues to alternate between them, and the pings go astray. D. This is the expected behavior, and Switch-1 should still be able to route traffic for Client-1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator needs to create a backplane stack with four AOS-Switches. The administrator wants to choose which switch becomes the commander. Which procedure meets those needs? A. Boot all of the switches at the same time and then connect the backplane stacking links. Then, access the desired commander, and make sure it has member ID 1. B. Configure backplane switches settings on each switch while disconnected. Make sure the desired commander has priority value 1. Then, connect the switches. C. Boot up the desired commander first and make sure stacking is enabled on it. Then, connect the stacking links and boot the other switches. D. Configure backplane switching settings on each switch while disconnected. Make sure the desired commander has member ID 1. Then, connect the switches.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company deploys AOS-Switches at sites with inexperienced IT staff. The main office network administrators want to monitor thresholds to generate alerts on branch switches. What should be set up for this purpose? A. an SNMP trap B. an RMON alarm C. an auto-config server D. an sFlow instance",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator configures DHCP snooping on VLAN 2. How does the switch handle DHCP traffic that arrives in this VLAN on an untrusted interface? A. It accepts packets from a DHCP server, but drops client packets. B. It drops all DHCP traffic and logs a security event. C. It accepts both client and server packets as long as they match the DHCP binding table. D. It accepts client packets, but drops packets from a DHCP server.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-32_1.png] A network administrator wants to add the protections of root guard to the network. Based on the spanning tree topology, on which ports should the network administrator implement root guard? A. 3-24 B. 1 and 2 C. A1 and A2 D. 2 and A3",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The implementation plan for AOS-Switches calls for them to implement port-based tunneled node. The Aruba Mobility Controllers that will support the AOS- Switches run software 8.1. The controllers will also support APs, are managed by Mobility Master, and use clustering. Which issue with this plan needs to be addressed? A. The controllers cannot support tunneled node with AOS-Switches when they are managed by the Mobility Master. B. The switches cannot connect to controllers that also support APs. C. The controllers must have their software updated before they can support the switches. D. The switches must use role-based tunneled node to work with clustering controllers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is one difference between BPDU protection and root guard? A. BPDU protection works with RPVST+, RSTP, and MSTP. Root guard works with RSTP or MSTP, but not RPVST+. B. BPDU protection blocks a port if it receives any BPDU, but root guard blocks a port only if the BPDU indicates a better root path. C. BPDU protection is typically implemented on edge ports, but root guard is typically implemented on uplinks with the root port role. D. BPDU protection drops BPDUs received on a port, but does not block the port. Root guard blocks the port if it receives a BPDU.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-34_1.png] The exhibit shows configurations for interface 5 and VLAN 20. Note that DHCP snooping and ARP protection are also enabled. A network administrator finds that interface 5 on an AOS-Switch is disabled. The administrator re-enables the interface, but it shuts down again. What should the administrator investigate? A. a device that sends too much unicast traffic B. rogue DHCP server C. a loop on the interface D. a device that sends unauthorized ARP messages",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-35_1.png] Switch-1 and Switch-2 connect on interface A23. The switches experience a connectivity issue. The network administrator sees that both switches show this interface as up. The administrator sees the output shown in the exhibit on Switch-1. What is a typical issue that could cause this output? A. asymmetric routing introduced by a routing protocol B. an issue with VLAN mismatch C. mismatched subnet mask on the VLAN for the link D. a jumbo frame mismatch",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An AOS-Switch enforces 802.1X. It receives an Access-Accept with this HPE VSA from its Radius server: Attribute Name and ID = HPE-User-Role (25) Value = contractor The switch then rejects the client. What is one requirement for the switch to accept the message and authorize the client? role. B. User role authorization must be enabled globally on the switch. name. D. The RADIUS server settings must permit dynamic authorization.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-38_1.jpg] Exhibit 2 [sampleXML/xmlfile-38_2.png] Exhibit 1 shows the topology for the network. The network administrator sees the log entries shown in Exhibit 2. Which type of failure is indicated? A. A link between Switch-1 and Switch-2 went down. BFD detected the lost connectivity and behaved as expected. B. Graceful restart helper was not enabled on Switch-2, so BFD was unable to operate correctly, and the session was taken down. C. A hardware issue caused a unidirectional link; BFD detected the issue at Layer 2 and prevented a broadcast storm. D. BFD was set up incorrectly on Switch-2, so it caused Switch-2 to lose adjacency with Switch-1 rather than repair the session.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has AOS-switches, Aruba ClearPass, and Aruba AirWave. A network administrator needs to find the source of a performance issue that often occurs at the start of the day and early in the afternoon. Which action is likely to give the administrator the most useful information for the investigation? A. Access the Network Device view on ClearPass. B. Use the configuration audit tool on AirWave. C. View the current running config on each switch. D. View usage patterns on the switches on AirWave.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-40_1.jpg] Exhibit 2 [sampleXML/xmlfile-41_1.png] Network administrators are alerted to high interface utilization on a switch by a management solution. They examine the utilization on the uplink interfaces several times an hour during problem times. The exhibit shows output typical of times of congestion. The administrators want to allocate bandwidth fairly and reduce congestion on the uplinks. What could help meet these requirements? A. a per-queue rate limit on interfaces 1 and 2 B. an outbound rate limit on each edge port C. a broadcast rate limit on each edge port D. an outbound rate limit on interfaces 1 and 2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-43_1.jpg] Every switch in the exhibit will route traffic. The company requires a topology in which failover for switch-to-switch links is exclusively handled by the routing protocol and occurs as quickly as possible. Which topology should the administrator use? A. A B. B C. C D. D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-44_1.jpg] Switch-1 is an AOS-switch that is operating at factory default settings for QoS and has type of service disabled. It receives a frame with 802.1p value 5 on trk1, on VLAN 2. How does the switch treat the frame when it forwards it on TRK2? A. It forwards it with higher than normal priority and 802.1p 0. B. It forwards it with normal priority and 802.1p 0. C. It forwards it with normal priority and 802.1p 5 D. It forwards it with higher than normal priority and 802.1p 5.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The security policy for a company requires that switches use SNMPv3 and accept all read-only SNMPv2c messages. The network administrator enables SNMPv3. Which additional action should the network administrator take to comply with this policy? A. Disabled SNMPv3 inform timeouts. B. Enable SNMPv3 only operation. C. Enable SNMPv3 restricted mode. D. Disable SNMPv1/v2c.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. [sampleXML/xmlfile-45_1.png] [sampleXML/xmlfile-46_1.png] The network administrator enters the commands shown in Exhibit 2, and Switch-1 and Switch-2 exchange keepalive messages. What is the expected behavior if Switch-1 later fails to receive keepalive messages from Switch-2? A. Switch-1 disables interface 1 for 10 seconds, and then re-enables it. The same process repeats twice. If the issue persists, the switch disables the interface permanently. B. After two consecutive missed keep-alive packets, Switch-1 disables interface 1, and the interface stays disabled until the issue is fixed. C. After two consecutive missed keep-alive packets, Switch-1 sends SNMP traps, and Link 1 stays up until the issue is fixed. D. Switch-1 disables interface 1 for 10 seconds and then re-enables it. The interface continues to be re-enabled and disabled every 10 seconds until the issue is fixed.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Two AOS-Switches connect on VLAN 10 in OSPF Area 1, which is defined as a stub area on both. Which mismatch can cause OSPF routers to lose adjacency? A. The administrator adds the backbone area to just one of the routers. B. The administrator enables graceful restart, or nonstop switching, on just one of the routers. C. The administrator enables jumbo frames on VLAN 10 on just one of the routers. option to Area 1 on just one of the routers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "action. What does the switch do if it detects traffic from an unauthorized MAC address on the port? A. It disables the port, but sends no SNMP trap. B. It forwards the traffic, and it logs an event. C. It blocks the traffic, but sends no SNMP trap. D. It blocks the traffic, and it sends an SNMP trap.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which technologies can prevent split brain in a VSF fabric that includes Aruba 2930F switches? A. ARP MAD or OOBM MAD B. VLAN MAD or ARP MAD C. OOBM MAD or LLDP MAD D. LLDP MAD or VLAN MAD",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-48_1.png] Exhibit 2 [sampleXML/xmlfile-49_1.png] A company does not require authentication for security, but AOS-Switches are set up to use local MAC authentication (LMA) to assign the correct VLAN and priority to IP phones. IP phones and computers belong to different VLANs. Each device is supposed to connect to a specific port, but sometimes users connect their devices to the wrong ports and cannot receive access without help from IT. How can a network administrator configure the switches to eliminate this issue? A. Set the address limit to 2 on the switch ports that apply LMA. B. Create a user role that applies the user VLAN, and set this role as the initial role. C. Add the MAC addresses for computers to the myPhones MAC group. D. Apply LMA to all edge switch ports, and set the unauth VLAN to the user VLAN.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company wants to implement 802.1X authentication to authenticate client devices on AOS-Switch ports. The company has a RADIUS server that uses PEAP MSCHAP-v2 for the authentication method. What is one task administrators should complete before they implement the plan? A. Set up an isolated VLAN in the network for the 802.1X communications. B. Install personal certificates on client devices. C. Configure DHCP services on the AOS-Switches for pre-authenticated clients. D. Ensure client devices trust the RADIUS server certificate.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "AOS-Switches authenticate guests to ClearPass with captive portal. An administrator notices that some guests are unable to reach the captive portal page. What will resolve this issue? A. Permit DNS on the ClearPass Portal B. Permit DHCP on the ClearPass Portal. C. Permit HTTP or HTTPS on the ClearPass Portal. D. Permit Allow All MAC-Auth on the ClearPass Portal.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer wants to authenticate AOS-Switch managers to a RADIUS server. The CIO wants to assign different rights to different management users for granular control over their rights and privileges. What must the network administrator enable on the AOS-Switches to ensure they comply with this plan? A. RADIUS-based command authorization B. a manager and operator password C. authentication login privileges D. SNMPv3 and SNMPv3 restricted access.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-53_1.jpg] Exhibit 2 [sampleXML/xmlfile-53_2.png] Exhibit 2 shows IGMP groups on Switch-2, which runs IGMP but not PIM. Switch-1 and Switch-3 do not have IGMP or PIM enabled. Client 1 begins to forward multicasts to 239.1.1.1. Which clients receive the multicasts? A. Client 3, but not any of the other clients B. Client 2, but not any of the other clients C. Client 3 and Client 4, but not Client 2 D. Client 2, Client 3, and Client 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-54_1.png] Several interfaces on an AOS-Switch enforce 802.1X to a Radius server at 10.254.202.202. The interface 802.1X settings are shown in the exhibit, and 802.1X is also enabled globally. The security team have added a requirement for port security on the interfaces as well. Before administrators enable port security, which additional step must they complete to prevent issues? A. Set an 802.1X client limit on the interfaces. B. Manually add legitimate MAC addresses to the switch authorized MAC list. C. Enable DHCP snooping on VLAN 20. D. Enable eavesdropping protection on the interfaces.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-57_1.png] Switch-2, Switch-5, and Switch-6 currently have many OSPF routes to Area 1 networks. The network administrator wants to replace these routes with a single aggregated route to 10.1.0.0/16 on each switch. Where should the administrator specify the 10.1.0.0/16 range? A. in the Switch-2 OSPF Area 2 configuration B. in the Switch-1 OSPF Area 0 configuration C. in the Switch-1 OSPF Area 1 configuration D. in the Switch-2, Switch-5, and Switch-6 OSPF global configuration",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-58_1.png] An AOS-Switch has the ACL shown in the exhibit. A network administrator then enters these commands: Switch(config)# mac-access-list standard myACL Switch(config-std-macl)# deny 007d.45cc.0000 0000.0000.ffff How does this ACL treat these frames: 1 = 007d.45cc.ffff 2 = 007d.45cc.0000 A. It denies both frames. B. It permits both frames. C. It denies frame 1 and permits frame 2. D. It permits frame 1 and denies frame 2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-60_1.png] Exhibit 2 Switch-1(config)# spanning-tree Switch-1(config)# spanning-tree config-name \"exam\" Switch-1(config)# spanning-tree instance 1 vlan 10-19 Switch-1(config)# spanning-tree instance 2 vlan 20-29 Switch-2(config)# spanning-tree Switch-2(config)# spanning-tree config-name \"exam\" Switch-2(config)# spanning-tree instance 1 vlan 10-19 Switch-2(config)# spanning-tree instance 2 vlan 20-29 Switch-2(config)# spanning-tree priority 0 Switch-2(config)# spanning-tree instance 1 priority 0 Switch-2(config)# spanning-tree instance 2 priority 1 Switch-3(config)# spanning-tree Switch-3(config)# spanning-tree config-name \"exam\" Switch-3(config)# spanning-tree instance 1 vlan 10-19 Switch-3(config)# spanning-tree instance 2 vlan 20-29 Switch-3(config)# spanning-tree priority 1 Switch-3(config)# spanning-tree instance 1 priority 1 Switch-3(config)# spanning-tree instance 2 priority 0 Switch-4(config)# spanning-tree Switch-4(config)# spanning-tree config-name \"exam\" Switch-4(config)# spanning-tree instance 1 vlan 10-19 Switch-4(config)# spanning-tree instance 2 vlan 20-29 The network administrator enters the commands shown in Exhibit 2. What is the spanning tree status on A1 and A2? A. Both A1 and A2 forward traffic. B. A1 blocks traffic, and A2 forwards traffic. C. Both A1 and A2 block traffic. D. A1 forwards traffic, and A2 blocks traffic.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has a Unified Communications and Collaboration (UCC) solution. ✑ Users run softphones on their desktops and laptops. ✑ The UCC solution is configured to use a certain range of Layer 4 ports for VoIP traffic. ✑ The user devices connect to AOS-Switches. A network administrator needs to configure the AOS-Switches to prioritize only the VoIP traffic. Where can the administrator configure a DSCP value to meet this goal? A. in a global UDP port-based QoS policy B. on the interfaces through which the VoIP traffic is forwarded C. on the interfaces that connect to the user devices D. on the VLAN to which the user devices are assigned",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-63_1.png] Network administrators want the network to use PIM-DM to route multicasts from Server 1 to receivers in VLAN 24. Which protocols should the administrators enable on which VLANs on Switch-1? A. PIM-DM on VLAN 24; IGMP and PIM-DM on VLAN 10 B. IGMP on VLAN 24; IGMP on VLAN 10 C. IGMP on VLAN 24; PIM-DM on VLAN 10 D. IGMP and PIM-DM on VLAN 24; PIM-DM on VLAN 10 E. IGMP and PIM-DM on VLAN 24; PIM-DM on VLAN 10",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "[sampleXML/xmlfile-64_1.jpg] A network administrator applies the ACL shown in the exhibit. Which source IP address does the myList ACL deny? A. 10.1.0.10 B. 10.1.1.10 C. 10.1.2.10 D. 10.2.1.10",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-65_1.png] Exhibit 2 [sampleXML/xmlfile-66_1.png] The exhibits show the current operational state for routes on Switch-3. The company wants Switch-3 to send all traffic to 172.16.0.0/16 through Switch-2. Which single configuration change creates the desired behavior? A. Change the OSPF external metric type to 1 on Switch-1 and Switch-3. B. Change the OSPF external metric type to 2 on Switch-1 and Switch-2. C. Set a cost of 15 in the redistribute static command on Switch-2. D. Set a cost of 5 in the router ospf area 0.0.0.1 stub command on Switch-1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-72_1.png] The company wants the fastest convergence and best load sharing of traffic over the links between Switch-1 and the VSF fabric. Which technology should the network administrator implement on these links? A. RPVST+ B. MSTP C. loop protection D. LACP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1. [sampleXML/xmlfile-74_1.png] Exhibit 2. [sampleXML/xmlfile-75_1.png] The exhibits show the current operational state for routes on Switch-3 to send all traffic to 172.16.0.0/16 through Switch-2 during normal operation. Which single configuration change creates the desired behavior? A. Set a cost of 100 in the redistribute static command on Switch-2 to change the external LSA metric. B. Change the OSPF external metric type to 1 on Switch-1, and set a cost of 100 on Switch-3 VLAN 104. C. Change the OSPF external metric type to 1 on Switch-1, and set a cost of 100 on Switch-3 VLAN 108. D. Set a cost of 100 in the redistribute static command on Switch-1 to change the external LSA metric.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has a wireless Aruba solution and wired users that connect to AOS-Switches. The company wants deep insight into the types of applications that wired users run. The company also wants more control over the traffic. What can the company do to meet these goals? A. Use tunneled node to send traffic through an Aruba Mobility Controller B. Configure extended IP ACLs on the AOS-Switches to filter the traffic. C. Configure RMON receivers on the switches. D. Set up remote traffic mirroring between the AOS-Switches and Aruba Mobility Controllers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator wants to use an ACL, acl1, to control traffic from devices in VLAN 12 as the traffic is routed out of VLAN 12. The ACL should not control traffic within the VLAN. Which keyword should the administrator enter at the administrator enter at the end of this command: Switch(config)# vlan 12 ip access-group acl1____ A. in B. out C. vlan-in D. vlan-out",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An AOS-Switch needs to use captive portal to integrate with an Aruba ClearPass Guest solution. The solution should allow guests to connect their own devices to the network, be redirected to a portal, log in, and be granted access transparently. What is one setting administrators should configure for this solution? A. ClearPass should be defined as the enhanced Web Auth (EWA) server. B. RADIUS MAC-Auth should be enabled on the guest ports. C. Web-Auth should be enabled on the guest ports. D. BYOD redirect should be enabled globally.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-84_1.png] An AOS-Switch connects to an unmanaged switch in a meeting room. The exhibit shows security settings for this port. Users report that they sometimes lose connectivity and then get it back. Which best practice should network administrators follow to avoid this issue? A. The loop protection and port security actions should be set to match. B. Eavesdrop prevention should be disabled when port security is in limited-continuous mode. C. Port security and loop protection should not be enabled on the same port. D. Loop protection should operate in VLAN mode, rather than port mode, when port security is enabled.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator plans to apply DSCP 46 to all traffic on a port. What is required for this configuration to work? A. The port has trust set to default. B. A DSCP map that sets 46 to a priority value. C. The port has trust set to DSCP. D. A QoS policy selects traffic with DSCP 46.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network uses MSTP and has AOS-Switches at the access layer. The company wants edge ports on the access layer switches to meet these criteria: ✑ They prevent all rogue switches that run STP, RSTP, or MSTP from connecting to the network. ✑ If a rogue switch connects and is then replaced by a proper endpoint, the port recovers automatically without IT staff involvement. How should the network administrator set up the edge ports to meet these requirements? A. Enable loop protection with a timeout period. B. Enable BPDU filtering. C. Enable both root guard and BPDU protection. D. Enable BPDU protection with a timeout period.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-87_3.png] Exhibit 2 [sampleXML/xmlfile-88_1.png] The IP phone in the exhibit is set up to complete 802.1x authentication to the network. How can the netwotk administrator prevent a user on the computer from receiving network access without authentication? A. Set an 802.1X client limit of 2 on interface 1. B. Set up the MAC filter on interface 1. C. Enable static mode port security on interface 1. D. Enable MAC-based VLANs on interface 1.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator sets up MAC-Auth and captive portal to Aruba ClearPass on AOS-Switches. The solution seems to work for most guests. However, some guests open their browsers and are not redirected to the captive portal. How should the administrator address the likely cause of the issue? A. Set the RADIUS server time window to 0 because some guest computers likely have the incorrect system time. B. Replace MAC-Auth on switch ports with Web-Auth because this authentication method offers more reliability with captive portal. C. Reconfigure the captive portal URL hash key on some of the switches, which likely have the wrong password. D. Replace expired certificates on the switches and set their usage to captive portal since some guests have an HTTPS homepage.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator needs to configure an AOS-Switch to classify traffic. Comparing QoS policy and global policy, what is one function that only a class-based QoS policy can fulfill? A. Apply a DSCP to HTTP traffic from some sources but not other sources. B. Apply a DSCP rather than an 802.1p value to classified traffic. C. Override the incoming DSCP in the received traffic. D. Override the DSCP or priority applied directly to an interface.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-92_1.png] The access layer AOS-Switches currently run DHCP snooping on VLAN 2 and connection rate filtering on edge ports. They are at default settings for ARP protection. A network administrator then enters these commands on each of the access layer switches: Switch(config)# arp-protect vlan 2 Switch(config)# arp-protect Which behavior accurse? A. The switches will forward legitimate traffic and prevent ARP poisoning attacks, but interfere with connection rate filtering. B. The switches can now prevent ARP poisoning attacks and do not interfere with legitimate communications. C. The switches can prevent ARP poisoning attacks, but legitimate communications with VLAN 2 could also be disrupted. D. The switches will not apply ARP protection due to interference from DHCP snooping, so the commands have no effect on current behavior.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Network administrators decide to change OSPF Area 1 to a stub area in order to solve some performance issues. No routes are redistributed into area 1. What is one implication of making this change? A. Endpoints in area 1 will no longer be able to reach external networks. B. Routing devices in area 1 will no longer exchange Type 1 and Type 2 LSAs with each other. C. Endpoints in area 1 will no longer be able to reach endpoints in other areas. D. Routing devices in area 1 will temporarily lose adjacency while the change is made.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator can set the OSPF metric-type on an AOS-Switch to Type 1 or Type 2. What is the difference? A. A Type 2 metric marks external routes that can be advertised in NSSAs, while a Type 1 metric marks external routes that can only be advertised in normal areas. B. A Type 2 metric assigns cost 1 to a 100 Gbps link, while a Type 1 metric assigns cost 1 to all links of 100 Mbps or higher. C. A Type 2 metric is assigned to multiple external routes that are aggregated together, while a Type 1 metric does not permit external route aggregation. D. A Type 2 metric stays the same as the external route is advertised, while a Type 1 metric increments with internal OSPF link costs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has AOS-Switches, Aruba ClearPass, and Aruba AirWave. A network administrator needs to set up a new switch with the same settings found on other switches in the company. Which action is likely to be the most useful to perform the task? A. View usage patterns on the switches on AirWave. B. Retrieve the running config from ClearPass. C. Use the configuration audit tool on AirWave. D. Access the Network Device view on ClearPass.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator needs to set up an AOS-Switch to use port-based tunneled node for connected devices. However, the administrator wants the switch to forward traffic without tunneling if it cannot reach a tunneled-node server. What should the administrator do? A. Apply the tunneled-node profile to ports, and set the local-switching-fallback option. B. Make sure that the switch has an IP address on the untagged VLAN assigned to the ports. C. Configure a local switching profile on the Mobility Controller that acts as tunneled-node server. D. Set the switch to role-based tunneled node, and make sure it uses the default initial user role.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-98_1.png] What must the network administrator do on Switch-1 to enable this switch to advertise 192.0.2.0/24 to the router at 192.168.1.1? A. Redistribute OSPF routes into the BGP process B. Enter a static route to 192.0.2.0/24 to the black hole. C. Enter the network 192.168.1.0/24 command in the BGP context. D. Enable eBGP multihop to the 192.168.1.1 neighbor.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-100_1.jpg] A network administrator needs to alter myACL so that it permits all traffic that arrives in VLAN 2 and is destined to 10.1.10.0/24. Besides this change, the ACL must continue to act as it does now. The administrator plans this new rule: permit ip any 10.1.10.0/24 How should the administrator apply this rule to meet all requirements? A. Apply the new rule without a rule ID to ensure that the switch applies the automatic processing order to it. B. Resequence the ACL with more space, then add the new rule with a sequence ID before the ID for the current third rule. C. Remove the ACL from the VLAN and re-apply it as an inbound VLAN ACL (VACL). Then, add the new rule with any ID higher than 2. .",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer wants to authenticate AOS-Switch managers to a RADIUS server. Managers should be assigned either read-only or full read-write level access based on the Service-Type VSA in their user account. What must the network administrator enable on the AOS-Switches to ensure they comply with this plan? A. RADIUS-based command authorization B. a manager and operator password C. privileged-mode login authentication D. SNMPv3 and SNMPv3 restricted access.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-102_1.png] An administrator created a backplane stack with the plug-and-play method, and did not alter the default backplane stacking settings. Later, two backplane stacking links failed, as shown in the exhibit. What happens to the backplane stack after the failures? A. The standby becomes the commander of its fragment, which remains active. The fragment with the commander becomes inactive. B. The fragment that contains the commander operates at Layer 2 and Layer 3, and the other fragment operates at Layer 2 only. C. The fragment that contains the commander remains active, and the fragment with the standby member is disabled. D. The standby becomes the commander of its fragment. Both fragments remain active and operate at both Layer 2 and Layer 3.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-103_1.png] AOS-Switches will enforce 802.1X authentication on edge ports. The company has two RADIUS servers, which are meant to provide redundancy and load sharing of requests. The exhibit shows the planned RADIUS setting to deploy to the switches. Which adjustment to the plan should administrators make in order to meet the customers' requirements? A. Remove the dynamic authorization setting for both RADIUS servers. B. Specify a different RADIUS dynamic authorization port for each of the RADIUS servers. C. Specify one server on half of the switches and the other server on the other half of the switches. D. Change the order in which the RADIUS servers are specified on half of the switches.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Network administrators want to gain insight into network utilization, traffic patterns, and the types of applications in use across the network over the long term. Which technology can help them achieve this goal? A. RMON B. sFlow C. SNMP traps D. DiffServ",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the purpose of the captive portal URL hash key on an AOS-Switch? A. It specifies the captive portal URL and conceals the setting in the config. B. It authenticates guest users based on the password the users enter in the portal. C. It does not let users alter the URL that redirects them to the portal. D. It encrypts and secures the RADIUS messages that the AOS-Switch sends to ClearPass.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator needs to configure PIM across several AOS-Switches in the same routing domain. What correctly describes how they can implement PIM modes? A. Switches at the network edge should run PIM-SM, while switches at the network core should run PIM-DM. B. All switches must use PIM-DM only or all switches must use PIM-SM only for the solution to work. C. Different interfaces on the same switch can run in different modes, but the mode must match the neighbor. D. Switches at the network core should run PIM-DM, while switches at the network edge should run PIM-SM.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-105_1.png] Both Switch-1 and Switch-2 redistribute RIP routes into OSPF. The network administrator wants routers in Area 1 to receive the redistributed routes from Switch-1 but not from Switch-2. Routers in other areas should receive the routes from Switch-2. What should the administrator do to achieve this goal? A. Configure Area 1 as a stub area, with no summaries on Switch-2. B. Configure Area 1 as a stub area, and import the routes with a low metric on Switch-2. C. Configure Area 1 as a Not So Stubby Area (NSSA) on all routing devices in Area 1. D. Configure a subnet range for Area 1 on Switch-2, and set the no-advertise option.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company wants to implement RADIUS authentication of all managers who log in to AOS-Switches via SSH. The RADIUS server also sends VSAs that indicate which commands users can enter, and switches must honor these. What must the administrator do to meet the company's requirements? A. Set the command access level to manager mode; also set RADIUS for aaa authentication ssh login and aaa authentication ssh enable. B. Set RADIUS for aaa authentication ssh login, also enable authentication privilege-login mode, which allows the switch to accept all RADIUS VSAs. C. Set command authorization to RADIUS, also set RADIUS for aaa authentication ssh login and aaa authentication ssh enable. , which allows the switch to accept all RADIUS VSAs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-109_1.png] A known unicast packet is received from Switch-1 on the standby and must be forwarded to Switch-2. How does the VSF fabric decide which port in the aggregated link should forward the packet? A. The standby uses its own port in the link aggregation to forward the fabric. B. The standby sends the packet to the commander over a VSF link, and the commander decides the correct port. C. The standby uses the typical load sharing algorithm, and it might select either its port or the commanderâ€™s port. D. The standby selects the port on the designated forwarder for the aggregation.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company requires AOS-Switches at the campus core. The switches: ✑ Will act as the default gateways for several campus VLANs ✑ Must provide redundancy for their services and tolerate the loss of a link or an entire switch ✑ Must recover from the failure of one of the switches within a second or less VRRP and MSTP are proposed to meet these requirements. What is an issue with this proposal? A. VRRP provides redundancy against lost links but not a failed switch B. VRRP provides routing redundancy but not default gateway redundancy C. VRRP does not interoperate with MSTP D. VRRP takes longer than a second to fail over",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-120_1.png] Network administrators need to determine if the QoS settings on their AOS-Switches still meet their needs. Interface 1 is a 1 Gbps interface. Assume that the interface needs to forward this amount of traffic during a time of congestion: ✑ Traffic with default 802.1p value = 600 Mbps ✑ Traffic with the 802.1p value 7 = 600 Mbps Given the exhibit, how much bandwidth is available for the default traffic? A. 20 Mbps B. 200 Mbps C. 400 Mbps D. 500 Mbps",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "AOS-Switch runs IGMP in data-driven mode. What behavior does it exhibit? A. It drops multicasts destined to groups that have no members B. It preempts the querier role even if another device has higher priority C. It floods multicasts on all ports in the VLAN if the group has at least one member D. It disables automatic fast leave on ports that connect to a single device",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-122_1.png] An administrator created a backplane stack with the plug-and-play method and did not alter the default backplane stacking settings. Later, two backplane stacking links failed as shown in the exhibit. The network administrator then restored the failed links. When the stack is reformed, which switches become commander and standby? A. Member 4 remains commander, and Member 5 remains standby B. Member 1 becomes commander, and Member 4 becomes standby C. Member 4 remains commander, and Member 1 becomes standby D. Member 1 becomes commander, and Member 2 becomes standby",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator needs to control traffic based on Ethertype and Class of Service. What should the administrator configure for this purpose? A. both a standard IP ACL and a standard MAC ACL B. both a standard IP ACL and an extended MAC ACL C. an extended IP ACL only D. an extended MAC ACL only",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator needs to find the source of a performance issue. The administrator has seen that interfaces sometimes start to drop many packets, but the issue is intermittent, and the administrator is not sure exactly when it happens. The administrator wants to be alerted when interfaces start to drop packets. The switches already have an SNMP trap server configured on them. What else should an administrator do on these switches? A. Enable link change SNMP traps on the switch B. Set up RMON alarms on dropped packet statistics C. Set the trap server to inform mode D. Enable debugging to the session",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-124_1.png] A network administrator sets up 802.1X authentication to a RADIUS server on an AOS-Switch. The RADIUS server and user devices are both set up to use PEAP MSCHAPv2. The administrator tests the authentication and sees the output shown in the exhibit. Which issue could cause this output? A. The administrator entered the wrong password for the test account B. The RADIUS shared secret does not match on the switch and the server C. The switch does not have a certificate for port-access installed on the switch D. The switch port is set for user mode 802.1X, but the RADIUS server is set for port mode",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator enters this command on an AOS-Switch: Switch(config)# radius-server host 10.1.3.3 time-window 60 Which behavior will the switch show? A. It will wait one minute for a response from the RADIUS server before it sends another message B. It will reject RADIUS server change of authorization (CoA) messages with timestamps that are more than one minute old C. It will maintain idle user sessions for one minute before it re-authenticates the user to the RADIUS server D. It will give supplicants up to one minute to respond to RADIUS challenges before it considers authentication failed",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "AOS-Switches authenticate guests to ClearPass with captive portal. When guests first connect their device to the network, they are redirected to a captive portal in which they log in. ClearPass then stores the guest MAC addresses, and the guests are permitted access. Due to a conflict, the network administrator needs to change the dynamic authorization port, port 3799 on Aruba ClearPass. If the administrator forgets to also change the port on one of the AOS-Switches, what will be one symptom? A. Some guests receive full access to the network when they first connect instead of being redirected to the portal page B. When some guests successfully authenticate in the captive portal, they are redirected back to the portal page C. Guests are redirected to the system listening on port 3799 D. Some guests are unable to reach the captive portal page. Instead, they receive no access at all",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-128_1.png] Exhibit 2 [sampleXML/xmlfile-129_1.png] Switch-1 and Switch-2 lost IP connectivity with each other. They did not detect the issue for several seconds and caused a temporary traffic disruption. The administrations expected failover to the backup route through Switch-3 to occur in less than a second. The administrators restore the failed link and view the output on Switch-1, shown in the exhibit. What should they do to create the expected behavior if connectivity is lost again? A. Lower the hello timer to a given range of times on each OSPF routing switch in VLAN 100 B. Enable BFD in asynchronous mode on each OSPF routing switch in VLAN 100 C. Manually configure the network type as point-to-point on each OPSF routing switch in VLAN 100 D. Set a BFD echo source IP address on each OSPF routing switch in VLAN 100",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-131_1.png] Exhibit 2 [sampleXML/xmlfile-132_1.png] A network administrator sets up PIM-DM to route traffic from the multicast source to clients in VLAN 24. The server begins to forward multicasts, and the clients are set up to receive them. However, the multicasts do not reach the clients. Based on the output, what should the administrator verify? A. that VLAN 24 on Switch-1 runs both IGMP and PIM-DM B. that Switch-2 has PIM-DM enabled on VLAN 10 C. that state refreshes are enabled on Switch-2 D. that Switch-1 has selected Switch-2 as its RP for 239.1.1.1",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How far do OSPF link state updates (LSUs) for Type 1 (Router) and Type 2 (Network) LSAs propagate? A. to every OSPF router in the local area B. to every OSPF router in all areas C. to every OSPF router in the local area and the backbone D. to every OSPF router in the network to which the LSU applies",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-136_1.png] Exhibit 2 [sampleXML/xmlfile-137_1.png] A network administrator applies the ACL to Switch-2, as shown in the exhibit. Device-1, IP address 10.1.10.10/24, attempts to open an HTTP session with host 192.0.2.10 on the Internet. What happens with this attempt? A. Switch-2 filters both the traffic from Device-1 and the return traffic with the ACL. The return traffic is dropped. B. Switch-2 filters only the traffic from Device-1 with the ACL, and the session establishes successfully. C. Switch-2 does not filter any of this traffic with the ACL, and the session establishes successfully D. Switch-2 filters only the return traffic from the Internet with the ACL, and the ACL drops this traffic",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An AOS-Switch has type of service disabled on it globally. The administrator enters: AOS-Switch(config)# interface 1 qos trust device aruba-ap What is the effect of this command? A. if the AOS-Switch is integrated with an Aruba Mobility Controller, it uses QoS settings sent by the controller to prioritize traffic sent on interface 1 B. if interface 1 connects to an Aruba AP, it uses the incoming DSCP and a global DSCP map to prioritize traffic received on this interface C. if the AOS-Switch is integrated with an Aruba Mobility Controller, it uses QoS settings sent by the controller to classify traffic received on interface 1 D. if interface 1 connects to an Aruba AP, the switch marks all traffic received on the interface with a higher than default priority value",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-139_1.jpg] Exhibit 2 [sampleXML/xmlfile-140_1.jpg] Which change to the environment would cause clients to fail to receive DHCP settings? A. the addition of a new link to the link aggregation between Switch-1 and Switch-2 B. the addition of a new VLAN on the link aggregation between Switch-1 and Switch-2 D. a change of IP address on the network DHCP server",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company has a mixed wireless and wired Aruba solution. It wants to encrypt messages used to send configurations and other important messages to the APs carried outside the GRE tunnels. What can the company do to meet these goals? A. Deploy Aruba Meridian and integrate the AOS-Switches with it. B. Configure extended IP ACLs on the AOS-Switches to filter the traffic. C. Use PAPI enhanced security. D. Use tunneled node to send traffic through an Aruba Mobility Controller.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-141_1.png] Every switch shown in the exhibit is an AOS-Switch that runs PIM-SM. A network administrator wants to load-balance the RP role, so Switch-3 and Switch-4 both act as RPs for some of the multicast groups. How should the administrator configure the RPs? A. Specify 10.3.3.3 as a static RP address on half of the AOS-Switches and 10.4.4.4 as a static RP address on the other half. B. Specify 10.3.3.3 as a static RP address on Switch-1. Specify 10.4.4.4 as a static RP address on Switch-2. C. Specify the candidate RP command on Switch-3. Also specify the candidate RP command on Switch-4. D. Specify Switch-3 and Switch-4 IP addresses as candidate RP addresses on Switch-1. Specify the same candidate addresses on Switch-2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which situation requires an AOS-Switch interface to support MAC-based VLANs? A. The interface has an extended MAC ACL applied to it in the outbound direction, and it uses VLAN ID as one of the criteria for rules. B. The interface has an extended MAC ACL applied to it in the inbound direction, and it has multiple tagged VLAN assignments. C. The interface is configured to support Local MAC Authentication (LMA), authenticates endpoints against a non-default MAC group, and limits the address count to 1. D. The interface is configured to support 802.1X in user-based mode, connects to more than one endpoint at a time, and users are assigned to different dynamic VLANs.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits: Exhibit 1 [sampleXML/xmlfile-146_1.png] Exhibit 2 [sampleXML/xmlfile-147_1.jpg] A network administrator at a university notices high utilization on links between the access layer and core. The output shown in the exhibit is characteristic of samples taken several times an hour during congestion. The administrator suspects file sharing and other unauthorized traffic, and decides to use an ACL to permit only HTTP, HTTPS, and a few other authorized types of traffic. How can the administrator apply the ACL to address both the security and the congestion problem? A. as an inbound PACL on the link aggregations on the access switches B. as an inbound VACL on the student VLAN on Switch-1 C. as an inbound PACL on the link aggregations on Switch-1 D. as an inbound VACL on the student VLAN on the access switches",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator wants to use Aruba AirWave to audit an AOS-Switch configuration. What is one requirement? A. The switch defines the AirWave IP address in its zero touch provisioning (ZTP) profile. B. The switch specifies the AirWave IP address for the RADIUS server used for Telnet and SSH authentication. C. The switch is authorized in AirWave, which has the correct credentials to log in as a CLI manager. D. The switch is set to Manage Read-Write mode in AirWave but is not set to Monitor Only + Firmware Updates.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is a primary use case for RPVST+ on AOS-Switches? A. more granular load balancing than MSTP when access switches connect to two core switches B. enhanced loop protection in an MSTP network C. integration of AOS-Switches in a heterogeneous vendor network that uses the Cisco protocol D. seamless integration with RSTP",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-153_1.jpg] Exhibit 2 [sampleXML/xmlfile-154_1.png] Traffic between servers in Area 1 takes a sub-optimal path rather than the link dedicated to VLAN 1000, subnet 10.0.0.0/30. Based on the exhibits, what can administrators do to create a better path for this traffic? A. Decrease the OSPF cost on the VLAN 1000 interface on Switch-1 and Switch-2. B. Add a virtual OSPF link between Switch-1 and Switch-2. C. Add a VLAN in OSPF Area 1 on the link between Switch-1 and Switch-2. D. Make sure that OSPF is enabled in Area 0 on VLAN 1000 on both Switch-1 and Switch-2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-155_1.jpg] Which issue needs to be addressed in this design? A. a new plan for ISP redundancy, because Switch-1 can only support one AS number, so it cannot connect to both ISP 1 and ISP 2 B. an adjustment to the physical links, because both links to the ISP routers must be on the commander to prevent a split-brain situation C. a new way to provide core redundancy, because AOS-Switches in VSF fabrics can only establish BGP relationships with AOS-Switches D. a way to ensure that the company private network does not become a transit for traffic between ISP 1 and ISP 2",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is a typical reason to implement MAC authentication on an AOS-Switch? A. to filter traffic at the edge, based on multiple criteria in the MAC header B. to provision switch ports to support devices such as IP phones or printers C. to enhance the security of an 802.1X solution D. to control management access to the switch CLI based on device, as well as user credentials",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An AOS-Switch needs to implement tunneled node in role-based mode. Aruba ClearPass is configured to assign users for which the traffic should be tunneled to a group to these users. What is the correct user role configuration on the AOS-Switch for this scenario? set as the secondary role in the tunneled-node-redirect command set as the secondary role in the tunneled-node-redirect command",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-160_1.jpg] Exhibit 2 [sampleXML/xmlfile-161_1.jpg] The network administrator enters the commands shown in Exhibit 2. What is the spanning tree status on A1 and A2? A. Both A1 and A2 forward traffic. B. A1 forwards traffic, and A2 blocks traffic. C. A1 blocks traffic, and A2 forwards traffic. D. Both A1 and A2 block traffic.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibits. Exhibit 1 [sampleXML/xmlfile-162_1.jpg] Exhibit 2 [sampleXML/xmlfile-162_2.jpg] In the exhibits, VLAN 20 under a device name indicates that the device is configured with that VLAN. The exhibits also indicate whether VLAN 20 is statically configured on each link, either as an untagged or a tagged VLAN. If the link has no label, VLAN 20 is not statically configured on that link. A network administrator needs to deploy AOS-Switches at the access layer. They enforce 802.1X on edge ports. In the exhibits, Switch-1 represents the access layer switches. The plan calls for users to be dynamically assigned to VLAN 20 or VLAN 30, based on identity. If the RADIUS server authorizes the user but does not assign a VLAN, the user should be assigned to VLAN 30. Switch-2 is the default router for the user VLANs. Which exhibit shows the correct plan for VLAN 20 in the wired infrastructure? A. A B. B C. C D. D",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An AOS-Switch enforces 802.1X. It receives an Access-Accept with this HPE VSA from its Radius server: Attribute Name and ID = HPE-User-Role (25) Value = contractor The switch then rejects the client. What is one requirement for the switch to accept the message and authorize the client? A. The initial user role must be set to the factory default permit any role. B. User role authorization must be enabled globally on the switch. C. An aaa authentication local user group must have the contractor name. D. The RADIUS server settings must permit dynamic authorization.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Two AOS-Switches connect on VLAN 10 in OSPF Area 1, which is defined as a stub area on both. Which mismatch can cause OSPF routers to lose adjacency? A. The administrator adds the backbone area to just one of the routers. B. The administrator enables graceful restart, or nonstop switching, on just one of the routers. C. The administrator enables jumbo frames on VLAN 10 on just one of the routers. D. The administrator adds the no-summary option to Area 1 on just one of the routers.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A network administrator applies port security to a port with the send-alarm action. What does the switch do if it detects traffic from an unauthorized MAC address on the port? A. It disables the port, but sends no SNMP trap. B. It forwards the traffic, and it logs an event. C. It blocks the traffic, but sends no SNMP trap. D. It blocks the traffic, and it sends an SNMP trap.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A company wants to implement RADIUS authentication of all managers who log in to AOS-Switches via SSH. The RADIUS server also sends VSAs that indicate which commands users can enter, and switches must honor these. What must the administrator do to meet the company's requirements? A. Set the command access level to manager mode; also set RADIUS for aaa authentication ssh login and aaa authentication ssh enable. B. Set RADIUS for aaa authentication ssh login, also enable authentication privilege-login mode, which allows the switch to accept all RADIUS VSAs. C. Set command authorization to RADIUS, also set RADIUS for aaa authentication ssh login and aaa authentication ssh enable. D. Set RADIUS for aaa authentication ssh login and aaa authentication ssh enable, which allows the switch to accept all RADIUS VSAs.",
+    "options": {},
+    "most_voted": ""
+  }
+]
