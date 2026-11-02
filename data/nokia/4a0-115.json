@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Based upon the exhibit, how many MAC-VRFs are there? A. 1 B. 1 C. 3 D. 4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Based on the exhibit below, which of the following statements is FALSE? A. When forwarding BUM traffic, the local PE must replicate the traffic and send it as unicast to the advertising neighbor. B. The MPLS label 524284 presented indicates the service label value that the neighbor 10.10.10.2 uses to forward BUM traffic to PE1. C. When forwarding BUM traffic, the local PE uses an MPLS transport tunnel towards the advertising neighbor. D. The IMET route is imported by a local VPLS configured with a route-target value of 65100:10.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Based upon the exhibit, which of the following statements is FALSE? A. PE1 populates this information into the local VPLS FDB. B. Neighbors 10.10.10.2 and 10.10.10.3 have proxy-ARP enabled for the VPLS. C. Neighbors 10.10.10.2 and 10.10.10.3 have a service that uses a VXLAN network identifier of 10. D. PE1 uses VXLAN tunnels to reach neighbors 10.10.10.2 and 10.10.10.3.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Based upon the exhibit, which of the following statements is FALSE? A. VPLS 10 must be configured with two BGP instances on PE3 and PE4. B. On PE3 and PE4, VPLS 10 must be configured with two different route-distinguisher values: one for VXLAN and another for MPLS. C. On PE3 and PE4, VPLS 10 must be configured with two different route-target values: one for VXLAN and another for MPLS. D. A BGP export policy is required on PE3 and PE4 to ensure that IMET routes originated with VXLAN encapsulation are not advertised to the peer across the core network.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In the exhibit, the interface-less forwarding model is used for the Layer-3 EVPN service. Which of the following statements about traffic forwarding from Host 1 to Host 2 is FALSE? A. PE1 consults the FDB of RVPLS 1 and forwards the traffic to the local interface of VPRN 11. B. PE1 encapsulates the packet with two labels: an outer transport label and an inner service label. C. PE2 inspects the service label and determines that it is associated with RVPLS 2. D. PE2 consults the FDB of RVPLS 2 and forwards the traffic to Host 2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The interface-full numbered model is used for a Layer-3 EVPN service. Which of the following statements is FALSE? A. EVPN routes are advertised with a service label associated with the SBD VPLS. B. IP-prefix routes exchanged between PEs include a non-zero gateway IP address as an overlay index. C. EVPN MAC/IP routes are used to advertise the MAC and IP addresses of local hosts. D. EVPN MAC/IP routes are used to advertise the MAC and IP addresses of SBD IRB interfaces.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In the exhibit, the interface-ful numbered model is used for the Layer-3 EVPN service. Which of the following is used as the source MAC address in the packets sent from PE1 when forwarding customer traffic to Host 2? A. MAC-01 B. MAC-03 C. MAC-04 D. MAC-11",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A Layer-3 EVPN service is configured to use the interface-ful unnumbered forwarding model. Which of the following statements FALSE? A. Each participating PE advertises a MAC/IP route that carries the MAC address of SBD IRB interface. B. IP-prefjx routes exchanged between PEs include a non-zero MAC address as an overlay index. C. The VPRN service is configured to allow the advertisement of IP prefixes. D. The SBD IRB interface configured in the VPRN service has no IP address assigned to it.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "An operator configures an EVPN-IRB that uses the interface-ful unnumbered forwarding model on a Nokia 7750 service router. Which of the following statements regarding the configuration performed on each participating PE is FALSE? A. A supplementary broadcast domain (SBD) is configured as a routed VPLS. B. A VPRN service is configured and has an interface bound to the local VPLS. C. The advertisement of IP-Prefix routes is enabled in the SBD VPLS. D. An IP address is configured in the VPRN Interface that is bound to the SBD VPLS.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In the exhibit, the default algorithm is used to elect the designated forwarder (DF) on ESI 1. Which PE is elected as DF for VPLS 10? A. PE1 B. PE2 C. PE3 D. PE4",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Examine the exhibit. Which of the following actions is performed by PE1 after it receives a BUM packet from CE1? A. PE1 does not flood the packet because PE1 is acting as non-designated forwarder (non-DF) for VPLS 10. B. PE1 sends the packet to PE2 but not to PE3 because PE3 is connected to the originating ES. C. PE1 sends the packet to PE2 and to PE3. An ESI label is included only in the packet sent to PE2. D. PE1 sends the packet to PE2 and to PE3. An ESI label is included only in the packet sent to PE3.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In the exhibit, PE2 is receiving an EVPN auto-discovery (A-D) route from PE1. Based on the output, which of the following statements is FALSE? A. This route is an A-D per EVPN instance (A-D per EVI) route advertised by PEI for a VPWS. B. This route indicates that the EVPN service configured on PEI is multi-homed. C. This route indicates that the EVPN service is configured on PEI with an EVPN instance (EVI) of 113. D. This route indicates that the EVPN service is configured on PEI with a service MTU of 1514.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Examine the exhibit. Which of the following statements about the EVPN routes exchanged for EVPN VPWS 2 is TRUE? A. PE1 advertises an A-D per EVI route that includes a tag ID set to 40. B. PE1 advertises an A-D per EVI route that includes a non-zero Layer-2 MTU. C. PE2 advertises an A-D per EVI route that includes a P flag set to 1. D. All PEs advertise a MAC route that includes a non-zero MPLS label.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Examine the exhibit. Which of the following statements about the operation of EVPN VPWS 4 is FALSE? A. PE1 brings the SAP in VPWS 4 operationally down. B. PE3 sets the P flag in its advertised A-D per EVI route to 1. C. PE2 receives a single A-D per EVI route. The route is originated from PE3. D. PE2 receives two A-D per ES routes: one from PEI and another from PE3.",
+    "options": {},
+    "most_voted": ""
+  }
+]
