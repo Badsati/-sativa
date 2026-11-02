@@ -1,0 +1,202 @@
+[
+  {
+    "question": "Which of the following statements about Multi-Protocol Label Switching networks is FALSE? A. MPLS uses a signaling protocol to exchange labels between routers. B. An LSR forwards data based on the MPLS labels. C. An LSP is a bi-directional tunnel that uses MPLS labels to forward data. D. The data is transparently carried from end to end.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements about a Segment Routing SID is FALSE? A. A Node-SID is usually associated with a router's system interface. B. Adjacency-SID values are taken from the SRGB configured for the routing protocol. C. A Prefix-SID can be configured directly as a label value or indirectly as an index. D. An Adjacency-SID does not have to be configured.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements about Segment Routing is FALSE? A. No path signaling is required to establish an SR tunnel. B. Intermediate routers do not maintain any tunnel information. C. A link-state IGP is required to distribute SID information. D. For TE-constrained tunnels, each data packet typically carries a single MPLS label to specify the tunnel path.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements about a Segment Routing SID is FALSE? A. A local Node-SID can be configured directly as an MPLS label. B. A router advertises its local Node-SID as a local SRGB and an index only if it is configured as an index. C. All routers do NOT need to have the same SRGB range configured. D. A local Node-SID can be configured as an index.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "When OSPF is used to support Segment Routing, the first byte of the link-state ID associated with each of the opaque LSAs indicates the type of information being advertised. Which of the following associations between the first-byte value and its meaning is FALSE? A. Value 1 - Traffic Engineering B. Value 4 - Router Info C. Value 7 - SRGB Range D. Value 8 - Extended Link Info",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following steps is NOT required when configuring IS-IS to support Segment Routing? A. MPLS label range reserved for Segment Routing. B. Enable interfaces used for Segment Routing under the MPLS context. C. The flooding scope of Segment Routing information. D. The Segment Routing Global Block range.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "OSPF type-10 Opaque LSAs can carry different types of advertisements. What type of advertisement carries a router's local SRGB information? A. Extended Prefix Info B. Router Info C. Extended Link Info D. Traffic Engineering Info",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is not required to be advertised by a router participating in Segment Routing? A. Local Node-SID B. Adjacency-SIDs C. Support for SR-MPLS for IPv4 or IPv6, or SRv6 D. SRGB when SRv6 is configured",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements about Segment Routing tunnels is FALSE? A. A Segment Routing tunnel defined by a Node-SID uses the shortest IGP Path. B. A Segment Routing tunnel can be defined by multiple Node-SIDs. C. A Segment Routing tunnel can be defined by a combination of Node-SIDs and Adjacency-SIDs. D. For a Segment Routing tunnel, an intermediate router will always forward the packet based on the best IGP path.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following is NOT one of the main goals of traffic engineering? A. Utilizing redundant links. B. Avoiding potential congestion points in the network. C. Defining traffic paths based on various constraints. D. Using the shortest possible path through the network to the destination.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements about SR-TE administrative constraints is FALSE? A. A strict hop must be adjacent to the previous hop in the list. B. The TE metric for a link is by default the same as the IGP metric. C. Shared-Risk-Link Groups are only taken into account when calculating the secondary path. D. The head-end router may calculate a path that takes into account max hop count and bandwidth constraints.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "A router participating in SR-TE is advertising a value of 0x11 for the admin-group membership of one of its interfaces. Which of the following statements is TRUE? A. The interface belongs to admin group RED, configured with a value of 17. B. Theinterface belongs to two different admin groups. C. Theinterface belongs to three different admin groups. D. Theinterface belongs to four different admin groups.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements about enabling and using traffic engineering for Segment Routing is FALSE? A. One interface can belong to an admin group and an SRLG group at the same time. B. A link attribute has to be assigned to a particular interface under the [/configure router interface] context. C. Bandwidth availability as a link attribute cannot be configured. D. The interfaces used for SR-TE LSPs have to be added to the MPLS context.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following list of SR-TE attributes has to be advertised among routers? A. Administrative groups that each link belongs to, TE metric of links, bandwidth availability of each link, SRLG that each link belongs to. B. Administrative groups that each link belongs to, TE metric of links, SRLG that each link belongs to. C. Administrative groups that each link belongs to, TE metric of links, bandwidth availability of each link, SRLG that each link belongs to, link status up/down. D. Administrative groups that each link belongs to, TE metric of links, SRLG that each link belongs to, link status up/down.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Based upon the exhibit, which of the following statements regarding the configuration is FALSE? A. Traffic engineering information will only be advertised for the interfaces that have both MPLS and RSVP enabled. B. The Node-SID assigned to this router is the second label in the defined range. C. Traffic engineering has been enabled on this router. D. Adjacency-SID labels will not be advertised as they have not been defined under the physical interfaces.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "OSPF is being used for segment routing with traffic-engineering (SR-TE). The traffic-engineering option has been set to “sr-te false”. Which of the following statements is TRUE? A. The TE information will be advertised for all the OSPF links that have MPLS enabled. B. The TE information will only be advertised using application-specific sub-TLVs. C. The TE information will only be advertised for the OSPF links that have both MPLS and RSVP enabled. D. The TE information will only be advertised using extended-link opaque LSAs.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Examine the exhibit. An LSP is being configured to start at R1 and end at R6 using local-CSPF. The LSP has the following constraints. Include admin-group GREEN, use the TE metric and hop-limit 3. What routers will be included in the LSP path? A. R1, R2, R4, R6 B. R1, R5, R6 C. R1, R3, R5, R6 D. R1, R6",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Examine the exhibit. Based upon the configuration, which routers will the LSP go through? A. R1, R3, R2, R5, R4 and R6 B. R1, R2, R5 and R6 C. R1, R3, R4 and R6 D. R1, R2, R4 and R6",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about path definitions is FALSE? A. Once a path is associated with an LSP, it cannot be used by other LSPs. B. A loose hop is one that does not have to be directly adjacent to the previous hop in the path list. C. The path hops can be defined by either the system or physical interface IP address. D. In addition to the hops defined in the path list, the head-end and tail-end routers are implicitly added.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following is an advantage of enabling label stack reduction for a CSPF-calculated path, as compared to using plain CSPF? A. The number of hops included in the end-to-end path is reduced. B. The path calculation can be delegated to an external path computation element (PCE). C. There is a larger list of traffic-engineering constraint types that can be imposed on the LSP path. D. The routers in the calculated path can take advantage of ECMP to better distribute the traffic load.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements about the operation of seamless-BFD is FALSE? A. Seamless-BFD responses are sent back using the LSP label stack. B. To be able to respond to seamless-BFD messages, a router must be configured as a reflector. C. A seamless-BFD template needs to be configured on the head-end of the LSP. D. The routing protocol (OSPF or IS-IS) is used to carry the reflector discriminator information.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about primary and secondary SR-TE LSP paths is FALSE? A. Only one LSP path forwards the traffic at any time. B. Up to three paths can be configured for a given SR-TE LSP. C. The primary path is always preferred over a secondary path. D. Preference values can be configured for non-standby secondary paths.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "An SR-TE LSP with a path definition that includes router R4 as a loose hop and for which Seamless-BFD has been enabled is following the path shown in the exhibit. What happens after router R4 fails if the routers along the path follow the default behavior? A. The head end will periodically try to calculate a new path at a rate defined by the retry timer. B. The head end will periodically try to calculate a new path at a rate defined by the resignal timer. C. The head end will continue forwarding traffic to the current next-hop indefinitely, which will be discarded at the point of failure. D. The head end will continue forwarding traffic to the current next-hop indefinitely, and R2 will redirect the traffic to R3 after IGP reconvergence.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements about the Path Computation Element (PCE) is FALSE? A. The PCE can obtain topology and traffic-engineering information from the network using either a link-state IGP or BGP-LS. B. A stateful PCE proactively monitors all the existing LSPs and triggers the necessary repairs and re-optimizations. C. A stateless PCE can calculate cross-area traffic-engineering-constrained LSP paths. D. A stateful PCE can allow LSPs to reserve bandwidth.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Based on the exhibit, which of the following is a viable option for the Path Computation Element (PCE) to obtain all the necessary topology and traffic-engineering information from the network, so that it can calculate LSP paths on behalf of the PE routers? A. Establishing an IGP adjacency with router R2 B. Establishing IGP adjacencies with routers R1 and R2 C. Establishing a BGP session using the BGP-LS address family with router R3 D. Establishing BGP sessions using the BGP-LS address family with routers R3 and R4",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following types of information is considered by a stateless PCE when it processes a new LSP path calculation request? A. The IGP link-state database B. The traffic-engineering database C. The operational state of existing LSP paths D. The amount of bandwidth reserved for each of the existing LSP paths",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following is NOT an advantage of using a PCE for the computation of TE-constrained LSP paths, as compared to using CSPF locally on the PE router? A. The ability to create cross-area TE-constrained LSP paths B. The ability to create LSP paths with bandwidth reservation C. The ability to create LSPs with primary and secondary paths D. The ability to ensure that some LSP paths are disjoint",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "In the context of a network that includes a Path Computation Element (PCE), what is a PCC-initiated LSP? A. An LSP that needs to be explicitly configured on the head-end router. B. An LSP for which the initial path is calculated by the head-end router. C. An LSP for which the path repairs and re-optimizations must be triggered by the head-end router. D. An LSP whose existence and state are reported to the PCE.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about segment routing fast re-route is FALSE? A. Fast re-route is a temporary fix that becomes active for a short period of time after a local network failure. B. Fast re-route typically protects the active segment of a tunnel, but under certain conditions it can protect an end-to-end multi-segment tunnel instead. C. On a Nokia 7750 SR, R-LFA and TI-LFA can be enabled independently of each other. D. The parameter “max-sr-frr-labels” limits the number of labels that R-LFA can add to the data packet encapsulation.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The exhibit presents packets being transmitted inside an LSP's multi-segment primary path going from router R1 to router R8. The LSP also has a standby secondary path, and Seamless-BFD has been enabled on the primary path. The link between routers R1 and R2 fails, and fast re-route (FRR) is triggered. As a result, router R1 forwards the packets to router R3 and adds the proper FRR encapsulation to reach which router? A. To reach router R2, which is the LSP's intended next-hop. B. To reach router R5, which is the shortest way to go back to the original path. C. To reach router R4, which is the tail-end of the active segment. D. To reach router R8, which is the tail-end of the LSP.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "The exhibit highlights in blue the primary path of a segment going from router S to router D. The exhibit also shows a backup path. The protected link fails and fast re-route is triggered on router S. If the backup path has been calculated using standard LFA, how many SIDs are included in the label stack of the data packet forwarded to router R1? A. 1 B. 2 C. 3 D. 4",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Loopfree-alternate has been enabled on a router for its link-state routing protocol. For which types of segments will the router attempt to find a backup path, so that they become protected by fast re-route? A. Only segments defined by a Node-SID. B. Only segments defined by an Adjacency-SID. C. Segments defined by a Node-SID and segments defined by an Adjacency-SID. D. No segments, unless segment-routing fast-reroute is also explicitly enabled.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "For any of the LFA methods to work properly, there must be a router in the backup path that will forward traffic addressed to the destination without sending it back to the source. Which of the following statements describes the way R-LFA selects such a router? A. It selects an immediate neighbor. B. It selects a remote router, reachable through a tunnel defined by a single Node-SID. C. It selects a remote router, reachable through a tunnel defined by a Node-SID and one or two Adjacency-SIDs. D. It can select an immediate neighbor or a remote router, as long as the backup path coincides with the path that will become active after IGP reconvergence.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "The exhibit shows the fast re-route configuration on router R1, in which both R-LFA and TI-LFA have been enabled. Assume that there are multiple potential backup paths for a given prefix. Which of the following options will router R1 use? A. A standard LFA path that would not coincide with the path after IGP re-convergence. B. An R-LFA path that would not coincide with the path after IGP re-convergence. C. A D-LFA path that would not coincide with the path after IGP re-convergence. D. A D-LFA path that would coincide with the path after IGP re-convergence.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "In which of the following aspects does the configuration of flex-algo LSPs have an advantage over the configuration of SR-TE LSPs? A. Label stack size of the encapsulated data packets B. List of traffic-engineering constraint types available to choose from C. Ability to associate one primary and up to two secondary paths to the same LSP D. Flexibility of configuring each LSP with its own set of traffic-engineering constraints",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Based on the configuration shown for routers R1 and R10, what valid flex-algo definitions exist in the network? A. No valid flex-algo definitions, because of the conflicting parameters. B. One valid flex-algo definition, using delay as the link metric and including green links. C. One valid flex-algo definition, using te-metric as the link metric and including blue links. D. Two valid flex-algo definitions, one uses te-metric as the link metric and includes blue links and the other uses delay as the link metric and includes green links.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "To create a flex-algo instance in a network, which of the following configuration steps is mandatory? A. Configuring the proper values for the shared-risk link groups (SRLGs) that will define the flex-algo topology. B. Configuring at least one router in the network to create and advertise the flex-algo definition. C. Specifying whether the LSP paths will be computed locally or by an external path computation element (PCE). D. Configuring LSPs between every pair of PE routers.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Based on the exhibit, and given that the system IP address of router R10 is 10.10.10.10, which of the following statements is FALSE? A. Router R1 participates in at least two flex-algo instances. B. Router R10 participates in flex-algo instance 130. C. The Node-SID assigned to router R10 for flex-algo instance 129 is 524338. D. The underlying routing protocol being used in the network for segment routing is IS-IS.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Based on the exhibit, which of the following statements about fast re-route for flex-algo instance 129 is TRUE? A. Only standard LFA is enabled on router R1; fast re-route is not enabled on router R2. B. Only standard LFA is enabled on both routers R1 and R2. C. Standard LFA and remote-LFA are enabled on router R1; fast re-route is not enabled on router R2. D. Standard LFA and remote-LFA are enabled on router R1; standard LFA and TI-LFA are enabled on router R2.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following is NOT a valid option to steer traffic into a flex-algo segment-routing tunnel? A. Using a flex-algo Node-SID as an explicit hop in the path definition of an SR-TE LSP and enabling the sr-te tunnel type for a VPN service. B. Specifying the flex-algo instance ID as an additional TE constraint for an SR-TE LSP and enabling the sr-te tunnel type for a VPN service. C. Configuring and applying a VRF import policy to a VPRN service and enabling the sr-is-is or sr-ospf tunnel type for the service, depending on the underlying routing protocol. D. Configuring and applying a VSI import policy to an EVPN service and enabling the sr-is-is or sr-ospf tunnel type for the service, depending on the underlying routing protocol.",
+    "options": {},
+    "most_voted": "B"
+  }
+]
