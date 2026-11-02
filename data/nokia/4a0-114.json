@@ -1,0 +1,127 @@
+[
+  {
+    "question": "Which BGP message type is used to verify connectivity during and after BGP session establishment? A. Hello B. Update C. Open D. Keep-Alive",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements about BGP is FALSE? A. BGP uses Hello messages to dynamically discover BGP peers. B. To establish a BGP session, a TCP session must first be established between the two routers. C. BGP uses the OPEN message to exchange capability parameters between routers. D. BGP was originally designed as an exterior routing protocol.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A TCP connection fails to be established with a BGP peer. Which of the following are valid options for the BGP connection state? A. Idle or Connect B. Idle or Active C. Connect or Active D. Connect or Open Sent",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A BGP session is stuck in the \"Connect\" state. Which of the following is the most likely reason? A. The remote BGP peer is properly configured but the local router is not. B. The local router is properly configured but the remote BGP peer is not. C. The BGP protocol is administratively disabled on the local router. D. The BGP protocol is administratively disabled on the remote BGP peer.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements about BGP is FALSE? A. Peers need to be IP reachable to establish a BGP session. B. Route reflectors can reduce the number of iBGP sessions required. C. iBGP peers have to be adjacent to each other. D. The multihop parameter needs to be configured when eBGP peers are not adjacent to each other.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What kind of BGP path attribute is AS_PATH? A. Optional transitive B. Optional non-transitive C. Well-known discretionary D. Well-known mandatory",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements about BGP peering sessions is FALSE? A. BGP peers need IP reachability between them. B. iBGP peers can be non-adjacent. C. eBGP peers have to be adjacent to each other. D. BGP peers can be configured with different AS numbers.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A BGP router receives the following routes. Which route is selected as best route? 1) 192.169.20.0/24 with local preference 100, MED 150, AS Path 65300 65200 from an eBGP neighbor 2) 192.169.20.0/24 with local preference 100, MED 100, AS Path 63200 from an iBGP neighbor 3) 192.169.20.0/24 with local preference 200, MED 150, AS Path 65400 63200 from an iBGP neighbor 4) 192.169.20.0/24 with local preference 200, MED 100, AS Path 63700 from an eBGP neighbor A. Route 1 B. Route 2 C. Route 3 D. Route 4",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements about the MED BGP path attribute is FALSE? A. The MED BGP path attribute is transitive. B. The MED BGP path attribute is optional. C. Routes having lower values in their MED BGP path attribute are preferred. D. The MED BGP path attribute's value is set by a router at the edge of an AS.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "An export policy is applied on a router to advertise a prefix to its eBGP peers. By default, which of the following updates are made to the route attributes? A. LOCAL_PREFERENCE is set to 100. B. NEXT_HOP is set to the neighbor router's interface IP address. C. The local AS number is added to AS_PATH. D. COMMUNITY is set to the local AS number.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "In the diagram, the BGP import policy \"north-and-south\" is applied to router R5. Router R1 advertises the prefix 140.100.1.0/24 with a community set to \"65200:1\". Which of the following statements about how router R5 processes the received route update for prefix 140.100.1.0/24 is TRUE? A. The prefix is rejected. B. The prefix's local preference is set to 20. C. The prefix's community value is removed. D. The prefix's community value is modified to 65200:2.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "On the Nokia 7750 SR, which of the following is NOT an address family that BGP supports? A. IPv4 B. VPN-IPv4 C. Label-IPv4 D. MP-EVPN",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "In the diagram below, a data packet is sent from CE1 to a far-end CE2 over a VPRN service across multiple regions. Which of the following statements about the tunnel labels is FALSE? A. The outer label is an RSVP, LDP, or segment routing label pushed by router Core1. B. The second label is a BGP label pushed by router RBR1. C. The service label is a label pushed by router PE1. D. The outer label will be popped by router Core2.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "In the diagram below, an end-to-end transport tunnel needs to be established between PE1 and PE2 using MP-BGP. Which of the following items is NOT required? A. MP-BGP address families label-ipv4 or label-ipv6 need to be supported on each of the edge routers. B. Either RSVP, LDP, or segment routing tunnels need to be established between regions. C. Either RSVP, LDP, or segment routing tunnels need to be established within each region. D. Each PE router needs to advertise an IP address as a labeled BGP route to identify the tunnel endpoint.",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Which of the following statements about Route Distinguishers (RD) is FALSE? A. An RD is prepended to an IPv4 prefix to form a VPN-IPv4 prefix. B. An RD is used to indicate the VPRN service to which a route update is relevant. C. A unique RD value is assigned to each VPRN service. D. An RD is a 64-bit value.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following statements about EVPN services is FALSE? A. The goal of an EVPN service is to provide layer-2 or layer-3 connectivity among two or more customer sites. B. A local layer-2 EVPN service is referred to as a backhaul VPLS. C. The same BGP address family can be used to populate the forwarding database of an EVPN VPLS and the route table of an EVPN VPRN. D. EVPN services support signaling for the use of MPLS and VXLAN tunnels.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The diagram shows EVPN services and their associated route-target (RT) values. For the distributed VPRN service in the diagram, what will be the route-target value included in the EVPN routes exchanged between routers PE1 and PE2 to populate the VPRN's route table? A. 65200:100 B. 65200:200 C. 65200:300 D. 65200:400",
+    "options": {},
+    "most_voted": "D"
+  },
+  {
+    "question": "Routers PE1 and PE2 in the diagram exchange MP-BGP route updates that carry the route-target value associated with the EVPN service VPLS 300. What type of addressing information is included in those route updates? A. VPN-IPv4 B. Label-IPv4 C. EVPN MAC D. EVPN IP-Prefix",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements about a distributed EVPN VPRN service is FALSE? A. It acts as a router, carrying IP packets between customer sites. B. It requires two types of interfaces, one towards customer sites and one towards the backhaul VPLS. C. Its configured route target indicates to the PE router which of the received BGP route updates are relevant to this VPRN. D. It relies on MP-BGP and on the EVPN address family to populate its routing table.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following pieces of information is NOT carried inside an EVPN IP-Prefix (type 5) route update associated with an EVPN VPLS? A. The MAC address of an attached host. B. The IP prefix of a subnet in the layer-3 domain that the VPLS belongs to. C. The VPLS's route-distinguisher and route-target values. D. The VPLS's service tunnel ID (MPLS label or VNI value).",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "Which of the following statements about VXLAN encapsulation is TRUE? A. It uses an MPLS label to identify the transport tunnel and a VXLAN Network ID (VNI) to identify the service tunnel. B. It uses a VXLAN Network ID (VNI) to identify the transport tunnel and an MPLS label to identify the service tunnel. C. It uses an additional IP header to identify the transport tunnel and a VXLAN Network ID (VNI) to identify the service tunnel. D. It uses VXLAN Network ID (VNI) to identify the transport tunnel and an additional IP header to identify the service tunnel.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Which of the following statements about router reflectors is FALSE? A. A full iBGP mesh is required among route reflectors. B. A route reflector can have both iBGP and eBGP clients. C. A router reflector disables the iBGP split-horizon rule for its clients. D. Route reflectors are used to reduce the number of iBGP sessions required in an AS.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following statements about route reflector clusters is FALSE? A. Multiple clusters may be configured within an AS. B. Within an AS, route reflectors belonging to different clusters do not need to be fully-meshed among themselves. C. A router can be the client of multiple route reflectors within its AS. D. When a route reflector reflects a route, it adds its cluster ID to the Cluster_list attribute.",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "Which of the following route reflection rules is NOT followed by a route reflector? A. If the best route is received from an eBGP peer, propagate to all iBGP peers. B. If the best route is received from an eBGP peer, propagate to all eBGP peers. C. If the best route is received from a client, propagate to all iBGP peers. D. If the best route is received from a client, do not propagate to eBGP peers.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "Given the network shown, which of the following is the correct BGP configuration for RR1? A. B. C. D.",
+    "options": {},
+    "most_voted": "A"
+  }
+]
