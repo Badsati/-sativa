@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Which of the following features are available with the Virtual Steelhead appliance? (Select 2) A. RSP B. HSTCP C. Fail-to-wire D. PFS E. Datastore synchronization",
+    "options": {},
+    "most_voted": "B"
+  },
+  {
+    "question": "What are the possible ways to downgrade a Virtual Steelhead appliance after it has been upgraded? A. Remove the upgrade license and restart the virtual Steelhead appliance B. Reinstall the original model license C. Reduce the amount of CPU and RAM allocated to the Virtual Steelhead appliance and it will automatically downgrade at the next startup D. It is not possible to downgrade after an upgrade",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "The client-side Steelhead appliance has been configured for OOB Destination Transparency, what should the source IP/port be for the OOB connection? A. Client IP/random port B. Client-side Steelhead appliance in-path IP/random port C. Client IP/port 708 D. Client-side Steelhead appliance in-path IP/port 708 E. None of the above",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-26_1.png] What option in the Acceleration policy used on Steelhead Mobile Client A will most likely enhance the users experience connecting to Server B, if Server B is an Exchange 2003 Server? A. Enable MAPI NSPI B. Increase the datastore size C. Enable latency-based location awareness D. Enable SSL optimization and import the Exchange certificate for Server B into Steelhead B E. Peering rule rejecting optimization with Steelhead A",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-28_1.png] If Server A is an FTP server, which setting will enable active FTP optimization on Steelhead Mobile Client R? A. Steelhead A. in-path auto srcport 20 B. Steelhead A. in-path auto dstport 20 C. Client R: in-path auto dstport 20 D. Default auto-discovery rules will work E. None of the above",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "A customer's network consists of a data center with an Interceptor appliance and a Steelhead appliance cluster and several remote sites each with Steelhead appliances. You would like to pass-through an application unoptimized due to a suspected problem and are provided the following information: The application uses a static TCP port, 15000. The application is initiated from the remote site machines. The same servers which host the application host several other applications as well. Based on the information provided which option will allow the application to pass-through: A. Configure in-path rules on the Interceptor appliance to pass-through destination TCP port 15000 B. Configure in-path rules on the data center Steelhead appliances to pass-through the server IP addresses C. Configure a peering rule on the Interceptor appliance to pass-through destination TCP port 15000 D. Configure a load-balancing rule on the Interceptor appliance to pass-through destination TCP port 15000 E. Stop the Interceptor appliance service",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which statements are true regarding the default methods by which load-balancing takes place in the Interceptor appliance. (Select 2) A. The Interceptor appliance uses round robin, for each TCP connection, regardless of source or destination IP address, and is equally load-balanced between a group of Steelhead appliances B. The Interceptor appliance uses round robin, for each TCP connection, depending on source IP address, and is equally load-balanced between a group of Steelhead appliances C. The Interceptor appliance uses hash assignment, for each TCP connection depending the hash value calculated from source and destination IP address, and is directed to a particular Steelhead appliance in the local cluster D. The Interceptor appliance can dynamically determine and direct traffic for optimization to the least-loaded Steelhead appliances based on Steelhead appliance resource usage E. The Interceptor appliance uses peer affinity, a Steelhead appliance in the local cluster that has been previously paired with a destination IP address is preferred F. The Interceptor appliance uses peer affinity, a Steelhead appliance in the local cluster that has been previously paired with a remote Steelhead appliance is",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the default Load Balancing rule on an Interceptor appliance? A. Redirect B. Allow C. Auto D. Pass-through",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which physical Steelhead interface communicates with the Interceptor appliance? A. AUX B. Primary C. wan0_0 D. B and C E. A, B, and C",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Your Steelhead appliance deployment includes users accessing the Internet from branch offices with the traffic being back-hauled to the data center before going out to the Internet. However, HTTP latency optimization does not appear to be very effective, and in certain cases, is slower than without optimization. What settings might help with this Internet-bound traffic? A. Riverbed recommends you turn off URL Learning and Parse-and-Prefetch and only enable OPT B. Riverbed recommends you enable URL Learning and Parse-and-Prefetch and turn off OPT C. Riverbed recommends you turn off URL Learning and only enable Parse-and-Prefetch and OPT D. Riverbed recommends you turn off URL Learning, Parse-and-Prefetch, and OPT E. Riverbed recommends you enable URL Learning, Parse-and-Prefetch, and OPT",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Refer to the exhibit. [sampleXML/xmlfile-86_1.png] Traffic going from Corp-A-DC-2 towards Corp-B will always use Link-1. Traffic from Corp-B back to Corp-A-DC-1 may traverse Corp-A-DC-1, over the GigaMAN before it reaches Corp-A-DC-2. No TCP connections are initiated from Corp-B to either Corp-A-DC-1 or Corp-A-DC-2. Unfortunately, the customer does not have any money to purchase any additional Steelheads. What are some possible fixes to ensure optimization occurs while Link-1 is operational? (If Link-1 ceases to function, optimization is not possible.) (Select 2) A. Configure a fixed-target rule on the Corp-A-DC-2 Steelhead pointing to the Corp-B Steelhead on port 7800 B. On the Corp-B Steelhead, enable \"in-path probe direct\" C. On the Corp-A-DC-2 Steelhead, enable \"in-path probe direct\" D. Configure the Corp-A-DC-2 Steelhead to inject a route into the network E. Enable Full Transparency",
+    "options": {},
+    "most_voted": ""
+  }
+]
