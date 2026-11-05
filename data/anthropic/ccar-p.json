@@ -33,5 +33,30 @@
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/anthropic/view/430222-exam-ccar-p-topic-1-question-20-discussion/",
     "images": []
+  },
+  {
+    "question": "A document analysis service processes legal filings averaging 80,000 tokens each. Each filing is queried by attorneys an average of 14 times during a case. The current architecture sends the full filing on every query. The CFO has asked you to reduce per-query costs while preserving response quality. The security officer requires that filing contents not be stored outside Fabrikam’s tenancy. Which optimization approach should you recommend? A. Summarize each filing once at intake and run all subsequent queries against the summary. B. Move the workload to a smaller Claude model to reduce the per-token cost paid. C. Cache the filing as the prompt prefix for reuse across the 14 queries per case. D. Index filings in a vector store and retrieve only the relevant passages per query.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are rolling out monitoring for a Claude-based deployment and must complete the specification steps before instrumenting the deployment. Which two steps must be completed BEFORE instrumenting the deployment to emit metrics and traces? (Choose two.) Each correct answer presents part of the solution. A. Document the dashboards, alerts, and runbooks for the on-call rotation that will respond. B. Build the dashboards that surface metrics across slices at the cadence the team operates on. C. Define the service-level objectives (SLOs) and the error budgets the deployment will be held to. D. Tune the alert thresholds based on observed normal-state distributions to reduce false positives. E. Define the metrics and the slices the deployment will monitor across normal and adversarial traffic.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "You are an architect supporting the iteration phase of a deployed Claude-based system. Which activity most directly fits this phase? A. Discard the evaluation framework and reference set once the deployment is in production, accepting that future iterations will have no structured basis for measuring the impact of changes. B. Rebuild the entire system architecture from scratch at the start of every iteration cycle regardless of what production telemetry, evaluations, and stakeholder feedback indicate is needed. C. Review production telemetry, sampled output evaluations, and stakeholder feedback to identify the highest-impact change for the next cycle, then plan the change against the evaluation framework. D. Stop measuring production outcomes once the deployment has successfully launched, treating the go-live milestone as the end of the evaluation and iteration cycle.",
+    "options": {},
+    "most_voted": "C"
+  },
+  {
+    "question": "A revenue projection assistant has missed its monthly cost target by 38 percent. Profiling shows three contributors: a 6,000-token policy preamble repeated on every call (45 percent of cost), retrieval of historical sales chunks averaging 3,000 tokens per call (30 percent), and inference on a flagship tier model (25 percent). Stakeholders require that projection accuracy remain unchanged. Which two optimizations should you sequence first to reduce cost without affecting accuracy? (Choose two.) Each correct answer presents part of the solution. A. Cache common retrieved sales chunks accessed across many of the daily queries. B. Truncate the policy preamble to remove non-essential clauses from the prompt. C. Enable prompt caching on the static policy preamble across the recurring calls. D. Switch the workload to a smaller, faster Claude model tier across all queries. E. Reduce the number of historical sales chunks retrieved across each query run.",
+    "options": {},
+    "most_voted": "A"
+  },
+  {
+    "question": "A solutions architect is analyzing stakeholder feedback collected after the first quarter of a Claude-powered procurement automation deployment. The feedback includes four statements: (1) “Our procurement team is processing 3x more purchase orders per analyst per day.” (2) “We have eliminated the manual data entry role entirely and redeployed those staff to vendor relationship management.” (3) “The API integration costs are running 40% over the projected per-transaction budget.” (4) “Response latency during end-of-month batch runs is averaging 11 seconds, against our committed 5-second SLA.” Which of the following correctly identifies the primary business value pillar each stakeholder statement represents? A. Statement 1: Productivity; Statement 2: Efficiency; Statement 3: Solution Cost; Statement 4: Performance SLA B. Statement 1: Efficiency; Statement 2: Productivity; Statement 3: Performance SLA; Statement 4: Solution Cost C. Statement 1: Efficiency; Statement 2: Transformation; Statement 3: Solution Cost; Statement 4: Performance SLA D. Statement 1: Transformation; Statement 2: Productivity; Statement 3: Solution Cost; Statement 4: Efficiency",
+    "options": {},
+    "most_voted": "C"
   }
 ]
