@@ -1,0 +1,72 @@
+[
+  {
+    "question": "What is the output of the following code? echo \"1\" + 2 * \"0x02\"; A. 1 B. 3 C. 5 D. 20 E. 7",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What would be the output of the following code? namespace MyFramework\\DB; class MyClass { static function myName() { return __METHOD__; } } print MyClass::myName(); A. MyFramework\\DB\\myName B. MyFramework\\DB\\MyClass\\myName C. MyFramework\\DB\\MyClass::myName D. MyClass::myName",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following two files. When you run test.php, what would the output look like? test.php: include \"MyString.php\"; print \",\"; print strlen(\"Hello world!\"); MyString.php: namespace MyFramework\\String; function strlen($str) { return \\strlen($str)*2; // return double the string length } print strlen(\"Hello world!\") A. 12,12 B. 12,24 C. 24,12 D. 24,24 E. PHP Fatal error: Cannot redeclare strlen()",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which line of code can be used to replace the INSERT comment in order to output \"hello\"? class C { public $ello = 'ello'; public $c; public $m; function __construct($y) { $this->c = static function($f) { // INSERT LINE OF CODE HERE }; $this->m = function() { return \"h\"; }; } } $x = new C(\"h\"); $f = $x->c; echo $f($x->m); A. return $this->m() . \"ello\"; B. return $f() . \"ello\"; C. return \"h\". $this->ello; D. return $y . \"ello\";",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "SIMULATION Consider the following code. Which keyword should be used in the line marked with \"KEYWORD\" instead of \"self\" to make this code work as intended? abstract class Base { protected function __construct() { } public static function create() { return new self(); // KEYWORD } abstract function action(); } class Item extends Base { public function action() { echo __CLASS__; } } $item = Item::create(); $item->action(); // outputs \"Item\"",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the output of the following code? class Base { protected static function whoami() { echo \"Base \"; } public static function whoareyou() { static::whoami(); } } class A extends Base { public static function test() { Base::whoareyou(); self::whoareyou(); parent::whoareyou(); A::whoareyou(); static::whoareyou(); } public static function whoami() { echo \"A \"; } } class B extends A { public static function whoami() { echo \"B \"; } } B::test(); A. B B B B B B. Base A Base A B C. Base B B A B D. Base B A A B",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the output of the following code? class Test { public function __call($name, $args) { call_user_func_array(array('static', \"test$name\"), $args); } public function testS($l) { echo \"$l,\"; } } class Test2 extends Test { public function testS($l) { echo \"$l,$l,\"; } } $test = new Test2(); $test->S('A'); A. A, B. A,A, C. A,A,A, D. PHP Warning: call_user_func_array() expects parameter 1 to be a valid callback",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Consider the following code. What change must be made to the class for the code to work as written? class Magic { protected $v = array(\"a\" => 1, \"b\" => 2, \"c\" => 3); public function __get($v) { return $this->v[$v]; } } $m = new Magic(); $m->d[] = 4; echo $m->d[0]; A. Nothing, this code works just fine. B. Add __set method doing $this->v[$var] = $val C. Rewrite __get as: public function __get(&$v) D. Rewrite __get as: public function &__get($v) E. Make __get method static",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Assuming UTF-8 encoding, what is the value of $count? $data = '$12'; $count = strlen($data); A. 0 B. 4 C. 5 D. 7",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the output of this code? $world = 'world'; echo <<<'TEXT' hello $world TEXT; A. hello world B. hello $world C. PHP Parser error",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "How many times will the function counter() be executed in the following code? function counter($start, &$stop) { if ($stop > $start) { return; } counter($start--, ++$stop); } $start = 5; $stop = 2; counter($start, $stop); A. 3 B. 4 C. 5 D. 6",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the output of the following code? class a { public $val; } function renderVal (a $a) { if ($a) { echo $a->val; } } renderVal (null); A. A syntax error in the function declaration line B. An error, because null is not an instance of 'a' C. Nothing, because a null value is being passed to renderVal() D. NULL",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "Which of the following is NOT true about PHP traits? (Choose 2) A. Multiple traits can be used by a single class. B. A trait can implement an interface. C. A trait can declare a private variable. D. Traits are able to be auto-loaded. E. Traits automatically resolve conflicts based on definition order.",
+    "options": {},
+    "most_voted": ""
+  },
+  {
+    "question": "What is the length of a string returned by: md5(rand(), TRUE); A. Depends on the value returned by rand() function B. 32 C. 24 D. 16 E. 64",
+    "options": {},
+    "most_voted": ""
+  }
+]
