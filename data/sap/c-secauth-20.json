@@ -4,48 +4,78 @@
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/125914-exam-c-secauth-20-topic-1-question-16-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B dministration functions for user and authorization administration. The authorization object S_USER_ADM protects general Customizing and administration tasks for user and authorization administration. It consists solely of the authorization field S_ADM_AREA. Until now, there was only the fixed value CHKSTDPWD, with which special users (such as SAP*) could be displayed, including their default passwords. SAP extends additional fixed values as required for other general administration functions in the area of user and authorization administration, which are listed in SAP Note 704307. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which of the following authorization objects are used to secure the execution of External Commands when defining a background job step? (Choose two.) A. S_RZL_ADM B. S_BTCH_EXT C. S_LOG_COM D. S_PROGRAM",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/sap/view/114652-exam-c-secauth-20-topic-1-question-20-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "also in ADM950 Page 142 To include external commands and external programs in a background step, you must have the activity 01 for the S_RZL_ADM authorization object. If the background job is using external commands, you need to additionally maintain the S_LOG_COM authorization object. If the background job is to use external commands or external programs, additional security is required. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which TADIR Service Object type includes business functional authorization objects used within the OData execution? A. IWSG B. OSOD C. IWSC D. IWSV",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/sap/view/109114-exam-c-secauth-20-topic-1-question-21-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Based on TSEC10_2_EN_Col22 page 56 the right answer is IWSV mostly include business functional authorization objects which are used within the OData service execution. upvoted 6 times Submit Cancel"
+    ]
   },
   {
     "question": "How can you enforce an additional transaction start authorization check for a custom transaction? A. Maintain the SU24 entry for the custom transaction and adding the desired authorization object, setting the Check Indicator to \"Check\" and setting Proposal to Yes. B. Using transaction SE93, update the custom transaction definition by specifying the desired authorization object and maintaining the desired field values. C. Without additional custom development it is not possible to add another check during transaction start. D. For each role containing the custom transaction, add the desired authorization object manually in transaction PFCG, maintain the field values and then generate the profile.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/sap/view/110030-exam-c-secauth-20-topic-1-question-23-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Just adding an auth. object in SU24 does not means that the auth. object is checked during the execution of the transaction. The only way to have an additional authority check on an auth. object without change the ABAP code is to maintain the auth. object for the transaction in SE93. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "Which archiving object can you use for archiving change documents related to changes with authorizations assigned to a user? A. US_AUTH B. US_USER C. US_PROF D. US_PASS",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/sap/view/98478-exam-c-secauth-20-topic-1-question-24-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "TSEC10_1_EN_Col22 page 267 that is correct. Answer should be US_USER upvoted 3 times Submit Cancel",
+      "correct answer should be US_USER for changes to authorizations assigned to users upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "Which of the following authorization objects would be required to allow back-end server access to a Web Dynpro application using the SAP Fiori Launchpad? A. S_TCODE B. S_START C. S_SERVICE D. S_PERSONAS",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/125638-exam-c-secauth-20-topic-2-question-34-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B S_SERVICE is not for WDA upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which of the following app-specific types of entities do users need to use SAP Fiori apps? (Choose two.) A. Authorizations B. Master Data C. UI D. Parameters",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/sap/view/100336-exam-c-secauth-20-topic-2-question-35-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "That is true A and C ( UI and Authorizations) Not UI and Parameters upvoted 1 time Submit Cancel",
+      "Correct UI and Authorizations TSEC10_2_EN_Col22 page 35 upvoted 2 times Submit Cancel",
+      "A and C are correct To use SAP Fiori apps, users need app-specific SAP Fiori user interface (UI) entities and authorizations. You use PFCG roles to assign these types of entities to users. upvoted 3 times Submit Cancel"
+    ]
   }
 ]
