@@ -1,0 +1,135 @@
+name: enrich-community-data
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours — picks next provider missing community data
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: "Force a specific provider slug (leave blank to auto-pick next)"
+        required: false
+        default: ""
+      exam:
+        description: "Single exam slug (optional)"
+        required: false
+        default: ""
+
+concurrency:
+  group: enrich-community-data
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Enrich community data
+        run: |
+          PROVIDER="${{ github.event.inputs.provider }}"
+          EXAM="${{ github.event.inputs.exam }}"
+
+          # Manual single-provider override
+          if [ -n "$PROVIDER" ]; then
+            echo "Enriching provider: $PROVIDER"
+            EXIT_CODE=0
+            if [ -n "$EXAM" ]; then
+              python enrich-community-data.py --provider "$PROVIDER" --exam "$EXAM" --commit || EXIT_CODE=$?
+            else
+              python enrich-community-data.py --provider "$PROVIDER" --commit || EXIT_CODE=$?
+            fi
+            if [ "$EXIT_CODE" -eq 2 ]; then
+              echo "Nothing to enrich for $PROVIDER${EXAM:+/$EXAM}"
+            elif [ "$EXIT_CODE" -ne 0 ]; then
+              exit "$EXIT_CODE"
+            fi
+            exit 0
+          fi
+
+          # Auto-pick: round-robin through providers.txt using a cursor file so
+          # each run continues where the previous one left off.
+          CURSOR_FILE=".community-data-cursor"
+
+          # Build provider list (strip comments and blank lines)
+          mapfile -t ALL_PROVIDERS < <(grep -v '^#' providers.txt | grep -v '^[[:space:]]*$')
+          N=${#ALL_PROVIDERS[@]}
+
+          # Find start index from cursor
+          START_IDX=0
+          if [ -f "$CURSOR_FILE" ]; then
+            CURSOR=$(cat "$CURSOR_FILE")
+            for i in "${!ALL_PROVIDERS[@]}"; do
+              if [ "${ALL_PROVIDERS[$i]}" = "$CURSOR" ]; then
+                START_IDX=$(( (i + 1) % N ))
+                break
+              fi
+            done
+          fi
+
+          echo "Starting from provider index $START_IDX (${ALL_PROVIDERS[$START_IDX]}), $N total"
+
+          COUNT=0
+          START=$(date +%s)
+          MAX_SECONDS=$((5 * 60 * 60))
+          LAST_PROVIDER=""
+
+          for (( offset=0; offset<N; offset++ )); do
+            IDX=$(( (START_IDX + offset) % N ))
+            provider="${ALL_PROVIDERS[$IDX]}"
+
+            ELAPSED=$(( $(date +%s) - START ))
+            if [ "$ELAPSED" -ge "$MAX_SECONDS" ]; then
+              echo "Time limit reached (${ELAPSED}s elapsed), stopping after $COUNT providers."
+              break
+            fi
+
+            echo "Checking provider: $provider"
+            EXIT_CODE=0
+            timeout 5400 python enrich-community-data.py --provider "$provider" --commit || EXIT_CODE=$?
+            LAST_PROVIDER="$provider"
+
+            if [ "$EXIT_CODE" -eq 0 ]; then
+              COUNT=$((COUNT + 1))
+              if [ "$COUNT" -ge 2 ]; then
+                break
+              fi
+              echo "Cooling down 90s before next provider..."
+              sleep 90
+            elif [ "$EXIT_CODE" -eq 124 ]; then
+              echo "Timed out enriching $provider (>90min) — partial progress committed, will resume next cycle"
+            elif [ "$EXIT_CODE" -ne 2 ]; then
+              echo "Enrich failed for $provider (exit $EXIT_CODE)"
+            fi
+          done
+
+          # Persist cursor so the next run starts after the last provider we touched
+          if [ -n "$LAST_PROVIDER" ]; then
+            echo "$LAST_PROVIDER" > "$CURSOR_FILE"
+            git add "$CURSOR_FILE"
+            if ! git diff --staged --quiet; then
+              git commit -m "chore: community-data cursor → $LAST_PROVIDER"
+              git pull --rebase origin main
+              git push
+            fi
+          fi
+
+          if [ "$COUNT" -eq 0 ]; then
+            echo "All checked providers already enriched."
+          fi
