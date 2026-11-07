@@ -4,13 +4,26 @@
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/ibm/view/72753-exam-c2090-320-topic-1-question-1-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Segsize 64 means it's a segmented table space, so Db2 has the option of escalating to table rather than tablespace. Documentation is not clear whether this will ALWAYS be the case. upvoted 1 time Submit Cancel",
+      "It would be B Table lock..from Row and Page it will escalate to Table level for non-part tablespaces upvoted 1 time Submit Cancel",
+      "Believe escalation is always to TS, even if you have the old TS with many tables in it, hence the recommendation to LOCK TABLE if you anticipate need to use many locks. Can be granular to PARTITION (not the case in this example) Rgds upvoted 1 time Submit Cancel",
+      "For non-partitioned table it will Table Lock. Answer is B. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which privilege will user smith be able to grant to another user on table emp when the following SQL is executed? GRANT ALL ON TABLE emp TO smith WITH GRANT OPTION; A. BIND B. REORG C. TRIGGER D. EXECUTE",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/ibm/view/74065-exam-c2090-320-topic-1-question-3-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "It would be Trigger answer is C..BIND and Execute grants are for Plan and Reorg for Database upvoted 1 time Submit Cancel",
+      "REORG. You can't EXECUTE a table upvoted 1 time Submit Cancel"
+    ]
   }
 ]
