@@ -4,265 +4,546 @@
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/sap/view/99656-exam-c-hanatec-17-topic-1-question-1-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "HA200-SAP HANA 2.0 SPS06 - Installation and Administration. You can use each statement separately, but you can use mini checks to execute the most important statements with one call. Use the version that best fits your system environment, so that the most comprehensive set of checks is executed. It is important to know your SAP HANA version number. The embedded statistics server assists you with monitoring the SAP HANA system, collects historical performance data, and warns you of system alerts (such as resource exhaustion). The historical data is stored in the _SYS_STATISTICS schema. upvoted 1 time Submit Cancel",
+      "Selected Answer: D In SAP HANA mini-checks, the schema that provides performance data and alert details for review is the _SYS_STATISTICS schema. This schema contains the statistics server views that provide performance data and alert details for various aspects of the HANA system, such as memory usage, CPU utilization, disk I/O, and more. The views in this schema can be used to monitor the system's performance and identify potential issues that may require further investigation. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which system privilege do you need to redistribute tables across the hosts in a scale-out system? A. WORKLOAD ADMIN B. RESOURCE ADMIN C. DATA ADMIN D. OPTIMIZER ADMIN",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/99657-exam-c-hanatec-17-topic-1-question-2-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "HA201-SAP HANA 2.0 SPS06 - High Availability and Disaster Tolerance Administration To redistribute tables across the hosts in your system, you must have the system privilege RESOURCE ADMIN and at least the object privilege ALTER for all schemas involved. As redistributing data is a critical operation, it is also recommended that you have saved the current distribution so you can restore it if necessary. upvoted 1 time Submit Cancel",
+      "Selected Answer: B B. ALTER DISTRIBUTION privilege is required, and it falls under the RESOURCE ADMIN system privilege. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which preparation tasks do you need to perform before starting the copy and move process for a tenant database? (Choose two.) A. Create credentials for authenticated access to the source system. B. Configure a secure connection from target system to source system. C. Back up the source tenant database. D. Create a tenant on the target system identical to the source system.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/99034-exam-c-hanatec-17-topic-1-question-3-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 3,
+      "C": 3
+    },
+    "discussion": [
+      "Hi Why &quot;Create credentials for authenticated access to the source system&quot; couldn't be an option? upvoted 1 time Submit Cancel",
+      "Selected Answer: BC HA201-SAP HANA 2.0 SPS06 - High Availability and Disaster Tolerance Administration. Copy and Move Process The process of copying or moving a tenant database is driven entirely by the target system.1. To prepare the copy and move process, the system administrator performs the following tasks: ●Verifies that TLS/SSL is enabled on internal communication channels. ●Opens communication from the target system to the source system by enabling source system services to listen on all network interfaces. ●Creates credentials for authenticated access to the source system. ●Configures a secure connection from the target system to source system. ●Backs up the source tenant database. upvoted 1 time Submit Cancel",
+      "Selected Answer: BC Correct Answers are B and C upvoted 1 time Submit Cancel",
+      "Selected Answer: BC Preparing to copy or move a tenant database: - Verify TLS/SSL configuration of Internal Communication Channels - Setup trust relationship between target and source system - Open communication from Target to Source system - Obtain key management configuration ID - Backup Tenant database upvoted 1 time Submit Cancel",
+      "Answer is A and C (Point number 4 and 6 from below link) https://help.sap.com/docs/SAP_HANA_PLATFORM/78209c1d3a9b41cd8624338e42a12bf6/c9d04987ff5c41bfb3006c62ccbc2a03.html?version=2.0.05 Although secure connection is also required but from the link and options A and C looks more relevant for this question with provided optons. upvoted 1 time Submit Cancel",
+      "The question is for copy and move process for a tenant database, the key is the word &quot;process&quot; your link is the Copy or Move a Tenant Database, not a process. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What cryptographic libraries are supported in SAP HANA by default? (Choose two.) A. OpenSSL B. Libgcrypt C. CommonCryptoLib D. wolfCrypt",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/sap/view/99661-exam-c-hanatec-17-topic-1-question-4-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 3,
+      "C": 2,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: AC HA200 SAP HANA 2.0 SPS06 - Installation and Administration SAP HANA supports the following cryptographic libraries:● CommonCryptoLib (default) CommonCryptoLib (libsapcrypto.so) is installed by default as part of the SAP HANA server installation at $DIR_EXECUTABLE.● OpenSSL The OpenSSL library is installed by default as part of the operating system installation. SAP CommonCryptoLib is the successor of SAPCRYPTOLIB and it is the default cryptographic library for SAP HANA. CommonCryptoLib is installed as part of the SAP HANA server installation at the default location for library lookup: /usr/sap/&lt;SID&gt;/SYS/exe/hdb/libsapcrypto.so. upvoted 1 time Submit Cancel",
+      "SAP HANA supports the following cryptographic libraries:● CommonCryptoLib (default) CommonCryptoLib (libsapcrypto.so) is installed by default as part of the SAP HANA server installation at $DIR_EXECUTABLE.● OpenSSL The OpenSSL library is installed by default as part of the operating system installation. SAP CommonCryptoLib is the successor of SAPCRYPTOLIB and it is the default cryptographic library for SAP HANA. CommonCryptoLib is installed as part of the SAP HANA server installation at the default location for library lookup: /usr/sap/&lt;SID&gt;/SYS/exe/hdb/libsapcrypto.so. upvoted 2 times Submit Cancel",
+      "CommonCryptoLib and OpenSSL are installed by DEFAULT. Thats what is asked upvoted 1 time Submit Cancel",
+      "Selected Answer: AC SAP HANA supports the following Cryptographic libraries - CommonCryptoLib - installed by default as part of HANA server installation at $DIR_EXECUTABLE - OpenSSL - installed by default as part of the OS installation upvoted 2 times Submit Cancel",
+      "Selected Answer: AB A. OpenSSL: SAP HANA supports OpenSSL, which is a widely used open-source library for cryptography that provides support for several encryption algorithms, including AES, RSA, and SHA. B. Libgcrypt: SAP HANA also supports Libgcrypt, which is a free and open-source library that provides cryptographic functions such as encryption, decryption, and key generation. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which prerequisites of the primary system and the secondary system are mandatory before you can activate SAP HANA system replication with secondary time travel? (Choose two.) A. Both systems are located in the same data center. B. Both must have the same SAP HANA version. C. An explicit read-only connection between both systems must be available. D. The CPU architecture must be identical.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/99662-exam-c-hanatec-17-topic-1-question-5-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BC B. Both systems must have the same SAP HANA version: The primary and secondary systems must have the same version of SAP HANA installed. Different versions of SAP HANA are not compatible with each other. C. An explicit read-only connection between both systems must be available: This is necessary to replicate data from the primary system to the secondary system upvoted 1 time Submit Cancel",
+      "Hi schalke04, choice C seems incorrect because should Configure LISTENINTERFACE and ALLOWED_SENDER to secure the System Replication communication between the systems NOT read-only connection. Answer is BD upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What do you need in a multitenant database container (MDC) system to run queries across tenant databases? (Choose two.) A. The user in the source system must be associated with a user in the target database. B. The bidirectional communication channel must be whitelisted. C. The user in the source system must have sufficient privileges in the target database. D. The cross-tenant database communication must be explicitly activated.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/sap/view/99663-exam-c-hanatec-17-topic-1-question-6-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "D": 2,
+      "C": 1
+    },
+    "discussion": [
+      "In HA200 page 465 Answer is A and D upvoted 1 time Submit Cancel",
+      "Selected Answer: AD HA200 SAP HANA 2.0 SPS06 - Installation and Administration. Activation of Cross-Tenant Database Access To access a cross-tenant database, the following must be activated: ●Turn on cross-tenant database communication (run this from SYSTEM database only) ●A user in the target database can only be associated with one user in the source database. upvoted 1 time Submit Cancel",
+      "Answer is A and D. A user in one database can run a query that references objects in another database, if the user is associated with a sufficiently privileged user in the remote database. This associated user is called a remote identity. This is the user who executes the query (or part of the query) in the remote database, and therefore the user whose authorization is checked. Cross-database access is not enabled by default and must be configured before such user mappings can be set up. upvoted 1 time Submit Cancel",
+      "Selected Answer: CD C. The user in the source system must have sufficient privileges in the target database. D. The cross-tenant database communication must be explicitly activated. To run queries across tenant databases in a multitenant database container (MDC) system, the user in the source system must have sufficient privileges in the target database. The MDC system must allow cross-tenant database communication, which is typically explicitly activated through configuration settings or other means. It is not necessary for the user in the source system to be associated with a user in the target database or for the bidirectional communication channel to be whitelisted upvoted 1 time Submit Cancel",
+      "Answer is A and D, the user in the source system must be associated with a user in the target database. The association is Unidirectional and only the SELECT privilege of the target database user are considered. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which system usage types are automatically assigned to tiles in the SAP HANA cockpit? (Choose three.) A. Quality assurance B. Development C. Production D. Custom E. Test",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/99666-exam-c-hanatec-17-topic-1-question-7-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2,
+      "C": 2,
+      "E": 2
+    },
+    "discussion": [
+      "Selected Answer: BCE HA200-SAP HANA 2.0 SPS06 - Installation and Administration. ●A registered database can belong to a Usage Type group. The usage type groups Development, Test, and Production are automatically created when the database is assigned a usage type of Production, Test, or Development. The usage type is assigned during the installation of an SAP HANA database, but can be changed after the installation. ●Usage Type – Provides the usage type that was assigned to the database during installation. The available options are Production, Development, Test and Custom. It is possible to change the usage type after the installation by setting the parameter global.ini → system_information → usage to one of the above values. upvoted 1 time Submit Cancel",
+      "Selected Answer: BCE https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/9b4ffbb944174a428f88a34288a95c0d.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which connection type is used by default for restricted users? A. JDBC B. ODBC C. HTTP/S D. OLEDB",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/sap/view/99667-exam-c-hanatec-17-topic-1-question-8-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: C HA200 SAP HANA 2.0 SPS06 - Installation and Administration. Limitations of Restricted Users Compared to standard database users, restricted users are initially limited in the following ways: ●They cannot create objects in the database because they are not authorized to create objects in their own database schema. ●They cannot view any data in the database because they are not granted (and cannot be granted) the standard PUBLIC role. ●They are only able to connect to the database using HTTP/HTTPS. To enable a restricted user to use an application, grant the required application-specific roles. Initially, restricted users can only connect to the database using HTTP or HTTPS. upvoted 1 time Submit Cancel",
+      "Compared to standard database users, restricted users are initially limited in the following ways: ●They cannot create objects in the database because they are not authorized to create objects in their own database schema. ●They cannot view any data in the database because they are not granted (and cannot be granted) the standard PUBLIC role. ●They are only able to connect to the database using HTTP/HTTPS. upvoted 1 time Submit Cancel",
+      "Selected Answer: C https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/48db23cbf5934321b7a9545154e1f75c.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which actions are performed during the database migration option (DMO) procedure when you select the ‘Do not compare table contents’ option? (Choose two.) A. The clustered tables are declustered. B. A check sum is generated every 10000 rows. C. A row count is executed for the migrated tables. D. The content comparison is performed for repository tables.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/sap/view/99668-exam-c-hanatec-17-topic-1-question-9-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: CD https://help.sap.com/doc/38301960cfe4484587f9cedb8c6a740f/dmosum20.14/en-US/dmo_of_sum2_to_hana.pdf upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "How are user group administrators and user groups related? (Choose two.) A. Only one user group per user group administrator B. Multiple user groups per user group administrator C. Multiple user group administrators per user group D. Only one user group administrator per user group",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/117561-exam-c-hanatec-17-topic-1-question-10-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BC HA200-SAP HANA 2.0 SPS06 - Installation and Administration. The USERGROUP OPERATOR privilege authorizes a user to change the settings for a user group, and to add and remove users to/from a user group. Users with the USERGROUP OPERATOR privilege can also create and drop users, but only within the user group on which they have the USERGROUP OPERATOR privilege (CREATE USER &lt;user_name&gt; SET USERGROUP &lt;usergroup_name&gt;). A user can have the USERGROUP OPERATOR privilege on more than one user group, and a user group can have more than one user with the USERGROUP OPERATOR privilege on it. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which tasks can you perform when using the SAP HANA database lifecycle manager (HDBLCM) from the SAP HANA installation media? (Choose two.) A. Rename the SAP HANA database system. B. Extract the SAP HANA database system components. C. Uninstall the SAP HANA database system and its components. D. Update the SAP HANA database system and its components.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/sap/view/100253-exam-c-hanatec-17-topic-1-question-11-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "D": 2,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BD HA200-SAP HANA 2.0 SPS06 - Installation and Administration. There are two versions of the SAP HANA lifecycle manager tools: the HDBLCM located on the installation media, and the resident HDBLCM embedded in SAP HANA database. Both tools are required and are used to perform different administrative tasks. The HDBLCM located on the SAP HANA installation media installs and updates an SAP HANA database and its core components. No additional administrative tasks are possible. The resident HDBLCM performs administrative tasks for the database where it’s embedded. The resident HDBLCM also installs or updates additional SAP HANA components and can update the SAP HANA database executable files. upvoted 1 time Submit Cancel",
+      "Selected Answer: CD https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/5c63f1a2e724480194e48937595c7446.html upvoted 1 time Submit Cancel",
+      "Answer is B and D, option C is only available via the Resident HDBLCM upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which tools are integrated into the SAP HANA cockpit? (Choose three.) A. HDBAdmin B. HANASitter C. SQL Analyzer D. SQL Console E. Database Explorer",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/sap/view/117563-exam-c-hanatec-17-topic-1-question-12-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "D": 1,
+      "E": 1
+    },
+    "discussion": [
+      "Selected Answer: CDE HA200-SAP HANA 2.0 SPS06 - Installation and Administration. The cockpit also integrates the SAP HANA database explorer and the SAP HANA SQL analyzer. The database explorer allows you to query information about the database and view information about catalog objects, while the SQL analyzer helps you to understand and analyze the execution plans of queries. Some SAP HANA database administration tasks cannot be performed by SAP HANA cockpit. Several of these administration tasks might require you to directly use SQL. In the SAP HANA Database Explorer, you can use the SQL Console to work with SQL. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which services can you stop in the SAP HANA cockpit from the SYSTEMDB Manage Services app? (Choose two.) A. Preprocessor B. Daemon C. Compile server D. Index server",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/sap/view/108914-exam-c-hanatec-17-topic-1-question-13-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "You can stop and start some of the SAP HANA database services. From the system database it is possible to stop the following services: ●Name server ●Preprocessor ●Web dispatcher ●Compile server upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which prerequisites must be fulfilled to rename a tenant database in the SAP HANA cockpit? (Choose two.) A. The on-disk tenant directory should be a mount point. B. The tenant database is not part of a move operation. C. The tenant database is stopped. D. The tenant database must be unloaded from memory.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/sap/view/108915-exam-c-hanatec-17-topic-1-question-15-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Prerequisites● You have the system privilege DATABASE ADMIN. ●The tenant database to be renamed is stopped. ●The database to be renamed is not part of a copy or move operation. ●The database to be renamed does not have system replication active. ●The database to be renamed does not have the SAP HANA dynamic tiering option. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which migration features are supported when using the database migration option (DMO) of Software Update Manager (SUM)? (Choose two.) A. A database migration from SAP HANA to SAP ASE can be performed. B. The SAP system can be AS Java-based if the release is 7.50 or higher. C. The primary application server (PAS) can be moved to a target system landscape. D. A database migration from Oracle to SAP MaxDB can be performed.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/sap/view/92598-exam-c-hanatec-17-topic-1-question-16-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: AC HA250-Database Migration Using DMO. ●DMO supports migration to SAP HANA DB and SAP ASE. MS SQL Server, IBM DB2, and SAP MaxDB are supported on request. ●DMO of SUM offers the move of the primary application server (PAS) from the source SAP system landscape to a target SAP system landscape during the DMO procedure. upvoted 1 time Submit Cancel",
+      "The answer should be A and C. SUM only support migration to Hana and ASE databases upvoted 2 times Submit Cancel",
+      "This is not correct. Migration to any other databases beside HANA and ASE is not supported by default. Need special approval from SAP. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "What additional action do you need to perform after you create a new tenant in an SAP HANA system replication configuration? A. Start the tenant database. B. Copy the tenant database. C. Back up the tenant database. D. Restart the secondary system.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/sap/view/117568-exam-c-hanatec-17-topic-1-question-17-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C HA201-SAP HANA 2.0 SPS06 - High Availability and Disaster Tolerance Administration. If a new tenant database is created in a configured SAP HANA system replication, it must be backed up to participate in the replication. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which tool shows you information about the list of tablets to be pre-loaded during an SAP HANA system start? A. HDBAdmin B. hdbcons C. sapcontrol D. RecoverStateChecker.py",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/117570-exam-c-hanatec-17-topic-1-question-18-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B HA200-SAP HANA 2.0 SPS06 - Installation and Administration. ●Show information about the list of tables to be preloaded (not the preload flag related columns): hdbcons &quot;tablepreload i&quot; ●Show full content (list of tables): hdbcons &quot;tablepreload c -f&quot; ●Write additional preload information to a virtual file in data volumes: hdbcons &quot;tablepreload w -s&quot; ●Show a full list of help: hdbcons help[Enter] ●Show hdbcons help on specific command: hdbcons &quot;help tablepreload&quot; upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which technology is utilized by the Performance Warehouse option in the transaction DBACOCKPIT? A. SAP Business Intelligence B. SAP Data Warehouse Cloud C. SAP Intelligent Query (SAP IQ) D. SAP Analytics Cloud",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/sap/view/117572-exam-c-hanatec-17-topic-1-question-19-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A HA200-SAP HANA 2.0 SPS06 - Installation and Administration. Monitor: Performance You can analyze performance data of your database system using the Performance Warehouse. As a prerequisite, it requires an SAP Solution Manager system with the Solution Manager Diagnostics (SMD) enabled. In the Performance Warehouse, all of the relevant performance indicators that are collected by the DBA Cockpit are stored in an SAP Business Intelligence (BI) system. This SAP BI system is used by the Solution Manager Diagnostics (SMD) back end of an SAP Solution Manager system. SMD already uses this SAP BI to store the workload data of SAP applications. To configure the extraction of data into the SMD BI, use the SMD Setup Wizard. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What are the merge methods that are triggered by the SAP HANA system? (Choose two.) A. Critical B. Forced C. Smart D. Auto",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/sap/view/117573-exam-c-hanatec-17-topic-1-question-20-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: AD HA200-SAP HANA 2.0 SPS06 - Installation and Administration. To keep the system stable, the database can trigger a critical merge. For example, when auto merge is disabled and no smart merge hints are sent to the system, the size of the delta storage can grow too large for a successful delta merge to occur. The system initiates a critical merge automatically when a certain threshold is passed. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which SAP HANA security tasks can be performed in combination with a Lightweight Directory Access Protocol (LDAP) server? (Choose two.) A. User creation B. User group assignment C. Password policy configuration D. Role assignment",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/sap/view/117627-exam-c-hanatec-17-topic-1-question-21-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: AD HA200-SAP HANA 2.0 SPS06 - Installation and Administration. LDAP Group Authentication and Authorization The Lightweight Directory Access Protocol (LDAP) is an application protocol for accessing directory services. If you use an LDAP-compliant identity management server to manage users and their access to resources, you can use an LDAP server to authenticate SAP HANA users and you can use LDAP group membership to authorize SAP HANA users. Automatic User Provisioning Based on LDAP SAP HANA can automatically create users if they already exist in an LDAP server. In combination with SAP HANA's ability to automatically assign roles to users based on LDAP groups, this can significantly reduce complexity and cost for maintaining users and authorizations in large system landscapes. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which prerequisites have to be fulfilled before you reset a database migration option (DMO) procedure? (Choose two.) A. A cleanup has already been triggered. B. The SUM folder needs to exist. C. The DMO procedure hasn’t reached downtime yet. D. The source database is up and running.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/117696-exam-c-hanatec-17-topic-1-question-22-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BC HA250-Database Migration Using DMO. Prerequisites for DMO Reset ●The SUM folder still exists ●The source database still exists ●No cleanup was triggered after the procedure finished Hint: A reset is possible even after productive use of an SAP system has started, but this will lead to a loss of data. SUM procedure can be reset at any time - even if it is completed. With DMO - otherwise only until donwtime begins. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which operating system process takes care of starting the SAP HANA database system services? A. hdbdaemon B. hdbrsutil C. sapstart D. sapstartsrv",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/sap/view/92601-exam-c-hanatec-17-topic-1-question-23-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "It's A I think. Sapstartsrv starts all necessary operating system services and the SAP HANA daemon. The SAP HANA daemon starts all required SAP HANA services, such as the name server, index server, and, for example, the preprocessor services. upvoted 1 time Submit Cancel",
+      "Selected Answer: D Answer is D: sapstartsrv https://help.sap.com/docs/SAP_NETWEAVER_731/fd538b7d985f4857bc514975844dea56/b3903925c34a45e28a2861b59c3c5623.html?locale=en-US&amp;version=7.31.25 The SAP start service runs on every computer where an instance of an SAP system is started. It is implemented as a service on Windows, and as a daemon on UNIX. The process is called sapstartsrv.exe on Windows, and sapstartsrv on UNIX platforms. upvoted 1 time Submit Cancel",
+      "The answer is C sapstart. As sapstartsrv service starts sapstart process which in turn starts hdbdaemon; which only responsibility is be a watch dog and monitor other services. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which types of backups can you use to copy an SAP HANA tenant database? (Choose two.) A. Delta database backup B. Data snapshot C. Full database backup D. Fallback snapshot",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/117704-exam-c-hanatec-17-topic-1-question-24-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BC HA200-SAP HANA 2.0 SPS06 - Installation and Administration. Copying a Database Using Backup and Recovery You can create a homogeneous copy of an SAP HANA database by using backups of that database to recover to the same system or a different system. A homogeneous database copy is a quick way to set up a cloned database, for example, for training, testing, or development. You can use backup and recovery to copy a system database or a tenant database within the same system or to a different system. You can create a copy of a database using a complete data backup or a data snapshot. Additionally, using delta backups (differential or incremental backups) and log backups allows you to copy the database to a specific point in time. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which file system locations do you need to specify when installing the SAP HANA multi-host database system using the default settings? (Choose two.) A. /usr/sap/<SID> B. /hana/shared C. /hana/log/<SID> D. /usr/sap/hostctrl",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/117706-exam-c-hanatec-17-topic-1-question-25-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BC HA200-SAP HANA 2.0 SPS06 - Installation and Administration. The prerequisite for creating a multi-host system is that the shared file systems for the data files and log files are configured so that they are present and mounted on all hosts, including the primary host. The suggested locations for the file systems are as follows: ●/hana/shared ●/hana/data/&lt;sid&gt; ●/hana/log/&lt;sid&gt; upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which rules should you consider when creating a table distribution plan for SAP Business Suite powered by SAP HANA to get the best possible results? (Choose two.) A. Keep all partitions on different hosts. B. Keep the number of partitions per table high. C. Keep the number of key columns low. D. Keep the number of partitioned tables low.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/sap/view/117707-exam-c-hanatec-17-topic-1-question-26-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: CD HA201-SAP HANA 2.0 SPS06 - High Availability and Disaster Tolerance Administration. Best Practices for Table Partitioning To create an optimal partitioning plan, you should try to follow the table partitioning best practices: ●Keep the number of partitioned tables low ●Keep the number of partitions per table low ●Keep the number of key columns low ●For SAP Business Suite on HANA, keep all partitions on same host ●Repartitioning rules ●Avoid unique constraints upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which features do you need to activate before you can analyze the memory usage of running SQL statements? (Choose two.) A. Memory tracking B. In-memory tracing C. Statement memory limit D. Tracking",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/sap/view/99044-exam-c-hanatec-17-topic-1-question-27-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: AD HA215-SAP HANA 2.0 SPS06 - Using Monitoring and Performance Tools. Analyzing SQL Statements Use these views to analyze the performance of SQL statements: ●M_ACTIVE_STATEMENTS ●M_PREPARED_STATEMENTS ●M_EXPENSIVE_STATEMENTS (enable_tracking and memory_tracking must first be enabled in the global.ini file for this view) To be able to set memory limits for SQL statements, enable the following parameters: ●In the global.ini file, in the resource_tracking section: -enable_tracking = on -memory_tracking = on Use the Monitor Statements page to analyze the current most critical statements running in the database. Analyzing the current most critical statements running in the SAP HANA database can help you identify the root cause of poor performance, CPU bottlenecks, or Out of Memory situations. Enabling memory tracking allows you to monitor the amount of memory used by single statement executions. upvoted 1 time Submit Cancel",
+      "The option D should be &quot;Enable Tracking&quot; upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which system privilege must you have to restrict features for tenant databases in the SAP HANA cockpit? A. DATABASE ADMIN B. WORKLOAD ADMIN C. INIFILE ADMIN D. RESOURCE ADMIN",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/sap/view/117710-exam-c-hanatec-17-topic-1-question-28-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C HA200-SAP HANA 2.0 SPS06 - Installation and Administration Note: To disable features on a tenant database you need the INIFILE ADMIN system privilege. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which tool do you use to check that the actual size of the backup file is the same as the size recorded in the backup file header? A. hdbbackupcheck B. hdbbackupdiag C. hdbbackint D. hdbrecovercheck",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/100626-exam-c-hanatec-17-topic-1-question-29-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 3
+    },
+    "discussion": [
+      "Selected Answer: B Correct answer upvoted 1 time Submit Cancel",
+      "correct upvoted 1 time Submit Cancel",
+      "Selected Answer: B HA200-SAP HANA 2.0 SPS06 - Installation and Administration Checking the Backups Required for a Recovery The hdbbackupdiag tool determines which backups are required to complete a recovery in a specified point in time. It also checks if these backups are available and if they can be accessed. With hdbbackupdiag, you can verify: ●For file-based backups: -The backup is available in the file system, either at the location to which it was written or at a location specified by a search path. -The current operating system user has read authorization for the file. -The actual size of the backup file is the same as the size recorded in the backup file header. -The backup ID is identical to the backup ID specified in the backup catalog. ●For backups created using a third-party tool: The backup is available in the third-party tool. upvoted 1 time Submit Cancel",
+      "Answer is B https://help.sap.com/docs/SAP_HANA_ONE/1c837b3899834ddcbae140cc3e7c7bdd/f60cd67cd71846a9ae3da198a78f7851.html upvoted 1 time Submit Cancel",
+      "Selected Answer: B With hdbbackupdiag, you can verify: ●For file-based backups: -The backup is available in the file system, either at the location to which it was written or at a location specified by a search path. -The current operating system user has read authorization for the file.- The actual size of the backup file is the same as the size recorded in the backup file header. -The backup ID is identical to the backup ID specified in the backup catalog upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "In which situations can you resume the failed recovery of your productive SAP HANA tenant database? (Choose two.) A. An aborted recovery of the configuration files B. An aborted recovery of a delta data backup C. An aborted recovery of a log backup D. An aborted recovery of a complete data backup",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/117715-exam-c-hanatec-17-topic-1-question-30-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BC Resume Recovery After Error Data recovery takes up most of the time of a recovery. If a recovery fails during delta data backup recovery or during log replay, SAP HANA can resume the recovery, thus shortening the outage significantly. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which technology is used to install the SAP Landscape Management tool? A. SAP NetWeaver Application Server for ABAP B. SAP NetWeaver Application Server for Java C. SAP HANA XS advanced runtime D. SAP Fiori launchpad",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/117719-exam-c-hanatec-17-topic-1-question-32-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B HA200-SAP HANA 2.0 SPS06 - Installation and Administration SAP Landscape Management is an add-on to SAP NetWeaver 7.5, installed as an application with the SAP Application Server Java (SAP AS Java). It uses the underlying SAP AS Java technology. Therefore, to monitor and manage the SAP Landscape Management system, you use the monitoring and managing mechanisms of SAP AS Java. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "In which scenario do you need SAP expert sizing? (Choose two.) A. When migrating existing SAP ERP systems from AnyDB to run on SAP HANA B. Consolidating multiple SAP ERP source systems into one SAP ERP system on SAP HANA C. Carving out SAP ERP functionality from the source system to the SAP ERP system on SAP HANA D. Customers is new to SAP ERP applications and the SAP HANA database system.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/100628-exam-c-hanatec-17-topic-1-question-33-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BC An SAP expert sizing is required in the following scenarios: ●Consolidating multiple ERP source systems into one ERP system on SAP HANA. ●Carving out ERP functionality from the source system to the ERP on SAP HANA system. ●Migrating a high-volume legacy system to SAP HANA. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is the correct sequence of the following four steps when you restart the SAP HANA database system? A. 1. Aborted transactions are rolled back. 2. Open transactions are recovered. 3. Row tables are loaded into memory. 4. Column tables are loaded. B. 1. Row tables are loaded into memory. 2. Open transactions are recovered. 3. Aborted transactions are rolled back. 4. Column tables are loaded. C. 1. Row tables are loaded into memory. 2. Column tables are loaded. 3. Open transactions are recovered. 4. Aborted transactions are rolled back. D. 1. Aborted transactions are rolled back. 2. Row tables are loaded into memory. 3. Open transactions are recovered. 4. Column tables are loaded.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/sap/view/117838-exam-c-hanatec-17-topic-1-question-34-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "B is the correct answer upvoted 1 time Submit Cancel",
+      "Selected Answer: B 2.0 SPS06 - Installation and Administration When you restart an SAP HANA system, the following activities are executed by the restart agent of the persistence layer: 1.The data volume of each service is accessed in order to read and load the restart record. 2.The list of open transactions is read into memory. 3.The row tables are loaded into memory. 4.Open transactions are processed using the redo log. 5.Aborted transactions are determined and rolled back. 6.A savepoint is performed with the restored consistent state of the database. 7.Column tables, which are marked for preload, and their attributes are asynchronously loaded in the background, if they have not already been loaded as part of log replay. 8.Column tables that were loaded before restart, and their attributes, start reloading asynchronously in the background, if they have not already been loaded as part of log replay or because they are marked for preload. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "You are running a database migration option (DMO) procedure using in-place migration. Where are the reading and writing R3load processes located during the actual migration? A. All of the reading and writing processes run on the target database host. B. The reading processes run on the source database host; the writing processes run on the target database host. C. The reading processes run on the primary application server (PAS) host; the writing processes run on the target database host. D. All of the reading and writing processes run on the primary application server (PAS) host.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/sap/view/120077-exam-c-hanatec-17-topic-1-question-35-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D For the migration of the application data, two R3load processes are running as a pair. The first R3load of the shadow kernel exports the data from the source database, and the second R3load process imports the data into the target database. Both R3load processes are running on the PAS host. The DMO configuration includes configuring the number of R3load pair processes to run in parallel. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "How can you ensure that a consistent database status is saved using data snapshots? A. Trigger a savepoint. B. Execute the hdbbackupdiag tool. C. Create an internal database snapshot. D. Create a fallback snapshot.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/sap/view/92607-exam-c-hanatec-17-topic-1-question-36-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 3
+    },
+    "discussion": [
+      "Selected Answer: C From HA200: To create a data snapshot, first create an internal database snapshot. This internal database snapshot provides a view of the database at the point in time that it was started. upvoted 1 time Submit Cancel",
+      "Selected Answer: C Answer is C upvoted 1 time Submit Cancel",
+      "Selected Answer: C The internal database snapshot ensures the consistent state of the data snapshot. This is particularly important if multiple storage volume groups are involved. upvoted 1 time Submit Cancel",
+      "Answer is C upvoted 1 time Submit Cancel",
+      "Answer is actually C. Please check admin guide for Note; &quot;To ensure its consistent state, the data snapshot relies on the previously created internal database snapshot. If the database or a database service is restarted, the internal database snapshot is lost.&quot; upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "You are registering an SAP HANA database resource using SAP HANA cockpit manager. Which privileges are automatically assigned when you initially create the COCKPIT_MONITOR technical user? (Choose two.) A. CATALOG READ B. SELECT on the _SYS_TELEMETRY schema C. SELECT on the _SYS_STATISTICS schema D. DATABASE ADMIN",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/sap/view/95445-exam-c-hanatec-17-topic-1-question-42-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "CATALOG READ and SYSTEM STATS upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which prerequisites must be fulfilled before adding hosts to an SAP HANA scale-out system? (Choose two.) A. The additional host is placed in a different data center. B. The SAP HANA database server is shut down C. The host has access to the installation directories. D. The SAP HANA system installation is on a shared file system.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/sap/view/95472-exam-c-hanatec-17-topic-1-question-47-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Before adding hosts to an SAP HANA scale-out system, you need to ensure that the following prerequisites are fulfilled: The SAP HANA system has been installed with its server software on a shared file system (export options rw, no_root_squash). The host which is to be added has access to the installation directories &lt;sapmnt&gt; and &lt;sapmnt&gt;/&lt;SID&gt;. The latest supported version of SAP Host Agent is installed on the host which is to be added upvoted 1 time Submit Cancel",
+      "Should be C and D, upvoted 1 time Submit Cancel",
+      "it should be C and D upvoted 2 times Submit Cancel",
+      "it should not be on different data center. this choice is wrong. upvoted 1 time Submit Cancel",
+      "Please check answer again upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "When performing a standard SAP HANA database system installation, which users will be created or validated during that installation? (Choose two.) A. SYSTEM B. sapadm C. SAP<SID> D. <sid>crypt",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/sap/view/100919-exam-c-hanatec-17-topic-1-question-53-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: AB &lt;sid&gt;adm, sapadm, SYSTEM (SYSTEMDB and TENANTDB) users are part of default installation upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which database objects can you manipulate if you have the object privilege activity ALL PRIVILEGES? (Choose two.) A. Views B. Procedures C. Functions D. Schemas",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/sap/view/95473-exam-c-hanatec-17-topic-1-question-65-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: AD object privilege activity ALL PRIVILEGES applies to Schemas, Tables, and Views upvoted 2 times Submit Cancel"
+    ]
   }
 ]
