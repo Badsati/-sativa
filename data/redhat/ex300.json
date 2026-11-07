@@ -11,76 +11,110 @@
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/45349-exam-ex300-topic-1-question-7-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "There is a typo in the answer. Instead of 'rsx' replace it with the one in the question 'rsz'. Also if the arguments should be either space separate or comma separate. So the correct syntax should like this: alias qstat='/bin/ps -Ao pid,tt,user,fname,rsz' or alias qstat=&quot;/bin/ps -Ao 'pid tt user fname rsz'&quot; upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Cofigure SELINUX Modify the state of selinux to Enforcing mode Use VIM /etc/selinux",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/17761-exam-ex300-topic-2-question-1-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "on temporary basis it can try with #setenforce 1 upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Custom User Environment Create a custom command on system1 and system2 named as qstat, this custome command will execute the following commands: /bin/ps - Ao pid,tt,user,fname,rsz This command is valid for all users in the system",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/7148-exam-ex300-topic-2-question-3-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "echo &quot;alias qstat='ps -Ao pid,tt,user,fname,rsz'&quot; &gt;&gt; /etc/bashrc ; source /etc/bashrc upvoted 1 time Submit Cancel",
+      "alias qstat=/bin/ps -Ao pid,tt,user,fname,rsz =&gt; alias qstat='/bin/ps -Ao pid,tt,user,fname,rsz' upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Share directories via SMB Configure the SMB service on the system1 Your SMB server must be a member of the work group STAFF Share /common and share name must be common Only clients of domain11.example.com can access the common share Common must be able to browse User andy must be able to read the content of the share, if necessary, verfication code is redhat",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/28488-exam-ex300-topic-2-question-7-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "when relabeling a share with a selinux context label it is better to use semanage instead of chcon upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Configure Multi-User Mount Share the directory /devops through SMB on the systeml, as required: 1. Share name is devops 2. The shared directory devops just can be used by clients in domain11.example.com 3. The shared directory devop must be able to be browsed 4. User silene must can be able to access this share through read, access code is redhat 5. User akira must can be able to access this share through read and write, access code is redhat 6. This share permanently mount to system2. domain11.example.com the user /mnt/dev, make user silene as authentication any users can get temporary write permissions from akira",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/28489-exam-ex300-topic-2-question-8-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "when relabeling a share with a selinux context label it is better to use semanage instead of chcon upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Mount a NFS Share Mount a NFS share to system1.domain11.example.com on the system2, as required: 1. Mount the /public to the directory /mnt/nfsmount 2. Mount the /protected to the directory /mnt/nfssecure, in a security way, key download URL: http://host.domain11.example.com/materials/nfs_client.keytab 3. User deepak can creat files on /mnt/nfssecure/project 4. These file systemes automatically hang up when the system is started",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/12006-exam-ex300-topic-2-question-9-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "question 10 &amp; 11 are reversed. Question 11 should come before 10. You have to create the NFS share on system1 before you can mount it on to system2. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Configure NFS service Configure the NFS service on the system1, as required: 1. Share the directory /public in read only way, just can be accessed by systems in domain11.example.com at the same time 2. Share the directory /protected in rad and write way, Kerberos security encryption required, you can use the key provided by the following URL: http://host.domain11.example.com/materials/nfs_server.keytab 3. Directory /protected should contain the sub directory named project and deepak; 4. User deepak can access /protected/project in read and write ways",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/28487-exam-ex300-topic-2-question-10-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "when relabeling a share with a selinux context label it is better to use semanage instead of chcon upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Configure the Virtual Host Expand your web server on the system1, create a virtual host for site http://www.domain11.example.com Then Executes the following steps: 1. Setting the DocumentRoot to /var/www/virtual 2. From http://rhgls.domain11.example.com/materials/www.html 3. Download a file, rename as index.html, dont modify file index.html content 4. Put the file index.html under the directory DocumentRoot of Virtual Host 5. Ensure that user andy can create files under directory /var/www/virtual Note: original site http://systeml.domian11.example.com/ must still be able to be accessed, Name server domain11.example.com provide the domain name resolution for host name",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/12294-exam-ex300-topic-2-question-12-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "&lt;VirtualHost *:80&gt; ServerName www.example.com DocumentRoot /var/www/virtual &lt;/VirtualHost&gt; &lt;Directory &quot;/var/www/virtual&quot;&gt; AllowOverride none Require all granted &lt;/Directory&gt; upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Create a script to add users Create a script named /root/mkusers on the system1, this script can achieve to add local users for the system1, and user names of these users are all from a file which contains the usernames list, and meet the following requirements at the same time: 1. This script is required to provide a parameter; this parameter is the file which contains the usernames list 2. This script need provide the following message: Usage /root/mkusers if it does not provide a parameter, then exit and return the corresponding value 3. This script need provide the following message: Input file not found if it provides a name that does not exist, then exit and return the corresponding value 4. Create a user shell log into /bin/false 5. This script does not need to set password for users 6. You can get the usernames list from the following URL as a test: http://rhgls. domain11.example.com/materials/ userlist",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/27167-exam-ex300-topic-2-question-15-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "I wrote the script like this #! /bin/bash if [ -z &quot;$1&quot; ];then echo Usage:/root/mkusers elif [ ! -f &quot;$1&quot; ];then echo Input not found else for e in `cat $1`;do useradd $e -s /bin/false;done; fi upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "In accordance with the following requirements to deploy ssh login service: 1. harry belongs to example.com which can remote login your systems. 2. However, users of remote.test can not use ssh login to your machine.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/27918-exam-ex300-topic-2-question-19-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "echo sshd:.example.com &gt;&gt; /etc/hosts.allow echo sshd:.remote.test &gt;&gt; /etc/hosts.deny upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "According to the following requirements, deploying your ftp login rule: 1. Users in example.com domain must be able to login to your ftp server as an anonymous user. 2. But users outside the example.com domain are unable to login to your server",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/12817-exam-ex300-topic-2-question-21-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Should be allowed in hosts.allow file not .deny file upvoted 1 time Submit Cancel"
+    ]
   }
 ]
