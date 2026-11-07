@@ -4,42 +4,114 @@
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/31136-exam-ex200-topic-1-question-1-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "I wonder in which RHEL we will be tested for RHCSA exam as of April and feature of 2026? upvoted 1 time Submit Cancel",
+      "Please mark atI took the exam and I did it with nmtui but I got 0 in basic networks, according to me it was fine, I got ping, I connected to node 1 via ssh but I got 0, I didn't know why, is there anyone who has taken it twice that I want to take the second opportunity but I have doubts if the same exercises are included as the first opportunity.!!!!!! help least one of the answers or switch to a simple comment. upvoted 1 time Submit Cancel",
+      "exam environment is now RHEL 9? upvoted 1 time Submit Cancel",
+      "01 - nmtui ; very easy guys! upvoted 2 times Submit Cancel",
+      "nmcli connection modify eth0 ipv4.addresses 192.168.65.1/24 ipv4.gateway 192.168.115.1 ipv4.dns '8 8 8 8 8 8 4 4' ipv4.method static I have used the command to set my ip address and gateway. However, when i ping www.google.com, it says &quot;Destination Host Unreachable&quot;. Would you please explain whats wrong? Why am i getting this? Thank you very much. upvoted 1 time Submit Cancel",
+      "#cd /etc/sysconfig/network-scripts/ #ls #vi ifcfg-eth0 IPADDR=172.24.40.40 PREFIX=24 GATEWAY=172.24.40.1 DNS1=172.24.40.1 #hostnamectl set-hostname station.domain40.example.com upvoted 23 times Submit Cancel",
+      "hello all , in the exam there is two connections which connection we should edit ?the active one ( the first connection ) we modify the existing OR we edit the second connection ? please anyone can answer? https://community.learnlinux.tv/t/ex200-practice-questions/4361 upvoted 1 time Submit Cancel",
+      "exam environment is now RHEL 9? upvoted 1 time Submit Cancel",
+      "ifcfg format is deprecated for RCHSA 9. NetworkManager stored network profiles in /etc/NetworkManager/system-connections upvoted 1 time Submit Cancel",
+      "nmcli con reload afterwards and it works like charm ! upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Add 3 users: harry, natasha, tom. The requirements: The Additional group of the two users: harry, Natasha is the admin group. The user: tom's login shell should be non-interactive.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/86327-exam-ex200-topic-1-question-2-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "useradd -G wheel harry useradd -G wheel natasha useradd -s /sbin/nologin tom the question says they belong to the admin group ie wheel not to create a group called admin upvoted 1 time Submit Cancel",
+      "apart from the shell /sbin/nologin, which other is mostly use for user upvoted 1 time Submit Cancel",
+      "hello all , in the exam there is two connections which connection we should edit ?the active one ( the first connection ) we modify the existing OR we edit the second connection ? please anyone can answer? upvoted 3 times Submit Cancel",
+      "It has to be the active interface. One question: When you try the exam a second time, do you get the same questions? upvoted 1 time Submit Cancel",
+      "[root@servera ~]# groupadd admin [root@servera ~]# useradd harry [root@servera ~]# useradd natasha [root@servera ~]# useradd tom -s /sbin/nologin verify- commands [root@servera ~]# cat /etc/passwd [root@servera ~]# cat /etc/group or else #cat /etc/group | grep admin #cat /etc/passwd | grep tom upvoted 2 times Submit Cancel",
+      "#useradd harry #useradd natasha #useradd tom -s /sbin/nologin #groupadd admin #usermod -G admin harry #usermod -G admin natasha #cat /etc/group | grep admin - to verify #cat /etc/passwd | grep tom upvoted 4 times Submit Cancel",
+      "RHEL 9.1 [root@server9 ~]# [root@server9 ~]#groupadd admin [root@server9 ~]# [root@server9 ~]# useradd harry -G admin [root@server9 ~]# useradd natasha -G admin [root@server9 ~]# [root@server9 ~]# useradd -s /sbin/nologin tom [root@server9 ~]# upvoted 9 times Submit Cancel",
+      "it's all correct, I can't just understand if I have to read the question verbatim (but there is no admin group out of the box) or add them to the wheel group. upvoted 1 time Submit Cancel",
+      "Oops, answering my own question, capital -G does the append. upvoted 1 time Submit Cancel",
+      "The task says to add additional group admin, so shouldn't the command be: useradd -aG admin harry upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a catalog under /home named admins. Its respective group is requested to be the admin group. The group users could read and write, while other users are not allowed to access it. The files created by users from the same group should also be the admin group.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/31147-exam-ex200-topic-1-question-3-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "# Create the directory mkdir /home/admins # Change the owner of the directory to root sudo chown root: /home/admins # Change the group of the directory to admin sudo chgrp admin /home/admins # Set the permissions so that the owner and the group can read and write, # but others cannot access it sudo chmod 770 /home/admins # Set the group ID on the directory so that files created within it # inherit the group of the directory (admin) rather than the group of the user that created the file sudo chmod g+s /home/admins upvoted 2 times Submit Cancel",
+      "#mkdir -p /home/admins #chgrp admin /home/admins #chmod 770 /home/admins - 7 is for max permission for dir and 6 is for files #chmod g+s /home/admins #su - harry #touch /home/admins/testfile #ls-ltr /home/admins/ - to verify upvoted 6 times Submit Cancel",
+      "mkdir -p /home/admins chown -R :admin /home/admins chmod 2070 /home/admins touch /home/admins/office.txt ll /home/admins Please Give me your views on this... upvoted 1 time Submit Cancel",
+      "/home actualy exist so that you don't neet put -p upvoted 1 time Submit Cancel",
+      "Without granting x permissions, group users will not be able to access the folder so it should be chmod 770 /home/admins upvoted 1 time Submit Cancel",
+      "Hi can you give me some details about redhat upvoted 1 time Submit Cancel",
+      "your first question's answer is same. 2 is equivalent of g+s upvoted 1 time Submit Cancel",
+      "I figured out the answer to my second question about g+s. The &quot;s&quot; (special permissions) is necessary so that files _created_ by users from the `admin` group are also _owned_ by the `admin` group. upvoted 1 time Submit Cancel",
+      "your first question's answer is same. 2 is equivalent of g+s upvoted 1 time Submit Cancel",
+      "@cloudyhr Why do you have 2770 instead of just 770? And why is g+s necessary? upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure a task: plan to run echo hello command at 14:23 every day.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/30994-exam-ex200-topic-1-question-4-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "# crontab -e 23 14 * * * echo &quot;hello&quot; # systemctl restart crond # crontab -l upvoted 3 times Submit Cancel",
+      "vim /etc/crontab 23 14 * * * echo &quot;hello &quot; upvoted 2 times Submit Cancel",
+      "crontab -e min hr * * * /bin/echo &quot;hello&quot; crontab -l #to verify vi /etc/cron.deny #to stop a user from creating a cron job username #add the username in the file upvoted 1 time Submit Cancel",
+      "23 14 * * * echo &quot;hello&quot; can't display hello on terminal. should force echo &quot;hello&quot; &gt; /dev/pts/0(may different to your tty). I test on RockyLinux Rocky Linux 8.4 (Green Obsidian). Please correct if I am wrong. upvoted 1 time Submit Cancel",
+      "Question doesn't ask to echo on specific terminal, user could be log in to tty2 or pts/0. to make it simple, don't add more input. upvoted 1 time Submit Cancel",
+      "#crontab -e 23 14 * * * echo &quot;hello&quot; :wq! #crontab -l =&gt;to check the cronjob upvoted 2 times Submit Cancel",
+      "23 14 * * * user echo &quot;hello&quot; upvoted 1 time Submit Cancel",
+      "crontab -e &quot;open editor vi&quot; --&gt; key i insert text 23 14 * * * echo &quot;test&quot; save --&gt; esc :x upvoted 3 times Submit Cancel",
+      "crontab -u mary -e 23 14 * * * echo &quot;Hello World.&quot; upvoted 8 times Submit Cancel",
+      "there is no user for this question so no need to use -u and any user. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Find the files owned by harry, and copy it to catalog: /opt/dir",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/39698-exam-ex200-topic-1-question-5-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "mkdir /opt/dir; find / -type f -user harry -exec cp -p '{ }' /opt/dir \\; upvoted 1 time Submit Cancel",
+      "why does it take time to process the command upvoted 1 time Submit Cancel",
+      "May be its looking the entire '/' partition which might take time. upvoted 1 time Submit Cancel",
+      "add -rf to the exec command upvoted 1 time Submit Cancel",
+      "# cd /opt/ # mkdir dir # find / -user harry -type f -exec cp -rfp {} /opt/dir/ \\; upvoted 2 times Submit Cancel",
+      "#mkdir /opt/dir #find / -type f -user Harry -exec cp {} -ar /opt/dir \\; upvoted 1 time Submit Cancel",
+      "sorry #mkdir /opt/dir #find / -type f -user Harry -exec cp -ar {} /opt/dir/ \\; upvoted 1 time Submit Cancel",
+      "#mkdir -p /opt/dir #find / -user harry -exec cp -rfp {} /opt/dir/ \\; #ls ltr /opt/dir - to verify if files appeared or not upvoted 1 time Submit Cancel",
+      "What is the answer please? Syntax in the example is not working. [root@station /]# find / -user tom -exec cp {} /opt/dir/ \\; cp: '/opt/dir/.bash_logout' and '/opt/dir/.bash_logout' are the same file cp: '/opt/dir/.bash_profile' and '/opt/dir/.bash_profile' are the same file cp: '/opt/dir/.bashrc' and '/opt/dir/.bashrc' are the same file cp: '/opt/dir/tom' and '/opt/dir/tom' are the same file cp: -r not specified; omitting directory '/home/tom' find: ‘/proc/8531/task/8531/fd/6’: No such file or directory find: ‘/proc/8531/task/8531/fdinfo/6’: No such file or directory find: ‘/proc/8531/fd/5’: No such file or directory find: ‘/proc/8531/fdinfo/5’: No such file or directory upvoted 1 time Submit Cancel",
+      "mkdir -p /opt/dir cp -nr --parents $(find / /home -xdev -user harry) /opt/dir upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Find the rows that contain abcde from file /etc/testfile, and write it to the file/tmp/testfile, and the sequence is requested as the same as /etc/testfile.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/40779-exam-ex200-topic-1-question-6-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "awk '/abcde/ {print}' /etc/testfile &gt;&gt; /tmp/testfile upvoted 1 time Submit Cancel",
+      "this is my error message after i executed the command grep abcde /etc/testfile &gt; /tmp/testfil &quot;grep : /etc/testfile: Is a directory&quot; upvoted 1 time Submit Cancel",
+      "#grep &quot;abcde&quot; /etc/testfile &gt; /tmp/testfile upvoted 1 time Submit Cancel",
+      "#touch /tmp/testfile - if file doesn't exists #grep abcde /etc/testfile &gt; /tmp/testfile #cat /tmp/testfile - to verfy upvoted 1 time Submit Cancel",
+      "There is no specified if the content of destination file can be replaced. So i suppose that it can.. in that case these commands are correct: cat /etc/testfile | grep abcde &gt; /tmp/testfile OR grep abcde /etc/testfile &gt; /tmp/testfile In case that content of destination file should not be replaced, following command will work: cat /etc/testfile | while read line; do echo $line | grep abcde | tee -a /tmp/testfile; done There is missing &quot;;&quot; in &quot;correct answer&quot; here, so the command from there will work if you will copy paste it but if you need to write it on your own, you must add the &quot;;&quot; or use bash script! upvoted 2 times Submit Cancel",
+      "grep -w &quot;abcde&quot; /etc/testfile &gt;&gt; /tmp/testfile upvoted 1 time Submit Cancel",
+      "grep ^abcde$ /etc/testfile &gt; /tmp/testfile upvoted 1 time Submit Cancel",
+      "grep abcde /etc/testfile | tee /tmp/testfile upvoted 1 time Submit Cancel",
+      "cat /etc/testfile | grep abcde &gt; /tmp/testfile OR grep abcde /etc/testfile &gt; /tmp/testfile upvoted 4 times Submit Cancel",
+      "cat /etc/tesfile | grep abcde &gt; /tmp/testfile upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a 2G swap partition which take effect automatically at boot-start, and it should not affect the original swap partition.",
@@ -53,711 +125,1423 @@
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/82221-exam-ex200-topic-1-question-8-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "With The answers I see, it makes the uid and the gid the same while the question asks only the uid to be changed. upvoted 1 time Submit Cancel",
+      "doesn't specify that the gid can't be changed, so it's fair game upvoted 1 time Submit Cancel",
+      "It doesn't mention the group ID upvoted 1 time Submit Cancel",
+      "#useradd -u 1234 alex #passwd alex - it will ask for new password for user alex #cat /etc/passwd | grep alex or id alex - to verify upvoted 3 times Submit Cancel",
+      "useradd -u 1234 -p alex111 -m alex upvoted 4 times Submit Cancel",
+      "WRONG: You cannot use -p as the password will be encrypted and no one would now it, it maybe useful for service accounts that are system managed - i like to use this and can save time if have multiple users =&gt; for user in alex; do useradd -m -G -s 1234 $user; echo &quot;alex111&quot; | passwd --stdin $user; done Remember: G to add to grp membership and you can add any other option and if more than one user with i.e. nologin and different passwd then just replace username at start but if all shares same passwd and group membership then saves you time as some questions require that upvoted 1 time Submit Cancel",
+      "#useradd alex -u 1234 #passwd alex #alex111 #alex111 upvoted 1 time Submit Cancel",
+      "one more '-' needed; echo alex111 | passwd --stdin alex upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Install a FTP server, and request to anonymous download from /var/ftp/pub catalog. (it needs you to configure yum direct to the already existing file server.)",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/36529-exam-ex200-topic-1-question-9-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Not valid for RHCSA 9 upvoted 11 times Submit Cancel",
+      "WHY FTP WAS NOT ADDED IN FIREWALLD? IS FIREWALL DISABLED ALREADY IN MACHINE? upvoted 2 times Submit Cancel",
+      "can i have some details about redhat? can you dm me in my insta page luvkhan123 plz upvoted 1 time Submit Cancel",
+      "Thts correct upvoted 2 times Submit Cancel",
+      "FTP stuff no longer on RHCSA from 2019 upvoted 23 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure a HTTP server, which can be accessed through http://station.domain40.example.com. Please download the released page from http://ip/dir/example.html.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/32929-exam-ex200-topic-1-question-10-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "This is Discontinued in rhcsa in 2021 upvoted 16 times Submit Cancel",
+      "dnf install -y httpd systemctl enable httpd cd /var/www/html wget http://ip/dir/example.html mv example.html index.html systemctl start httpd upvoted 14 times Submit Cancel",
+      "what to write instead of ip/dir here? or will this be provided in the exam? Im trying to do this locally but IDK how to solve this. upvoted 1 time Submit Cancel",
+      "I think it is a good idea to use #cp instead of #mv upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure the verification mode of your host account and the password as LDAP. And it can login successfully through ldapuser40. The password is set as \"password\". And the certificate can be downloaded from http://ip/dir/ldap.crt. After the user logs on the user has no host directory unless you configure the autofs in the following questions.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/30719-exam-ex200-topic-1-question-11-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "This question is not about LDAP, it is about how to configure Autofs. upvoted 2 times Submit Cancel",
+      "Confirmed - LDAP is removed from RHCSA9 upvoted 9 times Submit Cancel",
+      "This still works on Rhel 8? upvoted 2 times Submit Cancel",
+      "No LDAP questions are gone (thankfully) upvoted 7 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure autofs to make sure after login successfully, it has the home directory autofs, which is shared as /rhome/ldapuser40 at the ip: 172.24.40.10. and it also requires that, other ldap users can use the home directory normally.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/63715-exam-ex200-topic-1-question-12-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Forgot to add #useradd -M ldapuser40 (after showmount in 3rd line - this will create the user without home folder) upvoted 2 times Submit Cancel",
+      "yum install autofs showmount -e 172.24.40.10 ##Create user without a home directory useradd -M ldapuser40 ##Create file vi /etc/auto.master.d/autohome.autofs ##add this line /- /etc/auto.home ##create this file vi /etc/auto.home ##Add this line and save file /home/ldapuser40 -rw,sync 172.24.40.10:/rhome/ldapuser40 systemctl enable --now autofs.service upvoted 13 times Submit Cancel",
+      "Something like : dnf install autofs -y systemctl enable autofs vi /etc/auto.master /rhome/ldapuser40 /etc/auto.examtopic vi /etc/auto.examtopic ldapdir 172.24.40.10:/rhome/ldapuser40 systemctl start autofs mount upvoted 5 times Submit Cancel",
+      "I understood the task differently, like we need to mount server path to ldapuser40 folder under /home. Might be wrong, correct me if so. #dnf install -y autofs (installs required package) #systemctl enable --now autofs (enable service at next boot and start it immediately) #showmount -e 172.24.40.10 (to check existing NFS export on the server) #vim /etc/auto.master (edit master file) #/home /etc/test.mapfile (add this line, configures /home as main mount point where everything defined in test.mapfile will be mounted under) #vim /etc/test.mapfile (creates and starts editing the mapfile) #ldapuser40 172.24.40.10:/rhome/ldapuser40 (add this line, first part is the folder which will be created under /home defined previously in master, and contents will be retrieved from server path on the right). #systemctl reload autofs (reloads all autofs configs) upvoted 1 time Submit Cancel",
+      "Forgot to add #useradd -M ldapuser40 (after showmount in 3rd line - this will create the user without home folder) upvoted 2 times Submit Cancel",
+      "what do you means by ldapdir? should be ldapuser40 172.24.40.10:/rhome/ldapuser40 upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure the system synchronous as 172.24.40.10.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/35322-exam-ex200-topic-1-question-13-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Also, don't forget to modify the firewall-cmd settings: firewall-cmd --permanent --add-service=ntp firewall-cmd --reload firewall-cmd --list-all upvoted 2 times Submit Cancel",
+      "its required to tell the system to use the ntp configuration. upvoted 1 time Submit Cancel",
+      "For RHEL8: #chkconfig chronyd on #sudo vim /etc/chrony.conf allow 172.24.40.0/24 server 172.24.40.10 #sudo systemctl restart chronyd #sudo chronyc sources -v upvoted 6 times Submit Cancel",
+      "Do you guys this &quot;Configure the system synchronous as 172.24.40.10.&quot; This is a incomplete question statement? upvoted 2 times Submit Cancel",
+      "yum install chrony.x86_64 vi /etc/chrony.conf pool 172.24.40.10 iburst timedatectl status ##check if NTP service is not active timedatectl set-ntp true systemctl enable --now chronyd.service ##check status of chrony sync chronyc sources -v upvoted 4 times Submit Cancel",
+      "I never did that, what's use for? timedatectl set-ntp true usually $ sudo yum -y install chrony $ sudo vi /etc/chrony.conf server 192.168.25.3 $ systemctl restart chronyd $ chronyc sources upvoted 1 time Submit Cancel",
+      "its required to tell the system to use the ntp configuration. upvoted 1 time Submit Cancel",
+      "why we need to &quot;timedatectl set-ntp true&quot;? can we just strart chronyd alone? upvoted 1 time Submit Cancel",
+      "(i just wondering why need that... i think 'mariuszz' is right answer ) upvoted 1 time Submit Cancel",
+      "I never did that, what's use for? timedatectl set-ntp true usually $ sudo yum -y install chrony $ sudo vi /etc/chrony.conf server 192.168.25.3 $ systemctl restart chronyd $ chronyc sources upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Change the logical volume capacity named vo from 190M to 300M. and the size of the floating range should set between 280 and 320. (This logical volume has been mounted in advance.)",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/88285-exam-ex200-topic-1-question-14-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "What to do with the size of the floating range should set between 280 and 320 part? upvoted 1 time Submit Cancel",
+      "which of these commands fulfill floating range 280-320? upvoted 3 times Submit Cancel",
+      "these same examples can be practiced for free using 3 Rocky 9 VMs in Virtualbox. upvoted 2 times Submit Cancel",
+      "check details of lv #lvdisplay #lvextend -L 230MB /dev/(vg)/vo #resizes2fs , if using xfs (xfs_growfs) upvoted 1 time Submit Cancel",
+      "Could anyone share the way we should get on to Exam-Topics server to practice these questions ? Thanks... upvoted 1 time Submit Cancel",
+      "Download Red Hat for developers and create a test server in your machine using UTM, you can add virtual disk, even register for a developer subscription and use yum upvoted 1 time Submit Cancel",
+      "Install fedora on your machine and try them out there :) There is no test server that will check these answers for you upvoted 1 time Submit Cancel",
+      "lvextend -r -L +110M /dev/vg2/lv2 use -r to resize FS upvoted 10 times Submit Cancel",
+      "that is correct: You can use the -r option of the lvextend command to extend the logical volume and resize the underlying file system with a single command! upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a volume group, and set 16M as a extends. And divided a volume group containing 50 extends on volume group lv, make it as ext4 file system, and mounted automatically under /mnt/data.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/34846-exam-ex200-topic-1-question-15-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "I don't understand why you used 2 &quot;/dev/&quot; instead of just one. upvoted 1 time Submit Cancel",
+      "Assuming dev/sda1 exist #lsblk -t check #vgcreate -s 16M testvg /dev/sda1 #vgdisplay #lvcreate -l 50 -n testlv testvg #lvdisplay #mkfs.ext4 /dev/test/test1 #mkdir /mnt/data #vi /etc/fstab #/dev/test/test1 /mnt/data ext4 defaults 0 0 #mount -a #df -hT - to verify # upvoted 1 time Submit Cancel",
+      "lsblk -pfs (locate the 2 empty HDD, sdb sdc) sudo pvcreate /dev/sdb /dev/sdc (2 empty HDD) sudo vgcreate -s 16M vg01 /dev/sdb /dev/sdc sudo lvcreate -l 50 -n lv01 vg01 sudo mkfs.ext4 /dev/mapper/vg01-lv01 lsblk -pfs sudo mkdir -p /mnt/data sudo su echo &quot;UUID=XXXX-XXXX-XXXX /mnt/data ext4 defaults 0 0&quot; &gt;&gt; /etc/fstab mount -a upvoted 1 time Submit Cancel",
+      "what is the correct lvcreate -l 50 -n lv01 vg01 or lvcreate -n lv1 -L 50 vg1 upvoted 1 time Submit Cancel",
+      "the -L option to set the LV size in bytes or the -l option to set the LV size in extents upvoted 2 times Submit Cancel",
+      "assume that /dev/sdb2 and /dev/sdb3 were created (lsblk to verify it) #pvcreate /dev/sdb{2,3} #pvdisplay /dev/sdb* (verify) #vgcreate VG01 --physicalextentsize 16M /dev/sdb{2,3} #vgdisplay /dev/VG01 (verify) #lvcreate --extents 50 --name LV01 VG01 #lvdisplay /dev/VG01 (verify) #blkid /dev/VG01/LV01 (get UUID=XXX-XX-XX) #mkdir -p /mnt/data #echo &quot;UUID=XXX-XX-XX /mnt/data ext4 defaults 0 0&quot; | tee -a /etc/fstab #mount -a upvoted 3 times Submit Cancel",
+      "mkfs before getting UUID with help of blkid is missing. #lvdisplay /dev/VG01 (verify) #mkfs.ext4 /dev/VG01/LV0 #blkid /dev/VG01/LV01 (get UUID=XXX-XX-XX) upvoted 1 time Submit Cancel",
+      "why question statement are so confusing? upvoted 3 times Submit Cancel",
+      "Assuming /dev/sda1 and /dev/sda2 partitions already exist: # pvcreate /dev/sda1 /dev/sda2 # vgcreate -s 16M vg01 /dev/sda1 /dev/sda2 # lvcreate -l 50 -n lv01 vg01 # mkfs.ext4 /dev/vg01/lv01 # mkdir -p /mnt/data # blkid /dev/vg01/lv01 copy the UUID of /dev/vg01/lv01 in the output of that command. # vim /etc/fstab UUID=&quot;paste the UUID of /dev/vg01/lv01 here&quot; /mnt/data ext4 defaults 0 0 # mount -ahttps://www.examtopics.com/exams/redhat/ex200/view/3/# upvoted 14 times Submit Cancel",
+      "Where do we get UUID value? upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Upgrading the kernel as 2.6.36.7.1, and configure the system to Start the default kernel, keep the old kernel available.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/41640-exam-ex200-topic-1-question-16-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "this question is from RHCSA6. if you get this question in current RHCSA this will suffice: dnf install kernel - automatically keeps old kernel versions and updates default upvoted 1 time Submit Cancel",
+      "rpm -ivh [kernel.rpm] ###* change the default kernel: https://access.redhat.com/solutions/4326431 ###* fastest to my mind: grep ^id /boot/loader/entries/* ###* select the id of the installed kernel grub2-set-default &lt;ID&gt; upvoted 2 times Submit Cancel",
+      "It would be different story if a specific version will be mentioned and we need to make that as the first one. Then we need to use the options with grubby to set to defined kernel number. upvoted 1 time Submit Cancel",
+      "Is this still part of syllabus? upvoted 3 times Submit Cancel",
+      "# yum update kernel upvoted 8 times Submit Cancel",
+      "Although what Roldo97 mentioned above is detailed, this should also work because once new Kernel is installed it automatically becomes the first one to boot with. upvoted 1 time Submit Cancel",
+      "It would be different story if a specific version will be mentioned and we need to make that as the first one. Then we need to use the options with grubby to set to defined kernel number. upvoted 1 time Submit Cancel",
+      "To update Kernel: #rpm -ivh [kernel.rmp] --&gt; Install a rpm package in verbose mode OR #yum install kernel --&gt; (If you're using repositories) It's important to know that this doesn't replace the actual kernel. It is installed along the actual kernel and you can select any available kernel to boot the system in case of troubleshooting. Also, the system onlny saves a maximum of 4 kernels. If you already have 4, and install a 5th kernel, this one will replace the oldest kernel. ----------- To set a default kernel: - We can use grubby command tool. #grubby --default-kernel --&gt; Get default kernel (It's probably that the latest installed be selected) #grubby --info=ALL | grep ^kernel --&gt; This command list all kernel paths for the available kernels. #grubby --set-default=[kernel path obtained from the above command] Reboot and verify #uname -r --&gt; Get the loaded kernel upvoted 22 times Submit Cancel",
+      "well explained and very informative upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a 512M partition, make it as ext4 file system, mounted automatically under /mnt/data and which take effect automatically at boot-start.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/39701-exam-ex200-topic-1-question-17-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "also, if you prefer to use gdisk: lsblk gdisk /dev/sdb p - print n - new - 512M w -write sudo mkfs.ext4 /dev/sdb1 lsblk -f sudo mkdir /mnt/data sudo vim /etc/fstab -&gt; /dev/sdb1 /mnt/data2 ext4 defaults 0 0 tail -n1 /etc/fstab /dev/sdb1 /mnt/data2 ext4 defaults 0 0 sudo systemctl daemon-reload sudo mount -a lsblk -f upvoted 1 time Submit Cancel",
+      "#sudo su #lsblk -psf (to check for empty disk) #fdisk /dev/sd[] (format disk in question) #n (new partition) #p (for primary) #Enter (use the first sector by default) #+size 512M (to specify the size) #Enter #w (to write the changes) #lsblk -psf(to verify partition has been created) #mkfs.ext4 /dev/sd[]1 (to format the partition with ext4 file system) #mkdir /mnt/data (to create the mount point) #lsblk -psf (to show the UUID for the newly created file system) #echo 'UUID=XXX /mnt/data ext4 defaults 0 0' &gt;&gt; /etc/fstab #systemctl daemon-reload #mount -a upvoted 3 times Submit Cancel",
+      "Another solution to this is to use fdisk utility so: #fdisk -l (to check for empty disk) #fdisk /dev/sdd (format disk in question) #n (new partition) #p (for primary) #Enter (use the first sector by default) #+size 512M (to specify the size) #Enter #w (to write the changes) #fdisk -l /dev/sdd1 (to verify partition has been created) #mkfs.ext4 /dev/sdd1 (to format the partition with ext4 file system) #mkdir /mnt/data (to create the mount point) #mount /dev/sdd1 (mount the partition) #vi /etc/fstab (to configure auto mount after each boot) Press Shift G to go to the last line and press O to start in new line in Insert mode. Enter the following (ensure you press TAB for each part of the entry): /dev/sdd1 /mnt/data /ext4 defaults 0 0 Exit out of the Insert mode and type: :wq! Job done! upvoted 4 times Submit Cancel",
+      "lsblk (checkin empty disk) parted /dev/vdb mkpart primary ext4 2048s 512MB udevadm settle mkfs.ext4 /dev/vdb1 lsblk --fs(fp..whatever u can get UUID.. for /dev/vdb1 ) append /etc/fstab UUID=xxxx /mnt/data ext4 defaults 0 0 systemctl daemon-reload mount -a upvoted 6 times Submit Cancel",
+      "I think &quot;parted /dev/vdb mkpart primary ext4 2048s 513MB&quot; is correct. size will be 512MB upvoted 3 times Submit Cancel",
+      "And finally: systemctl daemon-reload mount -a upvoted 2 times Submit Cancel",
+      "Hi Sameer. In the exam, you can use any tool that you prefer to make partitions on block devices (gdisk, fdisk, parted). The only exception may be, when thay ask you tu use an specific partition table for de device. In example: If the question says that you must use a GUID partition table, you'll be forced to use parted o gdisk. upvoted 2 times Submit Cancel",
+      "parted /dev/sda mkpart primary 2048s 512M mkfs.ext4 /dev/sda1 mkdir /mnt/data2 lsblk -pf (UUID= 36721aac-2a8a-457f-927c-446bbb805753) echo “UUID= 36721aac-2a8a-457f-927c-446bbb805753 /mnt/data2 ext4 defaults 0 0” &gt;&gt; /etc/fstab upvoted 2 times Submit Cancel",
+      "Hi RedQuasar, was going thru ur comment and the answer posted with question. Refered to exam preparation guide of RHCSA 8 and realised i can still use the method written in the answer. Your answer is right but the provided answer is also acceptable. Can u guide if i choose the above answer or the method with answer is correct. upvoted 1 time Submit Cancel",
+      "Hi Sameer. In the exam, you can use any tool that you prefer to make partitions on block devices (gdisk, fdisk, parted). The only exception may be, when thay ask you tu use an specific partition table for de device. In example: If the question says that you must use a GUID partition table, you'll be forced to use parted o gdisk. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a volume group, and set 8M as a extends. Divided a volume group containing 50 extends on volume group lv (lvshare), make it as ext4 file system, and mounted automatically under /mnt/data. And the size of the floating range should set between 380M and 400M.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/39703-exam-ex200-topic-1-question-18-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Which means we do not need to define anything special setting vgcreate to 8M and lvcreate extends to 50 is doing what question asks for. upvoted 2 times Submit Cancel",
+      "We need to set partition size between 380M and 400M upvoted 1 time Submit Cancel",
+      "50 extends of 8MB each will be close to 400MB. upvoted 3 times Submit Cancel",
+      "Which means we do not need to define anything special setting vgcreate to 8M and lvcreate extends to 50 is doing what question asks for. upvoted 2 times Submit Cancel",
+      "sudo su lsblk -psf pvcreate /dev/sd[] vgcreate -s 8M vg1 /dev/sd[] lvcreate -l 50 -n lvshare vg1 lsblk -psf mkfs.ext4 /dev/mapper/vg1-lvshare mkdir -p /mnt/data echo '/dev/mapper/vg1-lvshare /mnt/data ext4 defaults 0 0' &gt;&gt; /etc/fstab systemctl daemon-reload mount -a upvoted 2 times Submit Cancel",
+      "-- lets say we are going to work on /dev/vda3 , make sure this disk has no mount point,if any than unmount them ex. umount /mnt/data vgcreate -s 8M vg1 /dev/vda3 lvcreate -n lvshare -l 50 vg1 mkfs.ext4 /dev/vg1/lvshare mkdir -p /mnt/data vim /etc/fstab /dev/vg1/lvshare /mnt/data ext4 defaults 0 0 mount -a partprobe df -h upvoted 3 times Submit Cancel",
+      "hi just want to ask. what part of the command line addresses this requirement And the size of the floating range should set between 380M and 400M upvoted 3 times Submit Cancel",
+      "Yep second line should be: lvcreate -l 50 -n lv02 vg02 upvoted 4 times Submit Cancel",
+      "vgcreate -s 8M vg02 /dev/sda3 lvcreate -l 50 -n lv02 mkfs.ext4 /dev/mapper/vg02_lv02 mkdir /mnt/data3 lsblk -pf (UUID=…457f-446bbb805753) echo “UUID=…457f-446bbb805753 /mnt/data3 ext4 defaults 0 0” &gt;&gt; /etc/fstab upvoted 5 times Submit Cancel",
+      "Your lvcreate command lacks VG option. upvoted 6 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Download ftp://192.168.0.254/pub/boot.iso to /root, and mounted automatically under /media/cdrom and which take effect automatically at boot-start.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/110243-exam-ex200-topic-1-question-19-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "I think that using wget or something like lftp to download a file from an FTP server does not equate to configuring an FTP server. It is just a simple command to download a file anyway, so just learn it. upvoted 1 time Submit Cancel",
+      "Is this on the exam in 2023 May? Earlier post says FTP stuff is not on exam??? upvoted 1 time Submit Cancel",
+      "Did you ever receive a response? I take the exam soon and would like to know how I should best prepare. upvoted 1 time Submit Cancel",
+      "I think that using wget or something like lftp to download a file from an FTP server does not equate to configuring an FTP server. It is just a simple command to download a file anyway, so just learn it. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Add admin group and set gid=600",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/39704-exam-ex200-topic-1-question-20-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "groupadd -g 600 admin to verify getent group | grep admin upvoted 1 time Submit Cancel",
+      "if the group already exist do this groupmod admin --gid 600 upvoted 1 time Submit Cancel",
+      "to create: sudo groupadd -g 600 admin to verify: grep 600 /etc/group upvoted 1 time Submit Cancel",
+      "also you can use the following to check: cat /etc/group upvoted 1 time Submit Cancel",
+      "To check you can use #getent group upvoted 2 times Submit Cancel",
+      "groupadd -g 600 admin upvoted 11 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Add user: user1, set uid=601 Password: redhat The user's login shell should be non-interactive.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/63760-exam-ex200-topic-1-question-21-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "adduser user1 -u 601 passwd user1 *prompts for password* enter redhat vim /etc/passwd arrow key down until you see user1:x:601:1003::home/user1:/bin/bash press i change it to... user1:x:601:1003::/home/user1:/sbin/nologin Press Esc Type :wq Press Enter to double check grep user1 /etc/passwd output: user1:x:601:1003::/home/user1:/sbin/nologin test to make sure account is unable to login su - user1 expected output: &quot;This account is currently not available.&quot; upvoted 1 time Submit Cancel",
+      "In RHEL 9 standart UID start from 1000. You can't create user with UID 601 upvoted 2 times Submit Cancel",
+      "U R right but you can still create the account and you just get the following warning &quot;useradd warning: user1's uid 601 outside of the UID_MIN 1000 and UID_MAX 60000 range&quot; you can also overcome by customising your login.defs upvoted 1 time Submit Cancel",
+      "This is not true. From /etc/login.defs: # Min/max values for automatic uid selection in useradd(8) # UID_MIN 1000 UID_MAX 60000 it is for *automatic* selection. You can specify manually whatever you want. upvoted 1 time Submit Cancel",
+      "useradd -u 601 -s /sbin/nologin user1 ; echo &quot;redhat&quot; | passwd --stdin user1 upvoted 3 times Submit Cancel",
+      "useradd -u 601 -s /sbin/nologin user1 passwd user (enter redhat) cat /etc/passwd to check shell upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Add users: user2, user3. The Additional group of the two users: user2, user3 is the admin group Password: redhat",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/33091-exam-ex200-topic-1-question-22-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "useradd -m -G admin user2 useradd -m -G admin user3 verify lid user2 lid user3 Now passwd passwd user2 passwd user3 Verify su user2 &gt; should allow access su user3 &gt; should allow access upvoted 1 time Submit Cancel",
+      "Make steps simple, more complex commands are confusing, [root@station ~]# cat /etc/group | grep -i admin [root@station ~]# [root@station ~]# groupadd admin [root@station ~]# [root@station ~]# useradd user2 [root@station ~]# passwd user2 [root@station ~]# useradd user3 [root@station ~]# passwd user3 [root@station ~]# [root@station ~]# [root@station ~]# id user2 uid=1004(user2) gid=1007(user2) groups=1007(user2) [root@station ~]# id user3 uid=1005(user3) gid=1008(user3) groups=1008(user3) [root@station ~]# [root@station ~]# usermod -a -G admin user2 [root@station ~]# usermod -a -G admin user3 [root@station ~]# [root@station ~]# id user3 uid=1005(user3) gid=1008(user3) groups=1008(user3),1006(admin) [root@station ~]# id user2 uid=1004(user2) gid=1007(user2) groups=1007(user2),1006(admin) [root@station ~]# upvoted 6 times Submit Cancel",
+      "[root@abc ~]# passwd user2 --stdin Changing password for user user2. redhat passwd: all authentication tokens updated successfully. [root@abc ~]# upvoted 1 time Submit Cancel",
+      "useradd user2 -G admin id user2 this syntax is vaild upvoted 1 time Submit Cancel",
+      "for i in 2 3; do useradd -G admin user$i; echo &quot;redhat&quot;|passwd --stdin user$i; done upvoted 4 times Submit Cancel",
+      "useradd -G admin user2 useradd -G admin user3 echo “redhat” | passwd --stdin user2 echo “redhat” | passwd --stdin user3 upvoted 7 times Submit Cancel",
+      "usermod -aG admin Using just G makes it the default group upvoted 1 time Submit Cancel",
+      "This is correct when you modifying existing user and adding more supplementary groups but if you creating new user you can use just -G for supplementary/additional group. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Copy /etc/fstab to /var/tmp name admin, the user1 could read, write and modify it, while user2 without any permission.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42580-exam-ex200-topic-1-question-23-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "cp /etc/fstab /var/tmp/admin setfacl -m u:user1:rw- /var/tmp/admin setfacl -m u:user2:--- /var/tmp/admin upvoted 1 time Submit Cancel",
+      "&quot;to /var/tmp name admin&quot; cp -p /etc/fstab /var/tmp/admin chown user1 /var/tmp/admin chmod 700 /var/tmp/admin this way user1 as owner, user2 is considered as 'other' without access permission. upvoted 2 times Submit Cancel",
+      "# I think that in question is to name the file admin cp /etc/fstab /var/tmp/admin #to check try: cat /var/tmp/admin setfacl -m u:user1:rw-,u:user2:--- /var/tmp/admin #check correct permission with getfacl getfacl /var/tmp/admin upvoted 8 times Submit Cancel",
+      "I have many doubts in this question . the question does not say for making owner to admin. and I think question says admin and user1 give r w x permission, after seeing this question. upvoted 1 time Submit Cancel",
+      "Why are the setfacl changes being made to the /var/tmp/fstab folder? Isn't it just asking to change the permissions on /var/tmp? upvoted 1 time Submit Cancel",
+      "-- lets assume you do not have any user yet. useradd -M user1 useradd -M user2 cp /etc/fstab /vat/tmp/ setfacl -m u:user1:rw- /var/tmp/fstab setfacl -m u:user2:--- /vat/tmp/fstab upvoted 2 times Submit Cancel",
+      "why include do not create home on the user creation? is this required? upvoted 1 time Submit Cancel",
+      "To mainte owner/group/right it is -p option. upvoted 1 time Submit Cancel",
+      "Please correct the question statement. upvoted 4 times Submit Cancel",
+      "Exactly. Perhaps it says with file named admin but then you never know. Will stick with adolfoale's answer for now. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure a task: plan to run echo \"file\" command at 14:23 every day.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/57167-exam-ex200-topic-1-question-24-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Configure a task: plan to run echo &quot;file&quot; command at 14:23 every day. question never say run echo &quot; file&quot; in natasha user. please confirm i have to take exam next month. upvoted 3 times Submit Cancel",
+      "If you need help remembering the crontab details run: cat /etc/crontab It will remind you what each column is for, minute, hour, etc upvoted 5 times Submit Cancel",
+      "cat &lt;&lt;EOF&gt; /etc/cron.d/echo_file 23 14 * * * /usr/bin/echo 'file' EOF upvoted 1 time Submit Cancel",
+      "If you want to see output in your console: ps -a (e.x. tt1) crontab -e 23 14 * * * echo &quot;file&quot; &gt; /dev/tt1 upvoted 5 times Submit Cancel",
+      "i tried to tweak the time and check if it will create an output on my terminal. but it does not show after the time pass. does crontab follow local time, universal time or rtc time? upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure a default software repository for your system. One YUM has already provided to configure your system on http://server.domain11.example.com/pub/ x86_64/Server, and can be used normally.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42581-exam-ex200-topic-1-question-25-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "where do you get the URL for this? yum-config-manager --add-repo=&quot;XXXXXXX&quot; ??? upvoted 2 times Submit Cancel",
+      "Are we supposed to add the repo along with the other repos already installed or do we remove the other repos and only run this for the default repo? upvoted 2 times Submit Cancel",
+      "sudo su yum config-manager --add-repo [URL] yum repolist (To obtain the Repo ID and Repo Name) yum config-manger --enable [Repo ID] vim /etc/yum.conf (edit the yum.conf to enable non-signed repo) gpgcheck=0 (:wq! save this value and quit) upvoted 4 times Submit Cancel",
+      "I think when we use --enable we set that repo default. upvoted 1 time Submit Cancel",
+      "dnf config-manager --add-repo=http://server.domain11.example.com/pub/ x86_64/Server/BaseOs add gpgcheck=0 in the config file upvoted 11 times Submit Cancel",
+      "agree. by the way, modify gpgcheck from the config file of /etc/dnf/dnf.conf upvoted 1 time Submit Cancel",
+      "#dnf repolist #cd /etc/yum.repos.d #vi local-rhel8.repo [LocalRepo_BaseOS] name=LocalRepo_BaseOS metadata_expire=-1 enabled=1 gpgcheck=0 baseurl=http://server.domain11.example.com/pub/ x86_64/Server/BaseOS/ [LocalRepo_AppStream] name=LocalRepo_AppStream enabled=1 gpgcheck=0 baseurl=http://server.domain11.example.com/pub/ x86_64/Server/AppStream/ save and exit #dnf clean all #dnf repolist upvoted 16 times Submit Cancel",
+      "I already had 1 try with the exam and you have to create a new file in /etc/yum.repos.d/ in order to use the repos and install stuff. This is the most accurate answer upvoted 5 times Submit Cancel",
+      "In RHEL 8: # subscription-manager repos --list # subscription-manager repos --enable=rhel-8-for-x86_64-sap-netweaver-rpms upvoted 6 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Adjust the size of the Logical Volume. Adjust the size of the vo Logical Volume, its file system size should be 290M. Make sure that the content of this system is complete. Note: the partition size is rarely accurate to the same size as required, so in the range 270M to 320M is acceptable.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/43121-exam-ex200-topic-1-question-26-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "below steps tested for RHEL9 umount /mnt/data4 e2fsck -f /dev/vg01/lv01 resize2fs /dev/vg01/lv01 290M lvreduce -r -L 290M /dev/vg01/lv01 e2fsck -f /dev/vg01/lv01 mount /dev/vg01/lv01 /mnt/data4 df -h upvoted 1 time Submit Cancel",
+      "sudo su df -hT (list the volume) umount [logical volume] (unmount the logical volume) lvresize -r -L 290M [logical Volume] (-r to resize, -L to specify the size) mount -a (remount the volume) df -hT (to verify the volume) upvoted 7 times Submit Cancel",
+      "lvresize -r -L 290M /dev/vo/lvshare lsblk mount -a upvoted 5 times Submit Cancel",
+      "On what filesystem upvoted 4 times Submit Cancel",
+      "rhel8 umount /dev/mapper/my_vol2-lvshare /mnt/data lvreduce -r -L 290M /dev/my_vol2/lvshare upvoted 8 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create User Account. Create the following user, group and group membership: Adminuser group User natasha, using adminuser as a sub group User Harry, also using adminuser as a sub group User sarah, can not access the SHELL which is interactive in the system, and is not a member of adminuser, natasha harry sarah password is redhat. ן¼ ן¼",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/110114-exam-ex200-topic-1-question-27-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "lets assume natasha harry and sarah arent made yet which you can check using id &quot;their usernames&quot; lets also assume adminuser isnt created yet if it isnt you can run grep adminuser /etc/group to check if they arent groupadd adminuser useradd -G adminuser natasha useradd -G adminuser Harry useradd -s /sbin/nologin sarah passwd natasha passwd Harry passwd sarah grep adminuser /etc/group to verify if the two users are in there upvoted 1 time Submit Cancel",
+      "# groupadd Adminuser # for i in natasha Harry ; do useradd -G Adminuser $i ; echo &quot;redhat&quot; | passwd --stdin $i ; done # useradd -s /sbin/nologin sarah ; echo &quot;redhat&quot; | passwd --stdin sarah upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure /var/tmp/fstab Permission. Copy the file /etc/fstab to /var/tmp/fstab. Configure var/tmp/fstab permissions as the following: Owner of the file /var/tmp/fstab is Root, belongs to group root File /var/tmp/fstab cannot be executed by any user User natasha can read and write /var/tmp/fstab User harry cannot read and write /var/tmp/fstab All other users (present and future) can read var/tmp/fstab.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62066-exam-ex200-topic-1-question-28-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "The file is a member of the root group and belongs to root. So root(rw) have rw_r_ _ r _ _ It is not executable by anyone. natasha has read and write access. harry has no read or write access. All other users can read the file. cp /etc/fstab /var/tmp/fstab chown root:root /var/tmp/fstab (not requireed) chmod 644 /var/tmp/fstab(rw_r _ _r_ _) setfacl -m u:natasha:rw /var/tmp/fstab setfacl -m u:harry:--- /var/tmp/fstab getfacl /var/tmp/fstab upvoted 2 times Submit Cancel",
+      "sorry for confusion, and write is 222 for write only so read and write is 666 upvoted 1 time Submit Cancel",
+      "Wouldn't it be chmod 664 /var/tmp/fstab It says all other users should have read access but non should be able to execute?? upvoted 6 times Submit Cancel",
+      "can not be executed by any user... execute is 1 so 1 is taken from every ugo natasha can read and write ...setfacl -m u:user:rw- /var/tmp/fstab harry cannot read and write ...setacl -m u:user:--- /var/tmp/fstab all other users can write (444)... I dont think this means other as in users,groups,others so setfacl 000 for harry ... if they can write they can read so 666??? idk upvoted 1 time Submit Cancel",
+      "sorry for confusion, and write is 222 for write only so read and write is 666 upvoted 1 time Submit Cancel",
+      "sudo su cp /etc/fstab /var/tmp/fstab chown root:root /var/tmp/fstab chmod oug-x /var/tmp/fstab setfacl -m u:natasha:rw /var/tmp/fstab setfacl -m u:harry:-- /var/tmp/fstab chmod o+r /var/tmp/fstab getfacl /var/tmp/fstab (to verify) upvoted 6 times Submit Cancel",
+      "i used chmod o-w to make sure that others has no write access. upvoted 3 times Submit Cancel",
+      "chmod 664 /var/tmp/fstab upvoted 2 times Submit Cancel",
+      "question says all other users can read [r=4 ] upvoted 1 time Submit Cancel",
+      "cp /etc/fstab /var/tmp/fstab chown root:root /var/tmp/fstab chmod 770 /var/tmp/fstab setfacl -m u:natasha:rw- /var/tmp/fstab setfacl -m u:harry:rw- /var/tmp/fstab setfacl -m o::r--,m:r /var/tmp/fstab getfacl /var/tmp/fstab upvoted 9 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure a cron Task. User natasha must configure a cron job, local time 14:23 runs and executes: */bin/echo hiya every day.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/125233-exam-ex200-topic-1-question-29-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "crontab -e -u natasha 23 14 * * * /bin/echo hiya upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Install the Kernel Upgrade. Install suitable kernel update from: http://server.domain11.example.com/pub/updates. Following requirements must be met: Updated kernel used as the default kernel of system start-up. The original kernel is still valid and can be guided when system starts up.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130597-exam-ex200-topic-1-question-31-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      ". 👉 No, this kernel upgrade question is not part of the current RHCSA 9 or RHCSA 10 exam objectives. upvoted 1 time Submit Cancel",
+      "provide alternative for discussion # uname -r # yum --enablerepo=url list available | grep &quot;kernel-&quot; # wget url/kernel-package.rpm # dnf install ./kernel-&lt;version&gt;.rpm # grep '^menuentry' /boot/grub2/grub.cfg //list all the menu entries, new kernel at 0 # grub2-set-default 0 # uname -a (to see current kernel) # reboot upvoted 1 time Submit Cancel",
+      "ignore yum --enablerepo=url list available | grep &quot;kernel-&quot; since we are installing rpm locally upvoted 1 time Submit Cancel",
+      "wget http://server.domain11.example.com/pub/updates/kernel-package.rpm sudo yum install kernel-package.rpm grub2-mkconfig -o /boot/grub2/grub.cfg grubby --info=ALL (to check which kernel index it is) grubby --set-default-index (change to what index the kernel is) uname -a (to see current kernel) reboot uname -a to check for proof upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Binding to an external validation server. System server.domain11.example.com provides a LDAP validation service, your system should bind to this service as required: Base DN of validation service is dc=example,dc=com LDAP is used for providing account information and validation information Connecting and using the certification of http://server.domain11.example.com/pub/ EXAMPLE-CA-CERT to encrypt After the correct configuration, ldapuser1 can log into your system, it does not have HOME directory until you finish autofs questions, ldapuser1 password is password.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/171464-exam-ex200-topic-1-question-32-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "❌ No — LDAP configuration is no longer tested in RHCSA 9 or RHCSA 10. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure NTP. Configure NTP service, Synchronize the server time, NTP server: classroom.example.com",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/39706-exam-ex200-topic-1-question-33-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "vi /etc/chrony.conf server &lt;servername or IP&gt; iburst systemctl restart chronyd systemctl enable chronyd (verify) chronyc sources -v upvoted 2 times Submit Cancel",
+      "dnf install chrony* -y vi /etc/chrony.conf server &lt;servername or IP&gt; iburst systemctl restart chronyd.service chronyc sources #to verify upvoted 2 times Submit Cancel",
+      "sudo su yum install chrony echo 'server [url] iburst' &gt;&gt; /etc/chrony.conf systemctl enable --now chronyd systemctl start chronyd timedatectl set-ntp true systemctl restart chronyd chronyc sources -v timedatectl upvoted 3 times Submit Cancel",
+      "when i do chronyc sources after setting /etc/chrony.conf to : classroom.example.com iburst I do not get any results. Does anyone else ? upvoted 1 time Submit Cancel",
+      "yum install chrony -y vim etc/chrony.conf (change on server classroom.example.com iburs) systemctl enable --now chronyd systemctl start chronyd timedatectl set-ntp true chronyc sources -c timedatectl upvoted 2 times Submit Cancel",
+      "yum -y install chrony systemctl enable --now chronyd vim etc/chrony.conf (change on server classroom.example.com iburs) systemctl reload chronyd timedatectl set-ntp true upvoted 6 times Submit Cancel",
+      "I do not understand it too upvoted 1 time Submit Cancel",
+      "yum -y install chrony systemctl enable cronyd.service systemctl start chronyd.service timedatectl -H classroom.example.com timedatectl set-ntp on upvoted 1 time Submit Cancel",
+      "timedatectl -H [user@]hostname means it will connect to the remote host with ssh and execute the operation remotely. So what you did is wrong at all. upvoted 2 times Submit Cancel",
+      "timedatactl -H works but will not survive a reboot upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure autofs. Configure the autofs automatically mount to the home directory of LDAP, as required: server.domain11.example.com use NFS to share the home to your system. This file system contains a pre configured home directory of user ldapuserX. Home directory of ldapuserX is: server.domain11.example.com /home/guests/ldapuser Home directory of ldapuserX should automatically mount to the ldapuserX of the local /home/guests Home directory's write permissions must be available for users ldapuser1's password is password",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/57759-exam-ex200-topic-1-question-34-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "yum install autofs nfs-utils -y /home/guests /etc/auto.ldap ldapuserX -fstype=nfs,rw,nosuid,softserver.domain11.example.com:/home/guests/ldapuserX chown -R ldapuser1:ldapuser1 /home/guests/ldapuserX chmod -R 700 /home/guests/ldapuserX systemctl enable --now autofs upvoted 1 time Submit Cancel",
+      "Isn't ldap deprecated by redhat 9 and 10? upvoted 1 time Submit Cancel",
+      "vi /etc/auto.master add &quot;/home/guests /etc/auto.ldap vi /etc/auto.ldap add &quot;ldapuserX server.domain11.example.com:/home/guests/ldapuserX&quot; #No need to specify -fstype since it was NFS, see 'man autofs' upvoted 1 time Submit Cancel",
+      "vi /etc/auto.master add &quot;/home/guests /etc/auto.ldap vi /etc/auto.ldap add &quot;ldapuserX server.domain11.example.com:/home/guests/ldapuserX&quot; #No need to specify -fstype since it was NFS, see 'man autofs' upvoted 1 time Submit Cancel",
+      "Is this still valid in REL8 ? upvoted 3 times Submit Cancel",
+      "I had 1 try on the exam and yes, we have to set a home directory for a user using autofs upvoted 2 times Submit Cancel",
+      "vim /etc/auto.master.d/demo.autofs (/home/guestes /etc/auto.demo) vim /etc/auto.demo (ldapuserX -fstype=nfs,rw,sync server.domain11.example.com:/home/guests/ldapuserX) systemctl enable --now autofs upvoted 4 times Submit Cancel",
+      "we also have to edit /etc/exports and added below line /home/guests/ldapuserX 192.168.0.0/24(rw,sync,no_root_squash) upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure a user account. Create a user iar uid is 3400. Password is redhat ן¼",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/125334-exam-ex200-topic-1-question-35-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "useradd -u 3400 iar ; echo &quot;redhat&quot; | passwd --stdin iar upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Add a swap partition. Adding an extra 500M swap partition to your system, this swap partition should mount automatically when the system starts up. Don't remove and modify the existing swap partitions on your system.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/30724-exam-ex200-topic-1-question-36-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "As Example based on RH documentation for Extending Swap on an LVM2 Logical Volume Disable swapping for the associated logical volume: # swapoff -v /dev/VolGroup00/LogVol01 Resize the LVM2 logical volume by 2 GB: # lvresize /dev/VolGroup00/LogVol01 -L +2G Format the new swap space: # mkswap /dev/VolGroup00/LogVol01 Enable the extended logical volume: # swapon -v /dev/VolGroup00/LogVol01 To test if the swap logical volume was successfully extended and activated, inspect active swap space: $ cat /proc/swaps $ free -h upvoted 1 time Submit Cancel",
+      "swapon sudo gdisk /dev/sdb -&gt; ;n; +500M; 8200; w; y sudo partprobe lsblk sudo mkswap /dev/sdb2 lsblk -f sudo vim /etc/fstab -&gt; /dev/sdb2 none swap defaults 0 0 sudo systemctl daemon-reload mount -a reboot swapon NAME TYPE SIZE USED PRIO /dev/dm-1 partition 3.8G 0B -2 /dev/sdb2 partition 500M 0B -3 upvoted 1 time Submit Cancel",
+      "sudo parted /dev/sdb print (partition table unknown) sudo parted /dev/sdb mklabel gpt sudo parted /dev/sdb mkpart swap1 linux-swap 2084s 501M sudo parted /dev/sdb print sudo udevadm settle sudo mkswap /dev/sdb sudo vim /etc/fstab UUID=XXXXXXXXXXXXXXXXXXX swap swap defaults 0 0 sudo systemctl daemon-reload sudo swapon -a sudo swapon --show upvoted 2 times Submit Cancel",
+      "create a partition for given size(500M) #fdisk /dev/sdb #n #+500M #w #partprobe check the present free memory #free -h #mkswap /dev/sdb5 #swapon /dev/sdb5 check the swap space and compai with privious value #free -h exit /etc/fstab and add below line /dev/sdb5 swap swap defaults 0 0 wright and exit /etc fstab # swapon -a upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Search files. Find out files owned by jack, and copy them to directory /root/findresults",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/31019-exam-ex200-topic-1-question-37-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "I have heard from several people that they encountered a slightly modified version of this question, where it was required to include all files with SUID permission. Just add -perm u=s in the command to do so. One person also had this question made so that it must be made into a shell script. So take note ;) upvoted 3 times Submit Cancel",
+      "this is wrong. &quot;find / -perm /u=s&quot; is the correct form. You have to escape it otherwise you will only find files that have only that mode bit set. From the man: -perm mode File's permission bits are exactly mode (octal or symbolic). Since an exact match is required, if you want to use this form for symbolic modes, you may have to specify a rather complex mode string. For example `-perm g=w' will only match files which have mode 0020 (that is, ones for which group write permission is the only permission set). It is more likely that you will want to use the `/' or `-' forms, for example `-perm -g=w', which matches any file with group write permission. See the EXAMPLES section for some illustrative examples. upvoted 1 time Submit Cancel",
+      "sudo -i for file in $(find / -user jack -type f); do cp $file /root/findresults/; done upvoted 2 times Submit Cancel",
+      "sudo su mkdir /root/findresults (create folder if doesn't exist) find / -user jack -type f -exec cp {} /root/findresults/ \\; ls /root/findresults (to verify) upvoted 9 times Submit Cancel",
+      "find / -user jack -type f -exec cp -rpvf {} /root/findresults\\; 2&gt; /dev/null upvoted 1 time Submit Cancel",
+      "mkdir -p /root/findresults find / -user jack -type f -exec cp -avrf {} /root/findresults/ \\; ls -l /root/findresults upvoted 2 times Submit Cancel",
+      "mkdir /root/findresults find / -user jack -type f -exec cp -a {}/root/findresults/\\: ls /root/findresults upvoted 1 time Submit Cancel",
+      "useradd -m jack mkdir /root/findresults find / -u jack -type f -exec cp -rfp {} /root/findresults \\; upvoted 1 time Submit Cancel",
+      "Can't we just do &quot; find / -u jack -type f &gt;&gt; /root/findfiles &quot; ? upvoted 1 time Submit Cancel",
+      "No that won't copy the files that will just copy the results from the find command to a file. The solution is: find / -type f -user jack -exec cp -v {} /root/findresults \\; upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Search a String Find out all the columns that contains the string seismic within /usr/share/dict/words, then copy all these columns to /root/lines.tx in original order, there is no blank line, all columns must be the accurate copy of the original columns.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62341-exam-ex200-topic-1-question-38-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "grep seismic /usr/share/dict/words &gt; /root/lines.txt or vi /opt/searchfile.sh #!/bin/bash grep seismic /usr/share/dict/words &gt; /root/lines.txt chmod 755 searchfile.sh (optional is asked) cp /opt/searchfile.sh /usr/local/bin upvoted 1 time Submit Cancel",
+      "Do they want &quot;rows&quot; or &quot;columns&quot; ? No idea how to find and redirect columns but rows is easy upvoted 2 times Submit Cancel",
+      "IF I do run this command : grep seismic -w /usr/share/dict/words &gt; /root/lines.tx . please explain . Am I saying right ? upvoted 1 time Submit Cancel",
+      "cat /usr/share/dict/words | grep seismic &gt; /lines.tx upvoted 1 time Submit Cancel",
+      "grep seismic /usr/share/dict/words &gt; /root/lines.tx cat /root/lines.tx upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a backup Create a backup file named /root/backup.tar.bz2, contains the content of /usr/local, tar must use bzip2 to compress.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/37676-exam-ex200-topic-1-question-39-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "#tar -cavf /root/backup.tar.bz2 /usr/local upvoted 1 time Submit Cancel",
+      "tar -jcvf /root/backup.tar.bz2 /usr/local upvoted 2 times Submit Cancel",
+      "tar -cjf /root/backup.tar.bz2 /usr/local upvoted 4 times Submit Cancel",
+      "can you explain more please upvoted 1 time Submit Cancel",
+      "I don't think this is right answer as the question explicitly asks &quot;tar must use bzip2 to compress&quot;. Apart from that the answer provided is perfectly valid. upvoted 2 times Submit Cancel",
+      "tar -cvf /root/backup.tar /usr/local &amp;&amp; bzip2 /root/backup.tar upvoted 3 times Submit Cancel",
+      "# tar -cjvf /root/backup.tar /usr/local # bzip2 backup.tar upvoted 3 times Submit Cancel",
+      "# tar -cjvf /root/backup.tar.bz2 /usr/local upvoted 32 times Submit Cancel",
+      "file /root/backup.tar.bz2 ##to check file information, it should show &quot;bzip2 compressed data...&quot; upvoted 1 time Submit Cancel",
+      "Simple to understand and execute, [root@station ~]# yum install bzip2 [root@station ~]# tar -cvf /root/backup.tar /usr/local/ [root@station ~]# du -sh /root/backup.tar 20K /root/backup.tar [root@station ~]# bzip2 /root/backup.tar [root@station ~]# du -sh /root/backup.tar.bz2 4.0K /root/backup.tar.bz2 [root@station ~]# upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a logical volume Create a new logical volume as required: Name the logical volume as database, belongs to datastore of the volume group, size is 50 PE. Expansion size of each volume in volume group datastore is 16MB. Use ext3 to format this new logical volume, this logical volume should automatically mount to /mnt/database",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/48734-exam-ex200-topic-1-question-40-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "The latest similar question is in regards to (extents sizes). Does active have a version of this q/a? upvoted 1 time Submit Cancel",
+      "# vgcreate -s 16M datastore /dev/sdxx # lvcreate -l 50 -n database datastore # lvs # mkdir /mnt/database # mkfs.ext3 /dev/datastore/database # echo &quot;/dev/datastore/database /mnt/database/ ext3 defaults 0 0&quot; &gt;&gt; /etc/fstab # mount -a # df -h upvoted 20 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure your Host Name, IP Address, Gateway and DNS. Host name: dtop5.dn.ws.com IP Address: 172.28.10.5/4 Gateway: 172.28.10.1 DNS: 172.28.10.1",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/127020-exam-ex200-topic-1-question-41-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "you can also use nmtui to do this. which i find easier than using nmcli. upvoted 1 time Submit Cancel",
+      "# hostnamectl hostname dtop5.dn.ws.com # nmcli con add con-name net1 type ethernet ifname eth0 \\ ipv4.addresses 172.28.10.5/24 ipv4.dns 172.28.10.1 \\ ipv4.gateway 172.28.10.1 ipv4.method manual # nmcli con up net1 OR Modify --&gt; /etc/NetworkManager/system-connections/&quot;IFNAME&quot;.nmconnection upvoted 1 time Submit Cancel",
+      "if you modify the file you need to nmcli con reload nmcli con up &quot;IFNAME&quot;&quot; upvoted 1 time Submit Cancel",
+      "nmcli con add con-name &quot;Exam&quot; ifname enx1x type ethernet ipv4.addresses 172.28.10.5/24 ipv4.gateway 172.28.10.1 ipv4.dns 172.28.10.1 ipv4.method manual connection.autoconnect yes upvoted 2 times Submit Cancel",
+      "hostnamectl set-hostname dtop5.dn.ws.com hostnamectl (verify) ip addr show (verify) upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a 2G swap partition which take effect automatically at boot-start, and it should not affect the original swap partition.",
     "options": {},
-    "most_voted": ""
+    "most_voted": "",
+    "discussion": [
+      "Do we need to add a new disk for this task? upvoted 1 time Submit Cancel",
+      "man fstab says that the second field should be none, not swap. UUID=234wfd none swap defaults 0 0 upvoted 2 times Submit Cancel",
+      "first check available swap #free -m second partions available #lsblk #parted -s /dev/vdb mklabel msdos #parted -s /dev/vdb mkpart primary 2048S 2200MB #mkswap /dev/vdb1 #vim /etc/fstab /dev/vdb1 swap swap defaults 0 0 #swapon -a upvoted 1 time Submit Cancel",
+      "lsblk #to check partition fdisk /dev/sdb #to sda or sdb depending on the disk n # for new p #primary 1 #default partition number enter #first sector +2G #last sector t #to change type and select 82 for swap 82 #code for hex w #save changes partprobe #to update partition table lsblk #to confirm mkswap /dev/sbd1 #to generate UUID, we need UUID to make it permanent lsblk -f #to see file system, should be swap vi /etc/fstab #to make it permanent UUID=xxxxxxxxxxxx swap swap defaults 0 0 free -h swapon -a free -h #swap value must be increased by 2G upvoted 7 times Submit Cancel",
+      "#lsblk #free -h #mkswap /dev/sdb #swapon /dev/sdb #free -h #vim /etc/fstab #/dev/sdb swap defaults 0 0 upvoted 1 time Submit Cancel",
+      "if sdb it's more than 2G you have to use fstab upvoted 1 time Submit Cancel",
+      "if it is a swap partition the appropriate partition type (Linux swap) must be set -&gt; t (use l to get a list of known partition types) -&gt; 82 upvoted 1 time Submit Cancel",
+      "echo $(blkid /dev/sdb5) &gt;&gt; /etc/fstab use this command to copy uid to fstab. upvoted 1 time Submit Cancel",
+      "blkid is a good comand to know partition UUID but with your command literally the swap partition dont start at boot time upvoted 1 time Submit Cancel",
+      "create a partition for given size(2G) #fdisk /dev/sdb #n #+2G #w #partprobe check the present free memory #free -h #mkswap /dev/sdb5 #swapon /dev/sdb5 check the swap space and compai with privious value #free -h exit /etc/fstab and add below line /dev/sdb5 swap swap defaults 0 0 wright and exit /etc fstab # swapon -a upvoted 8 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Please open the ip_forward, and take effect permanently.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/36741-exam-ex200-topic-1-question-43-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "echo &quot;net.ipv4.ip_forward = 1&quot; &gt; /etc/sysctl.d/ipforward.conf systemctl reboot upvoted 2 times Submit Cancel",
+      "No, This will echo net.ipv4.ip_forward=1 &gt;&gt; /etc/sysctl.conf sysctl -p upvoted 3 times Submit Cancel",
+      "echo net.ipv4.ip_forward=1 &gt;&gt; /etc/sysctl.conf sysctl -p upvoted 5 times Submit Cancel",
+      "echo &quot; net.ipv4.ip_forward = 1&quot; &gt;&gt; /etc/sysctl.conf upvoted 2 times Submit Cancel",
+      "vi /etc/sysctl.conf net.ipv4.ip_forward = 1 upvoted 3 times Submit Cancel",
+      "[root@station ~]# sysctl -a | grep net.ipv4.ip_forward net.ipv4.ip_forward = 0 net.ipv4.ip_forward_update_priority = 1 net.ipv4.ip_forward_use_pmtu = 0 [root@station ~]# sysctl -w net.ipv4.ip_forward=1 net.ipv4.ip_forward = 1 [root@station ~]# sysctl -a | grep net.ipv4.ip_forward net.ipv4.ip_forward = 1 net.ipv4.ip_forward_update_priority = 1 net.ipv4.ip_forward_use_pmtu = 0 [root@station ~]# upvoted 8 times Submit Cancel",
+      "sysctl -w command cannot survive a reboot. hence others are suggesting to write a line into sysctl.conf. and followed by sysctl -p upvoted 2 times Submit Cancel",
+      "# grep ip_forward /etc/sysctl.d/* /etc/sysctl.d/60-gce-network-security.conf:net.ipv4.ip_forward=0 # vi /etc/sysctl.d/60-gce-network-security.conf net.ipv4.ip_forward=0 # sysctl -w net.ipv4.ip_forward=1 upvoted 3 times Submit Cancel",
+      "There is no option -P in RHEL8. You need to use the -w option followed by the argument sysctl -w net.ipv4.ip_forward=1 NOTE: No space before or after &quot;=&quot; sign. upvoted 9 times Submit Cancel",
+      "you can view the system default line by &quot;sysctl -a | grep ip_forward&quot;. &quot;net.ipv4.ip_forward = 0&quot; by system already has 'space' before/after '='. hence it is fine to have 'space'. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Open kmcrl value of 5 , and can verify in /proc/ cmdline",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42589-exam-ex200-topic-1-question-44-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "#grubby --update-kernel=DEFAULT --args=&quot;kmcrl=5&quot; #grubby --info=DEFAULT #reboot #cat /proc/cmdline upvoted 3 times Submit Cancel",
+      "# vim /etc/default/grub GRUB_CMDLINE_LINUX=... kmcrl=5&quot; # grub2-mkconfig -o /boot/grub2/grub.cfg upvoted 1 time Submit Cancel",
+      "this is not found in rhcsa 2021 upvoted 16 times Submit Cancel",
+      "grubby --update-kernel=ALL --args=&quot;kmcrl=5&quot; cat /boot/grub2/grubenv systemctl reboot cat /proc/cmdline upvoted 7 times Submit Cancel",
+      "I think this is correct except that the /boot/grub2/grubenv file does not show the update. We need to check the bootloader entries config files in `/boot/loader/entries/` directory. There will be one for each boot entry. grubby updates these files. So here is a slightly modified commands - grubby --update-kernel=ALL --args=&quot;kmcrl=5&quot; ls /boot/loader/entries/ # check if the kernel args are updated in the conf files. added in the end of the line grep options /boot/loader/entries/8cxxxxx.conf sytemctl reboot cat /proc/cmdline upvoted 1 time Submit Cancel",
+      "In RHEL8 # grub2-editenv - list | grep kernelopts # grub2-editenv - set &quot;kernelopts=root=/dev/mapper/rhel-root ..... kmcrl=5 # systemctl reboot upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Upgrade the kernel, start the new kernel by default. kernel download from this address: ftp://server1.domain10.example.com/pub/update/new.kernel",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/69503-exam-ex200-topic-1-question-45-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Yes we can sudo dnf install kernel-5.14.0-427.24.1.el9_4.x86_64.rpm kernel-core-5.14.0-427.24.1.el9_4.x86_64.rpm kernel-modules-5.14.0-427.24.1.el9_4.x86_64.rpm kernel-modules-core-5.14.0-427.24.1.el9_4.x86_64.rpm uname -r sudo grubby --default-kernel sudo reboot uname -r upvoted 1 time Submit Cancel",
+      "#wget ftp://server1.domain10.example.com/pub/update/new.kernel find the name of the new.kerrnal #ls #rpm -ivh new.kernel list all install kernels #dnf list installed kernel #grubby --info=ALL #grubby --set-default=&quot;/boot/vmlinuz-4.18.0-348.7.1.el8_5.x86_64&quot; #grubby --set-default-index=0 upvoted 5 times Submit Cancel",
+      "can we update it via yum? upvoted 5 times Submit Cancel",
+      "Yes we can sudo dnf install kernel-5.14.0-427.24.1.el9_4.x86_64.rpm kernel-core-5.14.0-427.24.1.el9_4.x86_64.rpm kernel-modules-5.14.0-427.24.1.el9_4.x86_64.rpm kernel-modules-core-5.14.0-427.24.1.el9_4.x86_64.rpm uname -r sudo grubby --default-kernel sudo reboot uname -r upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure iptables, there are two domains in the network, the address of local domain is 172.24.0.0/16 other domain is 172.25.0.0/16, now refuse domain 172.25.0.0/16 to access the server.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/36747-exam-ex200-topic-1-question-46-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "The correct answer is : # firewall-cmd --zone=block --add-source=172.25.0.0/16 --permanent # firewall-cmd --reload Every packet that comes into a system is analyzed for its source address, and based on that source address, Firewalld analyzes whether or not the packet belongs to a specific zone. If not, the zone for the incoming net\u0002work interface is used. If no specific zone is available, the packet is handled by the settings in the default zone. upvoted 5 times Submit Cancel",
+      "I think it's need only refuse access 172.25.0.0/16.so firewall-cmd --zone=drop --permanent --add-source=172.25.0.0/16 upvoted 1 time Submit Cancel",
+      "--zone=block --add-source=172.25.0.0/16 means that rules of block zone would apply to the packets from 172.25.0.0/16. While other packets would still be applied the rule of public zone.Because the target of block zone is reject, any connection from 172.25.0.0/16 will be rejected. upvoted 3 times Submit Cancel",
+      "After some research in the firewalld documentation: Block Zone: Any incoming network connections are rejected [...]. Only network connections initiated within this system are possible. upvoted 1 time Submit Cancel",
+      "Here is the thing that confuses me about the 2 solutions that have been provided in this discussion: adolfoale: Is this zone always active, or do you have to change the default/active zone to zone=block for this to work? As I understand it, this would only work if the block zone was active. Roldo: Your solution seems correct, I've just never used this solution before. what are your thoughts on adolfoale's solution? any other comments is really helpful. thanks much upvoted 1 time Submit Cancel",
+      "If you add source/interface to a zone, then that zone will active. upvoted 1 time Submit Cancel",
+      "In RHEL8 # firewall-cmd --zone=block --add-source=172.25.0.0/16 --permanent # firewall-cmd --reload upvoted 12 times Submit Cancel",
+      "this must be configure on the server side. Try to ping from the client, if it's configured successfully, it will show &quot;packet filtered&quot;. upvoted 1 time Submit Cancel",
+      "This answer seems to be incorrect, by the documentation standards I printed above. Unless I am interpreting wrong, your entry would do the following if the block zone was enabled: Block ALL Incoming Traffic except for that which exists within subnet 172.25.0.0/16.. all outgoing established connections are permitted. For this solution to work, you would need to permit the .24 subnet and all of the necessary ports utilized in this exam. the rich-rules are a better/quicker solution. upvoted 1 time Submit Cancel",
+      "--zone=block --add-source=172.25.0.0/16 means that rules of block zone would apply to the packets from 172.25.0.0/16. While other packets would still be applied the rule of public zone.Because the target of block zone is reject, any connection from 172.25.0.0/16 will be rejected. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION A YUM source has been provided in the http://instructor.example.com/pub/rhel6/dvd Configure your system and can be used normally.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/53583-exam-ex200-topic-1-question-47-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "To configure a repo in RHEL9, this is an easy way: dnf config-manager --add-repo http://instructor.example.com/pub/rhel6/dvd Then just add to the generated file in /etc/yum.repos.d/ gpgcheck=0 Usually in RHEL9, repos to configure are BaseOS and AppStream. upvoted 2 times Submit Cancel",
+      "wtf is even this question? is that even in english? upvoted 7 times Submit Cancel",
+      "this question needs to be edited to make sense, also answered properly upvoted 1 time Submit Cancel",
+      "enabled=1 is missing upvoted 8 times Submit Cancel",
+      "name and baseurl are the mandatory fields upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION There are two different networks, 192.168.0.0/24 and 192.168.1.0/24. Your System is in 192.168.0.0/24 Network. One RHEL6 Installed System is going to use as a Router. All required configuration is already done on Linux Server. Where 192.168.0.254 and 192.168.1.254 IP Address are assigned on that Server. How will make successfully ping to 192.168.1.0/24 Network's Host?",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62543-exam-ex200-topic-1-question-48-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "nmtui -&gt; edit connection -&gt; routing &lt;edit&gt; -&gt; add route much easier to remember upvoted 6 times Submit Cancel",
+      "Assuming the default gateway here is different and we need to add additional route to reach the 192.168.1.0/24 network. # get the connection holding the ip of 192.168.0.0/24 network ip -br a nmcli con show # Ping the router ip to check connectivity ping 192.168.0.254 # Add a permanent route to 192.168.1.0/24 via 192.168.0.254 on the connection identified above. in this example that connection is static-enp0s3 sudo nmcli con modify static-enp0s3 +ipv4.routes &quot;192.168.1.0/24 198.168.0.254&quot; sudo nmcli con up static-enp0s3 # check the routes and test the connectivity ip r nmcli con show static-enp0s3 | grep routes ping 192.168.1.254 upvoted 2 times Submit Cancel",
+      "I think we need to allow IP Forwarding to allow traffic to access each other. sysctl -w net.ipv4.ip_forward=1 upvoted 5 times Submit Cancel",
+      "True, it is about IP forwarding, but above solution will not survive reboot. echo 'net.ipv4.ip_forward=1' &gt;&gt; /etc/sysctl.d/ipforward.conf sysctl -p reboot sysctl net.ipv4.ip_forward (to verify; should return a value of 1) upvoted 2 times Submit Cancel",
+      "Question unclear, propably just to setup a default gateway for connection to work between these 2 networks, fair enough. upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Make a swap partition having 100MB. Make Automatically Usable at System Boot Time.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/36749-exam-ex200-topic-1-question-49-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "However what you mentioned is correct that we should use UUID in fstab. upvoted 1 time Submit Cancel",
+      "$sudo su #lsblk -psf #fdisk /dev/sd[x] #n #t #82 #mkswap /dev/sd[x] #swapon /dev/sd[x] #echo '/dev/sd[v] swap swap defaults 0 0' &gt;&gt; /etc/fstab #systemctl daemon-reload #mount -a #lsblk -psf upvoted 6 times Submit Cancel",
+      "$ fdisk /dev/sda # change the partition type to swap $ partprobe $ echo &quot; /dev/sdb1 swap swap defaults 0 0 &quot; &gt;&gt; /etc/fstab $ mkswap /dev/sdb1 $ swapon -a upvoted 2 times Submit Cancel",
+      "parted /dev/sdx mklabel msdos parted /dev/sdx mkpart linux-swap 1MiB 100Mib udevadm settle mkswap /dev/sdx1 (UUID checked) fstab add UUID=XXX swap swap defaults 0 0 systemctl daemon-reload swapon -a swapon --show upvoted 4 times Submit Cancel",
+      "my problem with parted is that if i do 1MiB to 100Mib, will that be just 99MiB? Are they particular with that area? upvoted 1 time Submit Cancel",
+      "In RHEL8 for fstab configuration is not more recommended to use absolute patch to the device like /dev/sda7. The recommendation is to use the UUID identifier instead. To get the swap or any other filesystem's UUID use the command blkid. This will show you all filesystems UUIDs in example: /dev/sda7: UUID=&quot;361ed5b5-872a-4e49-ba70-91efb28b2bb4&quot; TYPE=&quot;swap&quot; PARTUUID=&quot;caa5e8f6-01&quot; Copy the section UUID=&quot;361ed5b5-872a-4e49-ba70-91efb28b2bb4&quot; and use it in fstab as follows. UUID=&quot;361ed5b5-872a-4e49-ba70-91efb28b2bb4&quot; swap swap defaults 0 0 reboot and verify swap is on free -m upvoted 5 times Submit Cancel",
+      "We will need to create 100MB partition. Those steps are missing. upvoted 1 time Submit Cancel",
+      "However what you mentioned is correct that we should use UUID in fstab. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION There are two different networks 192.168.0.0/24 and 192.168.1.0/24. Where 192.168.0.254 and 192.168.1.254 IP Address are assigned on Server. Verify your network settings by pinging 192.168.1.0/24 Network's Host.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130721-exam-ex200-topic-1-question-50-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "ip -br a ping 192.168.1.0 upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION One Logical Volume is created named as myvol under vo volume group and is mounted. The Initial Size of that Logical Volume is 400MB. Make successfully that the size of Logical Volume 200MB without losing any data. The size of logical volume 200MB to 210MB will be acceptable.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/35425-exam-ex200-topic-1-question-51-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "# umount /mnt/myvol #e2fsck -f /dev/mapper/vo-myvol #resize2fs /dev/mapper/vo-myvol 200M #lvreduce -l -50 vo/myvol (if PE size was 4.00 MiB) #lvdisplay vo/myvol --LV Path /dev/vo/myvol --LV Size 200.00 MiB --Current LE 50 ---- #mount -a upvoted 1 time Submit Cancel",
+      "[root@dtop5 ~]# lvreduce -r -L 100M /dev/datastore1/fs1 fsadm: Xfs filesystem shrinking is unsupported. /usr/sbin/fsadm failed: 1 Filesystem resize failed. [root@dtop5 ~]# [root@dtop5 ~]# lvremove /dev/datastore1/fs1 [root@dtop5 ~]# [root@dtop5 ~]# lvcreate -L 150M -n fs1 datastore1 Rounding up size to full physical extent 152.00 MiB WARNING: xfs signature detected on /dev/datastore1/fs1 at offset 0. Wipe it? [y/n]: y Wiping xfs signature on /dev/datastore1/fs1. Logical volume &quot;fs1&quot; created. [root@dtop5 ~]# [root@dtop5 ~]# [root@dtop5 ~]# [root@dtop5 ~]# mkfs.xfs /dev/datastore1/fs1 [root@dtop5 ~]# xfsrestore -f newdump.img /mnt/ [root@dtop5 ~]# upvoted 1 time Submit Cancel",
+      "-r option is important when using lvreduce , it will resize firesystem too lvresize -r /dev/vgdata/lvbetoche -L 200M upvoted 1 time Submit Cancel",
+      "Anywhere in the question somehow it is not mentioned if file system is ext based or xfs. In both cases steps will be different. I think it would be important to check first that what type of file system is in use before we write answer. upvoted 1 time Submit Cancel",
+      "umount /dev/vo/myvol e2fsck -f /dev/vo/myvol resize2fs /dev/vo/myvol 200M mount -a df -hT upvoted 4 times Submit Cancel",
+      "This should work in case of ext2,3,4 file system. upvoted 1 time Submit Cancel",
+      "in RH8 #df -Th #xfsdump -l 0 -f /myvol.image /dev/vo/myvol #umount /dev/vo/myvol #lvremove /dev/vo/myvol #lvcreate -L 200M -n myvol vo #blkid /dev/vo/myvol #vim /etc/fstab #edit UUID for /dev/vo/myvol #mount -a #xfsrestore -f /myvol.image /myvol #df -Th upvoted 7 times Submit Cancel",
+      "To srink the XFS, never use lvreduce command. the above steps by @eid are the correct process. https://logic.edchen.org/how-to-shrink-xfs-file-system-on-enterprise-linux-7-2/ upvoted 3 times Submit Cancel",
+      "This works as well lvreduce --resizefs -L 200M /dev/vo/myvol upvoted 8 times Submit Cancel",
+      "lvresize -r -L 200M /dev/vo/myvol upvoted 12 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION One Logical Volume named /dev/test0/testvolume1 is created. The initial Size of that disk is 100MB now you required more 200MB. Increase the size of Logical Volume, size should be increase on online.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/75698-exam-ex200-topic-1-question-52-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "the question asks for MORE 200MB. Correct command should be sudo lvresize /dev/datastore/database --resizefs --size +200M upvoted 3 times Submit Cancel",
+      "lvextend -r -L 200M /dev/vo/myvol upvoted 2 times Submit Cancel",
+      "lvresize -r -L 200M /dev/test0/testvolume1 upvoted 1 time Submit Cancel",
+      "lvextend -L 200M -r /dev/test0/testvolume1 lvdisplay or lvs to verify upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION We are working on /data initially the size is 2GB. The /dev/test0/lvtestvolume is mount on /data. Now you required more space on /data but you already added all disks belong to physical volume. You saw that you have unallocated space around 5 GB on your harddisk. Increase the size of lvtestvolume by 5GB.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/53363-exam-ex200-topic-1-question-53-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "My take on this =&gt; i think it being misinterpreted =&gt; i believe questions is saying that there is 5G of free space on disk unpartitioned and NOT the VG or LV which is common scenario and based on this this is how i would go about it * Step 1 =&gt; create parition for the remaining space using fdisk i.e. fdisk /dev/sdd =&gt; n &gt; primary 2 &gt; except default -all space =&gt; type input 8e =&gt; w to save and exit * Step 2 =&gt; pvcreate /dev/sdd2 =&gt; prepare partition for LVM * Step 3 =&gt; vgextend VG_NAME /dev/sdd2 =&gt; adds the /dev/sdd2 (Partition/Block) to the existing VG where LV exists * Step 4 =&gt; your choice either lvresize or lvextend and DO NOT forget option -r to avoid doing double steps i prefer lvextend=&gt; lvextend -l 100%FREE -r LV-NAME in this case (lvtestvolume) =&gt; this will take all available FREE space available in the VG and hence meets the requirement upvoted 3 times Submit Cancel",
+      "https://access.redhat.com/solutions/24770 upvoted 2 times Submit Cancel",
+      "--assume new disk is src pvcreate /dev/sdc vgextend test0 /dev/sdc vgs lvs lvextend -r -l +100%FREE /dev/test0/lvtestvolume --in above command because we are going to use 100% of 5GB disk we specified +100%FREE. Below two commands i am adding however i didn't have to use the because while using -r in above command volume is already resized and automatically fle system type is matched to that of the existing volume. xfs_growfs /dev/test0/lvtestvolume -----in case of xfs file system resize2fs /dev/test0/lvtestvolume -----in case of ext2, 3 or 4 running above command will produce following: The file system is alread ________ blocks long. Nothing to do! --run df -Th command to check size. upvoted 4 times Submit Cancel",
+      "Reference: https://www.redhat.com/sysadmin/resize-lvm-simple upvoted 1 time Submit Cancel",
+      "Assume the /dev/sda is 5GB #parted -s /dev/sda mklabel gpt mkpart primary 0% 100% #parted -s /dev/sda set 1 lvm on # partprobe # vgextend test0 /dev/sda1 # lvextend -r -l 100%FREE /dev/test0/lvtestvolume For xfs file system: # xfs_growfs /data // the mount point For ext file system: # resize2fs /dev/test0/lvtestvolume // the lv path #df -h /data upvoted 2 times Submit Cancel",
+      "$ fdisk /dev/sda # create a partition of that free 5G space # change it's type to lvm $ partprobe $ vgextent test0 /dev/sdaX $ lvextend -r -l 100%FREE -n dev/test0/lvtestvolume test0 upvoted 1 time Submit Cancel",
+      "[root@station ~]# lvextend --help lvextend - Add space to a logical volume Extend an LV by a specified size. lvextend -L|--size [+]Size[m|UNIT] LV [ -l|--extents [+]Number[PERCENT] ] [ -r|--resizefs ] [ -i|--stripes Number ] [ -I|--stripesize Size[k|UNIT] ] [ --poolmetadatasize [+]Size[m|UNIT] ] [ COMMON_OPTIONS ] [ PV ... ] upvoted 1 time Submit Cancel",
+      "They identify the LVM as mounted; which indicates that there is an associated FS. You'll wanna make sure that unmount first, and then resize the FS as well. This can easily be done by adding the additional -r switch in the command: lvextend -L +5G -r [/dev/vg/lvm] If you forget this step, you can also run resize2fs or xfs_growfs upvoted 6 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION One Domain RHCE is configured in your lab, your domain server is server1.example.com. nisuser2001, nisuser2002, nisuser2003 user are created on your server 192.168.0.254:/rhome/stationx/nisuser2001. Make sure that when NIS user login in your system automatically mount the home directory. Home directory is separately shared on server /rhome/stationx/ where x is your Station number.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/36879-exam-ex200-topic-1-question-54-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      " Systemctl restart autofs (ensure all good)  Useradd -d /rhome/station20 /nisuser2001 -u 55443 nisuser2001; echo “password” | passwd –stdin nisuser2001 [same as in first steps on server1] – remember in exam username and password are provided for you so use them as either directory server or identity management server roles are already setup  Now use the user account you created above and ssh $ ssh nisuser2001@localhost =&gt; put password and this should now login you in and your home directory is on server1 =&gt; pwd should show /rhome/station20/nisuser2001 to test you can create file on servver2 and go to server1 and check file is in the directory NOTE: remember linux autofs is similar to windows ADFS or userhome redirection on file server but ofcourse LINUX is much better with far less BUGS 😊 Linux Rules… upvoted 1 time Submit Cancel",
+      "Server 2  Dnf install autofs nfs-utils  Systemctl enable - -now autofs; systemctl status autofs (ensure all good)..no need for nfs to run  Vim /etc/auto.master =&gt; below this line [/misc /etc/auto.misc ] add this line /rhome/station20 /etc/auto.station20 (you can name auto.station20 file anything you like as long as it is meaningful and also I don’t like to edit the existing file auto.misc – use it as example and backup and tidiness)  Now edit file / etc/auto.station20 and add this line to it, * -rw,soft,sync server1_IP_addres:/rhome/station20/&amp; follow below upvoted 1 time Submit Cancel",
+      " Systemctl restart autofs (ensure all good)  Useradd -d /rhome/station20 /nisuser2001 -u 55443 nisuser2001; echo “password” | passwd –stdin nisuser2001 [same as in first steps on server1] – remember in exam username and password are provided for you so use them as either directory server or identity management server roles are already setup  Now use the user account you created above and ssh $ ssh nisuser2001@localhost =&gt; put password and this should now login you in and your home directory is on server1 =&gt; pwd should show /rhome/station20/nisuser2001 to test you can create file on servver2 and go to server1 and check file is in the directory NOTE: remember linux autofs is similar to windows ADFS or userhome redirection on file server but ofcourse LINUX is much better with far less BUGS 😊 Linux Rules… upvoted 1 time Submit Cancel",
+      " Firewall-cmd - -add-services={rpc-bind,nfs,mounted} - -perm  Firewall-cmd - -reload  Firewall-cmd - -list-services and ensure the above 3 services are included  Showmount -e and make sure you see something like this / rhome/station20 IPaddress_of_Your_server  DONE with server1 (Most likely you will NOT need do this in exam as server 1 will be already configured for you – server 2 U MUST DO ALL) follow below upvoted 1 time Submit Cancel",
+      "Server 2  Dnf install autofs nfs-utils  Systemctl enable - -now autofs; systemctl status autofs (ensure all good)..no need for nfs to run  Vim /etc/auto.master =&gt; below this line [/misc /etc/auto.misc ] add this line /rhome/station20 /etc/auto.station20 (you can name auto.station20 file anything you like as long as it is meaningful and also I don’t like to edit the existing file auto.misc – use it as example and backup and tidiness)  Now edit file / etc/auto.station20 and add this line to it, * -rw,soft,sync server1_IP_addres:/rhome/station20/&amp; follow below upvoted 1 time Submit Cancel",
+      " Systemctl restart autofs (ensure all good)  Useradd -d /rhome/station20 /nisuser2001 -u 55443 nisuser2001; echo “password” | passwd –stdin nisuser2001 [same as in first steps on server1] – remember in exam username and password are provided for you so use them as either directory server or identity management server roles are already setup  Now use the user account you created above and ssh $ ssh nisuser2001@localhost =&gt; put password and this should now login you in and your home directory is on server1 =&gt; pwd should show /rhome/station20/nisuser2001 to test you can create file on servver2 and go to server1 and check file is in the directory NOTE: remember linux autofs is similar to windows ADFS or userhome redirection on file server but ofcourse LINUX is much better with far less BUGS 😊 Linux Rules… upvoted 1 time Submit Cancel",
+      "MUST do on server 1  Dnf install nfs-utils **autofs is optional**  Add the to file /etc/exports like this o /rhome/station20 IPadrr_of_your_server(rw,no_root_squash) o Systemctl enable –now nfs-server o Systemctl status nfs-server (ensure running and no issues)  Create directory =&gt; mkdir -p /rhome/station/nisuser{2001..2004} if you accommodating 4 users otherwise increase or decrease the number 4..Now make sure you changed permissions as per above follow below upvoted 1 time Submit Cancel",
+      " Firewall-cmd - -add-services={rpc-bind,nfs,mounted} - -perm  Firewall-cmd - -reload  Firewall-cmd - -list-services and ensure the above 3 services are included  Showmount -e and make sure you see something like this / rhome/station20 IPaddress_of_Your_server  DONE with server1 (Most likely you will NOT need do this in exam as server 1 will be already configured for you – server 2 U MUST DO ALL) follow below upvoted 1 time Submit Cancel",
+      "Server 2  Dnf install autofs nfs-utils  Systemctl enable - -now autofs; systemctl status autofs (ensure all good)..no need for nfs to run  Vim /etc/auto.master =&gt; below this line [/misc /etc/auto.misc ] add this line /rhome/station20 /etc/auto.station20 (you can name auto.station20 file anything you like as long as it is meaningful and also I don’t like to edit the existing file auto.misc – use it as example and backup and tidiness)  Now edit file / etc/auto.station20 and add this line to it, * -rw,soft,sync server1_IP_addres:/rhome/station20/&amp; follow below upvoted 1 time Submit Cancel",
+      " Systemctl restart autofs (ensure all good)  Useradd -d /rhome/station20 /nisuser2001 -u 55443 nisuser2001; echo “password” | passwd –stdin nisuser2001 [same as in first steps on server1] – remember in exam username and password are provided for you so use them as either directory server or identity management server roles are already setup  Now use the user account you created above and ssh $ ssh nisuser2001@localhost =&gt; put password and this should now login you in and your home directory is on server1 =&gt; pwd should show /rhome/station20/nisuser2001 to test you can create file on servver2 and go to server1 and check file is in the directory NOTE: remember linux autofs is similar to windows ADFS or userhome redirection on file server but ofcourse LINUX is much better with far less BUGS 😊 Linux Rules… upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Make on data that only the user owner and group owner member can fully access.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/67786-exam-ex200-topic-1-question-55-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "chmod ug+rwx,o= /data upvoted 2 times Submit Cancel",
+      "chmod ug+rwx /mnt/data chmod o-rwx /mnt/data upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Who ever creates the files/directories on a data group owner should automatically be in the same group owner as data.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/69335-exam-ex200-topic-1-question-56-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "As per my understanding, files and folders created under /data should inherit the owner: group permission. we can achieve this by setting GUID. chmod 2770 /data 2 –setGUID 7 –Set users full perissions 7 –set group full permission 0 –set other no permissions upvoted 1 time Submit Cancel",
+      "It is not mentioned that group has 7 permission set. Simply 'chmod g+s /data' is enough it would automatically take care what current permissions are on the folder for group. upvoted 7 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Your System is going to use as a Router for two networks. One Network is 192.168.0.0/24 and Another Network is 192.168.1.0/24. Both network's IP address has assigned. How will you forward the packets from one network to another network?",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/55079-exam-ex200-topic-1-question-57-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "NEVER Directly edit sysctl.conf is not recommended, create customised file in the /etc/sysctl.d directory. echo 'net.ipv4.ip_forward=1' &gt;&gt; /etc/sysctl.d/IP_Forwarding.conf sysctl --load /etc/sysctl.d/IP_Forwarding.conf ***DO NOT make mistake like others do and use -p because the option -p ONLY works if you edited the /etc/sysctl.conf file which is NOT recommended, so if you use customized file as per above **Highly recommended** then you must use option --load as per above example confirm by either sysctl -a | grep ip_forward or cat /proc/sys/net/ipv4/ip_forward NOTE:REBOOT is highly recommended but not necessary if you use the above procedure upvoted 2 times Submit Cancel",
+      "Your answer is great, however DO NOT use -p if you making customized file because -p reads from the /etc/sysctl.conf file and NOT customized file to read from customized file use this sysctl --load /PATH_to_fileName - see my answer above upvoted 1 time Submit Cancel",
+      "If you want your change to survive the reboot, insert below line vi /etc/sysctl.conf net.ipv4.ip_forward=1 reboot the machine and check cat /proc/sys/net/ipv4/ip_foward upvoted 2 times Submit Cancel",
+      "Directly editing sysctl.conf is not recommended anymore, configs now go to /etc/sysctl.d directory. echo 'net.ipv4.ip_forward=1' &gt;&gt; /etc/sysctl.d/ipforward.conf sysctl -p reboot sysctl net.ipv4.ip_forward (to verify; should return a value of 1) upvoted 1 time Submit Cancel",
+      "Your answer is great, however DO NOT use -p if you making customized file because -p reads from the /etc/sysctl.conf file and NOT customized file to read from customized file use this sysctl --load /PATH_to_fileName - see my answer above upvoted 1 time Submit Cancel",
+      "Firewalld had been added a new option,--add-forward, in version 0.9.0 .With this option packects from one interface can be forwarded to another interface. https://firewalld.org/2020/04/intra-zone-forwarding upvoted 2 times Submit Cancel",
+      "By the way, two interfaces must be in the same zone. upvoted 2 times Submit Cancel",
+      "sysctl -w net.ipv4.ip_forward=1 sysctl net.ipv4.ip_forward upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create the user named eric and deny to interactive login.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/69505-exam-ex200-topic-1-question-58-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "$useradd -m -s /sbin/nologin eric; echo &quot;password&quot; | passwd --stdin eric use above in case future wise you may need to enable it and also to test it as per below..always test DO NOT assume!! $ssh eric@localhost =&gt; put password you should get below message This account is currently not available. onnection to localhost closed. upvoted 2 times Submit Cancel",
+      "#useradd eric -s /sbin/nologin upvoted 10 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION /data Directory is shared from the server1.example.com server. Mount the shared directory that:",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42590-exam-ex200-topic-1-question-59-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "yum install nfs* -y mkdir /data chmod 770 /data vi /etc/auto.master /data /etc/auto.data :wq! vi /etc/auto.data data -rw,soft,intr server1.example.com:/data :wq! systemctl enable --now nfs* systemctl restart autofs upvoted 2 times Submit Cancel",
+      "sudo systemctl enable --now nfs-server sudo systemctl enable --now rpcbind upvoted 1 time Submit Cancel",
+      "Regarding the comments made in some posts=&gt; which one to use static NFS mount (edit fstab) or autofs, well it is matter of preference but here points to keep in mind • It is RHCSA exam and it clearly emphasizes on autofs • Static NFS mount are manual and editing the fstab means prone to errors and hence there is good chance the system will NOT boot and also server1 where the share is hosted may be offline or network issue then you will need to go into emergency mode to repair that [reedit the fstab], even if boots will take long time to do so • You don’t need to create any directory on server2 using autofs, where as with static NFS mount you will need to create one like /mnt/Data etc in advance hence more effort involved, plus you need to set the correct permissions • Autofs onces configured correctly it works like Gem and hence Redhat emphasizing on it follow below upvoted 1 time Submit Cancel",
+      "yum -y install nfs-utils showmount -e server1 mkdir -p /mnt/data sudo mount -t nfs server1.example.com:/data /mnt/data echo 'server1.example.com:/data /mnt/data nfs defaults 0 0' &gt;&gt; /etc/fstab upvoted 6 times Submit Cancel",
+      "Server1 assume /data already share from server1.example.com, otherwise #echo '/data *(rw)' &gt;&gt; /etc/exports #exportfs -a Server2 #systemctl enable --now nfs-server #mkdir /mnt/shared #mount -t nfs server1.example.com:/data mnt/shared upvoted 1 time Submit Cancel",
+      "At server1: # yum install -y nfs-utils # systemctl enable --now nfs-server # echo “/data server2(rw)” &gt;&gt; /etc/exports # exportfs -av At server2: #mount -o rw,sync server1.example.com:/data /mnt #df -h /mnt upvoted 1 time Submit Cancel",
+      "Is it should install cif-utils,or nfs-utils? upvoted 1 time Submit Cancel",
+      "mount server1.example.com:/data /mnt upvoted 1 time Submit Cancel",
+      "In RHEL8 and because de request is not with autofs, we can proceed in this way: # mount server1.example.com server:/data /mnt upvoted 8 times Submit Cancel",
+      "One rule for the exam is that all changes we are making should survive reboot. Which is why autofs would be a good option. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION One Logical Volume named lv1 is created under vg0. The Initial Size of that Logical Volume is 100MB. Now you required the size 500MB. Make successfully the size of that Logical Volume 500M without losing any data. As well as size should be increased online.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/75700-exam-ex200-topic-1-question-60-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "lvextend -L 500M -r /dev/vg0/lv1 user the -r and you won't have to do the additional step to resize2fs upvoted 9 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create one partitions having size 100MB and mount it on data.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130741-exam-ex200-topic-1-question-61-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "mkdir /mnt/data fdisk /dev/nvme1n1 n +100MB w partprobe mkfs.ext4 /dev/nvme1n1 blkid echo &quot; UUID /mnt/data ext4 defaults 0 0 &quot; &gt;&gt; /etc/fstab mount -a sysctl daemon-reload mount upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION You are new System Administrator and from now you are going to handle the system and your main task is Network monitoring, Backup and Restore. But you don't know the root password. Change the root password to redhat and login in default Runlevel.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42591-exam-ex200-topic-1-question-62-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "IF YOUR'RE USING RHEL 9.6 rd.break will now work. Follow this method below: - upon reboot press e - replace rghb quite with init=/bin/bash and then (control X to save) - mount -o remount,rw / - ls -lZ /etc/shadow - passwd - chcon (paste the line from ls -lZ command here) eg;---&gt; system_u .....................t:s0 - exec /sbin/init ref this video for more visual help: https://www.youtube.com/watch?v=HK7OI3uboKg upvoted 1 time Submit Cancel",
+      "# Restart the System. # When the boot-loader menu appears, press any key to interrupt the countdown, except Enter. # - press &quot;e&quot; letter to edit # - Remove any console= options from the line. # 1 Add init=/bin/bash ...at the end of the line that begins with &quot;Linux&quot; in grub menu(ctrl e) # 2 crtl x ----bash-5.1#. # 3 mount -o remount,rw / # 4 ls -lZ /etc/shadow (note this dir system_u:object...) # 5 passwd redhat redhat # 6 chcon system_u:object... /etc/shadow # 7 exec /sbin/init upvoted 1 time Submit Cancel",
+      "You can also do: interrupt boot and add init=/bin/bash as kernel argument mount -o remount,rw / whoami passwd touch /.autorelabel exec /lib/systemd/systemd upvoted 2 times Submit Cancel",
+      "In RHEL 9 - Reboot the system - Press 'e' and modify line starting with Linux with rw and add init=/bin/bash - Press F10 - Enter passwd to reset root passwrod - touch /autorelable - exec /sbin/init upvoted 2 times Submit Cancel",
+      "You can also do the following (slight variation to adolfoale's solution): - Reboot - At GRUB2 press e for the primary (default) kernel - Replace ro with rw init=/sysroot/bin/sh - Ctrl+X - chroot /sysroot - passwd root - Enter the password - touch /.autorelabel - Exit - Reboot upvoted 2 times Submit Cancel",
+      "the &quot;touch /.autorelabel&quot; is needed if SELinux is enabled/enforced !! if you don't create it password not be update upvoted 4 times Submit Cancel",
+      "In RHEL8 - reboot the system - press &quot;e&quot; letter - Add &quot;rd.break&quot; at the end of de line thet begening with &quot;Linux&quot; in grub menu - ctrl + x - # mount -o remount,rw /sysroot - # chroot /sysroot - # passwd - # touch /.autorelabel - # exit - # logout upvoted 33 times Submit Cancel",
+      "Know this by heart, because you won't be able to log in on the second server during the exam. upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION You are a System administrator. Using Log files very easy to monitor the system. Now there are 50 servers running as Mail, Web, Proxy, DNS services etc. You want to centralize the logs from all servers into on LOG Server. How will you configure the LOG Server to accept logs from remote host?",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/31364-exam-ex200-topic-1-question-63-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "i would follow this: https://www.linuxtechi.com/configure-rsyslog-server-centos-8-rhel-8/ upvoted 1 time Submit Cancel",
+      "$ vim /etc/rsyslog.conf # uncomment the lines containing (load = &quot;imudp&quot; ) (type = &quot;imudp&quot; port=&quot;514) (load = &quot;imtcp&quot; ) (type = &quot;imtcp&quot; port=&quot;514) $ firewall-cmd --add-port=514/tcp --permanent # restart firewall and rsyslog service upvoted 5 times Submit Cancel",
+      "You forgot the UDP port: sudo vim /etc/rsyslog.conf -&gt; uncomment imudp and imtcp portions sudo systemctl restart rsyslog.service sudo ss -tulnp | grep 514 sudo firewall-cmd --add-port=514/tcp --permanent sudo firewall-cmd --add-port=514/udp --permanent sudo firewall-cmd --reload upvoted 1 time Submit Cancel",
+      "should we need to add port for 514 udp too? upvoted 1 time Submit Cancel",
+      "In redhat 8.2, uncomment two lines contained &quot;imtcp&quot; in /etc/rsyslog.conf. Then restart rsyslogd service.Don't forget open port 514/tcp on firewall. upvoted 3 times Submit Cancel",
+      "So you would: vi /etc/rsyslog.conf /imtcp – to search the string in question Uncomment 2 lines starting with ‘module’ and ‘input’ systemctl restart rsyslog systemctl status rsyslog (Ensure rsyslog restarted correctly) firewall-cmd --add-port=514/tcp –permanent (Add the port in question and make it permanent) firewall-cmd –reload (Reload the config to ensure changes are still in place) firewall-cmd --list-all (Verify the config) upvoted 5 times Submit Cancel",
+      "from 7 rsyslog replace syslog upvoted 2 times Submit Cancel",
+      "i think u can typing ls first if u not sure upvoted 1 time Submit Cancel",
+      "so what exactly are we typing here. which part from the explanation to whrere /etc/sysconfig/rsyslog or etc/sysconfig/syslog ??? upvoted 1 time Submit Cancel",
+      "The file is locate at: vim /etc/sysconfig/rsyslog upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Your System is configured in 192.168.0.0/24 Network and your nameserver is 192.168.0.254. Make successfully resolve to server1.example.com.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/53652-exam-ex200-topic-1-question-64-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "It's not eve written in english this question. Either setup the DNS resolve with nmcli or edit the hostfile when you are in front of the real thing upvoted 2 times Submit Cancel",
+      "In RHEL8, add this line to the /etc/hosts file and save the changes as follow: #vim /etc/hosts 192.168.0.254 server1.example.com upvoted 9 times Submit Cancel",
+      "Assume ens192 is the interface nmcli con mod ens192 ipv4.dns 192.168.0.254 nmcli con up ens192 nslookup server1.example.com upvoted 9 times Submit Cancel",
+      "in RHEL 8 : vi /etc/hosts 192.168.0.254 nameserver upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION One Package named zsh is dump on ftp://server1.example.com under /pub/updates directory and your FTP server is 192.168.0.254. Install the package zsh.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130808-exam-ex200-topic-1-question-65-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "ping -c 3 192.168.0.254 # verify network wget ftp://192.168.0.254/pub/updates/zsh.rpm # download package dnf install ./zsh.rpm -y # install package with dependency resolution rpm -q zsh # verify installation upvoted 1 time Submit Cancel",
+      "wget ftp://server1.example.com/pub/updates/zsh yum install zsh upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Some users home directory is shared from your system. Using showmount -e localhost command, the shared directory is not shown. Make access the shared users home directory.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/53365-exam-ex200-topic-1-question-66-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "cat /etc/exports exportfs -rav (should display errors - like unknown keywords &quot;no_root_squah&quot; as indicated by Lazzylinux) vi /etc/exports (fix syntax observed) :wq! exportfs -rav (if no errors observed proceed) showmount -a upvoted 1 time Submit Cancel",
+      "Please Note the below: • You can use exportfs instead of showmount -e, use –help to learn more about it • The format of the /etc/exports file is very precise, particularly in regards to use of the space character. Remember to always separate exported file systems from hosts and hosts from one another with a space character. However, there should be no other space characters in the file except on comment lines. For example, the following two lines do not mean the same thing: upvoted 1 time Submit Cancel",
+      "Afer restart the nfs-server service and ensuring the firewall allowed the services, I run below command $showmount -e localhost =&gt; ONLY one share showed up and you guessed it Export list for localhost: /home/guests/ 192.168.20.0/24(rw,no_root_squash) As you can see it did not show the /rhome share and that is because I deliberately misspelled the word squash – notice I removed the letter S and because of that it didn’t export and hence doesn’t showup, once I corrected it it hsowed up as per below Export list for localhost: /home/guests/ 192.168.20.0/24(rw,no_root_squash) /rhome 192.168.20.0/24(rw,no_root_squash) upvoted 1 time Submit Cancel",
+      "Please Note the below: • You can use exportfs instead of showmount -e, use –help to learn more about it • The format of the /etc/exports file is very precise, particularly in regards to use of the space character. Remember to always separate exported file systems from hosts and hosts from one another with a space character. However, there should be no other space characters in the file except on comment lines. For example, the following two lines do not mean the same thing: upvoted 1 time Submit Cancel",
+      "This is NOT remote host issues; it is local issue where the user home directories are being exported from. Lets say server1 is hosting the users home directories and server2 were users accessing and not getting their home directories mapped The usage of $ showmount -e localhost =&gt; clearly indicates the command is executed on server1 because if it is to be executed on server2 the it should be $ showmount -e server1 to fetch the export list from server1 Other hint given in the question is that it states [ the shared directory is not shown] this means ONLY issue is the user home directory and other shares not experiencing any issues otherwise would have started NONE of any shared directories are shown. Someone suggested it is firewall, I can say defiantly NOT as firewall on linux in public zone and even other zones all all outgoing connections but blocks incoming connections, however as per above the issue is local and NOT remote and hence we can eliminate the firewall. upvoted 1 time Submit Cancel",
+      "following up due to words limit reached NOTE I had tested it and confirmed it is the case, removing the following services (nfs, rpc-bind, mountd) from the firewall did not impact on the export list showing locally correctly. Thos only Impacted when I initiate connection from remote server error “Input/output error” when trying to cd into previously exported directory that I deliberately made it unavailable via below comments I was reasonably sure it is Syntax error in the exports file and I tested it and it worked as per question issue, I purposely misspelled the below and allowed the nfs, rpc-bind and mountd services on the firewall but the directory did NOT show using the command In the /etc/exports /home/guests/ 192.168.20.0/24(rw,no_root_squash) /rhome 192.168.20.0/24(rw,no_root_squah) upvoted 1 time Submit Cancel",
+      "Afer restart the nfs-server service and ensuring the firewall allowed the services, I run below command $showmount -e localhost =&gt; ONLY one share showed up and you guessed it Export list for localhost: /home/guests/ 192.168.20.0/24(rw,no_root_squash) As you can see it did not show the /rhome share and that is because I deliberately misspelled the word squash – notice I removed the letter S and because of that it didn’t export and hence doesn’t showup, once I corrected it it hsowed up as per below Export list for localhost: /home/guests/ 192.168.20.0/24(rw,no_root_squash) /rhome 192.168.20.0/24(rw,no_root_squash) upvoted 1 time Submit Cancel",
+      "Please Note the below: • You can use exportfs instead of showmount -e, use –help to learn more about it • The format of the /etc/exports file is very precise, particularly in regards to use of the space character. Remember to always separate exported file systems from hosts and hosts from one another with a space character. However, there should be no other space characters in the file except on comment lines. For example, the following two lines do not mean the same thing: upvoted 1 time Submit Cancel",
+      "The question states the directories are already shared, so my best guess is that the firewall is not open or some dependant service are not started: sudo firewall-cmd --add-service=nfs3 --permanent sudo firewall-cmd --add-service=rpc-bind --permanent sudo firewall-cmd --add-service=mountd --permanent sudo firewall-cmd --reload sudo firewall-cmd --list-all sudo systemctl status rpcbind.service sudo systemctl status nfs-server.service sudo systemctl status nfs-mountd.service upvoted 1 time Submit Cancel",
+      "I disagree with your findings, please read my response - also no need to use 3 commands to add the services just use this firewall-cmd --add-service={nfs,mountd,rpc-bind} --perm and preferable to use firewall-cmd --list-services over this command firewall-cmd --list-all as it is highlights exactly what you looking for without extra info upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Add a new logical partition having size 100MB and create the data which will be the mount point for the new partition.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/77693-exam-ex200-topic-1-question-67-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "To created a logical partitions do this in fdisk: press e to create extended partition, press p to create the main partition, and the extended partition is further divided into logical partitions upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION You have a domain named www.rhce.com associated IP address is 192.100.0.2. Configure the Apache web server by implementing the SSL for encryption communication.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62608-exam-ex200-topic-1-question-68-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "$ sudo su # yum install mod_ssl (install ssl module) # system enable --now httpd (enable http daemon) # apachectl -M | grep ssl (verify ssl is running) # firewall-cmd zone=public --add-service=https --permanent (allow https access) # firewall-cmd --reload (firewall take effect) # openssl req -newkey rsa:2048 -nodes -keyout /etc/pki/tls/private/httpd.key -x509 -days 365 -out /etc/pki/tls/certs/httpd.crt # vim /etc/httpd/conf.d/ssl.conf SSLCertificateFile /etc/pki/tls/certs/httpd.crt SSLCertificateKeyFile /etc/pki/tls/private/httpd.key &lt;VirtualHost 192.100.0.2:443&gt; DocumentRoot &quot;/var/www/html&quot; Servername www.rhce.com:443 # systemctl reload httpd upvoted 1 time Submit Cancel",
+      "i thought httpd is not in rhcsa 2021 upvoted 5 times Submit Cancel",
+      "https://linuxconfig.org/how-to-install-mod-ssl-on-redhat-8 upvoted 1 time Submit Cancel",
+      "Simply use mod_ssl module and then generated self-signed SSL cert, job done. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION There is a server having 172.24.254.254 and 172.25.254.254. Your System lies on 172.24.0.0/16. Make successfully ping to 172.25.254.254 by Assigning following IP: 172.24.0.x where x is your station number.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130813-exam-ex200-topic-1-question-69-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "ip address add 172.24.0.0/16 ping 172.25.254.254 upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Successfully resolve to server1.example.com where your DNS server is 172.24.254.254.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/58037-exam-ex200-topic-1-question-70-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "echo &quot;172.24.254.254 server1.example.com&quot; &gt;&gt; /etc/hosts upvoted 1 time Submit Cancel",
+      "This is old school stuff and name resolutions checks for DNS server first over hosts file and easiest way to do add DNS server IP without the complicated nmcli is to use nmtui (you can use it even in very base OS install and saves heaps of time) nmcli great to have if you have plenty of time i.e. using it at work to waste time and deter your manage from ever thinking of firing you :) upvoted 1 time Submit Cancel",
+      "echo &quot;172.24.254.254 server1.example.com&quot; &gt;&gt; /etc/hosts upvoted 2 times Submit Cancel",
+      "Can you add this to the vim /etc/hosts file to complete this request? upvoted 3 times Submit Cancel",
+      "I do not see it like this. /etc/hosts contains domain name and IP address of each custom machine/server we want to add. The question does not provide IP address of the server, only DNS server. The IP of the server itself is unknown and DNS should resolve it. Correct method (and easiest, IMHO) would be to use nmcli like sugisho suggested. Modifying resolv.conf, on the other hand, would only result in temporary solution as this file gets overwritten automatically on each reboot by NetworkManager, unless we add a custom configuration to /etc/NetworkManager/conf.d/something.conf with contents: [main] dns=none Only then can we modify the /etc/resolv.conf manually and it will persist. upvoted 1 time Submit Cancel",
+      "example nmcli c m ens192 1pv4.dns 172.24.254.254 or nmtui upvoted 5 times Submit Cancel",
+      "absolutey the easiest and also persistent way to do it. just a sidenote, there is a typo (1pv4.dns --&gt; should be ipv4.dns) upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Your System is going use as a router for 172.24.0.0/16 and 172.25.0.0/16. Enable the IP Forwarding. 1. echo \"1\" >/proc/sys/net/ipv4/ip_forward 2. vi /etc/sysctl.conf net.ipv4.ip_forward=1",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/76749-exam-ex200-topic-1-question-71-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "NEVER Directly edit sysctl.conf is not recommended, create customised file in the /etc/sysctl.d directory. echo 'net.ipv4.ip_forward=1' &gt;&gt; /etc/sysctl.d/IP_Forwarding.conf sysctl --load /etc/sysctl.d/IP_Forwarding.conf ***DO NOT make mistake like others do and use -p because the option -p ONLY works if you edited the /etc/sysctl.conf file which is NOT recommended, so if you use customized file as per above **Highly recommended** then you must use option --load as per above example confirm by either sysctl -a | grep ip_forward or cat /proc/sys/net/ipv4/ip_forward NOTE:REBOOT is highly recommended but not necessary if you use the above procedure upvoted 1 time Submit Cancel",
+      "sysctl -w net.ipv4.ip_forward=1 upvoted 3 times Submit Cancel",
+      "Reboot and you will get ZERO in the exam, see my comments upvoted 1 time Submit Cancel",
+      "This does not persist. Official solution is correct upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Who ever creates the files/directories on archive group owner should be automatically should be the same group owner of archive.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62610-exam-ex200-topic-1-question-72-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "#Create a Directory mkdir archive #Set the GUID chmod g+s archive Now any file or folder created in the archive will have the same owner:group permissions as parent folder, in this case same as archive folder upvoted 4 times Submit Cancel",
+      "Say we got data dir under home, so: chmod g+s data tar cvf backup.tar data upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Make on /archive directory that only the user owner and group owner member can fully access.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62611-exam-ex200-topic-1-question-73-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Simple: mkdir /archive chmod 770 /archive upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Notes: NFS NFS instructor.example.com:/var/ftp/pub/rhel6/dvd ן¼ YUM http://instructor.example.com/pub/rhel6/dvd ן¼ ldap http //instructor.example.com/pub/EXAMPLE-CA-CERT ן¼ ן¼ Install dialog package.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/113425-exam-ex200-topic-1-question-74-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "this is not a question upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION SELinux must run in force mode.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/33806-exam-ex200-topic-1-question-75-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "sestatus can also be used to see SELinux settings: Current Mode: shows the current mode, Mode from config file: Shows what mode will be set after reboot. upvoted 2 times Submit Cancel",
+      "[root@station ~]# setenforce Enforcing [root@station ~]# getenforce Enforcing [root@station ~]# vi /etc/selinux/config # This file controls the state of SELinux on the system. # SELINUX= can take one of these three values: # enforcing - SELinux security policy is enforced. # permissive - SELinux prints warnings instead of enforcing. # disabled - No SELinux policy is loaded. SELINUX=enforcing upvoted 9 times Submit Cancel",
+      "correct path is /etc/selinux/config check the man page upvoted 3 times Submit Cancel",
+      "/etc/sysconfig/selinux is a link to /etc/selinux/config upvoted 2 times Submit Cancel",
+      "Correct path is vim /etc/selinux/config SELINUX=enforcing upvoted 6 times Submit Cancel",
+      "Nope, its: /etc/sysconfig/selinux SELINUX=enforcing If was disabled restart is mandatory. use getenforce to check value upvoted 4 times Submit Cancel",
+      "/etc/sysconfig/selinux is a link to /etc/selinux/config upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION The firewall must be open.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/53584-exam-ex200-topic-1-question-76-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "I would agree on making the default zone to be &quot;trusted zone&quot; because it is completely open - see man 5 firewalld.zones -for more info $firewall-cmd --set-defualt-zone=trusted $firewall-cmd --reload $firewall-cmd --get-default-zone =&gt; that should show you trusted as your current default zone and you NIC interface s attached to it ** remember =&gt; the zones have 0ne-Many relationships i.e. NIC interface can ONLY belong to one ZONE but a ZONE can have many interfaces attached to it. upvoted 1 time Submit Cancel",
+      "Firewall must be open... Disable o enable? upvoted 2 times Submit Cancel",
+      "in my ignorance &quot;must be open&quot; -&gt; &quot;must be installed but not block anything&quot; sudo firewall-cmd --set-default-zone=trusted sudo firewall-cmd --reload sudo firewall-cmd --list-all upvoted 1 time Submit Cancel",
+      "if not installed: yum install -y firewalld else: systemctl enable --now firewalld.service firewall-cmd --state upvoted 5 times Submit Cancel",
+      "systemctl disable --now firewalld.service firewall-cmd --state upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION In the system, mounted the iso image /root/examine.iso to/mnt/iso directory. And enable automatically mount (permanent mount) after restart system.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42634-exam-ex200-topic-1-question-77-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Considering iso images are READ ONLY and hence no fear of data loss!! it is ok to use defaults instead of loop to avoid confusion and complicating things..refer here if you wish to read more http://ccrma.stanford.edu/planetccrma/man/man8/mount.8.html $echo /root/examine.iso /mnt/iso defaults 0 0 =&gt; Note you could use 0 1 to lessen the importance of system check on boot time $ mount -a $ findmnt -x =&gt; (Important to run this command as it will catch errors or warnings not picked up by mount -a) upvoted 2 times Submit Cancel",
+      "echo '/root/examine.iso /mnt/iso iso9660 loop 0 0' &gt;&gt; /etc/fstab upvoted 3 times Submit Cancel",
+      "automatic and permanent, this can also be active by autofs #dnf install autofs #systemctl start autofs #systemctl enable --now autofs by default autofs(/etc/auto.misc) is configured to mount cdrom on /misc/cd #cd /misc/cd ; ls upvoted 1 time Submit Cancel",
+      "In RHEL8: /root/examine.iso /mnt/iso iso9660 loop 0 0 mount -a upvoted 7 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure your NFS services. Share the directory by the NFS Shared services.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130865-exam-ex200-topic-1-question-78-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "yum install nfs-utils systemctl start {rpcbind,nfs-server,rpc-statd,nfs-idmapd} vim /etc/exports /root/shared *(rw) :wq exportfs -a showmount -e localhost mkdir /nfs chmod 777 /nfs On client Systemctl start rpcbind showmount -e 192.168.122.1 mkdir /mnt/nfs mount -t nfs 192.168.122.1:/root/shared /mnt/nfs upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION 1. Find all sizes of 10k file or directory under the /etc directory, and copy to /tmp/findfiles directory. 2. Find all the files or directories with Lucy as the owner, and copy to /tmp/findfiles directory.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62623-exam-ex200-topic-1-question-79-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "I would NOT use -a as ownership is not carried over, better use -P -p =&gt; Preserves file characteristics (modification time, access time, ownership, permission-bits). -a, --archive Preserve the source's metadata, such as creation date, permissions, and extended attributes upvoted 1 time Submit Cancel",
+      "mkdir /tmp/findfiles cp $(find /etc -size 10k) /tmp/findfiles/ cp $(find / -user lucy) /tmp/findfiles/ upvoted 2 times Submit Cancel",
+      "How would you check to see what is in the directory to verify your search? upvoted 1 time Submit Cancel",
+      "#mkdir /tmp/findfiles # find /etc -size 10k -exec cp -r {} /tmp/findfiles \\; # find / -user lucy -exec cp -r {} /tmp/findfiles \\; upvoted 7 times Submit Cancel",
+      "I would use cp -a to preserve the ownership. upvoted 1 time Submit Cancel",
+      "I would NOT use -a as ownership is not carried over, better use -P -p =&gt; Preserves file characteristics (modification time, access time, ownership, permission-bits). -a, --archive Preserve the source's metadata, such as creation date, permissions, and extended attributes upvoted 1 time Submit Cancel",
+      "Why not just use the following: find /etc -size 10k &gt; /tmp/findfiles find / -user lucy &gt;&gt; /tmp/findfiles upvoted 1 time Submit Cancel",
+      "This is just redirecting your command output to a file, but not copying the files to a directory upvoted 3 times Submit Cancel",
+      "/tmp/findfiles is a directory. You can only append to files upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION There is a local logical volumes in your system, named with common and belong to VGSRV volume group, mount to the /common directory. The definition of size is 128 MB. Requirement: Extend the logical volume to 190 MB without any loss of data. The size is allowed between 160-160 MB after extending.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42635-exam-ex200-topic-1-question-80-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "# Extend the Logical Volume to 190 MB lvextend -r -L 190MB /dev/VGSRV/common # Create a Mount Point mkdir /mnt/common # Create a Filesystem mkfs.ext4 /dev/VGSRV/common # Update /etc/fstab echo &quot;/dev/mapper/VGSRV-common /mnt/common ext4 defaults 0 0&quot; &gt;&gt; /etc/fstab # Mount the Logical Volume mount -a # Reload systemd systemctl daemon-reload # Check the Mount mount upvoted 2 times Submit Cancel",
+      "###* mount the existing volume ###* if volume is ext4! mkdir /common nano /etc/fstab: /dev/mapper/vgsrv-common /common ext4 defaults 1 2 mount -a ###* Expand 128M -&gt; 190M lvextend -L 190M /dev/mapper/vgsrv-common or lvextend -L +68M /dev/mapper/vgsrv-common after lvextend we need to run xfsgrow or resize2fs in case of ext* upvoted 2 times Submit Cancel",
+      "Apologies, my 'L' requires a switch in front: `lvextend -r -L [...]` upvoted 2 times Submit Cancel",
+      "# lvextend -rv -L 190M /dev/VGSRV/common upvoted 4 times Submit Cancel",
+      "I don't know this answer. why 190M? definition size is 128M. so extend size 68M. plz help me. why this answer is 190M? upvoted 1 time Submit Cancel",
+      "you can either use: lvextend -r L 190M /path/to/lvm OR lvextend -r L +62M /path/to/lvm The first option specifies the exact amount that is being requested (190), while the second options is adding the difference (190-128=62) to meet the requested storage amount. upvoted 6 times Submit Cancel",
+      "Apologies, my 'L' requires a switch in front: `lvextend -r -L [...]` upvoted 2 times Submit Cancel",
+      "Also this option is valid: # lvextend -r -L 190M /dev/VGSRV/common upvoted 9 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION There is a local logical volumes in your system, named with shrink and belong to VGSRV volume group, mount to the /shrink directory. The definition of size is 320 MB. Requirement: Reduce the logical volume to 220 MB without any loss of data. The size is allowed between 200-260 MB after reducing.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/82690-exam-ex200-topic-1-question-81-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "alternate solution, because of the possbile data loss if the data exchange is a little bit different between lvexreduce and resize2fs. umount /shrink e2fsck -f /dev/mapper/vgsrv-shrink ####* Shrink the file system as small as possible resize2fs -M /dev/mapper/vgsrv-shrink lvreduce -L 220M /dev/mapper/vgsrv-shrink ####* extend the file system to the max device size resize2fs /dev/mapper/vgsrv-shrink mount -a upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a swap space, set the size is 600 MB, and make it be mounted automatically after rebooting the system (permanent mount).",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42640-exam-ex200-topic-1-question-82-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "#Easier straight forward sudo fallocate -l 600M /swapfile sudo chmod 600 /swapfile sudo mkswap /swapfile sudo swapon /swapfile echo '/swapfile none swap defaults 0 0' | sudo tee -a /etc/fstab swapon --show upvoted 1 time Submit Cancel",
+      "from the fstab man page: &quot;The second field (fs_file). This field describes the mount point (target) for the filesystem. For swap partitions, this field should be specified as `none'.&quot; So the correct fstab line is: UUID=bbfc561b-ff49-415c-9148-aec8e6169599 none swap defaults 0 0 upvoted 1 time Submit Cancel",
+      "# fdisk /dev/sda (create a swap partition with swap type) #mkswap /dev/sda1 #vim /etc/fstab :- UUID=1328c481-4b04-4245-a3ee-36c42f47eea5 swap swap defaults 0 0 #swapon -a #swapon -s upvoted 7 times Submit Cancel",
+      "# Create swap partition with fdisk of 600MB # mkswap -c /dev/sdb3 # echo &quot;UUID=bb4b75dc-cb78-4dd9-82e3-ccc13530aca4 swap swap defaults 0 0&quot; &gt;&gt; /etc/fstab upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION According the following requirements to create user, user group and the group members: - A group named admin. - A user named mary, and belong to admin as the secondary group. - A user named alice, and belong to admin as the secondary group. - A user named bobby, bobby's login shell should be non-interactive. Bobby not belong to admin as the secondary group. Mary, Alice, bobby users must be set \"password\" as the user's password.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/143313-exam-ex200-topic-1-question-83-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "'useradd' without option '-a' means the new assigned group is replacing the previous group assignment. '-a' means 'append' to enable a secondary group assignment. I think '-a' is necessary to fit the requirement. # groupadd admin # useradd -aG admin mary # useradd -aG admin alice # useradd -s /sbin/nologin bobby upvoted 1 time Submit Cancel",
+      "there is no -a switch in useradd... and you are creating the users from scratch... just make id &quot;username&quot; to check upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION According the following requirements to create a local directory /common/admin. This directory has admin group. This directory has read, write and execute permissions for all admin group members. Other groups and users don't have any permissions. All the documents or directories created in the/common/admin are automatically inherit the admin group.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62650-exam-ex200-topic-1-question-84-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "mkdir -p /common/admin chown :admin /common/admin chmod 2770 /common/admin upvoted 2 times Submit Cancel",
+      "mkdir -p /common/admin groupadd admin chown :admin /common/admins chmod 770 /common/admins chmod g+s /common/admins upvoted 1 time Submit Cancel",
+      "770 mean that the Other groups and users don't have permission ? upvoted 1 time Submit Cancel",
+      "####* prepare, if not present mkdir -p /common/admin groupadd admin ####* owner group chown .admin /common/admin/ ####* remove not needed permissions chmod o-rwx /common/admin/ chmod u-rwx /common/admin/ ####* add group permissions and sticky bit chmod g+rwxs /common/admin/ upvoted 1 time Submit Cancel",
+      "groupadd admin mkdir -p /common/admin chgrp -R admin /common/admin setfacl -R -m u::---,g::---,g:admin:rwx /common/admin ---this makes sure other groups has no access setfacl -R -dm o::- /common/admin ---this makes sure others do not have access to folders chmod -R g+s /common/admin ---turn sticky bit on for the group upvoted 1 time Submit Cancel",
+      "groupadd admin mkdir -p /common/admin chgrp -R admin /common/admin setfacl -R -m u::---,g::---,g:admin:rwx /common/admin ---this makes sure other groups has no access setfacl -R -dm o::- /common/admin ---this makes sure others do not have access to folders chmod -R g+s /common/admin ---turn sticky bit on for the group upvoted 1 time Submit Cancel",
+      "i think capital X was and error which would make sense why g+s was used upvoted 1 time Submit Cancel",
+      "I THINK IN THIS QUESTION APPLY FOR ACL FOR ADMIN GROUP # setfacl -m g:admin:rwx /common/admin change permission for other group and other user #chmod 700 /common/admin apply guid #chmod g+s /common/admin please reply upvoted 1 time Submit Cancel",
+      "groupadd admin mkdir -p /common/admin chgrp -R admin /common/admin setfacl -R -m u::---,g::---,g:admin:rwX /common/admin chmod -R g+s /common/admin upvoted 2 times Submit Cancel",
+      "when you already used rwX when why do you need g+s in the next command? Didn't rwX already set the sticky bit for group above? upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Update the kernel from ftp://instructor.example.com/pub/updates. According the following requirements: The updated kernel must exist as default kernel after rebooting the system. The original kernel still exists and is available in the system.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130963-exam-ex200-topic-1-question-85-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "just install it via sudo dnf install command. The original kernel is preserved and the new one is set as boot default. upvoted 1 time Submit Cancel",
+      "Does anyone have the exact exam questions for this upvoted 1 time Submit Cancel",
+      "index is shown without grep. 'index' is not the same line as kernel upvoted 1 time Submit Cancel",
+      "yum install ftp://instructor.example.com/pub/updates grubby --info=ALL (check what index the kernel is on) uname -a (see our current kernel grubby --set-default-index (put what number the index of the updated kernel is on) reboot uname -a upvoted 1 time Submit Cancel",
+      "# grubby --info=ALL | grep ^kernel //doesn't tell us index number kernel=&quot;/boot/vmlinuz-4.18.0-305.10.2.el8_4.x86_64&quot; kernel=&quot;/boot/vmlinuz-4.18.0-240.el8.x86_64&quot; kernel=&quot;/boot/vmlinuz-0-rescue-41eb2e172d7244698abda79a51778f1b&quot; upvoted 1 time Submit Cancel",
+      "index is shown without grep. 'index' is not the same line as kernel upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION User mary must configure a task. Requirement: The local time at 14:23 every day echo \"Hello World.\".",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62651-exam-ex200-topic-1-question-86-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "crontab -u user -e 23 14 * * * /bin/echo &quot;Hello World.&quot; crontab -u user -l to verify upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION The user authentication has been provided by ldap domain in 192.168.0.254. According the following requirements to get ldapuser. -LdapuserX must be able to login your system, X is your hostname number. But the ldapuser's home directory cannot be mounted, until you realize automatically mount by autofs server. - All ldap user's password is \"password\".",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130970-exam-ex200-topic-1-question-87-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "not in the exam upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION According the following requirements, configure autofs service and automatically mount to user's home directory in the ldap domain. - Instructor.example.com (192.168.0.254) has shared /home/guests/ldapuserX home directory to your system by over NFS export, X is your hostname number. - LdapuserX's home directory is exist in the instructor.example.com: /home/ guests/ldapuserX - LdapuserX's home directory must be able to automatically mount to /home/ guests/ldapuserX in your system. - Home directory have write permissions for the corresponding user. However, you can log on to the ldapuser1 - ldapuser99 users after verification. But you can only get your corresponding ldapuser users. If your system's hostname is server1.example.com, you can only get ldapuser1's home directory.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130971-exam-ex200-topic-1-question-88-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "This LDAP + Autofs combination question was removed after RHEL 8, when Red Hat simplified the RHCSA to focus on: upvoted 1 time Submit Cancel",
+      "yum install autofs vi /etc/auto.master /home/guests /etc/auto.ldapusers vi /etc/auto.ldapusers * -rw,intr,soft,instructor.example.com:/home/guests/ldapuser1 * -rw,intr,soft,instructor.example.com:/home/guests/ldapuser2 # Continue for ldapuser3 to ldapuser99 chmod 600 /etc/auto.ldapusers systemctl start autofs systemctl enable autofs cd /home/guests/ldapuser1 touch testfile upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Copy /etc/fstab document to /var/TMP directory. According the following requirements to configure the permission of this document. ✑ The owner of this document must be root. ✑ This document belongs to root group. ✑ User mary have read and write permissions for this document. ✑ User alice have read and execute permissions for this document. ✑ Create user named bob, set uid is 1000. Bob have read and write permissions for this document. ✑ All users has read permission for this document in the system.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42641-exam-ex200-topic-1-question-89-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Since /var/tamp always exists anyway, no need to create it. #cp /etc/fstab /var/tmp #chown :root /var/tmp/fstab #useradd mary #useradd alice #useradd -u 1000 bob #setfacl -m u:mary:rw-,u:alice:r-x,u:bob:rw-,o::r /var/tmp/fstab upvoted 1 time Submit Cancel",
+      "Copy /etc/fstab document to /var/TMP directory. It says to copy to the /vat/TMP folder why are all the comments making changes to the /var/tmp/fstab directory? upvoted 2 times Submit Cancel",
+      "fstab is not a directory, it is a file. so the file you'll modify and have now is the fstab under /var/tmp location upvoted 1 time Submit Cancel",
+      "useradd -u 1000 --non-unique bob --in case the uid 1000 is already used upvoted 1 time Submit Cancel",
+      "Full solution: # cp /etc/fstab /var/tmp # chown root:root /var/tmp/fstab # useradd mary # useradd alice # useradd -u 1000 bob # setfacl -m u:mary:rw- /var/tmp/fstab # setfacl -m u:alice:r-x /var/tmp/fstab # setfacl -m u:bob:rw- /var/tmp/fstab # chmod o+r-- /var/tmp/fstab # getfact /var/tmp/fstab (to verify all permissions) # ls -ltr /var/tmp/fstab (to verify all permissions) upvoted 10 times Submit Cancel",
+      "they dont ask to create mary and alice upvoted 1 time Submit Cancel",
+      "the only thing i would change is: useradd -u 1000 bob upvoted 3 times Submit Cancel",
+      "# mkdir /var/tmp # useradd -g 1000 bob # setfacl -m u:mary:rw /var/tmp/fstab # setfacl -m u:alice:rx /var/tmp/fstab # setfacl -m u:bob:rw /var/tmp/fstab # setfacl -m o::r /var/tmp/fstab upvoted 8 times Submit Cancel",
+      "Set UID #useradd -u 1000 bob upvoted 6 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure the NTP service in your system.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/112367-exam-ex200-topic-1-question-90-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "To save time run this command and if service installed then it will tell you otherwise it will install it, dnf install chrony (no need to use -y as you want to see if installed then u can just press enter) OR you can use this command to check if you have plenty of time &gt;&gt;dnf info chrony or this command &gt;&gt; dnf list chrony Now enable it &gt;&gt;systemctl enable --now chronyd or the below command Check service is running without any issues &gt;&gt;systemctl status chronyd Now check where NTP is pointing to i.e. server or pool (mostly pool) &gt;&gt;chronyc sources {If wrong then edit this file /etc/chrony.conf, add either pool *followed by pool name* or server *followed by server name*} restart chrony service &gt;&gt;systemctl restart chronyd and check the status to ensure no errors &gt;&gt; systemctl status chronyd upvoted 1 time Submit Cancel",
+      "rpm -qa | grep chrony vi /etc/chrony.conf and add ( specified ip iburst) systemctl enable chronyd systemctl restart chronyd timedatectl set-ntp true timedatectl status to verify upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure the FTP service in your system, allow remote access to anonymous login and download the program by this service. Service is still running after system rebooting.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/78220-exam-ex200-topic-1-question-91-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "No longer part of the exam upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure your web services, download from http://instructor.example.com/pub/serverX.html And the services must be still running after system rebooting.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/42642-exam-ex200-topic-1-question-92-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "# systemctl status httpd (check if apache is running) # systemctl start httpd (if not started already) # systemctl enable httpd (enable upon boot) # wget http://instructor.example.com/pub/serverX.html upvoted 3 times Submit Cancel",
+      "The file should be downloaded to /var/www/html, so before doing wget, change directory. #cd /var/www/html upvoted 2 times Submit Cancel",
+      "In RHEL8: # systemctl enable --now httpd.services upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a volume group, and set the size is 500M, the size of single PE is 16M. Create logical volume named lv0 in this volume group, set size is 20 PE, make it as ext3 file system, and mounted automatically under data.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130990-exam-ex200-topic-1-question-93-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "sudo gdisk /dev/sdc sudo partprobe sudo pvcreate /dev/sdc4 sudo vgcreate vg0 --physicalextentsize 16M /dev/sdc4 sudo lvcreate vg0 --extents 20 --name lv0 sudo lvdisplay sudo mkfs.ext3 /dev/mapper/vg0-lv0 sudo mkdir /dataz tail -n1 /etc/fstab /dev/mapper/vg0-lv0 /dataz ext3 defaults 0 0 sudo systemctl daemon-reload sudo mount -a sudo findmnt | grep dataz upvoted 1 time Submit Cancel",
+      "'vgcreate -s' is to specify the size of 'Physical Extent' of 16M, not the total disk size. 'lvcreate -l' specify 20 units of the extents, the requirement says LV named as 'lv0'. after LV has created, there is no '/dev/mapper/'. upvoted 2 times Submit Cancel",
+      "pvcreate /dev/nvme1n1 vgcreate -s 500M VGEX /dev/nvme1n1 lvcreate -n lvex -L 320M VGEX mkfs.ext3 /dev/VGEX/lvex mkdir /mnt/data echo “/dev/mapper/VGEX-lvex /mnt/data ext3 defaults 0 0” &gt;&gt; /etc/fstab mount -a mount upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Download the document from ftp://instructor.example.com/pub/testfile, find all lines containing [abcde] and redirect to /MNT/answer document, then rearrange the order according the original content.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/50732-exam-ex200-topic-1-question-94-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "sudo su mkdir -p /MNT wget ftp://instructor.example.com/pub/testfile grep 'abcde' testfile &gt; /MNT/answer cat /MNT/answer (to verify) upvoted 2 times Submit Cancel",
+      "redirect will create the file automatically upvoted 3 times Submit Cancel",
+      "# wget ftp://instructor.example.com/pub/testfile # mkdir -p /MNT/answer # grep ‘abcde’ testfile &gt; /MNT/answer upvoted 9 times Submit Cancel",
+      "mkdir will create a folder, to create a file we should use the touch command touch /mnt/answer upvoted 3 times Submit Cancel",
+      "redirect will create the file automatically upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION SELinux must be running in the Enforcing mode.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62712-exam-ex200-topic-1-question-95-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "# getenforce (check the current mode) # setenforce 1 (change the mode to enforcing) OR # vi /etc/selinux/config selinux=enforcing upvoted 3 times Submit Cancel",
+      "setenforce 1 will not survive reboot, and for the exam all changes must survive reboot. upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION A YUM repository has been provided at http://server.domain11.example.com/pub/x86_64/Server. Configure your system to use this location as a default repository.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/130991-exam-ex200-topic-1-question-96-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "The requirement is to make this repo default: http://server.domain11.example.com/pub/x86_64/Server. you can list the current repos and disabling them, i thought setting the priority=1 would make it default but it does not. cd /etc/yum.repos.d ls -ltr (will show all available repos in your machine) edit them -&gt; enabled=1 to enabled=0 now add the required repo, as this will be the only enabled=1 repo in the machine the system should use only it vi local.repo [Local_Custom_repo] name= Local Custom Repo gpgcheck=0 enabled=1 baseurl=http://server.domain11.example.com/pub/x86_64/Server priority=1 (this is optional) :wq! dnf clean all dnf repolist upvoted 1 time Submit Cancel",
+      "yum install http://server.domain11.example.com/pub/x86_64/Server. uname -a grubby --info=ALL (shows the repository of all kernels) grubby --set-default [the location of http://server.domain11.example.com/pub/x86_64/Server. Or path index number] reboot uname -a upvoted 1 time Submit Cancel",
+      "Does adding priority=1 into yum repo files also do the trick? Especially when we have 2 repositories that we need to set as a default? upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Resize the logical volume vo and its filesystem to 290 MB. Make sure that the filesystem contents remain intact. Note: Partitions are seldom exactly the same size requested, so a size within the range of 260 MB to 320 MiB is acceptable.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/131085-exam-ex200-topic-1-question-97-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "lvdisplay (to get the logical volume path ) lvresize -r -L 290MB /dev/volumegroup/logical upvoted 1 time Submit Cancel",
+      "++ depends on the type of the file system , we should resize it. XFS &gt;&gt; $ xfs_growfs &quot;mountpoint&quot; ext2 &gt;&gt; $ resize2fs &quot;lv_path&quot; upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create the following users, groups, and group memberships: A group named adminuser. A user natasha who belongs to adminuser as a secondary group A user harry who also belongs to adminuser as a secondary group. A user sarah who does not have access to an interactive shell on the system, and who is not a member of adminuser, natasha, harry, and sarah should all have the password of redhat.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62713-exam-ex200-topic-1-question-98-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Full solution: # groupadd adminuser # useradd -aG adminuser natasha # useradd -aG adminuser harry # useradd -s /sbin/nologin sarah # echo 'redhat' | passwd --stdin natasha # echo 'redhat' | passwd --stdin harry # echo 'redhat' | passwd --stdin sarah upvoted 7 times Submit Cancel",
+      "what is the a in -aG for? Help page for useradd has no mention of -a option. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure the permissions of /var/tmp/fstab Copy the file /etc/fstab to /var/tmp/fstab. Configure the permissions of /var/tmp/fstab so that: the file /var/tmp/fstab is owned by the root user. the file /var/tmp/fstab belongs to the group root. the file /var/tmp/fstab should not be executable by anyone. the user natasha is able to read and write /var/tmp/fstab. the user harry can neither write nor read /var/tmp/fstab. all other users (current or future) have the ability to read /var/tmp/fstab.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/131089-exam-ex200-topic-1-question-99-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "# cp -p /etc/fstab /var/tmp/fstab # chown root:root /var/tmp/fstab # chmod a-x /var/tmp/fstab # setfacl -m u:natasha:rw /var/tmp/fstab # setfacl -m u:harry:0 /var/tmp/fstab # chmod o+r /var/tmp/fstab upvoted 1 time Submit Cancel",
+      "cp /etc/fstab /var/tmp/fstab chown root /var/tmp/fstab chown :root /var/tmp/fstab chmod 666 setfacl -m u:natasha:rw- /var/tmp/fstab setfacl -m u:harry:--- /var/tmp/fstab chmod o-w /var/tmp/fstab upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Set cronjob for user natasha to do /bin/echo hiya at 14:23.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/62714-exam-ex200-topic-1-question-100-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Set cronjob for user natasha to do /bin/echo hiya at 14:23. vi /etc/crontab (copy the crontab to natasha) crontab -u natasha -e 23 14 * * * /bin/echo “hiya” :wq crontab -u natasha -l upvoted 1 time Submit Cancel",
+      "crontab -u natasha -e INSERT: 23 14 * * * /bin/echo hiya crontab -u natasha -l (verify) upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a collaborative directory/home/admins with the following characteristics: Group ownership of /home/admins is adminuser The directory should be readable, writable, and accessible to members of adminuser, but not to any other user. (It is understood that root has access to all files and directories on the system.) Files created in /home/admins automatically have group ownership set to the adminuser group",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/131095-exam-ex200-topic-1-question-101-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "roupadd adminuser [root@3af65124781c ~]# mkdir /home/admins [root@3af65124781c ~]# chown :adminuser /home/admins [root@3af65124781c ~]# setfacl -m g:adminuser:rw /home/admins [root@3af65124781c ~]# chmod o-rwx /home/admins [root@3af65124781c ~]# chmod g+s /home/admins upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Install the appropriate kernel update from http://server.domain11.example.com/pub/updates. The following criteria must also be met: The updated kernel is the default kernel when the system is rebooted The original kernel remains available and bootable on the system",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/52949-exam-ex200-topic-1-question-102-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Install the appropriate kernel update from http://server.domain11.example.com/pub/updates. The following criteria must also be met: The updated kernel is the default kernel when the system is rebooted The original kernel remains available and bootable on the system the way i will do this: cd / then; wget http://server.domain11.example.com/pub/updates, ls -al if new kernel is there I will copy it somewhere and check current kernelswith the command #grubby --info=ALL ----this is to see all kernel then #grubby --default-kernel to see the default if its different from the new one to set new kernel use #grubby --set-default=/kernel/path then check with #grubby --default-kernel or STFN2019's solution dnf config-manager --add-repo http://server.domain11.example.com/pub/updates then; run #dnf update upvoted 1 time Submit Cancel",
+      "yum config-manager --add-repo {given_url} yum update kernel upvoted 1 time Submit Cancel",
+      "The solution to the questions seems very confusing. Best way is to update the repos and install the new kernel which becomes your default kernel anyway, no need for any further changes. Simply follow an e.g. link here: https://computingforgeeks.com/how-to-install-latest-kernel-on-centos-linux/ upvoted 3 times Submit Cancel",
+      "$ dnf config-manager --add-repo {given_url} $ dnf update I agree with STFN2019 , maybe the above step will get the work done! upvoted 3 times Submit Cancel",
+      "Question: You should be able to use wget to obtain the correct packages here, yes? Is the only reason they didn't because they don't have the full path/name of the file to correctly use the command? upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION The system ldap.example.com provides an LDAP authentication service. Your system should bind to this service as follows: The base DN for the authentication service is dc=domain11, dc=example, dc=com LDAP is used to provide both account information and authentication information. The connection should be encrypted using the certificate at http://host.domain11.example.com/pub/domain11.crt When properly configured, ldapuserX should be able to log into your system, but will not have a home directory until you have completed the autofs requirement. Username: ldapuser11 Password: password",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/58873-exam-ex200-topic-1-question-103-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "is this valid in RHEL 8? upvoted 2 times Submit Cancel",
+      "LDAP is not part of RHEL8 upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure your system so that it is an NTP client of server.domain11.example.com",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/53585-exam-ex200-topic-1-question-104-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "yum install chrony* vim /etc/chrony.conf server server.domain11.example.com :wq systemctl enable --now chronyd chronyc sources upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Configure autofs to automount the home directories of LDAP users as follows: host.domain11.example.com NFS-exports /home to your system. This filesystem contains a pre-configured home directory for the user ldapuser11 ldapuser11's home directory is host.domain11.example.com /rhome/ldapuser11 ldapuser11's home directory should be automounted locally beneath /rhome as /rhome/ldapuser11 Home directories must be writable by their users ldapuser11's password is 'password'.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/30716-exam-ex200-topic-1-question-105-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "hello, i have below full question for AutoFS: configure autofs to automount the home directories or remote users as follows: 1: utility.domain.com (172.1....) NFS-exports /rhome to your system. this filesystem contains a pre-configured home directory for the user remotuser16 2: remotuser16 home directory is utility.domain.com:/rhome/remotuser16 3: remotuser16 home directory should be automounted locally locally beneath /rhome as /rhome /remoteuser16 4: home directories must be writable by their users 5: remoteusers16 password is ratencot any one can help with the steps in sequence. upvoted 1 time Submit Cancel",
+      "the question states &quot; home directorie[s] must be writable by their user[s]&quot; , so i assume they are referring to autofs indirect method mount. This will work for remoteuser16 as well as for future remoteuser homedir mounts. Here is how i will address it - # install autofs if not installed dnf install -y autofs # Create autofs file - defining the base mount dir . here it is /rhome - where all the homedirs will be mounted vi /etc/auto.master.d/auto.autofs /rhome /etc/home.indirect # create the indirect mount file vi /etc/home.indirect * -rw,sync host.domain11.example.com:/rhome/&amp; # enable and start autofs systemctl enable --now autofs # Validate su - remoteuser16 pwd touch testfile upvoted 3 times Submit Cancel",
+      "vim /etc/auto.master.d/direct.autofs / -/etc/auto.direct vim /etc/auto.direct ldapuser11 -rw,sync,nstype=nfs4 host.domain11.example.com:/home systemctl restart autofs systemctl enable --now autofs upvoted 3 times Submit Cancel",
+      "This seems like the most straightforward solution. Thx mate! upvoted 2 times Submit Cancel",
+      "I think provided solution have mistake. I see resolution as below: vim /etc/auto.master.d/demo.autofs (/rhome /etc/auto.demo) vim /etc/auto.demo (ldapuser11 -rw,sync host.domain11.example.com:/home) As task mention that host.domain11.example.com exports /home dir ? Am I right? upvoted 3 times Submit Cancel",
+      "vim /etc/auto.master.d/blah.autofs upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a user alex with a userid of 3400. The password for this user should be redhat.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/143887-exam-ex200-topic-1-question-106-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "sudo useradd alex --uid 3400 sudo passwd alex upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Locate all the files owned by ira and copy them to the / root/findresults directory.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/57516-exam-ex200-topic-1-question-108-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "find / -user ira -type f -exec cp {} /root/findfiles \\ upvoted 2 times Submit Cancel",
+      "find / -user ira -type f -exec cp {} /root/findfiles \\; upvoted 5 times Submit Cancel",
+      "cp -rp $(find / -user ira -type f) /root/findfiles upvoted 3 times Submit Cancel",
+      "Thx Stachomir, that's really helpful upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Find all lines in the file /usr/share/dict/words that contain the string seismic. Put a copy of all these lines in their original order in the file /root/wordlist. /root/wordlist should contain no empty lines and all lines must be exact copies of the original lines in /usr/share/dict/words.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/63136-exam-ex200-topic-1-question-109-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "can we do it like this? #cd /usr/share/dict #grep seismic cp /root/wordlist upvoted 1 time Submit Cancel",
+      "[root@uranium ~]# grep seismic /usr/share/dict/words &gt; /root/wordlist [root@uranium ~]# cat /root/wordlist upvoted 2 times Submit Cancel",
+      "grep seismic /usr/share/dict/words &gt;&gt; /root/wordlist upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a backup file named /root/backup.tar.bz2, which contains the contents of /usr/local, bar must use the bzip2 compression.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/51147-exam-ex200-topic-1-question-110-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Archive through bzip2 in a current dir: tar -jcvf backup.tar.bz2 /usr/local Extract: mkdir /test tar -jxvf backup.tar.bz2 -C /test upvoted 5 times Submit Cancel",
+      "# tar cvf backup.tar /usr/local #bzip2 backup.tar upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "SIMULATION Create a new logical volume according to the following requirements: The logical volume is named database and belongs to the datastore volume group and has a size of 50 extents. Logical volumes in the datastore volume group should have an extent size of 16 MB. Format the new logical volume with a ext3 filesystem. The logical volume should be automatically mounted under /mnt/database at system boot time.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/redhat/view/134896-exam-ex200-topic-1-question-111-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "parted /dev/sdb mklabel msdos partprobe /dev/sdb parted /dev/sdb mkpart primary 1 900 set rm 1 lvm on pvcreate /dev/sdb1 vgcreate datastore -s 16M VG1 /dev/sdb1 lvcreate -l 50 -n database datastore mkfs -t ext3 /dev/mapper/datastore-database mkdir /mnt/database /dev/mapper/datastore-database /mnt/database ext3 defaults 0 0 upvoted 1 time Submit Cancel",
+      "#lsblk -pf (to check unused disks and partitions - let's say sda1 and sda2 are empty) #pvcreate /dev/sda1 /dev/sda2 #vgcreate -s 16M datastore /dev/sda1 /dev/sda2 #lvcreate -l 50 -n database datastore #mkfs.ext3 /dev/datastore/database #mkdir -p /mnt/database #lsblk -pf (to see the UUIDs) #echo 'UUID=XXX /mnt/data ext4 defaults 0 0' &gt;&gt; /etc/fstab (use real UUID of &quot;database&quot; volume from previous step instead of XXX) #systemctl daemon-reload #mount -a upvoted 2 times Submit Cancel",
+      "view unused disk with 'lsblk -af'. -p means to Print the full device path, not sorting of unused. upvoted 1 time Submit Cancel"
+    ]
   }
 ]
