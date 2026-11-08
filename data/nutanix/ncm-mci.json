@@ -4,342 +4,725 @@
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/65122-exam-ncm-mci-topic-1-question-1-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2,
+      "A": 1
+    },
+    "discussion": [
+      "This exam is obsolete. It is not the NCM-MCI 6.5 break fix exam with 15 questions. It is an outdated exam. I would guess either 5.15 or 6.0, not 6.5. upvoted 2 times Submit Cancel",
+      "I think A - which comes first? the Reprovisioning of where the data rests or the because now the Reads are coming from HDD? I think A. upvoted 1 time Submit Cancel",
+      "Selected Answer: B B. On the Nutanix Cluster once a disk (SSD-PCIe, SSD-SATA or DAS-SATA storage tier) reaches 95% full Stargate will not write to that disk https://portal.nutanix.com/page/documents/kbs/details?targetId=kA0600000008hfcCAA D. The question does not indicate the the data is cold, only cold data is read from HDD. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Answer is 'B' - if the SSDs are 95% full, they can long take on new writes, therefore writes have to go to HDD, which is much slower. upvoted 2 times Submit Cancel",
+      "Correct answer is C upvoted 1 time Submit Cancel",
+      "Selected Answer: A After using of 75% ssd starts overwhelmed tearing operation, correct is A upvoted 3 times Submit Cancel",
+      "Correct upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "In a Nutanix cluster, a Protection Domain contains 50 entities that are replicated to a remote Single Node Replication Target. The current schedule configuration is as follows: ✑ Repeat every 6 hours ✑ Local Retention Policy 1 ✑ Remote Retention Policy 8 ✑ Starting time 12 am At 8 am on Monday, the administrator discovers that a protected VM is corrupted. The latest good state was Sunday 2 pm. The administrator needs to maintain current protection. Which strategy should the administrator use to meet these requirements? A. From the Remote site, activate the Protection Domain, then re-protect the entity. B. From the Remote site, restore the VM from the local snapshot by selecting the correct snapshot. C. From the local site, retrieve the correct remote snapshot, then restore the VM locally. D. From the local site, restore the VM from the local snapshot by selecting the correct snapshot.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/90143-exam-ncm-mci-topic-1-question-2-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "correct answer is C, because we have rerention policy 1 in the local site. upvoted 1 time Submit Cancel",
+      "I think is C because you have Local Retention Policy 1 an its corrupted upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is responsible for the following Nutanix Enterprise Cloud environment: A central datacenter with a 20-node cluster with 1.5PB of storage [sampleXML/xmlfile-4_1.png] ✑ Five remote sites each with a 4-node cluster with 200TB storage The remote sites are connected to the datacenter via 1GB links with an average latency of 6 ms RTT. What is the minimum RPO the administrator can achieve for this environment? A. 0 minutes B. 15 minutes C. 1 hour D. 6 hours",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/69795-exam-ncm-mci-topic-1-question-4-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 3
+    },
+    "discussion": [
+      "0 min RPO as sync rep is not possible due to 6ms RTT. Requires &lt;5ms RTT Central DC: 75TB per node Remote DC: 50TB per node. Based on 6.5 document. Near sync and Async 1h is support. Lowest is 15mins https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-resource-requirements-r.html upvoted 1 time Submit Cancel",
+      "response D upvoted 1 time Submit Cancel",
+      "Selected Answer: D On nodes that have storage greater than 64 TB (80 TB for all-flash nodes), the minimum supported snapshot frequency is six (6) hours. For such nodes, this limitation has the following consequences: The minimum supported RPO for asynchronous replication is also 6 hours. NearSync is not supported. Any cluster that includes such a node is also subject to this limitation. https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_15:wc-dr-near-sync-requirements-limitations-r.html upvoted 2 times Submit Cancel",
+      "Selected Answer: D Definitly response D upvoted 3 times Submit Cancel",
+      "Selected Answer: D On nodes that have storage greater than 40 TB (48 TB for all-flash nodes), the minimum supported snapshot frequency is 6 hours. For such nodes, this limitation has the following consequences: The minimum supported RPO for asynchronous replication is also 6 hours. NearSync is not supported. Any cluster that includes such a node is also subject to this limitation. This limitation does not apply to hypervisor snapshots upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator of a Nutanix Enterprise Cloud has microsegmentation enabled and a firewall VM installed. The security team notifies the administrator that one of the VMs hosted in the environment has been exhibiting suspect network activity. The administrator wants to isolate the VM from the production network, but must still be able to access it to perform diagnostics. What should the administrator do to meet the requirement? A. Disable the vNIC on the affected VM B. Quarantine the VM using the Forensic Method C. Create a firewall rule that blocks VM traffic but permits diagnostic access D. Create a security policy with a service chain directing that VMs traffic to the firewall",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/59806-exam-ncm-mci-topic-1-question-5-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Forensic. Isolates the VM from all traffic except traffic from categories specified in the built-in quarantine policy. The allowed categories contain forensic tools that enable you to perform forensics on the VM. https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Flow-Guide-v5_17:mul-quarantine-rule-configuration-c.html upvoted 2 times Submit Cancel",
+      "Agreed, answer is B. upvoted 1 time Submit Cancel",
+      "The “Forensic” option allows the limitation of inbound/outbound traffic to that which is specified from the “Add Forensic Tools” tab. upvoted 2 times Submit Cancel",
+      "Quarantining the VM using the Forensic Method would also isolate the VM, but it would not allow for diagnostic access. Option: C upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A customer recently set up Async Replication between Site A and Site B. The customer wants to conduct a planned failover and clicks Activate on Site B. The customer then runs the following command on Site A: ncli pd deactivate_and__destroy_vms name=<protection_domain_name>. What does this do to the customer environment? A. VMs get deleted from Site B and the protection domain is now Active. B. VMs are powered off on Site A and must be manually powered on at Site B. C. VMs get deleted from Site A and the protection domain is no longer active. D. Customer must then manually power off VMs at Site A and power them on at Site B.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101334-exam-ncm-mci-topic-1-question-6-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: C Why i feel that the question says what will happen if we run the command and not what to do prior to run the command? In that case C would be the right answer because the image clearly states if you run VMs will get deleted. upvoted 1 time Submit Cancel",
+      "Selected Answer: D With the screenshot from the command output, it is clear that if the VM is not powered off before running it, it fails. upvoted 1 time Submit Cancel",
+      "D is the best answer here 1. power off VMs on Site A, without powering off VM, CLI command won't work 2. run the CLI on Site A &gt; Site A become Secondary 3. power on VMs at Site B upvoted 2 times Submit Cancel",
+      "&quot;3. power on VMs at Site B&quot; is actually wrong as the question states they've been already powered on ( &quot; The customer wants to conduct a planned failover and clicks Activate on Site B&quot;). C is the right one. upvoted 1 time Submit Cancel",
+      "D. is correct upvoted 1 time Submit Cancel",
+      "Correct :C upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to create and start five new VMs for a Data Analytics Project (OLAP). The VM Profile is as follows: ✑ vCPU:4 ✑ vRAM: 64 GB ✑ vDisk: 1.5 TB Each of the four nodes of the Nutanix cluster has the following: ✑ 24 vCPU. 20% overall usage ✑ 192 GB RAM, 60% overall usage ✑ 2 x l920 GB SSD ✑ 4 x 2 TB HDD At cluster level, there is a single RF2 container that is 30% utilized and has an extent store capacity of 13.5 TB. Which component requires administrator attention? A. Physical RAM, because it is not enough to power on all of the new VMs. B. Physical Cores, because they are not enough to power on all of the new VMs. C. Storage, because the capacity is not enough to create VMs. D. Flash Tier because it is not enough to accommodate the workloads.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101335-exam-ncm-mci-topic-1-question-7-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A Answer is A according to elijahxc's explanation below. upvoted 1 time Submit Cancel",
+      "Option A. As stated in the question, 60% of the total RAM in the Nutanix cluster is in use (based on '192 GB RAM, 60% overall usage'), which amounts to 768 GB (192 GB per node * 4 nodes). This means that only 40% of the remaining RAM in the cluster, equivalent to 307.2 GB (768 GB * 40%), is available for the creation of the five VMs. Since the total amount of vRAM needed for the five VMs is 320 GB (64 GB per VM * 5 VMs), it exceeds the available RAM (320 GB &gt; 307.2 GB), making Option A the correct answer. upvoted 2 times Submit Cancel",
+      "Correct : A upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator manages the following two Nutanix AOS 5.15 cluster environment: ✑ Corp-cluster-01 ✑ Corp-cluster-02 The VM images must be available only on Corp-cluster-01, but cannot be checked out to cluster Corp-cluster-02. The images also cannot be checked out to any other clusters that are registered with Prism Central in the future. Which two configuration settings must the administrator choose when creating the image placement policy that satisfies the stated requirements? (Choose two.) A. Create an image placement policy that identifies cluster Corp-cluster-01 as the target cluster B. Set the policy enforcement to Soft. C. Set the policy enforcement to Hard. D. Create an image placement policy that identifies cluster Corp-cluster-02 as the target cluster.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101337-exam-ncm-mci-topic-1-question-8-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "The two configuration setting that the administrator must be choose are : A and C upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. [sampleXML/xmlfile-8_1.png] User 1 and User 2 belong to the AAPM group. What are two descriptions of how Files perform quota management? (Choose two.) A. User 2 can continue to add another 3GB file but will receive a daily notification email. B. User 1 can continue to add another 5GB file but will receive a daily notification email. C. User 1 can add an 8GB file to the share without receiving notification. D. User 2 can add an 8GB file without receiving a notification email.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/59807-exam-ncm-mci-topic-1-question-10-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: BD Hard Limit: Prevents further writes after reaching quota limit. Soft Limit: Does not prevent writes. Sends email notifications to email recipients. Note: You cannot set both a soft and hard limit for the same user or group. upvoted 2 times Submit Cancel",
+      "BD https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LMQtCAO upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An organization is planning an upgrade to AOS 5.15 and wants to understand which cluster products and/or services are supported for physical traffic isolation. Which Nutanix component supports its network traffic being isolated onto its own virtual network? A. Volumes B. Objects C. Containers D. Files",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/126467-exam-ncm-mci-topic-1-question-11-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v6_10:wc-network-segmentation-service-isolation-support-r.html upvoted 1 time Submit Cancel",
+      "Selected Answer: A Answer is A upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is planning to deploy a Nutanix cluster to support a few high-performance VMs. This deployment will have the following considerations: ✑ Individual VMs will likely generate network throughputs in the range of 90-100Mbps ✑ Due to the configuration of the VMs, it is unlikely that a node will host more than one or two of them at a time ✑ Individual VMs will communicate with only a few (one or two) remote hosts at a time ✑ Multicast will not be used in the environment ✑ The hosts are connected via two 1GbE network connections How should the administrator configure the network bonds to meet this requirement while maintaining the simplest switch configuration? A. Configure bond0 as balance-sib B. Configure bond0 as active-backup C. Configure bond0 as balance-tcp D. Configure bond0 as balance-lacp",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/63238-exam-ncm-mci-topic-1-question-12-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A Answer is A upvoted 1 time Submit Cancel",
+      "Selected Answer: A A: balance-slb is the best answer here both physical interfaces are in use balance-slb does not use LACP, switch configuration is simple. balance-slb do not support multicast B. only one physical interface is in use at any time C. It requires LACP to be configured on the switch, not the simplest configuration D. no such bond mode upvoted 3 times Submit Cancel",
+      "Because： &quot;Individual VMs will likely generate network throughputs in the range of 90-100Mbps&quot; &quot;Multicast will not be used in the environment&quot; &quot;simplest switch configuration&quot; So the answer should be &quot;balance-slb&quot;。 upvoted 2 times Submit Cancel",
+      "Answer must be B, Multicast is against the Nutanix Best Practices with balance SLB. Active-Backup configuration is enough for this Use Case upvoted 3 times Submit Cancel",
+      "Multicast isn't an issue, as it's explicitly not being used per the description. Also, it gives a likely max of 2 VMs x 100MBps at a time. 200 MBps is 1600Mbps, which is more than 1GbE adapter can provide at a time. Active-Backup is definitely not sufficient for this, so everyone else saying balance-slb is correct. upvoted 1 time Submit Cancel",
+      "In the answers, balance-sib should be balance-slb. upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator configures authentication in Prism Central (PC) for the NTNX-Admins group. Users report that they are unable to log in. The administrator confirms that the Active Directory (AD) settings in PC are correct. Which condition could result in this behavior? A. A role mapping needs to be associated with the AD group. B. The users must be added to the Domain Admins AD group. C. The Local authentication type must also be selected in PC. D. A client chap certificate must also be added in PC.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/60293-exam-ncm-mci-topic-1-question-13-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 5
+    },
+    "discussion": [
+      "Selected Answer: A Answer is A upvoted 1 time Submit Cancel",
+      "Selected Answer: A just need to map ad group to a role. upvoted 2 times Submit Cancel",
+      "A is correct upvoted 1 time Submit Cancel",
+      "A is correct answer upvoted 1 time Submit Cancel",
+      "Selected Answer: A A is correct. It's not necessary to have domain admin ACL upvoted 1 time Submit Cancel",
+      "Selected Answer: A Role mapping must be created. upvoted 1 time Submit Cancel",
+      "Aanswer is &quot;A&quot; upvoted 1 time Submit Cancel",
+      "Selected Answer: A Roles in Prism Central must be granted to AD groups. Best practices are to grant the least permissions possible. With this in mind, we would not add the Domain Admins group in AD to any of the roles in Prism Central. Instead, a new group would be created in AD, linked in Prism Central, and only the necessary personnel who needed access would be added. upvoted 3 times Submit Cancel",
+      "A is correct. No permissions are granted to the directory users by default. To grant permissions to the directory users, you must specify roles for the users in that directory (see Configuring Role Mapping). upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has an existing Nutanix seven-node cluster running at RF2 that must be changed to have the following capabilities: ✑ RF3 set for the cluster ✑ Performance tier deduplication What is the minimum memory needed on the CVMs to allow for these capabilities? A. 24GB B. 28GB C. 32GB D. 20GB",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/72220-exam-ncm-mci-topic-1-question-14-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 3
+    },
+    "discussion": [
+      "Selected Answer: B Agreed with Akane_ and anistuta, the answer is B. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Redundancy factor 3 has the following requirements: - Redundancy factor 3 can be enabled at the time of cluster creation or after creation too. - A cluster must have at least five nodes for redundancy factor 3 to be enabled. - For guest VMs to tolerate the simultaneous failure of two nodes or drives in different blocks, the data must be stored on containers with replication factor 3. -Controller VMs must be configured with a minimum of 28 GB(20 GB default+8 GB for the feature) of memory. upvoted 2 times Submit Cancel",
+      "Selected Answer: B https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_0:wc-cvm-memory-configuration-c.html upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to deploy an application with a large amount of data connected via Nutanix Volumes. Which two actions should the administrator take when designing the Volume Group? (Choose two.) A. Use multiple subnets for iSCSI traffic B. Enable RSS (Receive Side Scaling) C. Enable thick provisioning on the Volume Group(s) D. Distribute workload across multiple virtual disks",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/126471-exam-ncm-mci-topic-1-question-15-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: BD The answers are B and D. Ref: https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2049-Nutanix-Volumes:BP-2049-Nutanix-Volumes upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator deploys Exchange on a Nutanix cluster. The administrator creates two containers with RF2 configuration: ✑ One container for Exchange ✑ One container for the other VMs The Exchange VM is experiencing I/O performance issues. Which changes to Storage Optimization should be used on the Exchange container to enhance I/O performance? A. No data reduction B. Post process Deduplication only C. Inline compression and EC-X D. Inline compression and Deduplication",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/88448-exam-ncm-mci-topic-1-question-16-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 3
+    },
+    "discussion": [
+      "Selected Answer: C The answer is C upvoted 1 time Submit Cancel",
+      "Selected Answer: C Enable compression at the container level. Enable erasure coding (EC-X). https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2036-Microsoft-Exchange-Server%3ABP-2036-Microsoft-Exchange-Server&amp;a=b256b8d046f9c2b1c9abaf7c9656f93f26126c302c8e5d37396989d3645d74b22ac2b2dfba5eed98 upvoted 3 times Submit Cancel",
+      "Nutanix Recommendations Configure the Nutanix container for replication factor 2. Enable compression at the container level. Don't use container-level deduplication. Enable erasure coding (EC-X). upvoted 1 time Submit Cancel",
+      "Selected Answer: C I think this should be C https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2036-Microsoft-Exchange-Server:BP-2036-Microsoft-Exchange-Server upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator learns that some security settings in a cluster have been changed. The environment is out of compliance with required policies. Which function should be used to revert any settings that have changed from the defaults and prevent further violations? A. Cluster Lockdown with strong password enforcement B. Advanced Intrusion Detection Environment (AIDE) C. Security Configuration Management Automation (SCMA) D. Defense Information Systems Agency STIG enforcement",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/126473-exam-ncm-mci-topic-1-question-17-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C Answer is C: https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v5_17:secsecurity-scma-implementation-wc-c.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A customer with a four-node RF2 cluster is adding application VMs to their system. After adding these Vms, the Prism dashboard shows 81% storage utilization. What is the consequence of running the cluster at 81% storage utilization? A. The customer has the ability to add more VMs up to the 100% storage utilization. B. There is available capacity in the storage fabric and the cluster is resilient. C. Node failure is imminent due to storage utilization. D. The cluster is not resilient in the storage fabric",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/82560-exam-ncm-mci-topic-1-question-18-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1,
+      "B": 1
+    },
+    "discussion": [
+      "Do the math: M = 0.9 x (T - N1). Assume total storage is 100G, that would put the max at 67.5GB or 67.5%. See this article: https://next.nutanix.com/how-it-works-22/recommended-guidelines-for-maximum-storage-utilization-on-a-cluster-38531 upvoted 1 time Submit Cancel",
+      "Selected Answer: D Answer is D. Ref https://portal.nutanix.com/page/documents/kbs/details?targetId=kA0600000008ducCAA upvoted 3 times Submit Cancel",
+      "D IS THE answer because each node has 25% of storage. So if your at 81% at lose 1 node that would result in 81% with only 75% of capacity upvoted 3 times Submit Cancel",
+      "Selected Answer: B False it's 90% Good answer is B https://next.nutanix.com/how-it-works-22/recommended-maximum-storage-utilization-37234 upvoted 2 times Submit Cancel",
+      "False it's 90% Good answer is B https://next.nutanix.com/how-it-works-22/recommended-maximum-storage-utilization-37234 upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has two clusters: Site A and Site B. Async DR is configured between the clusters as follows: ✑ Site A is the Primary Site ✑ Site B is the Secondary inactive Site, no VMs running ✑ Site A is fully in Production ✑ Site B used as Backup/Disaster Recovery The customer wants to perform a planned failover between the sites. How should the administrator accomplish this? A. Click Activate on the Secondary site within the Data Protection Dashboard B. Click Activate on the Secondary site and run deactive NCLI command on Primary site C. Choose Migrate on the Secondary site within the Data Protection Dashboard D. Choose Migrate on the Primary site within the Data Protection Dashboard",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/126475-exam-ncm-mci-topic-1-question-19-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D Answer is D. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is deploying an application using Nutanix Volumes. After configuring the volume group and connecting the guest's iSCSI initiator to the volume group, they begin performance testing. The administrator learns that performance on the virtual disk attached to the iSCSI initiator is far less than that of a virtual disk connected directly to the VM. Which situation is causing this condition? A. The VM's iSCSI traffic is being routed to the data services IP subnet B. The performance test is generating small block random 10 C. The duster data services IP address is a bottleneck, shared with other iSCSI traffic D. Data Locality ensures that VM attached disks are always faster than iSCSI volumes",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/69796-exam-ncm-mci-topic-1-question-22-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "A. is correct C. iSCSI Data Services IP enables path optimization in the cluster, preventing bottlenecks upvoted 2 times Submit Cancel",
+      "&quot;far less&quot;，So the answer C is more suitable upvoted 1 time Submit Cancel",
+      "Selected Answer: A iSCSI would be routed due to different vlans, resulting in longer times. upvoted 1 time Submit Cancel",
+      "If the guest VM doesn't have an interface on the iSCSI network, the traffic will have to pass from the guest VM network, through a router, and then to the iSCSI network. I believe the answer is A. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to make sure an RF2 cluster can survive a complete rack failure without negatively effecting workload performance. The current cluster configuration consists of the following: ✑ 30 nodes: distributed 10 nodes per rack across three 42U rack ✑ Each nodes is configured with 40TB usable storage all flash (Cluster Total 1.2 PB Usable) ✑ Current cluster utilization is 900TB storage Which configuration changes should be made to make sure that the cluster meets the requirements? A. Expanse the cluster by adding 3 additional nodes per rack, 9 nodes total. B. Expanse the cluster by adding 2 additional nodes per rack, 6 nodes total. C. Expanse the cluster by adding 9 nodes to a new 42U rack D. Expanse the cluster by adding 8 nodes to a new 42U rack",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/72492-exam-ncm-mci-topic-1-question-25-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "you need 50TB additional per rack (in order to get 450TB per rack), each node has 40TB so you need 2 more per rack, but 1 additional node (per rack) in order to get N+1. upvoted 2 times Submit Cancel",
+      "What is the reason? 39 nodes? upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A company needs to replicate their VMs to a remote site and must have an RPO of less than 1 hour. When creating a protection domain, what should an administrator do to meet this requirement? A. Enable Async Replication with an RPO of 60 minutes B. Enable Near-Sync Replication with an RPO of 15 minutes C. Enable Entity Sync on the designated VMs D. Enable Availability Zones and send the VM to multiple targets",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/72490-exam-ncm-mci-topic-1-question-26-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 3
+    },
+    "discussion": [
+      "Selected Answer: B A. Async Replication can not do less than 1 hour B. Nar-Sync can do less than 1 hour C. No such option D. Availability Zones has nothing to do with replication policy upvoted 2 times Submit Cancel",
+      "Selected Answer: B near sync have 15 RPO min upvoted 2 times Submit Cancel",
+      "Selected Answer: B It's near-sync with a 15 min RPO. upvoted 2 times Submit Cancel",
+      "The question indicates less than one hour. Shouldn't it be option b? With near-sync, 15 minutes. upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is monitoring the Nutanix v5.15-based AOS cluster performance logs and notices that a SQL server VM is greatly exceeding its intended maximum IOPS. The administrator has confirmed that a QoS policy was previously created for the group of VMs this server is a member of. What are two reasons that this VM would exceed its maximum configured IOPS from the QoS Policy? (Choose two.) A. The VM is missing the required snapshot needed to implement the QoS Policy. B. The VM was not created as an AFS virtual machine. C. The SQL Server VM has volume groups attached. D. It was cloned from another SQL Server VM that was a member of the QoS Policy.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/60657-exam-ncm-mci-topic-1-question-27-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2,
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: CD C and D are corrects upvoted 1 time Submit Cancel",
+      "A. The VM is missing the required snapshot needed to implement the QoS Policy. D. It was cloned from another SQL Server VM that was a member of the QoS Policy. Explanation: The absence of the required snapshot: When a QoS policy is created for a group of VMs, it requires a snapshot to be taken in order to implement the policy. If the VM in question is missing this required snapshot, the QoS policy may not be enforced, allowing the VM to exceed its intended maximum IOPS. Cloning from another VM: If the SQL Server VM was cloned from another SQL Server VM that was already a member of the QoS policy, the new VM may inherit the QoS policy settings, including the maximum configured IOPS. However, if the new VM has different workload characteristics or if the QoS policy was not properly adjusted for the new VM, it may exceed the intended maximum IOPS. upvoted 1 time Submit Cancel",
+      "C and D are corrects upvoted 2 times Submit Cancel",
+      "Selected Answer: CD 'C' and 'D' are correct. upvoted 2 times Submit Cancel",
+      "C and D are corrects. If a VM has volume groups attached, then QoS is not applicable and While creating a clone of a VM, any QoS attributes throttle limit set on the original VM might not be applied to the new cloned VM upvoted 8 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator knows that the disks in a cluster are out of date and a new firmware is available. For security reasons, these clusters do not have access to the Internet. Which two steps must be completed to update the firmware? (Choose two.) A. Configure LCM with a URL to access the firmware bundle. B. Download a dark site bundle and stage it on an internal webserver. C. Download the updated firmware .tgz file from the Nutanix portal. D. Select Upgrade Software, then select disks and upload the updated firmware.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/82561-exam-ncm-mci-topic-1-question-29-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2,
+      "B": 2,
+      "C": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: AB D is wrong as under Upgrade Software in Prism Element, you can only upgrade AOS, File Server, Hypervisor, NCC and Foundation. No option for you to upgrade firmware as this is done in the LCM in prism element. upvoted 1 time Submit Cancel",
+      "B and C are correct. A. Configure LCM with the URL of an internal webserver D. No such option upvoted 1 time Submit Cancel",
+      "correct answer is A and B upvoted 1 time Submit Cancel",
+      "correct answer is A and B upvoted 1 time Submit Cancel",
+      "Selected Answer: AB https://next.nutanix.com/installation-configuration-23/how-to-configure-a-web-server-for-lcm-dark-site-on-a-linux-machine-38045 upvoted 1 time Submit Cancel",
+      "Selected Answer: CD No no no Correct Answer is C and D upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A customer needs a DR solution designed around the following requirements: ✑ There are 8 ms of latency between Sites A and B ✑ The administrator needs the shortest RPO/RTO possible ✑ Application consistent snapshots are required ✑ Use of Nutanix VSS Which Data Protection Method should be used? A. Async B. Metro Availability C. Near Sync D. Cloud Connect",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/73511-exam-ncm-mci-topic-1-question-30-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: C C can be correct now as NearSync can support application-consistent snapshots from AOS 5.20 onwards. However, minutely snapshots are not application-consistent but hourly snapshots are. Source: https://portal.nutanix.com/page/documents/details?targetId=Prism-Element-Data-Protection-Guide-v5_20:wc-dr-near-sync-c.html upvoted 2 times Submit Cancel",
+      "A is correct C. is incorrect + NearSync does not support application-consistent snapshots + NearSync replication schedules of less than 15 minutes do not support self-service restore. https://portal.nutanix.com/page/documents/details?targetId=Prism-Element-Data-Protection-Guide-v6_6:wc-cluster-dr-nearsync-limitations-r.html upvoted 2 times Submit Cancel",
+      "Selected Answer: A can not be NearSync.because of app consistency upvoted 2 times Submit Cancel",
+      "But you can add more snapshot schedules each 1 hr, it supports application consistent snapshots. upvoted 4 times Submit Cancel",
+      "Selected Answer: A Due to app consistency it cannot be NearSync. upvoted 2 times Submit Cancel",
+      "Response A. NearSync doesn't support application consistent https://portal.nutanix.com/page/documents/details?targetId=Prism-Element-Data-Protection-Guide-v6_0:wc-cluster-dr-nearsync-limitations-r.html upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An alert about RX errors on eth2 on a node is reported in the cluster. The administrator logs in to the CVM in question, checks the ping_* files in the data/logs/ syststats folder, and notices intermittent ping loss. The node in question has the following network configuration: [sampleXML/xmlfile-23_1.png] Which action should be used to troubleshoot without disrupting the VMs running on this node? A. Replace the cable from eth2 to the switch B. Remove eth3 from br0-up and monitor for new alerts C. Check the port on the switch side for any errors D. Enable balance-s1b on br0-up and monitor if a problem persists",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/68256-exam-ncm-mci-topic-1-question-34-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C Answer is 'C'. upvoted 2 times Submit Cancel",
+      "Only D is without disrupting the VMs running upvoted 2 times Submit Cancel",
+      "To enable balance-s1b you have to put the node and CVM in the maintenance mode so it cannot be D upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibits. An administrator has reported that a new VM is not performing well. [sampleXML/xmlfile-25_1.png] [sampleXML/xmlfile-26_1.png] After analyzing the information presented in the exhibits, which option shows the best conclusion regarding this workload? A. VM is CPU constrained since the hypervisor cannot provide the required resources. B. VM is CPU constrained because more CPU needs to be added to the VM. C. VM is Storage constrained, because the workload is waiting for storage access. D. VM is not CPU constrained, because the VM is not running, a multithreaded application.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/76917-exam-ncm-mci-topic-1-question-36-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D Answer is 'D' - no clue why storage is even chosen here, it's not part of the diagram. upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is performing a set of routine checks and notes that Prism Central is running with 4 vCPUs and 21 GB RAM. The organizations environment is based on two Nutanix clusters with 170 VMs plus a Legacy vSphere infrastructure. No manual changes have been done on Prism Central VM. Which configuration justifies the current Prism Central configuration? A. Nutanix Move is running on Prism Central to import VMs from the Legacy Cluster. B. Prism Central was installed for Large Deployment environments. C. Prism Central is running on the legacy cluster and requires more RAM. D. Nutanix Leap and Nutanix Flow have been enabled on Prism Central",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/106131-exam-ncm-mci-topic-1-question-37-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000CvAnCAK upvoted 2 times Submit Cancel",
+      "A is incorrect - Nutanix Move does not import VM, it does VM migration B and D are incorrect - refer to https://portal.nutanix.com/kb/8932 C is correct, 1-VM PC requires 6 vCPUs, 26 GB of memory, and 500 GiB of storage. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A customer wants to run SAP HANA on a Nutanix cluster with the following characteristics: ✑ AHV nodes ✑ SAP HANA version 2 ✑ Production database files Which configuration should be recommended to the customer? A. Start with a cluster containing three or more nodes B. Enable only compression for the container that contains the Production database C. Do not enable compression, deduplication, or erasure coding on the storage container D. Plate the SAP HANA Database on the same socket as CVM",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/72864-exam-ncm-mci-topic-1-question-38-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "C is correct Don’t configure storage-saving functionalities such as compression, deduplication, or erasure coding (EC-X) on a storage container that holds production database files. https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2097-SAP-HANA-on-AHV:BP-2097-SAP-HANA-on-AHV upvoted 1 time Submit Cancel",
+      "Selected Answer: C C is correct - do not turn on any storage savings. upvoted 2 times Submit Cancel",
+      "I think, the correct is B. upvoted 1 time Submit Cancel",
+      "https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2097-SAP-HANA-on-AHV:BP-2097-SAP-HANA-on-AHV Correct Answer is C upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator receives reports that VDI desktop performance in an 8-node Nutanix VDI environment is poor. Opening applications takes between 1 and 2 minutes. When investigating the issue, the following conditions are found: ✑ Cluster memory utilization: 80% ✑ Cluster SSD utilization: 70% ✑ Average VM CPU Wait Time: 11% ✑ CVM CPU utilization: 75% Which action should be taken to improve VDI performance? A. Increase the amount of SSD storage in the cluster. B. Add memory to the nodes in the cluster. C. Add CPU resources to the cluster. D. Increase the number of vCPU cores allocated to the CVM.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/82834-exam-ncm-mci-topic-1-question-39-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Key element: CPU Wait Time at 11% upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator receives an alert in Prism indicating that interface eth2, on an AHV host is receiving many CRC errors. After togging into the problematic host, the following command is run to show the indicated output: [sampleXML/xmlfile-29_1.png] What is causing this issue? A. Incorrect link speeds on the switch B. The interface is incorrectly configured with Jumbo Frames C. A misconfigured bond D. A physical layer network problem",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/76493-exam-ncm-mci-topic-1-question-40-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 2
+    },
+    "discussion": [
+      "D is correct https://portal.nutanix.com/kb/1381 upvoted 2 times Submit Cancel",
+      "Selected Answer: D Has to be D upvoted 2 times Submit Cancel",
+      "Selected Answer: D It is 'D' a physical layer problem. upvoted 3 times Submit Cancel",
+      "Correct answer should be &quot;physical layer network problem&quot; upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to migrate workloads from a Nutanix cluster running VMware ESXi to Nutanix AHV. The migration process needs to be completed in multiple VM groups and support roll back in case any problems are found during user acceptance testing. Which action should the administrator perform? A. Use Cross Hypervisor DR to replicate VMs from ESXi to AHV B. Use VMware Converter C. Use Nutanix one-click cluster conversion from ESXi to AHV D. Use storage live migration",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/60787-exam-ncm-mci-topic-1-question-41-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "This statement &quot;support roll back in case any problems&quot; actually does point to in-place upgrade option. But yes DR replication from ESXi to AHV would be safest option. upvoted 1 time Submit Cancel",
+      "Selected Answer: A Also Voting for „A“ With covert cluster you cannot rollback. upvoted 3 times Submit Cancel",
+      "Selected Answer: A It's 'A'. Comment is correct. upvoted 2 times Submit Cancel",
+      "A is correct. Cross hypervisor disaster recovery (CHDR) provides an ability to migrate the VMs from one hypervisor to another (ESXi to AHV or AHV to ESXi) by using the Protection Domain semantics of protecting VMs, taking snapshots, replicating the snapshots, and then recovering the VMs from the snapshots upvoted 10 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to evaluate if the existing configuration of Protection Domains meets the specified corporate recovery policy for SQL Data. The corporate policy requires that all SQL Servers be recoverable at the DR site within 30 minutes, and must result in a maximum of 60 minutes of data loss. SQL data must be required. The protection domain is configured as follows: ✑ Application consistent snapshots are enabled ✑ The SQL server VMs are assigned to the Protection Domain as their own Consistency Group ✑ The Protection Domain schedule is configured as snapshots taken every 90 minutes from 7 am until 8 pm What must be changed to meet the required policy? A. Revise the schedule to be 15 minutes B. Revise the schedule to be 60 minutes C. Revise the schedule to be 30 minutes D. Revise the schedule to be 45 minutes",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/111719-exam-ncm-mci-topic-1-question-45-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "C. You want to replicate half the time of the RPO. If you have a 60 min RPO, and you lose a replication point, you have to roll back 120 minutes. If you replicate every 30 minutes and lose a cycle, at most you have to go back is 60 minutes which meets the requirement. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to make sure an RF3 cluster can survive a failure of two complete racks without negatively affecting performance. The current cluster configuration consists of the following: ✑ 30 All Flash Nodes: distributed 10 nodes per rack across three 42U racks ✑ Each node is configured with 20TB usable storage all flash (Cluster Total 600TB Usable) ✑ Current cluster utilization is 500TB storage ✑ Storage containers have Erasure Coding enabled Which configuration changes should be made to make sure the cluster meets the requirements? A. Expand the cluster to 50 nodes distributed evenly across 5 racks B. Expand the cluster to 48 nodes distributed evenly across 6 racks C. Expand the cluster to 60 nodes distributed evenly across 6 racks D. Expand the cluster to 40 nodes distributed evenly across 5 racks",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/104264-exam-ncm-mci-topic-1-question-46-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "&quot;A&quot; could be correct too, with 5, 10 node rack we will have 1000TB total cluster capacity. If we deduct the 500TB in use, we can still lose two racks (total of 400TB) and still maintain two copies of each block of data on the cluster. upvoted 2 times Submit Cancel",
+      "Erasure Coding requires an additional rack. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator receives an error indicating that the CVMs in the cluster are not syncing to any NTP servers. An investigation of the issue finds: ✑ The NTP servers are configured in Prism ✑ The time on all CVMs is the same ✑ Both the CVMs and AHV hosts are configured for the UTC time zone Which two steps can be taken to troubleshoot this issue? (Choose two.) A. Confirm that the NTP servers are reachable from the CVMs. B. Restart genesis on all CVMs. C. On a CVM. run the command a Hash ntpq -pn. D. Restart the chronos service on all CVMs.",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/63245-exam-ncm-mci-topic-1-question-47-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Answer &quot;c.&quot; should read: &quot;C. On a CVM. run the command allssh ntpq -pn&quot; upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "A Nutanix cluster is deployed with the following configuration: ✑ Three four-node blocks (A, B, and C) ✑ All Flash Redundancy Factor 2 What is the effect of simultaneous disk failures on two nodes located in block A? A. VMs are migrated of the nodes with disk failures. B. Each node with a failed disk is marked as degraded. C. VM read and write operations continue normally. D. VMs on the nodes with failed disks are unable to write data",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/59860-exam-ncm-mci-topic-1-question-49-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "C is good. Explanation would be block awareness. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An organizations Nutanix Cluster is based on VMware vSphere. The cluster is configured to download software updates automatically. The administration needs to verify and eventually upgrade VMware hypervisor via Prism Ul. After logging in to Prism, the administrator receives the message shown: No available versions for upgrade. What is causing the current state? A. VMware support has expired, so downloads are not available. B. vSphere binaries need to be manually uploaded. C. The environment is running the latest vSphere version, so no update is required. D. The cluster is unable to connect to release api.nutanix-ccm:8D.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/76776-exam-ncm-mci-topic-1-question-51-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2
+    },
+    "discussion": [
+      "B Nutanix does not provide ESXi binary files, only related JSON metadata upgrade files. Obtain ESXi offline bundles (not ISOs) from the VMware web site. https://portal.nutanix.com/page/documents/details?targetId=vSphere-Admin6-AOS-v6_5:vsp-node-upgrade-vsphere-c.html upvoted 2 times Submit Cancel",
+      "Selected Answer: B LCM does not support ESXi upvoted 2 times Submit Cancel",
+      "Selected Answer: B Answer is 'B'. upvoted 5 times Submit Cancel",
+      "Answer is 'b' &quot;vSphere binaries need to be manually uploaded&quot; upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator protected a DB VM running on a Nutanix cluster with NearSync Replication, which schedules to repeat every 15 minutes to a second site. The daily change rate is low. During nightly backups, the replication window is missed due to write volume. Which two options describe the expected behavior? (Choose two.) A. NearSync stops working and fails over to the remote site. B. Protection Domain transitions back to the hourly schedule. C. The Administrator needs to re-enable it manually. D. The system continuously tries to get to the NearSync schedule.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/76777-exam-ncm-mci-topic-1-question-54-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: BD https://portal.nutanix.com/page/documents/details?targetId=Prism-Element-Data-Protection-Guide-v6_6:wc-dr-near-sync-c.html upvoted 2 times Submit Cancel",
+      "B D is correct answer https://portal.nutanix.com/page/documents/details?targetId=Prism-Element-Data-Protection-Guide-v6_6:wc-dr-near-sync-c.html upvoted 2 times Submit Cancel",
+      "Answer is 'B' and 'D'. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. [sampleXML/xmlfile-45_1.jpg] An administrator configures Active Directory authentication as shown in the exhibit. Upon finishing setup, users are not able to log in. What configuration change should be made to fix this issue? A. Change leaps to https B. Change the Directory URL to use an IP rather than a name C. Change the plct from 389 to 636 D. Change the Domain to use an IP rather than a name",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/86486-exam-ncm-mci-topic-1-question-58-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Correct, is C. The ldaps use port 636 https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-Prism-v510:mul-security-authentication-pc-t.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is implementing a VDI solution. The workload will be a series of persistent desktops in a dedicated storage container within a four-node cluster. Storage optimizations should be set on the dedicated storage container to give optimal performance including during a node failure event. Which storage optimizations should the administrator set to meet the requirements? A. Compression, Deduplication, and Erasure Coding B. Deduplication and Erasure Coding C. Compression and Deduplication D. Compression only",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/64355-exam-ncm-mci-topic-1-question-60-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C the answer iw C: upvoted 1 time Submit Cancel",
+      "• Nutanix recommends enabling inline compression unless otherwise advised. • Nutanix recommends disabling deduplication for all workloads except VDI. For mixed-workload Nutanix clusters, create a separate storage container for VDI workloads and enable deduplication on that storage container. https://portal.nutanix.com/page/documents/details?targetId=vSphere-Admin6-AOS-v6_6:vsp-cluster-configuration-vsphere-r.html upvoted 2 times Submit Cancel",
+      "'C' is correct. upvoted 2 times Submit Cancel",
+      "A is the correct answer: Capacity Optimization Nutanix hybrid multicloud software offers capacity optimization features that improve storage utilization and performance. The three key features are: Compression Deduplication Erasure coding (EC-X) upvoted 1 time Submit Cancel",
+      "C is the correct answer, https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2079-Citrix-Virtual-Apps-and-Desktops:top-nutanix-storage-configuration.html upvoted 6 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has a VM that consumes large amounts of storage and has the following characteristics: ✑ Create large / sequential writes ✑ Data must be kept for years ✑ Data is normally only accessed at the end of the year to run report The administrator decides to use Erasure Coding to save space. Which feature should the administrator utilize to save space for this VM? A. Inline Compression B. Flash Mode C. Cache Dedup D. Post-Process Compression",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/78261-exam-ncm-mci-topic-1-question-63-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: D A. Inline Compression is enabled by default, administrator does not need to do anything D. For cold data (no read/write for 3 days). As data cools, LZ4HC further compresses it to improve the compression ratio. https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2032-Data-Efficiency:TN-2032-Data-Efficiency upvoted 2 times Submit Cancel",
+      "Inline compression is correct. upvoted 1 time Submit Cancel",
+      "Selected Answer: A Answer is A upvoted 1 time Submit Cancel",
+      "Agreed. Almost always use inline compression (compression delay=0) because this setting only compresses larger or sequential writes and does not impact random write performance. In fact, inline compression typically increases effective performance by increasing the usable size of the SSD tier. In addition, when the system replicates larger or sequential data for protection, it can send compressed data, further increasing performance because less data crosses the wire. Inline compression also pairs perfectly with erasure coding. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A customer has Metro Availability configured in Automatic Resume Mode between Site A and Site B. What happens to VMs if Primary Site A has full network failure? A. Automatic protection domain promotion in Site B. VMs automatically restart in Site B. VMs continue to run on Site A following an automatic disable of protection domains. C. An administrator must unwitness in Site B and promote protection domains in Site B for VMs to restart D. An administrator must promote protection domains in Site B for VMs to restart.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/105765-exam-ncm-mci-topic-1-question-66-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Should be D 1. Metro Availability Failure Process (no Witness) In the event of either a primary site failure (the site where the Metro storage container is currently active) or the link between the sites going offline, the Nutanix administrator is required to manually disable metro availability and promote the target storage container on the remote (or current) site to Active https://portal.nutanix.com/page/documents/details?targetId=Prism-Element-Data-Protection-Guide-v6_6:sto-cluster-witness-option-wc-c.html 2. The question says &quot;Automatic Resume&quot; is configured, no Witness is in the place. Promote Site B (or Failover) has to be perform manually. https://portal.nutanix.com/page/documents/details?targetId=Prism-Element-Data-Protection-Guide-v6_6:wc-metrol-role-status-c.html upvoted 1 time Submit Cancel",
+      "Selected Answer: D Should be answer D according to the link below following this scenario: https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2009-Metro-Availability:operational-scenarios-summary.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to expand a cluster based on AHV and running on Nutanix G5 hardware with a new Nutanix G7 system. The cluster is running AOS 5.10 but the operation fails when expanding the cluster. AOS is running on the new system. There are no issues discovering the node. Why is the operation failing? A. AOS version running on G7 is older than the version on the cluster. B. Foundation software has not been updated on the cluster. C. G7 hardware cannot be added to a G5 cluster. D. EVC needs to be configured before cluster expansion",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/76778-exam-ncm-mci-topic-1-question-68-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "A is incorrect, Expand Cluster operation will re-image new node if necessary C is incorrect, Nutanix clusters can support four generations of Nutanix platforms. For example, you can mix G8 nodes in a cluster with G7, G6, and G5 platforms, but not with G4 or earlier platforms. D is incorrect, irrelevant in expanding cluster. upvoted 2 times Submit Cancel",
+      "Answer is 'B'. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator finds that home shares cannot be configured in a new Files 3.5 deployment. Why is this happening? A. NFS default access is set to Read Only. B. Multi-protocol access is not configured. C. Access Based Enumeration is not enabled. D. The system is deployed as a single FSVM.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/83388-exam-ncm-mci-topic-1-question-72-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: D Per the article: Distributed (home) shares are only available on deployments of three or more FSVMs. upvoted 2 times Submit Cancel",
+      "Correction: There is single FSVM deployment upvoted 1 time Submit Cancel",
+      "Selected Answer: A I choose A is because B C D are either irrelevant or incorrect B. not required, you can just enable SMB C. Access Based Enumeration configuration is not required D. Three FSVM(s) are created during Nutanix Files deployment. There is no single FSVM system. upvoted 1 time Submit Cancel",
+      "Distributed shares (home shares) are only available on deployments of three or more FSVMs. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator deletes a large amount of data from a Volume Group presented to a Linux VM. The administrator notices that the deleted data has not been reclaimed as usable storage. What action should be taken to reclaim the storage capacity? A. Shrink the Volume Group that is associated with the Linux VM B. Unmount the Volume Group and then Remount the Volume Group C. Enable the unman operation on the Linux VMD. Run Defrag on the Linux VM",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/76779-exam-ncm-mci-topic-1-question-75-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C If the guest doesn't send UNMAP commands, freed space isn't made available for other guests and doesn't display as available in Prism. https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2049-Nutanix-Volumes:scsi-unmap.html upvoted 2 times Submit Cancel",
+      "Answer is 'C' - Enable UNMAP upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is notified that a bare metal database server is down. This database server is being served storage using a Nutanix Volume Group. Upon investigating, the administrator finds that the disks in the database server that map to the vDisks in the volume group have gone offline. What is causing this issue? A. The Volume Group Load Balancer has been disabled. B. Port 9443 is blocked in the server firewall. C. Port 3260 has been blocked in the server firewall. D. A CVM serving the Volume Group has gone offline.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/76780-exam-ncm-mci-topic-1-question-79-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2
+    },
+    "discussion": [
+      "Data Service IP is used for iSCSI traffic, if the CVM serving the Volume Group has gone offline, the other CVM will pick up the job. upvoted 1 time Submit Cancel",
+      "Selected Answer: C Allow 3205 and 3260 in Firewall for communication between the cluster and clients. Note: For destination, the ports should be open for the Prism Element Data Services IP and each Controller VM IP address. https://portal.nutanix.com/page/documents/list?type=software&amp;filterKey=software&amp;filterVal=Ports%20and%20Protocols&amp;productType=Volumes&amp;a=33a7991aa3f9f05c71e0dea91966fb7c025da4caa0b2c60693f0bec78993c7b7a5e412641a7978d3 upvoted 2 times Submit Cancel",
+      "Selected Answer: C Nutanix Volumes uses port 3260, thus, if this port os blocked by the firewall the behavior described above happens. upvoted 3 times Submit Cancel",
+      "Answer is 'C'. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator wants to utilize Network Visualization to monitor the physical and logical network on the Nutanix cluster. The first-hop switch has LLDP enabled. The network switch information is still not being displayed. What is causing this problem? A. The ISL between switches is not configured. B. SNMP is not configured properly. C. br0 and br1 are not defined. D. The cluster is using RDMA-enabled NICs.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/106145-exam-ncm-mci-topic-1-question-81-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D LLDP is enabled, but network switch information not being displayed, this imply layer 2 information is not available. A. If Layer 1 is not working, layer 2 info will not show. LLDP does not require trunking or ISL to be configure properly B. SNMP is layer 3, it is not required for network to be up C. br0 is virtual interface, if physical interfaces are up, they should be able to provide LLDP info, it does not require br0 to be configured correctly. D. The only possible choice is D, hardware related issue. Hardware is not supported https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v6_6%3Awc-wc-rdma-ztr-limitations-c.html&amp;a=33a7991aa3f9f05c71e0dea91966fb7c025da4caa0b2c60693f0bec78993c7b7a5e412641a7978d3 upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "A customer has two mission-critical applications and needs to have them backed up to a remote location. The remote location is connected using a leased line and has an average latency of 7 ms. Which Nutanix technology will provide the shortest RPO possible? A. NearSync B. Leap C. Metro Availability D. Asyn&DR",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/76781-exam-ncm-mci-topic-1-question-82-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A Leap utilize NearSync, Async and Synchronous replication schedule. The question is asking which replication schedule. For protecting mission-critical applications. It is recommended to use NaerSync https://portal.nutanix.com/page/documents/details?targetId=Prism-Element-Data-Protection-Guide-v6_6%3Awc-dr-near-sync-c.html&amp;a=33a7991aa3f9f05c71e0dea91966fb7c025da4caa0b2c60693f0bec78993c7b7a5e412641a7978d3 upvoted 2 times Submit Cancel",
+      "Answer is 'A' - NearSync. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "The following alert appears on the File Server Alerts tab in the File Server dashboard: File Server FS47-SS has multiple VMs on a single node Which two events can generate this alert? (Choose two.) A. A three-node cluster hosting the file server is undergoing AOS upgrade. B. A node failed in a three-node cluster. C. A Nutanix file with four file server VMs is deployed on a three-node cluster. D. A node is set to the maintenance mode in a three-node cluster.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/107269-exam-ncm-mci-topic-1-question-87-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: BD A. incorrect, host is not set to Maintenance Mode during AOS upgrade, no VM will be migrated. D. Correct, when a node is set to MM, VMs are migrated to a different host that includes FSVM. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A VDI environment based on AHV Cluster is not performing well. The current environment is using only one bridge (Bridge0). The administrator needs to verify if nodes are using all network cards associated to Bridge0. Which two menus should be used to check the current configuration? (Choose two.) A. Host NICs tab in Hardware menu B. I/O Metrics tab in VM menu C. Host view in Network menu D. Network Configuration item in Settings menu",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/106147-exam-ncm-mci-topic-1-question-88-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: AD A Host NIC tab show MAC of network cards C Network View does not have NIC Card info D You have the option to display 10G NIC or 1 G NIC or both upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is trying to convert an ESXi cluster with the existing configurations to AHV: • HA and DRS enabled • vCenter VM resides on the same cluster being converted • Distributed vSwitch • Multiple external vSwitches • Active/active load balancing Which two configurations will cause the cluster conversion process to fail? (Choose two.) A. vCenter VM resides on the same cluster B. Distributed vSwitch C. Multiple external vSwitches D. Active/Active load balancing policy",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/103329-exam-ncm-mci-topic-1-question-96-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "C": 1
+    },
+    "discussion": [
+      "A and C as Active/active load balancing is incorrect as it will not cause the conversion to fail, but will be converted to active/backup upvoted 2 times Submit Cancel",
+      "Selected Answer: AC https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_6:man-cluster-conversion-requirements-limitations-r.html upvoted 2 times Submit Cancel",
+      "Answer should be A and D https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:man-cluster-conversion-requirements-limitations-r.html upvoted 1 time Submit Cancel"
+    ]
   }
 ]
