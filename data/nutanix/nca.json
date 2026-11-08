@@ -2,81 +2,209 @@
   {
     "question": "When multiple Alert policies are applied to an entity, which will take precedence? A. Policy are applied to a specific entity. B. Policy are applied to all entities of an entity type. C. Policy are applied to an entity type in a category. D. Policy are applied to an entity type in a cluster.",
     "options": {},
-    "most_voted": "A"
+    "most_voted": "A",
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A When Nutanix Alert Policies overlap, the most specific policy always takes precedence. Order of precedence (highest → lowest): Specific entity (highest priority) Entity type in a category Entity type in a cluster All entities of an entity type (broadest) upvoted 1 time Submit Cancel",
+      "Selected Answer: A This is the appropriate answer upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "In Prism Element, to which object are policies such as replication factor and storage efficiency settings applied? A. Container B. Virtual Machine C. Storage Pool D. vBlock",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101258-exam-nca-topic-1-question-1-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 7
+    },
+    "discussion": [
+      "Selected Answer: A Storage container settings are adjusted and configured at the container level upvoted 1 time Submit Cancel",
+      "Selected Answer: A A is correct upvoted 2 times Submit Cancel",
+      "Answer is A and it's referred to Storage Container. (nothing to do with cloud native containers or k8s related) upvoted 2 times Submit Cancel",
+      "Selected Answer: A A is correct upvoted 2 times Submit Cancel",
+      "Selected Answer: A A. Container upvoted 2 times Submit Cancel",
+      "A. In Prism Element, policies such as replication factor and storage efficiency settings are applied to storage containers. upvoted 3 times Submit Cancel",
+      "A. Container Containers in Nutanix Prism Element are logical constructs used to define and manage storage policies, including replication factor, deduplication, compression, and erasure coding. These policies help optimize data storage and protection on the Nutanix platform. upvoted 4 times Submit Cancel",
+      "Selected Answer: A correct answer a upvoted 4 times Submit Cancel",
+      "Selected Answer: A In Prism Element, policies such as replication factor and storage efficiency settings are applied to Containers. A container is a logical grouping of one or more storage pools and defines the storage resources available to virtual machines. By applying policies to a container, you can set the replication factor, storage efficiency settings, and other storage-related settings for all of the virtual machines that are associated with that container. This is a fundamental concept in Nutanix Platform. upvoted 5 times Submit Cancel",
+      "Selected Answer: A Container upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "Shared storage for Windows Server Failover Clustering (WSFC) is a use case for which Nutanix Unified Storage solution? A. Volumes B. Files C. FT1 D. RF2",
     "options": {},
-    "most_voted": "A"
+    "most_voted": "A",
+    "vote_counts": {
+      "A": 2,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: A Shared storage for Windows Server Failover Clustering (WSFC) is a key use case for Nutanix Volumes. As part of the Nutanix Unified Storage portfolio, Volumes provides iSCSI-based block storage, supporting SCSI-3 persistent reservations required for shared clustering in applications like Microsoft SQL Server and File Servers. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Windows shared in NUS is &quot;Files&quot; upvoted 1 time Submit Cancel",
+      "Selected Answer: A through VG we can share te vdisk to the windows servers upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which IP address can be used to directly access Prism Element? A. Foundation VM IP address B. IP address of any CVM in the cluster C. IP address of any Prism Central VM D. AHV host br0 IP address",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101539-exam-nca-topic-1-question-2-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2
+    },
+    "discussion": [
+      "Selected Answer: B B. Web interface of Prism Element can be reached from any CVM in the cluster. upvoted 2 times Submit Cancel",
+      "B. IP address of any CVM in the cluster upvoted 2 times Submit Cancel",
+      "B. IP address of any CVM in the cluster upvoted 4 times Submit Cancel",
+      "B. IP address of any CVM in the cluster Prism Element, Nutanix's management interface for a single cluster, can be accessed via the IP address of any Controller VM (CVM) in the cluster. Each CVM runs the management software necessary to provide the Prism Element interface. upvoted 3 times Submit Cancel",
+      "Selected Answer: B http://management_ip_addr in the address bar and press Enter or click the right arrow icon. This IP address can be either the cluster virtual IP address or the IP address of any Nutanix Controller VM (CVM) in the cluster. The browser will redirect to the encrypted port (9440) upvoted 3 times Submit Cancel",
+      "Correct: CVM IP https://www.nutanixbible.com/3b-book-of-prism-navigation.html#:~:text=Prism%20Element%20can%20be%20accessed,or%20cluster%20IP%20(preferred). upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "Which Nutanix Disaster Recovery component or feature provides the best Recovery Time Objective (RTO)? A. Async B. Availability Zone C. Metro Availability D. NearSync",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: C Metro Availability provides the best Recovery Time Objective (RTO) in Nutanix Disaster Recovery, offering near-zero downtime by enabling synchronous replication and instant failover between two sites. upvoted 1 time Submit Cancel",
+      "Selected Answer: C C with latency of 5 ms or less upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Where can an administrator find information about the Cluster Runway? A. Prism Element Home Page B. Prism Element Analysis C. Prism Central Main Dashboard D. Prism Central Analysis",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101540-exam-nca-topic-1-question-3-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2
+    },
+    "discussion": [
+      "C is correct. It's a Dashboard of Prism Central. In Prism Element analisys there's no cluster wide information on disk/cpu/mem occupancy, only related to the CVM node. upvoted 1 time Submit Cancel",
+      "C. Prism Central Main Dashboard upvoted 1 time Submit Cancel",
+      "D. Prism Central Analysis upvoted 2 times Submit Cancel",
+      "My apologizes! the correct answers is B. I wrote wrong ! Moderator,can you to correct it? please! upvoted 2 times Submit Cancel",
+      "D. Prism Central Analysis Cluster Runway in Prism Central Analysis provides a comprehensive view of the cluster's capacity and resource usage trends, helping administrators to plan and manage resources effectively. upvoted 1 time Submit Cancel",
+      "Where can an administrator find information about the Cluster Runway? A. Prism Element Home Page B. Prism Element Analysis C. Prism Central Main Dashboard D. Prism Central Analysis upvoted 1 time Submit Cancel",
+      "C - PC main dashboard --&gt; click on widgets --&gt; choose &quot;cluster runway&quot; upvoted 2 times Submit Cancel",
+      "C is correct answer : upvoted 1 time Submit Cancel",
+      "Selected Answer: C correct upvoted 2 times Submit Cancel",
+      "The correct answer is B. Prism Element Analysis. Prism Element Analysis provides a range of performance and capacity-related information about the Nutanix cluster. It offers insights into resource utilization, capacity planning, and performance monitoring. The Cluster Runway is a feature within Prism Element Analysis that provides information about the available resources and their utilization within the cluster. To access information about the Cluster Runway in Prism Element, an administrator can navigate to the Analysis section within Prism Element and locate the specific Cluster Runway analysis. This analysis will provide details such as cluster capacity, resource utilization, projected time until capacity is reached, and recommendations for resource adjustments if necessary. This information can be invaluable for planning future growth, identifying potential resource constraints, and ensuring optimal performance within the Nutanix cluster. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is looking to upgrade their licensing on a Nutanix cluster. Which licensing levels are available for a Nutanix cluster? A. Community Edition, Pro, Enterprise B. Starter, Pro, Dedicated C. Starter, Pro, Ultimate D. Mixed, Advanced, Enterprise",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "C": 4
+    },
+    "discussion": [
+      "Selected Answer: C Nutanix offers three primary, tiered licensing levels for their cluster infrastructure, which are Starter, Pro, and Ultimate. These levels allow administrators to choose the appropriate feature set, ranging from core HCI functionality to advanced automation, security, and management capabilities, facilitating upgrades as business needs grow. upvoted 1 time Submit Cancel",
+      "Selected Answer: C c start pro ult upvoted 1 time Submit Cancel",
+      "Selected Answer: C https://www.nutanix.com/products/cloud-platform/software-options upvoted 1 time Submit Cancel",
+      "Selected Answer: C The answer is correct. Nutanix does offer the 3 licensing tiers upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is the purpose of Discoveries within the Nutanix Support Portal? A. To identify clusters that are affected by known issues. B. To provide an audit trail of cluster logins. C. To identify VMs that require OS updates or patching. D. To provide forecasting of cluster resource utilization.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101541-exam-nca-topic-1-question-4-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "A. To identify clusters that are affected by known issues. upvoted 1 time Submit Cancel",
+      "A. Correct Answer. Discoveries in the Nutanix Support Portal help administrators quickly identify clusters that may be impacted by known issues, ensuring they can take appropriate action to mitigate potential problems. upvoted 2 times Submit Cancel",
+      "A. To identify clusters that are affected by known issues. Discoveries in the Nutanix Support Portal help administrators quickly identify clusters that may be impacted by known issues, ensuring they can take appropriate action to mitigate potential problems. upvoted 2 times Submit Cancel",
+      "Selected Answer: A The Discoveries menu in Portal is a feature that allows customers to view critical issues in their environment with a more holistic approach. Using Nutanix Insights, portal will provide this view based on field advisories i.e. constant health checks, end of support equipment, etc. The discoveries details view provides the background, analysis, and corrective actions that can be done to remedy these issues. This will also give you the option to create a case based on the specific issue/topic. upvoted 2 times Submit Cancel",
+      "correct upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "From Prism Central, how can an administrator access a cluster? A. Use the VM Summary view. B. Use the cluster quick access from the main dashboard widget. C. Use the cluster quick access from the Settings page. D. Use the Cluster Summary view.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101542-exam-nca-topic-1-question-5-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 3
+    },
+    "discussion": [
+      "B. Use the cluster quick access from the main dashboard widget. Most Voted upvoted 2 times Submit Cancel",
+      "B. correct answer! upvoted 1 time Submit Cancel",
+      "B. Use the cluster quick access from the main dashboard widget. The main dashboard widget in Prism Central provides quick access to clusters, allowing administrators to easily navigate to and manage specific clusters. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Cluster Quick Access. upvoted 2 times Submit Cancel",
+      "Selected Answer: B Cluster Quick Access from the main dashboard upvoted 2 times Submit Cancel",
+      "B is the correct upvoted 1 time Submit Cancel",
+      "Selected Answer: B B. Use the cluster quick access from the main dashboard widget. upvoted 4 times Submit Cancel",
+      "From Prism Central's main dashboard page, an administrator can access any cluster by clicking the cluster quick access link. This will open the cluster summary page, which contains detailed information about the cluster, including the nodes, virtual machines, and applications running on the cluster. upvoted 1 time Submit Cancel",
+      "Respuesta correcta: B. Use the cluster quick access from the main dashboard widget. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "When using the LCM Dark Site procedure in Prism Element or Prism Central, which Nutanix software component should be checked and upgraded first? A. MSP B. Foundation C. NCC D. LCM Framework",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "vote_counts": {
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: D When using the Nutanix Life Cycle Manager (LCM) Dark Site procedure in Prism Element or Prism Central, the LCM Framework should be checked and upgraded first. Upgrading the LCM framework ensures the system can correctly identify and manage the dependencies for subsequent firmware and software updates in a disconnected environment. upvoted 1 time Submit Cancel",
+      "Selected Answer: D closest answer: https://next.nutanix.com/ahv-virtualization-27/steps-to-nutanix-upgrade-in-darksite-nointernet-on-cluster-42520 upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Where can an administrator configure role-based access control (RBAC)? A. Self-Service Restore B. Prism Element C. Foundation D. Prism Central",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101543-exam-nca-topic-1-question-6-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "D.correct answer!Log in to Prism Central: Use your credentials to log in to Prism Central. Configure Active Directory Settings: Go to Prism Central Settings. Click + New Directory and add your preferred Active Directory. Assign Roles: Click the hamburger menu and navigate to Administration &gt; Roles. upvoted 1 time Submit Cancel",
+      "D. Prism Central Prism Central allows administrators to set up and manage role-based access control (RBAC) to define user permissions and access levels within the Nutanix environment. upvoted 1 time Submit Cancel",
+      "Selected Answer: D The Cluster role based access control (RBAC) or Enhanced Prism Central RBAC) feature provides “Prism Admin” and “Prism Viewer” role based access to Prism Central with access restricted to one or more AOS clusters registered to Prism Central. With Cluster RBAC, the Prism Central admin or viewer user is able to access Prism Central and, view and act on the entities like VM, host, and container from the allowed AOS Clusters. The users will also be able to perform the “Launch Prism Element” action on the allowed AOS clusters and manage the cluster with respective Prism admin or viewer access. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is the default admin session log out time? A. 5 minutes B. 10 minutes C. 15 minutes D. 20 minutes",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C The default admin session timeout for Nutanix Prism (both Prism Element and Prism Central) is 15 minutes of inactivity. After this period, the user is automatically logged out. While this is the default, administrators can adjust or extend this session idle time through the UI Settings within the Prism Web Console. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which Prism Central feature can map images to target clusters using categories? A. Image Replication Policies B. Image Placement Policies C. Protection Domain Policies D. Storage Policies",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/111212-exam-nca-topic-1-question-7-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Correct Answer: B In Prism Central, Image Placement Policies can be used to map images to target clusters using categories. An Image Placement Policy is a set of rules that determine where an image should be placed on the Nutanix cluster. These rules are based on categories, such as the image's OS type, the target cluster's hardware type, and other factors. By creating image placement policies, you can ensure that images are placed on the appropriate clusters, and that they are compatible with the hardware and software requirements of those clusters. upvoted 4 times Submit Cancel",
+      "Selected Answer: B Prism Central enables you to configure policies that govern which clusters receive the images that you upload. These policies, called image placement policies, map images to target clusters through the use of categories associated with both those entities. For example, an image placement policy might state that Linux images associated with the categories OS:Linux and distribution:Centos must be uploaded to clusters associated with the category location:SFO. Image placement policies also specify how strictly the policy must be enforced. Soft enforcement allows clusters not identified by the policy to use the images, when required, by checking them out. Hard enforcement disallows such usage. By using both soft and hard enforcement on the same category of clusters, you can address more specific use cases. upvoted 2 times Submit Cancel",
+      "B. Image Placement Policies upvoted 1 time Submit Cancel",
+      "B. Image Placement Policies upvoted 2 times Submit Cancel",
+      "B. Image Placement Policies Image Placement Policies in Prism Central allow administrators to define rules that map images to target clusters based on categories. This helps streamline image management and deployment across the Nutanix environment. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. What is true about the network uplink ports? A. One is connected at 1GbE and the other is 10GbE. B. They are configured in Active-Backup mode. C. All are connected, but only two are carrying traffic. D. They are configured in Active-Active mode.",
@@ -85,6 +213,15 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/101544-exam-nca-topic-1-question-8-discussion/",
     "images": [
       "images/nutanix/nca/t01_q008/img_1.png"
+    ],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "B. They are configured in Active-Backup mode. In Nutanix, all the network uplink ports are connected, but only two of them are carrying traffic at any given time. This is done to provide redundancy and failover in case one of the ports fails. The two ports that are carrying traffic are chosen based on the link aggregation policy configured. The link aggregation policy can be configured to use either Active-Active or Active-Backup mode. In Active- Active mode, both ports are active and carrying traffic, while in Active-Backup mode, only one port is active and carrying traffic, the other port is on standby. upvoted 1 time Submit Cancel",
+      "B. They are configured in Active-Backup mode. upvoted 2 times Submit Cancel",
+      "Selected Answer: B correct upvoted 2 times Submit Cancel",
+      "Correct upvoted 2 times Submit Cancel"
     ]
   },
   {
@@ -92,182 +229,419 @@
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101545-exam-nca-topic-1-question-9-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "C. Virtual Network with IPAM upvoted 1 time Submit Cancel",
+      "C. Virtual Network with IPAM upvoted 1 time Submit Cancel",
+      "C. Virtual Network with IPAM IPAM (IP Address Management) is a system that plans, tracks, and manages IP address assignments in a network. When integrated with a virtual network, IPAM can automatically allocate IP addresses to virtual machines (VMs), ensuring efficient and organized management of network resources. upvoted 1 time Submit Cancel",
+      "Selected Answer: C Nutanix Acropolis AHV supports advance virtual network Layer L2 and management network layer L3 functionality with IP Address Management ( IPAM ) feature to provide the dynamic IP Address to Guest VMs running on Nutanix platform through enabling the built-in Nutanix Acropolis DHCP server. Nutanix Administrator can enable the Nutanix virtual network un-managed network L2 and/or management network layer L3 Nutanix Acropolis DHCP Server through single click. source: https://hyperhci.com/2020/01/10/configure-nutanix-virtual-network-with-ipam/ upvoted 2 times Submit Cancel",
+      "correct https://hyperhci.com/2020/01/10/configure-nutanix-virtual-network-with-ipam/ upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is configuring Erasure Coding on a Redundancy Factor 2 cluster. How many nodes, at a minimum, are necessary? A. 3 B. 4 C. 5 D. 6",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "vote_counts": {
+      "B": 3,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: B ChadGPT: Erasure Coding (EC) in Nutanix requires more nodes than simple replication because data is striped across nodes with parity blocks for fault tolerance. In a Redundancy Factor 2 (RF2) cluster, the cluster can tolerate one node failure. For Erasure Coding with RF2, Nutanix requires a minimum of 4 nodes. With fewer than 4 nodes, the system cannot properly distribute data and parity blocks while still maintaining resiliency. The 4-node minimum ensures there are enough nodes to hold the data stripes and parity information across the cluster. upvoted 2 times Submit Cancel",
+      "Selected Answer: B A cluster must have at least four nodes/blocks/racks to enable erasure coding. The cluster can have all four flash nodes or a combination of flash and hybrid nodes, or all hybrid nodes. If erasure coding is enabled on a storage container, a minimum of four blocks for RF2 or six blocks for RF3 is required to maintain block awareness. check this link: https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2024_2:wc-erasure-coding-best-practices-requirements-wc-c.html upvoted 2 times Submit Cancel",
+      "Selected Answer: A RF2 + EC → min 3 nodes RF3 + EC → min 5 nodes upvoted 2 times Submit Cancel",
+      "Selected Answer: B should be 4 ? upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which directory should the LCM Framework Bundle be extracted to on a dark site web server in order to update the LCM Framework? A. release B. upgrade C. software D. install",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101363-exam-nca-topic-1-question-10-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 4
+    },
+    "discussion": [
+      "A. Release When updating the LCM Framework on a dark site web server, the LCM Framework Bundle should be extracted to the &quot;release&quot; directory. This directory is specifically designated for holding the updated LCM Framework files, and the update process will look for the files in this location. Extracting the bundle to a different directory, such as &quot;upgrade&quot;, &quot;software&quot; or &quot;install&quot; would not be sufficient as the LCM Framework update process may not be able to find the files. upvoted 1 time Submit Cancel",
+      "Selected Answer: A A is the correct upvoted 2 times Submit Cancel",
+      "A. release upvoted 2 times Submit Cancel",
+      "Life-Cycle-Manager-Dark-Site-Guide-v2_6.pdf Procedure 1. From a device that has public Internet access, go to the Nutanix portal and select Downloads &gt; LCM. 2. Next to the LCM Framework Bundle entry, click Download to download the latest LCM framework tar file, lcm_dark_site_bundle_version.tar.gz. 3. Transfer the framework tar file to your local web server. 4. Extract the framework tar file into the release directory. upvoted 1 time Submit Cancel",
+      "Selected Answer: A correct upvoted 2 times Submit Cancel",
+      "Selected Answer: A A : release upvoted 3 times Submit Cancel",
+      "The correct answer is B. upgrade. When performing an LCM Framework update on a dark site, which is an offline environment without direct internet connectivity, the LCM Framework Bundle needs to be manually downloaded and transferred to the dark site web server. The bundle should then be extracted to a specific directory within the web server's file system to initiate the update process. In this case, the LCM Framework Bundle should be extracted to the &quot;upgrade&quot; directory on the dark site web server. This directory is where the LCM Framework will look for the necessary files to perform the update procedure. upvoted 3 times Submit Cancel",
+      "Selected Answer: A Release upvoted 4 times Submit Cancel",
+      "Should be A upvoted 4 times Submit Cancel",
+      "release upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has been directed to ensure that ail Prism Element and Prism Central clusters allow Nutanix Support to gather logs without needing engagement. What should the administrator enable to meet this requirement? A. Self-Service B. Proxy Server C. Pulse D. NKP",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "C": 2,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: C automatically send cluster health upvoted 1 time Submit Cancel",
+      "Selected Answer: C Explanation: Pulse is Nutanix’s phone-home / telemetry feature. When enabled, Pulse automatically sends cluster health, configuration, and log data to Nutanix Support. This allows Support to proactively gather information and troubleshoot without needing to manually request log bundles from the administrator. upvoted 2 times Submit Cancel",
+      "Selected Answer: A answer is A upvoted 1 time Submit Cancel",
+      "typo answer C is correct upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which feature or configuration is best for securing network traffic between the management and storage replication environments? A. Use of Firewall Rules B. Network Segmentation C. VM Anti-Affinity Rules D. Different Storage Containers",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/116990-exam-nca-topic-1-question-11-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "B. Network Segmentation. Network segmentation involves dividing a network into separate segments or subnets, each acting as an isolated network. This practice helps to enhance security by containing potential breaches within a segment, preventing them from spreading across the entire network. By segmenting the network, you can ensure that management traffic and storage replication traffic are separated, reducing the risk of unauthorized access or data breaches. upvoted 1 time Submit Cancel",
+      "B. Network Segmentation Network segmentation involves dividing a network into separate segments or subnets, each acting as an isolated network. This practice helps to enhance security by containing potential breaches within a segment, preventing them from spreading across the entire network. By segmenting the network, you can ensure that management traffic and storage replication traffic are separated, reducing the risk of unauthorized access or data breaches. upvoted 1 time Submit Cancel",
+      "Selected Answer: B correct me if im wrong but B is correct. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator wants to apply tags to licenses to simplify future renewals. What interface would be used to complete this operation? A. Clusters in the Support Portal B. License Inventory in the Support Portal C. Prism Central Licensing D. Prism Element Licensing",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Creating and Adding a Tag to Your Licenses Label and group your licenses with a tag. You can add multiple tags to a single license. Procedure Log on to the Nutanix Support Portal. In the upper-left corner, click the menu icon, then click Licenses. Click License Inventory &gt; Active Licenses. (Optional) To create a new tag, follow these steps: Click Actions &gt; Create a Tag, then in the New Tag field, enter a tag name. Click Create. (Optional) To apply one or more existing tags, follow these steps: Select the licenses to tag, then click Actions &gt; Add or Remove Tag. Click the field and select one or more existing tags from the dropdown list. Click Apply. The Nutanix Support Portal refreshes and your tagged licenses appear. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which Nutanix data efficiency mechanism replaces a traditional Replication Factor for suitable data? A. Compression B. Deduplication C. Erasure Coding D. Intelligent Cloning",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/111579-exam-nca-topic-1-question-12-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Erasure coding (EC) is a data protection technique used in distributed storage systems. It provides redundancy and fault tolerance by dividing data into smaller fragments, adding parity information, and distributing these across multiple storage devices or nodes. C. Erasure Coding upvoted 1 time Submit Cancel",
+      "C. Erasure Coding Erasure coding is a data protection method that provides the same level of fault tolerance as traditional replication but with lower storage overhead. It breaks data into fragments, expands it with redundant data pieces, and stores it across a set of different locations or storage media. This allows Nutanix to achieve efficient data protection with less storage usage compared to traditional replication. upvoted 1 time Submit Cancel",
+      "Selected Answer: C https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2032-Data-Efficiency:TN-2032-Data-Efficiency upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator manages a memory-sensitive application that consists of multiple VMs. The administrator needs to understand if workloads, historically, have been evenly distributed across these VMs. What should the administrator do? A. Create an Alert Policy with VM as entity type and memory usage as a metric. B. Run cluster efficiency summary report selecting all the VMs that constitute the applications. C. Add Memory usage chart to Analysis dashboard for each required VM. D. Filter VMs list by using Memory Usage.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/115459-exam-nca-topic-1-question-13-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2
+    },
+    "discussion": [
+      "C. Add Memory usage chart to Analysis dashboard for each required VM. upvoted 1 time Submit Cancel",
+      "Selected Answer: C C is the correct answer upvoted 1 time Submit Cancel",
+      "Selected Answer: C metric chart ,for historical view analysis dashboard upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator receives an alert that a node has failed within a Nutanix AHV-based 10-node cluster. Before the failure, the cluster CPU and memory utilization was around 50%. What actions will the cluster automatically take? A. VMs will be unavailable until the affected host is fully functional. B. VMs will migrate to other nodes in the cluster with no user impact. C. The cluster will enter read-only mode and the VMs will be powered down to preserve data. D. All HA-protected VMs will be automatically restarted on other nodes in the cluster.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101794-exam-nca-topic-1-question-14-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 4,
+      "B": 1
+    },
+    "discussion": [
+      "When a node fails within a Nutanix AHV-based cluster, the cluster will automatically take the following actions: Data Redistribution: The cluster redistributes data from the failed node to other healthy nodes. This ensures data availability and maintains redundancy. VM Failover: VMs running on the failed node are automatically restarted on other nodes. VM failover ensures continuity of services. Self-Healing: Nutanix Prism detects the failure and initiates self-healing processes. It may replace the failed node with a spare node (if available). Rebalancing: The cluster rebalances resources (CPU, memory, storage) across remaining nodes. This optimizes performance and maintains balanced utilization. Remember that Nutanix AHV clusters are designed for high availability and resilience, minimizing impact during node failures. (D. Correct answer). upvoted 1 time Submit Cancel",
+      "Selected Answer: D Only HA protected vms upvoted 1 time Submit Cancel",
+      "D - Nutanix supports high availability (HA) for VMs by automatically restarting them on other nodes in the cluster in case of a node failure. The cluster CPU and memory utilization will increase temporarily until the failed node is recovered, but there will be no user impact. References: https://www.nutanix.com/content/dam/nutanix/resources/misc/ebg-nca-6-5.pdf (page 28) upvoted 2 times Submit Cancel",
+      "Selected Answer: D correct answer upvoted 1 time Submit Cancel",
+      "Selected Answer: D If a node fails, all HA-protected VMs can be automatically restarted on other nodes in the cluster. End users will see that their application is unavailable during the time that the VMs are restarted on other hosts. https://next.nutanix.com/how-it-works-22/how-nutanix-handles-failures-node-failure-39369 upvoted 3 times Submit Cancel",
+      "Selected Answer: D Physical Host failure If a node fails, all HA-protected VMs can be automatically restarted on other nodes in the cluster. End users will see that their application is unavailable during the time that the VMs are restarted on other hosts. https://next.nutanix.com/how-it-works-22/how-nutanix-handles-failures-node-failure-39369 upvoted 3 times Submit Cancel",
+      "Selected Answer: B In a Nutanix AHV-based cluster, if a node fails, the cluster will automatically take actions to ensure high availability of the virtual machines. The cluster will automatically live migrate the VMs running on the failed node to other healthy nodes in the cluster without any user impact, this process is known as &quot;Failover&quot; . The live migration process ensures that the VMs are restarted on another node in the cluster as soon as possible with minimal interruption to the users. The cluster CPU and memory utilization being around 50% at the time of failure does not affect the failover process. Reference: https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide- Prism-v5_11:wc-high-availability-overview_wc-high-availability-overview.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "On a newly-deployed AHV duster, what is the default virtual switch (vs0) uplink bond type? A. Balance-SLB B. Active-Backup C. Balance-TCP D. No Uplink Bond",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B This is mentioned in the context as &quot;The default virtual switch is configured with the Active-Backup uplink bond type upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator wants to have a single chart with the logical usage for three storage containers. Which action should the administrator perform? A. Create a new Metric Chart B. See Storage usage under Prism Element Health page C. Create a new Entity Chart D. See Usage Summary in the Storage Containers detailed",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101796-exam-nca-topic-1-question-15-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 4,
+      "A": 5
+    },
+    "discussion": [
+      "Selected Answer: C An Entity Chart allows the administrator to aggregate and visualize metrics (like logical usage) for multiple entities (in this case, the three storage containers) in a single chart. This would give a consolidated view of the storage containers' usage on one chart, which is what the administrator is aiming for. upvoted 2 times Submit Cancel",
+      "A. Create a new Metric Chart upvoted 1 time Submit Cancel",
+      "Selected Answer: A Entity Chart - Allows you to create a chart that tracks one or more metrics for a single entity. For more information Metric Chart. - Allows you to create a chart that tracks a single metric for one or more entities. For more information upvoted 4 times Submit Cancel",
+      "Selected Answer: A It's clear guys search for it upvoted 3 times Submit Cancel",
+      "Selected Answer: A https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_5:wc-analysis-dashboard-wc-r.html#:~:text=A%20metric%20chart%20monitors%20a,color%20from%20the%20displayed%20palette. Chart definitions. The pane on the left lists the charts that can be run. No charts are provided by default, but you can create any number of charts. A chart defines the metrics to monitor. There are two types of charts, metric and entity. A metric chart monitors a single metric for one or more entities. An entity chart monitors one or more metrics for a single entity. 3 containers - 3 enitities upvoted 4 times Submit Cancel",
+      "Selected Answer: A confused by the comments, did the answers get switched around ? Answer as of today is A - Metric chart upvoted 2 times Submit Cancel",
+      "I'm confused too haha its A upvoted 1 time Submit Cancel",
+      "Selected Answer: C Entities are used for host or virtual machine. upvoted 1 time Submit Cancel",
+      "C - An entity chart monitors the performance of one or more metrics for a single entity (physical or virtual entity). For example, you can create a chart that monitors a particular host, for metrics such as Physical Usage, Free Physical Storage, and Total Memory Usage (including HA). upvoted 2 times Submit Cancel",
+      "Selected Answer: C Entities are used for host or virtual machine. Metrics are used for IOPs, latency, or bandwidth. So correct answer is &quot;C&quot; as storage would be on the &quot;host&quot;. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "What is Nutanix's scale-out storage technology that makes its hyperconverged platform possible? A. Distributed File Services B. Distributed Storage Fabric C. HDD/SDD Storage Tiers D. Hot swappable NVMe/SSD",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101798-exam-nca-topic-1-question-16-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "B. Nutanix’s scale-out storage technology that enables its hyperconverged platform is called AOS Storage. AOS (Acropolis Operating System) Storage delivers enterprise-grade capabilities through a highly distributed software architecture.Nutanix's scale-out storage technology, the Distributed Storage Fabric, makes its hyperconverged platform possible. It provides a single, unified layer of storage to multiple nodes in a cluster, allowing data to be stored, accessed, and processed in a distributed, fault-tolerant manner. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Nutanix's scale-out storage technology, the Distributed Storage Fabric, makes its hyperconverged platform possible. It provides a single, unified layer of storage to multiple nodes in a cluster, allowing data to be stored, accessed, and processed in a distributed, fault-tolerant manner. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "What is the effect of enabling Flash Mode? A. Sets the storage tier preference to HDD B. Sets the storage tier preference to SSD C. Sets the metadata tier preference to HDD D. Sets the metadata tier preference to SSD",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101569-exam-nca-topic-1-question-17-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "B. Flash mode for VM allows you to set the storage tier preference to SSD for a virtual machine or volume group upvoted 1 time Submit Cancel",
+      "B. Flash Mode allows you to set the storage tier preference to SSD for specific VMs or VGs. upvoted 2 times Submit Cancel",
+      "Selected Answer: B https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_7:wc-vm-flash-mode-c.html#:~:text=Flash%20mode%20for%20VM%20allows,default%20for%20all%20database%20deployments. Flash mode for VM allows you to set the storage tier preference to SSD for a virtual machine or volume group. upvoted 3 times Submit Cancel",
+      "Correct https://next.nutanix.com/how-it-works-22/flash-mode-for-volume-groups-and-virtual-machines-39259 upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "What priority case can be opened to guarantee a 8-hour response for a customer with Production Support? A. P1 B. P2 C. P3 D. P4",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "C": 3,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: C For Production Support; P1 = 1 hour P2 = 4 hours P3 = 8 hours P4= within the next 2 business days upvoted 1 time Submit Cancel",
+      "Selected Answer: B Nutanix Support response times depend on both the support level (Production vs. Mission Critical) and the priority (P1–P4) of the case. For Production Support: P1 (Critical) → 1-hour response P2 (High) → 8-hour response P3 (Medium) → Next business day response P4 (Low) → Best effort upvoted 1 time Submit Cancel",
+      "Selected Answer: C https://www.nutanix.com/support-services/product-support/product-support-programs upvoted 2 times Submit Cancel",
+      "Selected Answer: C Mission Critical Support Production Support Priority 1 30 minutes 1 hour Priority 2 2 hours 4 hours Priority 3 4 hours 8 hours Priority 4 Within the next two business days upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to send weekly performance reviews to several line of business managers about VMs they are managing. Which tool should the administrator use to satisfy this task? A. Prism Elements Links to Chart analysis B. Prism Elements New Alert policy C. Prism Central Projects with data export D. Prism Central Reports with a schedule",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/137351-exam-nca-topic-1-question-18-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "D. Prism Central Reports with a schedule upvoted 1 time Submit Cancel",
+      "D. The report management feature is available if you have Prism Central with a Pro or Ultimate license. It gives you the ability to configure and deliver historical reports based on the schedule you set, containing information about infrastructure resources across both Nutanix and Non-Nutanix managed environments. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "When is deduplication recommended? A. Server workloads B. Linked Clone VMs C. Full clone VMs D. Cold data",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "B": 1,
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: B Linked clones share a common base disk image, so most of their data blocks are identical. Deduplication eliminates duplicate blocks, saving significant storage. upvoted 1 time Submit Cancel",
+      "Selected Answer: C We recommend deduplication for the following workloads: -Full clones in VDI -Persistent desktops -Physical to virtual and virtual to virtual conversion when using Hyper-V because Windows ODX uses a full data copy https://portal.nutanix.com/page/documents/solutions/details/?targetId=TN-2032-Data-Efficiency%3ATN-2032-Data-Efficiency upvoted 2 times Submit Cancel",
+      "Selected Answer: C IT think it might be C: https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2028-Nutanix-Cloud-Clusters-on-AWS:deduplication.html upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which address allows external connections to Nutanix storage presented by the Volumes feature? A. Prism Central IP B. Prism Central IP C. Data Services IP D. IPMI IP",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101570-exam-nca-topic-1-question-19-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "To enable external host connectivity to Nutanix storage presented by the Volumes feature, you should use the Data Services IP method. C. correct answer. upvoted 1 time Submit Cancel",
+      "correct https://portal.nutanix.com/page/documents/details?targetId=Volumes-Guide:vol-volumes-external-ip-address-c.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What does Replication Factor 2 (RF2) refer to? A. Number of blocks that can be lost without impact B. Number of nodes that can be lost without impact C. Number of disks that can be lost in the cluster D. Number of copies of data written in the cluster",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101571-exam-nca-topic-1-question-20-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "D. Number of copies of data written in the cluster upvoted 1 time Submit Cancel",
+      "D. Number of copies of data written in the cluster upvoted 2 times Submit Cancel",
+      "Selected Answer: D Replication Factor 2 (RF2) refers to the number of copies of data written in the cluster. When RF2 is enabled, the Nutanix Distributed File System (NDFS) will create two copies of the data, resulting in higher levels of data durability and availability. Reference: https://next.nutanix.com/how-it-works-22/redundancy-factor-vs-replication-factor-37486#:~:text=What%20is%20Replication%20factor%20(RF,(including%20data%20in%20Oplog). upvoted 3 times Submit Cancel",
+      "Correct upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "Which Nutanix storage service can store Petabytes of unstructured data and supports S3 APIs? A. DSF B. Files C. Volumes D. Objects",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101572-exam-nca-topic-1-question-21-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "The Nutanix storage service that can handle petabytes of unstructured data and supports S3 APIs is Nutanix Objects. D. correct answer. upvoted 1 time Submit Cancel",
+      "D: Objects. Correct answer. https://portal.nutanix.com/page/documents/details?targetId=Objects-v4_3:top-intro-c.html#:~:text=Nutanix%20Objects%E2%84%A2%20(Objects)%20is,unstructured%20and%20machine%2Dgenerated%20data. upvoted 1 time Submit Cancel",
+      "Correct upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator wants to enable Windows Defender Credential Guard. What must be enabled when creating the VM? A. Live Migration B. UEFI C. HA D. Legacy BIOS",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Windows Defender Credential Guard relies on Virtulisation-Based Security (VBS), which requires: * UEFI firmware to support Secure Boot. * Secure Boot enabled to ensure the integrity of the boot process. * Virtulisation extensions enabled in the host and guest. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which LCM feature simplifies upgrades on clusters without Internet access? A. One-Click Upgrade B. NCC C. Direct Upload D. FTP",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101573-exam-nca-topic-1-question-22-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "Correct. upvoted 1 time Submit Cancel",
+      "correct LCM pulls the package directly from the Nutanix Support Portal. For clusters without internet connectivity, the administrator can download the AHV LCM bundle from the Nutanix Support Portal and either directly upload the bundle to LCM (with LCM 2.4.2 and later versions) or set up a local web server. https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2122-Nutanix-Upgrades:TN-2122-Nutanix-Upgrades#:~:text=LCM%20pulls%20the%20package%20directly,up%20a%20local%20web%20server. upvoted 1 time Submit Cancel",
+      "Correct upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which Nutanix storage efficiency feature is suitable for nearly every workload? A. Erasure Coding B. Deduplication C. Compression D. Thick Provisioning",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/107434-exam-nca-topic-1-question-23-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 3
+    },
+    "discussion": [
+      "Selected Answer: C I would say C, because when creating a storage container, inline compression is the only default activated feature. That makes only sense, when it is for nearly every usecase in my opinion upvoted 1 time Submit Cancel",
+      "It should be A upvoted 1 time Submit Cancel",
+      "Selected Answer: C Correct answer is &quot;Compression&quot; From Nutanix: We recommend compression for almost all use cases except the following workloads: Encrypted datasets Compressed datasets (images, audio, and video) upvoted 2 times Submit Cancel",
+      "Selected Answer: C answer is compression upvoted 4 times Submit Cancel",
+      "C https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2032-Data-Efficiency:TN-2032-Data-Efficiency upvoted 2 times Submit Cancel",
+      "compression cuz deduplication is not suitable for databases workload upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "What is the minimum cluster size for Redundancy Factor 3? A. 3 nodes B. 4 nodes C. 5 nodes D. 6 nodes",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/101574-exam-nca-topic-1-question-24-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C https://next.nutanix.com/how-it-works-22/redundancy-factor-vs-replication-factor-37486 upvoted 1 time Submit Cancel",
+      "Correct upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "How would an administrator upgrade the LCM framework to the latest version? A. Run LCM pre-checks B. Settings/Upgrade Software C. Run LCM inventory D. Run an NCC health check",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/104228-exam-nca-topic-1-question-25-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 3
+    },
+    "discussion": [
+      "Selected Answer: C C. Run LCM Inventory upvoted 1 time Submit Cancel",
+      "C. To upgrade the Life Cycle Manager (LCM) framework to the latest version, follow these steps: Use Prism Central or Prism Element to open LCM. Upgrade the LCM inventory (default is set to automatic). Select one or more software or firmware packages to deploy. Click “Update” to start the upgrade process upvoted 2 times Submit Cancel",
+      "Selected Answer: C LCM Inventory upvoted 2 times Submit Cancel",
+      "Selected Answer: C When you perform an inventory, LCM first checks itself for updates. If a new version of the LCM framework is available, LCM automatically updates itself to the newer version. The update takes several minutes. After the update, LCM proceeds with the inventory. To update the LCM framework and continue with the inventory, click Proceed. upvoted 2 times Submit Cancel",
+      "C Run LCM inventory upvoted 2 times Submit Cancel",
+      "Should be C. Run LCM inventory 1. Click &quot;Perform Inventory&quot; to get the available updates for different components. 2. Once Inventory is completed, Click on Available Updates. 3. The LCM update will come under &quot;Cluster Software Component&quot;. It will show the current version of LCM and the available update. Check that box and click on &quot;Save Selection&quot; button https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000bojwCAA The Setting-&gt;Upgrade is for AOS, File Server (Nutanix Files), VMware ESXi or Microsoft Hyper-V hypervisors (use LCM to upgrade AHV) Nutanix Cluster Check (NCC) Foundation upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "What is the biggest benefit of the Redfish Protocol and LCM? A. HBA and NIC card update twice as quickly B. AOS and AHV update twice as quickly C. BMC and BIOS update twice as quickly D. SSD and HDD update twice as quickly",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/111215-exam-nca-topic-1-question-26-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "correct upvoted 1 time Submit Cancel",
+      "C. BMC and BIOS update twice as quickly upvoted 2 times Submit Cancel",
+      "Answer C: The most visible effect of Redfish is that LCM performs BMC and BIOS updates about twice as quickly as under the older procedure that used the Phoenix ISO. With Redfish, LCM performs fewer system restarts. Using the older procedure, LCM restarted the system twice for BMC updates and three times for BIOS updates. Reference: https://portal.nutanix.com/page/documents/details?targetId=Life-Cycle-Manager-Guide-v2_4:top-lcm-redfish-overview-c.html#:~:text=The%20most%20visible%20effect%20of,three%20times%20for%20BIOS%20updates. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Within a Nutanix cluster, an administrator is getting frequent failure alerts of the Cassandra and Stargate services for one of the nodes. What action will be taken by the cluster? A. Put host in Maintenance Mode B. Redirect I/O path to another CVM C. Remove the host from cluster D. Reboot Guest VMs to another hosts",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/137355-exam-nca-topic-1-question-27-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "D. When the Nutanix cluster receives frequent failure alerts for the Cassandra and Stargate services on a specific node, it will take the following actions: Self-Healing: Nutanix Prism detects the service failures and initiates self-healing processes. The affected services are restarted or repaired automatically. Data Redistribution: If the node becomes unresponsive or fails completely, data stored on that node is redistributed to other healthy nodes. This ensures data availability and redundancy. VM Failover: VMs running on the failed node are automatically restarted on other nodes. VM failover ensures continuity of services. Alerts and Notifications: The administrator receives alerts to stay informed about the situation. Nutanix Prism provides detailed information about the service failures. upvoted 1 time Submit Cancel",
+      "B When a metadata drive fails, the local Cassandra process will no longer be able to access its share of the database and will begin a persistent cycle of restarts until its data is available. If Cassandra cannot restart, the Stargate process on that CVM will crash as well. Failure of both processes results in automatic IO redirection using data path redundancy. During the switching process, the host with the failed SSD may report that the shared storage is unavailable. Guest VM IO on this host will pause until the storage path is restored. After redirection occurs, VMs can resume read and write I/O. Performance may decrease slightly, because the I/O is traveling across the network rather than across the internal network. Because all traffic goes across the 10 GbE network, most workloads will not diminish in a way that is perceivable to users. upvoted 2 times Submit Cancel",
+      "C. If Cassandra remains in a failed state for more than thirty minutes, the surviving Cassandra nodes detach the failed node from the Cassandra database so that the unavailable metadata can be replicated to the remaining cluster nodes. The process of healing the database takes about 30-40 minutes. If the Cassandra process restarts and remains running for five minutes, the procedure to detach the node is canceled. If the process resumes and is stable after the healing procedure is complete, the node will be automatically added back to the ring. A node can be manually added to the database using the nCLI command. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What requirement needs to be considered before configuring Replication Factor of 1 (RF1)? A. Application resiliency B. Hypervisor C. RAID configuration D. Node count",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/111580-exam-nca-topic-1-question-28-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 2,
+      "A": 1
+    },
+    "discussion": [
+      "D. Node count. The major to consideration is a minimum host number. upvoted 1 time Submit Cancel",
+      "Selected Answer: D While 'A' is definitely a major consideration when deciding to use RF1, the only &quot;requirement&quot; for RF1 listed, is the node count. Answer's 'D'. upvoted 2 times Submit Cancel",
+      "Selected Answer: A RF1 is a new feature introduced in AOS 6.0.1 to improve performance and reduce capacity needed for workloads which do not require data resiliency such as temporary data for analytics or when the data resiliency is handled at the application level. upvoted 1 time Submit Cancel",
+      "Selected Answer: D https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LUKeCAO upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A single host in a four-node AHV-based cluster experiences a complete network failure. If more than enough resources exist in the cluster to tolerate a node failure, what happens to the user VMs running on that host? A. VMs remain down until network connectivity is restored. B. VMs stay up, but are unreachable until connectivity is restored. C. VMs automatically restart on the three remaining hosts. D. VMs are live-migrated to the three remaining hosts.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/103226-exam-nca-topic-1-question-29-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 3
+    },
+    "discussion": [
+      "Selected Answer: C C. If there is a complete network failure on a single host, it cannot be seen by the other nodes in the cluster. At that point it would be treated as a failed host and any HA VMs would be rebooted onto one of the other nodes. upvoted 1 time Submit Cancel",
+      "Selected Answer: C It has to be C. The correct answer is showing as D but how are VMs going to live migrate when the node has suffered complete network failure! upvoted 1 time Submit Cancel",
+      "C. VMs automatically restart on the three remaining hosts. upvoted 1 time Submit Cancel",
+      "C. VMs automatically restart on the three remaining hosts. upvoted 1 time Submit Cancel",
+      "Selected Answer: C https://next.nutanix.com/how-it-works-22/how-nutanix-handles-failures-node-failure-39369 upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. After an abrupt power outage, an administrator receives a number of alerts indicating disks are failed. Prism Element shows a large number of disks offline as seen in the diagram. This single block, four node cluster is configured FT1 with an RF2 container holding all user data. What number of drive failures on different domains (node, block, or rack) could this configuration have tolerated prior to seeing data unavailability? A. 1 B. 2 C. 3 D. 4",
@@ -276,6 +650,13 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/111262-exam-nca-topic-1-question-30-discussion/",
     "images": [
       "images/nutanix/nca/t01_q030/img_1.png"
+    ],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A A :1 failure upvoted 2 times Submit Cancel",
+      "Selected Answer: A Its actually A: 1 Drive By default, Nutanix clusters have redundancy factor 2, which means they can tolerate the failure of a single node or drive. https://next.nutanix.com/how-it-works-22/rf2-rf3-requirements-37206 upvoted 3 times Submit Cancel"
     ]
   },
   {
@@ -283,142 +664,336 @@
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/125340-exam-nca-topic-1-question-31-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2
+    },
+    "discussion": [
+      "Selected Answer: B Link Aggregation Control Protocol (LACP) is a NIC-teaming configuration that balances network traffic based on source/destination IP addresses and TCP/UDP ports. LACP allows the administrator to configure multiple NICs as a single logical NIC, known as a Link Aggregation Group (LAG), which can increase the available bandwidth and provide redundancy. LACP uses a hashing algorithm to distribute traffic across the NICs in the LAG, based on the source and destination IP addresses and TCP/UDP ports. This ensures that traffic is evenly distributed across the NICs, which helps to improve overall network performance and availability. upvoted 1 time Submit Cancel",
+      "B. Active-Active with LACP. https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2071-AHV-Networking:lacp-and-link-aggregation.html upvoted 1 time Submit Cancel",
+      "Selected Answer: B Active-Active. All the interfaces in the bond are active. Traffic is balanced among adapters based on source and destination addresses and TCP and UDP ports. If you select this option, you must manually enable LAG and LACP on the corresponding ToR switch for each node in the cluster one after the other. See Enabling LAG and LACP on the ToR Switch (AHV Only) for more information. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is performing AHV upgrades on an 8-node cluster configured with Redundancy Factor 3. How many nodes would be placed into maintenance mode simultaneously? A. 1 B. 2 C. 3 D. 4",
     "options": {},
-    "most_voted": "A"
+    "most_voted": "A",
+    "vote_counts": {
+      "A": 2,
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: A You can only place one node at a time in maintenance mode for each cluster. upvoted 1 time Submit Cancel",
+      "Selected Answer: C When performing AHV upgrades, nodes are placed into maintenance mode one at qa time or in parallel, depending on RF: * For RF2, only one node can be in maintenance mode at a time. * For RF3, up to 2 copies can be in maintenance simultaneously because the cluster can still maintain quorum and data availability with 6 remaining nodes. upvoted 1 time Submit Cancel",
+      "Selected Answer: A https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_10:wc-node-maintenance-wc-g.html You can only place one node at a time in maintenance mode for each cluster. upvoted 5 times Submit Cancel",
+      "Selected Answer: C In an 8-node AHV cluster with Redundancy Factor 3, 3 nodes can be placed into maintenance mode simultaneously. This is because with RF3, the cluster requires 3 copies of data for redundancy. Each node can be placed into maintenance mode one by one without causing data loss or service disruption upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "Which AHV feature proactively monitors a Nutanix cluster for compute and storage I/O contention or hotspots over a period of time? A. Genesis B. ADS C. Prism D. Cluster Maintenance Utility",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/125342-exam-nca-topic-1-question-32-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2
+    },
+    "discussion": [
+      "Selected Answer: B B. ADS Acropolis Dynamic Scheduling (ADS) upvoted 1 time Submit Cancel",
+      "https://next.nutanix.com/how-it-works-22/acropolis-dynamic-scheduling-in-ahv-39295 B. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Acropolis Dynamic Scheduling (ADS) proactively monitors your cluster for any compute and storage I/O contentions or hotspots over a period of time. If ADS detects a problem, ADS creates a migration plan that eliminates hotspots in the cluster by migrating VMs from one host to another. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is deploying a virtual firewall on each node in an AHV cluster and wants each VM to maintain affinity to its host. How can an administrator achieve this goal most efficiently? A. Create VM Protection Policies B. Set the VM labels as firewalls C. Create VM Annotations D. Set the VMs as Agent VMs",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/112863-exam-nca-topic-1-question-33-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "D": 2,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: B D. Set the VMs as Agent VMs upvoted 1 time Submit Cancel",
+      "D. To ensure that each VM maintains affinity to its host in an AHV cluster, you can create VM-to-host affinity rules. upvoted 1 time Submit Cancel",
+      "Selected Answer: D Set the VMs as Agent VMs upvoted 3 times Submit Cancel",
+      "Selected Answer: A D. Set the VMs as Agent VMs upvoted 1 time Submit Cancel",
+      "You accidently selected 'A' there. upvoted 1 time Submit Cancel",
+      "Selected Answer: D D: https://portal.nutanix.com/page/documents/kbs/details?targetId=kA032000000CmlyCAC upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "What data is stored as a file on storage devices owned by a CVM? A. Storage Pool B. vDisk C. Extent Group D. Container",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/104233-exam-nca-topic-1-question-34-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2
+    },
+    "discussion": [
+      "C. Extent Group upvoted 1 time Submit Cancel",
+      "Selected Answer: C C. Extent Group upvoted 1 time Submit Cancel",
+      "Selected Answer: C C. Extent Group upvoted 2 times Submit Cancel",
+      "The answer is C. Extent Group An extent group is a 1MB or 4MB piece of physically contiguous stored data. This data is stored as a file on the storage device owned by the CVM https://www.nutanixbible.com/4c-book-of-aos-dsf.html#:~:text=Description%3A%20An%20extent%20group%20is,nodes%2Fdisks%20to%20improve%20performance. upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator wants to collect log files that have been requested by Nutanix Support. From which Prism Element dashboard can this be accomplished? A. Settings B. Alerts C. Health D. Analysis",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C In Prism Element, the Health dashboard is the location where administrators can collect log files for Nutanix Support. Specifically, from the Health dashboard, there is an &quot;Actions&quot; dropdown menu where the &quot;Collect Logs&quot; option is located upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to deploy a two-node cluster on a new ROBO Site. What is required to maintain High Availability in the case of a node failure? A. Witness VM B. Metro-Availability C. Windows Failover Clustering D. Async Replication",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/103589-exam-nca-topic-1-question-35-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 3
+    },
+    "discussion": [
+      "A. Witness VM upvoted 1 time Submit Cancel",
+      "A. Witness VM upvoted 2 times Submit Cancel",
+      "Selected Answer: A Witness VM upvoted 2 times Submit Cancel",
+      "Selected Answer: A A. Witness VM upvoted 2 times Submit Cancel",
+      "Selected Answer: A Answer: Witness VM The witness VM must reside in a separate failure domain, which means that you need independent power and network connections from each of the two-node clusters. We recommend locating the witness VM in a third physical site with dedicated network connections to site one and site two to avoid a single point of failure. Reference: https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2083-ROBO-Deployment:BP-2083-ROBO-Deployment upvoted 3 times Submit Cancel",
+      "dont think C is correct - documentation says a witness VM upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "What resource should be used to ensure a successful upgrade of the hypervisors and AOS within a vSphere-based Nutanix cluster? A. Upgrade Paths B. Field Advisories C. Compatibility and Interoperability Matrix D. Hardware Replacement Documentation",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/111214-exam-nca-topic-1-question-36-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: C C. Compatibility and Interoperability Matrix upvoted 1 time Submit Cancel",
+      "C. Compatibility and Interoperability Matrix upvoted 2 times Submit Cancel",
+      "Selected Answer: C https://portal.nutanix.com/page/documents/details?targetId=vSphere-Admin6-AOS-v6_8:vSphere-Admin6-AOS-v6_8 &quot;You can upgrade your host either automatically through Prism Element (1-click upgrade) or manually. For more information about automatic and manual upgrades, see ESXi Upgrade and ESXi Host Manual Upgrade respectively. &quot;...Nutanix provides hypervisor compatibility and support statements that should be reviewed before planning an upgrade to a new release or applying a hypervisor update or patch: - Compatibility and Interoperability Matrix - Hypervisor Support Policy &quot; upvoted 2 times Submit Cancel",
+      "Answer: C The Compatibility and Interoperability Matrix (CIM) is the resource that should be used to ensure a successful upgrade of the hypervisors and AOS within a vSphere-based Nutanix cluster. The CIM provides information about the compatibility and interoperability of the different components of the Nutanix cluster, including the hypervisors, AOS, and other related components. Reference: https://www.nutanix.com/support/compatibility-matrix/ upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which storage container option reduces the available storage to other containers? A. Advertised Capacity B. Erasure Coding C. Capacity Deduplication D. Reserved Capacity",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D Capacity reservation allows you to guarantee that a storage container has a minimum amount reserved that is unavailable to other storage containers. By default, each storage container has access to all of the unused storage in the storage pool. If a storage pool consists of multiple storage containers, one storage container might take all the remaining storage space and leave others with no available space. To make sure that there is space available for a storage container, you can enable capacity reservation upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which feature enables Image Placement Policies to be mapped to target clusters? A. YAML B. Labels C. JSON D. Categories",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/114174-exam-nca-topic-1-question-37-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 3
+    },
+    "discussion": [
+      "Selected Answer: D D. Categories &quot;Prism Central enables you to configure policies that govern which clusters receive the images that you upload. These policies, called image placement policies, map images to target clusters using categories associated with both those entities&quot; upvoted 1 time Submit Cancel",
+      "D. Categories upvoted 2 times Submit Cancel",
+      "Selected Answer: D Documentation says Categories upvoted 2 times Submit Cancel",
+      "Selected Answer: D I think D : https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2022_6:mul-image-placement-policy-pc-c.html#:~:text=Prism%20Central%20enables%20you%20to%20configure%20policies%20that%20govern%20which,associated%20with%20both%20those%20entities. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "A SQL Server cluster has been deployed on an AHV cluster. To ensure maximum uptime, the administrator wants the SQL Server VMs running on different hosts while leveraging High Availability in case of host failure. Which configuration would meet these requirements? A. Configure one VM as an Agent VM. B. Disable Host affinity rules in the cluster. C. Create an anti-affinity rule via CLI. D. Disable VM live migration from selected VMs.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/111216-exam-nca-topic-1-question-38-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: C C. Create an anti-affinity rule via CLI. upvoted 1 time Submit Cancel",
+      "C. Create an anti-affinity rule via CLI. upvoted 2 times Submit Cancel",
+      "Selected Answer: C You can create anti-affinity rules to separate VMs. The simple use case for anti-affinity is when you run a cluster with applications such as Microsoft SQL or Exchange to ensure high availability (HA). If the application cluster nodes are running on same ESXi host, you will lose the entire application cluster when the host fails. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which option is available for an administrator to upload a remote disk file to Image Configuration? A. HTTP B. FTP C. SCP D. SFTP",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/103940-exam-nca-topic-1-question-39-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A A. HTTP upvoted 2 times Submit Cancel",
+      "A. HTTP upvoted 3 times Submit Cancel",
+      "Selected Answer: A HTTP or NFS upvoted 3 times Submit Cancel",
+      "A. HTTP upvoted 4 times Submit Cancel",
+      "A. NFS and HTTP are the only supported protocols https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_5:wc-image-configure-acropolis-wc-t.html upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "When configuring dual encryption, which key management method is supported? A. Trusted Platform Module B. External Key Manager C. Native Key Manager D. Lockdown Mode Enabled",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v6_10:wc-security-configuring-dual-encryption-wc-t.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "On which entity is Replication Factor configured? A. Host B. Oplog C. Volume D. Container",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/103591-exam-nca-topic-1-question-40-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 2,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: D D. Container upvoted 1 time Submit Cancel",
+      "D. The Replication Factor (RF) in Nutanix is configured at the container level. It determines the number of data copies for VM data and Oplog within the Nutanix cluster. upvoted 2 times Submit Cancel",
+      "Selected Answer: D Container is the right answer upvoted 3 times Submit Cancel",
+      "Correct Ans is D What is Replication factor (RF)? Nutanix Replication Factor states for a number of data copies on Nutanix cluster (VM data and Oplog). For example, if you have Replication Factor 2 (RF=2) set on the container, meaning every VM data block has 2 copies on the Nutanix cluster (including data in Oplog). With RF=3, all VM data has 3 copies of data on different blocks. NOTE #1: You can have a container with RF=2 and another container with RF=3 configured on the same Nutanix cluster. NOTE #2: Changing container replication Factor from RF=2 to RF=3, consumes more storage space on Nutanix cluster (because systems have to keep 3 copies of the VM data which are on containers with RF=3). upvoted 3 times Submit Cancel",
+      "Selected Answer: B Nutanix Replication Factor states for a number of data copies on Nutanix cluster (VM data and Oplog). For example, if you have Replication Factor 2 (RF=2) set on the container, meaning every VM data block has 2 copies on the Nutanix cluster (including data in Oplog). With RF=3, all VM data has 3 copies of data on different blocks. https://next.nutanix.com/how-it-works-22/redundancy-factor-vs-replication-factor-37486#:~:text=What%20is%20Replication%20factor%20(RF,(including%20data%20in%20Oplog). upvoted 2 times Submit Cancel",
+      "Incorrect - Container is the right answer upvoted 12 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has defined a security policy that needs to be applied to dozens of VMs. What is the most efficient way the administrator can perform this? A. Within the policy, select all the VMs it should be applied to. B. Apply a category to the VMs, and associate the category with the policy. C. Apply the same label to all the VMs, then bind the policy to the label. D. Use a script to apply the policy to the defined VMs.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/111210-exam-nca-topic-1-question-41-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "B.Apply a category to the VMs, and associate the category with the policy. Security policies are applied to categories (a logical grouping of VMs) and not to the VMs themselves. Therefore, it does not matter how many VMs are started up in a given category. Traffic associated with the VMs in a category is secured without administrative intervention, at any scale. upvoted 1 time Submit Cancel",
+      "B. Apply a category to the VMs, and associate the category with the policy. upvoted 1 time Submit Cancel",
+      "Selected Answer: B All the entities in an application security policy are identified by the categories to which they belong and not by their IP address, VLAN, or other network attributes. After a VM is associated with a category and the category is specified in a security policy, traffic associated with the VM is monitored even if it migrates to another network or changes its IP address. upvoted 1 time Submit Cancel",
+      "Reference: https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Flow-Guide-v6_6:mul-security-policy-model-c.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which technology allows applications and data to move freely between runtime environments? A. Distributed Storage Fabric B. Disaster Recovery C. App Mobility Fabric D. Nutanix Move",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/130302-exam-nca-topic-1-question-42-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "C. App Mobility Fabric upvoted 1 time Submit Cancel",
+      "Selected Answer: C The Acropolis App Mobility Fabric (AMF) is a collection of powerful technologies that allows applications and data to move freely between runtime environments, providing high availability, disaster recovery, upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "How many copies of the metadata are maintained within a Redundancy Factor 3 cluster? A. 2 B. 3 C. 5 D. 7",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "C": 3
+    },
+    "discussion": [
+      "Selected Answer: C A Nutanix cluster configured with Redundancy Factor 3 (RF3) maintains five copies of metadata (Cassandra/Zookeeper configuration) to ensure that the cluster can withstand the simultaneous failure of two nodes or disks. While RF3 provides 3 copies of the actual data, it requires 5 copies of metadata for higher resilience. Metadata Copies (RF3): 5 Data Copies (RF3): 3 Minimum Nodes Required: 5 upvoted 1 time Submit Cancel",
+      "Selected Answer: C https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_10:arc-redundancy-factor3-c.html upvoted 1 time Submit Cancel",
+      "Selected Answer: C With redundancy factor 3, the cluster keeps five copies of metadata so that if two nodes fail, at least three copies are available. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to upgrade AOS in a vSphere-based Nutanix five-node cluster with no automatic live migration. VMs have neither affinity nor anti-affinity rules configured. What will happen to VMs during the AOS upgrade? A. VMs will be rebooted on other hosts. B. VMs will continue to run on the same host. C. Upgrade fails because host can't go in maintenance mode. D. AOS automatically live migrate VMs to other hosts.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/130314-exam-nca-topic-1-question-43-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1,
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: D VMs will be automatically migrated to other nodes during the AOS upgrade process. Even though automatic live migration is not explicitly configured, Nutanix AOS will automatically initiate live migration of VMs to ensure that the upgrade process can proceed without disrupting services. Since there are no affinity or anti-affinity rules in place, AOS will choose the most suitable nodes for the migration based on factors such as load balancing and resource availability. It's important to note that while the migration process is typically seamless, there's always a risk of minor disruptions or unexpected issues. Therefore, it's recommended to schedule the upgrade during off-peak hours or when critical services are not in use to minimize any potential impact. upvoted 1 time Submit Cancel",
+      "B. VMs will continue to run on the same host. upvoted 1 time Submit Cancel",
+      "Selected Answer: B When upgrading AOS in a vSphere-based Nutanix cluster with no automatic live migration, the VMs will continue to run on the same host, providing that the VMs have neither affinity nor anti-affinity rules configured. The upgrade process will put the host into maintenance mode, which will cause the VMs running on that host to be suspended temporarily. Once the AOS upgrade is completed, the host will be taken out of maintenance mode, and the VMs will be resumed, but running on the same host. The AOS upgrade process does not automatically live migrate VMs to other hosts, because the automatic live migration feature is not enabled in the cluster. upvoted 6 times Submit Cancel",
+      "Source pls? I cannot find this anywhere. upvoted 1 time Submit Cancel",
+      "Selected Answer: C User VMs may live migrate between hosts depending on what type of upgrade is performed but there should be no impact to their services. Users should maintain access to their VMs and be able to work as normal during the upgrade. VMs which cannot live migrate, such as those with vGPUs or Affinity Rules, will need to be powered-down or to have these settings removed in-advance of any upgrade that requires a host reboot. Failure to do so will result in the upgrade becoming stuck in the process of evacuating User VMs.https://portal.nutanix.com/page/documents/details?targetId=Acropolis-Upgrade-Guide:upg-cluster-upgrade-aos-c.html upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator receives the alert: Node Maintenance Mode Failure What is the most likely cause? A. Other nodes in the cluster may not have enough resources available. B. Another node in this cluster is already in maintenance mode. C. This node in the cluster is already in maintenance mode. D. This node in the cluster may not have enough resources available.",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B The most likely cause for a Node Maintenance Mode Failure alert is that another node in the cluster is already in maintenance mode. Nutanix clusters enforce constraints allowing only one node to be in maintenance mode at a time to ensure continued data redundancy and availability upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "In an AHV five-node cluster, an SSD fails within a node that has two SSDs and four HDDs installed. What will happen to the cluster environment? A. Host goes down and VMs will be powered on elsewhere. B. Cluster goes in read-only mode. C. VMs will be live migrated to other hosts until metadata rebuild is finished. D. CVM on the impacted node reboots.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/104502-exam-nca-topic-1-question-44-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: D D. CVM on the impacted node reboots. upvoted 1 time Submit Cancel",
+      "D. CVM on the impacted node reboots. upvoted 1 time Submit Cancel",
+      "Selected Answer: D Should be D. CVM reboots upvoted 2 times Submit Cancel",
+      "D - CVM reboots to maintain health of the cluster upvoted 3 times Submit Cancel",
+      "D. CVM on the impacted node reboots. upvoted 3 times Submit Cancel",
+      "D. CVM on the impacted node reboots. HDD/SSD failure can cause CVM reboot https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000CsjaCAC upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "When should Pulse be disabled? A. When the cluster is connected to the Internet with less than 1GbE. B. When the cluster is deployed in a dark-site. C. Before any cluster maintenance activities requiring node reboots. D. Only under the guidance of Nutanix Support.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/111213-exam-nca-topic-1-question-45-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B The article referenced by avarma89 doesnt say only do it with support and says you can turn it off and on as you wish, therefore B is the only answer that makes sense as the cluster would be trying to send traffic out to the internet with no internet connection. upvoted 2 times Submit Cancel",
+      "When the cluster is deployed in a dark-site. A dark-site typically refers to an environment without internet connectivity. In such cases, Pulse should be disabled as it cannot communicate with Nutanix's support systems. This ensures that the cluster operates efficiently without attempting to send data that cannot be transmitted due to the lack of an internet connection. It's important to note that disabling Pulse should not be done in other scenarios without proper consideration, as Pulse provides valuable telemetry and support capabilities for Nutanix clusters. upvoted 2 times Submit Cancel",
+      "D. Only under the guidance of Nutanix Support. upvoted 1 time Submit Cancel",
+      "Answer: D Reference: https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2022_6:mul-support-pulse-recommend-pc-c.html#:~:text=Go%20to%20the%20Settings%20menu,Central))%20and%20select%20Pulse.&amp;text=To%20enable%20(disable)%20this%20feature,proactive%20and%20context%2Daware%20support. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has recently expanded the Nutanix cluster and noticed that NCC health checks and alerts for newly-added nodes are not being received via email. What should administrator do to resolve this issue? A. Add CVM IP in SMTP Relay B. Configure SMTP C. Reboot Nutanix cluster D. Run NCC Health Check",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/125344-exam-nca-topic-1-question-46-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "B. Configure SMTP upvoted 1 time Submit Cancel",
+      "Selected Answer: B B In order to resolve the issue of not receiving NCC health checks and alerts for newly-added nodes via email, the administrator should configure SMTP (Simple Mail Transfer Protocol) settings. SMTP is used to send email notifications from the Nutanix cluster, and if it is not configured properly, the health checks and alerts will not be sent via email. The administrator should check the SMTP settings in the Prism web console and ensure that they are correct and that the correct email address is specified for receiving notifications. This will ensure that the health checks and alerts for the newly-added nodes are sent to the correct recipient. Reference: [Reference: https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_11:wc-alerts-configuring-smtp-settings_wc-alerts-configuring-smtp-settings.html, , upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. Upon logging into Prism Element, an administrator sees a red heart, as shown in the exhibit. Which dashboard in Prism will best help the administrator to isolate the cause of the red heart? A. Health B. Tasks C. Analysis D. Hardware",
@@ -427,57 +1002,129 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/111211-exam-nca-topic-1-question-47-discussion/",
     "images": [
       "images/nutanix/nca/t01_q047/img_1.png"
+    ],
+    "discussion": [
+      "A. Health upvoted 1 time Submit Cancel",
+      "Correct Answer: A The Health dashboard in Prism Element provides an overview of the cluster's health, including alerts and notifications that can help the administrator identify and address any issues. The red heart icon is an indicator that there is an issue with the cluster, and the Health dashboard can be used to investigate the cause of the issue. upvoted 1 time Submit Cancel"
     ]
   },
   {
     "question": "An administrator is conducting updates in a Nutanix cluster and is being prompted for handling non-migratable VMs. Which VM type is non-migratable? A. VMs without NGT B. VMs marked as an Agent C. Memory Overcommitted VMs D. VMs with attached Volume Groups",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "vote_counts": {
+      "D": 3,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: D VMs with attached Volume Groups are considered non-migratable during Nutanix cluster updates because they utilize direct-attached iSCSI storage, which is pinned to a specific host and cannot be live-migrated.Why: These VMs connect directly to Volume Groups (block storage) using iSCSI, which bypasses the standard AHV live-migration mechanism.Result: When an administrator puts a node into maintenance mode, VMs with attached Volume Groups must be shut down, or the upgrade cannot proceed automatically. upvoted 1 time Submit Cancel",
+      "Selected Answer: D Not migrated” ≠ “Non-migratable VM type (in LCM prompt context) upvoted 1 time Submit Cancel",
+      "Answer is B upvoted 1 time Submit Cancel",
+      "Selected Answer: D In a Nutanix cluster, Volume Groups provide block storage to VMs, similar to how physical disks work. VMs that have Volume Groups attached cannot be live-migrated because the block device is tied to a specific host and does not support migration like virtual disks on shared storage. Here’s why the other options are not correct: A. VMs without NGT: Nutanix Guest Tools (NGT) are optional and do not affect VM migration. B. VMs marked as an Agent: Being marked as an agent does not prevent migration. C. Memory Overcommitted VMs: Overcommitted memory might affect performance but does not make a VM non-migratable. upvoted 1 time Submit Cancel",
+      "In Nutanix, VMs marked as an agent are not migrated to another host in the cluster. If an HA event occurs or the host is put in maintenance mode, the agent VMs are powered off and powered on on the same host once that host comes back to a normal state. They are never migrated back to the original host https://portal.nutanix.com/page/documents/kbs/details?targetId=kA032000000CmlyCAC upvoted 1 time Submit Cancel",
+      "Answer is B upvoted 1 time Submit Cancel",
+      "Selected Answer: B &quot;Marked as an Agent&quot; is &quot;Non-migratable VM&quot; upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which feature in Pulse helps secure a customer's private information? A. Security Central B. Cluster Lockdown C. Data-at-rest Encryption D. Data Obfuscation",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/102623-exam-nca-topic-1-question-48-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: D D. Data Obfuscation Data Obfuscation is a feature in Pulse that helps secure a customer's private information by obfuscating the data before it is sent to Nutanix. This ensures that any data sent to Nutanix is not visible to anyone other than the customer, and helps protect sensitive data from unauthorized access or malicious actors. upvoted 1 time Submit Cancel",
+      "Data Obfuscation Data obfuscation is a technique used to protect sensitive information by making it difficult to understand or access without proper authorization. In the context of Pulse, this feature likely helps ensure that any diagnostic data sent to Nutanix customer support does not include easily readable private customer information, thus maintaining data security and privacy. upvoted 2 times Submit Cancel",
+      "Selected Answer: D Data Obfuscation is a feature in Pulse that helps secure a customer's private information by obfuscating the data before it is sent to Nutanix. This ensures that any data sent to Nutanix is not visible to anyone other than the customer, and helps protect sensitive data from unauthorized access or malicious actors. upvoted 3 times Submit Cancel",
+      "D DataObfuscationisafeatureinPulsethathelpssecureacustomer'sprivateinformationbyobfuscatingthedatabeforeitissenttoNutanix.ThisensuresthatanydatasenttoNutanixisnotvisibletoanyoneotherthanthecustomer,andhelpsprotectsensitivedatafromunauthorizedaccessormaliciousactors.Reference:https://portal.nutanix.com/page/documents/details?targetId=Platform-Administrator-Guide-v5_7:pag-pulse-c.html upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which feature should be enabled to prevent password access to the CVM for both the nutanix and admin user accounts? A. Cluster lockdown B. STIG C. RBAC Policy on PC D. Data-at-Rest Encryption",
     "options": {},
-    "most_voted": "A"
+    "most_voted": "A",
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A Cluster Lockdown https://next.nutanix.com/how-it-works-22/cluster-lockdown-38056 upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to do a manual VM in-place restore of a mission-critical VM. Which Prism Central option should the administrator use to satisfy this task? A. Snapshot B. Clone C. Backup D. Recovery Point",
     "options": {},
     "most_voted": "",
     "url": "https://www.examtopics.com/discussions/nutanix/view/125345-exam-nca-topic-1-question-49-discussion/",
-    "images": []
+    "images": [],
+    "discussion": [
+      "D. Recovery Point upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator wants to change from Redundancy Factor 2 to 3, but it is not allowed. What must the administrator check? A. Check that the cluster has been properly licensed. B. Check that the cluster has five or more nodes. C. Check hardware availability of the nodes. D. Check AOS version and upgrade, if needed.",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Five node minimum: https://next.nutanix.com/how-it-works-22/rf2-rf3-requirements-37206 upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which product or feature is most suitable for deploying a Microsoft SQL cluster in a Nutanix environment? A. Volumes B. Objects C. NFS shares D. Files",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/102622-exam-nca-topic-1-question-50-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A A. Volumes According to the offical documentation: https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2015-Microsoft-SQL-Server:BP-2015-Microsoft-SQL-Server upvoted 1 time Submit Cancel",
+      "For deploying a Microsoft SQL cluster in a Nutanix environment, the most suitable features and products include: Nutanix Volumes: Supports SCSI-3 persistent reservations for shared storage used by SQL Server failover cluster instances (FCIs). Manages storage allocation through volume groups (VGs) upvoted 2 times Submit Cancel",
+      "A. Volumes upvoted 2 times Submit Cancel",
+      "Selected Answer: A A is correct upvoted 2 times Submit Cancel",
+      "it's A https://download.nutanix.com/solutionsDocs/BP-2015-Microsoft-SQL-Server.pdf upvoted 2 times Submit Cancel",
+      "B. Objects In a Nutanix environment, the product or feature most suitable for deploying a Microsoft SQL cluster is Nutanix Objects. Nutanix Objects is a S3-compatible object storage solution that provides a highly scalable and durable storage for unstructured data. It is built on top of the Nutanix Distributed File System (NDFS) and provides a high-performance, scalable, and highly available storage solution. One of the key features of Nutanix Objects is its ability to support Microsoft SQL Server Always On Availability Groups (AAG) on S3 object storage. This allows you to deploy a highly available SQL cluster on Nutanix, with the ability to failover SQL services to a different node in the event of a failure, and provide high availability and disaster recovery for SQL databases. upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "Which is the default native Linux bridge in AHV? A. br0 B. virbr0 C. vs0 D. bride0",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "vote_counts": {
+      "B": 2
+    },
+    "discussion": [
+      "Selected Answer: B The default native Linux bridge in Nutanix AHV is virbr0. It is used for internal communication, specifically handling management and storage traffic between the Controller VM (CVM) and the AHV host. upvoted 1 time Submit Cancel",
+      "Selected Answer: B br0 is the default for windows. Virbr0 is the default for Linux. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is considering a data protection strategy between two sites. There is a 10ms round trip latency between the two clusters. Which data protection solution can the administrator implement that minimizes data loss in the event of a disaster? A. Async DR B. Metro Availability C. Synchronous Replication D. NearSync Replication",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "vote_counts": {
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: D The administrator should implement NearSync Replication. With a 10ms round-trip latency, Metro Availability (which requires \\(&lt; 5\\text{ms}\\) RTT) is not supported. NearSync allows for an Recovery Point Objective (RPO) of 1 to 15 minutes, offering the lowest data loss without requiring synchronous latency requirements upvoted 1 time Submit Cancel",
+      "Selected Answer: D only option that works with 10ms as other require &gt;5ms upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is using LCM at a connected site to update various components on a Nutanix cluster and notices that the LCM Framework is not updated to the current version. What step should the administrator take to ensure LCM is updated to the latest release? A. Upgrade AOS. B. Restart genesis across the cluster. C. Run an NCC health check. D. Perform an inventory.",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D To ensure the LCM Framework is updated to the latest release at a connected site, the administrator should perform an LCM inventory. Running an inventory scan allows the LCM framework to automatically detect, download, and update itself to the latest version, ensuring all component metadata is current. upvoted 1 time Submit Cancel"
+    ]
   }
 ]
