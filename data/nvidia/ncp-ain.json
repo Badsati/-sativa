@@ -4,68 +4,137 @@
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nvidia/view/409212-exam-ncp-ain-topic-1-question-1-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: B tracing the node belongs to ibpathverify upvoted 1 time Submit Cancel",
+      "Selected Answer: D ibnetdiscover: Scans the subnet, discovers all nodes, switches, and HCAs, and traces the physical topology and interconnections across the entire fabric upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "You have recently implemented NVIDIA Spectrum-X in your data center to optimize AI workloads. You need to verify the performance improvements and create a baseline for future comparisons. Which tool would be most appropriate for creating performance baseline results in this Spectrum-X environment? A. CloudAI Benchmark B. MLNXOS C. Ansible D. NetQ",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nvidia/view/409213-exam-ncp-ain-topic-1-question-2-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D NetQ provides telemetry, historical performance data, and visibility across the Spectrum-X Ethernet fabric, allowing you to capture baseline metrics such as throughput, latency, packet drops, link utilization, and congestion. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "In an AI cluster using NVIDIA GPUs, which configuration parameter in the NicClusterPolicy custom resource is crucial for enabling high-speed GPU-to-GPU communication across nodes? A. OFED Driver B. RDMA Shared Device Plugin C. NV IPAM D. Secondary Network",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nvidia/view/409215-exam-ncp-ain-topic-1-question-4-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B In the NVIDIA Network Operator, the NicClusterPolicy custom resource (CR) manages all networking sub-components on worker nodes. The crucial parameter for high-speed GPU-to-GPU inter-node communication upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which tool would you use to gather telemetry data in a SpectrumX network? A. UFM B. NetQ C. NVIEW D. BCM",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nvidia/view/409216-exam-ncp-ain-topic-1-question-5-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B NVIDIA NetQ is the primary telemetry, operations, and validation toolset used for Ethernet-based network fabrics, including NVIDIA Spectrum-X platforms running Cumulus Linux or SONiC upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "You need to configure a bond in Cumulus Linux. Which command should you use? A. nv set interface bond1 bond mode lacp B. nv set bondbond1 interface member swp1-4 C. nv set interface bond1 bond member swp1-4 D. nv set interface bond1 bond mlag enable",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/409255-exam-ncp-ain-topic-1-question-44-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A To configure a bond in modern Cumulus Linux using the NVIDIA User Experience (NVUE) CLI, you use commands such as nv set interface &lt;bond-name&gt; bond mode lacp or nv set interface &lt;bond-name&gt; bond member &lt;ports&gt;.NVUE Bond CommandsSet LACP mode: nv set interface bond1 bond mode lacpAssign member ports: nv set interface bond1 bond member swp1-4 upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "When creating a simulation in NVIDIA AIR, what syntax would you use to define a link between port 1 on spine-01 and port 41 on gpu-leaf-01? A. “spine-01”:“eth1” -- “gpu-leaf-01”:“eth41” B. “spine-01”:“swp01” -- “gpu-leaf-01”:“swp41” C. “spine-01”:“eth1” to “gpu-leaf-01”:“eth41” D. “spine-01”:“swp1” to “gpu-leaf-01”:“swp41”",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nvidia/view/409256-exam-ncp-ain-topic-1-question-45-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B To define a link in an NVIDIA AIR DOT topology file, use the double-dash connector format: &quot;spine-01&quot;:&quot;swp01&quot; -- &quot;gpu-leaf-01&quot;:&quot;swp41&quot; upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which command should be used to configure RoCE on a Cumulus switch? A. nv set qos roce enable on B. nv qos roce enable on C. nv set roce qos enable on D. nv roce qos enable on",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/409227-exam-ncp-ain-topic-1-question-16-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A No answer. If you test in the new Cumulus release, it should be : nv set qos roce state enable upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "You are optimizing a multi-node AI training cluster using InfiniBand networking and NVIDIA GPUs. You need to implement efficient collective communication operations across the nodes. Which feature of NVIDIA Collective Communications Library (NCCL) allows for optimized performance in multi-subnet InfiniBand environments? A. Support for IB Router. B. Static plugin linking. C. GPU Direct RDMA. D. Lazy connection establishment.",
     "options": {},
-    "most_voted": "A"
+    "most_voted": "A",
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A To cross subnet, you always need Router functionality. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "In which mode of the BlueField DPU does the ARM system on the DPU control the NIC data path, but allow access to the DPU OS from the host? A. Separated Host mode B. NIC mode C. Restricted mode D. DPU mode",
     "options": {},
-    "most_voted": "D"
+    "most_voted": "D",
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D In standard DPU Mode (Host-trusted), the ARM system on the BlueField DPU controls the NIC resources and data path while still allowing the external host and host administrator access to manage functions and the DPU OS. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "When designing a multi-tenancy East/West (E/W) fabric using Unified Fabric Manager (UFM), which method should be used? A. RDMA B. VXLAN C. Partition / Pkey D. VLAN",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C InfiniBand partitions (using Partition Keys, or Pkeys) are the native mechanism used by UFM to isolate traffic, secure multi-tenant boundaries, and control East/West communication across InfiniBand fabric upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "What are two methods for accessing the operating system on a BlueField DPU? (Choose two.) A. Via the rshim interface over the PCIe bus. B. Via rshim over a USB connection on the host. C. Via the Redfish API. D. Via SSH to the out-of-band management interface. E. Via the networking interfaces (data ports) in NIC mode.",
     "options": {},
-    "most_voted": "A"
+    "most_voted": "A",
+    "vote_counts": {
+      "A": 1,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: AB SSH is for OOB management upvoted 1 time Submit Cancel"
+    ]
   }
 ]
