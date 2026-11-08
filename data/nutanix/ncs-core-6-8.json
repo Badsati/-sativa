@@ -4,112 +4,235 @@
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304765-exam-ncs-core-6-8-topic-1-question-1-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C It's most common upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A consultant is viewing an ESXi host via console without external network connectivity. Which two IP addresses can be used to connect to the CVM? (Choose two.) A. 192.168.5.2 B. 192.168.5.253 C. 192.168.5.1 D. 192.168.5.254",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305375-exam-ncs-core-6-8-topic-1-question-2-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 3,
+      "D": 3
+    },
+    "discussion": [
+      "Selected Answer: AD A &amp; D. upvoted 1 time Submit Cancel",
+      "Selected Answer: AD A and D are the correct answers upvoted 2 times Submit Cancel",
+      "Selected Answer: AD he 192.168.5.2 and 192.168.5.254 addresses are commonly default IPs used by Nutanix CVMs for local communication or cluster management during initial setup or isolated environments. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "A consultant is setting up a new install of Nutanix Files for a customer, but receives this error when attempting to join the customer’s Active Directory domain: File Server <FileServerName> could not join the Domain because User credentials failed with error - Unable to connect to WORKGROUP ads_connect: No logon servers The consultant has already verified the domain credentials provided by the customer are valid and have the correct permissions. What is the most likely cause in this scenario for a domain-join failure when setting up Nutanix Files? A. The FSVMs storage network must be in the same network as the logon servers. B. The client network is failing to communicate with the customer’s domain controllers due to a missing network firewall port requirement. C. The FSVMs must first be manually added to a site mapping in Active Directory before they can be authorized to communicate with the logon servers. D. The client network is failing to communicate with the customer’s domain controllers due to mismatched MTU sizes.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304766-exam-ncs-core-6-8-topic-1-question-3-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: B Authentication fails if LDAP/LDAPS ports are blocked by firewall upvoted 1 time Submit Cancel",
+      "Selected Answer: C it's most common answer upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "A consultant asks a customer to verify the ToR Switch data port configuration was done according to Nutanix best practices. The switch configuration must simplify future deployments and expansions. Which two configuration actions will satisfy this requirement? (Choose two.) A. Disable multicast and broadcast flood optimizations. B. Configure the CVM and hypervisor host VLAN as the native. C. Use a tagged VLAN for the CVM and hypervisor hosts. D. Configure the connected switch ports as access.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/303606-exam-ncs-core-6-8-topic-1-question-4-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 3,
+      "C": 1,
+      "B": 4,
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: AC tagged VLAN is recommeded for the CVM and hypervisor hosts. Access port is recommended only for IPMI. So the answer is A &amp; C upvoted 1 time Submit Cancel",
+      "Selected Answer: AB A. Nutanix recommends that you configure the CVM and hypervisor host VLAN as the native, or untagged, VLAN on the connected switch ports. B. Native VLAN configuration allows easy node addition and cluster expansion while placing traffic in a VLAN when it enters the switch upvoted 1 time Submit Cancel",
+      "Selected Answer: AB The correct answers are A and B: https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2050-Physical-Networking:vlans.html upvoted 4 times Submit Cancel",
+      "Selected Answer: BD Easiest way to have the port work by just plugging in and no config upvoted 2 times Submit Cancel",
+      "Selected Answer: BD The question clearly states that &quot;the switch configuration must simplify future deployments and expansions&quot;, which means that putting the CVM and AHV in native vLAN is the best strategy and configuring the switch port as native will allow the customer to simply rack the server, plug the cables and expand the cluster via Prism. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "A consultant is reviewing a customers Pre-delivery Questionnaire. The customer wants to deploy their cluster with ESXi as the hypervisor with vSphere Distributed Switch. The customer will be using Cisco Nexus 9k as their switch choice. In the kick-off call, it is confirmed that the customer has a business requirement to use LACP in their environment. What should the consultant ensure that the customer configures on the port-channel interface before deployment? A. service unsupported-transceiver B. show port-channel C. no lacp graceful-convergence D. no lacp suspend-individual",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/307078-exam-ncs-core-6-8-topic-1-question-5-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: B Actually B makes more sense. The show port-channel summary will list how C &amp; D are configured. Both C &amp; D are recommended for the LACP port configurations. B looks correct to me since we need to choose one answer upvoted 1 time Submit Cancel",
+      "Selected Answer: C no lacp graceful-convergence is highly recommended for Nexus switches upvoted 1 time Submit Cancel",
+      "Selected Answer: B B is the correct one. + show port-channel, show the configuration of all port-channel configured on the switch. + no lacp-suspend-individual, if the port doesn't receive LACP packets, it will treated as an individual port within the port-channel and will operate on its individual port configuration, causing blackholing traffic. upvoted 1 time Submit Cancel",
+      "After reading the question several times, I think the right one is D. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "After an onsite cluster deployment, a consultant prepares the deliverables for a project closeout. Which two data in the As-Built Guide require adjustment or might be missing completely? (Choose two.) A. Cluster Information B. AHV Host Information C. Nutanix Node Port Layout D. Physical Rack Layout",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304703-exam-ncs-core-6-8-topic-1-question-7-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2,
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: CD C &amp; D are not part of as-built upvoted 1 time Submit Cancel",
+      "Selected Answer: CD ✅ C. Nutanix Node Port Layout This includes how network ports are cabled to switches. Often differs from pre-install assumptions and may be undocumented unless manually verified. Needs to be updated to reflect actual port usage and switch connections. ✅ D. Physical Rack Layout Racking and cabling can change during installation. Final positions of nodes, switches, and cables often differ from the original design and require on-site verification and documentation. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "In preparing to install a new cluster for a company, a consultant needs to complete an installation worksheet. Which values must be documented prior to initial base system setup? A. Hypervisor. CVM, and IPMI IP Addresses B. Prism Central IP Address C. DNS and NTP IP Addresses D. Block Serial Numbers",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304708-exam-ncs-core-6-8-topic-1-question-8-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 3
+    },
+    "discussion": [
+      "Selected Answer: A As previously described: These are essential for the Foundation process to discover, image, and configure the nodes properly. upvoted 1 time Submit Cancel",
+      "Selected Answer: A These are essential for the Foundation process to discover, image, and configure the nodes properly. upvoted 3 times Submit Cancel",
+      "Selected Answer: A This is basic requirement upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "At which prompt should a consultant execute the command manage_ovs - bridge_name br0 show_uplinks in a Nutanix cluster? A. [root@AHV~]# B. root@CVM~# C. esxi@CVM~$ D. nutanix@CVM~$",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/334244-exam-ncs-core-6-8-topic-1-question-9-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D D is correct upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "The installation process stops before imaging any of the nodes and an error message is displayed notifying the IPMI IP address is unreachable. What should consultant do to fix the issue? A. Check the service. log and the individual node log files for more detailed information. B. If the nodes are in the same subnet go to the Cluster page and configure multi-homing. C. Ensure the Foundation VM is not in the same broadcast domain as the Controller VMs. D. Re-try Foundation using a non-flat switch.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304711-exam-ncs-core-6-8-topic-1-question-10-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A A is correct. upvoted 1 time Submit Cancel",
+      "Selected Answer: A The CVMs don’t even exist yet — they’re created during the imaging process. The best first step is to check logs:service.log on the Foundation VM gives high-level info. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "A consultant is reimaging a Nutanix cluster with a supported ISO, but Foundation returns an error that the media is not a supported ISO. Which two actions should the consultant take to resolve this issue? (Choose two.) A. Edit the whitelist file in Foundation. B. Obtain the MD5 checksum of the ISO and confirm the MD5 checksum of ISO is listed. C. Download and replace with the latest iso_whitelist.jsor from the Support Portal. D. Restart the imaging process in Foundation.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305379-exam-ncs-core-6-8-topic-1-question-11-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 2,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: BC B&amp;C are the correct answers upvoted 1 time Submit Cancel",
+      "Selected Answer: CD After downloading and replacing the iso_whitelist.jsor, since the ISO is the correct one, restarting the imaging process should now work. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Before deploying a new 3-node cluster, a consultant wants to know which VLAN ID to use during Foundation. Where can the consultant find this information? A. As-Built Guide B. Deployment Questionnaire C. Nutanix Portal D. Test Plan",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/334212-exam-ncs-core-6-8-topic-1-question-12-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B B is correct upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "During a Site Readiness Check, a customer informed the consultant that there is no NTP server currently configured in the environment. Which two statements should the consultant consider for continuing the cluster deployment? (Choose two.) A. An NTP server is not required for cluster Foundation and can be added later. B. At least one external NTP server must be used to complete Foundation process. C. At least 3 NTP servers must be provided in a comma-separated list. D. If an NTP server is provided using FQDN, a DNS server is required.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304713-exam-ncs-core-6-8-topic-1-question-14-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: AD The Nutanix Foundation tool, used for imaging nodes and initializing the cluster, does not strictly require an NTP server to complete the base system setup. While time synchronization is important for long-term cluster operations, Foundation can proceed with default time settings or manual time configuration on the nodes during installation. The consultant can configure NTP servers post-deployment in Prism Element under Settings &gt; NTP Servers to ensure proper synchronization for production use. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "After imaging the nodes and creating the cluster successfully in a sandbox environment, the consultant connects the cluster to the customer’s Production network. However, notices Prism Element Alerts Dashboard is displaying multiple errors. What is causing this issue? A. The cluster Virtual IP Address (VIP) was not set up during the process. B. The cluster was not stopped prior to connecting to the customer network. C. Foundation did not create the cluster successfully. D. The consultant did not run Nutanix Cluster Check (NCC).",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304078-exam-ncs-core-6-8-topic-1-question-22-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2
+    },
+    "discussion": [
+      "Selected Answer: B B is correct. VIP it's optional on the Foundation process. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Cluster was successful in the sandbox but does not work. Most likely the cluster was not shutdown properly before being put on network upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "What should a consultant consider when completing a bare-metal imaging process? A. Connect to a managed switch with routing tables to protect the production environment against configuration errors. B. Enable STP by using PortFast or an equivalent feature on the ports that are connected to the Nutanix host. C. Avoid connecting any device to the node USB port that presents virtual media such as a CD-ROM. D. Ensure that the CD-ROM appears last in the BIOS boot order to avoid Foundation timeout.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305838-exam-ncs-core-6-8-topic-1-question-23-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C Stp must be disabled upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A consultant is working to setup the network before starting the Foundation process. How should the consultant complete this task? A. Using the shared IPMI port, ensure that the connected switch can auto-negotiate to 1 Gbps. B. On Nutanix NX Series, connect the IPMI port and any one of the data ports to the switch. C. Ensure the IPMI of the nodes are reachable using pre-configured IPMI IPv6 addresses. D. Disable IPv6 on the network to which the nodes are connected to ensure that IPv6 unicast is blocked.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305381-exam-ncs-core-6-8-topic-1-question-24-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B B is the correct one. As best practice, use both port: IPMI and 1or more data port. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A customer already has a Prism Central (PC) instance deployed in their environment and expects the consultant to unregister the old cluster before registering the new cluster. What steps should the consultant take to safely and successfully unregister the customer’s former cluster from PC? A. Login to any PCVM using SSH and run the PE_unregister.py script located in the Nutanix scripts directory, followed by the unregistration_cleanup.py script. B. Login to the PC Web Ul, locate the PE cluster and click Unregister from the Actions dropdown menu. C. Login to the PC Web Ul, navigate to Cluster Registrations found under settings in the Admin Center, check the box next to the desired PE, and click Remove. D. Login to any CVM using SSH and use the multicluster command found within NCLI, followed by the unregistration_cleanup.py script on PE and PC.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305419-exam-ncs-core-6-8-topic-1-question-30-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: D Definitely D upvoted 1 time Submit Cancel",
+      "Selected Answer: D D is the correct one. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "During the knowledge transfer session, a consultant conducts a storage management demo. In the Creating a Storage Container workflow, the customer notices the Reserved Capacity parameter and asks for best practices related to it. How should the consultant respond? A. Nutanix recommends to configure at least 2 storage pools with at least one storage container each. B. Do not reserve less than 90% of the total space in the storage pool. C. Reserve capacity for a storage container only if the storage pool consists of multiple storage containers. D. Reserve capacity for a storage container only if the storage pool consists of single storage container.",
@@ -123,56 +246,113 @@
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/307080-exam-ncs-core-6-8-topic-1-question-35-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C C is correct. ESXi don't use rpm package management. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "When utilizing the Nutanix cluster As Built Document generator, which two configuration elements should a consultant provide when running the run_as_built.exe command? (Choose two.) A. Data Services IP B. Cluster IP C. Remote Site IP D. Customer Name",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305382-exam-ncs-core-6-8-topic-1-question-36-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2,
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: BD Required Fields: Cluster IP (`-cluster_ip`) and Customer Name (`-customer_name`) upvoted 1 time Submit Cancel",
+      "Selected Answer: BD I think B and D. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "In which two ways can the IPMI address be set on a Nutanix hardware installation? (Choose two.) A. Nutanix Network Crashcart B. ipmitool C. BIOS configuration D. iLO configuration utility",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304810-exam-ncs-core-6-8-topic-1-question-41-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2,
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: BC B &amp; C. + Crashcart only configure AHV and CVM IP. upvoted 1 time Submit Cancel",
+      "Selected Answer: BC The Nutanix Network Crashcart Script. is used to configure network settings for the CVM and hypervisor interfaces (e.g., eth0) on factory-prepared nodes, as discussed in a prior response. It is not designed to configure the BMC/IPMI network settings, which are managed at the hardware level, not the CVM software level. upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "During the knowledge transfer session, a consultant conducts a storage management demo. In the Creating a Storage Container workflow, the customer notices the Advertised Capacity parameter and asks for an explanation. How should the consultant respond? A. It enables the ability to cap usage of storage containers to be smaller than the limit of a storage pool capacity B. It assists in reserving space for a storage container to ensure a minimum storage capacity is available. C. It assists in reserving space for a storage container to ensure a maximum storage capacity is available. D. It is a capacity computed by dividing physical storage usage of a container by the replication factor (RF).",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305339-exam-ncs-core-6-8-topic-1-question-45-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 3
+    },
+    "discussion": [
+      "Selected Answer: C C is correct. upvoted 1 time Submit Cancel",
+      "Selected Answer: C Answer C is the right one. upvoted 2 times Submit Cancel",
+      "Selected Answer: C - Nutanix recommends reserving capacity only when multiple containers share the same pool — to ensure fair allocation and avoid over-commitment from one consuming all space. - No need to reserve if the container is the only one in the pool — it already has access to all available space. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "After deployment of a Nutanix cluster, a customer has requested to validate the peak performance of the cluster. Which tool can a consultant use to satisfy this request? A. diagnostics.py B. Nutanix perfmon C. Nutanix X-Ray D. Nutanix HCIBench",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305380-exam-ncs-core-6-8-topic-1-question-47-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C C is correct. + Nutanix X-ray is specially designed for Nutanix, instead HCI that is a more general purpose tool to test other HCI solutions. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A consultant attempts to perform an LCM inventory after successfully creating the cluster, but is met with the following error: LCM Exception [LcmExceptionHandler]: Could not find a module for entity with reference name nutanix.ncc.update What is the most likely reason LCM inventory/update is failing? A. Nameservers are not reachable. B. Nutanix CVMs are blocking TCP port 54. C. IPMI network is unable to reach the Internet. D. Clusters must be licensed before LCM inventory.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305340-exam-ncs-core-6-8-topic-1-question-48-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A Nothing to do with licensing. upvoted 2 times Submit Cancel",
+      "Selected Answer: A LCM (Life Cycle Manager) is unable to resolve and retrieve necessary metadata or modules from the internet or internal Nutanix services. The most common root cause is: DNS (nameserver) resolution failure, meaning the CVMs cannot resolve URLs needed to fetch LCM modules. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "A consultant has completed a cluster build according to the following requirements: Syslog Setup with ERROR level Logging Proxy Setup SNMP v3 Trap setup When adding the cluster to an existing Prism Central with a proxy setup, the following error is triggered in the Prism Gateway logs: Caused by: com.nutanix.util.base.ValidationException: Prism Central is unreachable What configuration is likely missing? A. Whitelist of Prism Central VIP inside of Prism Element and Prism Element VIP inside of Prism Central B. Whitelist of Prism Central DSIP inside of Prism Element C. Whitelist of Prism Central DSIP inside of Prism Element and all Prism Element CVMs inside of Prism Central D. Whitelist of AHV Host IP addresses in Prism Central",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/307025-exam-ncs-core-6-8-topic-1-question-51-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A The VIP of PC and the VIP of PE will be used, so A is correct. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A consultant deployed a Nutanix Files cluster using separate networks for client and storage. For testing a SMB standard share, a VM has been deployed on storage network. However, the consultant cannot access the share. What is the cause of the issue? A. The CVM network segmentation is configured. B. Clients on the same subnet as the storage network cannot access the shares. C. An iSCSI Data Services IP is not configured for the cluster. D. Clients on the same subnet as the storage network can only access the distributed shares.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305358-exam-ncs-core-6-8-topic-1-question-52-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 3
+    },
+    "discussion": [
+      "Selected Answer: B B is correct. upvoted 1 time Submit Cancel",
+      "Selected Answer: B SMB shares are for Client network upvoted 2 times Submit Cancel",
+      "Selected Answer: B If the client and storage networks are separate, they must be on different subnets. If you use the same network for both client and storage, then the IP addresses must be unique. Clients on the same subnet as the storage network cannot access the shares or exports. Refer to: https://portal.nutanix.com/page/documents/details?targetId=Files-v5_0:fil-file-server-prerequisite-r.html upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. A Foundation install must be done on four NX nodes for a new customer. A consultant need to set up the network onsite before imaging the nodes through the Foundation tool. The nodes are equipped with two SFP28 25GbE NICs with dual ports, and a 10GBase-T NIC with dual ports as well. The customer’s ToR switches are 25GbE datacenter switches, already in production. What is the appropriate hardware to perform the most reliable imaging of these NX nodes? A. The 25GbE production switches, 4 DAC cables, only one Ethernet cable with a 1GBase-T GBIC, and a laptop. B. A flat Ethernet switch, 9 Ethernet cables, and a laptop. C. The 25GbE production switches, 4 DAC cables and 5 Ethernet cables with a flat Ethernet switch, and a laptop. D. A flat Ethernet switch, 4 compatible 1GBase-T GBICs, five Ethernet cables and a laptop.",
@@ -181,6 +361,15 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/305109-exam-ncs-core-6-8-topic-1-question-58-discussion/",
     "images": [
       "images/nutanix/ncs-core-6-8/t01_q058/img_1.png"
+    ],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: B I choose B. upvoted 1 time Submit Cancel",
+      "I'm still choosing B. As I understand regard, the answer C is, that you have two switches without connecting them and this creates a 2 broadcast domain. In other words, the laptop only will be got access to the IPMI because they are connected on the flat switch. The foundation needs to reach both ports, IPMI and data. upvoted 1 time Submit Cancel",
+      "Selected Answer: C Option C ensures both management (IPMI) and data interfaces (25GbE) are properly connected, isolated where needed, and imaged reliably using the customer’s production switches and a temporary flat switch upvoted 2 times Submit Cancel"
     ]
   },
   {
@@ -188,55 +377,117 @@
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305110-exam-ncs-core-6-8-topic-1-question-63-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 3
+    },
+    "discussion": [
+      "Selected Answer: C C is correct. upvoted 1 time Submit Cancel",
+      "Selected Answer: C It requires fast switching, so Spanning Tree Portfast or (on some switches) &quot;edge&quot; must be enabled. upvoted 1 time Submit Cancel",
+      "Selected Answer: C A. LACP: Requires active-active bonding, not compatible with default active-backup bonding. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "A consultant is working on an expansion project for a customer that has an existing 7-node RF2 cluster. The customer has purchased four more nodes to add to the cluster. All of the hardware is identical between the existing hardware and newly purchased hardware. Currently, the 7-node cluster has the following utilization: CPU: 48% Memory: 66% Storage: 91% During the kick-off call, the customer mentioned they’d like to reserve storage capacity on the cluster if a node were to fail in the future. What’s the safest and best way to implement this on the cluster? A. Enable Reserve Rebuild Capacity and expand the cluster with the additional nodes. B. Expand the cluster with the additional nodes and enable Reserve Rebuild Capacity. C. Enable HA reservation and expand the cluster with the additional nodes. D. Expand the cluster with the additional nodes and enable HA reservation.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/307053-exam-ncs-core-6-8-topic-1-question-64-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: B I go for B. upvoted 1 time Submit Cancel",
+      "Selected Answer: A Activate RRC before expanding so that new capacity is also reserved for rebuilds Then expand the cluster with 4 nodes to provide enough storage space This is safer than activating later, because otherwise existing data could immediately occupy the new space and no reserve would remain. upvoted 2 times Submit Cancel",
+      "You can't enable “Reserve Rebuild Capacity” when you are using more than 90% of storage. That is because I choose B. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "During the cluster deployment, a consultant conducts operational tests on a vCenter-managed ESXi hypervisor. As a part of tests, vCenter must place the host into maintenance mode, however, the task is stuck and the CVM is not shutting down automatically. What should the consultant do to resolve the issue? A. Shutdown the CVM using cvm_shutdown -P now. B. Shutdown the CVM using shutdown -h now. C. Put the node into maintenance mode using ~/serviceability/bin/esx-shutdown -s cvm_ip_addr D. Put the node into maintenance mode using acli host.enter_maintenance_mode Hypervisor address.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305518-exam-ncs-core-6-8-topic-1-question-65-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: A A is the correct one. Need to execute the command inside the CVM located on the host that will put in maintenance mode. This command initiates a graceful shutdown, ensuring data consistency and proper cluster behavior. upvoted 1 time Submit Cancel",
+      "Selected Answer: C acli is for AHV upvoted 1 time Submit Cancel",
+      "In this case the host was put on maintenance through the vCenter. You only need to gracefully shutdown the CVM with the right command, cvm_shutdown -P now. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is the default password shipped on new NX hardware from the factory for the ADMIN user on IPMI? A. node-serial-number B. block-serial-number C. ADMIN D. nutanix/4u",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305111-exam-ncs-core-6-8-topic-1-question-66-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A I choose letter A, node-serial-number. Block serial can be use only for open cases, block identification, etc. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A consultant has been tasked with setting up an AHV-based cluster in a restricted data center with factory-imaged nodes. The customer environment has these constraints and considerations: No external laptops or devices are allowed. Nodes are already rack-mounted and powered on. Network connections are already completed. Network switch ports are already configured. A. Run network configuration utility from console. B. Run network configuration utility on node CVM. C. Run network configuration utility from laptop. D. Run network configuration utility on Foundation VM.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/307054-exam-ncs-core-6-8-topic-1-question-70-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A I vote for A. The Crashcart script it only be executed on the hypervisor and in this case through console using VGA and keyboard. upvoted 1 time Submit Cancel",
+      "Selected Answer: A No external access is possible in such a restrictive data center. Therefore, the network configuration must be carried out directly via the serial console or the KVM interface of the nodes—this is exactly what is meant by &quot;from console.&quot; upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An organization wants to understand which Nutanix cluster services are supported for physical traffic isolation. Which Nutanix component supports its network traffic being isolated onto its own virtual network? A. Volumes B. Files C. Objects D. Containers",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/307055-exam-ncs-core-6-8-topic-1-question-71-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Nutanix Files (formerly Acropolis File Services) supports network isolation on a separate virtual network. This means that Nutanix Files network traffic—such as SMB/NFS traffic—can be run on a separate VLAN or network segment. This achieves physical or virtual separation from the rest of the cluster traffic, offering performance and security benefits. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A customer has requested help deploying a small single-VM instance of Prism Central in their environment that will be used for managing less than 100 guest VMs and registered to a single 5-node cluster. Due to business needs, the customer also plans to consume additional service features within the PC platform. The consultant discusses with the customer and ultimately decides to deploy a small 3-VM instance to better account for possible resource overhead required once the additional services are enabled on the cluster. The additional services the consultant must enable to meet the customer’s requests are as follows: Nutanix Disaster Recovery MS-SQL Server Monitoring Flow Microsegmentation A. MS-SQL Server Monitoring requires additional licensing and a separate appliance to be deployed when using a small sized PC. B. The consultant must specify during the small PC deployment that all 3 PCVMs are configured to have 32GB of memory in order to ensure adequate overhead. C. The additional services the customer needs cannot be supported on a small sized PConsultant must deploy at a minimum a large size PC. D. Flow Microsegmentation requires an X-Large 5-VM scale-out instance of Prism Central be deployed in order to avoid constraints.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/307056-exam-ncs-core-6-8-topic-1-question-72-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 2,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: C C is the correct. + https://portal.nutanix.com/page/documents/kbs/details?targetId=kA0VO0000002Dlx0AE upvoted 1 time Submit Cancel",
+      "Selected Answer: C I am wrong, the correct answer is C. DR (Leap) needs 3 VMs, MS SQL Monitoring needs 3 VMs and Flow Microsegmentation also need 3 VMs. That is why you need 3 LARGE VMs. C is correct. upvoted 2 times Submit Cancel",
+      "Selected Answer: D Flow microsegmentation requires a lot of computing resources for network monitoring and rule processing. Therefore, an X-Large instance with 5 VMs is required to ensure scalability and performance. A small instance is sufficient for simple VM management, but not if additional features such as disaster recovery, SQL monitoring, and, above all, flow are to be used. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A customer requires that AHV network visualization must be enabled with statistics. What dependencies must be met? A. SNMP Polling must be set on each AHV Host and CVMs B. LLDP/CDP and SNMP Polling set on each AHV Host C. SNMP Polling must be set on the ToR switches D. LLDP/CDP must be set on the ToR switches",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/307157-exam-ncs-core-6-8-topic-1-question-75-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: C Now, I think that the right one is C. + SNMP v3 or SNMP v2c needs to be configured on the first-hop switches if you want the network visualizer to display the switch and switch interface statistics. + https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_8:wc-network-visualization-intro-c.html upvoted 1 time Submit Cancel",
+      "Selected Answer: D D is correct. upvoted 1 time Submit Cancel"
+    ]
   }
 ]
