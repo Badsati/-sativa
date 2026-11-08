@@ -4,55 +4,109 @@
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/mongodb/view/385230-exam-c100dba-topic-1-question-19-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Answer is b upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Consider a orders collection that contains these documents: { _id: 1, product: “X-pad”, quantity: 950 } { _id: 2, product: “X-pad-pro”, quantity: 1000 } { _id: 3, product: “X-phone”, quantity: 850 } { _id: 4, product: “X-phone-pro”, quantity: 1350 } Commands A and B are run at the same time. Assume that no other operations are running. A.) db.orders.findAndModify({ query: { “product”: “X-phone” }, update: { $set: { “quantity”: 1250 }} }) B.) db.orders.updateMany({}, {$set: { “quantity”: 0 } }) What is the possible findAndModify output and database state after these operations complete? (Choose two.) A. B. C. D.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/mongodb/view/388940-exam-c100dba-topic-1-question-74-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: AB Opções A e B ... A opção C requer que:updateMany chegue a _id:3 antes do findAndModify (para o output ser quantity: 0) findAndModify defina _id:3 para 1250 updateMany volte a _id:3 depois e ponha novamente a 0 (para o DB final ter tudo a zero) Isto exigiria que o updateMany visitasse o mesmo documento duas vezes na mesma operação — o que não acontece. O cursor do updateMany percorre cada documento uma única vez. Uma vez processado _id:3, não volta atrás. Resumindo os únicos dois cenários possíveis: Ordem no _id:3 Output (pré-mod) _id:3 final Opção findAndModify primeiro 850 0 (updateMany sobrescreve) B updateMany primeiro 0 1250 (findAndModify sobrescreve) A upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which two currentOp commands return information on all operations, including operations on idle connections and system operations? (Choose two.) A. db.currentOp({“$all”: true}) B. db.currentOp(true) C. db.currentOp({“$includeIdle”: true}) D. db.currentOp.showAllOps()",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/mongodb/view/391616-exam-c100dba-topic-1-question-78-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2,
+      "B": 3,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: AB A. db.currentOp({&quot;$all&quot;: true}) — A forma explícita de pedir todas as operações, incluindo idle connections e operações de sistema. ✅ B. db.currentOp(true) — Passar true como argumento é o atalho equivalente a {&quot;$all&quot;: true}. ✅ upvoted 1 time Submit Cancel",
+      "Selected Answer: AB Passing in true to db.currentOp() is equivalent to passing in a document of { &quot;$all&quot;: true }. The following operations are equivalent: db.currentOp(true) db.currentOp( { &quot;$all&quot;: true } ) A and B are correct upvoted 2 times Submit Cancel",
+      "Selected Answer: BC bc is correct upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which two commands project the “product” and “_id” fields? (Choose two.) A. db.coll.find({}, {“product”: 1}) B. db.coll.find({}, {“product”: 1, “_id”: 1}) C. db.coll.find({}).project({“product”: 1, “_id”: 1}) D. db.coll.find({}).project({“product”: 1})",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/mongodb/view/388905-exam-c100dba-topic-1-question-111-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: AB Correct answer is a&amp;b upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Given that the following query is currently running with a collection scan: What index should be used to improve the performance of the query? A. {“score”: 1, “game_id”: -1, “last_login”: -1} B. {“game_id”: -1, “score.highest_score”: 1, “last_login.date”: -1} C. {“last_login”: 1, “score”: 1, “game_id”: -1} D. {“score.highest_score”: -1, “last_login.date”: 1, “game_id”: 1}",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/mongodb/view/388892-exam-c100dba-topic-1-question-123-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B MongoDB index ordering rule: Equality → Sort → Range Therefore the optimal order is: Equality field → game_id Sort field → score.highest_score Range field → last_login.date Why B is correct { &quot;game_id&quot;: -1, &quot;score.highest_score&quot;: 1, &quot;last_login.date&quot;: -1 } supports: filtering by game_id sorting by score.highest_score filtering on date range efficiently upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "What attribute of the oplog ensures consistency in a replicated dataset? A. Natural Ordering B. Idempotent C. Concurrency Control D. Flow Control",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/mongodb/view/388889-exam-c100dba-topic-1-question-126-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Answer B. idempotent Oplog operations are idempotent This means: Applying the same operation multiple times produces the same final result This property is critical for replication consistency because: secondaries replay oplog entries operations may be retried replication must remain deterministic Example An oplog entry like: { $set: { status: &quot;active&quot; } } can be safely applied multiple times without changing the final outcome. Why idempotency matters It ensures: reliable replication consistent secondary states safe recovery/retry behavior upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Consider an inventory collection that contains these documents: What result set does the following query return? db.inventory.find({ $or: [ {“product” : “x-small box”}, { $and : [ {“gty” : { $ne : 50 } }, { “colors”: { $nin: [“brown”] } } A. B. C. D.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/mongodb/view/388887-exam-c100dba-topic-1-question-129-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C **C. ✅** The query uses `$or`: * **Product is `&quot;x-small box&quot;`** → document **1** * **OR** both: * `qty != 50` * `colors` does **not** contain `&quot;brown&quot;` → documents **3** and **5** So the result contains **documents 1, 3, and 5**. **Answer: C** upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Consider a contacts collection that contains these documents: {“_id”: 1, “name”: “Poppy”, “birthday”: “03-09-1984”} {“_id”: 2, “name”: “Ashley”, “birthday”: “08-12-1990”} {“_id”: 3, “name”: “Cleo”, “birthday”: “11-02-1976”} What query returns the document where the field name is “Poppy”? A. db.contacts.find( { “name”: “poppy” } ) B. db.contacts.find( { “name”: “Poppy” } ) C. db.contacts.find( { “Poppy” : 1 } ) D. db.contacts.find( { “name.Poppy” : 1 } )",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/mongodb/view/385234-exam-c100dba-topic-1-question-130-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B B ist stimmt upvoted 2 times Submit Cancel"
+    ]
   }
 ]
