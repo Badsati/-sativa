@@ -9,212 +9,468 @@
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/316025-exam-nca-aiio-topic-1-question-2-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A Recommender systems (RecSys) are unique because they often involve massive amounts of tabular data and &quot;sparse&quot; features (like user IDs and item IDs) that require massive embedding tables. Merlin addresses these specific challenges through its core components: NVTabular: A library for fast feature engineering and preprocessing that can handle terabytes of data. HugeCTR: A high-efficiency neural network training framework specifically designed for the large embedding tables found in recommender models. Merlin Models: A library of standard, high-quality implementations for popular recommender architectures (like Two-Tower or DLRM).Integration with Triton: It seamlessly deploys models to the Triton Inference Server to ensure low-latency recommendations in production. upvoted 1 time Submit Cancel",
+      "Selected Answer: A NVIDIA Merlin is a specialized application framework within the NVIDIA data center platform designed for a specific workload domain: • Application Frameworks: NVIDIA offers application frameworks tailored for common domains. • Merlin's Purpose: Examples of these frameworks include RIVA for conversational AI, Drive for Autonomous Vehicles, and MERLIN for Recommendation Systems, among many others. • Broader Context: These frameworks are layered atop the software stack, including CUDA and DOCA, and numerous software libraries that transparently provide acceleration to developers upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which NVIDIA parallel computing platform and programming model allows developers to program in popular languages and express parallelism through extensions? A. CUDA B. CUML C. CUGRAPH",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/316026-exam-nca-aiio-topic-1-question-3-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A NVIDIA Merlin is a framework for building, training, and deploying large-scale recommender systems with optimized GPU-accelerated feature engineering and inference. upvoted 1 time Submit Cancel",
+      "Selected Answer: A CUDA is the NVIDIA parallel computing platform and programming model that serves as the foundation for accelerated computing on GPUs. • The CUDA Toolkit is defined as an Nvidia groundbreaking parallel programming model that provides essential optimizations for deep learning, machine learning, and high-performance computing (HPC), leveraging NVIDIA GPUs. • CUDA is part of the base layer of the software stack, encompassing the programming model for GPUs upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which of the following aspects have led to an increase in the adoption of AI? (Choose two.) A. Moore’s Law B. Rule-based machine learning C. High Powered GPUs D. Large amounts of data",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nvidia/view/329827-exam-nca-aiio-topic-1-question-4-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: CD High Powered GPUs → Enabled deep learning and large neural networks to be trained efficiently. This is huge for modern AI adoption. Large amounts of data → AI (especially deep learning) thrives on data. More data = better models = more real-world value. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "In training and inference architecture requirements, what is the main difference between training and inference? A. Training requires real-time processing, while inference requires large amounts of data. B. Training requires large amounts of data, while inference requires real-time processing. C. Training and inference both require large amounts of data. D. Training and inference both require real-time processing.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nvidia/view/329842-exam-nca-aiio-topic-1-question-5-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Training involves feeding a model large volumes of data so it can learn patterns and adjust its internal parameters. This process is computationally intensive and data-heavy, but it does not usually need to happen in real time. Inference is when the trained model is used to make predictions on new data. In many applications (like chatbots, fraud detection, or recommendation systems), inference must happen quickly or in real time, but it typically processes much smaller amounts of data at once. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which of the following statements is true about GPUs and CPUs? A. GPUs are optimized for parallel tasks, while CPUs are optimized for serial tasks. B. GPUs have very low bandwidth main memory while CPUs have very high bandwidth main memory. C. GPUs and CPUs have the same number of cores, but GPUs have higher clock speeds. D. GPUs and CPUs have identical architectures and can be used interchangeably.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/329821-exam-nca-aiio-topic-1-question-6-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A B - is wrong, GPU has higher bandwidth memory HBM, GDDR C - WRONG - Number of Cores in GPU are much higher than CPU. D - Non sense. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which two components are included in GPU Operator? (Choose two.) A. Drivers B. PYTorch C. DCGM D. TensorFlow",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/349173-exam-nca-aiio-topic-1-question-7-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: AC The GPU Operator (such as the one provided by NVIDIA) is designed to automate the management of GPU software components in Kubernetes environments. It includes: Drivers – Installs and manages NVIDIA GPU drivers on cluster nodes. DCGM (Data Center GPU Manager) – Provides monitoring, health checks, and management capabilities for GPUs. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is a key value of using NVIDIA NIMs? A. They provide fast and simple deployment of AI models. B. They have community support. C. They allow the deployment of NVIDIA SDKs.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/349171-exam-nca-aiio-topic-1-question-10-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A NVIDIA NIM (NVIDIA Inference Microservices) are designed to make it easy and fast to deploy optimized AI models in production environments. They provide: Pre-packaged, optimized inference containers Standard APIs for easy integration Enterprise-grade performance and scalability GPU-optimized runtime environments upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "The foundation of the NVIDIA software stack is the DGX OS. Which of the following Linux distributions is DGX OS built upon? A. Ubuntu B. Red Hat C. CentOS",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/306923-exam-nca-aiio-topic-1-question-11-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A DGX OS is built on Ubuntu. NVIDIA customizes Ubuntu to create DGX OS, optimizing it for: GPU performance AI and deep learning workloads NVIDIA drivers and CUDA integration Enterprise-grade reliability on DGX systems upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is the name of NVIDIA’s SDK that accelerates machine learning? A. Clara B. RAPIDS C. cuDNN",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nvidia/view/312531-exam-nca-aiio-topic-1-question-12-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 8,
+      "B": 6
+    },
+    "discussion": [
+      "Selected Answer: C Correct answer: C. cuDNN ✅ NVIDIA cuDNN (CUDA Deep Neural Network library) is a GPU-accelerated library that optimises deep learning operations, including convolutions, pooling, and neural network training and inference. - A. Clara — SDKs and frameworks for medical imaging and healthcare AI. - B. RAPIDS — GPU-accelerated data science and analytics. - C. cuDNN — GPU-accelerated deep learning and neural network operations. upvoted 2 times Submit Cancel",
+      "Selected Answer: B RAPIDS is NVIDIA’s GPU-accelerated SDK/library ecosystem for data science and machine learning. Easy way to remember: - RAPIDS → ML / Data Science acceleration ✅ - Clara → Healthcare / Medical AI - cuDNN → Deep Neural Network primitives upvoted 2 times Submit Cancel",
+      "Selected Answer: C As documented on the NVIDIA cuDNN developer portal, cuDNN is a GPU-accelerated library specifically built to accelerate machine learning and deep learning workloads. It handles low-level neural network primitives like convolutions, activation functions, and pooling layer processing. upvoted 1 time Submit Cancel",
+      "Selected Answer: B B. RAPIDS The distinction the question is testing: RAPIDS — suite of open-source libraries for GPU-accelerated data science and machine learning pipelines (cuDF for dataframes, cuML for classical ML algorithms, cuGraph for graph analytics). Drop-in replacements for pandas/scikit-learn. cuDNN — deep neural network primitives specifically (convolution, pooling, normalization, attention). A lower-level library consumed by frameworks, not an ML SDK you'd write pipelines against. Clara — NVIDIA's healthcare/medical imaging domain platform. Distractor. upvoted 2 times Submit Cancel",
+      "Selected Answer: B RAPIDS is an end-to-end GPU-accelerated SDK (Software Development Kit) developed by NVIDIA specifically for data science (Data Science) and machine learning (Machine Learning). upvoted 1 time Submit Cancel",
+      "Selected Answer: B RAPIDS is NVIDIA's open-source suite of GPU-accelerated libraries specifically built to speed up data science and machine learning workflows end-to-end. It lets you run familiar Python/pandas/scikit-learn-style workflows on GPUs, often with little or no code change. cuDNN is to accelerate deep learning but RAPIDS is for machine learning. upvoted 1 time Submit Cancel",
+      "Selected Answer: C cuDNN (CUDA Deep Neural Network library) - A GPU-accelerated library specifically designed to speed up deep neural network training. It offers highly tuned implementations for standard routines like convolutions, attention, pooling, and normalization. upvoted 1 time Submit Cancel",
+      "Selected Answer: C cuDDN is the right answer upvoted 1 time Submit Cancel",
+      "Selected Answer: C cuDNN (CUDA Deep Neural Network library) is NVIDIA’s SDK that accelerates machine learning. It provides highly optimized implementations of standard deep learning operations like convolutions, pooling, and activation functions, and serves as the foundation that frameworks like TensorFlow and PyTorch rely on for GPU-accelerated training and inference. upvoted 1 time Submit Cancel",
+      "Selected Answer: C cuDNN is NVIDIA’s GPU-accelerated SDK designed specifically to speed up deep learning and machine learning workloads. NVIDIA RAPIDS: Accelerates data science and analytics (dataframes, ML pipelines). Not the core deep learning acceleration SDK. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which GPUs should be used when training a neural network for self-driving cars? A. NVIDIA H100 GPUs B. NVIDIA L4 GPUs C. NVIDIA DRIVE Orin",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/349155-exam-nca-aiio-topic-1-question-18-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A For Training, H100 and Drive Orin upvoted 1 time Submit Cancel",
+      "Selected Answer: A NVIDIA DRIVE Orin is a powerful, scalable System-on-Chip (SoC) platform designed as the central &quot;brain&quot; for software-defined vehicles, handling everything from autonomous driving (Level 2+ to full autonomy) to infotainment and digital cockpits, boasting an Ampere GPU, Arm CPUs, and Deep Learning Accelerators for high-performance AI, meeting strict automotive safety (ASIL-D) standards, and centralizing complex vehicle functions. It's a key component in advanced automotive systems, enabling rich graphics, AI, and central computing for next-generation cars. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "A customer is evaluating an AI cluster for training and is questioning why they should use a large number of nodes. Why would multi-node training be advantageous? A. The model is too large to fit into GPU memory B. The model is being used by a large number of users C. The model is being used for large scale inference workloads",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/349157-exam-nca-aiio-topic-1-question-19-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 3,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: A Multi-node training lets you split a model that exceeds a single node’s GPU memory across many GPUs, using tensor, pipeline, or other model parallelism. It also cuts training time by spreading huge datasets across nodes. upvoted 1 time Submit Cancel",
+      "Selected Answer: A If the question is about inferencing scaling then B &amp; C could be an answer, the question is about training then A is the correct one upvoted 1 time Submit Cancel",
+      "Selected Answer: A Multi-node training is advantageous when a model's parameters, activations, and gradients exceed the memory capacity of a single GPU. By sharding the model across multiple nodes training becomes feasible upvoted 1 time Submit Cancel",
+      "Selected Answer: C I think if the user base is growning, then wouldn't it scale the nodes? Answer C is more relevant? If model cannot fit into GPU memory then it would fail on the very 1st node isn't it? upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An IT Professional is considering whether to implement an on-prem or cloud infrastructure. Which of the following is a key advantage of on-prem infrastructure? A. Lower upfront costs and capital expenditure B. Scalability and flexibility C. Ensure data security and sovereignty D. Easy remote management.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nvidia/view/356709-exam-nca-aiio-topic-1-question-22-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C While C definetely could be the right answer, I think A could be also considered. It depends on the perspective. Security wise -- data security and sovereignty is the key point. Cost wise -- A is the right choice. I think both options are key when deciding to set the infrastructure layount on-prem. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "How many distinct network fabrics are in an AI cluster? A. 3 B. 2 C. 4 D. 5",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/305823-exam-nca-aiio-topic-1-question-26-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 3,
+      "B": 1,
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: A Correct answer: A. 3 An AI cluster typically has three distinct network fabrics: 1. Compute fabric — High-speed, low-latency communication between GPUs and compute nodes, often using InfiniBand or RoCE. 2. Storage fabric — Provides high-throughput access to datasets, checkpoints, and model files. 3. Management fabric — Supports cluster administration, monitoring, provisioning, and system management. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Front-end fabric -Management, user access, APIs -Control-plane traffic -Latency tolerant Back-end fabric -GPU-to-GPU / node-to-node -Distributed training traffic -Ultra-low latency &amp; high bandwidth -InfiniBand / RoCE for my understand Storage traffic, Is not part of the training communication loop -Storage = a workload on the front-end fabric, not a distinct AI fabric upvoted 2 times Submit Cancel",
+      "Selected Answer: A Front-end (management / user access) Back-end (high-speed compute / GPU interconnect) Storage network upvoted 1 time Submit Cancel",
+      "Selected Answer: A Storage and in-band are considered to be one upvoted 1 time Submit Cancel",
+      "Selected Answer: C 1- Compute Network 2- Storage Network 3- Inband Managment 4- Out of Band Managment Network upvoted 3 times Submit Cancel",
+      "Selected Answer: C The answer is C. 4. In an AI cluster, you typically have four separate “fabrics”: Scale-Up Fabric Connects the GPUs within a single node (e.g., NVLink/NVSwitch). Scale-Out Fabric Links GPUs across nodes for distributed training (e.g., RoCE or InfiniBand). Front-End Fabric Carries storage traffic, application I/O, and in-band cluster management. Management Network Handles out-of-band tasks, such as provisioning, health checks, and firmware updates. upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "How many 1 Gb Ethernet in-band network connections are in a DGX H100 system? A. 1 B. 2 C. 0",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nvidia/view/316101-exam-nca-aiio-topic-1-question-27-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 3,
+      "C": 4,
+      "B": 3
+    },
+    "discussion": [
+      "Selected Answer: A Correct answer: A. 1 ✅ The NVIDIA DGX H100 system has one 1 Gb Ethernet in-band network connection for operating system access and general system management traffic. upvoted 1 time Submit Cancel",
+      "Selected Answer: C On the DGX H100, the in-band network does not use 1 Gb Ethernet. * In-band networking uses the high-speed NVIDIA ConnectX-7 interfaces (100/200/400 GbE or InfiniBand) for storage, cluster communication, and host networking. * Out-of-band (OOB) management is handled separately through the BMC, which exposes a 1 GbE RJ45 management port. This is not considered part of the in-band network. So: * 1 Gb Ethernet in-band connections: 0 ✅ * 1 Gb Ethernet out-of-band management connection: 1 (BMC) This is a subtle distinction that NVIDIA likes to test. ✅ Correct answer: C. 0 upvoted 1 time Submit Cancel",
+      "Selected Answer: C Correction: There is only one 1gb ethernet and that is for out of band. Answer should be 0. upvoted 2 times Submit Cancel",
+      "Selected Answer: C There is only one 1gb ethernet and that is for in-band. Answer should be 0. upvoted 1 time Submit Cancel",
+      "Selected Answer: C The key word in the question is IN-BAND, as per the below from the Nvidia Spec sheet, the answer would be 0. Network (storage and in-band management) card 2 x NVIDIA® ConnectX®-7 Dual Port Ethernet Cards Each card provides the following speeds: Ethernet (default): 400GbE, 200GbE, 100GbE, 50GbE, 40GbE, 25GbE, and 10GbE InfiniBand: Up to 400Gbps upvoted 4 times Submit Cancel",
+      "Selected Answer: B An NVIDIA DGX H100 system generally has two 1Gb Ethernet in-band/management network connections available for system management, according to its specifications upvoted 1 time Submit Cancel",
+      "Selected Answer: B It has only one for OoB but two for inband connectivity upvoted 1 time Submit Cancel",
+      "Selected Answer: A 1 × 1 GbE RJ45 (BMC) upvoted 1 time Submit Cancel",
+      "Selected Answer: A 1 for mgmt upvoted 1 time Submit Cancel",
+      "Selected Answer: B It is b. There are 2 x 100gbps In-band mgmt upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which is the best PUE value for a data center? A. PUE of 1.2 B. PUE of 3.5 C. PUE of 5.0 D. PUE of 2.0",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/349165-exam-nca-aiio-topic-1-question-29-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A A Power Usage Effectiveness (PUE) value of 1.2 is the best choice among the options because it is the closest to 1.0, which means the data center uses very little extra energy for systems like cooling and lighting. upvoted 1 time Submit Cancel",
+      "Selected Answer: A Power Usage Effectiveness (PUE) measures a data center's energy efficiency by taking the ratio of total facility power to the power used exclusively by IT equipment. A lower PUE signifies higher efficiency, with \\(1.0\\) being the theoretical perfect score where no energy is wasted on cooling or power distribution. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which solution should be recommended to support real-time collaboration and rendering among a team? A. A cluster of servers with NVIDIA T4 GPUs in each server. B. A DGX SuperPOD. C. An NVIDIA Certified Server with RTX based GPUs.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nvidia/view/349164-exam-nca-aiio-topic-1-question-30-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C Omniverse upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is a key benefit of using NVIDIA GPUDirect RDMA in an AI environment? A. It increases the power efficiency and thermal management of GPUs. B. It reduces the latency and bandwidth overhead of remote memory access between GPUs. C. It enables faster data transfers between GPUs and CPUs without involving the operating system. D. It allows multiple GPUs to share the same memory space without any synchronization.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nvidia/view/311820-exam-nca-aiio-topic-1-question-31-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2
+    },
+    "discussion": [
+      "Selected Answer: B GPUDirect with RDMA is a technology developed by NVIDIA that enables direct memory access between NVIDIA GPUs and other devices, such as network adapters, storage systems, and other GPUs. It allows for efficient data transfers without involving the CPU, resulting in reduced latency and increased bandwidth. upvoted 2 times Submit Cancel",
+      "Selected Answer: B NVIDIA GPUDirect RDMA (Remote Direct Memory Access) allows GPUs to communicate directly with each other across nodes without involving the CPU or operating system. This results in: Lower latency for data transfers Reduced bandwidth overhead Improved scalability in multi-node AI training environments It’s especially beneficial in distributed deep learning, HPC, and real-time AI inference setups. upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "Which of the following statements is true about Kubernetes orchestration? A. It is bare-metal based but it supports containers. B. It has advanced scheduling capabilities to assign jobs to available resources. C. It has no inferencing capabilities. D. It does load balancing to distribute traffic across containers.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nvidia/view/312166-exam-nca-aiio-topic-1-question-37-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 2,
+      "B": 2
+    },
+    "discussion": [
+      "Selected Answer: D Load balancing is a core, built-in Kubernetes feature. Services give a group of container replicas (pods) a stable endpoint and spread incoming traffic across them automatically, and Ingress and external load balancers extend this to outside traffic. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Decides where a workload runs CPU, memory, GPU Affinity / anti-affinity Taints &amp; tolerations Resource availability This is exactly what NVIDIA relies on for: GPU Operator AI / ML workloads Multi-node training &amp; inference upvoted 2 times Submit Cancel",
+      "Selected Answer: D It is D! Kubernetes clearly is responsible for load balancing and not scheduling. Slurm is mainly responsible for job scheduling. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Kubernetes features an advanced scheduler that assigns containers (pods) to appropriate nodes based on available resources, constraints, and workload needs, ensuring optimal resource utilization in a cluster. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which of the following NVIDIA tools is primarily used for monitoring and managing AI infrastructure in the enterprise? A. NVIDIA NeMo System Manager B. NVIDIA Data Center GPU Manager C. NVIDIA DGX Manager D. NVIDIA Base Command Manager",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nvidia/view/315941-exam-nca-aiio-topic-1-question-43-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 5,
+      "B": 3
+    },
+    "discussion": [
+      "Selected Answer: D NBCM is primary tool for monitoring and managing AI infrastructure upvoted 1 time Submit Cancel",
+      "Selected Answer: D BCM for sure - &quot;It manages and automates end-to-end operations for mixed, hardware-agnostic environments — from a few nodes to hundreds of thousands — across edge, data center, and multi- or hybrid-cloud deployments.&quot; upvoted 2 times Submit Cancel",
+      "Selected Answer: D NVIDIA Base Command Manager (BCM) is NVIDIA's primary tool for monitoring and managing AI infrastructure in the enterprise. It provides a unified platform for provisioning, orchestrating (Slurm + Kubernetes), monitoring (via DCGM), and lifecycle-managing AI clusters — from small DGX BasePOD deployments to full-scale DGX SuperPOD installations. Think of it as the &quot;operating system for your AI cluster&quot; — while DCGM monitors individual GPUs and Slurm/Kubernetes schedule workloads, BCM is the overarching single pane of glass that ties everything together for enterprise IT and MLOps teams. For any enterprise deploying NVIDIA AI infrastructure, BCM (often complemented by NVIDIA Mission Control and NVIDIA Run:ai) is the foundational management platform that transforms a collection of GPUs, networks, and storage into a productive, operationally mature AI factory. upvoted 2 times Submit Cancel",
+      "Selected Answer: B DCGM is NVIDIA’s primary enterprise-grade tool for monitoring and managing AI infrastructure, especially GPU-based data centers. It’s designed for operations teams and administrators, not just developers. It provides: GPU health and performance monitoring Alerts and diagnostics Telemetry (power, temperature, utilization, memory, errors) Integration with Kubernetes, GPU Operator, and monitoring stacks like Prometheus upvoted 1 time Submit Cancel",
+      "Selected Answer: B NVIDIA Data Center GPU Manager DCGM upvoted 1 time Submit Cancel",
+      "Selected Answer: D It is definitely D. The scope of BCM is Entire AI infrastructure in a data center (CPU, GPU, storage, network, workloads) upvoted 2 times Submit Cancel",
+      "Selected Answer: D It should be BCM due to ‘infrastructure’ upvoted 1 time Submit Cancel",
+      "Selected Answer: B B. NVIDIA Data Center GPU Manager (DCGM) DCGM is designed to simplify GPU administration in data centers by providing active health monitoring, diagnostics, system alerts, and governance policies including power and clock management. It helps administrators monitor GPU utilization, health, and system configuration across large clusters, improving reliability and operational efficiency. DCGM also integrates with Kubernetes and job schedulers for comprehensive AI infrastructure management. - NVIDIA NeMo System Manager is not a standard NVIDIA tool for infrastructure monitoring. - NVIDIA DGX Manager mainly manages DGX systems but is not as broad or specialized as DCGM for AI infrastructure. - NVIDIA Base Command Manager is focused on AI workflow orchestration, not GPU hardware monitoring. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "What is the maximum number of MIG instances that an H100 GPU provides? A. 7 B. 8 C. 4",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/349153-exam-nca-aiio-topic-1-question-49-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A Partitions are defined using pre-configured profiles, each designating a specific number of streaming multiprocessors (SMs) and memory slices. The most common configurations for the 80GB H100 include: 7 Instances: 7 1g.10gb profiles, using 1 SM and 10GB of memory each. 4 Instances: 4 1g.20gb profiles, using 1 SM and 20GB of memory each. 3 Instances: 3 2g.20gb profiles, using 2 SMs and 20GB of memory each. 2 Instances: 2 3g.40gb profiles, using 3 SMs and 40GB of memory each. 1 Instance: 1 7g.80gb profile, using all 7 SMs and 80GB of memory. So, to to answer the question, max is 7. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is one of the primary benefits of using the NVIDIA GPU Operator in Kubernetes environments? A. It increases the processing power of CPUs within the Kubernetes cluster. B. It automatically updates the Kubernetes version across all nodes. C. It provides automatic scaling of NVIDIA GPU resources based on application demand. D. It simplifies the management and deployment of NVIDIA GPU software components.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nvidia/view/369031-exam-nca-aiio-topic-1-question-54-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D The NVIDIA GPU Operator uses the operator framework within Kubernetes to automate the management of all NVIDIA software components needed to provision GPU. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is a key feature of the GPUDirect protocol for transfers between GPUs and other PCIe devices? A. It uses ROMA to eliminate CPU bottlenecks. B. It uses virtual IP addresses to create private communication channels. C. It uses the host's kernel.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/368906-exam-nca-aiio-topic-1-question-69-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 3,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: A A. It uses RDMA to eliminate CPU bottlenecks. (Note: your option lists &quot;ROMA&quot; — this is almost certainly a typo for RDMA, Remote Direct Memory Access, which is the actual underlying technology.) upvoted 2 times Submit Cancel",
+      "Selected Answer: A Is ROMA a typo for RDMA? A would then make more sense as the correct answer? ROMA = Ray-aligned Occupancy Map Array Used in graphics / ray tracing, not GPUDirect networking. RDMA = Remote Direct Memory Access Used in AI/HPC networking, GPUDirect RDMA, NIC-to-GPU data movement, and reducing CPU involvement. upvoted 2 times Submit Cancel",
+      "Selected Answer: A Is ROMA a type for RDMA? A would then make more sense as the correct answer? ROMA = Ray-aligned Occupancy Map Array Used in graphics / ray tracing, not GPUDirect networking. RDMA = Remote Direct Memory Access Used in AI/HPC networking, GPUDirect RDMA, NIC-to-GPU data movement, and reducing CPU involvement. upvoted 1 time Submit Cancel",
+      "Selected Answer: B ROMA is Ray-aligned Occupancy Map Array and has nothing to do with GPUDirect, so Choice A is wrong. GPUDirect bypasses the CPU and host kernel, so Choice C is wrong. Correct answer is Choice B. Virtual IP addresses are used to facilitate DMA transfers between GPU memory and remote storage or other GPUs by bypassing the CPU. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is used in a DPU to enhance storage performance? A. DPUDirect B. STGEDirect C. GPUDirect",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/320549-exam-nca-aiio-topic-1-question-71-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 3,
+      "A": 3
+    },
+    "discussion": [
+      "Selected Answer: C A BlueField DPU uses GPUDirect technologies to set up a direct data path between storage and GPU memory, so data doesn’t have to go through the host CPU and system memory. upvoted 1 time Submit Cancel",
+      "Selected Answer: C C. GPUDirect Specifically, this refers to GPUDirect Storage — the variant of GPUDirect designed for direct data paths between storage (NVMe drives, storage arrays) and GPU memory, bypassing the CPU/system memory bounce buffer that would otherwise slow down data movement. On a BlueField DPU, this is part of how storage performance gets accelerated: data can move straight from storage to GPU memory without unnecessary CPU-mediated copies, which matters a lot when you're feeding GPUs with large training datasets (tying back to the Day 3 storage-throughput discussion). upvoted 1 time Submit Cancel",
+      "Selected Answer: C There is nothing called DPU direct; it's GPU direct and its the bridge that lets the DPU stream data straight into GPU memory. upvoted 3 times Submit Cancel",
+      "Selected Answer: A A. DPU Direct upvoted 1 time Submit Cancel",
+      "Selected Answer: A DPUDirect enables direct data paths between the DPU and storage devices It offloads storage I/O processing from the CPU Reduces latency and improves throughput Commonly used with NVMe and NVMe-oF workloads upvoted 1 time Submit Cancel",
+      "Selected Answer: A A. DPUDirect Explanation: DPUDirect is used in a DPU to enhance storage performance by enabling direct, efficient data movement between storage devices and other system components with minimal CPU involvement. GPUDirect is focused on GPU-related data transfers (GPU ↔ GPU, GPU ↔ NIC, GPU ↔ storage). STGEDirect is not a valid NVIDIA technology. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "The Bluefield 3 DPU mission is best defined by what three features? A. offload, accelerate, converge B. offload, accelerate, isolate C. offload, isolate, virtualize",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/368888-exam-nca-aiio-topic-1-question-75-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A OFFLOAD → Take infrastructure work from CPU ↓ ACCELERATE → Make infrastructure processing faster ↓ CONVERGE → Bring networking + storage + security together upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "How many out-of-band network management connections are in a DGX H100 system? A. 1 B. 4 C. 2",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/315524-exam-nca-aiio-topic-1-question-85-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "A": 3
+    },
+    "discussion": [
+      "Selected Answer: C IT consist two port. One is BMC, The other is CPU Management port upvoted 2 times Submit Cancel",
+      "Selected Answer: A it should be 1 upvoted 3 times Submit Cancel",
+      "Selected Answer: A It is clearly A! upvoted 3 times Submit Cancel",
+      "Selected Answer: A Only 1 upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "What is the maximum number of GPU instances you can partition with NVIDIA MIG (Multi-Instance GPU)? A. 7 B. 3 C. 5 D. 9",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nvidia/view/315259-exam-nca-aiio-topic-1-question-86-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A NVIDIA MIG (Multi-Instance GPU) on supported GPUs (A100, H100, H200) can be partitioned into a maximum of 7 GPU instances. upvoted 1 time Submit Cancel",
+      "Selected Answer: A 7 Multi-Instance GPUs. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "When should RoCE be considered to enhance network performance in a multi-node AI computing environment? A. A network that experiences a high packet loss rate (PLR). B. A network with large amounts of storage traffic. C. A network that cannot utilize the full available bandwidth due to high CPU utilization.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nvidia/view/349166-exam-nca-aiio-topic-1-question-20-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C A network with high loss rate, can’t beneficial from ROCE, will choose C upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which are three key features of InfiniBand networking technology? A. High reliability, high latency, and CPU offloads. B. High latency, high reliability, and high bandwidth. C. GPU offloads, low latency, high reliability. D. Low latency, high bandwidth, and CPU offloads.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nvidia/view/349161-exam-nca-aiio-topic-1-question-21-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 3,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: D Correct answer: D. Low latency, high bandwidth, and CPU offloads. ✅ Why? NVIDIA InfiniBand networking is designed for high-performance computing (HPC) and distributed AI workloads. - Low latency — Minimises delays in communication between nodes. - High bandwidth — Enables rapid transfer of large volumes of data between GPUs and servers. - CPU offloads — RDMA and network adapter hardware reduce CPU involvement in data transfers. upvoted 1 time Submit Cancel",
+      "Selected Answer: D InfiniBand: CPU offloads: native RDMA lets the NIC handle the transport protocol in hardware. Data moves directly between application memory, or GPU memory with GPUDirect RDMA, without involving the host CPU or kernel. upvoted 1 time Submit Cancel",
+      "Selected Answer: D I think D is right after reading it once more upvoted 1 time Submit Cancel",
+      "Selected Answer: C Going with C, not with CPU offloads upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What is the benefit of NGC? A. It provides licensing for GPU-optimized software. B. It provides air-gapped solution for secure environments. C. It provides a curated set of GPU-optimized software.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nvidia/view/369032-exam-nca-aiio-topic-1-question-56-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C NGC (NVIDIA GPU Cloud) is a container registry and hub that provides pre-built, pre-optimized software containers and applications specifically designed and tuned for GPUs. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which aspect of computing uses large amounts of data to train complex neural networks? A. Machine learning B. Deep learning C. Inferencing",
     "options": {},
-    "most_voted": "B"
+    "most_voted": "B",
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Correct answer: B. Deep learning ✅ Deep learning uses large amounts of data to train complex neural networks with multiple layers, enabling them to learn intricate patterns and representations. - A. Machine learning — The broader field of algorithms that learn from data. - B. Deep learning — Uses multi-layer neural networks, often trained on large datasets. - C. Inferencing — Uses a trained model to make predictions or generate outputs from new data. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "What factors have led to significant breakthroughs in Deep Learning? A. Advances in hardware, availability of fast internet connections, and improvements in training algorithms B. Advances in sensors, availability of large datasets, and improvements to the “Bag of Words” algorithm. C. Advances in hardware, availability of large datasets, and improvements in training algorithms. D. Advances in smartphones, social media sites, and improvements in statistical techniques.",
     "options": {},
-    "most_voted": "C"
+    "most_voted": "C",
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C ✅ Correct answer: C. Advances in hardware, availability of large datasets, and improvements in training algorithms. Three major factors have driven significant breakthroughs in deep learning: 1. Advances in hardware: GPUs and specialized accelerators enable parallel computation and faster neural network training. 2. Availability of large datasets: More training data helps deep neural networks learn complex patterns and generalize better. 3. Improvements in training algorithms: Better optimization techniques, activation functions, and neural network architectures improve training efficiency and accuracy. Why not the other options? - A: Fast internet connections are useful for data transfer but are not a primary driver of deep learning breakthroughs. - B: The Bag of Words algorithm is a traditional text representation technique, not a major general driver of deep learning progress. - D: Smartphones and social media contribute to data generation, but this option misses the broader hardware and training algorithm advances. upvoted 1 time Submit Cancel"
+    ]
   }
 ]
