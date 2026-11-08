@@ -4,62 +4,121 @@
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/mongodb/view/401849-exam-c100dev-topic-1-question-1-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A A. A single, cached MongoClient instance Why? The MongoClient in the Java driver is thread-safe and designed to be reused. It internally manages connection pooling, so you don’t need to create multiple instances for concurrency. Creating many MongoClient instances (options B, C, D) is inefficient and can lead to: Excessive resource usage Connection overhead Performance degradation Best Practice Create one MongoClient per application (or per cluster) and reuse it. Cache it (e.g., as a singleton or managed by your framework like Spring). upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A collection coll has the following documents: {_id: 4, type: “A”, value: 60} {_id: 5, type: “B”, value: 80} {_id: 6, type: “A”, value: 30} A collection results has the following documents: {_id: 1, type: “A”, value: 10} {_id: 2, type: “B”, value: 20} {_id: 3, type: “C”, value: 30} After executing the following aggregation pipeline: db.coll.aggregate([ { $match: { type: “A” }}, { $out: ‘results’} ]) What is the result? A. Collection results has the following documents: {_id: 4, type: “A”, value: 60} {_id: 6, type: “A”, value: 30} B. Collection results has the following documents: {_id: 1, type: “A”, value: 10} {_id: 4, type: “A”, value: 60} {_id: 6, type: “A”, value: 30} C. Collection results has the following documents: {_id: 1, type: “A”, value: 10} {_id: 2, type: “B”, value: 20} {_id: 3, type: “C”, value: 30} {_id: 4, type: “A”, value: 60} {_id: 6, type: “A”, value: 30} D. Collection results has the following documents: {_id: 1, type: “A”, value: 10} {_id: 2, type: “B”, value: 20} {_id: 3, type: “C”, value: 30} {_id: 4, type: “A”, value: 60} {_id: 5, type: “B”, value: 80} {_id: 6, type: “A”, value: 30}",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/mongodb/view/401850-exam-c100dev-topic-1-question-2-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A The key here is understanding what $out does in MongoDB. $match: { type: &quot;A&quot; } filters documents from coll → keeps: {_id: 4, type: &quot;A&quot;, value: 60} {_id: 6, type: &quot;A&quot;, value: 30} $out: &quot;results&quot; replaces the entire target collection (results) with the pipeline output. So the existing documents in results are completely overwritten, not merged. Final state of results: {_id: 4, type: &quot;A&quot;, value: 60} {_id: 6, type: &quot;A&quot;, value: 30} ✅ Correct answer: A upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "In an employee collection, each document represents an employee of the company. What data model is the most effective for tracking the relationship between an employee and their manager? A. Reference array to employee documents in each manager document B. Embed manager document into each employee document C. Embed employee documents as an array into each manager document D. Reference to manager document in each employee document",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/mongodb/view/401851-exam-c100dev-topic-1-question-3-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D The correct answer is: ✅ D. Reference to manager document in each employee document Each employee stores a reference (e.g., managerId) to their manager's document. Advantages: - Efficient for a one-to-many relationship. - Easy to update if an employee changes managers (only one document changes). - Avoids duplicating manager information. - Scales well when a manager has hundreds or thousands of direct reports. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Given the following query: db.coll.find({}).sort({“timestamp”: -1, “status”: 1}) Which two indexes will most improve the performance of this query? (Choose two.) A. {“timestamp”: -1, “status”: -1} B. {“timestamp”: 1, “status”: -1} C. {“timestamp”: -1, “status”: 1} D. {“timestamp”: 1, “status”: 1}",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/mongodb/view/401852-exam-c100dev-topic-1-question-4-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BC The correct answers are: ✅ B. { &quot;timestamp&quot;: 1, &quot;status&quot;: -1 } ✅ C. { &quot;timestamp&quot;: -1, &quot;status&quot;: 1 } The query is: db.coll.find({}).sort({ timestamp: -1, status: 1 }) MongoDB can use a compound index to satisfy a sort without an in-memory sort if: - The index keys are in the same field order. - The sort directions either: - Exactly match the index, or - Are the complete reverse of the index (MongoDB scans the index backwards). upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which two are valid MongoDB BSON types? (Choose two.) A. Boolean B. Float C. Number D. Double E. Map",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/mongodb/view/401854-exam-c100dev-topic-1-question-6-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: AD A. Boolean ✅ D. Double ✅ Explanation: MongoDB’s BSON (Binary JSON) supports specific data types, including: Boolean (true/false values) Double (64-bit floating point) The others are not valid BSON types: Float ❌ (MongoDB uses Double instead) Number ❌ (too generic, not a BSON type) Map ❌ (MongoDB uses Object for key-value structures) So the correct choices are A and D. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Given the following query: db.restaurants.find({“borough” : “Brooklyn” , “grades.score” : {$gt:5}}) No index exists for the restaurant collection. What index definition most improves the performance? A. db.restaurants.createIndex({“borough” : 1, “grades.score” : 1} ) B. db.restaurants.createIndex({“grades.score” : 1, “borough” : 1} ) C. db.restaurants.createIndex({“borough” : 1} ) D. db.restaurants.createIndex({“grades.score” : 1} )",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/mongodb/view/401857-exam-c100dev-topic-1-question-9-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A The correct answer is: ✅ A. The query has two predicates: 1. Equality borough = &quot;Brooklyn&quot; 2. Range grades.score &gt; 5 MongoDB's indexing best practice is the ESR rule: E = Equality fields first S = Sort fields next R = Range fields last Since this query has no sort, the ideal compound index is: { borough: 1, &quot;grades.score&quot;: 1 } MongoDB can: - Jump directly to the &quot;Brooklyn&quot; entries. - Within those entries, efficiently scan only documents where grades.score &gt; 5. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "There is a collection of patients for a medical practice. Which two attributes associated with the patient should be embedded into the patient document rather than stored in its own collection and referenced? (Choose two.) A. Visits to the practice B. Current prescriptions C. Diagnosed conditions D. Their primary doctor E. Their insurance provider",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/mongodb/view/401858-exam-c100dev-topic-1-question-10-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2,
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: BC MongoDB's data modeling guideline is: Embed data when it is: - Owned by the parent document. - Accessed together with the parent. - Small and bounded in size. - Not shared by many documents. ❌ A. Visits to the practice - a patient can have many visits (unbounded) ✅ B. Current prescriptions - usually small list ✅ C. Diagnosed conditions - usually small list ❌ D. Their primary doctor - shared by many patients ❌ E. Their insurance provider - shared by many patients upvoted 1 time Submit Cancel",
+      "Selected Answer: BC MongoDB's data modeling guideline is: Embed data when it is: - Owned by the parent document. - Accessed together with the parent. - Small and bounded in size. - Not shared by many documents. ❌ A. Visits to the practice ✅ B. Current prescriptions ✅ C. Diagnosed conditions ❌ D. Their primary doctor ❌ E. Their insurance provider upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Given the following explain plan: What statement is true for this explain plan? A. This is using an index. B. This has a sort stage with index support. C. This is not using an index. D. This uses an index in reverse direction.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/mongodb/view/401860-exam-c100dev-topic-1-question-12-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C The correct answer is: ✅ C. This is not using an index. The key part of the explain() output is: winningPlan: { stage: 'COLLSCAN', filter: { txt: { $eq: 'hello' } }, direction: 'forward' } The important field is: stage: 'COLLSCAN' COLLSCAN means Collection Scan. MongoDB is scanning every document in the collection to find matching documents. If an index were being used, you would instead see something like: stage: 'IXSCAN' or FETCH └── IXSCAN upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Given the following query: db.tests.find( { points: { $elemMatch: { $gte: 75, $lt: 80 } } } ) Which two documents from collections tests will be returned by this query? (Choose two.) A. { _id: 1, points: [ 80, 87, 88 ] } B. { _id: 2, points: [ 70, 87, 88 ] } C. { _id: 4, points: [ 76, 77, 79 ] } D. { _id: 3, points: [ 75, 88 ] } E. { _id: 5, points: 77 }",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/mongodb/view/401874-exam-c100dev-topic-1-question-26-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: CD Now evaluate each option: A. [80, 87, 88] 80 is not &lt; 80 → ❌ No match B. [70, 87, 88] 70 &lt; 75, 87 &amp; 88 &gt; 80 → ❌ No match C. [76, 77, 79] All values are between 75 and 80 → ✅ Match D. [75, 88] 75 satisfies &gt;= 75 and &lt; 80 → ✅ Match E. 77 (not an array) $elemMatch requires an array → ❌ No match ✅ Correct answers: C and D upvoted 1 time Submit Cancel"
+    ]
   }
 ]
