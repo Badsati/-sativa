@@ -4,49 +4,120 @@
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/180662-exam-ncp-mci-v6-10-topic-1-question-4-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "A": 3
+    },
+    "discussion": [
+      "Selected Answer: C ✅ Definitive Analysis Tags (Categories/Tags) Official Prism Central documentation confirms that Categories/Tags can be assigned to VMs. They allow grouping for management, policy application, filtering, automation, backup, and protection jobs. Lightweight, flexible, and the standard method for grouping a set of VMs. Projects Projects are mainly for multi-tenancy, governance, RBAC, and quotas, not for quick grouping of VMs. Not designed for “easy grouping” in day-to-day operations. Labels Not used in Nutanix Prism Central for grouping VMs. ❌ Catalog Items Templates for creating VMs; cannot group existing VMs. ❌ upvoted 2 times Submit Cancel",
+      "Selected Answer: A TAGS - no mention to Labels in the current versions of nutanix environments. upvoted 1 time Submit Cancel",
+      "Selected Answer: A Labels. upvoted 1 time Submit Cancel",
+      "Selected Answer: A Nutanix allows you to assign labels to VMs, which are essentially key-value pairs. This allows you to group VMs based on various criteria like application, department, or owner. Labels are a flexible and easy way to categorize and filter VMs upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator want to create a VM with memory overcommit features enabled in Nutanix environment. Which statement best describes how the administrator will perform this VM creation? A. Memory overcommit can only be updated using the Prism Central console. B. Memory overcommit can not be enabled for VM from the Prism Central console. C. Memory overcommit can be enabled while creating a VM using Prism Element Web Console. D. Memory overcommit can only be updated using the Prism Element Web Console once VM created.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/170035-exam-ncp-mci-v6-10-topic-1-question-6-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 6
+    },
+    "discussion": [
+      "Selected Answer: A A is the correkt answer, as in the documentation described. upvoted 1 time Submit Cancel",
+      "Selected Answer: A You cannot enable the memory overcommit feature using the Prism Element Web Console. Enable memory overcommit on a VM that you create by using Prism Central. If you create a VM using Prism Web Console, then you can enable memory overcommit on that VM using Prism Central. upvoted 2 times Submit Cancel",
+      "Selected Answer: A 'A' answer is partially correct -&gt; Memory overcommit can be updated using the Prism Central console and using 'acli' command-line interface upvoted 1 time Submit Cancel",
+      "Selected Answer: A https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v6_10:ahv-vm-configure-memory-overcommit-c.html upvoted 3 times Submit Cancel",
+      "Selected Answer: A Based on Nutanix doc - You need a minimum Prism Central version of pc.2022.4 for memory overcommit upvoted 1 time Submit Cancel",
+      "Selected Answer: A I do belive A is the correct choice as I can only see memory overcommit in PC but not PE upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is tasked with optimizing a VM's storage to leverage compression features. Currently, vDisks are in a storage container default-container-11111111111111 that has no optimization activated. The administrator must move the VM's storage to the storage container Production. What is the most efficient way to achieve this operation? A. Recreate VM in the Production storage container configuration and copy data. B. Migrate VM to the Production storage container. C. Recreate vDisk in the Production storage container configuration and copy data. D. Migrate vDisks to the Production storage container.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/303558-exam-ncp-mci-v6-10-topic-1-question-8-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Migrate VM to the Production storage container. - it is the most efficient way ! upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which two entities can be categorized? (Choose two.) A. Alerts B. Storage Containers C. Virtual Machines D. ISO Images",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/177973-exam-ncp-mci-v6-10-topic-1-question-9-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2,
+      "C": 7,
+      "D": 4,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: AC AI Overview In Nutanix Prism Central, Virtual Machines and Alerts are the two primary system entities. Categories are used to organize, automate, and apply policies to these assets. upvoted 1 time Submit Cancel",
+      "Selected Answer: CD ISO images (used for VM installations, boot media, or software repositories) can be categorized using Image Groups in Prism Central or Prism Element. This feature helps you organize, filter, and manage ISOs more efficiently, especially in environments with many images (e.g., OS installers, application ISOs, or firmware files). upvoted 2 times Submit Cancel",
+      "Selected Answer: AC In Nutanix Prism Central,categoriesallow administrators togroup and organize entitiesfor management, automation, and policy enforcement. * Alerts (Option B) can be categorizedto group similar system events and create filtering rules. * Virtual Machines (Option C) can be categorizedto apply security policies, automation tasks, and resource allocation rules. * Option A (Storage Containers) cannot be categorizedin Prism Central. Storage policies apply at the container level but are not managed via categories. * Option D (ISO Images) cannot be categorizedbecause ISOs arestatic objects, not active entities. upvoted 2 times Submit Cancel",
+      "Selected Answer: BC ISO Images – These are static files and do not support categorization in Nutanix Prism. upvoted 2 times Submit Cancel",
+      "Selected Answer: CD C and D upvoted 2 times Submit Cancel",
+      "Selected Answer: CD confirmed upvoted 2 times Submit Cancel",
+      "Selected Answer: CD You can assign a category value to an entity of the following types: cluster, VM, host, volume group, catalog, image, report, and subnet. upvoted 7 times Submit Cancel"
+    ]
   },
   {
     "question": "Which feature deploys a temporary VM to allow an administrator to login and apply OS patches to a VM template? A. Update Configuration B. Create VM from Template C. Update Guest OS D. Complete Guest OS Update",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/170034-exam-ncp-mci-v6-10-topic-1-question-11-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1,
+      "C": 2
+    },
+    "discussion": [
+      "Selected Answer: D Complete Guest OS Update upvoted 1 time Submit Cancel",
+      "Selected Answer: C https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v6_10:mul-vm-template-manage-pc-t.html upvoted 5 times Submit Cancel",
+      "Selected Answer: C Update Guest OS is the feature, the &quot;complete guest os upgrade&quot; is the last step when recommiting the updates back to the template. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has been tasked with performing firmware upgrades for all their Nutanix sites. When attempting to perform firmware upgrades via Life Cycle Manager (LCM) at a remote site with a single-node cluster deployed, no firmware updates are listed as being available. The administrator confirmed the currently installed firmware is several revisions behind. Why are there no firmware upgrades listed in LCM for this cluster? A. LCM does not have connectivity to the internet. B. LCM cannot perform firmware upgrades on single-node clusters. C. Single-node clusters only support one-click firmware upgrades. D. LCM is not supported on single-node clusters.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305000-exam-ncp-mci-v6-10-topic-2-question-17-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 2,
+      "B": 3
+    },
+    "discussion": [
+      "Selected Answer: D D - https://portal.nutanix.com/page/documents/details?targetId=Life-Cycle-Manager-Guide-v3_0:top-firmware-upgrades-c.html upvoted 1 time Submit Cancel",
+      "Selected Answer: B The Life Cycle Manager (LCM) is designed to perform updates in a non-disruptive or minimally disruptive way. Since rebooting the single node would cause a complete outage of the entire cluster (including all storage and running VMs), LCM's automated workflow intentionally prevents firmware upgrades on these clusters to avoid an accidental, one-click takedown of a production environment. You can still use LCM on a single-node cluster to perform an inventory and see what firmware is running, but the option to apply the updates will not be available. The upgrade process for such a configuration is a manual one that involves scheduling downtime. upvoted 3 times Submit Cancel",
+      "Selected Answer: B Correct upvoted 1 time Submit Cancel",
+      "After reading again the question I'm stoke with the same answer, B. Because , LCM is supported on a single-node to do Software updates but can't execute LCM update for Firmware's. On a single-node, the firmware updates, needs to be done manually. upvoted 1 time Submit Cancel",
+      "Selected Answer: B Correct upvoted 1 time Submit Cancel",
+      "Selected Answer: D Answer B and D both seems correct to me, can anyone explain the difference between them ? upvoted 1 time Submit Cancel",
+      "Not supported means, that you can perform the upgrade, but Nutanix will not be responsible for any problem/issues. In the other hand, cannot perform means, that the system don't execute the firmware upgrade. upvoted 1 time Submit Cancel",
+      "After reading again the question I'm stoke with the same answer, B. Because , LCM is supported on a single-node to do Software updates but can't execute LCM update for Firmware's. On a single-node, the firmware updates, needs to be done manually. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A security team asks an administrator to set up port mirroring of a specific source VM to a target VM. What must the administrator ensure for this configuration to be possible? A. Source VM and Target VM are on the same subnet. B. Source VM and Target VM are on the same host. C. Source VM and Target VM are on the same VPC. D. Source VM and Target VM are on the same VLAN.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304962-exam-ncp-mci-v6-10-topic-2-question-24-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B Nutanix VM port mirroring, also known as Traffic Mirroring, requires the destination VM (monitoring VM) to reside on the same AHV host as the source VMs. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. In a scale-out Prism Central deployment what additional functionality does configuring an FQDN instead of a Virtual IP provide? A. Resiliency B. SSL Certificate C. Load balancing D. Segmentation",
@@ -55,6 +126,12 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/308687-exam-ncp-mci-v6-10-topic-2-question-26-discussion/",
     "images": [
       "images/nutanix/ncp-mci-v6-10/t02_q026/img_1.png"
+    ],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2024_3_1:mul-pc-management-c.html upvoted 2 times Submit Cancel"
     ]
   },
   {
@@ -62,49 +139,113 @@
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/313810-exam-ncp-mci-v6-10-topic-2-question-28-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: C C. Is the only option that makes sense. The decomissioned nodes are running 2cpus with 12 cores. So if you were to plug in nodes that had less than its possible certain vm workloads no longer function. The other user that said A: Nutanix supports asymmetrical disk configs. Storage is pooled and rebalanced. B: You dont need to plug in nodes of the same generation. Which is evident with the currently intermixed generations in this cluster. D: Lol why would that be a requirement. Nutanix supports both hybrid and all flash. upvoted 1 time Submit Cancel",
+      "Selected Answer: A A. New node must have at least 2 SSDs. Reason: Your cluster is hybrid today and the remaining nodes (G7) each have 2× SSD for cache/oplog. To stay supported and avoid a performance dip when you replace the G5s, the replacement nodes should match the SSD count (≥2 SSDs) so read/write caching and hot-tier capacity aren’t the bottleneck. D (must be hybrid): true for support (don’t mix all-flash with hybrid), but by itself it doesn’t address performance parity. You could add a 1-SSD hybrid node and be supported, but you’d likely throttle performance. B/C: exact generation or CPU core counts don’t have to match for support; they’re not the key constraint here. upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "In an RF2 cluster, what is the minimum number of nodes required to allow a host removal? A. 2 B. 3 C. 4 D. 5",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/169363-exam-ncp-mci-v6-10-topic-2-question-30-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2,
+      "C": 3
+    },
+    "discussion": [
+      "Selected Answer: B i also thought that B (3) is the answer, but reference to CHATGPT. C(4) should be the correct answer: Explanation: RF2 (Replication Factor 2) requires two copies of data on two different nodes. To safely remove a host, the system must have enough nodes to redistribute data and maintain RF2. With 3 nodes, removing one host reduces the cluster to 2 nodes — which is the minimum required just to keep RF2, but not to remove any more hosts or handle failures. Therefore, 4 nodes are needed: 3 to maintain RF2 after one is removed, and 1 for removal. upvoted 2 times Submit Cancel",
+      "Selected Answer: C C is correct. upvoted 1 time Submit Cancel",
+      "Selected Answer: C RF2 require 3 node minimum, but node removal Cluster should have 4 upvoted 2 times Submit Cancel",
+      "I Agree 100% upvoted 1 time Submit Cancel",
+      "Selected Answer: C C is the right on. The Remove Host link on the right of the Summary line does not appear for the removal of a host from a three-node cluster, as stated here: https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_10:wc-cluster-modify-removing-node-wc-t.html upvoted 1 time Submit Cancel",
+      "Selected Answer: B RF2 nodes 3 minimum upvoted 1 time Submit Cancel",
+      "You are correct in your statement but, Nutanix don't permit to remove 1 node in a cluster of 3-nodes, because if you &quot;have the availability to remove the node you will have a 2-node cluster and it's not possible without an witness-vm. The only way to have two-node cluster if you &quot;destroy the cluster or do a fresh-installation. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which update in LCM can an administrator apply on a per-node basis? A. NCC B. AOS C. BMC D. AHV",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/320336-exam-ncp-mci-v6-10-topic-2-question-31-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C AI Overview In Nutanix Life Cycle Manager (LCM), an administrator can apply firmware updates—such as for the BMC (Baseboard Management Controller)—on a per-node basis. Software updates (like AOS or AHV) are generally applied at the cluster level via rolling upgrades. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to configure NTP on Prism Central running on a Hyper-V cluster. How should the administrator complete this task? A. Add a server with DNS hostname. B. Add an external NTP server. C. Add the DNS server IP. D. Add the IP of the Domain Controller.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/303234-exam-ncp-mci-v6-10-topic-2-question-33-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 4,
+      "C": 2,
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: D Network Time Protocol (NTP) is a protocol for clock synchronization between computers, and Prism Central must connect to an NTP server to synchronize the system clock. Note: If Prism Central is running on Hyper-V, you must specify the IP address of the Active Directory Domain Controller server, not the hostname. Do not use DNS hostnames or external NTP servers. upvoted 1 time Submit Cancel",
+      "Selected Answer: D im sure upvoted 1 time Submit Cancel",
+      "Selected Answer: C AI Overview To configure NTP on Prism Central, navigate to the Settings menu via the Admin Center, locate the NTP Servers option, and add the required external NTP server. This ensures all cluster components synchronize their time to prevent clock drift. upvoted 1 time Submit Cancel",
+      "Selected Answer: B From the documentation: Configure NTP using external NTP servers (preferably IP addresses) for all nodes in the cluster. Do not rely on internal services like Active Directory or DNS servers for time synchronization. upvoted 1 time Submit Cancel",
+      "Selected Answer: C you must just add a ntp server upvoted 2 times Submit Cancel",
+      "Selected Answer: D Confirmed. upvoted 2 times Submit Cancel",
+      "Selected Answer: D https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Admin-Center-Guide-vpc_2024_3_1:mul-ntp-servers-configure-pc-t.html upvoted 5 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator recently attempted to enable Data-in-Transit Encryption on a Scale-Out Prism Central cluster to ensure service level traffic is encrypted between the cluster nodes. After attempting to enable this feature, the administrator noticed that it was not working correctly due to a firewall restriction. Which CVM-specific port should be allowed through the firewall for Data-in-Transit Encryption? A. 2009 B. 2010 C. 2020 D. 9440",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/169439-exam-ncp-mci-v6-10-topic-2-question-34-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 4
+    },
+    "discussion": [
+      "Selected Answer: A https://www.nutanix.com/content/dam/nutanix/documents/certifications/nutanix-security.pdf Port for Data-in-Transit Encryption is stated on page 44 upvoted 1 time Submit Cancel",
+      "Selected Answer: A clearly stated here https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v6_10:mul-configure-data-in-transit-encryption-pc-t.html upvoted 3 times Submit Cancel",
+      "Selected Answer: A Answer is A according to the NTX guide for data in transit encryption upvoted 1 time Submit Cancel",
+      "Selected Answer: A 2009 To secure data in transit within a Nutanix cluster, you can enable data-in-transit encryption, which requires allowing port 2009 in your firewall and can be managed through Prism Central. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Which two URLs must be accessible from a Connected Site's Controller VMs in order to allow Life Cycle Manager (LCM) to download software updates? (Choose two.) A. my.nutanix.com B. release-api.nutanix.com C. download.nutanix.com D. portal.nutanix.com",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305039-exam-ncp-mci-v6-10-topic-2-question-38-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: BC B &amp; C are correct. A &amp; D are customers portal. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "When expanding a cluster, what is required to automatically discover nodes? A. New nodes have same hypervisor versions B. IPv6 multicast allowed on physical switches C. New nodes have same AOS versions D. IPv4 multicast allowed on physical switches",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/176728-exam-ncp-mci-v6-10-topic-2-question-39-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2
+    },
+    "discussion": [
+      "Selected Answer: B And: https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_0:wc-cluster-expand-wc-r.html The expand cluster discovery step (finding nodes to add) requires that IPv6 multicast packets are allowed through the physical switch. Therefore, the expand cluster process does not work when IPv6 is disabled in your network. upvoted 4 times Submit Cancel",
+      "Selected Answer: B The expand cluster discovery step (finding nodes to add) requires that IPv6 multicast packets are allowed through the physical switch. Therefore, the expand cluster process does not work when IPv6 is disabled in your network. upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. An administrator is trying to configure Metro Availability between Nutanix ESXi-based clusters. However, the Compatible Remote Sites screen does not list all required storage containers. Which two reasons could be a cause for this issue? (Choose two.) A. The destination storage container is not empty. B. Source and destination hardware are from different vendors. C. The remote site storage container has compression enabled. D. Both storage containers must have the same name.",
@@ -113,6 +254,13 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/310229-exam-ncp-mci-v6-10-topic-3-question-42-discussion/",
     "images": [
       "images/nutanix/ncp-mci-v6-10/t03_q042/img_1.png"
+    ],
+    "vote_counts": {
+      "A": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: AD https://portal.nutanix.com/page/documents/details?targetId=Prism-Element-Data-Protection-Guide:sto-metro-availability-c.html upvoted 1 time Submit Cancel"
     ]
   },
   {
@@ -120,35 +268,71 @@
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/316479-exam-ncp-mci-v6-10-topic-3-question-44-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: D D is 100% correct answer upvoted 1 time Submit Cancel",
+      "Selected Answer: A single node have an rpo of 6 hours its have a limition on nuatnix offical documents this very wrong info upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A company is evaluating Nutanix DR to protect some business critical applications and tasked an administrator to find an optimal configuration providing highest resiliency and lowest RPO to the production environment. The company's production environment is deployed on two physical sites with each hosting one AHV-based cluster. What configuration will meet the company's requirements? A. Deploy Prism Central instance on one of the sites, configure Prism Central Disaster Recovery, and setup Metro AHV. B. Deploy Prism Central instance on each site. Configure Metro Availability using Protection Domains. C. Deploy one Prism Central instance on each site and configure synchronous replication using Protection Policy. D. Deploy Prism Central instance on one of the sites. Configure NearSync replication using Protection Domains.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/305164-exam-ncp-mci-v6-10-topic-3-question-51-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A A is correct. Because, both the primary and recovery AHV clusters must be registered with the same Prism Central instance. https://portal.nutanix.com/page/documents/details?targetId=Disaster-Recovery-DRaaS-Guide-vpc_2024_3_1:ecd-ecdr-requirements-witness-synchronous-pc-r.html upvoted 1 time Submit Cancel",
+      "Selected Answer: A https://portal.nutanix.com/page/documents/details?targetId=Disaster-Recovery-DRaaS-Guide-vpc_2024_3_1:ecd-ecdr-metroavailability-pc-c.html upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has configured AHV Metro with Witness and wants to document different failover scenarios. As a part of the failover tests, connection losses between these pairs were simulated: • Both the metro pair of clusters • Primary cluster and Prism Central However, Prism Central and the recovery cluster are still connected. What are two expected system behaviors in this case? (Choose two.) A. Guest VMs continue to run on the primary cluster. B. Guest VMs failover automatically to the recovery cluster. C. Guest VM I/O operations pause (freeze) until the connectivity between the primary and recovery clusters or any of the clusters and Prism Central is restored. D. Guest VM I/O operations pause (freeze) until the connectivity between the primary and recovery clusters or the primary cluster and Prism Central is restored.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/181280-exam-ncp-mci-v6-10-topic-3-question-52-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2,
+      "D": 2
+    },
+    "discussion": [
+      "Selected Answer: BD AI Overview In this simulation, the expected system behaviors for AHV Metro with Witness are Guest VMs failover automatically to the recovery cluster and Guest VM I/O operations pause until connectivity is restored.Specifically, the behaviors include:I/O Pause: Guest VM write/read operations are paused (frozen) until connectivity is re-established between the primary and recovery clusters or between the primary cluster and Prism Central.Automatic Failover: Because Prism Central and the recovery cluster are still connected, the Witness service can successfully orchestrate an automatic failover to resume operations on the recovery cluster. upvoted 1 time Submit Cancel",
+      "Selected Answer: BD https://portal.nutanix.com/page/documents/details?targetId=Disaster-Recovery-DRaaS-Guide-vpc_2024_3_1:ecd-ecdr-metroavailability-pc-c.html Connection loss between both the metro pair of clusters, and between the primary cluster and Prism Central when, Prism Central and the recovery cluster are connected The following happens: - Entity I/O operations pause until the connectivity between the primary and recovery clusters or the primary cluster and Prism Central is restored. - Workloads fail over automatically to the recovery cluster. - The stale workloads on the primary cluster is powered off automatically and cleaned up when connectivity is restored. upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has been tasked with developing a Prism Central Recovery Plan for 50 workloads that will be assigned new IP addresses and will need to utilize a new DNS server upon instantiation of workloads in the Disaster Recovery (DR) location. What is the best way to accomplish this? A. Update DNS settings on production VMs prior to execution of Recovery Plan. B. Utilize recovery Plan to bring VMs online at DR and then manually login to each VM and update IP/DNS. C. Install Nutanix Guest Tools, this will allow Re-IP and automatically assign updated DNS server(s). D. Enable scripting within Recovery Sequence & utilize custom script per VM.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/409814-exam-ncp-mci-v6-10-topic-3-question-58-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: D AI Overview The best way to accomplish this is to enable scripting within the Recovery Sequence and utilize custom in-guest scripts for each workload.Because the workloads require new IP addresses and DNS servers in the Disaster Recovery (DR) location, in-guest scripts executed by the Recovery Plan's automation engine offer the most flexible, fully automated reconfiguration method.To build out this solution:1. Enable Scripting in the Recovery SequencePrism Central Recovery Plans support scripting within the Recovery Sequence. This allows administrators to execute post-recovery customization tasks without logging in manually to each individual workload upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator is experiencing a storage problem on a single Microsoft Windows 2019 VMs configured as follows: • vCPU: 1 • vRAM: 8 • vSCSI: VirtIO SCSI Controller • vDisk: 2, first 100 GB, second 250 GB • vNIC: VirtIO Fast Ethernet The AHV cluster is healthy and other Windows VMs are performing much better. Which configuration should be reviewed to enhance performances to the VM? A. Increase VM number of processors (vCPUs). B. Add a second virtual storage controller (vSCSI). C. Enable Balance TCP on bridge 0 (br0). D. Increase Controller VM (CVM) resources.",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/170032-exam-ncp-mci-v6-10-topic-4-question-57-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A cpu can be the bottleneck https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2079-Citrix-Virtual-Apps-and-Desktops:sizing-cpu.html upvoted 3 times Submit Cancel",
+      "Selected Answer: A Adding addtional controllers does not get rid of the CPU bottle neck, win 2019 will not run well on a single VCPU upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. An administrator needs to create two virtual machines: VM4 and VM5 that leverage the memory over-commit feature. VM4 has the following configuration: 4 vCPU 32GB RAM Once VM4 is created and running, the administrator notices that it uses only 28GB of RAM. What will be the maximum RAM that can be allocated to VM5 so that it can be powered on? A. 4GB B. 8GB C. 16GB D. 32GB",
@@ -157,6 +341,12 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/303487-exam-ncp-mci-v6-10-topic-4-question-60-discussion/",
     "images": [
       "images/nutanix/ncp-mci-v6-10/t04_q060/img_1.png"
+    ],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B It is B. The example is detailed out in the following doc link. https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v6_10:ahv-vm-overview-memory-overcommit-c.html upvoted 5 times Submit Cancel"
     ]
   },
   {
@@ -164,28 +354,58 @@
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/303503-exam-ncp-mci-v6-10-topic-4-question-63-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 2
+    },
+    "discussion": [
+      "Selected Answer: A Confirmed. upvoted 2 times Submit Cancel",
+      "Selected Answer: A It is too low and that is why it sends the alert upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator observed an alert in Prism on a hybrid SSD/HDD cluster stating: Storage Pool SSD utilization consistently above 75%. What is the potential impact of this condition? A. The cluster may be nearly out of storage for metadata. B. The cluster is at risk of entering a read-only state. C. Average IO latency in the cluster may increase. D. The cluster is unable to sustain a SSD disk failure.",
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304968-exam-ncp-mci-v6-10-topic-4-question-66-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C Nutanix storage pool exceeding 75% SSD utilization triggers a warning alert because it indicates potential performance degradation and the need for more storage or data reduction upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "Which configuration option allows a VM to be powered on before the rest of the VMs when starting a host? A. Recovery Plan B. Host affinity C. High Availability D. Agent VM",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/181361-exam-ncp-mci-v6-10-topic-4-question-67-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "D": 3
+    },
+    "discussion": [
+      "Selected Answer: D this is correct upvoted 1 time Submit Cancel",
+      "Selected Answer: D The agent VM setting in Nutanix AHV targets a VM as the first VM to turn on, the last VM to turn off, and ineligible for live migration. https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2071-AHV-Networking:agent-vm.html upvoted 1 time Submit Cancel",
+      "Selected Answer: D Agent VMs are designated system-critical virtual machines that are given priority during host power-on or recovery operations. When a host boots up, Agent VMs are started first, before other user VMs, to ensure essential services (like domain controllers, DNS, or management services) are available early. High Availability: Ensures VMs restart on another host if a failure occurs, but doesn’t manage boot order during host startup. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator has been asked to calculate baseline Capacity Runway on a newly registered AHV cluster. The cluster has been running for 16 days now, but no runway projections are being displayed. Why are no Capacity Runway projections being displayed? A. Capacity Planning requires at least 3 months of data. B. Capacity Planning requires at least 21 days of data. C. Capacity Planning requires at least 30 days of data. D. Capacity Planning requires at least 6 months of data.",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/335948-exam-ncp-mci-v6-10-topic-5-question-68-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: B Capacity Runway projections are not displayed because the cluster lacks sufficient historical data. Nutanix Capacity Planning requires a minimum of 21 to 30 days of performance data to successfully establish a reliable growth baseline and generate runway forecasts upvoted 1 time Submit Cancel",
+      "Selected Answer: B From a new cluster/ &quot;Capacity planning requires a minimum of 21 days of data from a cluster to calculate the baseline runway estimates. No estimates appear when insufficient data is available.&quot; =&gt; B upvoted 2 times Submit Cancel",
+      "Selected Answer: C I think this is C. If Capacity Runway is not showing after 16 days on a newly registered AHV cluster, the most likely cause is insufficient historical data for the selected baseline period. In Nutanix Prism Pro (formerly Prism Central with Pro licensing), Capacity Runway projections require at least 30 days of historical data to establish a reliable growth trend baseline. upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. After adding new workloads, why is Overall Runway below 365 days and the scenario still shows the cluster is in good shape? A. Because new workloads are sustainable. B. Because Storage Runway is still good. C. Because the Target is 1 month. D. Because there are recommended resources.",
@@ -194,6 +414,15 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/308011-exam-ncp-mci-v6-10-topic-5-question-69-discussion/",
     "images": [
       "images/nutanix/ncp-mci-v6-10/t05_q069/img_1.png"
+    ],
+    "vote_counts": {
+      "C": 2,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: C If the Overall Runway is longer than your target (1 month), the scenario is considered &quot;in good shape&quot;—even if the Overall Runway is less than 365 days. upvoted 1 time Submit Cancel",
+      "Selected Answer: C The Overall Runway is currently 58 days. Since the Target is set to 1 month (approx. 30 days), the current resources are sufficient to meet that specific goal. upvoted 1 time Submit Cancel",
+      "Selected Answer: A In Nutanix Capacity Planning, Overall Runway represents how long the cluster can support current and new workloads before resources are exhausted. upvoted 3 times Submit Cancel"
     ]
   },
   {
@@ -203,6 +432,12 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/335105-exam-ncp-mci-v6-10-topic-5-question-71-discussion/",
     "images": [
       "images/nutanix/ncp-mci-v6-10/t05_q071/img_1.png"
+    ],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A the new workload shown (CPScenarioSubview.vm, dated 01/07/2024, marked &quot;New&quot;) is what's consuming additional projected capacity. By deferring the start of new workloads, the existing cluster resources are preserved, extending the runway without spending money upvoted 2 times Submit Cancel"
     ]
   },
   {
@@ -210,21 +445,46 @@
     "options": {},
     "most_voted": "C",
     "url": "https://www.examtopics.com/discussions/nutanix/view/312754-exam-ncp-mci-v6-10-topic-5-question-72-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: C https://portal.nutanix.com/page/documents/details?targetId=Intelligent-Operations-Guide-vpc_7_3:mul-cluster-analysis-xfind-dashboard-pc-c.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "A consultant is configuring syslog monitoring and wants to receive CRITICAL logs from the Audit module. Which severity level setting should be configured to get the desired output? A. 0 B. 2 C. 5 D. 7",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/169908-exam-ncp-mci-v6-10-topic-5-question-74-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 3
+    },
+    "discussion": [
+      "Selected Answer: B Correct upvoted 1 time Submit Cancel",
+      "Selected Answer: B It's B: https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Admin-Center-Guide-vpc_2024_3_1:mul-syslog-server-configure-pc-t.html upvoted 2 times Submit Cancel",
+      "Selected Answer: B https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Admin-Center-Guide-vpc_2024_3_1:mul-syslog-server-configure-pc-t.html upvoted 4 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator wants to leverage VM Efficiency to clean up Inactive VMs. The business requires that VMs have been powered off or have no measurable activity for 120 days before they are deleted. A single Playbook was created to delete the Dead and Zombie VMs. The administrator chose not to use a Branch Action. The Playbook waits 99 days after VMs have been marked inactive before automatically deleting the Dead and Zombie VMs. Which two responses show much time will have passed since the Dead and Zombie VMs were powered off or had no measurable activity before they are deleted? (Choose two.) A. For Dead VMs, the wait before deletion is 120 days. B. For Zombie VMs, the wait before deletion is 129 days. C. For Dead VMs, the wait before deletion is 129 days. D. For Zombie VMs, the wait before deletion is 120 days.",
     "options": {},
     "most_voted": "D",
     "url": "https://www.examtopics.com/discussions/nutanix/view/302382-exam-ncp-mci-v6-10-topic-5-question-75-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "C": 3,
+      "D": 4,
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: CD https://portal.nutanix.com/page/documents/details?targetId=Intelligent-Operations-Guide-vpc_2024_3_1:mul-behavioral-learning-pc-c.html upvoted 2 times Submit Cancel",
+      "Selected Answer: CD C &amp; D are the correct answers The Playbook waits 99 days after VMs have been marked inactive before automatically deleting the Dead and Zombie VMs. Dead VM: A VM is considered dead when it has been powered off for at least 30 days. 30 + 99 = 129 Zombie VM: A VM is considered zombie and marked inactive if it has very few read/write IOs and minimal network traffic every day for the past 21 days. 21 + 99 = 120 Dead is deleted at 129 days Zombie at 120. https://portal.nutanix.com/page/documents/details?targetId=Intelligent-Operations-Guide-vpc_2024_3_1:mul-behavioral-learning-pc-c.html upvoted 5 times Submit Cancel",
+      "Selected Answer: CD https://portal.nutanix.com/page/documents/details?targetId=Intelligent-Operations-Guide-vpc_2024_3_1:mul-behavioral-learning-pc-c.html: Dead VM: A VM is considered dead when it has been powered off for at least 30 days. Zombie VM: A VM is considered zombie and marked inactive if it has very few read/write IOs and minimal network traffic every day for the past 21 days. upvoted 2 times Submit Cancel",
+      "Selected Answer: AD https://next.nutanix.com/how-it-works-22/behavioral-learning-tools-prism-central-resource-management-38927 upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Refer to the exhibit. An administrator is looking at the memory cluster runway diagram, as shown in the exhibit. The environment is based on three hosts. Each host is configured as follows: • CPU: 2x Intel Xeon Gold 8 cores at 2.6 GHz • RAM: 256 GB • Storage: 2x 1.92 GB SSD, 4 x 4 TB HDD The Intelligent Operations feature has been activated one month ago with no further configurations. What does the dotted red line mean? A. It is the usable capacity based on cluster configuration options. B. It is the maximum memory the administrator can assign to VMs. C. It is the default trend analysis static threshold that can be manually set. D. It is the calculated memory oversubscription limit for currently running VMs.",
@@ -233,6 +493,17 @@
     "url": "https://www.examtopics.com/discussions/nutanix/view/302997-exam-ncp-mci-v6-10-topic-5-question-76-discussion/",
     "images": [
       "images/nutanix/ncp-mci-v6-10/t05_q076/img_1.png"
+    ],
+    "vote_counts": {
+      "D": 1,
+      "A": 2,
+      "C": 1
+    },
+    "discussion": [
+      "Selected Answer: D In the Prism Central Capacity Runway (Memory) chart: The blue shaded area = actual and projected memory usage The dotted red line = memory limit threshold Since: Intelligent Operations is enabled No manual thresholds were configured upvoted 1 time Submit Cancel",
+      "Selected Answer: A https://portal.nutanix.com/page/documents/details?targetId=Intelligent-Operations-Guide-vpc_7_3:Intelligent-Operations-Guide-vpc_7_3 upvoted 2 times Submit Cancel",
+      "Selected Answer: C Sorry: ignore my previous remark upvoted 1 time Submit Cancel",
+      "Selected Answer: A https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2022_6:mul-explore-entities-hardware-pc-c.html upvoted 5 times Submit Cancel"
     ]
   },
   {
@@ -240,27 +511,54 @@
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/303528-exam-ncp-mci-v6-10-topic-5-question-77-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1
+    },
+    "discussion": [
+      "Selected Answer: B https://portal.nutanix.com/page/documents/details?targetId=Intelligent-Operations-Guide-vpc_7_3:ssp-report-management-ssp-pc-c.html upvoted 1 time Submit Cancel"
+    ]
   },
   {
     "question": "An administrator wants to enable application discovery on a Nutanix cluster to monitor applications. An X-Large Prism Central instance is already configured and meets the licensing, CPU, and memory requirements. Which two other prerequisites must be met before enabling application discovery? (Choose two.) A. Sufficient Prism Central VM resources B. Internet connection C. Network controller is enabled D. API key and key ID",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/302996-exam-ncp-mci-v6-10-topic-5-question-78-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 1,
+      "D": 1
+    },
+    "discussion": [
+      "Selected Answer: BD https://portal.nutanix.com/page/documents/details?targetId=Intelligent-Operations-Guide-vpc_2024_2:mul-app-discovery-prerequisites-pc-r.html upvoted 3 times Submit Cancel"
+    ]
   },
   {
     "question": "An administrator needs to create a single chart showing multiple storage bandwidth metrics a VM is consuming. Which type of chart should the administrator create? A. Hypervisor Performance Chart B. Entity Chart C. Metric Chart D. VM Summary Chart",
     "options": {},
     "most_voted": "B",
     "url": "https://www.examtopics.com/discussions/nutanix/view/303049-exam-ncp-mci-v6-10-topic-5-question-79-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "B": 2
+    },
+    "discussion": [
+      "Selected Answer: B A metric chart monitors the performance of a single metric for one or more entities. An entity chart monitors the performance of one or more metrics for a single entity. The question refers to multiple bandwidth meterics. Therefore it's an entity chart that is required. https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_8:wc-create-entity-chart-wc-t.html https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_0:wc-create-metric-chart-wc-t.html upvoted 1 time Submit Cancel",
+      "Selected Answer: B An entity chart monitors the performance of one or more metrics for a single entity. https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v6_10:wc-create-entity-chart-wc-t.html upvoted 2 times Submit Cancel"
+    ]
   },
   {
     "question": "Which predefined view should be leveraged in Prism Central Intelligent Operations to determine which VM is consuming too many resources and causing other VMs to starve? A. Bully VMs List B. Constrained VMs List C. Overprovisioned VMs List D. Inactive VMs List",
     "options": {},
     "most_voted": "A",
     "url": "https://www.examtopics.com/discussions/nutanix/view/304406-exam-ncp-mci-v6-10-topic-5-question-80-discussion/",
-    "images": []
+    "images": [],
+    "vote_counts": {
+      "A": 1
+    },
+    "discussion": [
+      "Selected Answer: A Bully VM : A &quot;bully&quot; VM is one that consumes too many resources and causes other VMs to starve. Constrained VM : A &quot;constrained&quot; VM is one that does not have enough resources for the demand and can lead to performance bottlenecks. Over- provisioned VM : An &quot;over-provisioned&quot; VM is the opposite of a constrained VM, meaning it is a VM that is over-sized and wasting resources which are not needed. Inactive VM : A VM is &quot;inactive&quot; in either of the following states: upvoted 1 time Submit Cancel",
+      "Inactive VM : A VM is &quot;inactive&quot; in either of the following states: &quot;Dead&quot; VM: A VM is considered dead when it has been powered off for at least 21 days. &quot;Zombie&quot; VM: A VM is considered a zombie when it is powered on but does fewer than 30 read or write I/Os (total) and receives or transfers fewer than 1000 bytes per day for the past 21 days. upvoted 1 time Submit Cancel"
+    ]
   }
 ]
